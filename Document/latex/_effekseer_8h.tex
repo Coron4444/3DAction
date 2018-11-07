@@ -1,0 +1,479 @@
+\hypertarget{_effekseer_8h}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\+Effekseer.h ファイル}
+\label{_effekseer_8h}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\+Effekseer.\+h@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\+Effekseer.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_i_reference}{Effekseer\+::\+I\+Reference}}
+\begin{DoxyCompactList}\small\item\em 参照カウンタのインターフェース \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_reference_object}{Effekseer\+::\+Reference\+Object}}
+\begin{DoxyCompactList}\small\item\em 参照カウンタオブジェクト \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Effekseer\+::\+Texture\+Data}}
+\begin{DoxyCompactList}\small\item\em テクスチャデータ \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_vector2_d}{Effekseer\+::\+Vector2D}}
+\begin{DoxyCompactList}\small\item\em 3次元ベクトル \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}}
+\begin{DoxyCompactList}\small\item\em 3次元ベクトル \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}}
+\begin{DoxyCompactList}\small\item\em 色 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_rect_f}{Effekseer\+::\+RectF}}
+\begin{DoxyCompactList}\small\item\em 四角形 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Effekseer\+::\+Matrix43}}
+\begin{DoxyCompactList}\small\item\em 4x3行列 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}}
+\begin{DoxyCompactList}\small\item\em 行列 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_file_reader}{Effekseer\+::\+File\+Reader}}
+\begin{DoxyCompactList}\small\item\em ファイル読み込みクラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_file_writer}{Effekseer\+::\+File\+Writer}}
+\begin{DoxyCompactList}\small\item\em ファイル書き込みクラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_file_interface}{Effekseer\+::\+File\+Interface}}
+\begin{DoxyCompactList}\small\item\em ファイルアクセス用のファクトリクラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_default_file_reader}{Effekseer\+::\+Default\+File\+Reader}}
+\begin{DoxyCompactList}\small\item\em 標準のファイル読み込みクラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_default_file_writer}{Effekseer\+::\+Default\+File\+Writer}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_default_file_interface}{Effekseer\+::\+Default\+File\+Interface}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_effect}{Effekseer\+::\+Effect}}
+\begin{DoxyCompactList}\small\item\em エフェクトパラメータークラス \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_effect_basic_render_parameter}{Effekseer\+::\+Effect\+Basic\+Render\+Parameter}}
+\begin{DoxyCompactList}\small\item\em 共通描画パラメーター \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_effect_model_parameter}{Effekseer\+::\+Effect\+Model\+Parameter}}
+\begin{DoxyCompactList}\small\item\em モデルパラメーター \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_effect_node}{Effekseer\+::\+Effect\+Node}}
+\begin{DoxyCompactList}\small\item\em ノードインスタンス生成クラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_manager}{Effekseer\+::\+Manager}}
+\begin{DoxyCompactList}\small\item\em エフェクト管理クラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Effekseer\+::\+Sprite\+Renderer}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_sprite_renderer_1_1_node_parameter}{Effekseer\+::\+Sprite\+Renderer\+::\+Node\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_sprite_renderer_1_1_instance_parameter}{Effekseer\+::\+Sprite\+Renderer\+::\+Instance\+Parameter}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Effekseer\+::\+Ribbon\+Renderer}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_ribbon_renderer_1_1_node_parameter}{Effekseer\+::\+Ribbon\+Renderer\+::\+Node\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter}{Effekseer\+::\+Ribbon\+Renderer\+::\+Instance\+Parameter}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_ring_renderer}{Effekseer\+::\+Ring\+Renderer}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_ring_renderer_1_1_node_parameter}{Effekseer\+::\+Ring\+Renderer\+::\+Node\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_ring_renderer_1_1_instance_parameter}{Effekseer\+::\+Ring\+Renderer\+::\+Instance\+Parameter}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_model_renderer}{Effekseer\+::\+Model\+Renderer}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Effekseer\+::\+Model\+Renderer\+::\+Node\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_instance_parameter}{Effekseer\+::\+Model\+Renderer\+::\+Instance\+Parameter}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_track_renderer}{Effekseer\+::\+Track\+Renderer}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Effekseer\+::\+Track\+Renderer\+::\+Node\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_instance_group_parameter}{Effekseer\+::\+Track\+Renderer\+::\+Instance\+Group\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_instance_parameter}{Effekseer\+::\+Track\+Renderer\+::\+Instance\+Parameter}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_effect_loader}{Effekseer\+::\+Effect\+Loader}}
+\begin{DoxyCompactList}\small\item\em エフェクトファイル読み込み破棄関数指定クラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Effekseer\+::\+Texture\+Loader}}
+\begin{DoxyCompactList}\small\item\em テクスチャ読み込み破棄関数指定クラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_model_loader}{Effekseer\+::\+Model\+Loader}}
+\begin{DoxyCompactList}\small\item\em モデル読み込み破棄関数指定クラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_model}{Effekseer\+::\+Model}}
+\begin{DoxyCompactList}\small\item\em モデルクラス \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_vertex}{Effekseer\+::\+Model\+::\+Vertex}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_vertex_with_index}{Effekseer\+::\+Model\+::\+Vertex\+With\+Index}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_face}{Effekseer\+::\+Model\+::\+Face}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Effekseer\+::\+Model\+::\+Emitter}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_sound_player}{Effekseer\+::\+Sound\+Player}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_sound_player_1_1_instance_parameter}{Effekseer\+::\+Sound\+Player\+::\+Instance\+Parameter}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Effekseer\+::\+Sound\+Loader}}
+\begin{DoxyCompactList}\small\item\em サウンド読み込み破棄関数指定クラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_setting}{Effekseer\+::\+Setting}}
+\begin{DoxyCompactList}\small\item\em 設定クラス \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_server}{Effekseer\+::\+Server}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_client}{Effekseer\+::\+Client}}
+\item 
+class \mbox{\hyperlink{class_effekseer_1_1_critical_section}{Effekseer\+::\+Critical\+Section}}
+\begin{DoxyCompactList}\small\item\em クリティカルセクション \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_thread}{Effekseer\+::\+Thread}}
+\end{DoxyCompactItemize}
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_effekseer}{Effekseer}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a4b2fd0bd069299f55649055bbd485d7f}{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_ab70b4ca19a8eeb792fe80a0d14b5a5ce}{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+A\+D\+D\+R\+EF}}(val)~if ( (val) != N\+U\+LL ) \{ (val)-\/$>$Add\+Ref(); \}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a552d766d4c7156ddd0042d4d94c8b562}{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}}(val)~if ( (val) != N\+U\+LL ) \{ (val)-\/$>$Release(); (val) = N\+U\+LL; \}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a5278841d38f84c7fdf57770ece804d9b}{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}}(val)~if ( (val) != N\+U\+LL ) \{ delete (val); (val) = N\+U\+LL; \}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a09da01befa6b94eb8ca94be9b2bf558d}{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}}(val)~if ( (val) != N\+U\+LL ) \{ delete \mbox{[}$\,$\mbox{]} (val); (val) = N\+U\+LL; \}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_aa9370a43166c025ec921ec005658f427}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R2\+D\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_aa82b99d80736c984fa4fe4710ef5bd8b}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R3\+D\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_ad5142c5c895ceca81575cd84f98c6747}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_ae0f173361dbdb0628d5e25e22ce2e43b}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+E\+C\+T\+F\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a0e6c88e72faff324e24afcf93295d012}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X43\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a3aedefb50559cc2a41399284800ab81f}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X44\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_aee690e424571c16a5699f20728ba191d}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a42a88a4452a028e268f094f6441d5b27}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a7875687b1f546a573428fe17ec3072f6}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_aa326d43fceccccf752fa148f82acb36e}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a728866ed67e63ec6c59f93812cf5ea48}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a72d3254351e46e4f247dbf9582d064d1}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+B\+B\+O\+N\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_aeab70fc8f1edf309170c9d1bb71e27ca}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+N\+G\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a185c735ecb87511503e4e22d39ba7c4c}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a8f4b7df74bc83cdcd05af856c0635cf6}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a48c35637c94c664ab2fa403cdfe56fe1}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_af4dfa6acda3b8439c88e4cd0ea1a1e23}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a702904d14dd0f3cd303d1a49bfcf2939}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a0889469b03ddd49fa04abf213f6d4237}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a645f7193a03d56256106a3a998b3dcdf}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a2e908c0a22356442812c1e097d381fc7}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_abd83d013d5507eb61316413dab584472}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_aaa0f1f98693b485fa0a022af6b814927}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_ae50d8e705e1df13802125a3d76262513}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_af31bbb4fc6e3d8779d8afd71649cf53d}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{_effekseer_8h_a1e8df9806cb133e49638690e59e73baf}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint16\+\_\+t \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}}
+\item 
+typedef int \mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Effekseer\+::\+Handle}}
+\item 
+typedef void $\ast$\mbox{\hyperlink{_effekseer_8h_a4b2fd0bd069299f55649055bbd485d7f}{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}} $\ast$ \mbox{\hyperlink{namespace_effekseer_a2f9a04a7b2d08a8f2173ce47e57ff742}{Effekseer\+::\+Malloc\+Func}}(unsigned int size)
+\begin{DoxyCompactList}\small\item\em メモリ確保関数 \end{DoxyCompactList}\item 
+typedef unsigned int \mbox{\hyperlink{namespace_effekseer_a73c68f3d33539d30844b9d1e058077f7}{Effekseer\+::size}}
+\item 
+typedef Handle \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{Effekseer\+::handle}}
+\item 
+typedef Handle bool \mbox{\hyperlink{namespace_effekseer_a153d1bcf5fd3c14124e04d0dadf6827c}{Effekseer\+::is\+Removing\+Manager}}
+\item 
+typedef void $\ast$ \mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Effekseer\+::\+Sound\+Handle}}
+\item 
+typedef void $\ast$ \mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Effekseer\+::\+Sound\+Tag}}
+\end{DoxyCompactItemize}
+\subsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_a8c32fd5b7ec7feed73314b2ae8086949}{Effekseer\+::\+Alpha\+Blend\+Type}} \+: int32\+\_\+t \{ \newline
+\mbox{\hyperlink{namespace_effekseer_a8c32fd5b7ec7feed73314b2ae8086949abad6a5dd8c28e6b14f8e986615e3dc98}{Effekseer\+::\+Alpha\+Blend\+Type\+::\+Opacity}} = 0, 
+\mbox{\hyperlink{namespace_effekseer_a8c32fd5b7ec7feed73314b2ae8086949a09ac609fcdb514c9adca34e7f97b4ac4}{Effekseer\+::\+Alpha\+Blend\+Type\+::\+Blend}} = 1, 
+\mbox{\hyperlink{namespace_effekseer_a8c32fd5b7ec7feed73314b2ae8086949aec211f7c20af43e742bf2570c3cb84f9}{Effekseer\+::\+Alpha\+Blend\+Type\+::\+Add}} = 2, 
+\mbox{\hyperlink{namespace_effekseer_a8c32fd5b7ec7feed73314b2ae8086949ae80155eceb940c89e2de63ad05868db2}{Effekseer\+::\+Alpha\+Blend\+Type\+::\+Sub}} = 3, 
+\newline
+\mbox{\hyperlink{namespace_effekseer_a8c32fd5b7ec7feed73314b2ae8086949a62b6d55816cf737bfc6f42e60df1a3f2}{Effekseer\+::\+Alpha\+Blend\+Type\+::\+Mul}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em アルファブレンド \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_effekseer_ae3518502cfcb4ec4991f13c0b3e4c6ee}{Effekseer\+::\+Texture\+Filter\+Type}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_ae3518502cfcb4ec4991f13c0b3e4c6eea60494f02d440f316319dd0fad40ad007}{Effekseer\+::\+Texture\+Filter\+Type\+::\+Nearest}} = 0, 
+\mbox{\hyperlink{namespace_effekseer_ae3518502cfcb4ec4991f13c0b3e4c6eea32a843da6ea40ab3b17a3421ccdf671b}{Effekseer\+::\+Texture\+Filter\+Type\+::\+Linear}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_a5320c83784602974b6278bf1a77b58a3}{Effekseer\+::\+Texture\+Wrap\+Type}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_a5320c83784602974b6278bf1a77b58a3a7020426cfb0a204051be4b3053d2acc8}{Effekseer\+::\+Texture\+Wrap\+Type\+::\+Repeat}} = 0, 
+\mbox{\hyperlink{namespace_effekseer_a5320c83784602974b6278bf1a77b58a3a08825280e3f8137556325061ba67ff8c}{Effekseer\+::\+Texture\+Wrap\+Type\+::\+Clamp}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_a3ae9542a9c9309ec191be1ae5e6dc00a}{Effekseer\+::\+Culling\+Type}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_a3ae9542a9c9309ec191be1ae5e6dc00aa5835bab1ade0060909e31a06af2e2cde}{Effekseer\+::\+Culling\+Type\+::\+Front}} = 0, 
+\mbox{\hyperlink{namespace_effekseer_a3ae9542a9c9309ec191be1ae5e6dc00aa0557fa923dcee4d0f86b1409f5c2167f}{Effekseer\+::\+Culling\+Type\+::\+Back}} = 1, 
+\mbox{\hyperlink{namespace_effekseer_a3ae9542a9c9309ec191be1ae5e6dc00aad909d38d705ce75386dd86e611a82f5b}{Effekseer\+::\+Culling\+Type\+::\+Double}} = 2
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_a1e51959dc188f6f19acc48c85860c6d8}{Effekseer\+::\+Billboard\+Type}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_a1e51959dc188f6f19acc48c85860c6d8acf9f62d4906d63087d71916c1c94c058}{Effekseer\+::\+Billboard\+Type\+::\+Billboard}} = 0, 
+\mbox{\hyperlink{namespace_effekseer_a1e51959dc188f6f19acc48c85860c6d8a8d1827d8fca7d2d9db612616da97258a}{Effekseer\+::\+Billboard\+Type\+::\+Y\+Axis\+Fixed}} = 1, 
+\mbox{\hyperlink{namespace_effekseer_a1e51959dc188f6f19acc48c85860c6d8a4457d440870ad6d42bab9082d9bf9b61}{Effekseer\+::\+Billboard\+Type\+::\+Fixed}} = 2, 
+\mbox{\hyperlink{namespace_effekseer_a1e51959dc188f6f19acc48c85860c6d8a6bea508c98105aa330e11c3a0b258f23}{Effekseer\+::\+Billboard\+Type\+::\+Rotated\+Billboard}} = 3
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Effekseer\+::\+Coordinate\+System}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765a2b9645dc7a42b738ac9fa5a75117b1c0}{Effekseer\+::\+Coordinate\+System\+::\+LH}}, 
+\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765a9508a19d7801e07ee7b7628c31bfdd47}{Effekseer\+::\+Coordinate\+System\+::\+RH}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_a6c32bc0e986ad6c6ed7e2aca639d4132}{Effekseer\+::\+Culling\+Shape}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_a6c32bc0e986ad6c6ed7e2aca639d4132af9522e8a7d1cc4f338498025afb612bf}{Effekseer\+::\+Culling\+Shape\+::\+None\+Shape}} = 0, 
+\mbox{\hyperlink{namespace_effekseer_a6c32bc0e986ad6c6ed7e2aca639d4132ab7095f057db3fefa7325ad93a04e14fd}{Effekseer\+::\+Culling\+Shape\+::\+Sphere}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_a781925ba462884c4ef87fd38ffdedba4}{Effekseer\+::\+Texture\+Type}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_a781925ba462884c4ef87fd38ffdedba4acb5feb1b7314637725a2e73bdc9f7295}{Effekseer\+::\+Texture\+Type\+::\+Color}}, 
+\mbox{\hyperlink{namespace_effekseer_a781925ba462884c4ef87fd38ffdedba4a960b44c579bc2f6818d2daaf9e4c16f0}{Effekseer\+::\+Texture\+Type\+::\+Normal}}, 
+\mbox{\hyperlink{namespace_effekseer_a781925ba462884c4ef87fd38ffdedba4ad3682f9ce9248e18f2d1cecf9f8fa049}{Effekseer\+::\+Texture\+Type\+::\+Distortion}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_ad44c2314bf2d674ae0e6d62db6ff4484}{Effekseer\+::\+Texture\+Format\+Type}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_ad44c2314bf2d674ae0e6d62db6ff4484a241839feb78cf37a50e99a39bb64dab3}{Effekseer\+::\+Texture\+Format\+Type\+::\+A\+B\+G\+R8}}, 
+\mbox{\hyperlink{namespace_effekseer_ad44c2314bf2d674ae0e6d62db6ff4484a88ec7b741e9c3ccac7b61b1301ba11e8}{Effekseer\+::\+Texture\+Format\+Type\+::\+B\+C1}}, 
+\mbox{\hyperlink{namespace_effekseer_ad44c2314bf2d674ae0e6d62db6ff4484a4d2bc7c468d854a7046ae1ca6b7cf64e}{Effekseer\+::\+Texture\+Format\+Type\+::\+B\+C2}}, 
+\mbox{\hyperlink{namespace_effekseer_ad44c2314bf2d674ae0e6d62db6ff4484aa9e959126c7c9b4230b56975a1ea015d}{Effekseer\+::\+Texture\+Format\+Type\+::\+B\+C3}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18}{Effekseer\+::\+Color\+Mode}} \{ \mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18a8cd269b8fa3c1dd3646f46bebc7ae065}{Effekseer\+::\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+R\+G\+BA}}, 
+\mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18a98afba620a9e927c8ec2ba20ae0ec099}{Effekseer\+::\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+H\+S\+VA}}, 
+\mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18ac088410da7f822001e890889e938e6dd}{Effekseer\+::\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+W\+O\+RD}} = 0x7\+F\+F\+F\+F\+F\+FF
+ \}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{Effekseer\+::void}} (\mbox{\hyperlink{_effekseer_8h_a4b2fd0bd069299f55649055bbd485d7f}{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}} $\ast$Free\+Func)(void $\ast$p
+\begin{DoxyCompactList}\small\item\em メモリ破棄関数 \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{Effekseer\+::int}} (\mbox{\hyperlink{_effekseer_8h_a4b2fd0bd069299f55649055bbd485d7f}{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}} $\ast$Rand\+Func)(void)
+\begin{DoxyCompactList}\small\item\em ランダム関数 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\T \mbox{\hyperlink{namespace_effekseer_afc3d4e56cf4f8d0f12ac7d4bee7591b9}{Effekseer\+::\+Max}} (T t, U u)
+\begin{DoxyCompactList}\small\item\em 最大値取得 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\T \mbox{\hyperlink{namespace_effekseer_ad4d523c19d4088c7566fadd84449eba7}{Effekseer\+::\+Min}} (T t, U u)
+\begin{DoxyCompactList}\small\item\em 最小値取得 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename U , typename V $>$ }\\T \mbox{\hyperlink{namespace_effekseer_a524a62e3d5b25946bcccd60ffe448c9c}{Effekseer\+::\+Clamp}} (T t, U max\+\_\+, V min\+\_\+)
+\begin{DoxyCompactList}\small\item\em 範囲内値取得 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespace_effekseer_a6607039efc8f6bb91f8c216dfd096c5c}{Effekseer\+::\+Normalize\+Angle}} (float angle)
+\item 
+void \mbox{\hyperlink{namespace_effekseer_a4eab7724e1fc9c1cb66aac61b3d568d9}{Effekseer\+::\+Sin\+Cos}} (float x, float \&s, float \&c)
+\item 
+int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_afcbbbacdf23834fd7e8619e3af4e837c}{Effekseer\+::\+Convert\+Utf16\+To\+Utf8}} (int8\+\_\+t $\ast$dst, int32\+\_\+t dst\+\_\+size, const int16\+\_\+t $\ast$src)
+\begin{DoxyCompactList}\small\item\em 文字コードを変換する。(U\+T\+F16 -\/$>$ U\+T\+F8) \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_abcfc5535cdc6dc92e50f8453cbb01214}{Effekseer\+::\+Convert\+Utf8\+To\+Utf16}} (int16\+\_\+t $\ast$dst, int32\+\_\+t dst\+\_\+size, const int8\+\_\+t $\ast$src)
+\begin{DoxyCompactList}\small\item\em 文字コードを変換する。(U\+T\+F8 -\/$>$ U\+T\+F16) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{_effekseer_8h_ae50d8e705e1df13802125a3d76262513}\label{_effekseer_8h_ae50d8e705e1df13802125a3d76262513}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_CLIENT\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_ad5142c5c895ceca81575cd84f98c6747}\label{_effekseer_8h_ad5142c5c895ceca81575cd84f98c6747}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_COLOR\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_af31bbb4fc6e3d8779d8afd71649cf53d}\label{_effekseer_8h_af31bbb4fc6e3d8779d8afd71649cf53d}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_CRITICALSESSION\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a42a88a4452a028e268f094f6441d5b27}\label{_effekseer_8h_a42a88a4452a028e268f094f6441d5b27}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_DEFAULT\_FILE\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a7875687b1f546a573428fe17ec3072f6}\label{_effekseer_8h_a7875687b1f546a573428fe17ec3072f6}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_EFFECT\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a48c35637c94c664ab2fa403cdfe56fe1}\label{_effekseer_8h_a48c35637c94c664ab2fa403cdfe56fe1}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_EFFECTLOADER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+E\+F\+F\+E\+C\+T\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_aee690e424571c16a5699f20728ba191d}\label{_effekseer_8h_aee690e424571c16a5699f20728ba191d}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_FILE\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_abd83d013d5507eb61316413dab584472}\label{_effekseer_8h_abd83d013d5507eb61316413dab584472}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_LOADER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_aa326d43fceccccf752fa148f82acb36e}\label{_effekseer_8h_aa326d43fceccccf752fa148f82acb36e}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_MANAGER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+N\+A\+G\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a0e6c88e72faff324e24afcf93295d012}\label{_effekseer_8h_a0e6c88e72faff324e24afcf93295d012}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X43\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X43\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X43\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X43\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X43\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_MATRIX43\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X43\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a3aedefb50559cc2a41399284800ab81f}\label{_effekseer_8h_a3aedefb50559cc2a41399284800ab81f}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X44\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X44\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X44\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X44\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X44\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_MATRIX44\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+A\+T\+R\+I\+X44\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a0889469b03ddd49fa04abf213f6d4237}\label{_effekseer_8h_a0889469b03ddd49fa04abf213f6d4237}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_MODEL\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a185c735ecb87511503e4e22d39ba7c4c}\label{_effekseer_8h_a185c735ecb87511503e4e22d39ba7c4c}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_MODEL\_RENDERER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a702904d14dd0f3cd303d1a49bfcf2939}\label{_effekseer_8h_a702904d14dd0f3cd303d1a49bfcf2939}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_MODELLOADER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+M\+O\+D\+E\+L\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_ae0f173361dbdb0628d5e25e22ce2e43b}\label{_effekseer_8h_ae0f173361dbdb0628d5e25e22ce2e43b}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+E\+C\+T\+F\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+E\+C\+T\+F\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+E\+C\+T\+F\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+E\+C\+T\+F\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+E\+C\+T\+F\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_RECTF\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+E\+C\+T\+F\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a72d3254351e46e4f247dbf9582d064d1}\label{_effekseer_8h_a72d3254351e46e4f247dbf9582d064d1}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+B\+B\+O\+N\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+B\+B\+O\+N\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+B\+B\+O\+N\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+B\+B\+O\+N\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+B\+B\+O\+N\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_RIBBON\_RENDERER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+B\+B\+O\+N\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_aeab70fc8f1edf309170c9d1bb71e27ca}\label{_effekseer_8h_aeab70fc8f1edf309170c9d1bb71e27ca}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+N\+G\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+N\+G\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+N\+G\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+N\+G\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+N\+G\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_RING\_RENDERER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+R\+I\+N\+G\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_aaa0f1f98693b485fa0a022af6b814927}\label{_effekseer_8h_aaa0f1f98693b485fa0a022af6b814927}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_SERVER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a645f7193a03d56256106a3a998b3dcdf}\label{_effekseer_8h_a645f7193a03d56256106a3a998b3dcdf}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_SOUND\_PLAYER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a2e908c0a22356442812c1e097d381fc7}\label{_effekseer_8h_a2e908c0a22356442812c1e097d381fc7}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_SOUNDLOADER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+O\+U\+N\+D\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a728866ed67e63ec6c59f93812cf5ea48}\label{_effekseer_8h_a728866ed67e63ec6c59f93812cf5ea48}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_SPRITE\_RENDERER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_af4dfa6acda3b8439c88e4cd0ea1a1e23}\label{_effekseer_8h_af4dfa6acda3b8439c88e4cd0ea1a1e23}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_TEXTURELOADER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a1e8df9806cb133e49638690e59e73baf}\label{_effekseer_8h_a1e8df9806cb133e49638690e59e73baf}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_THREAD\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a8f4b7df74bc83cdcd05af856c0635cf6}\label{_effekseer_8h_a8f4b7df74bc83cdcd05af856c0635cf6}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_TRACK\_RENDERER\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_aa9370a43166c025ec921ec005658f427}\label{_effekseer_8h_aa9370a43166c025ec921ec005658f427}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R2\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R2\+D\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R2\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R2\+D\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R2\+D\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_VECTOR2D\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R2\+D\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_aa82b99d80736c984fa4fe4710ef5bd8b}\label{_effekseer_8h_aa82b99d80736c984fa4fe4710ef5bd8b}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R3\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R3\+D\+\_\+\+H\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R3\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R3\+D\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R3\+D\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_VECTOR3D\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R3\+D\+\_\+\+H\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{_effekseer_8h_a4b2fd0bd069299f55649055bbd485d7f}\label{_effekseer_8h_a4b2fd0bd069299f55649055bbd485d7f}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL@{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}}
+\index{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL@{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}{EFK\_STDCALL}}
+{\footnotesize\ttfamily \#define E\+F\+K\+\_\+\+S\+T\+D\+C\+A\+LL}
+
+\mbox{\Hypertarget{_effekseer_8h_ab70b4ca19a8eeb792fe80a0d14b5a5ce}\label{_effekseer_8h_ab70b4ca19a8eeb792fe80a0d14b5a5ce}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+A\+D\+D\+R\+EF@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+A\+D\+D\+R\+EF}}
+\index{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+A\+D\+D\+R\+EF@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+A\+D\+D\+R\+EF}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+A\+D\+D\+R\+EF}{ES\_SAFE\_ADDREF}}
+{\footnotesize\ttfamily \#define E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+A\+D\+D\+R\+EF(\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})~if ( (val) != N\+U\+LL ) \{ (val)-\/$>$Add\+Ref(); \}}
+
+\mbox{\Hypertarget{_effekseer_8h_a5278841d38f84c7fdf57770ece804d9b}\label{_effekseer_8h_a5278841d38f84c7fdf57770ece804d9b}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}}
+\index{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE}{ES\_SAFE\_DELETE}}
+{\footnotesize\ttfamily \#define E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+TE(\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})~if ( (val) != N\+U\+LL ) \{ delete (val); (val) = N\+U\+LL; \}}
+
+\mbox{\Hypertarget{_effekseer_8h_a09da01befa6b94eb8ca94be9b2bf558d}\label{_effekseer_8h_a09da01befa6b94eb8ca94be9b2bf558d}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}}
+\index{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY}{ES\_SAFE\_DELETE\_ARRAY}}
+{\footnotesize\ttfamily \#define E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+A\+R\+R\+AY(\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})~if ( (val) != N\+U\+LL ) \{ delete \mbox{[}$\,$\mbox{]} (val); (val) = N\+U\+LL; \}}
+
+\mbox{\Hypertarget{_effekseer_8h_a552d766d4c7156ddd0042d4d94c8b562}\label{_effekseer_8h_a552d766d4c7156ddd0042d4d94c8b562}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}}
+\index{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE@{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE}{ES\_SAFE\_RELEASE}}
+{\footnotesize\ttfamily \#define E\+S\+\_\+\+S\+A\+F\+E\+\_\+\+R\+E\+L\+E\+A\+SE(\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})~if ( (val) != N\+U\+LL ) \{ (val)-\/$>$Release(); (val) = N\+U\+LL; \}}
+
+
+
+\subsection{型定義詳解}
+\mbox{\Hypertarget{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}\label{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}} 
+\index{Effekseer.\+h@{Effekseer.\+h}!E\+F\+K\+\_\+\+C\+H\+AR@{E\+F\+K\+\_\+\+C\+H\+AR}}
+\index{E\+F\+K\+\_\+\+C\+H\+AR@{E\+F\+K\+\_\+\+C\+H\+AR}!Effekseer.\+h@{Effekseer.\+h}}
+\subsubsection{\texorpdfstring{E\+F\+K\+\_\+\+C\+H\+AR}{EFK\_CHAR}}
+{\footnotesize\ttfamily typedef uint16\+\_\+t \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}}}
+

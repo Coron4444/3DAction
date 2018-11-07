@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: GameObjectOrigin クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_game_object_origin.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="class_game_object_origin-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">GameObjectOrigin クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_game_object_origin_8h_source.html">GameObjectOrigin.h</a>&gt;</code></p>
+<div class="dynheader">
+GameObjectOrigin の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_game_object_origin.png" usemap="#GameObjectOrigin_map" alt=""/>
+  <map id="GameObjectOrigin_map" name="GameObjectOrigin_map">
+<area href="class_clear_logo.html" alt="ClearLogo" shape="rect" coords="126,56,242,80"/>
+<area href="class_coin.html" alt="Coin" shape="rect" coords="126,112,242,136"/>
+<area href="class_enemy.html" alt="Enemy" shape="rect" coords="126,168,242,192"/>
+<area href="class_failure_logo.html" alt="FailureLogo" shape="rect" coords="126,224,242,248"/>
+<area href="class_field.html" alt="Field" shape="rect" coords="126,280,242,304"/>
+<area href="class_number.html" alt="Number" shape="rect" coords="126,336,242,360"/>
+<area href="class_numbers.html" alt="Numbers" shape="rect" coords="126,392,242,416"/>
+<area href="class_player.html" alt="Player" shape="rect" coords="126,448,242,472"/>
+<area href="class_push_space_logo.html" alt="PushSpaceLogo" shape="rect" coords="126,504,242,528"/>
+<area href="class_score.html" alt="Score" shape="rect" coords="126,560,242,584"/>
+<area href="class_sky_dome.html" alt="SkyDome" shape="rect" coords="126,616,242,640"/>
+<area href="class_title_logo.html" alt="TitleLogo" shape="rect" coords="126,672,242,696"/>
+<area href="class_tutorial_logo01.html" alt="TutorialLogo01" shape="rect" coords="126,728,242,752"/>
+<area href="class_tutorial_logo02.html" alt="TutorialLogo02" shape="rect" coords="126,784,242,808"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0f262057d72762d4744b7c7306ba5f8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a0f262057d72762d4744b7c7306ba5f8e">GameObjectOrigin</a> (bool is_registration=true)</td></tr>
+<tr class="separator:a0f262057d72762d4744b7c7306ba5f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11fd9b09ec834a887253f82d83191bff"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a11fd9b09ec834a887253f82d83191bff">~GameObjectOrigin</a> ()</td></tr>
+<tr class="separator:a11fd9b09ec834a887253f82d83191bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9af378a4fd9028316a6fdb461ed6a10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#af9af378a4fd9028316a6fdb461ed6a10">Reset</a> ()=0</td></tr>
+<tr class="separator:af9af378a4fd9028316a6fdb461ed6a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fcc96e945f103f2f7daf009ee2b83dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a8fcc96e945f103f2f7daf009ee2b83dc">ReleaseObject</a> ()</td></tr>
+<tr class="separator:a8fcc96e945f103f2f7daf009ee2b83dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc8d3becc806dd6cf89663af981127e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a6dc8d3becc806dd6cf89663af981127e">SetComponentAll</a> (<a class="el" href="class_update_component.html">UpdateComponent</a> *update_component, <a class="el" href="class_draw_component.html">DrawComponent</a> *draw_component, <a class="el" href="class_collision_component.html">CollisionComponent</a> *collision_component)</td></tr>
+<tr class="separator:a6dc8d3becc806dd6cf89663af981127e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d261955caa797840b7af719a17b735"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#af6d261955caa797840b7af719a17b735">SetUpdateComponent</a> (<a class="el" href="class_update_component.html">UpdateComponent</a> *component)</td></tr>
+<tr class="separator:af6d261955caa797840b7af719a17b735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525d9ecb39e10295bda324afbefbcc74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a525d9ecb39e10295bda324afbefbcc74">SetDrawComponent</a> (<a class="el" href="class_draw_component.html">DrawComponent</a> *component)</td></tr>
+<tr class="separator:a525d9ecb39e10295bda324afbefbcc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf9e2140b71df0309d28b4dd90476d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#acdf9e2140b71df0309d28b4dd90476d7">SetCollisionComponent</a> (<a class="el" href="class_collision_component.html">CollisionComponent</a> *component)</td></tr>
+<tr class="separator:acdf9e2140b71df0309d28b4dd90476d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78266b6003847e18b9a902a6585a613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_update_component.html">UpdateComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#ae78266b6003847e18b9a902a6585a613">GetUpdateComponent</a> ()</td></tr>
+<tr class="separator:ae78266b6003847e18b9a902a6585a613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768ddc2525b6fd51b6d23e8f2b7ad744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_draw_component.html">DrawComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a768ddc2525b6fd51b6d23e8f2b7ad744">GetDrawComponent</a> ()</td></tr>
+<tr class="separator:a768ddc2525b6fd51b6d23e8f2b7ad744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cfb6cd75e995b7791385fcc1f6f859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_component.html">CollisionComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#af2cfb6cd75e995b7791385fcc1f6f859">GetCollisionComponent</a> ()</td></tr>
+<tr class="separator:af2cfb6cd75e995b7791385fcc1f6f859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef5e72f8ad3eff98522528c1cf6bbc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#aaef5e72f8ad3eff98522528c1cf6bbc2">GetTransform</a> ()</td></tr>
+<tr class="separator:aaef5e72f8ad3eff98522528c1cf6bbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b1dff8bffb44125214d60201572041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#ad0b1dff8bffb44125214d60201572041">CreatePhysics</a> ()</td></tr>
+<tr class="separator:ad0b1dff8bffb44125214d60201572041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878b71d82a2f2011d2e2a2e9b9e497af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_physics.html">Physics</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a878b71d82a2f2011d2e2a2e9b9e497af">GetPhysics</a> ()</td></tr>
+<tr class="separator:a878b71d82a2f2011d2e2a2e9b9e497af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0fccade48b059046d8eee1cbabaaf30a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a0fccade48b059046d8eee1cbabaaf30a">Init_SuperClass</a> (<a class="el" href="class_update_component.html">UpdateComponent</a> *update_component, <a class="el" href="class_draw_component.html">DrawComponent</a> *draw_component, <a class="el" href="class_collision_component.html">CollisionComponent</a> *collision_component)</td></tr>
+<tr class="separator:a0fccade48b059046d8eee1cbabaaf30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788deb7503c9fa090193138cd13247ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a788deb7503c9fa090193138cd13247ba">Uninit_SuperClass</a> ()</td></tr>
+<tr class="separator:a788deb7503c9fa090193138cd13247ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac8fc4a1f625982313a9a60dd35d016"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#aeac8fc4a1f625982313a9a60dd35d016">Uninit</a> ()=0</td></tr>
+<tr class="separator:aeac8fc4a1f625982313a9a60dd35d016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30e4d2dee1b9a1b10cdaccc004804eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#ab30e4d2dee1b9a1b10cdaccc004804eb">SetGameObject</a> ()</td></tr>
+<tr class="separator:ab30e4d2dee1b9a1b10cdaccc004804eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d39d07478d90c11066a89e830d5f41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a63d39d07478d90c11066a89e830d5f41">InitComponent</a> ()</td></tr>
+<tr class="separator:a63d39d07478d90c11066a89e830d5f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d7e7923ff9456b0bc7f5f233f49159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#a70d7e7923ff9456b0bc7f5f233f49159">UninitComponent</a> ()</td></tr>
+<tr class="separator:a70d7e7923ff9456b0bc7f5f233f49159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2aae550ba6175944b45d2d664579be6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#ab2aae550ba6175944b45d2d664579be6">RegistrationComponentManager</a> ()</td></tr>
+<tr class="separator:ab2aae550ba6175944b45d2d664579be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affeb64052b115460db71c5b7cfa170d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_origin.html#affeb64052b115460db71c5b7cfa170d6">ReleaseComponentManager</a> ()</td></tr>
+<tr class="separator:affeb64052b115460db71c5b7cfa170d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a0f262057d72762d4744b7c7306ba5f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f262057d72762d4744b7c7306ba5f8e">&#9670;&nbsp;</a></span>GameObjectOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObjectOrigin::GameObjectOrigin </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_registration</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11fd9b09ec834a887253f82d83191bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11fd9b09ec834a887253f82d83191bff">&#9670;&nbsp;</a></span>~GameObjectOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObjectOrigin::~GameObjectOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ad0b1dff8bffb44125214d60201572041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b1dff8bffb44125214d60201572041">&#9670;&nbsp;</a></span>CreatePhysics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::CreatePhysics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2cfb6cd75e995b7791385fcc1f6f859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2cfb6cd75e995b7791385fcc1f6f859">&#9670;&nbsp;</a></span>GetCollisionComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_collision_component.html">CollisionComponent</a>* GameObjectOrigin::GetCollisionComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a768ddc2525b6fd51b6d23e8f2b7ad744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768ddc2525b6fd51b6d23e8f2b7ad744">&#9670;&nbsp;</a></span>GetDrawComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_draw_component.html">DrawComponent</a>* GameObjectOrigin::GetDrawComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a878b71d82a2f2011d2e2a2e9b9e497af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878b71d82a2f2011d2e2a2e9b9e497af">&#9670;&nbsp;</a></span>GetPhysics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_physics.html">Physics</a>* GameObjectOrigin::GetPhysics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaef5e72f8ad3eff98522528c1cf6bbc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef5e72f8ad3eff98522528c1cf6bbc2">&#9670;&nbsp;</a></span>GetTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a>* GameObjectOrigin::GetTransform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae78266b6003847e18b9a902a6585a613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78266b6003847e18b9a902a6585a613">&#9670;&nbsp;</a></span>GetUpdateComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_update_component.html">UpdateComponent</a>* GameObjectOrigin::GetUpdateComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fccade48b059046d8eee1cbabaaf30a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fccade48b059046d8eee1cbabaaf30a">&#9670;&nbsp;</a></span>Init_SuperClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::Init_SuperClass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_update_component.html">UpdateComponent</a> *&#160;</td>
+          <td class="paramname"><em>update_component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_draw_component.html">DrawComponent</a> *&#160;</td>
+          <td class="paramname"><em>draw_component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collision_component.html">CollisionComponent</a> *&#160;</td>
+          <td class="paramname"><em>collision_component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63d39d07478d90c11066a89e830d5f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d39d07478d90c11066a89e830d5f41">&#9670;&nbsp;</a></span>InitComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::InitComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2aae550ba6175944b45d2d664579be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2aae550ba6175944b45d2d664579be6">&#9670;&nbsp;</a></span>RegistrationComponentManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::RegistrationComponentManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affeb64052b115460db71c5b7cfa170d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affeb64052b115460db71c5b7cfa170d6">&#9670;&nbsp;</a></span>ReleaseComponentManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::ReleaseComponentManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fcc96e945f103f2f7daf009ee2b83dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fcc96e945f103f2f7daf009ee2b83dc">&#9670;&nbsp;</a></span>ReleaseObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::ReleaseObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9af378a4fd9028316a6fdb461ed6a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9af378a4fd9028316a6fdb461ed6a10">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameObjectOrigin::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_number.html#a7c6facdb1b3d0acc8309e0a915863d44">Number</a>, <a class="el" href="class_numbers.html#a1ab67e439ba1695c8fd545dfc1650990">Numbers</a>, <a class="el" href="class_push_space_logo.html#afa163b1aff8df494b4f09f378bf983f0">PushSpaceLogo</a>, <a class="el" href="class_clear_logo.html#aa19369cbace0cc79957ef7b4d4dbd0f5">ClearLogo</a>, <a class="el" href="class_failure_logo.html#a542b1617087a6701f7edb345e2a72e01">FailureLogo</a>, <a class="el" href="class_title_logo.html#a8bca39d06592b95b26024c2d86ac349c">TitleLogo</a>, <a class="el" href="class_tutorial_logo01.html#a01515b3f54e6731e42d60af5320ff7eb">TutorialLogo01</a>, <a class="el" href="class_tutorial_logo02.html#a73afa56b1e98736072745dc414ebd29f">TutorialLogo02</a>, <a class="el" href="class_field.html#a5b140074dcca821ac702da348238c6d4">Field</a>, <a class="el" href="class_player.html#a457153d0edd58932e37e1356f5fe5fed">Player</a>, <a class="el" href="class_score.html#ad01d461a2b6ca345858b2ae0a3d81cc1">Score</a>, <a class="el" href="class_enemy.html#ab86571061e7fcabcf8c646b1abad5581">Enemy</a>, <a class="el" href="class_coin.html#a52c50229ce7c1e0f459e198adac70c8d">Coin</a>, <a class="el" href="class_sky_dome.html#abc6f8ed1471d7b03f25924a849cae590">SkyDome</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="acdf9e2140b71df0309d28b4dd90476d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdf9e2140b71df0309d28b4dd90476d7">&#9670;&nbsp;</a></span>SetCollisionComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::SetCollisionComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collision_component.html">CollisionComponent</a> *&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dc8d3becc806dd6cf89663af981127e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc8d3becc806dd6cf89663af981127e">&#9670;&nbsp;</a></span>SetComponentAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::SetComponentAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_update_component.html">UpdateComponent</a> *&#160;</td>
+          <td class="paramname"><em>update_component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_draw_component.html">DrawComponent</a> *&#160;</td>
+          <td class="paramname"><em>draw_component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collision_component.html">CollisionComponent</a> *&#160;</td>
+          <td class="paramname"><em>collision_component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a525d9ecb39e10295bda324afbefbcc74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525d9ecb39e10295bda324afbefbcc74">&#9670;&nbsp;</a></span>SetDrawComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::SetDrawComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_draw_component.html">DrawComponent</a> *&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab30e4d2dee1b9a1b10cdaccc004804eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab30e4d2dee1b9a1b10cdaccc004804eb">&#9670;&nbsp;</a></span>SetGameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::SetGameObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6d261955caa797840b7af719a17b735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d261955caa797840b7af719a17b735">&#9670;&nbsp;</a></span>SetUpdateComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::SetUpdateComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_update_component.html">UpdateComponent</a> *&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeac8fc4a1f625982313a9a60dd35d016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac8fc4a1f625982313a9a60dd35d016">&#9670;&nbsp;</a></span>Uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GameObjectOrigin::Uninit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_number.html#a7c3bf9c55f7a0a19d80129c5f07f99f2">Number</a>, <a class="el" href="class_numbers.html#aeaad3cc1b8ae7defe79813b983b04101">Numbers</a>, <a class="el" href="class_push_space_logo.html#a06404113db417c58941ca7a13bba161e">PushSpaceLogo</a>, <a class="el" href="class_clear_logo.html#ab55def116615b92a8e8cc40b364b7a4c">ClearLogo</a>, <a class="el" href="class_failure_logo.html#adbe01fc4567ade0e788f511f5162299c">FailureLogo</a>, <a class="el" href="class_title_logo.html#a177943b3becc80fcdb7a34f131b07ee9">TitleLogo</a>, <a class="el" href="class_tutorial_logo01.html#aa6fd636ad745d8712ace1c82da285828">TutorialLogo01</a>, <a class="el" href="class_tutorial_logo02.html#ab9d0ac3888adf512c29fc0fe7f9beb4e">TutorialLogo02</a>, <a class="el" href="class_field.html#a6d1015e2409daa87cd00485ac1efc06b">Field</a>, <a class="el" href="class_player.html#a7455a83ac23d2f5e0cce0ddd7d92db0c">Player</a>, <a class="el" href="class_score.html#a605e163dc59ccc4d19a3cb6b5db813b8">Score</a>, <a class="el" href="class_enemy.html#a9aeaa757abdf0c37fd67c4ce5aed6962">Enemy</a>, <a class="el" href="class_coin.html#a4d364dcb4b57b80ea00ce931d0bb300f">Coin</a>, <a class="el" href="class_sky_dome.html#a7fc71bfa671cf6e7ab26a194459b0753">SkyDome</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a788deb7503c9fa090193138cd13247ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788deb7503c9fa090193138cd13247ba">&#9670;&nbsp;</a></span>Uninit_SuperClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::Uninit_SuperClass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70d7e7923ff9456b0bc7f5f233f49159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d7e7923ff9456b0bc7f5f233f49159">&#9670;&nbsp;</a></span>UninitComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectOrigin::UninitComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/GameObjectOrigin/<a class="el" href="_game_object_origin_8h_source.html">GameObjectOrigin.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/GameObjectOrigin/<a class="el" href="_game_object_origin_8cpp.html">GameObjectOrigin.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_game_object_origin.html">GameObjectOrigin</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

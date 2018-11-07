@@ -1,0 +1,167 @@
+\hypertarget{class_effekseer_1_1_model}{}\section{Effekseer\+:\+:Model クラス}
+\label{class_effekseer_1_1_model}\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+
+
+モデルクラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+Effekseer\+:\+:Model の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_effekseer_1_1_model}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_face}{Face}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_vertex}{Vertex}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_vertex_with_index}{Vertex\+With\+Index}}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_model_a6e13732e632a25f8368b698b9c21e61d}{Model}} (\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$data, int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_a73c68f3d33539d30844b9d1e058077f7}{size}})
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_effekseer_1_1_model_1_1_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_model_a778016ed6ce14ce790a5d8515ea0f62a}{Get\+Vertexes}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_model_a25684a2a6e818195bc8b65cb5d74256c}{Get\+Vertex\+Count}} ()
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_model_1_1_face}{Face}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_model_a825371676a78e971cfe821a035eae651}{Get\+Faces}} () const
+\item 
+int32\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_model_af53fdb52f8025801dab89cae4a88a4b7}{Get\+Face\+Count}} ()
+\item 
+int32\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_model_ad91886d20e51178e39575730791d011f}{Get\+Model\+Count}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_model_a02266837426d39149d3eb56da7051c98}{$\sim$\+Model}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} \mbox{\hyperlink{class_effekseer_1_1_model_a2ac80c4050024433da6045a1085bb998}{Get\+Emitter}} (\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$manager, \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} coordinate, float magnification)
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} \mbox{\hyperlink{class_effekseer_1_1_model_a3ae42d789d1d4cd2166505e8e574b3d5}{Get\+Emitter\+From\+Vertex}} (\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$manager, \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} coordinate, float magnification)
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} \mbox{\hyperlink{class_effekseer_1_1_model_abe1b586ac7cab23902e05c76b6b02349}{Get\+Emitter\+From\+Vertex}} (int32\+\_\+t index, \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} coordinate, float magnification)
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} \mbox{\hyperlink{class_effekseer_1_1_model_a2b8c3620fca55d7eb3df9f6e91ac11d9}{Get\+Emitter\+From\+Face}} (\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$manager, \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} coordinate, float magnification)
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} \mbox{\hyperlink{class_effekseer_1_1_model_a3d79aac3003fba431ea3c9e815647334}{Get\+Emitter\+From\+Face}} (int32\+\_\+t index, \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} coordinate, float magnification)
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const int32\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_model_a9f5c2f10fde65efeb5bc603ed9d6436e}{Version}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+モデルクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_model_a6e13732e632a25f8368b698b9c21e61d}\label{class_effekseer_1_1_model_a6e13732e632a25f8368b698b9c21e61d}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Model@{Model}}
+\index{Model@{Model}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Effekseer\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{data,  }\item[{int32\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_a02266837426d39149d3eb56da7051c98}\label{class_effekseer_1_1_model_a02266837426d39149d3eb56da7051c98}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!````~Model@{$\sim$\+Model}}
+\index{````~Model@{$\sim$\+Model}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Model()}{~Model()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+デストラクタ 
+
+
+
+\mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_model_a5878dbe0a5971ffb28d6c1af347c6e87}{Effekseer\+Renderer\+D\+X9\+::\+Model}}で再実装されています。
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_model_a2ac80c4050024433da6045a1085bb998}\label{class_effekseer_1_1_model_a2ac80c4050024433da6045a1085bb998}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Emitter@{Get\+Emitter}}
+\index{Get\+Emitter@{Get\+Emitter}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Emitter()}{GetEmitter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} Effekseer\+::\+Model\+::\+Get\+Emitter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$}]{manager,  }\item[{\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}}}]{coordinate,  }\item[{float}]{magnification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_a2b8c3620fca55d7eb3df9f6e91ac11d9}\label{class_effekseer_1_1_model_a2b8c3620fca55d7eb3df9f6e91ac11d9}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Emitter\+From\+Face@{Get\+Emitter\+From\+Face}}
+\index{Get\+Emitter\+From\+Face@{Get\+Emitter\+From\+Face}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Emitter\+From\+Face()}{GetEmitterFromFace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} Effekseer\+::\+Model\+::\+Get\+Emitter\+From\+Face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$}]{manager,  }\item[{\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}}}]{coordinate,  }\item[{float}]{magnification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_a3d79aac3003fba431ea3c9e815647334}\label{class_effekseer_1_1_model_a3d79aac3003fba431ea3c9e815647334}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Emitter\+From\+Face@{Get\+Emitter\+From\+Face}}
+\index{Get\+Emitter\+From\+Face@{Get\+Emitter\+From\+Face}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Emitter\+From\+Face()}{GetEmitterFromFace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} Effekseer\+::\+Model\+::\+Get\+Emitter\+From\+Face (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}}}]{coordinate,  }\item[{float}]{magnification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_a3ae42d789d1d4cd2166505e8e574b3d5}\label{class_effekseer_1_1_model_a3ae42d789d1d4cd2166505e8e574b3d5}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Emitter\+From\+Vertex@{Get\+Emitter\+From\+Vertex}}
+\index{Get\+Emitter\+From\+Vertex@{Get\+Emitter\+From\+Vertex}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Emitter\+From\+Vertex()}{GetEmitterFromVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} Effekseer\+::\+Model\+::\+Get\+Emitter\+From\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$}]{manager,  }\item[{\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}}}]{coordinate,  }\item[{float}]{magnification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_abe1b586ac7cab23902e05c76b6b02349}\label{class_effekseer_1_1_model_abe1b586ac7cab23902e05c76b6b02349}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Emitter\+From\+Vertex@{Get\+Emitter\+From\+Vertex}}
+\index{Get\+Emitter\+From\+Vertex@{Get\+Emitter\+From\+Vertex}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Emitter\+From\+Vertex()}{GetEmitterFromVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_emitter}{Emitter}} Effekseer\+::\+Model\+::\+Get\+Emitter\+From\+Vertex (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}}}]{coordinate,  }\item[{float}]{magnification }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_af53fdb52f8025801dab89cae4a88a4b7}\label{class_effekseer_1_1_model_af53fdb52f8025801dab89cae4a88a4b7}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Face\+Count@{Get\+Face\+Count}}
+\index{Get\+Face\+Count@{Get\+Face\+Count}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Face\+Count()}{GetFaceCount()}}
+{\footnotesize\ttfamily int32\+\_\+t Effekseer\+::\+Model\+::\+Get\+Face\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_a825371676a78e971cfe821a035eae651}\label{class_effekseer_1_1_model_a825371676a78e971cfe821a035eae651}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Faces@{Get\+Faces}}
+\index{Get\+Faces@{Get\+Faces}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Faces()}{GetFaces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_face}{Face}}$\ast$ Effekseer\+::\+Model\+::\+Get\+Faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_ad91886d20e51178e39575730791d011f}\label{class_effekseer_1_1_model_ad91886d20e51178e39575730791d011f}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Model\+Count@{Get\+Model\+Count}}
+\index{Get\+Model\+Count@{Get\+Model\+Count}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Model\+Count()}{GetModelCount()}}
+{\footnotesize\ttfamily int32\+\_\+t Effekseer\+::\+Model\+::\+Get\+Model\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_a25684a2a6e818195bc8b65cb5d74256c}\label{class_effekseer_1_1_model_a25684a2a6e818195bc8b65cb5d74256c}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Vertex\+Count@{Get\+Vertex\+Count}}
+\index{Get\+Vertex\+Count@{Get\+Vertex\+Count}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Vertex\+Count()}{GetVertexCount()}}
+{\footnotesize\ttfamily int32\+\_\+t Effekseer\+::\+Model\+::\+Get\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_a778016ed6ce14ce790a5d8515ea0f62a}\label{class_effekseer_1_1_model_a778016ed6ce14ce790a5d8515ea0f62a}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Get\+Vertexes@{Get\+Vertexes}}
+\index{Get\+Vertexes@{Get\+Vertexes}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Get\+Vertexes()}{GetVertexes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_model_1_1_vertex}{Vertex}}$\ast$ Effekseer\+::\+Model\+::\+Get\+Vertexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_model_a9f5c2f10fde65efeb5bc603ed9d6436e}\label{class_effekseer_1_1_model_a9f5c2f10fde65efeb5bc603ed9d6436e}} 
+\index{Effekseer\+::\+Model@{Effekseer\+::\+Model}!Version@{Version}}
+\index{Version@{Version}!Effekseer\+::\+Model@{Effekseer\+::\+Model}}
+\subsubsection{\texorpdfstring{Version}{Version}}
+{\footnotesize\ttfamily const int32\+\_\+t Effekseer\+::\+Model\+::\+Version = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

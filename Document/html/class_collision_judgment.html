@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: CollisionJudgment クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_collision_judgment.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="class_collision_judgment-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CollisionJudgment クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_collision_judgment_8h_source.html">CollisionJudgment.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a612bc9e5cfcb243324417f5059c6e24d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a612bc9e5cfcb243324417f5059c6e24d">HitCheck_Segment2D_Segment2D</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_position, const <a class="el" href="class_segment.html">Segment</a> *segment0, const <a class="el" href="class_segment.html">Segment</a> *segment1)</td></tr>
+<tr class="separator:a612bc9e5cfcb243324417f5059c6e24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92531c1254846a0a06ee7e95796f1070"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a92531c1254846a0a06ee7e95796f1070">HitCheck_Segment3D_Sphere</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_position, const <a class="el" href="class_segment.html">Segment</a> *segment, const <a class="el" href="class_sphere.html">Sphere</a> *sphere)</td></tr>
+<tr class="separator:a92531c1254846a0a06ee7e95796f1070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31167bc6d89d20f7220220ee3f21f4e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#ac31167bc6d89d20f7220220ee3f21f4e">HitCheck_Segment3D_Plane</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_position, const <a class="el" href="class_segment.html">Segment</a> *segment, const <a class="el" href="class_plane.html">Plane</a> *plane)</td></tr>
+<tr class="separator:ac31167bc6d89d20f7220220ee3f21f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5344d6ac14db5d3732db47050bd549"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a4f5344d6ac14db5d3732db47050bd549">HitCheck_Segment3D_Triangle</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_position, const <a class="el" href="class_segment.html">Segment</a> *segment, const <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="separator:a4f5344d6ac14db5d3732db47050bd549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61308e967a8569bcee4b25c74e28826d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a61308e967a8569bcee4b25c74e28826d">HitCheck_Segment3D_Cylinder</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_position, const <a class="el" href="class_segment.html">Segment</a> *segment, const <a class="el" href="class_cylinder.html">Cylinder</a> *cylinder)</td></tr>
+<tr class="separator:a61308e967a8569bcee4b25c74e28826d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21938f544146999d01d96f855277727b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a21938f544146999d01d96f855277727b">HitCheck_Segment3D_Capsule</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_position, const <a class="el" href="class_segment.html">Segment</a> *segment, const <a class="el" href="class_capsule.html">Capsule</a> *capsule)</td></tr>
+<tr class="separator:a21938f544146999d01d96f855277727b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e4ce202f713f1b2a7fc593f4daf7d2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a21e4ce202f713f1b2a7fc593f4daf7d2">HitCheck_Sphere_Sphere</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, const <a class="el" href="class_sphere.html">Sphere</a> *sphere0, const <a class="el" href="class_sphere.html">Sphere</a> *sphere1)</td></tr>
+<tr class="separator:a21e4ce202f713f1b2a7fc593f4daf7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47628fb2aef868f75942f378f63478cc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a47628fb2aef868f75942f378f63478cc">HitCheck_Sphere_Plane</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, const <a class="el" href="class_sphere.html">Sphere</a> *sphere, const <a class="el" href="class_plane.html">Plane</a> *plane)</td></tr>
+<tr class="separator:a47628fb2aef868f75942f378f63478cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b4e851cf1fc45dca09175b36fb4f50c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a2b4e851cf1fc45dca09175b36fb4f50c">HitCheck_Sphere_Triangle</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, const <a class="el" href="class_sphere.html">Sphere</a> *sphere, const <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="separator:a2b4e851cf1fc45dca09175b36fb4f50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc335999fcbeadf0aa1b6ebcb749e5b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a4cc335999fcbeadf0aa1b6ebcb749e5b">HitCheck_Sphere_Capsule</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, const <a class="el" href="class_sphere.html">Sphere</a> *sphere, const <a class="el" href="class_capsule.html">Capsule</a> *capsule)</td></tr>
+<tr class="separator:a4cc335999fcbeadf0aa1b6ebcb749e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1d157a361d756632c73f4406442ce2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#acd1d157a361d756632c73f4406442ce2">HitCheck_Sphere_OBB</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_sphere.html">Sphere</a> *sphere, <a class="el" href="class_o_b_b.html">OBB</a> *obb)</td></tr>
+<tr class="separator:acd1d157a361d756632c73f4406442ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ad684bee6964d4315df1a23ac3ec7d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a01ad684bee6964d4315df1a23ac3ec7d">HitCheck_Plane_Plane</a> (<a class="el" href="class_segment.html">Segment</a> *cross_segment, const <a class="el" href="class_plane.html">Plane</a> *plane0, const <a class="el" href="class_plane.html">Plane</a> *plane1)</td></tr>
+<tr class="separator:a01ad684bee6964d4315df1a23ac3ec7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473c94087dc9cd3937016ccba5f12abd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a473c94087dc9cd3937016ccba5f12abd">HitCheck_Plane_Triangle</a> (const <a class="el" href="class_plane.html">Plane</a> *plane, const <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="separator:a473c94087dc9cd3937016ccba5f12abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33b8936e62bdb9b6cf6f3d383c033b9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#ab33b8936e62bdb9b6cf6f3d383c033b9">HitCheck_Triangle_Triangle</a> (const <a class="el" href="class_triangle.html">Triangle</a> *triangle0, const <a class="el" href="class_triangle.html">Triangle</a> *triangle1)</td></tr>
+<tr class="separator:ab33b8936e62bdb9b6cf6f3d383c033b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95962556f370a964ec1961b1c461ae2a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a95962556f370a964ec1961b1c461ae2a">HitCheck_Capsule_Capsule</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, const <a class="el" href="class_capsule.html">Capsule</a> *capsule0, const <a class="el" href="class_capsule.html">Capsule</a> *capsule1, <a class="el" href="class_vector3_d.html">Vector3D</a> active_vector=<a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>(0.0f, 0.0f, 0.0f))</td></tr>
+<tr class="separator:a95962556f370a964ec1961b1c461ae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0a99feef4531370096d458aefa8941"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941">HitCheck_OBB_OBB</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_o_b_b.html">OBB</a> *obb0, <a class="el" href="class_o_b_b.html">OBB</a> *obb1)</td></tr>
+<tr class="separator:a3c0a99feef4531370096d458aefa8941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a95962556f370a964ec1961b1c461ae2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95962556f370a964ec1961b1c461ae2a">&#9670;&nbsp;</a></span>HitCheck_Capsule_Capsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Capsule_Capsule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>active_vector</em> = <code><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>(0.0f,&#160;0.0f,&#160;0.0f)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c0a99feef4531370096d458aefa8941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0a99feef4531370096d458aefa8941">&#9670;&nbsp;</a></span>HitCheck_OBB_OBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_OBB_OBB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_b_b.html">OBB</a> *&#160;</td>
+          <td class="paramname"><em>obb0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_b_b.html">OBB</a> *&#160;</td>
+          <td class="paramname"><em>obb1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01ad684bee6964d4315df1a23ac3ec7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ad684bee6964d4315df1a23ac3ec7d">&#9670;&nbsp;</a></span>HitCheck_Plane_Plane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Plane_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>cross_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a473c94087dc9cd3937016ccba5f12abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473c94087dc9cd3937016ccba5f12abd">&#9670;&nbsp;</a></span>HitCheck_Plane_Triangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Plane_Triangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a612bc9e5cfcb243324417f5059c6e24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a612bc9e5cfcb243324417f5059c6e24d">&#9670;&nbsp;</a></span>HitCheck_Segment2D_Segment2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Segment2D_Segment2D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>segment0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>segment1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21938f544146999d01d96f855277727b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21938f544146999d01d96f855277727b">&#9670;&nbsp;</a></span>HitCheck_Segment3D_Capsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Segment3D_Capsule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61308e967a8569bcee4b25c74e28826d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61308e967a8569bcee4b25c74e28826d">&#9670;&nbsp;</a></span>HitCheck_Segment3D_Cylinder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Segment3D_Cylinder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_cylinder.html">Cylinder</a> *&#160;</td>
+          <td class="paramname"><em>cylinder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac31167bc6d89d20f7220220ee3f21f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac31167bc6d89d20f7220220ee3f21f4e">&#9670;&nbsp;</a></span>HitCheck_Segment3D_Plane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Segment3D_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92531c1254846a0a06ee7e95796f1070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92531c1254846a0a06ee7e95796f1070">&#9670;&nbsp;</a></span>HitCheck_Segment3D_Sphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Segment3D_Sphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f5344d6ac14db5d3732db47050bd549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5344d6ac14db5d3732db47050bd549">&#9670;&nbsp;</a></span>HitCheck_Segment3D_Triangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Segment3D_Triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_segment.html">Segment</a> *&#160;</td>
+          <td class="paramname"><em>segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cc335999fcbeadf0aa1b6ebcb749e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc335999fcbeadf0aa1b6ebcb749e5b">&#9670;&nbsp;</a></span>HitCheck_Sphere_Capsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Sphere_Capsule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd1d157a361d756632c73f4406442ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1d157a361d756632c73f4406442ce2">&#9670;&nbsp;</a></span>HitCheck_Sphere_OBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Sphere_OBB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_b_b.html">OBB</a> *&#160;</td>
+          <td class="paramname"><em>obb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47628fb2aef868f75942f378f63478cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47628fb2aef868f75942f378f63478cc">&#9670;&nbsp;</a></span>HitCheck_Sphere_Plane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Sphere_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21e4ce202f713f1b2a7fc593f4daf7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e4ce202f713f1b2a7fc593f4daf7d2">&#9670;&nbsp;</a></span>HitCheck_Sphere_Sphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Sphere_Sphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b4e851cf1fc45dca09175b36fb4f50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4e851cf1fc45dca09175b36fb4f50c">&#9670;&nbsp;</a></span>HitCheck_Sphere_Triangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Sphere_Triangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab33b8936e62bdb9b6cf6f3d383c033b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33b8936e62bdb9b6cf6f3d383c033b9">&#9670;&nbsp;</a></span>HitCheck_Triangle_Triangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionJudgment::HitCheck_Triangle_Triangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionComponentManager/CollisionJudgment/<a class="el" href="_collision_judgment_8h_source.html">CollisionJudgment.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionComponentManager/CollisionJudgment/<a class="el" href="_collision_judgment_8cpp.html">CollisionJudgment.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_collision_judgment.html">CollisionJudgment</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

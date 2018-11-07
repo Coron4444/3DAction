@@ -1,0 +1,70 @@
+\hypertarget{class_camera_1_1_state}{}\section{Camera\+:\+:State クラス}
+\label{class_camera_1_1_state}\index{Camera\+::\+State@{Camera\+::\+State}}
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+Camera\+:\+:State の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera_1_1_state}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_camera_1_1_state_a61b74bb711d49e26c0f07af65fb74eb9}{$\sim$\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{class_camera_1_1_state_aa1b81471ab15e64b3117ffe7de9560ff}{Init}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)=0
+\item 
+virtual void \mbox{\hyperlink{class_camera_1_1_state_a68ebfc3f15cae24b342cb5dae57497cf}{Uninit}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)=0
+\item 
+virtual void \mbox{\hyperlink{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}{Update}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_camera_1_1_state_a61b74bb711d49e26c0f07af65fb74eb9}\label{class_camera_1_1_state_a61b74bb711d49e26c0f07af65fb74eb9}} 
+\index{Camera\+::\+State@{Camera\+::\+State}!````~State@{$\sim$\+State}}
+\index{````~State@{$\sim$\+State}!Camera\+::\+State@{Camera\+::\+State}}
+\subsubsection{\texorpdfstring{$\sim$\+State()}{~State()}}
+{\footnotesize\ttfamily virtual Camera\+::\+State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_camera_1_1_state_aa1b81471ab15e64b3117ffe7de9560ff}\label{class_camera_1_1_state_aa1b81471ab15e64b3117ffe7de9560ff}} 
+\index{Camera\+::\+State@{Camera\+::\+State}!Init@{Init}}
+\index{Init@{Init}!Camera\+::\+State@{Camera\+::\+State}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Camera\+::\+State\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_camera_state___crawl_up_a43a47eb4e7445c6801e8316c5a635709}{Camera\+State\+\_\+\+Crawl\+Up}}, \mbox{\hyperlink{class_camera_state___homing_target_a9222190a5f26d564e99623b05941d382}{Camera\+State\+\_\+\+Homing\+Target}}で実装されています。
+
+\mbox{\Hypertarget{class_camera_1_1_state_a68ebfc3f15cae24b342cb5dae57497cf}\label{class_camera_1_1_state_a68ebfc3f15cae24b342cb5dae57497cf}} 
+\index{Camera\+::\+State@{Camera\+::\+State}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Camera\+::\+State@{Camera\+::\+State}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily virtual void Camera\+::\+State\+::\+Uninit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_camera_state___crawl_up_ac9822b09d8e5fa9e1def7ac8a1e9c893}{Camera\+State\+\_\+\+Crawl\+Up}}, \mbox{\hyperlink{class_camera_state___homing_target_a5b4abde99047da6a20f299990c259ef1}{Camera\+State\+\_\+\+Homing\+Target}}で実装されています。
+
+\mbox{\Hypertarget{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}\label{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}} 
+\index{Camera\+::\+State@{Camera\+::\+State}!Update@{Update}}
+\index{Update@{Update}!Camera\+::\+State@{Camera\+::\+State}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Camera\+::\+State\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_camera_state___crawl_up_aaebd2634f1677b7c00e6761ed91e1264}{Camera\+State\+\_\+\+Crawl\+Up}}, \mbox{\hyperlink{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9}{Camera\+State\+\_\+\+Homing\+Target}}で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Camera/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\end{DoxyCompactItemize}

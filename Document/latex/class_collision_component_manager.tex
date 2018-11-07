@@ -1,0 +1,96 @@
+\hypertarget{class_collision_component_manager}{}\section{Collision\+Component\+Manager クラス}
+\label{class_collision_component_manager}\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+
+
+{\ttfamily \#include $<$Collision\+Component\+Manager.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_ad3cdee51a184eaf784629d2f77e61887}{Init}} ()
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_ab885e530bc38f492a0c0b146933cea0c}{Uninit}} ()
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_a9701404b478f57134e73c2a2abd89820}{Uninit\+\_\+\+Change\+Scene}} ()
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_acdcc5f9fd7013c03b7626e821ea5e396}{Update}} ()
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_abe3a5c6f3753e663b22124ff357317ac}{Registration\+Component}} (\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$collision\+\_\+component)
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_a728423faf3bacb0808f2d08411b12503}{Overwrite\+Component}} (\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$game\+\_\+object, \mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$new\+\_\+collision\+\_\+component)
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_a3ef5f5689d8d1a008a6eafc406da57c5}{Release\+Component}} (\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$collision\+\_\+component)
+\item 
+static void \mbox{\hyperlink{class_collision_component_manager_a5cd51c83da7658cd8172aa94bfb37ceb}{Set\+Ground}} (\mbox{\hyperlink{class_mesh_plane_polygon}{Mesh\+Plane\+Polygon}} $\ast$ground\+\_\+polygon)
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_collision_component_manager_a44b557bb46f56b06522367ca142db710}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 1000
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_component_manager_ad3cdee51a184eaf784629d2f77e61887}\label{class_collision_component_manager_ad3cdee51a184eaf784629d2f77e61887}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Init@{Init}}
+\index{Init@{Init}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_component_manager_a728423faf3bacb0808f2d08411b12503}\label{class_collision_component_manager_a728423faf3bacb0808f2d08411b12503}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Overwrite\+Component@{Overwrite\+Component}}
+\index{Overwrite\+Component@{Overwrite\+Component}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Overwrite\+Component()}{OverwriteComponent()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Overwrite\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$}]{game\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{new\+\_\+collision\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_component_manager_abe3a5c6f3753e663b22124ff357317ac}\label{class_collision_component_manager_abe3a5c6f3753e663b22124ff357317ac}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Registration\+Component@{Registration\+Component}}
+\index{Registration\+Component@{Registration\+Component}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Registration\+Component()}{RegistrationComponent()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Registration\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{collision\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_component_manager_a3ef5f5689d8d1a008a6eafc406da57c5}\label{class_collision_component_manager_a3ef5f5689d8d1a008a6eafc406da57c5}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Release\+Component@{Release\+Component}}
+\index{Release\+Component@{Release\+Component}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Release\+Component()}{ReleaseComponent()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Release\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{collision\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_component_manager_a5cd51c83da7658cd8172aa94bfb37ceb}\label{class_collision_component_manager_a5cd51c83da7658cd8172aa94bfb37ceb}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Set\+Ground@{Set\+Ground}}
+\index{Set\+Ground@{Set\+Ground}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Ground()}{SetGround()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Set\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mesh_plane_polygon}{Mesh\+Plane\+Polygon}} $\ast$}]{ground\+\_\+polygon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_component_manager_ab885e530bc38f492a0c0b146933cea0c}\label{class_collision_component_manager_ab885e530bc38f492a0c0b146933cea0c}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_component_manager_a9701404b478f57134e73c2a2abd89820}\label{class_collision_component_manager_a9701404b478f57134e73c2a2abd89820}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Uninit\+\_\+\+Change\+Scene@{Uninit\+\_\+\+Change\+Scene}}
+\index{Uninit\+\_\+\+Change\+Scene@{Uninit\+\_\+\+Change\+Scene}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+\_\+\+Change\+Scene()}{Uninit\_ChangeScene()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Uninit\+\_\+\+Change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_component_manager_acdcc5f9fd7013c03b7626e821ea5e396}\label{class_collision_component_manager_acdcc5f9fd7013c03b7626e821ea5e396}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!Update@{Update}}
+\index{Update@{Update}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Collision\+Component\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_collision_component_manager_a44b557bb46f56b06522367ca142db710}\label{class_collision_component_manager_a44b557bb46f56b06522367ca142db710}} 
+\index{Collision\+Component\+Manager@{Collision\+Component\+Manager}!A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
+\index{A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Collision\+Component\+Manager@{Collision\+Component\+Manager}}
+\subsubsection{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+N\+UM}{ARRAY\_NUM}}
+{\footnotesize\ttfamily const unsigned Collision\+Component\+Manager\+::\+A\+R\+R\+A\+Y\+\_\+\+N\+UM = 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Component\+Manager/\mbox{\hyperlink{_collision_component_manager_8h}{Collision\+Component\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Component\+Manager/\mbox{\hyperlink{_collision_component_manager_8cpp}{Collision\+Component\+Manager.\+cpp}}\end{DoxyCompactItemize}

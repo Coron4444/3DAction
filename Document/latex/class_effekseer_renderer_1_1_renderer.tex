@@ -1,0 +1,385 @@
+\hypertarget{class_effekseer_renderer_1_1_renderer}{}\section{Effekseer\+Renderer\+:\+:Renderer クラス}
+\label{class_effekseer_renderer_1_1_renderer}\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+
+
+{\ttfamily \#include $<$Effekseer\+Renderer\+D\+X9.\+h$>$}
+
+Effekseer\+Renderer\+:\+:Renderer の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_effekseer_renderer_1_1_renderer}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a5cf709d5b02e229f94efeec1e08951c4}{On\+Lost\+Device}} ()=0
+\begin{DoxyCompactList}\small\item\em デバイスロストが発生した時に実行する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a2a4e579c8c8b6e368e37a854cbf4c0ec}{On\+Reset\+Device}} ()=0
+\begin{DoxyCompactList}\small\item\em デバイスがリセットされた時に実行する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a8da94391eb26a2bd04830e4d7fcd0bd0}{Destroy}} ()=0
+\begin{DoxyCompactList}\small\item\em このインスタンスを破棄する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ac6de8a0c0d65c03d3242ccfc9946c91c}{Set\+Restoration\+Of\+States\+Flag}} (bool flag)=0
+\begin{DoxyCompactList}\small\item\em ステートを復帰するかどうかのフラグを設定する。 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a79aa204f1344347d8e111432d6d5bf5f}{Begin\+Rendering}} ()=0
+\begin{DoxyCompactList}\small\item\em 描画を開始する時に実行する。 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_aaa6df6f62aead71652bdeb596d0a7ef4}{End\+Rendering}} ()=0
+\begin{DoxyCompactList}\small\item\em 描画を終了する時に実行する。 \end{DoxyCompactList}\item 
+virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a3da04ff6d2ad2a0126a7476703a7c019}{Get\+Light\+Direction}} () const =0
+\begin{DoxyCompactList}\small\item\em ライトの方向を取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a28d4468e4a1ca40c585e7b6c88dd1849}{Set\+Light\+Direction}} (\+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&direction)=0
+\begin{DoxyCompactList}\small\item\em ライトの方向を設定する。 \end{DoxyCompactList}\item 
+virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_af1ed44772dd362bd7dbed42823da0411}{Get\+Light\+Color}} () const =0
+\begin{DoxyCompactList}\small\item\em ライトの色を取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a53268363d6c1ed36bd9119860d058808}{Set\+Light\+Color}} (\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&color)=0
+\begin{DoxyCompactList}\small\item\em ライトの色を設定する。 \end{DoxyCompactList}\item 
+virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a1454194ae4005f7a9d5a66f4f56c4972}{Get\+Light\+Ambient\+Color}} () const =0
+\begin{DoxyCompactList}\small\item\em ライトの環境光の色を取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_aebc954d0b421ded11b7420361b987094}{Set\+Light\+Ambient\+Color}} (\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&color)=0
+\begin{DoxyCompactList}\small\item\em ライトの環境光の色を設定する。 \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_af30b6ab25e7c03a3f70656c954e8db09}{Get\+Square\+Max\+Count}} () const =0
+\begin{DoxyCompactList}\small\item\em 最大描画スプライト数を取得する。 \end{DoxyCompactList}\item 
+virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a7a94e69a46222064baf9394405a7c9a9}{Get\+Projection\+Matrix}} () const =0
+\begin{DoxyCompactList}\small\item\em 投影行列を取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a270c020aeb8cef8b0f1a9a02980d685d}{Set\+Projection\+Matrix}} (const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \&mat)=0
+\begin{DoxyCompactList}\small\item\em 投影行列を設定する。 \end{DoxyCompactList}\item 
+virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a9c386cbe84039115d2f7d224d8a9c41c}{Get\+Camera\+Matrix}} () const =0
+\begin{DoxyCompactList}\small\item\em カメラ行列を取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a406e4bf44f11d3437af46cca718529b0}{Set\+Camera\+Matrix}} (const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \&mat)=0
+\begin{DoxyCompactList}\small\item\em カメラ行列を設定する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a62e05934631fa04e75ffb87952200042}{Get\+Camera\+Projection\+Matrix}} ()=0
+\begin{DoxyCompactList}\small\item\em カメラプロジェクション行列を取得する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Effekseer\+::\+Sprite\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_abecf62202fe3d54f4edf6c43d701188b}{Create\+Sprite\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em スプライトレンダラーを生成する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Effekseer\+::\+Ribbon\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ac65157c02f8936e054c2525e4722a4f7}{Create\+Ribbon\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em リボンレンダラーを生成する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_ring_renderer}{Effekseer\+::\+Ring\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a84dec1c70cab5984ce151753b5c9bcb9}{Create\+Ring\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em リングレンダラーを生成する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_model_renderer}{Effekseer\+::\+Model\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a7cbbeb73fa35b6cf356fcef7499301fb}{Create\+Model\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em モデルレンダラーを生成する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_track_renderer}{Effekseer\+::\+Track\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a38cff31386fce6fe0122a4ac5804fd8f}{Create\+Track\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em 軌跡レンダラーを生成する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Effekseer\+::\+Texture\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a13e29065eaca81d5191d9bad1421c408}{Create\+Texture\+Loader}} (\+::\mbox{\hyperlink{class_effekseer_1_1_file_interface}{Effekseer\+::\+File\+Interface}} $\ast$file\+Interface=N\+U\+LL)=0
+\begin{DoxyCompactList}\small\item\em 標準のテクスチャ読込クラスを生成する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_model_loader}{Effekseer\+::\+Model\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ab35779830c25992af7a9a9d53423f817}{Create\+Model\+Loader}} (\+::\mbox{\hyperlink{class_effekseer_1_1_file_interface}{Effekseer\+::\+File\+Interface}} $\ast$file\+Interface=N\+U\+LL)=0
+\begin{DoxyCompactList}\small\item\em 標準のモデル読込クラスを生成する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a229d0aca027c72e6736db487efbbddeb}{Reset\+Render\+State}} ()=0
+\begin{DoxyCompactList}\small\item\em レンダーステートを強制的にリセットする。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_distorting_callback}{Distorting\+Callback}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_af4db92a0262062bfcc8f3f2334e5a168}{Get\+Distorting\+Callback}} ()=0
+\begin{DoxyCompactList}\small\item\em 背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a8806b5a83c5ea73e09662f4a0869f8f0}{Set\+Distorting\+Callback}} (\mbox{\hyperlink{class_effekseer_renderer_1_1_distorting_callback}{Distorting\+Callback}} $\ast$callback)=0
+\begin{DoxyCompactList}\small\item\em 背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ac28b8a076c8ae3ee80e47cfa41a5b725}{Renderer}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4fa4741713f7bcd84b}{$\sim$\+Renderer}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_ac28b8a076c8ae3ee80e47cfa41a5b725}\label{class_effekseer_renderer_1_1_renderer_ac28b8a076c8ae3ee80e47cfa41a5b725}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Renderer()}{Renderer()}}
+{\footnotesize\ttfamily Effekseer\+Renderer\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4fa4741713f7bcd84b}\label{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4fa4741713f7bcd84b}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!````~Renderer@{$\sim$\+Renderer}}
+\index{````~Renderer@{$\sim$\+Renderer}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Renderer()}{~Renderer()}}
+{\footnotesize\ttfamily virtual Effekseer\+Renderer\+::\+Renderer\+::$\sim$\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_ab0f89bf1d5ba64f8b661babb340a5d2c}{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}で再実装されています。
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a79aa204f1344347d8e111432d6d5bf5f}\label{class_effekseer_renderer_1_1_renderer_a79aa204f1344347d8e111432d6d5bf5f}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Begin\+Rendering@{Begin\+Rendering}}
+\index{Begin\+Rendering@{Begin\+Rendering}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Begin\+Rendering()}{BeginRendering()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+Renderer\+::\+Renderer\+::\+Begin\+Rendering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画を開始する時に実行する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_ab35779830c25992af7a9a9d53423f817}\label{class_effekseer_renderer_1_1_renderer_ab35779830c25992af7a9a9d53423f817}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Create\+Model\+Loader@{Create\+Model\+Loader}}
+\index{Create\+Model\+Loader@{Create\+Model\+Loader}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Model\+Loader()}{CreateModelLoader()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_model_loader}{Effekseer\+::\+Model\+Loader}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Create\+Model\+Loader (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_effekseer_1_1_file_interface}{Effekseer\+::\+File\+Interface}} $\ast$}]{file\+Interface = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+標準のモデル読込クラスを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a7cbbeb73fa35b6cf356fcef7499301fb}\label{class_effekseer_renderer_1_1_renderer_a7cbbeb73fa35b6cf356fcef7499301fb}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Create\+Model\+Renderer@{Create\+Model\+Renderer}}
+\index{Create\+Model\+Renderer@{Create\+Model\+Renderer}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Model\+Renderer()}{CreateModelRenderer()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_model_renderer}{Effekseer\+::\+Model\+Renderer}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Create\+Model\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+モデルレンダラーを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_ac65157c02f8936e054c2525e4722a4f7}\label{class_effekseer_renderer_1_1_renderer_ac65157c02f8936e054c2525e4722a4f7}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Create\+Ribbon\+Renderer@{Create\+Ribbon\+Renderer}}
+\index{Create\+Ribbon\+Renderer@{Create\+Ribbon\+Renderer}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Ribbon\+Renderer()}{CreateRibbonRenderer()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Effekseer\+::\+Ribbon\+Renderer}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Create\+Ribbon\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リボンレンダラーを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a84dec1c70cab5984ce151753b5c9bcb9}\label{class_effekseer_renderer_1_1_renderer_a84dec1c70cab5984ce151753b5c9bcb9}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Create\+Ring\+Renderer@{Create\+Ring\+Renderer}}
+\index{Create\+Ring\+Renderer@{Create\+Ring\+Renderer}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Ring\+Renderer()}{CreateRingRenderer()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_ring_renderer}{Effekseer\+::\+Ring\+Renderer}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Create\+Ring\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リングレンダラーを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_abecf62202fe3d54f4edf6c43d701188b}\label{class_effekseer_renderer_1_1_renderer_abecf62202fe3d54f4edf6c43d701188b}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Create\+Sprite\+Renderer@{Create\+Sprite\+Renderer}}
+\index{Create\+Sprite\+Renderer@{Create\+Sprite\+Renderer}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Sprite\+Renderer()}{CreateSpriteRenderer()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Effekseer\+::\+Sprite\+Renderer}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Create\+Sprite\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+スプライトレンダラーを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a13e29065eaca81d5191d9bad1421c408}\label{class_effekseer_renderer_1_1_renderer_a13e29065eaca81d5191d9bad1421c408}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Create\+Texture\+Loader@{Create\+Texture\+Loader}}
+\index{Create\+Texture\+Loader@{Create\+Texture\+Loader}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Texture\+Loader()}{CreateTextureLoader()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Effekseer\+::\+Texture\+Loader}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Create\+Texture\+Loader (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_effekseer_1_1_file_interface}{Effekseer\+::\+File\+Interface}} $\ast$}]{file\+Interface = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+標準のテクスチャ読込クラスを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a38cff31386fce6fe0122a4ac5804fd8f}\label{class_effekseer_renderer_1_1_renderer_a38cff31386fce6fe0122a4ac5804fd8f}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Create\+Track\+Renderer@{Create\+Track\+Renderer}}
+\index{Create\+Track\+Renderer@{Create\+Track\+Renderer}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Track\+Renderer()}{CreateTrackRenderer()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_track_renderer}{Effekseer\+::\+Track\+Renderer}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Create\+Track\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+軌跡レンダラーを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a8da94391eb26a2bd04830e4d7fcd0bd0}\label{class_effekseer_renderer_1_1_renderer_a8da94391eb26a2bd04830e4d7fcd0bd0}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+このインスタンスを破棄する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_aaa6df6f62aead71652bdeb596d0a7ef4}\label{class_effekseer_renderer_1_1_renderer_aaa6df6f62aead71652bdeb596d0a7ef4}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!End\+Rendering@{End\+Rendering}}
+\index{End\+Rendering@{End\+Rendering}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{End\+Rendering()}{EndRendering()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+Renderer\+::\+Renderer\+::\+End\+Rendering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画を終了する時に実行する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a9c386cbe84039115d2f7d224d8a9c41c}\label{class_effekseer_renderer_1_1_renderer_a9c386cbe84039115d2f7d224d8a9c41c}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Camera\+Matrix@{Get\+Camera\+Matrix}}
+\index{Get\+Camera\+Matrix@{Get\+Camera\+Matrix}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Camera\+Matrix()}{GetCameraMatrix()}}
+{\footnotesize\ttfamily virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}}\& Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Camera\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+カメラ行列を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a62e05934631fa04e75ffb87952200042}\label{class_effekseer_renderer_1_1_renderer_a62e05934631fa04e75ffb87952200042}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Camera\+Projection\+Matrix@{Get\+Camera\+Projection\+Matrix}}
+\index{Get\+Camera\+Projection\+Matrix@{Get\+Camera\+Projection\+Matrix}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Camera\+Projection\+Matrix()}{GetCameraProjectionMatrix()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}}\& Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Camera\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+カメラプロジェクション行列を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_af4db92a0262062bfcc8f3f2334e5a168}\label{class_effekseer_renderer_1_1_renderer_af4db92a0262062bfcc8f3f2334e5a168}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Distorting\+Callback@{Get\+Distorting\+Callback}}
+\index{Get\+Distorting\+Callback@{Get\+Distorting\+Callback}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Distorting\+Callback()}{GetDistortingCallback()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_distorting_callback}{Distorting\+Callback}}$\ast$ Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Distorting\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a1454194ae4005f7a9d5a66f4f56c4972}\label{class_effekseer_renderer_1_1_renderer_a1454194ae4005f7a9d5a66f4f56c4972}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Light\+Ambient\+Color@{Get\+Light\+Ambient\+Color}}
+\index{Get\+Light\+Ambient\+Color@{Get\+Light\+Ambient\+Color}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Light\+Ambient\+Color()}{GetLightAmbientColor()}}
+{\footnotesize\ttfamily virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}}\& Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Light\+Ambient\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ライトの環境光の色を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_af1ed44772dd362bd7dbed42823da0411}\label{class_effekseer_renderer_1_1_renderer_af1ed44772dd362bd7dbed42823da0411}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Light\+Color@{Get\+Light\+Color}}
+\index{Get\+Light\+Color@{Get\+Light\+Color}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Light\+Color()}{GetLightColor()}}
+{\footnotesize\ttfamily virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}}\& Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Light\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ライトの色を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a3da04ff6d2ad2a0126a7476703a7c019}\label{class_effekseer_renderer_1_1_renderer_a3da04ff6d2ad2a0126a7476703a7c019}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Light\+Direction@{Get\+Light\+Direction}}
+\index{Get\+Light\+Direction@{Get\+Light\+Direction}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Light\+Direction()}{GetLightDirection()}}
+{\footnotesize\ttfamily virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}}\& Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Light\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ライトの方向を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a7a94e69a46222064baf9394405a7c9a9}\label{class_effekseer_renderer_1_1_renderer_a7a94e69a46222064baf9394405a7c9a9}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Projection\+Matrix@{Get\+Projection\+Matrix}}
+\index{Get\+Projection\+Matrix@{Get\+Projection\+Matrix}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Projection\+Matrix()}{GetProjectionMatrix()}}
+{\footnotesize\ttfamily virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}}\& Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+投影行列を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_af30b6ab25e7c03a3f70656c954e8db09}\label{class_effekseer_renderer_1_1_renderer_af30b6ab25e7c03a3f70656c954e8db09}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Square\+Max\+Count@{Get\+Square\+Max\+Count}}
+\index{Get\+Square\+Max\+Count@{Get\+Square\+Max\+Count}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Square\+Max\+Count()}{GetSquareMaxCount()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Square\+Max\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+最大描画スプライト数を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a5cf709d5b02e229f94efeec1e08951c4}\label{class_effekseer_renderer_1_1_renderer_a5cf709d5b02e229f94efeec1e08951c4}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!On\+Lost\+Device@{On\+Lost\+Device}}
+\index{On\+Lost\+Device@{On\+Lost\+Device}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Lost\+Device()}{OnLostDevice()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+On\+Lost\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+デバイスロストが発生した時に実行する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a2a4e579c8c8b6e368e37a854cbf4c0ec}\label{class_effekseer_renderer_1_1_renderer_a2a4e579c8c8b6e368e37a854cbf4c0ec}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!On\+Reset\+Device@{On\+Reset\+Device}}
+\index{On\+Reset\+Device@{On\+Reset\+Device}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Reset\+Device()}{OnResetDevice()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+On\+Reset\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+デバイスがリセットされた時に実行する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a229d0aca027c72e6736db487efbbddeb}\label{class_effekseer_renderer_1_1_renderer_a229d0aca027c72e6736db487efbbddeb}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Reset\+Render\+State@{Reset\+Render\+State}}
+\index{Reset\+Render\+State@{Reset\+Render\+State}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Reset\+Render\+State()}{ResetRenderState()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Reset\+Render\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+レンダーステートを強制的にリセットする。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a406e4bf44f11d3437af46cca718529b0}\label{class_effekseer_renderer_1_1_renderer_a406e4bf44f11d3437af46cca718529b0}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Camera\+Matrix@{Set\+Camera\+Matrix}}
+\index{Set\+Camera\+Matrix@{Set\+Camera\+Matrix}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Camera\+Matrix()}{SetCameraMatrix()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Camera\+Matrix (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+カメラ行列を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a8806b5a83c5ea73e09662f4a0869f8f0}\label{class_effekseer_renderer_1_1_renderer_a8806b5a83c5ea73e09662f4a0869f8f0}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Distorting\+Callback@{Set\+Distorting\+Callback}}
+\index{Set\+Distorting\+Callback@{Set\+Distorting\+Callback}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Distorting\+Callback()}{SetDistortingCallback()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Distorting\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_renderer_1_1_distorting_callback}{Distorting\+Callback}} $\ast$}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_aebc954d0b421ded11b7420361b987094}\label{class_effekseer_renderer_1_1_renderer_aebc954d0b421ded11b7420361b987094}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Light\+Ambient\+Color@{Set\+Light\+Ambient\+Color}}
+\index{Set\+Light\+Ambient\+Color@{Set\+Light\+Ambient\+Color}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Light\+Ambient\+Color()}{SetLightAmbientColor()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Ambient\+Color (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ライトの環境光の色を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a53268363d6c1ed36bd9119860d058808}\label{class_effekseer_renderer_1_1_renderer_a53268363d6c1ed36bd9119860d058808}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Light\+Color@{Set\+Light\+Color}}
+\index{Set\+Light\+Color@{Set\+Light\+Color}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Light\+Color()}{SetLightColor()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Color (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ライトの色を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a28d4468e4a1ca40c585e7b6c88dd1849}\label{class_effekseer_renderer_1_1_renderer_a28d4468e4a1ca40c585e7b6c88dd1849}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Light\+Direction@{Set\+Light\+Direction}}
+\index{Set\+Light\+Direction@{Set\+Light\+Direction}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Light\+Direction()}{SetLightDirection()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Direction (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ライトの方向を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a270c020aeb8cef8b0f1a9a02980d685d}\label{class_effekseer_renderer_1_1_renderer_a270c020aeb8cef8b0f1a9a02980d685d}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Projection\+Matrix@{Set\+Projection\+Matrix}}
+\index{Set\+Projection\+Matrix@{Set\+Projection\+Matrix}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Projection\+Matrix()}{SetProjectionMatrix()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+投影行列を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_ac6de8a0c0d65c03d3242ccfc9946c91c}\label{class_effekseer_renderer_1_1_renderer_ac6de8a0c0d65c03d3242ccfc9946c91c}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Restoration\+Of\+States\+Flag@{Set\+Restoration\+Of\+States\+Flag}}
+\index{Set\+Restoration\+Of\+States\+Flag@{Set\+Restoration\+Of\+States\+Flag}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Restoration\+Of\+States\+Flag()}{SetRestorationOfStatesFlag()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Restoration\+Of\+States\+Flag (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ステートを復帰するかどうかのフラグを設定する。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_renderer_d_x9_8h}{Effekseer\+Renderer\+D\+X9.\+h}}\end{DoxyCompactItemize}

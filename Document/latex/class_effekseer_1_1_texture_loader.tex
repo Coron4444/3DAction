@@ -1,0 +1,97 @@
+\hypertarget{class_effekseer_1_1_texture_loader}{}\section{Effekseer\+:\+:Texture\+Loader クラス}
+\label{class_effekseer_1_1_texture_loader}\index{Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}}
+
+
+テクスチャ読み込み破棄関数指定クラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_texture_loader_a41dcac0ae6143fd422486aa504021f2c}{Texture\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_texture_loader_a95b67c6e4fd84a77eb24b8e73b79ab14}{$\sim$\+Texture\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Texture\+Data}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_texture_loader_a91cc55233a4131d9994857dfe611460b}{Load}} (const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$path, \mbox{\hyperlink{namespace_effekseer_a781925ba462884c4ef87fd38ffdedba4}{Texture\+Type}} texture\+Type)
+\begin{DoxyCompactList}\small\item\em テクスチャを読み込む。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_texture_loader_a128fdd6e613758012fb9ceaf2881adb7}{Unload}} (\mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Texture\+Data}} $\ast$data)
+\begin{DoxyCompactList}\small\item\em テクスチャを破棄する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+テクスチャ読み込み破棄関数指定クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_texture_loader_a41dcac0ae6143fd422486aa504021f2c}\label{class_effekseer_1_1_texture_loader_a41dcac0ae6143fd422486aa504021f2c}} 
+\index{Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}!Texture\+Loader@{Texture\+Loader}}
+\index{Texture\+Loader@{Texture\+Loader}!Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{Texture\+Loader()}{TextureLoader()}}
+{\footnotesize\ttfamily Effekseer\+::\+Texture\+Loader\+::\+Texture\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_effekseer_1_1_texture_loader_a95b67c6e4fd84a77eb24b8e73b79ab14}\label{class_effekseer_1_1_texture_loader_a95b67c6e4fd84a77eb24b8e73b79ab14}} 
+\index{Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}!````~Texture\+Loader@{$\sim$\+Texture\+Loader}}
+\index{````~Texture\+Loader@{$\sim$\+Texture\+Loader}!Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{$\sim$\+Texture\+Loader()}{~TextureLoader()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Texture\+Loader\+::$\sim$\+Texture\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_texture_loader_a91cc55233a4131d9994857dfe611460b}\label{class_effekseer_1_1_texture_loader_a91cc55233a4131d9994857dfe611460b}} 
+\index{Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}!Load@{Load}}
+\index{Load@{Load}!Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Texture\+Data}}$\ast$ Effekseer\+::\+Texture\+Loader\+::\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{path,  }\item[{\mbox{\hyperlink{namespace_effekseer_a781925ba462884c4ef87fd38ffdedba4}{Texture\+Type}}}]{texture\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+テクスチャを読み込む。 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & \mbox{[}in\mbox{]} 読み込み元パス \\
+\hline
+{\em texture\+Type} & \mbox{[}in\mbox{]} テクスチャの種類 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+テクスチャのポインタ 
+\end{DoxyReturn}
+\begin{DoxyNote}{覚え書き}
+テクスチャを読み込む。 \+::\+Effekseer\+::\+Effect\+::\+Create実行時に使用される。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_texture_loader_a128fdd6e613758012fb9ceaf2881adb7}\label{class_effekseer_1_1_texture_loader_a128fdd6e613758012fb9ceaf2881adb7}} 
+\index{Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}!Unload@{Unload}}
+\index{Unload@{Unload}!Effekseer\+::\+Texture\+Loader@{Effekseer\+::\+Texture\+Loader}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Texture\+Loader\+::\+Unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Texture\+Data}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+テクスチャを破棄する。 
+
+
+\begin{DoxyParams}{引数}
+{\em data} & \mbox{[}in\mbox{]} テクスチャ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{覚え書き}
+テクスチャを破棄する。 \+::\+Effekseer\+::\+Effectのインスタンスが破棄された時に使用される。 
+\end{DoxyNote}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

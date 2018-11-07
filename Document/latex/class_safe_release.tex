@@ -1,0 +1,81 @@
+\hypertarget{class_safe_release}{}\section{Safe\+Release クラス}
+\label{class_safe_release}\index{Safe\+Release@{Safe\+Release}}
+
+
+セーフリリースクラス(static)  
+
+
+
+
+{\ttfamily \#include $<$Safe\+Release.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Type $>$ }\\static void \mbox{\hyperlink{class_safe_release_a6ecab682df939c28d8867a67c2f4b51f}{Normal}} (Type $\ast$$\ast$pointer)
+\begin{DoxyCompactList}\small\item\em 解放関数 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Type $>$ }\\static void \mbox{\hyperlink{class_safe_release_a06160f5466a88f021e6f28489de9df1e}{Plus\+Uninit}} (Type $\ast$$\ast$pointer)
+\begin{DoxyCompactList}\small\item\em 解放関数(終了有) \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Type $>$ }\\static void \mbox{\hyperlink{class_safe_release_a507950335a85da67c1722cce83dca9ae}{Plus\+Release}} (Type $\ast$$\ast$pointer)
+\begin{DoxyCompactList}\small\item\em 解放関数(Release有) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+セーフリリースクラス(static) 
+
+動的オブジェクトの安全な解放を担う関数群クラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_safe_release_a6ecab682df939c28d8867a67c2f4b51f}\label{class_safe_release_a6ecab682df939c28d8867a67c2f4b51f}} 
+\index{Safe\+Release@{Safe\+Release}!Normal@{Normal}}
+\index{Normal@{Normal}!Safe\+Release@{Safe\+Release}}
+\subsubsection{\texorpdfstring{Normal()}{Normal()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+static void Safe\+Release\+::\+Normal (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+解放関数 
+
+
+\begin{DoxyParams}{引数}
+{\em pointer} & \+: 解放対象のポインタ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_safe_release_a507950335a85da67c1722cce83dca9ae}\label{class_safe_release_a507950335a85da67c1722cce83dca9ae}} 
+\index{Safe\+Release@{Safe\+Release}!Plus\+Release@{Plus\+Release}}
+\index{Plus\+Release@{Plus\+Release}!Safe\+Release@{Safe\+Release}}
+\subsubsection{\texorpdfstring{Plus\+Release()}{PlusRelease()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+static void Safe\+Release\+::\+Plus\+Release (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+解放関数(Release有) 
+
+
+\begin{DoxyParams}{引数}
+{\em pointer} & \+: 解放対象のポインタ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_safe_release_a06160f5466a88f021e6f28489de9df1e}\label{class_safe_release_a06160f5466a88f021e6f28489de9df1e}} 
+\index{Safe\+Release@{Safe\+Release}!Plus\+Uninit@{Plus\+Uninit}}
+\index{Plus\+Uninit@{Plus\+Uninit}!Safe\+Release@{Safe\+Release}}
+\subsubsection{\texorpdfstring{Plus\+Uninit()}{PlusUninit()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+static void Safe\+Release\+::\+Plus\+Uninit (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+解放関数(終了有) 
+
+
+\begin{DoxyParams}{引数}
+{\em pointer} & \+: 解放対象のポインタ \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Safe\+Release/\mbox{\hyperlink{_safe_release_8h}{Safe\+Release.\+h}}\end{DoxyCompactItemize}

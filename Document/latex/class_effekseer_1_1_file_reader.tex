@@ -1,0 +1,98 @@
+\hypertarget{class_effekseer_1_1_file_reader}{}\section{Effekseer\+:\+:File\+Reader クラス}
+\label{class_effekseer_1_1_file_reader}\index{Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}}
+
+
+ファイル読み込みクラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+Effekseer\+:\+:File\+Reader の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_effekseer_1_1_file_reader}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_file_reader_aa5ae7f1e7a6c8a8147e4f6d819b361c0}{File\+Reader}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_file_reader_a694f051a464abcda384734c3612062f2}{$\sim$\+File\+Reader}} ()
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_file_reader_a6274b775770e8ac9ba4f212c80e94be1}{Read}} (\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$buffer, size\+\_\+t \mbox{\hyperlink{namespace_effekseer_a73c68f3d33539d30844b9d1e058077f7}{size}})=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_file_reader_a5daeb98049f994bccf874b2374e36a25}{Seek}} (\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} position)=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_file_reader_ad69aa533374ee6661938c7a81495b6d7}{Get\+Position}} ()=0
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_file_reader_ae802d02a06437baa0ed74f1927617924}{Get\+Length}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ファイル読み込みクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_file_reader_aa5ae7f1e7a6c8a8147e4f6d819b361c0}\label{class_effekseer_1_1_file_reader_aa5ae7f1e7a6c8a8147e4f6d819b361c0}} 
+\index{Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}!File\+Reader@{File\+Reader}}
+\index{File\+Reader@{File\+Reader}!Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{File\+Reader()}{FileReader()}}
+{\footnotesize\ttfamily Effekseer\+::\+File\+Reader\+::\+File\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_file_reader_a694f051a464abcda384734c3612062f2}\label{class_effekseer_1_1_file_reader_a694f051a464abcda384734c3612062f2}} 
+\index{Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}!````~File\+Reader@{$\sim$\+File\+Reader}}
+\index{````~File\+Reader@{$\sim$\+File\+Reader}!Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+File\+Reader()}{~FileReader()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+File\+Reader\+::$\sim$\+File\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_file_reader_ae802d02a06437baa0ed74f1927617924}\label{class_effekseer_1_1_file_reader_ae802d02a06437baa0ed74f1927617924}} 
+\index{Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}!Get\+Length@{Get\+Length}}
+\index{Get\+Length@{Get\+Length}!Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Length()}{GetLength()}}
+{\footnotesize\ttfamily virtual size\+\_\+t Effekseer\+::\+File\+Reader\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_effekseer_1_1_default_file_reader_a2663a6f3b6bf3aaabadcfe371a85b15d}{Effekseer\+::\+Default\+File\+Reader}}で実装されています。
+
+\mbox{\Hypertarget{class_effekseer_1_1_file_reader_ad69aa533374ee6661938c7a81495b6d7}\label{class_effekseer_1_1_file_reader_ad69aa533374ee6661938c7a81495b6d7}} 
+\index{Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+File\+Reader\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_effekseer_1_1_default_file_reader_a86001f21782b7cb40a5e0ca4ee155aca}{Effekseer\+::\+Default\+File\+Reader}}で実装されています。
+
+\mbox{\Hypertarget{class_effekseer_1_1_file_reader_a6274b775770e8ac9ba4f212c80e94be1}\label{class_effekseer_1_1_file_reader_a6274b775770e8ac9ba4f212c80e94be1}} 
+\index{Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}!Read@{Read}}
+\index{Read@{Read}!Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily virtual size\+\_\+t Effekseer\+::\+File\+Reader\+::\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{buffer,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_effekseer_1_1_default_file_reader_ae00fd8b1031e13bd5a43d74f03d7ed79}{Effekseer\+::\+Default\+File\+Reader}}で実装されています。
+
+\mbox{\Hypertarget{class_effekseer_1_1_file_reader_a5daeb98049f994bccf874b2374e36a25}\label{class_effekseer_1_1_file_reader_a5daeb98049f994bccf874b2374e36a25}} 
+\index{Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}!Seek@{Seek}}
+\index{Seek@{Seek}!Effekseer\+::\+File\+Reader@{Effekseer\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+File\+Reader\+::\+Seek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_effekseer_1_1_default_file_reader_a9c9e821e4508708a2c91a9ab486b2709}{Effekseer\+::\+Default\+File\+Reader}}で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

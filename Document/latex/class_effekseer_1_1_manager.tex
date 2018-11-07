@@ -1,0 +1,1214 @@
+\hypertarget{class_effekseer_1_1_manager}{}\section{Effekseer\+:\+:Manager クラス}
+\label{class_effekseer_1_1_manager}\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+
+
+エフェクト管理クラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+Effekseer\+:\+:Manager の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_effekseer_1_1_manager}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a59eeea8d94285186a5d04dfad0b682ff}{Destroy}} ()=0
+\begin{DoxyCompactList}\small\item\em マネージャーを破棄する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_a2f9a04a7b2d08a8f2173ce47e57ff742}{Malloc\+Func}} \mbox{\hyperlink{class_effekseer_1_1_manager_aacbf3bb08982ff3b7fd3c5685b88c286}{Get\+Malloc\+Func}} () const =0
+\begin{DoxyCompactList}\small\item\em メモリ確保関数を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_af1b85d9b77c7e923a399c3cc84a34fbc}{Set\+Malloc\+Func}} (\mbox{\hyperlink{namespace_effekseer_a2f9a04a7b2d08a8f2173ce47e57ff742}{Malloc\+Func}} func)=0
+\begin{DoxyCompactList}\small\item\em メモリ確保関数を設定する。 \end{DoxyCompactList}\item 
+virtual Free\+Func \mbox{\hyperlink{class_effekseer_1_1_manager_a83bfa1c67a8d52a09a6fa5481e11697c}{Get\+Free\+Func}} () const =0
+\begin{DoxyCompactList}\small\item\em メモリ破棄関数を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a81402561ce17b0d4c681811affbd7340}{Set\+Free\+Func}} (Free\+Func func)=0
+\begin{DoxyCompactList}\small\item\em メモリ破棄関数を設定する。 \end{DoxyCompactList}\item 
+virtual Rand\+Func \mbox{\hyperlink{class_effekseer_1_1_manager_a1694b05f00253f9468d4692e4e5f462b}{Get\+Rand\+Func}} () const =0
+\begin{DoxyCompactList}\small\item\em ランダム関数を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_acff5857772ae9674b6f96ffd4de28f69}{Set\+Rand\+Func}} (Rand\+Func func)=0
+\begin{DoxyCompactList}\small\item\em ランダム関数を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_manager_a2ae8c1ff28fedf995f65a3a6c83d840a}{Get\+Rand\+Max}} () const =0
+\begin{DoxyCompactList}\small\item\em ランダム最大値を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_ad2e4e1458d5e1091f5cb8073ae8e60eb}{Set\+Rand\+Max}} (\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} max\+\_\+)=0
+\begin{DoxyCompactList}\small\item\em ランダム関数を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} \mbox{\hyperlink{class_effekseer_1_1_manager_a10a79ead8392a39a9f43e771c7de067c}{Get\+Coordinate\+System}} () const =0
+\begin{DoxyCompactList}\small\item\em 座標系を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a804730036eada2d3e1883ed366c265cc}{Set\+Coordinate\+System}} (\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} coordinate\+System)=0
+\begin{DoxyCompactList}\small\item\em 座標系を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Sprite\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a64de7501affd3c08106b0442a4e2a76c}{Get\+Sprite\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em スプライト描画機能を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a1b4f22221e7068d6604c18aa4ca4b80e}{Set\+Sprite\+Renderer}} (\mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Sprite\+Renderer}} $\ast$renderer)=0
+\begin{DoxyCompactList}\small\item\em スプライト描画機能を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Ribbon\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a9173c3b04e430de83f5096fe28cff9e1}{Get\+Ribbon\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em ストライプ描画機能を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_afe6fa26d93c9c80a0afb8f4fbe0afe20}{Set\+Ribbon\+Renderer}} (\mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Ribbon\+Renderer}} $\ast$renderer)=0
+\begin{DoxyCompactList}\small\item\em ストライプ描画機能を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_ring_renderer}{Ring\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a20dcb7324f1b4137cbcd872cfd90def2}{Get\+Ring\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em リング描画機能を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_afe6f77af79fd2bea3a36eed5b5dea383}{Set\+Ring\+Renderer}} (\mbox{\hyperlink{class_effekseer_1_1_ring_renderer}{Ring\+Renderer}} $\ast$renderer)=0
+\begin{DoxyCompactList}\small\item\em リング描画機能を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_model_renderer}{Model\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a6ed37b18b9e99ff77f9608da3f4db93a}{Get\+Model\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em モデル描画機能を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_aa423ee424d0b713ac4939fc7faf39b9c}{Set\+Model\+Renderer}} (\mbox{\hyperlink{class_effekseer_1_1_model_renderer}{Model\+Renderer}} $\ast$renderer)=0
+\begin{DoxyCompactList}\small\item\em モデル描画機能を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_track_renderer}{Track\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a0ad29aecf744eeba8896cb6fa77488cf}{Get\+Track\+Renderer}} ()=0
+\begin{DoxyCompactList}\small\item\em 軌跡描画機能を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a7bff3a7ec23d6ae4a66b6f6ba4bd58fc}{Set\+Track\+Renderer}} (\mbox{\hyperlink{class_effekseer_1_1_track_renderer}{Track\+Renderer}} $\ast$renderer)=0
+\begin{DoxyCompactList}\small\item\em 軌跡描画機能を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_setting}{Setting}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_ac32fce48f01429c6274b6237b61ec47d}{Get\+Setting}} ()=0
+\begin{DoxyCompactList}\small\item\em 設定クラスを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a4de59a95985d8042b5f82fca2c31b985}{Set\+Setting}} (\mbox{\hyperlink{class_effekseer_1_1_setting}{Setting}} $\ast$setting)=0
+\begin{DoxyCompactList}\small\item\em 設定クラスを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_effect_loader}{Effect\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_af757373ffa3cdbb1700b29c0903425d7}{Get\+Effect\+Loader}} ()=0
+\begin{DoxyCompactList}\small\item\em エフェクト読込クラスを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a1e183d9310c8562279707786e5503f8f}{Set\+Effect\+Loader}} (\mbox{\hyperlink{class_effekseer_1_1_effect_loader}{Effect\+Loader}} $\ast$effect\+Loader)=0
+\begin{DoxyCompactList}\small\item\em エフェクト読込クラスを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Texture\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_ae143d53bb483cb38d6371eff52d1a833}{Get\+Texture\+Loader}} ()=0
+\begin{DoxyCompactList}\small\item\em テクスチャ読込クラスを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a35915c6406f06e7502abed5eeba6ee51}{Set\+Texture\+Loader}} (\mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Texture\+Loader}} $\ast$texture\+Loader)=0
+\begin{DoxyCompactList}\small\item\em テクスチャ読込クラスを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_sound_player}{Sound\+Player}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a2c176faba545ccc52b2255dc905f96b5}{Get\+Sound\+Player}} ()=0
+\begin{DoxyCompactList}\small\item\em サウンド再生機能を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_af08602f559cd1f75bcaacfd8b1ec0840}{Set\+Sound\+Player}} (\mbox{\hyperlink{class_effekseer_1_1_sound_player}{Sound\+Player}} $\ast$sound\+Player)=0
+\begin{DoxyCompactList}\small\item\em サウンド再生機能を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Sound\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a9d6e1710083866bf1fc8953f340df002}{Get\+Sound\+Loader}} ()=0
+\begin{DoxyCompactList}\small\item\em サウンド読込クラスを取得する \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_afc9015a7a866accf73ab3b295bff8e06}{Set\+Sound\+Loader}} (\mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Sound\+Loader}} $\ast$sound\+Loader)=0
+\begin{DoxyCompactList}\small\item\em サウンド読込クラスを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_model_loader}{Model\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a6afd86fbdfb8b3e6d12c9a80bfb3f80e}{Get\+Model\+Loader}} ()=0
+\begin{DoxyCompactList}\small\item\em モデル読込クラスを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a994104b9b353a09861d27ec87b09fa1c}{Set\+Model\+Loader}} (\mbox{\hyperlink{class_effekseer_1_1_model_loader}{Model\+Loader}} $\ast$model\+Loader)=0
+\begin{DoxyCompactList}\small\item\em モデル読込クラスを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a7a4a9ff929146f8ea21aa4705b352baa}{Stop\+Effect}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトを停止する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a65a6043aace92f52bcb8f7fc1052d3f0}{Stop\+All\+Effects}} ()=0
+\begin{DoxyCompactList}\small\item\em 全てのエフェクトを停止する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_adbde475d5977ca36c0a3a4c1e6878b33}{Stop\+Root}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトのルートだけを停止する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_ad7989b68ceb3125cf6ef0d4062462a3d}{Stop\+Root}} (\mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$effect)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのルートだけを停止する。 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_manager_ad95297e9170c9f9874eb6bf951aa5dc0}{Exists}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスが存在しているか取得する。 \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_manager_a4e4831b6514c683cd9cabf5cfe1103ab}{Get\+Instance\+Count}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトに使用されているインスタンス数を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \mbox{\hyperlink{class_effekseer_1_1_manager_aa5d7a667c75a81bc30f65483535b6a7f}{Get\+Matrix}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスに設定されている行列を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a69d0768ed69c30d3993ececa6159c4dd}{Set\+Matrix}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&mat)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスに変換行列を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \mbox{\hyperlink{class_effekseer_1_1_manager_adef5e990faa38e39b9aa57f03f485747}{Get\+Location}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスの位置を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_aa35fc7968dadeb82e58bb0c472dfb8b1}{Set\+Location}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, float x, float y, float z)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスの位置を指定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a352b7682da97c9811e3b91350cf8cae9}{Set\+Location}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&location)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスの位置を指定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a8f391814f681fc7acc4e8ed785c80cbc}{Add\+Location}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&location)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスの位置に加算する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_aab0df458615143d664e8f84d176a5be6}{Set\+Rotation}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, float x, float y, float z)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスの回転角度を指定する。(ラジアン) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_ab47844dad076bb833b0176e877736cfa}{Set\+Rotation}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&axis, float angle)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスの任意軸周りの反時計周りの回転角度を指定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a14e45b2fc8ff1d2df98ce94c70b8cde1}{Set\+Scale}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, float x, float y, float z)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスの拡大率を指定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a3c709343770c431420772ab3ca6639e1}{Set\+Target\+Location}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, float x, float y, float z)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスのターゲット位置を指定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a193e7d5d036ff717ba3755c1fda03758}{Set\+Target\+Location}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&location)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスのターゲット位置を指定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \mbox{\hyperlink{class_effekseer_1_1_manager_a095085007e1df5de623fea1a96c31a04}{Get\+Base\+Matrix}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトのベース行列を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a0f94ad0b6cd362283bc216515a89822c}{Set\+Base\+Matrix}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&mat)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのベース行列を設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a62c24747994008dfcb84a0adcd53b3ad}{Set\+Removing\+Callback}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, Effect\+Instance\+Removing\+Callback callback)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスに廃棄時のコールバックを設定する。 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_manager_a200e7b1812c128a4d88cca7d1be57c0e}{Get\+Shown}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em 指定したエフェクトのパーティクルが表示されているか取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_ad204b93de6e5c7a05c63cad0115c20d5}{Set\+Shown}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, bool shown)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスを\+Draw時に描画するか設定する。 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_manager_af30924b879f3463d504991bf9780dfac}{Get\+Paused}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em 指定したエフェクトのパーティクルが一時停止されているか取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a6414ea849302b7cef51b61a38c7ecd76}{Set\+Paused}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, bool paused)=0
+\begin{DoxyCompactList}\small\item\em 指定したエフェクトのパーティクルを一時停止、もしくは再開する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a08c4c39a56fcc93b8acb284ff9bc933b}{Set\+Paused\+To\+All\+Effects}} (bool paused)=0
+\begin{DoxyCompactList}\small\item\em 全てのエフェクトのパーティクルを一時停止、もしくは再開する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_aa85b08562c442cfdce24781158a71431}{Set\+Speed}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, float speed)=0
+\begin{DoxyCompactList}\small\item\em エフェクトのインスタンスを再生スピードを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a3829cb7c98f3c41d79394eead1eaaa04}{Set\+Auto\+Drawing}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, bool auto\+Draw)=0
+\begin{DoxyCompactList}\small\item\em エフェクトが\+Drawで描画されるか設定する。 auto\+Drawがfalseの場合、\+Draw\+Handleで描画する必要がある。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_ab810f714df5d12c566664183f365cbf4}{Flip}} ()=0
+\begin{DoxyCompactList}\small\item\em 今までの\+Play等の処理を\+Update実行時に適用するようにする。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_ac086ec64cb5f99172e8bf655b77e1464}{Update}} (float delta\+Frame=1.\+0f)=0
+\begin{DoxyCompactList}\small\item\em 更新処理を行う。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a8b9585b3bee11d4d0d7b29b742178f96}{Begin\+Update}} ()=0
+\begin{DoxyCompactList}\small\item\em 更新処理を開始する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a49311566caa5abcbff1b836473b046ab}{End\+Update}} ()=0
+\begin{DoxyCompactList}\small\item\em 更新処理を終了する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_afe8a0df796e161f68a511540c76df839}{Update\+Handle}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, float delta\+Frame=1.\+0f)=0
+\begin{DoxyCompactList}\small\item\em ハンドル単位の更新を行う。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a17431b7d96325535fa62bcbb066f0a9c}{Draw}} ()=0
+\begin{DoxyCompactList}\small\item\em 描画処理を行う。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a9eaa0c0f968351b53c46f9735cc40a79}{Draw\+Handle}} (\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}})=0
+\begin{DoxyCompactList}\small\item\em ハンドル単位の描画処理を行う。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} \mbox{\hyperlink{class_effekseer_1_1_manager_a5ea3211a3670843061238976dda54a4f}{Play}} (\mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$effect, float x, float y, float z)=0
+\begin{DoxyCompactList}\small\item\em 再生する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_manager_a0f5a05a0911243b56fe6aaa259d677df}{Get\+Update\+Time}} () const =0
+\begin{DoxyCompactList}\small\item\em Update処理時間を取得。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_manager_a24c2805010a8fe5eca1115d48d8c5522}{Get\+Draw\+Time}} () const =0
+\begin{DoxyCompactList}\small\item\em Draw処理時間を取得。 \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \mbox{\hyperlink{class_effekseer_1_1_manager_acd60c8fb65e5189dd9fb5ed7d3e7cc71}{Get\+Rest\+Instances\+Count}} () const =0
+\begin{DoxyCompactList}\small\item\em 残りの確保したインスタンス数を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a38e954ce0e584f2830d90b5d7763614b}{Create\+Culling\+World}} (float xsize, float ysize, float zsize, int32\+\_\+t layer\+Count)=0
+\begin{DoxyCompactList}\small\item\em エフェクトをカリングし描画負荷を減らすための空間を生成する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a95c20ca6352c0e68a6fa1d271bcabc1f}{Calc\+Culling}} (const \mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Matrix44}} \&camera\+Proj\+Mat, bool is\+Open\+GL)=0
+\begin{DoxyCompactList}\small\item\em カリングを行い、カリングされたオブジェクトのみを描画するようにする。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_manager_a15bf6eee981b682ed35b7660e8caf435}{Ressign\+Culling}} ()=0
+\begin{DoxyCompactList}\small\item\em 現在存在するエフェクトのハンドルからカリングの空間を配置しなおす。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_manager_a1de74a159f3646d325f49e940e72181c}{Create}} (\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} instance\+\_\+max, bool auto\+Flip=true)
+\begin{DoxyCompactList}\small\item\em マネージャーを生成する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_manager_a95f452d6946c93cece08532dc73e8fa2}{Manager}} ()
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_manager_a278221f5fd9ef62c4a881f94caac06b3}{$\sim$\+Manager}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+エフェクト管理クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a95f452d6946c93cece08532dc73e8fa2}\label{class_effekseer_1_1_manager_a95f452d6946c93cece08532dc73e8fa2}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Manager()}{Manager()}}
+{\footnotesize\ttfamily Effekseer\+::\+Manager\+::\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a278221f5fd9ef62c4a881f94caac06b3}\label{class_effekseer_1_1_manager_a278221f5fd9ef62c4a881f94caac06b3}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!````~Manager@{$\sim$\+Manager}}
+\index{````~Manager@{$\sim$\+Manager}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Manager()}{~Manager()}}
+{\footnotesize\ttfamily Effekseer\+::\+Manager\+::$\sim$\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a8f391814f681fc7acc4e8ed785c80cbc}\label{class_effekseer_1_1_manager_a8f391814f681fc7acc4e8ed785c80cbc}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Add\+Location@{Add\+Location}}
+\index{Add\+Location@{Add\+Location}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Location()}{AddLocation()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Add\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスの位置に加算する。 
+
+
+\begin{DoxyParams}{引数}
+{\em location} & \mbox{[}in\mbox{]} 加算する値 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a8b9585b3bee11d4d0d7b29b742178f96}\label{class_effekseer_1_1_manager_a8b9585b3bee11d4d0d7b29b742178f96}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Begin\+Update@{Begin\+Update}}
+\index{Begin\+Update@{Begin\+Update}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Begin\+Update()}{BeginUpdate()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Begin\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+更新処理を開始する。 
+
+\begin{DoxyNote}{覚え書き}
+Updateを実行する際は、実行する必要はない。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a95c20ca6352c0e68a6fa1d271bcabc1f}\label{class_effekseer_1_1_manager_a95c20ca6352c0e68a6fa1d271bcabc1f}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Calc\+Culling@{Calc\+Culling}}
+\index{Calc\+Culling@{Calc\+Culling}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Calc\+Culling()}{CalcCulling()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Calc\+Culling (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Matrix44}} \&}]{camera\+Proj\+Mat,  }\item[{bool}]{is\+Open\+GL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+カリングを行い、カリングされたオブジェクトのみを描画するようにする。 
+
+
+\begin{DoxyParams}{引数}
+{\em camera\+Proj\+Mat} & カメラプロジェクション行列 \\
+\hline
+{\em is\+Open\+GL} & Open\+G\+Lによる描画か? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a1de74a159f3646d325f49e940e72181c}\label{class_effekseer_1_1_manager_a1de74a159f3646d325f49e940e72181c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Create@{Create}}
+\index{Create@{Create}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}}$\ast$ Effekseer\+::\+Manager\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}}}]{instance\+\_\+max,  }\item[{bool}]{auto\+Flip = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+マネージャーを生成する。 
+
+
+\begin{DoxyParams}{引数}
+{\em instance\+\_\+max} & \mbox{[}in\mbox{]} 最大インスタンス数 \\
+\hline
+{\em auto\+Flip} & \mbox{[}in\mbox{]} 自動でスレッド間のデータを入れ替えるかどうか、を指定する。trueの場合、\+Update時に入れ替わる。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+マネージャー 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a38e954ce0e584f2830d90b5d7763614b}\label{class_effekseer_1_1_manager_a38e954ce0e584f2830d90b5d7763614b}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Create\+Culling\+World@{Create\+Culling\+World}}
+\index{Create\+Culling\+World@{Create\+Culling\+World}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Create\+Culling\+World()}{CreateCullingWorld()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Create\+Culling\+World (\begin{DoxyParamCaption}\item[{float}]{xsize,  }\item[{float}]{ysize,  }\item[{float}]{zsize,  }\item[{int32\+\_\+t}]{layer\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトをカリングし描画負荷を減らすための空間を生成する。 
+
+
+\begin{DoxyParams}{引数}
+{\em xsize} & X方向幅 \\
+\hline
+{\em ysize} & Y方向幅 \\
+\hline
+{\em zsize} & Z方向幅 \\
+\hline
+{\em layer\+Count} & 層数(大きいほどカリングの効率は上がるがメモリも大量に使用する) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a59eeea8d94285186a5d04dfad0b682ff}\label{class_effekseer_1_1_manager_a59eeea8d94285186a5d04dfad0b682ff}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+マネージャーを破棄する。 
+
+\begin{DoxyNote}{覚え書き}
+このマネージャーから生成されたエフェクトは全て強制的に破棄される。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a17431b7d96325535fa62bcbb066f0a9c}\label{class_effekseer_1_1_manager_a17431b7d96325535fa62bcbb066f0a9c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画処理を行う。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a9eaa0c0f968351b53c46f9735cc40a79}\label{class_effekseer_1_1_manager_a9eaa0c0f968351b53c46f9735cc40a79}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Draw\+Handle@{Draw\+Handle}}
+\index{Draw\+Handle@{Draw\+Handle}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Handle()}{DrawHandle()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Draw\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ハンドル単位の描画処理を行う。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a49311566caa5abcbff1b836473b046ab}\label{class_effekseer_1_1_manager_a49311566caa5abcbff1b836473b046ab}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!End\+Update@{End\+Update}}
+\index{End\+Update@{End\+Update}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{End\+Update()}{EndUpdate()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+End\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+更新処理を終了する。 
+
+\begin{DoxyNote}{覚え書き}
+Updateを実行する際は、実行する必要はない。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ad95297e9170c9f9874eb6bf951aa5dc0}\label{class_effekseer_1_1_manager_ad95297e9170c9f9874eb6bf951aa5dc0}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Exists@{Exists}}
+\index{Exists@{Exists}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Exists()}{Exists()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Manager\+::\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスが存在しているか取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+存在してるか? 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ab810f714df5d12c566664183f365cbf4}\label{class_effekseer_1_1_manager_ab810f714df5d12c566664183f365cbf4}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Flip@{Flip}}
+\index{Flip@{Flip}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Flip()}{Flip()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Flip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+今までの\+Play等の処理を\+Update実行時に適用するようにする。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a095085007e1df5de623fea1a96c31a04}\label{class_effekseer_1_1_manager_a095085007e1df5de623fea1a96c31a04}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Base\+Matrix@{Get\+Base\+Matrix}}
+\index{Get\+Base\+Matrix@{Get\+Base\+Matrix}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Base\+Matrix()}{GetBaseMatrix()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} Effekseer\+::\+Manager\+::\+Get\+Base\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのベース行列を取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+ベース行列 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a10a79ead8392a39a9f43e771c7de067c}\label{class_effekseer_1_1_manager_a10a79ead8392a39a9f43e771c7de067c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Coordinate\+System@{Get\+Coordinate\+System}}
+\index{Get\+Coordinate\+System@{Get\+Coordinate\+System}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Coordinate\+System()}{GetCoordinateSystem()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} Effekseer\+::\+Manager\+::\+Get\+Coordinate\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+座標系を取得する。 
+
+\begin{DoxyReturn}{戻り値}
+座標系 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a24c2805010a8fe5eca1115d48d8c5522}\label{class_effekseer_1_1_manager_a24c2805010a8fe5eca1115d48d8c5522}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Draw\+Time@{Get\+Draw\+Time}}
+\index{Get\+Draw\+Time@{Get\+Draw\+Time}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Time()}{GetDrawTime()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+Manager\+::\+Get\+Draw\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw処理時間を取得。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_af757373ffa3cdbb1700b29c0903425d7}\label{class_effekseer_1_1_manager_af757373ffa3cdbb1700b29c0903425d7}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Effect\+Loader@{Get\+Effect\+Loader}}
+\index{Get\+Effect\+Loader@{Get\+Effect\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Effect\+Loader()}{GetEffectLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_effect_loader}{Effect\+Loader}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Effect\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクト読込クラスを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a83bfa1c67a8d52a09a6fa5481e11697c}\label{class_effekseer_1_1_manager_a83bfa1c67a8d52a09a6fa5481e11697c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Free\+Func@{Get\+Free\+Func}}
+\index{Get\+Free\+Func@{Get\+Free\+Func}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Free\+Func()}{GetFreeFunc()}}
+{\footnotesize\ttfamily virtual Free\+Func Effekseer\+::\+Manager\+::\+Get\+Free\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+メモリ破棄関数を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a4e4831b6514c683cd9cabf5cfe1103ab}\label{class_effekseer_1_1_manager_a4e4831b6514c683cd9cabf5cfe1103ab}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Instance\+Count@{Get\+Instance\+Count}}
+\index{Get\+Instance\+Count@{Get\+Instance\+Count}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Instance\+Count()}{GetInstanceCount()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t Effekseer\+::\+Manager\+::\+Get\+Instance\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトに使用されているインスタンス数を取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+インスタンス数 
+\end{DoxyReturn}
+\begin{DoxyNote}{覚え書き}
+Rootも個数に含まれる。つまり、\+Root削除をしていない限り、 Managerに残っているインスタンス数+エフェクトに使用されているインスタンス数は存在している\+Rootの数だけ 最初に確保した個数よりも多く存在する。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_adef5e990faa38e39b9aa57f03f485747}\label{class_effekseer_1_1_manager_adef5e990faa38e39b9aa57f03f485747}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Location@{Get\+Location}}
+\index{Get\+Location@{Get\+Location}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Location()}{GetLocation()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} Effekseer\+::\+Manager\+::\+Get\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスの位置を取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+位置 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_aacbf3bb08982ff3b7fd3c5685b88c286}\label{class_effekseer_1_1_manager_aacbf3bb08982ff3b7fd3c5685b88c286}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Malloc\+Func@{Get\+Malloc\+Func}}
+\index{Get\+Malloc\+Func@{Get\+Malloc\+Func}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Malloc\+Func()}{GetMallocFunc()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_a2f9a04a7b2d08a8f2173ce47e57ff742}{Malloc\+Func}} Effekseer\+::\+Manager\+::\+Get\+Malloc\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+メモリ確保関数を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_aa5d7a667c75a81bc30f65483535b6a7f}\label{class_effekseer_1_1_manager_aa5d7a667c75a81bc30f65483535b6a7f}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} Effekseer\+::\+Manager\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスに設定されている行列を取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+行列 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a6afd86fbdfb8b3e6d12c9a80bfb3f80e}\label{class_effekseer_1_1_manager_a6afd86fbdfb8b3e6d12c9a80bfb3f80e}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Model\+Loader@{Get\+Model\+Loader}}
+\index{Get\+Model\+Loader@{Get\+Model\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Model\+Loader()}{GetModelLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_model_loader}{Model\+Loader}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Model\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+モデル読込クラスを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a6ed37b18b9e99ff77f9608da3f4db93a}\label{class_effekseer_1_1_manager_a6ed37b18b9e99ff77f9608da3f4db93a}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Model\+Renderer@{Get\+Model\+Renderer}}
+\index{Get\+Model\+Renderer@{Get\+Model\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Model\+Renderer()}{GetModelRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_model_renderer}{Model\+Renderer}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Model\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+モデル描画機能を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_af30924b879f3463d504991bf9780dfac}\label{class_effekseer_1_1_manager_af30924b879f3463d504991bf9780dfac}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Paused@{Get\+Paused}}
+\index{Get\+Paused@{Get\+Paused}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Paused()}{GetPaused()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Manager\+::\+Get\+Paused (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+指定したエフェクトのパーティクルが一時停止されているか取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & パーティクルのハンドル \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a1694b05f00253f9468d4692e4e5f462b}\label{class_effekseer_1_1_manager_a1694b05f00253f9468d4692e4e5f462b}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Rand\+Func@{Get\+Rand\+Func}}
+\index{Get\+Rand\+Func@{Get\+Rand\+Func}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Rand\+Func()}{GetRandFunc()}}
+{\footnotesize\ttfamily virtual Rand\+Func Effekseer\+::\+Manager\+::\+Get\+Rand\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ランダム関数を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a2ae8c1ff28fedf995f65a3a6c83d840a}\label{class_effekseer_1_1_manager_a2ae8c1ff28fedf995f65a3a6c83d840a}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Rand\+Max@{Get\+Rand\+Max}}
+\index{Get\+Rand\+Max@{Get\+Rand\+Max}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Rand\+Max()}{GetRandMax()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+Manager\+::\+Get\+Rand\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ランダム最大値を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_acd60c8fb65e5189dd9fb5ed7d3e7cc71}\label{class_effekseer_1_1_manager_acd60c8fb65e5189dd9fb5ed7d3e7cc71}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Rest\+Instances\+Count@{Get\+Rest\+Instances\+Count}}
+\index{Get\+Rest\+Instances\+Count@{Get\+Rest\+Instances\+Count}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Rest\+Instances\+Count()}{GetRestInstancesCount()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t Effekseer\+::\+Manager\+::\+Get\+Rest\+Instances\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+残りの確保したインスタンス数を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a9173c3b04e430de83f5096fe28cff9e1}\label{class_effekseer_1_1_manager_a9173c3b04e430de83f5096fe28cff9e1}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Ribbon\+Renderer@{Get\+Ribbon\+Renderer}}
+\index{Get\+Ribbon\+Renderer@{Get\+Ribbon\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Ribbon\+Renderer()}{GetRibbonRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Ribbon\+Renderer}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Ribbon\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ストライプ描画機能を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a20dcb7324f1b4137cbcd872cfd90def2}\label{class_effekseer_1_1_manager_a20dcb7324f1b4137cbcd872cfd90def2}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Ring\+Renderer@{Get\+Ring\+Renderer}}
+\index{Get\+Ring\+Renderer@{Get\+Ring\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Ring\+Renderer()}{GetRingRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_ring_renderer}{Ring\+Renderer}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Ring\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リング描画機能を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ac32fce48f01429c6274b6237b61ec47d}\label{class_effekseer_1_1_manager_ac32fce48f01429c6274b6237b61ec47d}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Setting@{Get\+Setting}}
+\index{Get\+Setting@{Get\+Setting}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Setting()}{GetSetting()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_setting}{Setting}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+設定クラスを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a200e7b1812c128a4d88cca7d1be57c0e}\label{class_effekseer_1_1_manager_a200e7b1812c128a4d88cca7d1be57c0e}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Shown@{Get\+Shown}}
+\index{Get\+Shown@{Get\+Shown}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Shown()}{GetShown()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Manager\+::\+Get\+Shown (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+指定したエフェクトのパーティクルが表示されているか取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & パーティクルのハンドル \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a9d6e1710083866bf1fc8953f340df002}\label{class_effekseer_1_1_manager_a9d6e1710083866bf1fc8953f340df002}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Sound\+Loader@{Get\+Sound\+Loader}}
+\index{Get\+Sound\+Loader@{Get\+Sound\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Sound\+Loader()}{GetSoundLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Sound\+Loader}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Sound\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+サウンド読込クラスを取得する 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a2c176faba545ccc52b2255dc905f96b5}\label{class_effekseer_1_1_manager_a2c176faba545ccc52b2255dc905f96b5}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Sound\+Player@{Get\+Sound\+Player}}
+\index{Get\+Sound\+Player@{Get\+Sound\+Player}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Sound\+Player()}{GetSoundPlayer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_sound_player}{Sound\+Player}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Sound\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+サウンド再生機能を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a64de7501affd3c08106b0442a4e2a76c}\label{class_effekseer_1_1_manager_a64de7501affd3c08106b0442a4e2a76c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Sprite\+Renderer@{Get\+Sprite\+Renderer}}
+\index{Get\+Sprite\+Renderer@{Get\+Sprite\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Sprite\+Renderer()}{GetSpriteRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Sprite\+Renderer}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Sprite\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+スプライト描画機能を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ae143d53bb483cb38d6371eff52d1a833}\label{class_effekseer_1_1_manager_ae143d53bb483cb38d6371eff52d1a833}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Texture\+Loader@{Get\+Texture\+Loader}}
+\index{Get\+Texture\+Loader@{Get\+Texture\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Texture\+Loader()}{GetTextureLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Texture\+Loader}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Texture\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+テクスチャ読込クラスを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a0ad29aecf744eeba8896cb6fa77488cf}\label{class_effekseer_1_1_manager_a0ad29aecf744eeba8896cb6fa77488cf}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Track\+Renderer@{Get\+Track\+Renderer}}
+\index{Get\+Track\+Renderer@{Get\+Track\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Track\+Renderer()}{GetTrackRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_track_renderer}{Track\+Renderer}}$\ast$ Effekseer\+::\+Manager\+::\+Get\+Track\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+軌跡描画機能を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a0f5a05a0911243b56fe6aaa259d677df}\label{class_effekseer_1_1_manager_a0f5a05a0911243b56fe6aaa259d677df}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Update\+Time@{Get\+Update\+Time}}
+\index{Get\+Update\+Time@{Get\+Update\+Time}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Update\+Time()}{GetUpdateTime()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+Manager\+::\+Get\+Update\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update処理時間を取得。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a5ea3211a3670843061238976dda54a4f}\label{class_effekseer_1_1_manager_a5ea3211a3670843061238976dda54a4f}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Play@{Play}}
+\index{Play@{Play}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}} Effekseer\+::\+Manager\+::\+Play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$}]{effect,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+再生する。 
+
+
+\begin{DoxyParams}{引数}
+{\em effect} & \mbox{[}in\mbox{]} エフェクト \\
+\hline
+{\em x} & \mbox{[}in\mbox{]} X座標 \\
+\hline
+{\em y} & \mbox{[}in\mbox{]} Y座標 \\
+\hline
+{\em z} & \mbox{[}in\mbox{]} Z座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+エフェクトのインスタンスのハンドル 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a15bf6eee981b682ed35b7660e8caf435}\label{class_effekseer_1_1_manager_a15bf6eee981b682ed35b7660e8caf435}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Ressign\+Culling@{Ressign\+Culling}}
+\index{Ressign\+Culling@{Ressign\+Culling}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Ressign\+Culling()}{RessignCulling()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Ressign\+Culling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+現在存在するエフェクトのハンドルからカリングの空間を配置しなおす。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a3829cb7c98f3c41d79394eead1eaaa04}\label{class_effekseer_1_1_manager_a3829cb7c98f3c41d79394eead1eaaa04}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Auto\+Drawing@{Set\+Auto\+Drawing}}
+\index{Set\+Auto\+Drawing@{Set\+Auto\+Drawing}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Auto\+Drawing()}{SetAutoDrawing()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Auto\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{bool}]{auto\+Draw }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトが\+Drawで描画されるか設定する。 auto\+Drawがfalseの場合、\+Draw\+Handleで描画する必要がある。 
+
+
+\begin{DoxyParams}{引数}
+{\em auto\+Draw} & \mbox{[}in\mbox{]} 自動描画フラグ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a0f94ad0b6cd362283bc216515a89822c}\label{class_effekseer_1_1_manager_a0f94ad0b6cd362283bc216515a89822c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Base\+Matrix@{Set\+Base\+Matrix}}
+\index{Set\+Base\+Matrix@{Set\+Base\+Matrix}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Base\+Matrix()}{SetBaseMatrix()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Base\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのベース行列を設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em mat} & \mbox{[}in\mbox{]} 設定する行列 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{覚え書き}
+エフェクト全体の表示位置を指定する行列を設定する。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a804730036eada2d3e1883ed366c265cc}\label{class_effekseer_1_1_manager_a804730036eada2d3e1883ed366c265cc}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Coordinate\+System@{Set\+Coordinate\+System}}
+\index{Set\+Coordinate\+System@{Set\+Coordinate\+System}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Coordinate\+System()}{SetCoordinateSystem()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Coordinate\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}}}]{coordinate\+System }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+座標系を設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em coordinate\+System} & \mbox{[}in\mbox{]} 座標系 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{覚え書き}
+座標系を設定する。 エフェクトファイルを読み込む前に設定する必要がある。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a1e183d9310c8562279707786e5503f8f}\label{class_effekseer_1_1_manager_a1e183d9310c8562279707786e5503f8f}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Effect\+Loader@{Set\+Effect\+Loader}}
+\index{Set\+Effect\+Loader@{Set\+Effect\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Effect\+Loader()}{SetEffectLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Effect\+Loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_effect_loader}{Effect\+Loader}} $\ast$}]{effect\+Loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクト読込クラスを設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a81402561ce17b0d4c681811affbd7340}\label{class_effekseer_1_1_manager_a81402561ce17b0d4c681811affbd7340}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Free\+Func@{Set\+Free\+Func}}
+\index{Set\+Free\+Func@{Set\+Free\+Func}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Free\+Func()}{SetFreeFunc()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Free\+Func (\begin{DoxyParamCaption}\item[{Free\+Func}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+メモリ破棄関数を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_aa35fc7968dadeb82e58bb0c472dfb8b1}\label{class_effekseer_1_1_manager_aa35fc7968dadeb82e58bb0c472dfb8b1}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Location@{Set\+Location}}
+\index{Set\+Location@{Set\+Location}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Location()}{SetLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスの位置を指定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em x} & \mbox{[}in\mbox{]} X座標 \\
+\hline
+{\em y} & \mbox{[}in\mbox{]} Y座標 \\
+\hline
+{\em z} & \mbox{[}in\mbox{]} Z座標 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a352b7682da97c9811e3b91350cf8cae9}\label{class_effekseer_1_1_manager_a352b7682da97c9811e3b91350cf8cae9}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Location@{Set\+Location}}
+\index{Set\+Location@{Set\+Location}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Location()}{SetLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスの位置を指定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em location} & \mbox{[}in\mbox{]} 位置 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_af1b85d9b77c7e923a399c3cc84a34fbc}\label{class_effekseer_1_1_manager_af1b85d9b77c7e923a399c3cc84a34fbc}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Malloc\+Func@{Set\+Malloc\+Func}}
+\index{Set\+Malloc\+Func@{Set\+Malloc\+Func}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Malloc\+Func()}{SetMallocFunc()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Malloc\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_a2f9a04a7b2d08a8f2173ce47e57ff742}{Malloc\+Func}}}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+メモリ確保関数を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a69d0768ed69c30d3993ececa6159c4dd}\label{class_effekseer_1_1_manager_a69d0768ed69c30d3993ececa6159c4dd}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Matrix@{Set\+Matrix}}
+\index{Set\+Matrix@{Set\+Matrix}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Matrix()}{SetMatrix()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスに変換行列を設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em mat} & \mbox{[}in\mbox{]} 変換行列 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a994104b9b353a09861d27ec87b09fa1c}\label{class_effekseer_1_1_manager_a994104b9b353a09861d27ec87b09fa1c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Model\+Loader@{Set\+Model\+Loader}}
+\index{Set\+Model\+Loader@{Set\+Model\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Model\+Loader()}{SetModelLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Model\+Loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_model_loader}{Model\+Loader}} $\ast$}]{model\+Loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+モデル読込クラスを設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_aa423ee424d0b713ac4939fc7faf39b9c}\label{class_effekseer_1_1_manager_aa423ee424d0b713ac4939fc7faf39b9c}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Model\+Renderer@{Set\+Model\+Renderer}}
+\index{Set\+Model\+Renderer@{Set\+Model\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Model\+Renderer()}{SetModelRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Model\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_model_renderer}{Model\+Renderer}} $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+モデル描画機能を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a6414ea849302b7cef51b61a38c7ecd76}\label{class_effekseer_1_1_manager_a6414ea849302b7cef51b61a38c7ecd76}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Paused@{Set\+Paused}}
+\index{Set\+Paused@{Set\+Paused}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Paused()}{SetPaused()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Paused (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{bool}]{paused }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+指定したエフェクトのパーティクルを一時停止、もしくは再開する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em paused} & \mbox{[}in\mbox{]} 更新するか? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a08c4c39a56fcc93b8acb284ff9bc933b}\label{class_effekseer_1_1_manager_a08c4c39a56fcc93b8acb284ff9bc933b}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Paused\+To\+All\+Effects@{Set\+Paused\+To\+All\+Effects}}
+\index{Set\+Paused\+To\+All\+Effects@{Set\+Paused\+To\+All\+Effects}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Paused\+To\+All\+Effects()}{SetPausedToAllEffects()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Paused\+To\+All\+Effects (\begin{DoxyParamCaption}\item[{bool}]{paused }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+全てのエフェクトのパーティクルを一時停止、もしくは再開する。 
+
+
+\begin{DoxyParams}{引数}
+{\em paused} & 一時停止、もしくは再開 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_acff5857772ae9674b6f96ffd4de28f69}\label{class_effekseer_1_1_manager_acff5857772ae9674b6f96ffd4de28f69}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Rand\+Func@{Set\+Rand\+Func}}
+\index{Set\+Rand\+Func@{Set\+Rand\+Func}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Rand\+Func()}{SetRandFunc()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Rand\+Func (\begin{DoxyParamCaption}\item[{Rand\+Func}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ランダム関数を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ad2e4e1458d5e1091f5cb8073ae8e60eb}\label{class_effekseer_1_1_manager_ad2e4e1458d5e1091f5cb8073ae8e60eb}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Rand\+Max@{Set\+Rand\+Max}}
+\index{Set\+Rand\+Max@{Set\+Rand\+Max}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Rand\+Max()}{SetRandMax()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Rand\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}}}]{max\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ランダム関数を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a62c24747994008dfcb84a0adcd53b3ad}\label{class_effekseer_1_1_manager_a62c24747994008dfcb84a0adcd53b3ad}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Removing\+Callback@{Set\+Removing\+Callback}}
+\index{Set\+Removing\+Callback@{Set\+Removing\+Callback}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Removing\+Callback()}{SetRemovingCallback()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Removing\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{Effect\+Instance\+Removing\+Callback}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスに廃棄時のコールバックを設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em callback} & \mbox{[}in\mbox{]} コールバック \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_afe6fa26d93c9c80a0afb8f4fbe0afe20}\label{class_effekseer_1_1_manager_afe6fa26d93c9c80a0afb8f4fbe0afe20}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Ribbon\+Renderer@{Set\+Ribbon\+Renderer}}
+\index{Set\+Ribbon\+Renderer@{Set\+Ribbon\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Ribbon\+Renderer()}{SetRibbonRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Ribbon\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Ribbon\+Renderer}} $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ストライプ描画機能を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_afe6f77af79fd2bea3a36eed5b5dea383}\label{class_effekseer_1_1_manager_afe6f77af79fd2bea3a36eed5b5dea383}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Ring\+Renderer@{Set\+Ring\+Renderer}}
+\index{Set\+Ring\+Renderer@{Set\+Ring\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Ring\+Renderer()}{SetRingRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Ring\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_ring_renderer}{Ring\+Renderer}} $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リング描画機能を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_aab0df458615143d664e8f84d176a5be6}\label{class_effekseer_1_1_manager_aab0df458615143d664e8f84d176a5be6}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Rotation@{Set\+Rotation}}
+\index{Set\+Rotation@{Set\+Rotation}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Rotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスの回転角度を指定する。(ラジアン) 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ab47844dad076bb833b0176e877736cfa}\label{class_effekseer_1_1_manager_ab47844dad076bb833b0176e877736cfa}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Rotation@{Set\+Rotation}}
+\index{Set\+Rotation@{Set\+Rotation}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Rotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスの任意軸周りの反時計周りの回転角度を指定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em axis} & \mbox{[}in\mbox{]} 軸 \\
+\hline
+{\em angle} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a14e45b2fc8ff1d2df98ce94c70b8cde1}\label{class_effekseer_1_1_manager_a14e45b2fc8ff1d2df98ce94c70b8cde1}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Scale@{Set\+Scale}}
+\index{Set\+Scale@{Set\+Scale}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Scale()}{SetScale()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスの拡大率を指定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em x} & \mbox{[}in\mbox{]} X方向拡大率 \\
+\hline
+{\em y} & \mbox{[}in\mbox{]} Y方向拡大率 \\
+\hline
+{\em z} & \mbox{[}in\mbox{]} Z方向拡大率 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a4de59a95985d8042b5f82fca2c31b985}\label{class_effekseer_1_1_manager_a4de59a95985d8042b5f82fca2c31b985}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Setting@{Set\+Setting}}
+\index{Set\+Setting@{Set\+Setting}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Setting()}{SetSetting()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Setting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_setting}{Setting}} $\ast$}]{setting }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+設定クラスを設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em setting} & \mbox{[}in\mbox{]} 設定 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ad204b93de6e5c7a05c63cad0115c20d5}\label{class_effekseer_1_1_manager_ad204b93de6e5c7a05c63cad0115c20d5}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Shown@{Set\+Shown}}
+\index{Set\+Shown@{Set\+Shown}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Shown()}{SetShown()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Shown (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{bool}]{shown }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスを\+Draw時に描画するか設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em shown} & \mbox{[}in\mbox{]} 描画するか? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_afc9015a7a866accf73ab3b295bff8e06}\label{class_effekseer_1_1_manager_afc9015a7a866accf73ab3b295bff8e06}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Sound\+Loader@{Set\+Sound\+Loader}}
+\index{Set\+Sound\+Loader@{Set\+Sound\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Sound\+Loader()}{SetSoundLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Sound\+Loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Sound\+Loader}} $\ast$}]{sound\+Loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+サウンド読込クラスを設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_af08602f559cd1f75bcaacfd8b1ec0840}\label{class_effekseer_1_1_manager_af08602f559cd1f75bcaacfd8b1ec0840}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Sound\+Player@{Set\+Sound\+Player}}
+\index{Set\+Sound\+Player@{Set\+Sound\+Player}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Sound\+Player()}{SetSoundPlayer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Sound\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_sound_player}{Sound\+Player}} $\ast$}]{sound\+Player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+サウンド再生機能を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_aa85b08562c442cfdce24781158a71431}\label{class_effekseer_1_1_manager_aa85b08562c442cfdce24781158a71431}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Speed@{Set\+Speed}}
+\index{Set\+Speed@{Set\+Speed}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Speed()}{SetSpeed()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスを再生スピードを設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+{\em speed} & \mbox{[}in\mbox{]} スピード \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a1b4f22221e7068d6604c18aa4ca4b80e}\label{class_effekseer_1_1_manager_a1b4f22221e7068d6604c18aa4ca4b80e}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Sprite\+Renderer@{Set\+Sprite\+Renderer}}
+\index{Set\+Sprite\+Renderer@{Set\+Sprite\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Sprite\+Renderer()}{SetSpriteRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Sprite\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Sprite\+Renderer}} $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+スプライト描画機能を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a3c709343770c431420772ab3ca6639e1}\label{class_effekseer_1_1_manager_a3c709343770c431420772ab3ca6639e1}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Target\+Location@{Set\+Target\+Location}}
+\index{Set\+Target\+Location@{Set\+Target\+Location}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Target\+Location()}{SetTargetLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Target\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスのターゲット位置を指定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em x} & \mbox{[}in\mbox{]} X座標 \\
+\hline
+{\em y} & \mbox{[}in\mbox{]} Y座標 \\
+\hline
+{\em z} & \mbox{[}in\mbox{]} Z座標 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a193e7d5d036ff717ba3755c1fda03758}\label{class_effekseer_1_1_manager_a193e7d5d036ff717ba3755c1fda03758}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Target\+Location@{Set\+Target\+Location}}
+\index{Set\+Target\+Location@{Set\+Target\+Location}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Target\+Location()}{SetTargetLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Target\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのインスタンスのターゲット位置を指定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em location} & \mbox{[}in\mbox{]} 位置 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a35915c6406f06e7502abed5eeba6ee51}\label{class_effekseer_1_1_manager_a35915c6406f06e7502abed5eeba6ee51}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Texture\+Loader@{Set\+Texture\+Loader}}
+\index{Set\+Texture\+Loader@{Set\+Texture\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Texture\+Loader()}{SetTextureLoader()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Texture\+Loader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Texture\+Loader}} $\ast$}]{texture\+Loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+テクスチャ読込クラスを設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a7bff3a7ec23d6ae4a66b6f6ba4bd58fc}\label{class_effekseer_1_1_manager_a7bff3a7ec23d6ae4a66b6f6ba4bd58fc}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Track\+Renderer@{Set\+Track\+Renderer}}
+\index{Set\+Track\+Renderer@{Set\+Track\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Track\+Renderer()}{SetTrackRenderer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Set\+Track\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_track_renderer}{Track\+Renderer}} $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+軌跡描画機能を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a65a6043aace92f52bcb8f7fc1052d3f0}\label{class_effekseer_1_1_manager_a65a6043aace92f52bcb8f7fc1052d3f0}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Stop\+All\+Effects@{Stop\+All\+Effects}}
+\index{Stop\+All\+Effects@{Stop\+All\+Effects}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Stop\+All\+Effects()}{StopAllEffects()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Stop\+All\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+全てのエフェクトを停止する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_manager_a7a4a9ff929146f8ea21aa4705b352baa}\label{class_effekseer_1_1_manager_a7a4a9ff929146f8ea21aa4705b352baa}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Stop\+Effect@{Stop\+Effect}}
+\index{Stop\+Effect@{Stop\+Effect}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Stop\+Effect()}{StopEffect()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Stop\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトを停止する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_adbde475d5977ca36c0a3a4c1e6878b33}\label{class_effekseer_1_1_manager_adbde475d5977ca36c0a3a4c1e6878b33}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Stop\+Root@{Stop\+Root}}
+\index{Stop\+Root@{Stop\+Root}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Stop\+Root()}{StopRoot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Stop\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのルートだけを停止する。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ad7989b68ceb3125cf6ef0d4062462a3d}\label{class_effekseer_1_1_manager_ad7989b68ceb3125cf6ef0d4062462a3d}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Stop\+Root@{Stop\+Root}}
+\index{Stop\+Root@{Stop\+Root}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Stop\+Root()}{StopRoot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Stop\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$}]{effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトのルートだけを停止する。 
+
+
+\begin{DoxyParams}{引数}
+{\em effect} & \mbox{[}in\mbox{]} エフェクト \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_ac086ec64cb5f99172e8bf655b77e1464}\label{class_effekseer_1_1_manager_ac086ec64cb5f99172e8bf655b77e1464}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Update@{Update}}
+\index{Update@{Update}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Frame = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+更新処理を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em delta\+Frame} & \mbox{[}in\mbox{]} 更新するフレーム数(60fps基準) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_manager_afe8a0df796e161f68a511540c76df839}\label{class_effekseer_1_1_manager_afe8a0df796e161f68a511540c76df839}} 
+\index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Update\+Handle@{Update\+Handle}}
+\index{Update\+Handle@{Update\+Handle}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Handle()}{UpdateHandle()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Manager\+::\+Update\+Handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Handle}}}]{handle,  }\item[{float}]{delta\+Frame = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ハンドル単位の更新を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em handle} & \mbox{[}in\mbox{]} ハンドル \\
+\hline
+{\em delta\+Frame} & \mbox{[}in\mbox{]} 更新するフレーム数(60fps基準) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{覚え書き}
+更新する前に\+Begin\+Update、更新し終わった後に\+End\+Updateを実行する必要がある。 
+\end{DoxyNote}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

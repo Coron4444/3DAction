@@ -1,0 +1,214 @@
+\hypertarget{class_game_object_origin}{}\section{Game\+Object\+Origin クラス}
+\label{class_game_object_origin}\index{Game\+Object\+Origin@{Game\+Object\+Origin}}
+
+
+{\ttfamily \#include $<$Game\+Object\+Origin.\+h$>$}
+
+Game\+Object\+Origin の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_game_object_origin}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_origin_a0f262057d72762d4744b7c7306ba5f8e}{Game\+Object\+Origin}} (bool is\+\_\+registration=true)
+\item 
+virtual \mbox{\hyperlink{class_game_object_origin_a11fd9b09ec834a887253f82d83191bff}{$\sim$\+Game\+Object\+Origin}} ()
+\item 
+virtual void \mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Reset}} ()=0
+\item 
+void \mbox{\hyperlink{class_game_object_origin_a8fcc96e945f103f2f7daf009ee2b83dc}{Release\+Object}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_origin_a6dc8d3becc806dd6cf89663af981127e}{Set\+Component\+All}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$collision\+\_\+component)
+\item 
+void \mbox{\hyperlink{class_game_object_origin_af6d261955caa797840b7af719a17b735}{Set\+Update\+Component}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$component)
+\item 
+void \mbox{\hyperlink{class_game_object_origin_a525d9ecb39e10295bda324afbefbcc74}{Set\+Draw\+Component}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$component)
+\item 
+void \mbox{\hyperlink{class_game_object_origin_acdf9e2140b71df0309d28b4dd90476d7}{Set\+Collision\+Component}} (\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$component)
+\item 
+\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$ \mbox{\hyperlink{class_game_object_origin_ae78266b6003847e18b9a902a6585a613}{Get\+Update\+Component}} ()
+\item 
+\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$ \mbox{\hyperlink{class_game_object_origin_a768ddc2525b6fd51b6d23e8f2b7ad744}{Get\+Draw\+Component}} ()
+\item 
+\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$ \mbox{\hyperlink{class_game_object_origin_af2cfb6cd75e995b7791385fcc1f6f859}{Get\+Collision\+Component}} ()
+\item 
+\mbox{\hyperlink{class_transform}{Transform}} $\ast$ \mbox{\hyperlink{class_game_object_origin_aaef5e72f8ad3eff98522528c1cf6bbc2}{Get\+Transform}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_origin_ad0b1dff8bffb44125214d60201572041}{Create\+Physics}} ()
+\item 
+\mbox{\hyperlink{class_physics}{Physics}} $\ast$ \mbox{\hyperlink{class_game_object_origin_a878b71d82a2f2011d2e2a2e9b9e497af}{Get\+Physics}} ()
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_object_origin_a0fccade48b059046d8eee1cbabaaf30a}{Init\+\_\+\+Super\+Class}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$collision\+\_\+component)
+\item 
+void \mbox{\hyperlink{class_game_object_origin_a788deb7503c9fa090193138cd13247ba}{Uninit\+\_\+\+Super\+Class}} ()
+\item 
+virtual void \mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Uninit}} ()=0
+\item 
+void \mbox{\hyperlink{class_game_object_origin_ab30e4d2dee1b9a1b10cdaccc004804eb}{Set\+Game\+Object}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_origin_a63d39d07478d90c11066a89e830d5f41}{Init\+Component}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_origin_a70d7e7923ff9456b0bc7f5f233f49159}{Uninit\+Component}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_origin_ab2aae550ba6175944b45d2d664579be6}{Registration\+Component\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_origin_affeb64052b115460db71c5b7cfa170d6}{Release\+Component\+Manager}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_game_object_origin_a0f262057d72762d4744b7c7306ba5f8e}\label{class_game_object_origin_a0f262057d72762d4744b7c7306ba5f8e}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Game\+Object\+Origin()}{GameObjectOrigin()}}
+{\footnotesize\ttfamily Game\+Object\+Origin\+::\+Game\+Object\+Origin (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+registration = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_origin_a11fd9b09ec834a887253f82d83191bff}\label{class_game_object_origin_a11fd9b09ec834a887253f82d83191bff}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!````~Game\+Object\+Origin@{$\sim$\+Game\+Object\+Origin}}
+\index{````~Game\+Object\+Origin@{$\sim$\+Game\+Object\+Origin}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{$\sim$\+Game\+Object\+Origin()}{~GameObjectOrigin()}}
+{\footnotesize\ttfamily Game\+Object\+Origin\+::$\sim$\+Game\+Object\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_object_origin_ad0b1dff8bffb44125214d60201572041}\label{class_game_object_origin_ad0b1dff8bffb44125214d60201572041}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Create\+Physics@{Create\+Physics}}
+\index{Create\+Physics@{Create\+Physics}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Create\+Physics()}{CreatePhysics()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Create\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_af2cfb6cd75e995b7791385fcc1f6f859}\label{class_game_object_origin_af2cfb6cd75e995b7791385fcc1f6f859}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Get\+Collision\+Component@{Get\+Collision\+Component}}
+\index{Get\+Collision\+Component@{Get\+Collision\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Get\+Collision\+Component()}{GetCollisionComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_component}{Collision\+Component}}$\ast$ Game\+Object\+Origin\+::\+Get\+Collision\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a768ddc2525b6fd51b6d23e8f2b7ad744}\label{class_game_object_origin_a768ddc2525b6fd51b6d23e8f2b7ad744}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Get\+Draw\+Component@{Get\+Draw\+Component}}
+\index{Get\+Draw\+Component@{Get\+Draw\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Component()}{GetDrawComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_draw_component}{Draw\+Component}}$\ast$ Game\+Object\+Origin\+::\+Get\+Draw\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a878b71d82a2f2011d2e2a2e9b9e497af}\label{class_game_object_origin_a878b71d82a2f2011d2e2a2e9b9e497af}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Get\+Physics@{Get\+Physics}}
+\index{Get\+Physics@{Get\+Physics}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Get\+Physics()}{GetPhysics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics}{Physics}}$\ast$ Game\+Object\+Origin\+::\+Get\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_aaef5e72f8ad3eff98522528c1cf6bbc2}\label{class_game_object_origin_aaef5e72f8ad3eff98522528c1cf6bbc2}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Get\+Transform@{Get\+Transform}}
+\index{Get\+Transform@{Get\+Transform}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}}$\ast$ Game\+Object\+Origin\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_ae78266b6003847e18b9a902a6585a613}\label{class_game_object_origin_ae78266b6003847e18b9a902a6585a613}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Get\+Update\+Component@{Get\+Update\+Component}}
+\index{Get\+Update\+Component@{Get\+Update\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Get\+Update\+Component()}{GetUpdateComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_update_component}{Update\+Component}}$\ast$ Game\+Object\+Origin\+::\+Get\+Update\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a0fccade48b059046d8eee1cbabaaf30a}\label{class_game_object_origin_a0fccade48b059046d8eee1cbabaaf30a}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Init\+\_\+\+Super\+Class@{Init\+\_\+\+Super\+Class}}
+\index{Init\+\_\+\+Super\+Class@{Init\+\_\+\+Super\+Class}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Init\+\_\+\+Super\+Class()}{Init\_SuperClass()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Init\+\_\+\+Super\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{collision\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a63d39d07478d90c11066a89e830d5f41}\label{class_game_object_origin_a63d39d07478d90c11066a89e830d5f41}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Init\+Component@{Init\+Component}}
+\index{Init\+Component@{Init\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Init\+Component()}{InitComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Init\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_origin_ab2aae550ba6175944b45d2d664579be6}\label{class_game_object_origin_ab2aae550ba6175944b45d2d664579be6}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Registration\+Component\+Manager@{Registration\+Component\+Manager}}
+\index{Registration\+Component\+Manager@{Registration\+Component\+Manager}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Registration\+Component\+Manager()}{RegistrationComponentManager()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Registration\+Component\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_origin_affeb64052b115460db71c5b7cfa170d6}\label{class_game_object_origin_affeb64052b115460db71c5b7cfa170d6}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Release\+Component\+Manager@{Release\+Component\+Manager}}
+\index{Release\+Component\+Manager@{Release\+Component\+Manager}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Release\+Component\+Manager()}{ReleaseComponentManager()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Release\+Component\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a8fcc96e945f103f2f7daf009ee2b83dc}\label{class_game_object_origin_a8fcc96e945f103f2f7daf009ee2b83dc}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Release\+Object@{Release\+Object}}
+\index{Release\+Object@{Release\+Object}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Release\+Object()}{ReleaseObject()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Release\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}\label{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Reset@{Reset}}
+\index{Reset@{Reset}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Game\+Object\+Origin\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_number_a7c6facdb1b3d0acc8309e0a915863d44}{Number}}, \mbox{\hyperlink{class_numbers_a1ab67e439ba1695c8fd545dfc1650990}{Numbers}}, \mbox{\hyperlink{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}{Push\+Space\+Logo}}, \mbox{\hyperlink{class_clear_logo_aa19369cbace0cc79957ef7b4d4dbd0f5}{Clear\+Logo}}, \mbox{\hyperlink{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}{Failure\+Logo}}, \mbox{\hyperlink{class_title_logo_a8bca39d06592b95b26024c2d86ac349c}{Title\+Logo}}, \mbox{\hyperlink{class_tutorial_logo01_a01515b3f54e6731e42d60af5320ff7eb}{Tutorial\+Logo01}}, \mbox{\hyperlink{class_tutorial_logo02_a73afa56b1e98736072745dc414ebd29f}{Tutorial\+Logo02}}, \mbox{\hyperlink{class_field_a5b140074dcca821ac702da348238c6d4}{Field}}, \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Player}}, \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Score}}, \mbox{\hyperlink{class_enemy_ab86571061e7fcabcf8c646b1abad5581}{Enemy}}, \mbox{\hyperlink{class_coin_a52c50229ce7c1e0f459e198adac70c8d}{Coin}}, \mbox{\hyperlink{class_sky_dome_abc6f8ed1471d7b03f25924a849cae590}{Sky\+Dome}}で実装されています。
+
+\mbox{\Hypertarget{class_game_object_origin_acdf9e2140b71df0309d28b4dd90476d7}\label{class_game_object_origin_acdf9e2140b71df0309d28b4dd90476d7}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Set\+Collision\+Component@{Set\+Collision\+Component}}
+\index{Set\+Collision\+Component@{Set\+Collision\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Set\+Collision\+Component()}{SetCollisionComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Set\+Collision\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a6dc8d3becc806dd6cf89663af981127e}\label{class_game_object_origin_a6dc8d3becc806dd6cf89663af981127e}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Set\+Component\+All@{Set\+Component\+All}}
+\index{Set\+Component\+All@{Set\+Component\+All}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Set\+Component\+All()}{SetComponentAll()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Set\+Component\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{collision\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a525d9ecb39e10295bda324afbefbcc74}\label{class_game_object_origin_a525d9ecb39e10295bda324afbefbcc74}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Set\+Draw\+Component@{Set\+Draw\+Component}}
+\index{Set\+Draw\+Component@{Set\+Draw\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Set\+Draw\+Component()}{SetDrawComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Set\+Draw\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_ab30e4d2dee1b9a1b10cdaccc004804eb}\label{class_game_object_origin_ab30e4d2dee1b9a1b10cdaccc004804eb}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Set\+Game\+Object@{Set\+Game\+Object}}
+\index{Set\+Game\+Object@{Set\+Game\+Object}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Set\+Game\+Object()}{SetGameObject()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Set\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_origin_af6d261955caa797840b7af719a17b735}\label{class_game_object_origin_af6d261955caa797840b7af719a17b735}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Set\+Update\+Component@{Set\+Update\+Component}}
+\index{Set\+Update\+Component@{Set\+Update\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Set\+Update\+Component()}{SetUpdateComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Set\+Update\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}\label{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily virtual void Game\+Object\+Origin\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_number_a7c3bf9c55f7a0a19d80129c5f07f99f2}{Number}}, \mbox{\hyperlink{class_numbers_aeaad3cc1b8ae7defe79813b983b04101}{Numbers}}, \mbox{\hyperlink{class_push_space_logo_a06404113db417c58941ca7a13bba161e}{Push\+Space\+Logo}}, \mbox{\hyperlink{class_clear_logo_ab55def116615b92a8e8cc40b364b7a4c}{Clear\+Logo}}, \mbox{\hyperlink{class_failure_logo_adbe01fc4567ade0e788f511f5162299c}{Failure\+Logo}}, \mbox{\hyperlink{class_title_logo_a177943b3becc80fcdb7a34f131b07ee9}{Title\+Logo}}, \mbox{\hyperlink{class_tutorial_logo01_aa6fd636ad745d8712ace1c82da285828}{Tutorial\+Logo01}}, \mbox{\hyperlink{class_tutorial_logo02_ab9d0ac3888adf512c29fc0fe7f9beb4e}{Tutorial\+Logo02}}, \mbox{\hyperlink{class_field_a6d1015e2409daa87cd00485ac1efc06b}{Field}}, \mbox{\hyperlink{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c}{Player}}, \mbox{\hyperlink{class_score_a605e163dc59ccc4d19a3cb6b5db813b8}{Score}}, \mbox{\hyperlink{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962}{Enemy}}, \mbox{\hyperlink{class_coin_a4d364dcb4b57b80ea00ce931d0bb300f}{Coin}}, \mbox{\hyperlink{class_sky_dome_a7fc71bfa671cf6e7ab26a194459b0753}{Sky\+Dome}}で実装されています。
+
+\mbox{\Hypertarget{class_game_object_origin_a788deb7503c9fa090193138cd13247ba}\label{class_game_object_origin_a788deb7503c9fa090193138cd13247ba}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Uninit\+\_\+\+Super\+Class@{Uninit\+\_\+\+Super\+Class}}
+\index{Uninit\+\_\+\+Super\+Class@{Uninit\+\_\+\+Super\+Class}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Uninit\+\_\+\+Super\+Class()}{Uninit\_SuperClass()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Uninit\+\_\+\+Super\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_object_origin_a70d7e7923ff9456b0bc7f5f233f49159}\label{class_game_object_origin_a70d7e7923ff9456b0bc7f5f233f49159}} 
+\index{Game\+Object\+Origin@{Game\+Object\+Origin}!Uninit\+Component@{Uninit\+Component}}
+\index{Uninit\+Component@{Uninit\+Component}!Game\+Object\+Origin@{Game\+Object\+Origin}}
+\subsubsection{\texorpdfstring{Uninit\+Component()}{UninitComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+Origin\+::\+Uninit\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Game\+Object\+Origin/\mbox{\hyperlink{_game_object_origin_8h}{Game\+Object\+Origin.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Game\+Object\+Origin/\mbox{\hyperlink{_game_object_origin_8cpp}{Game\+Object\+Origin.\+cpp}}\end{DoxyCompactItemize}

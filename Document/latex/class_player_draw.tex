@@ -1,0 +1,109 @@
+\hypertarget{class_player_draw}{}\section{Player\+Draw クラス}
+\label{class_player_draw}\index{Player\+Draw@{Player\+Draw}}
+
+
+{\ttfamily \#include $<$Player\+Draw.\+h$>$}
+
+Player\+Draw の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player_draw}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}{Init}} () override
+\item 
+void \mbox{\hyperlink{class_player_draw_a917b2947914287f23d87ca75cd68f553}{Uninit}} () override
+\item 
+void \mbox{\hyperlink{class_player_draw_a1d58f14658bf5e058f67c6754d9898e7}{Draw}} (unsigned mesh\+\_\+index) override
+\item 
+unsigned \mbox{\hyperlink{class_player_draw_adbf5776a7a2d7f255661e0527f673eaa}{Get\+Mesh\+Num}} () override
+\item 
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_player_draw_abcc7b934dbbe08215291dfd1baa2ac31}{Get\+Material}} (unsigned mesh\+\_\+index) override
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_draw_af139860a0e62553110f939a62d7b5e8e}{Get\+Decale\+Texture}} (unsigned mesh\+\_\+index) override
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_draw_a96eb31c32c0016cd6c908dc67032a7ed}{Get\+Normal\+Texture}} (unsigned mesh\+\_\+index) override
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_player_draw_a1d58f14658bf5e058f67c6754d9898e7}\label{class_player_draw_a1d58f14658bf5e058f67c6754d9898e7}} 
+\index{Player\+Draw@{Player\+Draw}!Draw@{Draw}}
+\index{Draw@{Draw}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Player\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_ae84bfb6ccc2fda9e54cdff45057ea2c3}{Draw\+Component}}を実装しています。
+
+\mbox{\Hypertarget{class_player_draw_af139860a0e62553110f939a62d7b5e8e}\label{class_player_draw_af139860a0e62553110f939a62d7b5e8e}} 
+\index{Player\+Draw@{Player\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
+\index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Player\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_a9ea98f4bcdfd76782d5234122b132c3d}{Draw\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_draw_abcc7b934dbbe08215291dfd1baa2ac31}\label{class_player_draw_abcc7b934dbbe08215291dfd1baa2ac31}} 
+\index{Player\+Draw@{Player\+Draw}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Player\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_adae078d5139f691997763bf6cac9e25a}{Draw\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_draw_adbf5776a7a2d7f255661e0527f673eaa}\label{class_player_draw_adbf5776a7a2d7f255661e0527f673eaa}} 
+\index{Player\+Draw@{Player\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
+\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
+{\footnotesize\ttfamily unsigned Player\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_a5f3bbcc8e563b740c0a5535170921c75}{Draw\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_draw_a96eb31c32c0016cd6c908dc67032a7ed}\label{class_player_draw_a96eb31c32c0016cd6c908dc67032a7ed}} 
+\index{Player\+Draw@{Player\+Draw}!Get\+Normal\+Texture@{Get\+Normal\+Texture}}
+\index{Get\+Normal\+Texture@{Get\+Normal\+Texture}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Normal\+Texture()}{GetNormalTexture()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Player\+Draw\+::\+Get\+Normal\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_a03b739c28b9abcff3a3e5bda6bcc2060}{Draw\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}\label{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}} 
+\index{Player\+Draw@{Player\+Draw}!Init@{Init}}
+\index{Init@{Init}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Player\+Draw\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+
+\mbox{\Hypertarget{class_player_draw_a917b2947914287f23d87ca75cd68f553}\label{class_player_draw_a917b2947914287f23d87ca75cd68f553}} 
+\index{Player\+Draw@{Player\+Draw}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Player\+Draw\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Player/\+Player\+Draw/\mbox{\hyperlink{_player_draw_8h}{Player\+Draw.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Player/\+Player\+Draw/\mbox{\hyperlink{_player_draw_8cpp}{Player\+Draw.\+cpp}}\end{DoxyCompactItemize}

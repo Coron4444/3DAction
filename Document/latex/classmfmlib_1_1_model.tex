@@ -1,0 +1,112 @@
+\hypertarget{classmfmlib_1_1_model}{}\section{mfmlib\+:\+:Model クラス}
+\label{classmfmlib_1_1_model}\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+
+
+{\ttfamily \#include $<$Load\+M\+F\+M.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmfmlib_1_1_model_a56abf4bae21e85d159a306aaac20e851}{Set\+File\+Name}} (T\+C\+H\+AR $\ast$File\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classmfmlib_1_1_model_a27950e34a457b62b0d6474cd8f7017aa}{File\+Save\+Mesh\+Data}} ()
+\item 
+bool \mbox{\hyperlink{classmfmlib_1_1_model_a906eb59ce0373f757c5473512e95c5a4}{File\+Load\+Mesh\+Data}} (T\+C\+H\+AR $\ast$File\+\_\+name)
+\item 
+bool \mbox{\hyperlink{classmfmlib_1_1_model_a78ed7288a1add6c6140b50f361102374}{File\+Save\+Full\+Data}} ()
+\item 
+bool \mbox{\hyperlink{classmfmlib_1_1_model_a0b260e285347695a8a9f0092b57ddb7f}{File\+Load\+Full\+Data}} (T\+C\+H\+AR $\ast$File\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmfmlib_1_1_model_a0a25d19e204a8075af58d3cf84c9446e}{material\+Num}}
+\item 
+int \mbox{\hyperlink{classmfmlib_1_1_model_ab810627ca36c30ef29d787ca5b81d7ba}{Mesh\+Num}}
+\item 
+int \mbox{\hyperlink{classmfmlib_1_1_model_a3ad1641bef61a820154ac7e9d7806f52}{Frame\+Num}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classmfmlib_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classmfmlib_1_1_model_a77fc5611ec675c619d1082d0f7a966d2}{Mesh\+Data}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structmfmlib_1_1_material}{Material}} $>$ \mbox{\hyperlink{classmfmlib_1_1_model_ab9e64c1b2c11cdc0bf8844ee076d2f78}{Material\+Data}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classmfmlib_1_1_bone_mesh}{Bone\+Mesh}} $>$ \mbox{\hyperlink{classmfmlib_1_1_model_a54babd8cc910d4f54935b75bcaf81023}{Bone\+Data}}
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{classmfmlib_1_1_model_a0b260e285347695a8a9f0092b57ddb7f}\label{classmfmlib_1_1_model_a0b260e285347695a8a9f0092b57ddb7f}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!File\+Load\+Full\+Data@{File\+Load\+Full\+Data}}
+\index{File\+Load\+Full\+Data@{File\+Load\+Full\+Data}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{File\+Load\+Full\+Data()}{FileLoadFullData()}}
+{\footnotesize\ttfamily bool mfmlib\+::\+Model\+::\+File\+Load\+Full\+Data (\begin{DoxyParamCaption}\item[{T\+C\+H\+AR $\ast$}]{File\+\_\+name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_a906eb59ce0373f757c5473512e95c5a4}\label{classmfmlib_1_1_model_a906eb59ce0373f757c5473512e95c5a4}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!File\+Load\+Mesh\+Data@{File\+Load\+Mesh\+Data}}
+\index{File\+Load\+Mesh\+Data@{File\+Load\+Mesh\+Data}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{File\+Load\+Mesh\+Data()}{FileLoadMeshData()}}
+{\footnotesize\ttfamily bool mfmlib\+::\+Model\+::\+File\+Load\+Mesh\+Data (\begin{DoxyParamCaption}\item[{T\+C\+H\+AR $\ast$}]{File\+\_\+name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_a78ed7288a1add6c6140b50f361102374}\label{classmfmlib_1_1_model_a78ed7288a1add6c6140b50f361102374}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!File\+Save\+Full\+Data@{File\+Save\+Full\+Data}}
+\index{File\+Save\+Full\+Data@{File\+Save\+Full\+Data}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{File\+Save\+Full\+Data()}{FileSaveFullData()}}
+{\footnotesize\ttfamily bool mfmlib\+::\+Model\+::\+File\+Save\+Full\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_a27950e34a457b62b0d6474cd8f7017aa}\label{classmfmlib_1_1_model_a27950e34a457b62b0d6474cd8f7017aa}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!File\+Save\+Mesh\+Data@{File\+Save\+Mesh\+Data}}
+\index{File\+Save\+Mesh\+Data@{File\+Save\+Mesh\+Data}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{File\+Save\+Mesh\+Data()}{FileSaveMeshData()}}
+{\footnotesize\ttfamily bool mfmlib\+::\+Model\+::\+File\+Save\+Mesh\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_a56abf4bae21e85d159a306aaac20e851}\label{classmfmlib_1_1_model_a56abf4bae21e85d159a306aaac20e851}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!Set\+File\+Name@{Set\+File\+Name}}
+\index{Set\+File\+Name@{Set\+File\+Name}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{Set\+File\+Name()}{SetFileName()}}
+{\footnotesize\ttfamily void mfmlib\+::\+Model\+::\+Set\+File\+Name (\begin{DoxyParamCaption}\item[{T\+C\+H\+AR $\ast$}]{File\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{classmfmlib_1_1_model_a54babd8cc910d4f54935b75bcaf81023}\label{classmfmlib_1_1_model_a54babd8cc910d4f54935b75bcaf81023}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!Bone\+Data@{Bone\+Data}}
+\index{Bone\+Data@{Bone\+Data}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{Bone\+Data}{BoneData}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classmfmlib_1_1_bone_mesh}{Bone\+Mesh}}$>$ mfmlib\+::\+Model\+::\+Bone\+Data}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_a3ad1641bef61a820154ac7e9d7806f52}\label{classmfmlib_1_1_model_a3ad1641bef61a820154ac7e9d7806f52}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!Frame\+Num@{Frame\+Num}}
+\index{Frame\+Num@{Frame\+Num}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{Frame\+Num}{FrameNum}}
+{\footnotesize\ttfamily int mfmlib\+::\+Model\+::\+Frame\+Num}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_ab9e64c1b2c11cdc0bf8844ee076d2f78}\label{classmfmlib_1_1_model_ab9e64c1b2c11cdc0bf8844ee076d2f78}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!Material\+Data@{Material\+Data}}
+\index{Material\+Data@{Material\+Data}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{Material\+Data}{MaterialData}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structmfmlib_1_1_material}{Material}}$>$ mfmlib\+::\+Model\+::\+Material\+Data}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_a0a25d19e204a8075af58d3cf84c9446e}\label{classmfmlib_1_1_model_a0a25d19e204a8075af58d3cf84c9446e}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!material\+Num@{material\+Num}}
+\index{material\+Num@{material\+Num}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{material\+Num}{materialNum}}
+{\footnotesize\ttfamily int mfmlib\+::\+Model\+::material\+Num}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_a77fc5611ec675c619d1082d0f7a966d2}\label{classmfmlib_1_1_model_a77fc5611ec675c619d1082d0f7a966d2}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!Mesh\+Data@{Mesh\+Data}}
+\index{Mesh\+Data@{Mesh\+Data}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{Mesh\+Data}{MeshData}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classmfmlib_1_1_mesh}{Mesh}}$>$ mfmlib\+::\+Model\+::\+Mesh\+Data}
+
+\mbox{\Hypertarget{classmfmlib_1_1_model_ab810627ca36c30ef29d787ca5b81d7ba}\label{classmfmlib_1_1_model_ab810627ca36c30ef29d787ca5b81d7ba}} 
+\index{mfmlib\+::\+Model@{mfmlib\+::\+Model}!Mesh\+Num@{Mesh\+Num}}
+\index{Mesh\+Num@{Mesh\+Num}!mfmlib\+::\+Model@{mfmlib\+::\+Model}}
+\subsubsection{\texorpdfstring{Mesh\+Num}{MeshNum}}
+{\footnotesize\ttfamily int mfmlib\+::\+Model\+::\+Mesh\+Num}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Model\+F\+B\+X/\+Load\+M\+F\+M/\mbox{\hyperlink{_load_m_f_m_8h}{Load\+M\+F\+M.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Model\+F\+B\+X/\+Load\+M\+F\+M/\mbox{\hyperlink{_load_m_f_m_8cpp}{Load\+M\+F\+M.\+cpp}}\end{DoxyCompactItemize}

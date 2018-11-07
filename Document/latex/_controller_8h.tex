@@ -1,0 +1,247 @@
+\hypertarget{_controller_8h}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Controller/\+Controller.h ファイル}
+\label{_controller_8h}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Controller/\+Controller.\+h@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Controller/\+Controller.\+h}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$X\+Input.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_x_input_controller}{X\+Input\+Controller}}
+\end{DoxyCompactItemize}
+\subsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bab411080fb645a9fbd5b06aa9c4497a93}{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba7d7f1d8ccde155594c48a80db8f961c5}{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+1}}, 
+\mbox{\hyperlink{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba9314cda42522c9024fc8489deb92cad0}{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+2}}, 
+\mbox{\hyperlink{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba989c9682e7d6e3de181b35331208643a}{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+3}}, 
+\newline
+\mbox{\hyperlink{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55badcfc09d0023813d693378170f4ed5ae4}{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+4}}, 
+\mbox{\hyperlink{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba0ebf2943dd807154d27129b5848f1fa4}{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+AX}}
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a28bedc268b96a8a9f67df67068600f83}{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7ad8b574ccc6507b5df18deca7fbd04adf}{S\+T\+I\+C\+K\+\_\+\+UP}}, 
+\mbox{\hyperlink{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a901bd5a6767b73f7a68eecce3ae9af0a}{S\+T\+I\+C\+K\+\_\+\+D\+O\+WN}}, 
+\mbox{\hyperlink{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a78495a5470462cea31c303dc66c25606}{S\+T\+I\+C\+K\+\_\+\+L\+E\+FT}}, 
+\newline
+\mbox{\hyperlink{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a8e73e2ee5047d97bea76e217f7e41424}{S\+T\+I\+C\+K\+\_\+\+R\+I\+G\+HT}}, 
+\mbox{\hyperlink{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a9d27d676d899546f49ccc4e877adcd77}{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+M\+AX}}
+ \}
+\item 
+enum \{ \mbox{\hyperlink{_controller_8h_a99fb83031ce9923c84392b4e92f956b5aa367480bacc318ac61f335f08cb6f7dd}{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a14799e0ea02b996de2f198c6dfc06e4f}{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+R2}}, 
+\mbox{\hyperlink{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a02afd7c97f1a222b4c386f7c20832249}{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+L2}}, 
+\mbox{\hyperlink{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a6b1a083e23d2ab22465daebfaa0b330d}{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_controller_8h_a0f47a2a62b2452dbb84fbfea8f1cea72}{Set\+Controller}} ()
+\item 
+bool \mbox{\hyperlink{_controller_8h_a898d6532bc737fffd8b3d870664579e4}{Input\+Hold\+Controller}} (int controller\+Num, int button\+Num)
+\item 
+bool \mbox{\hyperlink{_controller_8h_a1abb537ee0a6225792540e30ed6ba710}{Input\+Trigger\+Controller}} (int controller\+Num, int button\+Num)
+\item 
+bool \mbox{\hyperlink{_controller_8h_a553e7cb5813072d8ec8803a6b217c38f}{Input\+Release\+Controller}} (int controller\+Num, int button\+Num)
+\item 
+bool \mbox{\hyperlink{_controller_8h_aecb71b9538db737e966d3c67530abfc0}{Input\+L\+Stick\+Trigger\+Controller}} (int controller\+Num, int direction)
+\item 
+bool \mbox{\hyperlink{_controller_8h_a90172433d3a8e29f9db1db24dd4305d8}{Input\+L\+Stick\+Hold\+Controller}} (int controller\+Num, int direction)
+\item 
+bool \mbox{\hyperlink{_controller_8h_acc5c318424db02fbcffd5d1d119588f7}{Input\+R2\+L2\+Trigger\+Controller}} (int controller\+Num, int direction)
+\item 
+bool \mbox{\hyperlink{_controller_8h_ad12efd7e711e82e14a16a677144651c9}{Input\+R2\+L2\+Hold\+Controller}} (int controller\+Num, int direction)
+\item 
+bool \mbox{\hyperlink{_controller_8h_aeed7d959ed5561cd3b7ccff55b20d025}{Input\+R2\+L2\+Release\+Controller}} (int controller\+Num, int direction)
+\item 
+bool \mbox{\hyperlink{_controller_8h_a5b892f07d9d8191b87b847e991b3bedb}{Check\+Controller}} (int controller\+Num)
+\item 
+int \mbox{\hyperlink{_controller_8h_aeb6ff8e48a075c63818867dbaf0c9657}{Get\+Controller\+Num}} ()
+\item 
+int \mbox{\hyperlink{_controller_8h_a7ce18579ea4ba19ada0eafa54c3fe4d2}{Get\+Controller\+Connect}} ()
+\end{DoxyCompactItemize}
+\subsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned \mbox{\hyperlink{_controller_8h_a3b58b91236c7489570c12274c208fcac}{C\+O\+N\+N\+E\+C\+T\+\_\+\+O\+NE}} = 1
+\item 
+const unsigned \mbox{\hyperlink{_controller_8h_afb6cc057ae4469f63bd29838226d5efc}{D\+E\+V\+I\+C\+E\+\_\+\+N\+UM}} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{列挙型詳解}
+\mbox{\Hypertarget{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bab411080fb645a9fbd5b06aa9c4497a93}\label{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55bab411080fb645a9fbd5b06aa9c4497a93}} 
+C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+1@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+1}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+1@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+1}}}\mbox{\Hypertarget{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba7d7f1d8ccde155594c48a80db8f961c5}\label{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba7d7f1d8ccde155594c48a80db8f961c5}} 
+C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+2@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+2}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+2@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+2}}}\mbox{\Hypertarget{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba9314cda42522c9024fc8489deb92cad0}\label{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba9314cda42522c9024fc8489deb92cad0}} 
+C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+3@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+3}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+3@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+3}}}\mbox{\Hypertarget{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba989c9682e7d6e3de181b35331208643a}\label{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba989c9682e7d6e3de181b35331208643a}} 
+C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+4@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+4}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+4@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+4}}}\mbox{\Hypertarget{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55badcfc09d0023813d693378170f4ed5ae4}\label{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55badcfc09d0023813d693378170f4ed5ae4}} 
+C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+AX@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+AX}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+AX@{C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+AX}}}\mbox{\Hypertarget{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba0ebf2943dd807154d27129b5848f1fa4}\label{_controller_8h_a06fc87d81c62e9abb8790b6e5713c55ba0ebf2943dd807154d27129b5848f1fa4}} 
+C\+O\+N\+T\+O\+R\+O\+L\+L\+E\+R\+\_\+\+N\+U\+M\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7}\label{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE@{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE@{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a28bedc268b96a8a9f67df67068600f83}\label{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a28bedc268b96a8a9f67df67068600f83}} 
+S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+\+UP@{S\+T\+I\+C\+K\+\_\+\+UP}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!S\+T\+I\+C\+K\+\_\+\+UP@{S\+T\+I\+C\+K\+\_\+\+UP}}}\mbox{\Hypertarget{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7ad8b574ccc6507b5df18deca7fbd04adf}\label{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7ad8b574ccc6507b5df18deca7fbd04adf}} 
+S\+T\+I\+C\+K\+\_\+\+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+\+D\+O\+WN@{S\+T\+I\+C\+K\+\_\+\+D\+O\+WN}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!S\+T\+I\+C\+K\+\_\+\+D\+O\+WN@{S\+T\+I\+C\+K\+\_\+\+D\+O\+WN}}}\mbox{\Hypertarget{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a901bd5a6767b73f7a68eecce3ae9af0a}\label{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a901bd5a6767b73f7a68eecce3ae9af0a}} 
+S\+T\+I\+C\+K\+\_\+\+D\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+\+L\+E\+FT@{S\+T\+I\+C\+K\+\_\+\+L\+E\+FT}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!S\+T\+I\+C\+K\+\_\+\+L\+E\+FT@{S\+T\+I\+C\+K\+\_\+\+L\+E\+FT}}}\mbox{\Hypertarget{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a78495a5470462cea31c303dc66c25606}\label{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a78495a5470462cea31c303dc66c25606}} 
+S\+T\+I\+C\+K\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+\+R\+I\+G\+HT@{S\+T\+I\+C\+K\+\_\+\+R\+I\+G\+HT}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!S\+T\+I\+C\+K\+\_\+\+R\+I\+G\+HT@{S\+T\+I\+C\+K\+\_\+\+R\+I\+G\+HT}}}\mbox{\Hypertarget{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a8e73e2ee5047d97bea76e217f7e41424}\label{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a8e73e2ee5047d97bea76e217f7e41424}} 
+S\+T\+I\+C\+K\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+M\+AX@{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+M\+AX}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+M\+AX@{S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+M\+AX}}}\mbox{\Hypertarget{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a9d27d676d899546f49ccc4e877adcd77}\label{_controller_8h_adf764cbdea00d65edcd07bb9953ad2b7a9d27d676d899546f49ccc4e877adcd77}} 
+S\+T\+I\+C\+K\+\_\+\+N\+U\+M\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_controller_8h_a99fb83031ce9923c84392b4e92f956b5}\label{_controller_8h_a99fb83031ce9923c84392b4e92f956b5}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{_controller_8h_a99fb83031ce9923c84392b4e92f956b5aa367480bacc318ac61f335f08cb6f7dd}\label{_controller_8h_a99fb83031ce9923c84392b4e92f956b5aa367480bacc318ac61f335f08cb6f7dd}} 
+T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+R2@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+R2}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+R2@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+R2}}}\mbox{\Hypertarget{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a14799e0ea02b996de2f198c6dfc06e4f}\label{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a14799e0ea02b996de2f198c6dfc06e4f}} 
+T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+R2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+L2@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+L2}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+L2@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+L2}}}\mbox{\Hypertarget{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a02afd7c97f1a222b4c386f7c20832249}\label{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a02afd7c97f1a222b4c386f7c20832249}} 
+T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+L2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+M\+AX@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+M\+AX}!Controller.\+h@{Controller.\+h}}\index{Controller.\+h@{Controller.\+h}!T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+M\+AX@{T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+M\+AX}}}\mbox{\Hypertarget{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a6b1a083e23d2ab22465daebfaa0b330d}\label{_controller_8h_a99fb83031ce9923c84392b4e92f956b5a6b1a083e23d2ab22465daebfaa0b330d}} 
+T\+R\+I\+G\+G\+E\+R\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+N\+U\+M\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{_controller_8h_a5b892f07d9d8191b87b847e991b3bedb}\label{_controller_8h_a5b892f07d9d8191b87b847e991b3bedb}} 
+\index{Controller.\+h@{Controller.\+h}!Check\+Controller@{Check\+Controller}}
+\index{Check\+Controller@{Check\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Check\+Controller()}{CheckController()}}
+{\footnotesize\ttfamily bool Check\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_a7ce18579ea4ba19ada0eafa54c3fe4d2}\label{_controller_8h_a7ce18579ea4ba19ada0eafa54c3fe4d2}} 
+\index{Controller.\+h@{Controller.\+h}!Get\+Controller\+Connect@{Get\+Controller\+Connect}}
+\index{Get\+Controller\+Connect@{Get\+Controller\+Connect}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Connect()}{GetControllerConnect()}}
+{\footnotesize\ttfamily int Get\+Controller\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_aeb6ff8e48a075c63818867dbaf0c9657}\label{_controller_8h_aeb6ff8e48a075c63818867dbaf0c9657}} 
+\index{Controller.\+h@{Controller.\+h}!Get\+Controller\+Num@{Get\+Controller\+Num}}
+\index{Get\+Controller\+Num@{Get\+Controller\+Num}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Get\+Controller\+Num()}{GetControllerNum()}}
+{\footnotesize\ttfamily int Get\+Controller\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_a898d6532bc737fffd8b3d870664579e4}\label{_controller_8h_a898d6532bc737fffd8b3d870664579e4}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+Hold\+Controller@{Input\+Hold\+Controller}}
+\index{Input\+Hold\+Controller@{Input\+Hold\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+Hold\+Controller()}{InputHoldController()}}
+{\footnotesize\ttfamily bool Input\+Hold\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{button\+Num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_a90172433d3a8e29f9db1db24dd4305d8}\label{_controller_8h_a90172433d3a8e29f9db1db24dd4305d8}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+L\+Stick\+Hold\+Controller@{Input\+L\+Stick\+Hold\+Controller}}
+\index{Input\+L\+Stick\+Hold\+Controller@{Input\+L\+Stick\+Hold\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+L\+Stick\+Hold\+Controller()}{InputLStickHoldController()}}
+{\footnotesize\ttfamily bool Input\+L\+Stick\+Hold\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_aecb71b9538db737e966d3c67530abfc0}\label{_controller_8h_aecb71b9538db737e966d3c67530abfc0}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+L\+Stick\+Trigger\+Controller@{Input\+L\+Stick\+Trigger\+Controller}}
+\index{Input\+L\+Stick\+Trigger\+Controller@{Input\+L\+Stick\+Trigger\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+L\+Stick\+Trigger\+Controller()}{InputLStickTriggerController()}}
+{\footnotesize\ttfamily bool Input\+L\+Stick\+Trigger\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_ad12efd7e711e82e14a16a677144651c9}\label{_controller_8h_ad12efd7e711e82e14a16a677144651c9}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+R2\+L2\+Hold\+Controller@{Input\+R2\+L2\+Hold\+Controller}}
+\index{Input\+R2\+L2\+Hold\+Controller@{Input\+R2\+L2\+Hold\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+R2\+L2\+Hold\+Controller()}{InputR2L2HoldController()}}
+{\footnotesize\ttfamily bool Input\+R2\+L2\+Hold\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_aeed7d959ed5561cd3b7ccff55b20d025}\label{_controller_8h_aeed7d959ed5561cd3b7ccff55b20d025}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+R2\+L2\+Release\+Controller@{Input\+R2\+L2\+Release\+Controller}}
+\index{Input\+R2\+L2\+Release\+Controller@{Input\+R2\+L2\+Release\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+R2\+L2\+Release\+Controller()}{InputR2L2ReleaseController()}}
+{\footnotesize\ttfamily bool Input\+R2\+L2\+Release\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_acc5c318424db02fbcffd5d1d119588f7}\label{_controller_8h_acc5c318424db02fbcffd5d1d119588f7}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+R2\+L2\+Trigger\+Controller@{Input\+R2\+L2\+Trigger\+Controller}}
+\index{Input\+R2\+L2\+Trigger\+Controller@{Input\+R2\+L2\+Trigger\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+R2\+L2\+Trigger\+Controller()}{InputR2L2TriggerController()}}
+{\footnotesize\ttfamily bool Input\+R2\+L2\+Trigger\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_a553e7cb5813072d8ec8803a6b217c38f}\label{_controller_8h_a553e7cb5813072d8ec8803a6b217c38f}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+Release\+Controller@{Input\+Release\+Controller}}
+\index{Input\+Release\+Controller@{Input\+Release\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+Release\+Controller()}{InputReleaseController()}}
+{\footnotesize\ttfamily bool Input\+Release\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{button\+Num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_a1abb537ee0a6225792540e30ed6ba710}\label{_controller_8h_a1abb537ee0a6225792540e30ed6ba710}} 
+\index{Controller.\+h@{Controller.\+h}!Input\+Trigger\+Controller@{Input\+Trigger\+Controller}}
+\index{Input\+Trigger\+Controller@{Input\+Trigger\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Input\+Trigger\+Controller()}{InputTriggerController()}}
+{\footnotesize\ttfamily bool Input\+Trigger\+Controller (\begin{DoxyParamCaption}\item[{int}]{controller\+Num,  }\item[{int}]{button\+Num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_controller_8h_a0f47a2a62b2452dbb84fbfea8f1cea72}\label{_controller_8h_a0f47a2a62b2452dbb84fbfea8f1cea72}} 
+\index{Controller.\+h@{Controller.\+h}!Set\+Controller@{Set\+Controller}}
+\index{Set\+Controller@{Set\+Controller}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{Set\+Controller()}{SetController()}}
+{\footnotesize\ttfamily void Set\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{変数詳解}
+\mbox{\Hypertarget{_controller_8h_a3b58b91236c7489570c12274c208fcac}\label{_controller_8h_a3b58b91236c7489570c12274c208fcac}} 
+\index{Controller.\+h@{Controller.\+h}!C\+O\+N\+N\+E\+C\+T\+\_\+\+O\+NE@{C\+O\+N\+N\+E\+C\+T\+\_\+\+O\+NE}}
+\index{C\+O\+N\+N\+E\+C\+T\+\_\+\+O\+NE@{C\+O\+N\+N\+E\+C\+T\+\_\+\+O\+NE}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+N\+N\+E\+C\+T\+\_\+\+O\+NE}{CONNECT\_ONE}}
+{\footnotesize\ttfamily const unsigned C\+O\+N\+N\+E\+C\+T\+\_\+\+O\+NE = 1}
+
+\mbox{\Hypertarget{_controller_8h_afb6cc057ae4469f63bd29838226d5efc}\label{_controller_8h_afb6cc057ae4469f63bd29838226d5efc}} 
+\index{Controller.\+h@{Controller.\+h}!D\+E\+V\+I\+C\+E\+\_\+\+N\+UM@{D\+E\+V\+I\+C\+E\+\_\+\+N\+UM}}
+\index{D\+E\+V\+I\+C\+E\+\_\+\+N\+UM@{D\+E\+V\+I\+C\+E\+\_\+\+N\+UM}!Controller.\+h@{Controller.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+V\+I\+C\+E\+\_\+\+N\+UM}{DEVICE\_NUM}}
+{\footnotesize\ttfamily const unsigned D\+E\+V\+I\+C\+E\+\_\+\+N\+UM = 2}
+

@@ -1,0 +1,175 @@
+\hypertarget{class_fade}{}\section{Fade クラス}
+\label{class_fade}\index{Fade@{Fade}}
+
+
+{\ttfamily \#include $<$Fade.\+h$>$}
+
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Type}} \{ \mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80aff416f0a20b074a38a4f67e20f001828}{T\+Y\+P\+E\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80a6058f5db637853756ba18166da96043e}{T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL}}, 
+\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80af424897abd4b53f7af0bf51f1190a427}{T\+Y\+P\+E\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+01}}, 
+\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80ab05e3987a6b16a8ebe7e284aa8922ea0}{T\+Y\+P\+E\+\_\+\+M\+AX}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{State}} \{ \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aae593109007af793c6b0e7e287dcc7803}{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aa5b9862985db043392d465dd7a7a7805b}{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+IN}}, 
+\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aa41e3fdc3eb47279527440d923fccbb6e}{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aab65dcff35c00997ef90c43d254906121}{S\+T\+A\+T\+E\+\_\+\+M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fade_aec1ac5a0a80be8d7a2a43dbde2a741ee}{Fade}} ()
+\item 
+\mbox{\hyperlink{class_fade_a58ddf7585cb85bf84f5e83adbe2734f9}{$\sim$\+Fade}} ()
+\item 
+void \mbox{\hyperlink{class_fade_aab12848f7102a219968c86ed699a6e5d}{Init}} (\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Type}} type, \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{State}} state, \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} size, \mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} color, float speed)
+\item 
+void \mbox{\hyperlink{class_fade_abf68444af1314ad502d1109940b2ab5c}{Uninit}} ()
+\item 
+void \mbox{\hyperlink{class_fade_a1579b5b9020344a1131ea11c15f2c0bd}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_fade_a521f3cb7e82fb71360bab568bcf933c9}{Draw}} ()
+\item 
+const \mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Type}} $\ast$ \mbox{\hyperlink{class_fade_aed5a29d39a5fd6161a9aed73d5f30870}{Get\+Type}} () const
+\item 
+const \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{State}} $\ast$ \mbox{\hyperlink{class_fade_aeb41dfcadf75dd4c980da68e243cc310}{Get\+State}} () const
+\item 
+bool \mbox{\hyperlink{class_fade_acc8adf28ce2e4270e5fb3907d83dadd0}{Get\+End\+Flag}} () const
+\item 
+\mbox{\hyperlink{class_transform}{Transform}} $\ast$ \mbox{\hyperlink{class_fade_a1a177209e72a27858ceb2d339321e9c4}{Get\+Transform}} ()
+\item 
+\mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_fade_a4e047c532d430095e7d0d70288289a82}{Get\+Transition01\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}\label{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}} 
+\index{Fade@{Fade}!State@{State}}
+\index{State@{State}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE@{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE}!Fade@{Fade}}\index{Fade@{Fade}!S\+T\+A\+T\+E\+\_\+\+N\+O\+NE@{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aae593109007af793c6b0e7e287dcc7803}\label{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aae593109007af793c6b0e7e287dcc7803}} 
+S\+T\+A\+T\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+IN@{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+IN}!Fade@{Fade}}\index{Fade@{Fade}!S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+IN@{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+IN}}}\mbox{\Hypertarget{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aa5b9862985db043392d465dd7a7a7805b}\label{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aa5b9862985db043392d465dd7a7a7805b}} 
+S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+O\+UT@{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+O\+UT}!Fade@{Fade}}\index{Fade@{Fade}!S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+O\+UT@{S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+O\+UT}}}\mbox{\Hypertarget{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aa41e3fdc3eb47279527440d923fccbb6e}\label{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aa41e3fdc3eb47279527440d923fccbb6e}} 
+S\+T\+A\+T\+E\+\_\+\+F\+A\+D\+E\+\_\+\+O\+UT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+M\+AX@{S\+T\+A\+T\+E\+\_\+\+M\+AX}!Fade@{Fade}}\index{Fade@{Fade}!S\+T\+A\+T\+E\+\_\+\+M\+AX@{S\+T\+A\+T\+E\+\_\+\+M\+AX}}}\mbox{\Hypertarget{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aab65dcff35c00997ef90c43d254906121}\label{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80aab65dcff35c00997ef90c43d254906121}} 
+S\+T\+A\+T\+E\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_fade_ac06f27215b454aa05b93c236476d6e80}\label{class_fade_ac06f27215b454aa05b93c236476d6e80}} 
+\index{Fade@{Fade}!Type@{Type}}
+\index{Type@{Type}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+Y\+P\+E\+\_\+\+N\+O\+NE@{T\+Y\+P\+E\+\_\+\+N\+O\+NE}!Fade@{Fade}}\index{Fade@{Fade}!T\+Y\+P\+E\+\_\+\+N\+O\+NE@{T\+Y\+P\+E\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{class_fade_ac06f27215b454aa05b93c236476d6e80aff416f0a20b074a38a4f67e20f001828}\label{class_fade_ac06f27215b454aa05b93c236476d6e80aff416f0a20b074a38a4f67e20f001828}} 
+T\+Y\+P\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL@{T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL}!Fade@{Fade}}\index{Fade@{Fade}!T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL@{T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL}}}\mbox{\Hypertarget{class_fade_ac06f27215b454aa05b93c236476d6e80a6058f5db637853756ba18166da96043e}\label{class_fade_ac06f27215b454aa05b93c236476d6e80a6058f5db637853756ba18166da96043e}} 
+T\+Y\+P\+E\+\_\+\+N\+O\+R\+M\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+Y\+P\+E\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+01@{T\+Y\+P\+E\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+01}!Fade@{Fade}}\index{Fade@{Fade}!T\+Y\+P\+E\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+01@{T\+Y\+P\+E\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+01}}}\mbox{\Hypertarget{class_fade_ac06f27215b454aa05b93c236476d6e80af424897abd4b53f7af0bf51f1190a427}\label{class_fade_ac06f27215b454aa05b93c236476d6e80af424897abd4b53f7af0bf51f1190a427}} 
+T\+Y\+P\+E\+\_\+\+T\+R\+A\+N\+S\+I\+T\+I\+O\+N\+\_\+01&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+Y\+P\+E\+\_\+\+M\+AX@{T\+Y\+P\+E\+\_\+\+M\+AX}!Fade@{Fade}}\index{Fade@{Fade}!T\+Y\+P\+E\+\_\+\+M\+AX@{T\+Y\+P\+E\+\_\+\+M\+AX}}}\mbox{\Hypertarget{class_fade_ac06f27215b454aa05b93c236476d6e80ab05e3987a6b16a8ebe7e284aa8922ea0}\label{class_fade_ac06f27215b454aa05b93c236476d6e80ab05e3987a6b16a8ebe7e284aa8922ea0}} 
+T\+Y\+P\+E\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_fade_aec1ac5a0a80be8d7a2a43dbde2a741ee}\label{class_fade_aec1ac5a0a80be8d7a2a43dbde2a741ee}} 
+\index{Fade@{Fade}!Fade@{Fade}}
+\index{Fade@{Fade}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Fade()}{Fade()}}
+{\footnotesize\ttfamily Fade\+::\+Fade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fade_a58ddf7585cb85bf84f5e83adbe2734f9}\label{class_fade_a58ddf7585cb85bf84f5e83adbe2734f9}} 
+\index{Fade@{Fade}!````~Fade@{$\sim$\+Fade}}
+\index{````~Fade@{$\sim$\+Fade}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{$\sim$\+Fade()}{~Fade()}}
+{\footnotesize\ttfamily Fade\+::$\sim$\+Fade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_fade_a521f3cb7e82fb71360bab568bcf933c9}\label{class_fade_a521f3cb7e82fb71360bab568bcf933c9}} 
+\index{Fade@{Fade}!Draw@{Draw}}
+\index{Draw@{Draw}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Fade\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fade_acc8adf28ce2e4270e5fb3907d83dadd0}\label{class_fade_acc8adf28ce2e4270e5fb3907d83dadd0}} 
+\index{Fade@{Fade}!Get\+End\+Flag@{Get\+End\+Flag}}
+\index{Get\+End\+Flag@{Get\+End\+Flag}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Get\+End\+Flag()}{GetEndFlag()}}
+{\footnotesize\ttfamily bool Fade\+::\+Get\+End\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fade_aeb41dfcadf75dd4c980da68e243cc310}\label{class_fade_aeb41dfcadf75dd4c980da68e243cc310}} 
+\index{Fade@{Fade}!Get\+State@{Get\+State}}
+\index{Get\+State@{Get\+State}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Get\+State()}{GetState()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{State}}$\ast$ Fade\+::\+Get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fade_a1a177209e72a27858ceb2d339321e9c4}\label{class_fade_a1a177209e72a27858ceb2d339321e9c4}} 
+\index{Fade@{Fade}!Get\+Transform@{Get\+Transform}}
+\index{Get\+Transform@{Get\+Transform}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}}$\ast$ Fade\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fade_a4e047c532d430095e7d0d70288289a82}\label{class_fade_a4e047c532d430095e7d0d70288289a82}} 
+\index{Fade@{Fade}!Get\+Transition01\+Object@{Get\+Transition01\+Object}}
+\index{Get\+Transition01\+Object@{Get\+Transition01\+Object}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Get\+Transition01\+Object()}{GetTransition01Object()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}}$\ast$ Fade\+::\+Get\+Transition01\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fade_aed5a29d39a5fd6161a9aed73d5f30870}\label{class_fade_aed5a29d39a5fd6161a9aed73d5f30870}} 
+\index{Fade@{Fade}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Type}}$\ast$ Fade\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fade_aab12848f7102a219968c86ed699a6e5d}\label{class_fade_aab12848f7102a219968c86ed699a6e5d}} 
+\index{Fade@{Fade}!Init@{Init}}
+\index{Init@{Init}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Fade\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Type}}}]{type,  }\item[{\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{State}}}]{state,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}}}]{size,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color,  }\item[{float}]{speed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fade_abf68444af1314ad502d1109940b2ab5c}\label{class_fade_abf68444af1314ad502d1109940b2ab5c}} 
+\index{Fade@{Fade}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Fade\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fade_a1579b5b9020344a1131ea11c15f2c0bd}\label{class_fade_a1579b5b9020344a1131ea11c15f2c0bd}} 
+\index{Fade@{Fade}!Update@{Update}}
+\index{Update@{Update}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Fade\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Fade/\mbox{\hyperlink{_fade_8h}{Fade.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Fade/\mbox{\hyperlink{_fade_8cpp}{Fade.\+cpp}}\end{DoxyCompactItemize}

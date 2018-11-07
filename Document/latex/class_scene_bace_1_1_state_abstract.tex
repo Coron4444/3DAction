@@ -1,0 +1,138 @@
+\hypertarget{class_scene_bace_1_1_state_abstract}{}\section{Scene\+Bace\+:\+:State\+Abstract クラス}
+\label{class_scene_bace_1_1_state_abstract}\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+
+
+シーンステート抽象クラス  
+
+
+
+
+{\ttfamily \#include $<$Scene\+Bace.\+h$>$}
+
+Scene\+Bace\+:\+:State\+Abstract の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene_bace_1_1_state_abstract}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_scene_bace_1_1_state_abstract_af10a26f1265f46bc2cc23c2b001dc903}{$\sim$\+State\+Abstract}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_bace_1_1_state_abstract_ae2846ccd263265142324b43bfac813ff}{Init}} ()=0
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_bace_1_1_state_abstract_a7d5a67a3f6c1708e55a8cd39649b6813}{Uninit}} ()=0
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_bace_1_1_state_abstract_a949637cf8453ddd6a8e38fdbd6e4006e}{Update}} ()=0
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_bace_1_1_state_abstract_a006ee828975a964e513d9efb096584de}{Reset}} ()=0
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_bace_1_1_state_abstract_ac8fb501149e60438a835315ca1151907}{Set\+Scene}} (\mbox{\hyperlink{class_scene_bace}{Scene\+Bace}} $\ast$value)
+\end{DoxyCompactItemize}
+\subsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_bace}{Scene\+Bace}} $\ast$ \mbox{\hyperlink{class_scene_bace_1_1_state_abstract_a881f0c962327486fce549fc35549bfa8}{scene\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em シーン \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+シーンステート抽象クラス 
+
+シーンステートの抽象クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_scene_bace_1_1_state_abstract_af10a26f1265f46bc2cc23c2b001dc903}\label{class_scene_bace_1_1_state_abstract_af10a26f1265f46bc2cc23c2b001dc903}} 
+\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}!````~State\+Abstract@{$\sim$\+State\+Abstract}}
+\index{````~State\+Abstract@{$\sim$\+State\+Abstract}!Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+\subsubsection{\texorpdfstring{$\sim$\+State\+Abstract()}{~StateAbstract()}}
+{\footnotesize\ttfamily virtual Scene\+Bace\+::\+State\+Abstract\+::$\sim$\+State\+Abstract (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_scene_bace_1_1_state_abstract_ae2846ccd263265142324b43bfac813ff}\label{class_scene_bace_1_1_state_abstract_ae2846ccd263265142324b43bfac813ff}} 
+\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}!Init@{Init}}
+\index{Init@{Init}!Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Scene\+Bace\+::\+State\+Abstract\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_game_scene_state___start_ae921c57f349fbb2f00a197d40a3404b7}{Game\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+\mbox{\Hypertarget{class_scene_bace_1_1_state_abstract_a006ee828975a964e513d9efb096584de}\label{class_scene_bace_1_1_state_abstract_a006ee828975a964e513d9efb096584de}} 
+\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}!Reset@{Reset}}
+\index{Reset@{Reset}!Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Scene\+Bace\+::\+State\+Abstract\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3056179}{Game\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+\mbox{\Hypertarget{class_scene_bace_1_1_state_abstract_ac8fb501149e60438a835315ca1151907}\label{class_scene_bace_1_1_state_abstract_ac8fb501149e60438a835315ca1151907}} 
+\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}!Set\+Scene@{Set\+Scene}}
+\index{Set\+Scene@{Set\+Scene}!Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+\subsubsection{\texorpdfstring{Set\+Scene()}{SetScene()}}
+{\footnotesize\ttfamily void Scene\+Bace\+::\+State\+Abstract\+::\+Set\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_bace}{Scene\+Bace}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_bace_1_1_state_abstract_a7d5a67a3f6c1708e55a8cd39649b6813}\label{class_scene_bace_1_1_state_abstract_a7d5a67a3f6c1708e55a8cd39649b6813}} 
+\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily virtual void Scene\+Bace\+::\+State\+Abstract\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_scene_state___start_a636df8b7ac0173b044b0efc2927fb83b}{Game\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+\mbox{\Hypertarget{class_scene_bace_1_1_state_abstract_a949637cf8453ddd6a8e38fdbd6e4006e}\label{class_scene_bace_1_1_state_abstract_a949637cf8453ddd6a8e38fdbd6e4006e}} 
+\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}!Update@{Update}}
+\index{Update@{Update}!Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Scene\+Bace\+::\+State\+Abstract\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+更新関数 
+
+
+
+\mbox{\hyperlink{class_game_scene_state___start_ae11bb8d8ea9eae4fea2a9acf33dd1c8b}{Game\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_scene_bace_1_1_state_abstract_a881f0c962327486fce549fc35549bfa8}\label{class_scene_bace_1_1_state_abstract_a881f0c962327486fce549fc35549bfa8}} 
+\index{Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}!scene\+\_\+@{scene\+\_\+}}
+\index{scene\+\_\+@{scene\+\_\+}!Scene\+Bace\+::\+State\+Abstract@{Scene\+Bace\+::\+State\+Abstract}}
+\subsubsection{\texorpdfstring{scene\+\_\+}{scene\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_bace}{Scene\+Bace}}$\ast$ Scene\+Bace\+::\+State\+Abstract\+::scene\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+シーン 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scene\+Bace/\mbox{\hyperlink{_scene_bace_8h}{Scene\+Bace.\+h}}\end{DoxyCompactItemize}

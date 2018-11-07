@@ -1,0 +1,121 @@
+\hypertarget{class_effekseer_1_1_effect_node}{}\section{Effekseer\+:\+:Effect\+Node クラス}
+\label{class_effekseer_1_1_effect_node}\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+
+
+ノードインスタンス生成クラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_effect_node_aba9378c17ee790783c2d2add7ec4c16c}{Effect\+Node}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_effect_node_a3f6d7251ef627dc4fa86e45c57989741}{$\sim$\+Effect\+Node}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_effect_node_a82cd29e3b7d4f56bae4f95d3ac1d25a7}{Get\+Effect}} () const =0
+\begin{DoxyCompactList}\small\item\em ノードが所属しているエフェクトを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_effect_node_a195d5b29060452c7d4d4d5c376987c4f}{Get\+Children\+Count}} () const =0
+\begin{DoxyCompactList}\small\item\em 子のノードの数を取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_effect_node}{Effect\+Node}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_effect_node_a8010add5e3aa304a0b600b558cb9cd5d}{Get\+Child}} (\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} index) const =0
+\begin{DoxyCompactList}\small\item\em 子のノードを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_effekseer_1_1_effect_basic_render_parameter}{Effect\+Basic\+Render\+Parameter}} \mbox{\hyperlink{class_effekseer_1_1_effect_node_a5066e8209dabdcab46eb5fb64de5180d}{Get\+Basic\+Render\+Parameter}} ()=0
+\begin{DoxyCompactList}\small\item\em 共通描画パラメーターを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_effect_node_a064ec945f4ced3b7935520d625e4c92e}{Set\+Basic\+Render\+Parameter}} (\mbox{\hyperlink{struct_effekseer_1_1_effect_basic_render_parameter}{Effect\+Basic\+Render\+Parameter}} param)=0
+\begin{DoxyCompactList}\small\item\em 共通描画パラメーターを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_effekseer_1_1_effect_model_parameter}{Effect\+Model\+Parameter}} \mbox{\hyperlink{class_effekseer_1_1_effect_node_a6fc47c5de5057a81240d4df22887b2c2}{Get\+Effect\+Model\+Parameter}} ()=0
+\begin{DoxyCompactList}\small\item\em モデルパラメーターを取得する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ノードインスタンス生成クラス 
+
+\begin{DoxyNote}{覚え書き}
+エフェクトのノードの実体を生成する。 
+\end{DoxyNote}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_aba9378c17ee790783c2d2add7ec4c16c}\label{class_effekseer_1_1_effect_node_aba9378c17ee790783c2d2add7ec4c16c}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!Effect\+Node@{Effect\+Node}}
+\index{Effect\+Node@{Effect\+Node}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{Effect\+Node()}{EffectNode()}}
+{\footnotesize\ttfamily Effekseer\+::\+Effect\+Node\+::\+Effect\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_a3f6d7251ef627dc4fa86e45c57989741}\label{class_effekseer_1_1_effect_node_a3f6d7251ef627dc4fa86e45c57989741}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!````~Effect\+Node@{$\sim$\+Effect\+Node}}
+\index{````~Effect\+Node@{$\sim$\+Effect\+Node}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+Effect\+Node()}{~EffectNode()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Effect\+Node\+::$\sim$\+Effect\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_a5066e8209dabdcab46eb5fb64de5180d}\label{class_effekseer_1_1_effect_node_a5066e8209dabdcab46eb5fb64de5180d}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!Get\+Basic\+Render\+Parameter@{Get\+Basic\+Render\+Parameter}}
+\index{Get\+Basic\+Render\+Parameter@{Get\+Basic\+Render\+Parameter}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{Get\+Basic\+Render\+Parameter()}{GetBasicRenderParameter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_effekseer_1_1_effect_basic_render_parameter}{Effect\+Basic\+Render\+Parameter}} Effekseer\+::\+Effect\+Node\+::\+Get\+Basic\+Render\+Parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+共通描画パラメーターを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_a8010add5e3aa304a0b600b558cb9cd5d}\label{class_effekseer_1_1_effect_node_a8010add5e3aa304a0b600b558cb9cd5d}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!Get\+Child@{Get\+Child}}
+\index{Get\+Child@{Get\+Child}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{Get\+Child()}{GetChild()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_effect_node}{Effect\+Node}}$\ast$ Effekseer\+::\+Effect\+Node\+::\+Get\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+子のノードを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_a195d5b29060452c7d4d4d5c376987c4f}\label{class_effekseer_1_1_effect_node_a195d5b29060452c7d4d4d5c376987c4f}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!Get\+Children\+Count@{Get\+Children\+Count}}
+\index{Get\+Children\+Count@{Get\+Children\+Count}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{Get\+Children\+Count()}{GetChildrenCount()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+Effect\+Node\+::\+Get\+Children\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+子のノードの数を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_a82cd29e3b7d4f56bae4f95d3ac1d25a7}\label{class_effekseer_1_1_effect_node_a82cd29e3b7d4f56bae4f95d3ac1d25a7}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!Get\+Effect@{Get\+Effect}}
+\index{Get\+Effect@{Get\+Effect}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{Get\+Effect()}{GetEffect()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}}$\ast$ Effekseer\+::\+Effect\+Node\+::\+Get\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ノードが所属しているエフェクトを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_a6fc47c5de5057a81240d4df22887b2c2}\label{class_effekseer_1_1_effect_node_a6fc47c5de5057a81240d4df22887b2c2}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!Get\+Effect\+Model\+Parameter@{Get\+Effect\+Model\+Parameter}}
+\index{Get\+Effect\+Model\+Parameter@{Get\+Effect\+Model\+Parameter}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{Get\+Effect\+Model\+Parameter()}{GetEffectModelParameter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_effekseer_1_1_effect_model_parameter}{Effect\+Model\+Parameter}} Effekseer\+::\+Effect\+Node\+::\+Get\+Effect\+Model\+Parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+モデルパラメーターを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_effect_node_a064ec945f4ced3b7935520d625e4c92e}\label{class_effekseer_1_1_effect_node_a064ec945f4ced3b7935520d625e4c92e}} 
+\index{Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}!Set\+Basic\+Render\+Parameter@{Set\+Basic\+Render\+Parameter}}
+\index{Set\+Basic\+Render\+Parameter@{Set\+Basic\+Render\+Parameter}!Effekseer\+::\+Effect\+Node@{Effekseer\+::\+Effect\+Node}}
+\subsubsection{\texorpdfstring{Set\+Basic\+Render\+Parameter()}{SetBasicRenderParameter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Effect\+Node\+::\+Set\+Basic\+Render\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_effect_basic_render_parameter}{Effect\+Basic\+Render\+Parameter}}}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+共通描画パラメーターを設定する。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

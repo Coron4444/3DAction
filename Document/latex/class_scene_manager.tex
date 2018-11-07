@@ -1,0 +1,189 @@
+\hypertarget{class_scene_manager}{}\section{Scene\+Manager クラス}
+\label{class_scene_manager}\index{Scene\+Manager@{Scene\+Manager}}
+
+
+シーンマネージャクラス  
+
+
+
+
+{\ttfamily \#include $<$Scene\+Manager.\+h$>$}
+
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_scene_manager_1_1_common_data}{Common\+Data}}
+\begin{DoxyCompactList}\small\item\em シーン間共通データクラス \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eb}{State}} \{ \mbox{\hyperlink{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba8cd4a237fa57487ca812c21216c5d77c}{N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba221613d2f5fb26ba3c9af4597df566fe}{C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE}}, 
+\mbox{\hyperlink{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba9e2198b05b1320b8aabfc855b8e81e82}{R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE}}, 
+\mbox{\hyperlink{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba67b231706633f4d8aaadf6830078dd68}{M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_manager_a6096310b39a1f6eb29f993d7bd3d5735}{Scene\+Manager}} (\mbox{\hyperlink{class_scene_bace}{Scene\+Bace}} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_manager_a2bb376a85d29e85f47753e26c7539229}{$\sim$\+Scene\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a63dcf65832d6a2c190bf496d9a3b00a3}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a493bc0d65558ce004f6f248a185ba956}{Update\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーンの更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a828b35826f757b8af34aa767c6b40378}{Draw\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーンの描画関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a1759161a38025ec8212dc98439fd7335}{Reset\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーンのリセット関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_ae01f4773bdbb6bf4159f0f5ab193b558}{Set\+Next\+Scene}} (\mbox{\hyperlink{class_scene_bace}{Scene\+Bace}} $\ast$value)
+\item 
+\mbox{\hyperlink{class_scene_manager_1_1_common_data}{Common\+Data}} $\ast$ \mbox{\hyperlink{class_scene_manager_ad2fb33bb5ff645427353d7085c8be8d4}{Get\+Common\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_scene_manager_a6c209a6636f6139aec4f48c6555d6d47}{Set\+Fade\+Type}} (\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}} value)
+\item 
+void \mbox{\hyperlink{class_scene_manager_aebb6b6cabf8a855982ddfd7571498369}{Set\+Fade\+Speed}} (float value)
+\item 
+void \mbox{\hyperlink{class_scene_manager_a4dc85343025336320c32bb66961bda4a}{Set\+Fade\+Color}} (\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} value)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+シーンマネージャクラス 
+
+シーンの管理をするクラス 
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eb}\label{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eb}} 
+\index{Scene\+Manager@{Scene\+Manager}!State@{State}}
+\index{State@{State}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eb}{Scene\+Manager\+::\+State}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Scene\+Manager@{Scene\+Manager}}\index{Scene\+Manager@{Scene\+Manager}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba8cd4a237fa57487ca812c21216c5d77c}\label{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba8cd4a237fa57487ca812c21216c5d77c}} 
+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE@{C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE}!Scene\+Manager@{Scene\+Manager}}\index{Scene\+Manager@{Scene\+Manager}!C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE@{C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE}}}\mbox{\Hypertarget{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba221613d2f5fb26ba3c9af4597df566fe}\label{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba221613d2f5fb26ba3c9af4597df566fe}} 
+C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE@{R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE}!Scene\+Manager@{Scene\+Manager}}\index{Scene\+Manager@{Scene\+Manager}!R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE@{R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE}}}\mbox{\Hypertarget{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba9e2198b05b1320b8aabfc855b8e81e82}\label{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba9e2198b05b1320b8aabfc855b8e81e82}} 
+R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+AX@{M\+AX}!Scene\+Manager@{Scene\+Manager}}\index{Scene\+Manager@{Scene\+Manager}!M\+AX@{M\+AX}}}\mbox{\Hypertarget{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba67b231706633f4d8aaadf6830078dd68}\label{class_scene_manager_a68d32794fe1ce945c6a6c380c11a08eba67b231706633f4d8aaadf6830078dd68}} 
+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_scene_manager_a6096310b39a1f6eb29f993d7bd3d5735}\label{class_scene_manager_a6096310b39a1f6eb29f993d7bd3d5735}} 
+\index{Scene\+Manager@{Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\index{Scene\+Manager@{Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Scene\+Manager()}{SceneManager()}}
+{\footnotesize\ttfamily Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_bace}{Scene\+Bace}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em scene} & \+: 最初のシーン \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_manager_a2bb376a85d29e85f47753e26c7539229}\label{class_scene_manager_a2bb376a85d29e85f47753e26c7539229}} 
+\index{Scene\+Manager@{Scene\+Manager}!````~Scene\+Manager@{$\sim$\+Scene\+Manager}}
+\index{````~Scene\+Manager@{$\sim$\+Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Scene\+Manager()}{~SceneManager()}}
+{\footnotesize\ttfamily Scene\+Manager\+::$\sim$\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_scene_manager_a828b35826f757b8af34aa767c6b40378}\label{class_scene_manager_a828b35826f757b8af34aa767c6b40378}} 
+\index{Scene\+Manager@{Scene\+Manager}!Draw\+Scene@{Draw\+Scene}}
+\index{Draw\+Scene@{Draw\+Scene}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Scene()}{DrawScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Draw\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シーンの描画関数 
+
+\mbox{\Hypertarget{class_scene_manager_ad2fb33bb5ff645427353d7085c8be8d4}\label{class_scene_manager_ad2fb33bb5ff645427353d7085c8be8d4}} 
+\index{Scene\+Manager@{Scene\+Manager}!Get\+Common\+Data@{Get\+Common\+Data}}
+\index{Get\+Common\+Data@{Get\+Common\+Data}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Common\+Data()}{GetCommonData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager_1_1_common_data}{Common\+Data}}$\ast$ Scene\+Manager\+::\+Get\+Common\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_manager_a1759161a38025ec8212dc98439fd7335}\label{class_scene_manager_a1759161a38025ec8212dc98439fd7335}} 
+\index{Scene\+Manager@{Scene\+Manager}!Reset\+Scene@{Reset\+Scene}}
+\index{Reset\+Scene@{Reset\+Scene}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Reset\+Scene()}{ResetScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Reset\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シーンのリセット関数 
+
+\mbox{\Hypertarget{class_scene_manager_a4dc85343025336320c32bb66961bda4a}\label{class_scene_manager_a4dc85343025336320c32bb66961bda4a}} 
+\index{Scene\+Manager@{Scene\+Manager}!Set\+Fade\+Color@{Set\+Fade\+Color}}
+\index{Set\+Fade\+Color@{Set\+Fade\+Color}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Fade\+Color()}{SetFadeColor()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Set\+Fade\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_manager_aebb6b6cabf8a855982ddfd7571498369}\label{class_scene_manager_aebb6b6cabf8a855982ddfd7571498369}} 
+\index{Scene\+Manager@{Scene\+Manager}!Set\+Fade\+Speed@{Set\+Fade\+Speed}}
+\index{Set\+Fade\+Speed@{Set\+Fade\+Speed}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Fade\+Speed()}{SetFadeSpeed()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Set\+Fade\+Speed (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_manager_a6c209a6636f6139aec4f48c6555d6d47}\label{class_scene_manager_a6c209a6636f6139aec4f48c6555d6d47}} 
+\index{Scene\+Manager@{Scene\+Manager}!Set\+Fade\+Type@{Set\+Fade\+Type}}
+\index{Set\+Fade\+Type@{Set\+Fade\+Type}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Fade\+Type()}{SetFadeType()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Set\+Fade\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_manager_ae01f4773bdbb6bf4159f0f5ab193b558}\label{class_scene_manager_ae01f4773bdbb6bf4159f0f5ab193b558}} 
+\index{Scene\+Manager@{Scene\+Manager}!Set\+Next\+Scene@{Set\+Next\+Scene}}
+\index{Set\+Next\+Scene@{Set\+Next\+Scene}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Next\+Scene()}{SetNextScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Set\+Next\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_bace}{Scene\+Bace}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_manager_a63dcf65832d6a2c190bf496d9a3b00a3}\label{class_scene_manager_a63dcf65832d6a2c190bf496d9a3b00a3}} 
+\index{Scene\+Manager@{Scene\+Manager}!Update@{Update}}
+\index{Update@{Update}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+更新関数 
+
+\mbox{\Hypertarget{class_scene_manager_a493bc0d65558ce004f6f248a185ba956}\label{class_scene_manager_a493bc0d65558ce004f6f248a185ba956}} 
+\index{Scene\+Manager@{Scene\+Manager}!Update\+Scene@{Update\+Scene}}
+\index{Update\+Scene@{Update\+Scene}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Scene()}{UpdateScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::\+Update\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シーンの更新関数 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scene\+Manager/\mbox{\hyperlink{_scene_manager_8h}{Scene\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scene\+Manager/\mbox{\hyperlink{_scene_manager_8cpp}{Scene\+Manager.\+cpp}}\end{DoxyCompactItemize}

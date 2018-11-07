@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: PlanePolygon クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_plane_polygon.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_plane_polygon-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">PlanePolygon クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_plane_polygon_8h_source.html">PlanePolygon.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a27987c23a242840b142e0fa11650daf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#a27987c23a242840b142e0fa11650daf6">PlanePolygon</a> (<a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a> color=<a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a>(1.0f, 1.0f, 1.0f, 1.0f), Vec2 plane_size=Vec2(1.0f, 1.0f))</td></tr>
+<tr class="separator:a27987c23a242840b142e0fa11650daf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91d7ac1ceb00239f54b543690a78dab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#ac91d7ac1ceb00239f54b543690a78dab">~PlanePolygon</a> ()</td></tr>
+<tr class="separator:ac91d7ac1ceb00239f54b543690a78dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f20691ee0feee4fa428f5d017d7062a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#a2f20691ee0feee4fa428f5d017d7062a">Draw</a> ()</td></tr>
+<tr class="separator:a2f20691ee0feee4fa428f5d017d7062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55307fc341641d7fd42fe2269acbd113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113">SetColor</a> (<a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a> color)</td></tr>
+<tr class="separator:a55307fc341641d7fd42fe2269acbd113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081458fcb9e758dd8be5b027c66a92ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#a081458fcb9e758dd8be5b027c66a92ad">SetUV</a> (const <a class="el" href="class_texture_object.html">TextureObject</a> *texture, const int pattern_num=0)</td></tr>
+<tr class="separator:a081458fcb9e758dd8be5b027c66a92ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f8f7b51acdb744231efd342d3b2734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#ac4f8f7b51acdb744231efd342d3b2734">GetColor</a> ()</td></tr>
+<tr class="separator:ac4f8f7b51acdb744231efd342d3b2734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f4f63c2d04d30f7b9808c009101403"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#a05f4f63c2d04d30f7b9808c009101403">GetMeshNum</a> ()</td></tr>
+<tr class="separator:a05f4f63c2d04d30f7b9808c009101403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808087c9d82c0eb7cfb0709c9906e833"><td class="memItemLeft" align="right" valign="top">D3DMATERIAL9 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plane_polygon.html#a808087c9d82c0eb7cfb0709c9906e833">GetMaterial</a> ()</td></tr>
+<tr class="separator:a808087c9d82c0eb7cfb0709c9906e833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a27987c23a242840b142e0fa11650daf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27987c23a242840b142e0fa11650daf6">&#9670;&nbsp;</a></span>PlanePolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlanePolygon::PlanePolygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a>&#160;</td>
+          <td class="paramname"><em>color</em> = <code><a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a>&#160;(1.0f,&#160;1.0f,&#160;1.0f,&#160;1.0f)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#a5ef6e95dfc5f9d3820b71772d99bbc25">Vec2</a>&#160;</td>
+          <td class="paramname"><em>plane_size</em> = <code><a class="el" href="_vector3_d_8h.html#a5ef6e95dfc5f9d3820b71772d99bbc25">Vec2</a>&#160;(1.0f,&#160;1.0f)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac91d7ac1ceb00239f54b543690a78dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91d7ac1ceb00239f54b543690a78dab">&#9670;&nbsp;</a></span>~PlanePolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlanePolygon::~PlanePolygon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a2f20691ee0feee4fa428f5d017d7062a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f20691ee0feee4fa428f5d017d7062a">&#9670;&nbsp;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlanePolygon::Draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4f8f7b51acdb744231efd342d3b2734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f8f7b51acdb744231efd342d3b2734">&#9670;&nbsp;</a></span>GetColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a> PlanePolygon::GetColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a808087c9d82c0eb7cfb0709c9906e833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808087c9d82c0eb7cfb0709c9906e833">&#9670;&nbsp;</a></span>GetMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9* PlanePolygon::GetMaterial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05f4f63c2d04d30f7b9808c009101403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f4f63c2d04d30f7b9808c009101403">&#9670;&nbsp;</a></span>GetMeshNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned PlanePolygon::GetMeshNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55307fc341641d7fd42fe2269acbd113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55307fc341641d7fd42fe2269acbd113">&#9670;&nbsp;</a></span>SetColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlanePolygon::SetColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a081458fcb9e758dd8be5b027c66a92ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081458fcb9e758dd8be5b027c66a92ad">&#9670;&nbsp;</a></span>SetUV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlanePolygon::SetUV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_texture_object.html">TextureObject</a> *&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>pattern_num</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Polygon/PlanePolygon/<a class="el" href="_plane_polygon_8h_source.html">PlanePolygon.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Polygon/PlanePolygon/<a class="el" href="_plane_polygon_8cpp.html">PlanePolygon.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_plane_polygon.html">PlanePolygon</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

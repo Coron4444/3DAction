@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['r',['R',['../struct_effekseer_1_1_color.html#aae98e2323761b1b2b2d9d182e3af3b40',1,'Effekseer::Color']]],
+  ['radius_5f',['radius_',['../class_capsule.html#a5a479b152df710dba41b6529cf11199c',1,'Capsule::radius_()'],['../class_cylinder.html#abba752e07b11b7bfd8fcce64a6d9b678',1,'Cylinder::radius_()'],['../class_sphere.html#ac2924d9ad22bfad1ed1914c069c188dc',1,'Sphere::radius_()']]],
+  ['rasterizerflags',['RasterizerFlags',['../struct_im_font_config.html#a80d05eea7733731a3e9ac1d9e905e5b3',1,'ImFontConfig']]],
+  ['rasterizermultiply',['RasterizerMultiply',['../struct_im_font_config.html#a9365265cc52098a8ecf89ff47f6106f2',1,'ImFontConfig']]],
+  ['readonly',['ReadOnly',['../struct_im_gui_text_edit_callback_data.html#a37cec257a392910f386188978027541c',1,'ImGuiTextEditCallbackData']]],
+  ['redo_5fchar_5fpoint',['redo_char_point',['../struct_im_gui_stb_1_1_stb_undo_state.html#a78a5419b9c8278da078ed7acd2daac23',1,'ImGuiStb::StbUndoState::redo_char_point()'],['../struct_stb_undo_state.html#a928f655e4af8945a14d99e944441704a',1,'StbUndoState::redo_char_point()']]],
+  ['redo_5fpoint',['redo_point',['../struct_im_gui_stb_1_1_stb_undo_state.html#a6562a15b41f003f411253fe34ca81612',1,'ImGuiStb::StbUndoState::redo_point()'],['../struct_stb_undo_state.html#a719ba014b2db8a8ea55739664b445af0',1,'StbUndoState::redo_point()']]],
+  ['reference_5fdestination_5f',['reference_destination_',['../struct_game_object_reference_manager_1_1_reference_data.html#af3949232d1720f355eeafe602fc653d2',1,'GameObjectReferenceManager::ReferenceData']]],
+  ['reference_5fpointer_5f',['reference_pointer_',['../struct_game_object_reference_manager_1_1_reference_data.html#a360dfcbaa8421065a9d3b9d963ed576b',1,'GameObjectReferenceManager::ReferenceData']]],
+  ['reference_5fsource_5f',['reference_source_',['../struct_game_object_reference_manager_1_1_reference_data.html#a156ed734d7471b18cce1e2f7196852ad',1,'GameObjectReferenceManager::ReferenceData']]],
+  ['refframe',['RefFrame',['../struct_im_gui_once_upon_a_frame.html#a2d44776b8e7bdeec217f88be9f832e08',1,'ImGuiOnceUponAFrame']]],
+  ['reflectivity',['Reflectivity',['../structmfmlib_1_1_c_o_l_o_r.html#a3df7017bc9d137c037452cc338fb2b66',1,'mfmlib::COLOR']]],
+  ['registration_5findex_5f',['registration_index_',['../struct_game_object_reference_manager_1_1_reference_data.html#a36154b84fbcaa168786a74854cfda609',1,'GameObjectReferenceManager::ReferenceData']]],
+  ['renderdrawdata',['RenderDrawData',['../struct_im_gui_context.html#a81cacf53454e6dc932a7e3181179a3af',1,'ImGuiContext']]],
+  ['renderdrawlists',['RenderDrawLists',['../struct_im_gui_context.html#a65c7d5bafc5cb52d77d181925ff777da',1,'ImGuiContext']]],
+  ['renderdrawlistsfn',['RenderDrawListsFn',['../struct_im_gui_i_o.html#ae16a9f25f36fe9706d8a33fb128e538a',1,'ImGuiIO']]],
+  ['rootnonpopupwindow',['RootNonPopupWindow',['../struct_im_gui_window.html#a43b1e2ffa15d572f4d0ce4fbbeb5595f',1,'ImGuiWindow']]],
+  ['rootwindow',['RootWindow',['../struct_im_gui_window.html#aef9281297b0993c8f1b7c1ff7987cb61',1,'ImGuiWindow']]]
+];

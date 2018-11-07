@@ -1,0 +1,266 @@
+\hypertarget{struct_effekseer_1_1_vector3_d}{}\section{Effekseer\+:\+:Vector3D 構造体}
+\label{struct_effekseer_1_1_vector3_d}\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+
+
+3次元ベクトル  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d_abf224ea54e943e49876d5d5843693661}{Vector3D}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a304fedc7d4d4140d9e0930f1e9785393}{Vector3D}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_ad5b284129380bacd6229d796df3adecb}{operator+}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o) const
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_ae1da3b63871409cb8bb3e23b4305506d}{operator-\/}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o) const
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a95d40548c0aeb66d531d8f0d1e781c5d}{operator$\ast$}} (const float \&o) const
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_ad6ee55218a4aa3836fa9c937eb976131}{operator/}} (const float \&o) const
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_ac0e5693b9a451103a3546b249b2d7547}{operator+=}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o)
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a41737c64743b0f001d1a0ae502d6c0d9}{operator-\/=}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o)
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a37cdddecb129f14208169a84b4fea773}{operator$\ast$=}} (const float \&o)
+\item 
+\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a611f802ffd7514b3f3a6b99936d371fc}{operator/=}} (const float \&o)
+\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a79225e27a6ca17af79e5eca70ff44cb0}{Add}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} $\ast$p\+Out, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} $\ast$p\+In1, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} $\ast$p\+In2)
+\begin{DoxyCompactList}\small\item\em 加算 \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a7eeecc19d710f839660f1a6dcefbebb1}{Sub}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in1, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in2)
+\begin{DoxyCompactList}\small\item\em 減算 \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_addb0afd2acda6ddcad6d1a990e01ee72}{Length}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in)
+\begin{DoxyCompactList}\small\item\em 長さ \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a3b861a7330d7fe64a0d7af80f7f660a8}{Length\+Sq}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in)
+\begin{DoxyCompactList}\small\item\em 長さの二乗 \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a793f67e8b72956924e0717d82b41e3ea}{Dot}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in1, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in2)
+\begin{DoxyCompactList}\small\item\em 内積 \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_ad798a45142e315748ff769ff6b0157f3}{Normal}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in)
+\begin{DoxyCompactList}\small\item\em 単位ベクトル \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a6af90fb7357d8ab977fd647f3bfd5c52}{Cross}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in1, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in2)
+\begin{DoxyCompactList}\small\item\em 外積 \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_ae46e69eb77703cd01dc860d5024cec7d}{Transform}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in, const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&mat)
+\item 
+static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \& \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a036e8dd4bdd50963f889f6c885440e06}{Transform}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&o, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&in, const \mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Matrix44}} \&mat)
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a72ca019b959303fd6b5a685634a5ab24}{X}}
+\begin{DoxyCompactList}\small\item\em X \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_a93a6252ad3d33b83eac5f088ed51c114}{Y}}
+\begin{DoxyCompactList}\small\item\em Y \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_effekseer_1_1_vector3_d_aa73821e922d235f82cfb3d8eab43901a}{Z}}
+\begin{DoxyCompactList}\small\item\em Z \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+3次元ベクトル 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_abf224ea54e943e49876d5d5843693661}\label{struct_effekseer_1_1_vector3_d_abf224ea54e943e49876d5d5843693661}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Vector3D@{Vector3D}}
+\index{Vector3D@{Vector3D}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Vector3\+D()}{Vector3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Effekseer\+::\+Vector3\+D\+::\+Vector3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a304fedc7d4d4140d9e0930f1e9785393}\label{struct_effekseer_1_1_vector3_d_a304fedc7d4d4140d9e0930f1e9785393}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Vector3D@{Vector3D}}
+\index{Vector3D@{Vector3D}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Vector3\+D()}{Vector3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Effekseer\+::\+Vector3\+D\+::\+Vector3D (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a79225e27a6ca17af79e5eca70ff44cb0}\label{struct_effekseer_1_1_vector3_d_a79225e27a6ca17af79e5eca70ff44cb0}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Add@{Add}}
+\index{Add@{Add}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Vector3\+D\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} $\ast$}]{p\+Out,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} $\ast$}]{p\+In1,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} $\ast$}]{p\+In2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+加算 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a6af90fb7357d8ab977fd647f3bfd5c52}\label{struct_effekseer_1_1_vector3_d_a6af90fb7357d8ab977fd647f3bfd5c52}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Cross@{Cross}}
+\index{Cross@{Cross}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Cross()}{Cross()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::\+Cross (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in1,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+外積 
+
+\begin{DoxyNote}{覚え書き}
+右手系の場合、右手の親指がin1、人差し指がin2としたとき、中指の方向を返す。~\newline
+ 左手系の場合、左手の親指がin1、人差し指がin2としたとき、中指の方向を返す。~\newline
+ 
+\end{DoxyNote}
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a793f67e8b72956924e0717d82b41e3ea}\label{struct_effekseer_1_1_vector3_d_a793f67e8b72956924e0717d82b41e3ea}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Dot@{Dot}}
+\index{Dot@{Dot}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily static float Effekseer\+::\+Vector3\+D\+::\+Dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in1,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+内積 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_addb0afd2acda6ddcad6d1a990e01ee72}\label{struct_effekseer_1_1_vector3_d_addb0afd2acda6ddcad6d1a990e01ee72}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Length@{Length}}
+\index{Length@{Length}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily static float Effekseer\+::\+Vector3\+D\+::\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+長さ 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a3b861a7330d7fe64a0d7af80f7f660a8}\label{struct_effekseer_1_1_vector3_d_a3b861a7330d7fe64a0d7af80f7f660a8}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Length\+Sq@{Length\+Sq}}
+\index{Length\+Sq@{Length\+Sq}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Length\+Sq()}{LengthSq()}}
+{\footnotesize\ttfamily static float Effekseer\+::\+Vector3\+D\+::\+Length\+Sq (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+長さの二乗 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_ad798a45142e315748ff769ff6b0157f3}\label{struct_effekseer_1_1_vector3_d_ad798a45142e315748ff769ff6b0157f3}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Normal@{Normal}}
+\index{Normal@{Normal}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Normal()}{Normal()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Vector3\+D\+::\+Normal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+単位ベクトル 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a95d40548c0aeb66d531d8f0d1e781c5d}\label{struct_effekseer_1_1_vector3_d_a95d40548c0aeb66d531d8f0d1e781c5d}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} Effekseer\+::\+Vector3\+D\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const float \&}]{o }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a37cdddecb129f14208169a84b4fea773}\label{struct_effekseer_1_1_vector3_d_a37cdddecb129f14208169a84b4fea773}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const float \&}]{o }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_ad5b284129380bacd6229d796df3adecb}\label{struct_effekseer_1_1_vector3_d_ad5b284129380bacd6229d796df3adecb}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator+@{operator+}}
+\index{operator+@{operator+}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} Effekseer\+::\+Vector3\+D\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_ac0e5693b9a451103a3546b249b2d7547}\label{struct_effekseer_1_1_vector3_d_ac0e5693b9a451103a3546b249b2d7547}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_ae1da3b63871409cb8bb3e23b4305506d}\label{struct_effekseer_1_1_vector3_d_ae1da3b63871409cb8bb3e23b4305506d}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} Effekseer\+::\+Vector3\+D\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a41737c64743b0f001d1a0ae502d6c0d9}\label{struct_effekseer_1_1_vector3_d_a41737c64743b0f001d1a0ae502d6c0d9}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_ad6ee55218a4aa3836fa9c937eb976131}\label{struct_effekseer_1_1_vector3_d_ad6ee55218a4aa3836fa9c937eb976131}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator/@{operator/}}
+\index{operator/@{operator/}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} Effekseer\+::\+Vector3\+D\+::operator/ (\begin{DoxyParamCaption}\item[{const float \&}]{o }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a611f802ffd7514b3f3a6b99936d371fc}\label{struct_effekseer_1_1_vector3_d_a611f802ffd7514b3f3a6b99936d371fc}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::operator/= (\begin{DoxyParamCaption}\item[{const float \&}]{o }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a7eeecc19d710f839660f1a6dcefbebb1}\label{struct_effekseer_1_1_vector3_d_a7eeecc19d710f839660f1a6dcefbebb1}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Sub@{Sub}}
+\index{Sub@{Sub}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Sub()}{Sub()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::\+Sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in1,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+減算 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_ae46e69eb77703cd01dc860d5024cec7d}\label{struct_effekseer_1_1_vector3_d_ae46e69eb77703cd01dc860d5024cec7d}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Transform@{Transform}}
+\index{Transform@{Transform}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a036e8dd4bdd50963f889f6c885440e06}\label{struct_effekseer_1_1_vector3_d_a036e8dd4bdd50963f889f6c885440e06}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Transform@{Transform}}
+\index{Transform@{Transform}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}}\& Effekseer\+::\+Vector3\+D\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{o,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{in,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Matrix44}} \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a72ca019b959303fd6b5a685634a5ab24}\label{struct_effekseer_1_1_vector3_d_a72ca019b959303fd6b5a685634a5ab24}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!X@{X}}
+\index{X@{X}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily float Effekseer\+::\+Vector3\+D\+::X}
+
+
+
+X 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_a93a6252ad3d33b83eac5f088ed51c114}\label{struct_effekseer_1_1_vector3_d_a93a6252ad3d33b83eac5f088ed51c114}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Y@{Y}}
+\index{Y@{Y}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily float Effekseer\+::\+Vector3\+D\+::Y}
+
+
+
+Y 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_vector3_d_aa73821e922d235f82cfb3d8eab43901a}\label{struct_effekseer_1_1_vector3_d_aa73821e922d235f82cfb3d8eab43901a}} 
+\index{Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}!Z@{Z}}
+\index{Z@{Z}!Effekseer\+::\+Vector3D@{Effekseer\+::\+Vector3D}}
+\subsubsection{\texorpdfstring{Z}{Z}}
+{\footnotesize\ttfamily float Effekseer\+::\+Vector3\+D\+::Z}
+
+
+
+Z 
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

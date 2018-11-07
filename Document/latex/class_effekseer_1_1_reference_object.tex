@@ -1,0 +1,107 @@
+\hypertarget{class_effekseer_1_1_reference_object}{}\section{Effekseer\+:\+:Reference\+Object クラス}
+\label{class_effekseer_1_1_reference_object}\index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
+
+
+参照カウンタオブジェクト  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+Effekseer\+:\+:Reference\+Object の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_effekseer_1_1_reference_object}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_reference_object_a8754e7232ae958c9e5b0d85f83ce7c3a}{Reference\+Object}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_reference_object_a41396f9ecf1d190e4768b134a0c19e26}{$\sim$\+Reference\+Object}} ()
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_reference_object_a1cc3feeee39b72aea152ed223dbd0fa7}{Add\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em 参照カウンタを加算する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_reference_object_a4b8c3d79c58ca527850733691053cf5a}{Get\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em 参照カウンタを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_reference_object_a6b0e9aa4d994b557d499b15359b580d8}{Release}} ()
+\begin{DoxyCompactList}\small\item\em 参照カウンタを減算する。0になった時、インスタンスを削除する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+参照カウンタオブジェクト 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_reference_object_a8754e7232ae958c9e5b0d85f83ce7c3a}\label{class_effekseer_1_1_reference_object_a8754e7232ae958c9e5b0d85f83ce7c3a}} 
+\index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!Reference\+Object@{Reference\+Object}}
+\index{Reference\+Object@{Reference\+Object}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
+\subsubsection{\texorpdfstring{Reference\+Object()}{ReferenceObject()}}
+{\footnotesize\ttfamily Effekseer\+::\+Reference\+Object\+::\+Reference\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_reference_object_a41396f9ecf1d190e4768b134a0c19e26}\label{class_effekseer_1_1_reference_object_a41396f9ecf1d190e4768b134a0c19e26}} 
+\index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!````~Reference\+Object@{$\sim$\+Reference\+Object}}
+\index{````~Reference\+Object@{$\sim$\+Reference\+Object}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Reference\+Object()}{~ReferenceObject()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Reference\+Object\+::$\sim$\+Reference\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_reference_object_a1cc3feeee39b72aea152ed223dbd0fa7}\label{class_effekseer_1_1_reference_object_a1cc3feeee39b72aea152ed223dbd0fa7}} 
+\index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!Add\+Ref@{Add\+Ref}}
+\index{Add\+Ref@{Add\+Ref}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
+\subsubsection{\texorpdfstring{Add\+Ref()}{AddRef()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+Reference\+Object\+::\+Add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+参照カウンタを加算する。 
+
+\begin{DoxyReturn}{戻り値}
+加算後の参照カウンタ 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_effekseer_1_1_i_reference_a3e3b54e8e5081e24f5784e4f9b8f6257}{Effekseer\+::\+I\+Reference}}を実装しています。
+
+\mbox{\Hypertarget{class_effekseer_1_1_reference_object_a4b8c3d79c58ca527850733691053cf5a}\label{class_effekseer_1_1_reference_object_a4b8c3d79c58ca527850733691053cf5a}} 
+\index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!Get\+Ref@{Get\+Ref}}
+\index{Get\+Ref@{Get\+Ref}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
+\subsubsection{\texorpdfstring{Get\+Ref()}{GetRef()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+Reference\+Object\+::\+Get\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+参照カウンタを取得する。 
+
+\begin{DoxyReturn}{戻り値}
+参照カウンタ 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_effekseer_1_1_i_reference_a95274c788c8c03d27a3e424facc728b6}{Effekseer\+::\+I\+Reference}}を実装しています。
+
+\mbox{\Hypertarget{class_effekseer_1_1_reference_object_a6b0e9aa4d994b557d499b15359b580d8}\label{class_effekseer_1_1_reference_object_a6b0e9aa4d994b557d499b15359b580d8}} 
+\index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!Release@{Release}}
+\index{Release@{Release}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
+\subsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+Reference\+Object\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+参照カウンタを減算する。0になった時、インスタンスを削除する。 
+
+\begin{DoxyReturn}{戻り値}
+減算後の参照カウンタ 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_effekseer_1_1_i_reference_ad8d601188c0f088f4748aa2da8758bb5}{Effekseer\+::\+I\+Reference}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

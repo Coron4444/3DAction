@@ -1,0 +1,191 @@
+\hypertarget{class_renderer}{}\section{Renderer クラス}
+\label{class_renderer}\index{Renderer@{Renderer}}
+
+
+レンダラークラス  
+
+
+
+
+{\ttfamily \#include $<$Renderer.\+h$>$}
+
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}} \{ \newline
+\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca2a36637bde744b1f383e4fa8c3c10382}{N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca6b296a07c01bb9de6258ca507e7c4eb6}{D\+I\+R\+E\+C\+T\+X9}}, 
+\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fecaf72f39863653ad6fe6cb501a566fb714}{D\+I\+R\+E\+C\+T\+X11}}, 
+\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fecac532ec7ed1c2ce77df467cbf829e575a}{O\+P\+E\+N\+\_\+\+GL}}, 
+\newline
+\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca3304c74929f96df4042bc148ee9f3b50}{M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_renderer_a8d576add80187f5be3f24ec6a8108100}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_renderer_af420951c9c163f1151bd6600df204cee}{Draw\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em 描画開始関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_a0393849bd4178a33861780bf07b0deee}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_a249147991a8187a3d373fd6bd43e8c54}{Set\+Renderer}} (\mbox{\hyperlink{class_renderer_factory}{Renderer\+Factory}} $\ast$factory, \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}} mode)
+\begin{DoxyCompactList}\small\item\em レンダラー設定関数 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_a15585698849fcba4722ac0f00b8b62e6}{Get\+Interface}} (Type $\ast$$\ast$pointer)
+\begin{DoxyCompactList}\small\item\em インターフェース取得関数 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_a6610c3a85a8170141c4584cecf4a6d15}{Get\+Device}} (Type $\ast$$\ast$pointer)
+\begin{DoxyCompactList}\small\item\em デバイス取得関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_renderer}{Renderer}} $\ast$ \mbox{\hyperlink{class_renderer_a8c287bd7009d4717336ab1a9e1a556bd}{Get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}{Release\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+レンダラークラス 
+
+レンダラークラス 
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}\label{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}} 
+\index{Renderer@{Renderer}!M\+O\+DE@{M\+O\+DE}}
+\index{M\+O\+DE@{M\+O\+DE}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{M\+O\+DE}{MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{Renderer\+::\+M\+O\+DE}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Renderer@{Renderer}}\index{Renderer@{Renderer}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca2a36637bde744b1f383e4fa8c3c10382}\label{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca2a36637bde744b1f383e4fa8c3c10382}} 
+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+R\+E\+C\+T\+X9@{D\+I\+R\+E\+C\+T\+X9}!Renderer@{Renderer}}\index{Renderer@{Renderer}!D\+I\+R\+E\+C\+T\+X9@{D\+I\+R\+E\+C\+T\+X9}}}\mbox{\Hypertarget{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca6b296a07c01bb9de6258ca507e7c4eb6}\label{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca6b296a07c01bb9de6258ca507e7c4eb6}} 
+D\+I\+R\+E\+C\+T\+X9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+R\+E\+C\+T\+X11@{D\+I\+R\+E\+C\+T\+X11}!Renderer@{Renderer}}\index{Renderer@{Renderer}!D\+I\+R\+E\+C\+T\+X11@{D\+I\+R\+E\+C\+T\+X11}}}\mbox{\Hypertarget{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fecaf72f39863653ad6fe6cb501a566fb714}\label{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fecaf72f39863653ad6fe6cb501a566fb714}} 
+D\+I\+R\+E\+C\+T\+X11&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+P\+E\+N\+\_\+\+GL@{O\+P\+E\+N\+\_\+\+GL}!Renderer@{Renderer}}\index{Renderer@{Renderer}!O\+P\+E\+N\+\_\+\+GL@{O\+P\+E\+N\+\_\+\+GL}}}\mbox{\Hypertarget{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fecac532ec7ed1c2ce77df467cbf829e575a}\label{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fecac532ec7ed1c2ce77df467cbf829e575a}} 
+O\+P\+E\+N\+\_\+\+GL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+AX@{M\+AX}!Renderer@{Renderer}}\index{Renderer@{Renderer}!M\+AX@{M\+AX}}}\mbox{\Hypertarget{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca3304c74929f96df4042bc148ee9f3b50}\label{class_renderer_ab5a9379ccadcf2b3394c61cf8c835feca3304c74929f96df4042bc148ee9f3b50}} 
+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_renderer_af420951c9c163f1151bd6600df204cee}\label{class_renderer_af420951c9c163f1151bd6600df204cee}} 
+\index{Renderer@{Renderer}!Draw\+Begin@{Draw\+Begin}}
+\index{Draw\+Begin@{Draw\+Begin}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Begin()}{DrawBegin()}}
+{\footnotesize\ttfamily bool Renderer\+::\+Draw\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+描画開始関数 
+
+\mbox{\Hypertarget{class_renderer_a0393849bd4178a33861780bf07b0deee}\label{class_renderer_a0393849bd4178a33861780bf07b0deee}} 
+\index{Renderer@{Renderer}!Draw\+End@{Draw\+End}}
+\index{Draw\+End@{Draw\+End}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Draw\+End()}{DrawEnd()}}
+{\footnotesize\ttfamily void Renderer\+::\+Draw\+End (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+begin\+\_\+scene }\end{DoxyParamCaption})}
+
+
+
+描画終了関数 
+
+
+\begin{DoxyParams}{引数}
+{\em is\+\_\+begin\+\_\+scene} & \+: 描画開始が成功しているかフラグ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_renderer_a6610c3a85a8170141c4584cecf4a6d15}\label{class_renderer_a6610c3a85a8170141c4584cecf4a6d15}} 
+\index{Renderer@{Renderer}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Get\+Device()}{GetDevice()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void Renderer\+::\+Get\+Device (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+デバイス取得関数 
+
+\mbox{\Hypertarget{class_renderer_a8c287bd7009d4717336ab1a9e1a556bd}\label{class_renderer_a8c287bd7009d4717336ab1a9e1a556bd}} 
+\index{Renderer@{Renderer}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Get\+Instance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer}{Renderer}} $\ast$ Renderer\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_renderer_a15585698849fcba4722ac0f00b8b62e6}\label{class_renderer_a15585698849fcba4722ac0f00b8b62e6}} 
+\index{Renderer@{Renderer}!Get\+Interface@{Get\+Interface}}
+\index{Get\+Interface@{Get\+Interface}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Get\+Interface()}{GetInterface()}}
+{\footnotesize\ttfamily template$<$class Type $>$ \\
+void Renderer\+::\+Get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+インターフェース取得関数 
+
+\mbox{\Hypertarget{class_renderer_a8d576add80187f5be3f24ec6a8108100}\label{class_renderer_a8d576add80187f5be3f24ec6a8108100}} 
+\index{Renderer@{Renderer}!Init@{Init}}
+\index{Init@{Init}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Renderer\+::\+Init (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd,  }\item[{B\+O\+OL}]{is\+\_\+full\+\_\+screen,  }\item[{int}]{window\+\_\+width,  }\item[{int}]{window\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em h\+Instance} & \+: インスタンスハンドル h\+Wnd \+: Windowsハンドル is\+\_\+full\+\_\+screen \+: フルスクリーンフラグ window\+\_\+width \+: Window幅 window\+\_\+height \+: Window高さ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}\label{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}} 
+\index{Renderer@{Renderer}!Release\+Instance@{Release\+Instance}}
+\index{Release\+Instance@{Release\+Instance}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Release\+Instance()}{ReleaseInstance()}}
+{\footnotesize\ttfamily void Renderer\+::\+Release\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_renderer_a249147991a8187a3d373fd6bd43e8c54}\label{class_renderer_a249147991a8187a3d373fd6bd43e8c54}} 
+\index{Renderer@{Renderer}!Set\+Renderer@{Set\+Renderer}}
+\index{Set\+Renderer@{Set\+Renderer}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Set\+Renderer()}{SetRenderer()}}
+{\footnotesize\ttfamily void Renderer\+::\+Set\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renderer_factory}{Renderer\+Factory}} $\ast$}]{factory,  }\item[{\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+レンダラー設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em factory} & \+: レンダラーファクトリー mode \+: モード \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}\label{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}} 
+\index{Renderer@{Renderer}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Renderer\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+終了関数 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Renderer/\mbox{\hyperlink{_renderer_8h}{Renderer.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Renderer/\mbox{\hyperlink{_renderer_8cpp}{Renderer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,111 @@
+\hypertarget{class_sky_dome_draw}{}\section{Sky\+Dome\+Draw クラス}
+\label{class_sky_dome_draw}\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+
+
+{\ttfamily \#include $<$Sky\+Dome\+Draw.\+h$>$}
+
+Sky\+Dome\+Draw の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sky_dome_draw}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}{Init}} () override
+\item 
+void \mbox{\hyperlink{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}{Uninit}} () override
+\item 
+void \mbox{\hyperlink{class_sky_dome_draw_a89a1d08932cb19b43ebe42481944b6cc}{Draw}} (unsigned mesh\+\_\+index) override
+\item 
+unsigned \mbox{\hyperlink{class_sky_dome_draw_a3509ab1acfc388e652a8146b8ad027b5}{Get\+Mesh\+Num}} () override
+\item 
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_sky_dome_draw_a0afc2d0f6236bb3f9d4edea42737dc1c}{Get\+Material}} (unsigned mesh\+\_\+index) override
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_sky_dome_draw_ac430b3aa2cd7470ac08ea5a9624bf429}{Get\+Decale\+Texture}} (unsigned mesh\+\_\+index) override
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{class_sky_dome_draw_a366fd9d1040d77ddac71e335f10f2c29}{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}} = \char`\"{}Sky\+Dome/Sky\+Dome.\+x\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_sky_dome_draw_a89a1d08932cb19b43ebe42481944b6cc}\label{class_sky_dome_draw_a89a1d08932cb19b43ebe42481944b6cc}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Draw@{Draw}}
+\index{Draw@{Draw}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Sky\+Dome\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_ae84bfb6ccc2fda9e54cdff45057ea2c3}{Draw\+Component}}を実装しています。
+
+\mbox{\Hypertarget{class_sky_dome_draw_ac430b3aa2cd7470ac08ea5a9624bf429}\label{class_sky_dome_draw_ac430b3aa2cd7470ac08ea5a9624bf429}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
+\index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Sky\+Dome\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_a9ea98f4bcdfd76782d5234122b132c3d}{Draw\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_sky_dome_draw_a0afc2d0f6236bb3f9d4edea42737dc1c}\label{class_sky_dome_draw_a0afc2d0f6236bb3f9d4edea42737dc1c}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Sky\+Dome\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_adae078d5139f691997763bf6cac9e25a}{Draw\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_sky_dome_draw_a3509ab1acfc388e652a8146b8ad027b5}\label{class_sky_dome_draw_a3509ab1acfc388e652a8146b8ad027b5}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
+\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
+{\footnotesize\ttfamily unsigned Sky\+Dome\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_component_a5f3bbcc8e563b740c0a5535170921c75}{Draw\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}\label{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Init@{Init}}
+\index{Init@{Init}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Sky\+Dome\+Draw\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+
+\mbox{\Hypertarget{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}\label{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Sky\+Dome\+Draw\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_sky_dome_draw_a366fd9d1040d77ddac71e335f10f2c29}\label{class_sky_dome_draw_a366fd9d1040d77ddac71e335f10f2c29}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!M\+O\+D\+E\+L\+\_\+\+N\+A\+ME@{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}}
+\index{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME@{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}{MODEL\_NAME}}
+{\footnotesize\ttfamily const std\+::string Sky\+Dome\+Draw\+::\+M\+O\+D\+E\+L\+\_\+\+N\+A\+ME = \char`\"{}Sky\+Dome/Sky\+Dome.\+x\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Sky\+Dome/\+Sky\+Dome\+Draw/\mbox{\hyperlink{_sky_dome_draw_8h}{Sky\+Dome\+Draw.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Sky\+Dome/\+Sky\+Dome\+Draw/\mbox{\hyperlink{_sky_dome_draw_8cpp}{Sky\+Dome\+Draw.\+cpp}}\end{DoxyCompactItemize}

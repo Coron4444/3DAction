@@ -1,0 +1,151 @@
+\hypertarget{class_renderer_direct_x9}{}\section{Renderer\+Direct\+X9 クラス}
+\label{class_renderer_direct_x9}\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+
+
+レンダラー\+Direct\+X9クラス  
+
+
+
+
+{\ttfamily \#include $<$Renderer\+Direct\+X9.\+h$>$}
+
+Renderer\+Direct\+X9 の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_renderer_direct_x9}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_renderer_direct_x9_1_1_v_e_r_t_e_x__3_d}{V\+E\+R\+T\+E\+X\+\_\+3D}}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}{Draw\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em 描画開始関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene)
+\begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D9 \mbox{\hyperlink{class_renderer_direct_x9_afa6521fe3ae4d5697687197cf5bf3c66}{Get\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em インターフェース取得関数 \end{DoxyCompactList}\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 \mbox{\hyperlink{class_renderer_direct_x9_a718458c1493c7d6814e01847e2e4164d}{Get\+Device}} ()
+\begin{DoxyCompactList}\small\item\em デバイス取得関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const D\+W\+O\+RD \mbox{\hyperlink{class_renderer_direct_x9_a80ce0089b01354986332553353625da6}{F\+V\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+3D}} = (D3\+D\+F\+V\+F\+\_\+\+X\+YZ $\vert$ D3\+D\+F\+V\+F\+\_\+\+N\+O\+R\+M\+AL $\vert$ D3\+D\+F\+V\+F\+\_\+\+D\+I\+F\+F\+U\+SE $\vert$ D3\+D\+F\+V\+F\+\_\+\+T\+E\+X1)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+レンダラー\+Direct\+X9クラス 
+
+Direct\+X9用レンダラークラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}\label{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Draw\+Begin@{Draw\+Begin}}
+\index{Draw\+Begin@{Draw\+Begin}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Draw\+Begin()}{DrawBegin()}}
+{\footnotesize\ttfamily bool Renderer\+Direct\+X9\+::\+Draw\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+描画開始関数 
+
+
+
+\mbox{\hyperlink{class_renderer_interface_a86a487deb4e4207a67410d00ec670fd7}{Renderer\+Interface}}を実装しています。
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}\label{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Draw\+End@{Draw\+End}}
+\index{Draw\+End@{Draw\+End}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Draw\+End()}{DrawEnd()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Draw\+End (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+begin\+\_\+scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+描画終了関数 
+
+
+\begin{DoxyParams}{引数}
+{\em is\+\_\+begin\+\_\+scene} & \+: 描画開始が成功しているかフラグ \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}{Renderer\+Interface}}を実装しています。
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a718458c1493c7d6814e01847e2e4164d}\label{class_renderer_direct_x9_a718458c1493c7d6814e01847e2e4164d}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Get\+Device()}{GetDevice()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 Renderer\+Direct\+X9\+::\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デバイス取得関数 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_afa6521fe3ae4d5697687197cf5bf3c66}\label{class_renderer_direct_x9_afa6521fe3ae4d5697687197cf5bf3c66}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Get\+Interface@{Get\+Interface}}
+\index{Get\+Interface@{Get\+Interface}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Get\+Interface()}{GetInterface()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D9 Renderer\+Direct\+X9\+::\+Get\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+インターフェース取得関数 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}\label{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Init@{Init}}
+\index{Init@{Init}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Renderer\+Direct\+X9\+::\+Init (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd,  }\item[{B\+O\+OL}]{is\+\_\+full\+\_\+screen,  }\item[{int}]{window\+\_\+width,  }\item[{int}]{window\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em h\+Instance} & \+: インスタンスハンドル h\+Wnd \+: Windowsハンドル is\+\_\+full\+\_\+screen \+: フルスクリーンフラグ window\+\_\+width \+: Window幅 window\+\_\+height \+: Window高さ \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}{Renderer\+Interface}}を実装しています。
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}\label{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_renderer_interface_ada105489f9db98e7e9542b278699d558}{Renderer\+Interface}}を実装しています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_renderer_direct_x9_a80ce0089b01354986332553353625da6}\label{class_renderer_direct_x9_a80ce0089b01354986332553353625da6}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!F\+V\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+3D@{F\+V\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+3D}}
+\index{F\+V\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+3D@{F\+V\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+3D}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{F\+V\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+3D}{FVF\_VERTEX\_3D}}
+{\footnotesize\ttfamily const D\+W\+O\+RD Renderer\+Direct\+X9\+::\+F\+V\+F\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+3D = (D3\+D\+F\+V\+F\+\_\+\+X\+YZ $\vert$ D3\+D\+F\+V\+F\+\_\+\+N\+O\+R\+M\+AL $\vert$ D3\+D\+F\+V\+F\+\_\+\+D\+I\+F\+F\+U\+SE $\vert$ D3\+D\+F\+V\+F\+\_\+\+T\+E\+X1)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Renderer/\+Renderer\+Direct\+X9/\mbox{\hyperlink{_renderer_direct_x9_8h}{Renderer\+Direct\+X9.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Renderer/\+Renderer\+Direct\+X9/\mbox{\hyperlink{_renderer_direct_x9_8cpp}{Renderer\+Direct\+X9.\+cpp}}\end{DoxyCompactItemize}

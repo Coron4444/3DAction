@@ -1,0 +1,101 @@
+\hypertarget{class_effekseer_1_1_effect_loader}{}\section{Effekseer\+:\+:Effect\+Loader クラス}
+\label{class_effekseer_1_1_effect_loader}\index{Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}}
+
+
+エフェクトファイル読み込み破棄関数指定クラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_effect_loader_a38e316829c64864d3a0cac68cd7724a0}{Effect\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_effect_loader_a2d296c85473ebb6cae68be5305759628}{$\sim$\+Effect\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_effect_loader_a2da2924e84118ae31330f5d3c2937f29}{Load}} (const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$path, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$\&data, int32\+\_\+t \&\mbox{\hyperlink{namespace_effekseer_a73c68f3d33539d30844b9d1e058077f7}{size}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトファイルを読み込む。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_effect_loader_a6c033478a92355db775a2bfa9e3b6115}{Unload}} (\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$data, int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_a73c68f3d33539d30844b9d1e058077f7}{size}})=0
+\begin{DoxyCompactList}\small\item\em エフェクトファイルを破棄する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+エフェクトファイル読み込み破棄関数指定クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_effect_loader_a38e316829c64864d3a0cac68cd7724a0}\label{class_effekseer_1_1_effect_loader_a38e316829c64864d3a0cac68cd7724a0}} 
+\index{Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}!Effect\+Loader@{Effect\+Loader}}
+\index{Effect\+Loader@{Effect\+Loader}!Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}}
+\subsubsection{\texorpdfstring{Effect\+Loader()}{EffectLoader()}}
+{\footnotesize\ttfamily Effekseer\+::\+Effect\+Loader\+::\+Effect\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_effekseer_1_1_effect_loader_a2d296c85473ebb6cae68be5305759628}\label{class_effekseer_1_1_effect_loader_a2d296c85473ebb6cae68be5305759628}} 
+\index{Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}!````~Effect\+Loader@{$\sim$\+Effect\+Loader}}
+\index{````~Effect\+Loader@{$\sim$\+Effect\+Loader}!Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}}
+\subsubsection{\texorpdfstring{$\sim$\+Effect\+Loader()}{~EffectLoader()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Effect\+Loader\+::$\sim$\+Effect\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_effect_loader_a2da2924e84118ae31330f5d3c2937f29}\label{class_effekseer_1_1_effect_loader_a2da2924e84118ae31330f5d3c2937f29}} 
+\index{Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}!Load@{Load}}
+\index{Load@{Load}!Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Effect\+Loader\+::\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{path,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$\&}]{data,  }\item[{int32\+\_\+t \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトファイルを読み込む。 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & \mbox{[}in\mbox{]} 読み込み元パス \\
+\hline
+{\em data} & \mbox{[}out\mbox{]} データ配列の先頭のポインタを出力する先 \\
+\hline
+{\em size} & \mbox{[}out\mbox{]} データ配列の長さを出力する先 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+成否 
+\end{DoxyReturn}
+\begin{DoxyNote}{覚え書き}
+エフェクトファイルを読み込む。 \+::\+Effekseer\+::\+Effect\+::\+Create実行時に使用される。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_effect_loader_a6c033478a92355db775a2bfa9e3b6115}\label{class_effekseer_1_1_effect_loader_a6c033478a92355db775a2bfa9e3b6115}} 
+\index{Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}!Unload@{Unload}}
+\index{Unload@{Unload}!Effekseer\+::\+Effect\+Loader@{Effekseer\+::\+Effect\+Loader}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Effect\+Loader\+::\+Unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{data,  }\item[{int32\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトファイルを破棄する。 
+
+
+\begin{DoxyParams}{引数}
+{\em data} & \mbox{[}in\mbox{]} データ配列の先頭のポインタ \\
+\hline
+{\em size} & \mbox{[}int\mbox{]} データ配列の長さ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{覚え書き}
+エフェクトファイルを破棄する。 \+::\+Effekseer\+::\+Effect\+::\+Create実行終了時に使用される。 
+\end{DoxyNote}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

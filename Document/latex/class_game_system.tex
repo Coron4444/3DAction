@@ -1,0 +1,93 @@
+\hypertarget{class_game_system}{}\section{Game\+System クラス}
+\label{class_game_system}\index{Game\+System@{Game\+System}}
+
+
+ゲームシステムクラス  
+
+
+
+
+{\ttfamily \#include $<$Game\+System.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_system_ad4c08500b98490e00ce87a770bb5e981}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_system_af76866bd03b84dca6880f1493fd3c9d1}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_system_ab0add1f2bd97d3b125a5682f571053a3}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_system_a474db0066b23d39e94e0a830140edce5}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_system_aa416827abc995e1b8df4a5cf87911baf}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em 後更新関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ゲームシステムクラス 
+
+ゲームシステム全体を管理する Renderer、\+Scene\+Manager、\+Input、\+Sound、\+Debuger等を管理する 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_system_a474db0066b23d39e94e0a830140edce5}\label{class_game_system_a474db0066b23d39e94e0a830140edce5}} 
+\index{Game\+System@{Game\+System}!Draw@{Draw}}
+\index{Draw@{Draw}!Game\+System@{Game\+System}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Game\+System\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+描画関数 
+
+\mbox{\Hypertarget{class_game_system_ad4c08500b98490e00ce87a770bb5e981}\label{class_game_system_ad4c08500b98490e00ce87a770bb5e981}} 
+\index{Game\+System@{Game\+System}!Init@{Init}}
+\index{Init@{Init}!Game\+System@{Game\+System}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Game\+System\+::\+Init (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd,  }\item[{B\+O\+OL}]{is\+\_\+full\+\_\+screen,  }\item[{int}]{window\+\_\+width,  }\item[{int}]{window\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em h\+Instance} & \+: インスタンスハンドル h\+Wnd \+: Windowsハンドル is\+\_\+full\+\_\+screen \+: フルスクリーンフラグ window\+\_\+width \+: Window幅 window\+\_\+height \+: Window高さ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_system_aa416827abc995e1b8df4a5cf87911baf}\label{class_game_system_aa416827abc995e1b8df4a5cf87911baf}} 
+\index{Game\+System@{Game\+System}!Late\+Update@{Late\+Update}}
+\index{Late\+Update@{Late\+Update}!Game\+System@{Game\+System}}
+\subsubsection{\texorpdfstring{Late\+Update()}{LateUpdate()}}
+{\footnotesize\ttfamily void Game\+System\+::\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+後更新関数 
+
+\mbox{\Hypertarget{class_game_system_af76866bd03b84dca6880f1493fd3c9d1}\label{class_game_system_af76866bd03b84dca6880f1493fd3c9d1}} 
+\index{Game\+System@{Game\+System}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Game\+System@{Game\+System}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Game\+System\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+終了関数 
+
+\mbox{\Hypertarget{class_game_system_ab0add1f2bd97d3b125a5682f571053a3}\label{class_game_system_ab0add1f2bd97d3b125a5682f571053a3}} 
+\index{Game\+System@{Game\+System}!Update@{Update}}
+\index{Update@{Update}!Game\+System@{Game\+System}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+System\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+更新関数 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Game\+System/\mbox{\hyperlink{_game_system_8h}{Game\+System.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Game\+System/\mbox{\hyperlink{_game_system_8cpp}{Game\+System.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{stb__rect__pack_8h}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/stb\+\_\+rect\+\_\+pack.h ファイル}
+\label{stb__rect__pack_8h}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/stb\+\_\+rect\+\_\+pack.\+h@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/stb\+\_\+rect\+\_\+pack.\+h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstbrp__rect}{stbrp\+\_\+rect}}
+\item 
+struct \mbox{\hyperlink{structstbrp__node}{stbrp\+\_\+node}}
+\item 
+struct \mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stb__rect__pack_8h_af2f15dfcc6ad60b1df4f5902e2cc25ce}{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON}}~1
+\item 
+\#define \mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}}~extern
+\end{DoxyCompactItemize}
+\subsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} \mbox{\hyperlink{stb__rect__pack_8h_a0455046a8d5457bbc4f3f3ec995c338f}{stbrp\+\_\+context}}
+\item 
+typedef struct \mbox{\hyperlink{structstbrp__node}{stbrp\+\_\+node}} \mbox{\hyperlink{stb__rect__pack_8h_ae8f871c209d2e6218baf9c0e2a209ea1}{stbrp\+\_\+node}}
+\item 
+typedef struct \mbox{\hyperlink{structstbrp__rect}{stbrp\+\_\+rect}} \mbox{\hyperlink{stb__rect__pack_8h_a7c4a99b31ea2207a0b2bbcbdab8f3840}{stbrp\+\_\+rect}}
+\item 
+typedef unsigned short \mbox{\hyperlink{stb__rect__pack_8h_ac2c2491b95dea6a298b7423dc762dfd9}{stbrp\+\_\+coord}}
+\end{DoxyCompactItemize}
+\subsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da5e4dd0b1cbee654bbfeebc5311f03525}{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+default}} =0, 
+\mbox{\hyperlink{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da13530b067fb1f9707dc0f9d51f8b074a}{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+L\+\_\+sort\+Height}} = S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+default, 
+\mbox{\hyperlink{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da11d62749c4405a231a6fd1dd9d46615c}{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+F\+\_\+sort\+Height}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void \mbox{\hyperlink{stb__rect__pack_8h_a4fcdeda67dd32ba2f82136d3397fac79}{stbrp\+\_\+pack\+\_\+rects}} (\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$context, \mbox{\hyperlink{structstbrp__rect}{stbrp\+\_\+rect}} $\ast$rects, int num\+\_\+rects)
+\item 
+\mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void \mbox{\hyperlink{stb__rect__pack_8h_a8b32f5ad458f614f5d419ef26cef5b3c}{stbrp\+\_\+init\+\_\+target}} (\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$context, int width, int height, \mbox{\hyperlink{structstbrp__node}{stbrp\+\_\+node}} $\ast$nodes, int num\+\_\+nodes)
+\item 
+\mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void \mbox{\hyperlink{stb__rect__pack_8h_a1babd70b223e571305fd9753a83a4fda}{stbrp\+\_\+setup\+\_\+allow\+\_\+out\+\_\+of\+\_\+mem}} (\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$context, int allow\+\_\+out\+\_\+of\+\_\+mem)
+\item 
+\mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void \mbox{\hyperlink{stb__rect__pack_8h_a5a8223866c146933da3e152066bf61a1}{stbrp\+\_\+setup\+\_\+heuristic}} (\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$context, int heuristic)
+\end{DoxyCompactItemize}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{stb__rect__pack_8h_af2f15dfcc6ad60b1df4f5902e2cc25ce}\label{stb__rect__pack_8h_af2f15dfcc6ad60b1df4f5902e2cc25ce}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON@{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON@{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON}{STB\_RECT\_PACK\_VERSION}}
+{\footnotesize\ttfamily \#define S\+T\+B\+\_\+\+R\+E\+C\+T\+\_\+\+P\+A\+C\+K\+\_\+\+V\+E\+R\+S\+I\+ON~1}
+
+\mbox{\Hypertarget{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}\label{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!S\+T\+B\+R\+P\+\_\+\+D\+EF@{S\+T\+B\+R\+P\+\_\+\+D\+EF}}
+\index{S\+T\+B\+R\+P\+\_\+\+D\+EF@{S\+T\+B\+R\+P\+\_\+\+D\+EF}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+B\+R\+P\+\_\+\+D\+EF}{STBRP\_DEF}}
+{\footnotesize\ttfamily \#define S\+T\+B\+R\+P\+\_\+\+D\+EF~extern}
+
+
+
+\subsection{型定義詳解}
+\mbox{\Hypertarget{stb__rect__pack_8h_a0455046a8d5457bbc4f3f3ec995c338f}\label{stb__rect__pack_8h_a0455046a8d5457bbc4f3f3ec995c338f}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+context@{stbrp\+\_\+context}}
+\index{stbrp\+\_\+context@{stbrp\+\_\+context}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+context}{stbrp\_context}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} \mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}}}
+
+\mbox{\Hypertarget{stb__rect__pack_8h_ac2c2491b95dea6a298b7423dc762dfd9}\label{stb__rect__pack_8h_ac2c2491b95dea6a298b7423dc762dfd9}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+coord@{stbrp\+\_\+coord}}
+\index{stbrp\+\_\+coord@{stbrp\+\_\+coord}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+coord}{stbrp\_coord}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{stb__rect__pack_8h_ac2c2491b95dea6a298b7423dc762dfd9}{stbrp\+\_\+coord}}}
+
+\mbox{\Hypertarget{stb__rect__pack_8h_ae8f871c209d2e6218baf9c0e2a209ea1}\label{stb__rect__pack_8h_ae8f871c209d2e6218baf9c0e2a209ea1}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+node@{stbrp\+\_\+node}}
+\index{stbrp\+\_\+node@{stbrp\+\_\+node}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+node}{stbrp\_node}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structstbrp__node}{stbrp\+\_\+node}} \mbox{\hyperlink{structstbrp__node}{stbrp\+\_\+node}}}
+
+\mbox{\Hypertarget{stb__rect__pack_8h_a7c4a99b31ea2207a0b2bbcbdab8f3840}\label{stb__rect__pack_8h_a7c4a99b31ea2207a0b2bbcbdab8f3840}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+rect@{stbrp\+\_\+rect}}
+\index{stbrp\+\_\+rect@{stbrp\+\_\+rect}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+rect}{stbrp\_rect}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structstbrp__rect}{stbrp\+\_\+rect}} \mbox{\hyperlink{structstbrp__rect}{stbrp\+\_\+rect}}}
+
+
+
+\subsection{列挙型詳解}
+\mbox{\Hypertarget{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2d}\label{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2d}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+default@{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+default}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+default@{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+default}}}\mbox{\Hypertarget{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da5e4dd0b1cbee654bbfeebc5311f03525}\label{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da5e4dd0b1cbee654bbfeebc5311f03525}} 
+S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+L\+\_\+sort\+Height@{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+L\+\_\+sort\+Height}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+L\+\_\+sort\+Height@{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+L\+\_\+sort\+Height}}}\mbox{\Hypertarget{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da13530b067fb1f9707dc0f9d51f8b074a}\label{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da13530b067fb1f9707dc0f9d51f8b074a}} 
+S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+L\+\_\+sort\+Height&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+F\+\_\+sort\+Height@{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+F\+\_\+sort\+Height}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+F\+\_\+sort\+Height@{S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+F\+\_\+sort\+Height}}}\mbox{\Hypertarget{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da11d62749c4405a231a6fd1dd9d46615c}\label{stb__rect__pack_8h_a0411cd49bb5b71852cecd93bcbf0ca2da11d62749c4405a231a6fd1dd9d46615c}} 
+S\+T\+B\+R\+P\+\_\+\+H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+Skyline\+\_\+\+B\+F\+\_\+sort\+Height&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{stb__rect__pack_8h_a8b32f5ad458f614f5d419ef26cef5b3c}\label{stb__rect__pack_8h_a8b32f5ad458f614f5d419ef26cef5b3c}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+init\+\_\+target@{stbrp\+\_\+init\+\_\+target}}
+\index{stbrp\+\_\+init\+\_\+target@{stbrp\+\_\+init\+\_\+target}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+init\+\_\+target()}{stbrp\_init\_target()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void stbrp\+\_\+init\+\_\+target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$}]{context,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{structstbrp__node}{stbrp\+\_\+node}} $\ast$}]{nodes,  }\item[{int}]{num\+\_\+nodes }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__rect__pack_8h_a4fcdeda67dd32ba2f82136d3397fac79}\label{stb__rect__pack_8h_a4fcdeda67dd32ba2f82136d3397fac79}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+pack\+\_\+rects@{stbrp\+\_\+pack\+\_\+rects}}
+\index{stbrp\+\_\+pack\+\_\+rects@{stbrp\+\_\+pack\+\_\+rects}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+pack\+\_\+rects()}{stbrp\_pack\_rects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void stbrp\+\_\+pack\+\_\+rects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$}]{context,  }\item[{\mbox{\hyperlink{structstbrp__rect}{stbrp\+\_\+rect}} $\ast$}]{rects,  }\item[{int}]{num\+\_\+rects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__rect__pack_8h_a1babd70b223e571305fd9753a83a4fda}\label{stb__rect__pack_8h_a1babd70b223e571305fd9753a83a4fda}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+setup\+\_\+allow\+\_\+out\+\_\+of\+\_\+mem@{stbrp\+\_\+setup\+\_\+allow\+\_\+out\+\_\+of\+\_\+mem}}
+\index{stbrp\+\_\+setup\+\_\+allow\+\_\+out\+\_\+of\+\_\+mem@{stbrp\+\_\+setup\+\_\+allow\+\_\+out\+\_\+of\+\_\+mem}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+setup\+\_\+allow\+\_\+out\+\_\+of\+\_\+mem()}{stbrp\_setup\_allow\_out\_of\_mem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void stbrp\+\_\+setup\+\_\+allow\+\_\+out\+\_\+of\+\_\+mem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$}]{context,  }\item[{int}]{allow\+\_\+out\+\_\+of\+\_\+mem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__rect__pack_8h_a5a8223866c146933da3e152066bf61a1}\label{stb__rect__pack_8h_a5a8223866c146933da3e152066bf61a1}} 
+\index{stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}!stbrp\+\_\+setup\+\_\+heuristic@{stbrp\+\_\+setup\+\_\+heuristic}}
+\index{stbrp\+\_\+setup\+\_\+heuristic@{stbrp\+\_\+setup\+\_\+heuristic}!stb\+\_\+rect\+\_\+pack.\+h@{stb\+\_\+rect\+\_\+pack.\+h}}
+\subsubsection{\texorpdfstring{stbrp\+\_\+setup\+\_\+heuristic()}{stbrp\_setup\_heuristic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__rect__pack_8h_a0b73f2d2521fb81afc056a823e3ca753}{S\+T\+B\+R\+P\+\_\+\+D\+EF}} void stbrp\+\_\+setup\+\_\+heuristic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbrp__context}{stbrp\+\_\+context}} $\ast$}]{context,  }\item[{int}]{heuristic }\end{DoxyParamCaption})}
+

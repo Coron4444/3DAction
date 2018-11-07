@@ -1,0 +1,80 @@
+\hypertarget{_keyboard_8h}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Keyboard/\+Keyboard.h ファイル}
+\label{_keyboard_8h}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Keyboard/\+Keyboard.\+h@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Keyboard/\+Keyboard.\+h}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$dinput.\+h$>$}\newline
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_keyboard_8h_a1d7ab29fdefabdb4e7e7cd27ac4c9934}{D\+I\+R\+E\+C\+T\+I\+N\+P\+U\+T\+\_\+\+V\+E\+R\+S\+I\+ON}}~( 0x0800 )
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{_keyboard_8h_ac6c5ef03598b5e66143f526d200b4801}{Init\+Keyboard}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd)
+\item 
+void \mbox{\hyperlink{_keyboard_8h_acffdec32c8240d863bcca339cce38ea1}{Uninit\+Keyboard}} (void)
+\item 
+void \mbox{\hyperlink{_keyboard_8h_ad65caca75418587ece61987dc0bc8cc9}{Update\+Keyboard}} (void)
+\item 
+bool \mbox{\hyperlink{_keyboard_8h_a917a78a60e6a139fbf17148721e7ceac}{Get\+Keyboard\+Press}} (int n\+Key)
+\item 
+bool \mbox{\hyperlink{_keyboard_8h_a13e2791881c044ebf911d3522fa7fa9a}{Get\+Keyboard\+Trigger}} (int n\+Key)
+\item 
+bool \mbox{\hyperlink{_keyboard_8h_ab826be402a29bdcab22cbd4bd01986a2}{Get\+Keyboard\+Repeat}} (int n\+Key)
+\item 
+bool \mbox{\hyperlink{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}{Get\+Keyboard\+Release}} (int n\+Key)
+\end{DoxyCompactItemize}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{_keyboard_8h_a1d7ab29fdefabdb4e7e7cd27ac4c9934}\label{_keyboard_8h_a1d7ab29fdefabdb4e7e7cd27ac4c9934}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!D\+I\+R\+E\+C\+T\+I\+N\+P\+U\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{D\+I\+R\+E\+C\+T\+I\+N\+P\+U\+T\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{D\+I\+R\+E\+C\+T\+I\+N\+P\+U\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{D\+I\+R\+E\+C\+T\+I\+N\+P\+U\+T\+\_\+\+V\+E\+R\+S\+I\+ON}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+E\+C\+T\+I\+N\+P\+U\+T\+\_\+\+V\+E\+R\+S\+I\+ON}{DIRECTINPUT\_VERSION}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+C\+T\+I\+N\+P\+U\+T\+\_\+\+V\+E\+R\+S\+I\+ON~( 0x0800 )}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{_keyboard_8h_a917a78a60e6a139fbf17148721e7ceac}\label{_keyboard_8h_a917a78a60e6a139fbf17148721e7ceac}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Press@{Get\+Keyboard\+Press}}
+\index{Get\+Keyboard\+Press@{Get\+Keyboard\+Press}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{Get\+Keyboard\+Press()}{GetKeyboardPress()}}
+{\footnotesize\ttfamily bool Get\+Keyboard\+Press (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}\label{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Release@{Get\+Keyboard\+Release}}
+\index{Get\+Keyboard\+Release@{Get\+Keyboard\+Release}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{Get\+Keyboard\+Release()}{GetKeyboardRelease()}}
+{\footnotesize\ttfamily bool Get\+Keyboard\+Release (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_keyboard_8h_ab826be402a29bdcab22cbd4bd01986a2}\label{_keyboard_8h_ab826be402a29bdcab22cbd4bd01986a2}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Repeat@{Get\+Keyboard\+Repeat}}
+\index{Get\+Keyboard\+Repeat@{Get\+Keyboard\+Repeat}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{Get\+Keyboard\+Repeat()}{GetKeyboardRepeat()}}
+{\footnotesize\ttfamily bool Get\+Keyboard\+Repeat (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_keyboard_8h_a13e2791881c044ebf911d3522fa7fa9a}\label{_keyboard_8h_a13e2791881c044ebf911d3522fa7fa9a}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Trigger@{Get\+Keyboard\+Trigger}}
+\index{Get\+Keyboard\+Trigger@{Get\+Keyboard\+Trigger}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{Get\+Keyboard\+Trigger()}{GetKeyboardTrigger()}}
+{\footnotesize\ttfamily bool Get\+Keyboard\+Trigger (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_keyboard_8h_ac6c5ef03598b5e66143f526d200b4801}\label{_keyboard_8h_ac6c5ef03598b5e66143f526d200b4801}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!Init\+Keyboard@{Init\+Keyboard}}
+\index{Init\+Keyboard@{Init\+Keyboard}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{Init\+Keyboard()}{InitKeyboard()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Init\+Keyboard (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_keyboard_8h_acffdec32c8240d863bcca339cce38ea1}\label{_keyboard_8h_acffdec32c8240d863bcca339cce38ea1}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!Uninit\+Keyboard@{Uninit\+Keyboard}}
+\index{Uninit\+Keyboard@{Uninit\+Keyboard}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{Uninit\+Keyboard()}{UninitKeyboard()}}
+{\footnotesize\ttfamily void Uninit\+Keyboard (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_keyboard_8h_ad65caca75418587ece61987dc0bc8cc9}\label{_keyboard_8h_ad65caca75418587ece61987dc0bc8cc9}} 
+\index{Keyboard.\+h@{Keyboard.\+h}!Update\+Keyboard@{Update\+Keyboard}}
+\index{Update\+Keyboard@{Update\+Keyboard}!Keyboard.\+h@{Keyboard.\+h}}
+\subsubsection{\texorpdfstring{Update\+Keyboard()}{UpdateKeyboard()}}
+{\footnotesize\ttfamily void Update\+Keyboard (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

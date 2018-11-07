@@ -1,0 +1,130 @@
+\hypertarget{class_effekseer_manager}{}\section{Effekseer\+Manager クラス}
+\label{class_effekseer_manager}\index{Effekseer\+Manager@{Effekseer\+Manager}}
+
+
+{\ttfamily \#include $<$Effekseer\+Manager.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76}{Init\+All\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_a881d9bdd981c35de66174363517050b4}{Init\+Share\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_a95d9d2eda8cb691c2565d022198b5787}{Init\+Unique\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13}{Uninit\+All\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_ab83021d09eeeaba41852c8db2f07fe55}{Uninit\+Share\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_abd448f6ec39f2306a6dc99b79aff0362}{Uninit\+Unique\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_a2278033d786e1ada0fcaa390a613a8f9}{Update}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4}{Draw}} ()
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_aec98cb9052d849cae3f9cfee80c4c873}{Add\+Share\+Data}} (const std\+::string $\ast$key\+\_\+name, const std\+::string $\ast$file\+\_\+path=nullptr)
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62}{Add\+Unique\+Data}} (const std\+::string $\ast$key\+\_\+name, const std\+::string $\ast$file\+\_\+path=nullptr)
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384}{Create\+Projection\+Matrix}} (int angle\+\_\+of\+\_\+view\+\_\+)
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7}{Create\+View\+Matrix}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} position, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} look\+\_\+at\+\_\+point, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} camera\+\_\+up)
+\item 
+static void \mbox{\hyperlink{class_effekseer_manager_a0b82fe25fbe1dacc0d904fb54267b2fa}{Create\+Disposable\+Effekseer\+Object}} (const std\+::string $\ast$key\+\_\+name, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} position, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} scale=\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(1.\+0f, 1.\+0f, 1.\+0f))
+\item 
+static \mbox{\hyperlink{class_effekseer_object}{Effekseer\+Object}} $\ast$ \mbox{\hyperlink{class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28}{Get\+Reference\+Effekseer\+Object}} (const std\+::string $\ast$key\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_manager_aec98cb9052d849cae3f9cfee80c4c873}\label{class_effekseer_manager_aec98cb9052d849cae3f9cfee80c4c873}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Add\+Share\+Data@{Add\+Share\+Data}}
+\index{Add\+Share\+Data@{Add\+Share\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Share\+Data()}{AddShareData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Add\+Share\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62}\label{class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Add\+Unique\+Data@{Add\+Unique\+Data}}
+\index{Add\+Unique\+Data@{Add\+Unique\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Unique\+Data()}{AddUniqueData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Add\+Unique\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_a0b82fe25fbe1dacc0d904fb54267b2fa}\label{class_effekseer_manager_a0b82fe25fbe1dacc0d904fb54267b2fa}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Create\+Disposable\+Effekseer\+Object@{Create\+Disposable\+Effekseer\+Object}}
+\index{Create\+Disposable\+Effekseer\+Object@{Create\+Disposable\+Effekseer\+Object}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Create\+Disposable\+Effekseer\+Object()}{CreateDisposableEffekseerObject()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Create\+Disposable\+Effekseer\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{scale = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(1.0f,~1.0f,~1.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384}\label{class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Create\+Projection\+Matrix@{Create\+Projection\+Matrix}}
+\index{Create\+Projection\+Matrix@{Create\+Projection\+Matrix}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Create\+Projection\+Matrix()}{CreateProjectionMatrix()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Create\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{int}]{angle\+\_\+of\+\_\+view\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7}\label{class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Create\+View\+Matrix@{Create\+View\+Matrix}}
+\index{Create\+View\+Matrix@{Create\+View\+Matrix}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Create\+View\+Matrix()}{CreateViewMatrix()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Create\+View\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{look\+\_\+at\+\_\+point,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{camera\+\_\+up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4}\label{class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28}\label{class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Get\+Reference\+Effekseer\+Object@{Get\+Reference\+Effekseer\+Object}}
+\index{Get\+Reference\+Effekseer\+Object@{Get\+Reference\+Effekseer\+Object}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Reference\+Effekseer\+Object()}{GetReferenceEffekseerObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_effekseer_object}{Effekseer\+Object}} $\ast$ Effekseer\+Manager\+::\+Get\+Reference\+Effekseer\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76}\label{class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Init\+All\+Data@{Init\+All\+Data}}
+\index{Init\+All\+Data@{Init\+All\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Init\+All\+Data()}{InitAllData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Init\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_a881d9bdd981c35de66174363517050b4}\label{class_effekseer_manager_a881d9bdd981c35de66174363517050b4}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Init\+Share\+Data@{Init\+Share\+Data}}
+\index{Init\+Share\+Data@{Init\+Share\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Share\+Data()}{InitShareData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Init\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_a95d9d2eda8cb691c2565d022198b5787}\label{class_effekseer_manager_a95d9d2eda8cb691c2565d022198b5787}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Init\+Unique\+Data@{Init\+Unique\+Data}}
+\index{Init\+Unique\+Data@{Init\+Unique\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Unique\+Data()}{InitUniqueData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Init\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13}\label{class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Uninit\+All\+Data@{Uninit\+All\+Data}}
+\index{Uninit\+All\+Data@{Uninit\+All\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+All\+Data()}{UninitAllData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Uninit\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_ab83021d09eeeaba41852c8db2f07fe55}\label{class_effekseer_manager_ab83021d09eeeaba41852c8db2f07fe55}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Uninit\+Share\+Data@{Uninit\+Share\+Data}}
+\index{Uninit\+Share\+Data@{Uninit\+Share\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Share\+Data()}{UninitShareData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Uninit\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_abd448f6ec39f2306a6dc99b79aff0362}\label{class_effekseer_manager_abd448f6ec39f2306a6dc99b79aff0362}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Uninit\+Unique\+Data@{Uninit\+Unique\+Data}}
+\index{Uninit\+Unique\+Data@{Uninit\+Unique\+Data}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Unique\+Data()}{UninitUniqueData()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Uninit\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_manager_a2278033d786e1ada0fcaa390a613a8f9}\label{class_effekseer_manager_a2278033d786e1ada0fcaa390a613a8f9}} 
+\index{Effekseer\+Manager@{Effekseer\+Manager}!Update@{Update}}
+\index{Update@{Update}!Effekseer\+Manager@{Effekseer\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Effekseer\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\+Effekseer\+Manager/\mbox{\hyperlink{_effekseer_manager_8h}{Effekseer\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\+Effekseer\+Manager/\mbox{\hyperlink{_effekseer_manager_8cpp}{Effekseer\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+\hypertarget{struct_im_gui_text_edit_callback_data}{}\section{Im\+Gui\+Text\+Edit\+Callback\+Data 構造体}
+\label{struct_im_gui_text_edit_callback_data}\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+
+
+{\ttfamily \#include $<$imgui.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{imgui_8h_a43829975e84e45d1149597467a14bbf5}{I\+M\+G\+U\+I\+\_\+\+A\+PI}} void \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_aaa702107677f7da0e7ea61311ab69af0}{Delete\+Chars}} (int pos, int bytes\+\_\+count)
+\item 
+\mbox{\hyperlink{imgui_8h_a43829975e84e45d1149597467a14bbf5}{I\+M\+G\+U\+I\+\_\+\+A\+PI}} void \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_a78aa927e57bf5fb898ba5a168e9bcf63}{Insert\+Chars}} (int pos, const char $\ast$text, const char $\ast$text\+\_\+end=N\+U\+LL)
+\item 
+bool \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_ac43cc964e6c1c829db3fdb71660ff604}{Has\+Selection}} () const
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{imgui_8h_a7d2c6153a6b9b5d3178ce82434ac9fb8}{Im\+Gui\+Input\+Text\+Flags}} \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_aee2fa13574284d68d4025a26d32eba55}{Event\+Flag}}
+\item 
+\mbox{\hyperlink{imgui_8h_a7d2c6153a6b9b5d3178ce82434ac9fb8}{Im\+Gui\+Input\+Text\+Flags}} \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_a6ffea1ffba5aaa267937ea362b844e8c}{Flags}}
+\item 
+void $\ast$ \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_aaf4994a17aefa6ace9cf8f7c2fa06cf7}{User\+Data}}
+\item 
+bool \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_a37cec257a392910f386188978027541c}{Read\+Only}}
+\item 
+\mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}} \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_acda2ae8b38e0596adf2f01036ac06612}{Event\+Char}}
+\item 
+\mbox{\hyperlink{imgui_8h_a1671ca739cf1384a8cc268758f27b4e7}{Im\+Gui\+Key}} \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_a476e640ad7f2f18ae5518dbc7cc33c55}{Event\+Key}}
+\item 
+char $\ast$ \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_aecd0741ee3feccbb5482e308292611bc}{Buf}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_a98d0d0b8c32d8466ba2f07b7daee9c08}{Buf\+Text\+Len}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_ae22679499dd9df688f4fabf1b9e8d048}{Buf\+Size}}
+\item 
+bool \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_a1ba304d589e00bece6400d43451d864e}{Buf\+Dirty}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_aded0e6e87c2dcb66546ae6298e5a8a01}{Cursor\+Pos}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_a1634bec3717f7e386033051cf604efed}{Selection\+Start}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_text_edit_callback_data_af3371b7f36bd6c2b528b033bdb1785a2}{Selection\+End}}
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_aaa702107677f7da0e7ea61311ab69af0}\label{struct_im_gui_text_edit_callback_data_aaa702107677f7da0e7ea61311ab69af0}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Delete\+Chars@{Delete\+Chars}}
+\index{Delete\+Chars@{Delete\+Chars}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Delete\+Chars()}{DeleteChars()}}
+{\footnotesize\ttfamily void Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Delete\+Chars (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{bytes\+\_\+count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_ac43cc964e6c1c829db3fdb71660ff604}\label{struct_im_gui_text_edit_callback_data_ac43cc964e6c1c829db3fdb71660ff604}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Has\+Selection@{Has\+Selection}}
+\index{Has\+Selection@{Has\+Selection}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Has\+Selection()}{HasSelection()}}
+{\footnotesize\ttfamily bool Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Has\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_a78aa927e57bf5fb898ba5a168e9bcf63}\label{struct_im_gui_text_edit_callback_data_a78aa927e57bf5fb898ba5a168e9bcf63}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Insert\+Chars@{Insert\+Chars}}
+\index{Insert\+Chars@{Insert\+Chars}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Insert\+Chars()}{InsertChars()}}
+{\footnotesize\ttfamily void Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Insert\+Chars (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{const char $\ast$}]{text,  }\item[{const char $\ast$}]{text\+\_\+end = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_aecd0741ee3feccbb5482e308292611bc}\label{struct_im_gui_text_edit_callback_data_aecd0741ee3feccbb5482e308292611bc}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Buf@{Buf}}
+\index{Buf@{Buf}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Buf}{Buf}}
+{\footnotesize\ttfamily char$\ast$ Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Buf}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_a1ba304d589e00bece6400d43451d864e}\label{struct_im_gui_text_edit_callback_data_a1ba304d589e00bece6400d43451d864e}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Buf\+Dirty@{Buf\+Dirty}}
+\index{Buf\+Dirty@{Buf\+Dirty}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Buf\+Dirty}{BufDirty}}
+{\footnotesize\ttfamily bool Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Buf\+Dirty}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_ae22679499dd9df688f4fabf1b9e8d048}\label{struct_im_gui_text_edit_callback_data_ae22679499dd9df688f4fabf1b9e8d048}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Buf\+Size@{Buf\+Size}}
+\index{Buf\+Size@{Buf\+Size}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Buf\+Size}{BufSize}}
+{\footnotesize\ttfamily int Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Buf\+Size}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_a98d0d0b8c32d8466ba2f07b7daee9c08}\label{struct_im_gui_text_edit_callback_data_a98d0d0b8c32d8466ba2f07b7daee9c08}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Buf\+Text\+Len@{Buf\+Text\+Len}}
+\index{Buf\+Text\+Len@{Buf\+Text\+Len}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Buf\+Text\+Len}{BufTextLen}}
+{\footnotesize\ttfamily int Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Buf\+Text\+Len}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_aded0e6e87c2dcb66546ae6298e5a8a01}\label{struct_im_gui_text_edit_callback_data_aded0e6e87c2dcb66546ae6298e5a8a01}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Cursor\+Pos@{Cursor\+Pos}}
+\index{Cursor\+Pos@{Cursor\+Pos}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Cursor\+Pos}{CursorPos}}
+{\footnotesize\ttfamily int Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Cursor\+Pos}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_acda2ae8b38e0596adf2f01036ac06612}\label{struct_im_gui_text_edit_callback_data_acda2ae8b38e0596adf2f01036ac06612}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Event\+Char@{Event\+Char}}
+\index{Event\+Char@{Event\+Char}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Event\+Char}{EventChar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}} Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Event\+Char}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_aee2fa13574284d68d4025a26d32eba55}\label{struct_im_gui_text_edit_callback_data_aee2fa13574284d68d4025a26d32eba55}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Event\+Flag@{Event\+Flag}}
+\index{Event\+Flag@{Event\+Flag}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Event\+Flag}{EventFlag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_a7d2c6153a6b9b5d3178ce82434ac9fb8}{Im\+Gui\+Input\+Text\+Flags}} Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Event\+Flag}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_a476e640ad7f2f18ae5518dbc7cc33c55}\label{struct_im_gui_text_edit_callback_data_a476e640ad7f2f18ae5518dbc7cc33c55}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Event\+Key@{Event\+Key}}
+\index{Event\+Key@{Event\+Key}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Event\+Key}{EventKey}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_a1671ca739cf1384a8cc268758f27b4e7}{Im\+Gui\+Key}} Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Event\+Key}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_a6ffea1ffba5aaa267937ea362b844e8c}\label{struct_im_gui_text_edit_callback_data_a6ffea1ffba5aaa267937ea362b844e8c}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Flags@{Flags}}
+\index{Flags@{Flags}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_a7d2c6153a6b9b5d3178ce82434ac9fb8}{Im\+Gui\+Input\+Text\+Flags}} Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Flags}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_a37cec257a392910f386188978027541c}\label{struct_im_gui_text_edit_callback_data_a37cec257a392910f386188978027541c}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Read\+Only@{Read\+Only}}
+\index{Read\+Only@{Read\+Only}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Read\+Only}{ReadOnly}}
+{\footnotesize\ttfamily bool Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Read\+Only}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_af3371b7f36bd6c2b528b033bdb1785a2}\label{struct_im_gui_text_edit_callback_data_af3371b7f36bd6c2b528b033bdb1785a2}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Selection\+End@{Selection\+End}}
+\index{Selection\+End@{Selection\+End}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Selection\+End}{SelectionEnd}}
+{\footnotesize\ttfamily int Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Selection\+End}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_a1634bec3717f7e386033051cf604efed}\label{struct_im_gui_text_edit_callback_data_a1634bec3717f7e386033051cf604efed}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!Selection\+Start@{Selection\+Start}}
+\index{Selection\+Start@{Selection\+Start}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{Selection\+Start}{SelectionStart}}
+{\footnotesize\ttfamily int Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+Selection\+Start}
+
+\mbox{\Hypertarget{struct_im_gui_text_edit_callback_data_aaf4994a17aefa6ace9cf8f7c2fa06cf7}\label{struct_im_gui_text_edit_callback_data_aaf4994a17aefa6ace9cf8f7c2fa06cf7}} 
+\index{Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}!User\+Data@{User\+Data}}
+\index{User\+Data@{User\+Data}!Im\+Gui\+Text\+Edit\+Callback\+Data@{Im\+Gui\+Text\+Edit\+Callback\+Data}}
+\subsubsection{\texorpdfstring{User\+Data}{UserData}}
+{\footnotesize\ttfamily void$\ast$ Im\+Gui\+Text\+Edit\+Callback\+Data\+::\+User\+Data}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/\mbox{\hyperlink{imgui_8h}{imgui.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/\mbox{\hyperlink{imgui_8cpp}{imgui.\+cpp}}\end{DoxyCompactItemize}

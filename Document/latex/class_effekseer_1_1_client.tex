@@ -1,0 +1,87 @@
+\hypertarget{class_effekseer_1_1_client}{}\section{Effekseer\+:\+:Client クラス}
+\label{class_effekseer_1_1_client}\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_client_a42b5bd5ae18884b4c884f94173c6e1e2}{Client}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_client_a77d6c51135b4e3b69b75bff309bb0a85}{$\sim$\+Client}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_client_a8ccf03136f886a34baeabcfd6d3e5cb4}{Start}} (char $\ast$host, uint16\+\_\+t port)=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_client_aa490dfe72eeb567e6eff19d9e8b850c1}{Stop}} ()=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_client_a3c80e7d4534a6697e20fc222df7b4598}{Reload}} (const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$key, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$data, int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_a73c68f3d33539d30844b9d1e058077f7}{size}})=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_client_a82cb4bc702a7cb270dd141fec9f62812}{Reload}} (\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$manager, const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$path, const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$key)=0
+\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_client_a83c2f00111623d0fe4536a197b7ac9b7}{Is\+Connected}} ()=0
+\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_effekseer_1_1_client}{Client}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_client_a817c27febbb77053bd90ffa866d3ed9f}{Create}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_client_a42b5bd5ae18884b4c884f94173c6e1e2}\label{class_effekseer_1_1_client_a42b5bd5ae18884b4c884f94173c6e1e2}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!Client@{Client}}
+\index{Client@{Client}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily Effekseer\+::\+Client\+::\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_client_a77d6c51135b4e3b69b75bff309bb0a85}\label{class_effekseer_1_1_client_a77d6c51135b4e3b69b75bff309bb0a85}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!````~Client@{$\sim$\+Client}}
+\index{````~Client@{$\sim$\+Client}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{$\sim$\+Client()}{~Client()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Client\+::$\sim$\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_client_a817c27febbb77053bd90ffa866d3ed9f}\label{class_effekseer_1_1_client_a817c27febbb77053bd90ffa866d3ed9f}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!Create@{Create}}
+\index{Create@{Create}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_effekseer_1_1_client}{Client}}$\ast$ Effekseer\+::\+Client\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_client_a83c2f00111623d0fe4536a197b7ac9b7}\label{class_effekseer_1_1_client_a83c2f00111623d0fe4536a197b7ac9b7}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!Is\+Connected@{Is\+Connected}}
+\index{Is\+Connected@{Is\+Connected}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{Is\+Connected()}{IsConnected()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Client\+::\+Is\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_client_a3c80e7d4534a6697e20fc222df7b4598}\label{class_effekseer_1_1_client_a3c80e7d4534a6697e20fc222df7b4598}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!Reload@{Reload}}
+\index{Reload@{Reload}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{Reload()}{Reload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Client\+::\+Reload (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{key,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{data,  }\item[{int32\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_client_a82cb4bc702a7cb270dd141fec9f62812}\label{class_effekseer_1_1_client_a82cb4bc702a7cb270dd141fec9f62812}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!Reload@{Reload}}
+\index{Reload@{Reload}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{Reload()}{Reload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Client\+::\+Reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_manager}{Manager}} $\ast$}]{manager,  }\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{path,  }\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_client_a8ccf03136f886a34baeabcfd6d3e5cb4}\label{class_effekseer_1_1_client_a8ccf03136f886a34baeabcfd6d3e5cb4}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!Start@{Start}}
+\index{Start@{Start}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Client\+::\+Start (\begin{DoxyParamCaption}\item[{char $\ast$}]{host,  }\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_client_aa490dfe72eeb567e6eff19d9e8b850c1}\label{class_effekseer_1_1_client_aa490dfe72eeb567e6eff19d9e8b850c1}} 
+\index{Effekseer\+::\+Client@{Effekseer\+::\+Client}!Stop@{Stop}}
+\index{Stop@{Stop}!Effekseer\+::\+Client@{Effekseer\+::\+Client}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Client\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: DrawComponent クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_draw_component.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_draw_component-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">DrawComponent クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_draw_component_8h_source.html">DrawComponent.h</a>&gt;</code></p>
+<div class="dynheader">
+DrawComponent の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_draw_component.png" usemap="#DrawComponent_map" alt=""/>
+  <map id="DrawComponent_map" name="DrawComponent_map">
+<area href="class_component_origin.html" alt="ComponentOrigin" shape="rect" coords="0,0,134,24"/>
+<area href="class_clear_logo_draw.html" alt="ClearLogoDraw" shape="rect" coords="144,112,278,136"/>
+<area href="class_coin_draw.html" alt="CoinDraw" shape="rect" coords="144,168,278,192"/>
+<area href="class_enemy_draw.html" alt="EnemyDraw" shape="rect" coords="144,224,278,248"/>
+<area href="class_failure_logo_draw.html" alt="FailureLogoDraw" shape="rect" coords="144,280,278,304"/>
+<area href="class_field_draw.html" alt="FieldDraw" shape="rect" coords="144,336,278,360"/>
+<area href="class_number_draw.html" alt="NumberDraw" shape="rect" coords="144,392,278,416"/>
+<area href="class_player_draw.html" alt="PlayerDraw" shape="rect" coords="144,448,278,472"/>
+<area href="class_push_space_logo_draw.html" alt="PushSpaceLogoDraw" shape="rect" coords="144,504,278,528"/>
+<area href="class_score_draw.html" alt="ScoreDraw" shape="rect" coords="144,560,278,584"/>
+<area href="class_sky_dome_draw.html" alt="SkyDomeDraw" shape="rect" coords="144,616,278,640"/>
+<area href="class_title_logo_draw.html" alt="TitleLogoDraw" shape="rect" coords="144,672,278,696"/>
+<area href="class_tutorial_logo01_draw.html" alt="TutorialLogo01Draw" shape="rect" coords="144,728,278,752"/>
+<area href="class_tutorial_logo02_draw.html" alt="TutorialLogo02Draw" shape="rect" coords="144,784,278,808"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:adde17e0eff392abede5f59463cc54032"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032">State</a> { <br />
+&#160;&#160;<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a39336a999e29d302dff162fd46ce53c0">NONE</a> = -1, 
+<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a9c3806d33043699cb3b9f3e67a1d1d2f">FIXED</a>, 
+<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a075b86647135a674ba865520f6310311">FIXED_ALPHA</a>, 
+<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a8e82e1afb6f0fc3c44ce0619f0a2833c">FIXED_BILLBOARD</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a0bd157d8416c9535342e6dfa95bad8b9">FIXED_BILLBOARD_ALPHA</a>, 
+<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a3732729ccb8d11413d8efa88c566450b">FIXED_2D</a>, 
+<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032aa1a0ee0ae5d32bbe008b8c89d4ebdf39">TEST_SHADER</a>, 
+<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032aebb842b39b6a11cb1bb7148c6cbc0a5f">TEST_SHADER_BILLBOARD</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a8bd3ebaeb3962d568efe3f9ee4cca068">MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:adde17e0eff392abede5f59463cc54032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a028c5084fd306431f3e229650af54ad1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#a028c5084fd306431f3e229650af54ad1">~DrawComponent</a> ()</td></tr>
+<tr class="separator:a028c5084fd306431f3e229650af54ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84bfb6ccc2fda9e54cdff45057ea2c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#ae84bfb6ccc2fda9e54cdff45057ea2c3">Draw</a> (unsigned mesh_index)=0</td></tr>
+<tr class="separator:ae84bfb6ccc2fda9e54cdff45057ea2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d66e27ebe55d9cf4af70c03b391193d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#a9d66e27ebe55d9cf4af70c03b391193d">Debug</a> ()</td></tr>
+<tr class="separator:a9d66e27ebe55d9cf4af70c03b391193d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3bbcc8e563b740c0a5535170921c75"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#a5f3bbcc8e563b740c0a5535170921c75">GetMeshNum</a> ()</td></tr>
+<tr class="separator:a5f3bbcc8e563b740c0a5535170921c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae078d5139f691997763bf6cac9e25a"><td class="memItemLeft" align="right" valign="top">virtual D3DMATERIAL9 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#adae078d5139f691997763bf6cac9e25a">GetMaterial</a> (unsigned mesh_index)</td></tr>
+<tr class="separator:adae078d5139f691997763bf6cac9e25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea98f4bcdfd76782d5234122b132c3d"><td class="memItemLeft" align="right" valign="top">virtual LPDIRECT3DTEXTURE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#a9ea98f4bcdfd76782d5234122b132c3d">GetDecaleTexture</a> (unsigned mesh_index)</td></tr>
+<tr class="separator:a9ea98f4bcdfd76782d5234122b132c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b739c28b9abcff3a3e5bda6bcc2060"><td class="memItemLeft" align="right" valign="top">virtual LPDIRECT3DTEXTURE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#a03b739c28b9abcff3a3e5bda6bcc2060">GetNormalTexture</a> (unsigned mesh_index)</td></tr>
+<tr class="separator:a03b739c28b9abcff3a3e5bda6bcc2060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4b82b07bda97a67ef6aeb5ba5b4b16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032">DrawComponent::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#a5e4b82b07bda97a67ef6aeb5ba5b4b16">GetState</a> ()</td></tr>
+<tr class="separator:a5e4b82b07bda97a67ef6aeb5ba5b4b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f415e9e80142c6a8a0a399dd41febc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_component.html#a9f415e9e80142c6a8a0a399dd41febc8">SetState</a> (<a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032">DrawComponent::State</a> state)</td></tr>
+<tr class="separator:a9f415e9e80142c6a8a0a399dd41febc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_component_origin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_component_origin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_component_origin.html">ComponentOrigin</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:af5fc09a42cacd7ba4df66ded1d086970 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#af5fc09a42cacd7ba4df66ded1d086970">~ComponentOrigin</a> ()</td></tr>
+<tr class="separator:af5fc09a42cacd7ba4df66ded1d086970 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f674891257f2272b1636d8b6bb05d81 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#a9f674891257f2272b1636d8b6bb05d81">Init</a> ()=0</td></tr>
+<tr class="separator:a9f674891257f2272b1636d8b6bb05d81 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f89a93f9c1954bd53f9750e35e6089d inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#a9f89a93f9c1954bd53f9750e35e6089d">Uninit</a> ()=0</td></tr>
+<tr class="separator:a9f89a93f9c1954bd53f9750e35e6089d inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1eb38e463b1cf2c31589db69b2adef inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#aba1eb38e463b1cf2c31589db69b2adef">SetGameObjectOrigin</a> (<a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *game_object_origin)</td></tr>
+<tr class="separator:aba1eb38e463b1cf2c31589db69b2adef inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fe099f93012bc6e09918a6509c4743 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#ab3fe099f93012bc6e09918a6509c4743">GetGameObjectOrigin</a> ()</td></tr>
+<tr class="separator:ab3fe099f93012bc6e09918a6509c4743 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="adde17e0eff392abede5f59463cc54032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde17e0eff392abede5f59463cc54032">&#9670;&nbsp;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032">DrawComponent::State</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032a39336a999e29d302dff162fd46ce53c0"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032a9c3806d33043699cb3b9f3e67a1d1d2f"></a>FIXED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032a075b86647135a674ba865520f6310311"></a>FIXED_ALPHA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032a8e82e1afb6f0fc3c44ce0619f0a2833c"></a>FIXED_BILLBOARD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032a0bd157d8416c9535342e6dfa95bad8b9"></a>FIXED_BILLBOARD_ALPHA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032a3732729ccb8d11413d8efa88c566450b"></a>FIXED_2D&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032aa1a0ee0ae5d32bbe008b8c89d4ebdf39"></a>TEST_SHADER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032aebb842b39b6a11cb1bb7148c6cbc0a5f"></a>TEST_SHADER_BILLBOARD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adde17e0eff392abede5f59463cc54032a8bd3ebaeb3962d568efe3f9ee4cca068"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a028c5084fd306431f3e229650af54ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028c5084fd306431f3e229650af54ad1">&#9670;&nbsp;</a></span>~DrawComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DrawComponent::~DrawComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a9d66e27ebe55d9cf4af70c03b391193d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d66e27ebe55d9cf4af70c03b391193d">&#9670;&nbsp;</a></span>Debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DrawComponent::Debug </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae84bfb6ccc2fda9e54cdff45057ea2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84bfb6ccc2fda9e54cdff45057ea2c3">&#9670;&nbsp;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DrawComponent::Draw </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>mesh_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player_draw.html#a1d58f14658bf5e058f67c6754d9898e7">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#ad3501ec3720bf2f2878de2785432eee7">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#a9e594c09e4da69134e9f7384cc5f8392">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a4d0e48e3770a3906bd7d0a607e36a5b5">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a06917439520efba7319f254566f19b81">TitleLogoDraw</a>, <a class="el" href="class_tutorial_logo01_draw.html#a92e3c7b5fb5e068615418299c0ab2b8b">TutorialLogo01Draw</a>, <a class="el" href="class_tutorial_logo02_draw.html#a616cd2a60e7bc628bfa7845f4cefaa0a">TutorialLogo02Draw</a>, <a class="el" href="class_coin_draw.html#a57e3f327324db9ec3debc702d14325c7">CoinDraw</a>, <a class="el" href="class_field_draw.html#a78b6bc16f825e91c39fad97931ea63fd">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a89a1d08932cb19b43ebe42481944b6cc">SkyDomeDraw</a>, <a class="el" href="class_score_draw.html#a0744dd3db298a45683b7521a02e8e9db">ScoreDraw</a>, <a class="el" href="class_enemy_draw.html#a4d922df05a3a3f4117399817c24554e6">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a8ff9515eb359a04517d7d36321fff0d7">NumberDraw</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a9ea98f4bcdfd76782d5234122b132c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea98f4bcdfd76782d5234122b132c3d">&#9670;&nbsp;</a></span>GetDecaleTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual LPDIRECT3DTEXTURE9 DrawComponent::GetDecaleTexture </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>mesh_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player_draw.html#af139860a0e62553110f939a62d7b5e8e">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#ac0355042ed00a3eff2b30da938ba8776">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#aa377e1852cbcda9df1e6d03eaab229c3">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a6823730591c0243b49171cf82ed0f065">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#adb7a5b8c8137e1bd3a3553c6045cefd0">TitleLogoDraw</a>, <a class="el" href="class_tutorial_logo01_draw.html#a4c5ab0c5fd9b092b7a2e489ef2539a74">TutorialLogo01Draw</a>, <a class="el" href="class_tutorial_logo02_draw.html#a38a329b442624c0afdf08d91c7932295">TutorialLogo02Draw</a>, <a class="el" href="class_coin_draw.html#aa3132d69a3dd903e79331b3c4b46ab79">CoinDraw</a>, <a class="el" href="class_field_draw.html#a06e1621342d80ea696a5fbf54d5d997b">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#ac430b3aa2cd7470ac08ea5a9624bf429">SkyDomeDraw</a>, <a class="el" href="class_number_draw.html#a4485821e07841a9d0fe33d5a047ed7d0">NumberDraw</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="adae078d5139f691997763bf6cac9e25a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae078d5139f691997763bf6cac9e25a">&#9670;&nbsp;</a></span>GetMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual D3DMATERIAL9* DrawComponent::GetMaterial </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>mesh_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player_draw.html#abcc7b934dbbe08215291dfd1baa2ac31">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#a7b91990fdd431ecbc189e8304ca5626d">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#a4fbb4cf8cfd42eeefcdf4fbfa9e52d7a">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a701fe2023e593a2b8662699e8c97c2ea">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a346a63d4c6464e5d7564117a3257ae40">TitleLogoDraw</a>, <a class="el" href="class_tutorial_logo01_draw.html#a82f716bcb21e3413237aa947ed7c7f51">TutorialLogo01Draw</a>, <a class="el" href="class_tutorial_logo02_draw.html#a9127cd4fd59a7e03236df177296c849c">TutorialLogo02Draw</a>, <a class="el" href="class_coin_draw.html#a4582370e7ec4c1259b2a91cc185fbe09">CoinDraw</a>, <a class="el" href="class_field_draw.html#ae1c720b24a99003a3c413ce0f6dadcb0">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a0afc2d0f6236bb3f9d4edea42737dc1c">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#a081c6a1c8c007b604885e6fbd0ee3641">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a9454f2a7dab2afd1e981c7cf14329659">NumberDraw</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a5f3bbcc8e563b740c0a5535170921c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3bbcc8e563b740c0a5535170921c75">&#9670;&nbsp;</a></span>GetMeshNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned DrawComponent::GetMeshNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player_draw.html#adbf5776a7a2d7f255661e0527f673eaa">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#aac55b995c8003022b4e308da81c904b3">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#a169800b9298e3186ef8b4aa82347e38e">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#ac6e2e4f3158976693efaa2c1f351050f">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a882f0521f65845529e5bf45d3671d9c4">TitleLogoDraw</a>, <a class="el" href="class_tutorial_logo01_draw.html#a08c17ba99169d9e8e57f9bc23d96c21c">TutorialLogo01Draw</a>, <a class="el" href="class_tutorial_logo02_draw.html#aadb36d767f9cca619453885dacdff836">TutorialLogo02Draw</a>, <a class="el" href="class_coin_draw.html#a9f5aa847fcb28e5617f00d575a6a911c">CoinDraw</a>, <a class="el" href="class_field_draw.html#a8637a3a4d08d0ac466a370edac39b584">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a3509ab1acfc388e652a8146b8ad027b5">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#af61c817f8c00dae7aa990544721a2e15">EnemyDraw</a>, <a class="el" href="class_number_draw.html#ace379e39f5646b4d04f3fc9cc1beea1a">NumberDraw</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a03b739c28b9abcff3a3e5bda6bcc2060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b739c28b9abcff3a3e5bda6bcc2060">&#9670;&nbsp;</a></span>GetNormalTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual LPDIRECT3DTEXTURE9 DrawComponent::GetNormalTexture </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>mesh_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_player_draw.html#a96eb31c32c0016cd6c908dc67032a7ed">PlayerDraw</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a5e4b82b07bda97a67ef6aeb5ba5b4b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4b82b07bda97a67ef6aeb5ba5b4b16">&#9670;&nbsp;</a></span>GetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032">DrawComponent::State</a> DrawComponent::GetState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f415e9e80142c6a8a0a399dd41febc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f415e9e80142c6a8a0a399dd41febc8">&#9670;&nbsp;</a></span>SetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawComponent::SetState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032">DrawComponent::State</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/DrawComponent/<a class="el" href="_draw_component_8h_source.html">DrawComponent.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_draw_component.html">DrawComponent</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

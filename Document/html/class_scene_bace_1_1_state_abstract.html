@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: SceneBace::StateAbstract クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_scene_bace_1_1_state_abstract.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_scene_bace_1_1_state_abstract-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">SceneBace::StateAbstract クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>シーンステート抽象クラス  
+ <a href="class_scene_bace_1_1_state_abstract.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_scene_bace_8h_source.html">SceneBace.h</a>&gt;</code></p>
+<div class="dynheader">
+SceneBace::StateAbstract の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_scene_bace_1_1_state_abstract.png" usemap="#SceneBace::StateAbstract_map" alt=""/>
+  <map id="SceneBace::StateAbstract_map" name="SceneBace::StateAbstract_map">
+<area href="class_game_scene_state___start.html" title="ゲームシーンステートクラス(スタート) " alt="GameSceneState_Start" shape="rect" coords="0,56,158,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af10a26f1265f46bc2cc23c2b001dc903"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_bace_1_1_state_abstract.html#af10a26f1265f46bc2cc23c2b001dc903">~StateAbstract</a> ()</td></tr>
+<tr class="memdesc:af10a26f1265f46bc2cc23c2b001dc903"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#af10a26f1265f46bc2cc23c2b001dc903">[詳解]</a><br /></td></tr>
+<tr class="separator:af10a26f1265f46bc2cc23c2b001dc903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2846ccd263265142324b43bfac813ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_bace_1_1_state_abstract.html#ae2846ccd263265142324b43bfac813ff">Init</a> ()=0</td></tr>
+<tr class="memdesc:ae2846ccd263265142324b43bfac813ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#ae2846ccd263265142324b43bfac813ff">[詳解]</a><br /></td></tr>
+<tr class="separator:ae2846ccd263265142324b43bfac813ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5a67a3f6c1708e55a8cd39649b6813"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_bace_1_1_state_abstract.html#a7d5a67a3f6c1708e55a8cd39649b6813">Uninit</a> ()=0</td></tr>
+<tr class="memdesc:a7d5a67a3f6c1708e55a8cd39649b6813"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#a7d5a67a3f6c1708e55a8cd39649b6813">[詳解]</a><br /></td></tr>
+<tr class="separator:a7d5a67a3f6c1708e55a8cd39649b6813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949637cf8453ddd6a8e38fdbd6e4006e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_bace_1_1_state_abstract.html#a949637cf8453ddd6a8e38fdbd6e4006e">Update</a> ()=0</td></tr>
+<tr class="memdesc:a949637cf8453ddd6a8e38fdbd6e4006e"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <a href="#a949637cf8453ddd6a8e38fdbd6e4006e">[詳解]</a><br /></td></tr>
+<tr class="separator:a949637cf8453ddd6a8e38fdbd6e4006e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006ee828975a964e513d9efb096584de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_bace_1_1_state_abstract.html#a006ee828975a964e513d9efb096584de">Reset</a> ()=0</td></tr>
+<tr class="memdesc:a006ee828975a964e513d9efb096584de"><td class="mdescLeft">&#160;</td><td class="mdescRight">リセット関数  <a href="#a006ee828975a964e513d9efb096584de">[詳解]</a><br /></td></tr>
+<tr class="separator:a006ee828975a964e513d9efb096584de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fb501149e60438a835315ca1151907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_bace_1_1_state_abstract.html#ac8fb501149e60438a835315ca1151907">SetScene</a> (<a class="el" href="class_scene_bace.html">SceneBace</a> *value)</td></tr>
+<tr class="separator:ac8fb501149e60438a835315ca1151907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a881f0c962327486fce549fc35549bfa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene_bace.html">SceneBace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_bace_1_1_state_abstract.html#a881f0c962327486fce549fc35549bfa8">scene_</a> = nullptr</td></tr>
+<tr class="memdesc:a881f0c962327486fce549fc35549bfa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン  <a href="#a881f0c962327486fce549fc35549bfa8">[詳解]</a><br /></td></tr>
+<tr class="separator:a881f0c962327486fce549fc35549bfa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>シーンステート抽象クラス </p>
+<p>シーンステートの抽象クラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="af10a26f1265f46bc2cc23c2b001dc903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10a26f1265f46bc2cc23c2b001dc903">&#9670;&nbsp;</a></span>~StateAbstract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SceneBace::StateAbstract::~StateAbstract </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae2846ccd263265142324b43bfac813ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2846ccd263265142324b43bfac813ff">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBace::StateAbstract::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化関数 </p>
+
+<p><a class="el" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7">GameSceneState_Start</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a006ee828975a964e513d9efb096584de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006ee828975a964e513d9efb096584de">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBace::StateAbstract::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>リセット関数 </p>
+
+<p><a class="el" href="class_game_scene_state___start.html#a59270f7b65613f580864ed8ea3056179">GameSceneState_Start</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="ac8fb501149e60438a835315ca1151907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8fb501149e60438a835315ca1151907">&#9670;&nbsp;</a></span>SetScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SceneBace::StateAbstract::SetScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_scene_bace.html">SceneBace</a> *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d5a67a3f6c1708e55a8cd39649b6813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5a67a3f6c1708e55a8cd39649b6813">&#9670;&nbsp;</a></span>Uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBace::StateAbstract::Uninit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了関数 </p>
+
+<p><a class="el" href="class_game_scene_state___start.html#a636df8b7ac0173b044b0efc2927fb83b">GameSceneState_Start</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="a949637cf8453ddd6a8e38fdbd6e4006e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949637cf8453ddd6a8e38fdbd6e4006e">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBace::StateAbstract::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新関数 </p>
+
+<p><a class="el" href="class_game_scene_state___start.html#ae11bb8d8ea9eae4fea2a9acf33dd1c8b">GameSceneState_Start</a>で実装されています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a881f0c962327486fce549fc35549bfa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881f0c962327486fce549fc35549bfa8">&#9670;&nbsp;</a></span>scene_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_scene_bace.html">SceneBace</a>* SceneBace::StateAbstract::scene_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シーン </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/02_Scene/SceneBace/<a class="el" href="_scene_bace_8h_source.html">SceneBace.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_scene_bace.html">SceneBace</a></li><li class="navelem"><a class="el" href="class_scene_bace_1_1_state_abstract.html">StateAbstract</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

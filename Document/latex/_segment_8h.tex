@@ -1,0 +1,63 @@
+\hypertarget{_segment_8h}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision\+Component/\+Collision\+Object/\+Collision\+Shape\+Origin/\+Segment/\+Segment.h ファイル}
+\label{_segment_8h}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision\+Component/\+Collision\+Object/\+Collision\+Shape\+Origin/\+Segment/\+Segment.\+h@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision\+Component/\+Collision\+Object/\+Collision\+Shape\+Origin/\+Segment/\+Segment.\+h}}
+{\ttfamily \#include \char`\"{}../\+Collision\+Shape\+Origin.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Vector3\+D.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_segment}{Segment}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_segment_8h_a12757b2d47b6592ec6b2f57253878d2e}{Shortest\+Distance\+\_\+\+Line\+\_\+\+Point}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point, float $\ast$t, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$point)
+\item 
+float \mbox{\hyperlink{_segment_8h_a0575d6a616fa95075f88623632bae170}{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Point}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point, float $\ast$t, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$point)
+\item 
+bool \mbox{\hyperlink{_segment_8h_af786c5fbbd6d4ea97e1a19d1f8026375}{Is\+\_\+\+Parallel\+Segment}} (const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+float \mbox{\hyperlink{_segment_8h_a3fae4510faeb51f131d9f3e6cdcda9a4}{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point0, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point1, float $\ast$t0, float $\ast$t1, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+void \mbox{\hyperlink{_segment_8h_a3f7783f4fefe063dc6ef6bbe5d58db06}{Clamp0\+\_\+1}} (float $\ast$t)
+\item 
+float \mbox{\hyperlink{_segment_8h_a3ca962c690b73355253042cdab29b337}{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point0, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point1, float $\ast$t0, float $\ast$t1, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{_segment_8h_a3f7783f4fefe063dc6ef6bbe5d58db06}\label{_segment_8h_a3f7783f4fefe063dc6ef6bbe5d58db06}} 
+\index{Segment.\+h@{Segment.\+h}!Clamp0\+\_\+1@{Clamp0\+\_\+1}}
+\index{Clamp0\+\_\+1@{Clamp0\+\_\+1}!Segment.\+h@{Segment.\+h}}
+\subsubsection{\texorpdfstring{Clamp0\+\_\+1()}{Clamp0\_1()}}
+{\footnotesize\ttfamily void Clamp0\+\_\+1 (\begin{DoxyParamCaption}\item[{float $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_segment_8h_af786c5fbbd6d4ea97e1a19d1f8026375}\label{_segment_8h_af786c5fbbd6d4ea97e1a19d1f8026375}} 
+\index{Segment.\+h@{Segment.\+h}!Is\+\_\+\+Parallel\+Segment@{Is\+\_\+\+Parallel\+Segment}}
+\index{Is\+\_\+\+Parallel\+Segment@{Is\+\_\+\+Parallel\+Segment}!Segment.\+h@{Segment.\+h}}
+\subsubsection{\texorpdfstring{Is\+\_\+\+Parallel\+Segment()}{Is\_ParallelSegment()}}
+{\footnotesize\ttfamily bool Is\+\_\+\+Parallel\+Segment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_segment_8h_a3fae4510faeb51f131d9f3e6cdcda9a4}\label{_segment_8h_a3fae4510faeb51f131d9f3e6cdcda9a4}} 
+\index{Segment.\+h@{Segment.\+h}!Shortest\+Distance\+\_\+\+Line\+\_\+\+Line@{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line}}
+\index{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line@{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line}!Segment.\+h@{Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line()}{ShortestDistance\_Line\_Line()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+\_\+\+Line\+\_\+\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point0,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point1,  }\item[{float $\ast$}]{t0,  }\item[{float $\ast$}]{t1,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_segment_8h_a12757b2d47b6592ec6b2f57253878d2e}\label{_segment_8h_a12757b2d47b6592ec6b2f57253878d2e}} 
+\index{Segment.\+h@{Segment.\+h}!Shortest\+Distance\+\_\+\+Line\+\_\+\+Point@{Shortest\+Distance\+\_\+\+Line\+\_\+\+Point}}
+\index{Shortest\+Distance\+\_\+\+Line\+\_\+\+Point@{Shortest\+Distance\+\_\+\+Line\+\_\+\+Point}!Segment.\+h@{Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+\_\+\+Line\+\_\+\+Point()}{ShortestDistance\_Line\_Point()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+\_\+\+Line\+\_\+\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point,  }\item[{float $\ast$}]{t,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_segment_8h_a0575d6a616fa95075f88623632bae170}\label{_segment_8h_a0575d6a616fa95075f88623632bae170}} 
+\index{Segment.\+h@{Segment.\+h}!Shortest\+Distance\+\_\+\+Segment\+\_\+\+Point@{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Point}}
+\index{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Point@{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Point}!Segment.\+h@{Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Point()}{ShortestDistance\_Segment\_Point()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+\_\+\+Segment\+\_\+\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point,  }\item[{float $\ast$}]{t,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_segment_8h_a3ca962c690b73355253042cdab29b337}\label{_segment_8h_a3ca962c690b73355253042cdab29b337}} 
+\index{Segment.\+h@{Segment.\+h}!Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment@{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment}}
+\index{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment@{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment}!Segment.\+h@{Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment()}{ShortestDistance\_Segment\_Segment()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point0,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point1,  }\item[{float $\ast$}]{t0,  }\item[{float $\ast$}]{t1,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

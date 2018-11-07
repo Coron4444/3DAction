@@ -1,0 +1,113 @@
+\hypertarget{class_depth_buffer_shadow_object}{}\section{Depth\+Buffer\+Shadow\+Object クラス}
+\label{class_depth_buffer_shadow_object}\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+
+
+深度バッファシャドウオブジェクトクラス  
+
+
+
+
+{\ttfamily \#include $<$Depth\+Buffer\+Shadow\+Object.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_depth_buffer_shadow_object_a03e23f51e5e68babc7a1a42d0fedfba0}{Init}} ()
+\item 
+static void \mbox{\hyperlink{class_depth_buffer_shadow_object_a6f5e6542143cffef6b7a9e69f6c9cd94}{Uninit}} ()
+\item 
+static void \mbox{\hyperlink{class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc}{Set\+Render\+Target}} ()
+\item 
+static void \mbox{\hyperlink{class_depth_buffer_shadow_object_a2ac079b069c8f60b8d681868b9afce89}{Set\+Old\+Render\+Target}} ()
+\item 
+static void \mbox{\hyperlink{class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c}{Draw\+\_\+\+Pass0}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)
+\item 
+static void \mbox{\hyperlink{class_depth_buffer_shadow_object_a4bf8a72a447aa6ff150f3fef630ab448}{Draw\+\_\+\+Pass1}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \mbox{\hyperlink{class_depth_buffer_shadow_object_aaa0b1c0ca424614c5cf7368f00fa5fa0}{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH}} = \char`\"{}resource/H\+L\+SL/Effect/obj/Bump\+Mapping.\+obj\char`\"{}
+\item 
+static const D3\+D\+V\+E\+R\+T\+E\+X\+E\+L\+E\+M\+E\+N\+T9 \mbox{\hyperlink{class_depth_buffer_shadow_object_a9238d9843ca8654d67809dfbd5600137}{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}} \mbox{[}$\,$\mbox{]}
+\item 
+static const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} \mbox{\hyperlink{class_depth_buffer_shadow_object_aa7a8ac55e3de545dacb0cfde57fd1017}{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+深度バッファシャドウオブジェクトクラス 
+
+シャドウマップを用いた影をつける レンダリング回数：2回 1回目 \+: シャドウマップの作成 2回目 \+: シャドウマップの深度値とオブジェクトの深度値を比較しながらレンダリング 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c}\label{class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Draw\+\_\+\+Pass0@{Draw\+\_\+\+Pass0}}
+\index{Draw\+\_\+\+Pass0@{Draw\+\_\+\+Pass0}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Draw\+\_\+\+Pass0()}{Draw\_Pass0()}}
+{\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Draw\+\_\+\+Pass0 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a4bf8a72a447aa6ff150f3fef630ab448}\label{class_depth_buffer_shadow_object_a4bf8a72a447aa6ff150f3fef630ab448}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Draw\+\_\+\+Pass1@{Draw\+\_\+\+Pass1}}
+\index{Draw\+\_\+\+Pass1@{Draw\+\_\+\+Pass1}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Draw\+\_\+\+Pass1()}{Draw\_Pass1()}}
+{\footnotesize\ttfamily static void Depth\+Buffer\+Shadow\+Object\+::\+Draw\+\_\+\+Pass1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a03e23f51e5e68babc7a1a42d0fedfba0}\label{class_depth_buffer_shadow_object_a03e23f51e5e68babc7a1a42d0fedfba0}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Init@{Init}}
+\index{Init@{Init}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a2ac079b069c8f60b8d681868b9afce89}\label{class_depth_buffer_shadow_object_a2ac079b069c8f60b8d681868b9afce89}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Set\+Old\+Render\+Target@{Set\+Old\+Render\+Target}}
+\index{Set\+Old\+Render\+Target@{Set\+Old\+Render\+Target}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Set\+Old\+Render\+Target()}{SetOldRenderTarget()}}
+{\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Set\+Old\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc}\label{class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Set\+Render\+Target@{Set\+Render\+Target}}
+\index{Set\+Render\+Target@{Set\+Render\+Target}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Set\+Render\+Target()}{SetRenderTarget()}}
+{\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Set\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a6f5e6542143cffef6b7a9e69f6c9cd94}\label{class_depth_buffer_shadow_object_a6f5e6542143cffef6b7a9e69f6c9cd94}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a9238d9843ca8654d67809dfbd5600137}\label{class_depth_buffer_shadow_object_a9238d9843ca8654d67809dfbd5600137}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!D\+E\+C\+L\+A\+R\+A\+T\+I\+ON@{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}
+\index{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON@{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}{DECLARATION}}
+{\footnotesize\ttfamily const D3\+D\+V\+E\+R\+T\+E\+X\+E\+L\+E\+M\+E\+N\+T9 Depth\+Buffer\+Shadow\+Object\+::\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初期値\+:}
+\begin{DoxyCode}
+= \{\{0,  0, D3DDECLTYPE\_FLOAT3, D3DDECLMETHOD\_DEFAULT, D3DDECLUSAGE\_POSITION, 0\},
+       \{0, 12, D3DDECLTYPE\_FLOAT3, D3DDECLMETHOD\_DEFAULT, D3DDECLUSAGE\_NORMAL,   0\},
+
+      \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_aaa0b1c0ca424614c5cf7368f00fa5fa0}\label{class_depth_buffer_shadow_object_aaa0b1c0ca424614c5cf7368f00fa5fa0}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH@{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH}}
+\index{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH@{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH}{EFFECT\_PATH}}
+{\footnotesize\ttfamily const char $\ast$ Depth\+Buffer\+Shadow\+Object\+::\+E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH = \char`\"{}resource/H\+L\+SL/Effect/obj/Bump\+Mapping.\+obj\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_aa7a8ac55e3de545dacb0cfde57fd1017}\label{class_depth_buffer_shadow_object_aa7a8ac55e3de545dacb0cfde57fd1017}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE@{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}}
+\index{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE@{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}{SHADOW\_MAP\_SIZE}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} Depth\+Buffer\+Shadow\+Object\+::\+S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Shader/\+Depth\+Buffer\+Shadow\+Object/\mbox{\hyperlink{_depth_buffer_shadow_object_8h}{Depth\+Buffer\+Shadow\+Object.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Shader/\+Depth\+Buffer\+Shadow\+Object/\mbox{\hyperlink{_depth_buffer_shadow_object_8cpp}{Depth\+Buffer\+Shadow\+Object.\+cpp}}\end{DoxyCompactItemize}

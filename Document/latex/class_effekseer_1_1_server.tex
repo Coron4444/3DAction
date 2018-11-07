@@ -1,0 +1,127 @@
+\hypertarget{class_effekseer_1_1_server}{}\section{Effekseer\+:\+:Server クラス}
+\label{class_effekseer_1_1_server}\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_server_af6f7a1893fb9dfe2d65a9288698e3f5a}{Server}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_server_a492364188996ee80d8baa9cba8e443d3}{$\sim$\+Server}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_server_afd333e58d1330710673caf909452a4c1}{Start}} (uint16\+\_\+t port)=0
+\begin{DoxyCompactList}\small\item\em サーバーを開始する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_server_ac41b09333e7d792489cbeef127df89f6}{Stop}} ()=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_server_aadfbaeb38b0d1fb33ad6646430de45b0}{Regist}} (const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$key, \mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$effect)=0
+\begin{DoxyCompactList}\small\item\em エフェクトをリロードの対象として登録する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_server_a81f7cfeac861a665a6d2905400735740}{Unregist}} (\mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$effect)=0
+\begin{DoxyCompactList}\small\item\em エフェクトをリロードの対象から外す。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_server_af841f04fb41ed36b888cb2f89c4c0771}{Update}} ()=0
+\begin{DoxyCompactList}\small\item\em サーバーを更新し、エフェクトのリロードを行う。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_server_a4c0d31a5fd39184615179157a6929296}{Set\+Material\+Path}} (const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$material\+Path)=0
+\begin{DoxyCompactList}\small\item\em 素材パスを設定する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_effekseer_1_1_server}{Server}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_server_a010be3e29a3551b3f2bf058b593c3eb0}{Create}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_server_af6f7a1893fb9dfe2d65a9288698e3f5a}\label{class_effekseer_1_1_server_af6f7a1893fb9dfe2d65a9288698e3f5a}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Server@{Server}}
+\index{Server@{Server}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily Effekseer\+::\+Server\+::\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_server_a492364188996ee80d8baa9cba8e443d3}\label{class_effekseer_1_1_server_a492364188996ee80d8baa9cba8e443d3}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!````~Server@{$\sim$\+Server}}
+\index{````~Server@{$\sim$\+Server}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{$\sim$\+Server()}{~Server()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Server\+::$\sim$\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_server_a010be3e29a3551b3f2bf058b593c3eb0}\label{class_effekseer_1_1_server_a010be3e29a3551b3f2bf058b593c3eb0}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Create@{Create}}
+\index{Create@{Create}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_effekseer_1_1_server}{Server}}$\ast$ Effekseer\+::\+Server\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_server_aadfbaeb38b0d1fb33ad6646430de45b0}\label{class_effekseer_1_1_server_aadfbaeb38b0d1fb33ad6646430de45b0}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Regist@{Regist}}
+\index{Regist@{Regist}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Regist()}{Regist()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Server\+::\+Regist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{key,  }\item[{\mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$}]{effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトをリロードの対象として登録する。 
+
+
+\begin{DoxyParams}{引数}
+{\em key} & \mbox{[}in\mbox{]} 検索用キー \\
+\hline
+{\em effect} & \mbox{[}in\mbox{]} リロードする対象のエフェクト \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_server_a4c0d31a5fd39184615179157a6929296}\label{class_effekseer_1_1_server_a4c0d31a5fd39184615179157a6929296}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Set\+Material\+Path@{Set\+Material\+Path}}
+\index{Set\+Material\+Path@{Set\+Material\+Path}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Set\+Material\+Path()}{SetMaterialPath()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Server\+::\+Set\+Material\+Path (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{material\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+素材パスを設定する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_server_afd333e58d1330710673caf909452a4c1}\label{class_effekseer_1_1_server_afd333e58d1330710673caf909452a4c1}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Start@{Start}}
+\index{Start@{Start}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Server\+::\+Start (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+サーバーを開始する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_server_ac41b09333e7d792489cbeef127df89f6}\label{class_effekseer_1_1_server_ac41b09333e7d792489cbeef127df89f6}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Stop@{Stop}}
+\index{Stop@{Stop}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Server\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_server_a81f7cfeac861a665a6d2905400735740}\label{class_effekseer_1_1_server_a81f7cfeac861a665a6d2905400735740}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Unregist@{Unregist}}
+\index{Unregist@{Unregist}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Unregist()}{Unregist()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Server\+::\+Unregist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_effekseer_1_1_effect}{Effect}} $\ast$}]{effect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+エフェクトをリロードの対象から外す。 
+
+
+\begin{DoxyParams}{引数}
+{\em effect} & \mbox{[}in\mbox{]} リロードから外すエフェクト \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_effekseer_1_1_server_af841f04fb41ed36b888cb2f89c4c0771}\label{class_effekseer_1_1_server_af841f04fb41ed36b888cb2f89c4c0771}} 
+\index{Effekseer\+::\+Server@{Effekseer\+::\+Server}!Update@{Update}}
+\index{Update@{Update}!Effekseer\+::\+Server@{Effekseer\+::\+Server}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Server\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+サーバーを更新し、エフェクトのリロードを行う。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{main_8cpp}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/main.cpp ファイル}
+\label{main_8cpp}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/main.\+cpp@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/main.\+cpp}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$crtdbg.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Safe\+Release/\+Safe\+Release.\+h$>$}\newline
+{\ttfamily \#include $<$Game\+System\textbackslash{}\+Game\+System.\+h$>$}\newline
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+H\+W\+ND \mbox{\hyperlink{main_8cpp_a1606a678852dd3dd2457f1a8bf6a78c4}{Create\+\_\+\+Window}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, int n\+Cmd\+Show)
+\item 
+void \mbox{\hyperlink{main_8cpp_a008e28aa2cf40386c3230ba3e544e34b}{Registration\+Window\+Class\+Ex}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance)
+\item 
+void \mbox{\hyperlink{main_8cpp_a644d1e6582ae891ff72df1b650f92083}{Set\+Client\+Area\+Size}} (int $\ast$window\+\_\+width, int $\ast$window\+\_\+height)
+\item 
+void \mbox{\hyperlink{main_8cpp_a82106eedd2d769357b708bafef71d9f0}{Set\+Window\+Position\+Center}} (int $\ast$window\+\_\+position\+\_\+x, int $\ast$window\+\_\+position\+\_\+y, int $\ast$window\+\_\+width, int $\ast$window\+\_\+height)
+\item 
+void \mbox{\hyperlink{main_8cpp_a0c8cdd6f9d1e6ea84da99015aebdeb61}{Message\+And\+Game\+Loop}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND window\+\_\+handle, M\+SG $\ast$message)
+\item 
+L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK \mbox{\hyperlink{main_8cpp_ae749e989b362e19783c7af4a2bf46c95}{Wnd\+Proc}} (H\+W\+ND h\+Wnd, U\+I\+NT u\+Msg, W\+P\+A\+R\+AM w\+Param, L\+P\+A\+R\+AM l\+Param)
+\item 
+int A\+P\+I\+E\+N\+T\+RY \mbox{\hyperlink{main_8cpp_a3f6dd90e9dfab2815b29d251b677f6e9}{Win\+Main}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+I\+N\+S\+T\+A\+N\+CE h\+Previnstance, L\+P\+S\+TR lp\+Cmd\+Line, int n\+Cmd\+Show)
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{main_8cpp_a1606a678852dd3dd2457f1a8bf6a78c4}\label{main_8cpp_a1606a678852dd3dd2457f1a8bf6a78c4}} 
+\index{main.\+cpp@{main.\+cpp}!Create\+\_\+\+Window@{Create\+\_\+\+Window}}
+\index{Create\+\_\+\+Window@{Create\+\_\+\+Window}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Create\+\_\+\+Window()}{Create\_Window()}}
+{\footnotesize\ttfamily H\+W\+ND Create\+\_\+\+Window (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a0c8cdd6f9d1e6ea84da99015aebdeb61}\label{main_8cpp_a0c8cdd6f9d1e6ea84da99015aebdeb61}} 
+\index{main.\+cpp@{main.\+cpp}!Message\+And\+Game\+Loop@{Message\+And\+Game\+Loop}}
+\index{Message\+And\+Game\+Loop@{Message\+And\+Game\+Loop}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Message\+And\+Game\+Loop()}{MessageAndGameLoop()}}
+{\footnotesize\ttfamily void Message\+And\+Game\+Loop (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{window\+\_\+handle,  }\item[{M\+SG $\ast$}]{message }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a008e28aa2cf40386c3230ba3e544e34b}\label{main_8cpp_a008e28aa2cf40386c3230ba3e544e34b}} 
+\index{main.\+cpp@{main.\+cpp}!Registration\+Window\+Class\+Ex@{Registration\+Window\+Class\+Ex}}
+\index{Registration\+Window\+Class\+Ex@{Registration\+Window\+Class\+Ex}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Registration\+Window\+Class\+Ex()}{RegistrationWindowClassEx()}}
+{\footnotesize\ttfamily void Registration\+Window\+Class\+Ex (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a644d1e6582ae891ff72df1b650f92083}\label{main_8cpp_a644d1e6582ae891ff72df1b650f92083}} 
+\index{main.\+cpp@{main.\+cpp}!Set\+Client\+Area\+Size@{Set\+Client\+Area\+Size}}
+\index{Set\+Client\+Area\+Size@{Set\+Client\+Area\+Size}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Set\+Client\+Area\+Size()}{SetClientAreaSize()}}
+{\footnotesize\ttfamily void Set\+Client\+Area\+Size (\begin{DoxyParamCaption}\item[{int $\ast$}]{window\+\_\+width,  }\item[{int $\ast$}]{window\+\_\+height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a82106eedd2d769357b708bafef71d9f0}\label{main_8cpp_a82106eedd2d769357b708bafef71d9f0}} 
+\index{main.\+cpp@{main.\+cpp}!Set\+Window\+Position\+Center@{Set\+Window\+Position\+Center}}
+\index{Set\+Window\+Position\+Center@{Set\+Window\+Position\+Center}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Set\+Window\+Position\+Center()}{SetWindowPositionCenter()}}
+{\footnotesize\ttfamily void Set\+Window\+Position\+Center (\begin{DoxyParamCaption}\item[{int $\ast$}]{window\+\_\+position\+\_\+x,  }\item[{int $\ast$}]{window\+\_\+position\+\_\+y,  }\item[{int $\ast$}]{window\+\_\+width,  }\item[{int $\ast$}]{window\+\_\+height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a3f6dd90e9dfab2815b29d251b677f6e9}\label{main_8cpp_a3f6dd90e9dfab2815b29d251b677f6e9}} 
+\index{main.\+cpp@{main.\+cpp}!Win\+Main@{Win\+Main}}
+\index{Win\+Main@{Win\+Main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Win\+Main()}{WinMain()}}
+{\footnotesize\ttfamily int A\+P\+I\+E\+N\+T\+RY Win\+Main (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Previnstance,  }\item[{L\+P\+S\+TR}]{lp\+Cmd\+Line,  }\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ae749e989b362e19783c7af4a2bf46c95}\label{main_8cpp_ae749e989b362e19783c7af4a2bf46c95}} 
+\index{main.\+cpp@{main.\+cpp}!Wnd\+Proc@{Wnd\+Proc}}
+\index{Wnd\+Proc@{Wnd\+Proc}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Wnd\+Proc()}{WndProc()}}
+{\footnotesize\ttfamily L\+R\+E\+S\+U\+LT C\+A\+L\+L\+B\+A\+CK Wnd\+Proc (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{h\+Wnd,  }\item[{U\+I\+NT}]{u\+Msg,  }\item[{W\+P\+A\+R\+AM}]{w\+Param,  }\item[{L\+P\+A\+R\+AM}]{l\+Param }\end{DoxyParamCaption})}
+

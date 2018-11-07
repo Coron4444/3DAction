@@ -1,0 +1,130 @@
+\hypertarget{class_number}{}\section{Number クラス}
+\label{class_number}\index{Number@{Number}}
+
+
+{\ttfamily \#include $<$Number.\+h$>$}
+
+Number の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_number}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_number_a5830270854ab224b60462f50f495a1fa}{Init}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+\item 
+void \mbox{\hyperlink{class_number_a7c3bf9c55f7a0a19d80129c5f07f99f2}{Uninit}} () override
+\item 
+void \mbox{\hyperlink{class_number_a7c6facdb1b3d0acc8309e0a915863d44}{Reset}} () override
+\item 
+void \mbox{\hyperlink{class_number_ac825b1ee1f46a6ac4ffd3bc904964745}{Set\+Number}} (int number)
+\item 
+void \mbox{\hyperlink{class_number_a1ea98cdee888a040f4530a6654657c44}{Set\+Color}} (\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} color)
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}} $\ast$ \mbox{\hyperlink{class_number_a588084d69c46b02ddb608448724cfe11}{plane\+\_\+polygon\+\_\+}}
+\item 
+\mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_number_a305385aaec293089117c50fd1cf2575f}{decale\+\_\+texture\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_number_a8c3235a3442303d4ef950fef5eb7b34c}{number\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_number_acd5422010e99cbf61196094a9b501115}{old\+\_\+number\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{class_number_a0018ed63d70f4dde3c64bf99df7978ce}{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\item 
+static const std\+::string \mbox{\hyperlink{class_number_a43c6583cef6d8d32b8de6683f80bdb59}{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}} = \char`\"{}UI/Num.\+png\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_number_a5830270854ab224b60462f50f495a1fa}\label{class_number_a5830270854ab224b60462f50f495a1fa}} 
+\index{Number@{Number}!Init@{Init}}
+\index{Init@{Init}!Number@{Number}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Number\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_number_a7c6facdb1b3d0acc8309e0a915863d44}\label{class_number_a7c6facdb1b3d0acc8309e0a915863d44}} 
+\index{Number@{Number}!Reset@{Reset}}
+\index{Reset@{Reset}!Number@{Number}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Number\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+
+\mbox{\Hypertarget{class_number_a1ea98cdee888a040f4530a6654657c44}\label{class_number_a1ea98cdee888a040f4530a6654657c44}} 
+\index{Number@{Number}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!Number@{Number}}
+\subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}}
+{\footnotesize\ttfamily void Number\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_number_ac825b1ee1f46a6ac4ffd3bc904964745}\label{class_number_ac825b1ee1f46a6ac4ffd3bc904964745}} 
+\index{Number@{Number}!Set\+Number@{Set\+Number}}
+\index{Set\+Number@{Set\+Number}!Number@{Number}}
+\subsubsection{\texorpdfstring{Set\+Number()}{SetNumber()}}
+{\footnotesize\ttfamily void Number\+::\+Set\+Number (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_number_a7c3bf9c55f7a0a19d80129c5f07f99f2}\label{class_number_a7c3bf9c55f7a0a19d80129c5f07f99f2}} 
+\index{Number@{Number}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Number@{Number}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Number\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_number_a305385aaec293089117c50fd1cf2575f}\label{class_number_a305385aaec293089117c50fd1cf2575f}} 
+\index{Number@{Number}!decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}}
+\index{decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}!Number@{Number}}
+\subsubsection{\texorpdfstring{decale\+\_\+texture\+\_\+}{decale\_texture\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}}$\ast$ Number\+::decale\+\_\+texture\+\_\+}
+
+\mbox{\Hypertarget{class_number_a8c3235a3442303d4ef950fef5eb7b34c}\label{class_number_a8c3235a3442303d4ef950fef5eb7b34c}} 
+\index{Number@{Number}!number\+\_\+@{number\+\_\+}}
+\index{number\+\_\+@{number\+\_\+}!Number@{Number}}
+\subsubsection{\texorpdfstring{number\+\_\+}{number\_}}
+{\footnotesize\ttfamily int Number\+::number\+\_\+}
+
+\mbox{\Hypertarget{class_number_acd5422010e99cbf61196094a9b501115}\label{class_number_acd5422010e99cbf61196094a9b501115}} 
+\index{Number@{Number}!old\+\_\+number\+\_\+@{old\+\_\+number\+\_\+}}
+\index{old\+\_\+number\+\_\+@{old\+\_\+number\+\_\+}!Number@{Number}}
+\subsubsection{\texorpdfstring{old\+\_\+number\+\_\+}{old\_number\_}}
+{\footnotesize\ttfamily int Number\+::old\+\_\+number\+\_\+}
+
+\mbox{\Hypertarget{class_number_a588084d69c46b02ddb608448724cfe11}\label{class_number_a588084d69c46b02ddb608448724cfe11}} 
+\index{Number@{Number}!plane\+\_\+polygon\+\_\+@{plane\+\_\+polygon\+\_\+}}
+\index{plane\+\_\+polygon\+\_\+@{plane\+\_\+polygon\+\_\+}!Number@{Number}}
+\subsubsection{\texorpdfstring{plane\+\_\+polygon\+\_\+}{plane\_polygon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}}$\ast$ Number\+::plane\+\_\+polygon\+\_\+}
+
+\mbox{\Hypertarget{class_number_a43c6583cef6d8d32b8de6683f80bdb59}\label{class_number_a43c6583cef6d8d32b8de6683f80bdb59}} 
+\index{Number@{Number}!T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}}
+\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}!Number@{Number}}
+\subsubsection{\texorpdfstring{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}{TEXTURE\_NAME}}
+{\footnotesize\ttfamily const std\+::string Number\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME = \char`\"{}UI/Num.\+png\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_number_a0018ed63d70f4dde3c64bf99df7978ce}\label{class_number_a0018ed63d70f4dde3c64bf99df7978ce}} 
+\index{Number@{Number}!T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!Number@{Number}}
+\subsubsection{\texorpdfstring{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{TEXTURE\_PATH}}
+{\footnotesize\ttfamily const std\+::string Number\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Numbers/\+Number/\mbox{\hyperlink{_number_8h}{Number.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Numbers/\+Number/\mbox{\hyperlink{_number_8cpp}{Number.\+cpp}}\end{DoxyCompactItemize}

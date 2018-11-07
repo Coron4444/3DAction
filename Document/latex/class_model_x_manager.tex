@@ -1,0 +1,90 @@
+\hypertarget{class_model_x_manager}{}\section{Model\+X\+Manager クラス}
+\label{class_model_x_manager}\index{Model\+X\+Manager@{Model\+X\+Manager}}
+
+
+{\ttfamily \#include $<$Model\+X\+Manager.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82}{Init\+All\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_model_x_manager_a8096a9ed1b19c41270df944aa855015a}{Init\+Share\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_model_x_manager_a9bed6cb5ffcd2cbfec6c405e21af362e}{Init\+Unique\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538}{Uninit\+All\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_model_x_manager_a9e3d0dc8addebebc87f450cde6c5e659}{Uninit\+Share\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_model_x_manager_a7dde269502f40b7d1208c8e0f84b13f0}{Uninit\+Unique\+Data}} ()
+\item 
+static \mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$ \mbox{\hyperlink{class_model_x_manager_a395565622dff14d4ff80bf64611f9a36}{Add\+Share\+Data}} (const std\+::string $\ast$key\+\_\+name, const std\+::string $\ast$file\+\_\+path=nullptr)
+\item 
+static \mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$ \mbox{\hyperlink{class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b}{Add\+Unique\+Data}} (const std\+::string $\ast$key\+\_\+name, const std\+::string $\ast$file\+\_\+path=nullptr)
+\item 
+static \mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$ \mbox{\hyperlink{class_model_x_manager_a70cc89b8314e5e91b74770606c734c97}{Get\+Model\+X\+Object}} (const std\+::string $\ast$key\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_model_x_manager_a395565622dff14d4ff80bf64611f9a36}\label{class_model_x_manager_a395565622dff14d4ff80bf64611f9a36}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Add\+Share\+Data@{Add\+Share\+Data}}
+\index{Add\+Share\+Data@{Add\+Share\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Share\+Data()}{AddShareData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$ Model\+X\+Manager\+::\+Add\+Share\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b}\label{class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Add\+Unique\+Data@{Add\+Unique\+Data}}
+\index{Add\+Unique\+Data@{Add\+Unique\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Unique\+Data()}{AddUniqueData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$ Model\+X\+Manager\+::\+Add\+Unique\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a70cc89b8314e5e91b74770606c734c97}\label{class_model_x_manager_a70cc89b8314e5e91b74770606c734c97}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Get\+Model\+X\+Object@{Get\+Model\+X\+Object}}
+\index{Get\+Model\+X\+Object@{Get\+Model\+X\+Object}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Model\+X\+Object()}{GetModelXObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$ Model\+X\+Manager\+::\+Get\+Model\+X\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82}\label{class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Init\+All\+Data@{Init\+All\+Data}}
+\index{Init\+All\+Data@{Init\+All\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Init\+All\+Data()}{InitAllData()}}
+{\footnotesize\ttfamily void Model\+X\+Manager\+::\+Init\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a8096a9ed1b19c41270df944aa855015a}\label{class_model_x_manager_a8096a9ed1b19c41270df944aa855015a}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Init\+Share\+Data@{Init\+Share\+Data}}
+\index{Init\+Share\+Data@{Init\+Share\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Share\+Data()}{InitShareData()}}
+{\footnotesize\ttfamily void Model\+X\+Manager\+::\+Init\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a9bed6cb5ffcd2cbfec6c405e21af362e}\label{class_model_x_manager_a9bed6cb5ffcd2cbfec6c405e21af362e}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Init\+Unique\+Data@{Init\+Unique\+Data}}
+\index{Init\+Unique\+Data@{Init\+Unique\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Unique\+Data()}{InitUniqueData()}}
+{\footnotesize\ttfamily void Model\+X\+Manager\+::\+Init\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538}\label{class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Uninit\+All\+Data@{Uninit\+All\+Data}}
+\index{Uninit\+All\+Data@{Uninit\+All\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+All\+Data()}{UninitAllData()}}
+{\footnotesize\ttfamily void Model\+X\+Manager\+::\+Uninit\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a9e3d0dc8addebebc87f450cde6c5e659}\label{class_model_x_manager_a9e3d0dc8addebebc87f450cde6c5e659}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Uninit\+Share\+Data@{Uninit\+Share\+Data}}
+\index{Uninit\+Share\+Data@{Uninit\+Share\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Share\+Data()}{UninitShareData()}}
+{\footnotesize\ttfamily void Model\+X\+Manager\+::\+Uninit\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_x_manager_a7dde269502f40b7d1208c8e0f84b13f0}\label{class_model_x_manager_a7dde269502f40b7d1208c8e0f84b13f0}} 
+\index{Model\+X\+Manager@{Model\+X\+Manager}!Uninit\+Unique\+Data@{Uninit\+Unique\+Data}}
+\index{Uninit\+Unique\+Data@{Uninit\+Unique\+Data}!Model\+X\+Manager@{Model\+X\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Unique\+Data()}{UninitUniqueData()}}
+{\footnotesize\ttfamily void Model\+X\+Manager\+::\+Uninit\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Model\+X/\+Model\+X\+Manager/\mbox{\hyperlink{_model_x_manager_8h}{Model\+X\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Model\+X/\+Model\+X\+Manager/\mbox{\hyperlink{_model_x_manager_8cpp}{Model\+X\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,1039 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: EffekseerRenderer::Renderer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_effekseer_renderer_1_1_renderer.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="class_effekseer_renderer_1_1_renderer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">EffekseerRenderer::Renderer クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_effekseer_renderer_d_x9_8h_source.html">EffekseerRendererDX9.h</a>&gt;</code></p>
+<div class="dynheader">
+EffekseerRenderer::Renderer の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_effekseer_renderer_1_1_renderer.png" usemap="#EffekseerRenderer::Renderer_map" alt=""/>
+  <map id="EffekseerRenderer::Renderer_map" name="EffekseerRenderer::Renderer_map">
+<area href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="Effekseer::IReference" shape="rect" coords="0,0,203,24"/>
+<area href="class_effekseer_renderer_d_x9_1_1_renderer.html" title="描画クラス " alt="EffekseerRendererDX9::Renderer" shape="rect" coords="0,112,203,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5cf709d5b02e229f94efeec1e08951c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a5cf709d5b02e229f94efeec1e08951c4">OnLostDevice</a> ()=0</td></tr>
+<tr class="memdesc:a5cf709d5b02e229f94efeec1e08951c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバイスロストが発生した時に実行する。  <a href="#a5cf709d5b02e229f94efeec1e08951c4">[詳解]</a><br /></td></tr>
+<tr class="separator:a5cf709d5b02e229f94efeec1e08951c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4e579c8c8b6e368e37a854cbf4c0ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a2a4e579c8c8b6e368e37a854cbf4c0ec">OnResetDevice</a> ()=0</td></tr>
+<tr class="memdesc:a2a4e579c8c8b6e368e37a854cbf4c0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバイスがリセットされた時に実行する。  <a href="#a2a4e579c8c8b6e368e37a854cbf4c0ec">[詳解]</a><br /></td></tr>
+<tr class="separator:a2a4e579c8c8b6e368e37a854cbf4c0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da94391eb26a2bd04830e4d7fcd0bd0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a8da94391eb26a2bd04830e4d7fcd0bd0">Destroy</a> ()=0</td></tr>
+<tr class="memdesc:a8da94391eb26a2bd04830e4d7fcd0bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">このインスタンスを破棄する。  <a href="#a8da94391eb26a2bd04830e4d7fcd0bd0">[詳解]</a><br /></td></tr>
+<tr class="separator:a8da94391eb26a2bd04830e4d7fcd0bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6de8a0c0d65c03d3242ccfc9946c91c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ac6de8a0c0d65c03d3242ccfc9946c91c">SetRestorationOfStatesFlag</a> (bool flag)=0</td></tr>
+<tr class="memdesc:ac6de8a0c0d65c03d3242ccfc9946c91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートを復帰するかどうかのフラグを設定する。  <a href="#ac6de8a0c0d65c03d3242ccfc9946c91c">[詳解]</a><br /></td></tr>
+<tr class="separator:ac6de8a0c0d65c03d3242ccfc9946c91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79aa204f1344347d8e111432d6d5bf5f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a79aa204f1344347d8e111432d6d5bf5f">BeginRendering</a> ()=0</td></tr>
+<tr class="memdesc:a79aa204f1344347d8e111432d6d5bf5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画を開始する時に実行する。  <a href="#a79aa204f1344347d8e111432d6d5bf5f">[詳解]</a><br /></td></tr>
+<tr class="separator:a79aa204f1344347d8e111432d6d5bf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6df6f62aead71652bdeb596d0a7ef4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#aaa6df6f62aead71652bdeb596d0a7ef4">EndRendering</a> ()=0</td></tr>
+<tr class="memdesc:aaa6df6f62aead71652bdeb596d0a7ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画を終了する時に実行する。  <a href="#aaa6df6f62aead71652bdeb596d0a7ef4">[詳解]</a><br /></td></tr>
+<tr class="separator:aaa6df6f62aead71652bdeb596d0a7ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da04ff6d2ad2a0126a7476703a7c019"><td class="memItemLeft" align="right" valign="top">virtual const ::<a class="el" href="struct_effekseer_1_1_vector3_d.html">Effekseer::Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a3da04ff6d2ad2a0126a7476703a7c019">GetLightDirection</a> () const =0</td></tr>
+<tr class="memdesc:a3da04ff6d2ad2a0126a7476703a7c019"><td class="mdescLeft">&#160;</td><td class="mdescRight">ライトの方向を取得する。  <a href="#a3da04ff6d2ad2a0126a7476703a7c019">[詳解]</a><br /></td></tr>
+<tr class="separator:a3da04ff6d2ad2a0126a7476703a7c019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d4468e4a1ca40c585e7b6c88dd1849"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a28d4468e4a1ca40c585e7b6c88dd1849">SetLightDirection</a> (::<a class="el" href="struct_effekseer_1_1_vector3_d.html">Effekseer::Vector3D</a> &amp;direction)=0</td></tr>
+<tr class="memdesc:a28d4468e4a1ca40c585e7b6c88dd1849"><td class="mdescLeft">&#160;</td><td class="mdescRight">ライトの方向を設定する。  <a href="#a28d4468e4a1ca40c585e7b6c88dd1849">[詳解]</a><br /></td></tr>
+<tr class="separator:a28d4468e4a1ca40c585e7b6c88dd1849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ed44772dd362bd7dbed42823da0411"><td class="memItemLeft" align="right" valign="top">virtual const ::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#af1ed44772dd362bd7dbed42823da0411">GetLightColor</a> () const =0</td></tr>
+<tr class="memdesc:af1ed44772dd362bd7dbed42823da0411"><td class="mdescLeft">&#160;</td><td class="mdescRight">ライトの色を取得する。  <a href="#af1ed44772dd362bd7dbed42823da0411">[詳解]</a><br /></td></tr>
+<tr class="separator:af1ed44772dd362bd7dbed42823da0411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53268363d6c1ed36bd9119860d058808"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a53268363d6c1ed36bd9119860d058808">SetLightColor</a> (::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a> &amp;color)=0</td></tr>
+<tr class="memdesc:a53268363d6c1ed36bd9119860d058808"><td class="mdescLeft">&#160;</td><td class="mdescRight">ライトの色を設定する。  <a href="#a53268363d6c1ed36bd9119860d058808">[詳解]</a><br /></td></tr>
+<tr class="separator:a53268363d6c1ed36bd9119860d058808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1454194ae4005f7a9d5a66f4f56c4972"><td class="memItemLeft" align="right" valign="top">virtual const ::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a1454194ae4005f7a9d5a66f4f56c4972">GetLightAmbientColor</a> () const =0</td></tr>
+<tr class="memdesc:a1454194ae4005f7a9d5a66f4f56c4972"><td class="mdescLeft">&#160;</td><td class="mdescRight">ライトの環境光の色を取得する。  <a href="#a1454194ae4005f7a9d5a66f4f56c4972">[詳解]</a><br /></td></tr>
+<tr class="separator:a1454194ae4005f7a9d5a66f4f56c4972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc954d0b421ded11b7420361b987094"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#aebc954d0b421ded11b7420361b987094">SetLightAmbientColor</a> (::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a> &amp;color)=0</td></tr>
+<tr class="memdesc:aebc954d0b421ded11b7420361b987094"><td class="mdescLeft">&#160;</td><td class="mdescRight">ライトの環境光の色を設定する。  <a href="#aebc954d0b421ded11b7420361b987094">[詳解]</a><br /></td></tr>
+<tr class="separator:aebc954d0b421ded11b7420361b987094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30b6ab25e7c03a3f70656c954e8db09"><td class="memItemLeft" align="right" valign="top">virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#af30b6ab25e7c03a3f70656c954e8db09">GetSquareMaxCount</a> () const =0</td></tr>
+<tr class="memdesc:af30b6ab25e7c03a3f70656c954e8db09"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大描画スプライト数を取得する。  <a href="#af30b6ab25e7c03a3f70656c954e8db09">[詳解]</a><br /></td></tr>
+<tr class="separator:af30b6ab25e7c03a3f70656c954e8db09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a94e69a46222064baf9394405a7c9a9"><td class="memItemLeft" align="right" valign="top">virtual const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a7a94e69a46222064baf9394405a7c9a9">GetProjectionMatrix</a> () const =0</td></tr>
+<tr class="memdesc:a7a94e69a46222064baf9394405a7c9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">投影行列を取得する。  <a href="#a7a94e69a46222064baf9394405a7c9a9">[詳解]</a><br /></td></tr>
+<tr class="separator:a7a94e69a46222064baf9394405a7c9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270c020aeb8cef8b0f1a9a02980d685d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a270c020aeb8cef8b0f1a9a02980d685d">SetProjectionMatrix</a> (const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> &amp;mat)=0</td></tr>
+<tr class="memdesc:a270c020aeb8cef8b0f1a9a02980d685d"><td class="mdescLeft">&#160;</td><td class="mdescRight">投影行列を設定する。  <a href="#a270c020aeb8cef8b0f1a9a02980d685d">[詳解]</a><br /></td></tr>
+<tr class="separator:a270c020aeb8cef8b0f1a9a02980d685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c386cbe84039115d2f7d224d8a9c41c"><td class="memItemLeft" align="right" valign="top">virtual const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a9c386cbe84039115d2f7d224d8a9c41c">GetCameraMatrix</a> () const =0</td></tr>
+<tr class="memdesc:a9c386cbe84039115d2f7d224d8a9c41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラ行列を取得する。  <a href="#a9c386cbe84039115d2f7d224d8a9c41c">[詳解]</a><br /></td></tr>
+<tr class="separator:a9c386cbe84039115d2f7d224d8a9c41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406e4bf44f11d3437af46cca718529b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a406e4bf44f11d3437af46cca718529b0">SetCameraMatrix</a> (const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> &amp;mat)=0</td></tr>
+<tr class="memdesc:a406e4bf44f11d3437af46cca718529b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラ行列を設定する。  <a href="#a406e4bf44f11d3437af46cca718529b0">[詳解]</a><br /></td></tr>
+<tr class="separator:a406e4bf44f11d3437af46cca718529b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e05934631fa04e75ffb87952200042"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a62e05934631fa04e75ffb87952200042">GetCameraProjectionMatrix</a> ()=0</td></tr>
+<tr class="memdesc:a62e05934631fa04e75ffb87952200042"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラプロジェクション行列を取得する。  <a href="#a62e05934631fa04e75ffb87952200042">[詳解]</a><br /></td></tr>
+<tr class="separator:a62e05934631fa04e75ffb87952200042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abecf62202fe3d54f4edf6c43d701188b"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="class_effekseer_1_1_sprite_renderer.html">Effekseer::SpriteRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#abecf62202fe3d54f4edf6c43d701188b">CreateSpriteRenderer</a> ()=0</td></tr>
+<tr class="memdesc:abecf62202fe3d54f4edf6c43d701188b"><td class="mdescLeft">&#160;</td><td class="mdescRight">スプライトレンダラーを生成する。  <a href="#abecf62202fe3d54f4edf6c43d701188b">[詳解]</a><br /></td></tr>
+<tr class="separator:abecf62202fe3d54f4edf6c43d701188b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65157c02f8936e054c2525e4722a4f7"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="class_effekseer_1_1_ribbon_renderer.html">Effekseer::RibbonRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ac65157c02f8936e054c2525e4722a4f7">CreateRibbonRenderer</a> ()=0</td></tr>
+<tr class="memdesc:ac65157c02f8936e054c2525e4722a4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">リボンレンダラーを生成する。  <a href="#ac65157c02f8936e054c2525e4722a4f7">[詳解]</a><br /></td></tr>
+<tr class="separator:ac65157c02f8936e054c2525e4722a4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84dec1c70cab5984ce151753b5c9bcb9"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="class_effekseer_1_1_ring_renderer.html">Effekseer::RingRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a84dec1c70cab5984ce151753b5c9bcb9">CreateRingRenderer</a> ()=0</td></tr>
+<tr class="memdesc:a84dec1c70cab5984ce151753b5c9bcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">リングレンダラーを生成する。  <a href="#a84dec1c70cab5984ce151753b5c9bcb9">[詳解]</a><br /></td></tr>
+<tr class="separator:a84dec1c70cab5984ce151753b5c9bcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cbbeb73fa35b6cf356fcef7499301fb"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="class_effekseer_1_1_model_renderer.html">Effekseer::ModelRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a7cbbeb73fa35b6cf356fcef7499301fb">CreateModelRenderer</a> ()=0</td></tr>
+<tr class="memdesc:a7cbbeb73fa35b6cf356fcef7499301fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルレンダラーを生成する。  <a href="#a7cbbeb73fa35b6cf356fcef7499301fb">[詳解]</a><br /></td></tr>
+<tr class="separator:a7cbbeb73fa35b6cf356fcef7499301fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38cff31386fce6fe0122a4ac5804fd8f"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="class_effekseer_1_1_track_renderer.html">Effekseer::TrackRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a38cff31386fce6fe0122a4ac5804fd8f">CreateTrackRenderer</a> ()=0</td></tr>
+<tr class="memdesc:a38cff31386fce6fe0122a4ac5804fd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">軌跡レンダラーを生成する。  <a href="#a38cff31386fce6fe0122a4ac5804fd8f">[詳解]</a><br /></td></tr>
+<tr class="separator:a38cff31386fce6fe0122a4ac5804fd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e29065eaca81d5191d9bad1421c408"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="class_effekseer_1_1_texture_loader.html">Effekseer::TextureLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a13e29065eaca81d5191d9bad1421c408">CreateTextureLoader</a> (::<a class="el" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a> *fileInterface=NULL)=0</td></tr>
+<tr class="memdesc:a13e29065eaca81d5191d9bad1421c408"><td class="mdescLeft">&#160;</td><td class="mdescRight">標準のテクスチャ読込クラスを生成する。  <a href="#a13e29065eaca81d5191d9bad1421c408">[詳解]</a><br /></td></tr>
+<tr class="separator:a13e29065eaca81d5191d9bad1421c408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35779830c25992af7a9a9d53423f817"><td class="memItemLeft" align="right" valign="top">virtual ::<a class="el" href="class_effekseer_1_1_model_loader.html">Effekseer::ModelLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ab35779830c25992af7a9a9d53423f817">CreateModelLoader</a> (::<a class="el" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a> *fileInterface=NULL)=0</td></tr>
+<tr class="memdesc:ab35779830c25992af7a9a9d53423f817"><td class="mdescLeft">&#160;</td><td class="mdescRight">標準のモデル読込クラスを生成する。  <a href="#ab35779830c25992af7a9a9d53423f817">[詳解]</a><br /></td></tr>
+<tr class="separator:ab35779830c25992af7a9a9d53423f817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229d0aca027c72e6736db487efbbddeb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a229d0aca027c72e6736db487efbbddeb">ResetRenderState</a> ()=0</td></tr>
+<tr class="memdesc:a229d0aca027c72e6736db487efbbddeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダーステートを強制的にリセットする。  <a href="#a229d0aca027c72e6736db487efbbddeb">[詳解]</a><br /></td></tr>
+<tr class="separator:a229d0aca027c72e6736db487efbbddeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4db92a0262062bfcc8f3f2334e5a168"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_effekseer_renderer_1_1_distorting_callback.html">DistortingCallback</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#af4db92a0262062bfcc8f3f2334e5a168">GetDistortingCallback</a> ()=0</td></tr>
+<tr class="memdesc:af4db92a0262062bfcc8f3f2334e5a168"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを取得する。  <a href="#af4db92a0262062bfcc8f3f2334e5a168">[詳解]</a><br /></td></tr>
+<tr class="separator:af4db92a0262062bfcc8f3f2334e5a168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8806b5a83c5ea73e09662f4a0869f8f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#a8806b5a83c5ea73e09662f4a0869f8f0">SetDistortingCallback</a> (<a class="el" href="class_effekseer_renderer_1_1_distorting_callback.html">DistortingCallback</a> *callback)=0</td></tr>
+<tr class="memdesc:a8806b5a83c5ea73e09662f4a0869f8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。  <a href="#a8806b5a83c5ea73e09662f4a0869f8f0">[詳解]</a><br /></td></tr>
+<tr class="separator:a8806b5a83c5ea73e09662f4a0869f8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac28b8a076c8ae3ee80e47cfa41a5b725"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ac28b8a076c8ae3ee80e47cfa41a5b725">Renderer</a> ()</td></tr>
+<tr class="separator:ac28b8a076c8ae3ee80e47cfa41a5b725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85143b942b06b4fa4741713f7bcd84b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_renderer_1_1_renderer.html#ad85143b942b06b4fa4741713f7bcd84b">~Renderer</a> ()</td></tr>
+<tr class="separator:ad85143b942b06b4fa4741713f7bcd84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ac28b8a076c8ae3ee80e47cfa41a5b725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28b8a076c8ae3ee80e47cfa41a5b725">&#9670;&nbsp;</a></span>Renderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EffekseerRenderer::Renderer::Renderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad85143b942b06b4fa4741713f7bcd84b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85143b942b06b4fa4741713f7bcd84b">&#9670;&nbsp;</a></span>~Renderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual EffekseerRenderer::Renderer::~Renderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_effekseer_renderer_d_x9_1_1_renderer.html#ab0f89bf1d5ba64f8b661babb340a5d2c">EffekseerRendererDX9::Renderer</a>で再実装されています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a79aa204f1344347d8e111432d6d5bf5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79aa204f1344347d8e111432d6d5bf5f">&#9670;&nbsp;</a></span>BeginRendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool EffekseerRenderer::Renderer::BeginRendering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画を開始する時に実行する。 </p>
+
+</div>
+</div>
+<a id="ab35779830c25992af7a9a9d53423f817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35779830c25992af7a9a9d53423f817">&#9670;&nbsp;</a></span>CreateModelLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="class_effekseer_1_1_model_loader.html">Effekseer::ModelLoader</a>* EffekseerRenderer::Renderer::CreateModelLoader </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a> *&#160;</td>
+          <td class="paramname"><em>fileInterface</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>標準のモデル読込クラスを生成する。 </p>
+
+</div>
+</div>
+<a id="a7cbbeb73fa35b6cf356fcef7499301fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cbbeb73fa35b6cf356fcef7499301fb">&#9670;&nbsp;</a></span>CreateModelRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="class_effekseer_1_1_model_renderer.html">Effekseer::ModelRenderer</a>* EffekseerRenderer::Renderer::CreateModelRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>モデルレンダラーを生成する。 </p>
+
+</div>
+</div>
+<a id="ac65157c02f8936e054c2525e4722a4f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65157c02f8936e054c2525e4722a4f7">&#9670;&nbsp;</a></span>CreateRibbonRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="class_effekseer_1_1_ribbon_renderer.html">Effekseer::RibbonRenderer</a>* EffekseerRenderer::Renderer::CreateRibbonRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>リボンレンダラーを生成する。 </p>
+
+</div>
+</div>
+<a id="a84dec1c70cab5984ce151753b5c9bcb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84dec1c70cab5984ce151753b5c9bcb9">&#9670;&nbsp;</a></span>CreateRingRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="class_effekseer_1_1_ring_renderer.html">Effekseer::RingRenderer</a>* EffekseerRenderer::Renderer::CreateRingRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>リングレンダラーを生成する。 </p>
+
+</div>
+</div>
+<a id="abecf62202fe3d54f4edf6c43d701188b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abecf62202fe3d54f4edf6c43d701188b">&#9670;&nbsp;</a></span>CreateSpriteRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="class_effekseer_1_1_sprite_renderer.html">Effekseer::SpriteRenderer</a>* EffekseerRenderer::Renderer::CreateSpriteRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スプライトレンダラーを生成する。 </p>
+
+</div>
+</div>
+<a id="a13e29065eaca81d5191d9bad1421c408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e29065eaca81d5191d9bad1421c408">&#9670;&nbsp;</a></span>CreateTextureLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="class_effekseer_1_1_texture_loader.html">Effekseer::TextureLoader</a>* EffekseerRenderer::Renderer::CreateTextureLoader </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a> *&#160;</td>
+          <td class="paramname"><em>fileInterface</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>標準のテクスチャ読込クラスを生成する。 </p>
+
+</div>
+</div>
+<a id="a38cff31386fce6fe0122a4ac5804fd8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38cff31386fce6fe0122a4ac5804fd8f">&#9670;&nbsp;</a></span>CreateTrackRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="class_effekseer_1_1_track_renderer.html">Effekseer::TrackRenderer</a>* EffekseerRenderer::Renderer::CreateTrackRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>軌跡レンダラーを生成する。 </p>
+
+</div>
+</div>
+<a id="a8da94391eb26a2bd04830e4d7fcd0bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da94391eb26a2bd04830e4d7fcd0bd0">&#9670;&nbsp;</a></span>Destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::Destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>このインスタンスを破棄する。 </p>
+
+</div>
+</div>
+<a id="aaa6df6f62aead71652bdeb596d0a7ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6df6f62aead71652bdeb596d0a7ef4">&#9670;&nbsp;</a></span>EndRendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool EffekseerRenderer::Renderer::EndRendering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画を終了する時に実行する。 </p>
+
+</div>
+</div>
+<a id="a9c386cbe84039115d2f7d224d8a9c41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c386cbe84039115d2f7d224d8a9c41c">&#9670;&nbsp;</a></span>GetCameraMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a>&amp; EffekseerRenderer::Renderer::GetCameraMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カメラ行列を取得する。 </p>
+
+</div>
+</div>
+<a id="a62e05934631fa04e75ffb87952200042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e05934631fa04e75ffb87952200042">&#9670;&nbsp;</a></span>GetCameraProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a>&amp; EffekseerRenderer::Renderer::GetCameraProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カメラプロジェクション行列を取得する。 </p>
+
+</div>
+</div>
+<a id="af4db92a0262062bfcc8f3f2334e5a168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4db92a0262062bfcc8f3f2334e5a168">&#9670;&nbsp;</a></span>GetDistortingCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_effekseer_renderer_1_1_distorting_callback.html">DistortingCallback</a>* EffekseerRenderer::Renderer::GetDistortingCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを取得する。 </p>
+
+</div>
+</div>
+<a id="a1454194ae4005f7a9d5a66f4f56c4972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1454194ae4005f7a9d5a66f4f56c4972">&#9670;&nbsp;</a></span>GetLightAmbientColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const ::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a>&amp; EffekseerRenderer::Renderer::GetLightAmbientColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ライトの環境光の色を取得する。 </p>
+
+</div>
+</div>
+<a id="af1ed44772dd362bd7dbed42823da0411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ed44772dd362bd7dbed42823da0411">&#9670;&nbsp;</a></span>GetLightColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const ::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a>&amp; EffekseerRenderer::Renderer::GetLightColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ライトの色を取得する。 </p>
+
+</div>
+</div>
+<a id="a3da04ff6d2ad2a0126a7476703a7c019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3da04ff6d2ad2a0126a7476703a7c019">&#9670;&nbsp;</a></span>GetLightDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const ::<a class="el" href="struct_effekseer_1_1_vector3_d.html">Effekseer::Vector3D</a>&amp; EffekseerRenderer::Renderer::GetLightDirection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ライトの方向を取得する。 </p>
+
+</div>
+</div>
+<a id="a7a94e69a46222064baf9394405a7c9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a94e69a46222064baf9394405a7c9a9">&#9670;&nbsp;</a></span>GetProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a>&amp; EffekseerRenderer::Renderer::GetProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>投影行列を取得する。 </p>
+
+</div>
+</div>
+<a id="af30b6ab25e7c03a3f70656c954e8db09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30b6ab25e7c03a3f70656c954e8db09">&#9670;&nbsp;</a></span>GetSquareMaxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int32_t EffekseerRenderer::Renderer::GetSquareMaxCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最大描画スプライト数を取得する。 </p>
+
+</div>
+</div>
+<a id="a5cf709d5b02e229f94efeec1e08951c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf709d5b02e229f94efeec1e08951c4">&#9670;&nbsp;</a></span>OnLostDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::OnLostDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デバイスロストが発生した時に実行する。 </p>
+
+</div>
+</div>
+<a id="a2a4e579c8c8b6e368e37a854cbf4c0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4e579c8c8b6e368e37a854cbf4c0ec">&#9670;&nbsp;</a></span>OnResetDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::OnResetDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デバイスがリセットされた時に実行する。 </p>
+
+</div>
+</div>
+<a id="a229d0aca027c72e6736db487efbbddeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229d0aca027c72e6736db487efbbddeb">&#9670;&nbsp;</a></span>ResetRenderState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::ResetRenderState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レンダーステートを強制的にリセットする。 </p>
+
+</div>
+</div>
+<a id="a406e4bf44f11d3437af46cca718529b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406e4bf44f11d3437af46cca718529b0">&#9670;&nbsp;</a></span>SetCameraMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::SetCameraMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カメラ行列を設定する。 </p>
+
+</div>
+</div>
+<a id="a8806b5a83c5ea73e09662f4a0869f8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8806b5a83c5ea73e09662f4a0869f8f0">&#9670;&nbsp;</a></span>SetDistortingCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::SetDistortingCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_effekseer_renderer_1_1_distorting_callback.html">DistortingCallback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。 </p>
+
+</div>
+</div>
+<a id="aebc954d0b421ded11b7420361b987094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc954d0b421ded11b7420361b987094">&#9670;&nbsp;</a></span>SetLightAmbientColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::SetLightAmbientColor </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ライトの環境光の色を設定する。 </p>
+
+</div>
+</div>
+<a id="a53268363d6c1ed36bd9119860d058808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53268363d6c1ed36bd9119860d058808">&#9670;&nbsp;</a></span>SetLightColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::SetLightColor </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ライトの色を設定する。 </p>
+
+</div>
+</div>
+<a id="a28d4468e4a1ca40c585e7b6c88dd1849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d4468e4a1ca40c585e7b6c88dd1849">&#9670;&nbsp;</a></span>SetLightDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::SetLightDirection </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="struct_effekseer_1_1_vector3_d.html">Effekseer::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>direction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ライトの方向を設定する。 </p>
+
+</div>
+</div>
+<a id="a270c020aeb8cef8b0f1a9a02980d685d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270c020aeb8cef8b0f1a9a02980d685d">&#9670;&nbsp;</a></span>SetProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::SetProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const ::<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>投影行列を設定する。 </p>
+
+</div>
+</div>
+<a id="ac6de8a0c0d65c03d3242ccfc9946c91c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6de8a0c0d65c03d3242ccfc9946c91c">&#9670;&nbsp;</a></span>SetRestorationOfStatesFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EffekseerRenderer::Renderer::SetRestorationOfStatesFlag </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステートを復帰するかどうかのフラグを設定する。 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/<a class="el" href="_effekseer_renderer_d_x9_8h_source.html">EffekseerRendererDX9.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_effekseer_renderer.html">EffekseerRenderer</a></li><li class="navelem"><a class="el" href="class_effekseer_renderer_1_1_renderer.html">Renderer</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

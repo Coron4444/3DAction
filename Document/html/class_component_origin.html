@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: ComponentOrigin クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_component_origin.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_component_origin-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ComponentOrigin クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_component_origin_8h_source.html">ComponentOrigin.h</a>&gt;</code></p>
+<div class="dynheader">
+ComponentOrigin の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_component_origin.png" usemap="#ComponentOrigin_map" alt=""/>
+  <map id="ComponentOrigin_map" name="ComponentOrigin_map">
+<area href="class_collision_component.html" alt="CollisionComponent" shape="rect" coords="0,56,143,80"/>
+<area href="class_draw_component.html" alt="DrawComponent" shape="rect" coords="306,56,449,80"/>
+<area href="class_update_component.html" alt="UpdateComponent" shape="rect" coords="612,56,755,80"/>
+<area href="class_coin_collision.html" alt="CoinCollision" shape="rect" coords="153,112,296,136"/>
+<area href="class_enemy_collision.html" alt="EnemyCollision" shape="rect" coords="153,168,296,192"/>
+<area href="class_player_collision.html" alt="PlayerCollision" shape="rect" coords="153,224,296,248"/>
+<area href="class_clear_logo_draw.html" alt="ClearLogoDraw" shape="rect" coords="459,112,602,136"/>
+<area href="class_coin_draw.html" alt="CoinDraw" shape="rect" coords="459,168,602,192"/>
+<area href="class_enemy_draw.html" alt="EnemyDraw" shape="rect" coords="459,224,602,248"/>
+<area href="class_failure_logo_draw.html" alt="FailureLogoDraw" shape="rect" coords="459,280,602,304"/>
+<area href="class_field_draw.html" alt="FieldDraw" shape="rect" coords="459,336,602,360"/>
+<area href="class_number_draw.html" alt="NumberDraw" shape="rect" coords="459,392,602,416"/>
+<area href="class_player_draw.html" alt="PlayerDraw" shape="rect" coords="459,448,602,472"/>
+<area href="class_push_space_logo_draw.html" alt="PushSpaceLogoDraw" shape="rect" coords="459,504,602,528"/>
+<area href="class_score_draw.html" alt="ScoreDraw" shape="rect" coords="459,560,602,584"/>
+<area href="class_sky_dome_draw.html" alt="SkyDomeDraw" shape="rect" coords="459,616,602,640"/>
+<area href="class_title_logo_draw.html" alt="TitleLogoDraw" shape="rect" coords="459,672,602,696"/>
+<area href="class_tutorial_logo01_draw.html" alt="TutorialLogo01Draw" shape="rect" coords="459,728,602,752"/>
+<area href="class_tutorial_logo02_draw.html" alt="TutorialLogo02Draw" shape="rect" coords="459,784,602,808"/>
+<area href="class_enemy_update.html" alt="EnemyUpdate" shape="rect" coords="765,112,908,136"/>
+<area href="class_player_update.html" alt="PlayerUpdate" shape="rect" coords="765,168,908,192"/>
+<area href="class_push_space_logo_update.html" alt="PushSpaceLogoUpdate" shape="rect" coords="765,224,908,248"/>
+<area href="class_score_update.html" alt="ScoreUpdate" shape="rect" coords="765,280,908,304"/>
+<area href="class_sky_dome_update.html" alt="SkyDomeUpdate" shape="rect" coords="765,336,908,360"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af5fc09a42cacd7ba4df66ded1d086970"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#af5fc09a42cacd7ba4df66ded1d086970">~ComponentOrigin</a> ()</td></tr>
+<tr class="separator:af5fc09a42cacd7ba4df66ded1d086970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f674891257f2272b1636d8b6bb05d81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#a9f674891257f2272b1636d8b6bb05d81">Init</a> ()=0</td></tr>
+<tr class="separator:a9f674891257f2272b1636d8b6bb05d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f89a93f9c1954bd53f9750e35e6089d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#a9f89a93f9c1954bd53f9750e35e6089d">Uninit</a> ()=0</td></tr>
+<tr class="separator:a9f89a93f9c1954bd53f9750e35e6089d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1eb38e463b1cf2c31589db69b2adef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#aba1eb38e463b1cf2c31589db69b2adef">SetGameObjectOrigin</a> (<a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *game_object_origin)</td></tr>
+<tr class="separator:aba1eb38e463b1cf2c31589db69b2adef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fe099f93012bc6e09918a6509c4743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#ab3fe099f93012bc6e09918a6509c4743">GetGameObjectOrigin</a> ()</td></tr>
+<tr class="separator:ab3fe099f93012bc6e09918a6509c4743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="af5fc09a42cacd7ba4df66ded1d086970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fc09a42cacd7ba4df66ded1d086970">&#9670;&nbsp;</a></span>~ComponentOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ComponentOrigin::~ComponentOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ab3fe099f93012bc6e09918a6509c4743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3fe099f93012bc6e09918a6509c4743">&#9670;&nbsp;</a></span>GetGameObjectOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game_object_origin.html">GameObjectOrigin</a>* ComponentOrigin::GetGameObjectOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f674891257f2272b1636d8b6bb05d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f674891257f2272b1636d8b6bb05d81">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ComponentOrigin::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_coin_collision.html#a4119a7decab2410a4ada3568ad0c132d">CoinCollision</a>, <a class="el" href="class_enemy_collision.html#ae5c000a30c8c4a023dd0c8e658def772">EnemyCollision</a>, <a class="el" href="class_player_collision.html#a3dd6238b75933fd60aee77e92353cc44">PlayerCollision</a>, <a class="el" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30">TitleLogoDraw</a>, <a class="el" href="class_tutorial_logo01_draw.html#a4ef239c2fcd12ddd8a0a9256bedacdcb">TutorialLogo01Draw</a>, <a class="el" href="class_tutorial_logo02_draw.html#abc431ab08655c42960659da325d34f13">TutorialLogo02Draw</a>, <a class="el" href="class_coin_draw.html#ad0f5da5cfb896541fd59b1ab4a8593d1">CoinDraw</a>, <a class="el" href="class_field_draw.html#a4287d2ce33033b2413c1d3a81b173373">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a5b82e8b650a20dbc0b7ed720d1fb7fab">SkyDomeDraw</a>, <a class="el" href="class_push_space_logo_update.html#a9c165604160c012b429c1db1d67ffb2a">PushSpaceLogoUpdate</a>, <a class="el" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc">ScoreUpdate</a>, <a class="el" href="class_player_update.html#ac72b39db7b7bfaf094bde9ed1adef4b7">PlayerUpdate</a>, <a class="el" href="class_enemy_update.html#a5b68696e964f71fca73c9143e3770c9d">EnemyUpdate</a>, <a class="el" href="class_sky_dome_update.html#ab4fec6d13590c07e39e6e8b4f7f7613a">SkyDomeUpdate</a>, <a class="el" href="class_score_draw.html#af013abb96136825e71d4fee06529fc69">ScoreDraw</a>, <a class="el" href="class_enemy_draw.html#aa1659c35fa757db6a6cf07e26ad9ddfb">EnemyDraw</a>, <a class="el" href="class_number_draw.html#ad52c1e8b9ae6e830a82c440cc18cb6c9">NumberDraw</a> (計21項目)で実装されています。</p>
+
+</div>
+</div>
+<a id="aba1eb38e463b1cf2c31589db69b2adef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba1eb38e463b1cf2c31589db69b2adef">&#9670;&nbsp;</a></span>SetGameObjectOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ComponentOrigin::SetGameObjectOrigin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *&#160;</td>
+          <td class="paramname"><em>game_object_origin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f89a93f9c1954bd53f9750e35e6089d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f89a93f9c1954bd53f9750e35e6089d">&#9670;&nbsp;</a></span>Uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ComponentOrigin::Uninit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_collision_component.html#aa75440061f7a60e8c4ee1dae18682cc0">CollisionComponent</a>, <a class="el" href="class_coin_collision.html#aa852afdcdbedcf82809df9c7fd99be9e">CoinCollision</a>, <a class="el" href="class_enemy_collision.html#a2a194c606fd162db803c70c6fed9b9e4">EnemyCollision</a>, <a class="el" href="class_player_collision.html#aa1ab60a62fa2ae3231a1ea0bc8faf801">PlayerCollision</a>, <a class="el" href="class_player_draw.html#a917b2947914287f23d87ca75cd68f553">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#aa73db5b701e644f8e552ddb254a0a9aa">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#a97646253380b54f37565650e211f33cd">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a79021c1df43968d6008de74126d53fba">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a07bbf9e8de5c7b9ee028408496c13c50">TitleLogoDraw</a>, <a class="el" href="class_tutorial_logo01_draw.html#ab27500ea1511726097dc9f81cefb9632">TutorialLogo01Draw</a>, <a class="el" href="class_tutorial_logo02_draw.html#a9eec09783781876d354c51d4f2acf2cd">TutorialLogo02Draw</a>, <a class="el" href="class_coin_draw.html#a6484c22a5598e298f18e7cd6083cd551">CoinDraw</a>, <a class="el" href="class_field_draw.html#a89a78212c141714d9e39e25e663aaeff">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#aee1c6b102a97033073b2559b8c2c328b">SkyDomeDraw</a>, <a class="el" href="class_push_space_logo_update.html#a94f791874cb6160cd33cd7068fcde0d0">PushSpaceLogoUpdate</a>, <a class="el" href="class_score_update.html#a701d9c84c3ef92b1c54f33b37e23605f">ScoreUpdate</a>, <a class="el" href="class_player_update.html#a997e0813a825d7525da4b5b89a290168">PlayerUpdate</a>, <a class="el" href="class_enemy_update.html#a294a5d4c65551af43e933cb65036f279">EnemyUpdate</a>, <a class="el" href="class_sky_dome_update.html#a54da74ef017a22075ce473abe1345489">SkyDomeUpdate</a>, <a class="el" href="class_score_draw.html#aad744f8a7a1202e6ba8117c660f297ee">ScoreDraw</a>, <a class="el" href="class_enemy_draw.html#a2861dc0623b0be7726bc69a6a469190e">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a2b203d101f23f0d3f584937ff5ad662a">NumberDraw</a> (計22項目)で実装されています。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/ComponentOrigin/<a class="el" href="_component_origin_8h_source.html">ComponentOrigin.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_component_origin.html">ComponentOrigin</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+\hypertarget{_sound_8cpp}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Sound/\+Sound.cpp ファイル}
+\label{_sound_8cpp}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Sound/\+Sound.\+cpp@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Sound/\+Sound.\+cpp}}
+{\ttfamily \#include $<$X\+Audio2.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Sound.\+h\char`\"{}}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_o_u_n_d_p_a_r_a_m}{S\+O\+U\+N\+D\+P\+A\+R\+AM}}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{_sound_8cpp_ae43c9a37417f8e415f94217dc0655b09}{Check\+Chunk}} (H\+A\+N\+D\+LE h\+File, D\+W\+O\+RD format, D\+W\+O\+RD $\ast$p\+Chunk\+Size, D\+W\+O\+RD $\ast$p\+Chunk\+Data\+Position)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{_sound_8cpp_a4df351b04de0e37e5759201a69b52ca2}{Read\+Chunk\+Data}} (H\+A\+N\+D\+LE h\+File, void $\ast$p\+Buffer, D\+W\+O\+RD dw\+Buffersize, D\+W\+O\+RD dw\+Bufferoffset)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{_sound_8cpp_aceadfe81208035851c93101ca132dd0a}{Init\+Sound}} (H\+W\+ND h\+Wnd)
+\item 
+void \mbox{\hyperlink{_sound_8cpp_adb0c5965a285c4f34d2051cbc71b3691}{Uninit\+Sound}} (void)
+\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{_sound_8cpp_a917586daf8e3244599ec16baf64230f8}{Play\+Sound}} (\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8e}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+EL}} label)
+\item 
+void \mbox{\hyperlink{_sound_8cpp_a9d17bef24143ffc900604e9d33df2c84}{Stop\+Sound}} (\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8e}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+EL}} label)
+\item 
+void \mbox{\hyperlink{_sound_8cpp_a87987088d93388a993739bbb8bc823b7}{Stop\+Sound}} (void)
+\end{DoxyCompactItemize}
+\subsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+I\+X\+Audio2 $\ast$ \mbox{\hyperlink{_sound_8cpp_a7d296aab1786b1e1cb363a97571c9cf5}{g\+\_\+p\+X\+Audio2}} = N\+U\+LL
+\item 
+I\+X\+Audio2\+Mastering\+Voice $\ast$ \mbox{\hyperlink{_sound_8cpp_ad79c7609311fae09bfab95e807aabc3e}{g\+\_\+p\+Mastering\+Voice}} = N\+U\+LL
+\item 
+I\+X\+Audio2\+Source\+Voice $\ast$ \mbox{\hyperlink{_sound_8cpp_a0fb2a3c6ed22c10f9101fd24a5d503dd}{g\+\_\+ap\+Source\+Voice}} \mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{\}
+\item 
+B\+Y\+TE $\ast$ \mbox{\hyperlink{_sound_8cpp_a331f60e8d2f4b3aff1dfd2f71822fcba}{g\+\_\+ap\+Data\+Audio}} \mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{\}
+\item 
+D\+W\+O\+RD \mbox{\hyperlink{_sound_8cpp_a5ebea909e567ca63f43feffcc857e28e}{g\+\_\+a\+Size\+Audio}} \mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{\}
+\item 
+\mbox{\hyperlink{struct_s_o_u_n_d_p_a_r_a_m}{S\+O\+U\+N\+D\+P\+A\+R\+AM}} \mbox{\hyperlink{_sound_8cpp_a22dad68f30a7318fd33d38f46c4aea51}{g\+\_\+a\+Param}} \mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{_sound_8cpp_ae43c9a37417f8e415f94217dc0655b09}\label{_sound_8cpp_ae43c9a37417f8e415f94217dc0655b09}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!Check\+Chunk@{Check\+Chunk}}
+\index{Check\+Chunk@{Check\+Chunk}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{Check\+Chunk()}{CheckChunk()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Check\+Chunk (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{h\+File,  }\item[{D\+W\+O\+RD}]{format,  }\item[{D\+W\+O\+RD $\ast$}]{p\+Chunk\+Size,  }\item[{D\+W\+O\+RD $\ast$}]{p\+Chunk\+Data\+Position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_sound_8cpp_aceadfe81208035851c93101ca132dd0a}\label{_sound_8cpp_aceadfe81208035851c93101ca132dd0a}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!Init\+Sound@{Init\+Sound}}
+\index{Init\+Sound@{Init\+Sound}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{Init\+Sound()}{InitSound()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Init\+Sound (\begin{DoxyParamCaption}\item[{H\+W\+ND}]{h\+Wnd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_sound_8cpp_a917586daf8e3244599ec16baf64230f8}\label{_sound_8cpp_a917586daf8e3244599ec16baf64230f8}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!Play\+Sound@{Play\+Sound}}
+\index{Play\+Sound@{Play\+Sound}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{Play\+Sound()}{PlaySound()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8e}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+EL}}}]{label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_sound_8cpp_a4df351b04de0e37e5759201a69b52ca2}\label{_sound_8cpp_a4df351b04de0e37e5759201a69b52ca2}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!Read\+Chunk\+Data@{Read\+Chunk\+Data}}
+\index{Read\+Chunk\+Data@{Read\+Chunk\+Data}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{Read\+Chunk\+Data()}{ReadChunkData()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Read\+Chunk\+Data (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{h\+File,  }\item[{void $\ast$}]{p\+Buffer,  }\item[{D\+W\+O\+RD}]{dw\+Buffersize,  }\item[{D\+W\+O\+RD}]{dw\+Bufferoffset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_sound_8cpp_a9d17bef24143ffc900604e9d33df2c84}\label{_sound_8cpp_a9d17bef24143ffc900604e9d33df2c84}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!Stop\+Sound@{Stop\+Sound}}
+\index{Stop\+Sound@{Stop\+Sound}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{Stop\+Sound()}{StopSound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Stop\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8e}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+EL}}}]{label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_sound_8cpp_a87987088d93388a993739bbb8bc823b7}\label{_sound_8cpp_a87987088d93388a993739bbb8bc823b7}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!Stop\+Sound@{Stop\+Sound}}
+\index{Stop\+Sound@{Stop\+Sound}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{Stop\+Sound()}{StopSound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Stop\+Sound (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_sound_8cpp_adb0c5965a285c4f34d2051cbc71b3691}\label{_sound_8cpp_adb0c5965a285c4f34d2051cbc71b3691}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!Uninit\+Sound@{Uninit\+Sound}}
+\index{Uninit\+Sound@{Uninit\+Sound}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{Uninit\+Sound()}{UninitSound()}}
+{\footnotesize\ttfamily void Uninit\+Sound (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{変数詳解}
+\mbox{\Hypertarget{_sound_8cpp_a22dad68f30a7318fd33d38f46c4aea51}\label{_sound_8cpp_a22dad68f30a7318fd33d38f46c4aea51}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!g\+\_\+a\+Param@{g\+\_\+a\+Param}}
+\index{g\+\_\+a\+Param@{g\+\_\+a\+Param}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{g\+\_\+a\+Param}{g\_aParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_o_u_n_d_p_a_r_a_m}{S\+O\+U\+N\+D\+P\+A\+R\+AM}} g\+\_\+a\+Param\mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]}}
+
+\mbox{\Hypertarget{_sound_8cpp_a331f60e8d2f4b3aff1dfd2f71822fcba}\label{_sound_8cpp_a331f60e8d2f4b3aff1dfd2f71822fcba}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!g\+\_\+ap\+Data\+Audio@{g\+\_\+ap\+Data\+Audio}}
+\index{g\+\_\+ap\+Data\+Audio@{g\+\_\+ap\+Data\+Audio}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{g\+\_\+ap\+Data\+Audio}{g\_apDataAudio}}
+{\footnotesize\ttfamily B\+Y\+TE$\ast$ g\+\_\+ap\+Data\+Audio\mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{\}}
+
+\mbox{\Hypertarget{_sound_8cpp_a0fb2a3c6ed22c10f9101fd24a5d503dd}\label{_sound_8cpp_a0fb2a3c6ed22c10f9101fd24a5d503dd}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!g\+\_\+ap\+Source\+Voice@{g\+\_\+ap\+Source\+Voice}}
+\index{g\+\_\+ap\+Source\+Voice@{g\+\_\+ap\+Source\+Voice}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{g\+\_\+ap\+Source\+Voice}{g\_apSourceVoice}}
+{\footnotesize\ttfamily I\+X\+Audio2\+Source\+Voice$\ast$ g\+\_\+ap\+Source\+Voice\mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{\}}
+
+\mbox{\Hypertarget{_sound_8cpp_a5ebea909e567ca63f43feffcc857e28e}\label{_sound_8cpp_a5ebea909e567ca63f43feffcc857e28e}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!g\+\_\+a\+Size\+Audio@{g\+\_\+a\+Size\+Audio}}
+\index{g\+\_\+a\+Size\+Audio@{g\+\_\+a\+Size\+Audio}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{g\+\_\+a\+Size\+Audio}{g\_aSizeAudio}}
+{\footnotesize\ttfamily D\+W\+O\+RD g\+\_\+a\+Size\+Audio\mbox{[}\mbox{\hyperlink{_sound_8h_a2af7bee25723827246d4173df8d14e8eac59b31531183465523dc22af3c17977d}{S\+O\+U\+N\+D\+\_\+\+L\+A\+B\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{\}}
+
+\mbox{\Hypertarget{_sound_8cpp_ad79c7609311fae09bfab95e807aabc3e}\label{_sound_8cpp_ad79c7609311fae09bfab95e807aabc3e}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!g\+\_\+p\+Mastering\+Voice@{g\+\_\+p\+Mastering\+Voice}}
+\index{g\+\_\+p\+Mastering\+Voice@{g\+\_\+p\+Mastering\+Voice}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{g\+\_\+p\+Mastering\+Voice}{g\_pMasteringVoice}}
+{\footnotesize\ttfamily I\+X\+Audio2\+Mastering\+Voice$\ast$ g\+\_\+p\+Mastering\+Voice = N\+U\+LL}
+
+\mbox{\Hypertarget{_sound_8cpp_a7d296aab1786b1e1cb363a97571c9cf5}\label{_sound_8cpp_a7d296aab1786b1e1cb363a97571c9cf5}} 
+\index{Sound.\+cpp@{Sound.\+cpp}!g\+\_\+p\+X\+Audio2@{g\+\_\+p\+X\+Audio2}}
+\index{g\+\_\+p\+X\+Audio2@{g\+\_\+p\+X\+Audio2}!Sound.\+cpp@{Sound.\+cpp}}
+\subsubsection{\texorpdfstring{g\+\_\+p\+X\+Audio2}{g\_pXAudio2}}
+{\footnotesize\ttfamily I\+X\+Audio2$\ast$ g\+\_\+p\+X\+Audio2 = N\+U\+LL}
+

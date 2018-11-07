@@ -1,0 +1,88 @@
+\hypertarget{class_effekseer_1_1_i_reference}{}\section{Effekseer\+:\+:I\+Reference クラス}
+\label{class_effekseer_1_1_i_reference}\index{Effekseer\+::\+I\+Reference@{Effekseer\+::\+I\+Reference}}
+
+
+参照カウンタのインターフェース  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+Effekseer\+:\+:I\+Reference の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.990521cm]{class_effekseer_1_1_i_reference}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_i_reference_a3e3b54e8e5081e24f5784e4f9b8f6257}{Add\+Ref}} ()=0
+\begin{DoxyCompactList}\small\item\em 参照カウンタを加算する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_i_reference_a95274c788c8c03d27a3e424facc728b6}{Get\+Ref}} ()=0
+\begin{DoxyCompactList}\small\item\em 参照カウンタを取得する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_i_reference_ad8d601188c0f088f4748aa2da8758bb5}{Release}} ()=0
+\begin{DoxyCompactList}\small\item\em 参照カウンタを減算する。0になった時、インスタンスを削除する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+参照カウンタのインターフェース 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_i_reference_a3e3b54e8e5081e24f5784e4f9b8f6257}\label{class_effekseer_1_1_i_reference_a3e3b54e8e5081e24f5784e4f9b8f6257}} 
+\index{Effekseer\+::\+I\+Reference@{Effekseer\+::\+I\+Reference}!Add\+Ref@{Add\+Ref}}
+\index{Add\+Ref@{Add\+Ref}!Effekseer\+::\+I\+Reference@{Effekseer\+::\+I\+Reference}}
+\subsubsection{\texorpdfstring{Add\+Ref()}{AddRef()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+I\+Reference\+::\+Add\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+参照カウンタを加算する。 
+
+\begin{DoxyReturn}{戻り値}
+加算後の参照カウンタ 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_effekseer_1_1_reference_object_a1cc3feeee39b72aea152ed223dbd0fa7}{Effekseer\+::\+Reference\+Object}}で実装されています。
+
+\mbox{\Hypertarget{class_effekseer_1_1_i_reference_a95274c788c8c03d27a3e424facc728b6}\label{class_effekseer_1_1_i_reference_a95274c788c8c03d27a3e424facc728b6}} 
+\index{Effekseer\+::\+I\+Reference@{Effekseer\+::\+I\+Reference}!Get\+Ref@{Get\+Ref}}
+\index{Get\+Ref@{Get\+Ref}!Effekseer\+::\+I\+Reference@{Effekseer\+::\+I\+Reference}}
+\subsubsection{\texorpdfstring{Get\+Ref()}{GetRef()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+I\+Reference\+::\+Get\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+参照カウンタを取得する。 
+
+\begin{DoxyReturn}{戻り値}
+参照カウンタ 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_effekseer_1_1_reference_object_a4b8c3d79c58ca527850733691053cf5a}{Effekseer\+::\+Reference\+Object}}で実装されています。
+
+\mbox{\Hypertarget{class_effekseer_1_1_i_reference_ad8d601188c0f088f4748aa2da8758bb5}\label{class_effekseer_1_1_i_reference_ad8d601188c0f088f4748aa2da8758bb5}} 
+\index{Effekseer\+::\+I\+Reference@{Effekseer\+::\+I\+Reference}!Release@{Release}}
+\index{Release@{Release}!Effekseer\+::\+I\+Reference@{Effekseer\+::\+I\+Reference}}
+\subsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} Effekseer\+::\+I\+Reference\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+参照カウンタを減算する。0になった時、インスタンスを削除する。 
+
+\begin{DoxyReturn}{戻り値}
+減算後の参照カウンタ 
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{class_effekseer_1_1_reference_object_a6b0e9aa4d994b557d499b15359b580d8}{Effekseer\+::\+Reference\+Object}}で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

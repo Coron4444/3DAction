@@ -1,0 +1,351 @@
+\hypertarget{struct_im_gui_draw_context}{}\section{Im\+Gui\+Draw\+Context 構造体}
+\label{struct_im_gui_draw_context}\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+
+
+{\ttfamily \#include $<$imgui\+\_\+internal.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_im_gui_draw_context_a0bd8a456860aee49497c58c82a01600c}{Im\+Gui\+Draw\+Context}} ()
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} \mbox{\hyperlink{struct_im_gui_draw_context_a1f566246492e0995b5182de23633dc9a}{Cursor\+Pos}}
+\item 
+\mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} \mbox{\hyperlink{struct_im_gui_draw_context_adf64144a8421a21d7350d0452739eca2}{Cursor\+Pos\+Prev\+Line}}
+\item 
+\mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} \mbox{\hyperlink{struct_im_gui_draw_context_aef16fef5d6781908d806479fd37f393f}{Cursor\+Start\+Pos}}
+\item 
+\mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} \mbox{\hyperlink{struct_im_gui_draw_context_add16f0294ab2fd07b354da2bb99e43e1}{Cursor\+Max\+Pos}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a950b71358ebfed5a884936f5cafed873}{Current\+Line\+Height}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_af6f0a3536765c5f638fd198749bf29f1}{Current\+Line\+Text\+Base\+Offset}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_ab4f6d19a049cff7a2fa5d1e9f5f132ab}{Prev\+Line\+Height}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a72d618764e8a78c5bb7879ad2fe5e308}{Prev\+Line\+Text\+Base\+Offset}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a4060735d06c860014c5359bcf76b1112}{Log\+Line\+PosY}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_draw_context_a08d8578fe382425a67b4f5e5257b5436}{Tree\+Depth}}
+\item 
+\mbox{\hyperlink{imgui_8h_a1785c9b6f4e16406764a85f32582236f}{Im\+Gui\+ID}} \mbox{\hyperlink{struct_im_gui_draw_context_ad864847097dd259ce9cb69558173fe45}{Last\+Item\+Id}}
+\item 
+\mbox{\hyperlink{struct_im_rect}{Im\+Rect}} \mbox{\hyperlink{struct_im_gui_draw_context_a214683a9c08e5812a492881791cd2f51}{Last\+Item\+Rect}}
+\item 
+bool \mbox{\hyperlink{struct_im_gui_draw_context_ad6f4bf282ceef2a07cf25a59008feb16}{Last\+Item\+Rect\+Hovered\+Rect}}
+\item 
+bool \mbox{\hyperlink{struct_im_gui_draw_context_a01e52aff3f5efc13fcf6af213cf417c2}{Menu\+Bar\+Appending}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a18a950aff641d2a87a3057e9449fdf36}{Menu\+Bar\+OffsetX}}
+\item 
+\mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$ \mbox{\hyperlink{struct_im_gui_window}{Im\+Gui\+Window}} $\ast$ $>$ \mbox{\hyperlink{struct_im_gui_draw_context_a70dc80b69c2a4e5fae4009300fe525a5}{Child\+Windows}}
+\item 
+\mbox{\hyperlink{struct_im_gui_storage}{Im\+Gui\+Storage}} $\ast$ \mbox{\hyperlink{struct_im_gui_draw_context_a507947c789f377ba13767061557fd348}{State\+Storage}}
+\item 
+\mbox{\hyperlink{imgui__internal_8h_a86d7bb2ee8297d38b131d8ea7e6430c6}{Im\+Gui\+Layout\+Type}} \mbox{\hyperlink{struct_im_gui_draw_context_a8516b32e30504c3037d34e93b7988d83}{Layout\+Type}}
+\item 
+\mbox{\hyperlink{imgui__internal_8h_abcf9eafab4557e911b2c0d8fe2feeb38}{Im\+Gui\+Item\+Flags}} \mbox{\hyperlink{struct_im_gui_draw_context_a8581650b6011e19f09b12b8bc50a51f5}{Item\+Flags}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a6327a65273ded49b6aa309167fca4b9e}{Item\+Width}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a0488b6a84b2f26ddd536fef2ae3f96c3}{Text\+Wrap\+Pos}}
+\item 
+\mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$ \mbox{\hyperlink{imgui__internal_8h_abcf9eafab4557e911b2c0d8fe2feeb38}{Im\+Gui\+Item\+Flags}} $>$ \mbox{\hyperlink{struct_im_gui_draw_context_a895d75185a81dc21bb6153090ab5b018}{Item\+Flags\+Stack}}
+\item 
+\mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$ float $>$ \mbox{\hyperlink{struct_im_gui_draw_context_af6420717337b44394ad7ccbe55446db2}{Item\+Width\+Stack}}
+\item 
+\mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$ float $>$ \mbox{\hyperlink{struct_im_gui_draw_context_ac282b2f910a8846f4c200c358974b12a}{Text\+Wrap\+Pos\+Stack}}
+\item 
+\mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$ \mbox{\hyperlink{struct_im_gui_group_data}{Im\+Gui\+Group\+Data}} $>$ \mbox{\hyperlink{struct_im_gui_draw_context_aa775f16a46bdfe8e131e25cab733afe0}{Group\+Stack}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_draw_context_aedfc8e281f1d72c7c1882c36bebb00d1}{Stack\+Sizes\+Backup}} \mbox{[}6\mbox{]}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a3697085dca9164ca840d1fb1d52c8a66}{IndentX}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a30473e3e4b3eeba6c8d1acdaaedecba9}{Group\+OffsetX}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_af8be098e7ddd1885343725f3fd61ce4a}{Columns\+OffsetX}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_draw_context_aeeac02b1b1dd8e02e017befff8cf9e34}{Columns\+Current}}
+\item 
+int \mbox{\hyperlink{struct_im_gui_draw_context_ab068622174203ba86e835980cad066b6}{Columns\+Count}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_ad86d60b4523f423749d944ba56902c83}{Columns\+MinX}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_aa6b05d0a845896193dff628b02f71ba0}{Columns\+MaxX}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_adc5c108aa693534f656018ca095dd2ee}{Columns\+Start\+PosY}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_af1fd970d3806165e93870172231bb1b8}{Columns\+Start\+Max\+PosX}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a675eb10cf0c56322f8e9a6c40e33a7ea}{Columns\+Cell\+MinY}}
+\item 
+float \mbox{\hyperlink{struct_im_gui_draw_context_a91c90b98539dc2b1522dd3f7bafa3b21}{Columns\+Cell\+MaxY}}
+\item 
+\mbox{\hyperlink{imgui_8h_a0edb3053546fcf6c5f7dcb7531c3a17a}{Im\+Gui\+Columns\+Flags}} \mbox{\hyperlink{struct_im_gui_draw_context_acd823cd056a5922a9f3a7c8844451ea7}{Columns\+Flags}}
+\item 
+\mbox{\hyperlink{imgui_8h_a1785c9b6f4e16406764a85f32582236f}{Im\+Gui\+ID}} \mbox{\hyperlink{struct_im_gui_draw_context_a7bb2cdab76e2b7cc12af2c87eeaafc0a}{Columns\+Set\+Id}}
+\item 
+\mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$ \mbox{\hyperlink{struct_im_gui_column_data}{Im\+Gui\+Column\+Data}} $>$ \mbox{\hyperlink{struct_im_gui_draw_context_ae0f7e8f70065e8ddc45d62cf33195a0f}{Columns\+Data}}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{struct_im_gui_draw_context_a0bd8a456860aee49497c58c82a01600c}\label{struct_im_gui_draw_context_a0bd8a456860aee49497c58c82a01600c}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Im\+Gui\+Draw\+Context()}{ImGuiDrawContext()}}
+{\footnotesize\ttfamily Im\+Gui\+Draw\+Context\+::\+Im\+Gui\+Draw\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{struct_im_gui_draw_context_a70dc80b69c2a4e5fae4009300fe525a5}\label{struct_im_gui_draw_context_a70dc80b69c2a4e5fae4009300fe525a5}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Child\+Windows@{Child\+Windows}}
+\index{Child\+Windows@{Child\+Windows}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Child\+Windows}{ChildWindows}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$\mbox{\hyperlink{struct_im_gui_window}{Im\+Gui\+Window}}$\ast$$>$ Im\+Gui\+Draw\+Context\+::\+Child\+Windows}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a91c90b98539dc2b1522dd3f7bafa3b21}\label{struct_im_gui_draw_context_a91c90b98539dc2b1522dd3f7bafa3b21}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Cell\+MaxY@{Columns\+Cell\+MaxY}}
+\index{Columns\+Cell\+MaxY@{Columns\+Cell\+MaxY}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Cell\+MaxY}{ColumnsCellMaxY}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Columns\+Cell\+MaxY}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a675eb10cf0c56322f8e9a6c40e33a7ea}\label{struct_im_gui_draw_context_a675eb10cf0c56322f8e9a6c40e33a7ea}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Cell\+MinY@{Columns\+Cell\+MinY}}
+\index{Columns\+Cell\+MinY@{Columns\+Cell\+MinY}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Cell\+MinY}{ColumnsCellMinY}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Columns\+Cell\+MinY}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_ab068622174203ba86e835980cad066b6}\label{struct_im_gui_draw_context_ab068622174203ba86e835980cad066b6}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Count@{Columns\+Count}}
+\index{Columns\+Count@{Columns\+Count}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Count}{ColumnsCount}}
+{\footnotesize\ttfamily int Im\+Gui\+Draw\+Context\+::\+Columns\+Count}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_aeeac02b1b1dd8e02e017befff8cf9e34}\label{struct_im_gui_draw_context_aeeac02b1b1dd8e02e017befff8cf9e34}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Current@{Columns\+Current}}
+\index{Columns\+Current@{Columns\+Current}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Current}{ColumnsCurrent}}
+{\footnotesize\ttfamily int Im\+Gui\+Draw\+Context\+::\+Columns\+Current}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_ae0f7e8f70065e8ddc45d62cf33195a0f}\label{struct_im_gui_draw_context_ae0f7e8f70065e8ddc45d62cf33195a0f}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Data@{Columns\+Data}}
+\index{Columns\+Data@{Columns\+Data}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Data}{ColumnsData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$\mbox{\hyperlink{struct_im_gui_column_data}{Im\+Gui\+Column\+Data}}$>$ Im\+Gui\+Draw\+Context\+::\+Columns\+Data}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_acd823cd056a5922a9f3a7c8844451ea7}\label{struct_im_gui_draw_context_acd823cd056a5922a9f3a7c8844451ea7}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Flags@{Columns\+Flags}}
+\index{Columns\+Flags@{Columns\+Flags}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Flags}{ColumnsFlags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_a0edb3053546fcf6c5f7dcb7531c3a17a}{Im\+Gui\+Columns\+Flags}} Im\+Gui\+Draw\+Context\+::\+Columns\+Flags}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_aa6b05d0a845896193dff628b02f71ba0}\label{struct_im_gui_draw_context_aa6b05d0a845896193dff628b02f71ba0}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+MaxX@{Columns\+MaxX}}
+\index{Columns\+MaxX@{Columns\+MaxX}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+MaxX}{ColumnsMaxX}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Columns\+MaxX}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_ad86d60b4523f423749d944ba56902c83}\label{struct_im_gui_draw_context_ad86d60b4523f423749d944ba56902c83}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+MinX@{Columns\+MinX}}
+\index{Columns\+MinX@{Columns\+MinX}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+MinX}{ColumnsMinX}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Columns\+MinX}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_af8be098e7ddd1885343725f3fd61ce4a}\label{struct_im_gui_draw_context_af8be098e7ddd1885343725f3fd61ce4a}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+OffsetX@{Columns\+OffsetX}}
+\index{Columns\+OffsetX@{Columns\+OffsetX}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+OffsetX}{ColumnsOffsetX}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Columns\+OffsetX}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a7bb2cdab76e2b7cc12af2c87eeaafc0a}\label{struct_im_gui_draw_context_a7bb2cdab76e2b7cc12af2c87eeaafc0a}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Set\+Id@{Columns\+Set\+Id}}
+\index{Columns\+Set\+Id@{Columns\+Set\+Id}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Set\+Id}{ColumnsSetId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_a1785c9b6f4e16406764a85f32582236f}{Im\+Gui\+ID}} Im\+Gui\+Draw\+Context\+::\+Columns\+Set\+Id}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_af1fd970d3806165e93870172231bb1b8}\label{struct_im_gui_draw_context_af1fd970d3806165e93870172231bb1b8}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Start\+Max\+PosX@{Columns\+Start\+Max\+PosX}}
+\index{Columns\+Start\+Max\+PosX@{Columns\+Start\+Max\+PosX}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Start\+Max\+PosX}{ColumnsStartMaxPosX}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Columns\+Start\+Max\+PosX}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_adc5c108aa693534f656018ca095dd2ee}\label{struct_im_gui_draw_context_adc5c108aa693534f656018ca095dd2ee}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Columns\+Start\+PosY@{Columns\+Start\+PosY}}
+\index{Columns\+Start\+PosY@{Columns\+Start\+PosY}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Columns\+Start\+PosY}{ColumnsStartPosY}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Columns\+Start\+PosY}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a950b71358ebfed5a884936f5cafed873}\label{struct_im_gui_draw_context_a950b71358ebfed5a884936f5cafed873}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Current\+Line\+Height@{Current\+Line\+Height}}
+\index{Current\+Line\+Height@{Current\+Line\+Height}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Current\+Line\+Height}{CurrentLineHeight}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Current\+Line\+Height}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_af6f0a3536765c5f638fd198749bf29f1}\label{struct_im_gui_draw_context_af6f0a3536765c5f638fd198749bf29f1}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Current\+Line\+Text\+Base\+Offset@{Current\+Line\+Text\+Base\+Offset}}
+\index{Current\+Line\+Text\+Base\+Offset@{Current\+Line\+Text\+Base\+Offset}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Current\+Line\+Text\+Base\+Offset}{CurrentLineTextBaseOffset}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Current\+Line\+Text\+Base\+Offset}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_add16f0294ab2fd07b354da2bb99e43e1}\label{struct_im_gui_draw_context_add16f0294ab2fd07b354da2bb99e43e1}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Cursor\+Max\+Pos@{Cursor\+Max\+Pos}}
+\index{Cursor\+Max\+Pos@{Cursor\+Max\+Pos}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Cursor\+Max\+Pos}{CursorMaxPos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} Im\+Gui\+Draw\+Context\+::\+Cursor\+Max\+Pos}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a1f566246492e0995b5182de23633dc9a}\label{struct_im_gui_draw_context_a1f566246492e0995b5182de23633dc9a}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Cursor\+Pos@{Cursor\+Pos}}
+\index{Cursor\+Pos@{Cursor\+Pos}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Cursor\+Pos}{CursorPos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} Im\+Gui\+Draw\+Context\+::\+Cursor\+Pos}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_adf64144a8421a21d7350d0452739eca2}\label{struct_im_gui_draw_context_adf64144a8421a21d7350d0452739eca2}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Cursor\+Pos\+Prev\+Line@{Cursor\+Pos\+Prev\+Line}}
+\index{Cursor\+Pos\+Prev\+Line@{Cursor\+Pos\+Prev\+Line}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Cursor\+Pos\+Prev\+Line}{CursorPosPrevLine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} Im\+Gui\+Draw\+Context\+::\+Cursor\+Pos\+Prev\+Line}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_aef16fef5d6781908d806479fd37f393f}\label{struct_im_gui_draw_context_aef16fef5d6781908d806479fd37f393f}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Cursor\+Start\+Pos@{Cursor\+Start\+Pos}}
+\index{Cursor\+Start\+Pos@{Cursor\+Start\+Pos}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Cursor\+Start\+Pos}{CursorStartPos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} Im\+Gui\+Draw\+Context\+::\+Cursor\+Start\+Pos}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a30473e3e4b3eeba6c8d1acdaaedecba9}\label{struct_im_gui_draw_context_a30473e3e4b3eeba6c8d1acdaaedecba9}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Group\+OffsetX@{Group\+OffsetX}}
+\index{Group\+OffsetX@{Group\+OffsetX}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Group\+OffsetX}{GroupOffsetX}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Group\+OffsetX}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_aa775f16a46bdfe8e131e25cab733afe0}\label{struct_im_gui_draw_context_aa775f16a46bdfe8e131e25cab733afe0}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Group\+Stack@{Group\+Stack}}
+\index{Group\+Stack@{Group\+Stack}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Group\+Stack}{GroupStack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$\mbox{\hyperlink{struct_im_gui_group_data}{Im\+Gui\+Group\+Data}}$>$ Im\+Gui\+Draw\+Context\+::\+Group\+Stack}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a3697085dca9164ca840d1fb1d52c8a66}\label{struct_im_gui_draw_context_a3697085dca9164ca840d1fb1d52c8a66}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!IndentX@{IndentX}}
+\index{IndentX@{IndentX}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{IndentX}{IndentX}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+IndentX}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a8581650b6011e19f09b12b8bc50a51f5}\label{struct_im_gui_draw_context_a8581650b6011e19f09b12b8bc50a51f5}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Item\+Flags@{Item\+Flags}}
+\index{Item\+Flags@{Item\+Flags}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Item\+Flags}{ItemFlags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__internal_8h_abcf9eafab4557e911b2c0d8fe2feeb38}{Im\+Gui\+Item\+Flags}} Im\+Gui\+Draw\+Context\+::\+Item\+Flags}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a895d75185a81dc21bb6153090ab5b018}\label{struct_im_gui_draw_context_a895d75185a81dc21bb6153090ab5b018}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Item\+Flags\+Stack@{Item\+Flags\+Stack}}
+\index{Item\+Flags\+Stack@{Item\+Flags\+Stack}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Item\+Flags\+Stack}{ItemFlagsStack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$\mbox{\hyperlink{imgui__internal_8h_abcf9eafab4557e911b2c0d8fe2feeb38}{Im\+Gui\+Item\+Flags}}$>$ Im\+Gui\+Draw\+Context\+::\+Item\+Flags\+Stack}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a6327a65273ded49b6aa309167fca4b9e}\label{struct_im_gui_draw_context_a6327a65273ded49b6aa309167fca4b9e}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Item\+Width@{Item\+Width}}
+\index{Item\+Width@{Item\+Width}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Item\+Width}{ItemWidth}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Item\+Width}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_af6420717337b44394ad7ccbe55446db2}\label{struct_im_gui_draw_context_af6420717337b44394ad7ccbe55446db2}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Item\+Width\+Stack@{Item\+Width\+Stack}}
+\index{Item\+Width\+Stack@{Item\+Width\+Stack}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Item\+Width\+Stack}{ItemWidthStack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$float$>$ Im\+Gui\+Draw\+Context\+::\+Item\+Width\+Stack}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_ad864847097dd259ce9cb69558173fe45}\label{struct_im_gui_draw_context_ad864847097dd259ce9cb69558173fe45}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Last\+Item\+Id@{Last\+Item\+Id}}
+\index{Last\+Item\+Id@{Last\+Item\+Id}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Last\+Item\+Id}{LastItemId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_a1785c9b6f4e16406764a85f32582236f}{Im\+Gui\+ID}} Im\+Gui\+Draw\+Context\+::\+Last\+Item\+Id}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a214683a9c08e5812a492881791cd2f51}\label{struct_im_gui_draw_context_a214683a9c08e5812a492881791cd2f51}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Last\+Item\+Rect@{Last\+Item\+Rect}}
+\index{Last\+Item\+Rect@{Last\+Item\+Rect}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Last\+Item\+Rect}{LastItemRect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_im_rect}{Im\+Rect}} Im\+Gui\+Draw\+Context\+::\+Last\+Item\+Rect}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_ad6f4bf282ceef2a07cf25a59008feb16}\label{struct_im_gui_draw_context_ad6f4bf282ceef2a07cf25a59008feb16}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Last\+Item\+Rect\+Hovered\+Rect@{Last\+Item\+Rect\+Hovered\+Rect}}
+\index{Last\+Item\+Rect\+Hovered\+Rect@{Last\+Item\+Rect\+Hovered\+Rect}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Last\+Item\+Rect\+Hovered\+Rect}{LastItemRectHoveredRect}}
+{\footnotesize\ttfamily bool Im\+Gui\+Draw\+Context\+::\+Last\+Item\+Rect\+Hovered\+Rect}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a8516b32e30504c3037d34e93b7988d83}\label{struct_im_gui_draw_context_a8516b32e30504c3037d34e93b7988d83}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Layout\+Type@{Layout\+Type}}
+\index{Layout\+Type@{Layout\+Type}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Layout\+Type}{LayoutType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imgui__internal_8h_a86d7bb2ee8297d38b131d8ea7e6430c6}{Im\+Gui\+Layout\+Type}} Im\+Gui\+Draw\+Context\+::\+Layout\+Type}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a4060735d06c860014c5359bcf76b1112}\label{struct_im_gui_draw_context_a4060735d06c860014c5359bcf76b1112}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Log\+Line\+PosY@{Log\+Line\+PosY}}
+\index{Log\+Line\+PosY@{Log\+Line\+PosY}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Log\+Line\+PosY}{LogLinePosY}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Log\+Line\+PosY}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a01e52aff3f5efc13fcf6af213cf417c2}\label{struct_im_gui_draw_context_a01e52aff3f5efc13fcf6af213cf417c2}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Menu\+Bar\+Appending@{Menu\+Bar\+Appending}}
+\index{Menu\+Bar\+Appending@{Menu\+Bar\+Appending}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Menu\+Bar\+Appending}{MenuBarAppending}}
+{\footnotesize\ttfamily bool Im\+Gui\+Draw\+Context\+::\+Menu\+Bar\+Appending}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a18a950aff641d2a87a3057e9449fdf36}\label{struct_im_gui_draw_context_a18a950aff641d2a87a3057e9449fdf36}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Menu\+Bar\+OffsetX@{Menu\+Bar\+OffsetX}}
+\index{Menu\+Bar\+OffsetX@{Menu\+Bar\+OffsetX}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Menu\+Bar\+OffsetX}{MenuBarOffsetX}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Menu\+Bar\+OffsetX}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_ab4f6d19a049cff7a2fa5d1e9f5f132ab}\label{struct_im_gui_draw_context_ab4f6d19a049cff7a2fa5d1e9f5f132ab}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Prev\+Line\+Height@{Prev\+Line\+Height}}
+\index{Prev\+Line\+Height@{Prev\+Line\+Height}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Prev\+Line\+Height}{PrevLineHeight}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Prev\+Line\+Height}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a72d618764e8a78c5bb7879ad2fe5e308}\label{struct_im_gui_draw_context_a72d618764e8a78c5bb7879ad2fe5e308}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Prev\+Line\+Text\+Base\+Offset@{Prev\+Line\+Text\+Base\+Offset}}
+\index{Prev\+Line\+Text\+Base\+Offset@{Prev\+Line\+Text\+Base\+Offset}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Prev\+Line\+Text\+Base\+Offset}{PrevLineTextBaseOffset}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Prev\+Line\+Text\+Base\+Offset}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_aedfc8e281f1d72c7c1882c36bebb00d1}\label{struct_im_gui_draw_context_aedfc8e281f1d72c7c1882c36bebb00d1}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Stack\+Sizes\+Backup@{Stack\+Sizes\+Backup}}
+\index{Stack\+Sizes\+Backup@{Stack\+Sizes\+Backup}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Stack\+Sizes\+Backup}{StackSizesBackup}}
+{\footnotesize\ttfamily int Im\+Gui\+Draw\+Context\+::\+Stack\+Sizes\+Backup\mbox{[}6\mbox{]}}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a507947c789f377ba13767061557fd348}\label{struct_im_gui_draw_context_a507947c789f377ba13767061557fd348}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!State\+Storage@{State\+Storage}}
+\index{State\+Storage@{State\+Storage}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{State\+Storage}{StateStorage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_im_gui_storage}{Im\+Gui\+Storage}}$\ast$ Im\+Gui\+Draw\+Context\+::\+State\+Storage}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a0488b6a84b2f26ddd536fef2ae3f96c3}\label{struct_im_gui_draw_context_a0488b6a84b2f26ddd536fef2ae3f96c3}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Text\+Wrap\+Pos@{Text\+Wrap\+Pos}}
+\index{Text\+Wrap\+Pos@{Text\+Wrap\+Pos}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Text\+Wrap\+Pos}{TextWrapPos}}
+{\footnotesize\ttfamily float Im\+Gui\+Draw\+Context\+::\+Text\+Wrap\+Pos}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_ac282b2f910a8846f4c200c358974b12a}\label{struct_im_gui_draw_context_ac282b2f910a8846f4c200c358974b12a}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Text\+Wrap\+Pos\+Stack@{Text\+Wrap\+Pos\+Stack}}
+\index{Text\+Wrap\+Pos\+Stack@{Text\+Wrap\+Pos\+Stack}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Text\+Wrap\+Pos\+Stack}{TextWrapPosStack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$float$>$ Im\+Gui\+Draw\+Context\+::\+Text\+Wrap\+Pos\+Stack}
+
+\mbox{\Hypertarget{struct_im_gui_draw_context_a08d8578fe382425a67b4f5e5257b5436}\label{struct_im_gui_draw_context_a08d8578fe382425a67b4f5e5257b5436}} 
+\index{Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}!Tree\+Depth@{Tree\+Depth}}
+\index{Tree\+Depth@{Tree\+Depth}!Im\+Gui\+Draw\+Context@{Im\+Gui\+Draw\+Context}}
+\subsubsection{\texorpdfstring{Tree\+Depth}{TreeDepth}}
+{\footnotesize\ttfamily int Im\+Gui\+Draw\+Context\+::\+Tree\+Depth}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/\mbox{\hyperlink{imgui__internal_8h}{imgui\+\_\+internal.\+h}}\end{DoxyCompactItemize}

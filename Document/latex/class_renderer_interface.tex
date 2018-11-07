@@ -1,0 +1,122 @@
+\hypertarget{class_renderer_interface}{}\section{Renderer\+Interface クラス}
+\label{class_renderer_interface}\index{Renderer\+Interface@{Renderer\+Interface}}
+
+
+レンダラーインターフェースクラス  
+
+
+
+
+{\ttfamily \#include $<$Renderer\+Interface.\+h$>$}
+
+Renderer\+Interface の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_renderer_interface}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_renderer_interface_a571638543a7544e023dc186f7dfc7523}{$\sim$\+Renderer\+Interface}} ()=0
+\begin{DoxyCompactList}\small\item\em 純粋仮想デストラクタ \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height)=0
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_renderer_interface_ada105489f9db98e7e9542b278699d558}{Uninit}} ()=0
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_renderer_interface_a86a487deb4e4207a67410d00ec670fd7}{Draw\+Begin}} ()=0
+\begin{DoxyCompactList}\small\item\em 描画開始関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene)=0
+\begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+レンダラーインターフェースクラス 
+
+レンダラーのインターフェース 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_renderer_interface_a571638543a7544e023dc186f7dfc7523}\label{class_renderer_interface_a571638543a7544e023dc186f7dfc7523}} 
+\index{Renderer\+Interface@{Renderer\+Interface}!````~Renderer\+Interface@{$\sim$\+Renderer\+Interface}}
+\index{````~Renderer\+Interface@{$\sim$\+Renderer\+Interface}!Renderer\+Interface@{Renderer\+Interface}}
+\subsubsection{\texorpdfstring{$\sim$\+Renderer\+Interface()}{~RendererInterface()}}
+{\footnotesize\ttfamily Renderer\+Interface\+::$\sim$\+Renderer\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+
+
+
+純粋仮想デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_renderer_interface_a86a487deb4e4207a67410d00ec670fd7}\label{class_renderer_interface_a86a487deb4e4207a67410d00ec670fd7}} 
+\index{Renderer\+Interface@{Renderer\+Interface}!Draw\+Begin@{Draw\+Begin}}
+\index{Draw\+Begin@{Draw\+Begin}!Renderer\+Interface@{Renderer\+Interface}}
+\subsubsection{\texorpdfstring{Draw\+Begin()}{DrawBegin()}}
+{\footnotesize\ttfamily virtual bool Renderer\+Interface\+::\+Draw\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画開始関数 
+
+
+
+\mbox{\hyperlink{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}{Renderer\+Direct\+X9}}で実装されています。
+
+\mbox{\Hypertarget{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}\label{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}} 
+\index{Renderer\+Interface@{Renderer\+Interface}!Draw\+End@{Draw\+End}}
+\index{Draw\+End@{Draw\+End}!Renderer\+Interface@{Renderer\+Interface}}
+\subsubsection{\texorpdfstring{Draw\+End()}{DrawEnd()}}
+{\footnotesize\ttfamily virtual void Renderer\+Interface\+::\+Draw\+End (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+begin\+\_\+scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画終了関数 
+
+
+\begin{DoxyParams}{引数}
+{\em is\+\_\+begin\+\_\+scene} & \+: 描画開始が成功しているかフラグ \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}{Renderer\+Direct\+X9}}で実装されています。
+
+\mbox{\Hypertarget{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}\label{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}} 
+\index{Renderer\+Interface@{Renderer\+Interface}!Init@{Init}}
+\index{Init@{Init}!Renderer\+Interface@{Renderer\+Interface}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual bool Renderer\+Interface\+::\+Init (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd,  }\item[{B\+O\+OL}]{is\+\_\+full\+\_\+screen,  }\item[{int}]{window\+\_\+width,  }\item[{int}]{window\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em h\+Instance} & \+: インスタンスハンドル h\+Wnd \+: Windowsハンドル is\+\_\+full\+\_\+screen \+: フルスクリーンフラグ window\+\_\+width \+: Window幅 window\+\_\+height \+: Window高さ \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}{Renderer\+Direct\+X9}}で実装されています。
+
+\mbox{\Hypertarget{class_renderer_interface_ada105489f9db98e7e9542b278699d558}\label{class_renderer_interface_ada105489f9db98e7e9542b278699d558}} 
+\index{Renderer\+Interface@{Renderer\+Interface}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Renderer\+Interface@{Renderer\+Interface}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily virtual void Renderer\+Interface\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}{Renderer\+Direct\+X9}}で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Renderer/\+Renderer\+Interface/\mbox{\hyperlink{_renderer_interface_8h}{Renderer\+Interface.\+h}}\end{DoxyCompactItemize}

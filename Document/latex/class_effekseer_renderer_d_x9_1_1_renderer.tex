@@ -1,0 +1,130 @@
+\hypertarget{class_effekseer_renderer_d_x9_1_1_renderer}{}\section{Effekseer\+Renderer\+D\+X9\+:\+:Renderer クラス}
+\label{class_effekseer_renderer_d_x9_1_1_renderer}\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+
+
+描画クラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer\+Renderer\+D\+X9.\+h$>$}
+
+Effekseer\+Renderer\+D\+X9\+:\+:Renderer の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_effekseer_renderer_d_x9_1_1_renderer}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_a41c5637f9dcf5341d12b9b61ee46bd74}{Get\+Device}} ()=0
+\begin{DoxyCompactList}\small\item\em デバイスを取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_a08f6d85779736243059040d86c573df8}{Change\+Device}} (L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 device)=0
+\begin{DoxyCompactList}\small\item\em デバイスロストリセット間でデバイス自体を再構築する際に外部からデバイスを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Effekseer\+::\+Texture\+Data}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_a98f5bc52650df1982e9fb75b3c735d65}{Get\+Background}} ()=0
+\begin{DoxyCompactList}\small\item\em 背景を取得する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_a4ba4636b187f74288fdd6ff68071196d}{Set\+Background}} (I\+Direct3\+D\+Texture9 $\ast$background)=0
+\begin{DoxyCompactList}\small\item\em 背景を設定する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer}{Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_aadd9f57a16e8291dccd27d2e1c03edc4}{Create}} (L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 device, int32\+\_\+t square\+Max\+Count)
+\begin{DoxyCompactList}\small\item\em インスタンスを生成する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_a60053d4f038d75ec542de6643dd06cff}{Renderer}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer_ab0f89bf1d5ba64f8b661babb340a5d2c}{$\sim$\+Renderer}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+描画クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_renderer_d_x9_1_1_renderer_a60053d4f038d75ec542de6643dd06cff}\label{class_effekseer_renderer_d_x9_1_1_renderer_a60053d4f038d75ec542de6643dd06cff}} 
+\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Renderer()}{Renderer()}}
+{\footnotesize\ttfamily Effekseer\+Renderer\+D\+X9\+::\+Renderer\+::\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_effekseer_renderer_d_x9_1_1_renderer_ab0f89bf1d5ba64f8b661babb340a5d2c}\label{class_effekseer_renderer_d_x9_1_1_renderer_ab0f89bf1d5ba64f8b661babb340a5d2c}} 
+\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}!````~Renderer@{$\sim$\+Renderer}}
+\index{````~Renderer@{$\sim$\+Renderer}!Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Renderer()}{~Renderer()}}
+{\footnotesize\ttfamily virtual Effekseer\+Renderer\+D\+X9\+::\+Renderer\+::$\sim$\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4fa4741713f7bcd84b}{Effekseer\+Renderer\+::\+Renderer}}を再実装しています。
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_renderer_d_x9_1_1_renderer_a08f6d85779736243059040d86c573df8}\label{class_effekseer_renderer_d_x9_1_1_renderer_a08f6d85779736243059040d86c573df8}} 
+\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}!Change\+Device@{Change\+Device}}
+\index{Change\+Device@{Change\+Device}!Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Change\+Device()}{ChangeDevice()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+D\+X9\+::\+Renderer\+::\+Change\+Device (\begin{DoxyParamCaption}\item[{L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+デバイスロストリセット間でデバイス自体を再構築する際に外部からデバイスを設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_d_x9_1_1_renderer_aadd9f57a16e8291dccd27d2e1c03edc4}\label{class_effekseer_renderer_d_x9_1_1_renderer_aadd9f57a16e8291dccd27d2e1c03edc4}} 
+\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}!Create@{Create}}
+\index{Create@{Create}!Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_effekseer_renderer_d_x9_1_1_renderer}{Renderer}}$\ast$ Effekseer\+Renderer\+D\+X9\+::\+Renderer\+::\+Create (\begin{DoxyParamCaption}\item[{L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9}]{device,  }\item[{int32\+\_\+t}]{square\+Max\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+インスタンスを生成する。 
+
+
+\begin{DoxyParams}{引数}
+{\em device} & \mbox{[}in\mbox{]} Direct\+Xのデバイス \\
+\hline
+{\em square\+Max\+Count} & \mbox{[}in\mbox{]} 最大描画スプライト数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+インスタンス 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_renderer_d_x9_1_1_renderer_a98f5bc52650df1982e9fb75b3c735d65}\label{class_effekseer_renderer_d_x9_1_1_renderer_a98f5bc52650df1982e9fb75b3c735d65}} 
+\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}!Get\+Background@{Get\+Background}}
+\index{Get\+Background@{Get\+Background}!Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Background()}{GetBackground()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Effekseer\+::\+Texture\+Data}}$\ast$ Effekseer\+Renderer\+D\+X9\+::\+Renderer\+::\+Get\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+背景を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_d_x9_1_1_renderer_a41c5637f9dcf5341d12b9b61ee46bd74}\label{class_effekseer_renderer_d_x9_1_1_renderer_a41c5637f9dcf5341d12b9b61ee46bd74}} 
+\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}!Get\+Device@{Get\+Device}}
+\index{Get\+Device@{Get\+Device}!Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Device()}{GetDevice()}}
+{\footnotesize\ttfamily virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 Effekseer\+Renderer\+D\+X9\+::\+Renderer\+::\+Get\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+デバイスを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_d_x9_1_1_renderer_a4ba4636b187f74288fdd6ff68071196d}\label{class_effekseer_renderer_d_x9_1_1_renderer_a4ba4636b187f74288fdd6ff68071196d}} 
+\index{Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}!Set\+Background@{Set\+Background}}
+\index{Set\+Background@{Set\+Background}!Effekseer\+Renderer\+D\+X9\+::\+Renderer@{Effekseer\+Renderer\+D\+X9\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Background()}{SetBackground()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+D\+X9\+::\+Renderer\+::\+Set\+Background (\begin{DoxyParamCaption}\item[{I\+Direct3\+D\+Texture9 $\ast$}]{background }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+背景を設定する。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_renderer_d_x9_8h}{Effekseer\+Renderer\+D\+X9.\+h}}\end{DoxyCompactItemize}

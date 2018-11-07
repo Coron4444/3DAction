@@ -1,0 +1,82 @@
+\hypertarget{class_effekseer_1_1_thread}{}\section{Effekseer\+:\+:Thread クラス}
+\label{class_effekseer_1_1_thread}\index{Effekseer\+::\+Thread@{Effekseer\+::\+Thread}}
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_thread_ad8b87cc1bfc2bf7f2d851f69d60d39c8}{Thread}} ()
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_thread_a5e081a4312fd66ffd9e26aea3b177297}{$\sim$\+Thread}} ()
+\item 
+bool \mbox{\hyperlink{class_effekseer_1_1_thread_af30613ba2b4e0f929fb70e71f820b394}{Create}} (\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}}($\ast$thread\+Func)(\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$), \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$data)
+\begin{DoxyCompactList}\small\item\em スレッドを生成する。 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_effekseer_1_1_thread_a0fb87aa53d905bfadd1c0df29877b97d}{Is\+Exit\+Thread}} () const
+\begin{DoxyCompactList}\small\item\em スレッド終了を確認する。 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_effekseer_1_1_thread_a1a5806df4d7bdd6dc0a0e25986f75d78}{Wait}} () const
+\begin{DoxyCompactList}\small\item\em スレッド終了を待つ。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_thread_ad8b87cc1bfc2bf7f2d851f69d60d39c8}\label{class_effekseer_1_1_thread_ad8b87cc1bfc2bf7f2d851f69d60d39c8}} 
+\index{Effekseer\+::\+Thread@{Effekseer\+::\+Thread}!Thread@{Thread}}
+\index{Thread@{Thread}!Effekseer\+::\+Thread@{Effekseer\+::\+Thread}}
+\subsubsection{\texorpdfstring{Thread()}{Thread()}}
+{\footnotesize\ttfamily Effekseer\+::\+Thread\+::\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_effekseer_1_1_thread_a5e081a4312fd66ffd9e26aea3b177297}\label{class_effekseer_1_1_thread_a5e081a4312fd66ffd9e26aea3b177297}} 
+\index{Effekseer\+::\+Thread@{Effekseer\+::\+Thread}!````~Thread@{$\sim$\+Thread}}
+\index{````~Thread@{$\sim$\+Thread}!Effekseer\+::\+Thread@{Effekseer\+::\+Thread}}
+\subsubsection{\texorpdfstring{$\sim$\+Thread()}{~Thread()}}
+{\footnotesize\ttfamily Effekseer\+::\+Thread\+::$\sim$\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_thread_af30613ba2b4e0f929fb70e71f820b394}\label{class_effekseer_1_1_thread_af30613ba2b4e0f929fb70e71f820b394}} 
+\index{Effekseer\+::\+Thread@{Effekseer\+::\+Thread}!Create@{Create}}
+\index{Create@{Create}!Effekseer\+::\+Thread@{Effekseer\+::\+Thread}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily bool Effekseer\+::\+Thread\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}}($\ast$)(\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$)}]{thread\+Func,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+スレッドを生成する。 
+
+
+\begin{DoxyParams}{引数}
+{\em thread\+Func} & \mbox{[}in\mbox{]} スレッド関数 \\
+\hline
+{\em p\+Data} & \mbox{[}in\mbox{]} スレッドに引き渡すデータポインタ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+成否 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_1_1_thread_a0fb87aa53d905bfadd1c0df29877b97d}\label{class_effekseer_1_1_thread_a0fb87aa53d905bfadd1c0df29877b97d}} 
+\index{Effekseer\+::\+Thread@{Effekseer\+::\+Thread}!Is\+Exit\+Thread@{Is\+Exit\+Thread}}
+\index{Is\+Exit\+Thread@{Is\+Exit\+Thread}!Effekseer\+::\+Thread@{Effekseer\+::\+Thread}}
+\subsubsection{\texorpdfstring{Is\+Exit\+Thread()}{IsExitThread()}}
+{\footnotesize\ttfamily bool Effekseer\+::\+Thread\+::\+Is\+Exit\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+スレッド終了を確認する。 
+
+\mbox{\Hypertarget{class_effekseer_1_1_thread_a1a5806df4d7bdd6dc0a0e25986f75d78}\label{class_effekseer_1_1_thread_a1a5806df4d7bdd6dc0a0e25986f75d78}} 
+\index{Effekseer\+::\+Thread@{Effekseer\+::\+Thread}!Wait@{Wait}}
+\index{Wait@{Wait}!Effekseer\+::\+Thread@{Effekseer\+::\+Thread}}
+\subsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily bool Effekseer\+::\+Thread\+::\+Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+スレッド終了を待つ。 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

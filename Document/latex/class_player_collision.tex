@@ -1,0 +1,143 @@
+\hypertarget{class_player_collision}{}\section{Player\+Collision クラス}
+\label{class_player_collision}\index{Player\+Collision@{Player\+Collision}}
+
+
+{\ttfamily \#include $<$Player\+Collision.\+h$>$}
+
+Player\+Collision の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player_collision}
+\end{center}
+\end{figure}
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907}{Object\+Tag}} \{ \mbox{\hyperlink{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907abde9854e7cb5dd2906a4f5e7ca3a896d}{N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907ae8cec799ba827b372f0d4bedec1b9bbb}{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE}}, 
+\mbox{\hyperlink{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907a1bdf29253670ff99684ddff916536360}{S\+U\+B\+S\+T\+A\+N\+CE}}, 
+\mbox{\hyperlink{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907aa9f8cab198da5574b7a22acc4ecd42d5}{M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_collision_a60f6ed3a1886aa80dcd23cb499284470}{Player\+Collision}} ()
+\item 
+void \mbox{\hyperlink{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}{Init}} () override
+\item 
+void \mbox{\hyperlink{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}{Uninit}} () override
+\item 
+void \mbox{\hyperlink{class_player_collision_a09f97f220903f5724a3af6b97af3a336}{Update}} () override
+\item 
+void \mbox{\hyperlink{class_player_collision_ae2d429a16bf2c3ee74070ef497a8696a}{Hit\+Collision}} (\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$hit\+\_\+component, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+opponent\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+myself\+\_\+object) override
+\item 
+void \mbox{\hyperlink{class_player_collision_a46961b740806b7c467bb3384ff784b91}{Not\+Hit\+Collision}} (\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$hit\+\_\+component, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+opponent\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+myself\+\_\+object) override
+\item 
+void \mbox{\hyperlink{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}{Hit\+Ground}} (float position\+\_\+y) override
+\end{DoxyCompactItemize}
+
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907}\label{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907}} 
+\index{Player\+Collision@{Player\+Collision}!Object\+Tag@{Object\+Tag}}
+\index{Object\+Tag@{Object\+Tag}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Object\+Tag}{ObjectTag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907}{Player\+Collision\+::\+Object\+Tag}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Player\+Collision@{Player\+Collision}}\index{Player\+Collision@{Player\+Collision}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907abde9854e7cb5dd2906a4f5e7ca3a896d}\label{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907abde9854e7cb5dd2906a4f5e7ca3a896d}} 
+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE}!Player\+Collision@{Player\+Collision}}\index{Player\+Collision@{Player\+Collision}!B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE}}}\mbox{\Hypertarget{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907ae8cec799ba827b372f0d4bedec1b9bbb}\label{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907ae8cec799ba827b372f0d4bedec1b9bbb}} 
+B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+U\+B\+S\+T\+A\+N\+CE@{S\+U\+B\+S\+T\+A\+N\+CE}!Player\+Collision@{Player\+Collision}}\index{Player\+Collision@{Player\+Collision}!S\+U\+B\+S\+T\+A\+N\+CE@{S\+U\+B\+S\+T\+A\+N\+CE}}}\mbox{\Hypertarget{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907a1bdf29253670ff99684ddff916536360}\label{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907a1bdf29253670ff99684ddff916536360}} 
+S\+U\+B\+S\+T\+A\+N\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+AX@{M\+AX}!Player\+Collision@{Player\+Collision}}\index{Player\+Collision@{Player\+Collision}!M\+AX@{M\+AX}}}\mbox{\Hypertarget{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907aa9f8cab198da5574b7a22acc4ecd42d5}\label{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907aa9f8cab198da5574b7a22acc4ecd42d5}} 
+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_player_collision_a60f6ed3a1886aa80dcd23cb499284470}\label{class_player_collision_a60f6ed3a1886aa80dcd23cb499284470}} 
+\index{Player\+Collision@{Player\+Collision}!Player\+Collision@{Player\+Collision}}
+\index{Player\+Collision@{Player\+Collision}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Player\+Collision()}{PlayerCollision()}}
+{\footnotesize\ttfamily Player\+Collision\+::\+Player\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_player_collision_ae2d429a16bf2c3ee74070ef497a8696a}\label{class_player_collision_ae2d429a16bf2c3ee74070ef497a8696a}} 
+\index{Player\+Collision@{Player\+Collision}!Hit\+Collision@{Hit\+Collision}}
+\index{Hit\+Collision@{Hit\+Collision}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Hit\+Collision()}{HitCollision()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{hit\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+opponent\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+myself\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_collision_component_a50c4fea9d37eb22ac435ee5c2ce36254}{Collision\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}\label{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}} 
+\index{Player\+Collision@{Player\+Collision}!Hit\+Ground@{Hit\+Ground}}
+\index{Hit\+Ground@{Hit\+Ground}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Hit\+Ground()}{HitGround()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Hit\+Ground (\begin{DoxyParamCaption}\item[{float}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_collision_component_a7538567006556bc03524df2655e83956}{Collision\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}\label{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}} 
+\index{Player\+Collision@{Player\+Collision}!Init@{Init}}
+\index{Init@{Init}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+
+\mbox{\Hypertarget{class_player_collision_a46961b740806b7c467bb3384ff784b91}\label{class_player_collision_a46961b740806b7c467bb3384ff784b91}} 
+\index{Player\+Collision@{Player\+Collision}!Not\+Hit\+Collision@{Not\+Hit\+Collision}}
+\index{Not\+Hit\+Collision@{Not\+Hit\+Collision}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Not\+Hit\+Collision()}{NotHitCollision()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Not\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{hit\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+opponent\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+myself\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_collision_component_ad4d820d07872da11c9c1fd1b40157349}{Collision\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}\label{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}} 
+\index{Player\+Collision@{Player\+Collision}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_collision_component_aa75440061f7a60e8c4ee1dae18682cc0}{Collision\+Component}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_collision_a09f97f220903f5724a3af6b97af3a336}\label{class_player_collision_a09f97f220903f5724a3af6b97af3a336}} 
+\index{Player\+Collision@{Player\+Collision}!Update@{Update}}
+\index{Update@{Update}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_collision_component_a3fa60fd8b4e8690f783c0f578949664e}{Collision\+Component}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Player/\+Player\+Collision/\mbox{\hyperlink{_player_collision_8h}{Player\+Collision.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Player/\+Player\+Collision/\mbox{\hyperlink{_player_collision_8cpp}{Player\+Collision.\+cpp}}\end{DoxyCompactItemize}

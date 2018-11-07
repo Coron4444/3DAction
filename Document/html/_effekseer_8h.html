@@ -1,0 +1,899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/Effekseer.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_effekseer_8h.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">Effekseer.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+</div>
+<p><a href="_effekseer_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_i_reference.html">Effekseer::IReference</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照カウンタのインターフェース  <a href="class_effekseer_1_1_i_reference.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_reference_object.html">Effekseer::ReferenceObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照カウンタオブジェクト  <a href="class_effekseer_1_1_reference_object.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_texture_data.html">Effekseer::TextureData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャデータ  <a href="struct_effekseer_1_1_texture_data.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_vector2_d.html">Effekseer::Vector2D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">3次元ベクトル  <a href="struct_effekseer_1_1_vector2_d.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_vector3_d.html">Effekseer::Vector3D</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">3次元ベクトル  <a href="struct_effekseer_1_1_vector3_d.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_color.html">Effekseer::Color</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">色  <a href="struct_effekseer_1_1_color.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_rect_f.html">Effekseer::RectF</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">四角形  <a href="struct_effekseer_1_1_rect_f.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_matrix43.html">Effekseer::Matrix43</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">4x3行列  <a href="struct_effekseer_1_1_matrix43.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">行列  <a href="struct_effekseer_1_1_matrix44.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_file_reader.html">Effekseer::FileReader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル読み込みクラス  <a href="class_effekseer_1_1_file_reader.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_file_writer.html">Effekseer::FileWriter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル書き込みクラス  <a href="class_effekseer_1_1_file_writer.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_file_interface.html">Effekseer::FileInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルアクセス用のファクトリクラス  <a href="class_effekseer_1_1_file_interface.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_default_file_reader.html">Effekseer::DefaultFileReader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">標準のファイル読み込みクラス  <a href="class_effekseer_1_1_default_file_reader.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_default_file_writer.html">Effekseer::DefaultFileWriter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_default_file_interface.html">Effekseer::DefaultFileInterface</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect.html">Effekseer::Effect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトパラメータークラス  <a href="class_effekseer_1_1_effect.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_effect_basic_render_parameter.html">Effekseer::EffectBasicRenderParameter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">共通描画パラメーター  <a href="struct_effekseer_1_1_effect_basic_render_parameter.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_effect_model_parameter.html">Effekseer::EffectModelParameter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルパラメーター  <a href="struct_effekseer_1_1_effect_model_parameter.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_node.html">Effekseer::EffectNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードインスタンス生成クラス  <a href="class_effekseer_1_1_effect_node.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_manager.html">Effekseer::Manager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクト管理クラス  <a href="class_effekseer_1_1_manager.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_sprite_renderer.html">Effekseer::SpriteRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_sprite_renderer_1_1_node_parameter.html">Effekseer::SpriteRenderer::NodeParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_sprite_renderer_1_1_instance_parameter.html">Effekseer::SpriteRenderer::InstanceParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_ribbon_renderer.html">Effekseer::RibbonRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_ribbon_renderer_1_1_node_parameter.html">Effekseer::RibbonRenderer::NodeParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter.html">Effekseer::RibbonRenderer::InstanceParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_ring_renderer.html">Effekseer::RingRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_ring_renderer_1_1_node_parameter.html">Effekseer::RingRenderer::NodeParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_ring_renderer_1_1_instance_parameter.html">Effekseer::RingRenderer::InstanceParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_model_renderer.html">Effekseer::ModelRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_model_renderer_1_1_node_parameter.html">Effekseer::ModelRenderer::NodeParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_model_renderer_1_1_instance_parameter.html">Effekseer::ModelRenderer::InstanceParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_track_renderer.html">Effekseer::TrackRenderer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_track_renderer_1_1_node_parameter.html">Effekseer::TrackRenderer::NodeParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_track_renderer_1_1_instance_group_parameter.html">Effekseer::TrackRenderer::InstanceGroupParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_track_renderer_1_1_instance_parameter.html">Effekseer::TrackRenderer::InstanceParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_effect_loader.html">Effekseer::EffectLoader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトファイル読み込み破棄関数指定クラス  <a href="class_effekseer_1_1_effect_loader.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_texture_loader.html">Effekseer::TextureLoader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャ読み込み破棄関数指定クラス  <a href="class_effekseer_1_1_texture_loader.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_model_loader.html">Effekseer::ModelLoader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル読み込み破棄関数指定クラス  <a href="class_effekseer_1_1_model_loader.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_model.html">Effekseer::Model</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルクラス  <a href="class_effekseer_1_1_model.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_model_1_1_vertex.html">Effekseer::Model::Vertex</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_model_1_1_vertex_with_index.html">Effekseer::Model::VertexWithIndex</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_model_1_1_face.html">Effekseer::Model::Face</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_model_1_1_emitter.html">Effekseer::Model::Emitter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_sound_player.html">Effekseer::SoundPlayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effekseer_1_1_sound_player_1_1_instance_parameter.html">Effekseer::SoundPlayer::InstanceParameter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_sound_loader.html">Effekseer::SoundLoader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド読み込み破棄関数指定クラス  <a href="class_effekseer_1_1_sound_loader.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_setting.html">Effekseer::Setting</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定クラス  <a href="class_effekseer_1_1_setting.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_server.html">Effekseer::Server</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_client.html">Effekseer::Client</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_critical_section.html">Effekseer::CriticalSection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">クリティカルセクション  <a href="class_effekseer_1_1_critical_section.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_thread.html">Effekseer::Thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespace_effekseer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html">Effekseer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a4b2fd0bd069299f55649055bbd485d7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a4b2fd0bd069299f55649055bbd485d7f">EFK_STDCALL</a></td></tr>
+<tr class="separator:a4b2fd0bd069299f55649055bbd485d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70b4ca19a8eeb792fe80a0d14b5a5ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#ab70b4ca19a8eeb792fe80a0d14b5a5ce">ES_SAFE_ADDREF</a>(val)&#160;&#160;&#160;if ( (val) != NULL ) { (val)-&gt;AddRef(); }</td></tr>
+<tr class="separator:ab70b4ca19a8eeb792fe80a0d14b5a5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552d766d4c7156ddd0042d4d94c8b562"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a552d766d4c7156ddd0042d4d94c8b562">ES_SAFE_RELEASE</a>(val)&#160;&#160;&#160;if ( (val) != NULL ) { (val)-&gt;Release(); (val) = NULL; }</td></tr>
+<tr class="separator:a552d766d4c7156ddd0042d4d94c8b562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5278841d38f84c7fdf57770ece804d9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a5278841d38f84c7fdf57770ece804d9b">ES_SAFE_DELETE</a>(val)&#160;&#160;&#160;if ( (val) != NULL ) { delete (val); (val) = NULL; }</td></tr>
+<tr class="separator:a5278841d38f84c7fdf57770ece804d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09da01befa6b94eb8ca94be9b2bf558d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a09da01befa6b94eb8ca94be9b2bf558d">ES_SAFE_DELETE_ARRAY</a>(val)&#160;&#160;&#160;if ( (val) != NULL ) { delete [] (val); (val) = NULL; }</td></tr>
+<tr class="separator:a09da01befa6b94eb8ca94be9b2bf558d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9370a43166c025ec921ec005658f427"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#aa9370a43166c025ec921ec005658f427">__EFFEKSEER_VECTOR2D_H__</a></td></tr>
+<tr class="separator:aa9370a43166c025ec921ec005658f427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82b99d80736c984fa4fe4710ef5bd8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#aa82b99d80736c984fa4fe4710ef5bd8b">__EFFEKSEER_VECTOR3D_H__</a></td></tr>
+<tr class="separator:aa82b99d80736c984fa4fe4710ef5bd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5142c5c895ceca81575cd84f98c6747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#ad5142c5c895ceca81575cd84f98c6747">__EFFEKSEER_COLOR_H__</a></td></tr>
+<tr class="separator:ad5142c5c895ceca81575cd84f98c6747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f173361dbdb0628d5e25e22ce2e43b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#ae0f173361dbdb0628d5e25e22ce2e43b">__EFFEKSEER_RECTF_H__</a></td></tr>
+<tr class="separator:ae0f173361dbdb0628d5e25e22ce2e43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6c88e72faff324e24afcf93295d012"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a0e6c88e72faff324e24afcf93295d012">__EFFEKSEER_MATRIX43_H__</a></td></tr>
+<tr class="separator:a0e6c88e72faff324e24afcf93295d012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aedefb50559cc2a41399284800ab81f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a3aedefb50559cc2a41399284800ab81f">__EFFEKSEER_MATRIX44_H__</a></td></tr>
+<tr class="separator:a3aedefb50559cc2a41399284800ab81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee690e424571c16a5699f20728ba191d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#aee690e424571c16a5699f20728ba191d">__EFFEKSEER_FILE_H__</a></td></tr>
+<tr class="separator:aee690e424571c16a5699f20728ba191d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a88a4452a028e268f094f6441d5b27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a42a88a4452a028e268f094f6441d5b27">__EFFEKSEER_DEFAULT_FILE_H__</a></td></tr>
+<tr class="separator:a42a88a4452a028e268f094f6441d5b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7875687b1f546a573428fe17ec3072f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a7875687b1f546a573428fe17ec3072f6">__EFFEKSEER_EFFECT_H__</a></td></tr>
+<tr class="separator:a7875687b1f546a573428fe17ec3072f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa326d43fceccccf752fa148f82acb36e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#aa326d43fceccccf752fa148f82acb36e">__EFFEKSEER_MANAGER_H__</a></td></tr>
+<tr class="separator:aa326d43fceccccf752fa148f82acb36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728866ed67e63ec6c59f93812cf5ea48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a728866ed67e63ec6c59f93812cf5ea48">__EFFEKSEER_SPRITE_RENDERER_H__</a></td></tr>
+<tr class="separator:a728866ed67e63ec6c59f93812cf5ea48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d3254351e46e4f247dbf9582d064d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a72d3254351e46e4f247dbf9582d064d1">__EFFEKSEER_RIBBON_RENDERER_H__</a></td></tr>
+<tr class="separator:a72d3254351e46e4f247dbf9582d064d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab70fc8f1edf309170c9d1bb71e27ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#aeab70fc8f1edf309170c9d1bb71e27ca">__EFFEKSEER_RING_RENDERER_H__</a></td></tr>
+<tr class="separator:aeab70fc8f1edf309170c9d1bb71e27ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185c735ecb87511503e4e22d39ba7c4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a185c735ecb87511503e4e22d39ba7c4c">__EFFEKSEER_MODEL_RENDERER_H__</a></td></tr>
+<tr class="separator:a185c735ecb87511503e4e22d39ba7c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4b7df74bc83cdcd05af856c0635cf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a8f4b7df74bc83cdcd05af856c0635cf6">__EFFEKSEER_TRACK_RENDERER_H__</a></td></tr>
+<tr class="separator:a8f4b7df74bc83cdcd05af856c0635cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c35637c94c664ab2fa403cdfe56fe1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a48c35637c94c664ab2fa403cdfe56fe1">__EFFEKSEER_EFFECTLOADER_H__</a></td></tr>
+<tr class="separator:a48c35637c94c664ab2fa403cdfe56fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4dfa6acda3b8439c88e4cd0ea1a1e23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#af4dfa6acda3b8439c88e4cd0ea1a1e23">__EFFEKSEER_TEXTURELOADER_H__</a></td></tr>
+<tr class="separator:af4dfa6acda3b8439c88e4cd0ea1a1e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702904d14dd0f3cd303d1a49bfcf2939"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a702904d14dd0f3cd303d1a49bfcf2939">__EFFEKSEER_MODELLOADER_H__</a></td></tr>
+<tr class="separator:a702904d14dd0f3cd303d1a49bfcf2939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0889469b03ddd49fa04abf213f6d4237"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a0889469b03ddd49fa04abf213f6d4237">__EFFEKSEER_MODEL_H__</a></td></tr>
+<tr class="separator:a0889469b03ddd49fa04abf213f6d4237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645f7193a03d56256106a3a998b3dcdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a645f7193a03d56256106a3a998b3dcdf">__EFFEKSEER_SOUND_PLAYER_H__</a></td></tr>
+<tr class="separator:a645f7193a03d56256106a3a998b3dcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e908c0a22356442812c1e097d381fc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a2e908c0a22356442812c1e097d381fc7">__EFFEKSEER_SOUNDLOADER_H__</a></td></tr>
+<tr class="separator:a2e908c0a22356442812c1e097d381fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd83d013d5507eb61316413dab584472"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#abd83d013d5507eb61316413dab584472">__EFFEKSEER_LOADER_H__</a></td></tr>
+<tr class="separator:abd83d013d5507eb61316413dab584472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0f1f98693b485fa0a022af6b814927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#aaa0f1f98693b485fa0a022af6b814927">__EFFEKSEER_SERVER_H__</a></td></tr>
+<tr class="separator:aaa0f1f98693b485fa0a022af6b814927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50d8e705e1df13802125a3d76262513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#ae50d8e705e1df13802125a3d76262513">__EFFEKSEER_CLIENT_H__</a></td></tr>
+<tr class="separator:ae50d8e705e1df13802125a3d76262513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31bbb4fc6e3d8779d8afd71649cf53d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#af31bbb4fc6e3d8779d8afd71649cf53d">__EFFEKSEER_CRITICALSESSION_H__</a></td></tr>
+<tr class="separator:af31bbb4fc6e3d8779d8afd71649cf53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8df9806cb133e49638690e59e73baf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#a1e8df9806cb133e49638690e59e73baf">__EFFEKSEER_THREAD_H__</a></td></tr>
+<tr class="separator:a1e8df9806cb133e49638690e59e73baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:aca7eb5de6dd019c19ac58ea35a193f2f"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_effekseer_8h.html#aca7eb5de6dd019c19ac58ea35a193f2f">EFK_CHAR</a></td></tr>
+<tr class="separator:aca7eb5de6dd019c19ac58ea35a193f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba58b8d812da862190e9bbfc040824a"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#afba58b8d812da862190e9bbfc040824a">Effekseer::Handle</a></td></tr>
+<tr class="separator:afba58b8d812da862190e9bbfc040824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9a04a7b2d08a8f2173ce47e57ff742"><td class="memItemLeft" align="right" valign="top">typedef void *<a class="el" href="_effekseer_8h.html#a4b2fd0bd069299f55649055bbd485d7f">EFK_STDCALL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a2f9a04a7b2d08a8f2173ce47e57ff742">Effekseer::MallocFunc</a>(unsigned int size)</td></tr>
+<tr class="memdesc:a2f9a04a7b2d08a8f2173ce47e57ff742"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリ確保関数  <a href="namespace_effekseer.html#a2f9a04a7b2d08a8f2173ce47e57ff742">[詳解]</a><br /></td></tr>
+<tr class="separator:a2f9a04a7b2d08a8f2173ce47e57ff742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c68f3d33539d30844b9d1e058077f7"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a73c68f3d33539d30844b9d1e058077f7">Effekseer::size</a></td></tr>
+<tr class="separator:a73c68f3d33539d30844b9d1e058077f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd99b336b206999bdcca3e431648efbc"><td class="memItemLeft" align="right" valign="top">typedef Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#afd99b336b206999bdcca3e431648efbc">Effekseer::handle</a></td></tr>
+<tr class="separator:afd99b336b206999bdcca3e431648efbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153d1bcf5fd3c14124e04d0dadf6827c"><td class="memItemLeft" align="right" valign="top">typedef Handle bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a153d1bcf5fd3c14124e04d0dadf6827c">Effekseer::isRemovingManager</a></td></tr>
+<tr class="separator:a153d1bcf5fd3c14124e04d0dadf6827c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694a300b9b688ca40f6a0d9841d437bf"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a694a300b9b688ca40f6a0d9841d437bf">Effekseer::SoundHandle</a></td></tr>
+<tr class="separator:a694a300b9b688ca40f6a0d9841d437bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb219197297396cf2ab9bee657551a29"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#adb219197297396cf2ab9bee657551a29">Effekseer::SoundTag</a></td></tr>
+<tr class="separator:adb219197297396cf2ab9bee657551a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a8c32fd5b7ec7feed73314b2ae8086949"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949">Effekseer::AlphaBlendType</a> : int32_t { <br />
+&#160;&#160;<a class="el" href="namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949abad6a5dd8c28e6b14f8e986615e3dc98">Effekseer::AlphaBlendType::Opacity</a> = 0, 
+<a class="el" href="namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949a09ac609fcdb514c9adca34e7f97b4ac4">Effekseer::AlphaBlendType::Blend</a> = 1, 
+<a class="el" href="namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949aec211f7c20af43e742bf2570c3cb84f9">Effekseer::AlphaBlendType::Add</a> = 2, 
+<a class="el" href="namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949ae80155eceb940c89e2de63ad05868db2">Effekseer::AlphaBlendType::Sub</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949a62b6d55816cf737bfc6f42e60df1a3f2">Effekseer::AlphaBlendType::Mul</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:a8c32fd5b7ec7feed73314b2ae8086949"><td class="mdescLeft">&#160;</td><td class="mdescRight">アルファブレンド  <a href="namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949">[詳解]</a><br /></td></tr>
+<tr class="separator:a8c32fd5b7ec7feed73314b2ae8086949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3518502cfcb4ec4991f13c0b3e4c6ee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#ae3518502cfcb4ec4991f13c0b3e4c6ee">Effekseer::TextureFilterType</a> : int32_t { <a class="el" href="namespace_effekseer.html#ae3518502cfcb4ec4991f13c0b3e4c6eea60494f02d440f316319dd0fad40ad007">Effekseer::TextureFilterType::Nearest</a> = 0, 
+<a class="el" href="namespace_effekseer.html#ae3518502cfcb4ec4991f13c0b3e4c6eea32a843da6ea40ab3b17a3421ccdf671b">Effekseer::TextureFilterType::Linear</a> = 1
+ }</td></tr>
+<tr class="separator:ae3518502cfcb4ec4991f13c0b3e4c6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5320c83784602974b6278bf1a77b58a3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a5320c83784602974b6278bf1a77b58a3">Effekseer::TextureWrapType</a> : int32_t { <a class="el" href="namespace_effekseer.html#a5320c83784602974b6278bf1a77b58a3a7020426cfb0a204051be4b3053d2acc8">Effekseer::TextureWrapType::Repeat</a> = 0, 
+<a class="el" href="namespace_effekseer.html#a5320c83784602974b6278bf1a77b58a3a08825280e3f8137556325061ba67ff8c">Effekseer::TextureWrapType::Clamp</a> = 1
+ }</td></tr>
+<tr class="separator:a5320c83784602974b6278bf1a77b58a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae9542a9c9309ec191be1ae5e6dc00a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a3ae9542a9c9309ec191be1ae5e6dc00a">Effekseer::CullingType</a> : int32_t { <a class="el" href="namespace_effekseer.html#a3ae9542a9c9309ec191be1ae5e6dc00aa5835bab1ade0060909e31a06af2e2cde">Effekseer::CullingType::Front</a> = 0, 
+<a class="el" href="namespace_effekseer.html#a3ae9542a9c9309ec191be1ae5e6dc00aa0557fa923dcee4d0f86b1409f5c2167f">Effekseer::CullingType::Back</a> = 1, 
+<a class="el" href="namespace_effekseer.html#a3ae9542a9c9309ec191be1ae5e6dc00aad909d38d705ce75386dd86e611a82f5b">Effekseer::CullingType::Double</a> = 2
+ }</td></tr>
+<tr class="separator:a3ae9542a9c9309ec191be1ae5e6dc00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e51959dc188f6f19acc48c85860c6d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a1e51959dc188f6f19acc48c85860c6d8">Effekseer::BillboardType</a> : int32_t { <a class="el" href="namespace_effekseer.html#a1e51959dc188f6f19acc48c85860c6d8acf9f62d4906d63087d71916c1c94c058">Effekseer::BillboardType::Billboard</a> = 0, 
+<a class="el" href="namespace_effekseer.html#a1e51959dc188f6f19acc48c85860c6d8a8d1827d8fca7d2d9db612616da97258a">Effekseer::BillboardType::YAxisFixed</a> = 1, 
+<a class="el" href="namespace_effekseer.html#a1e51959dc188f6f19acc48c85860c6d8a4457d440870ad6d42bab9082d9bf9b61">Effekseer::BillboardType::Fixed</a> = 2, 
+<a class="el" href="namespace_effekseer.html#a1e51959dc188f6f19acc48c85860c6d8a6bea508c98105aa330e11c3a0b258f23">Effekseer::BillboardType::RotatedBillboard</a> = 3
+ }</td></tr>
+<tr class="separator:a1e51959dc188f6f19acc48c85860c6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8508f8823c5fcf36aac5d2ddee23765"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#ac8508f8823c5fcf36aac5d2ddee23765">Effekseer::CoordinateSystem</a> : int32_t { <a class="el" href="namespace_effekseer.html#ac8508f8823c5fcf36aac5d2ddee23765a2b9645dc7a42b738ac9fa5a75117b1c0">Effekseer::CoordinateSystem::LH</a>, 
+<a class="el" href="namespace_effekseer.html#ac8508f8823c5fcf36aac5d2ddee23765a9508a19d7801e07ee7b7628c31bfdd47">Effekseer::CoordinateSystem::RH</a>
+ }</td></tr>
+<tr class="separator:ac8508f8823c5fcf36aac5d2ddee23765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c32bc0e986ad6c6ed7e2aca639d4132"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a6c32bc0e986ad6c6ed7e2aca639d4132">Effekseer::CullingShape</a> : int32_t { <a class="el" href="namespace_effekseer.html#a6c32bc0e986ad6c6ed7e2aca639d4132af9522e8a7d1cc4f338498025afb612bf">Effekseer::CullingShape::NoneShape</a> = 0, 
+<a class="el" href="namespace_effekseer.html#a6c32bc0e986ad6c6ed7e2aca639d4132ab7095f057db3fefa7325ad93a04e14fd">Effekseer::CullingShape::Sphere</a> = 1
+ }</td></tr>
+<tr class="separator:a6c32bc0e986ad6c6ed7e2aca639d4132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781925ba462884c4ef87fd38ffdedba4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a781925ba462884c4ef87fd38ffdedba4">Effekseer::TextureType</a> : int32_t { <a class="el" href="namespace_effekseer.html#a781925ba462884c4ef87fd38ffdedba4acb5feb1b7314637725a2e73bdc9f7295">Effekseer::TextureType::Color</a>, 
+<a class="el" href="namespace_effekseer.html#a781925ba462884c4ef87fd38ffdedba4a960b44c579bc2f6818d2daaf9e4c16f0">Effekseer::TextureType::Normal</a>, 
+<a class="el" href="namespace_effekseer.html#a781925ba462884c4ef87fd38ffdedba4ad3682f9ce9248e18f2d1cecf9f8fa049">Effekseer::TextureType::Distortion</a>
+ }</td></tr>
+<tr class="separator:a781925ba462884c4ef87fd38ffdedba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44c2314bf2d674ae0e6d62db6ff4484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#ad44c2314bf2d674ae0e6d62db6ff4484">Effekseer::TextureFormatType</a> : int32_t { <a class="el" href="namespace_effekseer.html#ad44c2314bf2d674ae0e6d62db6ff4484a241839feb78cf37a50e99a39bb64dab3">Effekseer::TextureFormatType::ABGR8</a>, 
+<a class="el" href="namespace_effekseer.html#ad44c2314bf2d674ae0e6d62db6ff4484a88ec7b741e9c3ccac7b61b1301ba11e8">Effekseer::TextureFormatType::BC1</a>, 
+<a class="el" href="namespace_effekseer.html#ad44c2314bf2d674ae0e6d62db6ff4484a4d2bc7c468d854a7046ae1ca6b7cf64e">Effekseer::TextureFormatType::BC2</a>, 
+<a class="el" href="namespace_effekseer.html#ad44c2314bf2d674ae0e6d62db6ff4484aa9e959126c7c9b4230b56975a1ea015d">Effekseer::TextureFormatType::BC3</a>
+ }</td></tr>
+<tr class="separator:ad44c2314bf2d674ae0e6d62db6ff4484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2b5647443d5c3941d5f737dbe7ff18"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a2c2b5647443d5c3941d5f737dbe7ff18">Effekseer::ColorMode</a> { <a class="el" href="namespace_effekseer.html#a2c2b5647443d5c3941d5f737dbe7ff18a8cd269b8fa3c1dd3646f46bebc7ae065">Effekseer::COLOR_MODE_RGBA</a>, 
+<a class="el" href="namespace_effekseer.html#a2c2b5647443d5c3941d5f737dbe7ff18a98afba620a9e927c8ec2ba20ae0ec099">Effekseer::COLOR_MODE_HSVA</a>, 
+<a class="el" href="namespace_effekseer.html#a2c2b5647443d5c3941d5f737dbe7ff18ac088410da7f822001e890889e938e6dd">Effekseer::COLOR_MODE_DWORD</a> = 0x7FFFFFFF
+ }</td></tr>
+<tr class="separator:a2c2b5647443d5c3941d5f737dbe7ff18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ab34c4088e512200cf4c2716f168deb56"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#ab34c4088e512200cf4c2716f168deb56">Effekseer::void</a> (<a class="el" href="_effekseer_8h.html#a4b2fd0bd069299f55649055bbd485d7f">EFK_STDCALL</a> *FreeFunc)(void *p</td></tr>
+<tr class="memdesc:ab34c4088e512200cf4c2716f168deb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">メモリ破棄関数  <a href="namespace_effekseer.html#ab34c4088e512200cf4c2716f168deb56">[詳解]</a><br /></td></tr>
+<tr class="separator:ab34c4088e512200cf4c2716f168deb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0abf7c2e6947e519ebe8b54cbcc30a"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#ace0abf7c2e6947e519ebe8b54cbcc30a">Effekseer::int</a> (<a class="el" href="_effekseer_8h.html#a4b2fd0bd069299f55649055bbd485d7f">EFK_STDCALL</a> *RandFunc)(void)</td></tr>
+<tr class="memdesc:ace0abf7c2e6947e519ebe8b54cbcc30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ランダム関数  <a href="namespace_effekseer.html#ace0abf7c2e6947e519ebe8b54cbcc30a">[詳解]</a><br /></td></tr>
+<tr class="separator:ace0abf7c2e6947e519ebe8b54cbcc30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3d4e56cf4f8d0f12ac7d4bee7591b9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:afc3d4e56cf4f8d0f12ac7d4bee7591b9"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#afc3d4e56cf4f8d0f12ac7d4bee7591b9">Effekseer::Max</a> (T t, U u)</td></tr>
+<tr class="memdesc:afc3d4e56cf4f8d0f12ac7d4bee7591b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大値取得  <a href="namespace_effekseer.html#afc3d4e56cf4f8d0f12ac7d4bee7591b9">[詳解]</a><br /></td></tr>
+<tr class="separator:afc3d4e56cf4f8d0f12ac7d4bee7591b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d523c19d4088c7566fadd84449eba7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:ad4d523c19d4088c7566fadd84449eba7"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#ad4d523c19d4088c7566fadd84449eba7">Effekseer::Min</a> (T t, U u)</td></tr>
+<tr class="memdesc:ad4d523c19d4088c7566fadd84449eba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小値取得  <a href="namespace_effekseer.html#ad4d523c19d4088c7566fadd84449eba7">[詳解]</a><br /></td></tr>
+<tr class="separator:ad4d523c19d4088c7566fadd84449eba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524a62e3d5b25946bcccd60ffe448c9c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , typename V &gt; </td></tr>
+<tr class="memitem:a524a62e3d5b25946bcccd60ffe448c9c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a524a62e3d5b25946bcccd60ffe448c9c">Effekseer::Clamp</a> (T t, U max_, V min_)</td></tr>
+<tr class="memdesc:a524a62e3d5b25946bcccd60ffe448c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">範囲内値取得  <a href="namespace_effekseer.html#a524a62e3d5b25946bcccd60ffe448c9c">[詳解]</a><br /></td></tr>
+<tr class="separator:a524a62e3d5b25946bcccd60ffe448c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6607039efc8f6bb91f8c216dfd096c5c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a6607039efc8f6bb91f8c216dfd096c5c">Effekseer::NormalizeAngle</a> (float angle)</td></tr>
+<tr class="separator:a6607039efc8f6bb91f8c216dfd096c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eab7724e1fc9c1cb66aac61b3d568d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#a4eab7724e1fc9c1cb66aac61b3d568d9">Effekseer::SinCos</a> (float x, float &amp;s, float &amp;c)</td></tr>
+<tr class="separator:a4eab7724e1fc9c1cb66aac61b3d568d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbbbacdf23834fd7e8619e3af4e837c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#afcbbbacdf23834fd7e8619e3af4e837c">Effekseer::ConvertUtf16ToUtf8</a> (int8_t *dst, int32_t dst_size, const int16_t *src)</td></tr>
+<tr class="memdesc:afcbbbacdf23834fd7e8619e3af4e837c"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字コードを変換する。(UTF16 -&gt; UTF8)  <a href="namespace_effekseer.html#afcbbbacdf23834fd7e8619e3af4e837c">[詳解]</a><br /></td></tr>
+<tr class="separator:afcbbbacdf23834fd7e8619e3af4e837c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfc5535cdc6dc92e50f8453cbb01214"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_effekseer.html#abcfc5535cdc6dc92e50f8453cbb01214">Effekseer::ConvertUtf8ToUtf16</a> (int16_t *dst, int32_t dst_size, const int8_t *src)</td></tr>
+<tr class="memdesc:abcfc5535cdc6dc92e50f8453cbb01214"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字コードを変換する。(UTF8 -&gt; UTF16)  <a href="namespace_effekseer.html#abcfc5535cdc6dc92e50f8453cbb01214">[詳解]</a><br /></td></tr>
+<tr class="separator:abcfc5535cdc6dc92e50f8453cbb01214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="ae50d8e705e1df13802125a3d76262513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50d8e705e1df13802125a3d76262513">&#9670;&nbsp;</a></span>__EFFEKSEER_CLIENT_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_CLIENT_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5142c5c895ceca81575cd84f98c6747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5142c5c895ceca81575cd84f98c6747">&#9670;&nbsp;</a></span>__EFFEKSEER_COLOR_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_COLOR_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af31bbb4fc6e3d8779d8afd71649cf53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31bbb4fc6e3d8779d8afd71649cf53d">&#9670;&nbsp;</a></span>__EFFEKSEER_CRITICALSESSION_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_CRITICALSESSION_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42a88a4452a028e268f094f6441d5b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a88a4452a028e268f094f6441d5b27">&#9670;&nbsp;</a></span>__EFFEKSEER_DEFAULT_FILE_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_DEFAULT_FILE_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7875687b1f546a573428fe17ec3072f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7875687b1f546a573428fe17ec3072f6">&#9670;&nbsp;</a></span>__EFFEKSEER_EFFECT_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_EFFECT_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48c35637c94c664ab2fa403cdfe56fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c35637c94c664ab2fa403cdfe56fe1">&#9670;&nbsp;</a></span>__EFFEKSEER_EFFECTLOADER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_EFFECTLOADER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee690e424571c16a5699f20728ba191d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee690e424571c16a5699f20728ba191d">&#9670;&nbsp;</a></span>__EFFEKSEER_FILE_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_FILE_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd83d013d5507eb61316413dab584472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd83d013d5507eb61316413dab584472">&#9670;&nbsp;</a></span>__EFFEKSEER_LOADER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_LOADER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa326d43fceccccf752fa148f82acb36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa326d43fceccccf752fa148f82acb36e">&#9670;&nbsp;</a></span>__EFFEKSEER_MANAGER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_MANAGER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e6c88e72faff324e24afcf93295d012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6c88e72faff324e24afcf93295d012">&#9670;&nbsp;</a></span>__EFFEKSEER_MATRIX43_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_MATRIX43_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3aedefb50559cc2a41399284800ab81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aedefb50559cc2a41399284800ab81f">&#9670;&nbsp;</a></span>__EFFEKSEER_MATRIX44_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_MATRIX44_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0889469b03ddd49fa04abf213f6d4237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0889469b03ddd49fa04abf213f6d4237">&#9670;&nbsp;</a></span>__EFFEKSEER_MODEL_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_MODEL_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a185c735ecb87511503e4e22d39ba7c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185c735ecb87511503e4e22d39ba7c4c">&#9670;&nbsp;</a></span>__EFFEKSEER_MODEL_RENDERER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_MODEL_RENDERER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a702904d14dd0f3cd303d1a49bfcf2939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702904d14dd0f3cd303d1a49bfcf2939">&#9670;&nbsp;</a></span>__EFFEKSEER_MODELLOADER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_MODELLOADER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0f173361dbdb0628d5e25e22ce2e43b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f173361dbdb0628d5e25e22ce2e43b">&#9670;&nbsp;</a></span>__EFFEKSEER_RECTF_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_RECTF_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72d3254351e46e4f247dbf9582d064d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d3254351e46e4f247dbf9582d064d1">&#9670;&nbsp;</a></span>__EFFEKSEER_RIBBON_RENDERER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_RIBBON_RENDERER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeab70fc8f1edf309170c9d1bb71e27ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab70fc8f1edf309170c9d1bb71e27ca">&#9670;&nbsp;</a></span>__EFFEKSEER_RING_RENDERER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_RING_RENDERER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa0f1f98693b485fa0a022af6b814927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0f1f98693b485fa0a022af6b814927">&#9670;&nbsp;</a></span>__EFFEKSEER_SERVER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_SERVER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a645f7193a03d56256106a3a998b3dcdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645f7193a03d56256106a3a998b3dcdf">&#9670;&nbsp;</a></span>__EFFEKSEER_SOUND_PLAYER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_SOUND_PLAYER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e908c0a22356442812c1e097d381fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e908c0a22356442812c1e097d381fc7">&#9670;&nbsp;</a></span>__EFFEKSEER_SOUNDLOADER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_SOUNDLOADER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a728866ed67e63ec6c59f93812cf5ea48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728866ed67e63ec6c59f93812cf5ea48">&#9670;&nbsp;</a></span>__EFFEKSEER_SPRITE_RENDERER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_SPRITE_RENDERER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4dfa6acda3b8439c88e4cd0ea1a1e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4dfa6acda3b8439c88e4cd0ea1a1e23">&#9670;&nbsp;</a></span>__EFFEKSEER_TEXTURELOADER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_TEXTURELOADER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e8df9806cb133e49638690e59e73baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8df9806cb133e49638690e59e73baf">&#9670;&nbsp;</a></span>__EFFEKSEER_THREAD_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_THREAD_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f4b7df74bc83cdcd05af856c0635cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4b7df74bc83cdcd05af856c0635cf6">&#9670;&nbsp;</a></span>__EFFEKSEER_TRACK_RENDERER_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_TRACK_RENDERER_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9370a43166c025ec921ec005658f427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9370a43166c025ec921ec005658f427">&#9670;&nbsp;</a></span>__EFFEKSEER_VECTOR2D_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_VECTOR2D_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa82b99d80736c984fa4fe4710ef5bd8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82b99d80736c984fa4fe4710ef5bd8b">&#9670;&nbsp;</a></span>__EFFEKSEER_VECTOR3D_H__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __EFFEKSEER_VECTOR3D_H__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b2fd0bd069299f55649055bbd485d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2fd0bd069299f55649055bbd485d7f">&#9670;&nbsp;</a></span>EFK_STDCALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EFK_STDCALL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab70b4ca19a8eeb792fe80a0d14b5a5ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70b4ca19a8eeb792fe80a0d14b5a5ce">&#9670;&nbsp;</a></span>ES_SAFE_ADDREF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ES_SAFE_ADDREF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val</td><td>)</td>
+          <td>&#160;&#160;&#160;if ( (val) != NULL ) { (val)-&gt;AddRef(); }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5278841d38f84c7fdf57770ece804d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5278841d38f84c7fdf57770ece804d9b">&#9670;&nbsp;</a></span>ES_SAFE_DELETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ES_SAFE_DELETE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val</td><td>)</td>
+          <td>&#160;&#160;&#160;if ( (val) != NULL ) { delete (val); (val) = NULL; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09da01befa6b94eb8ca94be9b2bf558d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09da01befa6b94eb8ca94be9b2bf558d">&#9670;&nbsp;</a></span>ES_SAFE_DELETE_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ES_SAFE_DELETE_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val</td><td>)</td>
+          <td>&#160;&#160;&#160;if ( (val) != NULL ) { delete [] (val); (val) = NULL; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a552d766d4c7156ddd0042d4d94c8b562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552d766d4c7156ddd0042d4d94c8b562">&#9670;&nbsp;</a></span>ES_SAFE_RELEASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ES_SAFE_RELEASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">val</td><td>)</td>
+          <td>&#160;&#160;&#160;if ( (val) != NULL ) { (val)-&gt;Release(); (val) = NULL; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="aca7eb5de6dd019c19ac58ea35a193f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7eb5de6dd019c19ac58ea35a193f2f">&#9670;&nbsp;</a></span>EFK_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint16_t <a class="el" href="_effekseer_8h.html#aca7eb5de6dd019c19ac58ea35a193f2f">EFK_CHAR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_6e58c436369e4a795ef16d3c489c4702.html">05_Resource</a></li><li class="navelem"><a class="el" href="dir_6e77499bbfecef85f448323d33298e28.html">Effekseer</a></li><li class="navelem"><a class="el" href="_effekseer_8h.html">Effekseer.h</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

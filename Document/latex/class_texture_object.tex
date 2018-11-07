@@ -1,0 +1,85 @@
+\hypertarget{class_texture_object}{}\section{Texture\+Object クラス}
+\label{class_texture_object}\index{Texture\+Object@{Texture\+Object}}
+
+
+{\ttfamily \#include $<$Texture\+Object.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_object_add74bde2c60ec3d61229ce70b26602f2}{Texture\+Object}} (const std\+::string $\ast$file\+\_\+path, int pattern\+\_\+num\+\_\+all=1, int pattern\+\_\+num\+\_\+width=1, int pattern\+\_\+num\+\_\+height=1)
+\item 
+virtual \mbox{\hyperlink{class_texture_object_aeed25fa5ca8e892b96145f4a649e090a}{$\sim$\+Texture\+Object}} ()
+\item 
+int \mbox{\hyperlink{class_texture_object_a5bfee4b09a77e078a51117363a6ede34}{Get\+Texture\+Pattern\+Num}} (const int animation\+\_\+count, int animation\+\_\+speed)
+\item 
+int \mbox{\hyperlink{class_texture_object_a72c079770e7e4355b6481d28a0a472ac}{Get\+Width}} () const
+\item 
+int \mbox{\hyperlink{class_texture_object_af312bd8d8cdb31918a00e1fe096c26e0}{Get\+Height}} () const
+\item 
+int \mbox{\hyperlink{class_texture_object_a7d6efe951d81051ed4c763db1208aa40}{Get\+Pattern\+Num\+All}} () const
+\item 
+Texture\+UV \mbox{\hyperlink{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb}{Get\+UV}} (int index) const
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_texture_object_a1b6c93f36e03686f7198b93355c73c8a}{Get\+Handler}} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_texture_object_add74bde2c60ec3d61229ce70b26602f2}\label{class_texture_object_add74bde2c60ec3d61229ce70b26602f2}} 
+\index{Texture\+Object@{Texture\+Object}!Texture\+Object@{Texture\+Object}}
+\index{Texture\+Object@{Texture\+Object}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Texture\+Object()}{TextureObject()}}
+{\footnotesize\ttfamily Texture\+Object\+::\+Texture\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{file\+\_\+path,  }\item[{int}]{pattern\+\_\+num\+\_\+all = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+width = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+height = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_texture_object_aeed25fa5ca8e892b96145f4a649e090a}\label{class_texture_object_aeed25fa5ca8e892b96145f4a649e090a}} 
+\index{Texture\+Object@{Texture\+Object}!````~Texture\+Object@{$\sim$\+Texture\+Object}}
+\index{````~Texture\+Object@{$\sim$\+Texture\+Object}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Texture\+Object()}{~TextureObject()}}
+{\footnotesize\ttfamily Texture\+Object\+::$\sim$\+Texture\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_texture_object_a1b6c93f36e03686f7198b93355c73c8a}\label{class_texture_object_a1b6c93f36e03686f7198b93355c73c8a}} 
+\index{Texture\+Object@{Texture\+Object}!Get\+Handler@{Get\+Handler}}
+\index{Get\+Handler@{Get\+Handler}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Get\+Handler()}{GetHandler()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Texture\+Object\+::\+Get\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_texture_object_af312bd8d8cdb31918a00e1fe096c26e0}\label{class_texture_object_af312bd8d8cdb31918a00e1fe096c26e0}} 
+\index{Texture\+Object@{Texture\+Object}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_texture_object_a7d6efe951d81051ed4c763db1208aa40}\label{class_texture_object_a7d6efe951d81051ed4c763db1208aa40}} 
+\index{Texture\+Object@{Texture\+Object}!Get\+Pattern\+Num\+All@{Get\+Pattern\+Num\+All}}
+\index{Get\+Pattern\+Num\+All@{Get\+Pattern\+Num\+All}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Get\+Pattern\+Num\+All()}{GetPatternNumAll()}}
+{\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Pattern\+Num\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_texture_object_a5bfee4b09a77e078a51117363a6ede34}\label{class_texture_object_a5bfee4b09a77e078a51117363a6ede34}} 
+\index{Texture\+Object@{Texture\+Object}!Get\+Texture\+Pattern\+Num@{Get\+Texture\+Pattern\+Num}}
+\index{Get\+Texture\+Pattern\+Num@{Get\+Texture\+Pattern\+Num}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Get\+Texture\+Pattern\+Num()}{GetTexturePatternNum()}}
+{\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Texture\+Pattern\+Num (\begin{DoxyParamCaption}\item[{const int}]{animation\+\_\+count,  }\item[{int}]{animation\+\_\+speed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb}\label{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb}} 
+\index{Texture\+Object@{Texture\+Object}!Get\+UV@{Get\+UV}}
+\index{Get\+UV@{Get\+UV}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Get\+U\+V()}{GetUV()}}
+{\footnotesize\ttfamily Texture\+UV Texture\+Object\+::\+Get\+UV (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_texture_object_a72c079770e7e4355b6481d28a0a472ac}\label{class_texture_object_a72c079770e7e4355b6481d28a0a472ac}} 
+\index{Texture\+Object@{Texture\+Object}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Texture/\+Texture\+Object/\mbox{\hyperlink{_texture_object_8h}{Texture\+Object.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Texture/\+Texture\+Object/\mbox{\hyperlink{_texture_object_8cpp}{Texture\+Object.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{class_effekseer_1_1_track_renderer}{}\section{Effekseer\+:\+:Track\+Renderer クラス}
+\label{class_effekseer_1_1_track_renderer}\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_instance_group_parameter}{Instance\+Group\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_instance_parameter}{Instance\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_track_renderer_a9517f40758eac1a40a06ef05875a9acb}{Track\+Renderer}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_track_renderer_a2880354ffae0aeadffa3351968a8a99f}{$\sim$\+Track\+Renderer}} ()
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_track_renderer_ac252e85dddf2e8cc34b14dd00ab803b5}{Begin\+Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, int32\+\_\+t count, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_track_renderer_a5d99f7a58b254166cf938bc739bbb387}{Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_instance_parameter}{Instance\+Parameter}} \&instance\+Parameter, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_track_renderer_ad8ad4cbe8cdbbaacc2106c3e689ce579}{End\+Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_track_renderer_a9517f40758eac1a40a06ef05875a9acb}\label{class_effekseer_1_1_track_renderer_a9517f40758eac1a40a06ef05875a9acb}} 
+\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!Track\+Renderer@{Track\+Renderer}}
+\index{Track\+Renderer@{Track\+Renderer}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+\subsubsection{\texorpdfstring{Track\+Renderer()}{TrackRenderer()}}
+{\footnotesize\ttfamily Effekseer\+::\+Track\+Renderer\+::\+Track\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_track_renderer_a2880354ffae0aeadffa3351968a8a99f}\label{class_effekseer_1_1_track_renderer_a2880354ffae0aeadffa3351968a8a99f}} 
+\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!````~Track\+Renderer@{$\sim$\+Track\+Renderer}}
+\index{````~Track\+Renderer@{$\sim$\+Track\+Renderer}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Track\+Renderer()}{~TrackRenderer()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Track\+Renderer\+::$\sim$\+Track\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_track_renderer_ac252e85dddf2e8cc34b14dd00ab803b5}\label{class_effekseer_1_1_track_renderer_ac252e85dddf2e8cc34b14dd00ab803b5}} 
+\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!Begin\+Rendering@{Begin\+Rendering}}
+\index{Begin\+Rendering@{Begin\+Rendering}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+\subsubsection{\texorpdfstring{Begin\+Rendering()}{BeginRendering()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Track\+Renderer\+::\+Begin\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{int32\+\_\+t}]{count,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_track_renderer_ad8ad4cbe8cdbbaacc2106c3e689ce579}\label{class_effekseer_1_1_track_renderer_ad8ad4cbe8cdbbaacc2106c3e689ce579}} 
+\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!End\+Rendering@{End\+Rendering}}
+\index{End\+Rendering@{End\+Rendering}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+\subsubsection{\texorpdfstring{End\+Rendering()}{EndRendering()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Track\+Renderer\+::\+End\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_track_renderer_a5d99f7a58b254166cf938bc739bbb387}\label{class_effekseer_1_1_track_renderer_a5d99f7a58b254166cf938bc739bbb387}} 
+\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!Rendering@{Rendering}}
+\index{Rendering@{Rendering}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+\subsubsection{\texorpdfstring{Rendering()}{Rendering()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Track\+Renderer\+::\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_instance_parameter}{Instance\+Parameter}} \&}]{instance\+Parameter,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

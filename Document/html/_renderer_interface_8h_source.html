@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/01_Main/Renderer/RendererInterface/RendererInterface.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_renderer_interface_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">RendererInterface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_renderer_interface_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//    レンダラーインターフェースクラス</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//    Author : Araki Kai                                作成日 : 2018/05/08</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _RENDERER_INTERFACE_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _RENDERER_INTERFACE_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// インクルード文</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/*********************************************************/</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_renderer_interface.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_renderer_interface.html">RendererInterface</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// 非静的メンバ関数</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_renderer_interface.html#a571638543a7544e023dc186f7dfc7523">~RendererInterface</a>() = 0;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_renderer_interface.html#aabef76c27c2332c1af2dbcf7e8de5d38">Init</a>(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                      <span class="keywordtype">int</span> window_width, <span class="keywordtype">int</span> window_height) = 0;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_renderer_interface.html#ada105489f9db98e7e9542b278699d558">Uninit</a>() = 0;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_renderer_interface.html#a86a487deb4e4207a67410d00ec670fd7">DrawBegin</a>() = 0;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_renderer_interface.html#a0034a44420e4746062e70e4d66d3bee2">DrawEnd</a>(<span class="keywordtype">bool</span> is_begin_scene) = 0;  </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// 非静的メンバ関数定義(inline)</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//--------------------------------------------------</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// +純粋仮想デストラクタ</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//--------------------------------------------------</span></div><div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_renderer_interface.html#a571638543a7544e023dc186f7dfc7523">   80</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_renderer_interface.html#a571638543a7544e023dc186f7dfc7523">RendererInterface::~RendererInterface</a>()</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="ttc" id="class_renderer_interface_html_a86a487deb4e4207a67410d00ec670fd7"><div class="ttname"><a href="class_renderer_interface.html#a86a487deb4e4207a67410d00ec670fd7">RendererInterface::DrawBegin</a></div><div class="ttdeci">virtual bool DrawBegin()=0</div><div class="ttdoc">描画開始関数 </div></div>
+<div class="ttc" id="class_renderer_interface_html_ada105489f9db98e7e9542b278699d558"><div class="ttname"><a href="class_renderer_interface.html#ada105489f9db98e7e9542b278699d558">RendererInterface::Uninit</a></div><div class="ttdeci">virtual void Uninit()=0</div><div class="ttdoc">終了関数 </div></div>
+<div class="ttc" id="class_renderer_interface_html_a571638543a7544e023dc186f7dfc7523"><div class="ttname"><a href="class_renderer_interface.html#a571638543a7544e023dc186f7dfc7523">RendererInterface::~RendererInterface</a></div><div class="ttdeci">virtual ~RendererInterface()=0</div><div class="ttdoc">純粋仮想デストラクタ </div><div class="ttdef"><b>Definition:</b> RendererInterface.h:80</div></div>
+<div class="ttc" id="class_renderer_interface_html_aabef76c27c2332c1af2dbcf7e8de5d38"><div class="ttname"><a href="class_renderer_interface.html#aabef76c27c2332c1af2dbcf7e8de5d38">RendererInterface::Init</a></div><div class="ttdeci">virtual bool Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen, int window_width, int window_height)=0</div><div class="ttdoc">初期化関数 </div></div>
+<div class="ttc" id="class_renderer_interface_html"><div class="ttname"><a href="class_renderer_interface.html">RendererInterface</a></div><div class="ttdoc">レンダラーインターフェースクラス </div><div class="ttdef"><b>Definition:</b> RendererInterface.h:26</div></div>
+<div class="ttc" id="class_renderer_interface_html_a0034a44420e4746062e70e4d66d3bee2"><div class="ttname"><a href="class_renderer_interface.html#a0034a44420e4746062e70e4d66d3bee2">RendererInterface::DrawEnd</a></div><div class="ttdeci">virtual void DrawEnd(bool is_begin_scene)=0</div><div class="ttdoc">描画終了関数 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_b2ee2f4b37d8460d9f5246ffd8c74e11.html">01_Main</a></li><li class="navelem"><a class="el" href="dir_e9bddeb3961171178c0ac9a954a9f096.html">Renderer</a></li><li class="navelem"><a class="el" href="dir_ef4fe2d8e15ccf3d048d0932a1e45b54.html">RendererInterface</a></li><li class="navelem"><a class="el" href="_renderer_interface_8h.html">RendererInterface.h</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

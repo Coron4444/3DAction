@@ -1,0 +1,137 @@
+\hypertarget{class_main_scene_manager}{}\section{Main\+Scene\+Manager クラス}
+\label{class_main_scene_manager}\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+
+
+{\ttfamily \#include $<$Main\+Scene\+Manager.\+h$>$}
+
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_main_scene_manager_aa66c4c2962514285b245950817a3640c}{State}} \{ \mbox{\hyperlink{class_main_scene_manager_aa66c4c2962514285b245950817a3640caba21024b25d7710d4461fba4e00baf4f}{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_main_scene_manager_aa66c4c2962514285b245950817a3640ca39ff93daffebd6b0dff1018e999655b8}{S\+T\+A\+T\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE}}, 
+\mbox{\hyperlink{class_main_scene_manager_aa66c4c2962514285b245950817a3640ca981c2957774dab943dd9e01ba82cdbae}{S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE}}, 
+\mbox{\hyperlink{class_main_scene_manager_aa66c4c2962514285b245950817a3640cacc0736a554c2e0e081819a411d50f064}{S\+T\+A\+T\+E\+\_\+\+M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_scene_manager_a072e115cf03a45c150d295bec09d27de}{Main\+Scene\+Manager}} (\mbox{\hyperlink{class_main_scene_origin}{Main\+Scene\+Origin}} $\ast$first\+\_\+scene=nullptr)
+\item 
+\mbox{\hyperlink{class_main_scene_manager_a5411d96b5ff80847fe45547b61c842dc}{$\sim$\+Main\+Scene\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_a07a720b6bb727df98ce6d87c9b1cbb5b}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_a39d8cbebf57b927510f7af4b2c75c25a}{Update\+Registration\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_ae74ade9e9b60dd29f36d67918268d073}{Draw\+Registration\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_af73dc8b4d1e153ec2b27e2b133e5f599}{Registration\+Change\+Scene}} (\mbox{\hyperlink{class_main_scene_origin}{Main\+Scene\+Origin}} $\ast$change\+\_\+scene)
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_a40e3ea4d41259a9bdcdf0622d65430c0}{Registration\+Reset\+Current\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_a0bc7484976a4ccd3a316dbcb8f65f133}{Set\+Fade\+Type}} (\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}} type)
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_acc3cb332f6d2ab7606a3a02aaf1a31a5}{Set\+Fade\+Speed}} (float speed)
+\item 
+void \mbox{\hyperlink{class_main_scene_manager_aec20589b9410c2a63470e13f3d45e6cb}{Set\+Fade\+Color}} (\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} color)
+\end{DoxyCompactItemize}
+
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_main_scene_manager_aa66c4c2962514285b245950817a3640c}\label{class_main_scene_manager_aa66c4c2962514285b245950817a3640c}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!State@{State}}
+\index{State@{State}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_main_scene_manager_aa66c4c2962514285b245950817a3640c}{Main\+Scene\+Manager\+::\+State}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE@{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!S\+T\+A\+T\+E\+\_\+\+N\+O\+NE@{S\+T\+A\+T\+E\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{class_main_scene_manager_aa66c4c2962514285b245950817a3640caba21024b25d7710d4461fba4e00baf4f}\label{class_main_scene_manager_aa66c4c2962514285b245950817a3640caba21024b25d7710d4461fba4e00baf4f}} 
+S\+T\+A\+T\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE@{S\+T\+A\+T\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!S\+T\+A\+T\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE@{S\+T\+A\+T\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE}}}\mbox{\Hypertarget{class_main_scene_manager_aa66c4c2962514285b245950817a3640ca39ff93daffebd6b0dff1018e999655b8}\label{class_main_scene_manager_aa66c4c2962514285b245950817a3640ca39ff93daffebd6b0dff1018e999655b8}} 
+S\+T\+A\+T\+E\+\_\+\+C\+H\+A\+N\+G\+E\+\_\+\+S\+C\+E\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE@{S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE@{S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE}}}\mbox{\Hypertarget{class_main_scene_manager_aa66c4c2962514285b245950817a3640ca981c2957774dab943dd9e01ba82cdbae}\label{class_main_scene_manager_aa66c4c2962514285b245950817a3640ca981c2957774dab943dd9e01ba82cdbae}} 
+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+C\+E\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+\+M\+AX@{S\+T\+A\+T\+E\+\_\+\+M\+AX}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!S\+T\+A\+T\+E\+\_\+\+M\+AX@{S\+T\+A\+T\+E\+\_\+\+M\+AX}}}\mbox{\Hypertarget{class_main_scene_manager_aa66c4c2962514285b245950817a3640cacc0736a554c2e0e081819a411d50f064}\label{class_main_scene_manager_aa66c4c2962514285b245950817a3640cacc0736a554c2e0e081819a411d50f064}} 
+S\+T\+A\+T\+E\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_main_scene_manager_a072e115cf03a45c150d295bec09d27de}\label{class_main_scene_manager_a072e115cf03a45c150d295bec09d27de}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Main\+Scene\+Manager()}{MainSceneManager()}}
+{\footnotesize\ttfamily Main\+Scene\+Manager\+::\+Main\+Scene\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_main_scene_origin}{Main\+Scene\+Origin}} $\ast$}]{first\+\_\+scene = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_scene_manager_a5411d96b5ff80847fe45547b61c842dc}\label{class_main_scene_manager_a5411d96b5ff80847fe45547b61c842dc}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!````~Main\+Scene\+Manager@{$\sim$\+Main\+Scene\+Manager}}
+\index{````~Main\+Scene\+Manager@{$\sim$\+Main\+Scene\+Manager}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Main\+Scene\+Manager()}{~MainSceneManager()}}
+{\footnotesize\ttfamily Main\+Scene\+Manager\+::$\sim$\+Main\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_main_scene_manager_ae74ade9e9b60dd29f36d67918268d073}\label{class_main_scene_manager_ae74ade9e9b60dd29f36d67918268d073}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Draw\+Registration\+Scene@{Draw\+Registration\+Scene}}
+\index{Draw\+Registration\+Scene@{Draw\+Registration\+Scene}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Draw\+Registration\+Scene()}{DrawRegistrationScene()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Draw\+Registration\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_scene_manager_af73dc8b4d1e153ec2b27e2b133e5f599}\label{class_main_scene_manager_af73dc8b4d1e153ec2b27e2b133e5f599}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Registration\+Change\+Scene@{Registration\+Change\+Scene}}
+\index{Registration\+Change\+Scene@{Registration\+Change\+Scene}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Registration\+Change\+Scene()}{RegistrationChangeScene()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Registration\+Change\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_main_scene_origin}{Main\+Scene\+Origin}} $\ast$}]{change\+\_\+scene }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_scene_manager_a40e3ea4d41259a9bdcdf0622d65430c0}\label{class_main_scene_manager_a40e3ea4d41259a9bdcdf0622d65430c0}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Registration\+Reset\+Current\+Scene@{Registration\+Reset\+Current\+Scene}}
+\index{Registration\+Reset\+Current\+Scene@{Registration\+Reset\+Current\+Scene}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Registration\+Reset\+Current\+Scene()}{RegistrationResetCurrentScene()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Registration\+Reset\+Current\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_scene_manager_aec20589b9410c2a63470e13f3d45e6cb}\label{class_main_scene_manager_aec20589b9410c2a63470e13f3d45e6cb}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Set\+Fade\+Color@{Set\+Fade\+Color}}
+\index{Set\+Fade\+Color@{Set\+Fade\+Color}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Fade\+Color()}{SetFadeColor()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Set\+Fade\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_main_scene_manager_acc3cb332f6d2ab7606a3a02aaf1a31a5}\label{class_main_scene_manager_acc3cb332f6d2ab7606a3a02aaf1a31a5}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Set\+Fade\+Speed@{Set\+Fade\+Speed}}
+\index{Set\+Fade\+Speed@{Set\+Fade\+Speed}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Fade\+Speed()}{SetFadeSpeed()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Set\+Fade\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_main_scene_manager_a0bc7484976a4ccd3a316dbcb8f65f133}\label{class_main_scene_manager_a0bc7484976a4ccd3a316dbcb8f65f133}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Set\+Fade\+Type@{Set\+Fade\+Type}}
+\index{Set\+Fade\+Type@{Set\+Fade\+Type}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Fade\+Type()}{SetFadeType()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Set\+Fade\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_main_scene_manager_a07a720b6bb727df98ce6d87c9b1cbb5b}\label{class_main_scene_manager_a07a720b6bb727df98ce6d87c9b1cbb5b}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Update@{Update}}
+\index{Update@{Update}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_scene_manager_a39d8cbebf57b927510f7af4b2c75c25a}\label{class_main_scene_manager_a39d8cbebf57b927510f7af4b2c75c25a}} 
+\index{Main\+Scene\+Manager@{Main\+Scene\+Manager}!Update\+Registration\+Scene@{Update\+Registration\+Scene}}
+\index{Update\+Registration\+Scene@{Update\+Registration\+Scene}!Main\+Scene\+Manager@{Main\+Scene\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Registration\+Scene()}{UpdateRegistrationScene()}}
+{\footnotesize\ttfamily void Main\+Scene\+Manager\+::\+Update\+Registration\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Main\+Scene\+Manager/\mbox{\hyperlink{_main_scene_manager_8h}{Main\+Scene\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Main\+Scene\+Manager/\mbox{\hyperlink{_main_scene_manager_8cpp}{Main\+Scene\+Manager.\+cpp}}\end{DoxyCompactItemize}

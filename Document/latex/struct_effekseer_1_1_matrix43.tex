@@ -1,0 +1,358 @@
+\hypertarget{struct_effekseer_1_1_matrix43}{}\section{Effekseer\+:\+:Matrix43 構造体}
+\label{struct_effekseer_1_1_matrix43}\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+
+
+4x3行列  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a17bf676d8a89baaa9d40637d6a643885}{Indentity}} ()
+\begin{DoxyCompactList}\small\item\em 単位行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a1ace4a644fd8341ab5ebb2370b7f3cc9}{Scaling}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em 拡大行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a8bedcc8419aaf6587f9cfcc958b9afe4}{RotationX}} (float angle)
+\begin{DoxyCompactList}\small\item\em 反時計周り方向の\+X軸回転行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a86c2ba3a6c47c479266218e06da905a8}{RotationY}} (float angle)
+\begin{DoxyCompactList}\small\item\em 反時計周り方向の\+Y軸回転行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a5e37a336a79787b7a45c836403f3bb62}{RotationZ}} (float angle)
+\begin{DoxyCompactList}\small\item\em 反時計周り方向の\+Z軸回転行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_aba8560d7ee729de8d32d3e67506ac687}{Rotation\+X\+YZ}} (float rx, float ry, float rz)
+\begin{DoxyCompactList}\small\item\em 反時計周り方向の\+X\+Y\+Z軸回転行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a96455579cd7fa90c40f9a55809b80e49}{Rotation\+Z\+XY}} (float rz, float rx, float ry)
+\begin{DoxyCompactList}\small\item\em 反時計周り方向の\+Z\+X\+Y軸回転行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a4ffc1cca84b357e8d655916eafd251c0}{Rotation\+Axis}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&axis, float angle)
+\begin{DoxyCompactList}\small\item\em 任意軸に対する反時計周り方向回転行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a912fd92dbc2c19df890d5cb0da0e0143}{Rotation\+Axis}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&axis, float s, float c)
+\begin{DoxyCompactList}\small\item\em 任意軸に対する反時計周り方向回転行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_ab86a1212ba446b26d684b7f4b2361b64}{Translation}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em 移動行列化を行う。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_acd744255ba17ef26cffe31a7add9af28}{Get\+S\+RT}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&s, \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&r, \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&t) const
+\begin{DoxyCompactList}\small\item\em 行列を、拡大、回転、移動の行列とベクトルに分解する。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_afeae9f15d80c7d4965c307e3b3cf9462}{Get\+Scale}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&s) const
+\begin{DoxyCompactList}\small\item\em 行列から拡大ベクトルを取得する。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a66360ac2c7e8ef69819409d3d44dbba1}{Get\+Rotation}} (\mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&r) const
+\begin{DoxyCompactList}\small\item\em 行列から回転行列を取得する。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a1d6f78af215db6380925e866c73ad829}{Get\+Translation}} (\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&t) const
+\begin{DoxyCompactList}\small\item\em 行列から移動ベクトルを取得する。 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_a4632f96e5666f10f2029c3925aaf6a9d}{Set\+S\+RT}} (const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&s, const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&r, const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&t)
+\begin{DoxyCompactList}\small\item\em 行列の拡大、回転、移動を設定する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{struct_effekseer_1_1_matrix43_accff4bf845b1bfec3f6d8fb7e3e60516}{Multiple}} (\mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&out, const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&in1, const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&in2)
+\begin{DoxyCompactList}\small\item\em 行列同士の乗算を行う。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{struct_effekseer_1_1_matrix43_ae2c06e2b30bcc9cc28d11bd72674bbd2}{Value}} \mbox{[}4\mbox{]}\mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em 行列の値 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+4x3行列 
+
+\begin{DoxyNote}{覚え書き}
+右手系(回転\+:反時計回り)~\newline
+ V\mbox{[}x,y,z,1\mbox{]} $\ast$ M の形でベクトルとの乗算が可能である。~\newline
+ \mbox{[}0,0\mbox{]}\mbox{[}0,1\mbox{]}\mbox{[}0,2\mbox{]}~\newline
+ \mbox{[}1,0\mbox{]}\mbox{[}1,1\mbox{]}\mbox{[}1,2\mbox{]}~\newline
+ \mbox{[}2,0\mbox{]}\mbox{[}2,1\mbox{]}\mbox{[}2,2\mbox{]}~\newline
+ \mbox{[}3,0\mbox{]}\mbox{[}3,1\mbox{]}\mbox{[}3,2\mbox{]}~\newline
+ 
+\end{DoxyNote}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a66360ac2c7e8ef69819409d3d44dbba1}\label{struct_effekseer_1_1_matrix43_a66360ac2c7e8ef69819409d3d44dbba1}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Get\+Rotation@{Get\+Rotation}}
+\index{Get\+Rotation@{Get\+Rotation}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Get\+Rotation()}{GetRotation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Get\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{r }\end{DoxyParamCaption}) const}
+
+
+
+行列から回転行列を取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em s} & \mbox{[}out\mbox{]} 回転行列 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_afeae9f15d80c7d4965c307e3b3cf9462}\label{struct_effekseer_1_1_matrix43_afeae9f15d80c7d4965c307e3b3cf9462}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Get\+Scale@{Get\+Scale}}
+\index{Get\+Scale@{Get\+Scale}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Get\+Scale()}{GetScale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Get\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+行列から拡大ベクトルを取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em s} & \mbox{[}out\mbox{]} 拡大ベクトル \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_acd744255ba17ef26cffe31a7add9af28}\label{struct_effekseer_1_1_matrix43_acd744255ba17ef26cffe31a7add9af28}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Get\+S\+RT@{Get\+S\+RT}}
+\index{Get\+S\+RT@{Get\+S\+RT}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Get\+S\+R\+T()}{GetSRT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Get\+S\+RT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{s,  }\item[{\mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{r,  }\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+行列を、拡大、回転、移動の行列とベクトルに分解する。 
+
+
+\begin{DoxyParams}{引数}
+{\em s} & \mbox{[}out\mbox{]} 拡大行列 \\
+\hline
+{\em r} & \mbox{[}out\mbox{]} 回転行列 \\
+\hline
+{\em t} & \mbox{[}out\mbox{]} 位置 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a1d6f78af215db6380925e866c73ad829}\label{struct_effekseer_1_1_matrix43_a1d6f78af215db6380925e866c73ad829}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Get\+Translation@{Get\+Translation}}
+\index{Get\+Translation@{Get\+Translation}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Get\+Translation()}{GetTranslation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Get\+Translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+行列から移動ベクトルを取得する。 
+
+
+\begin{DoxyParams}{引数}
+{\em t} & \mbox{[}out\mbox{]} 移動ベクトル \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a17bf676d8a89baaa9d40637d6a643885}\label{struct_effekseer_1_1_matrix43_a17bf676d8a89baaa9d40637d6a643885}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Indentity@{Indentity}}
+\index{Indentity@{Indentity}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Indentity()}{Indentity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Indentity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+単位行列化を行う。 
+
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_accff4bf845b1bfec3f6d8fb7e3e60516}\label{struct_effekseer_1_1_matrix43_accff4bf845b1bfec3f6d8fb7e3e60516}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Multiple@{Multiple}}
+\index{Multiple@{Multiple}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Multiple()}{Multiple()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Multiple (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{out,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{in1,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{in2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+行列同士の乗算を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em out} & \mbox{[}out\mbox{]} 結果 \\
+\hline
+{\em in1} & \mbox{[}in\mbox{]} 乗算の左側 \\
+\hline
+{\em in2} & \mbox{[}in\mbox{]} 乗算の右側 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a4ffc1cca84b357e8d655916eafd251c0}\label{struct_effekseer_1_1_matrix43_a4ffc1cca84b357e8d655916eafd251c0}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Rotation\+Axis@{Rotation\+Axis}}
+\index{Rotation\+Axis@{Rotation\+Axis}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Rotation\+Axis()}{RotationAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Rotation\+Axis (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+任意軸に対する反時計周り方向回転行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em axis} & \mbox{[}in\mbox{]} 回転軸 \\
+\hline
+{\em angle} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a912fd92dbc2c19df890d5cb0da0e0143}\label{struct_effekseer_1_1_matrix43_a912fd92dbc2c19df890d5cb0da0e0143}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Rotation\+Axis@{Rotation\+Axis}}
+\index{Rotation\+Axis@{Rotation\+Axis}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Rotation\+Axis()}{RotationAxis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Rotation\+Axis (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{axis,  }\item[{float}]{s,  }\item[{float}]{c }\end{DoxyParamCaption})}
+
+
+
+任意軸に対する反時計周り方向回転行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em axis} & \mbox{[}in\mbox{]} 回転軸 \\
+\hline
+{\em s} & \mbox{[}in\mbox{]} サイン \\
+\hline
+{\em c} & \mbox{[}in\mbox{]} コサイン \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a8bedcc8419aaf6587f9cfcc958b9afe4}\label{struct_effekseer_1_1_matrix43_a8bedcc8419aaf6587f9cfcc958b9afe4}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!RotationX@{RotationX}}
+\index{RotationX@{RotationX}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Rotation\+X()}{RotationX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+RotationX (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+反時計周り方向の\+X軸回転行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em angle} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_aba8560d7ee729de8d32d3e67506ac687}\label{struct_effekseer_1_1_matrix43_aba8560d7ee729de8d32d3e67506ac687}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Rotation\+X\+YZ@{Rotation\+X\+YZ}}
+\index{Rotation\+X\+YZ@{Rotation\+X\+YZ}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Rotation\+X\+Y\+Z()}{RotationXYZ()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Rotation\+X\+YZ (\begin{DoxyParamCaption}\item[{float}]{rx,  }\item[{float}]{ry,  }\item[{float}]{rz }\end{DoxyParamCaption})}
+
+
+
+反時計周り方向の\+X\+Y\+Z軸回転行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em rx} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+{\em ry} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+{\em rz} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a86c2ba3a6c47c479266218e06da905a8}\label{struct_effekseer_1_1_matrix43_a86c2ba3a6c47c479266218e06da905a8}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!RotationY@{RotationY}}
+\index{RotationY@{RotationY}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Rotation\+Y()}{RotationY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+RotationY (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+反時計周り方向の\+Y軸回転行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em angle} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a5e37a336a79787b7a45c836403f3bb62}\label{struct_effekseer_1_1_matrix43_a5e37a336a79787b7a45c836403f3bb62}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!RotationZ@{RotationZ}}
+\index{RotationZ@{RotationZ}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Rotation\+Z()}{RotationZ()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+RotationZ (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+反時計周り方向の\+Z軸回転行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em angle} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a96455579cd7fa90c40f9a55809b80e49}\label{struct_effekseer_1_1_matrix43_a96455579cd7fa90c40f9a55809b80e49}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Rotation\+Z\+XY@{Rotation\+Z\+XY}}
+\index{Rotation\+Z\+XY@{Rotation\+Z\+XY}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Rotation\+Z\+X\+Y()}{RotationZXY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Rotation\+Z\+XY (\begin{DoxyParamCaption}\item[{float}]{rz,  }\item[{float}]{rx,  }\item[{float}]{ry }\end{DoxyParamCaption})}
+
+
+
+反時計周り方向の\+Z\+X\+Y軸回転行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em rz} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+{\em rx} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+{\em ry} & \mbox{[}in\mbox{]} 角度(ラジアン) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a1ace4a644fd8341ab5ebb2370b7f3cc9}\label{struct_effekseer_1_1_matrix43_a1ace4a644fd8341ab5ebb2370b7f3cc9}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Scaling@{Scaling}}
+\index{Scaling@{Scaling}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Scaling()}{Scaling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Scaling (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+拡大行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em x} & \mbox{[}in\mbox{]} X方向拡大率 \\
+\hline
+{\em y} & \mbox{[}in\mbox{]} Y方向拡大率 \\
+\hline
+{\em z} & \mbox{[}in\mbox{]} Z方向拡大率 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_a4632f96e5666f10f2029c3925aaf6a9d}\label{struct_effekseer_1_1_matrix43_a4632f96e5666f10f2029c3925aaf6a9d}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Set\+S\+RT@{Set\+S\+RT}}
+\index{Set\+S\+RT@{Set\+S\+RT}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Set\+S\+R\+T()}{SetSRT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Set\+S\+RT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{s,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_matrix43}{Matrix43}} \&}]{r,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Vector3D}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+行列の拡大、回転、移動を設定する。 
+
+
+\begin{DoxyParams}{引数}
+{\em s} & \mbox{[}in\mbox{]} 拡大行列 \\
+\hline
+{\em r} & \mbox{[}in\mbox{]} 回転行列 \\
+\hline
+{\em t} & \mbox{[}in\mbox{]} 位置 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_ab86a1212ba446b26d684b7f4b2361b64}\label{struct_effekseer_1_1_matrix43_ab86a1212ba446b26d684b7f4b2361b64}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Translation@{Translation}}
+\index{Translation@{Translation}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Translation()}{Translation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Matrix43\+::\+Translation (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+移動行列化を行う。 
+
+
+\begin{DoxyParams}{引数}
+{\em x} & \mbox{[}in\mbox{]} X方向移動 \\
+\hline
+{\em y} & \mbox{[}in\mbox{]} Y方向移動 \\
+\hline
+{\em z} & \mbox{[}in\mbox{]} Z方向移動 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{struct_effekseer_1_1_matrix43_ae2c06e2b30bcc9cc28d11bd72674bbd2}\label{struct_effekseer_1_1_matrix43_ae2c06e2b30bcc9cc28d11bd72674bbd2}} 
+\index{Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}!Value@{Value}}
+\index{Value@{Value}!Effekseer\+::\+Matrix43@{Effekseer\+::\+Matrix43}}
+\subsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily float Effekseer\+::\+Matrix43\+::\+Value\mbox{[}4\mbox{]}\mbox{[}3\mbox{]}}
+
+
+
+行列の値 
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{class_collision_object}{}\section{Collision\+Object クラス}
+\label{class_collision_object}\index{Collision\+Object@{Collision\+Object}}
+
+
+{\ttfamily \#include $<$Collision\+Object.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_object_aab884f4103bb369b503f5e937c7c2451}{Collision\+Object}} (\mbox{\hyperlink{class_collision_shape_origin}{Collision\+Shape\+Origin}} $\ast$collision\+\_\+shape, int tag=T\+A\+G\+\_\+\+N\+O\+NE)
+\item 
+\mbox{\hyperlink{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1}{$\sim$\+Collision\+Object}} ()
+\item 
+void \mbox{\hyperlink{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}{Reset\+Hit\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_collision_object_acd9790e26ebd136bf4ad3dd4eb56c881}{Set\+Hit\+Vector}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} hit\+\_\+vector)
+\item 
+void \mbox{\hyperlink{class_collision_object_a22b0732ec2a005fe03991ae528c82f4c}{Set\+Is\+Judgment}} (bool is\+\_\+judgment)
+\item 
+\mbox{\hyperlink{class_collision_shape_origin}{Collision\+Shape\+Origin}} $\ast$ \mbox{\hyperlink{class_collision_object_a91922573ea16575f5a8896f77efe9957}{Get\+Collision\+Shape}} () const
+\item 
+int \mbox{\hyperlink{class_collision_object_a3d81adc726fd092fcd26efb4ddfcfd99}{Get\+Tag}} () const
+\item 
+bool \mbox{\hyperlink{class_collision_object_ac923c4826d5b48f91fc93942e70b097d}{Get\+Is\+Judgment}} () const
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_collision_object_a0ad360e1a97a318cbfdf84be6f84dbcc}{Get\+Hit\+Vector}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_collision_object_aab884f4103bb369b503f5e937c7c2451}\label{class_collision_object_aab884f4103bb369b503f5e937c7c2451}} 
+\index{Collision\+Object@{Collision\+Object}!Collision\+Object@{Collision\+Object}}
+\index{Collision\+Object@{Collision\+Object}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Collision\+Object()}{CollisionObject()}}
+{\footnotesize\ttfamily Collision\+Object\+::\+Collision\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_shape_origin}{Collision\+Shape\+Origin}} $\ast$}]{collision\+\_\+shape,  }\item[{int}]{tag = {\ttfamily TAG\+\_\+NONE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1}\label{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1}} 
+\index{Collision\+Object@{Collision\+Object}!````~Collision\+Object@{$\sim$\+Collision\+Object}}
+\index{````~Collision\+Object@{$\sim$\+Collision\+Object}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Object()}{~CollisionObject()}}
+{\footnotesize\ttfamily Collision\+Object\+::$\sim$\+Collision\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_object_a91922573ea16575f5a8896f77efe9957}\label{class_collision_object_a91922573ea16575f5a8896f77efe9957}} 
+\index{Collision\+Object@{Collision\+Object}!Get\+Collision\+Shape@{Get\+Collision\+Shape}}
+\index{Get\+Collision\+Shape@{Get\+Collision\+Shape}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Get\+Collision\+Shape()}{GetCollisionShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_origin}{Collision\+Shape\+Origin}}$\ast$ Collision\+Object\+::\+Get\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_object_a0ad360e1a97a318cbfdf84be6f84dbcc}\label{class_collision_object_a0ad360e1a97a318cbfdf84be6f84dbcc}} 
+\index{Collision\+Object@{Collision\+Object}!Get\+Hit\+Vector@{Get\+Hit\+Vector}}
+\index{Get\+Hit\+Vector@{Get\+Hit\+Vector}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Get\+Hit\+Vector()}{GetHitVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Collision\+Object\+::\+Get\+Hit\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_object_ac923c4826d5b48f91fc93942e70b097d}\label{class_collision_object_ac923c4826d5b48f91fc93942e70b097d}} 
+\index{Collision\+Object@{Collision\+Object}!Get\+Is\+Judgment@{Get\+Is\+Judgment}}
+\index{Get\+Is\+Judgment@{Get\+Is\+Judgment}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Get\+Is\+Judgment()}{GetIsJudgment()}}
+{\footnotesize\ttfamily bool Collision\+Object\+::\+Get\+Is\+Judgment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_object_a3d81adc726fd092fcd26efb4ddfcfd99}\label{class_collision_object_a3d81adc726fd092fcd26efb4ddfcfd99}} 
+\index{Collision\+Object@{Collision\+Object}!Get\+Tag@{Get\+Tag}}
+\index{Get\+Tag@{Get\+Tag}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Get\+Tag()}{GetTag()}}
+{\footnotesize\ttfamily int Collision\+Object\+::\+Get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}\label{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}} 
+\index{Collision\+Object@{Collision\+Object}!Reset\+Hit\+Data@{Reset\+Hit\+Data}}
+\index{Reset\+Hit\+Data@{Reset\+Hit\+Data}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Reset\+Hit\+Data()}{ResetHitData()}}
+{\footnotesize\ttfamily void Collision\+Object\+::\+Reset\+Hit\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_object_acd9790e26ebd136bf4ad3dd4eb56c881}\label{class_collision_object_acd9790e26ebd136bf4ad3dd4eb56c881}} 
+\index{Collision\+Object@{Collision\+Object}!Set\+Hit\+Vector@{Set\+Hit\+Vector}}
+\index{Set\+Hit\+Vector@{Set\+Hit\+Vector}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Set\+Hit\+Vector()}{SetHitVector()}}
+{\footnotesize\ttfamily void Collision\+Object\+::\+Set\+Hit\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{hit\+\_\+vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_object_a22b0732ec2a005fe03991ae528c82f4c}\label{class_collision_object_a22b0732ec2a005fe03991ae528c82f4c}} 
+\index{Collision\+Object@{Collision\+Object}!Set\+Is\+Judgment@{Set\+Is\+Judgment}}
+\index{Set\+Is\+Judgment@{Set\+Is\+Judgment}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{Set\+Is\+Judgment()}{SetIsJudgment()}}
+{\footnotesize\ttfamily void Collision\+Object\+::\+Set\+Is\+Judgment (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+judgment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision\+Component/\+Collision\+Object/\mbox{\hyperlink{_collision_object_8h}{Collision\+Object.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision\+Component/\+Collision\+Object/\mbox{\hyperlink{_collision_object_8cpp}{Collision\+Object.\+cpp}}\end{DoxyCompactItemize}

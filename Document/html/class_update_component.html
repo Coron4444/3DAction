@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: UpdateComponent クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_update_component.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_update_component-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">UpdateComponent クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_update_component_8h_source.html">UpdateComponent.h</a>&gt;</code></p>
+<div class="dynheader">
+UpdateComponent の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_update_component.png" usemap="#UpdateComponent_map" alt=""/>
+  <map id="UpdateComponent_map" name="UpdateComponent_map">
+<area href="class_component_origin.html" alt="ComponentOrigin" shape="rect" coords="306,0,449,24"/>
+<area href="class_enemy_update.html" alt="EnemyUpdate" shape="rect" coords="0,112,143,136"/>
+<area href="class_player_update.html" alt="PlayerUpdate" shape="rect" coords="153,112,296,136"/>
+<area href="class_push_space_logo_update.html" alt="PushSpaceLogoUpdate" shape="rect" coords="306,112,449,136"/>
+<area href="class_score_update.html" alt="ScoreUpdate" shape="rect" coords="459,112,602,136"/>
+<area href="class_sky_dome_update.html" alt="SkyDomeUpdate" shape="rect" coords="612,112,755,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad654da84b672a40c916ca362f787e1b4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_update_component.html#ad654da84b672a40c916ca362f787e1b4">~UpdateComponent</a> ()</td></tr>
+<tr class="separator:ad654da84b672a40c916ca362f787e1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade313ad8bf19a81e7d098aa830d9f01b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_update_component.html#ade313ad8bf19a81e7d098aa830d9f01b">Update</a> ()=0</td></tr>
+<tr class="separator:ade313ad8bf19a81e7d098aa830d9f01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc61593be4d1feff2db4d9ff1f83f9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_update_component.html#aecc61593be4d1feff2db4d9ff1f83f9f">LateUpdate</a> ()=0</td></tr>
+<tr class="separator:aecc61593be4d1feff2db4d9ff1f83f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636b21061765a1101600c3ad70fadeac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_update_component.html#a636b21061765a1101600c3ad70fadeac">Debug</a> ()</td></tr>
+<tr class="separator:a636b21061765a1101600c3ad70fadeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_component_origin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_component_origin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_component_origin.html">ComponentOrigin</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:af5fc09a42cacd7ba4df66ded1d086970 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#af5fc09a42cacd7ba4df66ded1d086970">~ComponentOrigin</a> ()</td></tr>
+<tr class="separator:af5fc09a42cacd7ba4df66ded1d086970 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f674891257f2272b1636d8b6bb05d81 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#a9f674891257f2272b1636d8b6bb05d81">Init</a> ()=0</td></tr>
+<tr class="separator:a9f674891257f2272b1636d8b6bb05d81 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f89a93f9c1954bd53f9750e35e6089d inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#a9f89a93f9c1954bd53f9750e35e6089d">Uninit</a> ()=0</td></tr>
+<tr class="separator:a9f89a93f9c1954bd53f9750e35e6089d inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1eb38e463b1cf2c31589db69b2adef inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#aba1eb38e463b1cf2c31589db69b2adef">SetGameObjectOrigin</a> (<a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *game_object_origin)</td></tr>
+<tr class="separator:aba1eb38e463b1cf2c31589db69b2adef inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fe099f93012bc6e09918a6509c4743 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#ab3fe099f93012bc6e09918a6509c4743">GetGameObjectOrigin</a> ()</td></tr>
+<tr class="separator:ab3fe099f93012bc6e09918a6509c4743 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ad654da84b672a40c916ca362f787e1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad654da84b672a40c916ca362f787e1b4">&#9670;&nbsp;</a></span>~UpdateComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual UpdateComponent::~UpdateComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a636b21061765a1101600c3ad70fadeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636b21061765a1101600c3ad70fadeac">&#9670;&nbsp;</a></span>Debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateComponent::Debug </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_push_space_logo_update.html#ac61b14b1364b606771fc1080da041877">PushSpaceLogoUpdate</a>, <a class="el" href="class_player_update.html#a37e2d025997e1b60d6a02658b00dd503">PlayerUpdate</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="aecc61593be4d1feff2db4d9ff1f83f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc61593be4d1feff2db4d9ff1f83f9f">&#9670;&nbsp;</a></span>LateUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateComponent::LateUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_push_space_logo_update.html#a4423864fb22b1211e92a4317d0b70a44">PushSpaceLogoUpdate</a>, <a class="el" href="class_score_update.html#adc9a48f54828e49c072c298777935893">ScoreUpdate</a>, <a class="el" href="class_player_update.html#ae376f517f3458edfef61ac366aa78e36">PlayerUpdate</a>, <a class="el" href="class_enemy_update.html#ae14e4ebb42ad9043534e53edcba5b242">EnemyUpdate</a>, <a class="el" href="class_sky_dome_update.html#a94347cb50b4dc13528738a7b812da261">SkyDomeUpdate</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="ade313ad8bf19a81e7d098aa830d9f01b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade313ad8bf19a81e7d098aa830d9f01b">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateComponent::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_push_space_logo_update.html#aa07fe6f6f4f072e1f81bc6708dd4727e">PushSpaceLogoUpdate</a>, <a class="el" href="class_score_update.html#aae2b398784079a651ed92eb4c634b1c9">ScoreUpdate</a>, <a class="el" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75">PlayerUpdate</a>, <a class="el" href="class_enemy_update.html#ae9662f3a2d064dc69c0d68293e60f051">EnemyUpdate</a>, <a class="el" href="class_sky_dome_update.html#ae163cb90e4de561fe1f7b2cb311be331">SkyDomeUpdate</a>で実装されています。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/UpdateComponent/<a class="el" href="_update_component_8h_source.html">UpdateComponent.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_update_component.html">UpdateComponent</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

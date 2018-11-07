@@ -1,0 +1,25 @@
+var class_game_object_origin =
+[
+    [ "GameObjectOrigin", "class_game_object_origin.html#a0f262057d72762d4744b7c7306ba5f8e", null ],
+    [ "~GameObjectOrigin", "class_game_object_origin.html#a11fd9b09ec834a887253f82d83191bff", null ],
+    [ "CreatePhysics", "class_game_object_origin.html#ad0b1dff8bffb44125214d60201572041", null ],
+    [ "GetCollisionComponent", "class_game_object_origin.html#af2cfb6cd75e995b7791385fcc1f6f859", null ],
+    [ "GetDrawComponent", "class_game_object_origin.html#a768ddc2525b6fd51b6d23e8f2b7ad744", null ],
+    [ "GetPhysics", "class_game_object_origin.html#a878b71d82a2f2011d2e2a2e9b9e497af", null ],
+    [ "GetTransform", "class_game_object_origin.html#aaef5e72f8ad3eff98522528c1cf6bbc2", null ],
+    [ "GetUpdateComponent", "class_game_object_origin.html#ae78266b6003847e18b9a902a6585a613", null ],
+    [ "Init_SuperClass", "class_game_object_origin.html#a0fccade48b059046d8eee1cbabaaf30a", null ],
+    [ "InitComponent", "class_game_object_origin.html#a63d39d07478d90c11066a89e830d5f41", null ],
+    [ "RegistrationComponentManager", "class_game_object_origin.html#ab2aae550ba6175944b45d2d664579be6", null ],
+    [ "ReleaseComponentManager", "class_game_object_origin.html#affeb64052b115460db71c5b7cfa170d6", null ],
+    [ "ReleaseObject", "class_game_object_origin.html#a8fcc96e945f103f2f7daf009ee2b83dc", null ],
+    [ "Reset", "class_game_object_origin.html#af9af378a4fd9028316a6fdb461ed6a10", null ],
+    [ "SetCollisionComponent", "class_game_object_origin.html#acdf9e2140b71df0309d28b4dd90476d7", null ],
+    [ "SetComponentAll", "class_game_object_origin.html#a6dc8d3becc806dd6cf89663af981127e", null ],
+    [ "SetDrawComponent", "class_game_object_origin.html#a525d9ecb39e10295bda324afbefbcc74", null ],
+    [ "SetGameObject", "class_game_object_origin.html#ab30e4d2dee1b9a1b10cdaccc004804eb", null ],
+    [ "SetUpdateComponent", "class_game_object_origin.html#af6d261955caa797840b7af719a17b735", null ],
+    [ "Uninit", "class_game_object_origin.html#aeac8fc4a1f625982313a9a60dd35d016", null ],
+    [ "Uninit_SuperClass", "class_game_object_origin.html#a788deb7503c9fa090193138cd13247ba", null ],
+    [ "UninitComponent", "class_game_object_origin.html#a70d7e7923ff9456b0bc7f5f233f49159", null ]
+];

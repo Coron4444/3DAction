@@ -1,0 +1,90 @@
+\hypertarget{class_texture_manager}{}\section{Texture\+Manager クラス}
+\label{class_texture_manager}\index{Texture\+Manager@{Texture\+Manager}}
+
+
+{\ttfamily \#include $<$Texture\+Manager.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_texture_manager_aee4c784f3f32bfe810bf66313735dece}{Init\+All\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_texture_manager_aed1e9666d0ef8698db754280a1d4bad4}{Init\+Share\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_texture_manager_abfba2c4293e692a351d9b98e28f6ed31}{Init\+Unique\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_texture_manager_a5e81df5cd89e7794fb9230357663a729}{Uninit\+All\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_texture_manager_a770b76a28bac4c20c16960f58a2d3b77}{Uninit\+Share\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_texture_manager_a9d9dd61edf4153bd70ba830ae2dc62e8}{Uninit\+Unique\+Data}} ()
+\item 
+static \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_texture_manager_a571c5b288fe16c53965f45d8bd7c8769}{Add\+Share\+Data}} (const std\+::string $\ast$key\+\_\+name, const std\+::string $\ast$file\+\_\+path=nullptr, int pattern\+\_\+num\+\_\+all=1, int pattern\+\_\+num\+\_\+width=1, int pattern\+\_\+num\+\_\+height=1)
+\item 
+static \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_texture_manager_af86003fd2afaf09f0295745d486e42e4}{Add\+Unique\+Data}} (const std\+::string $\ast$key\+\_\+name, const std\+::string $\ast$file\+\_\+path=nullptr, int pattern\+\_\+num\+\_\+all=1, int pattern\+\_\+num\+\_\+width=1, int pattern\+\_\+num\+\_\+height=1)
+\item 
+static \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_texture_manager_a18d1f3418511075804f9d11cff1010ff}{Get\+Texture\+Object}} (const std\+::string $\ast$key\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_texture_manager_a571c5b288fe16c53965f45d8bd7c8769}\label{class_texture_manager_a571c5b288fe16c53965f45d8bd7c8769}} 
+\index{Texture\+Manager@{Texture\+Manager}!Add\+Share\+Data@{Add\+Share\+Data}}
+\index{Add\+Share\+Data@{Add\+Share\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Share\+Data()}{AddShareData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ Texture\+Manager\+::\+Add\+Share\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr},  }\item[{int}]{pattern\+\_\+num\+\_\+all = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+width = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+height = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_af86003fd2afaf09f0295745d486e42e4}\label{class_texture_manager_af86003fd2afaf09f0295745d486e42e4}} 
+\index{Texture\+Manager@{Texture\+Manager}!Add\+Unique\+Data@{Add\+Unique\+Data}}
+\index{Add\+Unique\+Data@{Add\+Unique\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Unique\+Data()}{AddUniqueData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ Texture\+Manager\+::\+Add\+Unique\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr},  }\item[{int}]{pattern\+\_\+num\+\_\+all = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+width = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+height = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_a18d1f3418511075804f9d11cff1010ff}\label{class_texture_manager_a18d1f3418511075804f9d11cff1010ff}} 
+\index{Texture\+Manager@{Texture\+Manager}!Get\+Texture\+Object@{Get\+Texture\+Object}}
+\index{Get\+Texture\+Object@{Get\+Texture\+Object}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Texture\+Object()}{GetTextureObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ Texture\+Manager\+::\+Get\+Texture\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_aee4c784f3f32bfe810bf66313735dece}\label{class_texture_manager_aee4c784f3f32bfe810bf66313735dece}} 
+\index{Texture\+Manager@{Texture\+Manager}!Init\+All\+Data@{Init\+All\+Data}}
+\index{Init\+All\+Data@{Init\+All\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Init\+All\+Data()}{InitAllData()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::\+Init\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_aed1e9666d0ef8698db754280a1d4bad4}\label{class_texture_manager_aed1e9666d0ef8698db754280a1d4bad4}} 
+\index{Texture\+Manager@{Texture\+Manager}!Init\+Share\+Data@{Init\+Share\+Data}}
+\index{Init\+Share\+Data@{Init\+Share\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Share\+Data()}{InitShareData()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::\+Init\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_abfba2c4293e692a351d9b98e28f6ed31}\label{class_texture_manager_abfba2c4293e692a351d9b98e28f6ed31}} 
+\index{Texture\+Manager@{Texture\+Manager}!Init\+Unique\+Data@{Init\+Unique\+Data}}
+\index{Init\+Unique\+Data@{Init\+Unique\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Unique\+Data()}{InitUniqueData()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::\+Init\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_a5e81df5cd89e7794fb9230357663a729}\label{class_texture_manager_a5e81df5cd89e7794fb9230357663a729}} 
+\index{Texture\+Manager@{Texture\+Manager}!Uninit\+All\+Data@{Uninit\+All\+Data}}
+\index{Uninit\+All\+Data@{Uninit\+All\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+All\+Data()}{UninitAllData()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::\+Uninit\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_a770b76a28bac4c20c16960f58a2d3b77}\label{class_texture_manager_a770b76a28bac4c20c16960f58a2d3b77}} 
+\index{Texture\+Manager@{Texture\+Manager}!Uninit\+Share\+Data@{Uninit\+Share\+Data}}
+\index{Uninit\+Share\+Data@{Uninit\+Share\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Share\+Data()}{UninitShareData()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::\+Uninit\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_texture_manager_a9d9dd61edf4153bd70ba830ae2dc62e8}\label{class_texture_manager_a9d9dd61edf4153bd70ba830ae2dc62e8}} 
+\index{Texture\+Manager@{Texture\+Manager}!Uninit\+Unique\+Data@{Uninit\+Unique\+Data}}
+\index{Uninit\+Unique\+Data@{Uninit\+Unique\+Data}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Unique\+Data()}{UninitUniqueData()}}
+{\footnotesize\ttfamily void Texture\+Manager\+::\+Uninit\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Texture/\+Texture\+Manager/\mbox{\hyperlink{_texture_manager_8h}{Texture\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Texture/\+Texture\+Manager/\mbox{\hyperlink{_texture_manager_8cpp}{Texture\+Manager.\+cpp}}\end{DoxyCompactItemize}

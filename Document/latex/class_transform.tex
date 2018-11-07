@@ -1,0 +1,237 @@
+\hypertarget{class_transform}{}\section{Transform クラス}
+\label{class_transform}\index{Transform@{Transform}}
+
+
+{\ttfamily \#include $<$Transform.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transform_aa08ca4266efabc768973cdeea51945ab}{Transform}} ()
+\item 
+\mbox{\hyperlink{class_transform_aa72e286c069850db80927b0e6554cd3e}{$\sim$\+Transform}} ()
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_transform_addff6461a77b9f5c5249e46deb5c2c19}{Get\+Position}} ()
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_transform_accedf33a4ddbdcf2d4fc4274f85bf818}{Get\+Scale}} ()
+\item 
+float $\ast$ \mbox{\hyperlink{class_transform_a8c4966ea0a5d6cafa79c430e31bf0dff}{Get\+Angle\+Pitch}} ()
+\item 
+float $\ast$ \mbox{\hyperlink{class_transform_a8be9cd3526cc18d64e47b55f4c527dd8}{Get\+Angle\+Yaw}} ()
+\item 
+float $\ast$ \mbox{\hyperlink{class_transform_a124d6afb5dd0a86952c99f1cec72e394}{Get\+Angle\+Roll}} ()
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_transform_a1bd5cddc216e7fafe12e5b605cb780ea}{Get\+Angle\+Yaw\+Pitch\+Roll}} ()
+\item 
+void \mbox{\hyperlink{class_transform_ab6f7342cb4eca555c02a85c999d499dc}{Set\+Look\+At\+Speed}} (float look\+\_\+at\+\_\+speed)
+\item 
+float \mbox{\hyperlink{class_transform_a79fdb2cb4eb1e4abf48e0f9fd74707ba}{Get\+Look\+At\+Speed}} ()
+\item 
+float \mbox{\hyperlink{class_transform_a14b7b06632d6a47e99dc67aecbd7acc7}{Get\+Look\+At\+Change\+Amount}} ()
+\item 
+void \mbox{\hyperlink{class_transform_a39b78acbdbf3ee98cad0c4e640988745}{Set\+Look\+At\+Vector}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} look\+\_\+at\+\_\+vector)
+\item 
+void \mbox{\hyperlink{class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4}{Set\+Target\+Quaternion}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} axis, float angle)
+\item 
+void \mbox{\hyperlink{class_transform_afe5350bb1558256115e14c0669611acd}{Update\+Axis\+Vector}} ()
+\item 
+const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_transform_a25e4832e15334d74ff847f0ff0b3564f}{Get\+Forawrd}} ()
+\item 
+const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_transform_a9f5700481ae42556f763726947feaf36}{Get\+Up}} ()
+\item 
+const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_transform_a57d1da919d8df7d2452149c4bbade4d2}{Get\+Right}} ()
+\item 
+\mbox{\hyperlink{class_axis_vector}{Axis\+Vector}} $\ast$ \mbox{\hyperlink{class_transform_ad300be34dddc6109ca142452e65aa77d}{Get\+Axis\+Vector}} ()
+\item 
+void \mbox{\hyperlink{class_transform_af1a2dcb4a9d37dd71c203ec248535887}{Update\+World\+Matrix\+S\+RT}} ()
+\item 
+void \mbox{\hyperlink{class_transform_a3d56e19fba7f44d5f938d62481846fbc}{Update\+World\+Matrix\+I\+S\+RT}} ()
+\item 
+void \mbox{\hyperlink{class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de}{Update\+Inverse\+Matrix}} (const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$matrix)
+\item 
+void \mbox{\hyperlink{class_transform_a486ae5501b5081b22ee053f787e0e4a2}{Update\+Transpose\+Matrix}} (const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$matrix)
+\item 
+void \mbox{\hyperlink{class_transform_a053037b225e6fb11e680cc60df15dd45}{Transpose\+Matrix\+Translation\+Off}} ()
+\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_transform_a060f9487a18ad34549eab53a7ca5100d}{Get\+World\+Matrix}} ()
+\item 
+\mbox{\hyperlink{class_matrix_extend}{Matrix\+Extend}} $\ast$ \mbox{\hyperlink{class_transform_ab1101d4467d772f3ddc0558586e39c79}{Get\+Matrix\+Extend}} ()
+\item 
+void \mbox{\hyperlink{class_transform_af02515be1947506212ca1c23223ce0b3}{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT}} ()
+\item 
+void \mbox{\hyperlink{class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2}{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_transform_aa08ca4266efabc768973cdeea51945ab}\label{class_transform_aa08ca4266efabc768973cdeea51945ab}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_aa72e286c069850db80927b0e6554cd3e}\label{class_transform_aa72e286c069850db80927b0e6554cd3e}} 
+\index{Transform@{Transform}!````~Transform@{$\sim$\+Transform}}
+\index{````~Transform@{$\sim$\+Transform}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{$\sim$\+Transform()}{~Transform()}}
+{\footnotesize\ttfamily Transform\+::$\sim$\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_transform_a8c4966ea0a5d6cafa79c430e31bf0dff}\label{class_transform_a8c4966ea0a5d6cafa79c430e31bf0dff}} 
+\index{Transform@{Transform}!Get\+Angle\+Pitch@{Get\+Angle\+Pitch}}
+\index{Get\+Angle\+Pitch@{Get\+Angle\+Pitch}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Angle\+Pitch()}{GetAnglePitch()}}
+{\footnotesize\ttfamily float$\ast$ Transform\+::\+Get\+Angle\+Pitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a124d6afb5dd0a86952c99f1cec72e394}\label{class_transform_a124d6afb5dd0a86952c99f1cec72e394}} 
+\index{Transform@{Transform}!Get\+Angle\+Roll@{Get\+Angle\+Roll}}
+\index{Get\+Angle\+Roll@{Get\+Angle\+Roll}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Angle\+Roll()}{GetAngleRoll()}}
+{\footnotesize\ttfamily float$\ast$ Transform\+::\+Get\+Angle\+Roll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a8be9cd3526cc18d64e47b55f4c527dd8}\label{class_transform_a8be9cd3526cc18d64e47b55f4c527dd8}} 
+\index{Transform@{Transform}!Get\+Angle\+Yaw@{Get\+Angle\+Yaw}}
+\index{Get\+Angle\+Yaw@{Get\+Angle\+Yaw}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Angle\+Yaw()}{GetAngleYaw()}}
+{\footnotesize\ttfamily float$\ast$ Transform\+::\+Get\+Angle\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a1bd5cddc216e7fafe12e5b605cb780ea}\label{class_transform_a1bd5cddc216e7fafe12e5b605cb780ea}} 
+\index{Transform@{Transform}!Get\+Angle\+Yaw\+Pitch\+Roll@{Get\+Angle\+Yaw\+Pitch\+Roll}}
+\index{Get\+Angle\+Yaw\+Pitch\+Roll@{Get\+Angle\+Yaw\+Pitch\+Roll}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Angle\+Yaw\+Pitch\+Roll()}{GetAngleYawPitchRoll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Transform\+::\+Get\+Angle\+Yaw\+Pitch\+Roll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_ad300be34dddc6109ca142452e65aa77d}\label{class_transform_ad300be34dddc6109ca142452e65aa77d}} 
+\index{Transform@{Transform}!Get\+Axis\+Vector@{Get\+Axis\+Vector}}
+\index{Get\+Axis\+Vector@{Get\+Axis\+Vector}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Axis\+Vector()}{GetAxisVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_axis_vector}{Axis\+Vector}}$\ast$ Transform\+::\+Get\+Axis\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a25e4832e15334d74ff847f0ff0b3564f}\label{class_transform_a25e4832e15334d74ff847f0ff0b3564f}} 
+\index{Transform@{Transform}!Get\+Forawrd@{Get\+Forawrd}}
+\index{Get\+Forawrd@{Get\+Forawrd}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Forawrd()}{GetForawrd()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Transform\+::\+Get\+Forawrd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a14b7b06632d6a47e99dc67aecbd7acc7}\label{class_transform_a14b7b06632d6a47e99dc67aecbd7acc7}} 
+\index{Transform@{Transform}!Get\+Look\+At\+Change\+Amount@{Get\+Look\+At\+Change\+Amount}}
+\index{Get\+Look\+At\+Change\+Amount@{Get\+Look\+At\+Change\+Amount}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Look\+At\+Change\+Amount()}{GetLookAtChangeAmount()}}
+{\footnotesize\ttfamily float Transform\+::\+Get\+Look\+At\+Change\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a79fdb2cb4eb1e4abf48e0f9fd74707ba}\label{class_transform_a79fdb2cb4eb1e4abf48e0f9fd74707ba}} 
+\index{Transform@{Transform}!Get\+Look\+At\+Speed@{Get\+Look\+At\+Speed}}
+\index{Get\+Look\+At\+Speed@{Get\+Look\+At\+Speed}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Look\+At\+Speed()}{GetLookAtSpeed()}}
+{\footnotesize\ttfamily float Transform\+::\+Get\+Look\+At\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_ab1101d4467d772f3ddc0558586e39c79}\label{class_transform_ab1101d4467d772f3ddc0558586e39c79}} 
+\index{Transform@{Transform}!Get\+Matrix\+Extend@{Get\+Matrix\+Extend}}
+\index{Get\+Matrix\+Extend@{Get\+Matrix\+Extend}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Matrix\+Extend()}{GetMatrixExtend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matrix_extend}{Matrix\+Extend}}$\ast$ Transform\+::\+Get\+Matrix\+Extend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_addff6461a77b9f5c5249e46deb5c2c19}\label{class_transform_addff6461a77b9f5c5249e46deb5c2c19}} 
+\index{Transform@{Transform}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Transform\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a57d1da919d8df7d2452149c4bbade4d2}\label{class_transform_a57d1da919d8df7d2452149c4bbade4d2}} 
+\index{Transform@{Transform}!Get\+Right@{Get\+Right}}
+\index{Get\+Right@{Get\+Right}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Right()}{GetRight()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Transform\+::\+Get\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_accedf33a4ddbdcf2d4fc4274f85bf818}\label{class_transform_accedf33a4ddbdcf2d4fc4274f85bf818}} 
+\index{Transform@{Transform}!Get\+Scale@{Get\+Scale}}
+\index{Get\+Scale@{Get\+Scale}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Scale()}{GetScale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Transform\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a9f5700481ae42556f763726947feaf36}\label{class_transform_a9f5700481ae42556f763726947feaf36}} 
+\index{Transform@{Transform}!Get\+Up@{Get\+Up}}
+\index{Get\+Up@{Get\+Up}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Transform\+::\+Get\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a060f9487a18ad34549eab53a7ca5100d}\label{class_transform_a060f9487a18ad34549eab53a7ca5100d}} 
+\index{Transform@{Transform}!Get\+World\+Matrix@{Get\+World\+Matrix}}
+\index{Get\+World\+Matrix@{Get\+World\+Matrix}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Get\+World\+Matrix()}{GetWorldMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Transform\+::\+Get\+World\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_ab6f7342cb4eca555c02a85c999d499dc}\label{class_transform_ab6f7342cb4eca555c02a85c999d499dc}} 
+\index{Transform@{Transform}!Set\+Look\+At\+Speed@{Set\+Look\+At\+Speed}}
+\index{Set\+Look\+At\+Speed@{Set\+Look\+At\+Speed}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Set\+Look\+At\+Speed()}{SetLookAtSpeed()}}
+{\footnotesize\ttfamily void Transform\+::\+Set\+Look\+At\+Speed (\begin{DoxyParamCaption}\item[{float}]{look\+\_\+at\+\_\+speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a39b78acbdbf3ee98cad0c4e640988745}\label{class_transform_a39b78acbdbf3ee98cad0c4e640988745}} 
+\index{Transform@{Transform}!Set\+Look\+At\+Vector@{Set\+Look\+At\+Vector}}
+\index{Set\+Look\+At\+Vector@{Set\+Look\+At\+Vector}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Set\+Look\+At\+Vector()}{SetLookAtVector()}}
+{\footnotesize\ttfamily void Transform\+::\+Set\+Look\+At\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{look\+\_\+at\+\_\+vector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4}\label{class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4}} 
+\index{Transform@{Transform}!Set\+Target\+Quaternion@{Set\+Target\+Quaternion}}
+\index{Set\+Target\+Quaternion@{Set\+Target\+Quaternion}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Set\+Target\+Quaternion()}{SetTargetQuaternion()}}
+{\footnotesize\ttfamily void Transform\+::\+Set\+Target\+Quaternion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_a053037b225e6fb11e680cc60df15dd45}\label{class_transform_a053037b225e6fb11e680cc60df15dd45}} 
+\index{Transform@{Transform}!Transpose\+Matrix\+Translation\+Off@{Transpose\+Matrix\+Translation\+Off}}
+\index{Transpose\+Matrix\+Translation\+Off@{Transpose\+Matrix\+Translation\+Off}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Transpose\+Matrix\+Translation\+Off()}{TransposeMatrixTranslationOff()}}
+{\footnotesize\ttfamily void Transform\+::\+Transpose\+Matrix\+Translation\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_afe5350bb1558256115e14c0669611acd}\label{class_transform_afe5350bb1558256115e14c0669611acd}} 
+\index{Transform@{Transform}!Update\+Axis\+Vector@{Update\+Axis\+Vector}}
+\index{Update\+Axis\+Vector@{Update\+Axis\+Vector}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Update\+Axis\+Vector()}{UpdateAxisVector()}}
+{\footnotesize\ttfamily void Transform\+::\+Update\+Axis\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2}\label{class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2}} 
+\index{Transform@{Transform}!Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT}}
+\index{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+R\+T()}{UpdateAxisVector\_WorldMatrixISRT()}}
+{\footnotesize\ttfamily void Transform\+::\+Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_af02515be1947506212ca1c23223ce0b3}\label{class_transform_af02515be1947506212ca1c23223ce0b3}} 
+\index{Transform@{Transform}!Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT}}
+\index{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+R\+T()}{UpdateAxisVector\_WorldMatrixSRT()}}
+{\footnotesize\ttfamily void Transform\+::\+Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de}\label{class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de}} 
+\index{Transform@{Transform}!Update\+Inverse\+Matrix@{Update\+Inverse\+Matrix}}
+\index{Update\+Inverse\+Matrix@{Update\+Inverse\+Matrix}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Update\+Inverse\+Matrix()}{UpdateInverseMatrix()}}
+{\footnotesize\ttfamily void Transform\+::\+Update\+Inverse\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a486ae5501b5081b22ee053f787e0e4a2}\label{class_transform_a486ae5501b5081b22ee053f787e0e4a2}} 
+\index{Transform@{Transform}!Update\+Transpose\+Matrix@{Update\+Transpose\+Matrix}}
+\index{Update\+Transpose\+Matrix@{Update\+Transpose\+Matrix}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Update\+Transpose\+Matrix()}{UpdateTransposeMatrix()}}
+{\footnotesize\ttfamily void Transform\+::\+Update\+Transpose\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_transform_a3d56e19fba7f44d5f938d62481846fbc}\label{class_transform_a3d56e19fba7f44d5f938d62481846fbc}} 
+\index{Transform@{Transform}!Update\+World\+Matrix\+I\+S\+RT@{Update\+World\+Matrix\+I\+S\+RT}}
+\index{Update\+World\+Matrix\+I\+S\+RT@{Update\+World\+Matrix\+I\+S\+RT}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Update\+World\+Matrix\+I\+S\+R\+T()}{UpdateWorldMatrixISRT()}}
+{\footnotesize\ttfamily void Transform\+::\+Update\+World\+Matrix\+I\+S\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_transform_af1a2dcb4a9d37dd71c203ec248535887}\label{class_transform_af1a2dcb4a9d37dd71c203ec248535887}} 
+\index{Transform@{Transform}!Update\+World\+Matrix\+S\+RT@{Update\+World\+Matrix\+S\+RT}}
+\index{Update\+World\+Matrix\+S\+RT@{Update\+World\+Matrix\+S\+RT}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{Update\+World\+Matrix\+S\+R\+T()}{UpdateWorldMatrixSRT()}}
+{\footnotesize\ttfamily void Transform\+::\+Update\+World\+Matrix\+S\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Vector/\+Transform/\mbox{\hyperlink{_transform_8h}{Transform.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Vector/\+Transform/\mbox{\hyperlink{_transform_8cpp}{Transform.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: AABB クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_a_a_b_b.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="class_a_a_b_b-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">AABB クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_a_a_b_b_8h_source.html">AABB.h</a>&gt;</code></p>
+<div class="dynheader">
+AABB の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_a_a_b_b.png" usemap="#AABB_map" alt=""/>
+  <map id="AABB_map" name="AABB_map">
+<area href="class_collision_shape_origin.html" alt="CollisionShapeOrigin" shape="rect" coords="0,0,131,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a409e2c536eb56fb3e3b1147f8478edea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b.html#a409e2c536eb56fb3e3b1147f8478edea">AABB</a> (<a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> min=<a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>(0.0f, 0.0f, 0.0f), Vec3 max=Vec3(0.0f, 0.0f, 0.0f))</td></tr>
+<tr class="separator:a409e2c536eb56fb3e3b1147f8478edea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5f4956a2043597167ff66821f7b223"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b.html#afd5f4956a2043597167ff66821f7b223">~AABB</a> ()</td></tr>
+<tr class="separator:afd5f4956a2043597167ff66821f7b223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_collision_shape_origin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_collision_shape_origin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collision_shape_origin.html">CollisionShapeOrigin</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a185eecc964a8372f373937c22fa22b82 inherit pub_methods_class_collision_shape_origin"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_origin.html#a185eecc964a8372f373937c22fa22b82">CollisionShapeOrigin</a> (<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0b">Type</a> type)</td></tr>
+<tr class="separator:a185eecc964a8372f373937c22fa22b82 inherit pub_methods_class_collision_shape_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5b171795d247ba27ee8a0399446f68 inherit pub_methods_class_collision_shape_origin"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_origin.html#a0b5b171795d247ba27ee8a0399446f68">~CollisionShapeOrigin</a> ()</td></tr>
+<tr class="separator:a0b5b171795d247ba27ee8a0399446f68 inherit pub_methods_class_collision_shape_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad36bc52116291d14c9d4797f115e60d inherit pub_methods_class_collision_shape_origin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0b">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_origin.html#aad36bc52116291d14c9d4797f115e60d">GetType</a> ()</td></tr>
+<tr class="separator:aad36bc52116291d14c9d4797f115e60d inherit pub_methods_class_collision_shape_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a682f7bc02fc950a24ce8a8e512e4eb52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b.html#a682f7bc02fc950a24ce8a8e512e4eb52">min_</a></td></tr>
+<tr class="separator:a682f7bc02fc950a24ce8a8e512e4eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8dca79cab056729bde7139b219fcbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b.html#a7f8dca79cab056729bde7139b219fcbe">max_</a></td></tr>
+<tr class="separator:a7f8dca79cab056729bde7139b219fcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_types_class_collision_shape_origin"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_collision_shape_origin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collision_shape_origin.html">CollisionShapeOrigin</a> に属する継承公開型</td></tr>
+<tr class="memitem:a67e36d4922d9723caed9c21b1df80f0b inherit pub_types_class_collision_shape_origin"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0b">Type</a> { <br />
+&#160;&#160;<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0baacfe3f00c0769f6e65288b4bb7b65f6a">TYPE_NONE</a> = -1, 
+<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba3f49ffec8bb5c191ca0e131f4a0aa679">TYPE_AABB</a>, 
+<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba4da47de9ef77cdc7ce8d33568c08a6a0">TYPE_CAPSULE</a>, 
+<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0bad42c81c0a2cfce67bc03455c36c67709">TYPE_CYLINDER</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba01bfd26532e547b6382f5ef6943ae45d">TYPE_OBB</a>, 
+<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba4d134d746d386e176463d0fafdd7bfdc">TYPE_PLANE</a>, 
+<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba99afbcd21cc1814358a291b23705aa4f">TYPE_SEGMENT</a>, 
+<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba664d6f18060c3813b3e463c9c6c1bf15">TYPE_SPHERE</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba564325798c6f7ea5bb71e82d3a68bff2">TYPE_TRIANGLE</a>, 
+<a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0baed0e79796dc9a073682d727c1d046cfc">TYPE_MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:a67e36d4922d9723caed9c21b1df80f0b inherit pub_types_class_collision_shape_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a409e2c536eb56fb3e3b1147f8478edea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409e2c536eb56fb3e3b1147f8478edea">&#9670;&nbsp;</a></span>AABB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AABB::AABB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>min</em> = <code><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>(0.0f,&#160;0.0f,&#160;0.0f)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>max</em> = <code><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>(0.0f,&#160;0.0f,&#160;0.0f)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd5f4956a2043597167ff66821f7b223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5f4956a2043597167ff66821f7b223">&#9670;&nbsp;</a></span>~AABB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AABB::~AABB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a7f8dca79cab056729bde7139b219fcbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8dca79cab056729bde7139b219fcbe">&#9670;&nbsp;</a></span>max_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> AABB::max_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a682f7bc02fc950a24ce8a8e512e4eb52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682f7bc02fc950a24ce8a8e512e4eb52">&#9670;&nbsp;</a></span>min_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> AABB::min_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/AABB/<a class="el" href="_a_a_b_b_8h_source.html">AABB.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_a_a_b_b.html">AABB</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

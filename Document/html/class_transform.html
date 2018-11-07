@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DirectX9フレームワーク: Transform クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DirectX9フレームワーク
+   &#160;<span id="projectnumber">version 1.0</span>
+   </div>
+   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_transform.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_transform-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">Transform クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_transform_8h_source.html">Transform.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa08ca4266efabc768973cdeea51945ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#aa08ca4266efabc768973cdeea51945ab">Transform</a> ()</td></tr>
+<tr class="separator:aa08ca4266efabc768973cdeea51945ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72e286c069850db80927b0e6554cd3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#aa72e286c069850db80927b0e6554cd3e">~Transform</a> ()</td></tr>
+<tr class="separator:aa72e286c069850db80927b0e6554cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addff6461a77b9f5c5249e46deb5c2c19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19">GetPosition</a> ()</td></tr>
+<tr class="separator:addff6461a77b9f5c5249e46deb5c2c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accedf33a4ddbdcf2d4fc4274f85bf818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#accedf33a4ddbdcf2d4fc4274f85bf818">GetScale</a> ()</td></tr>
+<tr class="separator:accedf33a4ddbdcf2d4fc4274f85bf818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4966ea0a5d6cafa79c430e31bf0dff"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a8c4966ea0a5d6cafa79c430e31bf0dff">GetAnglePitch</a> ()</td></tr>
+<tr class="separator:a8c4966ea0a5d6cafa79c430e31bf0dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be9cd3526cc18d64e47b55f4c527dd8"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a8be9cd3526cc18d64e47b55f4c527dd8">GetAngleYaw</a> ()</td></tr>
+<tr class="separator:a8be9cd3526cc18d64e47b55f4c527dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124d6afb5dd0a86952c99f1cec72e394"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a124d6afb5dd0a86952c99f1cec72e394">GetAngleRoll</a> ()</td></tr>
+<tr class="separator:a124d6afb5dd0a86952c99f1cec72e394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd5cddc216e7fafe12e5b605cb780ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a1bd5cddc216e7fafe12e5b605cb780ea">GetAngleYawPitchRoll</a> ()</td></tr>
+<tr class="separator:a1bd5cddc216e7fafe12e5b605cb780ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f7342cb4eca555c02a85c999d499dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#ab6f7342cb4eca555c02a85c999d499dc">SetLookAtSpeed</a> (float look_at_speed)</td></tr>
+<tr class="separator:ab6f7342cb4eca555c02a85c999d499dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fdb2cb4eb1e4abf48e0f9fd74707ba"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a79fdb2cb4eb1e4abf48e0f9fd74707ba">GetLookAtSpeed</a> ()</td></tr>
+<tr class="separator:a79fdb2cb4eb1e4abf48e0f9fd74707ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b7b06632d6a47e99dc67aecbd7acc7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a14b7b06632d6a47e99dc67aecbd7acc7">GetLookAtChangeAmount</a> ()</td></tr>
+<tr class="separator:a14b7b06632d6a47e99dc67aecbd7acc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b78acbdbf3ee98cad0c4e640988745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a39b78acbdbf3ee98cad0c4e640988745">SetLookAtVector</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> look_at_vector)</td></tr>
+<tr class="separator:a39b78acbdbf3ee98cad0c4e640988745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cdb5ca9995d9c124f1890d84c92ab4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#ac8cdb5ca9995d9c124f1890d84c92ab4">SetTargetQuaternion</a> (<a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> axis, float angle)</td></tr>
+<tr class="separator:ac8cdb5ca9995d9c124f1890d84c92ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5350bb1558256115e14c0669611acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#afe5350bb1558256115e14c0669611acd">UpdateAxisVector</a> ()</td></tr>
+<tr class="separator:afe5350bb1558256115e14c0669611acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e4832e15334d74ff847f0ff0b3564f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a25e4832e15334d74ff847f0ff0b3564f">GetForawrd</a> ()</td></tr>
+<tr class="separator:a25e4832e15334d74ff847f0ff0b3564f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5700481ae42556f763726947feaf36"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a9f5700481ae42556f763726947feaf36">GetUp</a> ()</td></tr>
+<tr class="separator:a9f5700481ae42556f763726947feaf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d1da919d8df7d2452149c4bbade4d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a57d1da919d8df7d2452149c4bbade4d2">GetRight</a> ()</td></tr>
+<tr class="separator:a57d1da919d8df7d2452149c4bbade4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad300be34dddc6109ca142452e65aa77d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis_vector.html">AxisVector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#ad300be34dddc6109ca142452e65aa77d">GetAxisVector</a> ()</td></tr>
+<tr class="separator:ad300be34dddc6109ca142452e65aa77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a2dcb4a9d37dd71c203ec248535887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#af1a2dcb4a9d37dd71c203ec248535887">UpdateWorldMatrixSRT</a> ()</td></tr>
+<tr class="separator:af1a2dcb4a9d37dd71c203ec248535887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d56e19fba7f44d5f938d62481846fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a3d56e19fba7f44d5f938d62481846fbc">UpdateWorldMatrixISRT</a> ()</td></tr>
+<tr class="separator:a3d56e19fba7f44d5f938d62481846fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2e5da24fb1c8015f5bb9a6c0a7a7de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a3d2e5da24fb1c8015f5bb9a6c0a7a7de">UpdateInverseMatrix</a> (const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *matrix)</td></tr>
+<tr class="separator:a3d2e5da24fb1c8015f5bb9a6c0a7a7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486ae5501b5081b22ee053f787e0e4a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a486ae5501b5081b22ee053f787e0e4a2">UpdateTransposeMatrix</a> (const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *matrix)</td></tr>
+<tr class="separator:a486ae5501b5081b22ee053f787e0e4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053037b225e6fb11e680cc60df15dd45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a053037b225e6fb11e680cc60df15dd45">TransposeMatrixTranslationOff</a> ()</td></tr>
+<tr class="separator:a053037b225e6fb11e680cc60df15dd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060f9487a18ad34549eab53a7ca5100d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a060f9487a18ad34549eab53a7ca5100d">GetWorldMatrix</a> ()</td></tr>
+<tr class="separator:a060f9487a18ad34549eab53a7ca5100d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1101d4467d772f3ddc0558586e39c79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix_extend.html">MatrixExtend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#ab1101d4467d772f3ddc0558586e39c79">GetMatrixExtend</a> ()</td></tr>
+<tr class="separator:ab1101d4467d772f3ddc0558586e39c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02515be1947506212ca1c23223ce0b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#af02515be1947506212ca1c23223ce0b3">UpdateAxisVector_WorldMatrixSRT</a> ()</td></tr>
+<tr class="separator:af02515be1947506212ca1c23223ce0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a20f2b8baad21ba74a2b1c6d8a1ab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2">UpdateAxisVector_WorldMatrixISRT</a> ()</td></tr>
+<tr class="separator:a73a20f2b8baad21ba74a2b1c6d8a1ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="aa08ca4266efabc768973cdeea51945ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08ca4266efabc768973cdeea51945ab">&#9670;&nbsp;</a></span>Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform::Transform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa72e286c069850db80927b0e6554cd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72e286c069850db80927b0e6554cd3e">&#9670;&nbsp;</a></span>~Transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform::~Transform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a8c4966ea0a5d6cafa79c430e31bf0dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4966ea0a5d6cafa79c430e31bf0dff">&#9670;&nbsp;</a></span>GetAnglePitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* Transform::GetAnglePitch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a124d6afb5dd0a86952c99f1cec72e394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124d6afb5dd0a86952c99f1cec72e394">&#9670;&nbsp;</a></span>GetAngleRoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* Transform::GetAngleRoll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8be9cd3526cc18d64e47b55f4c527dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be9cd3526cc18d64e47b55f4c527dd8">&#9670;&nbsp;</a></span>GetAngleYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* Transform::GetAngleYaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1bd5cddc216e7fafe12e5b605cb780ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd5cddc216e7fafe12e5b605cb780ea">&#9670;&nbsp;</a></span>GetAngleYawPitchRoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a>* Transform::GetAngleYawPitchRoll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad300be34dddc6109ca142452e65aa77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad300be34dddc6109ca142452e65aa77d">&#9670;&nbsp;</a></span>GetAxisVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_axis_vector.html">AxisVector</a>* Transform::GetAxisVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25e4832e15334d74ff847f0ff0b3564f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e4832e15334d74ff847f0ff0b3564f">&#9670;&nbsp;</a></span>GetForawrd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3_d.html">Vector3D</a>* Transform::GetForawrd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14b7b06632d6a47e99dc67aecbd7acc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b7b06632d6a47e99dc67aecbd7acc7">&#9670;&nbsp;</a></span>GetLookAtChangeAmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Transform::GetLookAtChangeAmount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79fdb2cb4eb1e4abf48e0f9fd74707ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79fdb2cb4eb1e4abf48e0f9fd74707ba">&#9670;&nbsp;</a></span>GetLookAtSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Transform::GetLookAtSpeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1101d4467d772f3ddc0558586e39c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1101d4467d772f3ddc0558586e39c79">&#9670;&nbsp;</a></span>GetMatrixExtend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix_extend.html">MatrixExtend</a>* Transform::GetMatrixExtend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addff6461a77b9f5c5249e46deb5c2c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addff6461a77b9f5c5249e46deb5c2c19">&#9670;&nbsp;</a></span>GetPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a>* Transform::GetPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57d1da919d8df7d2452149c4bbade4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d1da919d8df7d2452149c4bbade4d2">&#9670;&nbsp;</a></span>GetRight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3_d.html">Vector3D</a>* Transform::GetRight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accedf33a4ddbdcf2d4fc4274f85bf818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accedf33a4ddbdcf2d4fc4274f85bf818">&#9670;&nbsp;</a></span>GetScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a>* Transform::GetScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f5700481ae42556f763726947feaf36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5700481ae42556f763726947feaf36">&#9670;&nbsp;</a></span>GetUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3_d.html">Vector3D</a>* Transform::GetUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a060f9487a18ad34549eab53a7ca5100d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060f9487a18ad34549eab53a7ca5100d">&#9670;&nbsp;</a></span>GetWorldMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>* Transform::GetWorldMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6f7342cb4eca555c02a85c999d499dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f7342cb4eca555c02a85c999d499dc">&#9670;&nbsp;</a></span>SetLookAtSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::SetLookAtSpeed </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>look_at_speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39b78acbdbf3ee98cad0c4e640988745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b78acbdbf3ee98cad0c4e640988745">&#9670;&nbsp;</a></span>SetLookAtVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::SetLookAtVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>look_at_vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8cdb5ca9995d9c124f1890d84c92ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cdb5ca9995d9c124f1890d84c92ab4">&#9670;&nbsp;</a></span>SetTargetQuaternion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::SetTargetQuaternion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a053037b225e6fb11e680cc60df15dd45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053037b225e6fb11e680cc60df15dd45">&#9670;&nbsp;</a></span>TransposeMatrixTranslationOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::TransposeMatrixTranslationOff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe5350bb1558256115e14c0669611acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5350bb1558256115e14c0669611acd">&#9670;&nbsp;</a></span>UpdateAxisVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::UpdateAxisVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73a20f2b8baad21ba74a2b1c6d8a1ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a20f2b8baad21ba74a2b1c6d8a1ab2">&#9670;&nbsp;</a></span>UpdateAxisVector_WorldMatrixISRT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::UpdateAxisVector_WorldMatrixISRT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af02515be1947506212ca1c23223ce0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02515be1947506212ca1c23223ce0b3">&#9670;&nbsp;</a></span>UpdateAxisVector_WorldMatrixSRT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::UpdateAxisVector_WorldMatrixSRT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d2e5da24fb1c8015f5bb9a6c0a7a7de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2e5da24fb1c8015f5bb9a6c0a7a7de">&#9670;&nbsp;</a></span>UpdateInverseMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::UpdateInverseMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td>
+          <td class="paramname"><em>matrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a486ae5501b5081b22ee053f787e0e4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486ae5501b5081b22ee053f787e0e4a2">&#9670;&nbsp;</a></span>UpdateTransposeMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::UpdateTransposeMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td>
+          <td class="paramname"><em>matrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d56e19fba7f44d5f938d62481846fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d56e19fba7f44d5f938d62481846fbc">&#9670;&nbsp;</a></span>UpdateWorldMatrixISRT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::UpdateWorldMatrixISRT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1a2dcb4a9d37dd71c203ec248535887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a2dcb4a9d37dd71c203ec248535887">&#9670;&nbsp;</a></span>UpdateWorldMatrixSRT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Transform::UpdateWorldMatrixSRT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Vector/Transform/<a class="el" href="_transform_8h_source.html">Transform.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Vector/Transform/<a class="el" href="_transform_8cpp.html">Transform.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_transform.html">Transform</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+\hypertarget{class_enemy}{}\section{Enemy クラス}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+Enemy の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_abd6d8dea6f50de0809ef2bd639ec97fe}{Init}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$collision\+\_\+component)
+\item 
+void \mbox{\hyperlink{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962}{Uninit}} () override
+\item 
+void \mbox{\hyperlink{class_enemy_ab86571061e7fcabcf8c646b1abad5581}{Reset}} () override
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cube_polygon}{Cube\+Polygon}} $\ast$ \mbox{\hyperlink{class_enemy_a9a24b765d76b789cc678701886570511}{cube\+\_\+polygon\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_enemy_abd6d8dea6f50de0809ef2bd639ec97fe}\label{class_enemy_abd6d8dea6f50de0809ef2bd639ec97fe}} 
+\index{Enemy@{Enemy}!Init@{Init}}
+\index{Init@{Init}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Enemy\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{collision\+\_\+component }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_enemy_ab86571061e7fcabcf8c646b1abad5581}\label{class_enemy_ab86571061e7fcabcf8c646b1abad5581}} 
+\index{Enemy@{Enemy}!Reset@{Reset}}
+\index{Reset@{Reset}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Enemy\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+
+\mbox{\Hypertarget{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962}\label{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962}} 
+\index{Enemy@{Enemy}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Enemy\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_enemy_a9a24b765d76b789cc678701886570511}\label{class_enemy_a9a24b765d76b789cc678701886570511}} 
+\index{Enemy@{Enemy}!cube\+\_\+polygon\+\_\+@{cube\+\_\+polygon\+\_\+}}
+\index{cube\+\_\+polygon\+\_\+@{cube\+\_\+polygon\+\_\+}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{cube\+\_\+polygon\+\_\+}{cube\_polygon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cube_polygon}{Cube\+Polygon}}$\ast$ Enemy\+::cube\+\_\+polygon\+\_\+}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Enemy/\mbox{\hyperlink{_enemy_8h}{Enemy.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Enemy/\mbox{\hyperlink{_enemy_8cpp}{Enemy.\+cpp}}\end{DoxyCompactItemize}

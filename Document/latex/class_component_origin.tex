@@ -1,0 +1,74 @@
+\hypertarget{class_component_origin}{}\section{Component\+Origin クラス}
+\label{class_component_origin}\index{Component\+Origin@{Component\+Origin}}
+
+
+{\ttfamily \#include $<$Component\+Origin.\+h$>$}
+
+Component\+Origin の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.271523cm]{class_component_origin}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_component_origin_af5fc09a42cacd7ba4df66ded1d086970}{$\sim$\+Component\+Origin}} ()
+\item 
+virtual void \mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Init}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Uninit}} ()=0
+\item 
+void \mbox{\hyperlink{class_component_origin_aba1eb38e463b1cf2c31589db69b2adef}{Set\+Game\+Object\+Origin}} (\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$game\+\_\+object\+\_\+origin)
+\item 
+\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$ \mbox{\hyperlink{class_component_origin_ab3fe099f93012bc6e09918a6509c4743}{Get\+Game\+Object\+Origin}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_component_origin_af5fc09a42cacd7ba4df66ded1d086970}\label{class_component_origin_af5fc09a42cacd7ba4df66ded1d086970}} 
+\index{Component\+Origin@{Component\+Origin}!````~Component\+Origin@{$\sim$\+Component\+Origin}}
+\index{````~Component\+Origin@{$\sim$\+Component\+Origin}!Component\+Origin@{Component\+Origin}}
+\subsubsection{\texorpdfstring{$\sim$\+Component\+Origin()}{~ComponentOrigin()}}
+{\footnotesize\ttfamily virtual Component\+Origin\+::$\sim$\+Component\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_component_origin_ab3fe099f93012bc6e09918a6509c4743}\label{class_component_origin_ab3fe099f93012bc6e09918a6509c4743}} 
+\index{Component\+Origin@{Component\+Origin}!Get\+Game\+Object\+Origin@{Get\+Game\+Object\+Origin}}
+\index{Get\+Game\+Object\+Origin@{Get\+Game\+Object\+Origin}!Component\+Origin@{Component\+Origin}}
+\subsubsection{\texorpdfstring{Get\+Game\+Object\+Origin()}{GetGameObjectOrigin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}}$\ast$ Component\+Origin\+::\+Get\+Game\+Object\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}\label{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}} 
+\index{Component\+Origin@{Component\+Origin}!Init@{Init}}
+\index{Init@{Init}!Component\+Origin@{Component\+Origin}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Component\+Origin\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_coin_collision_a4119a7decab2410a4ada3568ad0c132d}{Coin\+Collision}}, \mbox{\hyperlink{class_enemy_collision_ae5c000a30c8c4a023dd0c8e658def772}{Enemy\+Collision}}, \mbox{\hyperlink{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}{Player\+Collision}}, \mbox{\hyperlink{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_a9af656c0a8ebfb5fa133a0983add6ffd}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a7ad3fe53d9bda4ea16c958bc102ff54e}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a9f70fb70639510908f4e07ee14667e30}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_tutorial_logo01_draw_a4ef239c2fcd12ddd8a0a9256bedacdcb}{Tutorial\+Logo01\+Draw}}, \mbox{\hyperlink{class_tutorial_logo02_draw_abc431ab08655c42960659da325d34f13}{Tutorial\+Logo02\+Draw}}, \mbox{\hyperlink{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}{Coin\+Draw}}, \mbox{\hyperlink{class_field_draw_a4287d2ce33033b2413c1d3a81b173373}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_push_space_logo_update_a9c165604160c012b429c1db1d67ffb2a}{Push\+Space\+Logo\+Update}}, \mbox{\hyperlink{class_score_update_afd51e11ad00ebc15d9b3139398437afc}{Score\+Update}}, \mbox{\hyperlink{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}{Player\+Update}}, \mbox{\hyperlink{class_enemy_update_a5b68696e964f71fca73c9143e3770c9d}{Enemy\+Update}}, \mbox{\hyperlink{class_sky_dome_update_ab4fec6d13590c07e39e6e8b4f7f7613a}{Sky\+Dome\+Update}}, \mbox{\hyperlink{class_score_draw_af013abb96136825e71d4fee06529fc69}{Score\+Draw}}, \mbox{\hyperlink{class_enemy_draw_aa1659c35fa757db6a6cf07e26ad9ddfb}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_ad52c1e8b9ae6e830a82c440cc18cb6c9}{Number\+Draw}} (計21項目)で実装されています。
+
+\mbox{\Hypertarget{class_component_origin_aba1eb38e463b1cf2c31589db69b2adef}\label{class_component_origin_aba1eb38e463b1cf2c31589db69b2adef}} 
+\index{Component\+Origin@{Component\+Origin}!Set\+Game\+Object\+Origin@{Set\+Game\+Object\+Origin}}
+\index{Set\+Game\+Object\+Origin@{Set\+Game\+Object\+Origin}!Component\+Origin@{Component\+Origin}}
+\subsubsection{\texorpdfstring{Set\+Game\+Object\+Origin()}{SetGameObjectOrigin()}}
+{\footnotesize\ttfamily void Component\+Origin\+::\+Set\+Game\+Object\+Origin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$}]{game\+\_\+object\+\_\+origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}\label{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}} 
+\index{Component\+Origin@{Component\+Origin}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Component\+Origin@{Component\+Origin}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily virtual void Component\+Origin\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_collision_component_aa75440061f7a60e8c4ee1dae18682cc0}{Collision\+Component}}, \mbox{\hyperlink{class_coin_collision_aa852afdcdbedcf82809df9c7fd99be9e}{Coin\+Collision}}, \mbox{\hyperlink{class_enemy_collision_a2a194c606fd162db803c70c6fed9b9e4}{Enemy\+Collision}}, \mbox{\hyperlink{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}{Player\+Collision}}, \mbox{\hyperlink{class_player_draw_a917b2947914287f23d87ca75cd68f553}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_aa73db5b701e644f8e552ddb254a0a9aa}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_a97646253380b54f37565650e211f33cd}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a79021c1df43968d6008de74126d53fba}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a07bbf9e8de5c7b9ee028408496c13c50}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_tutorial_logo01_draw_ab27500ea1511726097dc9f81cefb9632}{Tutorial\+Logo01\+Draw}}, \mbox{\hyperlink{class_tutorial_logo02_draw_a9eec09783781876d354c51d4f2acf2cd}{Tutorial\+Logo02\+Draw}}, \mbox{\hyperlink{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}{Coin\+Draw}}, \mbox{\hyperlink{class_field_draw_a89a78212c141714d9e39e25e663aaeff}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_push_space_logo_update_a94f791874cb6160cd33cd7068fcde0d0}{Push\+Space\+Logo\+Update}}, \mbox{\hyperlink{class_score_update_a701d9c84c3ef92b1c54f33b37e23605f}{Score\+Update}}, \mbox{\hyperlink{class_player_update_a997e0813a825d7525da4b5b89a290168}{Player\+Update}}, \mbox{\hyperlink{class_enemy_update_a294a5d4c65551af43e933cb65036f279}{Enemy\+Update}}, \mbox{\hyperlink{class_sky_dome_update_a54da74ef017a22075ce473abe1345489}{Sky\+Dome\+Update}}, \mbox{\hyperlink{class_score_draw_aad744f8a7a1202e6ba8117c660f297ee}{Score\+Draw}}, \mbox{\hyperlink{class_enemy_draw_a2861dc0623b0be7726bc69a6a469190e}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a2b203d101f23f0d3f584937ff5ad662a}{Number\+Draw}} (計22項目)で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Component\+Origin/\mbox{\hyperlink{_component_origin_8h}{Component\+Origin.\+h}}\end{DoxyCompactItemize}

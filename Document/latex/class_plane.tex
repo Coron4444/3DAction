@@ -1,0 +1,89 @@
+\hypertarget{class_plane}{}\section{Plane クラス}
+\label{class_plane}\index{Plane@{Plane}}
+
+
+{\ttfamily \#include $<$Plane.\+h$>$}
+
+Plane の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_plane}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plane_a026c307dff6ed919b337f1ed7e579798}{Plane}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} normal\+\_\+vector=\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.\+0f, 0.\+0f, 0.\+0f), Vec3 point=\+Vec3(0.\+0f, 0.\+0f, 0.\+0f))
+\item 
+\mbox{\hyperlink{class_plane_a9554deff9f83d09a772c15bca3d468d5}{Plane}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point0, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point1, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point2)
+\item 
+virtual \mbox{\hyperlink{class_plane_a69abd86051c880dcb44b249ad10c4436}{$\sim$\+Plane}} ()
+\item 
+float \mbox{\hyperlink{class_plane_af0315d2a7aebf6057410799f127b6c17}{Length\+\_\+\+Point}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point) const
+\item 
+bool \mbox{\hyperlink{class_plane_afb752b43ee18e5e99f2682595d35fd87}{Is\+Front\+Side\+\_\+\+Point}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point) const
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_plane_abdf97ffa29f452b0faaae0b7d06f4ee5}{normal\+\_\+vector\+\_\+}}
+\item 
+float \mbox{\hyperlink{class_plane_ab43e3263bd879ea710936d85cacb6006}{adjustmet\+\_\+d\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_plane_a026c307dff6ed919b337f1ed7e579798}\label{class_plane_a026c307dff6ed919b337f1ed7e579798}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\subsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{normal\+\_\+vector = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_plane_a9554deff9f83d09a772c15bca3d468d5}\label{class_plane_a9554deff9f83d09a772c15bca3d468d5}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\subsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point0,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point1,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_plane_a69abd86051c880dcb44b249ad10c4436}\label{class_plane_a69abd86051c880dcb44b249ad10c4436}} 
+\index{Plane@{Plane}!````~Plane@{$\sim$\+Plane}}
+\index{````~Plane@{$\sim$\+Plane}!Plane@{Plane}}
+\subsubsection{\texorpdfstring{$\sim$\+Plane()}{~Plane()}}
+{\footnotesize\ttfamily Plane\+::$\sim$\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_plane_afb752b43ee18e5e99f2682595d35fd87}\label{class_plane_afb752b43ee18e5e99f2682595d35fd87}} 
+\index{Plane@{Plane}!Is\+Front\+Side\+\_\+\+Point@{Is\+Front\+Side\+\_\+\+Point}}
+\index{Is\+Front\+Side\+\_\+\+Point@{Is\+Front\+Side\+\_\+\+Point}!Plane@{Plane}}
+\subsubsection{\texorpdfstring{Is\+Front\+Side\+\_\+\+Point()}{IsFrontSide\_Point()}}
+{\footnotesize\ttfamily bool Plane\+::\+Is\+Front\+Side\+\_\+\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_plane_af0315d2a7aebf6057410799f127b6c17}\label{class_plane_af0315d2a7aebf6057410799f127b6c17}} 
+\index{Plane@{Plane}!Length\+\_\+\+Point@{Length\+\_\+\+Point}}
+\index{Length\+\_\+\+Point@{Length\+\_\+\+Point}!Plane@{Plane}}
+\subsubsection{\texorpdfstring{Length\+\_\+\+Point()}{Length\_Point()}}
+{\footnotesize\ttfamily float Plane\+::\+Length\+\_\+\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_plane_ab43e3263bd879ea710936d85cacb6006}\label{class_plane_ab43e3263bd879ea710936d85cacb6006}} 
+\index{Plane@{Plane}!adjustmet\+\_\+d\+\_\+@{adjustmet\+\_\+d\+\_\+}}
+\index{adjustmet\+\_\+d\+\_\+@{adjustmet\+\_\+d\+\_\+}!Plane@{Plane}}
+\subsubsection{\texorpdfstring{adjustmet\+\_\+d\+\_\+}{adjustmet\_d\_}}
+{\footnotesize\ttfamily float Plane\+::adjustmet\+\_\+d\+\_\+}
+
+\mbox{\Hypertarget{class_plane_abdf97ffa29f452b0faaae0b7d06f4ee5}\label{class_plane_abdf97ffa29f452b0faaae0b7d06f4ee5}} 
+\index{Plane@{Plane}!normal\+\_\+vector\+\_\+@{normal\+\_\+vector\+\_\+}}
+\index{normal\+\_\+vector\+\_\+@{normal\+\_\+vector\+\_\+}!Plane@{Plane}}
+\subsubsection{\texorpdfstring{normal\+\_\+vector\+\_\+}{normal\_vector\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Plane\+::normal\+\_\+vector\+\_\+}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision\+Component/\+Collision\+Object/\+Collision\+Shape\+Origin/\+Plane/\mbox{\hyperlink{_plane_8h}{Plane.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,146 @@
+\hypertarget{class_effekseer_sound_1_1_sound}{}\section{Effekseer\+Sound\+:\+:Sound クラス}
+\label{class_effekseer_sound_1_1_sound}\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+
+
+サウンドクラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer\+Sound\+X\+Audio2.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_effekseer_sound_1_1_sound_ab7d6353d4c6a646f13f9f9a0e8fc4442}{Destroy}} ()=0
+\begin{DoxyCompactList}\small\item\em このインスタンスを破棄する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_sound_1_1_sound_a51e602676cb58f1886cb1b54096af7a9}{Set\+Listener}} (const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&pos, const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&at, const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&up)=0
+\begin{DoxyCompactList}\small\item\em リスナー設定 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_sound_player}{Effekseer\+::\+Sound\+Player}} $\ast$ \mbox{\hyperlink{class_effekseer_sound_1_1_sound_a7cef781e83f88596f8a8405bbedceeba}{Create\+Sound\+Player}} ()=0
+\begin{DoxyCompactList}\small\item\em サウンドプレイヤを生成する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Effekseer\+::\+Sound\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_sound_1_1_sound_a34cb29c40b5f75fa9930f92d980589c2}{Create\+Sound\+Loader}} (\+::\mbox{\hyperlink{class_effekseer_1_1_file_interface}{Effekseer\+::\+File\+Interface}} $\ast$file\+Interface=N\+U\+LL)=0
+\begin{DoxyCompactList}\small\item\em 標準のサウンド読込インスタンスを生成する。 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_sound_1_1_sound_ace2026566bc2bdaf49962293c5b06aa2}{Stop\+All\+Voices}} ()=0
+\begin{DoxyCompactList}\small\item\em 全発音を停止 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_sound_1_1_sound_a60df80be173cb76ef495bde597a7c407}{Set\+Mute}} (bool mute)=0
+\begin{DoxyCompactList}\small\item\em ミュート設定 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_effekseer_sound_1_1_sound}{Sound}} $\ast$ \mbox{\hyperlink{class_effekseer_sound_1_1_sound_a529131b733c88f728949919a3b23c3e6}{Create}} (I\+X\+Audio2 $\ast$xaudio2, int32\+\_\+t num1ch\+Voices, int32\+\_\+t num2ch\+Voices)
+\begin{DoxyCompactList}\small\item\em インスタンスを生成する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_sound_1_1_sound_a810f0d806967aefab868ee61eee17847}{Sound}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_sound_1_1_sound_a6367d1e9d3c05ec668f7183454e51d3d}{$\sim$\+Sound}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+サウンドクラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_a810f0d806967aefab868ee61eee17847}\label{class_effekseer_sound_1_1_sound_a810f0d806967aefab868ee61eee17847}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Sound()}{Sound()}}
+{\footnotesize\ttfamily Effekseer\+Sound\+::\+Sound\+::\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_a6367d1e9d3c05ec668f7183454e51d3d}\label{class_effekseer_sound_1_1_sound_a6367d1e9d3c05ec668f7183454e51d3d}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!````~Sound@{$\sim$\+Sound}}
+\index{````~Sound@{$\sim$\+Sound}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{$\sim$\+Sound()}{~Sound()}}
+{\footnotesize\ttfamily virtual Effekseer\+Sound\+::\+Sound\+::$\sim$\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_a529131b733c88f728949919a3b23c3e6}\label{class_effekseer_sound_1_1_sound_a529131b733c88f728949919a3b23c3e6}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Create@{Create}}
+\index{Create@{Create}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_effekseer_sound_1_1_sound}{Sound}}$\ast$ Effekseer\+Sound\+::\+Sound\+::\+Create (\begin{DoxyParamCaption}\item[{I\+X\+Audio2 $\ast$}]{xaudio2,  }\item[{int32\+\_\+t}]{num1ch\+Voices,  }\item[{int32\+\_\+t}]{num2ch\+Voices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+インスタンスを生成する。 
+
+
+\begin{DoxyParams}{引数}
+{\em device} & \mbox{[}in\mbox{]} X\+Audio2のデバイス \\
+\hline
+{\em voice\+Count1ch} & \mbox{[}in\mbox{]} モノラルボイス数 \\
+\hline
+{\em voice\+Count2ch} & \mbox{[}in\mbox{]} ステレオボイス数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+インスタンス 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_a34cb29c40b5f75fa9930f92d980589c2}\label{class_effekseer_sound_1_1_sound_a34cb29c40b5f75fa9930f92d980589c2}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Create\+Sound\+Loader@{Create\+Sound\+Loader}}
+\index{Create\+Sound\+Loader@{Create\+Sound\+Loader}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Create\+Sound\+Loader()}{CreateSoundLoader()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Effekseer\+::\+Sound\+Loader}}$\ast$ Effekseer\+Sound\+::\+Sound\+::\+Create\+Sound\+Loader (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{class_effekseer_1_1_file_interface}{Effekseer\+::\+File\+Interface}} $\ast$}]{file\+Interface = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+標準のサウンド読込インスタンスを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_a7cef781e83f88596f8a8405bbedceeba}\label{class_effekseer_sound_1_1_sound_a7cef781e83f88596f8a8405bbedceeba}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Create\+Sound\+Player@{Create\+Sound\+Player}}
+\index{Create\+Sound\+Player@{Create\+Sound\+Player}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Create\+Sound\+Player()}{CreateSoundPlayer()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{class_effekseer_1_1_sound_player}{Effekseer\+::\+Sound\+Player}}$\ast$ Effekseer\+Sound\+::\+Sound\+::\+Create\+Sound\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+サウンドプレイヤを生成する。 
+
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_ab7d6353d4c6a646f13f9f9a0e8fc4442}\label{class_effekseer_sound_1_1_sound_ab7d6353d4c6a646f13f9f9a0e8fc4442}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Sound\+::\+Sound\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+このインスタンスを破棄する。 
+
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_a51e602676cb58f1886cb1b54096af7a9}\label{class_effekseer_sound_1_1_sound_a51e602676cb58f1886cb1b54096af7a9}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Set\+Listener@{Set\+Listener}}
+\index{Set\+Listener@{Set\+Listener}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Set\+Listener()}{SetListener()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Sound\+::\+Sound\+::\+Set\+Listener (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{pos,  }\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{at,  }\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リスナー設定 
+
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_a60df80be173cb76ef495bde597a7c407}\label{class_effekseer_sound_1_1_sound_a60df80be173cb76ef495bde597a7c407}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Set\+Mute@{Set\+Mute}}
+\index{Set\+Mute@{Set\+Mute}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Set\+Mute()}{SetMute()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Sound\+::\+Sound\+::\+Set\+Mute (\begin{DoxyParamCaption}\item[{bool}]{mute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ミュート設定 
+
+\mbox{\Hypertarget{class_effekseer_sound_1_1_sound_ace2026566bc2bdaf49962293c5b06aa2}\label{class_effekseer_sound_1_1_sound_ace2026566bc2bdaf49962293c5b06aa2}} 
+\index{Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}!Stop\+All\+Voices@{Stop\+All\+Voices}}
+\index{Stop\+All\+Voices@{Stop\+All\+Voices}!Effekseer\+Sound\+::\+Sound@{Effekseer\+Sound\+::\+Sound}}
+\subsubsection{\texorpdfstring{Stop\+All\+Voices()}{StopAllVoices()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Sound\+::\+Sound\+::\+Stop\+All\+Voices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+全発音を停止 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_sound_x_audio2_8h}{Effekseer\+Sound\+X\+Audio2.\+h}}\end{DoxyCompactItemize}

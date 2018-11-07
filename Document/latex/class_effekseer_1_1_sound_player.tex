@@ -1,0 +1,105 @@
+\hypertarget{class_effekseer_1_1_sound_player}{}\section{Effekseer\+:\+:Sound\+Player クラス}
+\label{class_effekseer_1_1_sound_player}\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_sound_player_1_1_instance_parameter}{Instance\+Parameter}}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_sound_player_a64593615152ced591b2b347fc7555d69}{Sound\+Player}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_sound_player_a93693b494f59c66a1a5e6a830fa4b62f}{$\sim$\+Sound\+Player}} ()
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}} \mbox{\hyperlink{class_effekseer_1_1_sound_player_aaea571e89a22b2b0a8971bfb52176622}{Play}} (\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}} tag, const \mbox{\hyperlink{struct_effekseer_1_1_sound_player_1_1_instance_parameter}{Instance\+Parameter}} \&parameter)=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_sound_player_af300227673261666ce202159054db9bb}{Stop}} (\mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, \mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}} tag)=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_sound_player_ae7dc7d8e0dca428ac9bde68cebb7fedf}{Pause}} (\mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, \mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}} tag, bool pause)=0
+\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_sound_player_a046be0da01c515b38b92d792108441b6}{Check\+Playing}} (\mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}} \mbox{\hyperlink{namespace_effekseer_afd99b336b206999bdcca3e431648efbc}{handle}}, \mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}} tag)=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_sound_player_a4726bc7f3f4049508a268f16a4beeb56}{Stop\+Tag}} (\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}} tag)=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_sound_player_a331ad801eed06611fffc50354837b70e}{Pause\+Tag}} (\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}} tag, bool pause)=0
+\item 
+virtual bool \mbox{\hyperlink{class_effekseer_1_1_sound_player_a12a4c022f15f7a8a9d3e3235a351606c}{Check\+Playing\+Tag}} (\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}} tag)=0
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_sound_player_a058465ab0f8c94607651a743767f64d2}{Stop\+All}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_a64593615152ced591b2b347fc7555d69}\label{class_effekseer_1_1_sound_player_a64593615152ced591b2b347fc7555d69}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Sound\+Player@{Sound\+Player}}
+\index{Sound\+Player@{Sound\+Player}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Sound\+Player()}{SoundPlayer()}}
+{\footnotesize\ttfamily Effekseer\+::\+Sound\+Player\+::\+Sound\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_a93693b494f59c66a1a5e6a830fa4b62f}\label{class_effekseer_1_1_sound_player_a93693b494f59c66a1a5e6a830fa4b62f}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!````~Sound\+Player@{$\sim$\+Sound\+Player}}
+\index{````~Sound\+Player@{$\sim$\+Sound\+Player}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{$\sim$\+Sound\+Player()}{~SoundPlayer()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Sound\+Player\+::$\sim$\+Sound\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_a046be0da01c515b38b92d792108441b6}\label{class_effekseer_1_1_sound_player_a046be0da01c515b38b92d792108441b6}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Check\+Playing@{Check\+Playing}}
+\index{Check\+Playing@{Check\+Playing}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Check\+Playing()}{CheckPlaying()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Sound\+Player\+::\+Check\+Playing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}}}]{handle,  }\item[{\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}}}]{tag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_a12a4c022f15f7a8a9d3e3235a351606c}\label{class_effekseer_1_1_sound_player_a12a4c022f15f7a8a9d3e3235a351606c}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Check\+Playing\+Tag@{Check\+Playing\+Tag}}
+\index{Check\+Playing\+Tag@{Check\+Playing\+Tag}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Check\+Playing\+Tag()}{CheckPlayingTag()}}
+{\footnotesize\ttfamily virtual bool Effekseer\+::\+Sound\+Player\+::\+Check\+Playing\+Tag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}}}]{tag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_ae7dc7d8e0dca428ac9bde68cebb7fedf}\label{class_effekseer_1_1_sound_player_ae7dc7d8e0dca428ac9bde68cebb7fedf}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Pause@{Pause}}
+\index{Pause@{Pause}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Sound\+Player\+::\+Pause (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}}}]{handle,  }\item[{\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}}}]{tag,  }\item[{bool}]{pause }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_a331ad801eed06611fffc50354837b70e}\label{class_effekseer_1_1_sound_player_a331ad801eed06611fffc50354837b70e}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Pause\+Tag@{Pause\+Tag}}
+\index{Pause\+Tag@{Pause\+Tag}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Pause\+Tag()}{PauseTag()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Sound\+Player\+::\+Pause\+Tag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}}}]{tag,  }\item[{bool}]{pause }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_aaea571e89a22b2b0a8971bfb52176622}\label{class_effekseer_1_1_sound_player_aaea571e89a22b2b0a8971bfb52176622}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Play@{Play}}
+\index{Play@{Play}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}} Effekseer\+::\+Sound\+Player\+::\+Play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}}}]{tag,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_sound_player_1_1_instance_parameter}{Instance\+Parameter}} \&}]{parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_af300227673261666ce202159054db9bb}\label{class_effekseer_1_1_sound_player_af300227673261666ce202159054db9bb}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Stop@{Stop}}
+\index{Stop@{Stop}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Sound\+Player\+::\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_a694a300b9b688ca40f6a0d9841d437bf}{Sound\+Handle}}}]{handle,  }\item[{\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}}}]{tag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_a058465ab0f8c94607651a743767f64d2}\label{class_effekseer_1_1_sound_player_a058465ab0f8c94607651a743767f64d2}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Stop\+All@{Stop\+All}}
+\index{Stop\+All@{Stop\+All}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Stop\+All()}{StopAll()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Sound\+Player\+::\+Stop\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_sound_player_a4726bc7f3f4049508a268f16a4beeb56}\label{class_effekseer_1_1_sound_player_a4726bc7f3f4049508a268f16a4beeb56}} 
+\index{Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}!Stop\+Tag@{Stop\+Tag}}
+\index{Stop\+Tag@{Stop\+Tag}!Effekseer\+::\+Sound\+Player@{Effekseer\+::\+Sound\+Player}}
+\subsubsection{\texorpdfstring{Stop\+Tag()}{StopTag()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Sound\+Player\+::\+Stop\+Tag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_adb219197297396cf2ab9bee657551a29}{Sound\+Tag}}}]{tag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

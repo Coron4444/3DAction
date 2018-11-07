@@ -1,0 +1,67 @@
+\hypertarget{class_effekseer_1_1_model_renderer}{}\section{Effekseer\+:\+:Model\+Renderer クラス}
+\label{class_effekseer_1_1_model_renderer}\index{Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}}
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_instance_parameter}{Instance\+Parameter}}
+\item 
+struct \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Node\+Parameter}}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_model_renderer_a38117b38a7c94c9f49ff750f0818b09c}{Model\+Renderer}} ()
+\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_model_renderer_a4326573d817e6d24636fcbcfa6758738}{$\sim$\+Model\+Renderer}} ()
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_model_renderer_a9fcfb17ad8e41bacadc862cfef302490}{Begin\+Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, int32\+\_\+t count, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_model_renderer_af83aa3f24f7dc3e7681579f07d0f9086}{Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_instance_parameter}{Instance\+Parameter}} \&instance\+Parameter, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_model_renderer_afabdeb2f4c342416a270c13840175082}{End\+Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_model_renderer_a38117b38a7c94c9f49ff750f0818b09c}\label{class_effekseer_1_1_model_renderer_a38117b38a7c94c9f49ff750f0818b09c}} 
+\index{Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}!Model\+Renderer@{Model\+Renderer}}
+\index{Model\+Renderer@{Model\+Renderer}!Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{Model\+Renderer()}{ModelRenderer()}}
+{\footnotesize\ttfamily Effekseer\+::\+Model\+Renderer\+::\+Model\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_renderer_a4326573d817e6d24636fcbcfa6758738}\label{class_effekseer_1_1_model_renderer_a4326573d817e6d24636fcbcfa6758738}} 
+\index{Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}!````~Model\+Renderer@{$\sim$\+Model\+Renderer}}
+\index{````~Model\+Renderer@{$\sim$\+Model\+Renderer}!Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Model\+Renderer()}{~ModelRenderer()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Model\+Renderer\+::$\sim$\+Model\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_model_renderer_a9fcfb17ad8e41bacadc862cfef302490}\label{class_effekseer_1_1_model_renderer_a9fcfb17ad8e41bacadc862cfef302490}} 
+\index{Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}!Begin\+Rendering@{Begin\+Rendering}}
+\index{Begin\+Rendering@{Begin\+Rendering}!Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{Begin\+Rendering()}{BeginRendering()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Model\+Renderer\+::\+Begin\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{int32\+\_\+t}]{count,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_renderer_afabdeb2f4c342416a270c13840175082}\label{class_effekseer_1_1_model_renderer_afabdeb2f4c342416a270c13840175082}} 
+\index{Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}!End\+Rendering@{End\+Rendering}}
+\index{End\+Rendering@{End\+Rendering}!Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{End\+Rendering()}{EndRendering()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Model\+Renderer\+::\+End\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_renderer_af83aa3f24f7dc3e7681579f07d0f9086}\label{class_effekseer_1_1_model_renderer_af83aa3f24f7dc3e7681579f07d0f9086}} 
+\index{Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}!Rendering@{Rendering}}
+\index{Rendering@{Rendering}!Effekseer\+::\+Model\+Renderer@{Effekseer\+::\+Model\+Renderer}}
+\subsubsection{\texorpdfstring{Rendering()}{Rendering()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Model\+Renderer\+::\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{const \mbox{\hyperlink{struct_effekseer_1_1_model_renderer_1_1_instance_parameter}{Instance\+Parameter}} \&}]{instance\+Parameter,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

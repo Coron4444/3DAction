@@ -1,0 +1,146 @@
+\hypertarget{class_collision_judgment}{}\section{Collision\+Judgment クラス}
+\label{class_collision_judgment}\index{Collision\+Judgment@{Collision\+Judgment}}
+
+
+{\ttfamily \#include $<$Collision\+Judgment.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a612bc9e5cfcb243324417f5059c6e24d}{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a92531c1254846a0a06ee7e95796f1070}{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_ac31167bc6d89d20f7220220ee3f21f4e}{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a4f5344d6ac14db5d3732db47050bd549}{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a61308e967a8569bcee4b25c74e28826d}{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$cylinder)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a21938f544146999d01d96f855277727b}{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a21e4ce202f713f1b2a7fc593f4daf7d2}{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere0, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a47628fb2aef868f75942f378f63478cc}{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a2b4e851cf1fc45dca09175b36fb4f50c}{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a4cc335999fcbeadf0aa1b6ebcb749e5b}{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_acd1d157a361d756632c73f4406442ce2}{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a01ad684bee6964d4315df1a23ac3ec7d}{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane}} (\mbox{\hyperlink{class_segment}{Segment}} $\ast$cross\+\_\+segment, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane0, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a473c94087dc9cd3937016ccba5f12abd}{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle}} (const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane, const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_ab33b8936e62bdb9b6cf6f3d383c033b9}{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle}} (const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle0, const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a95962556f370a964ec1961b1c461ae2a}{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule0, const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} active\+\_\+vector=\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.\+0f, 0.\+0f, 0.\+0f))
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a3c0a99feef4531370096d458aefa8941}{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb0, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb1)
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_judgment_a95962556f370a964ec1961b1c461ae2a}\label{class_collision_judgment_a95962556f370a964ec1961b1c461ae2a}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule}}
+\index{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule()}{HitCheck\_Capsule\_Capsule()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule0,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{active\+\_\+vector = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a3c0a99feef4531370096d458aefa8941}\label{class_collision_judgment_a3c0a99feef4531370096d458aefa8941}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB}}
+\index{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+B\+B()}{HitCheck\_OBB\_OBB()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb0,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a01ad684bee6964d4315df1a23ac3ec7d}\label{class_collision_judgment_a01ad684bee6964d4315df1a23ac3ec7d}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Plane\+\_\+\+Plane@{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane}}
+\index{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane@{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane()}{HitCheck\_Plane\_Plane()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Plane\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{cross\+\_\+segment,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane0,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a473c94087dc9cd3937016ccba5f12abd}\label{class_collision_judgment_a473c94087dc9cd3937016ccba5f12abd}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle}}
+\index{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle()}{HitCheck\_Plane\_Triangle()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a612bc9e5cfcb243324417f5059c6e24d}\label{class_collision_judgment_a612bc9e5cfcb243324417f5059c6e24d}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D}}
+\index{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2\+D()}{HitCheck\_Segment2D\_Segment2D()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a21938f544146999d01d96f855277727b}\label{class_collision_judgment_a21938f544146999d01d96f855277727b}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule}}
+\index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule()}{HitCheck\_Segment3D\_Capsule()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a61308e967a8569bcee4b25c74e28826d}\label{class_collision_judgment_a61308e967a8569bcee4b25c74e28826d}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder}}
+\index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder()}{HitCheck\_Segment3D\_Cylinder()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$}]{cylinder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_ac31167bc6d89d20f7220220ee3f21f4e}\label{class_collision_judgment_ac31167bc6d89d20f7220220ee3f21f4e}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane}}
+\index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane()}{HitCheck\_Segment3D\_Plane()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a92531c1254846a0a06ee7e95796f1070}\label{class_collision_judgment_a92531c1254846a0a06ee7e95796f1070}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere}}
+\index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere()}{HitCheck\_Segment3D\_Sphere()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a4f5344d6ac14db5d3732db47050bd549}\label{class_collision_judgment_a4f5344d6ac14db5d3732db47050bd549}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle}}
+\index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle()}{HitCheck\_Segment3D\_Triangle()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a4cc335999fcbeadf0aa1b6ebcb749e5b}\label{class_collision_judgment_a4cc335999fcbeadf0aa1b6ebcb749e5b}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule}}
+\index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule()}{HitCheck\_Sphere\_Capsule()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_acd1d157a361d756632c73f4406442ce2}\label{class_collision_judgment_acd1d157a361d756632c73f4406442ce2}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB}}
+\index{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+B\+B()}{HitCheck\_Sphere\_OBB()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a47628fb2aef868f75942f378f63478cc}\label{class_collision_judgment_a47628fb2aef868f75942f378f63478cc}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane}}
+\index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane()}{HitCheck\_Sphere\_Plane()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a21e4ce202f713f1b2a7fc593f4daf7d2}\label{class_collision_judgment_a21e4ce202f713f1b2a7fc593f4daf7d2}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere}}
+\index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere()}{HitCheck\_Sphere\_Sphere()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere0,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_a2b4e851cf1fc45dca09175b36fb4f50c}\label{class_collision_judgment_a2b4e851cf1fc45dca09175b36fb4f50c}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle}}
+\index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle()}{HitCheck\_Sphere\_Triangle()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_collision_judgment_ab33b8936e62bdb9b6cf6f3d383c033b9}\label{class_collision_judgment_ab33b8936e62bdb9b6cf6f3d383c033b9}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle}}
+\index{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle()}{HitCheck\_Triangle\_Triangle()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle0,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Component\+Manager/\+Collision\+Judgment/\mbox{\hyperlink{_collision_judgment_8h}{Collision\+Judgment.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Component\+Manager/\+Collision\+Judgment/\mbox{\hyperlink{_collision_judgment_8cpp}{Collision\+Judgment.\+cpp}}\end{DoxyCompactItemize}

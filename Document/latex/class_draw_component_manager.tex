@@ -1,0 +1,168 @@
+\hypertarget{class_draw_component_manager}{}\section{Draw\+Component\+Manager クラス}
+\label{class_draw_component_manager}\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+
+
+{\ttfamily \#include $<$Draw\+Component\+Manager.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a73e0f46e49bf2f5dcbe96b5227ec99de}{Init}} ()
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_ab87a2aa53012607403342b03259571f6}{Uninit}} ()
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a46301f1a8d19b40ace35c8362dadd9e3}{Uninit\+\_\+\+Change\+Scene}} ()
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_af851685a13701b040398eb42b2f97c32}{Draw}} ()
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_af9d7b699e92f676b6b6004041e69b144}{Registration\+Component}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a2a6071bf7d71f6b720c3f13480c963bf}{Overwrite\+Component}} (\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$game\+\_\+object, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$new\+\_\+draw\+\_\+component)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a87cbaa632ea3c6b699c50ad8b8297313}{Release\+Component}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a9885f2a3209de695f7e22223ea381a6e}{Create\+Default\+Camera}} (\mbox{\hyperlink{class_camera_1_1_state}{Camera\+::\+State}} $\ast$camera\+\_\+state=nullptr, \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Camera\+::\+Type}} camra\+\_\+type=Camera\+::\+Type\+::\+N\+O\+R\+M\+AL)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a140f453f27122f3d9ea36f0c0b74dd99}{Add\+Camera}} (\mbox{\hyperlink{class_camera_1_1_state}{Camera\+::\+State}} $\ast$camera\+\_\+state=nullptr, \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Camera\+::\+Type}} camra\+\_\+type=Camera\+::\+Type\+::\+N\+O\+R\+M\+AL)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a577fc268235808a70610c9f2a9781c9d}{Delete\+Camera}} (unsigned index)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a78418e0716eadc2fad6288b555461e1d}{Change\+Camera\+State}} (unsigned index, \mbox{\hyperlink{class_camera_1_1_state}{Camera\+::\+State}} $\ast$camera\+\_\+state)
+\item 
+static \mbox{\hyperlink{class_camera}{Camera}} $\ast$ \mbox{\hyperlink{class_draw_component_manager_add448787d457fb884d0079cb2b9da0a5}{Get\+Camera}} (unsigned index)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_ae4d6aae179ab380e40f2608dc89ac991}{Init\+Fade}} (\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}} type, \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}} state, \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} size, \mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} fade\+\_\+color, float fade\+\_\+speed)
+\item 
+static void \mbox{\hyperlink{class_draw_component_manager_a1c247650e83c572b4ae45152db468575}{Uninit\+Fade}} ()
+\item 
+static bool \mbox{\hyperlink{class_draw_component_manager_ae87bd98146d5a4a7323544114e543f50}{Is\+Fade\+End}} ()
+\item 
+static bool \mbox{\hyperlink{class_draw_component_manager_aaafe165dcb32ae65f4eaad94a4635807}{Is\+Fade\+State\+Name}} (\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}} state)
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_draw_component_manager_aa48e10b399a1d423f4e6896b69cfd213}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 1000
+\item 
+static const unsigned \mbox{\hyperlink{class_draw_component_manager_a27a861d3f771a93d85e872d8f205391e}{C\+A\+M\+E\+R\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_draw_component_manager_a140f453f27122f3d9ea36f0c0b74dd99}\label{class_draw_component_manager_a140f453f27122f3d9ea36f0c0b74dd99}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Add\+Camera@{Add\+Camera}}
+\index{Add\+Camera@{Add\+Camera}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Camera()}{AddCamera()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Add\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_1_1_state}{Camera\+::\+State}} $\ast$}]{camera\+\_\+state = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Camera\+::\+Type}}}]{camra\+\_\+type = {\ttfamily Camera\+:\+:Type\+:\+:NORMAL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a78418e0716eadc2fad6288b555461e1d}\label{class_draw_component_manager_a78418e0716eadc2fad6288b555461e1d}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Change\+Camera\+State@{Change\+Camera\+State}}
+\index{Change\+Camera\+State@{Change\+Camera\+State}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Change\+Camera\+State()}{ChangeCameraState()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Change\+Camera\+State (\begin{DoxyParamCaption}\item[{unsigned}]{index,  }\item[{\mbox{\hyperlink{class_camera_1_1_state}{Camera\+::\+State}} $\ast$}]{camera\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a9885f2a3209de695f7e22223ea381a6e}\label{class_draw_component_manager_a9885f2a3209de695f7e22223ea381a6e}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Create\+Default\+Camera@{Create\+Default\+Camera}}
+\index{Create\+Default\+Camera@{Create\+Default\+Camera}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Create\+Default\+Camera()}{CreateDefaultCamera()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Create\+Default\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_1_1_state}{Camera\+::\+State}} $\ast$}]{camera\+\_\+state = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Camera\+::\+Type}}}]{camra\+\_\+type = {\ttfamily Camera\+:\+:Type\+:\+:NORMAL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a577fc268235808a70610c9f2a9781c9d}\label{class_draw_component_manager_a577fc268235808a70610c9f2a9781c9d}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Delete\+Camera@{Delete\+Camera}}
+\index{Delete\+Camera@{Delete\+Camera}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Delete\+Camera()}{DeleteCamera()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Delete\+Camera (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_af851685a13701b040398eb42b2f97c32}\label{class_draw_component_manager_af851685a13701b040398eb42b2f97c32}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_add448787d457fb884d0079cb2b9da0a5}\label{class_draw_component_manager_add448787d457fb884d0079cb2b9da0a5}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_camera}{Camera}}$\ast$ Draw\+Component\+Manager\+::\+Get\+Camera (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a73e0f46e49bf2f5dcbe96b5227ec99de}\label{class_draw_component_manager_a73e0f46e49bf2f5dcbe96b5227ec99de}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Init@{Init}}
+\index{Init@{Init}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_ae4d6aae179ab380e40f2608dc89ac991}\label{class_draw_component_manager_ae4d6aae179ab380e40f2608dc89ac991}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Init\+Fade@{Init\+Fade}}
+\index{Init\+Fade@{Init\+Fade}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Fade()}{InitFade()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Init\+Fade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}}}]{type,  }\item[{\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}}}]{state,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}}}]{size,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{fade\+\_\+color,  }\item[{float}]{fade\+\_\+speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_ae87bd98146d5a4a7323544114e543f50}\label{class_draw_component_manager_ae87bd98146d5a4a7323544114e543f50}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Is\+Fade\+End@{Is\+Fade\+End}}
+\index{Is\+Fade\+End@{Is\+Fade\+End}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Fade\+End()}{IsFadeEnd()}}
+{\footnotesize\ttfamily static bool Draw\+Component\+Manager\+::\+Is\+Fade\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_aaafe165dcb32ae65f4eaad94a4635807}\label{class_draw_component_manager_aaafe165dcb32ae65f4eaad94a4635807}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Is\+Fade\+State\+Name@{Is\+Fade\+State\+Name}}
+\index{Is\+Fade\+State\+Name@{Is\+Fade\+State\+Name}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Fade\+State\+Name()}{IsFadeStateName()}}
+{\footnotesize\ttfamily static bool Draw\+Component\+Manager\+::\+Is\+Fade\+State\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a2a6071bf7d71f6b720c3f13480c963bf}\label{class_draw_component_manager_a2a6071bf7d71f6b720c3f13480c963bf}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Overwrite\+Component@{Overwrite\+Component}}
+\index{Overwrite\+Component@{Overwrite\+Component}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Overwrite\+Component()}{OverwriteComponent()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Overwrite\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$}]{game\+\_\+object,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{new\+\_\+draw\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_af9d7b699e92f676b6b6004041e69b144}\label{class_draw_component_manager_af9d7b699e92f676b6b6004041e69b144}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Registration\+Component@{Registration\+Component}}
+\index{Registration\+Component@{Registration\+Component}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Registration\+Component()}{RegistrationComponent()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Registration\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a87cbaa632ea3c6b699c50ad8b8297313}\label{class_draw_component_manager_a87cbaa632ea3c6b699c50ad8b8297313}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Release\+Component@{Release\+Component}}
+\index{Release\+Component@{Release\+Component}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Release\+Component()}{ReleaseComponent()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Release\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_ab87a2aa53012607403342b03259571f6}\label{class_draw_component_manager_ab87a2aa53012607403342b03259571f6}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a46301f1a8d19b40ace35c8362dadd9e3}\label{class_draw_component_manager_a46301f1a8d19b40ace35c8362dadd9e3}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Uninit\+\_\+\+Change\+Scene@{Uninit\+\_\+\+Change\+Scene}}
+\index{Uninit\+\_\+\+Change\+Scene@{Uninit\+\_\+\+Change\+Scene}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+\_\+\+Change\+Scene()}{Uninit\_ChangeScene()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Uninit\+\_\+\+Change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_a1c247650e83c572b4ae45152db468575}\label{class_draw_component_manager_a1c247650e83c572b4ae45152db468575}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!Uninit\+Fade@{Uninit\+Fade}}
+\index{Uninit\+Fade@{Uninit\+Fade}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Fade()}{UninitFade()}}
+{\footnotesize\ttfamily void Draw\+Component\+Manager\+::\+Uninit\+Fade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_draw_component_manager_a27a861d3f771a93d85e872d8f205391e}\label{class_draw_component_manager_a27a861d3f771a93d85e872d8f205391e}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!C\+A\+M\+E\+R\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{C\+A\+M\+E\+R\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
+\index{C\+A\+M\+E\+R\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{C\+A\+M\+E\+R\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{C\+A\+M\+E\+R\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}{CAMERA\_ARRAY\_NUM}}
+{\footnotesize\ttfamily const unsigned Draw\+Component\+Manager\+::\+C\+A\+M\+E\+R\+A\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_draw_component_manager_aa48e10b399a1d423f4e6896b69cfd213}\label{class_draw_component_manager_aa48e10b399a1d423f4e6896b69cfd213}} 
+\index{Draw\+Component\+Manager@{Draw\+Component\+Manager}!D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
+\index{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Draw\+Component\+Manager@{Draw\+Component\+Manager}}
+\subsubsection{\texorpdfstring{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}{DRAW\_ARRAY\_NUM}}
+{\footnotesize\ttfamily const unsigned Draw\+Component\+Manager\+::\+D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM = 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\mbox{\hyperlink{_draw_component_manager_8h}{Draw\+Component\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\mbox{\hyperlink{_draw_component_manager_8cpp}{Draw\+Component\+Manager.\+cpp}}\end{DoxyCompactItemize}

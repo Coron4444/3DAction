@@ -1,0 +1,95 @@
+\hypertarget{class_effekseer_1_1_model_loader}{}\section{Effekseer\+:\+:Model\+Loader クラス}
+\label{class_effekseer_1_1_model_loader}\index{Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}}
+
+
+モデル読み込み破棄関数指定クラス  
+
+
+
+
+{\ttfamily \#include $<$Effekseer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_model_loader_afc540fe063379c6412134edfa893c65e}{Model\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_effekseer_1_1_model_loader_a0edc24d2c8d4e3c18ef52f34ac5d5fc5}{$\sim$\+Model\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_model_loader_a46b7aba9f998836bacd86411b858d06c}{Load}} (const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$path)
+\begin{DoxyCompactList}\small\item\em モデルを読み込む。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_model_loader_a496f93a8615363ff31943adb205b5365}{Unload}} (\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$data)
+\begin{DoxyCompactList}\small\item\em モデルを破棄する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+モデル読み込み破棄関数指定クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_effekseer_1_1_model_loader_afc540fe063379c6412134edfa893c65e}\label{class_effekseer_1_1_model_loader_afc540fe063379c6412134edfa893c65e}} 
+\index{Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}!Model\+Loader@{Model\+Loader}}
+\index{Model\+Loader@{Model\+Loader}!Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}}
+\subsubsection{\texorpdfstring{Model\+Loader()}{ModelLoader()}}
+{\footnotesize\ttfamily Effekseer\+::\+Model\+Loader\+::\+Model\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_effekseer_1_1_model_loader_a0edc24d2c8d4e3c18ef52f34ac5d5fc5}\label{class_effekseer_1_1_model_loader_a0edc24d2c8d4e3c18ef52f34ac5d5fc5}} 
+\index{Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}!````~Model\+Loader@{$\sim$\+Model\+Loader}}
+\index{````~Model\+Loader@{$\sim$\+Model\+Loader}!Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}}
+\subsubsection{\texorpdfstring{$\sim$\+Model\+Loader()}{~ModelLoader()}}
+{\footnotesize\ttfamily virtual Effekseer\+::\+Model\+Loader\+::$\sim$\+Model\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_model_loader_a46b7aba9f998836bacd86411b858d06c}\label{class_effekseer_1_1_model_loader_a46b7aba9f998836bacd86411b858d06c}} 
+\index{Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}!Load@{Load}}
+\index{Load@{Load}!Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}}$\ast$ Effekseer\+::\+Model\+Loader\+::\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}} $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+モデルを読み込む。 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & \mbox{[}in\mbox{]} 読み込み元パス \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+モデルのポインタ 
+\end{DoxyReturn}
+\begin{DoxyNote}{覚え書き}
+モデルを読み込む。 \+::\+Effekseer\+::\+Effect\+::\+Create実行時に使用される。 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_effekseer_1_1_model_loader_a496f93a8615363ff31943adb205b5365}\label{class_effekseer_1_1_model_loader_a496f93a8615363ff31943adb205b5365}} 
+\index{Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}!Unload@{Unload}}
+\index{Unload@{Unload}!Effekseer\+::\+Model\+Loader@{Effekseer\+::\+Model\+Loader}}
+\subsubsection{\texorpdfstring{Unload()}{Unload()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Model\+Loader\+::\+Unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+モデルを破棄する。 
+
+
+\begin{DoxyParams}{引数}
+{\em data} & \mbox{[}in\mbox{]} モデル \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{覚え書き}
+モデルを破棄する。 \+::\+Effekseer\+::\+Effectのインスタンスが破棄された時に使用される。 
+\end{DoxyNote}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/05\+\_\+\+Resource/\+Effekseer/\mbox{\hyperlink{_effekseer_8h}{Effekseer.\+h}}\end{DoxyCompactItemize}

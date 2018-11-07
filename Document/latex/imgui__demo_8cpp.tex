@@ -1,0 +1,45 @@
+\hypertarget{imgui__demo_8cpp}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/imgui\+\_\+demo.cpp ファイル}
+\label{imgui__demo_8cpp}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/imgui\+\_\+demo.\+cpp@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/06\+\_\+\+Debug/\+Im\+G\+U\+I/imgui\+\_\+demo.\+cpp}}
+{\ttfamily \#include \char`\"{}imgui.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_example_app_console}{Example\+App\+Console}}
+\item 
+struct \mbox{\hyperlink{struct_example_app_log}{Example\+App\+Log}}
+\end{DoxyCompactItemize}
+\subsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{imgui__demo_8cpp_a1bfa04d9a2431433f9668c814fd4c3d5}{I\+M\+\_\+\+N\+E\+W\+L\+I\+NE}}~\char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\#define \mbox{\hyperlink{imgui__demo_8cpp_aeabe36f60fe45cf64cbc9641bcd58cca}{I\+M\+\_\+\+A\+R\+R\+A\+Y\+S\+I\+ZE}}(\+\_\+\+A\+RR)~((int)(sizeof(\+\_\+\+A\+RR)/sizeof($\ast$\+\_\+\+A\+RR)))
+\item 
+\#define \mbox{\hyperlink{imgui__demo_8cpp_aa175fe2b2e8134ace6a1358438ebad63}{I\+M\+\_\+\+M\+AX}}(\+\_\+A,  \+\_\+B)~(((\+\_\+A) $>$= (\+\_\+B)) ? (\+\_\+A) \+: (\+\_\+B))
+\end{DoxyCompactItemize}
+
+
+\subsection{マクロ定義詳解}
+\mbox{\Hypertarget{imgui__demo_8cpp_aeabe36f60fe45cf64cbc9641bcd58cca}\label{imgui__demo_8cpp_aeabe36f60fe45cf64cbc9641bcd58cca}} 
+\index{imgui\+\_\+demo.\+cpp@{imgui\+\_\+demo.\+cpp}!I\+M\+\_\+\+A\+R\+R\+A\+Y\+S\+I\+ZE@{I\+M\+\_\+\+A\+R\+R\+A\+Y\+S\+I\+ZE}}
+\index{I\+M\+\_\+\+A\+R\+R\+A\+Y\+S\+I\+ZE@{I\+M\+\_\+\+A\+R\+R\+A\+Y\+S\+I\+ZE}!imgui\+\_\+demo.\+cpp@{imgui\+\_\+demo.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+A\+R\+R\+A\+Y\+S\+I\+ZE}{IM\_ARRAYSIZE}}
+{\footnotesize\ttfamily \#define I\+M\+\_\+\+A\+R\+R\+A\+Y\+S\+I\+ZE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+A\+RR }\end{DoxyParamCaption})~((int)(sizeof(\+\_\+\+A\+RR)/sizeof($\ast$\+\_\+\+A\+RR)))}
+
+\mbox{\Hypertarget{imgui__demo_8cpp_aa175fe2b2e8134ace6a1358438ebad63}\label{imgui__demo_8cpp_aa175fe2b2e8134ace6a1358438ebad63}} 
+\index{imgui\+\_\+demo.\+cpp@{imgui\+\_\+demo.\+cpp}!I\+M\+\_\+\+M\+AX@{I\+M\+\_\+\+M\+AX}}
+\index{I\+M\+\_\+\+M\+AX@{I\+M\+\_\+\+M\+AX}!imgui\+\_\+demo.\+cpp@{imgui\+\_\+demo.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+M\+AX}{IM\_MAX}}
+{\footnotesize\ttfamily \#define I\+M\+\_\+\+M\+AX(\begin{DoxyParamCaption}\item[{}]{\+\_\+A,  }\item[{}]{\+\_\+B }\end{DoxyParamCaption})~(((\+\_\+A) $>$= (\+\_\+B)) ? (\+\_\+A) \+: (\+\_\+B))}
+
+\mbox{\Hypertarget{imgui__demo_8cpp_a1bfa04d9a2431433f9668c814fd4c3d5}\label{imgui__demo_8cpp_a1bfa04d9a2431433f9668c814fd4c3d5}} 
+\index{imgui\+\_\+demo.\+cpp@{imgui\+\_\+demo.\+cpp}!I\+M\+\_\+\+N\+E\+W\+L\+I\+NE@{I\+M\+\_\+\+N\+E\+W\+L\+I\+NE}}
+\index{I\+M\+\_\+\+N\+E\+W\+L\+I\+NE@{I\+M\+\_\+\+N\+E\+W\+L\+I\+NE}!imgui\+\_\+demo.\+cpp@{imgui\+\_\+demo.\+cpp}}
+\subsubsection{\texorpdfstring{I\+M\+\_\+\+N\+E\+W\+L\+I\+NE}{IM\_NEWLINE}}
+{\footnotesize\ttfamily \#define I\+M\+\_\+\+N\+E\+W\+L\+I\+NE~\char`\"{}\textbackslash{}n\char`\"{}}
+
