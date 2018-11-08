@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 
 
@@ -31,7 +31,7 @@ class ResultScene;
 * リザルトシーンのステートクラス
 * 最初の状態を表す
 *************************************************************/
-class ResultSceneState_Start : public SceneBace::StateAbstract
+class ResultSceneState_Start : public SceneBase::StateAbstract
 {
 //==============================
 // 非静的メンバ変数

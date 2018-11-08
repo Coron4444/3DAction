@@ -24,7 +24,7 @@
 //****************************************
 // クラス宣言
 //****************************************
-class SceneBace;
+class SceneBase;
 
 
 
@@ -109,8 +109,8 @@ private:
 	State state_;					//!< シーンマネージャステート
 	CommonData* common_data_;		//!< シーン間共通データ
 
-	SceneBace* current_scene_;		//!< 現在のシーン
-	SceneBace* next_scene_;			//!< 次のシーン
+	SceneBase* current_scene_;		//!< 現在のシーン
+	SceneBase* next_scene_;			//!< 次のシーン
 
 	Fade::Type fade_type_;			//!< フェードの種類
 	float      fade_speed_;			//!< フェード速度
@@ -128,7 +128,7 @@ public:
 	* @param
 	* scene : 最初のシーン
 	*/
-	SceneManager(SceneBace* scene);
+	SceneManager(SceneBase* scene);
 
 	/**
 	* @brief
@@ -161,7 +161,7 @@ public:
 	void ResetScene();
 
 	// プロパティ
-	void SetNextScene(SceneBace* value);
+	void SetNextScene(SceneBase* value);
 	CommonData* GetCommonData() { return common_data_; }
 	void SetFadeType(Fade::Type value) { fade_type_ = value; }
 	void SetFadeSpeed(float value) { fade_speed_ = value; }

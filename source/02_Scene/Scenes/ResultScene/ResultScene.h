@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 
 
@@ -23,7 +23,7 @@
 *
 * リザルトシーンのクラス
 *************************************************************/
-class ResultScene : public SceneBace
+class ResultScene : public SceneBase
 {
 //==============================
 // 非静的メンバ関数
@@ -35,7 +35,7 @@ public:
 	* @param
 	* state : 最初のステート
 	*/
-	ResultScene(StateAbstract* state) : SceneBace(state) {}
+	ResultScene(StateAbstract* state) : SceneBase(state) {}
 };
 
 

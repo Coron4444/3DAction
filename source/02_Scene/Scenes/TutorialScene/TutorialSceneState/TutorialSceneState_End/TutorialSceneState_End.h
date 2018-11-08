@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 
 
@@ -31,7 +31,7 @@ class TutorialScene;
 * チュートリアルシーンのステートクラス
 * 最後の状態を表す
 *************************************************************/
-class TutorialSceneState_End : public SceneBace::StateAbstract
+class TutorialSceneState_End : public SceneBase::StateAbstract
 {
 //==============================
 // 非静的メンバ変数

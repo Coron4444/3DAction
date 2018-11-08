@@ -11,7 +11,7 @@
 // インクルード文
 //****************************************
 #include "SceneManager.h"
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 #include <main.h>
 #include <SafeRelease/SafeRelease.h>
@@ -36,7 +36,7 @@ const XColor4    SceneManager::DEFAULT_FADE_COLOR(0.0f, 0.0f, 0.0f, 1.0f);
 //--------------------------------------------------
 // +コンストラクタ
 //--------------------------------------------------
-SceneManager::SceneManager(SceneBace* scene)
+SceneManager::SceneManager(SceneBase* scene)
 	: state_(SceneManager::State::NONE),
 	common_data_(nullptr),
 	current_scene_(nullptr),
@@ -76,8 +76,8 @@ SceneManager::~SceneManager()
 
 	// コンポーネントマネージャーの終了処理
 	UpdateComponentManager::Uninit();
-	DrawComponentManager::Uninit();
 	CollisionComponentManager::Uninit();
+	DrawComponentManager::Uninit();
 
 	// ゲームオブジェクトの全開放
 	GameObjectManager::ReleaseAll();
@@ -153,12 +153,13 @@ void SceneManager::DrawScene()
 //--------------------------------------------------
 // +次のシーン設定関数
 //--------------------------------------------------
-void SceneManager::SetNextScene(SceneBace* value)
+void SceneManager::SetNextScene(SceneBase* value)
 {
 	// 既にほかの要求を受け付けている場合
 	if (state_ != SceneManager::State::NONE)
 	{
-		SafeRelease::PlusUninit(&value);
+		value->ReleaseState();
+		SafeRelease::Normal(&value);
 		return;
 	}
 

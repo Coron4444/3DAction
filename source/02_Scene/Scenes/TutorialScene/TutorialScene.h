@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 
 
@@ -30,7 +30,7 @@ class GameObjectOrigin;
 *
 * タイトルシーンのクラス
 *************************************************************/
-class TutorialScene : public SceneBace
+class TutorialScene : public SceneBase
 {
 //==============================
 // 非静的メンバ変数
@@ -50,7 +50,7 @@ public:
 	* @param
 	* state : 最初のステート
 	*/
-	TutorialScene(StateAbstract* state) : SceneBace(state) {}
+	TutorialScene(StateAbstract* state) : SceneBase(state) {}
 
 	// プロパティ
 	GameObjectOrigin* GetLogo() { return logo_; }

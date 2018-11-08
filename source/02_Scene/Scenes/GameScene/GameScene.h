@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 
 
@@ -24,7 +24,7 @@
 * ゲームシーンを管理するクラス。
 * ゲームシーン特有の共有データを持っている。
 *************************************************************/
-class GameScene : public SceneBace
+class GameScene : public SceneBase
 {
 //==============================
 // 非静的メンバ変数
@@ -45,7 +45,7 @@ public:
 	* @param
 	* state : 最初のステート
 	*/
-	GameScene(StateAbstract* state) : SceneBace(state) {}
+	GameScene(StateAbstract* state) : SceneBase(state) {}
 
 	// プロパティ
 	bool GetIsClear() { return is_clear_; }

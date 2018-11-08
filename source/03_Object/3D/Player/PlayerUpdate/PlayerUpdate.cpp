@@ -19,6 +19,9 @@
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
 #include <ResourceManager\ResourceManager.h>
 
+#include <3D/Player/PlayerUpdate_Special/PlayerUpdate_Special.h>
+#include <ComponentManager/UpdateComponentManager/UpdateComponentManager.h>
+
 
 
 //======================================================================
@@ -110,7 +113,9 @@ void PlayerUpdate::Update()
 	// ブレーキ
 	if (GetKeyboardPress(DIK_N))
 	{
-		player_->GetPhysics()->AddFriction(0.5f);
+		UpdateComponentManager::OverwriteComponent(player_, new PlayerUpdate_Special());
+		return;
+		//player_->GetPhysics()->AddFriction(0.5f);
 	}
 
 	// ジャンプ

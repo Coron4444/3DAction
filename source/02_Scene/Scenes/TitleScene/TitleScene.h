@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 
 
@@ -23,7 +23,7 @@
 *
 * タイトルシーンのクラス
 *************************************************************/
-class TitleScene : public SceneBace
+class TitleScene : public SceneBase
 {
 //==============================
 // 非静的メンバ関数
@@ -35,7 +35,7 @@ public:
 	* @param
 	* state : 最初のステート
 	*/
-	TitleScene(StateAbstract* state) : SceneBace(state) {}
+	TitleScene(StateAbstract* state) : SceneBase(state) {}
 };
 
 

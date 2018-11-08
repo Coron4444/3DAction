@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <SceneBace/SceneBace.h>
+#include <SceneBase/SceneBase.h>
 
 
 
@@ -31,7 +31,7 @@ class TitleScene;
 * タイトルシーンのステートクラス
 * 最初の状態を表す
 *************************************************************/
-class TitleSceneState_Start : public SceneBace::StateAbstract
+class TitleSceneState_Start : public SceneBase::StateAbstract
 {
 //==============================
 // 非静的メンバ変数
