@@ -115,7 +115,7 @@ public:
 
 	/**
 	* @brief
-	* デストラクタ
+	* 仮想デストラクタ
 	*/
 	virtual ~SceneBase() {}
 

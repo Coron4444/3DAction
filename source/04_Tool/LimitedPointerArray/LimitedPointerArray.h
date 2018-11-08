@@ -33,13 +33,13 @@ template<class Type, unsigned ARRAY_NUM = 100000>
 class LimitedPointerArray
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
+public:
 	// デフォルトコンストラクタ
 	LimitedPointerArray()
 		: end_pointer_(0)
 	{
 		// 配列の初期化
-		for(unsigned i = 0; i < ARRAY_NUM; i++)
+		for (unsigned i = 0; i < ARRAY_NUM; i++)
 		{
 			array_[i] = nullptr;
 		}
@@ -50,7 +50,7 @@ public :
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
+public:
 
 	// 配列に追加
 	void AddToArray(Type object)
@@ -60,9 +60,9 @@ public :
 		if (iterator != registration_map_.end()) return;
 
 		// 追加
-		for(unsigned i = 0; i < ARRAY_NUM; i++)
+		for (unsigned i = 0; i < ARRAY_NUM; i++)
 		{
-			if(array_[i] != nullptr) continue;
+			if (array_[i] != nullptr) continue;
 
 			// 配列に追加
 			array_[i] = object;
@@ -134,7 +134,7 @@ public :
 	void ResetArray()
 	{
 		// 配列からの削除
-		for(unsigned i = 0; i < end_pointer_; i++)
+		for (unsigned i = 0; i < end_pointer_; i++)
 		{
 			array_[i] = nullptr;
 		}
@@ -150,7 +150,7 @@ public :
 	void ReleaseObjectAndResetArray()
 	{
 		// 登録先の解放と配列からの削除
-		for(unsigned i = 0; i < end_pointer_; i++)
+		for (unsigned i = 0; i < end_pointer_; i++)
 		{
 			SafeRelease::Normal(&array_[i]);
 			array_[i] = nullptr;
@@ -226,11 +226,11 @@ public :
 
 				// オブジェクトを入れ替える
 				array_[iterator->second] = array_[i];
-				array_[i]				 = nullptr;
+				array_[i] = nullptr;
 
 				// マップの更新
 				registration_map_.find(array_[iterator->second])->second = iterator->second;
-				
+
 				break;
 			}
 		}
@@ -254,12 +254,12 @@ public :
 		assert(array_[index1] != nullptr && "配列がnullptrです(LimitedPointerArray.h)");
 
 		// マップの更新
-		unsigned temp_index	= registration_map_.find(array_[index0])->second;
+		unsigned temp_index = registration_map_.find(array_[index0])->second;
 		registration_map_.find(array_[index0])->second = registration_map_.find(array_[index1])->second;
 		registration_map_.find(array_[index1])->second = temp_index;
-		
+
 		// 配列の並び替え
-		Type temp	   = array_[index0];
+		Type temp = array_[index0];
 		array_[index0] = array_[index1];
 		array_[index1] = temp;
 	}
@@ -309,7 +309,7 @@ public :
 
 
 //------------------------------------------------------------
-private :
+private:
 	// メンバ変数
 	Type array_[ARRAY_NUM];
 	unsigned end_pointer_;
