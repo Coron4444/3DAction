@@ -46,7 +46,7 @@ const int PushSpaceLogoUpdate::CHANGE_NUM = Second_To_Frame(1.0f);
 void PushSpaceLogoUpdate::Init()
 {
 	// ダウンキャスト
-	push_space_logo_ = (PushSpaceLogo*)GetGameObjectOrigin();
+	push_space_logo_ = (PushSpaceLogo*)GetGameObject();
 
 	change_count_ = 0;
 
@@ -116,6 +116,6 @@ void PushSpaceLogoUpdate::LateUpdate()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void PushSpaceLogoUpdate::Debug()
+void PushSpaceLogoUpdate::DebugDisplay()
 {
 }

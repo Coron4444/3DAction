@@ -66,7 +66,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline Sphere::Sphere(Vec3 position, float radius)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_SPHERE),
+	: CollisionShapeBase(CollisionShapeBase::Type::SPHERE),
 	  position_(position), 
 	  radius_(radius)
 {

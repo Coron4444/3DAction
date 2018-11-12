@@ -34,6 +34,9 @@
 
 void Numbers::Init()
 {
+	// 基底クラスの初期化
+	GameObjectBase::Init(nullptr, nullptr, nullptr);
+
 	number_factory_ = new NumberFactory();
 }
 
@@ -47,6 +50,9 @@ void Numbers::Init()
 
 void Numbers::Uninit()
 {
+	// 基底クラスの終了処理
+	GameObjectBase::Uninit();
+
 	SafeRelease::Normal(&number_factory_);
 }
 
@@ -215,7 +221,7 @@ void Numbers::ReleaseNumber()
 	// 数字を解放
 	for (auto& contents : numbers_)
 	{
-		GameObjectManager::Release(contents);
+		GameObjectManager::ReleaseGameObjectBaseFromArray(contents);
 	}
 
 	// 数字配列をリセット

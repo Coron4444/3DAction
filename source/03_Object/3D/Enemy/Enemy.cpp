@@ -29,16 +29,16 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void Enemy::Init(UpdateComponent*    update_component, 
-				 DrawComponent*      draw_component,
-				 CollisionComponent* collision_component)
+void Enemy::Init(UpdateBase*    update,
+				 DrawBase*      draw,
+				 CollisionBase* collision)
 {
 	// キューブポリゴンの生成
 	cube_polygon_ = new CubePolygon();
 	cube_polygon_->SetColor(XColor4(1.0f, 0.0f, 0.0f, 1.0f));
 
 	// 基底クラスの初期化
-	Init_SuperClass(update_component, draw_component, collision_component);
+	GameObjectBase::Init(update, draw, collision);
 }
 
 
@@ -52,7 +52,7 @@ void Enemy::Init(UpdateComponent*    update_component,
 void Enemy::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 
 	// 各種消去
 	SafeRelease::Normal(&cube_polygon_);

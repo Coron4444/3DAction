@@ -29,14 +29,14 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void Coin::Init(DrawComponent*      draw_component,
-				CollisionComponent* collision_component)
+void Coin::Init(DrawBase*      draw,
+				CollisionBase* collision)
 {
 	// プレーンポリゴンの生成
 	polygon_ = new PlanePolygon();
 
 	// 基底クラスの初期化
-	Init_SuperClass(nullptr, draw_component, collision_component);
+	GameObjectBase::Init(nullptr, draw, collision);
 }
 
 
@@ -50,7 +50,7 @@ void Coin::Init(DrawComponent*      draw_component,
 void Coin::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 
 	// 各種消去
 	SafeRelease::Normal(&polygon_);

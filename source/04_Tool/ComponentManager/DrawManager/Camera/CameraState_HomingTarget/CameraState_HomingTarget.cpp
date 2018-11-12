@@ -14,7 +14,7 @@
 //======================================================================
 
 #include "CameraState_HomingTarget.h"
-#include <GameObjectOrigin/GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Vector3D.h>
 

@@ -75,7 +75,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline Segment::Segment(Vec3 position, Vec3 vector)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_SEGMENT),
+	: CollisionShapeBase(CollisionShapeBase::Type::SEGMENT),
 	  position_(position), 
 	  vector_  (vector)
 {

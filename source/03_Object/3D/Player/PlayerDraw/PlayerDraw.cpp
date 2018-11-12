@@ -16,7 +16,7 @@
 #include "PlayerDraw.h"
 
 #include <Renderer\RendererDirectX9\RendererDirectX9.h>
-#include <ComponentManager\DrawComponentManager\Shader\TestShaderObject\TestShaderObject.h>
+#include <ComponentManager/DrawManager/Shader/TestShaderObject/TestShaderObject.h>
 
 
 
@@ -48,7 +48,7 @@ const std::string PlayerDraw::NORMAL_TEXTURE_NAME02 = "knight_low/sword_01.png";
 void PlayerDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::TEST_SHADER);
+	SetState(DrawBase::State::TEST_SHADER);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);

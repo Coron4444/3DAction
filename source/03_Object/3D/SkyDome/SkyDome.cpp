@@ -29,11 +29,11 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void SkyDome::Init(UpdateComponent* update_component,
-				   DrawComponent*   draw_component)
+void SkyDome::Init(UpdateBase* update,
+				   DrawBase*   draw)
 {
 	// 基底クラスの初期化
-	Init_SuperClass(update_component, draw_component, nullptr);
+	GameObjectBase::Init(update, draw, nullptr);
 }
 
 
@@ -47,7 +47,7 @@ void SkyDome::Init(UpdateComponent* update_component,
 void SkyDome::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 }
 
 

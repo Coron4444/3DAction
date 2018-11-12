@@ -45,7 +45,7 @@ const std::string FieldDraw::TEXTURE_NAME = "Field.png";
 void FieldDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED);
+	SetState(DrawBase::State::FIXED);
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
@@ -77,7 +77,7 @@ void FieldDraw::Draw(unsigned mesh_index)
 	mesh_index = mesh_index;
 
 	// 地面にダウンキャスト
-	Field* field = (Field*)GetGameObjectOrigin();
+	Field* field = (Field*)GetGameObject();
 
 	field->mesh_plane_polygon_->Draw();
 }
@@ -93,7 +93,7 @@ void FieldDraw::Draw(unsigned mesh_index)
 unsigned FieldDraw::GetMeshNum()
 {
 	// 地面にダウンキャスト
-	Field* field = (Field*)GetGameObjectOrigin();
+	Field* field = (Field*)GetGameObject();
 
 	return field->mesh_plane_polygon_->GetMeshNum();
 }
@@ -111,7 +111,7 @@ D3DMATERIAL9* FieldDraw::GetMaterial(unsigned mesh_index)
 	mesh_index = mesh_index;
 
 	// 地面にダウンキャスト
-	Field* field = (Field*)GetGameObjectOrigin();
+	Field* field = (Field*)GetGameObject();
 
 	return field->mesh_plane_polygon_->GetMaterial();
 }

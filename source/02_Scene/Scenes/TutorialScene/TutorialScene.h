@@ -20,7 +20,7 @@
 //****************************************
 // クラス宣言
 //****************************************
-class GameObjectOrigin;
+class GameObjectBase;
 
 
 
@@ -36,7 +36,7 @@ class TutorialScene : public SceneBase
 // 非静的メンバ変数
 //==============================
 private:
-	GameObjectOrigin* logo_;
+	GameObjectBase* logo_;
 
 
 
@@ -53,8 +53,8 @@ public:
 	TutorialScene(StateAbstract* state) : SceneBase(state) {}
 
 	// プロパティ
-	GameObjectOrigin* GetLogo() { return logo_; }
-	void SetLogo(GameObjectOrigin* value) { logo_ = value; }
+	GameObjectBase* GetLogo() { return logo_; }
+	void SetLogo(GameObjectBase* value) { logo_ = value; }
 };
 
 

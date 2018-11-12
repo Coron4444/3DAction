@@ -17,7 +17,7 @@
 //======================================================================
 
 
-#include <Component\CollisionComponent\CollisionComponent.h>
+#include <Component/CollisionBase/CollisionBase.h>
 
 #include <string>
 
@@ -29,7 +29,7 @@
 //
 //======================================================================
 
-class PlayerCollision : public CollisionComponent
+class PlayerCollision : public CollisionBase
 {
 //------------------------------------------------------------
 private :
@@ -62,13 +62,13 @@ public :
 	void Uninit() override;
 	void Update() override;
 
-	void HitCollision(CollisionComponent* hit_component, 
-					  CollisionObject*    hit_opponent_object,
-					  CollisionObject*    hit_myself_object) override;
+	void HitCollision(CollisionBase* hit_collision,
+					  CollisionObject*  hit_object,
+					  CollisionObject*  hit_my_object) override;
 
-	void NotHitCollision(CollisionComponent* hit_component, 
-					     CollisionObject*    hit_opponent_object,
-					     CollisionObject*    hit_myself_object) override;
+	void NotHitCollision(CollisionBase* hit_collision,
+						 CollisionObject*  hit_object,
+						 CollisionObject*  hit_my_object) override;
 
 	void HitGround(float position_y)    override;
 
@@ -76,18 +76,18 @@ public :
 //------------------------------------------------------------
 private :
 	// バウンディングスフィア
-	void HitBoundingSphere(CollisionComponent* hit_component, 
-					       CollisionObject*    hit_opponent_object,
-					       CollisionObject*    hit_myself_object);
+	void HitBoundingSphere(CollisionBase* hit_collision,
+						   CollisionObject*  hit_object,
+						   CollisionObject*  hit_my_object);
 
-	void NotHitBoundingSphere(CollisionComponent* hit_component, 
-							  CollisionObject*    hit_opponent_object,
-							  CollisionObject*    hit_myself_object);
+	void NotHitBoundingSphere(CollisionBase* hit_collision,
+							  CollisionObject*  hit_object,
+							  CollisionObject*  hit_my_object);
 
 	// サブスタンス
-	void HitSubstance(CollisionComponent* hit_component, 
-					  CollisionObject*    hit_opponent_object,
-					  CollisionObject*    hit_myself_object);
+	void HitSubstance(CollisionBase* hit_collision,
+					  CollisionObject*  hit_object,
+					  CollisionObject*  hit_my_object);
 
 	
 

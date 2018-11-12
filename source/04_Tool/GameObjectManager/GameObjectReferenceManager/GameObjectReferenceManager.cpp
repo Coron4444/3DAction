@@ -14,7 +14,7 @@
 //**********************************************************************
 
 #include "GameObjectReferenceManager.h"
-#include "../../GameObjectOrigin/GameObjectOrigin.h"
+#include "../../GameObjectBase/GameObjectBase.h"
 #include <SafeRelease/SafeRelease.h>
 
 
@@ -57,7 +57,8 @@ GameObjectReferenceManager::~GameObjectReferenceManager()
 //
 //================================================================================
 
-void GameObjectReferenceManager::RegistrationReference(GameObjectOrigin* source, void* pointer, GameObjectOrigin* destination)
+void GameObjectReferenceManager::RegistrationReference(GameObjectBase* source, void* pointer, 
+													   GameObjectBase* destination)
 {
 	// 参照元マップへの登録の確認
 	RegistrationReference_Source(source, pointer, destination);
@@ -74,7 +75,7 @@ void GameObjectReferenceManager::RegistrationReference(GameObjectOrigin* source,
 //
 //================================================================================
 
-void GameObjectReferenceManager::ReleaseReference(GameObjectOrigin* object)
+void GameObjectReferenceManager::ReleaseReference(GameObjectBase* object)
 {
 	// 参照元マップから消去
 	ReleaseReference_Source(object);
@@ -130,7 +131,8 @@ void GameObjectReferenceManager::AllReleaseReference()
 //
 //================================================================================
 
-void GameObjectReferenceManager::RegistrationReference_Source(GameObjectOrigin* source, void* pointer, GameObjectOrigin* destination)
+void GameObjectReferenceManager::RegistrationReference_Source(GameObjectBase* source, void* pointer, 
+															  GameObjectBase* destination)
 {
 	// 参照元の検索
 	auto iterator = reference_map_.source_map_.find(source);
@@ -174,7 +176,8 @@ void GameObjectReferenceManager::RegistrationReference_Source(GameObjectOrigin* 
 //
 //================================================================================
 
-void GameObjectReferenceManager::RegistrationReference_Destination(GameObjectOrigin* source, void* pointer, GameObjectOrigin* destination)
+void GameObjectReferenceManager::RegistrationReference_Destination(GameObjectBase* source, void* pointer, 
+																   GameObjectBase* destination)
 {
 	// 参照先の検索
 	auto iterator = reference_map_.destination_map_.find(destination);
@@ -218,7 +221,7 @@ void GameObjectReferenceManager::RegistrationReference_Destination(GameObjectOri
 //
 //================================================================================
 
-void GameObjectReferenceManager::ReleaseReference_Source(GameObjectOrigin* object)
+void GameObjectReferenceManager::ReleaseReference_Source(GameObjectBase* object)
 {
 	auto iterator = reference_map_.source_map_.find(object);
 
@@ -248,7 +251,7 @@ void GameObjectReferenceManager::ReleaseReference_Source(GameObjectOrigin* objec
 //
 //================================================================================
 
-void GameObjectReferenceManager::ReleaseReference_Destination(GameObjectOrigin* object)
+void GameObjectReferenceManager::ReleaseReference_Destination(GameObjectBase* object)
 {
 	auto iterator = reference_map_.destination_map_.find(object);
 

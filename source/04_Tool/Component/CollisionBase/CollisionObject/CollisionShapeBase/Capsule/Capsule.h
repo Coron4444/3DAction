@@ -73,7 +73,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline Capsule::Capsule(Segment segment, float radius)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_CAPSULE),
+	: CollisionShapeBase(CollisionShapeBase::Type::CAPSULE),
 	  segment_ (segment), 
 	  radius_  (radius),
 	  sphere0_ (segment_.position_, radius_),

@@ -20,7 +20,7 @@
 
 #include "../TitleLogo.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class TitleLogoDraw : public DrawComponent
+class TitleLogoDraw : public DrawBase
 {
 //------------------------------------------------------------
 private :

@@ -76,7 +76,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline Plane::Plane(Vec3 normal_vector, Vec3 point)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_PLANE),
+	: CollisionShapeBase(CollisionShapeBase::Type::PLANE),
 	  normal_vector_(normal_vector)
 {
 	normal_vector_.CreateNormalize();
@@ -93,7 +93,7 @@ inline Plane::Plane(Vec3 normal_vector, Vec3 point)
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline Plane::Plane(Vec3 point0, Vec3 point1, Vec3 point2)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_PLANE)
+	: CollisionShapeBase(CollisionShapeBase::Type::PLANE)
 {
 	Vec3 temp_normal_vector = Point3_Cross(point0, point1, point2);
 

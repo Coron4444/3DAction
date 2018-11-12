@@ -48,7 +48,7 @@ const float CoinCollision::SUBSTANCE_FORWARD = 1.0f;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CoinCollision::CoinCollision()
-	: CollisionComponent(CollisionComponent::State::COIN)
+	: CollisionBase(CollisionBase::State::COIN)
 {
 }
 
@@ -66,24 +66,24 @@ void CoinCollision::Init()
 	OBB* temp_obb_ = new OBB(BOUNDING_OBB_RIGHT,
 							 BOUNDING_OBB_UP, 
 							 BOUNDING_OBB_FORWARD,
-							 *GetGameObjectOrigin()->GetTransform()->GetPosition());
+							 *GetGameObject()->GetTransform()->GetPosition());
 	
 	bounding_obb_ = new CollisionObject(temp_obb_, ObjectTag::BOUNDING_OBB);
 
 	// バウンディングOBBの登録
-	AddCollisionObject(bounding_obb_);
+	AddCollisionObjectToArray(bounding_obb_);
 
 
 	// 本体OBBの作成
 	temp_obb_ = new OBB(SUBSTANCE_RIGHT,
 						SUBSTANCE_UP, 
 						SUBSTANCE_FORWARD,
-						*GetGameObjectOrigin()->GetTransform()->GetPosition());
+						*GetGameObject()->GetTransform()->GetPosition());
 
 	substance_ = new CollisionObject(temp_obb_, ObjectTag::SUBSTANCE);
 
 	// 本体OBBの登録
-	AddCollisionObject(substance_);
+	AddCollisionObjectToArray(substance_);
 }
 
 
@@ -97,7 +97,7 @@ void CoinCollision::Init()
 void CoinCollision::Uninit()
 {
 	// スーパークラスの終了処理
-	CollisionComponent::Uninit();
+	CollisionBase::Uninit();
 }
 
 
@@ -113,19 +113,19 @@ void CoinCollision::Update()
 	// バウンディングOBBの更新
 	OBB* temp_obb = (OBB*)bounding_obb_->GetCollisionShape();
 
-	temp_obb->position_		  = *GetGameObjectOrigin()->GetTransform()->GetPosition();
-	temp_obb->axis_			  = *GetGameObjectOrigin()->GetTransform()->GetAxisVector();
-	temp_obb->lenght_right_	  = GetGameObjectOrigin()->GetTransform()->GetScale()->x * BOUNDING_OBB_RIGHT;
-	temp_obb->lenght_up_	  = GetGameObjectOrigin()->GetTransform()->GetScale()->y * BOUNDING_OBB_UP;
-	temp_obb->lenght_forward_ = GetGameObjectOrigin()->GetTransform()->GetScale()->z * BOUNDING_OBB_FORWARD;
+	temp_obb->position_		  = *GetGameObject()->GetTransform()->GetPosition();
+	temp_obb->axis_			  = *GetGameObject()->GetTransform()->GetAxisVector();
+	temp_obb->lenght_right_	  = GetGameObject()->GetTransform()->GetScale()->x * BOUNDING_OBB_RIGHT;
+	temp_obb->lenght_up_	  = GetGameObject()->GetTransform()->GetScale()->y * BOUNDING_OBB_UP;
+	temp_obb->lenght_forward_ = GetGameObject()->GetTransform()->GetScale()->z * BOUNDING_OBB_FORWARD;
 
 
 	// 本体スフィアOBBの更新
 	temp_obb = (OBB*)substance_->GetCollisionShape();
 
-	temp_obb->position_		  = *GetGameObjectOrigin()->GetTransform()->GetPosition();
-	temp_obb->axis_			  = *GetGameObjectOrigin()->GetTransform()->GetAxisVector();
-	temp_obb->lenght_right_	  = GetGameObjectOrigin()->GetTransform()->GetScale()->x * SUBSTANCE_RIGHT;
-	temp_obb->lenght_up_	  = GetGameObjectOrigin()->GetTransform()->GetScale()->y * SUBSTANCE_UP;
-	temp_obb->lenght_forward_ = GetGameObjectOrigin()->GetTransform()->GetScale()->z * SUBSTANCE_FORWARD;
+	temp_obb->position_		  = *GetGameObject()->GetTransform()->GetPosition();
+	temp_obb->axis_			  = *GetGameObject()->GetTransform()->GetAxisVector();
+	temp_obb->lenght_right_	  = GetGameObject()->GetTransform()->GetScale()->x * SUBSTANCE_RIGHT;
+	temp_obb->lenght_up_	  = GetGameObject()->GetTransform()->GetScale()->y * SUBSTANCE_UP;
+	temp_obb->lenght_forward_ = GetGameObject()->GetTransform()->GetScale()->z * SUBSTANCE_FORWARD;
 }

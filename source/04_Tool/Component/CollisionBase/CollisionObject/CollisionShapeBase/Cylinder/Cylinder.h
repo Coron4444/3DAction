@@ -73,7 +73,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline Cylinder::Cylinder(Vec3 position0, Vec3 position1, float radius)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_CYLINDER),
+	: CollisionShapeBase(CollisionShapeBase::Type::CYLINDER),
 	  position0_(position0), 
 	  position1_(position1), 
 	  radius_   (radius)

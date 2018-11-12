@@ -67,7 +67,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline AABB::AABB(Vec3 min, Vec3 max)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_AABB),
+	: CollisionShapeBase(CollisionShapeBase::Type::AABB),
 	  min_(min), 
 	  max_(max)
 {

@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Vector3D.h>
 #include <vector>
@@ -28,8 +28,6 @@
 // ÉNÉâÉXêÈåæ
 //
 //======================================================================
-
-class DrawComponentManager;
 class Number;
 class NumberFactory;
 
@@ -40,7 +38,7 @@ class NumberFactory;
 //
 //======================================================================
 
-class Numbers : public GameObjectOrigin
+class Numbers : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :

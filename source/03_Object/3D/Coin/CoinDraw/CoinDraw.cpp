@@ -45,10 +45,10 @@ const std::string CoinDraw::EFFECT = "CoinEffect/CoinEffect.efk";
 void CoinDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_BILLBOARD_ALPHA);
+	SetState(DrawBase::State::FIXED_BILLBOARD_ALPHA);
 
 	// ダウンキャスト
-	coin_ = (Coin*)GetGameObjectOrigin();
+	coin_ = (Coin*)GetGameObject();
 
 	// デカールテクスチャの読み込み
 	decale_texture_ = TextureManager::AddUniqueData(&DECALE_TEXTURE);
@@ -86,7 +86,7 @@ void CoinDraw::Draw(unsigned mesh_index)
 {
 	mesh_index = mesh_index;
 
-	*effekseer_object_->GetTransform()->GetPosition() = *GetGameObjectOrigin()->GetTransform()->GetPosition();
+	*effekseer_object_->GetTransform()->GetPosition() = *GetGameObject()->GetTransform()->GetPosition();
 	effekseer_object_->GetTransform()->UpdateWorldMatrixSRT();
 
 	// ポリゴン描画

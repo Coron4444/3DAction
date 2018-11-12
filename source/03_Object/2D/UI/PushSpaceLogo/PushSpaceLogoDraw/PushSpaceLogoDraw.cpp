@@ -46,10 +46,10 @@ const float PushSpaceLogoDraw::SCALE = 0.5f;
 void PushSpaceLogoDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_2D);
+	SetState(DrawBase::State::FIXED_2D);
 
 	// TitleLogoにダウンキャスト
-	push_space_logo_ = (PushSpaceLogo*)GetGameObjectOrigin();
+	push_space_logo_ = (PushSpaceLogo*)GetGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);

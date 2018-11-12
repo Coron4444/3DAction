@@ -18,7 +18,7 @@
 
 #include "../Player.h"
 
-#include <Component\UpdateComponent\UpdateComponent.h>
+#include <Component/UpdateBase/UpdateBase.h>
 
 
 
@@ -28,26 +28,26 @@
 //
 //======================================================================
 
-class PlayerUpdate : public UpdateComponent
+class PlayerUpdate : public UpdateBase
 {
 //------------------------------------------------------------
-private :
+private:
 	// ’è”
 	static const float SPEED;
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
+public:
 	// ƒƒ“ƒoŠÖ”
 	void Init()		  override;
 	void Uninit()	  override;
 	void Update()	  override;
 	void LateUpdate() override;
-	void Debug()      override;
+	void DebugDisplay()      override;
 
 
 //------------------------------------------------------------
-private :
+private:
 	Player* player_;
 
 };

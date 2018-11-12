@@ -29,14 +29,14 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void PushSpaceLogo::Init(UpdateComponent* update_component,
-						 DrawComponent*   draw_component)
+void PushSpaceLogo::Init(UpdateBase* update,
+						 DrawBase*   draw)
 {
 	// プレーンポリゴン作成
 	plane_polygon_ = new PlanePolygon();
 
 	// 基底クラスの初期化
-	Init_SuperClass(update_component, draw_component, nullptr);
+	GameObjectBase::Init(update, draw, nullptr);
 }
 
 
@@ -50,7 +50,7 @@ void PushSpaceLogo::Init(UpdateComponent* update_component,
 void PushSpaceLogo::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 
 	// 各種開放
 	SafeRelease::Normal(&plane_polygon_);

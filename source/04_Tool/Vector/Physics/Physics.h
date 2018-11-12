@@ -26,7 +26,7 @@
 //
 //======================================================================
 
-class GameObjectOrigin;
+class GameObjectBase;
 
 
 
@@ -46,7 +46,7 @@ private :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// デフォルトコンストラクタ
-	Physics(GameObjectOrigin* game_object_origin);
+	Physics(GameObjectBase* game_object);
 
 
 
@@ -107,7 +107,7 @@ private :
 //------------------------------------------------------------
 private :
 	// ゲームオブジェクト
-	GameObjectOrigin* game_object_origin_;
+	GameObjectBase* game_object_;
 
 	// 加速度
 	Vector3D acceleration_;

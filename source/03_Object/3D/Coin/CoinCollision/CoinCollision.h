@@ -17,7 +17,7 @@
 //======================================================================
 
 #include "../Coin.h"
-#include <Component\CollisionComponent\CollisionComponent.h>
+#include <Component/CollisionBase/CollisionBase.h>
 
 #include <string>
 
@@ -30,7 +30,7 @@
 //
 //======================================================================
 
-class CoinCollision : public CollisionComponent
+class CoinCollision : public CollisionBase
 {
 //------------------------------------------------------------
 private :

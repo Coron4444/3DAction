@@ -34,7 +34,7 @@
 void ScoreDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_2D);
+	SetState(DrawBase::State::FIXED_2D);
 }
 
 

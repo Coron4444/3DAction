@@ -46,7 +46,7 @@ const float EnemyCollision::SUBSTANCE_RADIUS	   = 1.0f;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 EnemyCollision::EnemyCollision()
-		: CollisionComponent(CollisionComponent::State::ENEMY)
+		: CollisionBase(CollisionBase::State::ENEMY)
 {
 }
 
@@ -61,23 +61,23 @@ EnemyCollision::EnemyCollision()
 void EnemyCollision::Init()
 {
 	// バウンディングスフィアの作成
-	Sphere* temp_sphere = new Sphere(*GetGameObjectOrigin()->GetTransform()->GetPosition(), 
+	Sphere* temp_sphere = new Sphere(*GetGameObject()->GetTransform()->GetPosition(), 
 									 BOUNDING_SPHERE_RADIUS);
 	
 	bounding_sphere_ = new CollisionObject(temp_sphere, ObjectTag::BOUNDING_SPHERE);
 
 	// バウンディングスフィアの登録
-	AddCollisionObject(bounding_sphere_);
+	AddCollisionObjectToArray(bounding_sphere_);
 
 
 	// 本体スフィアの作成
-	temp_sphere = new Sphere(*GetGameObjectOrigin()->GetTransform()->GetPosition(),
+	temp_sphere = new Sphere(*GetGameObject()->GetTransform()->GetPosition(),
 							 SUBSTANCE_RADIUS);
 
 	substance_ = new CollisionObject(temp_sphere, ObjectTag::SUBSTANCE);
 
 	// 本体スフィアの登録
-	AddCollisionObject(substance_);
+	AddCollisionObjectToArray(substance_);
 }
 
 
@@ -91,7 +91,7 @@ void EnemyCollision::Init()
 void EnemyCollision::Uninit()
 {
 	// スーパークラスの終了処理
-	CollisionComponent::Uninit();
+	CollisionBase::Uninit();
 }
 
 
@@ -106,9 +106,9 @@ void EnemyCollision::Update()
 {
 	// バウンディングスフィアの更新
 	Sphere* temp_sphere = (Sphere*)bounding_sphere_->GetCollisionShape();
-	temp_sphere->position_ = *GetGameObjectOrigin()->GetTransform()->GetPosition();
+	temp_sphere->position_ = *GetGameObject()->GetTransform()->GetPosition();
 
 	// 本体スフィアの更新
 	temp_sphere = (Sphere*)substance_->GetCollisionShape();
-	temp_sphere->position_ = *GetGameObjectOrigin()->GetTransform()->GetPosition();
+	temp_sphere->position_ = *GetGameObject()->GetTransform()->GetPosition();
 }

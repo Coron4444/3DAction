@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Scenes/GameScene/GameScene.h>
 
@@ -28,14 +28,14 @@
 //
 //======================================================================
 
-class Player : public GameObjectOrigin
+class Player : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// ÉÅÉìÉoä÷êî
-	void Init(UpdateComponent*        update_component,
-			  DrawComponent*          draw_component,
-			  CollisionComponent*     collision_component,
+	void Init(UpdateBase*        update,
+			  DrawBase*          draw,
+			  CollisionBase*     collision,
 			  GameScene* game_scene);
 	void Uninit() override;
 	void Reset()  override;

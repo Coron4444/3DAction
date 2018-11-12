@@ -26,7 +26,7 @@
 //
 //======================================================================
 
-class GameObjectOrigin;
+class GameObjectBase;
 
 
 
@@ -53,13 +53,13 @@ public :
 	void Uninit(Camera* camera) override {camera = camera;}
 	void Update(Camera* camera) override;
 
-	void SetTarget(GameObjectOrigin* target) {target_ = target;}
+	void SetTarget(GameObjectBase* target) {target_ = target;}
 
 
 //------------------------------------------------------------
 private :
 	// ƒƒ“ƒo•Ï”
-	GameObjectOrigin* target_;
+	GameObjectBase* target_;
 };
 
 

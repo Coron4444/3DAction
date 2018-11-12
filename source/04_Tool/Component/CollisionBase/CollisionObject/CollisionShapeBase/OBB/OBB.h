@@ -94,7 +94,7 @@ private	:
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline OBB::OBB(float lenght_right, float lenght_up, float lenght_forward, Vec3 position )
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_OBB),
+	: CollisionShapeBase(CollisionShapeBase::Type::OBB),
 	  lenght_right_  ( lenght_right ),
 	  lenght_up_     ( lenght_up ),
 	  lenght_forward_( lenght_forward ),

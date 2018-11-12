@@ -47,18 +47,18 @@ void GameSceneState_Start::Init()
 	game_scene_->SetScore(0);
 
 	// デフォルトカメラの作成
-	DrawComponentManager::CreateDefaultCamera(new CameraState_CrawlUp());
+	GameObjectManager::GetDrawManager()->CreateDefaultCamera(new CameraState_CrawlUp());
 
 	// コインの作成
 	CoinFactory coin_factory;
 	Coin* temp = coin_factory.Create();
 	*temp->GetTransform()->GetPosition() = Vec3(5.0f, 0.0f, 0.0f);
 	temp->GetTransform()->UpdateWorldMatrixSRT();
-
+	
 	temp = coin_factory.Create();
 	*temp->GetTransform()->GetPosition() = Vec3(5.0f, 0.0f, 5.0f);
 	temp->GetTransform()->UpdateWorldMatrixSRT();
-
+	
 	temp = coin_factory.Create();
 	*temp->GetTransform()->GetPosition() = Vec3(-5.0f, 0.0f, -5.0f);
 	temp->GetTransform()->UpdateWorldMatrixSRT();

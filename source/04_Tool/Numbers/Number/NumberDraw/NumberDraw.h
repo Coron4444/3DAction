@@ -19,7 +19,7 @@
 #include <string>
 
 #include "../Number.h"
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 
 
 
@@ -29,7 +29,7 @@
 //
 //======================================================================
 
-class NumberDraw : public DrawComponent
+class NumberDraw : public DrawBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :

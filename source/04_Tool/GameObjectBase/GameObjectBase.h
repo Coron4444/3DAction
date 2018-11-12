@@ -66,15 +66,15 @@ public:
 
 	/**
 	* @brief
-	* リセット関数
+	* 終了関数
 	*/
-	virtual void Reset() = 0;
+	virtual void Uninit();
 
 	/**
 	* @brief
-	* オブジェクト解放関数
+	* リセット関数
 	*/
-	void ReleaseObject();
+	virtual void Reset() = 0;
 
 	/**
 	* @brief
@@ -102,25 +102,15 @@ public:
 protected:
 	/**
 	* @brief
-	* 基底クラス初期化関数
+	* 初期化関数
 	* @param
-	* update_component : 更新コンポーネント
-	* draw_component : 描画コンポーネント
-	* collision_component : 衝突コンポーネント
+	* update : 更新基底クラス
+	* draw : 描画基底クラス
+	* collision : 衝突基底クラス
 	*/
-	void BaseClassInit(UpdateBase* update, DrawBase* draw, CollisionBase* collision);
+	void Init(UpdateBase* update, DrawBase* draw, CollisionBase* collision);
 	
-	/**
-	* @brief
-	* 基底クラス終了関数
-	*/
-	void BaseClassUninit();
-
-	/**
-	* @brief
-	* 終了関数
-	*/
-	virtual void Uninit() = 0;
+	
 
 private:
 	/**
@@ -134,21 +124,6 @@ private:
 	* コンポーネント終了関数
 	*/
 	void UninitComponent();
-
-	/**
-	* @brief
-	* コンポーネントをマネージャーへ設定関数
-	*/
-	void SetComponentToManager();
-
-	/**
-	* @brief
-	* コンポーネントをマネージャーから解放関数
-	*/
-	void ReleaseComponentFromManager();
-
-	// プロパティ
-	void SetGameObjectToComponent();
 };
 
 

@@ -34,7 +34,7 @@
 void EnemyDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_ALPHA);
+	SetState(DrawBase::State::FIXED_ALPHA);
 }
 
 
@@ -63,7 +63,7 @@ void EnemyDraw::Draw(unsigned mesh_index)
 	mesh_index = mesh_index;
 	
 	// 敵にダウンキャスト
-	Enemy* enemy = (Enemy*)GetGameObjectOrigin();
+	Enemy* enemy = (Enemy*)GetGameObject();
 
 	// キューブ描画
 	enemy->cube_polygon_->Draw();
@@ -79,7 +79,7 @@ void EnemyDraw::Draw(unsigned mesh_index)
 unsigned EnemyDraw::GetMeshNum()
 {
 	// 敵にダウンキャスト
-	Enemy* enemy = (Enemy*)GetGameObjectOrigin();
+	Enemy* enemy = (Enemy*)GetGameObject();
 
 	// メッシュ数の取得
 	return enemy->cube_polygon_->GetMeshNum();
@@ -98,7 +98,7 @@ D3DMATERIAL9* EnemyDraw::GetMaterial(unsigned mesh_index)
 	mesh_index = mesh_index;
 
 	// 敵にダウンキャスト
-	Enemy* enemy = (Enemy*)GetGameObjectOrigin();
+	Enemy* enemy = (Enemy*)GetGameObject();
 
 	// メッシュ数の取得
 	return enemy->cube_polygon_->GetMaterial();

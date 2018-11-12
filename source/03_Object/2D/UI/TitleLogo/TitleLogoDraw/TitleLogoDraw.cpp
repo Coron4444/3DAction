@@ -46,10 +46,10 @@ const float TitleLogoDraw::SCALE = 1.25f;
 void TitleLogoDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_2D);
+	SetState(DrawBase::State::FIXED_2D);
 
 	// TitleLogoにダウンキャスト
-	title_logo_ = (TitleLogo*)GetGameObjectOrigin();
+	title_logo_ = (TitleLogo*)GetGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);

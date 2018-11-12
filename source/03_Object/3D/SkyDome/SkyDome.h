@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 
 
@@ -26,13 +26,13 @@
 //
 //======================================================================
 
-class SkyDome : public GameObjectOrigin
+class SkyDome : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// ÉÅÉìÉoä÷êî
-	void Init(UpdateComponent* update_component,
-		      DrawComponent*   draw_component);
+	void Init(UpdateBase* update,
+		      DrawBase*   draw);
 	void Uninit() override;
 	void Reset()  override;
 

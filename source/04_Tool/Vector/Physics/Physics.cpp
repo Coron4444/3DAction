@@ -16,7 +16,7 @@
 #include "Physics.h"
 
 #include <Vector\ConvertToFrame\MeterToFrame\MeterToFrame.h>
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 
 
@@ -42,20 +42,20 @@ const float Physics::VELOCITY_MIN = 0.0001f;
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Physics::Physics(GameObjectOrigin* game_object_origin)
-	: game_object_origin_  (game_object_origin),
-	  max_velocity_		   (100.0f),
-	  mass_				   (1.0f),
-	  friction_			   (0.0f),
-	  my_friction_		   (1.0f),
-	  bounciness_		   (0.0f),
-	  my_bounciness_       (1.0f),
-	  is_gravity_          (true),
-	  gravity_acceleration_(MeterPerSecondSquared_To_MeterPerFrameSquared(9.8f)),
-	  gravity_direction_   (0.0f, -1.0f, 0.0f),
-	  is_on_tha_ground_    (false),
-	  is_landing_          (false)
-	  
+Physics::Physics(GameObjectBase* game_object)
+	: game_object_(game_object),
+	max_velocity_(100.0f),
+	mass_(1.0f),
+	friction_(0.0f),
+	my_friction_(1.0f),
+	bounciness_(0.0f),
+	my_bounciness_(1.0f),
+	is_gravity_(true),
+	gravity_acceleration_(MeterPerSecondSquared_To_MeterPerFrameSquared(9.8f)),
+	gravity_direction_(0.0f, -1.0f, 0.0f),
+	is_on_tha_ground_(false),
+	is_landing_(false)
+
 {
 }
 
@@ -84,10 +84,10 @@ void Physics::Update()
 {
 	// 加速度更新
 	UpdateAcceleration();
-	
+
 	// 速度更新
 	UpdateVelocity();
-	
+
 	// 座標更新
 	UpdatePosition();
 
@@ -153,13 +153,13 @@ void Physics::UpdateVelocity()
 	{
 		velocity_ *= friction_;
 	}
-	
+
 	// 反発力を追加
 	if (bounciness_ > 0.0f)
 	{
 		velocity_ *= -bounciness_;
 	}
-	
+
 	// 速度の最小値・最大値チェック
 	CheckVelocityMinMax();
 }
@@ -175,10 +175,10 @@ void Physics::UpdateVelocity()
 void Physics::UpdatePosition()
 {
 	// 速度を座標に作用
-	*game_object_origin_->GetTransform()->GetPosition() += velocity_;
+	*game_object_->GetTransform()->GetPosition() += velocity_;
 
 	// 行列の更新(ビルボードにも対応)
-	game_object_origin_->GetTransform()->UpdateWorldMatrixISRT();
+	game_object_->GetTransform()->UpdateWorldMatrixISRT();
 }
 
 

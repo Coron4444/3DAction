@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Polygon\PlanePolygon\PlanePolygon.h>
 
@@ -38,13 +38,13 @@ class PlanePolygon;
 //
 //======================================================================
 
-class PushSpaceLogo : public GameObjectOrigin
+class PushSpaceLogo : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// ÉÅÉìÉoä÷êî
-	void Init(UpdateComponent* update_component,
-		      DrawComponent*   draw_component);
+	void Init(UpdateBase* update,
+		      DrawBase*   draw);
 	void Uninit() override;
 	void Reset()  override;
 

@@ -20,7 +20,7 @@
 
 #include "../ClearLogo.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class ClearLogoDraw : public DrawComponent
+class ClearLogoDraw : public DrawBase
 {
 //------------------------------------------------------------
 private :

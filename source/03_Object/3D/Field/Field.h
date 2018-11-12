@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 
 
@@ -36,12 +36,12 @@ class MeshPlanePolygon;
 //
 //======================================================================
 
-class Field : public GameObjectOrigin
+class Field : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// ÉÅÉìÉoä÷êî
-	void Init(DrawComponent* draw_component);
+	void Init(DrawBase* draw);
 	void Uninit() override;
 	void Reset()  override;
 

@@ -29,16 +29,16 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void Player::Init(UpdateComponent*        update_component, 
-				  DrawComponent*          draw_component,
-				  CollisionComponent*     collision_component,
+void Player::Init(UpdateBase*        update,
+				  DrawBase*          draw,
+				  CollisionBase*     collision,
 				  GameScene* game_scene)
 {
 	// 各種代入
 	game_scene_ = game_scene;
 
 	// 基底クラスの初期化
-	Init_SuperClass(update_component, draw_component, collision_component);
+	GameObjectBase::Init(update, draw, collision);
 }
 
 
@@ -52,7 +52,7 @@ void Player::Init(UpdateComponent*        update_component,
 void Player::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 }
 
 

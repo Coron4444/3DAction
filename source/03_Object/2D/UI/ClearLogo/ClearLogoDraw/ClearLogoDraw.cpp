@@ -46,10 +46,10 @@ const float ClearLogoDraw::SCALE = 1.25f;
 void ClearLogoDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_2D);
+	SetState(DrawBase::State::FIXED_2D);
 
 	// ClearLogoにダウンキャスト
-	clear_logo_ = (ClearLogo*)GetGameObjectOrigin();
+	clear_logo_ = (ClearLogo*)GetGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);

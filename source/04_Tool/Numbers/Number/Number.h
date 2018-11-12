@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Vector3D.h>
 #include <ResourceManager\ResourceManager.h>
@@ -38,7 +38,7 @@ class PlanePolygon;
 //
 //======================================================================
 
-class Number : public GameObjectOrigin
+class Number : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
@@ -50,7 +50,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// ÉÅÉìÉoä÷êî
-	void Init(DrawComponent* draw_component);
+	void Init(DrawBase* draw);
 	void Uninit() override;
 	void Reset()  override;
 

@@ -15,8 +15,8 @@
 
 #include "EffekseerManager.h"
 #include <main.h>
-#include <ComponentManager/DrawComponentManager/Shader/FixedPipelineObject/FixedPipelineObject.h>
-#include <ComponentManager\DrawComponentManager\Camera\Camera.h>
+#include <ComponentManager/DrawManager/Shader/FixedPipelineObject/FixedPipelineObject.h>
+#include <ComponentManager/DrawManager/Camera/Camera.h>
 
 
 

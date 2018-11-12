@@ -31,13 +31,13 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void FailureLogo::Init(DrawComponent* draw_component)
+void FailureLogo::Init(DrawBase* draw)
 {
 	// プレーンポリゴン作成
 	plane_polygon_ = new PlanePolygon();
 
 	// 基底クラスの初期化
-	Init_SuperClass(nullptr, draw_component, nullptr);
+	GameObjectBase::Init(nullptr, draw, nullptr);
 }
 
 
@@ -51,7 +51,7 @@ void FailureLogo::Init(DrawComponent* draw_component)
 void FailureLogo::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 
 	// 各種開放
 	SafeRelease::Normal(&plane_polygon_);

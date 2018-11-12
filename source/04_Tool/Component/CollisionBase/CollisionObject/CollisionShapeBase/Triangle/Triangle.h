@@ -73,7 +73,7 @@ public :
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 inline Triangle::Triangle(Vec3 point0, Vec3 point1, Vec3 point2)
-	: CollisionShapeOrigin(CollisionShapeOrigin::Type::TYPE_TRIANGLE),
+	: CollisionShapeBase(CollisionShapeBase::Type::TRIANGLE),
 	  plane_(point0, point1, point2)
 {
 	point_[0] = point0;

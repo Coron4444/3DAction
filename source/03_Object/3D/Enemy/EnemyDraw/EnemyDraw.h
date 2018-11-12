@@ -20,7 +20,7 @@
 
 #include "../Enemy.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class EnemyDraw : public DrawComponent
+class EnemyDraw : public DrawBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :

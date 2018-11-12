@@ -46,10 +46,10 @@ const float TutorialLogo02Draw::SCALE = 1.25f;
 void TutorialLogo02Draw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_2D);
+	SetState(DrawBase::State::FIXED_2D);
 
 	// TutorialLogo02にダウンキャスト
-	title_logo_ = (TutorialLogo02*)GetGameObjectOrigin();
+	title_logo_ = (TutorialLogo02*)GetGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);

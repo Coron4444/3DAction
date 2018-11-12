@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 #include <Numbers\Numbers.h>
 #include <Scenes/GameScene/GameScene.h>
 
@@ -28,20 +28,20 @@
 //
 //======================================================================
 
-class Score : public GameObjectOrigin
+class Score : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
+public:
 	// ƒƒ“ƒoŠÖ”
-	void Init(UpdateComponent*		  update_component,
-		      DrawComponent*          draw_component,
-		      GameScene* game_scene);
+	void Init(UpdateBase* update_component,
+			  DrawBase* draw_component,
+			  GameScene* game_scene);
 	void Uninit() override;
 	void Reset()  override;
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
+public:
 	// ŒöŠJƒƒ“ƒo•Ï”
 	Numbers* score_num_;
 	GameScene* game_scene_;

@@ -20,8 +20,8 @@
 
 #include "../Coin.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
-#include <ResourceManager\ResourceManager.h>
+#include <Component/DrawBase/DrawBase.h>
+#include <ResourceManager/ResourceManager.h>
 
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class CoinDraw : public DrawComponent
+class CoinDraw : public DrawBase
 {
 //------------------------------------------------------------
 private :

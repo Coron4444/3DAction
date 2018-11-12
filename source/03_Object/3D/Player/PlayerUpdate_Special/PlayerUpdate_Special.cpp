@@ -20,7 +20,7 @@
 #include <ResourceManager\ResourceManager.h>
 
 #include <3D/Player/PlayerUpdate/PlayerUpdate.h>
-#include <ComponentManager/UpdateComponentManager/UpdateComponentManager.h>
+#include <GameObjectManager/GameObjectManager.h>
 
 
 
@@ -51,7 +51,7 @@ static EffekseerObject* temp_object_;
 void PlayerUpdate_Special::Init()
 {
 	// ダウンキャスト
-	player_ = (Player*)GetGameObjectOrigin();
+	player_ = (Player*)GetGameObject();
 
 	// 剛体設定
 	player_->CreatePhysics();
@@ -111,9 +111,10 @@ void PlayerUpdate_Special::Update()
 	*player_->GetPhysics()->GetAcceleration() += temp_vector.AnyLengthVector(SPEED);
 
 	// ブレーキ
-	if (GetKeyboardPress(DIK_N))
+	if (GetKeyboardTrigger(DIK_N))
 	{
-		UpdateComponentManager::OverwriteComponent(player_, new PlayerUpdate());
+		GameObjectManager::GetUpdateManager()
+			->OverwriteArrayUpdateBase(player_, new PlayerUpdate());
 		return;
 	}
 
@@ -142,7 +143,7 @@ void PlayerUpdate_Special::LateUpdate()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void PlayerUpdate_Special::Debug()
+void PlayerUpdate_Special::DebugDisplay()
 {
 #ifdef _DEBUG
 	 // ウィンドウの設定

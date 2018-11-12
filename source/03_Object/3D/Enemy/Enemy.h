@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Polygon\CubePolygon\CubePolygon.h>
 
@@ -28,14 +28,14 @@
 //
 //======================================================================
 
-class Enemy : public GameObjectOrigin
+class Enemy : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// ÉÅÉìÉoä÷êî
-	void Init(UpdateComponent*    update_component,
-			  DrawComponent*      draw_component,
-			  CollisionComponent* collision_component);
+	void Init(UpdateBase*    update,
+			  DrawBase*      draw,
+			  CollisionBase* collision);
 	void Uninit() override;
 	void Reset()  override;
 

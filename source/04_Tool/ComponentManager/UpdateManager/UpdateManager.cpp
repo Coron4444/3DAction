@@ -19,16 +19,7 @@
 
 
 //****************************************
-// 静的メンバ変数定義
-//****************************************
-LimitedPointerArray<UpdateBase*, UpdateManager::ARRAY_NUM> UpdateManager::all_update_;
-LimitedPointerArray<UpdateBase*, UpdateManager::ARRAY_NUM> UpdateManager::await_add_;
-LimitedPointerArray<UpdateBase*, UpdateManager::ARRAY_NUM> UpdateManager::await_release_;
-
-
-
-//****************************************
-// 静的メンバ関数定義
+// 非静的メンバ関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -173,7 +164,7 @@ void UpdateManager::OverwriteArrayUpdateBase(GameObjectBase* game_object,
 //--------------------------------------------------
 void UpdateManager::ReleaseUpdateBaseFromArray(UpdateBase* update)
 {
-	// 追加待ち配列に追加
+	// 解放待ち配列に追加
 	await_release_.AddToArray(update);
 }
 

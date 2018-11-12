@@ -16,9 +16,9 @@
 #include <assert.h>
 
 #include "FixedPipelineObject.h"
-#include <ComponentManager\DrawComponentManager\Camera\Camera.h>
-#include <Component/DrawComponent/DrawComponent.h>
-#include <GameObjectOrigin/GameObjectOrigin.h>
+#include <ComponentManager/DrawManager/Camera/Camera.h>
+#include <Component/DrawBase/DrawBase.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 
 #include <main.h>
@@ -99,7 +99,7 @@ void FixedPipelineObject::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void FixedPipelineObject::Draw3D(DrawComponent* draw_component, Camera* camera)
+void FixedPipelineObject::Draw3D(DrawBase* draw, Camera* camera)
 {
 	// 統一設定
 	UnifiedSetting();
@@ -108,18 +108,18 @@ void FixedPipelineObject::Draw3D(DrawComponent* draw_component, Camera* camera)
 	SetDraw3D(camera);
 
 	// ワールド行列セット
-	SetWorldMatrix(draw_component);
+	SetWorldMatrix(draw);
 	
-	for (unsigned i = 0; i < draw_component->GetMeshNum(); i++)
+	for (unsigned i = 0; i < draw->GetMeshNum(); i++)
 	{
 		// テクスチャのセット
-		SetTexture(draw_component, i);
+		SetTexture(draw, i);
 
 		// マテリアルのセット
-		SetMaterial(draw_component, i);
+		SetMaterial(draw, i);
 
 		// 描画
-		draw_component->Draw(i);
+		draw->Draw(i);
 	}
 }
 
@@ -131,7 +131,7 @@ void FixedPipelineObject::Draw3D(DrawComponent* draw_component, Camera* camera)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void FixedPipelineObject::Draw2D(DrawComponent* draw_component, Camera* camera)
+void FixedPipelineObject::Draw2D(DrawBase* draw, Camera* camera)
 {
 	camera = camera;
 
@@ -142,18 +142,18 @@ void FixedPipelineObject::Draw2D(DrawComponent* draw_component, Camera* camera)
 	SetDraw2D();
 
 	// ワールド行列セット
-	SetWorldMatrix(draw_component);
+	SetWorldMatrix(draw);
 	
-	for (unsigned i = 0; i < draw_component->GetMeshNum(); i++)
+	for (unsigned i = 0; i < draw->GetMeshNum(); i++)
 	{
 		// テクスチャのセット
-		SetTexture(draw_component, i);
+		SetTexture(draw, i);
 
 		// マテリアルのセット
-		SetMaterial(draw_component, i);
+		SetMaterial(draw, i);
 
 		// 描画
-		draw_component->Draw(i);
+		draw->Draw(i);
 	}
 }
 
@@ -218,9 +218,9 @@ void FixedPipelineObject::UnifiedSetting()
 //
 //--------------------------------------------------------------------------------
 
-void FixedPipelineObject::SetWorldMatrix(DrawComponent* draw_component)
+void FixedPipelineObject::SetWorldMatrix(DrawBase* draw)
 {
-	device_->SetTransform(D3DTS_WORLD, draw_component->GetGameObjectOrigin()->GetTransform()->GetWorldMatrix());
+	device_->SetTransform(D3DTS_WORLD, draw->GetGameObject()->GetTransform()->GetWorldMatrix());
 }
 
 
@@ -231,9 +231,9 @@ void FixedPipelineObject::SetWorldMatrix(DrawComponent* draw_component)
 //
 //--------------------------------------------------------------------------------
 
-void FixedPipelineObject::SetTexture(DrawComponent* draw_component, unsigned mesh_index)
+void FixedPipelineObject::SetTexture(DrawBase* draw, unsigned mesh_index)
 {
-	LPDIRECT3DTEXTURE9 temp = draw_component->GetDecaleTexture(mesh_index);
+	LPDIRECT3DTEXTURE9 temp = draw->GetDecaleTexture(mesh_index);
 
 	device_->SetTexture(0, temp);
 }
@@ -246,9 +246,9 @@ void FixedPipelineObject::SetTexture(DrawComponent* draw_component, unsigned mes
 //
 //--------------------------------------------------------------------------------
 
-void FixedPipelineObject::SetMaterial(DrawComponent* draw_component, unsigned mesh_index)
+void FixedPipelineObject::SetMaterial(DrawBase* draw, unsigned mesh_index)
 {
-	D3DMATERIAL9* temp = draw_component->GetMaterial(mesh_index);
+	D3DMATERIAL9* temp = draw->GetMaterial(mesh_index);
 
 	if (temp == nullptr) return;
 

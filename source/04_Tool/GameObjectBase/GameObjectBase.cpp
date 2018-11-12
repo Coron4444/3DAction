@@ -12,10 +12,10 @@
 //****************************************
 #include "GameObjectBase.h"
 
-#include "../GameObjectManager/GameObjectManager.h"
-#include "../ComponentManager/UpdateComponentManager/UpdateComponentManager.h"
-#include "../ComponentManager/DrawComponentManager/DrawComponentManager.h"
-#include "../ComponentManager/CollisionComponentManager/CollisionComponentManager.h"
+#include <GameObjectManager/GameObjectManager.h>
+#include <ComponentManager/UpdateManager/UpdateManager.h>
+#include <ComponentManager/DrawManager/DrawManager.h>
+#include <ComponentManager/CollisionManager/CollisionManager.h>
 
 
 
@@ -28,13 +28,10 @@
 GameObjectBase::GameObjectBase(bool is_registration)
 	: is_registration_(is_registration),
 	physics_(nullptr),
-	update_component_(nullptr),
-	draw_component_(nullptr),
-	collision_component_(nullptr)
+	update_(nullptr),
+	draw_(nullptr),
+	collision_(nullptr)
 {
-	// オブジェクトマネージャーに登録
-	if (!is_registration_) return;
-	GameObjectManager::Registration(this);
 }
 
 
@@ -45,26 +42,27 @@ GameObjectBase::GameObjectBase(bool is_registration)
 GameObjectBase::~GameObjectBase()
 {
 	// 各種開放
-	SafeRelease::Normal(&update_component_);
-	SafeRelease::Normal(&draw_component_);
-	SafeRelease::Normal(&collision_component_);
+	SafeRelease::Normal(&update_);
+	SafeRelease::Normal(&draw_);
+	SafeRelease::Normal(&collision_);
 	SafeRelease::Normal(&physics_);
 }
 
 
+
 //--------------------------------------------------
-// +オブジェクト解放関数
+// +終了関数
 //--------------------------------------------------
-void GameObjectBase::ReleaseObject()
+void GameObjectBase::Uninit()
 {
-	// 派生先の終了処理
-	Uninit();
+	// コンポーネントの終了処理
+	UninitComponent();
 }
 
 
 
 //--------------------------------------------------
-// +オブジェクト解放関数
+// +剛体生成関数
 //--------------------------------------------------
 void GameObjectBase::CreatePhysics()
 {
@@ -77,36 +75,17 @@ void GameObjectBase::CreatePhysics()
 //--------------------------------------------------
 // #基底クラス初期化関数
 //--------------------------------------------------
-void GameObjectBase::BaseClassInit(UpdateComponent* update_component, 
-								   DrawComponent* draw_component, 
-								   CollisionComponent* collision_component)
+void GameObjectBase::Init(UpdateBase* update, DrawBase* draw, CollisionBase* collision)
 {
 	// コンポーネントをセット
-	SetAllComponent(update_component, draw_component, collision_component);
-	
-	// コンポーネントをマネージャへ設定
-	SetComponentToManager();
-
-	// ゲームオブジェクトをコンポーネントに設定
-	SetGameObjectToComponent();
+	SetAllComponent(update, draw, collision);
 
 	// コンポーネントの初期化
 	InitComponent();
-}
 
-
-
-//--------------------------------------------------
-// #基底クラス終了関数
-//--------------------------------------------------
-void GameObjectBase::BaseClassUninit()
-{
-	// コンポーネントをマネージャから解放
-	ReleaseComponentFromManager();
-
-	// コンポーネントの終了処理
-	UninitComponent();
-
+	// オブジェクトマネージャーに登録
+	if (!is_registration_) return;
+	GameObjectManager::AddGameObjectBaseToArray(this);
 }
 
 
@@ -116,19 +95,22 @@ void GameObjectBase::BaseClassUninit()
 //--------------------------------------------------
 void GameObjectBase::InitComponent()
 {
-	if (update_component_ != nullptr)
+	if (update_ != nullptr)
 	{
-		update_component_->Init();
+		update_->SetGameObject(this);
+		update_->Init();
 	}
 
-	if (draw_component_ != nullptr)
+	if (draw_ != nullptr)
 	{
-		draw_component_->Init();
+		draw_->SetGameObject(this);
+		draw_->Init();
 	}
 
-	if (collision_component_ != nullptr)
+	if (collision_ != nullptr)
 	{
-		collision_component_->Init();
+		collision_->SetGameObject(this);
+		collision_->Init();
 	}
 }
 
@@ -139,85 +121,18 @@ void GameObjectBase::InitComponent()
 //--------------------------------------------------
 void GameObjectBase::UninitComponent()
 {
-	if (update_component_ != nullptr)
+	if (update_ != nullptr)
 	{
-		update_component_->Uninit();
+		update_->Uninit();
 	}
 
-	if (draw_component_ != nullptr)
+	if (draw_ != nullptr)
 	{
-		draw_component_->Uninit();
+		draw_->Uninit();
 	}
 
-	if (collision_component_ != nullptr)
+	if (collision_ != nullptr)
 	{
-		collision_component_->Uninit();
-	}
-}
-
-
-//--------------------------------------------------
-// -コンポーネントをマネージャーへ設定関数
-//--------------------------------------------------
-void GameObjectBase::SetComponentToManager()
-{
-	if (update_component_ != nullptr)
-	{
-		UpdateComponentManager::RegistrationComponent(update_component_);
-	}
-
-	if (draw_component_ != nullptr)
-	{
-		DrawComponentManager::RegistrationComponent(draw_component_);
-	}
-
-	if (collision_component_ != nullptr)
-	{
-		CollisionComponentManager::RegistrationComponent(collision_component_);
-	}
-}
-
-
-//--------------------------------------------------
-// -コンポーネントをマネージャーから解放関数
-//--------------------------------------------------
-void GameObjectBase::ReleaseComponentFromManager()
-{
-	if (update_component_ != nullptr)
-	{
-		UpdateComponentManager::ReleaseComponent(update_component_);
-	}
-
-	if (draw_component_ != nullptr)
-	{
-		DrawComponentManager::ReleaseComponent(draw_component_);
-	}
-
-	if (collision_component_ != nullptr)
-	{
-		CollisionComponentManager::ReleaseComponent(collision_component_);
-	}
-}
-
-
-
-//--------------------------------------------------
-// -ゲームオブジェクトをコンポーネントに設定関数
-//--------------------------------------------------
-void GameObjectBase::SetGameObjectToComponent()
-{
-	if (update_component_ != nullptr)
-	{
-		update_component_->SetGameObjectOrigin(this);
-	}
-
-	if (draw_component_ != nullptr)
-	{
-		draw_component_->SetGameObjectOrigin(this);
-	}
-
-	if (collision_component_ != nullptr)
-	{
-		collision_component_->SetGameObjectOrigin(this);
+		collision_->Uninit();
 	}
 }

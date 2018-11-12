@@ -27,7 +27,7 @@
 //======================================================================
 
 class Camera;
-class DrawComponent;
+class DrawBase;
 
 
 
@@ -63,7 +63,7 @@ public :
 	// ŒöŠJƒƒ“ƒoŠÖ”
 	static void Init();
 	static void Uninit();
-	static void Draw(DrawComponent* draw_component, Camera* camera);
+	static void Draw(DrawBase* draw, Camera* camera);
 
 	static void UpdateMeshDeclaration(ModelXObject* model_x);
 

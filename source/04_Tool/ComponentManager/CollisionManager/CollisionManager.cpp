@@ -24,18 +24,7 @@
 
 
 //****************************************
-// 静的メンバ変数定義
-//****************************************
-LimitedPointerArray<CollisionBase*, CollisionManager::ARRAY_NUM> CollisionManager::all_collision_;
-LimitedPointerArray<CollisionBase*, CollisionManager::ARRAY_NUM> CollisionManager::await_add_;
-LimitedPointerArray<CollisionBase*, CollisionManager::ARRAY_NUM> CollisionManager::await_release_;
-
-MeshPlanePolygon* CollisionManager::ground_polygon_;
-
-
-
-//****************************************
-// 静的メンバ関数定義
+// 非静的メンバ関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -129,7 +118,7 @@ void CollisionManager::AddCollisionBaseToArray(CollisionBase* collision)
 
 
 //--------------------------------------------------
-// +更新基底クラスの上書き関数
+// +衝突基底クラスの上書き関数
 //--------------------------------------------------
 void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 												   CollisionBase* new_collision)
@@ -137,10 +126,10 @@ void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 	// 新規がnullptrの場合
 	if (new_collision == nullptr)
 	{
-		// 古い更新基底クラスの解放
+		// 古い衝突基底クラスの解放
 		ReleaseCollisionBaseFromArray(game_object->GetCollision());
 
-		// 古い更新基底クラスの消去
+		// 古い衝突基底クラスの消去
 		CollisionBase* temp = game_object->GetCollision();
 		SafeRelease::Normal(&temp);
 
@@ -152,7 +141,7 @@ void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 		// 配列の上書き
 		all_collision_.OverwriteArray(game_object->GetCollision(), new_collision);
 
-		// 古い更新基底クラスの消去
+		// 古い衝突基底クラスの消去
 		CollisionBase* temp = game_object->GetCollision();
 		SafeRelease::Normal(&temp);
 
@@ -170,7 +159,7 @@ void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 //--------------------------------------------------
 void CollisionManager::ReleaseCollisionBaseFromArray(CollisionBase* collision)
 {
-	// 追加待ち配列に追加
+	// 解放待ち配列に追加
 	await_release_.AddToArray(collision);
 }
 

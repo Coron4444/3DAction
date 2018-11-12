@@ -15,9 +15,7 @@
 //****************************************
 #include <Vector3D.h>
 
-#include <ComponentManager\UpdateComponentManager\UpdateComponentManager.h>
-#include <ComponentManager\DrawComponentManager\DrawComponentManager.h>
-#include <ComponentManager\CollisionComponentManager\CollisionComponentManager.h>
+#include <GameObjectManager\GameObjectManager.h>
 
 
 

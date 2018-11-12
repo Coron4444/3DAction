@@ -27,7 +27,7 @@
 //======================================================================
 
 class Camera;
-class DrawComponent;
+class DrawBase;
 
 
 
@@ -56,8 +56,8 @@ public :
 	// 静的公開メンバ関数
 	static void Init();
 	static void Uninit();
-	static void Draw3D(DrawComponent* draw_component, Camera* camera);
-	static void Draw2D(DrawComponent* draw_component, Camera* camera);
+	static void Draw3D(DrawBase* draw, Camera* camera);
+	static void Draw2D(DrawBase* draw, Camera* camera);
 	
 	static void SetDraw3D(Camera* camera);
 	static void SetDraw2D();
@@ -81,13 +81,13 @@ private :
 	static void UnifiedSetting();
 
 	// ワールド行列設定
-	static void SetWorldMatrix(DrawComponent* draw_component);
+	static void SetWorldMatrix(DrawBase* draw);
 
 	// テクスチャ設定
-	static void SetTexture(DrawComponent* draw_component, unsigned mesh_index);
+	static void SetTexture(DrawBase* draw, unsigned mesh_index);
 
 	// マテリアル設定
-	static void SetMaterial(DrawComponent* draw_component, unsigned mesh_index);
+	static void SetMaterial(DrawBase* draw, unsigned mesh_index);
 
 	// ライト
 	static void Init_DirectionalLignt();

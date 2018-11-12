@@ -20,7 +20,7 @@
 
 #include "../Field.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class FieldDraw : public DrawComponent
+class FieldDraw : public DrawBase
 {
 //------------------------------------------------------------
 private :

@@ -20,7 +20,7 @@
 
 #include "../Player.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class PlayerDraw : public DrawComponent
+class PlayerDraw : public DrawBase
 {
 //------------------------------------------------------------
 private :

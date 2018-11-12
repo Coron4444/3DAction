@@ -18,7 +18,7 @@
 
 #include "../PushSpaceLogo.h"
 
-#include <Component\UpdateComponent\UpdateComponent.h>
+#include <Component/UpdateBase/UpdateBase.h>
 
 
 
@@ -28,26 +28,26 @@
 //
 //======================================================================
 
-class PushSpaceLogoUpdate : public UpdateComponent
+class PushSpaceLogoUpdate : public UpdateBase
 {
 //------------------------------------------------------------
-private :
+private:
 	// íËêî
 	static const int CHANGE_NUM;
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
+public:
 	// ÉÅÉìÉoä÷êî
 	void Init()		  override;
 	void Uninit()	  override;
 	void Update()	  override;
 	void LateUpdate() override;
-	void Debug()      override;
+	void DebugDisplay()      override;
 
 
 //------------------------------------------------------------
-private :
+private:
 	PushSpaceLogo* push_space_logo_;
 	int change_count_;
 	XColor4 color_;

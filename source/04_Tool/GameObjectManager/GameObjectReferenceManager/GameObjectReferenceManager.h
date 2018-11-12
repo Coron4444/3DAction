@@ -27,7 +27,7 @@
 //
 //**********************************************************************
 
-class GameObjectOrigin;
+class GameObjectBase;
 
 
 
@@ -49,7 +49,7 @@ public :
 	struct ReferenceData
 	{
 		// コンストラクタ
-		ReferenceData(GameObjectOrigin* source, void* pointer, GameObjectOrigin* destination)
+		ReferenceData(GameObjectBase* source, void* pointer, GameObjectBase* destination)
 		{
 			reference_source_	   = source;
 			reference_destination_ = destination;
@@ -57,8 +57,8 @@ public :
 		}
 
 		// メンバ変数
-		GameObjectOrigin* reference_source_;
-		GameObjectOrigin* reference_destination_;
+		GameObjectBase* reference_source_;
+		GameObjectBase* reference_destination_;
 		void*			  reference_pointer_;
 		int				  registration_index_;
 	};
@@ -66,10 +66,10 @@ public :
 	struct ReferenceMap
 	{
 		// キーのオブジェクトが参照元のマップ
-		std::unordered_map<GameObjectOrigin*, LimitedPointerArray<ReferenceData*, ARRAY_NUM>*> source_map_;
+		std::unordered_map<GameObjectBase*, LimitedPointerArray<ReferenceData*, ARRAY_NUM>*> source_map_;
 		
 		// キーのオブジェクトが参照先のマップ
-		std::unordered_map<GameObjectOrigin*, LimitedPointerArray<ReferenceData*, ARRAY_NUM>*> destination_map_;
+		std::unordered_map<GameObjectBase*, LimitedPointerArray<ReferenceData*, ARRAY_NUM>*> destination_map_;
 	};
 
 
@@ -88,8 +88,8 @@ public :
 // ============================================================
 public :
 	// メンバ関数
-	void RegistrationReference(GameObjectOrigin* source, void* pointer, GameObjectOrigin* destination);
-	void ReleaseReference(GameObjectOrigin* object);
+	void RegistrationReference(GameObjectBase* source, void* pointer, GameObjectBase* destination);
+	void ReleaseReference(GameObjectBase* object);
 	void AllReleaseReference();
 
 
@@ -97,11 +97,11 @@ public :
 // ============================================================
 private :
 	// メンバ関数
-	void RegistrationReference_Source(GameObjectOrigin* source, void* pointer, GameObjectOrigin* destination);
-	void RegistrationReference_Destination(GameObjectOrigin* source, void* pointer, GameObjectOrigin* destination);
+	void RegistrationReference_Source(GameObjectBase* source, void* pointer, GameObjectBase* destination);
+	void RegistrationReference_Destination(GameObjectBase* source, void* pointer, GameObjectBase* destination);
 
-	void ReleaseReference_Source(GameObjectOrigin* object);
-	void ReleaseReference_Destination(GameObjectOrigin* object);
+	void ReleaseReference_Source(GameObjectBase* object);
+	void ReleaseReference_Destination(GameObjectBase* object);
 
 	
 // ============================================================

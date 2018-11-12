@@ -44,7 +44,7 @@ const std::string SkyDomeDraw::MODEL_NAME = "SkyDome/SkyDome.x";
 void SkyDomeDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED);
+	SetState(DrawBase::State::FIXED);
 
 	// Xモデル登録
 	sky_dome_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);

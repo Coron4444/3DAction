@@ -40,7 +40,7 @@ void TutorialSceneState_Start::Init()
 	tutorial_scene_ = (TutorialScene*)scene_;
 
 	// デフォルトカメラの作成
-	DrawComponentManager::CreateDefaultCamera(nullptr);
+	GameObjectManager::GetDrawManager()->CreateDefaultCamera(nullptr);
 
 	// チュートリアルロゴ02
 	TutorialLogo02Factory tutorial_logo_02_factory;
@@ -62,7 +62,7 @@ void TutorialSceneState_Start::Init()
 //--------------------------------------------------
 void TutorialSceneState_Start::Uninit()
 {
-	GameObjectManager::Release(tutorial_scene_->GetLogo());
+	GameObjectManager::ReleaseGameObjectBaseFromArray(tutorial_scene_->GetLogo());
 }
 
 

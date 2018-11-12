@@ -20,7 +20,7 @@
 
 #include "../Score.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class ScoreDraw : public DrawComponent
+class ScoreDraw : public DrawBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :

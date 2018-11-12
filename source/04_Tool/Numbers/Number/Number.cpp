@@ -42,7 +42,7 @@ const std::string Number::TEXTURE_NAME = "UI/Num.png";
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void Number::Init(DrawComponent* draw_component)
+void Number::Init(DrawBase* draw)
 {
 	// プレーンポリゴンの作成
 	plane_polygon_ = new PlanePolygon;
@@ -51,8 +51,7 @@ void Number::Init(DrawComponent* draw_component)
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME, nullptr, 10, 10, 1);
 
 	// 基底クラスの初期化
-	Init_SuperClass(nullptr, draw_component, nullptr);
-
+	GameObjectBase::Init(nullptr, draw, nullptr);
 
 	// 初期数字セット
 	number_ = -1;		// 初期の数字変更用
@@ -70,7 +69,7 @@ void Number::Init(DrawComponent* draw_component)
 void Number::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 
 	// プレーンポリゴンの解放
 	SafeRelease::Normal(&plane_polygon_);

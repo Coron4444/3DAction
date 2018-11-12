@@ -30,8 +30,8 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void Score::Init(UpdateComponent*		 update_component,
-	             DrawComponent*          draw_component,
+void Score::Init(UpdateBase* update,
+	             DrawBase* draw,
 				 GameScene* game_scene)
 {
 	// 各種代入
@@ -42,7 +42,7 @@ void Score::Init(UpdateComponent*		 update_component,
 	score_num_ = numbers_factory.Create();
 
 	// 基底クラスの初期化
-	Init_SuperClass(update_component, draw_component, nullptr);
+	GameObjectBase::Init(update, draw, nullptr);
 }
 
 
@@ -56,7 +56,7 @@ void Score::Init(UpdateComponent*		 update_component,
 void Score::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 }
 
 

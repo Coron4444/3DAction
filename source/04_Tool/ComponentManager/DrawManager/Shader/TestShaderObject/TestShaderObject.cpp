@@ -16,9 +16,9 @@
 #include <assert.h>
 
 #include "TestShaderObject.h"
-#include <ComponentManager\DrawComponentManager\Camera\Camera.h>
-#include <Component/DrawComponent/DrawComponent.h>
-#include <GameObjectOrigin/GameObjectOrigin.h>
+#include <ComponentManager/DrawManager/Camera/Camera.h>
+#include <Component/DrawBase/DrawBase.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Renderer/Renderer.h>
 #include <Transform\Transform.h>
@@ -169,7 +169,7 @@ void TestShaderObject::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void TestShaderObject::Draw(DrawComponent* draw_component, Camera* camera)
+void TestShaderObject::Draw(DrawBase* draw, Camera* camera)
 {
 	// テクニック設定
 	effect_->SetTechnique(technique_);
@@ -183,14 +183,14 @@ void TestShaderObject::Draw(DrawComponent* draw_component, Camera* camera)
 	// 描画
 
 	// ワールド変換行列(WVP)をセット
-	D3DXMatrixMultiply(&math_matrix_, draw_component->GetGameObjectOrigin()->GetTransform()->GetWorldMatrix(), camera->GetViewMatrix());
+	D3DXMatrixMultiply(&math_matrix_, draw->GetGameObject()->GetTransform()->GetWorldMatrix(), camera->GetViewMatrix());
 	D3DXMatrixMultiply(&math_matrix_, &math_matrix_, camera->GetProjectionMatrix());
 	effect_->SetMatrix(matrix_WVP_, &math_matrix_);
 
 	// ライト方向をセット
 	D3DXMatrixIdentity(&math_matrix_);
 	Vec4 light_position(0.5f, -1.0f, 0.8f, 0.0f);
-	D3DXMatrixInverse(&math_matrix_, nullptr, draw_component->GetGameObjectOrigin()->GetTransform()->GetWorldMatrix());
+	D3DXMatrixInverse(&math_matrix_, nullptr, draw->GetGameObject()->GetTransform()->GetWorldMatrix());
 	D3DXVec4Transform(&light_position, &light_position, &math_matrix_);
 	D3DXVec3Normalize((Vec3*)&light_position, (Vec3*)&light_position);
 	light_position.w = -0.7f;		// 環境光の比率
@@ -198,7 +198,7 @@ void TestShaderObject::Draw(DrawComponent* draw_component, Camera* camera)
 	
 	// 視点の設定(オブジェクトごとのローカル座標でのカメラの座標を取得する)
 	D3DXMatrixIdentity(&math_matrix_);
-	D3DXMatrixMultiply(&math_matrix_, draw_component->GetGameObjectOrigin()->GetTransform()->GetWorldMatrix(), camera->GetViewMatrix());
+	D3DXMatrixMultiply(&math_matrix_, draw->GetGameObject()->GetTransform()->GetWorldMatrix(), camera->GetViewMatrix());
 	D3DXMatrixInverse(&math_matrix_, nullptr, &math_matrix_);
 	Vec4 object_local_camera_position(0.0f, 0.0f, 0.0f, 1.0f);
 	D3DXVec4Transform(&object_local_camera_position, &object_local_camera_position, &math_matrix_);
@@ -209,28 +209,28 @@ void TestShaderObject::Draw(DrawComponent* draw_component, Camera* camera)
 
 	// メッシュ数分描画
 	Vec4 temp_vector;
-	for (unsigned i = 0; i < draw_component->GetMeshNum(); i++)
+	for (unsigned i = 0; i < draw->GetMeshNum(); i++)
 	{
 		// ディヒューズ色の設定
-		temp_vector.x = draw_component->GetMaterial(i)->Diffuse.r;
-		temp_vector.y = draw_component->GetMaterial(i)->Diffuse.g;
-		temp_vector.z = draw_component->GetMaterial(i)->Diffuse.b;
-		temp_vector.w = draw_component->GetMaterial(i)->Diffuse.a;
+		temp_vector.x = draw->GetMaterial(i)->Diffuse.r;
+		temp_vector.y = draw->GetMaterial(i)->Diffuse.g;
+		temp_vector.z = draw->GetMaterial(i)->Diffuse.b;
+		temp_vector.w = draw->GetMaterial(i)->Diffuse.a;
 		effect_->SetVector(lambert_diffuse_light_color_, &temp_vector);
 		
 		// デカールテクスチャの設定
-		LPDIRECT3DTEXTURE9 temp = draw_component->GetDecaleTexture(i);
+		LPDIRECT3DTEXTURE9 temp = draw->GetDecaleTexture(i);
 		temp = temp;
 		effect_->SetTexture(decale_texture_, temp);
 
 		// 法線マップの設定
-		effect_->SetTexture(normal_texture_, draw_component->GetNormalTexture(i));
+		effect_->SetTexture(normal_texture_, draw->GetNormalTexture(i));
 
 		// シェーダーの設定確定
 		effect_->CommitChanges();
 		
 		// 描画
-		draw_component->Draw(i);
+		draw->Draw(i);
 	}
 	
 	

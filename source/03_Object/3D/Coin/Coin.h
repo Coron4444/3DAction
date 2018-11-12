@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <GameObjectOrigin\GameObjectOrigin.h>
+#include <GameObjectBase/GameObjectBase.h>
 
 #include <Polygon\PlanePolygon\PlanePolygon.h>
 
@@ -28,13 +28,13 @@
 //
 //======================================================================
 
-class Coin : public GameObjectOrigin
+class Coin : public GameObjectBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
 	// ÉÅÉìÉoä÷êî
-	void Init(DrawComponent*      draw_component,
-			  CollisionComponent* collision_component);
+	void Init(DrawBase*      draw,
+			  CollisionBase* collision);
 	void Uninit() override;
 	void Reset()  override;
 

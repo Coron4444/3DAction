@@ -20,7 +20,7 @@
 
 #include "../SkyDome.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class SkyDomeDraw : public DrawComponent
+class SkyDomeDraw : public DrawBase
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :

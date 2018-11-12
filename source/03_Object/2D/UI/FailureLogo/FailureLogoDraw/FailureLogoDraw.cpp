@@ -47,10 +47,10 @@ const float FailureLogoDraw::SCALE = 1.25f;
 void FailureLogoDraw::Init()
 {
 	// ステートの変更
-	SetState(DrawComponent::State::FIXED_2D);
+	SetState(DrawBase::State::FIXED_2D);
 
 	// FailureLogoにダウンキャスト
-	failure_logo_ = (FailureLogo*)GetGameObjectOrigin();
+	failure_logo_ = (FailureLogo*)GetGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);

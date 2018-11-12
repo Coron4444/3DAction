@@ -28,7 +28,7 @@
 *
 * 描画の基底クラス
 *************************************************************/
-class DrawComponent : public ComponentBase
+class DrawBase : public ComponentBase
 {
 //==============================
 // 列挙型定義
@@ -53,7 +53,7 @@ public:
 // 非静的メンバ変数
 //==============================
 private:
-	DrawComponent::State state_ = NONE;		//!< ステート
+	State state_ = NONE;		//!< ステート
 
 
 //==============================
@@ -64,7 +64,7 @@ public:
 	* @brief
 	* 仮想デストラクタ
 	*/
-	virtual ~DrawComponent() {}
+	virtual ~DrawBase() {}
 
 	/**
 	* @brief
@@ -76,15 +76,15 @@ public:
 	* @brief
 	* デバッグ表示関数
 	*/
-	virtual void Debug() {}
+	virtual void DebugDisplay() {}
 
 	// プロパティ
 	virtual unsigned GetMeshNum() { return 1; }
 	virtual D3DMATERIAL9* GetMaterial(unsigned mesh_index) { mesh_index = mesh_index; return nullptr; }
 	virtual LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned mesh_index) { mesh_index = mesh_index; return nullptr; }
 	virtual LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned mesh_index) { mesh_index = mesh_index; return nullptr; }
-	DrawComponent::State GetState() { return state_; }
-	void SetState(DrawComponent::State state) { state_ = state; }
+	State GetState() { return state_; }
+	void SetState(State state) { state_ = state; }
 };
 
 

@@ -18,7 +18,7 @@
 
 #include "../Player.h"
 
-#include <Component\UpdateComponent\UpdateComponent.h>
+#include <Component/UpdateBase/UpdateBase.h>
 
 
 
@@ -28,7 +28,7 @@
 //
 //======================================================================
 
-class PlayerUpdate_Special : public UpdateComponent
+class PlayerUpdate_Special : public UpdateBase
 {
 //------------------------------------------------------------
 private :
@@ -43,7 +43,7 @@ public :
 	void Uninit()	  override;
 	void Update()	  override;
 	void LateUpdate() override;
-	void Debug()      override;
+	void DebugDisplay()      override;
 
 
 //------------------------------------------------------------

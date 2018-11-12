@@ -16,7 +16,7 @@
 #include "Field.h"
 #include <Polygon\MeshPlanePolygon\MeshPlanePolygon.h>
 
-#include <ComponentManager\CollisionComponentManager\CollisionComponentManager.h>
+#include <GameObjectManager/GameObjectManager.h>
 
 
 
@@ -32,15 +32,15 @@
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void Field::Init(DrawComponent* draw_component)
+void Field::Init(DrawBase* draw)
 {
 	// メッシュプレーンポリゴンの作成
 	mesh_plane_polygon_ = new MeshPlanePolygon(Vec2(50.0f, 50.0f), Vec2(1.0f, 1.0f), XColor4(1.0f, 1.0f, 1.0f, 1.0f));
 
-	CollisionComponentManager::SetGround(mesh_plane_polygon_);
+	GameObjectManager::GetCollisionManager()->SetGround(mesh_plane_polygon_);
 
 	// 基底クラスの初期化
-	Init_SuperClass(nullptr, draw_component, nullptr);
+	GameObjectBase::Init(nullptr, draw, nullptr);
 }
 
 
@@ -54,7 +54,7 @@ void Field::Init(DrawComponent* draw_component)
 void Field::Uninit()
 {
 	// 基底クラスの終了処理
-	Uninit_SuperClass();
+	GameObjectBase::Uninit();
 
 	// 各種開放
 	SafeRelease::Normal(&mesh_plane_polygon_);

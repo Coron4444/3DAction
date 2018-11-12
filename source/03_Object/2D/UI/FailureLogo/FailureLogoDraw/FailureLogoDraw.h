@@ -20,7 +20,7 @@
 
 #include "../FailureLogo.h"
 
-#include <Component\DrawComponent\DrawComponent.h>
+#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -31,7 +31,7 @@
 //
 //======================================================================
 
-class FailureLogoDraw : public DrawComponent
+class FailureLogoDraw : public DrawBase
 {
 //------------------------------------------------------------
 private :
