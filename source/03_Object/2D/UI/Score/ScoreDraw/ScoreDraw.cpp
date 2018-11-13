@@ -33,8 +33,11 @@
 
 void ScoreDraw::Init()
 {
-	// ステートの変更
-	SetState(DrawBase::State::FIXED_2D);
+	// オーダーリスト設定
+	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 }
 
 
@@ -58,7 +61,23 @@ void ScoreDraw::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void ScoreDraw::Draw(unsigned mesh_index)
+void ScoreDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
 	mesh_index = mesh_index;
+}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// [ 行列取得関数 ]
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const MATRIX* ScoreDraw::GetMatrix(unsigned object_index)
+{
+	object_index = object_index;
+
+	// メッシュ数の取得
+	return GetGameObject()->GetTransform()->GetWorldMatrix();
 }

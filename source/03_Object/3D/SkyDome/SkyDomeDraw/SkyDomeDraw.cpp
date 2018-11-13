@@ -43,8 +43,11 @@ const std::string SkyDomeDraw::MODEL_NAME = "SkyDome/SkyDome.x";
 
 void SkyDomeDraw::Init()
 {
-	// ステートの変更
-	SetState(DrawBase::State::FIXED);
+	// オーダーリスト設定
+	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
+	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// Xモデル登録
 	sky_dome_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
@@ -71,7 +74,7 @@ void SkyDomeDraw::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void SkyDomeDraw::Draw(unsigned mesh_index)
+void SkyDomeDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
@@ -88,6 +91,22 @@ void SkyDomeDraw::Draw(unsigned mesh_index)
 	sky_dome_model_->GetMesh()->DrawSubset(mesh_index);
 
 	device->SetRenderState(D3DRS_LIGHTING, TRUE);
+}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// [ 行列取得関数 ]
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const MATRIX* SkyDomeDraw::GetMatrix(unsigned object_index)
+{
+	object_index = object_index;
+
+	// メッシュ数の取得
+	return GetGameObject()->GetTransform()->GetWorldMatrix();
 }
 
 
@@ -111,8 +130,10 @@ unsigned SkyDomeDraw::GetMeshNum()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-D3DMATERIAL9* SkyDomeDraw::GetMaterial(unsigned mesh_index)
+D3DMATERIAL9* SkyDomeDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
+
 	return sky_dome_model_->GetMaterial(mesh_index);
 }
 
@@ -124,7 +145,9 @@ D3DMATERIAL9* SkyDomeDraw::GetMaterial(unsigned mesh_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-LPDIRECT3DTEXTURE9 SkyDomeDraw::GetDecaleTexture(unsigned mesh_index)
+LPDIRECT3DTEXTURE9 SkyDomeDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
+
 	return sky_dome_model_->GetDecaleTextureName(mesh_index)->GetHandler();
 }

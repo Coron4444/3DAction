@@ -54,7 +54,7 @@ public :
 public :
 	// ƒƒ“ƒoŠÖ”
 	void Init  (Camera* camera) override;
-	void Uninit(Camera* camera) override {camera = camera;}
+	void Uninit() override {}
 	void Update(Camera* camera) override;
 };
 

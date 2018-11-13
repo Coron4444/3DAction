@@ -10,130 +10,196 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <Transform\AxisVector\AxisVector.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+/*********************************************************//**
+* @brief
+* カメラクラス
+*
+* カメラのクラス
+*************************************************************/
 class Camera
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// 定数
-	static const float NEAR_CLIPPING_PLANE;
-	static const float FAR_CLIPPING_PLANE;
-	static const int   DEFAULT_ANGLE_OF_VIEW;
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	enum Type
-	{
-		NONE = -1,
-		NORMAL,
-		MAX
-	};
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// カメラステートクラス
+/***************************//**
+* @brief
+* カメラステートクラス
+*
+* カメラのステートクラス
+*******************************/
+public:
 	class State
 	{
-	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	public :
-		// デストラクタ
+	//==============================
+	// 非静的メンバ関数
+	//==============================
+	public:
+		/**
+		* @brief
+		* デストラクタ
+		*/
 		virtual ~State() {}
 
+		/**
+		* @brief
+		* 初期化関数
+		* @param
+		* camera : カメラ
+		*/
+		virtual void Init(Camera* camera) = 0;
 
-	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	public :
-		// メンバ変数
-		virtual void Init  (Camera* camera) = 0;
-		virtual void Uninit(Camera* camera) = 0;
+		/**
+		* @brief
+		* 終了関数
+		* @param
+		* camera : カメラ
+		*/
+		virtual void Uninit() = 0;
+
+		/**
+		* @brief
+		* 更新関数
+		* @param
+		* camera : カメラ
+		*/
 		virtual void Update(Camera* camera) = 0;
 	};
 
 
+//==============================
+// 定数定義
+//==============================
+public:
+	static const float NEAR_CLIPPING_PLANE;		//!< 近面クリップ
+	static const float FAR_CLIPPING_PLANE;		//!< 遠面クリップ
+	static const int   DEFAULT_ANGLE_OF_VIEW;	//!< 画角
+
+//==============================
+// 列挙型定義
+//==============================
+public:
+	enum Type
+	{
+		NONE = -1,
+		PERSPECTIVE,
+		ORTHO,
+		TWO_DIMENSIONAL,
+		MAX
+	};
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// コンストラクタ
-	Camera(State* state, Type type, Vec3 position = {0.0f, 0.0f, -10.0f}, 
-		   Vec3 look_at_point = {0.0f, 0.0f, 0.0f}, Vec3 up = {0.0f, 1.0f, 0.0f});
+
+//==============================
+// 非静的メンバ変数
+//==============================
+private:
+	Vector3D position_;				//!< 座標
+	Vector3D look_at_point_;		//!< 注視点
+	Vector3D up_;					//!< 上ベクトル
+
+	int angle_of_view_;				//!< 画角
+
+	AxisVector axis_;				//!< 軸
+
+	MATRIX view_;						//!< ビュー行列
+	MATRIX view_2D_;					//!< ビュー行列(2D)
+	MATRIX projection_perspective_;		//!< プロジェクション行列(透視投影)
+	MATRIX projection_ortho_;			//!< プロジェクション行列(正射影)
+	MATRIX projection_2D_;				//!< プロジェクション行列(2D)
+
+	State* state_ = nullptr;			//!< ステート
+	Type type_ = Type::PERSPECTIVE;		//!< タイプ
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デストラクタ
-	~Camera();
+//==============================
+// 非静的メンバ関数
+//==============================
+public:
+	/**
+	* @brief
+	* 初期化関数
+	* @param
+	* state : ステート
+	* position : 座標
+	* look_at_point : 注視点
+	* up : 上ベクトル
+	*/
+	void Init(State* state, Vec3 position = {0.0f, 0.0f, -10.0f},
+			  Vec3 look_at_point = {0.0f, 0.0f, 0.0f}, Vec3 up = {0.0f, 1.0f, 0.0f});
 
+	/**
+	* @brief
+	* 終了関数
+	*/
+	void Uninit();
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// 更新
+	/**
+	* @brief
+	* 更新関数
+	*/
 	void Update();
 
-	// 行列
+	/**
+	* @brief
+	* ビュー行列作成関数
+	*/
 	void CreateViewMatrix();
-	void CreateProjectionMatrix(float angle_of_view, float aspect, 
-								float near_clipping_plane, float far_clipping_plane);
+
+	/**
+	* @brief
+	* プロジェクション行列作成関数(透視投影行列)
+	*/
 	void CreateProjectionMatrix_PerspectiveFov();
+
+	/**
+	* @brief
+	* プロジェクション行列作成関数(正射影行列)
+	*/
 	void CreateProjectionMatrix_Ortho();
-	const MATRIX* GetViewMatrix()		const {return &matrix_view_;}
-	const MATRIX* GetProjectionMatrix() const {return &matrix_projection_;}
 
-	// 姿勢
-	Vector3D*   GetPositon()    {return &position_;}
-	Vector3D*   GetLookAtPoint(){return &look_at_point_;}
-	Vector3D*   GetUp()         {return &up_;}
+	/**
+	* @brief
+	* プロジェクション行列作成関数(2D)
+	*/
+	void CreateProjectionMatrix_2D();
 
-	// 画角
-	int* GetAngleOfView() {return &angle_of_view_;}
-
-	// 軸
-	AxisVector* GetAxis(){return &axis_;}
-	const Vector3D* GetForwardVector() const {return axis_.GetForawrd();}
-
-	// ステート&タイプ
+	/**
+	* @brief
+	* カメラステートの変更
+	*/
 	void ChangeState(State* new_camera_state);
-	bool IsCameraTypeName(Type type);
-	const State* GetCameraState() const {return state_;}
 
-//------------------------------------------------------------
-private :
-	// 姿勢
-	Vector3D position_;
-	Vector3D look_at_point_;
-	Vector3D up_;
-
-	// 画角
-	int angle_of_view_;
-
-	// 軸ベクトル
-	AxisVector axis_;
-
-	// 行列
-	MATRIX matrix_view_;
-	MATRIX matrix_projection_;
-
-	// ステート
-	State* state_;
-
-	// カメラタイプ
-	Type type_;
+	// プロパティ
+	const MATRIX* GetViewMatrix() const
+	{
+		if (type_ == Type::TWO_DIMENSIONAL) return &view_2D_;
+		return &view_;
+	}
+	const MATRIX* GetProjectionMatrix() const
+	{
+		if (type_ == Type::PERSPECTIVE) return &projection_perspective_;
+		if (type_ == Type::ORTHO) return &projection_ortho_;
+		return &projection_2D_;
+	}
+	Vector3D* GetPositon() { return &position_; }
+	Vector3D* GetLookAtPoint() { return &look_at_point_; }
+	Vector3D* GetUp() { return &up_; }
+	int GetAngleOfView() { return angle_of_view_; }
+	void SetAngleOfView(int value)
+	{
+		angle_of_view_ = value;
+		CreateProjectionMatrix_PerspectiveFov();
+		CreateProjectionMatrix_Ortho();
+	}
+	AxisVector* GetAxis() { return &axis_; }
+	const Vector3D* GetForwardVector() const { return axis_.GetForawrd(); }
+	const State* GetCameraState() const { return state_; }
+	Type GetType() { return type_; }
+	void SetType(Type value) { type_ = value; }
 };
 
 

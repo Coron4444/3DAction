@@ -44,8 +44,12 @@ const std::string CoinDraw::EFFECT = "CoinEffect/CoinEffect.efk";
 
 void CoinDraw::Init()
 {
-	// ステートの変更
-	SetState(DrawBase::State::FIXED_BILLBOARD_ALPHA);
+	// オーダーリスト設定
+	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	GetDrawOrderList()->SetIsBillboard(true);
 
 	// ダウンキャスト
 	coin_ = (Coin*)GetGameObject();
@@ -82,8 +86,9 @@ void CoinDraw::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void CoinDraw::Draw(unsigned mesh_index)
+void CoinDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	*effekseer_object_->GetTransform()->GetPosition() = *GetGameObject()->GetTransform()->GetPosition();
@@ -91,6 +96,22 @@ void CoinDraw::Draw(unsigned mesh_index)
 
 	// ポリゴン描画
 	coin_->GetPolygon()->Draw();
+}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// [ 行列取得関数 ]
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const MATRIX* CoinDraw::GetMatrix(unsigned object_index)
+{
+	object_index = object_index;
+
+	// メッシュ数の取得
+	return coin_->GetTransform()->GetWorldMatrix();
 }
 
 
@@ -115,8 +136,9 @@ unsigned CoinDraw::GetMeshNum()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-D3DMATERIAL9* CoinDraw::GetMaterial(unsigned mesh_index)
+D3DMATERIAL9* CoinDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	// メッシュ数の取得
@@ -131,8 +153,9 @@ D3DMATERIAL9* CoinDraw::GetMaterial(unsigned mesh_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-LPDIRECT3DTEXTURE9 CoinDraw::GetDecaleTexture(unsigned mesh_index)
+LPDIRECT3DTEXTURE9 CoinDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	return decale_texture_->GetHandler();

@@ -126,6 +126,12 @@ public:
 
 	/**
 	* @brief
+	* レンダラー取得関数
+	*/
+	RendererInterface* GetRenderer() { return renderer_; }
+
+	/**
+	* @brief
 	* インターフェース取得関数
 	*/
 	template <class Type>

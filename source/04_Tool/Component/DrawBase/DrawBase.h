@@ -14,6 +14,10 @@
 // インクルード文
 //****************************************
 #include "../ComponentBase/ComponentBase.h"
+#include "DrawOrderList/DrawOrderList.h"
+#include <ComponentManager/DrawManager/Camera/Camera.h>
+
+#include <Vector3D.h>
 
 #ifdef _DEBUG
 #include <ImGUI\imgui.h>
@@ -31,29 +35,11 @@
 class DrawBase : public ComponentBase
 {
 //==============================
-// 列挙型定義
-//==============================
-public:
-	// ステート
-	enum State
-	{
-		NONE = -1,
-		FIXED,
-		FIXED_ALPHA,
-		FIXED_BILLBOARD,
-		FIXED_BILLBOARD_ALPHA,
-		FIXED_2D,
-		TEST_SHADER,
-		TEST_SHADER_BILLBOARD,
-		MAX
-	};
-
-
-//==============================
 // 非静的メンバ変数
 //==============================
 private:
-	State state_ = NONE;		//!< ステート
+	DrawOrderList draw_order_list_;	//!< 描画注文リスト
+	Camera::Type save_camera_type_ = Camera::Type::NONE;	//!< カメラタイプ保存用
 
 
 //==============================
@@ -70,7 +56,7 @@ public:
 	* @brief
 	* 描画関数
 	*/
-	virtual void Draw(unsigned mesh_index) = 0;
+	virtual void Draw(unsigned object_index, unsigned mesh_index) = 0;
 
 	/**
 	* @brief
@@ -78,13 +64,30 @@ public:
 	*/
 	virtual void DebugDisplay() {}
 
+	/**
+	* @brief
+	* 限定カメラタイプ変更関数
+	*/
+	virtual void LimitedChangeCameraType(Camera* camera, unsigned object_index) { camera = camera; object_index = object_index; }
+
+	/**
+	* @brief
+	* カメラタイプ復活関数
+	*/
+	void RevivalCameraType(Camera* camera)
+	{
+		if (save_camera_type_ == Camera::Type::NONE) return;
+		camera->SetType(save_camera_type_);
+	}
+
 	// プロパティ
+	virtual unsigned GetDrawObjectNum() { return 1; }
 	virtual unsigned GetMeshNum() { return 1; }
-	virtual D3DMATERIAL9* GetMaterial(unsigned mesh_index) { mesh_index = mesh_index; return nullptr; }
-	virtual LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned mesh_index) { mesh_index = mesh_index; return nullptr; }
-	virtual LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned mesh_index) { mesh_index = mesh_index; return nullptr; }
-	State GetState() { return state_; }
-	void SetState(State state) { state_ = state; }
+	virtual const MATRIX* GetMatrix(unsigned object_index) = 0;
+	virtual D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }
+	virtual LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }
+	virtual LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }
+	DrawOrderList* GetDrawOrderList() { return &draw_order_list_; }
 };
 
 

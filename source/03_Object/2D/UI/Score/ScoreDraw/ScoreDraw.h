@@ -38,7 +38,9 @@ public :
 	// ƒƒ“ƒoŠÖ”
 	void Init()   override;
 	void Uninit() override;
-	void Draw(unsigned mesh_index) override;
+	void Draw(unsigned object_index, unsigned mesh_index) override;
+
+	const MATRIX* GetMatrix(unsigned object_index) override;
 };
 
 

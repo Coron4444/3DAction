@@ -106,6 +106,60 @@ public:
 	* デバイス取得関数
 	*/
 	LPDIRECT3DDEVICE9 GetDevice();
+
+	/**
+	* @brief
+	* アルファ合成フラグ関数
+	*/
+	void UseAlphaBlending(bool flag);
+
+	/**
+	* @brief
+	* アルファ合成関数(線形合成)
+	*/
+	void SetAlphaBlending_Linear();
+	
+	/**
+	* @brief
+	* アルファ合成関数(加算合成)
+	*/
+	void SetAlphaBlending_Add();
+
+	/**
+	* @brief
+	* アルファ合成関数(減算合成)
+	*/
+	void SetAlphaBlending_Sub();
+	
+	/**
+	* @brief
+	* アルファ合成関数(乗算合成)
+	*/
+	void SetAlphaBlending_Mul();
+	
+	/**
+	* @brief
+	* アルファ合成関数(焼きこみ合成)
+	*/
+	void SetAlphaBlending_Baking();
+	
+	/**
+	* @brief
+	* アルファ合成関数(ネガポジ反転合成)
+	*/
+	void SetAlphaBlending_Nega();
+	
+	/**
+	* @brief
+	* アルファ合成関数(不透明合成)
+	*/
+	void SetAlphaBlending_Opacity();
+
+	/**
+	* @brief
+	* デフォルトサンプラーステート設定関数
+	*/
+	void SetDefaultSamplerState();
 };
 
 

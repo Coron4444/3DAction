@@ -38,10 +38,11 @@ public :
 	// ƒƒ“ƒoŠÖ”
 	void Init()					   override;
 	void Uninit()				   override;
-	void Draw(unsigned mesh_index) override;
+	void Draw(unsigned object_index, unsigned mesh_index) override;
 
+	const MATRIX* GetMatrix(unsigned object_index) override;
 	unsigned		   GetMeshNum()							 override;
-	D3DMATERIAL9*	   GetMaterial(unsigned mesh_index)		 override;
+	D3DMATERIAL9*	   GetMaterial(unsigned object_index, unsigned mesh_index)		 override;
 };
 
 

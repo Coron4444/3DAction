@@ -74,12 +74,6 @@ bool RendererDirectX9::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow,
 		return false;
 	}
 
-	/*
-
-	
-
-	*/
-
 	return true;
 }
 
@@ -150,4 +144,142 @@ LPDIRECT3D9 RendererDirectX9::GetInterface()
 LPDIRECT3DDEVICE9 RendererDirectX9::GetDevice()
 {
 	return direct3d_device_;
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成フラグ関数
+//--------------------------------------------------
+void RendererDirectX9::UseAlphaBlending(bool flag)
+{
+	direct3d_device_->SetRenderState(D3DRS_ALPHABLENDENABLE, flag);
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成関数(線形合成)
+//--------------------------------------------------
+void RendererDirectX9::SetAlphaBlending_Linear()
+{
+	// SRC --- 今から描くもの。
+	// DEST--- すでに描画されている画面のこと。
+	// 1は100%(255)のこと
+	// 今回はSRC_αが0だから背景色が100%で出ている。
+
+	// {(1 - SRC_α) * DEST_RGB} + (SRC_RGB * SRC_α) 
+	direct3d_device_->SetRenderState(D3DRS_BLENDOP, D3DBLENDOP_ADD);
+	direct3d_device_->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA);
+	direct3d_device_->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成関数(加算合成)
+//--------------------------------------------------
+void RendererDirectX9::SetAlphaBlending_Add()
+{
+	// (DST_RGB * 1) - (SRC_RGB * SRC_α) 
+	direct3d_device_->SetRenderState(D3DRS_BLENDOP, D3DBLENDOP_ADD);
+	direct3d_device_->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ONE);
+	direct3d_device_->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成関数(減算合成)
+//--------------------------------------------------
+void RendererDirectX9::SetAlphaBlending_Sub()
+{
+	// (DST_RGB * 1) - (SRC_RGB * SRC_α) 
+	direct3d_device_->SetRenderState(D3DRS_BLENDOP, D3DBLENDOP_REVSUBTRACT);
+	direct3d_device_->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ONE);
+	direct3d_device_->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成関数(乗算合成)
+//--------------------------------------------------
+void RendererDirectX9::SetAlphaBlending_Mul()
+{
+	//direct3d_device_-> SetRenderState( D3DRS_BLENDOP, 任意の値)
+	// 下記2行で成立するため上記の設定に依存しない
+
+	// (DST_RGB * SRC_RGB) + (SRC_RGB * 0)
+	direct3d_device_->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_SRCCOLOR);
+	direct3d_device_->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_ZERO);
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成関数(焼きこみ合成)
+//--------------------------------------------------
+void RendererDirectX9::SetAlphaBlending_Baking()
+{
+	//direct3d_device_-> SetRenderState(D3DRS_BLENDOP, 任意の値)
+	// 下記2行で成立するため上記の設定に依存しない
+
+	// (DST_RGB * DST_RGB) + ( SRC_RGB * 0 )
+	direct3d_device_->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_DESTCOLOR);
+	direct3d_device_->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_ZERO);
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成関数(ネガポジ反転合成)
+//--------------------------------------------------
+void RendererDirectX9::SetAlphaBlending_Nega()
+{
+	//direct3d_device_->SetRenderState(D3DRS_BLENDOP, 任意の値)
+	// 下記2行で成立するため上記の設定に依存しない
+
+	// (DST_RGB * 0) + (1 - DST_RGB) * SRC_RGB
+	direct3d_device_->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ZERO);
+	direct3d_device_->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_INVDESTCOLOR);
+}
+
+
+
+//--------------------------------------------------
+// +アルファ合成関数(不透明合成)
+//--------------------------------------------------
+void RendererDirectX9::SetAlphaBlending_Opacity()
+{
+	//direct3d_device_->SetRenderState(D3DRS_BLENDOP, 任意の値)
+	// 下記2行で成立するため上記の設定に依存しない
+
+	// (DST_RGB * 0) + (SRC_RGB * 1)
+	direct3d_device_->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ZERO);
+	direct3d_device_->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_ONE);
+}
+
+
+
+//--------------------------------------------------
+// +デフォルトサンプラーステート設定関数
+//--------------------------------------------------
+void RendererDirectX9::SetDefaultSamplerState()
+{
+	// 第二引数(UVの設定)
+	// 第三引数テクスチャー座標外の処理
+	// WRAP ( 複製 )
+	// CLAMP( 一番最後のピクセルを引き延ばして参照する )
+	// MIRROR( 鏡 )
+	direct3d_device_->SetSamplerState(0, D3DSAMP_ADDRESSU, D3DTADDRESS_WRAP);
+	direct3d_device_->SetSamplerState(0, D3DSAMP_ADDRESSV, D3DTADDRESS_WRAP);
+
+	// フィルタリング
+	// MIPマップ(あらかじめ小さい画像データを自動で用意しておく)
+	direct3d_device_->SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR);	// デフォルトはPOINT(代表点1個を拾ってくる)
+																				// LINEAR(周りの点を集約して、つまり色をブレンドして1点にする)よって色がぼけるが滑らか
+	direct3d_device_->SetSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR);	// デフォルトはPOINT
+	direct3d_device_->SetSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_LINEAR);	// デフォルトはNONE(MIPマップを使わない)
+																				// LINEAR（MIPマップ間を線形補完する）
 }

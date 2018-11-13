@@ -94,6 +94,7 @@ void GameObjectManager::Update()
 	// XV
 	update_manager_.Update();
 	collision_manager_.Update();
+	draw_manager_.Update();
 }
 
 

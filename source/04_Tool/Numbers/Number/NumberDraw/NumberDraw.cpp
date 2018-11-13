@@ -37,8 +37,11 @@
 
 void NumberDraw::Init()
 {
-	// ステートの変更
-	SetState(DrawBase::State::FIXED_2D);
+	// オーダーリスト設定
+	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// Numberにダウンキャスト
 	number_ = (Number*)GetGameObject();
@@ -65,11 +68,28 @@ void NumberDraw::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void NumberDraw::Draw(unsigned mesh_index)
+void NumberDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	number_->plane_polygon_->Draw();
+}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// [ 行列取得関数 ]
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const MATRIX* NumberDraw::GetMatrix(unsigned object_index)
+{
+	object_index = object_index;
+
+	// メッシュ数の取得
+	return GetGameObject()->GetTransform()->GetWorldMatrix();
 }
 
 
@@ -93,8 +113,9 @@ unsigned NumberDraw::GetMeshNum()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-D3DMATERIAL9* NumberDraw::GetMaterial(unsigned mesh_index)
+D3DMATERIAL9* NumberDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	return number_->plane_polygon_->GetMaterial();
@@ -108,8 +129,9 @@ D3DMATERIAL9* NumberDraw::GetMaterial(unsigned mesh_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-LPDIRECT3DTEXTURE9 NumberDraw::GetDecaleTexture(unsigned mesh_index)
+LPDIRECT3DTEXTURE9 NumberDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	return number_->decale_texture_->GetHandler();

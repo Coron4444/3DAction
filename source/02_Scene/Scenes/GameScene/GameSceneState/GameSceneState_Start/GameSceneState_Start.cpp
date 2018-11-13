@@ -47,7 +47,8 @@ void GameSceneState_Start::Init()
 	game_scene_->SetScore(0);
 
 	// デフォルトカメラの作成
-	GameObjectManager::GetDrawManager()->CreateDefaultCamera(new CameraState_CrawlUp());
+	GameObjectManager::GetDrawManager()->GetBackBuffer()
+		->GetCamera()->ChangeState(new CameraState_CrawlUp());
 
 	// コインの作成
 	CoinFactory coin_factory;

@@ -33,8 +33,11 @@
 
 void EnemyDraw::Init()
 {
-	// ステートの変更
-	SetState(DrawBase::State::FIXED_ALPHA);
+	// オーダーリスト設定
+	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 }
 
 
@@ -58,8 +61,9 @@ void EnemyDraw::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void EnemyDraw::Draw(unsigned mesh_index)
+void EnemyDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 	
 	// 敵にダウンキャスト
@@ -68,6 +72,23 @@ void EnemyDraw::Draw(unsigned mesh_index)
 	// キューブ描画
 	enemy->cube_polygon_->Draw();
 }
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// [ 行列取得関数 ]
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const MATRIX* EnemyDraw::GetMatrix(unsigned object_index)
+{
+	object_index = object_index;
+
+	// メッシュ数の取得
+	return GetGameObject()->GetTransform()->GetWorldMatrix();
+}
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -93,8 +114,9 @@ unsigned EnemyDraw::GetMeshNum()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-D3DMATERIAL9* EnemyDraw::GetMaterial(unsigned mesh_index)
+D3DMATERIAL9* EnemyDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	// 敵にダウンキャスト

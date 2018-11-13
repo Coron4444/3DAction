@@ -15,7 +15,7 @@
 
 #include "EffekseerManager.h"
 #include <main.h>
-#include <ComponentManager/DrawManager/Shader/FixedPipelineObject/FixedPipelineObject.h>
+#include <Renderer/Renderer.h>
 #include <ComponentManager/DrawManager/Camera/Camera.h>
 
 
@@ -202,7 +202,7 @@ void EffekseerManager::Draw()
 	if (!is_draw) return;
 
 	// サンプラーステートを元に戻す
-	FixedPipelineObject::SetDefaultSamplerState();
+	((RendererDirectX9*)Renderer::GetInstance()->GetRenderer())->SetDefaultSamplerState();
 }
 
 

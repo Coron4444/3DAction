@@ -44,8 +44,11 @@ const std::string FieldDraw::TEXTURE_NAME = "Field.png";
 
 void FieldDraw::Init()
 {
-	// ステートの変更
-	SetState(DrawBase::State::FIXED);
+	// オーダーリスト設定
+	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
+	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
@@ -72,14 +75,31 @@ void FieldDraw::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void FieldDraw::Draw(unsigned mesh_index)
+void FieldDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	// 地面にダウンキャスト
 	Field* field = (Field*)GetGameObject();
 
 	field->mesh_plane_polygon_->Draw();
+}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// [ 行列取得関数 ]
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const MATRIX* FieldDraw::GetMatrix(unsigned object_index)
+{
+	object_index = object_index;
+
+	// メッシュ数の取得
+	return GetGameObject()->GetTransform()->GetWorldMatrix();
 }
 
 
@@ -106,8 +126,9 @@ unsigned FieldDraw::GetMeshNum()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-D3DMATERIAL9* FieldDraw::GetMaterial(unsigned mesh_index)
+D3DMATERIAL9* FieldDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	// 地面にダウンキャスト
@@ -124,8 +145,9 @@ D3DMATERIAL9* FieldDraw::GetMaterial(unsigned mesh_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-LPDIRECT3DTEXTURE9 FieldDraw::GetDecaleTexture(unsigned mesh_index)
+LPDIRECT3DTEXTURE9 FieldDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
 	mesh_index = mesh_index;
 
 	return decale_texture_->GetHandler();

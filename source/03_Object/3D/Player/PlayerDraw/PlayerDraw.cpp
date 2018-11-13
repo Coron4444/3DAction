@@ -16,7 +16,7 @@
 #include "PlayerDraw.h"
 
 #include <Renderer\RendererDirectX9\RendererDirectX9.h>
-#include <ComponentManager/DrawManager/Shader/TestShaderObject/TestShaderObject.h>
+//#include <ComponentManager/DrawManager/Shader/TestShaderObject/TestShaderObject.h>
 
 
 
@@ -47,14 +47,17 @@ const std::string PlayerDraw::NORMAL_TEXTURE_NAME02 = "knight_low/sword_01.png";
 
 void PlayerDraw::Init()
 {
-	// ステートの変更
-	SetState(DrawBase::State::TEST_SHADER);
+	// オーダーリスト設定
+	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
+	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
 
 	// 頂点宣言用メッシュ更新
-	TestShaderObject::UpdateMeshDeclaration(player_model_);
+	//TestShaderObject::UpdateMeshDeclaration(player_model_);
 
 	// 法線マップのロード
 	normal_texture_[0] = TextureManager::AddUniqueData(&NORMAL_TEXTURE_NAME01, &TEXTURE_PATH);
@@ -82,10 +85,26 @@ void PlayerDraw::Uninit()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void PlayerDraw::Draw(unsigned mesh_index)
+void PlayerDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
 	// 現在のメッシュの描画
 	player_model_->GetMesh()->DrawSubset(mesh_index);
+}
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// [ 行列取得関数 ]
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const MATRIX* PlayerDraw::GetMatrix(unsigned object_index)
+{
+	object_index = object_index;
+
+	// メッシュ数の取得
+	return GetGameObject()->GetTransform()->GetWorldMatrix();
 }
 
 
@@ -109,8 +128,10 @@ unsigned PlayerDraw::GetMeshNum()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-D3DMATERIAL9* PlayerDraw::GetMaterial(unsigned mesh_index)
+D3DMATERIAL9* PlayerDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
+
 	return player_model_->GetMaterial(mesh_index);
 }
 
@@ -122,8 +143,10 @@ D3DMATERIAL9* PlayerDraw::GetMaterial(unsigned mesh_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-LPDIRECT3DTEXTURE9 PlayerDraw::GetDecaleTexture(unsigned mesh_index)
+LPDIRECT3DTEXTURE9 PlayerDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
+
 	return player_model_->GetDecaleTextureName(mesh_index)->GetHandler();
 }
 
@@ -135,7 +158,9 @@ LPDIRECT3DTEXTURE9 PlayerDraw::GetDecaleTexture(unsigned mesh_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-LPDIRECT3DTEXTURE9 PlayerDraw::GetNormalTexture(unsigned mesh_index)
+LPDIRECT3DTEXTURE9 PlayerDraw::GetNormalTexture(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
+
 	return normal_texture_[mesh_index]->GetHandler();
 }

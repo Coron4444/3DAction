@@ -115,11 +115,11 @@ void SceneManager::UpdateScene()
 {
 	if (current_scene_ == nullptr) return;
 
-	// ゲームオブジェクトマネージャの更新
-	GameObjectManager::Update();
-
 	// 各シーン特有の更新
 	current_scene_->Update();
+	
+	// ゲームオブジェクトマネージャの更新
+	GameObjectManager::Update();
 }
 
 
@@ -160,7 +160,7 @@ void SceneManager::SetNextScene(SceneBase* value)
 	common_data_->SetIsUpdate(false);
 
 	// フェードアウト初期化
-	GameObjectManager::GetDrawManager()
+	GameObjectManager::GetDrawManager()->GetBackBuffer()
 		->InitFade(fade_type_, Fade::State::STATE_FADE_OUT,
 				   Vec2((float)SCREEN_WIDTH, (float)SCREEN_HEIGHT),
 				   fade_color_, fade_speed_);
@@ -180,7 +180,7 @@ void SceneManager::ResetScene()
 	state_ = SceneManager::State::RESET_SCENE;
 
 	// フェードアウト初期化
-	GameObjectManager::GetDrawManager()
+	GameObjectManager::GetDrawManager()->GetBackBuffer()
 		->InitFade(fade_type_, Fade::State::STATE_FADE_OUT,
 				   Vec2((float)SCREEN_WIDTH, (float)SCREEN_HEIGHT),
 				   fade_color_, fade_speed_);
@@ -194,10 +194,11 @@ void SceneManager::ResetScene()
 void SceneManager::SceneChange()
 {
 	// フェード処理が終わっているかどうか
-	if (!GameObjectManager::GetDrawManager()->IsFadeEnd()) return;
+	if (!GameObjectManager::GetDrawManager()->GetBackBuffer()->IsFadeEnd()) return;
 
 	// フェードのステートごとの処理
-	if (GameObjectManager::GetDrawManager()->IsFadeStateName(Fade::State::STATE_FADE_OUT))
+	if (GameObjectManager::GetDrawManager()->GetBackBuffer()
+		->IsFadeStateName(Fade::State::STATE_FADE_OUT))
 	{
 		// 現在のメインシーンの終了処理
 		SafeRelease::PlusUninit(&current_scene_);
@@ -215,20 +216,21 @@ void SceneManager::SceneChange()
 		current_scene_->Init();
 
 		// フェード終了
-		GameObjectManager::GetDrawManager()->UninitFade();
+		GameObjectManager::GetDrawManager()->GetBackBuffer()->UninitFade();
 
 		// フェードイン初期化
-		GameObjectManager::GetDrawManager()
+		GameObjectManager::GetDrawManager()->GetBackBuffer()
 			->InitFade(fade_type_, Fade::State::STATE_FADE_IN,
 					   Vec2((float)SCREEN_WIDTH, (float)SCREEN_HEIGHT),
 					   fade_color_, fade_speed_);
 	}
-	else if (GameObjectManager::GetDrawManager()->IsFadeStateName(Fade::State::STATE_FADE_IN))
+	else if (GameObjectManager::GetDrawManager()->GetBackBuffer()
+			 ->IsFadeStateName(Fade::State::STATE_FADE_IN))
 	{
 		// フェード終了処理
 		state_ = SceneManager::State::NONE;
 		common_data_->SetIsUpdate(true);
-		GameObjectManager::GetDrawManager()->UninitFade();
+		GameObjectManager::GetDrawManager()->GetBackBuffer()->UninitFade();
 	}
 }
 
@@ -240,29 +242,31 @@ void SceneManager::SceneChange()
 void SceneManager::SceneReset()
 {
 	// フェード処理が終わっているかどうか
-	if (!GameObjectManager::GetDrawManager()->IsFadeEnd()) return;
+	if (!GameObjectManager::GetDrawManager()->GetBackBuffer()->IsFadeEnd()) return;
 
 	// フェードのステートごとの処理
-	if (GameObjectManager::GetDrawManager()->IsFadeStateName(Fade::State::STATE_FADE_OUT))
+	if (GameObjectManager::GetDrawManager()->GetBackBuffer()
+		->IsFadeStateName(Fade::State::STATE_FADE_OUT))
 	{
 		// 現在のメインシーンのリセット
 		GameObjectManager::AllReset();
 		current_scene_->Reset();
 
 		// フェード終了
-		GameObjectManager::GetDrawManager()->UninitFade();
+		GameObjectManager::GetDrawManager()->GetBackBuffer()->UninitFade();
 
 		// フェードイン初期化
-		GameObjectManager::GetDrawManager()
+		GameObjectManager::GetDrawManager()->GetBackBuffer()
 			->InitFade(fade_type_, Fade::State::STATE_FADE_IN,
 					   Vec2((float)SCREEN_WIDTH, (float)SCREEN_HEIGHT),
 					   fade_color_, fade_speed_);
 	}
-	else if (GameObjectManager::GetDrawManager()->IsFadeStateName(Fade::State::STATE_FADE_IN))
+	else if (GameObjectManager::GetDrawManager()->GetBackBuffer()
+			 ->IsFadeStateName(Fade::State::STATE_FADE_IN))
 	{
 		// フェード終了処理
 		state_ = SceneManager::State::NONE;
 		common_data_->SetIsUpdate(true);
-		GameObjectManager::GetDrawManager()->UninitFade();
+		GameObjectManager::GetDrawManager()->GetBackBuffer()->UninitFade();
 	}
 }
