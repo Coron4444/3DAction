@@ -10,56 +10,69 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 
+#include <Component/DrawBase/DrawNone.h>
 #include "../TutorialLogo01.h"
 
-#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
-class TutorialLogo01Draw : public DrawBase
+/*********************************************************//**
+* @brief
+* チュートリアルロゴ01描画クラス
+*
+* チュートリアルロゴ01の描画クラス
+*************************************************************/
+class TutorialLogo01Draw : public DrawNone
 {
-//------------------------------------------------------------
-private :
-	// 定数
-	static const std::string TEXTURE_NAME;
-	static const float       SCALE;
+//==============================
+// 定数
+//==============================
+private:
+	static const std::string TEXTURE_NAME;		//!< テクスチャ名
+	static const float       SCALE;				//!< 拡縮
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ関数
-	void Init()   override;
+//==============================
+// 非静的メンバ関数
+//==============================
+private:
+	TutorialLogo01* tutorial_logo_;		//!< チュートリアルロゴ01
+	TextureObject* decale_texture_;		//!< デカールテクスチャ
+
+
+//==============================
+// 非静的メンバ関数
+//==============================
+public:
+	/**
+	* @brief
+	* 初期化関数
+	*/
+	void Init() override;
+
+	/**
+	* @brief
+	* 終了関数
+	*/
 	void Uninit() override;
+
+	/**
+	* @brief
+	* 描画関数
+	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
+	// プロパティ
 	const MATRIX* GetMatrix(unsigned object_index) override;
-	unsigned		   GetMeshNum(unsigned object_index)							 override;
-	D3DMATERIAL9*	   GetMaterial(unsigned object_index, unsigned mesh_index)		 override;
+	unsigned GetMeshNum(unsigned object_index) override;
+	D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) override;
-
-
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	TutorialLogo01* title_logo_;
-	TextureObject* decale_texture_;
-
-
 };
 
 

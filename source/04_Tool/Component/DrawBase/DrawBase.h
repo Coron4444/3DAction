@@ -38,9 +38,7 @@ class DrawBase : public ComponentBase
 // 非静的メンバ変数
 //==============================
 private:
-	DrawOrderList draw_order_list_;	//!< 描画注文リスト
-
-protected:
+	DrawOrderList draw_order_list_;							//!< 描画注文リスト
 	Camera::Type save_camera_type_ = Camera::Type::NONE;	//!< カメラタイプ保存用
 
 
@@ -68,9 +66,26 @@ public:
 
 	/**
 	* @brief
+	* 描画前設定関数
+	*/
+	virtual void SettingBeforeDrawing(Camera* camera, unsigned object_index) = 0;
+
+	/**
+	* @brief
+	* 描画後設定関数
+	*/
+	virtual void SettingAfterDrawing(Camera* camera, unsigned object_index) = 0;
+
+
+	/**
+	* @brief
 	* 限定カメラタイプ変更関数
 	*/
-	virtual void LimitedChangeCameraType(Camera* camera, unsigned object_index) { camera = camera; object_index = object_index; }
+	void LimitedChangeCameraType(Camera* camera, Camera::Type type)
+	{
+		save_camera_type_ = camera->GetType();
+		camera->SetType(type);
+	}
 
 	/**
 	* @brief
@@ -83,12 +98,12 @@ public:
 	}
 
 	// プロパティ
-	virtual unsigned GetDrawObjectNum() { return 1; }
-	virtual unsigned GetMeshNum(unsigned object_index) { object_index = object_index; return 1; }
+	virtual unsigned GetObjectNum() = 0;
+	virtual unsigned GetMeshNum(unsigned object_index) = 0;
 	virtual const MATRIX* GetMatrix(unsigned object_index) = 0;
-	virtual D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }
-	virtual LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }
-	virtual LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }
+	virtual D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) = 0;
+	virtual LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) = 0;
+	virtual LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned object_index, unsigned mesh_index) = 0;
 	DrawOrderList* GetDrawOrderList() { return &draw_order_list_; }
 };
 

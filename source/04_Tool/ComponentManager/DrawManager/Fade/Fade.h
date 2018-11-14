@@ -15,7 +15,7 @@
 //****************************************
 #include <string>
 
-#include <Component/DrawBase/DrawBase.h>
+#include <Component/DrawBase/DrawNone.h>
 #include <Transform\Transform.h>
 #include <Polygon\PlanePolygon\PlanePolygon.h>
 #include <Texture\TextureManager\TextureManager.h>
@@ -28,7 +28,7 @@
 *
 * フェードのクラス
 *************************************************************/
-class Fade : public DrawBase
+class Fade : public DrawNone
 {
 //==============================
 // 定数定義
@@ -93,12 +93,6 @@ public:
 
 	/**
 	* @brief
-	* 初期化関数(継承エラー対策のダミー関数)
-	*/
-	void Init() override {}
-
-	/**
-	* @brief
 	* 初期化関数
 	* @param
 	* type : タイプ
@@ -128,7 +122,11 @@ public:
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
 	// プロパティ
-	const MATRIX* GetMatrix(unsigned object_index) { object_index = object_index; return transform_.GetMatrixExtend()->GetWorldMatrix(); }
+	const MATRIX* GetMatrix(unsigned object_index) override
+	{
+		object_index = object_index;
+		return transform_.GetMatrixExtend()->GetWorldMatrix();
+	}
 	const Type* GetType()   const { return &type_; }
 	const State* GetState() const { return &state_; }
 	bool GetEndFlag() const { return end_flag_; }

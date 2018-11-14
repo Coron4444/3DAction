@@ -10,36 +10,47 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
-#include <string>
-
+//****************************************
+#include <Component/DrawBase/DrawNone.h>
 #include "../Score.h"
 
-#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
-class ScoreDraw : public DrawBase
+/*********************************************************//**
+* @brief
+* スコア描画クラス
+*
+* スコアの描画クラス
+*************************************************************/
+class ScoreDraw : public DrawNone
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ関数
-	void Init()   override;
+//==============================
+// 非静的メンバ関数
+//==============================
+public:
+	/**
+	* @brief
+	* 初期化関数
+	*/
+	void Init() override;
+
+	/**
+	* @brief
+	* 終了関数
+	*/
 	void Uninit() override;
+
+	/**
+	* @brief
+	* 描画関数
+	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
+	// プロパティ
 	const MATRIX* GetMatrix(unsigned object_index) override;
 };
 

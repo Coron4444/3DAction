@@ -60,6 +60,7 @@ void CoinDraw::Init()
 	// エフェクトの読み込み
 	EffekseerManager::AddUniqueData(&EFFECT);
 	effekseer_object_ = EffekseerManager::GetReferenceEffekseerObject(&EFFECT);
+	effekseer_object_->SetColor(255, 0, 255, 255);
 	effekseer_object_->SetRepeat(true);
 	effekseer_object_->Play();
 }

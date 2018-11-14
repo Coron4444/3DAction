@@ -10,44 +10,58 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 
+#include <Component/DrawBase/DrawNone.h>
 #include "../Number.h"
-#include <Component/DrawBase/DrawBase.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
-class NumberDraw : public DrawBase
+/*********************************************************//**
+* @brief
+* 数字描画クラス
+*
+* 数字の描画クラス
+*************************************************************/
+class NumberDraw : public DrawNone
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ関数
-	void Init()   override;
+//==============================
+// 非静的メンバ関数
+//==============================
+private:
+	Number* number_;	//!< 数字
+
+
+//==============================
+// 非静的メンバ関数
+//==============================
+public:
+	/**
+	* @brief
+	* 初期化関数
+	*/
+	void Init() override;
+
+	/**
+	* @brief
+	* 終了関数
+	*/
 	void Uninit() override;
+
+	/**
+	* @brief
+	* 描画関数
+	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
+	// プロパティ
 	const MATRIX* GetMatrix(unsigned object_index) override;
-	unsigned		   GetMeshNum(unsigned object_index)							 override;
-	D3DMATERIAL9*	   GetMaterial(unsigned object_index, unsigned mesh_index)		 override;
+	unsigned GetMeshNum(unsigned object_index) override;
+	D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) override;
-
-
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	Number* number_;
 };
 
 

@@ -197,9 +197,9 @@ void EffekseerObject::SetVelocity(float velocity)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void EffekseerObject::SetColor(XColor4 color)
+void EffekseerObject::SetColor(uint8_t r, uint8_t g, uint8_t b, uint8_t a)
 {
-	color = color;
+	effekseer_manager_->SetAllColor(effekseer_handle_, Effekseer::Color(r, g, b, a));
 }
 
 
@@ -270,7 +270,7 @@ void EffekseerObject::InitRenderer_Manager()
 
 //--------------------------------------------------------------------------------
 //
-// [ テクスチャの読み込み関数 ]
+// [ エフェクトの読み込み関数 ]
 //
 //--------------------------------------------------------------------------------
 
@@ -285,6 +285,7 @@ void EffekseerObject::InputEffect(const std::string* file_path)
 	effekseer_effect_ = Effekseer::Effect::Create(effekseer_manager_, 
 												  (const EFK_CHAR*)temp_file_path.c_str());	
 }
+
 
 
 //--------------------------------------------------------------------------------

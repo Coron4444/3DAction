@@ -67,7 +67,6 @@ private:
 // 非静的メンバ関数
 //==============================
 public:
-
 	// プロパティ
 	ShaderManager::VertexShaderType GetVertexShaderType() { return vertex_shader_type_; }
 	void SetVertexShaderType(ShaderManager::VertexShaderType value) { vertex_shader_type_ = value; }
