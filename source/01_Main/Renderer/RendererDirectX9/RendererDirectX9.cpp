@@ -55,7 +55,7 @@ bool RendererDirectX9::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow,
 	direct3d_present_parameters.BackBufferCount = 1;									//	バックバッファの数
 	direct3d_present_parameters.SwapEffect = D3DSWAPEFFECT_DISCARD;						//	映像信号の同期(DISCARDは垂直同期を気にする)
 	direct3d_present_parameters.EnableAutoDepthStencil = TRUE;							//	TRUEで良い
-	direct3d_present_parameters.AutoDepthStencilFormat = D3DFMT_D16;					//	今はこれで良い上のフォーマット
+	direct3d_present_parameters.AutoDepthStencilFormat = D3DFMT_D24S8;					//	今はこれで良い上のフォーマット
 	direct3d_present_parameters.Windowed = bWindow;										//	TRUEでウィンドウモード,FALSEでフルスクリーンモード
 	direct3d_present_parameters.FullScreen_RefreshRateInHz = D3DPRESENT_RATE_DEFAULT;	//	フルスクリーンモードの時のリフレッシュレートのHz数を変更
 	direct3d_present_parameters.PresentationInterval = D3DPRESENT_INTERVAL_DEFAULT;		//	モニターのHz数に合わせて描画される(IMMEDIATEだと垂直同期を待たずに描画する)( D3DPRESENT_INTERVAL_ONE　にするとヘルツで動く )
@@ -101,7 +101,7 @@ bool RendererDirectX9::DrawBegin()
 	// 画面クリア
 	direct3d_device_->Clear(0,										// RECT構造体配列の矩形の数
 							NULL,									// RECT構造体の先頭アドレス(画面全体はNULL)
-							(D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER),	// TARGETは色のクリア、ZBUFFERはZバッファのクリア
+							(D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER | D3DCLEAR_STENCIL),	// TARGETは色のクリア、ZBUFFERはZバッファのクリア
 							D3DCOLOR_RGBA(32, 64, 192, 255),		// クリアカラ―(TARGETがあるとき)
 							1.0f,									// Zバッファのクリア値
 							0);										// ステンシル値のクリア値

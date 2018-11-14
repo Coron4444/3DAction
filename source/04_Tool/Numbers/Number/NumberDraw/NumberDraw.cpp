@@ -100,8 +100,9 @@ const MATRIX* NumberDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned NumberDraw::GetMeshNum()
+unsigned NumberDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
 	return number_->plane_polygon_->GetMeshNum();
 }
 

@@ -121,8 +121,10 @@ const MATRIX* PushSpaceLogoDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned PushSpaceLogoDraw::GetMeshNum()
+unsigned PushSpaceLogoDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	return push_space_logo_->plane_polygon_->GetMeshNum();
 }
 

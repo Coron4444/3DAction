@@ -115,8 +115,10 @@ const MATRIX* PlayerDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned PlayerDraw::GetMeshNum()
+unsigned PlayerDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	return player_model_->GetMeshNum();
 }
 

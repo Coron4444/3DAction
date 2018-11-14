@@ -125,7 +125,7 @@ void BackBuffer::Draw()
 										   j);
 
 			// メッシュ数分ループ
-			for (unsigned k = 0; k < all_opacity_draw_.GetArrayObject(i)->GetMeshNum(); k++)
+			for (unsigned k = 0; k < all_opacity_draw_.GetArrayObject(i)->GetMeshNum(j); k++)
 			{
 				shader_manager_->SpecificSetting(all_opacity_draw_.GetArrayObject(i),
 												 camera_,
@@ -163,7 +163,7 @@ void BackBuffer::Draw()
 										   j);
 
 			// メッシュ数分ループ
-			for (unsigned k = 0; k < all_transparency_draw_.GetArrayObject(i)->GetMeshNum(); k++)
+			for (unsigned k = 0; k < all_transparency_draw_.GetArrayObject(i)->GetMeshNum(j); k++)
 			{
 				shader_manager_->SpecificSetting(all_transparency_draw_.GetArrayObject(i),
 												 camera_,
@@ -205,7 +205,7 @@ void BackBuffer::Draw()
 										   j);
 
 			// メッシュ数分ループ
-			for (unsigned k = 0; k < all_2D_draw_.GetArrayObject(i)->GetMeshNum(); k++)
+			for (unsigned k = 0; k < all_2D_draw_.GetArrayObject(i)->GetMeshNum(j); k++)
 			{
 				shader_manager_->SpecificSetting(all_2D_draw_.GetArrayObject(i),
 												 camera_,
@@ -401,7 +401,7 @@ void BackBuffer::FadeDraw()
 											   j);
 
 				// メッシュ数分ループ
-				for (unsigned k = 0; k < fade_->GetMeshNum(); k++)
+				for (unsigned k = 0; k < fade_->GetMeshNum(j); k++)
 				{
 					shader_manager_->SpecificSetting(fade_,
 													 camera_,

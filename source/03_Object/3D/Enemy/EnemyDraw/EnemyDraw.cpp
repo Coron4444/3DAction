@@ -97,8 +97,10 @@ const MATRIX* EnemyDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned EnemyDraw::GetMeshNum()
+unsigned EnemyDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	// 敵にダウンキャスト
 	Enemy* enemy = (Enemy*)GetGameObject();
 

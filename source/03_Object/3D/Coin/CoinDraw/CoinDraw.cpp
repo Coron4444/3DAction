@@ -122,8 +122,10 @@ const MATRIX* CoinDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned CoinDraw::GetMeshNum()
+unsigned CoinDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	// ƒƒbƒVƒ…”‚Ìæ“¾
 	return coin_->GetPolygon()->GetMeshNum();
 }

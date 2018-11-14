@@ -110,8 +110,10 @@ const MATRIX* FieldDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned FieldDraw::GetMeshNum()
+unsigned FieldDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	// 地面にダウンキャスト
 	Field* field = (Field*)GetGameObject();
 

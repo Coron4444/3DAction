@@ -118,8 +118,10 @@ const MATRIX* TutorialLogo01Draw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned TutorialLogo01Draw::GetMeshNum()
+unsigned TutorialLogo01Draw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	return title_logo_->plane_polygon_->GetMeshNum();
 }
 

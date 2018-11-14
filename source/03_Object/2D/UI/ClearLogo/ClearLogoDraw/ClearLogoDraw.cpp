@@ -120,8 +120,10 @@ const MATRIX* ClearLogoDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned ClearLogoDraw::GetMeshNum()
+unsigned ClearLogoDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	return clear_logo_->plane_polygon_->GetMeshNum();
 }
 

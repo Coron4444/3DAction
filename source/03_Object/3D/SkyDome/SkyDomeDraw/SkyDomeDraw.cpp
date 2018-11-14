@@ -117,8 +117,10 @@ const MATRIX* SkyDomeDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned SkyDomeDraw::GetMeshNum()
+unsigned SkyDomeDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	return sky_dome_model_->GetMeshNum();
 }
 

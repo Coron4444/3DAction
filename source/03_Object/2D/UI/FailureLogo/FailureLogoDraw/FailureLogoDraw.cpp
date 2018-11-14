@@ -122,8 +122,10 @@ const MATRIX* FailureLogoDraw::GetMatrix(unsigned object_index)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-unsigned FailureLogoDraw::GetMeshNum()
+unsigned FailureLogoDraw::GetMeshNum(unsigned object_index)
 {
+	object_index = object_index;
+
 	return failure_logo_->plane_polygon_->GetMeshNum();
 }
 

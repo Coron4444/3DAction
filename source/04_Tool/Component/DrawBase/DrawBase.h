@@ -39,6 +39,8 @@ class DrawBase : public ComponentBase
 //==============================
 private:
 	DrawOrderList draw_order_list_;	//!< 描画注文リスト
+
+protected:
 	Camera::Type save_camera_type_ = Camera::Type::NONE;	//!< カメラタイプ保存用
 
 
@@ -82,7 +84,7 @@ public:
 
 	// プロパティ
 	virtual unsigned GetDrawObjectNum() { return 1; }
-	virtual unsigned GetMeshNum() { return 1; }
+	virtual unsigned GetMeshNum(unsigned object_index) { object_index = object_index; return 1; }
 	virtual const MATRIX* GetMatrix(unsigned object_index) = 0;
 	virtual D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }
 	virtual LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) { object_index = object_index; mesh_index = mesh_index; return nullptr; }

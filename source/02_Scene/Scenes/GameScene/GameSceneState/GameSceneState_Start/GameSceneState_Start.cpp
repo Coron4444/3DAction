@@ -27,6 +27,7 @@
 #include <3D\Field\FieldFactory\FieldFactory.h>
 #include <3D\SkyDome\SkyDomeFactory\SkyDomeFactory.h>
 #include <3D\Player\PlayerFactory\PlayerFactory.h>
+#include <3D/StencilShadowTest/StencilShadowTestFactory/StencilShadowTestFactory.h>
 #include <2D\UI\Score\ScoreFactory\ScoreFactory.h>
 
 
@@ -72,6 +73,9 @@ void GameSceneState_Start::Init()
 	// フィールド
 	FieldFactory field_factory;
 	field_factory.Create();
+
+	StencilShadowTestFactory stencil_factory;
+	stencil_factory.Create();
 
 
 	// プレイヤー
