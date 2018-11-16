@@ -10,39 +10,62 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 
+#include <Component/DrawBase/DrawNull.h>
 #include "../Enemy.h"
 
-#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
-class EnemyDraw : public DrawBase
+/*********************************************************//**
+* @brief
+* 敵描画クラス
+*
+* 敵の描画クラス
+*************************************************************/
+class EnemyDraw : public DrawNull
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//==============================
+// 非静的メンバ関数
+//==============================
+private:
+	Enemy* enemy_;				//!< 敵
+
+
+//==============================
+// 非静的メンバ関数
+//==============================
 public:
-	// メンバ関数
-	void Init()					   override;
-	void Uninit()				   override;
+	/**
+	* @brief
+	* 初期化関数
+	*/
+	void Init() override;
+
+	/**
+	* @brief
+	* 終了関数
+	*/
+	void Uninit() override;
+
+	/**
+	* @brief
+	* 描画関数
+	* @param
+	* object_index : オブジェクトインデックス
+	* mesh_index : メッシュインデックス
+	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
+	// プロパティ
 	const MATRIX* GetMatrix(unsigned object_index) override;
-	unsigned		   GetMeshNum(unsigned object_index) override;
-	D3DMATERIAL9*	   GetMaterial(unsigned object_index, unsigned mesh_index)		 override;
+	unsigned GetMeshNum(unsigned object_index) override;
+	D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) override;
 };
 
 

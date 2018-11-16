@@ -10,58 +10,75 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 
+#include <Component/DrawBase/DrawNull.h>
 #include "../Player.h"
 
-#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
-class PlayerDraw : public DrawBase
+/*********************************************************//**
+* @brief
+* プレイヤー描画クラス
+*
+* プレイヤーの描画クラス
+*************************************************************/
+class PlayerDraw : public DrawNull
 {
-//------------------------------------------------------------
-private :
+//==============================
+// 定数
+//==============================
+private:
 	// 定数
-	static const std::string MODEL_NAME;
-	static const std::string TEXTURE_PATH;
-	static const std::string NORMAL_TEXTURE_NAME01;
-	static const std::string NORMAL_TEXTURE_NAME02;
+	static const std::string MODEL_NAME;				//!< モデル名
+	static const std::string TEXTURE_PATH;				//!< モデルフォルダのテクスチャパス
+	static const std::string NORMAL_TEXTURE_MODEL;		//!< 法線テクスチャ(モデル)
+	static const std::string NORMAL_TEXTURE_SWORD;		//!< 法線テクスチャ(剣)
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ関数
-	void Init()					   override;
-	void Uninit()				   override;
+//==============================
+// 非静的メンバ関数
+//==============================
+private:
+	ModelXObject* player_model_;			//!< モデルオブジェクト
+	TextureObject* normal_texture_[2];		//!< テクスチャオブジェクト
+
+//==============================
+// 非静的メンバ関数
+//==============================
+public:
+	/**
+	* @brief
+	* 初期化関数
+	*/
+	void Init() override;
+
+	/**
+	* @brief
+	* 終了関数
+	*/
+	void Uninit() override;
+
+	/**
+	* @brief
+	* 描画関数
+	* @param
+	* object_index : オブジェクトインデックス
+	* mesh_index : メッシュインデックス
+	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
+	// プロパティ
 	const MATRIX* GetMatrix(unsigned object_index) override;
-	unsigned		   GetMeshNum(unsigned object_index)							 override;
-	D3DMATERIAL9*	   GetMaterial(unsigned object_index, unsigned mesh_index)		 override;
+	unsigned GetMeshNum(unsigned object_index) override;
+	D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned object_index, unsigned mesh_index) override;
-
-
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	ModelXObject* player_model_;
-	TextureObject* normal_texture_[2];
-
 };
 
 

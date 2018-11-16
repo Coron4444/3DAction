@@ -1,6 +1,6 @@
 //================================================================================
 //
-//    プレイヤー描画クラス
+//    ステンシルシャドウ描画クラス
 //    Author : Araki Kai                                作成日 : 2018/03/27
 //
 //================================================================================
@@ -10,69 +10,98 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 
+#include <Component/DrawBase/DrawNull.h>
 #include "../StencilShadowTest.h"
 
-#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
+
+//****************************************
+// クラス宣言
+//****************************************
 class PlanePolygon;
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
 
-class StencilShadowTestDraw : public DrawBase
+
+/*********************************************************//**
+* @brief
+* ステンシルシャドウ描画クラス
+*
+* ステンシルシャドウの描画クラス
+*************************************************************/
+class StencilShadowTestDraw : public DrawNull
 {
-//------------------------------------------------------------
-private :
+//==============================
+// 定数
+//==============================
+private:
 	// 定数
-	static const std::string MODEL_NAME;
-	static const std::string TEXTURE_PATH;
-	static const std::string NORMAL_TEXTURE_NAME01;
-	static const std::string NORMAL_TEXTURE_NAME02;
+	static const std::string MODEL_NAME;		//!< モデル名
+
+//==============================
+// 非静的メンバ関数
+//==============================
+private:
+	ModelXObject* player_model_;			//!< モデルオブジェクト
+	PlanePolygon* plane_polygon_;			//!< 板ポリゴン	
+	Transform plane_polygon_transform_;		//!< 板ポリゴン用変形
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ関数
-	void Init()					   override;
-	void Uninit()				   override;
+//==============================
+// 非静的メンバ関数
+//==============================
+public:
+	/**
+	* @brief
+	* 初期化関数
+	*/
+	void Init() override;
+
+	/**
+	* @brief
+	* 終了関数
+	*/
+	void Uninit() override;
+
+	/**
+	* @brief
+	* 描画関数
+	* @param
+	* object_index : オブジェクトインデックス
+	* mesh_index : メッシュインデックス
+	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
-	virtual void LimitedChangeCameraType(Camera* camera, unsigned object_index) 
-	{ 
-		if (object_index == 2)
-		{
-			save_camera_type_ = camera->GetType();
-			camera->SetType(Camera::Type::TWO_DIMENSIONAL);
-		}
-	}
+	/**
+	* @brief
+	* 描画前設定関数
+	* @param
+	* camera : カメラ
+	* object_index : オブジェクトインデックス
+	*/
+	virtual void SettingBeforeDrawing(Camera* camera, unsigned object_index) override;
+
+	/**
+	* @brief
+	* 描画後設定関数
+	* @param
+	* camera : カメラ
+	* object_index : オブジェクトインデックス
+	*/
+	virtual void SettingAfterDrawing(Camera* camera, unsigned object_index) override;
+
+	// プロパティ
+	unsigned GetObjectNum() override;
+	unsigned GetMeshNum(unsigned object_index) override;
 	const MATRIX* GetMatrix(unsigned object_index) override;
-	virtual unsigned GetDrawObjectNum() { return 3; }
-	unsigned		   GetMeshNum(unsigned object_index)							 override;
-	D3DMATERIAL9*	   GetMaterial(unsigned object_index, unsigned mesh_index)		 override;
+	D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) override;
-	LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned object_index, unsigned mesh_index) override;
-
-
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	ModelXObject* player_model_;
-	PlanePolygon* plane_polygon_;
-	TextureObject* normal_texture_[2];
-	Transform temp_transform_;
 };
 
 

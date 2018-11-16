@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <Component/DrawBase/DrawNone.h>
+#include <Component/DrawBase/DrawNull.h>
 #include "../Score.h"
 
 #include <ResourceManager\ResourceManager.h>
@@ -26,7 +26,7 @@
 *
 * スコアの描画クラス
 *************************************************************/
-class ScoreDraw : public DrawNone
+class ScoreDraw : public DrawNull
 {
 //==============================
 // 非静的メンバ関数
@@ -47,6 +47,9 @@ public:
 	/**
 	* @brief
 	* 描画関数
+	* @param
+	* object_index : オブジェクトインデックス
+	* mesh_index : メッシュインデックス
 	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 

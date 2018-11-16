@@ -10,54 +10,71 @@
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 
+#include <Component/DrawBase/DrawNull.h>
 #include "../SkyDome.h"
 
-#include <Component/DrawBase/DrawBase.h>
 #include <ResourceManager\ResourceManager.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
-class SkyDomeDraw : public DrawBase
+/*********************************************************//**
+* @brief
+* プレイヤー描画クラス
+*
+* プレイヤーの描画クラス
+*************************************************************/
+class SkyDomeDraw : public DrawNull
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
+//==============================
+// 定数
+//==============================
+private:
 	// 定数
-	static const std::string MODEL_NAME;
+	static const std::string MODEL_NAME;	//!< モデル名
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ関数
-	void Init()					   override;
-	void Uninit()				   override;
+//==============================
+// 非静的メンバ関数
+//==============================
+private:
+	ModelXObject* sky_dome_model_;		//!< モデルオブジェクト
+
+
+//==============================
+// 非静的メンバ関数
+//==============================
+public:
+	/**
+	* @brief
+	* 初期化関数
+	*/
+	void Init() override;
+
+	/**
+	* @brief
+	* 終了関数
+	*/
+	void Uninit() override;
+
+	/**
+	* @brief
+	* 描画関数
+	* @param
+	* object_index : オブジェクトインデックス
+	* mesh_index : メッシュインデックス
+	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
+	// プロパティ
 	const MATRIX* GetMatrix(unsigned object_index) override;
-	unsigned		   GetMeshNum(unsigned object_index)							 override;
-	D3DMATERIAL9*	   GetMaterial(unsigned object_index, unsigned mesh_index)		 override;
+	unsigned GetMeshNum(unsigned object_index) override;
+	D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) override;
-
-
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	ModelXObject* sky_dome_model_;
-
-
 };
 
 

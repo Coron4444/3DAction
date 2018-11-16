@@ -55,6 +55,9 @@ public:
 	/**
 	* @brief
 	* 描画関数
+	* @param
+	* object_index : オブジェクトインデックス
+	* mesh_index : メッシュインデックス
 	*/
 	virtual void Draw(unsigned object_index, unsigned mesh_index) = 0;
 
@@ -67,12 +70,18 @@ public:
 	/**
 	* @brief
 	* 描画前設定関数
+	* @param
+	* camera : カメラ
+	* object_index : オブジェクトインデックス
 	*/
 	virtual void SettingBeforeDrawing(Camera* camera, unsigned object_index) = 0;
 
 	/**
 	* @brief
 	* 描画後設定関数
+	* @param
+	* camera : カメラ
+	* object_index : オブジェクトインデックス
 	*/
 	virtual void SettingAfterDrawing(Camera* camera, unsigned object_index) = 0;
 
@@ -80,6 +89,9 @@ public:
 	/**
 	* @brief
 	* 限定カメラタイプ変更関数
+	* @param
+	* camera : カメラ
+	* type : カメラタイプ
 	*/
 	void LimitedChangeCameraType(Camera* camera, Camera::Type type)
 	{
@@ -90,6 +102,8 @@ public:
 	/**
 	* @brief
 	* カメラタイプ復活関数
+	* @param
+	* camera : カメラ
 	*/
 	void RevivalCameraType(Camera* camera)
 	{

@@ -112,10 +112,10 @@ void BackBuffer::Draw()
 								   ShaderManager::PixelShaderType::PIXEL_NONE);
 
 		// オブジェクト数分ループ
-		for (unsigned j = 0; j < all_opacity_draw_.GetArrayObject(i)->GetDrawObjectNum(); j++)
+		for (unsigned j = 0; j < all_opacity_draw_.GetArrayObject(i)->GetObjectNum(); j++)
 		{
-			// 限定カメラタイプ変更
-			all_opacity_draw_.GetArrayObject(i)->LimitedChangeCameraType(camera_, j);
+			// 描画前設定
+			all_opacity_draw_.GetArrayObject(i)->SettingBeforeDrawing(camera_, j);
 
 			// メッシュ間共通のグローバール変数をセット
 			shader_manager_->CommonSetting(all_opacity_draw_.GetArrayObject(i),
@@ -136,8 +136,8 @@ void BackBuffer::Draw()
 				all_opacity_draw_.GetArrayObject(i)->Draw(j, k);
 			}
 
-			// カメラタイプ復活
-			all_opacity_draw_.GetArrayObject(i)->RevivalCameraType(camera_);
+			// 描画後設定
+			all_opacity_draw_.GetArrayObject(i)->SettingAfterDrawing(camera_, j);
 		}
 	}
 	
@@ -150,11 +150,11 @@ void BackBuffer::Draw()
 								   ShaderManager::PixelShaderType::PIXEL_NONE);
 
 		// オブジェクト数分ループ
-		for (unsigned j = 0; j < all_transparency_draw_.GetArrayObject(i)->GetDrawObjectNum(); j++)
+		for (unsigned j = 0; j < all_transparency_draw_.GetArrayObject(i)->GetObjectNum(); j++)
 		{
-			// 限定カメラタイプ変更
-			all_transparency_draw_.GetArrayObject(i)->LimitedChangeCameraType(camera_, j);
-
+			// 描画前設定
+			all_transparency_draw_.GetArrayObject(i)->SettingBeforeDrawing(camera_, j);
+	
 			// メッシュ間共通のグローバール変数をセット
 			shader_manager_->CommonSetting(all_transparency_draw_.GetArrayObject(i),
 										   camera_,
@@ -174,8 +174,8 @@ void BackBuffer::Draw()
 				all_transparency_draw_.GetArrayObject(i)->Draw(j, k);
 			}
 
-			// カメラタイプ復活
-			all_transparency_draw_.GetArrayObject(i)->RevivalCameraType(camera_);
+			// 描画後設定
+			all_transparency_draw_.GetArrayObject(i)->SettingAfterDrawing(camera_, j);
 		}
 	}
 
@@ -192,11 +192,11 @@ void BackBuffer::Draw()
 								   ShaderManager::PixelShaderType::PIXEL_NONE);
 
 		// オブジェクト数分ループ
-		for (unsigned j = 0; j < all_2D_draw_.GetArrayObject(i)->GetDrawObjectNum(); j++)
+		for (unsigned j = 0; j < all_2D_draw_.GetArrayObject(i)->GetObjectNum(); j++)
 		{
-			// 限定カメラタイプ変更
-			all_2D_draw_.GetArrayObject(i)->LimitedChangeCameraType(camera_, j);
-
+			// 描画前設定
+			all_2D_draw_.GetArrayObject(i)->SettingBeforeDrawing(camera_, j);
+			
 			// メッシュ間共通のグローバール変数をセット
 			shader_manager_->CommonSetting(all_2D_draw_.GetArrayObject(i),
 										   camera_,
@@ -216,8 +216,8 @@ void BackBuffer::Draw()
 				all_2D_draw_.GetArrayObject(i)->Draw(j, k);
 			}
 
-			// カメラタイプ復活
-			all_2D_draw_.GetArrayObject(i)->RevivalCameraType(camera_);
+			// 描画後設定
+			all_2D_draw_.GetArrayObject(i)->SettingAfterDrawing(camera_, j);
 		}
 	}
 
@@ -391,7 +391,7 @@ void BackBuffer::FadeDraw()
 									   ShaderManager::PixelShaderType::PIXEL_NONE);
 
 			// オブジェクト数分ループ
-			for (unsigned j = 0; j < fade_->GetDrawObjectNum(); j++)
+			for (unsigned j = 0; j < fade_->GetObjectNum(); j++)
 			{
 				// メッシュ間共通のグローバール変数をセット
 				shader_manager_->CommonSetting(fade_,

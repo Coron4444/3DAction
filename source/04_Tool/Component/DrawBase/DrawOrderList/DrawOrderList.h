@@ -60,6 +60,7 @@ private:
 
 	Flag render_target_flag_;			//!< レンダーターゲットフラグ
 	bool is_billboard_ = false;			//!< ビルボード化フラグ
+	bool is_lighting_ = true;			//!< ラインティングフラグ
 	int sort_2D_layer_num_ = 0;			//!< ソート用2Dレイヤー数
 
 
@@ -77,6 +78,8 @@ public:
 	Flag* GetRenderTargetFlag() { return &render_target_flag_; }
 	bool GetIsBillboard() { return is_billboard_; }
 	void SetIsBillboard(bool value) { is_billboard_ = value; }
+	bool GetIsLighting() { return is_lighting_; }
+	void SetIsLighting(bool value) { is_lighting_ = value; }
 	int GetSort2DLayerNum() { return sort_2D_layer_num_; }
 	void SetSort2DLayerNum(int value) { sort_2D_layer_num_ = value; }
 };

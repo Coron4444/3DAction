@@ -15,7 +15,7 @@
 //****************************************
 #include <string>
 
-#include <Component/DrawBase/DrawNone.h>
+#include <Component/DrawBase/DrawNull.h>
 #include "../TutorialLogo02.h"
 
 #include <ResourceManager\ResourceManager.h>
@@ -28,7 +28,7 @@
 *
 * チュートリアルロゴ02の描画クラス
 *************************************************************/
-class TutorialLogo02Draw : public DrawNone
+class TutorialLogo02Draw : public DrawNull
 {
 //==============================
 // 定数
@@ -65,6 +65,9 @@ public:
 	/**
 	* @brief
 	* 描画関数
+	* @param
+	* object_index : オブジェクトインデックス
+	* mesh_index : メッシュインデックス
 	*/
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 

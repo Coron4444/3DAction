@@ -11,12 +11,12 @@
 // インクルード文
 //****************************************
 #include "ShaderManager.h"
-#include "../Shader/VertexShader/FixedVertexShader/FixedVertexShader.h"
-#include "../Shader/PixelShader/FixedPixelShader/FixedPixelShader.h"
-#include <Component/DrawBase/DrawBase.h>
-#include <Effekseer/EffekseerManager/EffekseerManager.h>
+#include "../Shader/ShaderBase/VertexShaderNull.h"
+#include "../Shader/ShaderBase/PixelShaderNull.h"
+#include "../Shader/VertexShader/VertexShaderFixed/VertexShaderFixed.h"
 
-#include <Renderer/Renderer.h>
+#include <Component/DrawBase/DrawBase.h>
+
 #include <SafeRelease/SafeRelease.h>
 
 
@@ -29,10 +29,8 @@
 //--------------------------------------------------
 void ShaderManager::Init()
 {
-	fixed_vertex_shader_ = new FixedVertexShader();
-	fixed_vertex_shader_->Init();
-	fixed_pixel_shader_ = new FixedPixelShader();
-	fixed_pixel_shader_->Init();
+	InitVertexShaders();
+	InitPixelShaders();
 }
 
 
@@ -42,8 +40,8 @@ void ShaderManager::Init()
 //--------------------------------------------------
 void ShaderManager::Uninit()
 {
-	SafeRelease::PlusUninit(&fixed_vertex_shader_);
-	SafeRelease::PlusUninit(&fixed_pixel_shader_);
+	UninitVertexShaders();
+	UninitPixelShaders();
 }
 
 
@@ -54,28 +52,11 @@ void ShaderManager::Uninit()
 void ShaderManager::SetShader(DrawBase* draw, VertexShaderType forced_vertex_type,
 							  PixelShaderType forced_pixel_type)
 {
-	forced_vertex_type = forced_vertex_type;
-	forced_pixel_type = forced_pixel_type;
-
 	// 頂点シェーダー
-	switch (draw->GetDrawOrderList()->GetVertexShaderType())
-	{
-		case VertexShaderType::VERTEX_FIXED:
-		{
-			fixed_vertex_shader_->SetShader();
-			break;
-		}
-	}
+	SetVertexShader(draw, forced_vertex_type);
 
 	// ピクセルシェーダー
-	switch (draw->GetDrawOrderList()->GetPixelShaderType())
-	{
-		case PixelShaderType::PIXEL_FIXED:
-		{
-			fixed_pixel_shader_->SetShader();
-			break;
-		}
-	}
+	SetPixelShader(draw, forced_pixel_type);
 }
 
 
@@ -83,32 +64,16 @@ void ShaderManager::SetShader(DrawBase* draw, VertexShaderType forced_vertex_typ
 //--------------------------------------------------
 // +共通設定関数
 //--------------------------------------------------
-void ShaderManager::CommonSetting(DrawBase* draw, Camera* camera, 
+void ShaderManager::CommonSetting(DrawBase* draw, Camera* camera,
 								  VertexShaderType forced_vertex_type,
-								  PixelShaderType forced_pixel_type, unsigned object_index)
+								  PixelShaderType forced_pixel_type,
+								  unsigned object_index)
 {
-	forced_vertex_type = forced_vertex_type;
-	forced_pixel_type = forced_pixel_type;
-
 	// 頂点シェーダー
-	switch (draw->GetDrawOrderList()->GetVertexShaderType())
-	{
-		case VertexShaderType::VERTEX_FIXED:
-		{
-			fixed_vertex_shader_->CommonSetting(draw, camera, object_index);
-			break;
-		}
-	}
+	CommonSettingVertexShader(draw, camera, forced_vertex_type, object_index);
 
 	// ピクセルシェーダー
-	switch (draw->GetDrawOrderList()->GetPixelShaderType())
-	{
-		case PixelShaderType::PIXEL_FIXED:
-		{
-			fixed_pixel_shader_->CommonSetting(draw, camera, object_index);
-			break;
-		}
-	}
+	CommonSettingPixelShader(draw, camera, forced_pixel_type, object_index);
 }
 
 
@@ -116,31 +81,196 @@ void ShaderManager::CommonSetting(DrawBase* draw, Camera* camera,
 //--------------------------------------------------
 // +共通設定関数
 //--------------------------------------------------
-void ShaderManager::SpecificSetting(DrawBase* draw, Camera* camera, 
+void ShaderManager::SpecificSetting(DrawBase* draw, Camera* camera,
 									VertexShaderType forced_vertex_type,
 									PixelShaderType forced_pixel_type,
 									unsigned object_index, unsigned mesh_index)
 {
-	forced_vertex_type = forced_vertex_type;
-	forced_pixel_type = forced_pixel_type;
-
 	// 頂点シェーダー
-	switch (draw->GetDrawOrderList()->GetVertexShaderType())
-	{
-		case VertexShaderType::VERTEX_FIXED:
-		{
-			fixed_vertex_shader_->SpecificSetting(draw, camera, object_index, mesh_index);
-				break;
-		}
-	}
+	SpecificSettingVertexShader(draw, camera, forced_vertex_type, object_index,
+								mesh_index);
 
 	// ピクセルシェーダー
-	switch (draw->GetDrawOrderList()->GetPixelShaderType())
+	SpecificSettingPixelShader(draw, camera, forced_pixel_type, object_index,
+							   mesh_index);
+}
+
+
+
+//--------------------------------------------------
+// -頂点シェーダー初期化関数
+//--------------------------------------------------
+void ShaderManager::InitVertexShaders()
+{
+	// 生成
+	vertex_shaders_[VertexShaderType::VERTEX_FIXED] = new VertexShaderFixed();
+
+	// 初期化
+	for (unsigned i = 0; i < VertexShaderType::VERTEX_MAX; i++)
 	{
-		case PixelShaderType::PIXEL_FIXED:
-		{
-			fixed_pixel_shader_->SpecificSetting(draw, camera, object_index, mesh_index);
-			break;
-		}
+		vertex_shaders_[i]->Init();
 	}
+}
+
+
+
+//--------------------------------------------------
+// -ピクセルシェーダー初期化関数
+//--------------------------------------------------
+void ShaderManager::InitPixelShaders()
+{
+	// 生成
+	pixel_shaders_[PixelShaderType::PIXEL_FIXED] = new PixelShaderNull();
+
+	// 初期化
+	for (unsigned i = 0; i < PixelShaderType::PIXEL_MAX; i++)
+	{
+		pixel_shaders_[i]->Init();
+	}
+}
+
+
+
+//--------------------------------------------------
+// -頂点シェーダー終了関数
+//--------------------------------------------------
+void ShaderManager::UninitVertexShaders()
+{
+	// 解放
+	for (unsigned i = 0; i < VertexShaderType::VERTEX_MAX; i++)
+	{
+		SafeRelease::PlusUninit(&vertex_shaders_[i]);
+	}
+}
+
+
+
+//--------------------------------------------------
+// -ピクセルシェーダー終了関数
+//--------------------------------------------------
+void ShaderManager::UninitPixelShaders()
+{
+	// 解放
+	for (unsigned i = 0; i < PixelShaderType::PIXEL_MAX; i++)
+	{
+		SafeRelease::PlusUninit(&pixel_shaders_[i]);
+	}
+}
+
+
+
+//--------------------------------------------------
+// -頂点シェーダー設定関数
+//--------------------------------------------------
+void ShaderManager::SetVertexShader(DrawBase* draw,
+									VertexShaderType forced_vertex_type)
+{
+	if (forced_vertex_type != VertexShaderType::VERTEX_NONE)
+	{
+		vertex_shaders_[forced_vertex_type]->SetShader();
+		return;
+	}
+
+	vertex_shaders_[draw->GetDrawOrderList()->GetVertexShaderType()]->SetShader();
+}
+
+
+
+//--------------------------------------------------
+// -ピクセルシェーダー設定関数
+//--------------------------------------------------
+void ShaderManager::SetPixelShader(DrawBase* draw, PixelShaderType forced_pixel_type)
+{
+	// 強制設定があるかどうか
+	if (forced_pixel_type != PixelShaderType::PIXEL_NONE)
+	{
+		pixel_shaders_[forced_pixel_type]->SetShader();
+		return;
+	}
+
+	pixel_shaders_[draw->GetDrawOrderList()->GetPixelShaderType()]->SetShader();
+}
+
+
+
+//--------------------------------------------------
+// +頂点シェーダー共通設定関数
+//--------------------------------------------------
+void ShaderManager::CommonSettingVertexShader(DrawBase* draw, Camera* camera,
+											  VertexShaderType forced_vertex_type,
+											  unsigned object_index)
+{
+	// 強制設定があるかどうか
+	if (forced_vertex_type != VertexShaderType::VERTEX_NONE)
+	{
+		vertex_shaders_[forced_vertex_type]->CommonSetting(draw, camera, object_index);
+		return;
+	}
+
+	vertex_shaders_[draw->GetDrawOrderList()->GetVertexShaderType()]
+		->CommonSetting(draw, camera, object_index);
+}
+
+
+
+//--------------------------------------------------
+// +ピクセルシェーダー共通設定関数
+//--------------------------------------------------
+void ShaderManager::CommonSettingPixelShader(DrawBase* draw, Camera* camera,
+											 PixelShaderType forced_pixel_type,
+											 unsigned object_index)
+{
+	// 強制設定があるかどうか
+	if (forced_pixel_type != PixelShaderType::PIXEL_NONE)
+	{
+		pixel_shaders_[forced_pixel_type]->CommonSetting(draw, camera, object_index);
+		return;
+	}
+
+	pixel_shaders_[draw->GetDrawOrderList()->GetPixelShaderType()]
+		->CommonSetting(draw, camera, object_index);
+}
+
+
+
+//--------------------------------------------------
+// +頂点シェーダー共通設定関数
+//--------------------------------------------------
+void ShaderManager::SpecificSettingVertexShader(DrawBase* draw, Camera* camera,
+												VertexShaderType forced_vertex_type,
+												unsigned object_index,
+												unsigned mesh_index)
+{
+	// 強制設定があるかどうか
+	if (forced_vertex_type != VertexShaderType::VERTEX_NONE)
+	{
+		vertex_shaders_[forced_vertex_type]->SpecificSetting(draw, camera,
+															 object_index, mesh_index);
+		return;
+	}
+
+	vertex_shaders_[draw->GetDrawOrderList()->GetVertexShaderType()]
+		->SpecificSetting(draw, camera, object_index, mesh_index);
+}
+
+
+
+//--------------------------------------------------
+// +ピクセルシェーダー共通設定関数
+//--------------------------------------------------
+void ShaderManager::SpecificSettingPixelShader(DrawBase* draw, Camera* camera,
+											   PixelShaderType forced_pixel_type,
+											   unsigned object_index,
+											   unsigned mesh_index)
+{
+	// 強制設定があるかどうか
+	if (forced_pixel_type != PixelShaderType::PIXEL_NONE)
+	{
+		pixel_shaders_[forced_pixel_type]->SpecificSetting(draw, camera,
+														   object_index, mesh_index);
+		return;
+	}
+
+	pixel_shaders_[draw->GetDrawOrderList()->GetPixelShaderType()]
+		->SpecificSetting(draw, camera, object_index, mesh_index);
 }

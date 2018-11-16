@@ -15,7 +15,7 @@
 //****************************************
 #include <string>
 
-#include <Component/DrawBase/DrawNone.h>
+#include <Component/DrawBase/DrawNull.h>
 #include <Transform\Transform.h>
 #include <Polygon\PlanePolygon\PlanePolygon.h>
 #include <Texture\TextureManager\TextureManager.h>
@@ -28,7 +28,7 @@
 *
 * フェードのクラス
 *************************************************************/
-class Fade : public DrawNone
+class Fade : public DrawNull
 {
 //==============================
 // 定数定義
