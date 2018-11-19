@@ -19,7 +19,7 @@
 //****************************************
 // íËêîíËã`
 //****************************************
-const char* PixelShaderBumpMapping::PATH = "resource/HLSL/Effect/PixelShader/PixelShaderBumpMapping.psh";
+const char* PixelShaderBumpMapping::PATH = "resource/HLSL/Effect/PixelShader/BumpMapping.psh";
 
 
 

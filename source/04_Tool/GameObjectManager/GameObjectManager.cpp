@@ -260,6 +260,11 @@ void GameObjectManager::AllRelease()
 	ReleaseContentsOfAwaitReleaseArray();
 
 	// 残りのオブジェクトを全て解放待ちに登録
+	for (unsigned i = 0; i < await_add_.GetEndPointer(); i++)
+	{
+		ReleaseGameObjectBaseFromArray(await_add_.GetArrayObject(i));
+	}
+
 	for (unsigned i = 0; i < all_game_object_.GetEndPointer(); i++)
 	{
 		ReleaseGameObjectBaseFromArray(all_game_object_.GetArrayObject(i));

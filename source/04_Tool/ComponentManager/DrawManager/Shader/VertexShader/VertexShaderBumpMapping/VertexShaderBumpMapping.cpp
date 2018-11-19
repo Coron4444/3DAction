@@ -19,7 +19,7 @@
 //****************************************
 // íËêîíËã`
 //****************************************
-const char* VertexShaderBumpMapping::PATH = "resource/HLSL/Effect/VertexShader/VertexShaderBumpMapping.vsh";
+const char* VertexShaderBumpMapping::PATH = "resource/HLSL/Effect/VertexShader/BumpMapping.vsh";
 const D3DVERTEXELEMENT9 VertexShaderBumpMapping::DECLARATION[]
 = {{0,  0, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_POSITION, 0},
    {0, 12, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_NORMAL,   0},
