@@ -13,8 +13,8 @@
 #include "CollisionManager.h"
 #include "CollisionPairCheck/CollisionPairCheck.h"
 #include "CollisionJudgment\CollisionJudgment.h"
-#include <Component/CollisionBase/CollisionBase.h>
-#include <Component/CollisionBase/CollisionObject/CollisionObject.h>
+#include <Component/Base/CollisionBase/CollisionBase.h>
+#include <Component/Base/CollisionBase/CollisionObject/CollisionObject.h>
 
 #include <GameObjectBase/GameObjectBase.h>
 #include <Polygon\MeshPlanePolygon\MeshPlanePolygon.h>

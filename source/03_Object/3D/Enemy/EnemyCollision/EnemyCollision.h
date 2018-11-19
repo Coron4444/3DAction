@@ -17,7 +17,7 @@
 //======================================================================
 
 
-#include <Component/CollisionBase/CollisionBase.h>
+#include <Component/Collision/CollisionNull/CollisionNull.h>
 
 #include <string>
 
@@ -29,7 +29,7 @@
 //
 //======================================================================
 
-class EnemyCollision : public CollisionBase
+class EnemyCollision : public CollisionNull
 {
 //------------------------------------------------------------
 private :

@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <Component/UpdateBase/UpdateBase.h>
+#include <Component/Update/UpdateNull/UpdateNull.h>
 
 
 
@@ -26,7 +26,7 @@
 //
 //======================================================================
 
-class ScoreUpdate : public UpdateBase
+class ScoreUpdate : public UpdateNull
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :

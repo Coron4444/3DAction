@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <Component/DrawBase/DrawNull.h>
+#include <Component/Draw/DrawNull/DrawNull.h>
 #include "../Score.h"
 
 #include <ResourceManager\ResourceManager.h>

@@ -15,7 +15,7 @@
 //****************************************
 #include <string>
 
-#include <Component/DrawBase/DrawNull.h>
+#include <Component/Draw/DrawNull/DrawNull.h>
 #include "../SkyDome.h"
 
 #include <ResourceManager\ResourceManager.h>

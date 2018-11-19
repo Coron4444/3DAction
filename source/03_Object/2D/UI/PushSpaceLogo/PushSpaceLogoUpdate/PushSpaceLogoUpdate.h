@@ -18,7 +18,7 @@
 
 #include "../PushSpaceLogo.h"
 
-#include <Component/UpdateBase/UpdateBase.h>
+#include <Component/Update/UpdateNull/UpdateNull.h>
 
 
 
@@ -28,7 +28,7 @@
 //
 //======================================================================
 
-class PushSpaceLogoUpdate : public UpdateBase
+class PushSpaceLogoUpdate : public UpdateNull
 {
 //------------------------------------------------------------
 private:

@@ -11,7 +11,7 @@
 // インクルード文
 //****************************************
 #include "UpdateManager.h"
-#include <Component/UpdateBase/UpdateBase.h>
+#include <Component/Base/UpdateBase/UpdateBase.h>
 #include <GameObjectBase/GameObjectBase.h>
 
 #include <SafeRelease/SafeRelease.h>

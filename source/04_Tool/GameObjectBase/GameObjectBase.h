@@ -17,9 +17,9 @@
 #include <Transform\Transform.h>
 #include <Physics\Physics.h>
 
-#include "../Component/UpdateBase/UpdateBase.h"
-#include "../Component/DrawBase/DrawBase.h"
-#include "../Component/CollisionBase/CollisionBase.h"
+#include "../Component/Base/UpdateBase/UpdateBase.h"
+#include "../Component/Base/DrawBase/DrawBase.h"
+#include "../Component/Base/CollisionBase/CollisionBase.h"
 
 
 

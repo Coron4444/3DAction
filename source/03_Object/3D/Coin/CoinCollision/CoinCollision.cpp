@@ -48,7 +48,7 @@ const float CoinCollision::SUBSTANCE_FORWARD = 1.0f;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CoinCollision::CoinCollision()
-	: CollisionBase(CollisionBase::State::COIN)
+	: CollisionNull(CollisionBase::State::COIN)
 {
 }
 
@@ -97,7 +97,7 @@ void CoinCollision::Init()
 void CoinCollision::Uninit()
 {
 	// スーパークラスの終了処理
-	CollisionBase::Uninit();
+	CollisionNull::Uninit();
 }
 
 

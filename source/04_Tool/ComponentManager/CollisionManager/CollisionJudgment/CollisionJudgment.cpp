@@ -15,14 +15,14 @@
 
 #include "CollisionJudgment.h"
 
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/AABB/AABB.h"
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/Capsule/Capsule.h"
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/Cylinder/Cylinder.h"
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/OBB/OBB.h"
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/Plane/Plane.h"
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/Segment/Segment.h"
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/Sphere/Sphere.h"
-#include "../../../Component/CollisionBase/CollisionObject/CollisionShapeBase/Triangle/Triangle.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/AABB/AABB.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Capsule/Capsule.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Cylinder/Cylinder.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/OBB/OBB.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Plane/Plane.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Segment/Segment.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Sphere/Sphere.h"
+#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Triangle/Triangle.h"
 
 #include <QuadraticEquation\QuadraticEquation.h>
 

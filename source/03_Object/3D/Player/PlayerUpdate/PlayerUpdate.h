@@ -18,7 +18,7 @@
 
 #include "../Player.h"
 
-#include <Component/UpdateBase/UpdateBase.h>
+#include <Component/Update/UpdateNull/UpdateNull.h>
 
 
 
@@ -28,7 +28,7 @@
 //
 //======================================================================
 
-class PlayerUpdate : public UpdateBase
+class PlayerUpdate : public UpdateNull
 {
 //------------------------------------------------------------
 private:

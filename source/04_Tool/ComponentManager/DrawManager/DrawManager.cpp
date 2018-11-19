@@ -13,7 +13,7 @@
 #include "DrawManager.h"
 #include "ShaderManager/ShaderManager.h"
 
-#include <Component/DrawBase/DrawBase.h>
+#include <Component/Base/DrawBase/DrawBase.h>
 #include <GameObjectBase/GameObjectBase.h>
 
 #include <Renderer/Renderer.h>

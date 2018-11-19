@@ -13,7 +13,7 @@
 #include "VertexShaderFixed.h"
 #include "../../../Camera/Camera.h"
 
-#include <Component/DrawBase/DrawBase.h>
+#include <Component/Base/DrawBase/DrawBase.h>
 #include <Renderer/Renderer.h>
 #include <GameObjectManager/GameObjectManager.h>
 

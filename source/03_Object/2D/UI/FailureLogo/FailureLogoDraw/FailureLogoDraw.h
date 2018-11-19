@@ -15,7 +15,7 @@
 //****************************************
 #include <string>
 
-#include <Component/DrawBase/DrawNull.h>
+#include <Component/Draw/DrawNull/DrawNull.h>
 #include "../FailureLogo.h"
 
 #include <ResourceManager\ResourceManager.h>

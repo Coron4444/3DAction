@@ -12,7 +12,7 @@
 //****************************************
 #include "BackBuffer.h"
 #include "../../ShaderManager/ShaderManager.h"
-#include <Component/DrawBase/DrawBase.h>
+#include <Component/Base/DrawBase/DrawBase.h>
 #include <Effekseer/EffekseerManager/EffekseerManager.h>
 #include <GameObjectBase/GameObjectBase.h>
 

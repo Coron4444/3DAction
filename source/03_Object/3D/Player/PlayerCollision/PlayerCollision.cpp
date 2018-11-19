@@ -48,7 +48,7 @@ const float PlayerCollision::SUBSTANCE_RADIUS		= 1.0f;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 PlayerCollision::PlayerCollision()
-	: CollisionBase(CollisionBase::State::PLAYER)
+	: CollisionNull(CollisionBase::State::PLAYER)
 {
 }
 
@@ -93,7 +93,7 @@ void PlayerCollision::Init()
 void PlayerCollision::Uninit()
 {
 	// スーパークラスの終了処理
-	CollisionBase::Uninit();
+	CollisionNull::Uninit();
 }
 
 

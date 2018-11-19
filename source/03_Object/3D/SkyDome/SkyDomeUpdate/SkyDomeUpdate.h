@@ -16,7 +16,7 @@
 //
 //======================================================================
 
-#include <Component/UpdateBase/UpdateBase.h>
+#include <Component/Update/UpdateNull/UpdateNull.h>
 
 
 
@@ -26,7 +26,7 @@
 //
 //======================================================================
 
-class SkyDomeUpdate : public UpdateBase
+class SkyDomeUpdate : public UpdateNull
 {
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :

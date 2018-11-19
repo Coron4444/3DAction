@@ -15,7 +15,7 @@
 //****************************************
 #include <string>
 
-#include <Component/DrawBase/DrawNull.h>
+#include <Component/Draw/DrawNull/DrawNull.h>
 #include <Transform\Transform.h>
 #include <Polygon\PlanePolygon\PlanePolygon.h>
 #include <Texture\TextureManager\TextureManager.h>

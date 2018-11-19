@@ -17,7 +17,7 @@
 #include "../Shader/VertexShader/VertexShaderBumpMapping/VertexShaderBumpMapping.h"
 #include "../Shader/PixelShader/PixelShaderBumpMapping/PixelShaderBumpMapping.h"
 
-#include <Component/DrawBase/DrawBase.h>
+#include <Component/Base/DrawBase/DrawBase.h>
 
 #include <SafeRelease/SafeRelease.h>
 

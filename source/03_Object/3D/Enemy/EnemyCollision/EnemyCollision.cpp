@@ -46,7 +46,7 @@ const float EnemyCollision::SUBSTANCE_RADIUS	   = 1.0f;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 EnemyCollision::EnemyCollision()
-		: CollisionBase(CollisionBase::State::ENEMY)
+		: CollisionNull(CollisionBase::State::ENEMY)
 {
 }
 
@@ -91,7 +91,7 @@ void EnemyCollision::Init()
 void EnemyCollision::Uninit()
 {
 	// スーパークラスの終了処理
-	CollisionBase::Uninit();
+	CollisionNull::Uninit();
 }
 
 

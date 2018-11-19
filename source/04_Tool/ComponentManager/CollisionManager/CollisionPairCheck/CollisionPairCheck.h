@@ -15,7 +15,7 @@
 //****************************************
 #include <vector>
 
-#include <Component/CollisionBase/CollisionBase.h>
+#include <Component/Base/CollisionBase/CollisionBase.h>
 
 #include <Vector3D.h>
 
