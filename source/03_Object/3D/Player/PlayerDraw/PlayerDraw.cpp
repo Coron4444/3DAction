@@ -12,7 +12,7 @@
 //****************************************
 #include "PlayerDraw.h"
 
-//#include <ComponentManager/DrawManager/Shader/TestShaderObject/TestShaderObject.h>
+#include <ComponentManager/DrawManager/Shader/VertexShader/VertexShaderBumpMapping/VertexShaderBumpMapping.h>
 
 
 
@@ -37,14 +37,14 @@ void PlayerDraw::Init()
 	// オーダーリスト設定
 	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
 	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
+	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
 
 	// 頂点宣言用メッシュ更新
-	//TestShaderObject::UpdateMeshDeclaration(player_model_);
+	VertexShaderBumpMapping::UpdateMeshDeclaration(player_model_);
 
 	// 法線マップのロード
 	normal_texture_[0] = TextureManager::AddUniqueData(&NORMAL_TEXTURE_MODEL, &TEXTURE_PATH);

@@ -1,0 +1,93 @@
+//================================================================================
+//
+//    バンプマッピングピクセルシェーダー
+//    Author : Araki Kai                                作成日 : 2018/08/07
+//
+//================================================================================
+
+
+
+//****************************************
+// グローバル変数
+//****************************************
+// ランバート拡散照明(ライトベクトルはプログラムで正規化)
+float4 LAMBERT_DIFFUSE_LIGHT_VECTOR = { 1.0f, 0.0f, 0.0f, 1.0f };
+
+// デカールテクスチャ
+texture DECALE_TEXTURE;
+// 法線テクスチャ
+texture NORMAL_TEXTURE;
+
+
+
+//****************************************
+// サンプラー
+//****************************************
+// サンプラ( テクスチャを読み込むときの設定、使用するテクスチャやサンプラステートの設定をする)
+sampler DECALE_SAMPLER = sampler_state
+{
+    Texture = <DECALE_TEXTURE>;
+    MinFilter = LINEAR;
+    MagFilter = LINEAR;
+    MipFilter = NONE;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+// サンプラ( テクスチャを読み込むときの設定、使用するテクスチャやサンプラステートの設定をする)
+sampler NORMAL_SAMPLER = sampler_state
+{
+    Texture = <NORMAL_TEXTURE>;
+    MinFilter = LINEAR;
+    MagFilter = LINEAR;
+    MipFilter = NONE;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+
+
+//****************************************
+// 構造体定義
+//****************************************
+struct InputPixelShader
+{
+    float4 position_ : POSITION;
+    float4 color_ : COLOR0;
+    float2 texcoord_ : TEXCOORD0; // 法線ベクトル
+    float3 eye_vector_ : TEXCOORD1; // 視線ベクトル
+    float3 light_vector_ : TEXCOORD2; // ライトベクトル
+};
+
+
+
+//****************************************
+// ピクセルシェーダー
+//****************************************
+//--------------------------------------------------
+// +エントリ関数
+//--------------------------------------------------
+float4 MainPixelShader(InputPixelShader input) : COLOR0
+{
+//------------------------------------------------------------
+// バンプマッピング
+
+	// 法線マップからの法線(テクスチャは0~1の為、2倍して-1.0fすることで-1~1の範囲にする)
+    float normal = 2.0f * tex2D(NORMAL_SAMPLER, input.texcoord_).xyz - 1.0f;
+
+	// ライトベクトル
+    float3 light_vector = normalize(input.light_vector_);
+
+	// 反射ベクトル
+    float3 refraction_vector = reflect(-normalize(input.eye_vector_), normal);
+
+	// 環境光の強さ
+    float ambient = -LAMBERT_DIFFUSE_LIGHT_VECTOR.w;
+    
+    input.color_ = input.color_ * tex2D(DECALE_SAMPLER, input.texcoord_) // ランバート照明には頂点色とテクスチャの色を合成する
+			* (max(0, dot(normal, light_vector)) + ambient)
+			+ 0.3f * pow(max(0, dot(refraction_vector, light_vector)), 8);
+
+    input.color_.w = 1.0f;
+    return input.color_;
+}

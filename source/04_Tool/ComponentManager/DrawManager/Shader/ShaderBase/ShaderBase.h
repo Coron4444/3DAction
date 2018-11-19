@@ -14,14 +14,10 @@
 // インクルード文
 //****************************************
 #include <Renderer/Renderer.h>
+#include <Component/DrawBase/DrawBase.h>
+#include <ComponentManager/DrawManager/Camera/Camera.h>
 
-
-
-//****************************************
-// クラス宣言
-//****************************************
-class Camera;
-class DrawBase;
+#include <SafeRelease/SafeRelease.h>
 
 
 
@@ -86,8 +82,62 @@ public:
 	virtual void SpecificSetting(DrawBase* draw, Camera* camera,
 								 unsigned object_index, unsigned mesh_index) = 0;
 
+	/**
+	* @brief
+	* シェーダーコンパイル関数
+	* @param
+	* file_name : ファイル名
+	* entry_function : エントリ関数名
+	* version : シェーダーバージョン
+	* compiled_code : コンパイル済みコード
+	* @return コンパイル成功ならtrue
+	*/
+	bool ShaderCompile(const char* file_name, const char* entry_function,
+					   const char* version, LPD3DXBUFFER* compiled_code)
+	{
+		LPD3DXBUFFER compil_error = nullptr;
+		HRESULT hr = D3DXCompileShaderFromFile(file_name,			// ファイル名
+											   nullptr,				// プリプロセッサ定義へのポインタ
+											   nullptr,				// ID3DXInclude(#include疑似命令)
+											   entry_function,		// エントリ関数名
+											   version,				// シェーダーバージョン
+											   0,					// コンパイルオプション
+											   compiled_code,		// コンパイル済みコード
+											   &compil_error,		// エラー情報
+											   &constant_table_);	// コンスタントテーブル
+		// 成功したか
+		if (SUCCEEDED(hr)) return true;
+		
+		// エラーメッセージ
+		if (compil_error) 
+		{
+			// コンパイルエラーあり
+			MessageBox(NULL, (LPSTR)compil_error->GetBufferPointer(), "Error", MB_OK);
+		}
+		else 
+		{
+			// その他のエラー
+			MessageBox(NULL, "シェーダーファイルが読み込めません", "Error", MB_OK);
+		}
+		return false;
+}
+
+	/**
+	* @brief
+	* デバイスの初期化関数
+	*/
+	void InitDevice()
+	{ 
+		// デバイスの取得
+		Renderer::GetInstance()->GetDevice(&device_);
+		if (device_ == nullptr)
+		{
+			MessageBox(nullptr, "NotGetDevice!(VertexShaderBase.cpp)", "Error", MB_OK);
+			return;
+		}
+	}
+
 	// プロパティ
-	LPDIRECT3DDEVICE9* GetDevicePointer() { return &device_; }
 	LPDIRECT3DDEVICE9 GetDevice() { return device_; }
 	LPD3DXCONSTANTTABLE GetConstantTable() { return constant_table_; }
 };

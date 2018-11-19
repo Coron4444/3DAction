@@ -26,13 +26,8 @@
 //--------------------------------------------------
 void VertexShaderFixed::Init()
 {
-	// デバイスの取得
-	Renderer::GetInstance()->GetDevice(ShaderBase::GetDevicePointer());
-	if (ShaderBase::GetDevicePointer() == nullptr)
-	{
-		MessageBox(nullptr, "NotGetDevice!(VertexShaderNull.cpp)", "Error", MB_OK);
-		return;
-	}
+	// デバイス初期化
+	ShaderBase::InitDevice();
 
 	// レンダーステートの設定( 最適化の場合はあまり呼ばないように設計する )
 	((RendererDirectX9*)Renderer::GetInstance()->GetRenderer())->UseAlphaBlending(true);

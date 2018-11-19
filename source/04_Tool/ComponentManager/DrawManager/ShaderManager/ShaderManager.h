@@ -44,6 +44,7 @@ public:
 	{
 		VERTEX_NONE = -1,
 		VERTEX_FIXED,
+		VERTEX_BUMP_MAPPING,
 		VERTEX_MAX
 	};
 
@@ -52,6 +53,7 @@ public:
 	{
 		PIXEL_NONE = -1,
 		PIXEL_FIXED,
+		PIXEL_BUMP_MAPPING,
 		PIXEL_MAX
 	};
 

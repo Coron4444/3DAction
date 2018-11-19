@@ -17,14 +17,6 @@
 
 
 
-//****************************************
-// クラス宣言
-//****************************************
-class Camera;
-class DrawBase;
-
-
-
 /*********************************************************//**
 * @brief
 * 空白ピクセルシェーダークラス
@@ -43,13 +35,7 @@ public:
 	*/
 	virtual void Init() 
 	{
-		// デバイスの取得
-		Renderer::GetInstance()->GetDevice(ShaderBase::GetDevicePointer());
-		if (ShaderBase::GetDevicePointer() == nullptr)
-		{
-			MessageBox(nullptr, "NotGetDevice!(VertexShaderNull.cpp)", "Error", MB_OK);
-			return;
-		}
+		ShaderBase::InitDevice();
 	}
 
 	/**

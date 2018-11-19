@@ -14,6 +14,8 @@
 #include "../Shader/ShaderBase/VertexShaderNull.h"
 #include "../Shader/ShaderBase/PixelShaderNull.h"
 #include "../Shader/VertexShader/VertexShaderFixed/VertexShaderFixed.h"
+#include "../Shader/VertexShader/VertexShaderBumpMapping/VertexShaderBumpMapping.h"
+#include "../Shader/PixelShader/PixelShaderBumpMapping/PixelShaderBumpMapping.h"
 
 #include <Component/DrawBase/DrawBase.h>
 
@@ -104,6 +106,7 @@ void ShaderManager::InitVertexShaders()
 {
 	// ê∂ê¨
 	vertex_shaders_[VertexShaderType::VERTEX_FIXED] = new VertexShaderFixed();
+	vertex_shaders_[VertexShaderType::VERTEX_BUMP_MAPPING] = new VertexShaderBumpMapping();
 
 	// èâä˙âª
 	for (unsigned i = 0; i < VertexShaderType::VERTEX_MAX; i++)
@@ -121,6 +124,7 @@ void ShaderManager::InitPixelShaders()
 {
 	// ê∂ê¨
 	pixel_shaders_[PixelShaderType::PIXEL_FIXED] = new PixelShaderNull();
+	pixel_shaders_[PixelShaderType::PIXEL_BUMP_MAPPING] = new PixelShaderBumpMapping();
 
 	// èâä˙âª
 	for (unsigned i = 0; i < PixelShaderType::PIXEL_MAX; i++)
