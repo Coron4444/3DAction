@@ -134,18 +134,21 @@ void GameSystem::Update()
 void GameSystem::Draw()
 {
 	// 描画開始
-	bool is_begin = Renderer::GetInstance()->DrawBegin();
+	//bool is_begin = Renderer::GetInstance()->DrawBegin();
 
 	// シーンの描画
 	scene_manager_->DrawScene();
+
+	// 描画終了
+	//Renderer::GetInstance()->DrawEnd(is_begin);
 
 	// ImGUIの描画
 #ifdef _DEBUG
 	ImGui::Render();
 #endif
 
-	// 描画終了
-	Renderer::GetInstance()->DrawEnd(is_begin);
+	// バックバッファをフロントバッファに反映
+	Renderer::GetInstance()->Present();
 }
 
 

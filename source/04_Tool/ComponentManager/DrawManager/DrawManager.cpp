@@ -95,6 +95,9 @@ void DrawManager::Update()
 	// 解放待ち配列の中身を解放
 	ReleaseContentsOfAwaitReleaseArray();
 
+	// 全描画基底クラス更新関数
+	UpdateAllDrawBase();
+	
 	// 全レンダーターゲットのリセット
 	ResetAllRenderTarget();
 
@@ -222,6 +225,19 @@ void DrawManager::ReleaseContentsOfAwaitReleaseArray()
 
 	// 解放待ち配列をリセット
 	await_release_.ResetArray();
+}
+
+
+
+//--------------------------------------------------
+// -全描画基底クラス更新関数
+//--------------------------------------------------
+void DrawManager::UpdateAllDrawBase()
+{
+	for (unsigned i = 0; i < all_draw_.GetEndPointer(); i++)
+	{
+		all_draw_.GetArrayObject(i)->Update();
+	}
 }
 
 

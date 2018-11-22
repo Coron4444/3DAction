@@ -22,9 +22,8 @@
 
 #include <GameObjectManager/GameObjectManager.h>
 
-#include <2D\UI\TutorialLogo01\TutorialLogo01Factory\TutorialLogo01Factory.h>
-#include <2D\UI\TutorialLogo02\TutorialLogo02Factory\TutorialLogo02Factory.h>
-#include <2D\UI\PushSpaceLogo\PushSpaceLogoFactory\PushSpaceLogoFactory.h>
+#include <2D/UI/TutorialLogo/TutorialLogoFactory/TutorialLogoFactory.h>
+#include <2D/UI/PushSpaceLogo/PushSpaceLogoFactory/PushSpaceLogoFactory.h>
 
 
 
@@ -43,13 +42,9 @@ void TutorialSceneState_Start::Init()
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
 		->GetCamera()->ChangeState(nullptr);
 
-	// チュートリアルロゴ02
-	TutorialLogo02Factory tutorial_logo_02_factory;
-	tutorial_logo_02_factory.Create();
-
-	// チュートリアルロゴ01
-	TutorialLogo01Factory tutorial_logo_01_factory;
-	tutorial_scene_->SetLogo(tutorial_logo_01_factory.Create());
+	// チュートリアルロゴ
+	TutorialLogoFactory tutorial_logo_factory;
+	tutorial_scene_->SetTutorialLogo(tutorial_logo_factory.Create());
 
 	// プッシュスペースロゴ
 	PushSpaceLogoFactory push_space_logo_factory;
@@ -63,7 +58,7 @@ void TutorialSceneState_Start::Init()
 //--------------------------------------------------
 void TutorialSceneState_Start::Uninit()
 {
-	GameObjectManager::ReleaseGameObjectBaseFromArray(tutorial_scene_->GetLogo());
+	
 }
 
 

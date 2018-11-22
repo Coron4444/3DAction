@@ -72,19 +72,19 @@ public:
 	* window_height : Window高さ
 	*/
 	bool Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
-			  int window_width, int window_height);
+			  int window_width, int window_height) override;
 
 	/**
 	* @brief
 	* 終了関数
 	*/
-	void Uninit();
+	void Uninit() override;
 
 	/**
 	* @brief
 	* 描画開始関数
 	*/
-	bool DrawBegin();
+	bool DrawBegin() override;
 
 	/**
 	* @brief
@@ -92,8 +92,13 @@ public:
 	* @param
 	* is_begin_scene : 描画開始が成功しているかフラグ
 	*/
-	void DrawEnd(bool is_begin_scene);
+	void DrawEnd(bool is_begin_scene) override;
 
+	/**
+	* @brief
+	* バックバッファをフロントバッファに反映関数
+	*/
+	void Present() override;
 
 	/**
 	* @brief

@@ -15,12 +15,7 @@
 //****************************************
 #include <SceneBase/SceneBase.h>
 
-
-
-//****************************************
-// クラス宣言
-//****************************************
-class GameObjectBase;
+#include <2D/UI/TutorialLogo/TutorialLogo.h>
 
 
 
@@ -36,8 +31,7 @@ class TutorialScene : public SceneBase
 // 非静的メンバ変数
 //==============================
 private:
-	GameObjectBase* logo_;
-
+	TutorialLogo* tutorial_logo_;
 
 
 //==============================
@@ -53,8 +47,8 @@ public:
 	TutorialScene(StateAbstract* state) : SceneBase(state) {}
 
 	// プロパティ
-	GameObjectBase* GetLogo() { return logo_; }
-	void SetLogo(GameObjectBase* value) { logo_ = value; }
+	TutorialLogo* GetTutorialLogo() { return tutorial_logo_; }
+	void SetTutorialLogo(TutorialLogo* value) { tutorial_logo_ = value; }
 };
 
 

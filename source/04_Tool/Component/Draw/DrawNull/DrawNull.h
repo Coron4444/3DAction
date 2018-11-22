@@ -50,6 +50,12 @@ public:
 
 	/**
 	* @brief
+	* 更新関数
+	*/
+	virtual void Update() {}
+
+	/**
+	* @brief
 	* 描画関数
 	* @param
 	* object_index : オブジェクトインデックス

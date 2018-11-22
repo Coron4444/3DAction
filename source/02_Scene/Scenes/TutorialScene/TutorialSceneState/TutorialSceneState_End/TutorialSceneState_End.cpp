@@ -36,7 +36,7 @@ void TutorialSceneState_End::Init()
 	// チュートリアルシーンの取得
 	tutorial_scene_ = (TutorialScene*)scene_;
 
-	
+	tutorial_scene_->GetTutorialLogo()->SetLogoNum(1);
 }
 
 

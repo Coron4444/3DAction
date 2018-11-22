@@ -67,6 +67,12 @@ public:
 	* is_begin_scene : 描画開始が成功しているかフラグ
 	*/
 	virtual void DrawEnd(bool is_begin_scene) = 0;	
+
+	/**
+	* @brief
+	* バックバッファをフロントバッファに反映関数
+	*/
+	virtual void Present() = 0;;
 };
 
 

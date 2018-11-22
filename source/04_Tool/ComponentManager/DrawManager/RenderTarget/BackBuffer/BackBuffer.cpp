@@ -16,6 +16,8 @@
 #include <Effekseer/EffekseerManager/EffekseerManager.h>
 #include <GameObjectBase/GameObjectBase.h>
 
+#include <main.h>
+
 #include <Renderer/Renderer.h>
 #include <SafeRelease/SafeRelease.h>
 
@@ -38,6 +40,23 @@ void BackBuffer::Init()
 	// フェードの初期化
 	fade_ = new Fade();
 	is_fade_ = false;
+
+	// 
+	LPDIRECT3DDEVICE9 device;
+	Renderer::GetInstance()->GetDevice(&device);
+	D3DXCreateTexture(device, SCREEN_WIDTH, SCREEN_HEIGHT, 1,
+					  D3DUSAGE_RENDERTARGET, D3DFMT_A8R8G8B8,
+					  D3DPOOL_DEFAULT, &main_screen_texture_);
+	main_screen_texture_->GetSurfaceLevel(0, &main_screen_surface_);
+	
+	D3DXCreateTexture(device, SCREEN_WIDTH, SCREEN_HEIGHT, 1,
+					  D3DUSAGE_RENDERTARGET, D3DFMT_A8R8G8B8,
+					  D3DPOOL_DEFAULT, &post_effect_texture_);
+	post_effect_texture_->GetSurfaceLevel(0, &post_effect_surface_);
+
+	device->GetRenderTarget(0, &back_buffer_surface_);
+
+	render_texture_.Init();
 }
 
 
@@ -52,6 +71,12 @@ void BackBuffer::Uninit()
 	// フェード解放
 	SafeRelease::PlusUninit(&camera_);
 	SafeRelease::Normal(&fade_);
+	
+	render_texture_.Uninit();
+	SafeRelease::PlusRelease(&main_screen_texture_);
+	SafeRelease::PlusRelease(&post_effect_texture_);
+	SafeRelease::PlusRelease(&main_screen_surface_);
+	SafeRelease::PlusRelease(&post_effect_surface_);
 }
 
 
@@ -76,8 +101,11 @@ void BackBuffer::Update()
 	// カメラの更新
 	camera_->Update();
 
-	// 透明描画コンポーネントの降順ソート
+	// 透明描画基底クラスの降順ソート
 	SortTransparent();
+
+	// 2D描画基底クラスのソート
+	Sort2D();
 
 	// ビルボード更新
 	AllBillboardUpdate();
@@ -101,6 +129,10 @@ void BackBuffer::Update()
 void BackBuffer::Draw()
 {
 	// レンダーターゲットの切り替え
+	LPDIRECT3DDEVICE9 device;
+	Renderer::GetInstance()->GetDevice(&device);
+	device->SetRenderTarget(0, main_screen_surface_);
+	bool is_begin = Renderer::GetInstance()->DrawBegin();
 
 	// 不透明オブジェクト
 	camera_->SetType(Camera::Type::PERSPECTIVE);
@@ -221,8 +253,57 @@ void BackBuffer::Draw()
 		}
 	}
 
+	camera_->SetType(Camera::Type::TWO_DIMENSIONAL);
+	device->SetVertexShader(nullptr);
+	device->SetPixelShader(nullptr);
+	device->SetMaterial(render_texture_.GetMaterial());
+	device->SetTransform(D3DTS_VIEW, camera_->GetViewMatrix());
+	device->SetTransform(D3DTS_PROJECTION, camera_->GetProjectionMatrix());
+	render_texture_.Update(SCREEN_WIDTH * 1.03f,
+						   SCREEN_HEIGHT * 1.03f,
+						   XColor4(1.0f, 1.0f, 1.0f, 0.96f));
+	device->SetTransform(D3DTS_WORLD, render_texture_.GetMatrix(0));
+	device->SetTexture(0, post_effect_texture_);
+	render_texture_.Draw(0, 0);
+	
 	// フェード
 	FadeDraw();
+
+	Renderer::GetInstance()->DrawEnd(is_begin);
+
+	device->SetRenderTarget(0, back_buffer_surface_);
+	is_begin = Renderer::GetInstance()->DrawBegin();
+
+	camera_->SetType(Camera::Type::TWO_DIMENSIONAL);
+	device->SetVertexShader(nullptr);
+	device->SetPixelShader(nullptr);
+	device->SetMaterial(render_texture_.GetMaterial());
+	device->SetTransform(D3DTS_VIEW, camera_->GetViewMatrix());
+	device->SetTransform(D3DTS_PROJECTION, camera_->GetProjectionMatrix());
+	render_texture_.Update(SCREEN_WIDTH,
+						   SCREEN_HEIGHT,
+						   XColor4(1.0f, 1.0f, 1.0f, 1.0f));
+	device->SetTransform(D3DTS_WORLD, render_texture_.GetMatrix(0));
+	device->SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_POINT);
+	device->SetSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_POINT);
+	device->SetSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_POINT);
+
+	device->SetTexture(0, main_screen_texture_);
+	render_texture_.Draw(0, 0);
+
+	((RendererDirectX9*)Renderer::GetInstance()->GetRenderer())->SetDefaultSamplerState();
+
+	Renderer::GetInstance()->DrawEnd(is_begin);
+
+	LPDIRECT3DTEXTURE9 temp;
+	temp = main_screen_texture_;
+	main_screen_texture_ = post_effect_texture_;
+	post_effect_texture_ = temp;
+
+	LPDIRECT3DSURFACE9 temp2;
+	temp2 = main_screen_surface_;
+	main_screen_surface_ = post_effect_surface_;
+	post_effect_surface_ = temp2;
 }
 
 
@@ -296,7 +377,7 @@ void BackBuffer::UninitFade()
 
 
 //--------------------------------------------------
-// -透明描画コンポーネントのソート関数 
+// -透明描画基底クラスのソート関数 
 //--------------------------------------------------
 void BackBuffer::SortTransparent()
 {
@@ -324,6 +405,30 @@ void BackBuffer::SortTransparent()
 			{
 				// 並び替え
 				all_transparency_draw_.SortTheTwoObject(i, j);
+			}
+		}
+	}
+}
+
+
+
+//--------------------------------------------------
+// -2D描画基底クラスのソート関数 
+//--------------------------------------------------
+void BackBuffer::Sort2D()
+{
+	// 2Dオブジェクトがあるかどうか
+	if (all_2D_draw_.GetEndPointer() <= 0) return;
+
+	for (unsigned i = 0; i < all_2D_draw_.GetEndPointer() - 1; i++)
+	{
+		for (unsigned j = i + 1; j < all_2D_draw_.GetEndPointer(); j++)
+		{
+			if (all_2D_draw_.GetArrayObject(i)->GetDrawOrderList()->GetLayerNum() 
+				> all_2D_draw_.GetArrayObject(j)->GetDrawOrderList()->GetLayerNum())
+			{
+				// 並び替え
+				all_2D_draw_.SortTheTwoObject(i, j);
 			}
 		}
 	}

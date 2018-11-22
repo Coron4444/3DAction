@@ -44,11 +44,11 @@ void CoinDraw::Init()
 	decale_texture_ = TextureManager::AddUniqueData(&DECALE_TEXTURE);
 
 	// エフェクトの読み込み
-	EffekseerManager::AddUniqueData(&EFFECT);
-	effekseer_object_ = EffekseerManager::GetReferenceEffekseerObject(&EFFECT);
-	effekseer_object_->SetColor(255, 0, 255, 255);
-	effekseer_object_->SetRepeat(true);
-	effekseer_object_->Play();
+	//EffekseerManager::AddUniqueData(&EFFECT);
+	//effekseer_object_ = EffekseerManager::GetReferenceEffekseerObject(&EFFECT);
+	//effekseer_object_->SetColor(255, 0, 255, 255);
+	//effekseer_object_->SetRepeat(true);
+	//effekseer_object_->Play();
 }
 
 
@@ -58,8 +58,8 @@ void CoinDraw::Init()
 //--------------------------------------------------
 void CoinDraw::Uninit()
 {
-	effekseer_object_->Stop();
-	effekseer_object_->SetRepeat(false);
+	//effekseer_object_->Stop();
+	//effekseer_object_->SetRepeat(false);
 }
 
 
@@ -87,8 +87,8 @@ void CoinDraw::SettingBeforeDrawing(Camera* camera, unsigned object_index)
 	object_index = object_index;
 	
 	// エフェクト座標更新
-	*effekseer_object_->GetTransform()->GetPosition() = *GetGameObject()->GetTransform()->GetPosition();
-	effekseer_object_->GetTransform()->UpdateWorldMatrixSRT();
+	//*effekseer_object_->GetTransform()->GetPosition() = *GetGameObject()->GetTransform()->GetPosition();
+	//effekseer_object_->GetTransform()->UpdateWorldMatrixSRT();
 }
 
 

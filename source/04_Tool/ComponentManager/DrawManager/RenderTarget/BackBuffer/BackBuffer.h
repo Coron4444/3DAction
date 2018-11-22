@@ -20,7 +20,7 @@
 #include "../../Fade/Fade.h"
 
 #include <LimitedPointerArray\LimitedPointerArray.h>
-
+#include <ComponentManager/DrawManager/RenderTexture/RenderTexture.h>
 
 
 //****************************************
@@ -61,6 +61,16 @@ private:
 	bool  is_fade_ = false;		//!< フェード中フラグ
 
 	ShaderManager* shader_manager_ = nullptr;	//!< シェーダーマネージャ
+
+	LPDIRECT3DTEXTURE9 main_screen_texture_;
+	LPDIRECT3DSURFACE9 main_screen_surface_;
+
+	LPDIRECT3DTEXTURE9 post_effect_texture_;
+	LPDIRECT3DSURFACE9 post_effect_surface_;
+
+	LPDIRECT3DSURFACE9 back_buffer_surface_;
+
+	RenderTexture render_texture_;
 
 
 //==============================
@@ -141,9 +151,15 @@ public:
 private:
 	/**
 	* @brief
-	* 透明描画コンポーネントのソート関数
+	* 透明描画基底クラスのソート関数
 	*/
 	void SortTransparent();
+
+	/**
+	* @brief
+	* 2D描画基底クラスのソート関数
+	*/
+	void Sort2D();
 
 	/**
 	* @brief

@@ -121,7 +121,15 @@ void RendererDirectX9::DrawEnd(bool is_begin_scene)
 {
 	// 描画の終了
 	if (is_begin_scene) direct3d_device_->EndScene();
+}
 
+
+
+//--------------------------------------------------
+// +バックバッファをフロントバッファに反映関数
+//--------------------------------------------------
+void RendererDirectX9::Present()
+{
 	// バックバッファをフロントバッファに描画
 	direct3d_device_->Present(NULL, NULL, NULL, NULL);
 }

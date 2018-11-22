@@ -131,6 +131,12 @@ private:
 
 	/**
 	* @brief
+	* 全描画基底クラス更新関数
+	*/
+	void UpdateAllDrawBase();
+
+	/**
+	* @brief
 	* 全レンダーターゲット更新関数
 	*/
 	void UpdateAllRenderTarget();

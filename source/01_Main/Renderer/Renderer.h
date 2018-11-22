@@ -117,6 +117,12 @@ public:
 
 	/**
 	* @brief
+	* バックバッファをフロントバッファに反映関数
+	*/
+	void Present();
+
+	/**
+	* @brief
 	* レンダラー設定関数
 	* @param
 	* factory : レンダラーファクトリー
