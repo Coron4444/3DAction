@@ -10,6 +10,13 @@
 
 
 
+//****************************************
+// インクルード文
+//****************************************
+#include <Vector3D.h>
+
+
+
 /*********************************************************//**
 * @brief
 * 衝突形状基底クラス
@@ -42,7 +49,8 @@ public:
 // 非静的メンバ関数
 //==============================
 private:
-	Type type_;			//!< 形状タイプ
+	Type type_;				//!< 形状タイプ
+	Vector3D position_;		//!< 座標
 
 
 //==============================
@@ -54,7 +62,7 @@ public:
 	* コンストラクタ
 	*/
 	CollisionShapeBase(Type type) : type_(type) {}
-	
+
 	/**
 	* @brief
 	* 仮想デストラクタ
@@ -62,7 +70,9 @@ public:
 	virtual ~CollisionShapeBase() {}
 
 	// プロパティ
-	Type GetType() { return type_; }
+	Type getType() { return type_; }
+	const Vector3D* getPositon() const { return &position_; }
+	void setPosition(Vector3D value) { position_ = value; }
 };
 
 

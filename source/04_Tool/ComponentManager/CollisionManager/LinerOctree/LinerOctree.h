@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <Windows.h>
+#include <windows.h>
 #include <vector>
 #include <list>
 
@@ -45,14 +45,14 @@ public:
 // 非静的メンバ変数
 //==============================
 private:
-	unsigned power_of_eight_array_[MAX_LEVEL + 1] = {0};			//!< ８のべき乗数値配列
-	SpaceOfTree<Type>** space_pointer_array_ nullptr;	//!< 各空間ポインタ配列
-	Vec3 octree_width_ = {1.0f, 1.0f, 1.0f};		//!< 8分木の幅
-	Vec3 octree_width_min_ = {0.0f, 0.0f, 0.0f};	//!< 8分木の幅の最小値
-	Vec3 octree_width_max_ = {1.0f, 1.0f, 1.0f};	//!< 8分木の幅の最大値
-	Vec3 octree_unit_length_ = {1.0f, 1.0f, 1.0f};	//!< 8分木の単位長さ
-	DWORD all_space_num_ = 0;						//!< 空間数
-	unsigned  lowest_level_ = 0;					//!< 最下位レベル(一番末端のLevel数)
+	unsigned power_of_eight_array_[MAX_LEVEL + 1] = {0};	//!< ８のべき乗数値配列
+	SpaceOfTree<Type>** space_pointer_array_ = nullptr;		//!< 各空間ポインタ配列
+	Vec3 octree_width_ = {1.0f, 1.0f, 1.0f};				//!< 8分木の幅
+	Vec3 octree_width_min_ = {0.0f, 0.0f, 0.0f};			//!< 8分木の幅の最小値
+	Vec3 octree_width_max_ = {1.0f, 1.0f, 1.0f};			//!< 8分木の幅の最大値
+	Vec3 octree_unit_length_ = {1.0f, 1.0f, 1.0f};			//!< 8分木の単位長さ
+	DWORD all_space_num_ = 0;								//!< 空間数
+	unsigned  lowest_level_ = 0;							//!< 最下位レベル(一番末端のLevel数)
 
 
 //==============================
@@ -109,12 +109,29 @@ public:
 	{
 		for (unsigned i = 0; i < all_space_num_; i++)
 		{
-			SafeRelease::Normal(space_pointer_array_[i]);
+			SafeRelease::PlusUninit(&space_pointer_array_[i]);
 		}
 
 		if (space_pointer_array_ == nullptr) return;
 
 		delete[] space_pointer_array_;
+	}
+
+	/**
+	* @brief
+	* 衝突リスト更新関数
+	*/
+	void UpdateCollisionList(std::vector<Type>* collision_vector)
+	{
+		// 初期化
+		collision_vector->clear();
+
+		// ルート空間があるかどうか
+		if (space_pointer_array_[0] == nullptr) return;
+
+		// ルート空間から処理を開始
+		std::list<Type> temp_stack;
+		GetCollisionList(0, collision_vector, &temp_stack);
 	}
 
 	/**
@@ -125,7 +142,7 @@ public:
 	* object_min : 追加したいオブジェクトの最小値
 	* object_max : 追加したいオブジェクトの最大値
 	*/
-	void Add(ObjectOfTree<Type>* object, Vec3* object_min, Vec3* object_max)
+	void Add(ObjectOfTree<Type>* object, const Vec3* object_min, const Vec3* object_max)
 	{
 		// オブジェクトの所属空間の配列インデックスの取得
 		DWORD array_index = GetArrayIndexOfBelonginSpace(object_min, object_max);
@@ -141,24 +158,7 @@ public:
 		}
 
 		// オブジェクトを登録
-		space_pointer_array_[array_index]->Push(object);
-	}
-
-	/**
-	* @brief
-	* 衝突判定リスト関数
-	*/
-	void GetCollisionList(vector<Type*>* collision_vector)
-	{
-		// 初期化
-		collision_vector->clear();
-
-		// ルート空間があるかどうか
-		if (space_pointer_array_[0] == nullptr) return 0;
-
-		// ルート空間から処理を開始
-		list<Type*> temp_stack;
-		GetCollisionList(0, collision_vector, temp_stack);
+		space_pointer_array_[array_index]->AddObject(object);
 	}
 
 
@@ -183,7 +183,7 @@ private:
 	* position : モートン番号を取得したい座標へのポインタ
 	* @return モートン番号
 	*/
-	DWORD GetMortonNumber(Vec3* position)
+	DWORD GetMortonNumber(const Vec3* position)
 	{
 		// 最下位レベル空間での座標へ変換
 		DWORD temp_x = (DWORD)((position->x - octree_width_min_.x) / octree_unit_length_.x);
@@ -207,7 +207,7 @@ private:
 	* object_max : 所属空間の配列インデックスを取得したいオブジェクトの最大値
 	* @return 所属空間の配列番号
 	*/
-	DWORD GetArrayIndexOfBelonginSpace(Vec3* object_min, Vec3* object_max)
+	DWORD GetArrayIndexOfBelonginSpace(const Vec3* object_min, const Vec3* object_max)
 	{
 		// 最小値と最大値のモートン番号のXORを算出
 		DWORD converted_min = GetMortonNumber(object_min);
@@ -215,7 +215,7 @@ private:
 		DWORD temp = converted_min ^ converted_max;
 
 		// 最上位の区切りから最小値と最大値の共有空間レベルを算出する
-		unsigned shared_space_level = 1;
+		unsigned shared_space_level = 0;
 		for (unsigned i = 0; i < lowest_level_; i++)
 		{
 			// 3bitずつずらして(3Dな為)何かしら数値があるかをチェック
@@ -259,8 +259,8 @@ private:
 	* collision_vector : 衝突オブジェクトリスト
 	* collision_stack : 衝突オブジェクトスタック
 	*/
-	void GetCollisionList(DWORD space_index, vector<Type*>* collision_vector,
-						  list<Type*>* collision_stack)
+	void GetCollisionList(DWORD space_index, std::vector<Type>* collision_vector,
+						  std::list<Type>* collision_stack)
 	{
 		ObjectOfTree<Type>* temp01 = space_pointer_array_[space_index]->getFirstObject();
 		while (temp01 != nullptr)
@@ -286,45 +286,45 @@ private:
 
 			// 次のオブジェクトへ
 			temp01 = temp01->getNextPointer();
+		}
 
-			// 子空間へ移動
-			bool child_flag = false;		// 子空間フラグ
-			DWORD object_num = 0;
-			DWORD next_space_index = 0;
-			for (unsigned i = 0; i < 8; i++)
+		// 子空間へ移動
+		bool child_flag = false;		// 子空間フラグ
+		DWORD object_num = 0;
+		DWORD next_space_index = 0;
+		for (unsigned i = 0; i < 8; i++)
+		{
+			// 次の空間があるかどうか
+			next_space_index = space_index * 8 + 1 + i;
+			if (next_space_index >= all_space_num_) continue;
+			if (space_pointer_array_[next_space_index] == nullptr) continue;
+
+			// 親をプッシュ
+			if (!child_flag)
 			{
-				// 次の空間があるかどうか
-				next_space_index = space_index * 8 + 1 + i;
-				if (next_space_index >= all_space_num_) continue;
-				if (space_pointer_array_[next_space_index] == nullptr) continue;
-
-				// 親をプッシュ
-				if (!child_flag)
+				temp01 = space_pointer_array_[space_index]->getFirstObject();
+				while (temp01 != nullptr)
 				{
-					temp01 = space_pointer_array_[space_index]->getFirstObject();
-					while (temp01 != nullptr)
-					{
-						collision_stack->push_back(temp01->getObject());
-						object_num++;
-						temp01 = temp01->getNextPointer();
-					}
+					collision_stack->push_back(temp01->getObject());
+					object_num++;
+					temp01 = temp01->getNextPointer();
 				}
-
-				// 子空間フラグON
-				child_flag = true;
-
-				// 子空間の再帰処理
-				GetCollisionList(next_space_index, collision_vector,
-								 collision_stack);
 			}
 
-			// スタックからオブジェクトを外す
-			if (!child_flag) return;
+			// 子空間フラグON
+			child_flag = true;
 
-			for (unsigned i = 0; i < object_num; i++)
-			{
-				collision_stack->pop_back();
-			}
+			// 子空間の再帰処理
+			GetCollisionList(next_space_index, collision_vector,
+							 collision_stack);
+		}
+
+		// スタックからオブジェクトを外す
+		if (!child_flag) return;
+
+		for (unsigned i = 0; i < object_num; i++)
+		{
+			collision_stack->pop_back();
 		}
 	}
 };

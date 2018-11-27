@@ -14,7 +14,7 @@
 // インクルード文
 //****************************************
 #include "../ComponentBase/ComponentBase.h"
-#include "CollisionObject\CollisionObject.h"
+#include "CollisionObjects/CollisionObjects.h"
 
 #include <LimitedPointerArray\LimitedPointerArray.h>
 #include <Transform\Transform.h>
@@ -60,12 +60,10 @@ public:
 // 非静的メンバ変数
 //==============================
 private:
-	LimitedPointerArray<CollisionObject*, ARRAY_NUM> all_collision_object_;	//!< 全衝突オブジェクト配列
-
-	State state_;	//!< ステート
-
-	bool is_judgment_;			//!< 判定フラグ
-	bool is_judgment_ground_;	//!< 地面との判定フラグ
+	LimitedPointerArray<CollisionObjects*, ARRAY_NUM> collision_objects_;	//!< 複数衝突オブジェクト配列
+	State state_ = State::NONE;			//!< ステート
+	bool is_judgment_ = true;			//!< 判定フラグ
+	bool is_judgment_ground_ = true;	//!< 地面との判定フラグ
 
 
 //==============================
@@ -74,26 +72,9 @@ private:
 public:
 	/**
 	* @brief
-	* コンストラクタ
-	*/
-	CollisionBase(State state)
-		: state_(state),
-		is_judgment_(true),
-		is_judgment_ground_(true)
-	{
-	}
-
-	/**
-	* @brief
 	* 仮想デストラクタ
 	*/
 	virtual ~CollisionBase() {}
-
-	/**
-	* @brief
-	* 終了関数
-	*/
-	virtual void Uninit() = 0;
 
 	/**
 	* @brief
@@ -116,8 +97,8 @@ public:
 	* hit_my_object : 自分の衝突オブジェクト
 	*/
 	virtual void HitCollision(CollisionBase* hit_collision,
-							  CollisionObject*  hit_object,
-							  CollisionObject*  hit_my_object) = 0;
+							  CollisionObject* hit_object,
+							  CollisionObject* hit_my_object) = 0;
 
 	/**
 	* @brief
@@ -128,8 +109,8 @@ public:
 	* hit_my_object : 自分の衝突オブジェクト
 	*/
 	virtual void NotHitCollision(CollisionBase*	hit_collision,
-								 CollisionObject*  hit_object,
-								 CollisionObject*  hit_my_object) = 0;
+								 CollisionObject* hit_object,
+								 CollisionObject* hit_my_object) = 0;
 
 	/**
 	* @brief
@@ -145,51 +126,46 @@ public:
 
 	/**
 	* @brief
-	* 衝突オブジェクト追加関数
+	* 複数衝突オブジェクト追加関数
 	*/
-	void AddCollisionObjectToArray(CollisionObject* object)
+	void AddCollisionObjectsToArray(CollisionObjects* object)
 	{
-		all_collision_object_.AddToArray(object);
+		collision_objects_.AddToArray(object);
 	}
 
 	/**
 	* @brief
-	* 衝突オブジェクト上書き関数
+	* 複数衝突オブジェクト上書き関数
 	*/
-	void OverwriteArrayCollisionObject(CollisionObject* old_object,
-									   CollisionObject* new_object)
+	void OverwriteArrayCollisionsObject(CollisionObjects* old_object,
+										CollisionObjects* new_object)
 	{
-		all_collision_object_.OverwriteArray(old_object, new_object);
+		old_object->ReleaseAllCollisionObjectFromArray();
+		collision_objects_.OverwriteArray(old_object, new_object);
 	}
 
 	/**
 	* @brief
-	* 衝突オブジェクト解放関数
+	* 複数衝突オブジェクト解放関数
 	*/
-	void ReleaseCollisionObjectFromArray(CollisionObject* object)
+	void ReleaseCollisionObjectsFromArray(CollisionObjects* object)
 	{
-		all_collision_object_.DeleteFromArrayAndSortArray(object);
+		object->ReleaseAllCollisionObjectFromArray();
+		collision_objects_.DeleteFromArrayAndSortArray(object);
 	}
 
 	/**
 	* @brief
-	* 衝突オブジェクト全解放関数
+	* 複数衝突オブジェクト全解放関数
 	*/
-	void ReleaseAllCollisionObjectFromArray()
+	void ReleaseAllCollisionObjectsFromArray()
 	{
-		all_collision_object_.ReleaseObjectAndResetArray();
-	}
-
-	/**
-	* @brief
-	* 全ての衝突用データのリセット関数
-	*/
-	void ResetHitDataAllCollisionObject()
-	{
-		for (unsigned i = 0; i < all_collision_object_.GetEndPointer(); i++)
+		for (unsigned i = 0; i < collision_objects_.GetEndPointer(); i++)
 		{
-			all_collision_object_.GetArrayObject(i)->ResetHitData();
+			collision_objects_.GetArrayObject(i)
+				->ReleaseAllCollisionObjectFromArray();
 		}
+		collision_objects_.ReleaseObjectAndResetArray();
 	}
 
 	/**
@@ -203,13 +179,14 @@ public:
 	}
 
 	// プロパティ
-	unsigned GetEndIndexOfArray() { return all_collision_object_.GetEndPointer(); }
-	CollisionObject* GetCollisionObject(unsigned index) { return all_collision_object_.GetArrayObject(index); }
-	State GetState() { return state_; }
-	bool GetIsJudgment() { return is_judgment_; }
-	void SetIsJudgment(bool value) { is_judgment_ = value; }
-	bool GetIsJudgmentGround() { return is_judgment_; }
-	void SetIsJudgmentGround(bool value) { is_judgment_ = value; }
+	unsigned getEndIndexOfArray() { return collision_objects_.GetEndPointer(); }
+	CollisionObjects* getCollisionObjects(unsigned index) { return collision_objects_.GetArrayObject(index); }
+	State getState() { return state_; }
+	void setState(State value) { state_ = value; }
+	bool getIsJudgment() { return is_judgment_; }
+	void setIsJudgment(bool value) { is_judgment_ = value; }
+	bool getIsJudgmentGround() { return is_judgment_ground_; }
+	void setIsJudgmentGround(bool value) { is_judgment_ground_ = value; }
 };
 
 

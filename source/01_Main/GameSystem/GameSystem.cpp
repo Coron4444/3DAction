@@ -26,10 +26,10 @@
 #include <Scenes/GameScene/GameSceneState/GameSceneState_Start/GameSceneState_Start.h>
 
 
-#ifdef _DEBUG
+//#ifdef _DEBUG
 #include <ImGUI\imgui.h>
 #include <ImGUI\imgui_impl_dx9.h>
-#endif
+//#endif
 
 
 
@@ -61,7 +61,7 @@ bool GameSystem::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 	InitKeyboard(hInstance, hWnd);
 
 	// ImGUIの初期化
-#ifdef _DEBUG
+//#ifdef _DEBUG
 	LPDIRECT3DDEVICE9 device = nullptr;
 	Renderer::GetInstance()->GetDevice(&device);
 	if (device == nullptr)
@@ -70,7 +70,7 @@ bool GameSystem::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 		return false;
 	}
 	ImGui_ImplDX9_Init(hWnd, device);
-#endif
+//#endif
 
 	// シーンマネージャーの生成
 	scene_manager_ = new SceneManager(new TitleScene(new TitleSceneState_Start()));
@@ -89,9 +89,9 @@ void GameSystem::Uninit()
 	SafeRelease::Normal(&scene_manager_);
 
 	// ImGUIの終了
-#ifdef _DEBUG
+//#ifdef _DEBUG
 	ImGui_ImplDX9_Shutdown();
-#endif
+//#endif
 
 	// キーボード入力の終了処理
 	UninitKeyboard();
@@ -112,9 +112,9 @@ void GameSystem::Uninit()
 void GameSystem::Update()
 {
 	// ImGUIの更新
-#ifdef _DEBUG
+//#ifdef _DEBUG
 	ImGui_ImplDX9_NewFrame();
-#endif
+//#endif
 
 	// キーボードの入力処理
 	UpdateKeyboard();
@@ -143,9 +143,9 @@ void GameSystem::Draw()
 	//Renderer::GetInstance()->DrawEnd(is_begin);
 
 	// ImGUIの描画
-#ifdef _DEBUG
+//#ifdef _DEBUG
 	ImGui::Render();
-#endif
+//#endif
 
 	// バックバッファをフロントバッファに反映
 	Renderer::GetInstance()->Present();

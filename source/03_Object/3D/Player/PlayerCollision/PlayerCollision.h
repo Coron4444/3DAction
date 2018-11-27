@@ -51,12 +51,6 @@ public :
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
-	// コンストラクタ
-	PlayerCollision();
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
 	// メンバ関数
 	void Init()   override;
 	void Uninit() override;
@@ -94,6 +88,7 @@ private :
 //------------------------------------------------------------
 private :
 	// メンバ変数
+	CollisionObjects* collision_objects_;
 	CollisionObject* bounding_sphere_;
 	CollisionObject* substance_;
 };

@@ -24,12 +24,12 @@
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+/*********************************************************//**
+* @brief
+* 衝突オブジェクトクラス
+*
+* 衝突オブジェクトのクラス
+*************************************************************/
 class CollisionObject
 {
 //==============================
@@ -47,9 +47,9 @@ private:
 	CollisionShapeBase* collision_shape_;		//!< 形状
 	Vector3D hit_vector_;						//!< めり込みベクトル
 
-	int		 tag_;			//!< タグ
-	bool     is_judgment_;	//!< 判定するかフラグ
-	bool     is_trigger_;	//!< 物理演算をするかのフラグ
+	int		 tag_;					//!< タグ
+	bool     is_judgment_ = true;	//!< 判定するかフラグ
+	bool     is_trigger_ = true;	//!< 物理演算をするかのフラグ
 
 
 //==============================
@@ -78,12 +78,12 @@ public:
 	void ResetHitData();
 
 	// プロパティ
-	int	 GetTag() const { return tag_; }
-	CollisionShapeBase* GetCollisionShape() const { return collision_shape_; }
-	Vector3D* GetHitVector() { return &hit_vector_; }
-	void SetHitVector(Vector3D value) { hit_vector_ = value; }
-	bool GetIsJudgment() const { return is_judgment_; }
-	void SetIsJudgment(bool value) { is_judgment_ = value; }
+	int	 getTag() const { return tag_; }
+	CollisionShapeBase* getCollisionShape() const { return collision_shape_; }
+	Vector3D* getHitVector() { return &hit_vector_; }
+	void setHitVector(Vector3D value) { hit_vector_ = value; }
+	bool getIsJudgment() const { return is_judgment_; }
+	void setIsJudgment(bool value) { is_judgment_ = value; }
 };
 
 

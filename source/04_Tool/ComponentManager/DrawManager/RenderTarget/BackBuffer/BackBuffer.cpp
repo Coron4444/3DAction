@@ -264,7 +264,7 @@ void BackBuffer::Draw()
 						   XColor4(1.0f, 1.0f, 1.0f, 0.96f));
 	device->SetTransform(D3DTS_WORLD, render_texture_.GetMatrix(0));
 	device->SetTexture(0, post_effect_texture_);
-	render_texture_.Draw(0, 0);
+	//render_texture_.Draw(0, 0);
 	
 	// フェード
 	FadeDraw();

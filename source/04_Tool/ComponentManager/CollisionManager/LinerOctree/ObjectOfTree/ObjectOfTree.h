@@ -37,10 +37,10 @@ class ObjectOfTree
 // 非静的メンバ変数
 //==============================
 private:
-	SpaceOfOctree<Type>* belonging_space_ = nullptr;		//!< 所属空間
-	Type* object_ = nullptr;								//!< オブジェクト
-	ObjectOfTree<Type>* previous_pointer_ = nullptr;		//!< 前ポインタ
-	ObjectOfTree<Type>* next_pointer_ = nullptr;			//!< 次ポインタ
+	SpaceOfTree<Type>* belonging_space_ = nullptr;		//!< 所属空間
+	Type object_ = nullptr;								//!< オブジェクト
+	ObjectOfTree<Type>* previous_pointer_ = nullptr;	//!< 前ポインタ
+	ObjectOfTree<Type>* next_pointer_ = nullptr;		//!< 次ポインタ
 
 
 //==============================
@@ -69,13 +69,14 @@ public:
 		}
 		previous_pointer_ = nullptr;
 		next_pointer_ = nullptr;
+		belonging_space_ = nullptr;
 	}
 
 	// プロパティ
-	SpaceOfOctree<Type>* getBelongingSpace() { return belonging_space_; }
-	void setBelongingSpace(SpaceOfOctree<Type>* value) { belonging_space_ = value; }
-	Type* getObject() { return belonging_space_; }
-	void setObject(Type* value) { object_ = value; }
+	SpaceOfTree<Type>* getBelongingSpace() { return belonging_space_; }
+	void setBelongingSpace(SpaceOfTree<Type>* value) { belonging_space_ = value; }
+	Type getObject() { return object_; }
+	void setObject(Type value) { object_ = value; }
 	ObjectOfTree<Type>* getPreviousPointer() { return previous_pointer_; }
 	void setPreviousPointer(ObjectOfTree<Type>* value) { previous_pointer_ = value; }
 	ObjectOfTree<Type>* getNextPointer() { return next_pointer_; }

@@ -13,7 +13,11 @@
 //****************************************
 // インクルード文
 //****************************************
+#include <vector>
+
 #include <LimitedPointerArray\LimitedPointerArray.h>
+
+#include "LinerOctree/LinerOctree.h"
 
 
 
@@ -22,6 +26,7 @@
 //****************************************
 class CollisionBase;
 class CollisionObject;
+class CollisionObjects;
 class GameObjectBase;
 class MeshPlanePolygon;
 
@@ -52,6 +57,11 @@ private:
 
 	MeshPlanePolygon* ground_polygon_;		//!< 地面ポリゴン
 
+	LinerOctree<CollisionObjects*>* liner_octree_ = nullptr;	//!< 8分木
+	std::vector<ObjectOfTree<CollisionObjects*>*> object_of_tree_;	//!< 8分木オブジェクト配列
+	std::vector<CollisionObjects*> collision_list_;
+
+	DWORD time_;
 
 //==============================
 // 非静的メンバ関数
@@ -121,7 +131,13 @@ private:
 	* @brief
 	* 衝突判定関数
 	*/
-	void CollisionDetermination();
+	//void CollisionDetermination();
+
+	/**
+	* @brief
+	* 古い衝突判定関数
+	*/
+	void OldCollisionDetermination();
 
 	/**
 	* @brief
@@ -133,7 +149,10 @@ private:
 	* @brief
 	* 実際の計算関数
 	*/
-	void ActualCalculation(CollisionBase* collision0, CollisionBase* collision1);
+	void ActualCalculation(CollisionBase* collision0,
+						   CollisionBase* collision1,
+						   CollisionObjects* collision_objects0,
+						   CollisionObjects* collision_objects1);
 
 	/**
 	* @brief
@@ -141,6 +160,12 @@ private:
 	*/
 	bool SortCollisionCalculation(CollisionObject* collision_object0,
 								  CollisionObject* collision_object1);
+
+	/**
+	* @brief
+	* Debug表示関数
+	*/
+	void DebugDisplay();
 };
 
 

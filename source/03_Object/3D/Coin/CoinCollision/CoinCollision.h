@@ -55,12 +55,6 @@ public :
 	};
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// コンストラクタ
-	CoinCollision();
-
-
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public :
@@ -73,6 +67,7 @@ public :
 //------------------------------------------------------------
 private :
 	// メンバ変数
+	CollisionObjects* collision_objects_;
 	CollisionObject* bounding_obb_;
 	CollisionObject* substance_;
 };

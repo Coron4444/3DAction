@@ -34,7 +34,7 @@ CollisionObject::CollisionObject(CollisionShapeBase* collision_shape, int tag)
 //--------------------------------------------------
 CollisionObject::~CollisionObject()
 {
-	switch (collision_shape_->GetType())
+	switch (collision_shape_->getType())
 	{
 		case CollisionShapeBase::Type::AABB:
 		{

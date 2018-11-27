@@ -195,7 +195,7 @@ void PlayerUpdate::LateUpdate()
 void PlayerUpdate::DebugDisplay()
 {
 #ifdef _DEBUG
-	 // ウィンドウの設定
+	// ウィンドウの設定
     ImGui::SetNextWindowPos(ImVec2(30, 30), ImGuiSetCond_Once);
 	ImGui::SetNextWindowSize(ImVec2(150, 500), ImGuiSetCond_Once);
 	ImGui::PushStyleColor(ImGuiCol_TitleBgActive,    ImVec4(1.0f, 0.0f, 0.0f, 0.8f));

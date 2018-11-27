@@ -29,7 +29,7 @@
 //======================================================================
 
 const float EnemyCollision::BOUNDING_SPHERE_RADIUS = 3.0f;
-const float EnemyCollision::SUBSTANCE_RADIUS	   = 1.0f;
+const float EnemyCollision::SUBSTANCE_RADIUS = 1.0f;
 
 
 
@@ -38,20 +38,6 @@ const float EnemyCollision::SUBSTANCE_RADIUS	   = 1.0f;
 // 非静的メンバ関数定義
 //
 //======================================================================
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デフォルトコンストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-EnemyCollision::EnemyCollision()
-		: CollisionNull(CollisionBase::State::ENEMY)
-{
-}
-
-
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
 // [ 初期化関数 ]
@@ -60,14 +46,25 @@ EnemyCollision::EnemyCollision()
 
 void EnemyCollision::Init()
 {
+	// ステート
+	CollisionBase::setState(CollisionBase::State::ENEMY);
+
+	// 複数衝突オブジェクト
+	collision_objects_ = new CollisionObjects();
+	collision_objects_->setCollisionBase(this);
+	collision_objects_->getOctreeAABB()
+		->Init(*GetGameObject()->GetTransform()->GetPosition(),
+			   Vec3(1.0f, 1.0f, 1.0f));
+	CollisionBase::AddCollisionObjectsToArray(collision_objects_);
+
 	// バウンディングスフィアの作成
-	Sphere* temp_sphere = new Sphere(*GetGameObject()->GetTransform()->GetPosition(), 
+	Sphere* temp_sphere = new Sphere(*GetGameObject()->GetTransform()->GetPosition(),
 									 BOUNDING_SPHERE_RADIUS);
-	
+
 	bounding_sphere_ = new CollisionObject(temp_sphere, ObjectTag::BOUNDING_SPHERE);
 
 	// バウンディングスフィアの登録
-	AddCollisionObjectToArray(bounding_sphere_);
+	collision_objects_->AddCollisionObjectToArray(bounding_sphere_);
 
 
 	// 本体スフィアの作成
@@ -77,7 +74,7 @@ void EnemyCollision::Init()
 	substance_ = new CollisionObject(temp_sphere, ObjectTag::SUBSTANCE);
 
 	// 本体スフィアの登録
-	AddCollisionObjectToArray(substance_);
+	collision_objects_->AddCollisionObjectToArray(substance_);
 }
 
 
@@ -104,11 +101,16 @@ void EnemyCollision::Uninit()
 
 void EnemyCollision::Update()
 {
+	// 複数衝突オブジェクトの更新
+	collision_objects_->getOctreeAABB()
+		->setPosition(*GetGameObject()->GetTransform()->GetPosition());
+	collision_objects_->getOctreeAABB()->Update();
+
 	// バウンディングスフィアの更新
-	Sphere* temp_sphere = (Sphere*)bounding_sphere_->GetCollisionShape();
+	Sphere* temp_sphere = (Sphere*)bounding_sphere_->getCollisionShape();
 	temp_sphere->position_ = *GetGameObject()->GetTransform()->GetPosition();
 
 	// 本体スフィアの更新
-	temp_sphere = (Sphere*)substance_->GetCollisionShape();
+	temp_sphere = (Sphere*)substance_->getCollisionShape();
 	temp_sphere->position_ = *GetGameObject()->GetTransform()->GetPosition();
 }

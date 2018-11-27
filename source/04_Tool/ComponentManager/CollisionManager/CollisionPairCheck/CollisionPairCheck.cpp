@@ -54,8 +54,8 @@ CollisionBase* CollisionPairCheck::IsState(CollisionBase::State state,
 										   CollisionBase* collision0,
 										   CollisionBase* collision1)
 {
-	if (state == collision0->GetState()) return collision0;
-	if (state == collision1->GetState()) return collision1;
+	if (state == collision0->getState()) return collision0;
+	if (state == collision1->getState()) return collision1;
 
 	return nullptr;
 }
@@ -83,7 +83,7 @@ CollisionBase* CollisionPairCheck::OtherSideComponent(CollisionBase* age_compone
 //--------------------------------------------------
 bool CollisionPairCheck::PairList_Player(CollisionBase* collision)
 {
-	switch (collision->GetState())
+	switch (collision->getState())
 	{
 		// 衝突を許可しない衝突コンポーネント
 		case CollisionBase::State::PLAYER:

@@ -32,12 +32,6 @@ class CollisionNull : public CollisionBase
 public:
 	/**
 	* @brief
-	* コンストラクタ
-	*/
-	CollisionNull(State state) : CollisionBase(state) {}
-
-	/**
-	* @brief
 	* 仮想デストラクタ
 	*/
 	virtual ~CollisionNull() {}
@@ -49,10 +43,10 @@ public:
 	virtual void Uninit() override
 	{
 		// 判定フラグOFF
-		SetIsJudgment(false);
+		setIsJudgment(false);
 
-		// 衝突オブジェクト全開放
-		ReleaseAllCollisionObjectFromArray();
+		// 複数衝突オブジェクト全開放
+		ReleaseAllCollisionObjectsFromArray();
 	}
 
 	/**
