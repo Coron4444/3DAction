@@ -38,7 +38,7 @@ class LinerOctree
 // ’è”
 //==============================
 public:
-	static const unsigned MAX_LEVEL = 7;	//!< Å‘åƒŒƒxƒ‹
+	static const unsigned MAX_LEVEL = 9;	//!< Å‘åƒŒƒxƒ‹
 
 
 //==============================

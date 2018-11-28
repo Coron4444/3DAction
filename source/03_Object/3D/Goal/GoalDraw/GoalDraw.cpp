@@ -1,7 +1,7 @@
 //================================================================================
 //
-//    コイン描画クラス
-//    Author : Araki Kai                                作成日 : 2018/07/24
+//    ゴール描画クラス
+//    Author : Araki Kai                                作成日 : 2018/11/28
 //
 //================================================================================
 
@@ -10,7 +10,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include "CoinDraw.h"
+#include "GoalDraw.h"
 
 #include <ResourceManager/ResourceManager.h>
 
@@ -19,7 +19,7 @@
 //****************************************
 // 定数定義
 //****************************************
-const std::string CoinDraw::DECALE_TEXTURE = "Coin.png";
+const std::string GoalDraw::EFFECT = "CoinEffect/CoinEffect.efk";
 
 
 
@@ -29,20 +29,27 @@ const std::string CoinDraw::DECALE_TEXTURE = "Coin.png";
 //--------------------------------------------------
 // +初期化関数
 //--------------------------------------------------
-void CoinDraw::Init()
+void GoalDraw::Init()
 {
 	// オーダーリスト設定
 	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
 	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
 	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
 	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
-	GetDrawOrderList()->SetIsBillboard(true);
 
 	// ダウンキャスト
-	coin_ = (Coin*)GetGameObject();
+	goal_ = (Goal*)GetGameObject();
 
-	// デカールテクスチャの読み込み
-	decale_texture_ = TextureManager::AddUniqueData(&DECALE_TEXTURE);
+	// キューブポリゴンの生成
+	cube_polygon_ = new CubePolygon();
+	cube_polygon_->SetColor(XColor4(0.5f, 1.0f, 1.0f, 1.0f));
+
+	// エフェクトの読み込み
+	EffekseerManager::AddUniqueData(&EFFECT);
+	effekseer_object_ = EffekseerManager::GetReferenceEffekseerObject(&EFFECT);
+	effekseer_object_->SetColor(255, 255, 255, 255);
+	effekseer_object_->SetRepeat(true);
+	effekseer_object_->Play();
 }
 
 
@@ -50,8 +57,13 @@ void CoinDraw::Init()
 //--------------------------------------------------
 // +終了関数
 //--------------------------------------------------
-void CoinDraw::Uninit()
+void GoalDraw::Uninit()
 {
+	// 各種消去
+	SafeRelease::Normal(&cube_polygon_);
+
+	effekseer_object_->Stop();
+	effekseer_object_->SetRepeat(false);
 }
 
 
@@ -59,18 +71,11 @@ void CoinDraw::Uninit()
 //--------------------------------------------------
 // +更新関数
 //--------------------------------------------------
-void CoinDraw::Update()
+void GoalDraw::Update()
 {
-	if (coin_->getCount() > 0)
-	{
-		coin_->GetPolygon()->SetColor(XColor4(1.0f, 0.0f, 0.0f, 1.0f));
-
-		coin_->setCount(coin_->getCount() - 1);
-	}
-	else
-	{
-		coin_->GetPolygon()->SetColor(XColor4(1.0f, 1.0f, 1.0f, 1.0f));
-	}
+	// エフェクト座標更新
+	*effekseer_object_->GetTransform()->GetPosition() = *goal_->GetTransform()->GetPosition();
+	effekseer_object_->GetTransform()->UpdateWorldMatrixSRT();
 }
 
 
@@ -78,24 +83,13 @@ void CoinDraw::Update()
 //--------------------------------------------------
 // +描画関数
 //--------------------------------------------------
-void CoinDraw::Draw(unsigned object_index, unsigned mesh_index)
+void GoalDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
-
-	// ポリゴン描画
-	coin_->GetPolygon()->Draw();
-}
-
-
-
-//--------------------------------------------------
-// +描画前設定関数
-//--------------------------------------------------
-void CoinDraw::SettingBeforeDrawing(Camera* camera, unsigned object_index)
-{
-	camera = camera;
-	object_index = object_index;
+	
+	// キューブ描画
+	cube_polygon_->Draw();
 }
 
 
@@ -103,11 +97,11 @@ void CoinDraw::SettingBeforeDrawing(Camera* camera, unsigned object_index)
 //--------------------------------------------------
 // +行列取得関数
 //--------------------------------------------------
-const MATRIX* CoinDraw::GetMatrix(unsigned object_index)
+const MATRIX* GoalDraw::GetMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return coin_->GetTransform()->GetWorldMatrix();
+	return goal_->GetTransform()->GetWorldMatrix();
 }
 
 
@@ -115,11 +109,11 @@ const MATRIX* CoinDraw::GetMatrix(unsigned object_index)
 //--------------------------------------------------
 // +メッシュ数取得関数
 //--------------------------------------------------
-unsigned CoinDraw::GetMeshNum(unsigned object_index)
+unsigned GoalDraw::GetMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return coin_->GetPolygon()->GetMeshNum();
+	return cube_polygon_->GetMeshNum();
 }
 
 
@@ -127,24 +121,10 @@ unsigned CoinDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* CoinDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* GoalDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
 
-	return coin_->GetPolygon()->GetMaterial();
-}
-
-
-
-//--------------------------------------------------
-// +デカールテクスチャ取得関数
-//--------------------------------------------------
-LPDIRECT3DTEXTURE9 CoinDraw::GetDecaleTexture(unsigned object_index, 
-											  unsigned mesh_index)
-{
-	object_index = object_index;
-	mesh_index = mesh_index;
-
-	return decale_texture_->GetHandler();
+	return cube_polygon_->GetMaterial();
 }

@@ -21,7 +21,8 @@
 
 #include <SafeRelease/SafeRelease.h>
 
-
+#include <ImGUI\imgui.h>
+#include <ImGUI\imgui_impl_dx9.h>
 
 //****************************************
 // 非静的メンバ関数定義
@@ -38,7 +39,7 @@ void CollisionManager::Init()
 	if (liner_octree_ == nullptr)
 	{
 		liner_octree_ = new LinerOctree<CollisionObjects*>();
-		liner_octree_->Init(2, Vec3(-30.0f, 0.0f, -30.0f), Vec3(30.0f, 60.0f, 30.0f));
+		liner_octree_->Init(7, Vec3(-50.0f, -10.0f, -50.0f), Vec3(50.0f, 90.0f, 50.0f));
 	}
 }
 
@@ -49,6 +50,24 @@ void CollisionManager::Init()
 //--------------------------------------------------
 void CollisionManager::Uninit()
 {
+	// 解放待ち配列の中身を解放
+	ReleaseContentsOfAwaitReleaseArray();
+
+	// 8分木
+	SafeRelease::PlusUninit(&liner_octree_);
+	for (unsigned i = 0; i < all_collision_.GetEndPointer(); i++)
+	{
+		for (unsigned j = 0; j < all_collision_.GetArrayObject(i)->getEndIndexOfArray(); j++)
+		{
+			// 移動オブジェクトはリストから一時的に離脱する
+			ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
+				->getCollisionObjects(j)->getObjectOfTree();
+			temp->DeleteFromList();
+			SafeRelease::Normal(&temp);
+		}
+	}
+	collision_objects_list_.clear();
+
 	// 追加待ち配列のリセット
 	await_add_.ResetArray();
 
@@ -57,16 +76,6 @@ void CollisionManager::Uninit()
 
 	// 全衝突配列のリセット
 	all_collision_.ResetArray();
-
-	// 8分木
-	SafeRelease::PlusUninit(&liner_octree_);
-	for (unsigned i = 0; i < object_of_tree_.size(); i++)
-	{
-		SafeRelease::Normal(&object_of_tree_[i]);
-	}
-
-	object_of_tree_.clear();
-	collision_list_.clear();
 }
 
 
@@ -76,6 +85,23 @@ void CollisionManager::Uninit()
 //--------------------------------------------------
 void CollisionManager::UninitWhenChangeScene()
 {
+	// 解放待ち配列の中身を解放
+	ReleaseContentsOfAwaitReleaseArray();
+
+	// 8分木
+	for (unsigned i = 0; i < all_collision_.GetEndPointer(); i++)
+	{
+		for (unsigned j = 0; j < all_collision_.GetArrayObject(i)->getEndIndexOfArray(); j++)
+		{
+			// 移動オブジェクトはリストから一時的に離脱する
+			ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
+				->getCollisionObjects(j)->getObjectOfTree();
+			temp->DeleteFromList();
+			SafeRelease::Normal(&temp);
+		}
+	}
+	collision_objects_list_.clear();
+
 	// 追加待ち配列のリセット
 	await_add_.ResetArray();
 
@@ -93,8 +119,6 @@ void CollisionManager::UninitWhenChangeScene()
 //--------------------------------------------------
 void CollisionManager::Update()
 {
-	time_ = timeGetTime();
-
 	// 追加待ち配列の中身を追加
 	AddContentsOfAwaitAddArray();
 
@@ -108,25 +132,42 @@ void CollisionManager::Update()
 	}
 
 	// 8分木の処理
-	for (unsigned i = 0; i < object_of_tree_.size(); i++)
+	if (is_octree_)
 	{
-		// 移動オブジェクトはリストから一時的に離脱する
-		object_of_tree_[i]->DeleteFromList();
+		for (unsigned i = 0; i < all_collision_.GetEndPointer(); i++)
+		{
+			for (unsigned j = 0; j < all_collision_.GetArrayObject(i)->getEndIndexOfArray(); j++)
+			{
+				// 移動オブジェクトはリストから一時的に離脱する
+				ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
+					->getCollisionObjects(j)->getObjectOfTree();
+				temp->DeleteFromList();
 
-		// 再登録
-		liner_octree_->Add(object_of_tree_[i],
-						   object_of_tree_[i]->getObject()->getOctreeAABB()->getMin(),
-						   object_of_tree_[i]->getObject()->getOctreeAABB()->getMax());
+				// 再登録
+				liner_octree_->Add(temp,
+								   temp->getObject()->getOctreeAABB()->getMin(),
+								   temp->getObject()->getOctreeAABB()->getMax());
+			}
+		}
+		liner_octree_->UpdateCollisionList(&collision_objects_list_);
+
+		time_ = timeGetTime();
+
+		// 衝突判定
+		CollisionDetermination();
 	}
-	liner_octree_->UpdateCollisionList(&collision_list_);
+	else
+	{
+		time_ = timeGetTime();
 
-	// 古い衝突判定
-	OldCollisionDetermination();
+		// 古い衝突判定
+		OldCollisionDetermination();
+	}
+
+	time_ = timeGetTime() - time_;
 
 	// 地面との衝突判定
 	CollisionGround();
-
-	time_ = timeGetTime() - time_;
 
 	// デバッグ表示
 	DebugDisplay();
@@ -196,6 +237,14 @@ void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 //--------------------------------------------------
 void CollisionManager::ReleaseCollisionBaseFromArray(CollisionBase* collision)
 {
+	// 8分木から消去
+	for (unsigned i = 0; i < collision->getEndIndexOfArray(); i++)
+	{
+		ObjectOfTree<CollisionObjects*>* temp = collision->getCollisionObjects(i)->getObjectOfTree();
+		temp->DeleteFromList();
+		SafeRelease::Normal(&temp);
+	}
+
 	// 解放待ち配列に追加
 	await_release_.AddToArray(collision);
 }
@@ -230,8 +279,8 @@ void CollisionManager::AddContentsOfAwaitAddArray()
 		{
 			ObjectOfTree<CollisionObjects*>* temp = new ObjectOfTree<CollisionObjects*>;
 			CollisionObjects* temp_objects = await_add_.GetArrayObject(i)->getCollisionObjects(j);
-			object_of_tree_.push_back(temp);
 			temp->setObject(temp_objects);
+			temp_objects->setObjectOfTree(temp);
 			liner_octree_->Add(temp, temp_objects->getOctreeAABB()->getMin(),
 							   temp_objects->getOctreeAABB()->getMax());
 		}
@@ -254,11 +303,52 @@ void CollisionManager::ReleaseContentsOfAwaitReleaseArray()
 	// 解放とソート
 	for (unsigned i = 0; i < await_release_.GetEndPointer(); i++)
 	{
+		// 全体配列から解放
 		all_collision_.DeleteFromArrayAndSortArray(await_release_.GetArrayObject(i));
 	}
 
 	// 解放待ち配列をリセット
 	await_release_.ResetArray();
+}
+
+
+
+//--------------------------------------------------
+// -衝突判定関数
+//--------------------------------------------------
+void CollisionManager::CollisionDetermination()
+{
+	// ペアになっているため
+	unsigned max_index = collision_objects_list_.size() / 2;
+
+	for (unsigned i = 0; i < max_index; i++)
+	{
+		// 複数衝突オブジェクトが判定するかどうか
+		if (!collision_objects_list_[i * 2]->getIsJudgment()) continue;
+		if (!collision_objects_list_[i * 2 + 1]->getIsJudgment()) continue;
+
+		// 判定をする組み合わせか？
+		if (is_pair_check_)
+		{
+			if (!CollisionPairCheck::IsCheck(collision_objects_list_[i * 2]->getCollisionBase(),
+											 collision_objects_list_[i * 2 + 1]->getCollisionBase())) continue;
+		}
+		
+		// 実際の判定処理
+		ActualCalculation(collision_objects_list_[i * 2],
+						  collision_objects_list_[i * 2 + 1]);
+
+		// 各コンポーネントの衝突オブジェクトの判定をリセット
+		if (collision_objects_list_[i * 2]->getIsJudgment())
+		{
+			collision_objects_list_[i * 2]->ResetHitDataAllCollisionObject();
+		}
+		if (collision_objects_list_[i * 2 + 1]->getIsJudgment())
+		{
+			collision_objects_list_[i * 2 + 1]->ResetHitDataAllCollisionObject();
+		}
+	}
+
 }
 
 
@@ -284,9 +374,12 @@ void CollisionManager::OldCollisionDetermination()
 			if (all_collision_.GetArrayObject(j) == nullptr) continue;
 
 			// 判定をする組み合わせか？
-			if (!CollisionPairCheck::IsCheck(all_collision_.GetArrayObject(i),
-											 all_collision_.GetArrayObject(j))) continue;
-
+			if (is_pair_check_)
+			{
+				if (!CollisionPairCheck::IsCheck(all_collision_.GetArrayObject(i),
+												 all_collision_.GetArrayObject(j))) continue;
+			}
+			
 			for (unsigned a = 0; a < all_collision_.GetArrayObject(i)->getEndIndexOfArray(); a++)
 			{
 				// 複数衝突オブジェクトが判定するかどうか
@@ -300,20 +393,15 @@ void CollisionManager::OldCollisionDetermination()
 						->getIsJudgment()) continue;
 
 					// 実際の判定処理
-					ActualCalculation(all_collision_.GetArrayObject(i),
-									  all_collision_.GetArrayObject(j),
-									  all_collision_.GetArrayObject(i)->getCollisionObjects(a),
+					ActualCalculation(all_collision_.GetArrayObject(i)->getCollisionObjects(a),
 									  all_collision_.GetArrayObject(j)->getCollisionObjects(b));
 
 					// 各コンポーネントの衝突オブジェクトの判定をリセット
-					if (all_collision_.GetArrayObject(i)->getIsJudgment())
+					if (all_collision_.GetArrayObject(i)->getCollisionObjects(a)
+						->getIsJudgment())
 					{
-						if (all_collision_.GetArrayObject(i)->getCollisionObjects(a)
-							->getIsJudgment())
-						{
-							all_collision_.GetArrayObject(i)->getCollisionObjects(a)
-								->ResetHitDataAllCollisionObject();
-						}
+						all_collision_.GetArrayObject(i)->getCollisionObjects(a)
+							->ResetHitDataAllCollisionObject();
 					}
 					else
 					{
@@ -321,21 +409,18 @@ void CollisionManager::OldCollisionDetermination()
 						break;
 					}
 
-					if (all_collision_.GetArrayObject(j)->getIsJudgment())
+					if (all_collision_.GetArrayObject(j)->getCollisionObjects(b)
+						->getIsJudgment())
 					{
-						if (all_collision_.GetArrayObject(j)->getCollisionObjects(b)
-							->getIsJudgment())
-						{
-							all_collision_.GetArrayObject(j)->getCollisionObjects(b)
-								->ResetHitDataAllCollisionObject();
-						}
+						all_collision_.GetArrayObject(j)->getCollisionObjects(b)
+							->ResetHitDataAllCollisionObject();
 					}
 					else
 					{
 						a = all_collision_.GetArrayObject(i)->getEndIndexOfArray();
 						break;
 					}
-					
+
 				}
 			}
 		}
@@ -381,9 +466,7 @@ void CollisionManager::CollisionGround()
 //--------------------------------------------------
 // -実際の計算関数
 //--------------------------------------------------
-void CollisionManager::ActualCalculation(CollisionBase* collision0,
-										 CollisionBase* collision1,
-										 CollisionObjects* collision_objects0,
+void CollisionManager::ActualCalculation(CollisionObjects* collision_objects0,
 										 CollisionObjects* collision_objects1)
 {
 	for (unsigned i = 0; i < collision_objects0->getEndIndexOfArray(); i++)
@@ -408,7 +491,6 @@ void CollisionManager::ActualCalculation(CollisionBase* collision0,
 								   collision_objects0->getCollisionObject(i));
 
 				// コンポーネント2つ目の衝突応答
-				if (!collision1->getIsJudgment()) return;
 				collision_objects1->getCollisionBase()
 					->HitCollision(collision_objects0->getCollisionBase(),
 								   collision_objects0->getCollisionObject(i),
@@ -423,7 +505,6 @@ void CollisionManager::ActualCalculation(CollisionBase* collision0,
 									  collision_objects0->getCollisionObject(i));
 
 				// コンポーネント2つ目の非衝突応答
-				if (!collision1->getIsJudgment()) return;
 				collision_objects1->getCollisionBase()
 					->NotHitCollision(collision_objects0->getCollisionBase(),
 									  collision_objects0->getCollisionObject(i),
@@ -431,8 +512,8 @@ void CollisionManager::ActualCalculation(CollisionBase* collision0,
 			}
 
 			// コンポーネントが判定可能かどうか
-			if (!collision0->getIsJudgment()) return;
-			if (!collision1->getIsJudgment()) return;
+			if (!collision_objects0->getIsJudgment()) return;
+			if (!collision_objects1->getIsJudgment()) return;
 		}
 	}
 }
@@ -861,6 +942,34 @@ void CollisionManager::DebugDisplay()
 
 	// 処理時間
 	ImGui::Text("Time : %05lu ms", time_);
+
+	// コンビ数
+	if (is_octree_)
+	{
+		ImGui::Text("CombiNum : %06d", collision_objects_list_.size() / 2);
+	}
+	else
+	{
+		ImGui::Text("CombiNum : %06d", (all_collision_.GetEndPointer()) * (all_collision_.GetEndPointer() - 1) / 2);
+	}
+
+	// 8分木の有無
+	ImGui::Text("PairCheck : %s", is_pair_check_ ? "true" : "false");
+	if (ImGui::Button("PairCheckButton"))
+	{
+		is_pair_check_ ^= 1;
+	}
+
+	// 8分木の有無
+	ImGui::Text("Octree : %s", is_octree_ ? "true" : "false");
+	if (ImGui::Button("OctreeButton"))
+	{
+		is_octree_ ^= 1;
+	}
+
+	
+
+	
 
 	// 終了
 	ImGui::End();

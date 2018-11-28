@@ -32,6 +32,7 @@ class GameScene : public SceneBase
 private:
 	bool is_clear_ = false;
 	int score_ = 0;
+	int game_over_ = -1;
 
 
 
@@ -52,6 +53,8 @@ public:
 	void SetIsClear(bool value) { is_clear_ = value; }
 	int GetScore() { return score_; }
 	void SetScore(int value) { score_ = value; }
+	int getGameOver() { return game_over_; }
+	void setGameOver(int value) { game_over_ = value; }
 };
 
 

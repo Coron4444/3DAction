@@ -38,7 +38,7 @@ class CollisionBase : public ComponentBase
 // 定数
 //==============================
 private:
-	static const unsigned ARRAY_NUM = 100;		//!< 配列数
+	static const unsigned ARRAY_NUM = 10000;		//!< 配列数
 
 
 //==============================
@@ -52,6 +52,7 @@ public:
 		PLAYER,
 		COIN,
 		ENEMY,
+		GOAL,
 		MAX
 	};
 
@@ -62,7 +63,6 @@ public:
 private:
 	LimitedPointerArray<CollisionObjects*, ARRAY_NUM> collision_objects_;	//!< 複数衝突オブジェクト配列
 	State state_ = State::NONE;			//!< ステート
-	bool is_judgment_ = true;			//!< 判定フラグ
 	bool is_judgment_ground_ = true;	//!< 地面との判定フラグ
 
 
@@ -183,8 +183,6 @@ public:
 	CollisionObjects* getCollisionObjects(unsigned index) { return collision_objects_.GetArrayObject(index); }
 	State getState() { return state_; }
 	void setState(State value) { state_ = value; }
-	bool getIsJudgment() { return is_judgment_; }
-	void setIsJudgment(bool value) { is_judgment_ = value; }
 	bool getIsJudgmentGround() { return is_judgment_ground_; }
 	void setIsJudgmentGround(bool value) { is_judgment_ground_ = value; }
 };

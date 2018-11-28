@@ -40,11 +40,14 @@ public :
 
 	PlanePolygon* GetPolygon(){return polygon_;}
 
+	int getCount() { return count_; }
+	void setCount(int value) { count_ = value; }
 
 //------------------------------------------------------------
 private :
 	// ŒöŠJƒƒ“ƒo•Ï”
 	PlanePolygon* polygon_;
+	int count_ = 0;
 };
 
 

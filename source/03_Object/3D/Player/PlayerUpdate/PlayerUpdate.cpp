@@ -30,7 +30,7 @@
 //
 //======================================================================
 
-const float PlayerUpdate::SPEED = MeterPerSecondSquared_To_MeterPerFrameSquared(1.0f);
+const float PlayerUpdate::SPEED = MeterPerSecondSquared_To_MeterPerFrameSquared(50.0f);
 
 static const std::string TEST_EFFEKSEER = "Beam/Beam.efk";
 
@@ -55,8 +55,8 @@ void PlayerUpdate::Init()
 
 	// 剛体設定
 	player_->CreatePhysics();
-	player_->GetPhysics()->SetMaxVelocity(MeterPerSecond_To_MeterPerFlame(10.0f));
-	player_->GetPhysics()->SetMass(0.1f);
+	player_->GetPhysics()->SetMaxVelocity(MeterPerSecond_To_MeterPerFlame(300.0f));
+	player_->GetPhysics()->SetMass(8.0f);
 	player_->GetPhysics()->SetMyFriction(1.0f);
 	player_->GetPhysics()->SetMyBounciness(1.0f);
 
@@ -113,17 +113,19 @@ void PlayerUpdate::Update()
 	// ブレーキ
 	if (GetKeyboardTrigger(DIK_N))
 	{
-		GameObjectManager::GetUpdateManager()
-			->OverwriteArrayUpdateBase(player_, new PlayerUpdate_Special());
-		return;
-		//player_->GetPhysics()->AddFriction(0.5f);
+		//GameObjectManager::GetUpdateManager()
+			//->OverwriteArrayUpdateBase(player_, new PlayerUpdate_Special());
+		//return;
+		player_->GetPhysics()->AddFriction(0.5f);
 	}
+
+	player_->GetPhysics()->AddFriction(0.9f);
 
 	// ジャンプ
 	if (GetKeyboardTrigger(DIK_SPACE))
 	{
 		temp_vector = Vec3(0.0f, 1.0f, 0.0f);
-		temp_vector.AnyLengthVector(MeterPerSecond_To_MeterPerFlame(1.0f));
+		temp_vector.AnyLengthVector(MeterPerSecond_To_MeterPerFlame(30.0f));
 
 		*player_->GetPhysics()->GetVelocity() += temp_vector;
 	}

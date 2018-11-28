@@ -30,7 +30,7 @@ const float MeshPlanePolygon::TEXTURE_HEIGHT = 1.0f;
 
 const float MeshPlanePolygon::MESH_MIN = 1.0f;
 
-const float field_height[3025] = {0.0f};
+const float field_height[100000] = {0.0f};
 /*const float field_height[121] =
 {
 	//0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f,

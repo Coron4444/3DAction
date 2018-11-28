@@ -34,7 +34,10 @@ public:
 	* @brief
 	* 仮想デストラクタ
 	*/
-	virtual ~CollisionNull() {}
+	virtual ~CollisionNull() 
+	{
+		ReleaseAllCollisionObjectsFromArray();
+	}
 
 	/**
 	* @brief
@@ -42,11 +45,11 @@ public:
 	*/
 	virtual void Uninit() override
 	{
-		// 判定フラグOFF
-		setIsJudgment(false);
-
-		// 複数衝突オブジェクト全開放
-		ReleaseAllCollisionObjectsFromArray();
+		// 複数衝突オブジェクトの判定OFF
+		for (unsigned i = 0; i < getEndIndexOfArray(); i++)
+		{
+			getCollisionObjects(i)->setIsJudgment(false);
+		}
 	}
 
 	/**

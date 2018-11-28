@@ -59,6 +59,8 @@ void CameraState_HomingTarget::Init(Camera* camera)
 
 void CameraState_HomingTarget::Update(Camera* camera)
 {
+	if (target_ == nullptr) return;
+
 	// カメラポジションの作成
 	*camera->GetPositon() = *target_->GetTransform()->GetPosition();
 

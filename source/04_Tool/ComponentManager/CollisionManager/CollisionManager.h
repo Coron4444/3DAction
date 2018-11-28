@@ -44,7 +44,7 @@ class CollisionManager
 // 定数
 //==============================
 public:
-	static const unsigned ARRAY_NUM = 1000;		//!< 配列数
+	static const unsigned ARRAY_NUM = 10000;		//!< 配列数
 
 
 //==============================
@@ -58,10 +58,12 @@ private:
 	MeshPlanePolygon* ground_polygon_;		//!< 地面ポリゴン
 
 	LinerOctree<CollisionObjects*>* liner_octree_ = nullptr;	//!< 8分木
-	std::vector<ObjectOfTree<CollisionObjects*>*> object_of_tree_;	//!< 8分木オブジェクト配列
-	std::vector<CollisionObjects*> collision_list_;
+		std::vector<CollisionObjects*> collision_objects_list_;
 
+	// デバッグ用
 	DWORD time_;
+	bool is_octree_ = true;
+	bool is_pair_check_ = true;
 
 //==============================
 // 非静的メンバ関数
@@ -131,7 +133,7 @@ private:
 	* @brief
 	* 衝突判定関数
 	*/
-	//void CollisionDetermination();
+	void CollisionDetermination();
 
 	/**
 	* @brief
@@ -149,9 +151,7 @@ private:
 	* @brief
 	* 実際の計算関数
 	*/
-	void ActualCalculation(CollisionBase* collision0,
-						   CollisionBase* collision1,
-						   CollisionObjects* collision_objects0,
+	void ActualCalculation(CollisionObjects* collision_objects0,
 						   CollisionObjects* collision_objects1);
 
 	/**

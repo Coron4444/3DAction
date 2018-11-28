@@ -35,7 +35,7 @@
 void Field::Init(DrawBase* draw)
 {
 	// メッシュプレーンポリゴンの作成
-	mesh_plane_polygon_ = new MeshPlanePolygon(Vec2(50.0f, 50.0f), Vec2(1.0f, 1.0f), XColor4(1.0f, 1.0f, 1.0f, 1.0f));
+	mesh_plane_polygon_ = new MeshPlanePolygon(Vec2(100.0f, 100.0f), Vec2(1.0f, 1.0f), XColor4(1.0f, 1.0f, 1.0f, 1.0f));
 
 	GameObjectManager::GetCollisionManager()->SetGround(mesh_plane_polygon_);
 

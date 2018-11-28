@@ -40,7 +40,7 @@ class DrawManager
 // ’è”
 //==============================
 public:
-	static const unsigned DRAW_ARRAY_NUM = 1000;	//!< •`‰æ”z—ñ”
+	static const unsigned DRAW_ARRAY_NUM = 10000;	//!< •`‰æ”z—ñ”
 
 
 //==============================

@@ -36,7 +36,7 @@ class UpdateManager
 // ’è”
 //==============================
 public:
-	static const unsigned ARRAY_NUM = 1000;		//!< ”z—ñ”
+	static const unsigned ARRAY_NUM = 10000;		//!< ”z—ñ”
 
 
 //==============================

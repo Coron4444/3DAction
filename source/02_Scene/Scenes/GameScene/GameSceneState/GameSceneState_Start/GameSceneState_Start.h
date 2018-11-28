@@ -21,6 +21,7 @@
 // クラス宣言
 //****************************************
 class GameScene;
+class Player;
 
 
 
@@ -39,7 +40,7 @@ class GameSceneState_Start : public SceneBase::StateAbstract
 protected:
 	GameScene* game_scene_ = nullptr;	//!< ゲームシーン
 
-
+	Player* plaeyr_;
 
 //==============================
 // 非静的メンバ関数

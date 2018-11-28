@@ -280,19 +280,22 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 				{
 					// ダウンキャスト
 					Player* player = (Player*)GetGameObject();
-					
-					// めり込み解消
-					EliminationOfNesting(player->GetTransform(), hit_my_object->getHitVector());
+					Coin* coin = (Coin*)hit_collision->GetGameObject();
+					if (coin->getCount() <= 0)
+					{
+						coin->setCount(120);
+						// スコアアップ
+						player->game_scene_->SetScore(player->game_scene_->GetScore() + 10);
+					}
 
-					// スコアアップ
-					player->game_scene_->SetScore(player->game_scene_->GetScore() + 30);
+					// めり込み解消
+					//EliminationOfNesting(player->GetTransform(), hit_my_object->getHitVector());
 
 					// 相手のオブジェクトを消去
-					GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->GetGameObject());
+					//GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->GetGameObject());
 					
 					break;
 				}
-			
 			}
 			break;
 		}
@@ -310,11 +313,35 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 					EliminationOfNesting(player->GetTransform(), hit_my_object->getHitVector());
 
 					// スコアダウン
-					player->game_scene_->SetScore(player->game_scene_->GetScore() - 9999);
+					player->game_scene_->setGameOver(1);
 
 					// 相手のオブジェクトを消去
 					GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->GetGameObject());
 					
+					break;
+				}
+			}
+			break;
+		}
+		case CollisionBase::State::GOAL:
+		{
+			// 相手の衝突オブジェクトで振り分け
+			switch (hit_object->getTag())
+			{
+				case EnemyCollision::ObjectTag::SUBSTANCE:
+				{
+					// ダウンキャスト
+					Player* player = (Player*)GetGameObject();
+
+					// めり込み解消
+					EliminationOfNesting(player->GetTransform(), hit_my_object->getHitVector());
+
+					// スコアダウン
+					player->game_scene_->setGameOver(0);
+
+					// 相手のオブジェクトを消去
+					GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->GetGameObject());
+
 					break;
 				}
 			}
