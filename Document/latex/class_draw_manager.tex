@@ -1,0 +1,166 @@
+\hypertarget{class_draw_manager}{}\section{Draw\+Manager クラス}
+\label{class_draw_manager}\index{Draw\+Manager@{Draw\+Manager}}
+
+
+描画マネージャークラス  
+
+
+
+
+{\ttfamily \#include $<$Draw\+Manager.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_ae58095d9d734f30211011e9205aa57aa}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9}{Uninit\+When\+Change\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーン変更時の終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_af498c44ff698bf3ef473df970e24c917}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a43372495e68d77a2698f211cf921b37e}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286}{Add\+Draw\+Base\+To\+Array}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
+\begin{DoxyCompactList}\small\item\em 描画基底クラスの追加関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec}{Overwrite\+Array\+Draw\+Base}} (\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$game\+\_\+object, \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$new\+\_\+draw)
+\begin{DoxyCompactList}\small\item\em 描画基底クラスの上書き関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a287d1f359b87f075b22df6a9b6e99316}{Release\+Draw\+Base\+From\+Array}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
+\begin{DoxyCompactList}\small\item\em 描画基底クラスの解放関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$ \mbox{\hyperlink{class_draw_manager_a952023ad9e2e12844c93e37029a32700}{Get\+Directional\+Light\+Vector}} ()
+\item 
+void \mbox{\hyperlink{class_draw_manager_a470edae8248d36956a02bab7e59a4140}{Set\+Directional\+Light\+Vector}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} value)
+\item 
+\mbox{\hyperlink{class_back_buffer}{Back\+Buffer}} $\ast$ \mbox{\hyperlink{class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7}{Get\+Back\+Buffer}} ()
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 10000
+\begin{DoxyCompactList}\small\item\em 描画配列数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+描画マネージャークラス 
+
+登録されている描画基底クラスを管理するクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286}\label{class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286}} 
+\index{Draw\+Manager@{Draw\+Manager}!Add\+Draw\+Base\+To\+Array@{Add\+Draw\+Base\+To\+Array}}
+\index{Add\+Draw\+Base\+To\+Array@{Add\+Draw\+Base\+To\+Array}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Draw\+Base\+To\+Array()}{AddDrawBaseToArray()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Add\+Draw\+Base\+To\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
+
+
+
+描画基底クラスの追加関数 
+
+\mbox{\Hypertarget{class_draw_manager_a43372495e68d77a2698f211cf921b37e}\label{class_draw_manager_a43372495e68d77a2698f211cf921b37e}} 
+\index{Draw\+Manager@{Draw\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+描画関数 
+
+\mbox{\Hypertarget{class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7}\label{class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7}} 
+\index{Draw\+Manager@{Draw\+Manager}!Get\+Back\+Buffer@{Get\+Back\+Buffer}}
+\index{Get\+Back\+Buffer@{Get\+Back\+Buffer}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Back\+Buffer()}{GetBackBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_back_buffer}{Back\+Buffer}}$\ast$ Draw\+Manager\+::\+Get\+Back\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_manager_a952023ad9e2e12844c93e37029a32700}\label{class_draw_manager_a952023ad9e2e12844c93e37029a32700}} 
+\index{Draw\+Manager@{Draw\+Manager}!Get\+Directional\+Light\+Vector@{Get\+Directional\+Light\+Vector}}
+\index{Get\+Directional\+Light\+Vector@{Get\+Directional\+Light\+Vector}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Directional\+Light\+Vector()}{GetDirectionalLightVector()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}$\ast$ Draw\+Manager\+::\+Get\+Directional\+Light\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f}\label{class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f}} 
+\index{Draw\+Manager@{Draw\+Manager}!Init@{Init}}
+\index{Init@{Init}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+\mbox{\Hypertarget{class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec}\label{class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec}} 
+\index{Draw\+Manager@{Draw\+Manager}!Overwrite\+Array\+Draw\+Base@{Overwrite\+Array\+Draw\+Base}}
+\index{Overwrite\+Array\+Draw\+Base@{Overwrite\+Array\+Draw\+Base}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Overwrite\+Array\+Draw\+Base()}{OverwriteArrayDrawBase()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Overwrite\+Array\+Draw\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{game\+\_\+object,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{new\+\_\+draw }\end{DoxyParamCaption})}
+
+
+
+描画基底クラスの上書き関数 
+
+\mbox{\Hypertarget{class_draw_manager_a287d1f359b87f075b22df6a9b6e99316}\label{class_draw_manager_a287d1f359b87f075b22df6a9b6e99316}} 
+\index{Draw\+Manager@{Draw\+Manager}!Release\+Draw\+Base\+From\+Array@{Release\+Draw\+Base\+From\+Array}}
+\index{Release\+Draw\+Base\+From\+Array@{Release\+Draw\+Base\+From\+Array}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Release\+Draw\+Base\+From\+Array()}{ReleaseDrawBaseFromArray()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Release\+Draw\+Base\+From\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
+
+
+
+描画基底クラスの解放関数 
+
+\mbox{\Hypertarget{class_draw_manager_a470edae8248d36956a02bab7e59a4140}\label{class_draw_manager_a470edae8248d36956a02bab7e59a4140}} 
+\index{Draw\+Manager@{Draw\+Manager}!Set\+Directional\+Light\+Vector@{Set\+Directional\+Light\+Vector}}
+\index{Set\+Directional\+Light\+Vector@{Set\+Directional\+Light\+Vector}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Directional\+Light\+Vector()}{SetDirectionalLightVector()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Set\+Directional\+Light\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_manager_ae58095d9d734f30211011e9205aa57aa}\label{class_draw_manager_ae58095d9d734f30211011e9205aa57aa}} 
+\index{Draw\+Manager@{Draw\+Manager}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+終了関数 
+
+\mbox{\Hypertarget{class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9}\label{class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9}} 
+\index{Draw\+Manager@{Draw\+Manager}!Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}}
+\index{Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+When\+Change\+Scene()}{UninitWhenChangeScene()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Uninit\+When\+Change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シーン変更時の終了関数 
+
+\mbox{\Hypertarget{class_draw_manager_af498c44ff698bf3ef473df970e24c917}\label{class_draw_manager_af498c44ff698bf3ef473df970e24c917}} 
+\index{Draw\+Manager@{Draw\+Manager}!Update@{Update}}
+\index{Update@{Update}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+更新関数 
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}\label{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}} 
+\index{Draw\+Manager@{Draw\+Manager}!D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
+\index{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}{DRAW\_ARRAY\_NUM}}
+{\footnotesize\ttfamily const unsigned Draw\+Manager\+::\+D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM = 10000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+描画配列数 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\mbox{\hyperlink{_draw_manager_8h}{Draw\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\mbox{\hyperlink{_draw_manager_8cpp}{Draw\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: クラスメンバ</title>
+<title>3DAction: クラスメンバ</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <div class="textblock">全クラスメンバ一覧です。各メンバが属するクラスへのリンクがあります。</div>
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>m_vertexSize
+: <a class="el" href="class_effekseer_1_1_model.html#a94c5608140d79abf8280b67df12a6060">Effekseer::Model</a>
+</li>
 <li>Magnification
 : <a class="el" href="struct_effekseer_1_1_model_renderer_1_1_node_parameter.html#a2795f9c10fd867586eaf942ddb772364">Effekseer::ModelRenderer::NodeParameter</a>
 </li>
@@ -114,9 +117,11 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>MAX
 : <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa">Camera</a>
 , <a class="el" href="class_coin_collision.html#ade7912345747f522fd895e87621ce049afe668be7d8cc9606f4c5be2220c38281">CoinCollision</a>
-, <a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6a3441d773723b25dedbc6ce5c3b99dc36">CollisionComponent</a>
-, <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a8bd3ebaeb3962d568efe3f9ee4cca068">DrawComponent</a>
+, <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365aa7c59b2c2f20cbc76a01c38a1ebb6fea">CollisionBase</a>
+, <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba4636454f94c8f39be9fed0b1a3124a2c">CollisionShapeBase</a>
+, <a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba6af2a2923ac1094762cf45ca43fc12ab">DrawOrderList</a>
 , <a class="el" href="class_enemy_collision.html#a8423c2c1dce9ba8ab2ba9bed82ee4843a4283c301ae1d9317453c36d5923f7136">EnemyCollision</a>
+, <a class="el" href="class_goal_collision.html#a8d0d760973816d9086df90491f38ff62ac8b39f34903a130505e1c485f7667e07">GoalCollision</a>
 </li>
 <li>Max
 : <a class="el" href="struct_im_rect.html#aad58c13340d320b350a72a037e3f7628">ImRect</a>
@@ -126,8 +131,8 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835feca3304c74929f96df4042bc148ee9f3b50">Renderer</a>
 , <a class="el" href="class_scene_manager.html#a68d32794fe1ce945c6a6c380c11a08eba67b231706633f4d8aaadf6830078dd68">SceneManager</a>
 </li>
-<li>max_
-: <a class="el" href="class_a_a_b_b.html#a7f8dca79cab056729bde7139b219fcbe">AABB</a>
+<li>MAX_LEVEL
+: <a class="el" href="class_liner_octree.html#aced865f2822181486eb805e4db1f0a32">LinerOctree&lt; Type &gt;</a>
 </li>
 <li>MemAllocFn
 : <a class="el" href="struct_im_gui_i_o.html#a352f6f0770974ee173f84d99d9e50a6e">ImGuiIO</a>
@@ -183,9 +188,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>Min
 : <a class="el" href="struct_im_rect.html#af8f3fbf7ec983e03548b88e14ba68aa8">ImRect</a>
 </li>
-<li>min_
-: <a class="el" href="class_a_a_b_b.html#a682f7bc02fc950a24ce8a8e512e4eb52">AABB</a>
-</li>
 <li>ModalWindowDarkeningRatio
 : <a class="el" href="struct_im_gui_context.html#ac4088a7de19357cdfeb3ead2d53ffcd8">ImGuiContext</a>
 </li>
@@ -198,9 +200,6 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>Model()
 : <a class="el" href="class_effekseer_1_1_model.html#a6e13732e632a25f8368b698b9c21e61d">Effekseer::Model</a>
 , <a class="el" href="class_effekseer_renderer_d_x9_1_1_model.html#a2cc666c9789232bbe6bb09e5cf3fad6a">EffekseerRendererDX9::Model</a>
-</li>
-<li>MODEL_NAME
-: <a class="el" href="class_sky_dome_draw.html#a366fd9d1040d77ddac71e335f10f2c29">SkyDomeDraw</a>
 </li>
 <li>ModelCount
 : <a class="el" href="class_effekseer_renderer_d_x9_1_1_model.html#a993f041558265db631654723ca973e0a">EffekseerRendererDX9::Model</a>
@@ -299,7 +298,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="struct_im_gui_context.html#abfd9589ba8b4d6b78bd24d46696ed820">ImGuiContext</a>
 </li>
 <li>Mul()
-: <a class="el" href="struct_effekseer_1_1_color.html#a1f8aa17da0c0d56ca8938eeb9fa9f3e0">Effekseer::Color</a>
+: <a class="el" href="struct_effekseer_1_1_color.html#a350c4dc2e0b0c35207c53fcc047376c3">Effekseer::Color</a>
 , <a class="el" href="struct_effekseer_1_1_matrix44.html#ab0200013341b97e62273a5085ee67448">Effekseer::Matrix44</a>
 </li>
 <li>Multiple()

@@ -13,12 +13,12 @@ Push\+Space\+Logo の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_push_space_logo_af22e94b451e42a581396b9f0e8b9b15b}{Init}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+void \mbox{\hyperlink{class_push_space_logo_a381d34d0dfdd493eb46f299d2a2ba858}{Init}} (\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$update, \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
 \item 
 void \mbox{\hyperlink{class_push_space_logo_a06404113db417c58941ca7a13bba161e}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}{Reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,11 +28,11 @@ void \mbox{\hyperlink{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}{R
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_push_space_logo_af22e94b451e42a581396b9f0e8b9b15b}\label{class_push_space_logo_af22e94b451e42a581396b9f0e8b9b15b}} 
+\mbox{\Hypertarget{class_push_space_logo_a381d34d0dfdd493eb46f299d2a2ba858}\label{class_push_space_logo_a381d34d0dfdd493eb46f299d2a2ba858}} 
 \index{Push\+Space\+Logo@{Push\+Space\+Logo}!Init@{Init}}
 \index{Init@{Init}!Push\+Space\+Logo@{Push\+Space\+Logo}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Push\+Space\+Logo\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Push\+Space\+Logo\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}\label{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}} 
 \index{Push\+Space\+Logo@{Push\+Space\+Logo}!Reset@{Reset}}
@@ -42,7 +42,11 @@ void \mbox{\hyperlink{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}{R
 
 
 
-\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_push_space_logo_a06404113db417c58941ca7a13bba161e}\label{class_push_space_logo_a06404113db417c58941ca7a13bba161e}} 
 \index{Push\+Space\+Logo@{Push\+Space\+Logo}!Uninit@{Uninit}}
@@ -52,7 +56,11 @@ void \mbox{\hyperlink{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}{R
 
 
 
-\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
 
 
 

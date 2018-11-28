@@ -1,0 +1,151 @@
+\hypertarget{class_tutorial_logo_draw}{}\section{Tutorial\+Logo\+Draw クラス}
+\label{class_tutorial_logo_draw}\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+
+
+チュートリアルロゴ描画クラス  
+
+
+
+
+{\ttfamily \#include $<$Tutorial\+Logo\+Draw.\+h$>$}
+
+Tutorial\+Logo\+Draw の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_tutorial_logo_draw}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944}{Init}} () override
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tutorial_logo_draw_a949fb70954e3df28f87b8ed5c61bf8f1}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tutorial_logo_draw_af69405fcc8b20684a19e982726d93ffa}{Update}} () override
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tutorial_logo_draw_aa808cfb8bc59d58bbd698a195603429f}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b}{Get\+Matrix}} (unsigned object\+\_\+index) override
+\item 
+unsigned \mbox{\hyperlink{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
+\item 
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+チュートリアルロゴ描画クラス 
+
+チュートリアルロゴの描画クラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_tutorial_logo_draw_aa808cfb8bc59d58bbd698a195603429f}\label{class_tutorial_logo_draw_aa808cfb8bc59d58bbd698a195603429f}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Draw@{Draw}}
+\index{Draw@{Draw}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+描画関数 
+
+
+\begin{DoxyParams}{引数}
+{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035}\label{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
+\index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Tutorial\+Logo\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37}\label{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Tutorial\+Logo\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b}\label{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Tutorial\+Logo\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f}\label{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
+\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
+{\footnotesize\ttfamily unsigned Tutorial\+Logo\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944}\label{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Init@{Init}}
+\index{Init@{Init}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+Draw\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_a949fb70954e3df28f87b8ed5c61bf8f1}\label{class_tutorial_logo_draw_a949fb70954e3df28f87b8ed5c61bf8f1}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+Draw\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_af69405fcc8b20684a19e982726d93ffa}\label{class_tutorial_logo_draw_af69405fcc8b20684a19e982726d93ffa}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Update@{Update}}
+\index{Update@{Update}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+Draw\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+更新関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}{Draw\+Null}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/2\+D/\+U\+I/\+Tutorial\+Logo/\+Tutorial\+Logo\+Draw/\mbox{\hyperlink{_tutorial_logo_draw_8h}{Tutorial\+Logo\+Draw.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/2\+D/\+U\+I/\+Tutorial\+Logo/\+Tutorial\+Logo\+Draw/\mbox{\hyperlink{_tutorial_logo_draw_8cpp}{Tutorial\+Logo\+Draw.\+cpp}}\end{DoxyCompactItemize}

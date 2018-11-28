@@ -1,0 +1,188 @@
+\hypertarget{class_draw_order_list}{}\section{Draw\+Order\+List クラス}
+\label{class_draw_order_list}\index{Draw\+Order\+List@{Draw\+Order\+List}}
+
+
+描画注文リストクラス  
+
+
+
+
+{\ttfamily \#include $<$Draw\+Order\+List.\+h$>$}
+
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}{Draw\+Type}} \{ \newline
+\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bbab2a83851af51b7cbf059ef9522ab908f}{N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba4c769c665704d5a6d9a3fa1fa34966fb}{O\+P\+A\+C\+I\+TY}}, 
+\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba38e4ff40be41d3ca753da42d6a628173}{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY}}, 
+\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba3e5454163533de348e3b3a819e75eb6c}{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL}}, 
+\newline
+\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba6af2a2923ac1094762cf45ca43fc12ab}{M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Shader\+Manager\+::\+Vertex\+Shader\+Type}} \mbox{\hyperlink{class_draw_order_list_a6533ffbf1cd3f27583e0de8a08648b75}{Get\+Vertex\+Shader\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_draw_order_list_a1c2d881dd0d31f1c7cde4494f7c38481}{Set\+Vertex\+Shader\+Type}} (\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Shader\+Manager\+::\+Vertex\+Shader\+Type}} value)
+\item 
+\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Shader\+Manager\+::\+Pixel\+Shader\+Type}} \mbox{\hyperlink{class_draw_order_list_ab5f9a610bc9304a701d0f1fbaa3292fa}{Get\+Pixel\+Shader\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_draw_order_list_a0fd7f50f4078001983f88014d59f8f29}{Set\+Pixel\+Shader\+Type}} (\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Shader\+Manager\+::\+Pixel\+Shader\+Type}} value)
+\item 
+\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}{Draw\+Type}} \mbox{\hyperlink{class_draw_order_list_a50dcac9d342e61f67b4d2a1d9a96bb21}{Get\+Draw\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_draw_order_list_a5b3ff99f9297293edc057b95d23e8f2d}{Set\+Draw\+Type}} (\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}{Draw\+Type}} value)
+\item 
+\mbox{\hyperlink{class_flag}{Flag}} $\ast$ \mbox{\hyperlink{class_draw_order_list_aff90f57ce3ff0e2d7cd715267bfe024f}{Get\+Render\+Target\+Flag}} ()
+\item 
+bool \mbox{\hyperlink{class_draw_order_list_a265a403c0d87abbcdc71d37a2c4f7b57}{Get\+Is\+Billboard}} ()
+\item 
+void \mbox{\hyperlink{class_draw_order_list_abfb13518e5747d3faa351ca64ec676b2}{Set\+Is\+Billboard}} (bool value)
+\item 
+bool \mbox{\hyperlink{class_draw_order_list_abd19fe57bca4132c08a3443044bdf2b9}{Get\+Is\+Lighting}} ()
+\item 
+void \mbox{\hyperlink{class_draw_order_list_a233843bc98d389d9cfc79108b599c7a9}{Set\+Is\+Lighting}} (bool value)
+\item 
+int \mbox{\hyperlink{class_draw_order_list_a28c14812ea793a3f3d752d58ccb481b2}{Get\+Layer\+Num}} ()
+\item 
+void \mbox{\hyperlink{class_draw_order_list_a5559a24f4d87d9d087d9daabed9a11f3}{Set\+Layer\+Num}} (int value)
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_draw_order_list_a75498416e70da9517427695271d4b5e7}{R\+E\+N\+D\+E\+R\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+ER}} = 1 $<$$<$ 0
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+描画注文リストクラス 
+
+描画に関する注文リストクラス 
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}\label{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Draw\+Type@{Draw\+Type}}
+\index{Draw\+Type@{Draw\+Type}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Draw\+Type}{DrawType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}{Draw\+Order\+List\+::\+Draw\+Type}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Draw\+Order\+List@{Draw\+Order\+List}}\index{Draw\+Order\+List@{Draw\+Order\+List}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bbab2a83851af51b7cbf059ef9522ab908f}\label{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bbab2a83851af51b7cbf059ef9522ab908f}} 
+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+P\+A\+C\+I\+TY@{O\+P\+A\+C\+I\+TY}!Draw\+Order\+List@{Draw\+Order\+List}}\index{Draw\+Order\+List@{Draw\+Order\+List}!O\+P\+A\+C\+I\+TY@{O\+P\+A\+C\+I\+TY}}}\mbox{\Hypertarget{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba4c769c665704d5a6d9a3fa1fa34966fb}\label{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba4c769c665704d5a6d9a3fa1fa34966fb}} 
+O\+P\+A\+C\+I\+TY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY@{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY}!Draw\+Order\+List@{Draw\+Order\+List}}\index{Draw\+Order\+List@{Draw\+Order\+List}!T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY@{T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY}}}\mbox{\Hypertarget{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba38e4ff40be41d3ca753da42d6a628173}\label{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba38e4ff40be41d3ca753da42d6a628173}} 
+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+CY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL@{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL}!Draw\+Order\+List@{Draw\+Order\+List}}\index{Draw\+Order\+List@{Draw\+Order\+List}!T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL@{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL}}}\mbox{\Hypertarget{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba3e5454163533de348e3b3a819e75eb6c}\label{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba3e5454163533de348e3b3a819e75eb6c}} 
+T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+AX@{M\+AX}!Draw\+Order\+List@{Draw\+Order\+List}}\index{Draw\+Order\+List@{Draw\+Order\+List}!M\+AX@{M\+AX}}}\mbox{\Hypertarget{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba6af2a2923ac1094762cf45ca43fc12ab}\label{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bba6af2a2923ac1094762cf45ca43fc12ab}} 
+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_draw_order_list_a50dcac9d342e61f67b4d2a1d9a96bb21}\label{class_draw_order_list_a50dcac9d342e61f67b4d2a1d9a96bb21}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Get\+Draw\+Type@{Get\+Draw\+Type}}
+\index{Get\+Draw\+Type@{Get\+Draw\+Type}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Type()}{GetDrawType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}{Draw\+Type}} Draw\+Order\+List\+::\+Get\+Draw\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a265a403c0d87abbcdc71d37a2c4f7b57}\label{class_draw_order_list_a265a403c0d87abbcdc71d37a2c4f7b57}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Get\+Is\+Billboard@{Get\+Is\+Billboard}}
+\index{Get\+Is\+Billboard@{Get\+Is\+Billboard}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Get\+Is\+Billboard()}{GetIsBillboard()}}
+{\footnotesize\ttfamily bool Draw\+Order\+List\+::\+Get\+Is\+Billboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_abd19fe57bca4132c08a3443044bdf2b9}\label{class_draw_order_list_abd19fe57bca4132c08a3443044bdf2b9}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Get\+Is\+Lighting@{Get\+Is\+Lighting}}
+\index{Get\+Is\+Lighting@{Get\+Is\+Lighting}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Get\+Is\+Lighting()}{GetIsLighting()}}
+{\footnotesize\ttfamily bool Draw\+Order\+List\+::\+Get\+Is\+Lighting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a28c14812ea793a3f3d752d58ccb481b2}\label{class_draw_order_list_a28c14812ea793a3f3d752d58ccb481b2}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Get\+Layer\+Num@{Get\+Layer\+Num}}
+\index{Get\+Layer\+Num@{Get\+Layer\+Num}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Get\+Layer\+Num()}{GetLayerNum()}}
+{\footnotesize\ttfamily int Draw\+Order\+List\+::\+Get\+Layer\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_ab5f9a610bc9304a701d0f1fbaa3292fa}\label{class_draw_order_list_ab5f9a610bc9304a701d0f1fbaa3292fa}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Get\+Pixel\+Shader\+Type@{Get\+Pixel\+Shader\+Type}}
+\index{Get\+Pixel\+Shader\+Type@{Get\+Pixel\+Shader\+Type}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Get\+Pixel\+Shader\+Type()}{GetPixelShaderType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Shader\+Manager\+::\+Pixel\+Shader\+Type}} Draw\+Order\+List\+::\+Get\+Pixel\+Shader\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_aff90f57ce3ff0e2d7cd715267bfe024f}\label{class_draw_order_list_aff90f57ce3ff0e2d7cd715267bfe024f}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Get\+Render\+Target\+Flag@{Get\+Render\+Target\+Flag}}
+\index{Get\+Render\+Target\+Flag@{Get\+Render\+Target\+Flag}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Get\+Render\+Target\+Flag()}{GetRenderTargetFlag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flag}{Flag}}$\ast$ Draw\+Order\+List\+::\+Get\+Render\+Target\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a6533ffbf1cd3f27583e0de8a08648b75}\label{class_draw_order_list_a6533ffbf1cd3f27583e0de8a08648b75}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Get\+Vertex\+Shader\+Type@{Get\+Vertex\+Shader\+Type}}
+\index{Get\+Vertex\+Shader\+Type@{Get\+Vertex\+Shader\+Type}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Get\+Vertex\+Shader\+Type()}{GetVertexShaderType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Shader\+Manager\+::\+Vertex\+Shader\+Type}} Draw\+Order\+List\+::\+Get\+Vertex\+Shader\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a5b3ff99f9297293edc057b95d23e8f2d}\label{class_draw_order_list_a5b3ff99f9297293edc057b95d23e8f2d}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Set\+Draw\+Type@{Set\+Draw\+Type}}
+\index{Set\+Draw\+Type@{Set\+Draw\+Type}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Set\+Draw\+Type()}{SetDrawType()}}
+{\footnotesize\ttfamily void Draw\+Order\+List\+::\+Set\+Draw\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_order_list_a6c9b9ceb312c16d399ef355f4f3486bb}{Draw\+Type}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_abfb13518e5747d3faa351ca64ec676b2}\label{class_draw_order_list_abfb13518e5747d3faa351ca64ec676b2}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Set\+Is\+Billboard@{Set\+Is\+Billboard}}
+\index{Set\+Is\+Billboard@{Set\+Is\+Billboard}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Set\+Is\+Billboard()}{SetIsBillboard()}}
+{\footnotesize\ttfamily void Draw\+Order\+List\+::\+Set\+Is\+Billboard (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a233843bc98d389d9cfc79108b599c7a9}\label{class_draw_order_list_a233843bc98d389d9cfc79108b599c7a9}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Set\+Is\+Lighting@{Set\+Is\+Lighting}}
+\index{Set\+Is\+Lighting@{Set\+Is\+Lighting}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Set\+Is\+Lighting()}{SetIsLighting()}}
+{\footnotesize\ttfamily void Draw\+Order\+List\+::\+Set\+Is\+Lighting (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a5559a24f4d87d9d087d9daabed9a11f3}\label{class_draw_order_list_a5559a24f4d87d9d087d9daabed9a11f3}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Set\+Layer\+Num@{Set\+Layer\+Num}}
+\index{Set\+Layer\+Num@{Set\+Layer\+Num}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Set\+Layer\+Num()}{SetLayerNum()}}
+{\footnotesize\ttfamily void Draw\+Order\+List\+::\+Set\+Layer\+Num (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a0fd7f50f4078001983f88014d59f8f29}\label{class_draw_order_list_a0fd7f50f4078001983f88014d59f8f29}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Set\+Pixel\+Shader\+Type@{Set\+Pixel\+Shader\+Type}}
+\index{Set\+Pixel\+Shader\+Type@{Set\+Pixel\+Shader\+Type}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Set\+Pixel\+Shader\+Type()}{SetPixelShaderType()}}
+{\footnotesize\ttfamily void Draw\+Order\+List\+::\+Set\+Pixel\+Shader\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Shader\+Manager\+::\+Pixel\+Shader\+Type}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_draw_order_list_a1c2d881dd0d31f1c7cde4494f7c38481}\label{class_draw_order_list_a1c2d881dd0d31f1c7cde4494f7c38481}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!Set\+Vertex\+Shader\+Type@{Set\+Vertex\+Shader\+Type}}
+\index{Set\+Vertex\+Shader\+Type@{Set\+Vertex\+Shader\+Type}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{Set\+Vertex\+Shader\+Type()}{SetVertexShaderType()}}
+{\footnotesize\ttfamily void Draw\+Order\+List\+::\+Set\+Vertex\+Shader\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Shader\+Manager\+::\+Vertex\+Shader\+Type}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_draw_order_list_a75498416e70da9517427695271d4b5e7}\label{class_draw_order_list_a75498416e70da9517427695271d4b5e7}} 
+\index{Draw\+Order\+List@{Draw\+Order\+List}!R\+E\+N\+D\+E\+R\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+ER@{R\+E\+N\+D\+E\+R\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+ER}}
+\index{R\+E\+N\+D\+E\+R\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+ER@{R\+E\+N\+D\+E\+R\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+ER}!Draw\+Order\+List@{Draw\+Order\+List}}
+\subsubsection{\texorpdfstring{R\+E\+N\+D\+E\+R\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+ER}{RENDER\_TARGET\_BACK\_BUFFER}}
+{\footnotesize\ttfamily const unsigned Draw\+Order\+List\+::\+R\+E\+N\+D\+E\+R\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+ER = 1 $<$$<$ 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Draw\+Base/\+Draw\+Order\+List/\mbox{\hyperlink{_draw_order_list_8h}{Draw\+Order\+List.\+h}}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: CoinCollision クラス</title>
+<title>3DAction: CoinCollision クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -103,8 +103,9 @@ CoinCollision の継承関係図</div>
  <div class="center">
   <img src="class_coin_collision.png" usemap="#CoinCollision_map" alt=""/>
   <map id="CoinCollision_map" name="CoinCollision_map">
-<area href="class_collision_component.html" alt="CollisionComponent" shape="rect" coords="0,56,123,80"/>
-<area href="class_component_origin.html" alt="ComponentOrigin" shape="rect" coords="0,0,123,24"/>
+<area href="class_collision_null.html" title="空白衝突クラス " alt="CollisionNull" shape="rect" coords="0,112,103,136"/>
+<area href="class_collision_base.html" title="衝突基底クラス " alt="CollisionBase" shape="rect" coords="0,56,103,80"/>
+<area href="class_component_base.html" title="コンポーネント基底クラス " alt="ComponentBase" shape="rect" coords="0,0,103,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -116,74 +117,88 @@ CoinCollision の継承関係図</div>
 <a class="el" href="class_coin_collision.html#ade7912345747f522fd895e87621ce049afe668be7d8cc9606f4c5be2220c38281">MAX</a>
  }</td></tr>
 <tr class="separator:ade7912345747f522fd895e87621ce049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_collision_component"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_collision_component')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collision_component.html">CollisionComponent</a> に属する継承公開型</td></tr>
-<tr class="memitem:a91ba750c14ccd0f4857f0302f06084c6 inherit pub_types_class_collision_component"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6">State</a> { <br />
-&#160;&#160;<a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6a1d2ccb05204951a05e26685ba92f07cb">NONE</a> = -1, 
-<a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6a3c8b928a9ddee0f71d5fff073c275d95">PLAYER</a>, 
-<a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6af5c676cd6f121bf0c269221b9746fbf2">COIN</a>, 
-<a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6acdee26a37ba5cfc5292266887f637d40">ENEMY</a>, 
+<tr class="inherit_header pub_types_class_collision_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_collision_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collision_base.html">CollisionBase</a> に属する継承公開型</td></tr>
+<tr class="memitem:a4dd1ed00099a19c0176913af93c4e365 inherit pub_types_class_collision_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365">State</a> { <br />
+&#160;&#160;<a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365a2682042c400780d05da0db180ef89526">NONE</a> = -1, 
+<a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365ae1aee076cb40136904a2300425bba493">PLAYER</a>, 
+<a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365aeda009ba3599abbdb45a16ecaaf075e5">COIN</a>, 
+<a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365a90a5e8c5c8fa7a3ba38c80b583de37ce">ENEMY</a>, 
 <br />
-&#160;&#160;<a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6a3441d773723b25dedbc6ce5c3b99dc36">MAX</a>
+&#160;&#160;<a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365a82a11a1a3c44c82bd7909f48ed57fa62">GOAL</a>, 
+<a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365aa7c59b2c2f20cbc76a01c38a1ebb6fea">MAX</a>
 <br />
  }</td></tr>
-<tr class="separator:a91ba750c14ccd0f4857f0302f06084c6 inherit pub_types_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4dd1ed00099a19c0176913af93c4e365 inherit pub_types_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a30288ed12410957ccf72f26da10de856"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coin_collision.html#a30288ed12410957ccf72f26da10de856">CoinCollision</a> ()</td></tr>
-<tr class="separator:a30288ed12410957ccf72f26da10de856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4119a7decab2410a4ada3568ad0c132d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coin_collision.html#a4119a7decab2410a4ada3568ad0c132d">Init</a> () override</td></tr>
+<tr class="memdesc:a4119a7decab2410a4ada3568ad0c132d"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#a4119a7decab2410a4ada3568ad0c132d">[詳解]</a><br /></td></tr>
 <tr class="separator:a4119a7decab2410a4ada3568ad0c132d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa852afdcdbedcf82809df9c7fd99be9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coin_collision.html#aa852afdcdbedcf82809df9c7fd99be9e">Uninit</a> () override</td></tr>
+<tr class="memdesc:aa852afdcdbedcf82809df9c7fd99be9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#aa852afdcdbedcf82809df9c7fd99be9e">[詳解]</a><br /></td></tr>
 <tr class="separator:aa852afdcdbedcf82809df9c7fd99be9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981fd9b1b8c688a757a456a56d80501b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b">Update</a> () override</td></tr>
+<tr class="memdesc:a981fd9b1b8c688a757a456a56d80501b"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <a href="#a981fd9b1b8c688a757a456a56d80501b">[詳解]</a><br /></td></tr>
 <tr class="separator:a981fd9b1b8c688a757a456a56d80501b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_collision_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_collision_component')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collision_component.html">CollisionComponent</a> に属する継承公開メンバ関数</td></tr>
-<tr class="memitem:a11e15f7ce88bce8edff23a4d9d46b395 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a11e15f7ce88bce8edff23a4d9d46b395">CollisionComponent</a> (<a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6">CollisionComponent::State</a> state)</td></tr>
-<tr class="separator:a11e15f7ce88bce8edff23a4d9d46b395 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e4d8573038c18ea3cd873530e91a82 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a41e4d8573038c18ea3cd873530e91a82">~CollisionComponent</a> ()</td></tr>
-<tr class="separator:a41e4d8573038c18ea3cd873530e91a82 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a542fdd782214ffe130a4e8cf55bca668 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a542fdd782214ffe130a4e8cf55bca668">Debug</a> ()</td></tr>
-<tr class="separator:a542fdd782214ffe130a4e8cf55bca668 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50c4fea9d37eb22ac435ee5c2ce36254 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a50c4fea9d37eb22ac435ee5c2ce36254">HitCollision</a> (<a class="el" href="class_collision_component.html">CollisionComponent</a> *hit_component, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_opponent_object, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_myself_object)</td></tr>
-<tr class="separator:a50c4fea9d37eb22ac435ee5c2ce36254 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4d820d07872da11c9c1fd1b40157349 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#ad4d820d07872da11c9c1fd1b40157349">NotHitCollision</a> (<a class="el" href="class_collision_component.html">CollisionComponent</a> *hit_component, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_opponent_object, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_myself_object)</td></tr>
-<tr class="separator:ad4d820d07872da11c9c1fd1b40157349 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac761d5081e57b2055e574612d79d1950 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#ac761d5081e57b2055e574612d79d1950">GetEndIndexCollisionObjectArray</a> ()</td></tr>
-<tr class="separator:ac761d5081e57b2055e574612d79d1950 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8301ad7604a1946de51eaad7ce6c4c72 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_object.html">CollisionObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a8301ad7604a1946de51eaad7ce6c4c72">GetCollisionObject</a> (unsigned index)</td></tr>
-<tr class="separator:a8301ad7604a1946de51eaad7ce6c4c72 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b0f056baad5d48d14cc7a611ca768d inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a15b0f056baad5d48d14cc7a611ca768d">ResetHitData_AllCollisionObject</a> ()</td></tr>
-<tr class="separator:a15b0f056baad5d48d14cc7a611ca768d inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a854099e1777f0ddcb309c00300299607 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a854099e1777f0ddcb309c00300299607">AddCollisionObject</a> (<a class="el" href="class_collision_object.html">CollisionObject</a> *object)</td></tr>
-<tr class="separator:a854099e1777f0ddcb309c00300299607 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce25aa3edd0ca27b8e7b4c15e73400d inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a8ce25aa3edd0ca27b8e7b4c15e73400d">OverwriteCollisionObject</a> (<a class="el" href="class_collision_object.html">CollisionObject</a> *old_object, <a class="el" href="class_collision_object.html">CollisionObject</a> *new_object)</td></tr>
-<tr class="separator:a8ce25aa3edd0ca27b8e7b4c15e73400d inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62686d64bc293780425a3d6a18edf26b inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a62686d64bc293780425a3d6a18edf26b">ReleaseCollisionObject</a> (<a class="el" href="class_collision_object.html">CollisionObject</a> *object)</td></tr>
-<tr class="separator:a62686d64bc293780425a3d6a18edf26b inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d614f27219068bb9d17574e0f8a8767 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6">CollisionComponent::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a9d614f27219068bb9d17574e0f8a8767">GetState</a> ()</td></tr>
-<tr class="separator:a9d614f27219068bb9d17574e0f8a8767 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbda86e666f83d89bfb4c393ebfff0d0 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#acbda86e666f83d89bfb4c393ebfff0d0">SetIsJudgment</a> (bool is_judgment)</td></tr>
-<tr class="separator:acbda86e666f83d89bfb4c393ebfff0d0 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2c3ab4392b62d11d6a10c641244d6c inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#add2c3ab4392b62d11d6a10c641244d6c">GetIsJudgment</a> ()</td></tr>
-<tr class="separator:add2c3ab4392b62d11d6a10c641244d6c inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec98b8eb17abe18f2f8487393af0954 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a9ec98b8eb17abe18f2f8487393af0954">EliminationOfNesting</a> (<a class="el" href="class_transform.html">Transform</a> *transform, const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *hit_vector)</td></tr>
-<tr class="separator:a9ec98b8eb17abe18f2f8487393af0954 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84cf5e2c0e4804307c5cf1b78413deef inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a84cf5e2c0e4804307c5cf1b78413deef">SetIsJudgmentGround</a> (bool is_judgment)</td></tr>
-<tr class="separator:a84cf5e2c0e4804307c5cf1b78413deef inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0dcdb246d9e8efd03d4c433a673bb9 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#adb0dcdb246d9e8efd03d4c433a673bb9">GetIsJudgmentGround</a> ()</td></tr>
-<tr class="separator:adb0dcdb246d9e8efd03d4c433a673bb9 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7538567006556bc03524df2655e83956 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#a7538567006556bc03524df2655e83956">HitGround</a> (float position_y)</td></tr>
-<tr class="separator:a7538567006556bc03524df2655e83956 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac918c96ab6efff2bd79497932b2c4852 inherit pub_methods_class_collision_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_component.html#ac918c96ab6efff2bd79497932b2c4852">NotHitGround</a> (float position_y)</td></tr>
-<tr class="separator:ac918c96ab6efff2bd79497932b2c4852 inherit pub_methods_class_collision_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_component_origin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_component_origin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_component_origin.html">ComponentOrigin</a> に属する継承公開メンバ関数</td></tr>
-<tr class="memitem:af5fc09a42cacd7ba4df66ded1d086970 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#af5fc09a42cacd7ba4df66ded1d086970">~ComponentOrigin</a> ()</td></tr>
-<tr class="separator:af5fc09a42cacd7ba4df66ded1d086970 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1eb38e463b1cf2c31589db69b2adef inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#aba1eb38e463b1cf2c31589db69b2adef">SetGameObjectOrigin</a> (<a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *game_object_origin)</td></tr>
-<tr class="separator:aba1eb38e463b1cf2c31589db69b2adef inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3fe099f93012bc6e09918a6509c4743 inherit pub_methods_class_component_origin"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_origin.html">GameObjectOrigin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_origin.html#ab3fe099f93012bc6e09918a6509c4743">GetGameObjectOrigin</a> ()</td></tr>
-<tr class="separator:ab3fe099f93012bc6e09918a6509c4743 inherit pub_methods_class_component_origin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_collision_null"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_collision_null')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collision_null.html">CollisionNull</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a2eaef584b2ae2c4062df8bf3a6533fb3 inherit pub_methods_class_collision_null"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_null.html#a2eaef584b2ae2c4062df8bf3a6533fb3">~CollisionNull</a> ()</td></tr>
+<tr class="memdesc:a2eaef584b2ae2c4062df8bf3a6533fb3 inherit pub_methods_class_collision_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="class_collision_null.html#a2eaef584b2ae2c4062df8bf3a6533fb3">[詳解]</a><br /></td></tr>
+<tr class="separator:a2eaef584b2ae2c4062df8bf3a6533fb3 inherit pub_methods_class_collision_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee0dacfb13c949538519f39d2f6fb0f inherit pub_methods_class_collision_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_null.html#a3ee0dacfb13c949538519f39d2f6fb0f">DebugDisplay</a> ()</td></tr>
+<tr class="memdesc:a3ee0dacfb13c949538519f39d2f6fb0f inherit pub_methods_class_collision_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグ表示関数  <a href="class_collision_null.html#a3ee0dacfb13c949538519f39d2f6fb0f">[詳解]</a><br /></td></tr>
+<tr class="separator:a3ee0dacfb13c949538519f39d2f6fb0f inherit pub_methods_class_collision_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580f507d8918865679feec3cc7b613d1 inherit pub_methods_class_collision_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_null.html#a580f507d8918865679feec3cc7b613d1">HitCollision</a> (<a class="el" href="class_collision_base.html">CollisionBase</a> *hit_collision, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_object, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_my_object)</td></tr>
+<tr class="memdesc:a580f507d8918865679feec3cc7b613d1 inherit pub_methods_class_collision_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突時関数  <a href="class_collision_null.html#a580f507d8918865679feec3cc7b613d1">[詳解]</a><br /></td></tr>
+<tr class="separator:a580f507d8918865679feec3cc7b613d1 inherit pub_methods_class_collision_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2a574ab42dca618c41dd0b9562f614 inherit pub_methods_class_collision_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_null.html#aba2a574ab42dca618c41dd0b9562f614">NotHitCollision</a> (<a class="el" href="class_collision_base.html">CollisionBase</a> *hit_collision, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_object, <a class="el" href="class_collision_object.html">CollisionObject</a> *hit_my_object)</td></tr>
+<tr class="memdesc:aba2a574ab42dca618c41dd0b9562f614 inherit pub_methods_class_collision_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">非衝突時関数  <a href="class_collision_null.html#aba2a574ab42dca618c41dd0b9562f614">[詳解]</a><br /></td></tr>
+<tr class="separator:aba2a574ab42dca618c41dd0b9562f614 inherit pub_methods_class_collision_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75900c2cec4e49336701e2e3c64e5bfe inherit pub_methods_class_collision_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_null.html#a75900c2cec4e49336701e2e3c64e5bfe">HitGround</a> (float position_y)</td></tr>
+<tr class="memdesc:a75900c2cec4e49336701e2e3c64e5bfe inherit pub_methods_class_collision_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">フィールドとの衝突時関数  <a href="class_collision_null.html#a75900c2cec4e49336701e2e3c64e5bfe">[詳解]</a><br /></td></tr>
+<tr class="separator:a75900c2cec4e49336701e2e3c64e5bfe inherit pub_methods_class_collision_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad456a03a3e3d55d8d408b7ed28ce7911 inherit pub_methods_class_collision_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_null.html#ad456a03a3e3d55d8d408b7ed28ce7911">NotHitGround</a> (float position_y)</td></tr>
+<tr class="memdesc:ad456a03a3e3d55d8d408b7ed28ce7911 inherit pub_methods_class_collision_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">フィールドとの非衝突時関数  <a href="class_collision_null.html#ad456a03a3e3d55d8d408b7ed28ce7911">[詳解]</a><br /></td></tr>
+<tr class="separator:ad456a03a3e3d55d8d408b7ed28ce7911 inherit pub_methods_class_collision_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_collision_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_collision_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_collision_base.html">CollisionBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a095def3600633e2eb492bf24112e9dc3 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a095def3600633e2eb492bf24112e9dc3">~CollisionBase</a> ()</td></tr>
+<tr class="memdesc:a095def3600633e2eb492bf24112e9dc3 inherit pub_methods_class_collision_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="class_collision_base.html#a095def3600633e2eb492bf24112e9dc3">[詳解]</a><br /></td></tr>
+<tr class="separator:a095def3600633e2eb492bf24112e9dc3 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace98d75317a9f56bc6cada7980285b53 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#ace98d75317a9f56bc6cada7980285b53">AddCollisionObjectsToArray</a> (<a class="el" href="class_collision_objects.html">CollisionObjects</a> *object)</td></tr>
+<tr class="memdesc:ace98d75317a9f56bc6cada7980285b53 inherit pub_methods_class_collision_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">複数衝突オブジェクト追加関数  <a href="class_collision_base.html#ace98d75317a9f56bc6cada7980285b53">[詳解]</a><br /></td></tr>
+<tr class="separator:ace98d75317a9f56bc6cada7980285b53 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7bba0fc9d39e27dc58d695f04cf186 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a4a7bba0fc9d39e27dc58d695f04cf186">OverwriteArrayCollisionsObject</a> (<a class="el" href="class_collision_objects.html">CollisionObjects</a> *old_object, <a class="el" href="class_collision_objects.html">CollisionObjects</a> *new_object)</td></tr>
+<tr class="memdesc:a4a7bba0fc9d39e27dc58d695f04cf186 inherit pub_methods_class_collision_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">複数衝突オブジェクト上書き関数  <a href="class_collision_base.html#a4a7bba0fc9d39e27dc58d695f04cf186">[詳解]</a><br /></td></tr>
+<tr class="separator:a4a7bba0fc9d39e27dc58d695f04cf186 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bbb58a0dd818fc172f34462b1d5b08 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a46bbb58a0dd818fc172f34462b1d5b08">ReleaseCollisionObjectsFromArray</a> (<a class="el" href="class_collision_objects.html">CollisionObjects</a> *object)</td></tr>
+<tr class="memdesc:a46bbb58a0dd818fc172f34462b1d5b08 inherit pub_methods_class_collision_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">複数衝突オブジェクト解放関数  <a href="class_collision_base.html#a46bbb58a0dd818fc172f34462b1d5b08">[詳解]</a><br /></td></tr>
+<tr class="separator:a46bbb58a0dd818fc172f34462b1d5b08 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d52219e2bf43ed2a9b2a11813934ea inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a54d52219e2bf43ed2a9b2a11813934ea">ReleaseAllCollisionObjectsFromArray</a> ()</td></tr>
+<tr class="memdesc:a54d52219e2bf43ed2a9b2a11813934ea inherit pub_methods_class_collision_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">複数衝突オブジェクト全解放関数  <a href="class_collision_base.html#a54d52219e2bf43ed2a9b2a11813934ea">[詳解]</a><br /></td></tr>
+<tr class="separator:a54d52219e2bf43ed2a9b2a11813934ea inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257660ba9ad63f8c92137fdd24ad46cb inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb">EliminationOfNesting</a> (<a class="el" href="class_transform.html">Transform</a> *transform, const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *hit_vector)</td></tr>
+<tr class="memdesc:a257660ba9ad63f8c92137fdd24ad46cb inherit pub_methods_class_collision_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">めり込み解消関数  <a href="class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb">[詳解]</a><br /></td></tr>
+<tr class="separator:a257660ba9ad63f8c92137fdd24ad46cb inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d7000c820fabfa604138cda30a40a1 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1">getEndIndexOfArray</a> ()</td></tr>
+<tr class="separator:ac1d7000c820fabfa604138cda30a40a1 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e54e04c6ebd809ac2bc955083fec61c inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_objects.html">CollisionObjects</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c">getCollisionObjects</a> (unsigned index)</td></tr>
+<tr class="separator:a2e54e04c6ebd809ac2bc955083fec61c inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e773951a4e1965e64410841a0292a4 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#af4e773951a4e1965e64410841a0292a4">getState</a> ()</td></tr>
+<tr class="separator:af4e773951a4e1965e64410841a0292a4 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01db1e666b8e71c33969e9ab6bbc724e inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a01db1e666b8e71c33969e9ab6bbc724e">setState</a> (<a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365">State</a> value)</td></tr>
+<tr class="separator:a01db1e666b8e71c33969e9ab6bbc724e inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9cd927976308f8719f3becc03b99a1 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a7b9cd927976308f8719f3becc03b99a1">getIsJudgmentGround</a> ()</td></tr>
+<tr class="separator:a7b9cd927976308f8719f3becc03b99a1 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231cb5c715701444db63db030c06b694 inherit pub_methods_class_collision_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_base.html#a231cb5c715701444db63db030c06b694">setIsJudgmentGround</a> (bool value)</td></tr>
+<tr class="separator:a231cb5c715701444db63db030c06b694 inherit pub_methods_class_collision_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_component_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_component_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_component_base.html">ComponentBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a5d22c6d5f792ff42ab6cb11a8ac38478 inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">~ComponentBase</a> ()</td></tr>
+<tr class="memdesc:a5d22c6d5f792ff42ab6cb11a8ac38478 inherit pub_methods_class_component_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">[詳解]</a><br /></td></tr>
+<tr class="separator:a5d22c6d5f792ff42ab6cb11a8ac38478 inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fc08588e3d29caf8d692a3392fc7b0 inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0">SetGameObject</a> (<a class="el" href="class_game_object_base.html">GameObjectBase</a> *value)</td></tr>
+<tr class="separator:ac9fc08588e3d29caf8d692a3392fc7b0 inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_base.html">GameObjectBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">GetGameObject</a> ()</td></tr>
+<tr class="separator:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="ade7912345747f522fd895e87621ce049"></a>
@@ -203,24 +218,6 @@ CoinCollision の継承関係図</div>
 <tr><td class="fieldname"><a id="ade7912345747f522fd895e87621ce049ab3dfdeacfa9cf71c167dfb2faec4612f"></a>SUBSTANCE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ade7912345747f522fd895e87621ce049afe668be7d8cc9606f4c5be2220c38281"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">構築子と解体子</h2>
-<a id="a30288ed12410957ccf72f26da10de856"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30288ed12410957ccf72f26da10de856">&#9670;&nbsp;</a></span>CoinCollision()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CoinCollision::CoinCollision </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -248,7 +245,9 @@ CoinCollision の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_component_origin.html#a9f674891257f2272b1636d8b6bb05d81">ComponentOrigin</a>を実装しています。</p>
+<p>初期化関数 </p>
+
+<p><a class="el" href="class_component_base.html#a125939d6befe42f28886a6523e86b18b">ComponentBase</a>を実装しています。</p>
 
 </div>
 </div>
@@ -275,7 +274,9 @@ CoinCollision の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_collision_component.html#aa75440061f7a60e8c4ee1dae18682cc0">CollisionComponent</a>を再実装しています。</p>
+<p>終了関数 </p>
+
+<p><a class="el" href="class_collision_null.html#a7c6d0ec502efc55e2f406415451152f5">CollisionNull</a>を再実装しています。</p>
 
 </div>
 </div>
@@ -302,7 +303,9 @@ CoinCollision の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_collision_component.html#a3fa60fd8b4e8690f783c0f578949664e">CollisionComponent</a>を再実装しています。</p>
+<p>更新関数 </p>
+
+<p><a class="el" href="class_collision_null.html#a5e5e094e3fbe3ccc0515e485c739bd15">CollisionNull</a>を再実装しています。</p>
 
 </div>
 </div>

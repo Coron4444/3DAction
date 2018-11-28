@@ -14,13 +14,14 @@ var class_fade =
     ] ],
     [ "Fade", "class_fade.html#aec1ac5a0a80be8d7a2a43dbde2a741ee", null ],
     [ "~Fade", "class_fade.html#a58ddf7585cb85bf84f5e83adbe2734f9", null ],
-    [ "Draw", "class_fade.html#a521f3cb7e82fb71360bab568bcf933c9", null ],
+    [ "Draw", "class_fade.html#a84a9e688650ac500e03cde74ff0210b8", null ],
     [ "GetEndFlag", "class_fade.html#acc8adf28ce2e4270e5fb3907d83dadd0", null ],
+    [ "GetMatrix", "class_fade.html#a6aed6912ebf9c243c52cb82f298d8d64", null ],
     [ "GetState", "class_fade.html#aeb41dfcadf75dd4c980da68e243cc310", null ],
     [ "GetTransform", "class_fade.html#a1a177209e72a27858ceb2d339321e9c4", null ],
     [ "GetTransition01Object", "class_fade.html#a4e047c532d430095e7d0d70288289a82", null ],
     [ "GetType", "class_fade.html#aed5a29d39a5fd6161a9aed73d5f30870", null ],
     [ "Init", "class_fade.html#aab12848f7102a219968c86ed699a6e5d", null ],
-    [ "Uninit", "class_fade.html#abf68444af1314ad502d1109940b2ab5c", null ],
+    [ "Uninit", "class_fade.html#ae77d06811869d3c8162a42c3e0e14f7f", null ],
     [ "Update", "class_fade.html#a1579b5b9020344a1131ea11c15f2c0bd", null ]
 ];

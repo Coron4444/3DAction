@@ -1,12 +1,12 @@
 var class_collision_object =
 [
-    [ "CollisionObject", "class_collision_object.html#aab884f4103bb369b503f5e937c7c2451", null ],
+    [ "CollisionObject", "class_collision_object.html#a6f502c16aaae1dc1470107a930f28808", null ],
     [ "~CollisionObject", "class_collision_object.html#a8c4e6916bc5911b8a82498536d5a27e1", null ],
-    [ "GetCollisionShape", "class_collision_object.html#a91922573ea16575f5a8896f77efe9957", null ],
-    [ "GetHitVector", "class_collision_object.html#a0ad360e1a97a318cbfdf84be6f84dbcc", null ],
-    [ "GetIsJudgment", "class_collision_object.html#ac923c4826d5b48f91fc93942e70b097d", null ],
-    [ "GetTag", "class_collision_object.html#a3d81adc726fd092fcd26efb4ddfcfd99", null ],
+    [ "getCollisionShape", "class_collision_object.html#a3ff1c2d794f520c96b6bc6037a8f8f8c", null ],
+    [ "getHitVector", "class_collision_object.html#adb01187ec10302f13034407a3c852860", null ],
+    [ "getIsJudgment", "class_collision_object.html#ac11b01882a159efadbe62bd5a66c49aa", null ],
+    [ "getTag", "class_collision_object.html#a1198d5941d2ba8a9b394c0e43e4b9fd9", null ],
     [ "ResetHitData", "class_collision_object.html#a92dd5d21c6674605d290e0d37d64505a", null ],
-    [ "SetHitVector", "class_collision_object.html#acd9790e26ebd136bf4ad3dd4eb56c881", null ],
-    [ "SetIsJudgment", "class_collision_object.html#a22b0732ec2a005fe03991ae528c82f4c", null ]
+    [ "setHitVector", "class_collision_object.html#a1087fa9cebfe0b1675923807b73d8868", null ],
+    [ "setIsJudgment", "class_collision_object.html#a3000144caea71e39cbdafebb249fef7e", null ]
 ];

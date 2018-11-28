@@ -2,36 +2,66 @@
 \label{class_score_draw}\index{Score\+Draw@{Score\+Draw}}
 
 
+スコア描画クラス  
+
+
+
+
 {\ttfamily \#include $<$Score\+Draw.\+h$>$}
 
 Score\+Draw の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_score_draw}
+\includegraphics[height=4.000000cm]{class_score_draw}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_score_draw_af013abb96136825e71d4fee06529fc69}{Init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_score_draw_aad744f8a7a1202e6ba8117c660f297ee}{Uninit}} () override
-\item 
-void \mbox{\hyperlink{class_score_draw_a0744dd3db298a45683b7521a02e8e9db}{Draw}} (unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_draw_a799e71943140a264cedba6002308b976}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_score_draw_a62aa20ef4b40544bf0a95770b925c780}{Get\+Matrix}} (unsigned object\+\_\+index) override
 \end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
 
+
+\subsection{詳解}
+スコア描画クラス 
+
+スコアの描画クラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_score_draw_a0744dd3db298a45683b7521a02e8e9db}\label{class_score_draw_a0744dd3db298a45683b7521a02e8e9db}} 
+\mbox{\Hypertarget{class_score_draw_a799e71943140a264cedba6002308b976}\label{class_score_draw_a799e71943140a264cedba6002308b976}} 
 \index{Score\+Draw@{Score\+Draw}!Draw@{Draw}}
 \index{Draw@{Draw}!Score\+Draw@{Score\+Draw}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void Score\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Score\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_ae84bfb6ccc2fda9e54cdff45057ea2c3}{Draw\+Component}}を実装しています。
+描画関数 
+
+
+\begin{DoxyParams}{引数}
+{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_score_draw_a62aa20ef4b40544bf0a95770b925c780}\label{class_score_draw_a62aa20ef4b40544bf0a95770b925c780}} 
+\index{Score\+Draw@{Score\+Draw}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Score\+Draw@{Score\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Score\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_score_draw_af013abb96136825e71d4fee06529fc69}\label{class_score_draw_af013abb96136825e71d4fee06529fc69}} 
 \index{Score\+Draw@{Score\+Draw}!Init@{Init}}
@@ -41,7 +71,11 @@ void \mbox{\hyperlink{class_score_draw_a0744dd3db298a45683b7521a02e8e9db}{Draw}}
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_score_draw_aad744f8a7a1202e6ba8117c660f297ee}\label{class_score_draw_aad744f8a7a1202e6ba8117c660f297ee}} 
 \index{Score\+Draw@{Score\+Draw}!Uninit@{Uninit}}
@@ -51,7 +85,11 @@ void \mbox{\hyperlink{class_score_draw_a0744dd3db298a45683b7521a02e8e9db}{Draw}}
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
 
 
 

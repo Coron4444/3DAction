@@ -13,12 +13,12 @@ Failure\+Logo の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_failure_logo_a97288bc316004c0d8e585da318efe050}{Init}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+void \mbox{\hyperlink{class_failure_logo_a22da89def55023f43860cf646da7a74c}{Init}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
 \item 
 void \mbox{\hyperlink{class_failure_logo_adbe01fc4567ade0e788f511f5162299c}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}{Reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,11 +28,11 @@ void \mbox{\hyperlink{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}{Rese
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_failure_logo_a97288bc316004c0d8e585da318efe050}\label{class_failure_logo_a97288bc316004c0d8e585da318efe050}} 
+\mbox{\Hypertarget{class_failure_logo_a22da89def55023f43860cf646da7a74c}\label{class_failure_logo_a22da89def55023f43860cf646da7a74c}} 
 \index{Failure\+Logo@{Failure\+Logo}!Init@{Init}}
 \index{Init@{Init}!Failure\+Logo@{Failure\+Logo}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Failure\+Logo\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Failure\+Logo\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}\label{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}} 
 \index{Failure\+Logo@{Failure\+Logo}!Reset@{Reset}}
@@ -42,7 +42,11 @@ void \mbox{\hyperlink{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}{Rese
 
 
 
-\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_failure_logo_adbe01fc4567ade0e788f511f5162299c}\label{class_failure_logo_adbe01fc4567ade0e788f511f5162299c}} 
 \index{Failure\+Logo@{Failure\+Logo}!Uninit@{Uninit}}
@@ -52,7 +56,11 @@ void \mbox{\hyperlink{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}{Rese
 
 
 
-\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
 
 
 

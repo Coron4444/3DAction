@@ -1,6 +1,6 @@
 var class_physics =
 [
-    [ "Physics", "class_physics.html#af419194525721fccefec3ffde8fd8848", null ],
+    [ "Physics", "class_physics.html#a2e4cab77c53c0acf5273bd4986f8423d", null ],
     [ "~Physics", "class_physics.html#a045c3788e28059d3920136499942490f", null ],
     [ "AddBounciness", "class_physics.html#af88191e5605a97952caefd19319b05f9", null ],
     [ "AddFriction", "class_physics.html#a77e9a04f034ccad4fec996832fb7ce63", null ],

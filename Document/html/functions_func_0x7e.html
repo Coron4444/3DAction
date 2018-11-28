@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: クラスメンバ - 関数</title>
+<title>3DAction: クラスメンバ - 関数</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -90,12 +90,6 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 &#160;
 
 <h3><a id="index_0x7e"></a>- ~ -</h3><ul>
-<li>~AABB()
-: <a class="el" href="class_a_a_b_b.html#afd5f4956a2043597167ff66821f7b223">AABB</a>
-</li>
-<li>~Camera()
-: <a class="el" href="class_camera.html#ad1897942d0ccf91052386388a497349f">Camera</a>
-</li>
 <li>~CameraState_CrawlUp()
 : <a class="el" href="class_camera_state___crawl_up.html#a9b7f2e6cc8be5c356967d8df8c20e93a">CameraState_CrawlUp</a>
 </li>
@@ -105,20 +99,20 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 <li>~Client()
 : <a class="el" href="class_effekseer_1_1_client.html#a77d6c51135b4e3b69b75bff309bb0a85">Effekseer::Client</a>
 </li>
-<li>~CollisionComponent()
-: <a class="el" href="class_collision_component.html#a41e4d8573038c18ea3cd873530e91a82">CollisionComponent</a>
+<li>~CollisionBase()
+: <a class="el" href="class_collision_base.html#a095def3600633e2eb492bf24112e9dc3">CollisionBase</a>
+</li>
+<li>~CollisionNull()
+: <a class="el" href="class_collision_null.html#a2eaef584b2ae2c4062df8bf3a6533fb3">CollisionNull</a>
 </li>
 <li>~CollisionObject()
 : <a class="el" href="class_collision_object.html#a8c4e6916bc5911b8a82498536d5a27e1">CollisionObject</a>
 </li>
-<li>~CollisionShapeOrigin()
-: <a class="el" href="class_collision_shape_origin.html#a0b5b171795d247ba27ee8a0399446f68">CollisionShapeOrigin</a>
+<li>~CollisionShapeBase()
+: <a class="el" href="class_collision_shape_base.html#a64fa9e1ae6b582be42360e926ce5d6cb">CollisionShapeBase</a>
 </li>
-<li>~ComponentOrigin()
-: <a class="el" href="class_component_origin.html#af5fc09a42cacd7ba4df66ded1d086970">ComponentOrigin</a>
-</li>
-<li>~CriticalSection()
-: <a class="el" href="class_effekseer_1_1_critical_section.html#a5748b4aa5c32883ae097944dc12466aa">Effekseer::CriticalSection</a>
+<li>~ComponentBase()
+: <a class="el" href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">ComponentBase</a>
 </li>
 <li>~CubePolygon()
 : <a class="el" href="class_cube_polygon.html#ae6cd078c65ba32e8da56b8f7d5e92d2a">CubePolygon</a>
@@ -135,11 +129,14 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 <li>~DistortingCallback()
 : <a class="el" href="class_effekseer_renderer_1_1_distorting_callback.html#ad773a6992bb498867c0f9304f27c8677">EffekseerRenderer::DistortingCallback</a>
 </li>
-<li>~DrawComponent()
-: <a class="el" href="class_draw_component.html#a028c5084fd306431f3e229650af54ad1">DrawComponent</a>
+<li>~DrawBase()
+: <a class="el" href="class_draw_base.html#a799597f696c5cbf6074fb2655dea5e18">DrawBase</a>
+</li>
+<li>~DrawNull()
+: <a class="el" href="class_draw_null.html#aa085e175e9e05fc56cb4aefa2d07f371">DrawNull</a>
 </li>
 <li>~Effect()
-: <a class="el" href="class_effekseer_1_1_effect.html#a1548bfc590a25a1515dbbb2d5923b7be">Effekseer::Effect</a>
+: <a class="el" href="class_effekseer_1_1_effect.html#aeff1be44efe48d64e2b398d9186c1011">Effekseer::Effect</a>
 </li>
 <li>~EffectLoader()
 : <a class="el" href="class_effekseer_1_1_effect_loader.html#a2d296c85473ebb6cae68be5305759628">Effekseer::EffectLoader</a>
@@ -165,8 +162,8 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 <li>~FileWriter()
 : <a class="el" href="class_effekseer_1_1_file_writer.html#aa4959a2a84ec4754b615d6b665d71988">Effekseer::FileWriter</a>
 </li>
-<li>~GameObjectOrigin()
-: <a class="el" href="class_game_object_origin.html#a11fd9b09ec834a887253f82d83191bff">GameObjectOrigin</a>
+<li>~GameObjectBase()
+: <a class="el" href="class_game_object_base.html#a0cb813d5c7af673a3d190eb1b2d26275">GameObjectBase</a>
 </li>
 <li>~GameObjectReferenceManager()
 : <a class="el" href="class_game_object_reference_manager.html#a9ed62220afb840cdc3e8cbe4bbc3a19e">GameObjectReferenceManager</a>
@@ -195,8 +192,11 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 <li>~ImVector()
 : <a class="el" href="class_im_vector.html#a9b782359ca26eaa1a6a6138fcf341c54">ImVector&lt; T &gt;</a>
 </li>
+<li>~InternalModel()
+: <a class="el" href="struct_effekseer_renderer_d_x9_1_1_model_1_1_internal_model.html#a45d01b194eff847edaf851e18b9a0d30">EffekseerRendererDX9::Model::InternalModel</a>
+</li>
 <li>~Manager()
-: <a class="el" href="class_effekseer_1_1_manager.html#a278221f5fd9ef62c4a881f94caac06b3">Effekseer::Manager</a>
+: <a class="el" href="class_effekseer_1_1_manager.html#af620a54ced00bb2d9f7b7d919e89fc98">Effekseer::Manager</a>
 </li>
 <li>~MatrixExtend()
 : <a class="el" href="class_matrix_extend.html#ae1d80dfa20420bdc58e85eccc525fe91">MatrixExtend</a>
@@ -254,8 +254,8 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 <li>~RingRenderer()
 : <a class="el" href="class_effekseer_1_1_ring_renderer.html#a99bab63ecdf35209cb265aea5745664a">Effekseer::RingRenderer</a>
 </li>
-<li>~SceneBace()
-: <a class="el" href="class_scene_bace.html#a99e98adcd3bbae91e12af543a1c6c85b">SceneBace</a>
+<li>~SceneBase()
+: <a class="el" href="class_scene_base.html#a187dd160e5a16909bcc6529851e38318">SceneBase</a>
 </li>
 <li>~SceneManager()
 : <a class="el" href="class_scene_manager.html#a2bb376a85d29e85f47753e26c7539229">SceneManager</a>
@@ -288,16 +288,13 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 : <a class="el" href="class_camera_1_1_state.html#a61b74bb711d49e26c0f07af65fb74eb9">Camera::State</a>
 </li>
 <li>~StateAbstract()
-: <a class="el" href="class_scene_bace_1_1_state_abstract.html#af10a26f1265f46bc2cc23c2b001dc903">SceneBace::StateAbstract</a>
+: <a class="el" href="class_scene_base_1_1_state_abstract.html#a391d466199d1972bd7512ff5bfb6e328">SceneBase::StateAbstract</a>
 </li>
 <li>~TextureLoader()
 : <a class="el" href="class_effekseer_1_1_texture_loader.html#a95b67c6e4fd84a77eb24b8e73b79ab14">Effekseer::TextureLoader</a>
 </li>
 <li>~TextureObject()
 : <a class="el" href="class_texture_object.html#aeed25fa5ca8e892b96145f4a649e090a">TextureObject</a>
-</li>
-<li>~Thread()
-: <a class="el" href="class_effekseer_1_1_thread.html#a5e081a4312fd66ffd9e26aea3b177297">Effekseer::Thread</a>
 </li>
 <li>~TrackRenderer()
 : <a class="el" href="class_effekseer_1_1_track_renderer.html#a2880354ffae0aeadffa3351968a8a99f">Effekseer::TrackRenderer</a>
@@ -308,8 +305,11 @@ $(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 <li>~Triangle()
 : <a class="el" href="class_triangle.html#a5199760a17454f4dc94c855a57e3a152">Triangle</a>
 </li>
-<li>~UpdateComponent()
-: <a class="el" href="class_update_component.html#ad654da84b672a40c916ca362f787e1b4">UpdateComponent</a>
+<li>~UpdateBase()
+: <a class="el" href="class_update_base.html#aad4c3e15c4b67871a0fe13c9f85e5918">UpdateBase</a>
+</li>
+<li>~UpdateNull()
+: <a class="el" href="class_update_null.html#a121a3045119935eb2704ef282bba2f9f">UpdateNull</a>
 </li>
 <li>~Vector3D()
 : <a class="el" href="class_vector3_d.html#ae4fde5759270bf5bcf615f12f0823a8c">Vector3D</a>

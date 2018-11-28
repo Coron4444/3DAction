@@ -1,7 +1,6 @@
 var searchData=
 [
   ['c_5f',['c_',['../class_quadratic_equation.html#a314d9dfa7280b19c190f3e63747c82ae',1,'QuadraticEquation']]],
-  ['camera_5farray_5fnum',['CAMERA_ARRAY_NUM',['../class_draw_component_manager.html#a27a861d3f771a93d85e872d8f205391e',1,'DrawComponentManager']]],
   ['capacity',['Capacity',['../class_im_vector.html#abd24482b4d30d22e37582e521e5bfb33',1,'ImVector']]],
   ['centercolor',['CenterColor',['../struct_effekseer_1_1_ring_renderer_1_1_instance_parameter.html#a09f1fa6d5c759274a99f7989d91ac247',1,'Effekseer::RingRenderer::InstanceParameter']]],
   ['centerratio',['CenterRatio',['../struct_effekseer_1_1_ring_renderer_1_1_instance_parameter.html#ac6d815e9e994b7cd7aed0a10ac27fa83',1,'Effekseer::RingRenderer::InstanceParameter']]],
@@ -31,7 +30,7 @@ var searchData=
   ['colorpickerref',['ColorPickerRef',['../struct_im_gui_context.html#ae3a119a9a71b31ede7ccc87447627b68',1,'ImGuiContext']]],
   ['colorright',['ColorRight',['../struct_effekseer_1_1_track_renderer_1_1_instance_parameter.html#a30502a95684ed197a5edf8e61abf18ad',1,'Effekseer::TrackRenderer::InstanceParameter']]],
   ['colorrightmiddle',['ColorRightMiddle',['../struct_effekseer_1_1_track_renderer_1_1_instance_parameter.html#a2b2a8d82514dde16ea95aa92a7533d1a',1,'Effekseer::TrackRenderer::InstanceParameter']]],
-  ['colors',['Colors',['../struct_effekseer_1_1_sprite_renderer_1_1_instance_parameter.html#ae745017c89a18992eecfcc14c4f5f763',1,'Effekseer::SpriteRenderer::InstanceParameter::Colors()'],['../struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter.html#a1f1096580cd8dcc15461d1a07bf011d6',1,'Effekseer::RibbonRenderer::InstanceParameter::Colors()'],['../struct_im_gui_style.html#a2b4941240a38d1300c39a7fa4f03d0a3',1,'ImGuiStyle::Colors()']]],
+  ['colors',['Colors',['../struct_effekseer_1_1_sprite_renderer_1_1_instance_parameter.html#ae745017c89a18992eecfcc14c4f5f763',1,'Effekseer::SpriteRenderer::InstanceParameter::Colors()'],['../struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter.html#a4af0c70d517d18d09821b4dc04debbe5',1,'Effekseer::RibbonRenderer::InstanceParameter::Colors()'],['../struct_im_gui_style.html#a2b4941240a38d1300c39a7fa4f03d0a3',1,'ImGuiStyle::Colors()']]],
   ['colortextureindex',['ColorTextureIndex',['../struct_effekseer_1_1_effect_basic_render_parameter.html#a28d3845ddf7e5255f5c6246ef001c265',1,'Effekseer::EffectBasicRenderParameter::ColorTextureIndex()'],['../struct_effekseer_1_1_sprite_renderer_1_1_node_parameter.html#a73ccb925cd40ba3d09365e92b28a46e9',1,'Effekseer::SpriteRenderer::NodeParameter::ColorTextureIndex()'],['../struct_effekseer_1_1_ribbon_renderer_1_1_node_parameter.html#a8fa40641d813533bfb6aec0d607406f2',1,'Effekseer::RibbonRenderer::NodeParameter::ColorTextureIndex()'],['../struct_effekseer_1_1_ring_renderer_1_1_node_parameter.html#a79072a2a942423e1eb5c56dc5f6a1569',1,'Effekseer::RingRenderer::NodeParameter::ColorTextureIndex()'],['../struct_effekseer_1_1_model_renderer_1_1_node_parameter.html#abdfcf0e63df9aff535effe2eaedfbdd3',1,'Effekseer::ModelRenderer::NodeParameter::ColorTextureIndex()'],['../struct_effekseer_1_1_track_renderer_1_1_node_parameter.html#af56f97c8a66ba32dcbdd511de20101bd',1,'Effekseer::TrackRenderer::NodeParameter::ColorTextureIndex()']]],
   ['columnscellmaxy',['ColumnsCellMaxY',['../struct_im_gui_draw_context.html#a91c90b98539dc2b1522dd3f7bafa3b21',1,'ImGuiDrawContext']]],
   ['columnscellminy',['ColumnsCellMinY',['../struct_im_gui_draw_context.html#a675eb10cf0c56322f8e9a6c40e33a7ea',1,'ImGuiDrawContext']]],
@@ -54,7 +53,6 @@ var searchData=
   ['containeratlas',['ContainerAtlas',['../struct_im_font.html#a8a5e0df6be5e3cabe91ae830524db960',1,'ImFont']]],
   ['contentsregionrect',['ContentsRegionRect',['../struct_im_gui_window.html#ac0d04b743eab132900c1ededc8eab9f6',1,'ImGuiWindow']]],
   ['count',['Count',['../struct_im_gui_simple_columns.html#ac5fdbd35f74c31992c95fc4b759e9c2f',1,'ImGuiSimpleColumns']]],
-  ['count_5f',['count_',['../class_tutorial_scene.html#a8db8cdfb7bf91dbab3353cfb54593bf9',1,'TutorialScene']]],
   ['countgrep',['CountGrep',['../struct_im_gui_text_filter.html#ac31839c319fe4211c21fc143b7249f86',1,'ImGuiTextFilter']]],
   ['cube_5fpolygon_5f',['cube_polygon_',['../class_enemy.html#a9a24b765d76b789cc678701886570511',1,'Enemy']]],
   ['culling',['Culling',['../struct_effekseer_1_1_model_renderer_1_1_node_parameter.html#a8ead63177a2cb7f0797f646e682db538',1,'Effekseer::ModelRenderer::NodeParameter']]],

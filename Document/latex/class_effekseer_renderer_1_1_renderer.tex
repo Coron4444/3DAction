@@ -27,15 +27,15 @@ virtual bool \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_aaa6df6f62ae
 \begin{DoxyCompactList}\small\item\em 描画を終了する時に実行する。 \end{DoxyCompactList}\item 
 virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a3da04ff6d2ad2a0126a7476703a7c019}{Get\+Light\+Direction}} () const =0
 \begin{DoxyCompactList}\small\item\em ライトの方向を取得する。 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a28d4468e4a1ca40c585e7b6c88dd1849}{Set\+Light\+Direction}} (\+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&direction)=0
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a04a843a79d80bd1f7e31f43dc4c62fd6}{Set\+Light\+Direction}} (const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&direction)=0
 \begin{DoxyCompactList}\small\item\em ライトの方向を設定する。 \end{DoxyCompactList}\item 
 virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_af1ed44772dd362bd7dbed42823da0411}{Get\+Light\+Color}} () const =0
 \begin{DoxyCompactList}\small\item\em ライトの色を取得する。 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a53268363d6c1ed36bd9119860d058808}{Set\+Light\+Color}} (\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&color)=0
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a9ae2ce450679931644df1f603286835b}{Set\+Light\+Color}} (const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&color)=0
 \begin{DoxyCompactList}\small\item\em ライトの色を設定する。 \end{DoxyCompactList}\item 
 virtual const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a1454194ae4005f7a9d5a66f4f56c4972}{Get\+Light\+Ambient\+Color}} () const =0
 \begin{DoxyCompactList}\small\item\em ライトの環境光の色を取得する。 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_aebc954d0b421ded11b7420361b987094}{Set\+Light\+Ambient\+Color}} (\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&color)=0
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a8c177a08c1765e8a02ba72fae7b33935}{Set\+Light\+Ambient\+Color}} (const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&color)=0
 \begin{DoxyCompactList}\small\item\em ライトの環境光の色を設定する。 \end{DoxyCompactList}\item 
 virtual int32\+\_\+t \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_af30b6ab25e7c03a3f70656c954e8db09}{Get\+Square\+Max\+Count}} () const =0
 \begin{DoxyCompactList}\small\item\em 最大描画スプライト数を取得する。 \end{DoxyCompactList}\item 
@@ -49,6 +49,12 @@ virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a406e4bf44f1
 \begin{DoxyCompactList}\small\item\em カメラ行列を設定する。 \end{DoxyCompactList}\item 
 virtual \+::\mbox{\hyperlink{struct_effekseer_1_1_matrix44}{Effekseer\+::\+Matrix44}} \& \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a62e05934631fa04e75ffb87952200042}{Get\+Camera\+Projection\+Matrix}} ()=0
 \begin{DoxyCompactList}\small\item\em カメラプロジェクション行列を取得する。 \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a84c523a3a5fbcba9d8af3de01f8dfbfb}{Get\+Camera\+Front\+Direction}} () const =0
+\begin{DoxyCompactList}\small\item\em Get a front direction of camera \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a904d639bb441e9221fd5421c1b75da71}{Get\+Camera\+Position}} () const =0
+\begin{DoxyCompactList}\small\item\em Get a position of camera \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_aab9cecfcbbc9c3c0a968ce47704fc157}{Set\+Camera\+Parameter}} (const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&front, const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&position)=0
+\begin{DoxyCompactList}\small\item\em Set a front direction and position of camera manually \end{DoxyCompactList}\item 
 virtual \+::\mbox{\hyperlink{class_effekseer_1_1_sprite_renderer}{Effekseer\+::\+Sprite\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_abecf62202fe3d54f4edf6c43d701188b}{Create\+Sprite\+Renderer}} ()=0
 \begin{DoxyCompactList}\small\item\em スプライトレンダラーを生成する。 \end{DoxyCompactList}\item 
 virtual \+::\mbox{\hyperlink{class_effekseer_1_1_ribbon_renderer}{Effekseer\+::\+Ribbon\+Renderer}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ac65157c02f8936e054c2525e4722a4f7}{Create\+Ribbon\+Renderer}} ()=0
@@ -68,7 +74,19 @@ virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a229d0aca027
 virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_distorting_callback}{Distorting\+Callback}} $\ast$ \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_af4db92a0262062bfcc8f3f2334e5a168}{Get\+Distorting\+Callback}} ()=0
 \begin{DoxyCompactList}\small\item\em 背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを取得する。 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a8806b5a83c5ea73e09662f4a0869f8f0}{Set\+Distorting\+Callback}} (\mbox{\hyperlink{class_effekseer_renderer_1_1_distorting_callback}{Distorting\+Callback}} $\ast$callback)=0
-\begin{DoxyCompactList}\small\item\em 背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。 \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a1169dda7afa6933c049bd5f914c2fecb}{Get\+Draw\+Call\+Count}} () const =0
+\begin{DoxyCompactList}\small\item\em ドローコールの回数を取得する \end{DoxyCompactList}\item 
+virtual int32\+\_\+t \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_af24ee0238724b207461d96add686e878}{Get\+Draw\+Vertex\+Count}} () const =0
+\begin{DoxyCompactList}\small\item\em 描画された頂点数をリセットする \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_aef72f720dba854b9e28a7bae618564ed}{Reset\+Draw\+Call\+Count}} ()=0
+\begin{DoxyCompactList}\small\item\em ドローコールの回数をリセットする \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a0aa2190291ec83c8b45b0dbd30b48a3a}{Reset\+Draw\+Vertex\+Count}} ()=0
+\begin{DoxyCompactList}\small\item\em 描画された頂点数をリセットする \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ab0805785cad223b4a79d2d16fcd9bec8}{Set\+Render\+Mode}} (\mbox{\hyperlink{namespace_effekseer_ad1b82893021dd8e3697e46c1aa544092}{Effekseer\+::\+Render\+Mode}} render\+Mode)=0
+\begin{DoxyCompactList}\small\item\em 描画モードを設定する。 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ad1b82893021dd8e3697e46c1aa544092}{Effekseer\+::\+Render\+Mode}} \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_a45fd7eb7a8796aeb67467511891a48fd}{Get\+Render\+Mode}} ()=0
+\begin{DoxyCompactList}\small\item\em 描画モードを取得する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{限定公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -198,6 +216,16 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 描画を終了する時に実行する。 
 
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a84c523a3a5fbcba9d8af3de01f8dfbfb}\label{class_effekseer_renderer_1_1_renderer_a84c523a3a5fbcba9d8af3de01f8dfbfb}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Camera\+Front\+Direction@{Get\+Camera\+Front\+Direction}}
+\index{Get\+Camera\+Front\+Direction@{Get\+Camera\+Front\+Direction}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Camera\+Front\+Direction()}{GetCameraFrontDirection()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Camera\+Front\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get a front direction of camera 
+
 \mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a9c386cbe84039115d2f7d224d8a9c41c}\label{class_effekseer_renderer_1_1_renderer_a9c386cbe84039115d2f7d224d8a9c41c}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Camera\+Matrix@{Get\+Camera\+Matrix}}
 \index{Get\+Camera\+Matrix@{Get\+Camera\+Matrix}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
@@ -207,6 +235,16 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 
 カメラ行列を取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a904d639bb441e9221fd5421c1b75da71}\label{class_effekseer_renderer_1_1_renderer_a904d639bb441e9221fd5421c1b75da71}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Camera\+Position@{Get\+Camera\+Position}}
+\index{Get\+Camera\+Position@{Get\+Camera\+Position}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Camera\+Position()}{GetCameraPosition()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Camera\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get a position of camera 
 
 \mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a62e05934631fa04e75ffb87952200042}\label{class_effekseer_renderer_1_1_renderer_a62e05934631fa04e75ffb87952200042}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Camera\+Projection\+Matrix@{Get\+Camera\+Projection\+Matrix}}
@@ -227,6 +265,26 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 
 背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを取得する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a1169dda7afa6933c049bd5f914c2fecb}\label{class_effekseer_renderer_1_1_renderer_a1169dda7afa6933c049bd5f914c2fecb}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Draw\+Call\+Count@{Get\+Draw\+Call\+Count}}
+\index{Get\+Draw\+Call\+Count@{Get\+Draw\+Call\+Count}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Call\+Count()}{GetDrawCallCount()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Draw\+Call\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ドローコールの回数を取得する 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_af24ee0238724b207461d96add686e878}\label{class_effekseer_renderer_1_1_renderer_af24ee0238724b207461d96add686e878}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Draw\+Vertex\+Count@{Get\+Draw\+Vertex\+Count}}
+\index{Get\+Draw\+Vertex\+Count@{Get\+Draw\+Vertex\+Count}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Vertex\+Count()}{GetDrawVertexCount()}}
+{\footnotesize\ttfamily virtual int32\+\_\+t Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Draw\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画された頂点数をリセットする 
 
 \mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a1454194ae4005f7a9d5a66f4f56c4972}\label{class_effekseer_renderer_1_1_renderer_a1454194ae4005f7a9d5a66f4f56c4972}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Light\+Ambient\+Color@{Get\+Light\+Ambient\+Color}}
@@ -268,6 +326,16 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 投影行列を取得する。 
 
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a45fd7eb7a8796aeb67467511891a48fd}\label{class_effekseer_renderer_1_1_renderer_a45fd7eb7a8796aeb67467511891a48fd}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Render\+Mode@{Get\+Render\+Mode}}
+\index{Get\+Render\+Mode@{Get\+Render\+Mode}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Render\+Mode()}{GetRenderMode()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ad1b82893021dd8e3697e46c1aa544092}{Effekseer\+::\+Render\+Mode}} Effekseer\+Renderer\+::\+Renderer\+::\+Get\+Render\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画モードを取得する。 
+
 \mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_af30b6ab25e7c03a3f70656c954e8db09}\label{class_effekseer_renderer_1_1_renderer_af30b6ab25e7c03a3f70656c954e8db09}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Get\+Square\+Max\+Count@{Get\+Square\+Max\+Count}}
 \index{Get\+Square\+Max\+Count@{Get\+Square\+Max\+Count}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
@@ -298,6 +366,26 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 デバイスがリセットされた時に実行する。 
 
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_aef72f720dba854b9e28a7bae618564ed}\label{class_effekseer_renderer_1_1_renderer_aef72f720dba854b9e28a7bae618564ed}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Reset\+Draw\+Call\+Count@{Reset\+Draw\+Call\+Count}}
+\index{Reset\+Draw\+Call\+Count@{Reset\+Draw\+Call\+Count}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Reset\+Draw\+Call\+Count()}{ResetDrawCallCount()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Reset\+Draw\+Call\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+ドローコールの回数をリセットする 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a0aa2190291ec83c8b45b0dbd30b48a3a}\label{class_effekseer_renderer_1_1_renderer_a0aa2190291ec83c8b45b0dbd30b48a3a}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Reset\+Draw\+Vertex\+Count@{Reset\+Draw\+Vertex\+Count}}
+\index{Reset\+Draw\+Vertex\+Count@{Reset\+Draw\+Vertex\+Count}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Reset\+Draw\+Vertex\+Count()}{ResetDrawVertexCount()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Reset\+Draw\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画された頂点数をリセットする 
+
 \mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a229d0aca027c72e6736db487efbbddeb}\label{class_effekseer_renderer_1_1_renderer_a229d0aca027c72e6736db487efbbddeb}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Reset\+Render\+State@{Reset\+Render\+State}}
 \index{Reset\+Render\+State@{Reset\+Render\+State}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
@@ -318,6 +406,19 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 カメラ行列を設定する。 
 
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_aab9cecfcbbc9c3c0a968ce47704fc157}\label{class_effekseer_renderer_1_1_renderer_aab9cecfcbbc9c3c0a968ce47704fc157}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Camera\+Parameter@{Set\+Camera\+Parameter}}
+\index{Set\+Camera\+Parameter@{Set\+Camera\+Parameter}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Camera\+Parameter()}{SetCameraParameter()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Camera\+Parameter (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{front,  }\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set a front direction and position of camera manually 
+
+\begin{DoxyNote}{覚え書き}
+These are set based on camera matrix automatically. It is failed on some platform. 
+\end{DoxyNote}
 \mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a8806b5a83c5ea73e09662f4a0869f8f0}\label{class_effekseer_renderer_1_1_renderer_a8806b5a83c5ea73e09662f4a0869f8f0}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Distorting\+Callback@{Set\+Distorting\+Callback}}
 \index{Set\+Distorting\+Callback@{Set\+Distorting\+Callback}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
@@ -328,31 +429,31 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 背景を歪ませるエフェクトが描画される前に呼ばれるコールバックを設定する。 
 
-\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_aebc954d0b421ded11b7420361b987094}\label{class_effekseer_renderer_1_1_renderer_aebc954d0b421ded11b7420361b987094}} 
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a8c177a08c1765e8a02ba72fae7b33935}\label{class_effekseer_renderer_1_1_renderer_a8c177a08c1765e8a02ba72fae7b33935}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Light\+Ambient\+Color@{Set\+Light\+Ambient\+Color}}
 \index{Set\+Light\+Ambient\+Color@{Set\+Light\+Ambient\+Color}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Set\+Light\+Ambient\+Color()}{SetLightAmbientColor()}}
-{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Ambient\+Color (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Ambient\+Color (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 ライトの環境光の色を設定する。 
 
-\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a53268363d6c1ed36bd9119860d058808}\label{class_effekseer_renderer_1_1_renderer_a53268363d6c1ed36bd9119860d058808}} 
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a9ae2ce450679931644df1f603286835b}\label{class_effekseer_renderer_1_1_renderer_a9ae2ce450679931644df1f603286835b}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Light\+Color@{Set\+Light\+Color}}
 \index{Set\+Light\+Color@{Set\+Light\+Color}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Set\+Light\+Color()}{SetLightColor()}}
-{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Color (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Color (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_color}{Effekseer\+::\+Color}} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 ライトの色を設定する。 
 
-\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a28d4468e4a1ca40c585e7b6c88dd1849}\label{class_effekseer_renderer_1_1_renderer_a28d4468e4a1ca40c585e7b6c88dd1849}} 
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_a04a843a79d80bd1f7e31f43dc4c62fd6}\label{class_effekseer_renderer_1_1_renderer_a04a843a79d80bd1f7e31f43dc4c62fd6}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Light\+Direction@{Set\+Light\+Direction}}
 \index{Set\+Light\+Direction@{Set\+Light\+Direction}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
 \subsubsection{\texorpdfstring{Set\+Light\+Direction()}{SetLightDirection()}}
-{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Direction (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Light\+Direction (\begin{DoxyParamCaption}\item[{const \+::\mbox{\hyperlink{struct_effekseer_1_1_vector3_d}{Effekseer\+::\+Vector3D}} \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -367,6 +468,16 @@ virtual \mbox{\hyperlink{class_effekseer_renderer_1_1_renderer_ad85143b942b06b4f
 
 
 投影行列を設定する。 
+
+\mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_ab0805785cad223b4a79d2d16fcd9bec8}\label{class_effekseer_renderer_1_1_renderer_ab0805785cad223b4a79d2d16fcd9bec8}} 
+\index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Render\+Mode@{Set\+Render\+Mode}}
+\index{Set\+Render\+Mode@{Set\+Render\+Mode}!Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Render\+Mode()}{SetRenderMode()}}
+{\footnotesize\ttfamily virtual void Effekseer\+Renderer\+::\+Renderer\+::\+Set\+Render\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_effekseer_ad1b82893021dd8e3697e46c1aa544092}{Effekseer\+::\+Render\+Mode}}}]{render\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+描画モードを設定する。 
 
 \mbox{\Hypertarget{class_effekseer_renderer_1_1_renderer_ac6de8a0c0d65c03d3242ccfc9946c91c}\label{class_effekseer_renderer_1_1_renderer_ac6de8a0c0d65c03d3242ccfc9946c91c}} 
 \index{Effekseer\+Renderer\+::\+Renderer@{Effekseer\+Renderer\+::\+Renderer}!Set\+Restoration\+Of\+States\+Flag@{Set\+Restoration\+Of\+States\+Flag}}

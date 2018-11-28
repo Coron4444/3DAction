@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: CollisionManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_collision_manager.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="class_collision_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CollisionManager クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>衝突マネージャークラス  
+ <a href="class_collision_manager.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2c5770b90b7a46a5674df008a7a57145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a2c5770b90b7a46a5674df008a7a57145">Init</a> ()</td></tr>
+<tr class="memdesc:a2c5770b90b7a46a5674df008a7a57145"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#a2c5770b90b7a46a5674df008a7a57145">[詳解]</a><br /></td></tr>
+<tr class="separator:a2c5770b90b7a46a5674df008a7a57145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa4b87f3ce102f0d173e112e7963f09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#abfa4b87f3ce102f0d173e112e7963f09">Uninit</a> ()</td></tr>
+<tr class="memdesc:abfa4b87f3ce102f0d173e112e7963f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#abfa4b87f3ce102f0d173e112e7963f09">[詳解]</a><br /></td></tr>
+<tr class="separator:abfa4b87f3ce102f0d173e112e7963f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ce56b5a6f68d71b0f2bf733413dddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a33ce56b5a6f68d71b0f2bf733413dddb">UninitWhenChangeScene</a> ()</td></tr>
+<tr class="memdesc:a33ce56b5a6f68d71b0f2bf733413dddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン変更時の終了関数  <a href="#a33ce56b5a6f68d71b0f2bf733413dddb">[詳解]</a><br /></td></tr>
+<tr class="separator:a33ce56b5a6f68d71b0f2bf733413dddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c21d077dbfd7ca86e7c0649d775dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc">Update</a> ()</td></tr>
+<tr class="memdesc:a23c21d077dbfd7ca86e7c0649d775dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <a href="#a23c21d077dbfd7ca86e7c0649d775dfc">[詳解]</a><br /></td></tr>
+<tr class="separator:a23c21d077dbfd7ca86e7c0649d775dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42be7a26321110f5daaf1828da32f667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a42be7a26321110f5daaf1828da32f667">AddCollisionBaseToArray</a> (<a class="el" href="class_collision_base.html">CollisionBase</a> *collision)</td></tr>
+<tr class="memdesc:a42be7a26321110f5daaf1828da32f667"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突基底クラスの追加関数  <a href="#a42be7a26321110f5daaf1828da32f667">[詳解]</a><br /></td></tr>
+<tr class="separator:a42be7a26321110f5daaf1828da32f667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c2ce87e0189cdd1256c83decc64673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#af9c2ce87e0189cdd1256c83decc64673">OverwriteArrayCollisionBase</a> (<a class="el" href="class_game_object_base.html">GameObjectBase</a> *game_object, <a class="el" href="class_collision_base.html">CollisionBase</a> *new_collision)</td></tr>
+<tr class="memdesc:af9c2ce87e0189cdd1256c83decc64673"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突基底クラスの上書き関数  <a href="#af9c2ce87e0189cdd1256c83decc64673">[詳解]</a><br /></td></tr>
+<tr class="separator:af9c2ce87e0189cdd1256c83decc64673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34318163f4256cebc7aefb95fc475030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a34318163f4256cebc7aefb95fc475030">ReleaseCollisionBaseFromArray</a> (<a class="el" href="class_collision_base.html">CollisionBase</a> *collision)</td></tr>
+<tr class="memdesc:a34318163f4256cebc7aefb95fc475030"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突基底クラスの解放関数  <a href="#a34318163f4256cebc7aefb95fc475030">[詳解]</a><br /></td></tr>
+<tr class="separator:a34318163f4256cebc7aefb95fc475030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ce6003d8d042085d7b388a4cfa0666"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a63ce6003d8d042085d7b388a4cfa0666">SetGround</a> (<a class="el" href="class_mesh_plane_polygon.html">MeshPlanePolygon</a> *ground_polygon)</td></tr>
+<tr class="separator:a63ce6003d8d042085d7b388a4cfa0666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:addbc64e1fa0b01f3be07c897887f44ec"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a> = 10000</td></tr>
+<tr class="memdesc:addbc64e1fa0b01f3be07c897887f44ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列数  <a href="#addbc64e1fa0b01f3be07c897887f44ec">[詳解]</a><br /></td></tr>
+<tr class="separator:addbc64e1fa0b01f3be07c897887f44ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>衝突マネージャークラス </p>
+<p>登録されている衝突基底クラスを管理するクラス </p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a42be7a26321110f5daaf1828da32f667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42be7a26321110f5daaf1828da32f667">&#9670;&nbsp;</a></span>AddCollisionBaseToArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::AddCollisionBaseToArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collision_base.html">CollisionBase</a> *&#160;</td>
+          <td class="paramname"><em>collision</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>衝突基底クラスの追加関数 </p>
+
+</div>
+</div>
+<a id="a2c5770b90b7a46a5674df008a7a57145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5770b90b7a46a5674df008a7a57145">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化関数 </p>
+
+</div>
+</div>
+<a id="af9c2ce87e0189cdd1256c83decc64673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c2ce87e0189cdd1256c83decc64673">&#9670;&nbsp;</a></span>OverwriteArrayCollisionBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::OverwriteArrayCollisionBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_object_base.html">GameObjectBase</a> *&#160;</td>
+          <td class="paramname"><em>game_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collision_base.html">CollisionBase</a> *&#160;</td>
+          <td class="paramname"><em>new_collision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>衝突基底クラスの上書き関数 </p>
+
+</div>
+</div>
+<a id="a34318163f4256cebc7aefb95fc475030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34318163f4256cebc7aefb95fc475030">&#9670;&nbsp;</a></span>ReleaseCollisionBaseFromArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::ReleaseCollisionBaseFromArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collision_base.html">CollisionBase</a> *&#160;</td>
+          <td class="paramname"><em>collision</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>衝突基底クラスの解放関数 </p>
+
+</div>
+</div>
+<a id="a63ce6003d8d042085d7b388a4cfa0666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ce6003d8d042085d7b388a4cfa0666">&#9670;&nbsp;</a></span>SetGround()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::SetGround </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_mesh_plane_polygon.html">MeshPlanePolygon</a> *&#160;</td>
+          <td class="paramname"><em>ground_polygon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfa4b87f3ce102f0d173e112e7963f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa4b87f3ce102f0d173e112e7963f09">&#9670;&nbsp;</a></span>Uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::Uninit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>終了関数 </p>
+
+</div>
+</div>
+<a id="a33ce56b5a6f68d71b0f2bf733413dddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ce56b5a6f68d71b0f2bf733413dddb">&#9670;&nbsp;</a></span>UninitWhenChangeScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::UninitWhenChangeScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>シーン変更時の終了関数 </p>
+
+</div>
+</div>
+<a id="a23c21d077dbfd7ca86e7c0649d775dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c21d077dbfd7ca86e7c0649d775dfc">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新関数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="addbc64e1fa0b01f3be07c897887f44ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addbc64e1fa0b01f3be07c897887f44ec">&#9670;&nbsp;</a></span>ARRAY_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned CollisionManager::ARRAY_NUM = 10000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配列数 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/<a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/<a class="el" href="_collision_manager_8cpp.html">CollisionManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_collision_manager.html">CollisionManager</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

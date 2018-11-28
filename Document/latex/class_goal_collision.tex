@@ -1,0 +1,118 @@
+\hypertarget{class_goal_collision}{}\section{Goal\+Collision クラス}
+\label{class_goal_collision}\index{Goal\+Collision@{Goal\+Collision}}
+
+
+ゴール衝突クラス  
+
+
+
+
+{\ttfamily \#include $<$Goal\+Collision.\+h$>$}
+
+Goal\+Collision の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_goal_collision}
+\end{center}
+\end{figure}
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_goal_collision_a8d0d760973816d9086df90491f38ff62}{Object\+Tag}} \{ \mbox{\hyperlink{class_goal_collision_a8d0d760973816d9086df90491f38ff62ad664dba1ab9212a7a0c29f3d113f74ba}{N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_goal_collision_a8d0d760973816d9086df90491f38ff62ac2036d06505fcf67ddd968f97179789d}{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE}}, 
+\mbox{\hyperlink{class_goal_collision_a8d0d760973816d9086df90491f38ff62a99519b2786b3bc408ca13eda97606b81}{S\+U\+B\+S\+T\+A\+N\+CE}}, 
+\mbox{\hyperlink{class_goal_collision_a8d0d760973816d9086df90491f38ff62ac8b39f34903a130505e1c485f7667e07}{M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}{Init}} () override
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936}{Update}} () override
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ゴール衝突クラス 
+
+ゴールの衝突クラス 
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_goal_collision_a8d0d760973816d9086df90491f38ff62}\label{class_goal_collision_a8d0d760973816d9086df90491f38ff62}} 
+\index{Goal\+Collision@{Goal\+Collision}!Object\+Tag@{Object\+Tag}}
+\index{Object\+Tag@{Object\+Tag}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{Object\+Tag}{ObjectTag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_goal_collision_a8d0d760973816d9086df90491f38ff62}{Goal\+Collision\+::\+Object\+Tag}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Goal\+Collision@{Goal\+Collision}}\index{Goal\+Collision@{Goal\+Collision}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{class_goal_collision_a8d0d760973816d9086df90491f38ff62ad664dba1ab9212a7a0c29f3d113f74ba}\label{class_goal_collision_a8d0d760973816d9086df90491f38ff62ad664dba1ab9212a7a0c29f3d113f74ba}} 
+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE}!Goal\+Collision@{Goal\+Collision}}\index{Goal\+Collision@{Goal\+Collision}!B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE}}}\mbox{\Hypertarget{class_goal_collision_a8d0d760973816d9086df90491f38ff62ac2036d06505fcf67ddd968f97179789d}\label{class_goal_collision_a8d0d760973816d9086df90491f38ff62ac2036d06505fcf67ddd968f97179789d}} 
+B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+U\+B\+S\+T\+A\+N\+CE@{S\+U\+B\+S\+T\+A\+N\+CE}!Goal\+Collision@{Goal\+Collision}}\index{Goal\+Collision@{Goal\+Collision}!S\+U\+B\+S\+T\+A\+N\+CE@{S\+U\+B\+S\+T\+A\+N\+CE}}}\mbox{\Hypertarget{class_goal_collision_a8d0d760973816d9086df90491f38ff62a99519b2786b3bc408ca13eda97606b81}\label{class_goal_collision_a8d0d760973816d9086df90491f38ff62a99519b2786b3bc408ca13eda97606b81}} 
+S\+U\+B\+S\+T\+A\+N\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+AX@{M\+AX}!Goal\+Collision@{Goal\+Collision}}\index{Goal\+Collision@{Goal\+Collision}!M\+AX@{M\+AX}}}\mbox{\Hypertarget{class_goal_collision_a8d0d760973816d9086df90491f38ff62ac8b39f34903a130505e1c485f7667e07}\label{class_goal_collision_a8d0d760973816d9086df90491f38ff62ac8b39f34903a130505e1c485f7667e07}} 
+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}\label{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}} 
+\index{Goal\+Collision@{Goal\+Collision}!Init@{Init}}
+\index{Init@{Init}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Goal\+Collision\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348}\label{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348}} 
+\index{Goal\+Collision@{Goal\+Collision}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Goal\+Collision\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Collision\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936}\label{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936}} 
+\index{Goal\+Collision@{Goal\+Collision}!Update@{Update}}
+\index{Update@{Update}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Goal\+Collision\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+更新関数 
+
+
+
+\mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Collision\+Null}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Goal/\+Goal\+Collision/\mbox{\hyperlink{_goal_collision_8h}{Goal\+Collision.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Goal/\+Goal\+Collision/\mbox{\hyperlink{_goal_collision_8cpp}{Goal\+Collision.\+cpp}}\end{DoxyCompactItemize}

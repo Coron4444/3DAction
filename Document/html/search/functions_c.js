@@ -23,7 +23,7 @@ var searchData=
   ['modelloader',['ModelLoader',['../class_effekseer_1_1_model_loader.html#afc540fe063379c6412134edfa893c65e',1,'Effekseer::ModelLoader']]],
   ['modelrenderer',['ModelRenderer',['../class_effekseer_1_1_model_renderer.html#a38117b38a7c94c9f49ff750f0818b09c',1,'Effekseer::ModelRenderer']]],
   ['modelxobject',['ModelXObject',['../class_model_x_object.html#a83bd334b1f24a69c4cbdcaa62464ff31',1,'ModelXObject']]],
-  ['mul',['Mul',['../struct_effekseer_1_1_color.html#a1f8aa17da0c0d56ca8938eeb9fa9f3e0',1,'Effekseer::Color::Mul()'],['../struct_effekseer_1_1_matrix44.html#ab0200013341b97e62273a5085ee67448',1,'Effekseer::Matrix44::Mul()']]],
+  ['mul',['Mul',['../struct_effekseer_1_1_color.html#a58cd8ceb0f235e9d1251be18ef208ead',1,'Effekseer::Color::Mul(Color in1, Color in2)'],['../struct_effekseer_1_1_color.html#a350c4dc2e0b0c35207c53fcc047376c3',1,'Effekseer::Color::Mul(Color in1, float in2)'],['../struct_effekseer_1_1_matrix44.html#ab0200013341b97e62273a5085ee67448',1,'Effekseer::Matrix44::Mul()']]],
   ['multiple',['Multiple',['../struct_effekseer_1_1_matrix43.html#accff4bf845b1bfec3f6d8fb7e3e60516',1,'Effekseer::Matrix43']]],
   ['multiplicationparentmatrix',['MultiplicationParentMatrix',['../class_matrix_extend.html#a1847728feb977bd7ccdf1987953fe203',1,'MatrixExtend']]]
 ];

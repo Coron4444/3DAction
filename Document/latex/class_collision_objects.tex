@@ -1,0 +1,159 @@
+\hypertarget{class_collision_objects}{}\section{Collision\+Objects クラス}
+\label{class_collision_objects}\index{Collision\+Objects@{Collision\+Objects}}
+
+
+複数衝突オブジェクトクラス  
+
+
+
+
+{\ttfamily \#include $<$Collision\+Objects.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_collision_objects_a50d6593f98cd04e23ad7ea9102eccc3c}{Add\+Collision\+Object\+To\+Array}} (\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em 衝突オブジェクト追加関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_objects_aed8d6903485ae775d8bbff511796a653}{Overwrite\+Array\+Collision\+Object}} (\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$old\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$new\+\_\+object)
+\begin{DoxyCompactList}\small\item\em 衝突オブジェクト上書き関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_objects_a38bfe55a93549c90d416c0d1d560932b}{Release\+Collision\+Object\+From\+Array}} (\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em 衝突オブジェクト解放関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_objects_a2efe32f283fe9b2a30ff8d1e370f152d}{Release\+All\+Collision\+Object\+From\+Array}} ()
+\begin{DoxyCompactList}\small\item\em 衝突オブジェクト全解放関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_objects_a01ffe9567540a819f19cd66f96981b47}{Reset\+Hit\+Data\+All\+Collision\+Object}} ()
+\begin{DoxyCompactList}\small\item\em 全ての衝突用データのリセット関数 \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_collision_objects_a309eef4695b4a19f389eaf5d0753c256}{get\+End\+Index\+Of\+Array}} ()
+\item 
+\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$ \mbox{\hyperlink{class_collision_objects_a4f5c029b20a7ed4c7fdee815f73d20be}{get\+Collision\+Object}} (unsigned index)
+\item 
+\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$ \mbox{\hyperlink{class_collision_objects_af95769194fff92babcf411c2262c9d10}{get\+Collision\+Base}} ()
+\item 
+void \mbox{\hyperlink{class_collision_objects_a144f0c9160c0dda1579c26a0726fdbb6}{set\+Collision\+Base}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$value)
+\item 
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_collision_objects_a344311b0c469e591a112eb1d6b0247cb}{get\+Object\+Of\+Tree}} ()
+\item 
+void \mbox{\hyperlink{class_collision_objects_a3d5a69741d66dcdebfae5a54a15c4b88}{set\+Object\+Of\+Tree}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$$>$ $\ast$value)
+\item 
+\mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} $\ast$ \mbox{\hyperlink{class_collision_objects_aee138e1c28f7f3dcbdce56181d59b628}{get\+Octree\+A\+A\+BB}} ()
+\item 
+bool \mbox{\hyperlink{class_collision_objects_a1320a57aae5798c04e65b2b7c8433aae}{get\+Is\+Judgment}} ()
+\item 
+void \mbox{\hyperlink{class_collision_objects_a61e67c1c0ea20a01d9e4a5b2d1b45428}{set\+Is\+Judgment}} (bool value)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+複数衝突オブジェクトクラス 
+
+複数の衝突オブジェクトを管理するクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_objects_a50d6593f98cd04e23ad7ea9102eccc3c}\label{class_collision_objects_a50d6593f98cd04e23ad7ea9102eccc3c}} 
+\index{Collision\+Objects@{Collision\+Objects}!Add\+Collision\+Object\+To\+Array@{Add\+Collision\+Object\+To\+Array}}
+\index{Add\+Collision\+Object\+To\+Array@{Add\+Collision\+Object\+To\+Array}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{Add\+Collision\+Object\+To\+Array()}{AddCollisionObjectToArray()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::\+Add\+Collision\+Object\+To\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+衝突オブジェクト追加関数 
+
+\mbox{\Hypertarget{class_collision_objects_af95769194fff92babcf411c2262c9d10}\label{class_collision_objects_af95769194fff92babcf411c2262c9d10}} 
+\index{Collision\+Objects@{Collision\+Objects}!get\+Collision\+Base@{get\+Collision\+Base}}
+\index{get\+Collision\+Base@{get\+Collision\+Base}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{get\+Collision\+Base()}{getCollisionBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_base}{Collision\+Base}}$\ast$ Collision\+Objects\+::get\+Collision\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_a4f5c029b20a7ed4c7fdee815f73d20be}\label{class_collision_objects_a4f5c029b20a7ed4c7fdee815f73d20be}} 
+\index{Collision\+Objects@{Collision\+Objects}!get\+Collision\+Object@{get\+Collision\+Object}}
+\index{get\+Collision\+Object@{get\+Collision\+Object}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{get\+Collision\+Object()}{getCollisionObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_object}{Collision\+Object}}$\ast$ Collision\+Objects\+::get\+Collision\+Object (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_a309eef4695b4a19f389eaf5d0753c256}\label{class_collision_objects_a309eef4695b4a19f389eaf5d0753c256}} 
+\index{Collision\+Objects@{Collision\+Objects}!get\+End\+Index\+Of\+Array@{get\+End\+Index\+Of\+Array}}
+\index{get\+End\+Index\+Of\+Array@{get\+End\+Index\+Of\+Array}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{get\+End\+Index\+Of\+Array()}{getEndIndexOfArray()}}
+{\footnotesize\ttfamily unsigned Collision\+Objects\+::get\+End\+Index\+Of\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_a1320a57aae5798c04e65b2b7c8433aae}\label{class_collision_objects_a1320a57aae5798c04e65b2b7c8433aae}} 
+\index{Collision\+Objects@{Collision\+Objects}!get\+Is\+Judgment@{get\+Is\+Judgment}}
+\index{get\+Is\+Judgment@{get\+Is\+Judgment}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{get\+Is\+Judgment()}{getIsJudgment()}}
+{\footnotesize\ttfamily bool Collision\+Objects\+::get\+Is\+Judgment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_a344311b0c469e591a112eb1d6b0247cb}\label{class_collision_objects_a344311b0c469e591a112eb1d6b0247cb}} 
+\index{Collision\+Objects@{Collision\+Objects}!get\+Object\+Of\+Tree@{get\+Object\+Of\+Tree}}
+\index{get\+Object\+Of\+Tree@{get\+Object\+Of\+Tree}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{get\+Object\+Of\+Tree()}{getObjectOfTree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}}$\ast$$>$$\ast$ Collision\+Objects\+::get\+Object\+Of\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_aee138e1c28f7f3dcbdce56181d59b628}\label{class_collision_objects_aee138e1c28f7f3dcbdce56181d59b628}} 
+\index{Collision\+Objects@{Collision\+Objects}!get\+Octree\+A\+A\+BB@{get\+Octree\+A\+A\+BB}}
+\index{get\+Octree\+A\+A\+BB@{get\+Octree\+A\+A\+BB}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{get\+Octree\+A\+A\+B\+B()}{getOctreeAABB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}}$\ast$ Collision\+Objects\+::get\+Octree\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_aed8d6903485ae775d8bbff511796a653}\label{class_collision_objects_aed8d6903485ae775d8bbff511796a653}} 
+\index{Collision\+Objects@{Collision\+Objects}!Overwrite\+Array\+Collision\+Object@{Overwrite\+Array\+Collision\+Object}}
+\index{Overwrite\+Array\+Collision\+Object@{Overwrite\+Array\+Collision\+Object}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{Overwrite\+Array\+Collision\+Object()}{OverwriteArrayCollisionObject()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::\+Overwrite\+Array\+Collision\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{old\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{new\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+衝突オブジェクト上書き関数 
+
+\mbox{\Hypertarget{class_collision_objects_a2efe32f283fe9b2a30ff8d1e370f152d}\label{class_collision_objects_a2efe32f283fe9b2a30ff8d1e370f152d}} 
+\index{Collision\+Objects@{Collision\+Objects}!Release\+All\+Collision\+Object\+From\+Array@{Release\+All\+Collision\+Object\+From\+Array}}
+\index{Release\+All\+Collision\+Object\+From\+Array@{Release\+All\+Collision\+Object\+From\+Array}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{Release\+All\+Collision\+Object\+From\+Array()}{ReleaseAllCollisionObjectFromArray()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::\+Release\+All\+Collision\+Object\+From\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+衝突オブジェクト全解放関数 
+
+\mbox{\Hypertarget{class_collision_objects_a38bfe55a93549c90d416c0d1d560932b}\label{class_collision_objects_a38bfe55a93549c90d416c0d1d560932b}} 
+\index{Collision\+Objects@{Collision\+Objects}!Release\+Collision\+Object\+From\+Array@{Release\+Collision\+Object\+From\+Array}}
+\index{Release\+Collision\+Object\+From\+Array@{Release\+Collision\+Object\+From\+Array}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{Release\+Collision\+Object\+From\+Array()}{ReleaseCollisionObjectFromArray()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::\+Release\+Collision\+Object\+From\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+衝突オブジェクト解放関数 
+
+\mbox{\Hypertarget{class_collision_objects_a01ffe9567540a819f19cd66f96981b47}\label{class_collision_objects_a01ffe9567540a819f19cd66f96981b47}} 
+\index{Collision\+Objects@{Collision\+Objects}!Reset\+Hit\+Data\+All\+Collision\+Object@{Reset\+Hit\+Data\+All\+Collision\+Object}}
+\index{Reset\+Hit\+Data\+All\+Collision\+Object@{Reset\+Hit\+Data\+All\+Collision\+Object}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{Reset\+Hit\+Data\+All\+Collision\+Object()}{ResetHitDataAllCollisionObject()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::\+Reset\+Hit\+Data\+All\+Collision\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+全ての衝突用データのリセット関数 
+
+\mbox{\Hypertarget{class_collision_objects_a144f0c9160c0dda1579c26a0726fdbb6}\label{class_collision_objects_a144f0c9160c0dda1579c26a0726fdbb6}} 
+\index{Collision\+Objects@{Collision\+Objects}!set\+Collision\+Base@{set\+Collision\+Base}}
+\index{set\+Collision\+Base@{set\+Collision\+Base}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{set\+Collision\+Base()}{setCollisionBase()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::set\+Collision\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_a61e67c1c0ea20a01d9e4a5b2d1b45428}\label{class_collision_objects_a61e67c1c0ea20a01d9e4a5b2d1b45428}} 
+\index{Collision\+Objects@{Collision\+Objects}!set\+Is\+Judgment@{set\+Is\+Judgment}}
+\index{set\+Is\+Judgment@{set\+Is\+Judgment}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{set\+Is\+Judgment()}{setIsJudgment()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::set\+Is\+Judgment (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_objects_a3d5a69741d66dcdebfae5a54a15c4b88}\label{class_collision_objects_a3d5a69741d66dcdebfae5a54a15c4b88}} 
+\index{Collision\+Objects@{Collision\+Objects}!set\+Object\+Of\+Tree@{set\+Object\+Of\+Tree}}
+\index{set\+Object\+Of\+Tree@{set\+Object\+Of\+Tree}!Collision\+Objects@{Collision\+Objects}}
+\subsubsection{\texorpdfstring{set\+Object\+Of\+Tree()}{setObjectOfTree()}}
+{\footnotesize\ttfamily void Collision\+Objects\+::set\+Object\+Of\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$$>$ $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Objects/\mbox{\hyperlink{_collision_objects_8h}{Collision\+Objects.\+h}}\end{DoxyCompactItemize}

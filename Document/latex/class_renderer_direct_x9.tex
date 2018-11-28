@@ -23,18 +23,38 @@ struct \mbox{\hyperlink{struct_renderer_direct_x9_1_1_v_e_r_t_e_x__3_d}{V\+E\+R\
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height)
+bool \mbox{\hyperlink{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height) override
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}{Uninit}} ()
+void \mbox{\hyperlink{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}{Uninit}} () override
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}{Draw\+Begin}} ()
+bool \mbox{\hyperlink{class_renderer_direct_x9_a5113bf4e6aefdb7bcab2016fbbee0174}{Draw\+Begin}} () override
 \begin{DoxyCompactList}\small\item\em 描画開始関数 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene)
+void \mbox{\hyperlink{class_renderer_direct_x9_a5f934597020f77dc9cf729acfb13a830}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene) override
 \begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a77dbc76e8adbe4f9ee41c5f09e5ebe81}{Present}} () override
+\begin{DoxyCompactList}\small\item\em バックバッファをフロントバッファに反映関数 \end{DoxyCompactList}\item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D9 \mbox{\hyperlink{class_renderer_direct_x9_afa6521fe3ae4d5697687197cf5bf3c66}{Get\+Interface}} ()
 \begin{DoxyCompactList}\small\item\em インターフェース取得関数 \end{DoxyCompactList}\item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 \mbox{\hyperlink{class_renderer_direct_x9_a718458c1493c7d6814e01847e2e4164d}{Get\+Device}} ()
-\begin{DoxyCompactList}\small\item\em デバイス取得関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em デバイス取得関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_aa555dda63bdc0f4dfc28ac506d6e8d60}{Use\+Alpha\+Blending}} (bool flag)
+\begin{DoxyCompactList}\small\item\em アルファ合成フラグ関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_abfb5264cbb0bf3bacc7b4ec416ddc05a}{Set\+Alpha\+Blending\+\_\+\+Linear}} ()
+\begin{DoxyCompactList}\small\item\em アルファ合成関数(線形合成) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_aa552107a3d5f8a61347fe10741fd04a3}{Set\+Alpha\+Blending\+\_\+\+Add}} ()
+\begin{DoxyCompactList}\small\item\em アルファ合成関数(加算合成) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a6ddbb9f801ef6b2c86ec5cd4e97b317b}{Set\+Alpha\+Blending\+\_\+\+Sub}} ()
+\begin{DoxyCompactList}\small\item\em アルファ合成関数(減算合成) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a75dbeaa680610e655c6ff202591f50d7}{Set\+Alpha\+Blending\+\_\+\+Mul}} ()
+\begin{DoxyCompactList}\small\item\em アルファ合成関数(乗算合成) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a083f55d941075227189769fd9807ffd1}{Set\+Alpha\+Blending\+\_\+\+Baking}} ()
+\begin{DoxyCompactList}\small\item\em アルファ合成関数(焼きこみ合成) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a5018efa829bf845405ac70beef7df947}{Set\+Alpha\+Blending\+\_\+\+Nega}} ()
+\begin{DoxyCompactList}\small\item\em アルファ合成関数(ネガポジ反転合成) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a789206ba211e9cbffe0bfe4c7dfb7457}{Set\+Alpha\+Blending\+\_\+\+Opacity}} ()
+\begin{DoxyCompactList}\small\item\em アルファ合成関数(不透明合成) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_direct_x9_a229cd266427d96486c43d2e63300e438}{Set\+Default\+Sampler\+State}} ()
+\begin{DoxyCompactList}\small\item\em デフォルトサンプラーステート設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{静的公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,11 +68,11 @@ static const D\+W\+O\+RD \mbox{\hyperlink{class_renderer_direct_x9_a80ce0089b013
 Direct\+X9用レンダラークラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}\label{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}} 
+\mbox{\Hypertarget{class_renderer_direct_x9_a5113bf4e6aefdb7bcab2016fbbee0174}\label{class_renderer_direct_x9_a5113bf4e6aefdb7bcab2016fbbee0174}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Draw\+Begin@{Draw\+Begin}}
 \index{Draw\+Begin@{Draw\+Begin}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
 \subsubsection{\texorpdfstring{Draw\+Begin()}{DrawBegin()}}
-{\footnotesize\ttfamily bool Renderer\+Direct\+X9\+::\+Draw\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Renderer\+Direct\+X9\+::\+Draw\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -62,11 +82,11 @@ Direct\+X9用レンダラークラス
 
 \mbox{\hyperlink{class_renderer_interface_a86a487deb4e4207a67410d00ec670fd7}{Renderer\+Interface}}を実装しています。
 
-\mbox{\Hypertarget{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}\label{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}} 
+\mbox{\Hypertarget{class_renderer_direct_x9_a5f934597020f77dc9cf729acfb13a830}\label{class_renderer_direct_x9_a5f934597020f77dc9cf729acfb13a830}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Draw\+End@{Draw\+End}}
 \index{Draw\+End@{Draw\+End}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
 \subsubsection{\texorpdfstring{Draw\+End()}{DrawEnd()}}
-{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Draw\+End (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+begin\+\_\+scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Draw\+End (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+begin\+\_\+scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -101,11 +121,11 @@ Direct\+X9用レンダラークラス
 
 インターフェース取得関数 
 
-\mbox{\Hypertarget{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}\label{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}} 
+\mbox{\Hypertarget{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}\label{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Init@{Init}}
 \index{Init@{Init}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily bool Renderer\+Direct\+X9\+::\+Init (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd,  }\item[{B\+O\+OL}]{is\+\_\+full\+\_\+screen,  }\item[{int}]{window\+\_\+width,  }\item[{int}]{window\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Renderer\+Direct\+X9\+::\+Init (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd,  }\item[{B\+O\+OL}]{is\+\_\+full\+\_\+screen,  }\item[{int}]{window\+\_\+width,  }\item[{int}]{window\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -120,11 +140,105 @@ Direct\+X9用レンダラークラス
 
 \mbox{\hyperlink{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}{Renderer\+Interface}}を実装しています。
 
-\mbox{\Hypertarget{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}\label{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}} 
+\mbox{\Hypertarget{class_renderer_direct_x9_a77dbc76e8adbe4f9ee41c5f09e5ebe81}\label{class_renderer_direct_x9_a77dbc76e8adbe4f9ee41c5f09e5ebe81}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Present@{Present}}
+\index{Present@{Present}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Present()}{Present()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+バックバッファをフロントバッファに反映関数 
+
+
+
+\mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc7806b6f1}{Renderer\+Interface}}を実装しています。
+
+\mbox{\Hypertarget{class_renderer_direct_x9_aa552107a3d5f8a61347fe10741fd04a3}\label{class_renderer_direct_x9_aa552107a3d5f8a61347fe10741fd04a3}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Add@{Set\+Alpha\+Blending\+\_\+\+Add}}
+\index{Set\+Alpha\+Blending\+\_\+\+Add@{Set\+Alpha\+Blending\+\_\+\+Add}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Alpha\+Blending\+\_\+\+Add()}{SetAlphaBlending\_Add()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Alpha\+Blending\+\_\+\+Add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+アルファ合成関数(加算合成) 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a083f55d941075227189769fd9807ffd1}\label{class_renderer_direct_x9_a083f55d941075227189769fd9807ffd1}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Baking@{Set\+Alpha\+Blending\+\_\+\+Baking}}
+\index{Set\+Alpha\+Blending\+\_\+\+Baking@{Set\+Alpha\+Blending\+\_\+\+Baking}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Alpha\+Blending\+\_\+\+Baking()}{SetAlphaBlending\_Baking()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Alpha\+Blending\+\_\+\+Baking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+アルファ合成関数(焼きこみ合成) 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_abfb5264cbb0bf3bacc7b4ec416ddc05a}\label{class_renderer_direct_x9_abfb5264cbb0bf3bacc7b4ec416ddc05a}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Linear@{Set\+Alpha\+Blending\+\_\+\+Linear}}
+\index{Set\+Alpha\+Blending\+\_\+\+Linear@{Set\+Alpha\+Blending\+\_\+\+Linear}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Alpha\+Blending\+\_\+\+Linear()}{SetAlphaBlending\_Linear()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Alpha\+Blending\+\_\+\+Linear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+アルファ合成関数(線形合成) 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a75dbeaa680610e655c6ff202591f50d7}\label{class_renderer_direct_x9_a75dbeaa680610e655c6ff202591f50d7}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Mul@{Set\+Alpha\+Blending\+\_\+\+Mul}}
+\index{Set\+Alpha\+Blending\+\_\+\+Mul@{Set\+Alpha\+Blending\+\_\+\+Mul}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Alpha\+Blending\+\_\+\+Mul()}{SetAlphaBlending\_Mul()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Alpha\+Blending\+\_\+\+Mul (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+アルファ合成関数(乗算合成) 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a5018efa829bf845405ac70beef7df947}\label{class_renderer_direct_x9_a5018efa829bf845405ac70beef7df947}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Nega@{Set\+Alpha\+Blending\+\_\+\+Nega}}
+\index{Set\+Alpha\+Blending\+\_\+\+Nega@{Set\+Alpha\+Blending\+\_\+\+Nega}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Alpha\+Blending\+\_\+\+Nega()}{SetAlphaBlending\_Nega()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Alpha\+Blending\+\_\+\+Nega (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+アルファ合成関数(ネガポジ反転合成) 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a789206ba211e9cbffe0bfe4c7dfb7457}\label{class_renderer_direct_x9_a789206ba211e9cbffe0bfe4c7dfb7457}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Opacity@{Set\+Alpha\+Blending\+\_\+\+Opacity}}
+\index{Set\+Alpha\+Blending\+\_\+\+Opacity@{Set\+Alpha\+Blending\+\_\+\+Opacity}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Alpha\+Blending\+\_\+\+Opacity()}{SetAlphaBlending\_Opacity()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Alpha\+Blending\+\_\+\+Opacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+アルファ合成関数(不透明合成) 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a6ddbb9f801ef6b2c86ec5cd4e97b317b}\label{class_renderer_direct_x9_a6ddbb9f801ef6b2c86ec5cd4e97b317b}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Sub@{Set\+Alpha\+Blending\+\_\+\+Sub}}
+\index{Set\+Alpha\+Blending\+\_\+\+Sub@{Set\+Alpha\+Blending\+\_\+\+Sub}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Alpha\+Blending\+\_\+\+Sub()}{SetAlphaBlending\_Sub()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Alpha\+Blending\+\_\+\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+アルファ合成関数(減算合成) 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_a229cd266427d96486c43d2e63300e438}\label{class_renderer_direct_x9_a229cd266427d96486c43d2e63300e438}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Default\+Sampler\+State@{Set\+Default\+Sampler\+State}}
+\index{Set\+Default\+Sampler\+State@{Set\+Default\+Sampler\+State}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Set\+Default\+Sampler\+State()}{SetDefaultSamplerState()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Set\+Default\+Sampler\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デフォルトサンプラーステート設定関数 
+
+\mbox{\Hypertarget{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}\label{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
 \subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
-{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -133,6 +247,16 @@ Direct\+X9用レンダラークラス
 
 
 \mbox{\hyperlink{class_renderer_interface_ada105489f9db98e7e9542b278699d558}{Renderer\+Interface}}を実装しています。
+
+\mbox{\Hypertarget{class_renderer_direct_x9_aa555dda63bdc0f4dfc28ac506d6e8d60}\label{class_renderer_direct_x9_aa555dda63bdc0f4dfc28ac506d6e8d60}} 
+\index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Use\+Alpha\+Blending@{Use\+Alpha\+Blending}}
+\index{Use\+Alpha\+Blending@{Use\+Alpha\+Blending}!Renderer\+Direct\+X9@{Renderer\+Direct\+X9}}
+\subsubsection{\texorpdfstring{Use\+Alpha\+Blending()}{UseAlphaBlending()}}
+{\footnotesize\ttfamily void Renderer\+Direct\+X9\+::\+Use\+Alpha\+Blending (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+アルファ合成フラグ関数 
 
 
 

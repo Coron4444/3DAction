@@ -13,12 +13,12 @@ Player の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_player_aec4f49cae0911b3e2cfe02a84e2dc98e}{Init}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$collision\+\_\+component, \mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$game\+\_\+scene)
+void \mbox{\hyperlink{class_player_a171167a4b1a6dddbe94b8f3c6f7462c4}{Init}} (\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$update, \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision, \mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$game\+\_\+scene)
 \item 
 void \mbox{\hyperlink{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,11 +28,11 @@ void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} ()
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_player_aec4f49cae0911b3e2cfe02a84e2dc98e}\label{class_player_aec4f49cae0911b3e2cfe02a84e2dc98e}} 
+\mbox{\Hypertarget{class_player_a171167a4b1a6dddbe94b8f3c6f7462c4}\label{class_player_a171167a4b1a6dddbe94b8f3c6f7462c4}} 
 \index{Player@{Player}!Init@{Init}}
 \index{Init@{Init}!Player@{Player}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Player\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{collision\+\_\+component,  }\item[{\mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$}]{game\+\_\+scene }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Player\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision,  }\item[{\mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$}]{game\+\_\+scene }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_player_a457153d0edd58932e37e1356f5fe5fed}\label{class_player_a457153d0edd58932e37e1356f5fe5fed}} 
 \index{Player@{Player}!Reset@{Reset}}
@@ -42,7 +42,11 @@ void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} ()
 
 
 
-\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c}\label{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c}} 
 \index{Player@{Player}!Uninit@{Uninit}}
@@ -52,7 +56,11 @@ void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} ()
 
 
 
-\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
 
 
 

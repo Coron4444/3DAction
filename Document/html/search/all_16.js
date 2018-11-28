@@ -1,7 +1,6 @@
 var searchData=
 [
   ['w',['w',['../struct_im_vec4.html#afeed5acd9f0d2043175f4da229d12a38',1,'ImVec4::w()'],['../structstbrp__rect.html#a248d43f1eb979c1e7b92ba6df431dec5',1,'stbrp_rect::w()'],['../structstbtt____bitmap.html#afbd607426f0a457b1a871ed902eeb926',1,'stbtt__bitmap::w()']]],
-  ['wait',['Wait',['../class_effekseer_1_1_thread.html#a1a5806df4d7bdd6dc0a0e25986f75d78',1,'Effekseer::Thread']]],
   ['wantcapturekeyboard',['WantCaptureKeyboard',['../struct_im_gui_i_o.html#a458e4ca98d896adb16e3a41ec6d2b811',1,'ImGuiIO']]],
   ['wantcapturekeyboardnextframe',['WantCaptureKeyboardNextFrame',['../struct_im_gui_context.html#a0372056c72eac8b3e6de06c404caa5b3',1,'ImGuiContext']]],
   ['wantcapturemouse',['WantCaptureMouse',['../struct_im_gui_i_o.html#af5b8add76c5d833a65df19b5456acd7e',1,'ImGuiIO']]],
@@ -24,6 +23,7 @@ var searchData=
   ['windowssortbuffer',['WindowsSortBuffer',['../struct_im_gui_context.html#af33de778de28b057fa7a42e4cbe0017a',1,'ImGuiContext']]],
   ['windowtitlealign',['WindowTitleAlign',['../struct_im_gui_style.html#a3fc57a15ab8f206045f1e5dfccd8b2e7',1,'ImGuiStyle']]],
   ['winmain',['WinMain',['../main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9',1,'main.cpp']]],
+  ['wireframe',['Wireframe',['../namespace_effekseer.html#ad1b82893021dd8e3697e46c1aa544092a33e42d0f3b166a4c405127e4412fbef2',1,'Effekseer']]],
   ['wndproc',['WndProc',['../main_8cpp.html#ae749e989b362e19783c7af4a2bf46c95',1,'main.cpp']]],
   ['world_5fmatrix_5f',['world_matrix_',['../class_effect_file.html#a95cfdd66e61e80e39238d5f889488a43',1,'EffectFile']]],
   ['wraptype',['WrapType',['../struct_effekseer_1_1_effect_basic_render_parameter.html#a6dd892388b41cdca1d9a2a1925e121ba',1,'Effekseer::EffectBasicRenderParameter']]],

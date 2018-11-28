@@ -7,34 +7,38 @@
 Player\+Update の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_player_update}
+\includegraphics[height=4.000000cm]{class_player_update}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}{Init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_update_a997e0813a825d7525da4b5b89a290168}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_update_af6e1b8ca60399f232e64d2acb4968c75}{Update}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_update_ae376f517f3458edfef61ac366aa78e36}{Late\+Update}} () override
-\item 
-void \mbox{\hyperlink{class_player_update_a37e2d025997e1b60d6a02658b00dd503}{Debug}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 後更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}{Debug\+Display}} () override
+\begin{DoxyCompactList}\small\item\em デバッグ表示関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_player_update_a37e2d025997e1b60d6a02658b00dd503}\label{class_player_update_a37e2d025997e1b60d6a02658b00dd503}} 
-\index{Player\+Update@{Player\+Update}!Debug@{Debug}}
-\index{Debug@{Debug}!Player\+Update@{Player\+Update}}
-\subsubsection{\texorpdfstring{Debug()}{Debug()}}
-{\footnotesize\ttfamily void Player\+Update\+::\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}\label{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}} 
+\index{Player\+Update@{Player\+Update}!Debug\+Display@{Debug\+Display}}
+\index{Debug\+Display@{Debug\+Display}!Player\+Update@{Player\+Update}}
+\subsubsection{\texorpdfstring{Debug\+Display()}{DebugDisplay()}}
+{\footnotesize\ttfamily void Player\+Update\+::\+Debug\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_update_component_a636b21061765a1101600c3ad70fadeac}{Update\+Component}}を再実装しています。
+デバッグ表示関数 
+
+
+
+\mbox{\hyperlink{class_update_null_a77aee1e614cf6dafe4f9af58b2205e4b}{Update\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}\label{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}} 
 \index{Player\+Update@{Player\+Update}!Init@{Init}}
@@ -44,7 +48,11 @@ void \mbox{\hyperlink{class_player_update_a37e2d025997e1b60d6a02658b00dd503}{Deb
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_player_update_ae376f517f3458edfef61ac366aa78e36}\label{class_player_update_ae376f517f3458edfef61ac366aa78e36}} 
 \index{Player\+Update@{Player\+Update}!Late\+Update@{Late\+Update}}
@@ -54,7 +62,11 @@ void \mbox{\hyperlink{class_player_update_a37e2d025997e1b60d6a02658b00dd503}{Deb
 
 
 
-\mbox{\hyperlink{class_update_component_aecc61593be4d1feff2db4d9ff1f83f9f}{Update\+Component}}を実装しています。
+後更新関数 
+
+
+
+\mbox{\hyperlink{class_update_null_ac68da1ba7f3fbcae833442bb1c169200}{Update\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_update_a997e0813a825d7525da4b5b89a290168}\label{class_player_update_a997e0813a825d7525da4b5b89a290168}} 
 \index{Player\+Update@{Player\+Update}!Uninit@{Uninit}}
@@ -64,7 +76,11 @@ void \mbox{\hyperlink{class_player_update_a37e2d025997e1b60d6a02658b00dd503}{Deb
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_component_base_a9f42beaf0383d6f629819579cab4de57}{Component\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_player_update_af6e1b8ca60399f232e64d2acb4968c75}\label{class_player_update_af6e1b8ca60399f232e64d2acb4968c75}} 
 \index{Player\+Update@{Player\+Update}!Update@{Update}}
@@ -74,7 +90,11 @@ void \mbox{\hyperlink{class_player_update_a37e2d025997e1b60d6a02658b00dd503}{Deb
 
 
 
-\mbox{\hyperlink{class_update_component_ade313ad8bf19a81e7d098aa830d9f01b}{Update\+Component}}を実装しています。
+更新関数 
+
+
+
+\mbox{\hyperlink{class_update_null_a692f4f34e4ef35ca286a1d3606fdf473}{Update\+Null}}を再実装しています。
 
 
 

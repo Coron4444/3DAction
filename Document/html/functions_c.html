@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: クラスメンバ</title>
+<title>3DAction: クラスメンバ</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -117,12 +117,6 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>CalcWordWrapPositionA()
 : <a class="el" href="struct_im_font.html#a3781bb82a1ceba919cb6c98a398c7a67">ImFont</a>
 </li>
-<li>Camera()
-: <a class="el" href="class_camera.html#ab0a4101da05afaa3355df78e43006c33">Camera</a>
-</li>
-<li>CAMERA_ARRAY_NUM
-: <a class="el" href="class_draw_component_manager.html#a27a861d3f771a93d85e872d8f205391e">DrawComponentManager</a>
-</li>
 <li>CameraState_CrawlUp()
 : <a class="el" href="class_camera_state___crawl_up.html#a75741967576f6f544007ad8ccc574202">CameraState_CrawlUp</a>
 </li>
@@ -135,6 +129,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>Capsule()
 : <a class="el" href="class_capsule.html#aeef9aff581e55f6b091854c3ca9a8a8d">Capsule</a>
 </li>
+<li>CAPSULE
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba2cae7484589db3e777b158aeae2a633b">CollisionShapeBase</a>
+</li>
 <li>CenterColor
 : <a class="el" href="struct_effekseer_1_1_ring_renderer_1_1_instance_parameter.html#a09f1fa6d5c759274a99f7989d91ac247">Effekseer::RingRenderer::InstanceParameter</a>
 </li>
@@ -146,9 +143,6 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>CHANGE_SCENE
 : <a class="el" href="class_scene_manager.html#a68d32794fe1ce945c6a6c380c11a08eba221613d2f5fb26ba3c9af4597df566fe">SceneManager</a>
-</li>
-<li>ChangeCameraState()
-: <a class="el" href="class_draw_component_manager.html#a78418e0716eadc2fad6288b555461e1d">DrawComponentManager</a>
 </li>
 <li>ChangeDevice()
 : <a class="el" href="class_effekseer_renderer_d_x9_1_1_renderer.html#a08f6d85779736243059040d86c573df8">EffekseerRendererDX9::Renderer</a>
@@ -183,6 +177,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>CheckAny()
 : <a class="el" href="class_flag.html#a3efc58733cf4aae0ff1ab0752aa4c702">Flag</a>
+</li>
+<li>CheckDeleteObject()
+: <a class="el" href="class_space_of_tree.html#a746aef6b3bafdde17daa5125cc9bc43c">SpaceOfTree&lt; Type &gt;</a>
 </li>
 <li>CheckInnerPoint()
 : <a class="el" href="class_triangle.html#ac5d6a4c5f2bfda5cdc56c89a294fb46e">Triangle</a>
@@ -266,10 +263,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="struct_im_font_glyph.html#a3ff56d019068137a3df514caa3961421">ImFontGlyph</a>
 </li>
 <li>COIN
-: <a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6af5c676cd6f121bf0c269221b9746fbf2">CollisionComponent</a>
-</li>
-<li>CoinCollision()
-: <a class="el" href="class_coin_collision.html#a30288ed12410957ccf72f26da10de856">CoinCollision</a>
+: <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365aeda009ba3599abbdb45a16ecaaf075e5">CollisionBase</a>
 </li>
 <li>col
 : <a class="el" href="struct_c_u_s_t_o_m_v_e_r_t_e_x.html#a89194164a47349e936f21e10bb29f26a">CUSTOMVERTEX</a>
@@ -282,17 +276,14 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="struct_im_gui_ini_data.html#a299660ea0cab78a8cbefa02314c8cf47">ImGuiIniData</a>
 , <a class="el" href="struct_im_gui_window.html#a04e6b533b2401d1c7e78b47e31538e7b">ImGuiWindow</a>
 </li>
-<li>CollisionComponent()
-: <a class="el" href="class_collision_component.html#a11e15f7ce88bce8edff23a4d9d46b395">CollisionComponent</a>
-</li>
 <li>CollisionObject()
-: <a class="el" href="class_collision_object.html#aab884f4103bb369b503f5e937c7c2451">CollisionObject</a>
+: <a class="el" href="class_collision_object.html#a6f502c16aaae1dc1470107a930f28808">CollisionObject</a>
 </li>
-<li>CollisionShapeOrigin()
-: <a class="el" href="class_collision_shape_origin.html#a185eecc964a8372f373937c22fa22b82">CollisionShapeOrigin</a>
+<li>CollisionShapeBase()
+: <a class="el" href="class_collision_shape_base.html#a9dd2ab42e2a6e96c6bff832ce8ca62b9">CollisionShapeBase</a>
 </li>
 <li>Color()
-: <a class="el" href="struct_effekseer_1_1_color.html#a4d4083a195447aba952703b663e7619a">Effekseer::Color</a>
+: <a class="el" href="struct_effekseer_1_1_color.html#add67be00fd9bb85ad4f3bb9f6a1b755f">Effekseer::Color</a>
 , <a class="el" href="structmfmlib_1_1_material.html#a620cca0ff3e33693e771d703704a6086">mfmlib::Material</a>
 </li>
 <li>color_
@@ -326,7 +317,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="struct_effekseer_1_1_track_renderer_1_1_instance_parameter.html#a2b2a8d82514dde16ea95aa92a7533d1a">Effekseer::TrackRenderer::InstanceParameter</a>
 </li>
 <li>Colors
-: <a class="el" href="struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter.html#a1f1096580cd8dcc15461d1a07bf011d6">Effekseer::RibbonRenderer::InstanceParameter</a>
+: <a class="el" href="struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter.html#a4af0c70d517d18d09821b4dc04debbe5">Effekseer::RibbonRenderer::InstanceParameter</a>
 , <a class="el" href="struct_effekseer_1_1_sprite_renderer_1_1_instance_parameter.html#ae745017c89a18992eecfcc14c4f5f763">Effekseer::SpriteRenderer::InstanceParameter</a>
 , <a class="el" href="struct_im_gui_style.html#a2b4941240a38d1300c39a7fa4f03d0a3">ImGuiStyle</a>
 </li>
@@ -380,6 +371,15 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>Commands
 : <a class="el" href="struct_example_app_console.html#a1eebee69cceb0345cf9d9b6e6beb9d03">ExampleAppConsole</a>
 </li>
+<li>CommonSetting()
+: <a class="el" href="class_pixel_shader_bump_mapping.html#af62a2b40930533a3bae17319f876705d">PixelShaderBumpMapping</a>
+, <a class="el" href="class_pixel_shader_null.html#a99c712ab174da29ba26a893820b64799">PixelShaderNull</a>
+, <a class="el" href="class_shader_base.html#aef6fa922223d71fbec81464ebbfaf687">ShaderBase</a>
+, <a class="el" href="class_shader_manager.html#a6cfff8f4aee59d9bc5162a5a6f4d07d4">ShaderManager</a>
+, <a class="el" href="class_vertex_shader_bump_mapping.html#a7979584d035fff86d386c99617a8dd2c">VertexShaderBumpMapping</a>
+, <a class="el" href="class_vertex_shader_fixed.html#a82bf2829b6fd0df26faedcbf650ba08d">VertexShaderFixed</a>
+, <a class="el" href="class_vertex_shader_null.html#a95f1a66045fb39c42cf0566f1990b6a1">VertexShaderNull</a>
+</li>
 <li>ConfigData
 : <a class="el" href="struct_im_font.html#afa4eb6cfb979ffa120e9795f328623a1">ImFont</a>
 , <a class="el" href="struct_im_font_atlas.html#afa4f7459807763d032fe2d0022fc0823">ImFontAtlas</a>
@@ -405,9 +405,6 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>Count
 : <a class="el" href="struct_im_gui_simple_columns.html#ac5fdbd35f74c31992c95fc4b759e9c2f">ImGuiSimpleColumns</a>
 </li>
-<li>count_
-: <a class="el" href="class_tutorial_scene.html#a8db8cdfb7bf91dbab3353cfb54593bf9">TutorialScene</a>
-</li>
 <li>CountGrep
 : <a class="el" href="struct_im_gui_text_filter.html#ac31839c319fe4211c21fc143b7249f86">ImGuiTextFilter</a>
 </li>
@@ -420,12 +417,12 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="class_effekseer_1_1_manager.html#a1de74a159f3646d325f49e940e72181c">Effekseer::Manager</a>
 , <a class="el" href="class_effekseer_1_1_server.html#a010be3e29a3551b3f2bf058b593c3eb0">Effekseer::Server</a>
 , <a class="el" href="class_effekseer_1_1_setting.html#ad31867188a9aab5bcc292e70e4d636de">Effekseer::Setting</a>
-, <a class="el" href="class_effekseer_1_1_thread.html#af30613ba2b4e0f929fb70e71f820b394">Effekseer::Thread</a>
 , <a class="el" href="class_effekseer_renderer_d_x9_1_1_renderer.html#aadd9f57a16e8291dccd27d2e1c03edc4">EffekseerRendererDX9::Renderer</a>
 , <a class="el" href="class_effekseer_sound_1_1_sound.html#a529131b733c88f728949919a3b23c3e6">EffekseerSound::Sound</a>
 , <a class="el" href="class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a">EnemyFactory</a>
 , <a class="el" href="class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3">FailureLogoFactory</a>
 , <a class="el" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125">FieldFactory</a>
+, <a class="el" href="class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e">GoalFactory</a>
 , <a class="el" href="class_number_factory.html#aace5458332c982b3f12265abaf5a3308">NumberFactory</a>
 , <a class="el" href="class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77">NumbersFactory</a>
 , <a class="el" href="class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba">PlayerFactory</a>
@@ -434,18 +431,15 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="class_renderer_factory_direct_x9.html#aa64ac54f3efe121f531a28dd3b7690e3">RendererFactoryDirectX9</a>
 , <a class="el" href="class_score_factory.html#a1c3047d657151d5bbda8157a743b154d">ScoreFactory</a>
 , <a class="el" href="class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683">SkyDomeFactory</a>
+, <a class="el" href="class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2">StencilShadowTestFactory</a>
 , <a class="el" href="class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150">TitleLogoFactory</a>
-, <a class="el" href="class_tutorial_logo01_factory.html#af38857ea9d9f5c98faeba64291e02f89">TutorialLogo01Factory</a>
-, <a class="el" href="class_tutorial_logo02_factory.html#a24fdf8b5500a67badf1758009d09569b">TutorialLogo02Factory</a>
+, <a class="el" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8">TutorialLogoFactory</a>
 </li>
 <li>CreateCullingWorld()
 : <a class="el" href="class_effekseer_1_1_manager.html#a38e954ce0e584f2830d90b5d7763614b">Effekseer::Manager</a>
 </li>
 <li>CreateD()
 : <a class="el" href="class_quadratic_equation.html#a52f73bed0b665bcf3ab827630b999762">QuadraticEquation</a>
-</li>
-<li>CreateDefaultCamera()
-: <a class="el" href="class_draw_component_manager.html#a9885f2a3209de695f7e22223ea381a6e">DrawComponentManager</a>
 </li>
 <li>CreateDisposableEffekseerObject()
 : <a class="el" href="class_effekseer_array.html#a8c86aa79851ef86f253c13765f708383">EffekseerArray</a>
@@ -464,11 +458,13 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808">Vector3D</a>
 </li>
 <li>CreatePhysics()
-: <a class="el" href="class_game_object_origin.html#ad0b1dff8bffb44125214d60201572041">GameObjectOrigin</a>
+: <a class="el" href="class_game_object_base.html#adf7df49baa04363c63f9515317776e40">GameObjectBase</a>
 </li>
 <li>CreateProjectionMatrix()
-: <a class="el" href="class_camera.html#a3d34f1630680d8a8f719121c874a0830">Camera</a>
-, <a class="el" href="class_effekseer_manager.html#ae4faa1c46f9b4a372559567748df2384">EffekseerManager</a>
+: <a class="el" href="class_effekseer_manager.html#ae4faa1c46f9b4a372559567748df2384">EffekseerManager</a>
+</li>
+<li>CreateProjectionMatrix_2D()
+: <a class="el" href="class_camera.html#aaae8043a952b7675d209bdc9b80bcc3f">Camera</a>
 </li>
 <li>CreateProjectionMatrix_Ortho()
 : <a class="el" href="class_camera.html#a215010fc78cb35ed588ac9676c166f64">Camera</a>
@@ -506,9 +502,6 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>CreateViewMatrix()
 : <a class="el" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a">Camera</a>
 , <a class="el" href="class_effekseer_manager.html#ad36867f996af58d4b788a17cf25244a7">EffekseerManager</a>
-</li>
-<li>CriticalSection()
-: <a class="el" href="class_effekseer_1_1_critical_section.html#af7533c8d9a5b396951abc4ea8bc036a6">Effekseer::CriticalSection</a>
 </li>
 <li>Cross()
 : <a class="el" href="struct_effekseer_1_1_vector3_d.html#a6af90fb7357d8ab977fd647f3bfd5c52">Effekseer::Vector3D</a>
@@ -603,6 +596,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>cy1
 : <a class="el" href="structstbtt__vertex.html#a68227d28643f5667064fa3c385f4ea7d">stbtt_vertex</a>
+</li>
+<li>CYLINDER
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba92f81388af31f36357b692f2aead2f19">CollisionShapeBase</a>
 </li>
 <li>Cylinder()
 : <a class="el" href="class_cylinder.html#a642d2ea21539b8a35ed8c79f36615f6f">Cylinder</a>

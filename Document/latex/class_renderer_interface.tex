@@ -27,7 +27,9 @@ virtual void \mbox{\hyperlink{class_renderer_interface_ada105489f9db98e7e9542b27
 virtual bool \mbox{\hyperlink{class_renderer_interface_a86a487deb4e4207a67410d00ec670fd7}{Draw\+Begin}} ()=0
 \begin{DoxyCompactList}\small\item\em 描画開始関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene)=0
-\begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc7806b6f1}{Present}} ()=0
+\begin{DoxyCompactList}\small\item\em バックバッファをフロントバッファに反映関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -61,7 +63,7 @@ virtual void \mbox{\hyperlink{class_renderer_interface_a0034a44420e4746062e70e4d
 
 
 
-\mbox{\hyperlink{class_renderer_direct_x9_a61fc7dc142c3d54f83152fc3bb259ff4}{Renderer\+Direct\+X9}}で実装されています。
+\mbox{\hyperlink{class_renderer_direct_x9_a5113bf4e6aefdb7bcab2016fbbee0174}{Renderer\+Direct\+X9}}で実装されています。
 
 \mbox{\Hypertarget{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}\label{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!Draw\+End@{Draw\+End}}
@@ -80,7 +82,7 @@ virtual void \mbox{\hyperlink{class_renderer_interface_a0034a44420e4746062e70e4d
 \end{DoxyParams}
 
 
-\mbox{\hyperlink{class_renderer_direct_x9_a8a29b6e70fa8b2f55a12c11143184ce1}{Renderer\+Direct\+X9}}で実装されています。
+\mbox{\hyperlink{class_renderer_direct_x9_a5f934597020f77dc9cf729acfb13a830}{Renderer\+Direct\+X9}}で実装されています。
 
 \mbox{\Hypertarget{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}\label{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!Init@{Init}}
@@ -99,7 +101,21 @@ virtual void \mbox{\hyperlink{class_renderer_interface_a0034a44420e4746062e70e4d
 \end{DoxyParams}
 
 
-\mbox{\hyperlink{class_renderer_direct_x9_a28da461025c48770a360b8d399a8414f}{Renderer\+Direct\+X9}}で実装されています。
+\mbox{\hyperlink{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}{Renderer\+Direct\+X9}}で実装されています。
+
+\mbox{\Hypertarget{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc7806b6f1}\label{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc7806b6f1}} 
+\index{Renderer\+Interface@{Renderer\+Interface}!Present@{Present}}
+\index{Present@{Present}!Renderer\+Interface@{Renderer\+Interface}}
+\subsubsection{\texorpdfstring{Present()}{Present()}}
+{\footnotesize\ttfamily virtual void Renderer\+Interface\+::\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+バックバッファをフロントバッファに反映関数 
+
+
+
+\mbox{\hyperlink{class_renderer_direct_x9_a77dbc76e8adbe4f9ee41c5f09e5ebe81}{Renderer\+Direct\+X9}}で実装されています。
 
 \mbox{\Hypertarget{class_renderer_interface_ada105489f9db98e7e9542b278699d558}\label{class_renderer_interface_ada105489f9db98e7e9542b278699d558}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!Uninit@{Uninit}}
@@ -113,7 +129,7 @@ virtual void \mbox{\hyperlink{class_renderer_interface_a0034a44420e4746062e70e4d
 
 
 
-\mbox{\hyperlink{class_renderer_direct_x9_a61c375254fc0a827873fb4c72181f0d5}{Renderer\+Direct\+X9}}で実装されています。
+\mbox{\hyperlink{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}{Renderer\+Direct\+X9}}で実装されています。
 
 
 

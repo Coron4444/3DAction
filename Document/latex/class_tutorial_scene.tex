@@ -18,12 +18,11 @@ Tutorial\+Scene の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_tutorial_scene_ad4cae04d2651e485f7f7233f4fd810a7}{Tutorial\+Scene}} (\mbox{\hyperlink{class_scene_bace_1_1_state_abstract}{State\+Abstract}} $\ast$state)
-\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{公開変数類}
-\begin{DoxyCompactItemize}
+\mbox{\hyperlink{class_tutorial_scene_ad4cae04d2651e485f7f7233f4fd810a7}{Tutorial\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ \mbox{\hyperlink{class_tutorial_scene_a7879e29d0af5f7bfbe3b458b4f14d50c}{Get\+Tutorial\+Logo}} ()
 \item 
-int \mbox{\hyperlink{class_tutorial_scene_a8db8cdfb7bf91dbab3353cfb54593bf9}{count\+\_\+}}
+void \mbox{\hyperlink{class_tutorial_scene_a2157d0e553c71b46699765df4a164739}{Set\+Tutorial\+Logo}} (\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$value)
 \end{DoxyCompactItemize}
 
 
@@ -37,7 +36,7 @@ int \mbox{\hyperlink{class_tutorial_scene_a8db8cdfb7bf91dbab3353cfb54593bf9}{cou
 \index{Tutorial\+Scene@{Tutorial\+Scene}!Tutorial\+Scene@{Tutorial\+Scene}}
 \index{Tutorial\+Scene@{Tutorial\+Scene}!Tutorial\+Scene@{Tutorial\+Scene}}
 \subsubsection{\texorpdfstring{Tutorial\+Scene()}{TutorialScene()}}
-{\footnotesize\ttfamily Tutorial\+Scene\+::\+Tutorial\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_bace_1_1_state_abstract}{State\+Abstract}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Tutorial\+Scene\+::\+Tutorial\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -50,12 +49,18 @@ int \mbox{\hyperlink{class_tutorial_scene_a8db8cdfb7bf91dbab3353cfb54593bf9}{cou
 \end{DoxyParams}
 
 
-\subsection{メンバ詳解}
-\mbox{\Hypertarget{class_tutorial_scene_a8db8cdfb7bf91dbab3353cfb54593bf9}\label{class_tutorial_scene_a8db8cdfb7bf91dbab3353cfb54593bf9}} 
-\index{Tutorial\+Scene@{Tutorial\+Scene}!count\+\_\+@{count\+\_\+}}
-\index{count\+\_\+@{count\+\_\+}!Tutorial\+Scene@{Tutorial\+Scene}}
-\subsubsection{\texorpdfstring{count\+\_\+}{count\_}}
-{\footnotesize\ttfamily int Tutorial\+Scene\+::count\+\_\+}
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_tutorial_scene_a7879e29d0af5f7bfbe3b458b4f14d50c}\label{class_tutorial_scene_a7879e29d0af5f7bfbe3b458b4f14d50c}} 
+\index{Tutorial\+Scene@{Tutorial\+Scene}!Get\+Tutorial\+Logo@{Get\+Tutorial\+Logo}}
+\index{Get\+Tutorial\+Logo@{Get\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
+\subsubsection{\texorpdfstring{Get\+Tutorial\+Logo()}{GetTutorialLogo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}}$\ast$ Tutorial\+Scene\+::\+Get\+Tutorial\+Logo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tutorial_scene_a2157d0e553c71b46699765df4a164739}\label{class_tutorial_scene_a2157d0e553c71b46699765df4a164739}} 
+\index{Tutorial\+Scene@{Tutorial\+Scene}!Set\+Tutorial\+Logo@{Set\+Tutorial\+Logo}}
+\index{Set\+Tutorial\+Logo@{Set\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
+\subsubsection{\texorpdfstring{Set\+Tutorial\+Logo()}{SetTutorialLogo()}}
+{\footnotesize\ttfamily void Tutorial\+Scene\+::\+Set\+Tutorial\+Logo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

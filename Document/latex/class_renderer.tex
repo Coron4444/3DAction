@@ -32,8 +32,12 @@ bool \mbox{\hyperlink{class_renderer_af420951c9c163f1151bd6600df204cee}{Draw\+Be
 \begin{DoxyCompactList}\small\item\em 描画開始関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_renderer_a0393849bd4178a33861780bf07b0deee}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene)
 \begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_a1dac4baae1fa79166442b0778a9c8728}{Present}} ()
+\begin{DoxyCompactList}\small\item\em バックバッファをフロントバッファに反映関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_renderer_a249147991a8187a3d373fd6bd43e8c54}{Set\+Renderer}} (\mbox{\hyperlink{class_renderer_factory}{Renderer\+Factory}} $\ast$factory, \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}} mode)
 \begin{DoxyCompactList}\small\item\em レンダラー設定関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}} $\ast$ \mbox{\hyperlink{class_renderer_a4ee43ba8d87142ff334ae7016cae9050}{Get\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em レンダラー取得関数 \end{DoxyCompactList}\item 
 {\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_a15585698849fcba4722ac0f00b8b62e6}{Get\+Interface}} (Type $\ast$$\ast$pointer)
 \begin{DoxyCompactList}\small\item\em インターフェース取得関数 \end{DoxyCompactList}\item 
 {\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_a6610c3a85a8170141c4584cecf4a6d15}{Get\+Device}} (Type $\ast$$\ast$pointer)
@@ -137,6 +141,16 @@ void Renderer\+::\+Get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\a
 
 インターフェース取得関数 
 
+\mbox{\Hypertarget{class_renderer_a4ee43ba8d87142ff334ae7016cae9050}\label{class_renderer_a4ee43ba8d87142ff334ae7016cae9050}} 
+\index{Renderer@{Renderer}!Get\+Renderer@{Get\+Renderer}}
+\index{Get\+Renderer@{Get\+Renderer}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Get\+Renderer()}{GetRenderer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}}$\ast$ Renderer\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+レンダラー取得関数 
+
 \mbox{\Hypertarget{class_renderer_a8d576add80187f5be3f24ec6a8108100}\label{class_renderer_a8d576add80187f5be3f24ec6a8108100}} 
 \index{Renderer@{Renderer}!Init@{Init}}
 \index{Init@{Init}!Renderer@{Renderer}}
@@ -152,6 +166,16 @@ void Renderer\+::\+Get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\a
 {\em h\+Instance} & \+: インスタンスハンドル h\+Wnd \+: Windowsハンドル is\+\_\+full\+\_\+screen \+: フルスクリーンフラグ window\+\_\+width \+: Window幅 window\+\_\+height \+: Window高さ \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_renderer_a1dac4baae1fa79166442b0778a9c8728}\label{class_renderer_a1dac4baae1fa79166442b0778a9c8728}} 
+\index{Renderer@{Renderer}!Present@{Present}}
+\index{Present@{Present}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{Present()}{Present()}}
+{\footnotesize\ttfamily void Renderer\+::\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+バックバッファをフロントバッファに反映関数 
+
 \mbox{\Hypertarget{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}\label{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}} 
 \index{Renderer@{Renderer}!Release\+Instance@{Release\+Instance}}
 \index{Release\+Instance@{Release\+Instance}!Renderer@{Renderer}}

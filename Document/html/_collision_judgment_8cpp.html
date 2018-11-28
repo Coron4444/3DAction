@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionComponentManager/CollisionJudgment/CollisionJudgment.cpp ファイル</title>
+<title>3DAction: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/CollisionJudgment/CollisionJudgment.cpp ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -92,21 +92,21 @@ $(document).ready(function(){initNavTree('_collision_judgment_8cpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_collision_judgment_8h_source.html">CollisionJudgment.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_a_a_b_b_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/AABB/AABB.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_capsule_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/Capsule/Capsule.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_cylinder_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/Cylinder/Cylinder.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_o_b_b_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/OBB/OBB.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_plane_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/Plane/Plane.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_segment_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/Segment/Segment.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_sphere_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/Sphere/Sphere.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_triangle_8h_source.html">../../../Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/Triangle/Triangle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_a_a_b_b_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/AABB/AABB.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_capsule_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Capsule/Capsule.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_cylinder_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Cylinder/Cylinder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_o_b_b_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/OBB/OBB.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_plane_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Plane/Plane.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_segment_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Segment/Segment.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sphere_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Sphere/Sphere.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_triangle_8h_source.html">../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Triangle/Triangle.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="_quadratic_equation_8h_source.html">QuadraticEquation\QuadraticEquation.h</a>&gt;</code><br />
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_976dc2bd85357175aa42d597a4624b41.html">ComponentManager</a></li><li class="navelem"><a class="el" href="dir_04cbb0cf63928c4a1f95d967a003af93.html">CollisionComponentManager</a></li><li class="navelem"><a class="el" href="dir_c603f557d287fa8edaf1b0f6bf718f25.html">CollisionJudgment</a></li><li class="navelem"><a class="el" href="_collision_judgment_8cpp.html">CollisionJudgment.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_976dc2bd85357175aa42d597a4624b41.html">ComponentManager</a></li><li class="navelem"><a class="el" href="dir_b5cfa7c785b58f79292a442edc0796cd.html">CollisionManager</a></li><li class="navelem"><a class="el" href="dir_e712f9e5b372517d909f470a8ff3c9ef.html">CollisionJudgment</a></li><li class="navelem"><a class="el" href="_collision_judgment_8cpp.html">CollisionJudgment.cpp</a></li>
     <li class="footer">構築:
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>

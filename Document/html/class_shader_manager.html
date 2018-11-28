@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: ShaderManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_shader_manager.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_shader_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ShaderManager クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>シェーダーマネージャークラス  
+ <a href="class_shader_manager.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_shader_manager_8h_source.html">ShaderManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a9b51e49d70eb3cc58f6d1f3994e8cfbd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">VertexShaderType</a> { <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbdaf0212c589f47f880608c317e6fcbdfab">VERTEX_NONE</a> = -1, 
+<a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbda66ffcf3d89e817f5cad6b8f8eda5fd71">VERTEX_FIXED</a>, 
+<a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbda6ecdb0c0fcd8c61e0c0d494a99e3a8d8">VERTEX_BUMP_MAPPING</a>, 
+<a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940">VERTEX_MAX</a>
+ }</td></tr>
+<tr class="separator:a9b51e49d70eb3cc58f6d1f3994e8cfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d15d773b3c6a99dd7086c45c8b0be5f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">PixelShaderType</a> { <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa73495baa0c47ac751cce0e3385fa80dd">PIXEL_NONE</a> = -1, 
+<a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa1c9cf819d7e5efbe184309a4702824f1">PIXEL_FIXED</a>, 
+<a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa3acd691a58d74a2ab3430e644c6ef0da">PIXEL_BUMP_MAPPING</a>, 
+<a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e">PIXEL_MAX</a>
+ }</td></tr>
+<tr class="separator:a7d15d773b3c6a99dd7086c45c8b0be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8e8fd62a28cc18addcd5ec6507a5dcb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_manager.html#a8e8fd62a28cc18addcd5ec6507a5dcb0">Init</a> ()</td></tr>
+<tr class="memdesc:a8e8fd62a28cc18addcd5ec6507a5dcb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#a8e8fd62a28cc18addcd5ec6507a5dcb0">[詳解]</a><br /></td></tr>
+<tr class="separator:a8e8fd62a28cc18addcd5ec6507a5dcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc31a6bbe86e6b57edd7be0972f48ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_manager.html#afc31a6bbe86e6b57edd7be0972f48ab1">Uninit</a> ()</td></tr>
+<tr class="memdesc:afc31a6bbe86e6b57edd7be0972f48ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#afc31a6bbe86e6b57edd7be0972f48ab1">[詳解]</a><br /></td></tr>
+<tr class="separator:afc31a6bbe86e6b57edd7be0972f48ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2caed4ae50c1ca784151d0f9e50c381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_manager.html#ad2caed4ae50c1ca784151d0f9e50c381">SetShader</a> (<a class="el" href="class_draw_base.html">DrawBase</a> *draw, <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">VertexShaderType</a> forced_vertex_type, <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">PixelShaderType</a> forced_pixel_type)</td></tr>
+<tr class="memdesc:ad2caed4ae50c1ca784151d0f9e50c381"><td class="mdescLeft">&#160;</td><td class="mdescRight">シェーダー設定関数  <a href="#ad2caed4ae50c1ca784151d0f9e50c381">[詳解]</a><br /></td></tr>
+<tr class="separator:ad2caed4ae50c1ca784151d0f9e50c381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfff8f4aee59d9bc5162a5a6f4d07d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_manager.html#a6cfff8f4aee59d9bc5162a5a6f4d07d4">CommonSetting</a> (<a class="el" href="class_draw_base.html">DrawBase</a> *draw, <a class="el" href="class_camera.html">Camera</a> *camera, <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">VertexShaderType</a> forced_vertex_type, <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">PixelShaderType</a> forced_pixel_type, unsigned object_index)</td></tr>
+<tr class="memdesc:a6cfff8f4aee59d9bc5162a5a6f4d07d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">共通設定関数  <a href="#a6cfff8f4aee59d9bc5162a5a6f4d07d4">[詳解]</a><br /></td></tr>
+<tr class="separator:a6cfff8f4aee59d9bc5162a5a6f4d07d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af016392b9b0477d49165d753e9404ff4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_manager.html#af016392b9b0477d49165d753e9404ff4">SpecificSetting</a> (<a class="el" href="class_draw_base.html">DrawBase</a> *draw, <a class="el" href="class_camera.html">Camera</a> *camera, <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">VertexShaderType</a> forced_vertex_type, <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">PixelShaderType</a> forced_pixel_type, unsigned object_index, unsigned mesh_index)</td></tr>
+<tr class="memdesc:af016392b9b0477d49165d753e9404ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">固有設定関数  <a href="#af016392b9b0477d49165d753e9404ff4">[詳解]</a><br /></td></tr>
+<tr class="separator:af016392b9b0477d49165d753e9404ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>シェーダーマネージャークラス </p>
+<p>シェーダーを管理するクラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a7d15d773b3c6a99dd7086c45c8b0be5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d15d773b3c6a99dd7086c45c8b0be5f">&#9670;&nbsp;</a></span>PixelShaderType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">ShaderManager::PixelShaderType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a7d15d773b3c6a99dd7086c45c8b0be5fa73495baa0c47ac751cce0e3385fa80dd"></a>PIXEL_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7d15d773b3c6a99dd7086c45c8b0be5fa1c9cf819d7e5efbe184309a4702824f1"></a>PIXEL_FIXED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7d15d773b3c6a99dd7086c45c8b0be5fa3acd691a58d74a2ab3430e644c6ef0da"></a>PIXEL_BUMP_MAPPING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e"></a>PIXEL_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9b51e49d70eb3cc58f6d1f3994e8cfbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b51e49d70eb3cc58f6d1f3994e8cfbd">&#9670;&nbsp;</a></span>VertexShaderType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">ShaderManager::VertexShaderType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a9b51e49d70eb3cc58f6d1f3994e8cfbdaf0212c589f47f880608c317e6fcbdfab"></a>VERTEX_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b51e49d70eb3cc58f6d1f3994e8cfbda66ffcf3d89e817f5cad6b8f8eda5fd71"></a>VERTEX_FIXED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b51e49d70eb3cc58f6d1f3994e8cfbda6ecdb0c0fcd8c61e0c0d494a99e3a8d8"></a>VERTEX_BUMP_MAPPING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940"></a>VERTEX_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a6cfff8f4aee59d9bc5162a5a6f4d07d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cfff8f4aee59d9bc5162a5a6f4d07d4">&#9670;&nbsp;</a></span>CommonSetting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShaderManager::CommonSetting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_draw_base.html">DrawBase</a> *&#160;</td>
+          <td class="paramname"><em>draw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_camera.html">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">VertexShaderType</a>&#160;</td>
+          <td class="paramname"><em>forced_vertex_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">PixelShaderType</a>&#160;</td>
+          <td class="paramname"><em>forced_pixel_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>object_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>共通設定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">draw</td><td>: 描画基底クラス camera : カメラ forced_vertex_type : 強制頂点シェーダータイプ forced_pixel_type : 強制ピクセルシェーダータイプ object_index : 描画オブジェクトインデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e8fd62a28cc18addcd5ec6507a5dcb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8fd62a28cc18addcd5ec6507a5dcb0">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShaderManager::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化関数 </p>
+
+</div>
+</div>
+<a id="ad2caed4ae50c1ca784151d0f9e50c381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2caed4ae50c1ca784151d0f9e50c381">&#9670;&nbsp;</a></span>SetShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShaderManager::SetShader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_draw_base.html">DrawBase</a> *&#160;</td>
+          <td class="paramname"><em>draw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">VertexShaderType</a>&#160;</td>
+          <td class="paramname"><em>forced_vertex_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">PixelShaderType</a>&#160;</td>
+          <td class="paramname"><em>forced_pixel_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>シェーダー設定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">draw</td><td>: 描画基底クラス forced_vertex_type : 強制頂点シェーダータイプ forced_pixel_type : 強制ピクセルシェーダータイプ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af016392b9b0477d49165d753e9404ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af016392b9b0477d49165d753e9404ff4">&#9670;&nbsp;</a></span>SpecificSetting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShaderManager::SpecificSetting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_draw_base.html">DrawBase</a> *&#160;</td>
+          <td class="paramname"><em>draw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_camera.html">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">VertexShaderType</a>&#160;</td>
+          <td class="paramname"><em>forced_vertex_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">PixelShaderType</a>&#160;</td>
+          <td class="paramname"><em>forced_pixel_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>object_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>mesh_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>固有設定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">draw</td><td>: 描画基底クラス camera : カメラ forced_vertex_type : 強制頂点シェーダータイプ forced_pixel_type : 強制ピクセルシェーダータイプ object_index : 描画オブジェクトインデックス mesh_index : メッシュインデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afc31a6bbe86e6b57edd7be0972f48ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc31a6bbe86e6b57edd7be0972f48ab1">&#9670;&nbsp;</a></span>Uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShaderManager::Uninit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>終了関数 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/ShaderManager/<a class="el" href="_shader_manager_8h_source.html">ShaderManager.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/ShaderManager/<a class="el" href="_shader_manager_8cpp.html">ShaderManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_shader_manager.html">ShaderManager</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

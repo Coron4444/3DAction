@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: Camera クラス</title>
+<title>3DAction: Camera クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -98,37 +98,56 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>カメラクラス  
+ <a href="class_camera.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="_camera_8h_source.html">Camera.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_state.html">State</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラステートクラス  <a href="class_camera_1_1_state.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 公開型</h2></td></tr>
-<tr class="memitem:a3b0a1f58deca679ac665f61c480d1dcb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a> { <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba12c79dd5dae61a931ff74c2855ec82f5">NONE</a> = -1, 
-<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcbab0634eb8efa2896a2771ea868cbc241a">NORMAL</a>, 
-<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa">MAX</a>
+<tr class="memitem:a3b0a1f58deca679ac665f61c480d1dcb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a> { <br />
+&#160;&#160;<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba12c79dd5dae61a931ff74c2855ec82f5">NONE</a> = -1, 
+<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba34783417054408fd9e024048b1cefa47">PERSPECTIVE</a>, 
+<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba5421bcd519dac606b7af9786b11f88d6">ORTHO</a>, 
+<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcbaa144a5dc97bc343a7ef630cf23b09a76">TWO_DIMENSIONAL</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa">MAX</a>
+<br />
  }</td></tr>
 <tr class="separator:a3b0a1f58deca679ac665f61c480d1dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:ab0a4101da05afaa3355df78e43006c33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ab0a4101da05afaa3355df78e43006c33">Camera</a> (<a class="el" href="class_camera_1_1_state.html">State</a> *state, <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a> type, <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> position={0.0f, 0.0f, -10.0f}, Vec3 look_at_point={0.0f, 0.0f, 0.0f}, Vec3 up={0.0f, 1.0f, 0.0f})</td></tr>
-<tr class="separator:ab0a4101da05afaa3355df78e43006c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1897942d0ccf91052386388a497349f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a> ()</td></tr>
-<tr class="separator:ad1897942d0ccf91052386388a497349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e3ca8b70417632f7b1b581426ec66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d">Init</a> (<a class="el" href="class_camera_1_1_state.html">State</a> *state, <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> position={0.0f, 0.0f, -10.0f}, Vec3 look_at_point={0.0f, 0.0f, 0.0f}, Vec3 up={0.0f, 1.0f, 0.0f})</td></tr>
+<tr class="memdesc:a03e3ca8b70417632f7b1b581426ec66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#a03e3ca8b70417632f7b1b581426ec66d">[詳解]</a><br /></td></tr>
+<tr class="separator:a03e3ca8b70417632f7b1b581426ec66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3337b3e560ea6a780d646bc8c509d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a8b3337b3e560ea6a780d646bc8c509d7">Uninit</a> ()</td></tr>
+<tr class="memdesc:a8b3337b3e560ea6a780d646bc8c509d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#a8b3337b3e560ea6a780d646bc8c509d7">[詳解]</a><br /></td></tr>
+<tr class="separator:a8b3337b3e560ea6a780d646bc8c509d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a596a3ea1fdc7d244ba4268031a360b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a4a596a3ea1fdc7d244ba4268031a360b">Update</a> ()</td></tr>
+<tr class="memdesc:a4a596a3ea1fdc7d244ba4268031a360b"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <a href="#a4a596a3ea1fdc7d244ba4268031a360b">[詳解]</a><br /></td></tr>
 <tr class="separator:a4a596a3ea1fdc7d244ba4268031a360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4993ffb218536cb31d6d5224453b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a">CreateViewMatrix</a> ()</td></tr>
+<tr class="memdesc:a5b4993ffb218536cb31d6d5224453b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビュー行列作成関数  <a href="#a5b4993ffb218536cb31d6d5224453b1a">[詳解]</a><br /></td></tr>
 <tr class="separator:a5b4993ffb218536cb31d6d5224453b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d34f1630680d8a8f719121c874a0830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a3d34f1630680d8a8f719121c874a0830">CreateProjectionMatrix</a> (float angle_of_view, float aspect, float near_clipping_plane, float far_clipping_plane)</td></tr>
-<tr class="separator:a3d34f1630680d8a8f719121c874a0830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1786fe1adbe95e2ffa2de4cdb114546a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a1786fe1adbe95e2ffa2de4cdb114546a">CreateProjectionMatrix_PerspectiveFov</a> ()</td></tr>
+<tr class="memdesc:a1786fe1adbe95e2ffa2de4cdb114546a"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロジェクション行列作成関数(透視投影行列)  <a href="#a1786fe1adbe95e2ffa2de4cdb114546a">[詳解]</a><br /></td></tr>
 <tr class="separator:a1786fe1adbe95e2ffa2de4cdb114546a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a215010fc78cb35ed588ac9676c166f64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a215010fc78cb35ed588ac9676c166f64">CreateProjectionMatrix_Ortho</a> ()</td></tr>
+<tr class="memdesc:a215010fc78cb35ed588ac9676c166f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロジェクション行列作成関数(正射影行列)  <a href="#a215010fc78cb35ed588ac9676c166f64">[詳解]</a><br /></td></tr>
 <tr class="separator:a215010fc78cb35ed588ac9676c166f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae8043a952b7675d209bdc9b80bcc3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aaae8043a952b7675d209bdc9b80bcc3f">CreateProjectionMatrix_2D</a> ()</td></tr>
+<tr class="memdesc:aaae8043a952b7675d209bdc9b80bcc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロジェクション行列作成関数(2D)  <a href="#aaae8043a952b7675d209bdc9b80bcc3f">[詳解]</a><br /></td></tr>
+<tr class="separator:aaae8043a952b7675d209bdc9b80bcc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb88028a49a71e9a6774d58076816dbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#abb88028a49a71e9a6774d58076816dbf">ChangeState</a> (<a class="el" href="class_camera_1_1_state.html">State</a> *new_camera_state)</td></tr>
+<tr class="memdesc:abb88028a49a71e9a6774d58076816dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラステートの変更  <a href="#abb88028a49a71e9a6774d58076816dbf">[詳解]</a><br /></td></tr>
+<tr class="separator:abb88028a49a71e9a6774d58076816dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa472374f61480c5a9dff89d30be029f4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aa472374f61480c5a9dff89d30be029f4">GetViewMatrix</a> () const</td></tr>
 <tr class="separator:aa472374f61480c5a9dff89d30be029f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a473a7a8408bc7a1fdd46d12fa3852846"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a473a7a8408bc7a1fdd46d12fa3852846">GetProjectionMatrix</a> () const</td></tr>
@@ -139,29 +158,37 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 <tr class="separator:a4cc3e87e6522b4a1ae72eab5b87430a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa767cb71ea435cee1e42effc912904eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aa767cb71ea435cee1e42effc912904eb">GetUp</a> ()</td></tr>
 <tr class="separator:aa767cb71ea435cee1e42effc912904eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade0384f73a582e21259a12cbcae0d642"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ade0384f73a582e21259a12cbcae0d642">GetAngleOfView</a> ()</td></tr>
-<tr class="separator:ade0384f73a582e21259a12cbcae0d642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d54f574c141e6007d98ccd905501632"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a9d54f574c141e6007d98ccd905501632">GetAngleOfView</a> ()</td></tr>
+<tr class="separator:a9d54f574c141e6007d98ccd905501632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c22c8ceed9126db627df9be7eb53a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a4c22c8ceed9126db627df9be7eb53a42">SetAngleOfView</a> (int value)</td></tr>
+<tr class="separator:a4c22c8ceed9126db627df9be7eb53a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c4371143e87e34c70d27f2728987d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis_vector.html">AxisVector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a62c4371143e87e34c70d27f2728987d9">GetAxis</a> ()</td></tr>
 <tr class="separator:a62c4371143e87e34c70d27f2728987d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec9441c5c1924df0a0cacbcf28c839e2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aec9441c5c1924df0a0cacbcf28c839e2">GetForwardVector</a> () const</td></tr>
 <tr class="separator:aec9441c5c1924df0a0cacbcf28c839e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb88028a49a71e9a6774d58076816dbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#abb88028a49a71e9a6774d58076816dbf">ChangeState</a> (<a class="el" href="class_camera_1_1_state.html">State</a> *new_camera_state)</td></tr>
-<tr class="separator:abb88028a49a71e9a6774d58076816dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1bd90387ddb83c2af82e92e3fc472af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af1bd90387ddb83c2af82e92e3fc472af">IsCameraTypeName</a> (<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a> type)</td></tr>
-<tr class="separator:af1bd90387ddb83c2af82e92e3fc472af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e72bd04f7aaac1657d7bce5322b97c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_camera_1_1_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a47e72bd04f7aaac1657d7bce5322b97c">GetCameraState</a> () const</td></tr>
 <tr class="separator:a47e72bd04f7aaac1657d7bce5322b97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bda45b352bfa163c306c638a2aee1f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a3bda45b352bfa163c306c638a2aee1f6">GetType</a> ()</td></tr>
+<tr class="separator:a3bda45b352bfa163c306c638a2aee1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6218126e761a8289c6e6bc8c66b05e47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a6218126e761a8289c6e6bc8c66b05e47">SetType</a> (<a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a> value)</td></tr>
+<tr class="separator:a6218126e761a8289c6e6bc8c66b05e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 静的公開変数類</h2></td></tr>
 <tr class="memitem:ad2e91249b7878a87cd23cf7dd5d86e00"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad2e91249b7878a87cd23cf7dd5d86e00">NEAR_CLIPPING_PLANE</a> = 0.1f</td></tr>
+<tr class="memdesc:ad2e91249b7878a87cd23cf7dd5d86e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">近面クリップ  <a href="#ad2e91249b7878a87cd23cf7dd5d86e00">[詳解]</a><br /></td></tr>
 <tr class="separator:ad2e91249b7878a87cd23cf7dd5d86e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90ee4c7f7bbcb5d2b0ab86d14ed60d90"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a90ee4c7f7bbcb5d2b0ab86d14ed60d90">FAR_CLIPPING_PLANE</a> = 1000.0f</td></tr>
+<tr class="memdesc:a90ee4c7f7bbcb5d2b0ab86d14ed60d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">遠面クリップ  <a href="#a90ee4c7f7bbcb5d2b0ab86d14ed60d90">[詳解]</a><br /></td></tr>
 <tr class="separator:a90ee4c7f7bbcb5d2b0ab86d14ed60d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e0f326c66006cf7f9dc29b3e2b86b81"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a0e0f326c66006cf7f9dc29b3e2b86b81">DEFAULT_ANGLE_OF_VIEW</a> = 60</td></tr>
+<tr class="memdesc:a0e0f326c66006cf7f9dc29b3e2b86b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">画角  <a href="#a0e0f326c66006cf7f9dc29b3e2b86b81">[詳解]</a><br /></td></tr>
 <tr class="separator:a0e0f326c66006cf7f9dc29b3e2b86b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>カメラクラス </p>
+<p>カメラのクラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="a3b0a1f58deca679ac665f61c480d1dcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b0a1f58deca679ac665f61c480d1dcb">&#9670;&nbsp;</a></span>Type</h2>
 
@@ -175,73 +202,11 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcba12c79dd5dae61a931ff74c2855ec82f5"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcbab0634eb8efa2896a2771ea868cbc241a"></a>NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcba34783417054408fd9e024048b1cefa47"></a>PERSPECTIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcba5421bcd519dac606b7af9786b11f88d6"></a>ORTHO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcbaa144a5dc97bc343a7ef630cf23b09a76"></a>TWO_DIMENSIONAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">構築子と解体子</h2>
-<a id="ab0a4101da05afaa3355df78e43006c33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0a4101da05afaa3355df78e43006c33">&#9670;&nbsp;</a></span>Camera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Camera::Camera </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_camera_1_1_state.html">State</a> *&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
-          <td class="paramname"><em>position</em> = <code>{0.0f,&#160;0.0f,&#160;-10.0f}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
-          <td class="paramname"><em>look_at_point</em> = <code>{0.0f,&#160;0.0f,&#160;0.0f}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
-          <td class="paramname"><em>up</em> = <code>{0.0f,&#160;1.0f,&#160;0.0f}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad1897942d0ccf91052386388a497349f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1897942d0ccf91052386388a497349f">&#9670;&nbsp;</a></span>~Camera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Camera::~Camera </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -262,45 +227,26 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>カメラステートの変更 </p>
+
 </div>
 </div>
-<a id="a3d34f1630680d8a8f719121c874a0830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d34f1630680d8a8f719121c874a0830">&#9670;&nbsp;</a></span>CreateProjectionMatrix()</h2>
+<a id="aaae8043a952b7675d209bdc9b80bcc3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae8043a952b7675d209bdc9b80bcc3f">&#9670;&nbsp;</a></span>CreateProjectionMatrix_2D()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Camera::CreateProjectionMatrix </td>
+          <td class="memname">void Camera::CreateProjectionMatrix_2D </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle_of_view</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>aspect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>near_clipping_plane</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>far_clipping_plane</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>プロジェクション行列作成関数(2D) </p>
 
 </div>
 </div>
@@ -319,6 +265,8 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>プロジェクション行列作成関数(正射影行列) </p>
+
 </div>
 </div>
 <a id="a1786fe1adbe95e2ffa2de4cdb114546a"></a>
@@ -335,6 +283,8 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>プロジェクション行列作成関数(透視投影行列) </p>
 
 </div>
 </div>
@@ -353,10 +303,12 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>ビュー行列作成関数 </p>
+
 </div>
 </div>
-<a id="ade0384f73a582e21259a12cbcae0d642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade0384f73a582e21259a12cbcae0d642">&#9670;&nbsp;</a></span>GetAngleOfView()</h2>
+<a id="a9d54f574c141e6007d98ccd905501632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d54f574c141e6007d98ccd905501632">&#9670;&nbsp;</a></span>GetAngleOfView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +317,7 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int* Camera::GetAngleOfView </td>
+          <td class="memname">int Camera::GetAngleOfView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -530,6 +482,31 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 </div>
 </div>
+<a id="a3bda45b352bfa163c306c638a2aee1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bda45b352bfa163c306c638a2aee1f6">&#9670;&nbsp;</a></span>GetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a> Camera::GetType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa767cb71ea435cee1e42effc912904eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa767cb71ea435cee1e42effc912904eb">&#9670;&nbsp;</a></span>GetUp()</h2>
 
@@ -580,21 +557,122 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 </div>
 </div>
-<a id="af1bd90387ddb83c2af82e92e3fc472af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1bd90387ddb83c2af82e92e3fc472af">&#9670;&nbsp;</a></span>IsCameraTypeName()</h2>
+<a id="a03e3ca8b70417632f7b1b581426ec66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e3ca8b70417632f7b1b581426ec66d">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Camera::IsCameraTypeName </td>
+          <td class="memname">void Camera::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_camera_1_1_state.html">State</a> *&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>position</em> = <code>{0.0f,&#160;0.0f,&#160;-10.0f}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>look_at_point</em> = <code>{0.0f,&#160;0.0f,&#160;0.0f}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>up</em> = <code>{0.0f,&#160;1.0f,&#160;0.0f}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>: ステート position : 座標 look_at_point : 注視点 up : 上ベクトル </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c22c8ceed9126db627df9be7eb53a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c22c8ceed9126db627df9be7eb53a42">&#9670;&nbsp;</a></span>SetAngleOfView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::SetAngleOfView </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6218126e761a8289c6e6bc8c66b05e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6218126e761a8289c6e6bc8c66b05e47">&#9670;&nbsp;</a></span>SetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::SetType </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b3337b3e560ea6a780d646bc8c509d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3337b3e560ea6a780d646bc8c509d7">&#9670;&nbsp;</a></span>Uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Camera::Uninit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>終了関数 </p>
 
 </div>
 </div>
@@ -612,6 +690,8 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>更新関数 </p>
 
 </div>
 </div>
@@ -636,6 +716,8 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p>画角 </p>
+
 </div>
 </div>
 <a id="a90ee4c7f7bbcb5d2b0ab86d14ed60d90"></a>
@@ -657,6 +739,8 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>遠面クリップ </p>
 
 </div>
 </div>
@@ -680,11 +764,13 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p>近面クリップ </p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawComponentManager/Camera/<a class="el" href="_camera_8h_source.html">Camera.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawComponentManager/Camera/<a class="el" href="_camera_8cpp.html">Camera.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Camera/<a class="el" href="_camera_8h_source.html">Camera.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Camera/<a class="el" href="_camera_8cpp.html">Camera.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -2,6 +2,11 @@
 \label{class_camera_1_1_state}\index{Camera\+::\+State@{Camera\+::\+State}}
 
 
+カメラステートクラス  
+
+
+
+
 {\ttfamily \#include $<$Camera.\+h$>$}
 
 Camera\+:\+:State の継承関係図\begin{figure}[H]
@@ -14,14 +19,19 @@ Camera\+:\+:State の継承関係図\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{class_camera_1_1_state_a61b74bb711d49e26c0f07af65fb74eb9}{$\sim$\+State}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_camera_1_1_state_aa1b81471ab15e64b3117ffe7de9560ff}{Init}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)=0
-\item 
-virtual void \mbox{\hyperlink{class_camera_1_1_state_a68ebfc3f15cae24b342cb5dae57497cf}{Uninit}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)=0
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_camera_1_1_state_adb3f43b6c3f8100da7877867180e804b}{Uninit}} ()=0
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}{Update}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{詳解}
+カメラステートクラス 
+
+カメラのステートクラス 
 
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_camera_1_1_state_a61b74bb711d49e26c0f07af65fb74eb9}\label{class_camera_1_1_state_a61b74bb711d49e26c0f07af65fb74eb9}} 
@@ -29,6 +39,10 @@ virtual void \mbox{\hyperlink{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167f
 \index{````~State@{$\sim$\+State}!Camera\+::\+State@{Camera\+::\+State}}
 \subsubsection{\texorpdfstring{$\sim$\+State()}{~State()}}
 {\footnotesize\ttfamily virtual Camera\+::\+State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+デストラクタ 
 
 
 
@@ -41,17 +55,35 @@ virtual void \mbox{\hyperlink{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167f
 
 
 
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ \\
+\hline
+\end{DoxyParams}
+
+
 \mbox{\hyperlink{class_camera_state___crawl_up_a43a47eb4e7445c6801e8316c5a635709}{Camera\+State\+\_\+\+Crawl\+Up}}, \mbox{\hyperlink{class_camera_state___homing_target_a9222190a5f26d564e99623b05941d382}{Camera\+State\+\_\+\+Homing\+Target}}で実装されています。
 
-\mbox{\Hypertarget{class_camera_1_1_state_a68ebfc3f15cae24b342cb5dae57497cf}\label{class_camera_1_1_state_a68ebfc3f15cae24b342cb5dae57497cf}} 
+\mbox{\Hypertarget{class_camera_1_1_state_adb3f43b6c3f8100da7877867180e804b}\label{class_camera_1_1_state_adb3f43b6c3f8100da7877867180e804b}} 
 \index{Camera\+::\+State@{Camera\+::\+State}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Camera\+::\+State@{Camera\+::\+State}}
 \subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
-{\footnotesize\ttfamily virtual void Camera\+::\+State\+::\+Uninit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Camera\+::\+State\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-\mbox{\hyperlink{class_camera_state___crawl_up_ac9822b09d8e5fa9e1def7ac8a1e9c893}{Camera\+State\+\_\+\+Crawl\+Up}}, \mbox{\hyperlink{class_camera_state___homing_target_a5b4abde99047da6a20f299990c259ef1}{Camera\+State\+\_\+\+Homing\+Target}}で実装されています。
+終了関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_camera_state___crawl_up_a046ec18a91e31b210ae000133fa6113a}{Camera\+State\+\_\+\+Crawl\+Up}}, \mbox{\hyperlink{class_camera_state___homing_target_ab2b5379b35ebafc53189bf4d45646c8c}{Camera\+State\+\_\+\+Homing\+Target}}で実装されています。
 
 \mbox{\Hypertarget{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}\label{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}} 
 \index{Camera\+::\+State@{Camera\+::\+State}!Update@{Update}}
@@ -61,10 +93,19 @@ virtual void \mbox{\hyperlink{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167f
 
 
 
+更新関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ \\
+\hline
+\end{DoxyParams}
+
+
 \mbox{\hyperlink{class_camera_state___crawl_up_aaebd2634f1677b7c00e6761ed91e1264}{Camera\+State\+\_\+\+Crawl\+Up}}, \mbox{\hyperlink{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9}{Camera\+State\+\_\+\+Homing\+Target}}で実装されています。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Camera/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Camera/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\end{DoxyCompactItemize}

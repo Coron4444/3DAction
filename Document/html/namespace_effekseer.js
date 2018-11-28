@@ -2,7 +2,6 @@ var namespace_effekseer =
 [
     [ "Client", "class_effekseer_1_1_client.html", "class_effekseer_1_1_client" ],
     [ "Color", "struct_effekseer_1_1_color.html", "struct_effekseer_1_1_color" ],
-    [ "CriticalSection", "class_effekseer_1_1_critical_section.html", "class_effekseer_1_1_critical_section" ],
     [ "DefaultFileInterface", "class_effekseer_1_1_default_file_interface.html", "class_effekseer_1_1_default_file_interface" ],
     [ "DefaultFileReader", "class_effekseer_1_1_default_file_reader.html", "class_effekseer_1_1_default_file_reader" ],
     [ "DefaultFileWriter", "class_effekseer_1_1_default_file_writer.html", "class_effekseer_1_1_default_file_writer" ],
@@ -14,6 +13,7 @@ var namespace_effekseer =
     [ "FileInterface", "class_effekseer_1_1_file_interface.html", "class_effekseer_1_1_file_interface" ],
     [ "FileReader", "class_effekseer_1_1_file_reader.html", "class_effekseer_1_1_file_reader" ],
     [ "FileWriter", "class_effekseer_1_1_file_writer.html", "class_effekseer_1_1_file_writer" ],
+    [ "IRandObject", "class_effekseer_1_1_i_rand_object.html", "class_effekseer_1_1_i_rand_object" ],
     [ "IReference", "class_effekseer_1_1_i_reference.html", "class_effekseer_1_1_i_reference" ],
     [ "Manager", "class_effekseer_1_1_manager.html", "class_effekseer_1_1_manager" ],
     [ "Matrix43", "struct_effekseer_1_1_matrix43.html", "struct_effekseer_1_1_matrix43" ],
@@ -32,7 +32,6 @@ var namespace_effekseer =
     [ "SpriteRenderer", "class_effekseer_1_1_sprite_renderer.html", "class_effekseer_1_1_sprite_renderer" ],
     [ "TextureData", "struct_effekseer_1_1_texture_data.html", "struct_effekseer_1_1_texture_data" ],
     [ "TextureLoader", "class_effekseer_1_1_texture_loader.html", "class_effekseer_1_1_texture_loader" ],
-    [ "Thread", "class_effekseer_1_1_thread.html", "class_effekseer_1_1_thread" ],
     [ "TrackRenderer", "class_effekseer_1_1_track_renderer.html", "class_effekseer_1_1_track_renderer" ],
     [ "Vector2D", "struct_effekseer_1_1_vector2_d.html", "struct_effekseer_1_1_vector2_d" ],
     [ "Vector3D", "struct_effekseer_1_1_vector3_d.html", "struct_effekseer_1_1_vector3_d" ]

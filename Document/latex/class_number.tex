@@ -13,12 +13,12 @@ Number の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_number_a5830270854ab224b60462f50f495a1fa}{Init}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+void \mbox{\hyperlink{class_number_ad92c9038810d0f831fdb9b5b13901b79}{Init}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
 \item 
 void \mbox{\hyperlink{class_number_a7c3bf9c55f7a0a19d80129c5f07f99f2}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_number_a7c6facdb1b3d0acc8309e0a915863d44}{Reset}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_number_ac825b1ee1f46a6ac4ffd3bc904964745}{Set\+Number}} (int number)
 \item 
 void \mbox{\hyperlink{class_number_a1ea98cdee888a040f4530a6654657c44}{Set\+Color}} (\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} color)
@@ -45,11 +45,11 @@ static const std\+::string \mbox{\hyperlink{class_number_a43c6583cef6d8d32b8de66
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_number_a5830270854ab224b60462f50f495a1fa}\label{class_number_a5830270854ab224b60462f50f495a1fa}} 
+\mbox{\Hypertarget{class_number_ad92c9038810d0f831fdb9b5b13901b79}\label{class_number_ad92c9038810d0f831fdb9b5b13901b79}} 
 \index{Number@{Number}!Init@{Init}}
 \index{Init@{Init}!Number@{Number}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Number\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Number\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_number_a7c6facdb1b3d0acc8309e0a915863d44}\label{class_number_a7c6facdb1b3d0acc8309e0a915863d44}} 
 \index{Number@{Number}!Reset@{Reset}}
@@ -59,7 +59,11 @@ static const std\+::string \mbox{\hyperlink{class_number_a43c6583cef6d8d32b8de66
 
 
 
-\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_number_a1ea98cdee888a040f4530a6654657c44}\label{class_number_a1ea98cdee888a040f4530a6654657c44}} 
 \index{Number@{Number}!Set\+Color@{Set\+Color}}
@@ -81,7 +85,11 @@ static const std\+::string \mbox{\hyperlink{class_number_a43c6583cef6d8d32b8de66
 
 
 
-\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
 
 
 

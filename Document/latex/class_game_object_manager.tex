@@ -2,67 +2,161 @@
 \label{class_game_object_manager}\index{Game\+Object\+Manager@{Game\+Object\+Manager}}
 
 
+ゲームオブジェクトマネージャクラス  
+
+
+
+
 {\ttfamily \#include $<$Game\+Object\+Manager.\+h$>$}
 
 \subsection*{静的公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{class_game_object_manager_ae8bbcddd70626ae7e8741050abb65977}{Registration}} (\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$game\+\_\+object)
+static void \mbox{\hyperlink{class_game_object_manager_abda84aa3b4c79090c43243f93b5a9c46}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_object_manager_a4d2cb0e07fddeea160e64f6e1d2a326a}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_object_manager_ad962739b2c2f54d4160c3513132930da}{Uninit\+When\+Change\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーン変更時の終了関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_object_manager_a6f053b1c655de6ca1c9a8fa9b6e118ae}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_object_manager_a0549bd4b6575ee28803c0ff8fd2be2ee}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_object_manager_a38f980aec0970f45eb9bc55db8ac01a3}{All\+Reset}} ()
+\begin{DoxyCompactList}\small\item\em 全ゲームオブジェクトリセット関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_object_manager_ab42e8ca2c7e586d05d513e8a868a86ef}{Add\+Game\+Object\+Base\+To\+Array}} (\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$game\+\_\+object)
+\begin{DoxyCompactList}\small\item\em ゲームオブジェクト基底クラスの追加関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_object_manager_a83342c1c358e32f6478ae3428fcb25fa}{Release\+Game\+Object\+Base\+From\+Array}} (\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$game\+\_\+object)
+\begin{DoxyCompactList}\small\item\em ゲームオブジェクト基底クラスの解放関数 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Type $>$ }\\static void \mbox{\hyperlink{class_game_object_manager_a4b905d160c31b234686a3d46c0743adb}{Get\+Pointer\+\_\+\+Registration\+Reference}} (\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$reference\+\_\+object, Type $\ast$reference\+\_\+destination, Type $\ast$reference\+\_\+pointer)
+\begin{DoxyCompactList}\small\item\em ゲームオブジェクト参照の取得 \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_update_manager}{Update\+Manager}} $\ast$ \mbox{\hyperlink{class_game_object_manager_a7d34b53f99cc2264ab6a8c253392a865}{Get\+Update\+Manager}} ()
 \item 
-static void \mbox{\hyperlink{class_game_object_manager_aa3661e3da2a47c9b687ce253b4b7fca4}{Release}} (\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$game\+\_\+object)
+static \mbox{\hyperlink{class_draw_manager}{Draw\+Manager}} $\ast$ \mbox{\hyperlink{class_game_object_manager_a862e76bfd74495c20bddd377c62a22b7}{Get\+Draw\+Manager}} ()
 \item 
-static void \mbox{\hyperlink{class_game_object_manager_ad3d2b61445d53ea23c5b19bc4e8958d8}{Release\+All\+Waiting\+Objects}} ()
-\item 
-static void \mbox{\hyperlink{class_game_object_manager_ac74e9da7077e89abc35fe86cf4a9ea23}{Release\+All}} ()
-\item 
-static void \mbox{\hyperlink{class_game_object_manager_a902c42587f383de65de07c132d51d27e}{Reset\+All}} ()
-\item 
-{\footnotesize template$<$class Type $>$ }\\static void \mbox{\hyperlink{class_game_object_manager_a035c39b0f483e65572c7bc027802aee9}{Get\+Pointer\+\_\+\+Registration\+Reference}} (\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$reference\+\_\+source, Type $\ast$reference\+\_\+destination, Type $\ast$reference\+\_\+pointer)
+static \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}} $\ast$ \mbox{\hyperlink{class_game_object_manager_a41775a8308691a84b468a0aeeb1b3376}{Get\+Collision\+Manager}} ()
 \end{DoxyCompactItemize}
 \subsection*{静的公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 static const unsigned \mbox{\hyperlink{class_game_object_manager_a591934d64d750c10c03c908371470681}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 1000
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 配列数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{詳解}
+ゲームオブジェクトマネージャクラス 
+
+ゲームオブジェクト全体の管理をするクラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_game_object_manager_a035c39b0f483e65572c7bc027802aee9}\label{class_game_object_manager_a035c39b0f483e65572c7bc027802aee9}} 
+\mbox{\Hypertarget{class_game_object_manager_ab42e8ca2c7e586d05d513e8a868a86ef}\label{class_game_object_manager_ab42e8ca2c7e586d05d513e8a868a86ef}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Add\+Game\+Object\+Base\+To\+Array@{Add\+Game\+Object\+Base\+To\+Array}}
+\index{Add\+Game\+Object\+Base\+To\+Array@{Add\+Game\+Object\+Base\+To\+Array}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Game\+Object\+Base\+To\+Array()}{AddGameObjectBaseToArray()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Add\+Game\+Object\+Base\+To\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{game\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ゲームオブジェクト基底クラスの追加関数 
+
+\mbox{\Hypertarget{class_game_object_manager_a38f980aec0970f45eb9bc55db8ac01a3}\label{class_game_object_manager_a38f980aec0970f45eb9bc55db8ac01a3}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!All\+Reset@{All\+Reset}}
+\index{All\+Reset@{All\+Reset}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{All\+Reset()}{AllReset()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+All\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+全ゲームオブジェクトリセット関数 
+
+\mbox{\Hypertarget{class_game_object_manager_a0549bd4b6575ee28803c0ff8fd2be2ee}\label{class_game_object_manager_a0549bd4b6575ee28803c0ff8fd2be2ee}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Draw@{Draw}}
+\index{Draw@{Draw}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+描画関数 
+
+\mbox{\Hypertarget{class_game_object_manager_a41775a8308691a84b468a0aeeb1b3376}\label{class_game_object_manager_a41775a8308691a84b468a0aeeb1b3376}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Get\+Collision\+Manager@{Get\+Collision\+Manager}}
+\index{Get\+Collision\+Manager@{Get\+Collision\+Manager}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Collision\+Manager()}{GetCollisionManager()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_collision_manager}{Collision\+Manager}}$\ast$ Game\+Object\+Manager\+::\+Get\+Collision\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_object_manager_a862e76bfd74495c20bddd377c62a22b7}\label{class_game_object_manager_a862e76bfd74495c20bddd377c62a22b7}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Get\+Draw\+Manager@{Get\+Draw\+Manager}}
+\index{Get\+Draw\+Manager@{Get\+Draw\+Manager}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Manager()}{GetDrawManager()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_draw_manager}{Draw\+Manager}}$\ast$ Game\+Object\+Manager\+::\+Get\+Draw\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_object_manager_a4b905d160c31b234686a3d46c0743adb}\label{class_game_object_manager_a4b905d160c31b234686a3d46c0743adb}} 
 \index{Game\+Object\+Manager@{Game\+Object\+Manager}!Get\+Pointer\+\_\+\+Registration\+Reference@{Get\+Pointer\+\_\+\+Registration\+Reference}}
 \index{Get\+Pointer\+\_\+\+Registration\+Reference@{Get\+Pointer\+\_\+\+Registration\+Reference}!Game\+Object\+Manager@{Game\+Object\+Manager}}
 \subsubsection{\texorpdfstring{Get\+Pointer\+\_\+\+Registration\+Reference()}{GetPointer\_RegistrationReference()}}
 {\footnotesize\ttfamily template$<$class Type $>$ \\
-static void Game\+Object\+Manager\+::\+Get\+Pointer\+\_\+\+Registration\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$}]{reference\+\_\+source,  }\item[{Type $\ast$}]{reference\+\_\+destination,  }\item[{Type $\ast$}]{reference\+\_\+pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+static void Game\+Object\+Manager\+::\+Get\+Pointer\+\_\+\+Registration\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{reference\+\_\+object,  }\item[{Type $\ast$}]{reference\+\_\+destination,  }\item[{Type $\ast$}]{reference\+\_\+pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
-\mbox{\Hypertarget{class_game_object_manager_ae8bbcddd70626ae7e8741050abb65977}\label{class_game_object_manager_ae8bbcddd70626ae7e8741050abb65977}} 
-\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Registration@{Registration}}
-\index{Registration@{Registration}!Game\+Object\+Manager@{Game\+Object\+Manager}}
-\subsubsection{\texorpdfstring{Registration()}{Registration()}}
-{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Registration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$}]{game\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{class_game_object_manager_aa3661e3da2a47c9b687ce253b4b7fca4}\label{class_game_object_manager_aa3661e3da2a47c9b687ce253b4b7fca4}} 
-\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Release@{Release}}
-\index{Release@{Release}!Game\+Object\+Manager@{Game\+Object\+Manager}}
-\subsubsection{\texorpdfstring{Release()}{Release()}}
-{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$}]{game\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{class_game_object_manager_ac74e9da7077e89abc35fe86cf4a9ea23}\label{class_game_object_manager_ac74e9da7077e89abc35fe86cf4a9ea23}} 
-\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Release\+All@{Release\+All}}
-\index{Release\+All@{Release\+All}!Game\+Object\+Manager@{Game\+Object\+Manager}}
-\subsubsection{\texorpdfstring{Release\+All()}{ReleaseAll()}}
-{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Release\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+ゲームオブジェクト参照の取得 
 
-\mbox{\Hypertarget{class_game_object_manager_ad3d2b61445d53ea23c5b19bc4e8958d8}\label{class_game_object_manager_ad3d2b61445d53ea23c5b19bc4e8958d8}} 
-\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Release\+All\+Waiting\+Objects@{Release\+All\+Waiting\+Objects}}
-\index{Release\+All\+Waiting\+Objects@{Release\+All\+Waiting\+Objects}!Game\+Object\+Manager@{Game\+Object\+Manager}}
-\subsubsection{\texorpdfstring{Release\+All\+Waiting\+Objects()}{ReleaseAllWaitingObjects()}}
-{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Release\+All\+Waiting\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{class_game_object_manager_a7d34b53f99cc2264ab6a8c253392a865}\label{class_game_object_manager_a7d34b53f99cc2264ab6a8c253392a865}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Get\+Update\+Manager@{Get\+Update\+Manager}}
+\index{Get\+Update\+Manager@{Get\+Update\+Manager}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Update\+Manager()}{GetUpdateManager()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_update_manager}{Update\+Manager}}$\ast$ Game\+Object\+Manager\+::\+Get\+Update\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
-\mbox{\Hypertarget{class_game_object_manager_a902c42587f383de65de07c132d51d27e}\label{class_game_object_manager_a902c42587f383de65de07c132d51d27e}} 
-\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Reset\+All@{Reset\+All}}
-\index{Reset\+All@{Reset\+All}!Game\+Object\+Manager@{Game\+Object\+Manager}}
-\subsubsection{\texorpdfstring{Reset\+All()}{ResetAll()}}
-{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Reset\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{class_game_object_manager_abda84aa3b4c79090c43243f93b5a9c46}\label{class_game_object_manager_abda84aa3b4c79090c43243f93b5a9c46}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Init@{Init}}
+\index{Init@{Init}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+初期化関数 
+
+\mbox{\Hypertarget{class_game_object_manager_a83342c1c358e32f6478ae3428fcb25fa}\label{class_game_object_manager_a83342c1c358e32f6478ae3428fcb25fa}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Release\+Game\+Object\+Base\+From\+Array@{Release\+Game\+Object\+Base\+From\+Array}}
+\index{Release\+Game\+Object\+Base\+From\+Array@{Release\+Game\+Object\+Base\+From\+Array}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Release\+Game\+Object\+Base\+From\+Array()}{ReleaseGameObjectBaseFromArray()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Release\+Game\+Object\+Base\+From\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{game\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ゲームオブジェクト基底クラスの解放関数 
+
+\mbox{\Hypertarget{class_game_object_manager_a4d2cb0e07fddeea160e64f6e1d2a326a}\label{class_game_object_manager_a4d2cb0e07fddeea160e64f6e1d2a326a}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+終了関数 
+
+\mbox{\Hypertarget{class_game_object_manager_ad962739b2c2f54d4160c3513132930da}\label{class_game_object_manager_ad962739b2c2f54d4160c3513132930da}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}}
+\index{Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+When\+Change\+Scene()}{UninitWhenChangeScene()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Uninit\+When\+Change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+シーン変更時の終了関数 
+
+\mbox{\Hypertarget{class_game_object_manager_a6f053b1c655de6ca1c9a8fa9b6e118ae}\label{class_game_object_manager_a6f053b1c655de6ca1c9a8fa9b6e118ae}} 
+\index{Game\+Object\+Manager@{Game\+Object\+Manager}!Update@{Update}}
+\index{Update@{Update}!Game\+Object\+Manager@{Game\+Object\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Object\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+更新関数 
 
 
 
@@ -72,6 +166,10 @@ static void Game\+Object\+Manager\+::\+Get\+Pointer\+\_\+\+Registration\+Referen
 \index{A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Game\+Object\+Manager@{Game\+Object\+Manager}}
 \subsubsection{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+N\+UM}{ARRAY\_NUM}}
 {\footnotesize\ttfamily const unsigned Game\+Object\+Manager\+::\+A\+R\+R\+A\+Y\+\_\+\+N\+UM = 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+配列数 
 
 
 

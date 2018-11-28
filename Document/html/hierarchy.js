@@ -1,17 +1,19 @@
 var hierarchy =
 [
     [ "AxisVector", "class_axis_vector.html", null ],
+    [ "BackBuffer", "class_back_buffer.html", null ],
     [ "mfmlib::BoneAnim", "classmfmlib_1_1_bone_anim.html", null ],
     [ "mfmlib::BoneMesh", "classmfmlib_1_1_bone_mesh.html", null ],
     [ "Camera", "class_camera.html", null ],
     [ "ClearLogoFactory", "class_clear_logo_factory.html", null ],
     [ "Effekseer::Client", "class_effekseer_1_1_client.html", null ],
     [ "CoinFactory", "class_coin_factory.html", null ],
-    [ "CollisionComponentManager", "class_collision_component_manager.html", null ],
-    [ "CollisionComponentPairCheck", "class_collision_component_pair_check.html", null ],
     [ "CollisionJudgment", "class_collision_judgment.html", null ],
+    [ "CollisionManager", "class_collision_manager.html", null ],
     [ "CollisionObject", "class_collision_object.html", null ],
-    [ "CollisionShapeOrigin", "class_collision_shape_origin.html", [
+    [ "CollisionObjects", "class_collision_objects.html", null ],
+    [ "CollisionPairCheck", "class_collision_pair_check.html", null ],
+    [ "CollisionShapeBase", "class_collision_shape_base.html", [
       [ "AABB", "class_a_a_b_b.html", null ],
       [ "Capsule", "class_capsule.html", null ],
       [ "Cylinder", "class_cylinder.html", null ],
@@ -21,45 +23,56 @@ var hierarchy =
       [ "Sphere", "class_sphere.html", null ],
       [ "Triangle", "class_triangle.html", null ]
     ] ],
-    [ "mfmlib::COLOR", "structmfmlib_1_1_c_o_l_o_r.html", null ],
     [ "Effekseer::Color", "struct_effekseer_1_1_color.html", null ],
+    [ "mfmlib::COLOR", "structmfmlib_1_1_c_o_l_o_r.html", null ],
     [ "SceneManager::CommonData", "class_scene_manager_1_1_common_data.html", null ],
-    [ "ComponentOrigin", "class_component_origin.html", [
-      [ "CollisionComponent", "class_collision_component.html", [
-        [ "CoinCollision", "class_coin_collision.html", null ],
-        [ "EnemyCollision", "class_enemy_collision.html", null ],
-        [ "PlayerCollision", "class_player_collision.html", null ]
+    [ "ComponentBase", "class_component_base.html", [
+      [ "CollisionBase", "class_collision_base.html", [
+        [ "CollisionNull", "class_collision_null.html", [
+          [ "CoinCollision", "class_coin_collision.html", null ],
+          [ "EnemyCollision", "class_enemy_collision.html", null ],
+          [ "GoalCollision", "class_goal_collision.html", null ],
+          [ "PlayerCollision", "class_player_collision.html", null ]
+        ] ]
       ] ],
-      [ "DrawComponent", "class_draw_component.html", [
-        [ "ClearLogoDraw", "class_clear_logo_draw.html", null ],
-        [ "CoinDraw", "class_coin_draw.html", null ],
-        [ "EnemyDraw", "class_enemy_draw.html", null ],
-        [ "FailureLogoDraw", "class_failure_logo_draw.html", null ],
-        [ "FieldDraw", "class_field_draw.html", null ],
-        [ "NumberDraw", "class_number_draw.html", null ],
-        [ "PlayerDraw", "class_player_draw.html", null ],
-        [ "PushSpaceLogoDraw", "class_push_space_logo_draw.html", null ],
-        [ "ScoreDraw", "class_score_draw.html", null ],
-        [ "SkyDomeDraw", "class_sky_dome_draw.html", null ],
-        [ "TitleLogoDraw", "class_title_logo_draw.html", null ],
-        [ "TutorialLogo01Draw", "class_tutorial_logo01_draw.html", null ],
-        [ "TutorialLogo02Draw", "class_tutorial_logo02_draw.html", null ]
+      [ "DrawBase", "class_draw_base.html", [
+        [ "DrawNull", "class_draw_null.html", [
+          [ "ClearLogoDraw", "class_clear_logo_draw.html", null ],
+          [ "CoinDraw", "class_coin_draw.html", null ],
+          [ "EnemyDraw", "class_enemy_draw.html", null ],
+          [ "Fade", "class_fade.html", null ],
+          [ "FailureLogoDraw", "class_failure_logo_draw.html", null ],
+          [ "FieldDraw", "class_field_draw.html", null ],
+          [ "GoalDraw", "class_goal_draw.html", null ],
+          [ "NumberDraw", "class_number_draw.html", null ],
+          [ "PlayerDraw", "class_player_draw.html", null ],
+          [ "PushSpaceLogoDraw", "class_push_space_logo_draw.html", null ],
+          [ "RenderTexture", "class_render_texture.html", null ],
+          [ "ScoreDraw", "class_score_draw.html", null ],
+          [ "SkyDomeDraw", "class_sky_dome_draw.html", null ],
+          [ "StencilShadowTestDraw", "class_stencil_shadow_test_draw.html", null ],
+          [ "TitleLogoDraw", "class_title_logo_draw.html", null ],
+          [ "TutorialLogoDraw", "class_tutorial_logo_draw.html", null ]
+        ] ]
       ] ],
-      [ "UpdateComponent", "class_update_component.html", [
-        [ "EnemyUpdate", "class_enemy_update.html", null ],
-        [ "PlayerUpdate", "class_player_update.html", null ],
-        [ "PushSpaceLogoUpdate", "class_push_space_logo_update.html", null ],
-        [ "ScoreUpdate", "class_score_update.html", null ],
-        [ "SkyDomeUpdate", "class_sky_dome_update.html", null ]
+      [ "UpdateBase", "class_update_base.html", [
+        [ "PlayerUpdate_Special", "class_player_update___special.html", null ],
+        [ "UpdateNull", "class_update_null.html", [
+          [ "EnemyUpdate", "class_enemy_update.html", null ],
+          [ "PlayerUpdate", "class_player_update.html", null ],
+          [ "PushSpaceLogoUpdate", "class_push_space_logo_update.html", null ],
+          [ "ScoreUpdate", "class_score_update.html", null ],
+          [ "SkyDomeUpdate", "class_sky_dome_update.html", null ]
+        ] ]
       ] ]
     ] ],
-    [ "Effekseer::CriticalSection", "class_effekseer_1_1_critical_section.html", null ],
     [ "CubePolygon", "class_cube_polygon.html", null ],
     [ "ImFontAtlas::CustomRect", "struct_im_font_atlas_1_1_custom_rect.html", null ],
     [ "CUSTOMVERTEX", "struct_c_u_s_t_o_m_v_e_r_t_e_x.html", null ],
     [ "DepthBufferShadowObject", "class_depth_buffer_shadow_object.html", null ],
     [ "EffekseerRenderer::DistortingCallback", "class_effekseer_renderer_1_1_distorting_callback.html", null ],
-    [ "DrawComponentManager", "class_draw_component_manager.html", null ],
+    [ "DrawManager", "class_draw_manager.html", null ],
+    [ "DrawOrderList", "class_draw_order_list.html", null ],
     [ "Effekseer::EffectBasicRenderParameter", "struct_effekseer_1_1_effect_basic_render_parameter.html", null ],
     [ "EffectFile", "class_effect_file.html", null ],
     [ "Effekseer::EffectLoader", "class_effekseer_1_1_effect_loader.html", null ],
@@ -73,7 +86,6 @@ var hierarchy =
     [ "ExampleAppConsole", "struct_example_app_console.html", null ],
     [ "ExampleAppLog", "struct_example_app_log.html", null ],
     [ "Effekseer::Model::Face", "struct_effekseer_1_1_model_1_1_face.html", null ],
-    [ "Fade", "class_fade.html", null ],
     [ "FailureLogoFactory", "class_failure_logo_factory.html", null ],
     [ "FieldFactory", "class_field_factory.html", null ],
     [ "Effekseer::FileInterface", "class_effekseer_1_1_file_interface.html", [
@@ -85,7 +97,6 @@ var hierarchy =
     [ "Effekseer::FileWriter", "class_effekseer_1_1_file_writer.html", [
       [ "Effekseer::DefaultFileWriter", "class_effekseer_1_1_default_file_writer.html", null ]
     ] ],
-    [ "FixedPipelineObject", "class_fixed_pipeline_object.html", null ],
     [ "Flag", "class_flag.html", null ],
     [ "mfmlib::Float1pData", "classmfmlib_1_1_float1p_data.html", null ],
     [ "mfmlib::Float2", "structmfmlib_1_1_float2.html", null ],
@@ -93,26 +104,28 @@ var hierarchy =
     [ "mfmlib::Float3", "structmfmlib_1_1_float3.html", null ],
     [ "mfmlib::Float3pData", "classmfmlib_1_1_float3p_data.html", null ],
     [ "mfmlib::FloatData", "classmfmlib_1_1_float_data.html", null ],
-    [ "GameObjectManager", "class_game_object_manager.html", null ],
-    [ "GameObjectOrigin", "class_game_object_origin.html", [
+    [ "GameObjectBase", "class_game_object_base.html", [
       [ "ClearLogo", "class_clear_logo.html", null ],
       [ "Coin", "class_coin.html", null ],
       [ "Enemy", "class_enemy.html", null ],
       [ "FailureLogo", "class_failure_logo.html", null ],
       [ "Field", "class_field.html", null ],
+      [ "Goal", "class_goal.html", null ],
       [ "Number", "class_number.html", null ],
       [ "Numbers", "class_numbers.html", null ],
       [ "Player", "class_player.html", null ],
       [ "PushSpaceLogo", "class_push_space_logo.html", null ],
       [ "Score", "class_score.html", null ],
       [ "SkyDome", "class_sky_dome.html", null ],
+      [ "StencilShadowTest", "class_stencil_shadow_test.html", null ],
       [ "TitleLogo", "class_title_logo.html", null ],
-      [ "TutorialLogo01", "class_tutorial_logo01.html", null ],
-      [ "TutorialLogo02", "class_tutorial_logo02.html", null ]
+      [ "TutorialLogo", "class_tutorial_logo.html", null ]
     ] ],
+    [ "GameObjectManager", "class_game_object_manager.html", null ],
     [ "GameObjectReferenceManager", "class_game_object_reference_manager.html", null ],
     [ "GameSystem", "class_game_system.html", null ],
     [ "ImFontAtlas::GlyphRangesBuilder", "struct_im_font_atlas_1_1_glyph_ranges_builder.html", null ],
+    [ "GoalFactory", "class_goal_factory.html", null ],
     [ "GridPolygon", "class_grid_polygon.html", null ],
     [ "ImColor", "struct_im_color.html", null ],
     [ "ImDrawChannel", "struct_im_draw_channel.html", null ],
@@ -185,13 +198,15 @@ var hierarchy =
     [ "ImVector< unsigned char >", "class_im_vector.html", null ],
     [ "ImVector< unsigned short >", "class_im_vector.html", null ],
     [ "Effekseer::TrackRenderer::InstanceGroupParameter", "struct_effekseer_1_1_track_renderer_1_1_instance_group_parameter.html", null ],
-    [ "Effekseer::RibbonRenderer::InstanceParameter", "struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter.html", null ],
-    [ "Effekseer::RingRenderer::InstanceParameter", "struct_effekseer_1_1_ring_renderer_1_1_instance_parameter.html", null ],
-    [ "Effekseer::ModelRenderer::InstanceParameter", "struct_effekseer_1_1_model_renderer_1_1_instance_parameter.html", null ],
-    [ "Effekseer::SoundPlayer::InstanceParameter", "struct_effekseer_1_1_sound_player_1_1_instance_parameter.html", null ],
-    [ "Effekseer::TrackRenderer::InstanceParameter", "struct_effekseer_1_1_track_renderer_1_1_instance_parameter.html", null ],
     [ "Effekseer::SpriteRenderer::InstanceParameter", "struct_effekseer_1_1_sprite_renderer_1_1_instance_parameter.html", null ],
+    [ "Effekseer::ModelRenderer::InstanceParameter", "struct_effekseer_1_1_model_renderer_1_1_instance_parameter.html", null ],
+    [ "Effekseer::RibbonRenderer::InstanceParameter", "struct_effekseer_1_1_ribbon_renderer_1_1_instance_parameter.html", null ],
+    [ "Effekseer::TrackRenderer::InstanceParameter", "struct_effekseer_1_1_track_renderer_1_1_instance_parameter.html", null ],
+    [ "Effekseer::SoundPlayer::InstanceParameter", "struct_effekseer_1_1_sound_player_1_1_instance_parameter.html", null ],
+    [ "Effekseer::RingRenderer::InstanceParameter", "struct_effekseer_1_1_ring_renderer_1_1_instance_parameter.html", null ],
+    [ "EffekseerRendererDX9::Model::InternalModel", "struct_effekseer_renderer_d_x9_1_1_model_1_1_internal_model.html", null ],
     [ "mfmlib::IntpData", "classmfmlib_1_1_intp_data.html", null ],
+    [ "Effekseer::IRandObject", "class_effekseer_1_1_i_rand_object.html", null ],
     [ "Effekseer::IReference", "class_effekseer_1_1_i_reference.html", [
       [ "Effekseer::Effect", "class_effekseer_1_1_effect.html", null ],
       [ "Effekseer::Manager", "class_effekseer_1_1_manager.html", null ],
@@ -203,13 +218,15 @@ var hierarchy =
       ] ]
     ] ],
     [ "LimitedPointerArray< Type, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
-    [ "LimitedPointerArray< Camera *, CAMERA_ARRAY_NUM >", "class_limited_pointer_array.html", null ],
-    [ "LimitedPointerArray< CollisionComponent *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
+    [ "LimitedPointerArray< CollisionBase *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
     [ "LimitedPointerArray< CollisionObject *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
-    [ "LimitedPointerArray< DrawComponent *, DRAW_ARRAY_NUM >", "class_limited_pointer_array.html", null ],
-    [ "LimitedPointerArray< DrawComponent *, DrawComponentManager::DRAW_ARRAY_NUM >", "class_limited_pointer_array.html", null ],
-    [ "LimitedPointerArray< GameObjectOrigin *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
-    [ "LimitedPointerArray< UpdateComponent *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
+    [ "LimitedPointerArray< CollisionObjects *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
+    [ "LimitedPointerArray< DrawBase *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
+    [ "LimitedPointerArray< DrawBase *, DRAW_ARRAY_NUM >", "class_limited_pointer_array.html", null ],
+    [ "LimitedPointerArray< GameObjectBase *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
+    [ "LimitedPointerArray< UpdateBase *, ARRAY_NUM >", "class_limited_pointer_array.html", null ],
+    [ "LinerOctree< Type >", "class_liner_octree.html", null ],
+    [ "LinerOctree< CollisionObjects *>", "class_liner_octree.html", null ],
     [ "mfmlib::Material", "structmfmlib_1_1_material.html", null ],
     [ "mfmlib::MATRIX", "classmfmlib_1_1_m_a_t_r_i_x.html", null ],
     [ "Effekseer::Matrix43", "struct_effekseer_1_1_matrix43.html", null ],
@@ -228,13 +245,15 @@ var hierarchy =
     [ "Effekseer::ModelRenderer", "class_effekseer_1_1_model_renderer.html", null ],
     [ "ModelXManager", "class_model_x_manager.html", null ],
     [ "ModelXObject", "class_model_x_object.html", null ],
-    [ "Effekseer::RibbonRenderer::NodeParameter", "struct_effekseer_1_1_ribbon_renderer_1_1_node_parameter.html", null ],
-    [ "Effekseer::RingRenderer::NodeParameter", "struct_effekseer_1_1_ring_renderer_1_1_node_parameter.html", null ],
     [ "Effekseer::SpriteRenderer::NodeParameter", "struct_effekseer_1_1_sprite_renderer_1_1_node_parameter.html", null ],
     [ "Effekseer::TrackRenderer::NodeParameter", "struct_effekseer_1_1_track_renderer_1_1_node_parameter.html", null ],
+    [ "Effekseer::RingRenderer::NodeParameter", "struct_effekseer_1_1_ring_renderer_1_1_node_parameter.html", null ],
+    [ "Effekseer::RibbonRenderer::NodeParameter", "struct_effekseer_1_1_ribbon_renderer_1_1_node_parameter.html", null ],
     [ "Effekseer::ModelRenderer::NodeParameter", "struct_effekseer_1_1_model_renderer_1_1_node_parameter.html", null ],
     [ "NumberFactory", "class_number_factory.html", null ],
     [ "NumbersFactory", "class_numbers_factory.html", null ],
+    [ "ObjectOfTree< Type >", "class_object_of_tree.html", null ],
+    [ "ObjectOfTree< CollisionObjects *>", "class_object_of_tree.html", null ],
     [ "ImGuiStorage::Pair", "struct_im_gui_storage_1_1_pair.html", null ],
     [ "Physics", "class_physics.html", null ],
     [ "PlanePolygon", "class_plane_polygon.html", null ],
@@ -255,7 +274,7 @@ var hierarchy =
     [ "Effekseer::RibbonRenderer", "class_effekseer_1_1_ribbon_renderer.html", null ],
     [ "Effekseer::RingRenderer", "class_effekseer_1_1_ring_renderer.html", null ],
     [ "SafeRelease", "class_safe_release.html", null ],
-    [ "SceneBace", "class_scene_bace.html", [
+    [ "SceneBase", "class_scene_base.html", [
       [ "GameScene", "class_game_scene.html", null ],
       [ "ResultScene", "class_result_scene.html", null ],
       [ "TitleScene", "class_title_scene.html", null ],
@@ -264,19 +283,39 @@ var hierarchy =
     [ "SceneManager", "class_scene_manager.html", null ],
     [ "ScoreFactory", "class_score_factory.html", null ],
     [ "Effekseer::Server", "class_effekseer_1_1_server.html", null ],
+    [ "ShaderBase", "class_shader_base.html", [
+      [ "PixelShaderBase", "class_pixel_shader_base.html", [
+        [ "PixelShaderNull", "class_pixel_shader_null.html", [
+          [ "PixelShaderBumpMapping", "class_pixel_shader_bump_mapping.html", null ]
+        ] ]
+      ] ],
+      [ "VertexShaderBase", "class_vertex_shader_base.html", [
+        [ "VertexShaderNull", "class_vertex_shader_null.html", [
+          [ "VertexShaderBumpMapping", "class_vertex_shader_bump_mapping.html", null ],
+          [ "VertexShaderFixed", "class_vertex_shader_fixed.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "ShaderManager", "class_shader_manager.html", null ],
     [ "SkyDomeFactory", "class_sky_dome_factory.html", null ],
     [ "EffekseerSound::Sound", "class_effekseer_sound_1_1_sound.html", null ],
     [ "EffekseerSound::SoundData", "struct_effekseer_sound_1_1_sound_data.html", null ],
     [ "Effekseer::SoundLoader", "class_effekseer_1_1_sound_loader.html", null ],
     [ "SOUNDPARAM", "struct_s_o_u_n_d_p_a_r_a_m.html", null ],
     [ "Effekseer::SoundPlayer", "class_effekseer_1_1_sound_player.html", null ],
+    [ "SpaceOfTree< Type >", "class_space_of_tree.html", null ],
+    [ "SpaceOfTree< CollisionObjects *>", "class_space_of_tree.html", null ],
     [ "Effekseer::SpriteRenderer", "class_effekseer_1_1_sprite_renderer.html", null ],
     [ "Camera::State", "class_camera_1_1_state.html", [
       [ "CameraState_CrawlUp", "class_camera_state___crawl_up.html", null ],
       [ "CameraState_HomingTarget", "class_camera_state___homing_target.html", null ]
     ] ],
-    [ "SceneBace::StateAbstract", "class_scene_bace_1_1_state_abstract.html", [
-      [ "GameSceneState_Start", "class_game_scene_state___start.html", null ]
+    [ "SceneBase::StateAbstract", "class_scene_base_1_1_state_abstract.html", [
+      [ "GameSceneState_Start", "class_game_scene_state___start.html", null ],
+      [ "ResultSceneState_Start", "class_result_scene_state___start.html", null ],
+      [ "TitleSceneState_Start", "class_title_scene_state___start.html", null ],
+      [ "TutorialSceneState_End", "class_tutorial_scene_state___end.html", null ],
+      [ "TutorialSceneState_Start", "class_tutorial_scene_state___start.html", null ]
     ] ],
     [ "STB_TexteditState", "struct_s_t_b___textedit_state.html", null ],
     [ "ImGuiStb::STB_TexteditState", "struct_im_gui_stb_1_1_s_t_b___textedit_state.html", null ],
@@ -284,8 +323,8 @@ var hierarchy =
     [ "stbrp_context", "structstbrp__context.html", null ],
     [ "stbrp_node", "structstbrp__node.html", null ],
     [ "stbrp_rect", "structstbrp__rect.html", null ],
-    [ "ImGuiStb::StbTexteditRow", "struct_im_gui_stb_1_1_stb_textedit_row.html", null ],
     [ "StbTexteditRow", "struct_stb_textedit_row.html", null ],
+    [ "ImGuiStb::StbTexteditRow", "struct_im_gui_stb_1_1_stb_textedit_row.html", null ],
     [ "stbtt__bitmap", "structstbtt____bitmap.html", null ],
     [ "stbtt__buf", "structstbtt____buf.html", null ],
     [ "stbtt_aligned_quad", "structstbtt__aligned__quad.html", null ],
@@ -299,20 +338,17 @@ var hierarchy =
     [ "ImGuiStb::StbUndoRecord", "struct_im_gui_stb_1_1_stb_undo_record.html", null ],
     [ "StbUndoState", "struct_stb_undo_state.html", null ],
     [ "ImGuiStb::StbUndoState", "struct_im_gui_stb_1_1_stb_undo_state.html", null ],
-    [ "TestShaderObject", "class_test_shader_object.html", null ],
+    [ "StencilShadowTestFactory", "class_stencil_shadow_test_factory.html", null ],
     [ "ImGuiTextFilter::TextRange", "struct_im_gui_text_filter_1_1_text_range.html", null ],
     [ "Effekseer::TextureData", "struct_effekseer_1_1_texture_data.html", null ],
     [ "Effekseer::TextureLoader", "class_effekseer_1_1_texture_loader.html", null ],
     [ "TextureManager", "class_texture_manager.html", null ],
     [ "TextureObject", "class_texture_object.html", null ],
-    [ "Effekseer::Thread", "class_effekseer_1_1_thread.html", null ],
     [ "TitleLogoFactory", "class_title_logo_factory.html", null ],
     [ "Effekseer::TrackRenderer", "class_effekseer_1_1_track_renderer.html", null ],
     [ "Transform", "class_transform.html", null ],
-    [ "TransitionShaderObject", "class_transition_shader_object.html", null ],
-    [ "TutorialLogo01Factory", "class_tutorial_logo01_factory.html", null ],
-    [ "TutorialLogo02Factory", "class_tutorial_logo02_factory.html", null ],
-    [ "UpdateComponentManager", "class_update_component_manager.html", null ],
+    [ "TutorialLogoFactory", "class_tutorial_logo_factory.html", null ],
+    [ "UpdateManager", "class_update_manager.html", null ],
     [ "Vec3", null, [
       [ "Vector3D", "class_vector3_d.html", null ]
     ] ],

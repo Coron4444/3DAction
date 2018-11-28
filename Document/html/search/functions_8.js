@@ -17,8 +17,8 @@ var searchData=
   ['hitcheck_5fsphere_5fsphere',['HitCheck_Sphere_Sphere',['../class_collision_judgment.html#a21e4ce202f713f1b2a7fc593f4daf7d2',1,'CollisionJudgment']]],
   ['hitcheck_5fsphere_5ftriangle',['HitCheck_Sphere_Triangle',['../class_collision_judgment.html#a2b4e851cf1fc45dca09175b36fb4f50c',1,'CollisionJudgment']]],
   ['hitcheck_5ftriangle_5ftriangle',['HitCheck_Triangle_Triangle',['../class_collision_judgment.html#ab33b8936e62bdb9b6cf6f3d383c033b9',1,'CollisionJudgment']]],
-  ['hitcollision',['HitCollision',['../class_player_collision.html#ae2d429a16bf2c3ee74070ef497a8696a',1,'PlayerCollision::HitCollision()'],['../class_collision_component.html#a50c4fea9d37eb22ac435ee5c2ce36254',1,'CollisionComponent::HitCollision()']]],
-  ['hitground',['HitGround',['../class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0',1,'PlayerCollision::HitGround()'],['../class_collision_component.html#a7538567006556bc03524df2655e83956',1,'CollisionComponent::HitGround()']]],
+  ['hitcollision',['HitCollision',['../class_player_collision.html#ad937a5fd226e742270202bf4eff53767',1,'PlayerCollision::HitCollision()'],['../class_collision_base.html#a5c94fe03f875595758e83eb2a176e45d',1,'CollisionBase::HitCollision()'],['../class_collision_null.html#a580f507d8918865679feec3cc7b613d1',1,'CollisionNull::HitCollision()']]],
+  ['hitground',['HitGround',['../class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0',1,'PlayerCollision::HitGround()'],['../class_collision_base.html#a48c9d1d9e4286cde5054d4d2aa70bdd8',1,'CollisionBase::HitGround()'],['../class_collision_null.html#a75900c2cec4e49336701e2e3c64e5bfe',1,'CollisionNull::HitGround()']]],
   ['hour_5fto_5fframe',['Hour_To_Frame',['../_time_to_frame_8h.html#a84cfd6b015bfc9be7e593a1b22357bd5',1,'TimeToFrame.h']]],
   ['hsv',['HSV',['../struct_im_color.html#ac8cb52119648523038818a613becf010',1,'ImColor']]]
 ];

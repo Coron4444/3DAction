@@ -1,0 +1,202 @@
+\hypertarget{class_game_object_base}{}\section{Game\+Object\+Base クラス}
+\label{class_game_object_base}\index{Game\+Object\+Base@{Game\+Object\+Base}}
+
+
+ゲームオブジェクト基底クラス  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object\+Base.\+h$>$}
+
+Game\+Object\+Base の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_game_object_base}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_base_a4682a3e88a45a462de288f14e9a8545d}{Game\+Object\+Base}} (bool is\+\_\+registration=true)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_object_base_a0cb813d5c7af673a3d190eb1b2d26275}{$\sim$\+Game\+Object\+Base}} ()
+\begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Reset}} ()=0
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_base_adf7df49baa04363c63f9515317776e40}{Create\+Physics}} ()
+\begin{DoxyCompactList}\small\item\em 剛体生成関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform}{Transform}} $\ast$ \mbox{\hyperlink{class_game_object_base_a7df1e16838f8fa578a27e8ba64652b49}{Get\+Transform}} ()
+\item 
+\mbox{\hyperlink{class_physics}{Physics}} $\ast$ \mbox{\hyperlink{class_game_object_base_a853cdb5dbb2edf28e45e49540f85e554}{Get\+Physics}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90}{Set\+All\+Component}} (\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$value0, \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$value1, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$value2)
+\item 
+\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$ \mbox{\hyperlink{class_game_object_base_a177985be1be1252df6588fa29f2c7f41}{Get\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_base_a71704e8310b3183f3f88869f8fd27d08}{Set\+Update}} (\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$value)
+\item 
+\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$ \mbox{\hyperlink{class_game_object_base_acb893b1827cb7fbb27f0caf6a8e0fb88}{Get\+Draw}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_base_ab548b4208b8da2af6e3abb533ea53da9}{Set\+Draw}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$value)
+\item 
+\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$ \mbox{\hyperlink{class_game_object_base_a8158138ea811db49445845d8aaacaf3a}{Get\+Collision}} ()
+\item 
+void \mbox{\hyperlink{class_game_object_base_a4aeb0212f5a390570d050bfef51b7818}{Set\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$value)
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_object_base_aca14cf5d66f945347653c4965876e75b}{Init}} (\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$update, \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ゲームオブジェクト基底クラス 
+
+ゲームオブジェクトの基底クラス 
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_game_object_base_a4682a3e88a45a462de288f14e9a8545d}\label{class_game_object_base_a4682a3e88a45a462de288f14e9a8545d}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Game\+Object\+Base@{Game\+Object\+Base}}
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Game\+Object\+Base()}{GameObjectBase()}}
+{\footnotesize\ttfamily Game\+Object\+Base\+::\+Game\+Object\+Base (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+registration = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em is\+\_\+registration} & \+: 登録フラグ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_base_a0cb813d5c7af673a3d190eb1b2d26275}\label{class_game_object_base_a0cb813d5c7af673a3d190eb1b2d26275}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!````~Game\+Object\+Base@{$\sim$\+Game\+Object\+Base}}
+\index{````~Game\+Object\+Base@{$\sim$\+Game\+Object\+Base}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Game\+Object\+Base()}{~GameObjectBase()}}
+{\footnotesize\ttfamily Game\+Object\+Base\+::$\sim$\+Game\+Object\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+仮想デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_game_object_base_adf7df49baa04363c63f9515317776e40}\label{class_game_object_base_adf7df49baa04363c63f9515317776e40}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Create\+Physics@{Create\+Physics}}
+\index{Create\+Physics@{Create\+Physics}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Create\+Physics()}{CreatePhysics()}}
+{\footnotesize\ttfamily void Game\+Object\+Base\+::\+Create\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+剛体生成関数 
+
+\mbox{\Hypertarget{class_game_object_base_a8158138ea811db49445845d8aaacaf3a}\label{class_game_object_base_a8158138ea811db49445845d8aaacaf3a}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Get\+Collision@{Get\+Collision}}
+\index{Get\+Collision@{Get\+Collision}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Get\+Collision()}{GetCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_base}{Collision\+Base}}$\ast$ Game\+Object\+Base\+::\+Get\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_acb893b1827cb7fbb27f0caf6a8e0fb88}\label{class_game_object_base_acb893b1827cb7fbb27f0caf6a8e0fb88}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Get\+Draw@{Get\+Draw}}
+\index{Get\+Draw@{Get\+Draw}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Get\+Draw()}{GetDraw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_draw_base}{Draw\+Base}}$\ast$ Game\+Object\+Base\+::\+Get\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_a853cdb5dbb2edf28e45e49540f85e554}\label{class_game_object_base_a853cdb5dbb2edf28e45e49540f85e554}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Get\+Physics@{Get\+Physics}}
+\index{Get\+Physics@{Get\+Physics}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Get\+Physics()}{GetPhysics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics}{Physics}}$\ast$ Game\+Object\+Base\+::\+Get\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_a7df1e16838f8fa578a27e8ba64652b49}\label{class_game_object_base_a7df1e16838f8fa578a27e8ba64652b49}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Get\+Transform@{Get\+Transform}}
+\index{Get\+Transform@{Get\+Transform}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}}$\ast$ Game\+Object\+Base\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_a177985be1be1252df6588fa29f2c7f41}\label{class_game_object_base_a177985be1be1252df6588fa29f2c7f41}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Get\+Update@{Get\+Update}}
+\index{Get\+Update@{Get\+Update}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Get\+Update()}{GetUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_update_base}{Update\+Base}}$\ast$ Game\+Object\+Base\+::\+Get\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_aca14cf5d66f945347653c4965876e75b}\label{class_game_object_base_aca14cf5d66f945347653c4965876e75b}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Init@{Init}}
+\index{Init@{Init}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Object\+Base\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em update} & \+: 更新基底クラス draw \+: 描画基底クラス collision \+: 衝突基底クラス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}\label{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Reset@{Reset}}
+\index{Reset@{Reset}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Game\+Object\+Base\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_number_a7c6facdb1b3d0acc8309e0a915863d44}{Number}}, \mbox{\hyperlink{class_goal_a98b797c8012ab43d6fc8c42e4e91466b}{Goal}}, \mbox{\hyperlink{class_push_space_logo_afa163b1aff8df494b4f09f378bf983f0}{Push\+Space\+Logo}}, \mbox{\hyperlink{class_numbers_a1ab67e439ba1695c8fd545dfc1650990}{Numbers}}, \mbox{\hyperlink{class_clear_logo_aa19369cbace0cc79957ef7b4d4dbd0f5}{Clear\+Logo}}, \mbox{\hyperlink{class_failure_logo_a542b1617087a6701f7edb345e2a72e01}{Failure\+Logo}}, \mbox{\hyperlink{class_title_logo_a8bca39d06592b95b26024c2d86ac349c}{Title\+Logo}}, \mbox{\hyperlink{class_field_a5b140074dcca821ac702da348238c6d4}{Field}}, \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Player}}, \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Score}}, \mbox{\hyperlink{class_tutorial_logo_a2c9e22c81cfeafbd34f50cc766a66cf1}{Tutorial\+Logo}}, \mbox{\hyperlink{class_enemy_ab86571061e7fcabcf8c646b1abad5581}{Enemy}}, \mbox{\hyperlink{class_coin_a52c50229ce7c1e0f459e198adac70c8d}{Coin}}, \mbox{\hyperlink{class_stencil_shadow_test_a7691120143c64b99d6c8f5391be56e83}{Stencil\+Shadow\+Test}}, \mbox{\hyperlink{class_sky_dome_abc6f8ed1471d7b03f25924a849cae590}{Sky\+Dome}} (計15項目)で実装されています。
+
+\mbox{\Hypertarget{class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90}\label{class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Set\+All\+Component@{Set\+All\+Component}}
+\index{Set\+All\+Component@{Set\+All\+Component}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Set\+All\+Component()}{SetAllComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+Base\+::\+Set\+All\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{value0,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{value1,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{value2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_a4aeb0212f5a390570d050bfef51b7818}\label{class_game_object_base_a4aeb0212f5a390570d050bfef51b7818}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Set\+Collision@{Set\+Collision}}
+\index{Set\+Collision@{Set\+Collision}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Set\+Collision()}{SetCollision()}}
+{\footnotesize\ttfamily void Game\+Object\+Base\+::\+Set\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_ab548b4208b8da2af6e3abb533ea53da9}\label{class_game_object_base_ab548b4208b8da2af6e3abb533ea53da9}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Set\+Draw@{Set\+Draw}}
+\index{Set\+Draw@{Set\+Draw}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Set\+Draw()}{SetDraw()}}
+{\footnotesize\ttfamily void Game\+Object\+Base\+::\+Set\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_a71704e8310b3183f3f88869f8fd27d08}\label{class_game_object_base_a71704e8310b3183f3f88869f8fd27d08}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Set\+Update@{Set\+Update}}
+\index{Set\+Update@{Set\+Update}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Set\+Update()}{SetUpdate()}}
+{\footnotesize\ttfamily void Game\+Object\+Base\+::\+Set\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}\label{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}} 
+\index{Game\+Object\+Base@{Game\+Object\+Base}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Game\+Object\+Base@{Game\+Object\+Base}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Game\+Object\+Base\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_number_a7c3bf9c55f7a0a19d80129c5f07f99f2}{Number}}, \mbox{\hyperlink{class_push_space_logo_a06404113db417c58941ca7a13bba161e}{Push\+Space\+Logo}}, \mbox{\hyperlink{class_numbers_aeaad3cc1b8ae7defe79813b983b04101}{Numbers}}, \mbox{\hyperlink{class_goal_a48126385a674bcda855e2a61561fbf9f}{Goal}}, \mbox{\hyperlink{class_clear_logo_ab55def116615b92a8e8cc40b364b7a4c}{Clear\+Logo}}, \mbox{\hyperlink{class_failure_logo_adbe01fc4567ade0e788f511f5162299c}{Failure\+Logo}}, \mbox{\hyperlink{class_title_logo_a177943b3becc80fcdb7a34f131b07ee9}{Title\+Logo}}, \mbox{\hyperlink{class_field_a6d1015e2409daa87cd00485ac1efc06b}{Field}}, \mbox{\hyperlink{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c}{Player}}, \mbox{\hyperlink{class_score_a605e163dc59ccc4d19a3cb6b5db813b8}{Score}}, \mbox{\hyperlink{class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5}{Tutorial\+Logo}}, \mbox{\hyperlink{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962}{Enemy}}, \mbox{\hyperlink{class_coin_a4d364dcb4b57b80ea00ce931d0bb300f}{Coin}}, \mbox{\hyperlink{class_stencil_shadow_test_a51b5d75aaba5673a13f950bd6b742720}{Stencil\+Shadow\+Test}}, \mbox{\hyperlink{class_sky_dome_a7fc71bfa671cf6e7ab26a194459b0753}{Sky\+Dome}} (計15項目)で再実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Game\+Object\+Base/\mbox{\hyperlink{_game_object_base_8h}{Game\+Object\+Base.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Game\+Object\+Base/\mbox{\hyperlink{_game_object_base_8cpp}{Game\+Object\+Base.\+cpp}}\end{DoxyCompactItemize}

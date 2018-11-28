@@ -2,7 +2,6 @@ var searchData=
 [
   ['_5f_5feffekseer_5fclient_5fh_5f_5f',['__EFFEKSEER_CLIENT_H__',['../_effekseer_8h.html#ae50d8e705e1df13802125a3d76262513',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5fcolor_5fh_5f_5f',['__EFFEKSEER_COLOR_H__',['../_effekseer_8h.html#ad5142c5c895ceca81575cd84f98c6747',1,'Effekseer.h']]],
-  ['_5f_5feffekseer_5fcriticalsession_5fh_5f_5f',['__EFFEKSEER_CRITICALSESSION_H__',['../_effekseer_8h.html#af31bbb4fc6e3d8779d8afd71649cf53d',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5fdefault_5ffile_5fh_5f_5f',['__EFFEKSEER_DEFAULT_FILE_H__',['../_effekseer_8h.html#a42a88a4452a028e268f094f6441d5b27',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5feffect_5fh_5f_5f',['__EFFEKSEER_EFFECT_H__',['../_effekseer_8h.html#a7875687b1f546a573428fe17ec3072f6',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5feffectloader_5fh_5f_5f',['__EFFEKSEER_EFFECTLOADER_H__',['../_effekseer_8h.html#a48c35637c94c664ab2fa403cdfe56fe1',1,'Effekseer.h']]],
@@ -22,7 +21,6 @@ var searchData=
   ['_5f_5feffekseer_5fsoundloader_5fh_5f_5f',['__EFFEKSEER_SOUNDLOADER_H__',['../_effekseer_8h.html#a2e908c0a22356442812c1e097d381fc7',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5fsprite_5frenderer_5fh_5f_5f',['__EFFEKSEER_SPRITE_RENDERER_H__',['../_effekseer_8h.html#a728866ed67e63ec6c59f93812cf5ea48',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5ftextureloader_5fh_5f_5f',['__EFFEKSEER_TEXTURELOADER_H__',['../_effekseer_8h.html#af4dfa6acda3b8439c88e4cd0ea1a1e23',1,'Effekseer.h']]],
-  ['_5f_5feffekseer_5fthread_5fh_5f_5f',['__EFFEKSEER_THREAD_H__',['../_effekseer_8h.html#a1e8df9806cb133e49638690e59e73baf',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5ftrack_5frenderer_5fh_5f_5f',['__EFFEKSEER_TRACK_RENDERER_H__',['../_effekseer_8h.html#a8f4b7df74bc83cdcd05af856c0635cf6',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5fvector2d_5fh_5f_5f',['__EFFEKSEER_VECTOR2D_H__',['../_effekseer_8h.html#aa9370a43166c025ec921ec005658f427',1,'Effekseer.h']]],
   ['_5f_5feffekseer_5fvector3d_5fh_5f_5f',['__EFFEKSEER_VECTOR3D_H__',['../_effekseer_8h.html#aa82b99d80736c984fa4fe4710ef5bd8b',1,'Effekseer.h']]],

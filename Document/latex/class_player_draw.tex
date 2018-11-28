@@ -2,84 +2,114 @@
 \label{class_player_draw}\index{Player\+Draw@{Player\+Draw}}
 
 
+プレイヤー描画クラス  
+
+
+
+
 {\ttfamily \#include $<$Player\+Draw.\+h$>$}
 
 Player\+Draw の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_player_draw}
+\includegraphics[height=4.000000cm]{class_player_draw}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}{Init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_draw_a917b2947914287f23d87ca75cd68f553}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_draw_a8b9e8caa6bea7295f58a0aaddeb9458b}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a}{Get\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-void \mbox{\hyperlink{class_player_draw_a1d58f14658bf5e058f67c6754d9898e7}{Draw}} (unsigned mesh\+\_\+index) override
+unsigned \mbox{\hyperlink{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_player_draw_adbf5776a7a2d7f255661e0527f673eaa}{Get\+Mesh\+Num}} () override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_player_draw_ae818d3adaf5120845c2a78c230b5365e}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_player_draw_abcc7b934dbbe08215291dfd1baa2ac31}{Get\+Material}} (unsigned mesh\+\_\+index) override
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_draw_a6cecfb28942044efff0b9d6213b511a5}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_draw_af139860a0e62553110f939a62d7b5e8e}{Get\+Decale\+Texture}} (unsigned mesh\+\_\+index) override
-\item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_draw_a96eb31c32c0016cd6c908dc67032a7ed}{Get\+Normal\+Texture}} (unsigned mesh\+\_\+index) override
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb}{Get\+Normal\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
 
+
+\subsection{詳解}
+プレイヤー描画クラス 
+
+プレイヤーの描画クラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_player_draw_a1d58f14658bf5e058f67c6754d9898e7}\label{class_player_draw_a1d58f14658bf5e058f67c6754d9898e7}} 
+\mbox{\Hypertarget{class_player_draw_a8b9e8caa6bea7295f58a0aaddeb9458b}\label{class_player_draw_a8b9e8caa6bea7295f58a0aaddeb9458b}} 
 \index{Player\+Draw@{Player\+Draw}!Draw@{Draw}}
 \index{Draw@{Draw}!Player\+Draw@{Player\+Draw}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void Player\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Player\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_ae84bfb6ccc2fda9e54cdff45057ea2c3}{Draw\+Component}}を実装しています。
+描画関数 
 
-\mbox{\Hypertarget{class_player_draw_af139860a0e62553110f939a62d7b5e8e}\label{class_player_draw_af139860a0e62553110f939a62d7b5e8e}} 
+
+\begin{DoxyParams}{引数}
+{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_draw_a6cecfb28942044efff0b9d6213b511a5}\label{class_player_draw_a6cecfb28942044efff0b9d6213b511a5}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Player\+Draw@{Player\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
-{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Player\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Player\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a9ea98f4bcdfd76782d5234122b132c3d}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_player_draw_abcc7b934dbbe08215291dfd1baa2ac31}\label{class_player_draw_abcc7b934dbbe08215291dfd1baa2ac31}} 
+\mbox{\Hypertarget{class_player_draw_ae818d3adaf5120845c2a78c230b5365e}\label{class_player_draw_ae818d3adaf5120845c2a78c230b5365e}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Player\+Draw@{Player\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Player\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Player\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_adae078d5139f691997763bf6cac9e25a}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_player_draw_adbf5776a7a2d7f255661e0527f673eaa}\label{class_player_draw_adbf5776a7a2d7f255661e0527f673eaa}} 
+\mbox{\Hypertarget{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a}\label{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a}} 
+\index{Player\+Draw@{Player\+Draw}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Player\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71}\label{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Player\+Draw@{Player\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Player\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily unsigned Player\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a5f3bbcc8e563b740c0a5535170921c75}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_player_draw_a96eb31c32c0016cd6c908dc67032a7ed}\label{class_player_draw_a96eb31c32c0016cd6c908dc67032a7ed}} 
+\mbox{\Hypertarget{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb}\label{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Normal\+Texture@{Get\+Normal\+Texture}}
 \index{Get\+Normal\+Texture@{Get\+Normal\+Texture}!Player\+Draw@{Player\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Normal\+Texture()}{GetNormalTexture()}}
-{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Player\+Draw\+::\+Get\+Normal\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Player\+Draw\+::\+Get\+Normal\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a03b739c28b9abcff3a3e5bda6bcc2060}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a41b7d148612b2d328e85289e32dc374c}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}\label{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}} 
 \index{Player\+Draw@{Player\+Draw}!Init@{Init}}
@@ -89,7 +119,11 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_draw_a917b2947914287f23d87ca75cd68f553}\label{class_player_draw_a917b2947914287f23d87ca75cd68f553}} 
 \index{Player\+Draw@{Player\+Draw}!Uninit@{Uninit}}
@@ -99,7 +133,11 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
 
 
 

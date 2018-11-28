@@ -8,7 +8,7 @@ var class_effekseer_object =
     [ "GetTransform", "class_effekseer_object.html#ad7e825d08856df48459437ad759d7a00", null ],
     [ "IsPlaing", "class_effekseer_object.html#a6fe253dd3387bdfd9305878ff194f305", null ],
     [ "Play", "class_effekseer_object.html#a59c8a12b4eb558449622660d892b3cf4", null ],
-    [ "SetColor", "class_effekseer_object.html#a876c50dad7f959d77579b1ea274ea706", null ],
+    [ "SetColor", "class_effekseer_object.html#a5c496e56785ef7b784b13642d59d4e7f", null ],
     [ "SetPause", "class_effekseer_object.html#aeec933c68ceb4bafc69d65590c470d72", null ],
     [ "SetProjectionMatrix", "class_effekseer_object.html#aa3849f176ccb493b162d08c1ef387996", null ],
     [ "SetRepeat", "class_effekseer_object.html#a77122f2d71d44d6cceec2b6bdedb4b2a", null ],

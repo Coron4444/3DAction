@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: Renderer クラス</title>
+<title>3DAction: Renderer クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -129,9 +129,15 @@ $(document).ready(function(){initNavTree('class_renderer.html','');});
 <tr class="memitem:a0393849bd4178a33861780bf07b0deee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a0393849bd4178a33861780bf07b0deee">DrawEnd</a> (bool is_begin_scene)</td></tr>
 <tr class="memdesc:a0393849bd4178a33861780bf07b0deee"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画終了関数  <a href="#a0393849bd4178a33861780bf07b0deee">[詳解]</a><br /></td></tr>
 <tr class="separator:a0393849bd4178a33861780bf07b0deee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dac4baae1fa79166442b0778a9c8728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a1dac4baae1fa79166442b0778a9c8728">Present</a> ()</td></tr>
+<tr class="memdesc:a1dac4baae1fa79166442b0778a9c8728"><td class="mdescLeft">&#160;</td><td class="mdescRight">バックバッファをフロントバッファに反映関数  <a href="#a1dac4baae1fa79166442b0778a9c8728">[詳解]</a><br /></td></tr>
+<tr class="separator:a1dac4baae1fa79166442b0778a9c8728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249147991a8187a3d373fd6bd43e8c54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a249147991a8187a3d373fd6bd43e8c54">SetRenderer</a> (<a class="el" href="class_renderer_factory.html">RendererFactory</a> *factory, <a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835fec">MODE</a> mode)</td></tr>
 <tr class="memdesc:a249147991a8187a3d373fd6bd43e8c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダラー設定関数  <a href="#a249147991a8187a3d373fd6bd43e8c54">[詳解]</a><br /></td></tr>
 <tr class="separator:a249147991a8187a3d373fd6bd43e8c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee43ba8d87142ff334ae7016cae9050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer_interface.html">RendererInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a4ee43ba8d87142ff334ae7016cae9050">GetRenderer</a> ()</td></tr>
+<tr class="memdesc:a4ee43ba8d87142ff334ae7016cae9050"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダラー取得関数  <a href="#a4ee43ba8d87142ff334ae7016cae9050">[詳解]</a><br /></td></tr>
+<tr class="separator:a4ee43ba8d87142ff334ae7016cae9050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15585698849fcba4722ac0f00b8b62e6"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
 <tr class="memitem:a15585698849fcba4722ac0f00b8b62e6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_renderer.html#a15585698849fcba4722ac0f00b8b62e6">GetInterface</a> (Type **pointer)</td></tr>
 <tr class="memdesc:a15585698849fcba4722ac0f00b8b62e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">インターフェース取得関数  <a href="#a15585698849fcba4722ac0f00b8b62e6">[詳解]</a><br /></td></tr>
@@ -304,6 +310,33 @@ template&lt;class Type &gt; </div>
 
 </div>
 </div>
+<a id="a4ee43ba8d87142ff334ae7016cae9050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee43ba8d87142ff334ae7016cae9050">&#9670;&nbsp;</a></span>GetRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_renderer_interface.html">RendererInterface</a>* Renderer::GetRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レンダラー取得関数 </p>
+
+</div>
+</div>
 <a id="a8d576add80187f5be3f24ec6a8108100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d576add80187f5be3f24ec6a8108100">&#9670;&nbsp;</a></span>Init()</h2>
 
@@ -355,6 +388,25 @@ template&lt;class Type &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1dac4baae1fa79166442b0778a9c8728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dac4baae1fa79166442b0778a9c8728">&#9670;&nbsp;</a></span>Present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::Present </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バックバッファをフロントバッファに反映関数 </p>
 
 </div>
 </div>

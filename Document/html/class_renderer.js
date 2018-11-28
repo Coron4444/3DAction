@@ -11,7 +11,9 @@ var class_renderer =
     [ "DrawEnd", "class_renderer.html#a0393849bd4178a33861780bf07b0deee", null ],
     [ "GetDevice", "class_renderer.html#a6610c3a85a8170141c4584cecf4a6d15", null ],
     [ "GetInterface", "class_renderer.html#a15585698849fcba4722ac0f00b8b62e6", null ],
+    [ "GetRenderer", "class_renderer.html#a4ee43ba8d87142ff334ae7016cae9050", null ],
     [ "Init", "class_renderer.html#a8d576add80187f5be3f24ec6a8108100", null ],
+    [ "Present", "class_renderer.html#a1dac4baae1fa79166442b0778a9c8728", null ],
     [ "SetRenderer", "class_renderer.html#a249147991a8187a3d373fd6bd43e8c54", null ],
     [ "Uninit", "class_renderer.html#ae865246d6a04d467ac22458f6f5f69d4", null ]
 ];

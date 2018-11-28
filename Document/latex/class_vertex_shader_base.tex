@@ -1,0 +1,89 @@
+\hypertarget{class_vertex_shader_base}{}\section{Vertex\+Shader\+Base クラス}
+\label{class_vertex_shader_base}\index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
+
+
+頂点シェーダー基底クラス  
+
+
+
+
+{\ttfamily \#include $<$Vertex\+Shader\+Base.\+h$>$}
+
+Vertex\+Shader\+Base の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_vertex_shader_base}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f}{Set\+Shader}} () override
+\begin{DoxyCompactList}\small\item\em シェーダー設定関数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c}{Vertex\+Shader\+Compile}} (const char $\ast$file\+\_\+name, const char $\ast$entry\+\_\+function, const char $\ast$version)
+\begin{DoxyCompactList}\small\item\em 頂点シェーダーコンパイル関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63}{Release\+Vertex\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー解放関数 \end{DoxyCompactList}\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{class_vertex_shader_base_ab10cf1aac4a54653c553b5c84e1d3703}{Get\+Vertex\+Shader}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+頂点シェーダー基底クラス 
+
+頂点シェーダー基底クラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_vertex_shader_base_ab10cf1aac4a54653c553b5c84e1d3703}\label{class_vertex_shader_base_ab10cf1aac4a54653c553b5c84e1d3703}} 
+\index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Get\+Vertex\+Shader@{Get\+Vertex\+Shader}}
+\index{Get\+Vertex\+Shader@{Get\+Vertex\+Shader}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
+\subsubsection{\texorpdfstring{Get\+Vertex\+Shader()}{GetVertexShader()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 Vertex\+Shader\+Base\+::\+Get\+Vertex\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63}\label{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63}} 
+\index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Release\+Vertex\+Shader@{Release\+Vertex\+Shader}}
+\index{Release\+Vertex\+Shader@{Release\+Vertex\+Shader}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
+\subsubsection{\texorpdfstring{Release\+Vertex\+Shader()}{ReleaseVertexShader()}}
+{\footnotesize\ttfamily void Vertex\+Shader\+Base\+::\+Release\+Vertex\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+頂点シェーダー解放関数 
+
+\mbox{\Hypertarget{class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f}\label{class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f}} 
+\index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Set\+Shader@{Set\+Shader}}
+\index{Set\+Shader@{Set\+Shader}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
+\subsubsection{\texorpdfstring{Set\+Shader()}{SetShader()}}
+{\footnotesize\ttfamily void Vertex\+Shader\+Base\+::\+Set\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+シェーダー設定関数 
+
+
+
+\mbox{\hyperlink{class_shader_base_af45063254b80602db8626360d643baee}{Shader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c}\label{class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c}} 
+\index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Vertex\+Shader\+Compile@{Vertex\+Shader\+Compile}}
+\index{Vertex\+Shader\+Compile@{Vertex\+Shader\+Compile}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
+\subsubsection{\texorpdfstring{Vertex\+Shader\+Compile()}{VertexShaderCompile()}}
+{\footnotesize\ttfamily bool Vertex\+Shader\+Base\+::\+Vertex\+Shader\+Compile (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+\_\+name,  }\item[{const char $\ast$}]{entry\+\_\+function,  }\item[{const char $\ast$}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+頂点シェーダーコンパイル関数 
+
+
+\begin{DoxyParams}{引数}
+{\em file\+\_\+name} & \+: ファイル名 entry\+\_\+function \+: エントリ関数名 version \+: シェーダーバージョン \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+コンパイル成功ならtrue 
+\end{DoxyReturn}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Shader/\+Shader\+Base/\mbox{\hyperlink{_vertex_shader_base_8h}{Vertex\+Shader\+Base.\+h}}\end{DoxyCompactItemize}

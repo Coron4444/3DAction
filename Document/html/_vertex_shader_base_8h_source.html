@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Shader/ShaderBase/VertexShaderBase.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_vertex_shader_base_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">VertexShaderBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_vertex_shader_base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//    頂点シェーダー基底クラス</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//    Author : Araki Kai                                作成日 : 2018/03/26</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _VERTEX_SHADER_BASE_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _VERTEX_SHADER_BASE_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// インクルード文</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_shader_base_8h.html">ShaderBase.h</a>&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/*********************************************************/</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_vertex_shader_base.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_vertex_shader_base.html">VertexShaderBase</a> : <span class="keyword">public</span> <a class="code" href="class_shader_base.html">ShaderBase</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// 非静的メンバ変数</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    LPDIRECT3DVERTEXSHADER9 vertex_shader_ = <span class="keyword">nullptr</span>;   </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// 非静的メンバ関数</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_vertex_shader_base.html#a9f93697c5668852850f0a7b7ef7cb67f">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vertex_shader_base.html#a9f93697c5668852850f0a7b7ef7cb67f">SetShader</a>()<span class="keyword"> override</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">    </span>{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_shader_base.html#a4601ff3d20f01800ffd676d3db8d9289">GetDevice</a>()-&gt;SetVertexShader(vertex_shader_);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_vertex_shader_base.html#a6565abadb8ac173d3273ab1698d31c6c">   57</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_vertex_shader_base.html#a6565abadb8ac173d3273ab1698d31c6c">VertexShaderCompile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_name, <span class="keyword">const</span> <span class="keywordtype">char</span>* entry_function,</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">char</span>* version)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        LPD3DXBUFFER compiled_code;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">bool</span> is_compile = <a class="code" href="class_shader_base.html#ac6e791440374f97592cfb4cb36f4fa55">ShaderBase::ShaderCompile</a>(file_name, entry_function,</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                    version, &amp;compiled_code);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (!is_compile) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        HRESULT hr = <a class="code" href="class_shader_base.html#a4601ff3d20f01800ffd676d3db8d9289">ShaderBase::GetDevice</a>()</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            -&gt;CreateVertexShader((DWORD*)compiled_code-&gt;GetBufferPointer(),</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                 &amp;vertex_shader_);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// 成功したか</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (SUCCEEDED(hr)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// エラーメッセージ</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        MessageBox(<span class="keyword">nullptr</span>, <span class="stringliteral">&quot;頂点シェーダー作成失敗&quot;</span>, <span class="stringliteral">&quot;Error&quot;</span>, MB_OK);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_vertex_shader_base.html#a42ff1e32a2c231f77d0ba0e6a8312e63">   81</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_vertex_shader_base.html#a42ff1e32a2c231f77d0ba0e6a8312e63">ReleaseVertexShader</a>()</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="class_safe_release.html#a507950335a85da67c1722cce83dca9ae">SafeRelease::PlusRelease</a>(&amp;vertex_shader_);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// プロパティ</span></div><div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_vertex_shader_base.html#ab10cf1aac4a54653c553b5c84e1d3703">   87</a></span>&#160;    LPDIRECT3DVERTEXSHADER9 <a class="code" href="class_vertex_shader_base.html#ab10cf1aac4a54653c553b5c84e1d3703">GetVertexShader</a>() { <span class="keywordflow">return</span> vertex_shader_; }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_vertex_shader_base_html_ab10cf1aac4a54653c553b5c84e1d3703"><div class="ttname"><a href="class_vertex_shader_base.html#ab10cf1aac4a54653c553b5c84e1d3703">VertexShaderBase::GetVertexShader</a></div><div class="ttdeci">LPDIRECT3DVERTEXSHADER9 GetVertexShader()</div><div class="ttdef"><b>Definition:</b> VertexShaderBase.h:87</div></div>
+<div class="ttc" id="class_vertex_shader_base_html"><div class="ttname"><a href="class_vertex_shader_base.html">VertexShaderBase</a></div><div class="ttdoc">頂点シェーダー基底クラス </div><div class="ttdef"><b>Definition:</b> VertexShaderBase.h:26</div></div>
+<div class="ttc" id="class_vertex_shader_base_html_a42ff1e32a2c231f77d0ba0e6a8312e63"><div class="ttname"><a href="class_vertex_shader_base.html#a42ff1e32a2c231f77d0ba0e6a8312e63">VertexShaderBase::ReleaseVertexShader</a></div><div class="ttdeci">void ReleaseVertexShader()</div><div class="ttdoc">頂点シェーダー解放関数 </div><div class="ttdef"><b>Definition:</b> VertexShaderBase.h:81</div></div>
+<div class="ttc" id="_shader_base_8h_html"><div class="ttname"><a href="_shader_base_8h.html">ShaderBase.h</a></div></div>
+<div class="ttc" id="class_shader_base_html_a4601ff3d20f01800ffd676d3db8d9289"><div class="ttname"><a href="class_shader_base.html#a4601ff3d20f01800ffd676d3db8d9289">ShaderBase::GetDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetDevice()</div><div class="ttdef"><b>Definition:</b> ShaderBase.h:141</div></div>
+<div class="ttc" id="class_shader_base_html_ac6e791440374f97592cfb4cb36f4fa55"><div class="ttname"><a href="class_shader_base.html#ac6e791440374f97592cfb4cb36f4fa55">ShaderBase::ShaderCompile</a></div><div class="ttdeci">bool ShaderCompile(const char *file_name, const char *entry_function, const char *version, LPD3DXBUFFER *compiled_code)</div><div class="ttdoc">シェーダーコンパイル関数 </div><div class="ttdef"><b>Definition:</b> ShaderBase.h:95</div></div>
+<div class="ttc" id="class_vertex_shader_base_html_a9f93697c5668852850f0a7b7ef7cb67f"><div class="ttname"><a href="class_vertex_shader_base.html#a9f93697c5668852850f0a7b7ef7cb67f">VertexShaderBase::SetShader</a></div><div class="ttdeci">void SetShader() override</div><div class="ttdoc">シェーダー設定関数 </div><div class="ttdef"><b>Definition:</b> VertexShaderBase.h:43</div></div>
+<div class="ttc" id="class_shader_base_html"><div class="ttname"><a href="class_shader_base.html">ShaderBase</a></div><div class="ttdoc">シェーダー基底クラス </div><div class="ttdef"><b>Definition:</b> ShaderBase.h:30</div></div>
+<div class="ttc" id="class_safe_release_html_a507950335a85da67c1722cce83dca9ae"><div class="ttname"><a href="class_safe_release.html#a507950335a85da67c1722cce83dca9ae">SafeRelease::PlusRelease</a></div><div class="ttdeci">static void PlusRelease(Type **pointer)</div><div class="ttdoc">解放関数(Release有) </div><div class="ttdef"><b>Definition:</b> SafeRelease.h:73</div></div>
+<div class="ttc" id="class_vertex_shader_base_html_a6565abadb8ac173d3273ab1698d31c6c"><div class="ttname"><a href="class_vertex_shader_base.html#a6565abadb8ac173d3273ab1698d31c6c">VertexShaderBase::VertexShaderCompile</a></div><div class="ttdeci">bool VertexShaderCompile(const char *file_name, const char *entry_function, const char *version)</div><div class="ttdoc">頂点シェーダーコンパイル関数 </div><div class="ttdef"><b>Definition:</b> VertexShaderBase.h:57</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_976dc2bd85357175aa42d597a4624b41.html">ComponentManager</a></li><li class="navelem"><a class="el" href="dir_8e678a1fe8c743c8351c848d99f2168d.html">DrawManager</a></li><li class="navelem"><a class="el" href="dir_e3df25693722edcb86fe80a2230154c3.html">Shader</a></li><li class="navelem"><a class="el" href="dir_721ba19900464750e3ce1dfff7e6a607.html">ShaderBase</a></li><li class="navelem"><a class="el" href="_vertex_shader_base_8h.html">VertexShaderBase.h</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

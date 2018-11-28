@@ -1,0 +1,169 @@
+\hypertarget{class_shader_manager}{}\section{Shader\+Manager クラス}
+\label{class_shader_manager}\index{Shader\+Manager@{Shader\+Manager}}
+
+
+シェーダーマネージャークラス  
+
+
+
+
+{\ttfamily \#include $<$Shader\+Manager.\+h$>$}
+
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} \{ \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbdaf0212c589f47f880608c317e6fcbdfab}{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda66ffcf3d89e817f5cad6b8f8eda5fd71}{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+X\+ED}}, 
+\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda6ecdb0c0fcd8c61e0c0d494a99e3a8d8}{V\+E\+R\+T\+E\+X\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG}}, 
+\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940}{V\+E\+R\+T\+E\+X\+\_\+\+M\+AX}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} \{ \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa73495baa0c47ac751cce0e3385fa80dd}{P\+I\+X\+E\+L\+\_\+\+N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa1c9cf819d7e5efbe184309a4702824f1}{P\+I\+X\+E\+L\+\_\+\+F\+I\+X\+ED}}, 
+\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa3acd691a58d74a2ab3430e644c6ef0da}{P\+I\+X\+E\+L\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG}}, 
+\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e}{P\+I\+X\+E\+L\+\_\+\+M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shader_manager_a8e8fd62a28cc18addcd5ec6507a5dcb0}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_afc31a6bbe86e6b57edd7be0972f48ab1}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_ad2caed4ae50c1ca784151d0f9e50c381}{Set\+Shader}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} forced\+\_\+vertex\+\_\+type, \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} forced\+\_\+pixel\+\_\+type)
+\begin{DoxyCompactList}\small\item\em シェーダー設定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4}{Common\+Setting}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} forced\+\_\+vertex\+\_\+type, \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} forced\+\_\+pixel\+\_\+type, unsigned object\+\_\+index)
+\begin{DoxyCompactList}\small\item\em 共通設定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_af016392b9b0477d49165d753e9404ff4}{Specific\+Setting}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} forced\+\_\+vertex\+\_\+type, \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} forced\+\_\+pixel\+\_\+type, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
+\begin{DoxyCompactList}\small\item\em 固有設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+シェーダーマネージャークラス 
+
+シェーダーを管理するクラス 
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}\label{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}} 
+\index{Shader\+Manager@{Shader\+Manager}!Pixel\+Shader\+Type@{Pixel\+Shader\+Type}}
+\index{Pixel\+Shader\+Type@{Pixel\+Shader\+Type}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Pixel\+Shader\+Type}{PixelShaderType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Shader\+Manager\+::\+Pixel\+Shader\+Type}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+I\+X\+E\+L\+\_\+\+N\+O\+NE@{P\+I\+X\+E\+L\+\_\+\+N\+O\+NE}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!P\+I\+X\+E\+L\+\_\+\+N\+O\+NE@{P\+I\+X\+E\+L\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa73495baa0c47ac751cce0e3385fa80dd}\label{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa73495baa0c47ac751cce0e3385fa80dd}} 
+P\+I\+X\+E\+L\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+I\+X\+E\+L\+\_\+\+F\+I\+X\+ED@{P\+I\+X\+E\+L\+\_\+\+F\+I\+X\+ED}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!P\+I\+X\+E\+L\+\_\+\+F\+I\+X\+ED@{P\+I\+X\+E\+L\+\_\+\+F\+I\+X\+ED}}}\mbox{\Hypertarget{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa1c9cf819d7e5efbe184309a4702824f1}\label{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa1c9cf819d7e5efbe184309a4702824f1}} 
+P\+I\+X\+E\+L\+\_\+\+F\+I\+X\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+I\+X\+E\+L\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG@{P\+I\+X\+E\+L\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!P\+I\+X\+E\+L\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG@{P\+I\+X\+E\+L\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG}}}\mbox{\Hypertarget{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa3acd691a58d74a2ab3430e644c6ef0da}\label{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa3acd691a58d74a2ab3430e644c6ef0da}} 
+P\+I\+X\+E\+L\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+I\+X\+E\+L\+\_\+\+M\+AX@{P\+I\+X\+E\+L\+\_\+\+M\+AX}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!P\+I\+X\+E\+L\+\_\+\+M\+AX@{P\+I\+X\+E\+L\+\_\+\+M\+AX}}}\mbox{\Hypertarget{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e}\label{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e}} 
+P\+I\+X\+E\+L\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}\label{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}} 
+\index{Shader\+Manager@{Shader\+Manager}!Vertex\+Shader\+Type@{Vertex\+Shader\+Type}}
+\index{Vertex\+Shader\+Type@{Vertex\+Shader\+Type}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Vertex\+Shader\+Type}{VertexShaderType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Shader\+Manager\+::\+Vertex\+Shader\+Type}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+NE@{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+NE}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+NE@{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbdaf0212c589f47f880608c317e6fcbdfab}\label{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbdaf0212c589f47f880608c317e6fcbdfab}} 
+V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+X\+ED@{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+X\+ED}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+X\+ED@{V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+X\+ED}}}\mbox{\Hypertarget{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda66ffcf3d89e817f5cad6b8f8eda5fd71}\label{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda66ffcf3d89e817f5cad6b8f8eda5fd71}} 
+V\+E\+R\+T\+E\+X\+\_\+\+F\+I\+X\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+T\+E\+X\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG@{V\+E\+R\+T\+E\+X\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!V\+E\+R\+T\+E\+X\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG@{V\+E\+R\+T\+E\+X\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG}}}\mbox{\Hypertarget{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda6ecdb0c0fcd8c61e0c0d494a99e3a8d8}\label{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda6ecdb0c0fcd8c61e0c0d494a99e3a8d8}} 
+V\+E\+R\+T\+E\+X\+\_\+\+B\+U\+M\+P\+\_\+\+M\+A\+P\+P\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+T\+E\+X\+\_\+\+M\+AX@{V\+E\+R\+T\+E\+X\+\_\+\+M\+AX}!Shader\+Manager@{Shader\+Manager}}\index{Shader\+Manager@{Shader\+Manager}!V\+E\+R\+T\+E\+X\+\_\+\+M\+AX@{V\+E\+R\+T\+E\+X\+\_\+\+M\+AX}}}\mbox{\Hypertarget{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940}\label{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940}} 
+V\+E\+R\+T\+E\+X\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4}\label{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4}} 
+\index{Shader\+Manager@{Shader\+Manager}!Common\+Setting@{Common\+Setting}}
+\index{Common\+Setting@{Common\+Setting}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Common\+Setting()}{CommonSetting()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Common\+Setting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}}}]{forced\+\_\+vertex\+\_\+type,  }\item[{\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}}}]{forced\+\_\+pixel\+\_\+type,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+共通設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_manager_a8e8fd62a28cc18addcd5ec6507a5dcb0}\label{class_shader_manager_a8e8fd62a28cc18addcd5ec6507a5dcb0}} 
+\index{Shader\+Manager@{Shader\+Manager}!Init@{Init}}
+\index{Init@{Init}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+\mbox{\Hypertarget{class_shader_manager_ad2caed4ae50c1ca784151d0f9e50c381}\label{class_shader_manager_ad2caed4ae50c1ca784151d0f9e50c381}} 
+\index{Shader\+Manager@{Shader\+Manager}!Set\+Shader@{Set\+Shader}}
+\index{Set\+Shader@{Set\+Shader}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Shader()}{SetShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Set\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}}}]{forced\+\_\+vertex\+\_\+type,  }\item[{\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}}}]{forced\+\_\+pixel\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+シェーダー設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_manager_af016392b9b0477d49165d753e9404ff4}\label{class_shader_manager_af016392b9b0477d49165d753e9404ff4}} 
+\index{Shader\+Manager@{Shader\+Manager}!Specific\+Setting@{Specific\+Setting}}
+\index{Specific\+Setting@{Specific\+Setting}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Specific\+Setting()}{SpecificSetting()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Specific\+Setting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}}}]{forced\+\_\+vertex\+\_\+type,  }\item[{\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}}}]{forced\+\_\+pixel\+\_\+type,  }\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+固有設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_manager_afc31a6bbe86e6b57edd7be0972f48ab1}\label{class_shader_manager_afc31a6bbe86e6b57edd7be0972f48ab1}} 
+\index{Shader\+Manager@{Shader\+Manager}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+終了関数 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Shader\+Manager/\mbox{\hyperlink{_shader_manager_8h}{Shader\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Shader\+Manager/\mbox{\hyperlink{_shader_manager_8cpp}{Shader\+Manager.\+cpp}}\end{DoxyCompactItemize}

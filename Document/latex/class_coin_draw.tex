@@ -2,72 +2,106 @@
 \label{class_coin_draw}\index{Coin\+Draw@{Coin\+Draw}}
 
 
+コインロゴ描画クラス  
+
+
+
+
 {\ttfamily \#include $<$Coin\+Draw.\+h$>$}
 
 Coin\+Draw の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_coin_draw}
+\includegraphics[height=4.000000cm]{class_coin_draw}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}{Init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}{Update}} () override
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}{Setting\+Before\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画前設定関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}{Get\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-void \mbox{\hyperlink{class_coin_draw_a57e3f327324db9ec3debc702d14325c7}{Draw}} (unsigned mesh\+\_\+index) override
+unsigned \mbox{\hyperlink{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_coin_draw_a9f5aa847fcb28e5617f00d575a6a911c}{Get\+Mesh\+Num}} () override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_coin_draw_a869a6b7273b273048dd56822fae4d644}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_coin_draw_a4582370e7ec4c1259b2a91cc185fbe09}{Get\+Material}} (unsigned mesh\+\_\+index) override
-\item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_draw_aa3132d69a3dd903e79331b3c4b46ab79}{Get\+Decale\+Texture}} (unsigned mesh\+\_\+index) override
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
 
+
+\subsection{詳解}
+コインロゴ描画クラス 
+
+コインロゴの描画クラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_coin_draw_a57e3f327324db9ec3debc702d14325c7}\label{class_coin_draw_a57e3f327324db9ec3debc702d14325c7}} 
+\mbox{\Hypertarget{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563}\label{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563}} 
 \index{Coin\+Draw@{Coin\+Draw}!Draw@{Draw}}
 \index{Draw@{Draw}!Coin\+Draw@{Coin\+Draw}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void Coin\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Coin\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_ae84bfb6ccc2fda9e54cdff45057ea2c3}{Draw\+Component}}を実装しています。
+描画関数 
 
-\mbox{\Hypertarget{class_coin_draw_aa3132d69a3dd903e79331b3c4b46ab79}\label{class_coin_draw_aa3132d69a3dd903e79331b3c4b46ab79}} 
+
+\begin{DoxyParams}{引数}
+{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5}\label{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5}} 
 \index{Coin\+Draw@{Coin\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Coin\+Draw@{Coin\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
-{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Coin\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Coin\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a9ea98f4bcdfd76782d5234122b132c3d}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_coin_draw_a4582370e7ec4c1259b2a91cc185fbe09}\label{class_coin_draw_a4582370e7ec4c1259b2a91cc185fbe09}} 
+\mbox{\Hypertarget{class_coin_draw_a869a6b7273b273048dd56822fae4d644}\label{class_coin_draw_a869a6b7273b273048dd56822fae4d644}} 
 \index{Coin\+Draw@{Coin\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Coin\+Draw@{Coin\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Coin\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Coin\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_adae078d5139f691997763bf6cac9e25a}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_coin_draw_a9f5aa847fcb28e5617f00d575a6a911c}\label{class_coin_draw_a9f5aa847fcb28e5617f00d575a6a911c}} 
+\mbox{\Hypertarget{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}\label{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}} 
+\index{Coin\+Draw@{Coin\+Draw}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Coin\+Draw@{Coin\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Coin\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566}\label{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566}} 
 \index{Coin\+Draw@{Coin\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Coin\+Draw@{Coin\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Coin\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily unsigned Coin\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a5f3bbcc8e563b740c0a5535170921c75}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}\label{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}} 
 \index{Coin\+Draw@{Coin\+Draw}!Init@{Init}}
@@ -77,7 +111,30 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}\label{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}} 
+\index{Coin\+Draw@{Coin\+Draw}!Setting\+Before\+Drawing@{Setting\+Before\+Drawing}}
+\index{Setting\+Before\+Drawing@{Setting\+Before\+Drawing}!Coin\+Draw@{Coin\+Draw}}
+\subsubsection{\texorpdfstring{Setting\+Before\+Drawing()}{SettingBeforeDrawing()}}
+{\footnotesize\ttfamily void Coin\+Draw\+::\+Setting\+Before\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+描画前設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ object\+\_\+index \+: オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}\label{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}} 
 \index{Coin\+Draw@{Coin\+Draw}!Uninit@{Uninit}}
@@ -87,7 +144,25 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}\label{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}} 
+\index{Coin\+Draw@{Coin\+Draw}!Update@{Update}}
+\index{Update@{Update}!Coin\+Draw@{Coin\+Draw}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Coin\+Draw\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+更新関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}{Draw\+Null}}を再実装しています。
 
 
 

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Base/ComponentBase/ComponentBase.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_component_base_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ComponentBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_component_base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//    コンポーネント基底クラス</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//    Author : Araki Kai                                作成日 : 2018/03/30</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _COMPONENT_BASE_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _COMPONENT_BASE_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// インクルード文</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_vector3_d_8h.html">Vector3D.h</a>&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_renderer_direct_x9_8h.html">Renderer\RendererDirectX9\RendererDirectX9.h</a>&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// クラス宣言</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="class_game_object_base.html">GameObjectBase</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*********************************************************/</span></div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_component_base.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_component_base.html">ComponentBase</a></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// 非静的メンバ変数</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_game_object_base.html">GameObjectBase</a>* game_object_;       </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// 非静的メンバ関数</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">   50</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">~ComponentBase</a>(){}</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_component_base.html#a125939d6befe42f28886a6523e86b18b">Init</a>()   = 0;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_component_base.html#a9f42beaf0383d6f629819579cab4de57">Uninit</a>() = 0;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// プロパティ</span></div><div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0">SetGameObject</a>(<a class="code" href="class_game_object_base.html">GameObjectBase</a>* value){game_object_ = value;}</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">   66</a></span>&#160;    <a class="code" href="class_game_object_base.html">GameObjectBase</a>* <a class="code" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">GetGameObject</a>(){<span class="keywordflow">return</span> game_object_;}</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_component_base_html_a5d22c6d5f792ff42ab6cb11a8ac38478"><div class="ttname"><a href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">ComponentBase::~ComponentBase</a></div><div class="ttdeci">virtual ~ComponentBase()</div><div class="ttdoc">仮想デストラクタ </div><div class="ttdef"><b>Definition:</b> ComponentBase.h:50</div></div>
+<div class="ttc" id="class_component_base_html"><div class="ttname"><a href="class_component_base.html">ComponentBase</a></div><div class="ttdoc">コンポーネント基底クラス </div><div class="ttdef"><b>Definition:</b> ComponentBase.h:34</div></div>
+<div class="ttc" id="_vector3_d_8h_html"><div class="ttname"><a href="_vector3_d_8h.html">Vector3D.h</a></div></div>
+<div class="ttc" id="_renderer_direct_x9_8h_html"><div class="ttname"><a href="_renderer_direct_x9_8h.html">RendererDirectX9.h</a></div></div>
+<div class="ttc" id="class_component_base_html_a0ac0d71aeeb768401f34a2e780b1e25d"><div class="ttname"><a href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">ComponentBase::GetGameObject</a></div><div class="ttdeci">GameObjectBase * GetGameObject()</div><div class="ttdef"><b>Definition:</b> ComponentBase.h:66</div></div>
+<div class="ttc" id="class_component_base_html_a125939d6befe42f28886a6523e86b18b"><div class="ttname"><a href="class_component_base.html#a125939d6befe42f28886a6523e86b18b">ComponentBase::Init</a></div><div class="ttdeci">virtual void Init()=0</div><div class="ttdoc">初期化関数 </div></div>
+<div class="ttc" id="class_component_base_html_a9f42beaf0383d6f629819579cab4de57"><div class="ttname"><a href="class_component_base.html#a9f42beaf0383d6f629819579cab4de57">ComponentBase::Uninit</a></div><div class="ttdeci">virtual void Uninit()=0</div><div class="ttdoc">終了関数 </div></div>
+<div class="ttc" id="class_component_base_html_ac9fc08588e3d29caf8d692a3392fc7b0"><div class="ttname"><a href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0">ComponentBase::SetGameObject</a></div><div class="ttdeci">void SetGameObject(GameObjectBase *value)</div><div class="ttdef"><b>Definition:</b> ComponentBase.h:65</div></div>
+<div class="ttc" id="class_game_object_base_html"><div class="ttname"><a href="class_game_object_base.html">GameObjectBase</a></div><div class="ttdoc">ゲームオブジェクト基底クラス </div><div class="ttdef"><b>Definition:</b> GameObjectBase.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_9bdf09a476fe7fa6e3a0e14af6a4b1af.html">Component</a></li><li class="navelem"><a class="el" href="dir_d84eee6e83e72b3a0696905bbe0cdfc6.html">Base</a></li><li class="navelem"><a class="el" href="dir_a2c09f5dba972789042e86c46b849a0b.html">ComponentBase</a></li><li class="navelem"><a class="el" href="_component_base_8h.html">ComponentBase.h</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

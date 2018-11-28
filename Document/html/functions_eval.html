@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: クラスメンバ - 列挙値</title>
+<title>3DAction: クラスメンバ - 列挙値</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -89,23 +89,37 @@ $(document).ready(function(){initNavTree('functions_eval.html','');});
 <div class="contents">
 &#160;
 
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>AABB
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba2512ecb2c7c72bdbdf8aa3f5a07671c7">CollisionShapeBase</a>
+</li>
+</ul>
+
+
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>BOUNDING_OBB
 : <a class="el" href="class_coin_collision.html#ade7912345747f522fd895e87621ce049a003d6865c3e811586f2b96d25c4b6375">CoinCollision</a>
 </li>
 <li>BOUNDING_SPHERE
 : <a class="el" href="class_enemy_collision.html#a8423c2c1dce9ba8ab2ba9bed82ee4843a327f14f5b5cd28a3e605ff4f7066e8ce">EnemyCollision</a>
+, <a class="el" href="class_goal_collision.html#a8d0d760973816d9086df90491f38ff62ac2036d06505fcf67ddd968f97179789d">GoalCollision</a>
 , <a class="el" href="class_player_collision.html#a628e8898ff4fc1f85eb4ba44eb0a6907ae8cec799ba827b372f0d4bedec1b9bbb">PlayerCollision</a>
 </li>
 </ul>
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>CAPSULE
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba2cae7484589db3e777b158aeae2a633b">CollisionShapeBase</a>
+</li>
 <li>CHANGE_SCENE
 : <a class="el" href="class_scene_manager.html#a68d32794fe1ce945c6a6c380c11a08eba221613d2f5fb26ba3c9af4597df566fe">SceneManager</a>
 </li>
 <li>COIN
-: <a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6af5c676cd6f121bf0c269221b9746fbf2">CollisionComponent</a>
+: <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365aeda009ba3599abbdb45a16ecaaf075e5">CollisionBase</a>
+</li>
+<li>CYLINDER
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba92f81388af31f36357b692f2aead2f19">CollisionShapeBase</a>
 </li>
 </ul>
 
@@ -122,26 +136,14 @@ $(document).ready(function(){initNavTree('functions_eval.html','');});
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>ENEMY
-: <a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6acdee26a37ba5cfc5292266887f637d40">CollisionComponent</a>
+: <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365a90a5e8c5c8fa7a3ba38c80b583de37ce">CollisionBase</a>
 </li>
 </ul>
 
 
-<h3><a id="index_f"></a>- f -</h3><ul>
-<li>FIXED
-: <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a9c3806d33043699cb3b9f3e67a1d1d2f">DrawComponent</a>
-</li>
-<li>FIXED_2D
-: <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a3732729ccb8d11413d8efa88c566450b">DrawComponent</a>
-</li>
-<li>FIXED_ALPHA
-: <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a075b86647135a674ba865520f6310311">DrawComponent</a>
-</li>
-<li>FIXED_BILLBOARD
-: <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a8e82e1afb6f0fc3c44ce0619f0a2833c">DrawComponent</a>
-</li>
-<li>FIXED_BILLBOARD_ALPHA
-: <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a0bd157d8416c9535342e6dfa95bad8b9">DrawComponent</a>
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>GOAL
+: <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365a82a11a1a3c44c82bd7909f48ed57fa62">CollisionBase</a>
 </li>
 </ul>
 
@@ -150,9 +152,11 @@ $(document).ready(function(){initNavTree('functions_eval.html','');});
 <li>MAX
 : <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa">Camera</a>
 , <a class="el" href="class_coin_collision.html#ade7912345747f522fd895e87621ce049afe668be7d8cc9606f4c5be2220c38281">CoinCollision</a>
-, <a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6a3441d773723b25dedbc6ce5c3b99dc36">CollisionComponent</a>
-, <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a8bd3ebaeb3962d568efe3f9ee4cca068">DrawComponent</a>
+, <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365aa7c59b2c2f20cbc76a01c38a1ebb6fea">CollisionBase</a>
+, <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba4636454f94c8f39be9fed0b1a3124a2c">CollisionShapeBase</a>
+, <a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba6af2a2923ac1094762cf45ca43fc12ab">DrawOrderList</a>
 , <a class="el" href="class_enemy_collision.html#a8423c2c1dce9ba8ab2ba9bed82ee4843a4283c301ae1d9317453c36d5923f7136">EnemyCollision</a>
+, <a class="el" href="class_goal_collision.html#a8d0d760973816d9086df90491f38ff62ac8b39f34903a130505e1c485f7667e07">GoalCollision</a>
 , <a class="el" href="class_player_collision.html#a628e8898ff4fc1f85eb4ba44eb0a6907aa9f8cab198da5574b7a22acc4ecd42d5">PlayerCollision</a>
 , <a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835feca3304c74929f96df4042bc148ee9f3b50">Renderer</a>
 , <a class="el" href="class_scene_manager.html#a68d32794fe1ce945c6a6c380c11a08eba67b231706633f4d8aaadf6830078dd68">SceneManager</a>
@@ -164,29 +168,55 @@ $(document).ready(function(){initNavTree('functions_eval.html','');});
 <li>NONE
 : <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba12c79dd5dae61a931ff74c2855ec82f5">Camera</a>
 , <a class="el" href="class_coin_collision.html#ade7912345747f522fd895e87621ce049aa520033eb3664c6f516082c22efd5d17">CoinCollision</a>
-, <a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6a1d2ccb05204951a05e26685ba92f07cb">CollisionComponent</a>
-, <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032a39336a999e29d302dff162fd46ce53c0">DrawComponent</a>
+, <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365a2682042c400780d05da0db180ef89526">CollisionBase</a>
+, <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba1129630002cc3cf03126a4ef39383c98">CollisionShapeBase</a>
+, <a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bbab2a83851af51b7cbf059ef9522ab908f">DrawOrderList</a>
 , <a class="el" href="class_enemy_collision.html#a8423c2c1dce9ba8ab2ba9bed82ee4843a54855bb90bae23d3697d74e0b20462a2">EnemyCollision</a>
+, <a class="el" href="class_goal_collision.html#a8d0d760973816d9086df90491f38ff62ad664dba1ab9212a7a0c29f3d113f74ba">GoalCollision</a>
 , <a class="el" href="class_player_collision.html#a628e8898ff4fc1f85eb4ba44eb0a6907abde9854e7cb5dd2906a4f5e7ca3a896d">PlayerCollision</a>
 , <a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835feca2a36637bde744b1f383e4fa8c3c10382">Renderer</a>
 , <a class="el" href="class_scene_manager.html#a68d32794fe1ce945c6a6c380c11a08eba8cd4a237fa57487ca812c21216c5d77c">SceneManager</a>
-</li>
-<li>NORMAL
-: <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcbab0634eb8efa2896a2771ea868cbc241a">Camera</a>
 </li>
 </ul>
 
 
 <h3><a id="index_o"></a>- o -</h3><ul>
+<li>OBB
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba56e56c8ee634330847018d716ca222b0">CollisionShapeBase</a>
+</li>
+<li>OPACITY
+: <a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba4c769c665704d5a6d9a3fa1fa34966fb">DrawOrderList</a>
+</li>
 <li>OPEN_GL
 : <a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835fecac532ec7ed1c2ce77df467cbf829e575a">Renderer</a>
+</li>
+<li>ORTHO
+: <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba5421bcd519dac606b7af9786b11f88d6">Camera</a>
 </li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
+<li>PERSPECTIVE
+: <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcba34783417054408fd9e024048b1cefa47">Camera</a>
+</li>
+<li>PIXEL_BUMP_MAPPING
+: <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa3acd691a58d74a2ab3430e644c6ef0da">ShaderManager</a>
+</li>
+<li>PIXEL_FIXED
+: <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa1c9cf819d7e5efbe184309a4702824f1">ShaderManager</a>
+</li>
+<li>PIXEL_MAX
+: <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e">ShaderManager</a>
+</li>
+<li>PIXEL_NONE
+: <a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5fa73495baa0c47ac751cce0e3385fa80dd">ShaderManager</a>
+</li>
+<li>PLANE
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba740709eb8c52c5d67d1c9af02af074cf">CollisionShapeBase</a>
+</li>
 <li>PLAYER
-: <a class="el" href="class_collision_component.html#a91ba750c14ccd0f4857f0302f06084c6a3c8b928a9ddee0f71d5fff073c275d95">CollisionComponent</a>
+: <a class="el" href="class_collision_base.html#a4dd1ed00099a19c0176913af93c4e365ae1aee076cb40136904a2300425bba493">CollisionBase</a>
 </li>
 </ul>
 
@@ -199,6 +229,12 @@ $(document).ready(function(){initNavTree('functions_eval.html','');});
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>SEGMENT
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46">CollisionShapeBase</a>
+</li>
+<li>SPHERE
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cbaf5cbf5af4d5ef779592f1a293895c63e">CollisionShapeBase</a>
+</li>
 <li>STATE_FADE_IN
 : <a class="el" href="class_fade.html#ae77826bf3ff2ab95fb7b3b6f95cba80aa5b9862985db043392d465dd7a7a7805b">Fade</a>
 </li>
@@ -214,55 +250,50 @@ $(document).ready(function(){initNavTree('functions_eval.html','');});
 <li>SUBSTANCE
 : <a class="el" href="class_coin_collision.html#ade7912345747f522fd895e87621ce049ab3dfdeacfa9cf71c167dfb2faec4612f">CoinCollision</a>
 , <a class="el" href="class_enemy_collision.html#a8423c2c1dce9ba8ab2ba9bed82ee4843a8c9cd2ea0a1628d412fc501c91541ab0">EnemyCollision</a>
+, <a class="el" href="class_goal_collision.html#a8d0d760973816d9086df90491f38ff62a99519b2786b3bc408ca13eda97606b81">GoalCollision</a>
 , <a class="el" href="class_player_collision.html#a628e8898ff4fc1f85eb4ba44eb0a6907a1bdf29253670ff99684ddff916536360">PlayerCollision</a>
 </li>
 </ul>
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
-<li>TEST_SHADER
-: <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032aa1a0ee0ae5d32bbe008b8c89d4ebdf39">DrawComponent</a>
+<li>TRANSPARENCY
+: <a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba38e4ff40be41d3ca753da42d6a628173">DrawOrderList</a>
 </li>
-<li>TEST_SHADER_BILLBOARD
-: <a class="el" href="class_draw_component.html#adde17e0eff392abede5f59463cc54032aebb842b39b6a11cb1bb7148c6cbc0a5f">DrawComponent</a>
+<li>TRIANGLE
+: <a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba4b6a6ea5d0152ec22ef54af55a4c872b">CollisionShapeBase</a>
 </li>
-<li>TYPE_AABB
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba3f49ffec8bb5c191ca0e131f4a0aa679">CollisionShapeOrigin</a>
-</li>
-<li>TYPE_CAPSULE
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba4da47de9ef77cdc7ce8d33568c08a6a0">CollisionShapeOrigin</a>
-</li>
-<li>TYPE_CYLINDER
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0bad42c81c0a2cfce67bc03455c36c67709">CollisionShapeOrigin</a>
+<li>TWO_DIMENSIONAL
+: <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcbaa144a5dc97bc343a7ef630cf23b09a76">Camera</a>
+, <a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba3e5454163533de348e3b3a819e75eb6c">DrawOrderList</a>
 </li>
 <li>TYPE_MAX
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0baed0e79796dc9a073682d727c1d046cfc">CollisionShapeOrigin</a>
-, <a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80ab05e3987a6b16a8ebe7e284aa8922ea0">Fade</a>
+: <a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80ab05e3987a6b16a8ebe7e284aa8922ea0">Fade</a>
 </li>
 <li>TYPE_NONE
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0baacfe3f00c0769f6e65288b4bb7b65f6a">CollisionShapeOrigin</a>
-, <a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80aff416f0a20b074a38a4f67e20f001828">Fade</a>
+: <a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80aff416f0a20b074a38a4f67e20f001828">Fade</a>
 </li>
 <li>TYPE_NORMAL
 : <a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80a6058f5db637853756ba18166da96043e">Fade</a>
 </li>
-<li>TYPE_OBB
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba01bfd26532e547b6382f5ef6943ae45d">CollisionShapeOrigin</a>
-</li>
-<li>TYPE_PLANE
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba4d134d746d386e176463d0fafdd7bfdc">CollisionShapeOrigin</a>
-</li>
-<li>TYPE_SEGMENT
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba99afbcd21cc1814358a291b23705aa4f">CollisionShapeOrigin</a>
-</li>
-<li>TYPE_SPHERE
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba664d6f18060c3813b3e463c9c6c1bf15">CollisionShapeOrigin</a>
-</li>
 <li>TYPE_TRANSITION_01
 : <a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80af424897abd4b53f7af0bf51f1190a427">Fade</a>
 </li>
-<li>TYPE_TRIANGLE
-: <a class="el" href="class_collision_shape_origin.html#a67e36d4922d9723caed9c21b1df80f0ba564325798c6f7ea5bb71e82d3a68bff2">CollisionShapeOrigin</a>
+</ul>
+
+
+<h3><a id="index_v"></a>- v -</h3><ul>
+<li>VERTEX_BUMP_MAPPING
+: <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbda6ecdb0c0fcd8c61e0c0d494a99e3a8d8">ShaderManager</a>
+</li>
+<li>VERTEX_FIXED
+: <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbda66ffcf3d89e817f5cad6b8f8eda5fd71">ShaderManager</a>
+</li>
+<li>VERTEX_MAX
+: <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940">ShaderManager</a>
+</li>
+<li>VERTEX_NONE
+: <a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbdaf0212c589f47f880608c317e6fcbdfab">ShaderManager</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -7,5 +7,5 @@ var searchData=
   ['billboard',['Billboard',['../namespace_effekseer.html#a1e51959dc188f6f19acc48c85860c6d8acf9f62d4906d63087d71916c1c94c058',1,'Effekseer']]],
   ['blend',['Blend',['../namespace_effekseer.html#a8c32fd5b7ec7feed73314b2ae8086949a09ac609fcdb514c9adca34e7f97b4ac4',1,'Effekseer']]],
   ['bounding_5fobb',['BOUNDING_OBB',['../class_coin_collision.html#ade7912345747f522fd895e87621ce049a003d6865c3e811586f2b96d25c4b6375',1,'CoinCollision']]],
-  ['bounding_5fsphere',['BOUNDING_SPHERE',['../class_enemy_collision.html#a8423c2c1dce9ba8ab2ba9bed82ee4843a327f14f5b5cd28a3e605ff4f7066e8ce',1,'EnemyCollision::BOUNDING_SPHERE()'],['../class_player_collision.html#a628e8898ff4fc1f85eb4ba44eb0a6907ae8cec799ba827b372f0d4bedec1b9bbb',1,'PlayerCollision::BOUNDING_SPHERE()']]]
+  ['bounding_5fsphere',['BOUNDING_SPHERE',['../class_enemy_collision.html#a8423c2c1dce9ba8ab2ba9bed82ee4843a327f14f5b5cd28a3e605ff4f7066e8ce',1,'EnemyCollision::BOUNDING_SPHERE()'],['../class_goal_collision.html#a8d0d760973816d9086df90491f38ff62ac2036d06505fcf67ddd968f97179789d',1,'GoalCollision::BOUNDING_SPHERE()'],['../class_player_collision.html#a628e8898ff4fc1f85eb4ba44eb0a6907ae8cec799ba827b372f0d4bedec1b9bbb',1,'PlayerCollision::BOUNDING_SPHERE()']]]
 ];

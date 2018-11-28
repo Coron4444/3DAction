@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: DrawOrderList クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_draw_order_list.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="class_draw_order_list-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">DrawOrderList クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>描画注文リストクラス  
+ <a href="class_draw_order_list.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_draw_order_list_8h_source.html">DrawOrderList.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a6c9b9ceb312c16d399ef355f4f3486bb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bb">DrawType</a> { <br />
+&#160;&#160;<a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bbab2a83851af51b7cbf059ef9522ab908f">NONE</a> = -1, 
+<a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba4c769c665704d5a6d9a3fa1fa34966fb">OPACITY</a>, 
+<a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba38e4ff40be41d3ca753da42d6a628173">TRANSPARENCY</a>, 
+<a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba3e5454163533de348e3b3a819e75eb6c">TWO_DIMENSIONAL</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bba6af2a2923ac1094762cf45ca43fc12ab">MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:a6c9b9ceb312c16d399ef355f4f3486bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6533ffbf1cd3f27583e0de8a08648b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">ShaderManager::VertexShaderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a6533ffbf1cd3f27583e0de8a08648b75">GetVertexShaderType</a> ()</td></tr>
+<tr class="separator:a6533ffbf1cd3f27583e0de8a08648b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2d881dd0d31f1c7cde4494f7c38481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481">SetVertexShaderType</a> (<a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">ShaderManager::VertexShaderType</a> value)</td></tr>
+<tr class="separator:a1c2d881dd0d31f1c7cde4494f7c38481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f9a610bc9304a701d0f1fbaa3292fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">ShaderManager::PixelShaderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#ab5f9a610bc9304a701d0f1fbaa3292fa">GetPixelShaderType</a> ()</td></tr>
+<tr class="separator:ab5f9a610bc9304a701d0f1fbaa3292fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd7f50f4078001983f88014d59f8f29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a0fd7f50f4078001983f88014d59f8f29">SetPixelShaderType</a> (<a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">ShaderManager::PixelShaderType</a> value)</td></tr>
+<tr class="separator:a0fd7f50f4078001983f88014d59f8f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50dcac9d342e61f67b4d2a1d9a96bb21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bb">DrawType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a50dcac9d342e61f67b4d2a1d9a96bb21">GetDrawType</a> ()</td></tr>
+<tr class="separator:a50dcac9d342e61f67b4d2a1d9a96bb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3ff99f9297293edc057b95d23e8f2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a5b3ff99f9297293edc057b95d23e8f2d">SetDrawType</a> (<a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bb">DrawType</a> value)</td></tr>
+<tr class="separator:a5b3ff99f9297293edc057b95d23e8f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff90f57ce3ff0e2d7cd715267bfe024f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flag.html">Flag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f">GetRenderTargetFlag</a> ()</td></tr>
+<tr class="separator:aff90f57ce3ff0e2d7cd715267bfe024f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265a403c0d87abbcdc71d37a2c4f7b57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a265a403c0d87abbcdc71d37a2c4f7b57">GetIsBillboard</a> ()</td></tr>
+<tr class="separator:a265a403c0d87abbcdc71d37a2c4f7b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb13518e5747d3faa351ca64ec676b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#abfb13518e5747d3faa351ca64ec676b2">SetIsBillboard</a> (bool value)</td></tr>
+<tr class="separator:abfb13518e5747d3faa351ca64ec676b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd19fe57bca4132c08a3443044bdf2b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#abd19fe57bca4132c08a3443044bdf2b9">GetIsLighting</a> ()</td></tr>
+<tr class="separator:abd19fe57bca4132c08a3443044bdf2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233843bc98d389d9cfc79108b599c7a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a233843bc98d389d9cfc79108b599c7a9">SetIsLighting</a> (bool value)</td></tr>
+<tr class="separator:a233843bc98d389d9cfc79108b599c7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c14812ea793a3f3d752d58ccb481b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a28c14812ea793a3f3d752d58ccb481b2">GetLayerNum</a> ()</td></tr>
+<tr class="separator:a28c14812ea793a3f3d752d58ccb481b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5559a24f4d87d9d087d9daabed9a11f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a5559a24f4d87d9d087d9daabed9a11f3">SetLayerNum</a> (int value)</td></tr>
+<tr class="separator:a5559a24f4d87d9d087d9daabed9a11f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a75498416e70da9517427695271d4b5e7"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_order_list.html#a75498416e70da9517427695271d4b5e7">RENDER_TARGET_BACK_BUFFER</a> = 1 &lt;&lt; 0</td></tr>
+<tr class="separator:a75498416e70da9517427695271d4b5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>描画注文リストクラス </p>
+<p>描画に関する注文リストクラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a6c9b9ceb312c16d399ef355f4f3486bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9b9ceb312c16d399ef355f4f3486bb">&#9670;&nbsp;</a></span>DrawType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bb">DrawOrderList::DrawType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a6c9b9ceb312c16d399ef355f4f3486bbab2a83851af51b7cbf059ef9522ab908f"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6c9b9ceb312c16d399ef355f4f3486bba4c769c665704d5a6d9a3fa1fa34966fb"></a>OPACITY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6c9b9ceb312c16d399ef355f4f3486bba38e4ff40be41d3ca753da42d6a628173"></a>TRANSPARENCY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6c9b9ceb312c16d399ef355f4f3486bba3e5454163533de348e3b3a819e75eb6c"></a>TWO_DIMENSIONAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6c9b9ceb312c16d399ef355f4f3486bba6af2a2923ac1094762cf45ca43fc12ab"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a50dcac9d342e61f67b4d2a1d9a96bb21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50dcac9d342e61f67b4d2a1d9a96bb21">&#9670;&nbsp;</a></span>GetDrawType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bb">DrawType</a> DrawOrderList::GetDrawType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a265a403c0d87abbcdc71d37a2c4f7b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265a403c0d87abbcdc71d37a2c4f7b57">&#9670;&nbsp;</a></span>GetIsBillboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DrawOrderList::GetIsBillboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd19fe57bca4132c08a3443044bdf2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd19fe57bca4132c08a3443044bdf2b9">&#9670;&nbsp;</a></span>GetIsLighting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DrawOrderList::GetIsLighting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28c14812ea793a3f3d752d58ccb481b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28c14812ea793a3f3d752d58ccb481b2">&#9670;&nbsp;</a></span>GetLayerNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DrawOrderList::GetLayerNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5f9a610bc9304a701d0f1fbaa3292fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f9a610bc9304a701d0f1fbaa3292fa">&#9670;&nbsp;</a></span>GetPixelShaderType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">ShaderManager::PixelShaderType</a> DrawOrderList::GetPixelShaderType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff90f57ce3ff0e2d7cd715267bfe024f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff90f57ce3ff0e2d7cd715267bfe024f">&#9670;&nbsp;</a></span>GetRenderTargetFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_flag.html">Flag</a>* DrawOrderList::GetRenderTargetFlag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6533ffbf1cd3f27583e0de8a08648b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6533ffbf1cd3f27583e0de8a08648b75">&#9670;&nbsp;</a></span>GetVertexShaderType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">ShaderManager::VertexShaderType</a> DrawOrderList::GetVertexShaderType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b3ff99f9297293edc057b95d23e8f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3ff99f9297293edc057b95d23e8f2d">&#9670;&nbsp;</a></span>SetDrawType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawOrderList::SetDrawType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_draw_order_list.html#a6c9b9ceb312c16d399ef355f4f3486bb">DrawType</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfb13518e5747d3faa351ca64ec676b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb13518e5747d3faa351ca64ec676b2">&#9670;&nbsp;</a></span>SetIsBillboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawOrderList::SetIsBillboard </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a233843bc98d389d9cfc79108b599c7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233843bc98d389d9cfc79108b599c7a9">&#9670;&nbsp;</a></span>SetIsLighting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawOrderList::SetIsLighting </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5559a24f4d87d9d087d9daabed9a11f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5559a24f4d87d9d087d9daabed9a11f3">&#9670;&nbsp;</a></span>SetLayerNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawOrderList::SetLayerNum </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fd7f50f4078001983f88014d59f8f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd7f50f4078001983f88014d59f8f29">&#9670;&nbsp;</a></span>SetPixelShaderType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawOrderList::SetPixelShaderType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a7d15d773b3c6a99dd7086c45c8b0be5f">ShaderManager::PixelShaderType</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c2d881dd0d31f1c7cde4494f7c38481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2d881dd0d31f1c7cde4494f7c38481">&#9670;&nbsp;</a></span>SetVertexShaderType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawOrderList::SetVertexShaderType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_shader_manager.html#a9b51e49d70eb3cc58f6d1f3994e8cfbd">ShaderManager::VertexShaderType</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a75498416e70da9517427695271d4b5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75498416e70da9517427695271d4b5e7">&#9670;&nbsp;</a></span>RENDER_TARGET_BACK_BUFFER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned DrawOrderList::RENDER_TARGET_BACK_BUFFER = 1 &lt;&lt; 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Base/DrawBase/DrawOrderList/<a class="el" href="_draw_order_list_8h_source.html">DrawOrderList.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_draw_order_list.html">DrawOrderList</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

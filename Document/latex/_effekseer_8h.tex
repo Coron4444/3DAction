@@ -14,6 +14,8 @@ class \mbox{\hyperlink{class_effekseer_1_1_i_reference}{Effekseer\+::\+I\+Refere
 \begin{DoxyCompactList}\small\item\em 参照カウンタのインターフェース \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{class_effekseer_1_1_reference_object}{Effekseer\+::\+Reference\+Object}}
 \begin{DoxyCompactList}\small\item\em 参照カウンタオブジェクト \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_effekseer_1_1_i_rand_object}{Effekseer\+::\+I\+Rand\+Object}}
+\begin{DoxyCompactList}\small\item\em This object generates random values. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_effekseer_1_1_texture_data}{Effekseer\+::\+Texture\+Data}}
 \begin{DoxyCompactList}\small\item\em テクスチャデータ \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_effekseer_1_1_vector2_d}{Effekseer\+::\+Vector2D}}
@@ -109,10 +111,6 @@ class \mbox{\hyperlink{class_effekseer_1_1_setting}{Effekseer\+::\+Setting}}
 class \mbox{\hyperlink{class_effekseer_1_1_server}{Effekseer\+::\+Server}}
 \item 
 class \mbox{\hyperlink{class_effekseer_1_1_client}{Effekseer\+::\+Client}}
-\item 
-class \mbox{\hyperlink{class_effekseer_1_1_critical_section}{Effekseer\+::\+Critical\+Section}}
-\begin{DoxyCompactList}\small\item\em クリティカルセクション \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_effekseer_1_1_thread}{Effekseer\+::\+Thread}}
 \end{DoxyCompactItemize}
 \subsection*{名前空間}
 \begin{DoxyCompactItemize}
@@ -179,15 +177,11 @@ class \mbox{\hyperlink{class_effekseer_1_1_thread}{Effekseer\+::\+Thread}}
 \#define \mbox{\hyperlink{_effekseer_8h_aaa0f1f98693b485fa0a022af6b814927}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
 \item 
 \#define \mbox{\hyperlink{_effekseer_8h_ae50d8e705e1df13802125a3d76262513}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+H\+\_\+\+\_\+}}
-\item 
-\#define \mbox{\hyperlink{_effekseer_8h_af31bbb4fc6e3d8779d8afd71649cf53d}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}}
-\item 
-\#define \mbox{\hyperlink{_effekseer_8h_a1e8df9806cb133e49638690e59e73baf}{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}}
 \end{DoxyCompactItemize}
 \subsection*{型定義}
 \begin{DoxyCompactItemize}
 \item 
-typedef uint16\+\_\+t \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}}
+typedef char16\+\_\+t \mbox{\hyperlink{_effekseer_8h_a50b026abea014b47854bcd835b3b6233}{E\+F\+K\+\_\+\+C\+H\+AR}}
 \item 
 typedef int \mbox{\hyperlink{namespace_effekseer_afba58b8d812da862190e9bbfc040824a}{Effekseer\+::\+Handle}}
 \item 
@@ -253,6 +247,15 @@ enum \mbox{\hyperlink{namespace_effekseer_ad44c2314bf2d674ae0e6d62db6ff4484}{Eff
 \mbox{\hyperlink{namespace_effekseer_ad44c2314bf2d674ae0e6d62db6ff4484aa9e959126c7c9b4230b56975a1ea015d}{Effekseer\+::\+Texture\+Format\+Type\+::\+B\+C3}}
  \}
 \item 
+enum \mbox{\hyperlink{namespace_effekseer_a7a8ec04f4de0308b5fdb7d66675bddaf}{Effekseer\+::\+Z\+Sort\+Type}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_a7a8ec04f4de0308b5fdb7d66675bddafa6adf97f83acf6453d4a6a4b1070f3754}{Effekseer\+::\+Z\+Sort\+Type\+::\+None}}, 
+\mbox{\hyperlink{namespace_effekseer_a7a8ec04f4de0308b5fdb7d66675bddafa0d1c57b4a0586a7ad9e29190c1ed8f9d}{Effekseer\+::\+Z\+Sort\+Type\+::\+Normal\+Order}}, 
+\mbox{\hyperlink{namespace_effekseer_a7a8ec04f4de0308b5fdb7d66675bddafacafcd34d9001dc412b1b6e9e52d6083c}{Effekseer\+::\+Z\+Sort\+Type\+::\+Reverse\+Order}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_effekseer_ad1b82893021dd8e3697e46c1aa544092}{Effekseer\+::\+Render\+Mode}} \+: int32\+\_\+t \{ \mbox{\hyperlink{namespace_effekseer_ad1b82893021dd8e3697e46c1aa544092a960b44c579bc2f6818d2daaf9e4c16f0}{Effekseer\+::\+Render\+Mode\+::\+Normal}}, 
+\mbox{\hyperlink{namespace_effekseer_ad1b82893021dd8e3697e46c1aa544092a33e42d0f3b166a4c405127e4412fbef2}{Effekseer\+::\+Render\+Mode\+::\+Wireframe}}
+ \}
+\item 
 enum \mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18}{Effekseer\+::\+Color\+Mode}} \{ \mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18a8cd269b8fa3c1dd3646f46bebc7ae065}{Effekseer\+::\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+R\+G\+BA}}, 
 \mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18a98afba620a9e927c8ec2ba20ae0ec099}{Effekseer\+::\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+H\+S\+VA}}, 
 \mbox{\hyperlink{namespace_effekseer_a2c2b5647443d5c3941d5f737dbe7ff18ac088410da7f822001e890889e938e6dd}{Effekseer\+::\+C\+O\+L\+O\+R\+\_\+\+M\+O\+D\+E\+\_\+\+D\+W\+O\+RD}} = 0x7\+F\+F\+F\+F\+F\+FF
@@ -293,12 +296,6 @@ int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_abcfc5535cdc6dc92e50f8453cbb01
 \index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
 \subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_COLOR\_H\_\_}}
 {\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+O\+L\+O\+R\+\_\+\+H\+\_\+\+\_\+}
-
-\mbox{\Hypertarget{_effekseer_8h_af31bbb4fc6e3d8779d8afd71649cf53d}\label{_effekseer_8h_af31bbb4fc6e3d8779d8afd71649cf53d}} 
-\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_CRITICALSESSION\_H\_\_}}
-{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+A\+L\+S\+E\+S\+S\+I\+O\+N\+\_\+\+H\+\_\+\+\_\+}
 
 \mbox{\Hypertarget{_effekseer_8h_a42a88a4452a028e268f094f6441d5b27}\label{_effekseer_8h_a42a88a4452a028e268f094f6441d5b27}} 
 \index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+I\+L\+E\+\_\+\+H\+\_\+\+\_\+}}
@@ -414,12 +411,6 @@ int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_abcfc5535cdc6dc92e50f8453cbb01
 \subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_TEXTURELOADER\_H\_\_}}
 {\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+E\+X\+T\+U\+R\+E\+L\+O\+A\+D\+E\+R\+\_\+\+H\+\_\+\+\_\+}
 
-\mbox{\Hypertarget{_effekseer_8h_a1e8df9806cb133e49638690e59e73baf}\label{_effekseer_8h_a1e8df9806cb133e49638690e59e73baf}} 
-\index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}{\_\_EFFEKSEER\_THREAD\_H\_\_}}
-{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+H\+\_\+\+\_\+}
-
 \mbox{\Hypertarget{_effekseer_8h_a8f4b7df74bc83cdcd05af856c0635cf6}\label{_effekseer_8h_a8f4b7df74bc83cdcd05af856c0635cf6}} 
 \index{Effekseer.\+h@{Effekseer.\+h}!\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+@{\+\_\+\+\_\+\+E\+F\+F\+E\+K\+S\+E\+E\+R\+\_\+\+T\+R\+A\+C\+K\+\_\+\+R\+E\+N\+D\+E\+R\+E\+R\+\_\+\+H\+\_\+\+\_\+}!Effekseer.\+h@{Effekseer.\+h}}
@@ -471,9 +462,9 @@ int32\+\_\+t \mbox{\hyperlink{namespace_effekseer_abcfc5535cdc6dc92e50f8453cbb01
 
 
 \subsection{型定義詳解}
-\mbox{\Hypertarget{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}\label{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}} 
+\mbox{\Hypertarget{_effekseer_8h_a50b026abea014b47854bcd835b3b6233}\label{_effekseer_8h_a50b026abea014b47854bcd835b3b6233}} 
 \index{Effekseer.\+h@{Effekseer.\+h}!E\+F\+K\+\_\+\+C\+H\+AR@{E\+F\+K\+\_\+\+C\+H\+AR}}
 \index{E\+F\+K\+\_\+\+C\+H\+AR@{E\+F\+K\+\_\+\+C\+H\+AR}!Effekseer.\+h@{Effekseer.\+h}}
 \subsubsection{\texorpdfstring{E\+F\+K\+\_\+\+C\+H\+AR}{EFK\_CHAR}}
-{\footnotesize\ttfamily typedef uint16\+\_\+t \mbox{\hyperlink{_effekseer_8h_aca7eb5de6dd019c19ac58ea35a193f2f}{E\+F\+K\+\_\+\+C\+H\+AR}}}
+{\footnotesize\ttfamily typedef char16\+\_\+t \mbox{\hyperlink{_effekseer_8h_a50b026abea014b47854bcd835b3b6233}{E\+F\+K\+\_\+\+C\+H\+AR}}}
 

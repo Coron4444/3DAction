@@ -1,0 +1,91 @@
+\hypertarget{class_tutorial_logo}{}\section{Tutorial\+Logo クラス}
+\label{class_tutorial_logo}\index{Tutorial\+Logo@{Tutorial\+Logo}}
+
+
+チュートリアルロゴクラス  
+
+
+
+
+{\ttfamily \#include $<$Tutorial\+Logo.\+h$>$}
+
+Tutorial\+Logo の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tutorial_logo}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f}{Init}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
+\item 
+void \mbox{\hyperlink{class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tutorial_logo_a2c9e22c81cfeafbd34f50cc766a66cf1}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09}{Get\+Logo\+Num}} ()
+\item 
+void \mbox{\hyperlink{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}{Set\+Logo\+Num}} (unsigned value)
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+チュートリアルロゴクラス 
+
+チュートリアルロゴのクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09}\label{class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09}} 
+\index{Tutorial\+Logo@{Tutorial\+Logo}!Get\+Logo\+Num@{Get\+Logo\+Num}}
+\index{Get\+Logo\+Num@{Get\+Logo\+Num}!Tutorial\+Logo@{Tutorial\+Logo}}
+\subsubsection{\texorpdfstring{Get\+Logo\+Num()}{GetLogoNum()}}
+{\footnotesize\ttfamily unsigned Tutorial\+Logo\+::\+Get\+Logo\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f}\label{class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f}} 
+\index{Tutorial\+Logo@{Tutorial\+Logo}!Init@{Init}}
+\index{Init@{Init}!Tutorial\+Logo@{Tutorial\+Logo}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_tutorial_logo_a2c9e22c81cfeafbd34f50cc766a66cf1}\label{class_tutorial_logo_a2c9e22c81cfeafbd34f50cc766a66cf1}} 
+\index{Tutorial\+Logo@{Tutorial\+Logo}!Reset@{Reset}}
+\index{Reset@{Reset}!Tutorial\+Logo@{Tutorial\+Logo}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}\label{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}} 
+\index{Tutorial\+Logo@{Tutorial\+Logo}!Set\+Logo\+Num@{Set\+Logo\+Num}}
+\index{Set\+Logo\+Num@{Set\+Logo\+Num}!Tutorial\+Logo@{Tutorial\+Logo}}
+\subsubsection{\texorpdfstring{Set\+Logo\+Num()}{SetLogoNum()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+::\+Set\+Logo\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5}\label{class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5}} 
+\index{Tutorial\+Logo@{Tutorial\+Logo}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Tutorial\+Logo@{Tutorial\+Logo}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Tutorial\+Logo\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/2\+D/\+U\+I/\+Tutorial\+Logo/\mbox{\hyperlink{_tutorial_logo_8h}{Tutorial\+Logo.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/2\+D/\+U\+I/\+Tutorial\+Logo/\mbox{\hyperlink{_tutorial_logo_8cpp}{Tutorial\+Logo.\+cpp}}\end{DoxyCompactItemize}

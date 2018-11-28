@@ -18,7 +18,7 @@ Game\+Scene の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_game_scene_a7c9e00b7dddd016d9c07f8cb49e7bbb2}{Game\+Scene}} (\mbox{\hyperlink{class_scene_bace_1_1_state_abstract}{State\+Abstract}} $\ast$state)
+\mbox{\hyperlink{class_game_scene_a7c9e00b7dddd016d9c07f8cb49e7bbb2}{Game\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$state)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_game_scene_afb9c99f2e9b94bfc4f151bed83b1a522}{Get\+Is\+Clear}} ()
 \item 
@@ -27,6 +27,10 @@ void \mbox{\hyperlink{class_game_scene_aac6f0f69d7ad5745e49f41425d7df793}{Set\+I
 int \mbox{\hyperlink{class_game_scene_a903dffd64231c226daf27f22893893d8}{Get\+Score}} ()
 \item 
 void \mbox{\hyperlink{class_game_scene_aec5425818644ea2cb22ccffc89c56378}{Set\+Score}} (int value)
+\item 
+int \mbox{\hyperlink{class_game_scene_a2f8413f473bc9a937fa02bfd4678d61d}{get\+Game\+Over}} ()
+\item 
+void \mbox{\hyperlink{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}{set\+Game\+Over}} (int value)
 \end{DoxyCompactItemize}
 
 
@@ -40,7 +44,7 @@ void \mbox{\hyperlink{class_game_scene_aec5425818644ea2cb22ccffc89c56378}{Set\+S
 \index{Game\+Scene@{Game\+Scene}!Game\+Scene@{Game\+Scene}}
 \index{Game\+Scene@{Game\+Scene}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{Game\+Scene()}{GameScene()}}
-{\footnotesize\ttfamily Game\+Scene\+::\+Game\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_bace_1_1_state_abstract}{State\+Abstract}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Game\+Scene\+::\+Game\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -54,6 +58,12 @@ void \mbox{\hyperlink{class_game_scene_aec5425818644ea2cb22ccffc89c56378}{Set\+S
 
 
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_game_scene_a2f8413f473bc9a937fa02bfd4678d61d}\label{class_game_scene_a2f8413f473bc9a937fa02bfd4678d61d}} 
+\index{Game\+Scene@{Game\+Scene}!get\+Game\+Over@{get\+Game\+Over}}
+\index{get\+Game\+Over@{get\+Game\+Over}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{get\+Game\+Over()}{getGameOver()}}
+{\footnotesize\ttfamily int Game\+Scene\+::get\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{class_game_scene_afb9c99f2e9b94bfc4f151bed83b1a522}\label{class_game_scene_afb9c99f2e9b94bfc4f151bed83b1a522}} 
 \index{Game\+Scene@{Game\+Scene}!Get\+Is\+Clear@{Get\+Is\+Clear}}
 \index{Get\+Is\+Clear@{Get\+Is\+Clear}!Game\+Scene@{Game\+Scene}}
@@ -65,6 +75,12 @@ void \mbox{\hyperlink{class_game_scene_aec5425818644ea2cb22ccffc89c56378}{Set\+S
 \index{Get\+Score@{Get\+Score}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{Get\+Score()}{GetScore()}}
 {\footnotesize\ttfamily int Game\+Scene\+::\+Get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}\label{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}} 
+\index{Game\+Scene@{Game\+Scene}!set\+Game\+Over@{set\+Game\+Over}}
+\index{set\+Game\+Over@{set\+Game\+Over}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{set\+Game\+Over()}{setGameOver()}}
+{\footnotesize\ttfamily void Game\+Scene\+::set\+Game\+Over (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \mbox{\Hypertarget{class_game_scene_aac6f0f69d7ad5745e49f41425d7df793}\label{class_game_scene_aac6f0f69d7ad5745e49f41425d7df793}} 
 \index{Game\+Scene@{Game\+Scene}!Set\+Is\+Clear@{Set\+Is\+Clear}}

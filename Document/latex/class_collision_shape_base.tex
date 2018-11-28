@@ -1,0 +1,153 @@
+\hypertarget{class_collision_shape_base}{}\section{Collision\+Shape\+Base クラス}
+\label{class_collision_shape_base}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+
+
+衝突形状基底クラス  
+
+
+
+
+{\ttfamily \#include $<$Collision\+Shape\+Base.\+h$>$}
+
+Collision\+Shape\+Base の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_collision_shape_base}
+\end{center}
+\end{figure}
+\subsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} \{ \newline
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba1129630002cc3cf03126a4ef39383c98}{N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba2512ecb2c7c72bdbdf8aa3f5a07671c7}{A\+A\+BB}}, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba2cae7484589db3e777b158aeae2a633b}{C\+A\+P\+S\+U\+LE}}, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba92f81388af31f36357b692f2aead2f19}{C\+Y\+L\+I\+N\+D\+ER}}, 
+\newline
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba56e56c8ee634330847018d716ca222b0}{O\+BB}}, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba740709eb8c52c5d67d1c9af02af074cf}{P\+L\+A\+NE}}, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46}{S\+E\+G\+M\+E\+NT}}, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbaf5cbf5af4d5ef779592f1a293895c63e}{S\+P\+H\+E\+RE}}, 
+\newline
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba4b6a6ea5d0152ec22ef54af55a4c872b}{T\+R\+I\+A\+N\+G\+LE}}, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba4636454f94c8f39be9fed0b1a3124a2c}{M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_shape_base_a9dd2ab42e2a6e96c6bff832ce8ca62b9}{Collision\+Shape\+Base}} (\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} type)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}{$\sim$\+Collision\+Shape\+Base}} ()
+\begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} \mbox{\hyperlink{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}{get\+Type}} ()
+\item 
+const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b}{get\+Positon}} () const
+\item 
+void \mbox{\hyperlink{class_collision_shape_base_ac14132139e486926df11f438a8600907}{set\+Position}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} value)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+衝突形状基底クラス 
+
+衝突形状の基底クラス 
+
+\subsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}} 
+\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!Type@{Type}}
+\index{Type@{Type}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Collision\+Shape\+Base\+::\+Type}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba1129630002cc3cf03126a4ef39383c98}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba1129630002cc3cf03126a4ef39383c98}} 
+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+A\+BB@{A\+A\+BB}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!A\+A\+BB@{A\+A\+BB}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba2512ecb2c7c72bdbdf8aa3f5a07671c7}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba2512ecb2c7c72bdbdf8aa3f5a07671c7}} 
+A\+A\+BB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+A\+P\+S\+U\+LE@{C\+A\+P\+S\+U\+LE}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!C\+A\+P\+S\+U\+LE@{C\+A\+P\+S\+U\+LE}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba2cae7484589db3e777b158aeae2a633b}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba2cae7484589db3e777b158aeae2a633b}} 
+C\+A\+P\+S\+U\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+Y\+L\+I\+N\+D\+ER@{C\+Y\+L\+I\+N\+D\+ER}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!C\+Y\+L\+I\+N\+D\+ER@{C\+Y\+L\+I\+N\+D\+ER}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba92f81388af31f36357b692f2aead2f19}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba92f81388af31f36357b692f2aead2f19}} 
+C\+Y\+L\+I\+N\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+BB@{O\+BB}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!O\+BB@{O\+BB}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba56e56c8ee634330847018d716ca222b0}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba56e56c8ee634330847018d716ca222b0}} 
+O\+BB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+L\+A\+NE@{P\+L\+A\+NE}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!P\+L\+A\+NE@{P\+L\+A\+NE}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba740709eb8c52c5d67d1c9af02af074cf}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba740709eb8c52c5d67d1c9af02af074cf}} 
+P\+L\+A\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+G\+M\+E\+NT@{S\+E\+G\+M\+E\+NT}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!S\+E\+G\+M\+E\+NT@{S\+E\+G\+M\+E\+NT}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46}} 
+S\+E\+G\+M\+E\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+P\+H\+E\+RE@{S\+P\+H\+E\+RE}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!S\+P\+H\+E\+RE@{S\+P\+H\+E\+RE}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbaf5cbf5af4d5ef779592f1a293895c63e}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbaf5cbf5af4d5ef779592f1a293895c63e}} 
+S\+P\+H\+E\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+I\+A\+N\+G\+LE@{T\+R\+I\+A\+N\+G\+LE}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!T\+R\+I\+A\+N\+G\+LE@{T\+R\+I\+A\+N\+G\+LE}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba4b6a6ea5d0152ec22ef54af55a4c872b}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba4b6a6ea5d0152ec22ef54af55a4c872b}} 
+T\+R\+I\+A\+N\+G\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+AX@{M\+AX}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!M\+AX@{M\+AX}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba4636454f94c8f39be9fed0b1a3124a2c}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba4636454f94c8f39be9fed0b1a3124a2c}} 
+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_collision_shape_base_a9dd2ab42e2a6e96c6bff832ce8ca62b9}\label{class_collision_shape_base_a9dd2ab42e2a6e96c6bff832ce8ca62b9}} 
+\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+\subsubsection{\texorpdfstring{Collision\+Shape\+Base()}{CollisionShapeBase()}}
+{\footnotesize\ttfamily Collision\+Shape\+Base\+::\+Collision\+Shape\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}\label{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}} 
+\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!````~Collision\+Shape\+Base@{$\sim$\+Collision\+Shape\+Base}}
+\index{````~Collision\+Shape\+Base@{$\sim$\+Collision\+Shape\+Base}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Shape\+Base()}{~CollisionShapeBase()}}
+{\footnotesize\ttfamily virtual Collision\+Shape\+Base\+::$\sim$\+Collision\+Shape\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+仮想デストラクタ 
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b}\label{class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b}} 
+\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!get\+Positon@{get\+Positon}}
+\index{get\+Positon@{get\+Positon}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+\subsubsection{\texorpdfstring{get\+Positon()}{getPositon()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Collision\+Shape\+Base\+::get\+Positon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}\label{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}} 
+\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} Collision\+Shape\+Base\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_collision_shape_base_ac14132139e486926df11f438a8600907}\label{class_collision_shape_base_ac14132139e486926df11f438a8600907}} 
+\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void Collision\+Shape\+Base\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\mbox{\hyperlink{_collision_shape_base_8h}{Collision\+Shape\+Base.\+h}}\end{DoxyCompactItemize}

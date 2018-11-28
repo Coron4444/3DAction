@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: Camera::State クラス</title>
+<title>3DAction: Camera::State クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -95,6 +95,9 @@ $(document).ready(function(){initNavTree('class_camera_1_1_state.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>カメラステートクラス  
+ <a href="class_camera_1_1_state.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="_camera_8h_source.html">Camera.h</a>&gt;</code></p>
 <div class="dynheader">
 Camera::State の継承関係図</div>
@@ -110,15 +113,22 @@ Camera::State の継承関係図</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a61b74bb711d49e26c0f07af65fb74eb9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_state.html#a61b74bb711d49e26c0f07af65fb74eb9">~State</a> ()</td></tr>
+<tr class="memdesc:a61b74bb711d49e26c0f07af65fb74eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#a61b74bb711d49e26c0f07af65fb74eb9">[詳解]</a><br /></td></tr>
 <tr class="separator:a61b74bb711d49e26c0f07af65fb74eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b81471ab15e64b3117ffe7de9560ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_state.html#aa1b81471ab15e64b3117ffe7de9560ff">Init</a> (<a class="el" href="class_camera.html">Camera</a> *camera)=0</td></tr>
+<tr class="memdesc:aa1b81471ab15e64b3117ffe7de9560ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#aa1b81471ab15e64b3117ffe7de9560ff">[詳解]</a><br /></td></tr>
 <tr class="separator:aa1b81471ab15e64b3117ffe7de9560ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ebfc3f15cae24b342cb5dae57497cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_state.html#a68ebfc3f15cae24b342cb5dae57497cf">Uninit</a> (<a class="el" href="class_camera.html">Camera</a> *camera)=0</td></tr>
-<tr class="separator:a68ebfc3f15cae24b342cb5dae57497cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3f43b6c3f8100da7877867180e804b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_state.html#adb3f43b6c3f8100da7877867180e804b">Uninit</a> ()=0</td></tr>
+<tr class="memdesc:adb3f43b6c3f8100da7877867180e804b"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#adb3f43b6c3f8100da7877867180e804b">[詳解]</a><br /></td></tr>
+<tr class="separator:adb3f43b6c3f8100da7877867180e804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d41e0cb783666bae6c6ea167fcc7874"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_1_1_state.html#a2d41e0cb783666bae6c6ea167fcc7874">Update</a> (<a class="el" href="class_camera.html">Camera</a> *camera)=0</td></tr>
+<tr class="memdesc:a2d41e0cb783666bae6c6ea167fcc7874"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <a href="#a2d41e0cb783666bae6c6ea167fcc7874">[詳解]</a><br /></td></tr>
 <tr class="separator:a2d41e0cb783666bae6c6ea167fcc7874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">構築子と解体子</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>カメラステートクラス </p>
+<p>カメラのステートクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a61b74bb711d49e26c0f07af65fb74eb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61b74bb711d49e26c0f07af65fb74eb9">&#9670;&nbsp;</a></span>~State()</h2>
 
@@ -141,6 +151,8 @@ Camera::State の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>デストラクタ </p>
 
 </div>
 </div>
@@ -169,12 +181,20 @@ Camera::State の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p>初期化関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>: カメラ </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><a class="el" href="class_camera_state___crawl_up.html#a43a47eb4e7445c6801e8316c5a635709">CameraState_CrawlUp</a>, <a class="el" href="class_camera_state___homing_target.html#a9222190a5f26d564e99623b05941d382">CameraState_HomingTarget</a>で実装されています。</p>
 
 </div>
 </div>
-<a id="a68ebfc3f15cae24b342cb5dae57497cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ebfc3f15cae24b342cb5dae57497cf">&#9670;&nbsp;</a></span>Uninit()</h2>
+<a id="adb3f43b6c3f8100da7877867180e804b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3f43b6c3f8100da7877867180e804b">&#9670;&nbsp;</a></span>Uninit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,8 +205,7 @@ Camera::State の継承関係図</div>
         <tr>
           <td class="memname">virtual void Camera::State::Uninit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_camera.html">Camera</a> *&#160;</td>
-          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -197,7 +216,15 @@ Camera::State の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_camera_state___crawl_up.html#ac9822b09d8e5fa9e1def7ac8a1e9c893">CameraState_CrawlUp</a>, <a class="el" href="class_camera_state___homing_target.html#a5b4abde99047da6a20f299990c259ef1">CameraState_HomingTarget</a>で実装されています。</p>
+<p>終了関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>: カメラ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_camera_state___crawl_up.html#a046ec18a91e31b210ae000133fa6113a">CameraState_CrawlUp</a>, <a class="el" href="class_camera_state___homing_target.html#ab2b5379b35ebafc53189bf4d45646c8c">CameraState_HomingTarget</a>で実装されています。</p>
 
 </div>
 </div>
@@ -225,12 +252,20 @@ Camera::State の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p>更新関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>: カメラ </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><a class="el" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264">CameraState_CrawlUp</a>, <a class="el" href="class_camera_state___homing_target.html#a98f04985c06033febdad32d6357088c9">CameraState_HomingTarget</a>で実装されています。</p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawComponentManager/Camera/<a class="el" href="_camera_8h_source.html">Camera.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Camera/<a class="el" href="_camera_8h_source.html">Camera.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

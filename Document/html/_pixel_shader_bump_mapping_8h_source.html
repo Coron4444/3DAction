@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Shader/PixelShader/PixelShaderBumpMapping/PixelShaderBumpMapping.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_pixel_shader_bump_mapping_8h_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PixelShaderBumpMapping.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_pixel_shader_bump_mapping_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//    バンプマッピングピクセルシェーダークラス</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//    Author : Araki Kai                                作成日 : 2018/11/17</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _PIXEL_SHADER_BUMP_MAPPING_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _PIXEL_SHADER_BUMP_MAPPING_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// インクルード文</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../../ShaderBase/PixelShaderNull.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/*********************************************************/</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_pixel_shader_bump_mapping.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pixel_shader_bump_mapping.html">PixelShaderBumpMapping</a> : <span class="keyword">public</span> <a class="code" href="class_pixel_shader_null.html">PixelShaderNull</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// 定数</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* PATH;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// 非静的メンバ変数</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 計算用</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    D3DXMATRIX math_matrix_;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// 非静的メンバ関数</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//==============================</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pixel_shader_bump_mapping.html#ab7807b7c56242e965ddb23e66e1a5d9e">Init</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pixel_shader_bump_mapping.html#a004f731db6dab6b59949baed4a5a32d7">Uninit</a>();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pixel_shader_bump_mapping.html#af62a2b40930533a3bae17319f876705d">CommonSetting</a>(<a class="code" href="class_draw_base.html">DrawBase</a>* draw, <a class="code" href="class_camera.html">Camera</a>* camera, <span class="keywordtype">unsigned</span> object_index);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pixel_shader_bump_mapping.html#afa80c2404b490a444d54cc47c681ca8f">SpecificSetting</a>(<a class="code" href="class_draw_base.html">DrawBase</a>* draw, <a class="code" href="class_camera.html">Camera</a>* camera, </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                         <span class="keywordtype">unsigned</span> object_index, <span class="keywordtype">unsigned</span> mesh_index);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_pixel_shader_bump_mapping_html"><div class="ttname"><a href="class_pixel_shader_bump_mapping.html">PixelShaderBumpMapping</a></div><div class="ttdoc">バンプマッピングピクセルシェーダークラス </div><div class="ttdef"><b>Definition:</b> PixelShaderBumpMapping.h:26</div></div>
+<div class="ttc" id="class_pixel_shader_bump_mapping_html_afa80c2404b490a444d54cc47c681ca8f"><div class="ttname"><a href="class_pixel_shader_bump_mapping.html#afa80c2404b490a444d54cc47c681ca8f">PixelShaderBumpMapping::SpecificSetting</a></div><div class="ttdeci">void SpecificSetting(DrawBase *draw, Camera *camera, unsigned object_index, unsigned mesh_index)</div><div class="ttdoc">固有設定関数 </div><div class="ttdef"><b>Definition:</b> PixelShaderBumpMapping.cpp:78</div></div>
+<div class="ttc" id="class_pixel_shader_null_html"><div class="ttname"><a href="class_pixel_shader_null.html">PixelShaderNull</a></div><div class="ttdoc">空白ピクセルシェーダークラス </div><div class="ttdef"><b>Definition:</b> PixelShaderNull.h:26</div></div>
+<div class="ttc" id="class_pixel_shader_bump_mapping_html_a004f731db6dab6b59949baed4a5a32d7"><div class="ttname"><a href="class_pixel_shader_bump_mapping.html#a004f731db6dab6b59949baed4a5a32d7">PixelShaderBumpMapping::Uninit</a></div><div class="ttdeci">void Uninit()</div><div class="ttdoc">終了関数 </div><div class="ttdef"><b>Definition:</b> PixelShaderBumpMapping.cpp:46</div></div>
+<div class="ttc" id="class_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">カメラクラス </div><div class="ttdef"><b>Definition:</b> Camera.h:26</div></div>
+<div class="ttc" id="class_draw_base_html"><div class="ttname"><a href="class_draw_base.html">DrawBase</a></div><div class="ttdoc">描画基底クラス </div><div class="ttdef"><b>Definition:</b> DrawBase.h:35</div></div>
+<div class="ttc" id="class_pixel_shader_bump_mapping_html_ab7807b7c56242e965ddb23e66e1a5d9e"><div class="ttname"><a href="class_pixel_shader_bump_mapping.html#ab7807b7c56242e965ddb23e66e1a5d9e">PixelShaderBumpMapping::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化関数 </div><div class="ttdef"><b>Definition:</b> PixelShaderBumpMapping.cpp:32</div></div>
+<div class="ttc" id="class_pixel_shader_bump_mapping_html_af62a2b40930533a3bae17319f876705d"><div class="ttname"><a href="class_pixel_shader_bump_mapping.html#af62a2b40930533a3bae17319f876705d">PixelShaderBumpMapping::CommonSetting</a></div><div class="ttdeci">void CommonSetting(DrawBase *draw, Camera *camera, unsigned object_index)</div><div class="ttdoc">共通設定関数 </div><div class="ttdef"><b>Definition:</b> PixelShaderBumpMapping.cpp:57</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_976dc2bd85357175aa42d597a4624b41.html">ComponentManager</a></li><li class="navelem"><a class="el" href="dir_8e678a1fe8c743c8351c848d99f2168d.html">DrawManager</a></li><li class="navelem"><a class="el" href="dir_e3df25693722edcb86fe80a2230154c3.html">Shader</a></li><li class="navelem"><a class="el" href="dir_fe7580ae52db5a673d55d029aea11d73.html">PixelShader</a></li><li class="navelem"><a class="el" href="dir_ba1364a50b1ff5f5d1864f619a62ac5d.html">PixelShaderBumpMapping</a></li><li class="navelem"><a class="el" href="_pixel_shader_bump_mapping_8h.html">PixelShaderBumpMapping.h</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

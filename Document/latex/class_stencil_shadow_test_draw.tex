@@ -1,0 +1,189 @@
+\hypertarget{class_stencil_shadow_test_draw}{}\section{Stencil\+Shadow\+Test\+Draw クラス}
+\label{class_stencil_shadow_test_draw}\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+
+
+ステンシルシャドウ描画クラス  
+
+
+
+
+{\ttfamily \#include $<$Stencil\+Shadow\+Test\+Draw.\+h$>$}
+
+Stencil\+Shadow\+Test\+Draw の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_stencil_shadow_test_draw}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_stencil_shadow_test_draw_a65be72e71cd12cacf315b0364c12c3e3}{Init}} () override
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stencil_shadow_test_draw_ad0672bf4ecfc8091cf54ed6f2c76b618}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stencil_shadow_test_draw_abb5f9445b7d94c213a3751fa57e36643}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_stencil_shadow_test_draw_a0f697b6dad67048c7f8916a53cca6b1c}{Setting\+Before\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画前設定関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_stencil_shadow_test_draw_a68917115d3f151ed91ce297924ee5bbb}{Setting\+After\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画後設定関数 \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_stencil_shadow_test_draw_a8cc9a54a2bcb1fd006331fca1add02dc}{Get\+Object\+Num}} () override
+\item 
+unsigned \mbox{\hyperlink{class_stencil_shadow_test_draw_acfa569f1dcdc3829796138e313f204ad}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
+\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_stencil_shadow_test_draw_adfa99798c61ac13f209dc99f1e2694c5}{Get\+Matrix}} (unsigned object\+\_\+index) override
+\item 
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_stencil_shadow_test_draw_abfc9caaaa1b6120e2013701a9d264f2d}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_stencil_shadow_test_draw_a387a97781f743aa0ea0727c050ef53b2}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+ステンシルシャドウ描画クラス 
+
+ステンシルシャドウの描画クラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_abb5f9445b7d94c213a3751fa57e36643}\label{class_stencil_shadow_test_draw_abb5f9445b7d94c213a3751fa57e36643}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Draw@{Draw}}
+\index{Draw@{Draw}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Stencil\+Shadow\+Test\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+描画関数 
+
+
+\begin{DoxyParams}{引数}
+{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_a387a97781f743aa0ea0727c050ef53b2}\label{class_stencil_shadow_test_draw_a387a97781f743aa0ea0727c050ef53b2}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
+\index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Stencil\+Shadow\+Test\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_abfc9caaaa1b6120e2013701a9d264f2d}\label{class_stencil_shadow_test_draw_abfc9caaaa1b6120e2013701a9d264f2d}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Get\+Material@{Get\+Material}}
+\index{Get\+Material@{Get\+Material}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Stencil\+Shadow\+Test\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_adfa99798c61ac13f209dc99f1e2694c5}\label{class_stencil_shadow_test_draw_adfa99798c61ac13f209dc99f1e2694c5}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Stencil\+Shadow\+Test\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_acfa569f1dcdc3829796138e313f204ad}\label{class_stencil_shadow_test_draw_acfa569f1dcdc3829796138e313f204ad}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
+\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
+{\footnotesize\ttfamily unsigned Stencil\+Shadow\+Test\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_a8cc9a54a2bcb1fd006331fca1add02dc}\label{class_stencil_shadow_test_draw_a8cc9a54a2bcb1fd006331fca1add02dc}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Get\+Object\+Num@{Get\+Object\+Num}}
+\index{Get\+Object\+Num@{Get\+Object\+Num}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Object\+Num()}{GetObjectNum()}}
+{\footnotesize\ttfamily unsigned Stencil\+Shadow\+Test\+Draw\+::\+Get\+Object\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_aaffa15d184f1d09512ccaa3bdad3f658}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_a65be72e71cd12cacf315b0364c12c3e3}\label{class_stencil_shadow_test_draw_a65be72e71cd12cacf315b0364c12c3e3}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Init@{Init}}
+\index{Init@{Init}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Stencil\+Shadow\+Test\+Draw\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_a68917115d3f151ed91ce297924ee5bbb}\label{class_stencil_shadow_test_draw_a68917115d3f151ed91ce297924ee5bbb}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Setting\+After\+Drawing@{Setting\+After\+Drawing}}
+\index{Setting\+After\+Drawing@{Setting\+After\+Drawing}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Setting\+After\+Drawing()}{SettingAfterDrawing()}}
+{\footnotesize\ttfamily void Stencil\+Shadow\+Test\+Draw\+::\+Setting\+After\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+描画後設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ object\+\_\+index \+: オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_a76edfc5af0bf3275f96f40394aff8510}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_a0f697b6dad67048c7f8916a53cca6b1c}\label{class_stencil_shadow_test_draw_a0f697b6dad67048c7f8916a53cca6b1c}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Setting\+Before\+Drawing@{Setting\+Before\+Drawing}}
+\index{Setting\+Before\+Drawing@{Setting\+Before\+Drawing}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Setting\+Before\+Drawing()}{SettingBeforeDrawing()}}
+{\footnotesize\ttfamily void Stencil\+Shadow\+Test\+Draw\+::\+Setting\+Before\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+描画前設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ object\+\_\+index \+: オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_stencil_shadow_test_draw_ad0672bf4ecfc8091cf54ed6f2c76b618}\label{class_stencil_shadow_test_draw_ad0672bf4ecfc8091cf54ed6f2c76b618}} 
+\index{Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Stencil\+Shadow\+Test\+Draw@{Stencil\+Shadow\+Test\+Draw}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Stencil\+Shadow\+Test\+Draw\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Stencil\+Shadow\+Test/\+Stencil\+Shadow\+Test\+Draw/\mbox{\hyperlink{_stencil_shadow_test_draw_8h}{Stencil\+Shadow\+Test\+Draw.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Stencil\+Shadow\+Test/\+Stencil\+Shadow\+Test\+Draw/\mbox{\hyperlink{_stencil_shadow_test_draw_8cpp}{Stencil\+Shadow\+Test\+Draw.\+cpp}}\end{DoxyCompactItemize}

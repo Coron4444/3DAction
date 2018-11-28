@@ -25,6 +25,10 @@ virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{
 virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_track_renderer_a5d99f7a58b254166cf938bc739bbb387}{Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_instance_parameter}{Instance\+Parameter}} \&instance\+Parameter, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
 \item 
 virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_track_renderer_ad8ad4cbe8cdbbaacc2106c3e689ce579}{End\+Rendering}} (const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_track_renderer_aabda9da7e26531ca02142af951865bcc}{Begin\+Rendering\+Group}} (const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, int32\+\_\+t count, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
+\item 
+virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} \mbox{\hyperlink{class_effekseer_1_1_track_renderer_a3f64ad809595ff880d3575ed8345ef0a}{End\+Rendering\+Group}} (const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&parameter, int32\+\_\+t count, \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$user\+Data)
 \end{DoxyCompactItemize}
 
 
@@ -50,11 +54,23 @@ virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{
 \subsubsection{\texorpdfstring{Begin\+Rendering()}{BeginRendering()}}
 {\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Track\+Renderer\+::\+Begin\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{int32\+\_\+t}]{count,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
+\mbox{\Hypertarget{class_effekseer_1_1_track_renderer_aabda9da7e26531ca02142af951865bcc}\label{class_effekseer_1_1_track_renderer_aabda9da7e26531ca02142af951865bcc}} 
+\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!Begin\+Rendering\+Group@{Begin\+Rendering\+Group}}
+\index{Begin\+Rendering\+Group@{Begin\+Rendering\+Group}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+\subsubsection{\texorpdfstring{Begin\+Rendering\+Group()}{BeginRenderingGroup()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Track\+Renderer\+::\+Begin\+Rendering\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{int32\+\_\+t}]{count,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
 \mbox{\Hypertarget{class_effekseer_1_1_track_renderer_ad8ad4cbe8cdbbaacc2106c3e689ce579}\label{class_effekseer_1_1_track_renderer_ad8ad4cbe8cdbbaacc2106c3e689ce579}} 
 \index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!End\+Rendering@{End\+Rendering}}
 \index{End\+Rendering@{End\+Rendering}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
 \subsubsection{\texorpdfstring{End\+Rendering()}{EndRendering()}}
 {\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Track\+Renderer\+::\+End\+Rendering (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_effekseer_1_1_track_renderer_a3f64ad809595ff880d3575ed8345ef0a}\label{class_effekseer_1_1_track_renderer_a3f64ad809595ff880d3575ed8345ef0a}} 
+\index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!End\+Rendering\+Group@{End\+Rendering\+Group}}
+\index{End\+Rendering\+Group@{End\+Rendering\+Group}!Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}}
+\subsubsection{\texorpdfstring{End\+Rendering\+Group()}{EndRenderingGroup()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} Effekseer\+::\+Track\+Renderer\+::\+End\+Rendering\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_effekseer_1_1_track_renderer_1_1_node_parameter}{Node\+Parameter}} \&}]{parameter,  }\item[{int32\+\_\+t}]{count,  }\item[{\mbox{\hyperlink{namespace_effekseer_ab34c4088e512200cf4c2716f168deb56}{void}} $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 \mbox{\Hypertarget{class_effekseer_1_1_track_renderer_a5d99f7a58b254166cf938bc739bbb387}\label{class_effekseer_1_1_track_renderer_a5d99f7a58b254166cf938bc739bbb387}} 
 \index{Effekseer\+::\+Track\+Renderer@{Effekseer\+::\+Track\+Renderer}!Rendering@{Rendering}}

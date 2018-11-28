@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: EffekseerObject クラス</title>
+<title>3DAction: EffekseerObject クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -123,8 +123,8 @@ $(document).ready(function(){initNavTree('class_effekseer_object.html','');});
 <tr class="separator:a3c44b29c016fb5b3618e2d39060844be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c14fd4215640b648b14e445b99564f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_object.html#a3c14fd4215640b648b14e445b99564f7">SetVelocity</a> (float velocity)</td></tr>
 <tr class="separator:a3c14fd4215640b648b14e445b99564f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a876c50dad7f959d77579b1ea274ea706"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_object.html#a876c50dad7f959d77579b1ea274ea706">SetColor</a> (<a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a> color)</td></tr>
-<tr class="separator:a876c50dad7f959d77579b1ea274ea706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c496e56785ef7b784b13642d59d4e7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_object.html#a5c496e56785ef7b784b13642d59d4e7f">SetColor</a> (uint8_t r, uint8_t g, uint8_t b, uint8_t a)</td></tr>
+<tr class="separator:a5c496e56785ef7b784b13642d59d4e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3849f176ccb493b162d08c1ef387996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_object.html#aa3849f176ccb493b162d08c1ef387996">SetProjectionMatrix</a> (<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> *projection_matrix)</td></tr>
 <tr class="separator:aa3849f176ccb493b162d08c1ef387996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f3145b79b5e65e45014abd30ee5de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_object.html#ac7f3145b79b5e65e45014abd30ee5de8">SetViewMatrix</a> (<a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> *view_matrix)</td></tr>
@@ -311,8 +311,8 @@ $(document).ready(function(){initNavTree('class_effekseer_object.html','');});
 
 </div>
 </div>
-<a id="a876c50dad7f959d77579b1ea274ea706"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a876c50dad7f959d77579b1ea274ea706">&#9670;&nbsp;</a></span>SetColor()</h2>
+<a id="a5c496e56785ef7b784b13642d59d4e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c496e56785ef7b784b13642d59d4e7f">&#9670;&nbsp;</a></span>SetColor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,9 +320,31 @@ $(document).ready(function(){initNavTree('class_effekseer_object.html','');});
         <tr>
           <td class="memname">void EffekseerObject::SetColor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a>&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

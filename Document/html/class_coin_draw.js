@@ -1,9 +1,12 @@
 var class_coin_draw =
 [
-    [ "Draw", "class_coin_draw.html#a57e3f327324db9ec3debc702d14325c7", null ],
-    [ "GetDecaleTexture", "class_coin_draw.html#aa3132d69a3dd903e79331b3c4b46ab79", null ],
-    [ "GetMaterial", "class_coin_draw.html#a4582370e7ec4c1259b2a91cc185fbe09", null ],
-    [ "GetMeshNum", "class_coin_draw.html#a9f5aa847fcb28e5617f00d575a6a911c", null ],
+    [ "Draw", "class_coin_draw.html#ac7d91fecb6845cebe276eb81a4953563", null ],
+    [ "GetDecaleTexture", "class_coin_draw.html#a1d4ab1a5c480833b8d8e7fe226136ad5", null ],
+    [ "GetMaterial", "class_coin_draw.html#a869a6b7273b273048dd56822fae4d644", null ],
+    [ "GetMatrix", "class_coin_draw.html#a8f5fd8668a4c66fe31446cc6f7c4afd7", null ],
+    [ "GetMeshNum", "class_coin_draw.html#a178c8d88effe55aaad7d0e45b02e0566", null ],
     [ "Init", "class_coin_draw.html#ad0f5da5cfb896541fd59b1ab4a8593d1", null ],
-    [ "Uninit", "class_coin_draw.html#a6484c22a5598e298f18e7cd6083cd551", null ]
+    [ "SettingBeforeDrawing", "class_coin_draw.html#a66c03acd675ac1820977cb21015abfdb", null ],
+    [ "Uninit", "class_coin_draw.html#a6484c22a5598e298f18e7cd6083cd551", null ],
+    [ "Update", "class_coin_draw.html#a6157b17bf1706b85156aad0d88acfd7e", null ]
 ];

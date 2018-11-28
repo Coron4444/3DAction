@@ -1,9 +1,10 @@
 var class_number_draw =
 [
-    [ "Draw", "class_number_draw.html#a8ff9515eb359a04517d7d36321fff0d7", null ],
-    [ "GetDecaleTexture", "class_number_draw.html#a4485821e07841a9d0fe33d5a047ed7d0", null ],
-    [ "GetMaterial", "class_number_draw.html#a9454f2a7dab2afd1e981c7cf14329659", null ],
-    [ "GetMeshNum", "class_number_draw.html#ace379e39f5646b4d04f3fc9cc1beea1a", null ],
+    [ "Draw", "class_number_draw.html#a15e4e602b3f9372349d0b6ff9e4fc423", null ],
+    [ "GetDecaleTexture", "class_number_draw.html#ad1d9a4cee49e7bddce51b5c58e739de9", null ],
+    [ "GetMaterial", "class_number_draw.html#a3348d9d1cdd9dd03be25b82069275ca5", null ],
+    [ "GetMatrix", "class_number_draw.html#a78f50afa05e728811d89a491f5eec899", null ],
+    [ "GetMeshNum", "class_number_draw.html#a8234fb06d885feaa8a2f0ecf256db9a0", null ],
     [ "Init", "class_number_draw.html#ad52c1e8b9ae6e830a82c440cc18cb6c9", null ],
     [ "Uninit", "class_number_draw.html#a2b203d101f23f0d3f584937ff5ad662a", null ]
 ];

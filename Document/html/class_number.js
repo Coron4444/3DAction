@@ -1,6 +1,6 @@
 var class_number =
 [
-    [ "Init", "class_number.html#a5830270854ab224b60462f50f495a1fa", null ],
+    [ "Init", "class_number.html#ad92c9038810d0f831fdb9b5b13901b79", null ],
     [ "Reset", "class_number.html#a7c6facdb1b3d0acc8309e0a915863d44", null ],
     [ "SetColor", "class_number.html#a1ea98cdee888a040f4530a6654657c44", null ],
     [ "SetNumber", "class_number.html#ac825b1ee1f46a6ac4ffd3bc904964745", null ],

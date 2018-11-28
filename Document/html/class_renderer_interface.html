@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: RendererInterface クラス</title>
+<title>3DAction: RendererInterface クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -126,6 +126,9 @@ RendererInterface の継承関係図</div>
 <tr class="memitem:a0034a44420e4746062e70e4d66d3bee2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_interface.html#a0034a44420e4746062e70e4d66d3bee2">DrawEnd</a> (bool is_begin_scene)=0</td></tr>
 <tr class="memdesc:a0034a44420e4746062e70e4d66d3bee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画終了関数  <a href="#a0034a44420e4746062e70e4d66d3bee2">[詳解]</a><br /></td></tr>
 <tr class="separator:a0034a44420e4746062e70e4d66d3bee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e12d2a2f5ffa351c457cfc7806b6f1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer_interface.html#aa9e12d2a2f5ffa351c457cfc7806b6f1">Present</a> ()=0</td></tr>
+<tr class="memdesc:aa9e12d2a2f5ffa351c457cfc7806b6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">バックバッファをフロントバッファに反映関数  <a href="#aa9e12d2a2f5ffa351c457cfc7806b6f1">[詳解]</a><br /></td></tr>
+<tr class="separator:aa9e12d2a2f5ffa351c457cfc7806b6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>レンダラーインターフェースクラス </p>
@@ -184,7 +187,7 @@ RendererInterface の継承関係図</div>
 
 <p>描画開始関数 </p>
 
-<p><a class="el" href="class_renderer_direct_x9.html#a61fc7dc142c3d54f83152fc3bb259ff4">RendererDirectX9</a>で実装されています。</p>
+<p><a class="el" href="class_renderer_direct_x9.html#a5113bf4e6aefdb7bcab2016fbbee0174">RendererDirectX9</a>で実装されています。</p>
 
 </div>
 </div>
@@ -220,7 +223,7 @@ RendererInterface の継承関係図</div>
   </dd>
 </dl>
 
-<p><a class="el" href="class_renderer_direct_x9.html#a8a29b6e70fa8b2f55a12c11143184ce1">RendererDirectX9</a>で実装されています。</p>
+<p><a class="el" href="class_renderer_direct_x9.html#a5f934597020f77dc9cf729acfb13a830">RendererDirectX9</a>で実装されています。</p>
 
 </div>
 </div>
@@ -284,7 +287,36 @@ RendererInterface の継承関係図</div>
   </dd>
 </dl>
 
-<p><a class="el" href="class_renderer_direct_x9.html#a28da461025c48770a360b8d399a8414f">RendererDirectX9</a>で実装されています。</p>
+<p><a class="el" href="class_renderer_direct_x9.html#af015676b50f3ce1ba7cf20abf6074e3b">RendererDirectX9</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="aa9e12d2a2f5ffa351c457cfc7806b6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e12d2a2f5ffa351c457cfc7806b6f1">&#9670;&nbsp;</a></span>Present()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RendererInterface::Present </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バックバッファをフロントバッファに反映関数 </p>
+
+<p><a class="el" href="class_renderer_direct_x9.html#a77dbc76e8adbe4f9ee41c5f09e5ebe81">RendererDirectX9</a>で実装されています。</p>
 
 </div>
 </div>
@@ -313,7 +345,7 @@ RendererInterface の継承関係図</div>
 
 <p>終了関数 </p>
 
-<p><a class="el" href="class_renderer_direct_x9.html#a61c375254fc0a827873fb4c72181f0d5">RendererDirectX9</a>で実装されています。</p>
+<p><a class="el" href="class_renderer_direct_x9.html#af7ff314cbaa894d71e37c10565002f8f">RendererDirectX9</a>で実装されています。</p>
 
 </div>
 </div>

@@ -1,7 +1,7 @@
 var class_effekseer_1_1_effect =
 [
     [ "Effect", "class_effekseer_1_1_effect.html#ac36d4aa804244d12a64ad8e2f9681ed0", null ],
-    [ "~Effect", "class_effekseer_1_1_effect.html#a1548bfc590a25a1515dbbb2d5923b7be", null ],
+    [ "~Effect", "class_effekseer_1_1_effect.html#aeff1be44efe48d64e2b398d9186c1011", null ],
     [ "GetColorImage", "class_effekseer_1_1_effect.html#a8dee1d45117ec1dc3909aa20ac942110", null ],
     [ "GetColorImageCount", "class_effekseer_1_1_effect.html#a50ca0307097782d1bced346e8090a56d", null ],
     [ "GetDistortionImage", "class_effekseer_1_1_effect.html#a846840e790b1b4dff1b5cb8f8bce44dc", null ],

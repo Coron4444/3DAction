@@ -7,7 +7,7 @@
 Player\+Collision の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_player_collision}
+\includegraphics[height=4.000000cm]{class_player_collision}
 \end{center}
 \end{figure}
 \subsection*{公開型}
@@ -22,20 +22,18 @@ enum \mbox{\hyperlink{class_player_collision_a628e8898ff4fc1f85eb4ba44eb0a6907}{
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_player_collision_a60f6ed3a1886aa80dcd23cb499284470}{Player\+Collision}} ()
-\item 
 void \mbox{\hyperlink{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}{Init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_collision_a09f97f220903f5724a3af6b97af3a336}{Update}} () override
-\item 
-void \mbox{\hyperlink{class_player_collision_ae2d429a16bf2c3ee74070ef497a8696a}{Hit\+Collision}} (\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$hit\+\_\+component, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+opponent\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+myself\+\_\+object) override
-\item 
-void \mbox{\hyperlink{class_player_collision_a46961b740806b7c467bb3384ff784b91}{Not\+Hit\+Collision}} (\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$hit\+\_\+component, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+opponent\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+myself\+\_\+object) override
-\item 
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_collision_ad937a5fd226e742270202bf4eff53767}{Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object) override
+\begin{DoxyCompactList}\small\item\em 衝突時関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}{Not\+Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object) override
+\begin{DoxyCompactList}\small\item\em 非衝突時関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}{Hit\+Ground}} (float position\+\_\+y) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em フィールドとの衝突時関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{列挙型メンバ詳解}
@@ -65,25 +63,25 @@ M\+AX&\\
 \end{DoxyEnumFields}
 
 
-\subsection{構築子と解体子}
-\mbox{\Hypertarget{class_player_collision_a60f6ed3a1886aa80dcd23cb499284470}\label{class_player_collision_a60f6ed3a1886aa80dcd23cb499284470}} 
-\index{Player\+Collision@{Player\+Collision}!Player\+Collision@{Player\+Collision}}
-\index{Player\+Collision@{Player\+Collision}!Player\+Collision@{Player\+Collision}}
-\subsubsection{\texorpdfstring{Player\+Collision()}{PlayerCollision()}}
-{\footnotesize\ttfamily Player\+Collision\+::\+Player\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_player_collision_ae2d429a16bf2c3ee74070ef497a8696a}\label{class_player_collision_ae2d429a16bf2c3ee74070ef497a8696a}} 
+\mbox{\Hypertarget{class_player_collision_ad937a5fd226e742270202bf4eff53767}\label{class_player_collision_ad937a5fd226e742270202bf4eff53767}} 
 \index{Player\+Collision@{Player\+Collision}!Hit\+Collision@{Hit\+Collision}}
 \index{Hit\+Collision@{Hit\+Collision}!Player\+Collision@{Player\+Collision}}
 \subsubsection{\texorpdfstring{Hit\+Collision()}{HitCollision()}}
-{\footnotesize\ttfamily void Player\+Collision\+::\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{hit\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+opponent\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+myself\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_collision_component_a50c4fea9d37eb22ac435ee5c2ce36254}{Collision\+Component}}を再実装しています。
+衝突時関数 
+
+
+\begin{DoxyParams}{引数}
+{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_collision_null_a580f507d8918865679feec3cc7b613d1}{Collision\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}\label{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}} 
 \index{Player\+Collision@{Player\+Collision}!Hit\+Ground@{Hit\+Ground}}
@@ -93,7 +91,11 @@ M\+AX&\\
 
 
 
-\mbox{\hyperlink{class_collision_component_a7538567006556bc03524df2655e83956}{Collision\+Component}}を再実装しています。
+フィールドとの衝突時関数 
+
+
+
+\mbox{\hyperlink{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}{Collision\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}\label{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}} 
 \index{Player\+Collision@{Player\+Collision}!Init@{Init}}
@@ -103,17 +105,30 @@ M\+AX&\\
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+初期化関数 
 
-\mbox{\Hypertarget{class_player_collision_a46961b740806b7c467bb3384ff784b91}\label{class_player_collision_a46961b740806b7c467bb3384ff784b91}} 
+
+
+\mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}\label{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}} 
 \index{Player\+Collision@{Player\+Collision}!Not\+Hit\+Collision@{Not\+Hit\+Collision}}
 \index{Not\+Hit\+Collision@{Not\+Hit\+Collision}!Player\+Collision@{Player\+Collision}}
 \subsubsection{\texorpdfstring{Not\+Hit\+Collision()}{NotHitCollision()}}
-{\footnotesize\ttfamily void Player\+Collision\+::\+Not\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_component}{Collision\+Component}} $\ast$}]{hit\+\_\+component,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+opponent\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+myself\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Not\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_collision_component_ad4d820d07872da11c9c1fd1b40157349}{Collision\+Component}}を再実装しています。
+非衝突時関数 
+
+
+\begin{DoxyParams}{引数}
+{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}{Collision\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}\label{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}} 
 \index{Player\+Collision@{Player\+Collision}!Uninit@{Uninit}}
@@ -123,7 +138,11 @@ M\+AX&\\
 
 
 
-\mbox{\hyperlink{class_collision_component_aa75440061f7a60e8c4ee1dae18682cc0}{Collision\+Component}}を再実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Collision\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_player_collision_a09f97f220903f5724a3af6b97af3a336}\label{class_player_collision_a09f97f220903f5724a3af6b97af3a336}} 
 \index{Player\+Collision@{Player\+Collision}!Update@{Update}}
@@ -133,7 +152,11 @@ M\+AX&\\
 
 
 
-\mbox{\hyperlink{class_collision_component_a3fa60fd8b4e8690f783c0f578949664e}{Collision\+Component}}を再実装しています。
+更新関数 
+
+
+
+\mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Collision\+Null}}を再実装しています。
 
 
 

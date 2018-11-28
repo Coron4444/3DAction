@@ -1,0 +1,111 @@
+\hypertarget{class_liner_octree}{}\section{Liner\+Octree$<$ Type $>$ クラステンプレート}
+\label{class_liner_octree}\index{Liner\+Octree$<$ Type $>$@{Liner\+Octree$<$ Type $>$}}
+
+
+線形8分木クラス  
+
+
+
+
+{\ttfamily \#include $<$Liner\+Octree.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_liner_octree_a715d655c722c00c002d0bb006d0600d8}{Init}} (unsigned lowest\+\_\+level, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} octree\+\_\+width\+\_\+min, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} octree\+\_\+width\+\_\+max)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_liner_octree_a86b5b9bc86630644e84508ff385cda69}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_liner_octree_a880276cc9099c29f447f3ca0043b9ce9}{Update\+Collision\+List}} (std\+::vector$<$ Type $>$ $\ast$collision\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em 衝突リスト更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_liner_octree_ac5773a5193942a68f77a33baed9d69d4}{Add}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$object, const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$object\+\_\+min, const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$object\+\_\+max)
+\begin{DoxyCompactList}\small\item\em 追加関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_liner_octree_aced865f2822181486eb805e4db1f0a32}{M\+A\+X\+\_\+\+L\+E\+V\+EL}} = 9
+\begin{DoxyCompactList}\small\item\em 最大レベル \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$class Type$>$\newline
+class Liner\+Octree$<$ Type $>$}
+
+線形8分木クラス 
+
+線形配列による8分木の管理クラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_liner_octree_ac5773a5193942a68f77a33baed9d69d4}\label{class_liner_octree_ac5773a5193942a68f77a33baed9d69d4}} 
+\index{Liner\+Octree@{Liner\+Octree}!Add@{Add}}
+\index{Add@{Add}!Liner\+Octree@{Liner\+Octree}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+void \mbox{\hyperlink{class_liner_octree}{Liner\+Octree}}$<$ Type $>$\+::Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$}]{object,  }\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{object\+\_\+min,  }\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{object\+\_\+max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+追加関数 
+
+
+\begin{DoxyParams}{引数}
+{\em object} & \+: 追加したいオブジェクト object\+\_\+min \+: 追加したいオブジェクトの最小値 object\+\_\+max \+: 追加したいオブジェクトの最大値 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_liner_octree_a715d655c722c00c002d0bb006d0600d8}\label{class_liner_octree_a715d655c722c00c002d0bb006d0600d8}} 
+\index{Liner\+Octree@{Liner\+Octree}!Init@{Init}}
+\index{Init@{Init}!Liner\+Octree@{Liner\+Octree}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+void \mbox{\hyperlink{class_liner_octree}{Liner\+Octree}}$<$ Type $>$\+::Init (\begin{DoxyParamCaption}\item[{unsigned}]{lowest\+\_\+level,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{octree\+\_\+width\+\_\+min,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{octree\+\_\+width\+\_\+max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em lowest\+\_\+level} & \+: 最下位レベル(一番末端の\+Level数) octree\+\_\+width\+\_\+min \+: 8分木の幅の最小値 octree\+\_\+width\+\_\+max \+: 8分木の幅の最大値 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_liner_octree_a86b5b9bc86630644e84508ff385cda69}\label{class_liner_octree_a86b5b9bc86630644e84508ff385cda69}} 
+\index{Liner\+Octree@{Liner\+Octree}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Liner\+Octree@{Liner\+Octree}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+void \mbox{\hyperlink{class_liner_octree}{Liner\+Octree}}$<$ Type $>$\+::Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+終了関数 
+
+\mbox{\Hypertarget{class_liner_octree_a880276cc9099c29f447f3ca0043b9ce9}\label{class_liner_octree_a880276cc9099c29f447f3ca0043b9ce9}} 
+\index{Liner\+Octree@{Liner\+Octree}!Update\+Collision\+List@{Update\+Collision\+List}}
+\index{Update\+Collision\+List@{Update\+Collision\+List}!Liner\+Octree@{Liner\+Octree}}
+\subsubsection{\texorpdfstring{Update\+Collision\+List()}{UpdateCollisionList()}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+void \mbox{\hyperlink{class_liner_octree}{Liner\+Octree}}$<$ Type $>$\+::Update\+Collision\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Type $>$ $\ast$}]{collision\+\_\+vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+衝突リスト更新関数 
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_liner_octree_aced865f2822181486eb805e4db1f0a32}\label{class_liner_octree_aced865f2822181486eb805e4db1f0a32}} 
+\index{Liner\+Octree@{Liner\+Octree}!M\+A\+X\+\_\+\+L\+E\+V\+EL@{M\+A\+X\+\_\+\+L\+E\+V\+EL}}
+\index{M\+A\+X\+\_\+\+L\+E\+V\+EL@{M\+A\+X\+\_\+\+L\+E\+V\+EL}!Liner\+Octree@{Liner\+Octree}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+L\+E\+V\+EL}{MAX\_LEVEL}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+const unsigned \mbox{\hyperlink{class_liner_octree}{Liner\+Octree}}$<$ Type $>$\+::M\+A\+X\+\_\+\+L\+E\+V\+EL = 9\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+最大レベル 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Manager/\+Liner\+Octree/\mbox{\hyperlink{_liner_octree_8h}{Liner\+Octree.\+h}}\end{DoxyCompactItemize}

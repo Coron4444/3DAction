@@ -13,12 +13,12 @@ Score の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_score_a7ea7580fa6ed65e683d682c637aeee25}{Init}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$game\+\_\+scene)
+void \mbox{\hyperlink{class_score_a7d461a8b72ddfd00213858286d702486}{Init}} (\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw\+\_\+component, \mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$game\+\_\+scene)
 \item 
 void \mbox{\hyperlink{class_score_a605e163dc59ccc4d19a3cb6b5db813b8}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,11 +30,11 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_score_a7ea7580fa6ed65e683d682c637aeee25}\label{class_score_a7ea7580fa6ed65e683d682c637aeee25}} 
+\mbox{\Hypertarget{class_score_a7d461a8b72ddfd00213858286d702486}\label{class_score_a7d461a8b72ddfd00213858286d702486}} 
 \index{Score@{Score}!Init@{Init}}
 \index{Init@{Init}!Score@{Score}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Score\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$}]{game\+\_\+scene }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Score\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$}]{game\+\_\+scene }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}\label{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}} 
 \index{Score@{Score}!Reset@{Reset}}
@@ -44,7 +44,11 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 
 
 
-\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_score_a605e163dc59ccc4d19a3cb6b5db813b8}\label{class_score_a605e163dc59ccc4d19a3cb6b5db813b8}} 
 \index{Score@{Score}!Uninit@{Uninit}}
@@ -54,7 +58,11 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 
 
 
-\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
 
 
 

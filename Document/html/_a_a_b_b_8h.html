@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/CollisionComponent/CollisionObject/CollisionShapeOrigin/AABB/AABB.h ファイル</title>
+<title>3DAction: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/AABB/AABB.h ファイル</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -94,20 +94,20 @@ $(document).ready(function(){initNavTree('_a_a_b_b_8h.html','');});
 <div class="title">AABB.h ファイル</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_collision_shape_origin_8h_source.html">../CollisionShapeOrigin.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_vector3_d_8h_source.html">Vector3D.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_collision_shape_base_8h_source.html">../CollisionShapeBase.h</a>&quot;</code><br />
 </div>
 <p><a href="_a_a_b_b_8h_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b.html">AABB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">AABBクラス  <a href="class_a_a_b_b.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:af915751dad1762a2873da85aeb988b17"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_a_b_b_8h.html#af915751dad1762a2873da85aeb988b17">ShortestDistanceSquareAABB_Segment1D_Point</a> (const float *position_min, const float *position_max, const float *point_any)</td></tr>
-<tr class="separator:af915751dad1762a2873da85aeb988b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe938b9bf761a88c071bfaa6f6bb0415"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_a_b_b_8h.html#abe938b9bf761a88c071bfaa6f6bb0415">ShortestDistanceSquareAABB_Segment1D_Point</a> (float position_min, float position_max, float point_any)</td></tr>
+<tr class="separator:abe938b9bf761a88c071bfaa6f6bb0415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd878bc13924b0296de2eedd3c67a5a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_a_b_b_8h.html#acdd878bc13924b0296de2eedd3c67a5a">ShortestDistance_AABB_Point</a> (const <a class="el" href="class_a_a_b_b.html">AABB</a> *aabb, const <a class="el" href="class_vector3_d.html">Vector3D</a> *point)</td></tr>
 <tr class="separator:acdd878bc13924b0296de2eedd3c67a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -148,8 +148,8 @@ $(document).ready(function(){initNavTree('_a_a_b_b_8h.html','');});
 
 </div>
 </div>
-<a id="af915751dad1762a2873da85aeb988b17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af915751dad1762a2873da85aeb988b17">&#9670;&nbsp;</a></span>ShortestDistanceSquareAABB_Segment1D_Point()</h2>
+<a id="abe938b9bf761a88c071bfaa6f6bb0415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe938b9bf761a88c071bfaa6f6bb0415">&#9670;&nbsp;</a></span>ShortestDistanceSquareAABB_Segment1D_Point()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,19 +160,19 @@ $(document).ready(function(){initNavTree('_a_a_b_b_8h.html','');});
         <tr>
           <td class="memname">float ShortestDistanceSquareAABB_Segment1D_Point </td>
           <td>(</td>
-          <td class="paramtype">const float *&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>position_min</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>position_max</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float *&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>point_any</em>&#160;</td>
         </tr>
         <tr>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_a_a_b_b_8h.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_9bdf09a476fe7fa6e3a0e14af6a4b1af.html">Component</a></li><li class="navelem"><a class="el" href="dir_f79ae93915bf96817210a71b73c1d70c.html">CollisionComponent</a></li><li class="navelem"><a class="el" href="dir_2b8170792fb749fd08ae199f29bf13bc.html">CollisionObject</a></li><li class="navelem"><a class="el" href="dir_e1badb2c259db3a27a5b02759746ea4d.html">CollisionShapeOrigin</a></li><li class="navelem"><a class="el" href="dir_ee9490845e08998218eecd611b183380.html">AABB</a></li><li class="navelem"><a class="el" href="_a_a_b_b_8h.html">AABB.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_9bdf09a476fe7fa6e3a0e14af6a4b1af.html">Component</a></li><li class="navelem"><a class="el" href="dir_d84eee6e83e72b3a0696905bbe0cdfc6.html">Base</a></li><li class="navelem"><a class="el" href="dir_a760ac258a0e4e50336593fd07ba9092.html">CollisionBase</a></li><li class="navelem"><a class="el" href="dir_e4dda5b653c97718f326e42a0231232a.html">CollisionObject</a></li><li class="navelem"><a class="el" href="dir_376a7598f03a19a17a6e5bf48eb31478.html">CollisionShapeBase</a></li><li class="navelem"><a class="el" href="dir_9c877f92de0778b13f5174f23b7b9e85.html">AABB</a></li><li class="navelem"><a class="el" href="_a_a_b_b_8h.html">AABB.h</a></li>
     <li class="footer">構築:
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>

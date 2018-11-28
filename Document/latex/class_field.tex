@@ -13,12 +13,12 @@ Field の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_field_a7d1f8e697d70550a416a595da78d07c7}{Init}} (\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+void \mbox{\hyperlink{class_field_a8360ab68eaf346984eab8bce4c37c3b3}{Init}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
 \item 
 void \mbox{\hyperlink{class_field_a6d1015e2409daa87cd00485ac1efc06b}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_field_a5b140074dcca821ac702da348238c6d4}{Reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,11 +28,11 @@ void \mbox{\hyperlink{class_field_a5b140074dcca821ac702da348238c6d4}{Reset}} () 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_field_a7d1f8e697d70550a416a595da78d07c7}\label{class_field_a7d1f8e697d70550a416a595da78d07c7}} 
+\mbox{\Hypertarget{class_field_a8360ab68eaf346984eab8bce4c37c3b3}\label{class_field_a8360ab68eaf346984eab8bce4c37c3b3}} 
 \index{Field@{Field}!Init@{Init}}
 \index{Init@{Init}!Field@{Field}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Field\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Field\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_field_a5b140074dcca821ac702da348238c6d4}\label{class_field_a5b140074dcca821ac702da348238c6d4}} 
 \index{Field@{Field}!Reset@{Reset}}
@@ -42,7 +42,11 @@ void \mbox{\hyperlink{class_field_a5b140074dcca821ac702da348238c6d4}{Reset}} () 
 
 
 
-\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_field_a6d1015e2409daa87cd00485ac1efc06b}\label{class_field_a6d1015e2409daa87cd00485ac1efc06b}} 
 \index{Field@{Field}!Uninit@{Uninit}}
@@ -52,7 +56,11 @@ void \mbox{\hyperlink{class_field_a5b140074dcca821ac702da348238c6d4}{Reset}} () 
 
 
 
-\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
 
 
 

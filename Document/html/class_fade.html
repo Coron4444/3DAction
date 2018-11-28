@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DirectX9フレームワーク: Fade クラス</title>
+<title>3DAction: Fade クラス</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,10 +29,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DirectX9フレームワーク
-   &#160;<span id="projectnumber">version 1.0</span>
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
    </div>
-   <div id="projectbrief">DirectX9ベースのゲームフレームワーク</div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
   </td>
  </tr>
  </tbody>
@@ -90,13 +90,28 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
   <div class="summary">
 <a href="#pub-types">公開型</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
 <a href="class_fade-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">Fade クラス</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>フェードクラス  
+ <a href="class_fade.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="_fade_8h_source.html">Fade.h</a>&gt;</code></p>
+<div class="dynheader">
+Fade の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_fade.png" usemap="#Fade_map" alt=""/>
+  <map id="Fade_map" name="Fade_map">
+<area href="class_draw_null.html" title="空白描画クラス " alt="DrawNull" shape="rect" coords="0,112,103,136"/>
+<area href="class_draw_base.html" title="描画基底クラス " alt="DrawBase" shape="rect" coords="0,56,103,80"/>
+<area href="class_component_base.html" title="コンポーネント基底クラス " alt="ComponentBase" shape="rect" coords="0,0,103,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 公開型</h2></td></tr>
@@ -116,17 +131,25 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:aec1ac5a0a80be8d7a2a43dbde2a741ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#aec1ac5a0a80be8d7a2a43dbde2a741ee">Fade</a> ()</td></tr>
+<tr class="memdesc:aec1ac5a0a80be8d7a2a43dbde2a741ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#aec1ac5a0a80be8d7a2a43dbde2a741ee">[詳解]</a><br /></td></tr>
 <tr class="separator:aec1ac5a0a80be8d7a2a43dbde2a741ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ddf7585cb85bf84f5e83adbe2734f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#a58ddf7585cb85bf84f5e83adbe2734f9">~Fade</a> ()</td></tr>
+<tr class="memdesc:a58ddf7585cb85bf84f5e83adbe2734f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="#a58ddf7585cb85bf84f5e83adbe2734f9">[詳解]</a><br /></td></tr>
 <tr class="separator:a58ddf7585cb85bf84f5e83adbe2734f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab12848f7102a219968c86ed699a6e5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#aab12848f7102a219968c86ed699a6e5d">Init</a> (<a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80">Type</a> type, <a class="el" href="class_fade.html#ae77826bf3ff2ab95fb7b3b6f95cba80a">State</a> state, <a class="el" href="_vector3_d_8h.html#a5ef6e95dfc5f9d3820b71772d99bbc25">Vec2</a> size, <a class="el" href="_vector3_d_8h.html#a680c30c4a07d86fe763c7e01169cd6cc">XColor4</a> color, float speed)</td></tr>
+<tr class="memdesc:aab12848f7102a219968c86ed699a6e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#aab12848f7102a219968c86ed699a6e5d">[詳解]</a><br /></td></tr>
 <tr class="separator:aab12848f7102a219968c86ed699a6e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf68444af1314ad502d1109940b2ab5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#abf68444af1314ad502d1109940b2ab5c">Uninit</a> ()</td></tr>
-<tr class="separator:abf68444af1314ad502d1109940b2ab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77d06811869d3c8162a42c3e0e14f7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#ae77d06811869d3c8162a42c3e0e14f7f">Uninit</a> () override</td></tr>
+<tr class="memdesc:ae77d06811869d3c8162a42c3e0e14f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#ae77d06811869d3c8162a42c3e0e14f7f">[詳解]</a><br /></td></tr>
+<tr class="separator:ae77d06811869d3c8162a42c3e0e14f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1579b5b9020344a1131ea11c15f2c0bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#a1579b5b9020344a1131ea11c15f2c0bd">Update</a> ()</td></tr>
+<tr class="memdesc:a1579b5b9020344a1131ea11c15f2c0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <a href="#a1579b5b9020344a1131ea11c15f2c0bd">[詳解]</a><br /></td></tr>
 <tr class="separator:a1579b5b9020344a1131ea11c15f2c0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a521f3cb7e82fb71360bab568bcf933c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#a521f3cb7e82fb71360bab568bcf933c9">Draw</a> ()</td></tr>
-<tr class="separator:a521f3cb7e82fb71360bab568bcf933c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a9e688650ac500e03cde74ff0210b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#a84a9e688650ac500e03cde74ff0210b8">Draw</a> (unsigned object_index, unsigned mesh_index) override</td></tr>
+<tr class="memdesc:a84a9e688650ac500e03cde74ff0210b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画関数  <a href="#a84a9e688650ac500e03cde74ff0210b8">[詳解]</a><br /></td></tr>
+<tr class="separator:a84a9e688650ac500e03cde74ff0210b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aed6912ebf9c243c52cb82f298d8d64"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#a6aed6912ebf9c243c52cb82f298d8d64">GetMatrix</a> (unsigned object_index) override</td></tr>
+<tr class="separator:a6aed6912ebf9c243c52cb82f298d8d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed5a29d39a5fd6161a9aed73d5f30870"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_fade.html#ac06f27215b454aa05b93c236476d6e80">Type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#aed5a29d39a5fd6161a9aed73d5f30870">GetType</a> () const</td></tr>
 <tr class="separator:aed5a29d39a5fd6161a9aed73d5f30870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb41dfcadf75dd4c980da68e243cc310"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_fade.html#ae77826bf3ff2ab95fb7b3b6f95cba80a">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#aeb41dfcadf75dd4c980da68e243cc310">GetState</a> () const</td></tr>
@@ -137,8 +160,64 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
 <tr class="separator:a1a177209e72a27858ceb2d339321e9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e047c532d430095e7d0d70288289a82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture_object.html">TextureObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#a4e047c532d430095e7d0d70288289a82">GetTransition01Object</a> ()</td></tr>
 <tr class="separator:a4e047c532d430095e7d0d70288289a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_draw_null"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_draw_null')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_draw_null.html">DrawNull</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aa085e175e9e05fc56cb4aefa2d07f371 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#aa085e175e9e05fc56cb4aefa2d07f371">~DrawNull</a> ()</td></tr>
+<tr class="memdesc:aa085e175e9e05fc56cb4aefa2d07f371 inherit pub_methods_class_draw_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="class_draw_null.html#aa085e175e9e05fc56cb4aefa2d07f371">[詳解]</a><br /></td></tr>
+<tr class="separator:aa085e175e9e05fc56cb4aefa2d07f371 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7fef3ccea1da537ac9507ffbb6dd2e inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#acd7fef3ccea1da537ac9507ffbb6dd2e">Init</a> () override</td></tr>
+<tr class="memdesc:acd7fef3ccea1da537ac9507ffbb6dd2e inherit pub_methods_class_draw_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="class_draw_null.html#acd7fef3ccea1da537ac9507ffbb6dd2e">[詳解]</a><br /></td></tr>
+<tr class="separator:acd7fef3ccea1da537ac9507ffbb6dd2e inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78d05c51ff3943888678b9b2c6bd027 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#aa78d05c51ff3943888678b9b2c6bd027">DebugDisplay</a> () override</td></tr>
+<tr class="memdesc:aa78d05c51ff3943888678b9b2c6bd027 inherit pub_methods_class_draw_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグ表示関数  <a href="class_draw_null.html#aa78d05c51ff3943888678b9b2c6bd027">[詳解]</a><br /></td></tr>
+<tr class="separator:aa78d05c51ff3943888678b9b2c6bd027 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0d52c5c2fb2d9b8eb423f363862290 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#a7f0d52c5c2fb2d9b8eb423f363862290">SettingBeforeDrawing</a> (<a class="el" href="class_camera.html">Camera</a> *camera, unsigned object_index) override</td></tr>
+<tr class="memdesc:a7f0d52c5c2fb2d9b8eb423f363862290 inherit pub_methods_class_draw_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画前設定関数  <a href="class_draw_null.html#a7f0d52c5c2fb2d9b8eb423f363862290">[詳解]</a><br /></td></tr>
+<tr class="separator:a7f0d52c5c2fb2d9b8eb423f363862290 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76edfc5af0bf3275f96f40394aff8510 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#a76edfc5af0bf3275f96f40394aff8510">SettingAfterDrawing</a> (<a class="el" href="class_camera.html">Camera</a> *camera, unsigned object_index) override</td></tr>
+<tr class="memdesc:a76edfc5af0bf3275f96f40394aff8510 inherit pub_methods_class_draw_null"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画後設定関数  <a href="class_draw_null.html#a76edfc5af0bf3275f96f40394aff8510">[詳解]</a><br /></td></tr>
+<tr class="separator:a76edfc5af0bf3275f96f40394aff8510 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffa15d184f1d09512ccaa3bdad3f658 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#aaffa15d184f1d09512ccaa3bdad3f658">GetObjectNum</a> () override</td></tr>
+<tr class="separator:aaffa15d184f1d09512ccaa3bdad3f658 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad735978a85a5f3583eecd82d6bfe6413 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#ad735978a85a5f3583eecd82d6bfe6413">GetMeshNum</a> (unsigned object_index) override</td></tr>
+<tr class="separator:ad735978a85a5f3583eecd82d6bfe6413 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84969d22d3436986f214e9896fe44fc6 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual D3DMATERIAL9 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#a84969d22d3436986f214e9896fe44fc6">GetMaterial</a> (unsigned object_index, unsigned mesh_index)</td></tr>
+<tr class="separator:a84969d22d3436986f214e9896fe44fc6 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8496ed1b1f765a331a8f1704122b8ca4 inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual LPDIRECT3DTEXTURE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#a8496ed1b1f765a331a8f1704122b8ca4">GetDecaleTexture</a> (unsigned object_index, unsigned mesh_index)</td></tr>
+<tr class="separator:a8496ed1b1f765a331a8f1704122b8ca4 inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b7d148612b2d328e85289e32dc374c inherit pub_methods_class_draw_null"><td class="memItemLeft" align="right" valign="top">virtual LPDIRECT3DTEXTURE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_null.html#a41b7d148612b2d328e85289e32dc374c">GetNormalTexture</a> (unsigned object_index, unsigned mesh_index)</td></tr>
+<tr class="separator:a41b7d148612b2d328e85289e32dc374c inherit pub_methods_class_draw_null"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_draw_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_draw_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_draw_base.html">DrawBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a799597f696c5cbf6074fb2655dea5e18 inherit pub_methods_class_draw_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_base.html#a799597f696c5cbf6074fb2655dea5e18">~DrawBase</a> ()</td></tr>
+<tr class="memdesc:a799597f696c5cbf6074fb2655dea5e18 inherit pub_methods_class_draw_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="class_draw_base.html#a799597f696c5cbf6074fb2655dea5e18">[詳解]</a><br /></td></tr>
+<tr class="separator:a799597f696c5cbf6074fb2655dea5e18 inherit pub_methods_class_draw_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18abd488181eed72822f92a0f2521fe inherit pub_methods_class_draw_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_base.html#aa18abd488181eed72822f92a0f2521fe">LimitedChangeCameraType</a> (<a class="el" href="class_camera.html">Camera</a> *camera, <a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Camera::Type</a> type)</td></tr>
+<tr class="memdesc:aa18abd488181eed72822f92a0f2521fe inherit pub_methods_class_draw_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">限定カメラタイプ変更関数  <a href="class_draw_base.html#aa18abd488181eed72822f92a0f2521fe">[詳解]</a><br /></td></tr>
+<tr class="separator:aa18abd488181eed72822f92a0f2521fe inherit pub_methods_class_draw_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b144e61928b7658c7a849017e40c79 inherit pub_methods_class_draw_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_base.html#a48b144e61928b7658c7a849017e40c79">RevivalCameraType</a> (<a class="el" href="class_camera.html">Camera</a> *camera)</td></tr>
+<tr class="memdesc:a48b144e61928b7658c7a849017e40c79 inherit pub_methods_class_draw_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラタイプ復活関数  <a href="class_draw_base.html#a48b144e61928b7658c7a849017e40c79">[詳解]</a><br /></td></tr>
+<tr class="separator:a48b144e61928b7658c7a849017e40c79 inherit pub_methods_class_draw_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894bf875b80745150b250e584f00fa0c inherit pub_methods_class_draw_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_draw_order_list.html">DrawOrderList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c">GetDrawOrderList</a> ()</td></tr>
+<tr class="separator:a894bf875b80745150b250e584f00fa0c inherit pub_methods_class_draw_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_component_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_component_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_component_base.html">ComponentBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a5d22c6d5f792ff42ab6cb11a8ac38478 inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">~ComponentBase</a> ()</td></tr>
+<tr class="memdesc:a5d22c6d5f792ff42ab6cb11a8ac38478 inherit pub_methods_class_component_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478">[詳解]</a><br /></td></tr>
+<tr class="separator:a5d22c6d5f792ff42ab6cb11a8ac38478 inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9fc08588e3d29caf8d692a3392fc7b0 inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0">SetGameObject</a> (<a class="el" href="class_game_object_base.html">GameObjectBase</a> *value)</td></tr>
+<tr class="separator:ac9fc08588e3d29caf8d692a3392fc7b0 inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_base.html">GameObjectBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">GetGameObject</a> ()</td></tr>
+<tr class="separator:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:acd9c0d6231180af183d6301f31fa0053"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#acd9c0d6231180af183d6301f31fa0053">TEXTURE_PATH</a></td></tr>
+<tr class="separator:acd9c0d6231180af183d6301f31fa0053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d6f86f07e33205224fa486ff22c51d"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fade.html#ab5d6f86f07e33205224fa486ff22c51d">TEXTURE_NAME_TRANSITION_01</a> = &quot;Fade/Transition_01.png&quot;</td></tr>
+<tr class="separator:ab5d6f86f07e33205224fa486ff22c51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>フェードクラス </p>
+<p>フェードのクラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="ae77826bf3ff2ab95fb7b3b6f95cba80a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae77826bf3ff2ab95fb7b3b6f95cba80a">&#9670;&nbsp;</a></span>State</h2>
 
@@ -195,6 +274,8 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>コンストラクタ </p>
+
 </div>
 </div>
 <a id="a58ddf7585cb85bf84f5e83adbe2734f9"></a>
@@ -212,23 +293,48 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>デストラクタ </p>
+
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a521f3cb7e82fb71360bab568bcf933c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a521f3cb7e82fb71360bab568bcf933c9">&#9670;&nbsp;</a></span>Draw()</h2>
+<a id="a84a9e688650ac500e03cde74ff0210b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a9e688650ac500e03cde74ff0210b8">&#9670;&nbsp;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Fade::Draw </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>object_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>mesh_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>描画関数 </p>
+
+<p><a class="el" href="class_draw_null.html#afe50f6fd820b18d673f70f048743f339">DrawNull</a>を再実装しています。</p>
 
 </div>
 </div>
@@ -254,6 +360,34 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6aed6912ebf9c243c52cb82f298d8d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aed6912ebf9c243c52cb82f298d8d64">&#9670;&nbsp;</a></span>GetMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>* Fade::GetMatrix </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>object_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_draw_null.html#adede079e9c11a756090740b20bb43022">DrawNull</a>を再実装しています。</p>
 
 </div>
 </div>
@@ -401,13 +535,24 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
       </table>
 </div><div class="memdoc">
 
+<p>初期化関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>: タイプ state : ステート size : 拡縮 color : 色 speed : フェード速度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="abf68444af1314ad502d1109940b2ab5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf68444af1314ad502d1109940b2ab5c">&#9670;&nbsp;</a></span>Uninit()</h2>
+<a id="ae77d06811869d3c8162a42c3e0e14f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77d06811869d3c8162a42c3e0e14f7f">&#9670;&nbsp;</a></span>Uninit()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Fade::Uninit </td>
@@ -416,7 +561,16 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>終了関数 </p>
+
+<p><a class="el" href="class_draw_null.html#a12d44e341c7364b5ab9cdd661dc16187">DrawNull</a>を再実装しています。</p>
 
 </div>
 </div>
@@ -425,6 +579,9 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Fade::Update </td>
@@ -433,13 +590,67 @@ $(document).ready(function(){initNavTree('class_fade.html','');});
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新関数 </p>
+
+<p><a class="el" href="class_draw_null.html#a0149bcf84a34b138642ab7975ae46f30">DrawNull</a>を再実装しています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab5d6f86f07e33205224fa486ff22c51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d6f86f07e33205224fa486ff22c51d">&#9670;&nbsp;</a></span>TEXTURE_NAME_TRANSITION_01</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Fade::TEXTURE_NAME_TRANSITION_01 = &quot;Fade/Transition_01.png&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd9c0d6231180af183d6301f31fa0053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd9c0d6231180af183d6301f31fa0053">&#9670;&nbsp;</a></span>TEXTURE_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Fade::TEXTURE_PATH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawComponentManager/Fade/<a class="el" href="_fade_8h_source.html">Fade.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawComponentManager/Fade/<a class="el" href="_fade_8cpp.html">Fade.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Fade/<a class="el" href="_fade_8h_source.html">Fade.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Fade/<a class="el" href="_fade_8cpp.html">Fade.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

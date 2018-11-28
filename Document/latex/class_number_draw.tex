@@ -2,72 +2,102 @@
 \label{class_number_draw}\index{Number\+Draw@{Number\+Draw}}
 
 
+数字描画クラス  
+
+
+
+
 {\ttfamily \#include $<$Number\+Draw.\+h$>$}
 
 Number\+Draw の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_number_draw}
+\includegraphics[height=4.000000cm]{class_number_draw}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_number_draw_ad52c1e8b9ae6e830a82c440cc18cb6c9}{Init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_number_draw_a2b203d101f23f0d3f584937ff5ad662a}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_number_draw_a15e4e602b3f9372349d0b6ff9e4fc423}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_number_draw_a78f50afa05e728811d89a491f5eec899}{Get\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-void \mbox{\hyperlink{class_number_draw_a8ff9515eb359a04517d7d36321fff0d7}{Draw}} (unsigned mesh\+\_\+index) override
+unsigned \mbox{\hyperlink{class_number_draw_a8234fb06d885feaa8a2f0ecf256db9a0}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_number_draw_ace379e39f5646b4d04f3fc9cc1beea1a}{Get\+Mesh\+Num}} () override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_number_draw_a3348d9d1cdd9dd03be25b82069275ca5}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_number_draw_a9454f2a7dab2afd1e981c7cf14329659}{Get\+Material}} (unsigned mesh\+\_\+index) override
-\item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_number_draw_a4485821e07841a9d0fe33d5a047ed7d0}{Get\+Decale\+Texture}} (unsigned mesh\+\_\+index) override
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_number_draw_ad1d9a4cee49e7bddce51b5c58e739de9}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
 
+
+\subsection{詳解}
+数字描画クラス 
+
+数字の描画クラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_number_draw_a8ff9515eb359a04517d7d36321fff0d7}\label{class_number_draw_a8ff9515eb359a04517d7d36321fff0d7}} 
+\mbox{\Hypertarget{class_number_draw_a15e4e602b3f9372349d0b6ff9e4fc423}\label{class_number_draw_a15e4e602b3f9372349d0b6ff9e4fc423}} 
 \index{Number\+Draw@{Number\+Draw}!Draw@{Draw}}
 \index{Draw@{Draw}!Number\+Draw@{Number\+Draw}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void Number\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Number\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_ae84bfb6ccc2fda9e54cdff45057ea2c3}{Draw\+Component}}を実装しています。
+描画関数 
 
-\mbox{\Hypertarget{class_number_draw_a4485821e07841a9d0fe33d5a047ed7d0}\label{class_number_draw_a4485821e07841a9d0fe33d5a047ed7d0}} 
+
+\begin{DoxyParams}{引数}
+{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_number_draw_ad1d9a4cee49e7bddce51b5c58e739de9}\label{class_number_draw_ad1d9a4cee49e7bddce51b5c58e739de9}} 
 \index{Number\+Draw@{Number\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Number\+Draw@{Number\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
-{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Number\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Number\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a9ea98f4bcdfd76782d5234122b132c3d}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_number_draw_a9454f2a7dab2afd1e981c7cf14329659}\label{class_number_draw_a9454f2a7dab2afd1e981c7cf14329659}} 
+\mbox{\Hypertarget{class_number_draw_a3348d9d1cdd9dd03be25b82069275ca5}\label{class_number_draw_a3348d9d1cdd9dd03be25b82069275ca5}} 
 \index{Number\+Draw@{Number\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Number\+Draw@{Number\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Number\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Number\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_adae078d5139f691997763bf6cac9e25a}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_number_draw_ace379e39f5646b4d04f3fc9cc1beea1a}\label{class_number_draw_ace379e39f5646b4d04f3fc9cc1beea1a}} 
+\mbox{\Hypertarget{class_number_draw_a78f50afa05e728811d89a491f5eec899}\label{class_number_draw_a78f50afa05e728811d89a491f5eec899}} 
+\index{Number\+Draw@{Number\+Draw}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Number\+Draw@{Number\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Number\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_number_draw_a8234fb06d885feaa8a2f0ecf256db9a0}\label{class_number_draw_a8234fb06d885feaa8a2f0ecf256db9a0}} 
 \index{Number\+Draw@{Number\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Number\+Draw@{Number\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Number\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily unsigned Number\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a5f3bbcc8e563b740c0a5535170921c75}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_number_draw_ad52c1e8b9ae6e830a82c440cc18cb6c9}\label{class_number_draw_ad52c1e8b9ae6e830a82c440cc18cb6c9}} 
 \index{Number\+Draw@{Number\+Draw}!Init@{Init}}
@@ -77,7 +107,11 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_number_d
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_number_draw_a2b203d101f23f0d3f584937ff5ad662a}\label{class_number_draw_a2b203d101f23f0d3f584937ff5ad662a}} 
 \index{Number\+Draw@{Number\+Draw}!Uninit@{Uninit}}
@@ -87,7 +121,11 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_number_d
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
 
 
 

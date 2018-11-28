@@ -1,0 +1,123 @@
+\hypertarget{class_pixel_shader_null}{}\section{Pixel\+Shader\+Null クラス}
+\label{class_pixel_shader_null}\index{Pixel\+Shader\+Null@{Pixel\+Shader\+Null}}
+
+
+空白ピクセルシェーダークラス  
+
+
+
+
+{\ttfamily \#include $<$Pixel\+Shader\+Null.\+h$>$}
+
+Pixel\+Shader\+Null の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pixel_shader_null}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_pixel_shader_null_abfd7a6a986da09061a55d31024219eba}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pixel_shader_null_ae5ee2fa95e5da787918ccbd1877cd0ef}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pixel_shader_null_a99c712ab174da29ba26a893820b64799}{Common\+Setting}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index)
+\begin{DoxyCompactList}\small\item\em 共通設定関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pixel_shader_null_a8dd0194b5a22da5261ab35233a7cfdcd}{Specific\+Setting}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
+\begin{DoxyCompactList}\small\item\em 固有設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+空白ピクセルシェーダークラス 
+
+空白ピクセルシェーダークラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_pixel_shader_null_a99c712ab174da29ba26a893820b64799}\label{class_pixel_shader_null_a99c712ab174da29ba26a893820b64799}} 
+\index{Pixel\+Shader\+Null@{Pixel\+Shader\+Null}!Common\+Setting@{Common\+Setting}}
+\index{Common\+Setting@{Common\+Setting}!Pixel\+Shader\+Null@{Pixel\+Shader\+Null}}
+\subsubsection{\texorpdfstring{Common\+Setting()}{CommonSetting()}}
+{\footnotesize\ttfamily virtual void Pixel\+Shader\+Null\+::\+Common\+Setting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+共通設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ object\+\_\+index \+: 描画オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_shader_base_aef6fa922223d71fbec81464ebbfaf687}{Shader\+Base}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_pixel_shader_bump_mapping_af62a2b40930533a3bae17319f876705d}{Pixel\+Shader\+Bump\+Mapping}}で再実装されています。
+
+\mbox{\Hypertarget{class_pixel_shader_null_abfd7a6a986da09061a55d31024219eba}\label{class_pixel_shader_null_abfd7a6a986da09061a55d31024219eba}} 
+\index{Pixel\+Shader\+Null@{Pixel\+Shader\+Null}!Init@{Init}}
+\index{Init@{Init}!Pixel\+Shader\+Null@{Pixel\+Shader\+Null}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Pixel\+Shader\+Null\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_shader_base_a9622b2f5e0184a78d3af82820dc5113d}{Shader\+Base}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_pixel_shader_bump_mapping_ab7807b7c56242e965ddb23e66e1a5d9e}{Pixel\+Shader\+Bump\+Mapping}}で再実装されています。
+
+\mbox{\Hypertarget{class_pixel_shader_null_a8dd0194b5a22da5261ab35233a7cfdcd}\label{class_pixel_shader_null_a8dd0194b5a22da5261ab35233a7cfdcd}} 
+\index{Pixel\+Shader\+Null@{Pixel\+Shader\+Null}!Specific\+Setting@{Specific\+Setting}}
+\index{Specific\+Setting@{Specific\+Setting}!Pixel\+Shader\+Null@{Pixel\+Shader\+Null}}
+\subsubsection{\texorpdfstring{Specific\+Setting()}{SpecificSetting()}}
+{\footnotesize\ttfamily virtual void Pixel\+Shader\+Null\+::\+Specific\+Setting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+固有設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ object\+\_\+index \+: 描画オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_shader_base_ac78c78ede3b8e48cf28b739b97456620}{Shader\+Base}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c681ca8f}{Pixel\+Shader\+Bump\+Mapping}}で再実装されています。
+
+\mbox{\Hypertarget{class_pixel_shader_null_ae5ee2fa95e5da787918ccbd1877cd0ef}\label{class_pixel_shader_null_ae5ee2fa95e5da787918ccbd1877cd0ef}} 
+\index{Pixel\+Shader\+Null@{Pixel\+Shader\+Null}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Pixel\+Shader\+Null@{Pixel\+Shader\+Null}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily virtual void Pixel\+Shader\+Null\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_shader_base_a784edfa81bec4d08a257ed4f02c61222}{Shader\+Base}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_pixel_shader_bump_mapping_a004f731db6dab6b59949baed4a5a32d7}{Pixel\+Shader\+Bump\+Mapping}}で再実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Shader/\+Shader\+Base/\mbox{\hyperlink{_pixel_shader_null_8h}{Pixel\+Shader\+Null.\+h}}\end{DoxyCompactItemize}

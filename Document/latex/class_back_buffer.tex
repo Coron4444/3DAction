@@ -1,0 +1,194 @@
+\hypertarget{class_back_buffer}{}\section{Back\+Buffer クラス}
+\label{class_back_buffer}\index{Back\+Buffer@{Back\+Buffer}}
+
+
+バックバッファークラス  
+
+
+
+
+{\ttfamily \#include $<$Back\+Buffer.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_back_buffer_a65ac0a652db2a558ecda120ef3f47a10}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_a989c5474cabde7f88c197a2a235e8424}{Uninit\+When\+Change\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーン変更時の終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_a18f0eebb58ad22bc0514edddf966eea7}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_a11c7fa5da3d892c72bf6d44e7b269c62}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_adb51191c002489e4faac54199449e9ef}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_ab9cae17a69086b467f6e016e432b224b}{Add\+Draw\+Base\+To\+Array}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
+\begin{DoxyCompactList}\small\item\em 描画基底クラスの追加関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_a04e942576ac5de94d16764d347111234}{Reset\+All\+Array}} ()
+\begin{DoxyCompactList}\small\item\em 全配列のリセット関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_add3a034c7758dc6a72bb4582bf6ce78e}{Init\+Fade}} (\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}} type, \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}} state, \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} size, \mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} fade\+\_\+color, float fade\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em フェード初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_back_buffer_ad3d3626427f53f060f5057ea6a22cac6}{Uninit\+Fade}} ()
+\begin{DoxyCompactList}\small\item\em フェード終了関数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_back_buffer_aab8b2f4a0fdbadccdd9413c12830a377}{Is\+Fade\+End}} ()
+\begin{DoxyCompactList}\small\item\em フェード終了かの確認関数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_back_buffer_a1c13a0de1f95b8f2fea929e9306d426a}{Is\+Fade\+State\+Name}} (\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}} state)
+\begin{DoxyCompactList}\small\item\em フェードステートの名前判定関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera}{Camera}} $\ast$ \mbox{\hyperlink{class_back_buffer_addd0da33667c19cfba7f1d81009486f2}{Get\+Camera}} ()
+\item 
+void \mbox{\hyperlink{class_back_buffer_a44566449a4df988cb1cfe5ffbb0455cc}{Set\+Shader\+Manager}} (\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} $\ast$value)
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_back_buffer_a28e89a0c543b6ae579c8ab75f9917059}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 10000
+\begin{DoxyCompactList}\small\item\em 配列数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+バックバッファークラス 
+
+バックバッファーへ描画する描画基底クラスを管理するクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_back_buffer_ab9cae17a69086b467f6e016e432b224b}\label{class_back_buffer_ab9cae17a69086b467f6e016e432b224b}} 
+\index{Back\+Buffer@{Back\+Buffer}!Add\+Draw\+Base\+To\+Array@{Add\+Draw\+Base\+To\+Array}}
+\index{Add\+Draw\+Base\+To\+Array@{Add\+Draw\+Base\+To\+Array}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Add\+Draw\+Base\+To\+Array()}{AddDrawBaseToArray()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Add\+Draw\+Base\+To\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
+
+
+
+描画基底クラスの追加関数 
+
+\mbox{\Hypertarget{class_back_buffer_adb51191c002489e4faac54199449e9ef}\label{class_back_buffer_adb51191c002489e4faac54199449e9ef}} 
+\index{Back\+Buffer@{Back\+Buffer}!Draw@{Draw}}
+\index{Draw@{Draw}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+描画関数 
+
+\mbox{\Hypertarget{class_back_buffer_addd0da33667c19cfba7f1d81009486f2}\label{class_back_buffer_addd0da33667c19cfba7f1d81009486f2}} 
+\index{Back\+Buffer@{Back\+Buffer}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera}{Camera}}$\ast$ Back\+Buffer\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_back_buffer_a65ac0a652db2a558ecda120ef3f47a10}\label{class_back_buffer_a65ac0a652db2a558ecda120ef3f47a10}} 
+\index{Back\+Buffer@{Back\+Buffer}!Init@{Init}}
+\index{Init@{Init}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+\mbox{\Hypertarget{class_back_buffer_add3a034c7758dc6a72bb4582bf6ce78e}\label{class_back_buffer_add3a034c7758dc6a72bb4582bf6ce78e}} 
+\index{Back\+Buffer@{Back\+Buffer}!Init\+Fade@{Init\+Fade}}
+\index{Init\+Fade@{Init\+Fade}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Init\+Fade()}{InitFade()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Init\+Fade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Fade\+::\+Type}}}]{type,  }\item[{\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}}}]{state,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}}}]{size,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{fade\+\_\+color,  }\item[{float}]{fade\+\_\+speed }\end{DoxyParamCaption})}
+
+
+
+フェード初期化関数 
+
+\mbox{\Hypertarget{class_back_buffer_aab8b2f4a0fdbadccdd9413c12830a377}\label{class_back_buffer_aab8b2f4a0fdbadccdd9413c12830a377}} 
+\index{Back\+Buffer@{Back\+Buffer}!Is\+Fade\+End@{Is\+Fade\+End}}
+\index{Is\+Fade\+End@{Is\+Fade\+End}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Is\+Fade\+End()}{IsFadeEnd()}}
+{\footnotesize\ttfamily bool Back\+Buffer\+::\+Is\+Fade\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+フェード終了かの確認関数 
+
+\mbox{\Hypertarget{class_back_buffer_a1c13a0de1f95b8f2fea929e9306d426a}\label{class_back_buffer_a1c13a0de1f95b8f2fea929e9306d426a}} 
+\index{Back\+Buffer@{Back\+Buffer}!Is\+Fade\+State\+Name@{Is\+Fade\+State\+Name}}
+\index{Is\+Fade\+State\+Name@{Is\+Fade\+State\+Name}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Is\+Fade\+State\+Name()}{IsFadeStateName()}}
+{\footnotesize\ttfamily bool Back\+Buffer\+::\+Is\+Fade\+State\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{Fade\+::\+State}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+フェードステートの名前判定関数 
+
+\mbox{\Hypertarget{class_back_buffer_a04e942576ac5de94d16764d347111234}\label{class_back_buffer_a04e942576ac5de94d16764d347111234}} 
+\index{Back\+Buffer@{Back\+Buffer}!Reset\+All\+Array@{Reset\+All\+Array}}
+\index{Reset\+All\+Array@{Reset\+All\+Array}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Reset\+All\+Array()}{ResetAllArray()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Reset\+All\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+全配列のリセット関数 
+
+\mbox{\Hypertarget{class_back_buffer_a44566449a4df988cb1cfe5ffbb0455cc}\label{class_back_buffer_a44566449a4df988cb1cfe5ffbb0455cc}} 
+\index{Back\+Buffer@{Back\+Buffer}!Set\+Shader\+Manager@{Set\+Shader\+Manager}}
+\index{Set\+Shader\+Manager@{Set\+Shader\+Manager}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Set\+Shader\+Manager()}{SetShaderManager()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Set\+Shader\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_back_buffer_a18f0eebb58ad22bc0514edddf966eea7}\label{class_back_buffer_a18f0eebb58ad22bc0514edddf966eea7}} 
+\index{Back\+Buffer@{Back\+Buffer}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+終了関数 
+
+\mbox{\Hypertarget{class_back_buffer_ad3d3626427f53f060f5057ea6a22cac6}\label{class_back_buffer_ad3d3626427f53f060f5057ea6a22cac6}} 
+\index{Back\+Buffer@{Back\+Buffer}!Uninit\+Fade@{Uninit\+Fade}}
+\index{Uninit\+Fade@{Uninit\+Fade}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Uninit\+Fade()}{UninitFade()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Uninit\+Fade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+フェード終了関数 
+
+\mbox{\Hypertarget{class_back_buffer_a989c5474cabde7f88c197a2a235e8424}\label{class_back_buffer_a989c5474cabde7f88c197a2a235e8424}} 
+\index{Back\+Buffer@{Back\+Buffer}!Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}}
+\index{Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Uninit\+When\+Change\+Scene()}{UninitWhenChangeScene()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Uninit\+When\+Change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シーン変更時の終了関数 
+
+\mbox{\Hypertarget{class_back_buffer_a11c7fa5da3d892c72bf6d44e7b269c62}\label{class_back_buffer_a11c7fa5da3d892c72bf6d44e7b269c62}} 
+\index{Back\+Buffer@{Back\+Buffer}!Update@{Update}}
+\index{Update@{Update}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Back\+Buffer\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+更新関数 
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_back_buffer_a28e89a0c543b6ae579c8ab75f9917059}\label{class_back_buffer_a28e89a0c543b6ae579c8ab75f9917059}} 
+\index{Back\+Buffer@{Back\+Buffer}!A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
+\index{A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Back\+Buffer@{Back\+Buffer}}
+\subsubsection{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+N\+UM}{ARRAY\_NUM}}
+{\footnotesize\ttfamily const unsigned Back\+Buffer\+::\+A\+R\+R\+A\+Y\+\_\+\+N\+UM = 10000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+配列数 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Render\+Target/\+Back\+Buffer/\mbox{\hyperlink{_back_buffer_8h}{Back\+Buffer.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Render\+Target/\+Back\+Buffer/\mbox{\hyperlink{_back_buffer_8cpp}{Back\+Buffer.\+cpp}}\end{DoxyCompactItemize}

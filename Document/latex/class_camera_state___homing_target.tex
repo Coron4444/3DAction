@@ -14,12 +14,12 @@ Camera\+State\+\_\+\+Homing\+Target の継承関係図\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_camera_state___homing_target_a9222190a5f26d564e99623b05941d382}{Init}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera) override
-\item 
-void \mbox{\hyperlink{class_camera_state___homing_target_a5b4abde99047da6a20f299990c259ef1}{Uninit}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera) override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_state___homing_target_ab2b5379b35ebafc53189bf4d45646c8c}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9}{Update}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera) override
-\item 
-void \mbox{\hyperlink{class_camera_state___homing_target_af610b65553d715d2991d587665770bb2}{Set\+Target}} (\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$target)
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_state___homing_target_a5beacf25aaff9547b5c4e32cec698e28}{Set\+Target}} (\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$target)
 \end{DoxyCompactItemize}
 
 
@@ -32,23 +32,41 @@ void \mbox{\hyperlink{class_camera_state___homing_target_af610b65553d715d2991d58
 
 
 
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ \\
+\hline
+\end{DoxyParams}
+
+
 \mbox{\hyperlink{class_camera_1_1_state_aa1b81471ab15e64b3117ffe7de9560ff}{Camera\+::\+State}}を実装しています。
 
-\mbox{\Hypertarget{class_camera_state___homing_target_af610b65553d715d2991d587665770bb2}\label{class_camera_state___homing_target_af610b65553d715d2991d587665770bb2}} 
+\mbox{\Hypertarget{class_camera_state___homing_target_a5beacf25aaff9547b5c4e32cec698e28}\label{class_camera_state___homing_target_a5beacf25aaff9547b5c4e32cec698e28}} 
 \index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!Set\+Target@{Set\+Target}}
 \index{Set\+Target@{Set\+Target}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
 \subsubsection{\texorpdfstring{Set\+Target()}{SetTarget()}}
-{\footnotesize\ttfamily void Camera\+State\+\_\+\+Homing\+Target\+::\+Set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_origin}{Game\+Object\+Origin}} $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Camera\+State\+\_\+\+Homing\+Target\+::\+Set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_camera_state___homing_target_a5b4abde99047da6a20f299990c259ef1}\label{class_camera_state___homing_target_a5b4abde99047da6a20f299990c259ef1}} 
+\mbox{\Hypertarget{class_camera_state___homing_target_ab2b5379b35ebafc53189bf4d45646c8c}\label{class_camera_state___homing_target_ab2b5379b35ebafc53189bf4d45646c8c}} 
 \index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
 \subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
-{\footnotesize\ttfamily void Camera\+State\+\_\+\+Homing\+Target\+::\+Uninit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Camera\+State\+\_\+\+Homing\+Target\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_camera_1_1_state_a68ebfc3f15cae24b342cb5dae57497cf}{Camera\+::\+State}}を実装しています。
+終了関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_camera_1_1_state_adb3f43b6c3f8100da7877867180e804b}{Camera\+::\+State}}を実装しています。
 
 \mbox{\Hypertarget{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9}\label{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9}} 
 \index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!Update@{Update}}
@@ -58,11 +76,20 @@ void \mbox{\hyperlink{class_camera_state___homing_target_af610b65553d715d2991d58
 
 
 
+更新関数 
+
+
+\begin{DoxyParams}{引数}
+{\em camera} & \+: カメラ \\
+\hline
+\end{DoxyParams}
+
+
 \mbox{\hyperlink{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}{Camera\+::\+State}}を実装しています。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Camera/\+Camera\+State\+\_\+\+Homing\+Target/\mbox{\hyperlink{_camera_state___homing_target_8h}{Camera\+State\+\_\+\+Homing\+Target.\+h}}\item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Camera/\+Camera\+State\+\_\+\+Homing\+Target/\mbox{\hyperlink{_camera_state___homing_target_8cpp}{Camera\+State\+\_\+\+Homing\+Target.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Camera/\+Camera\+State\+\_\+\+Homing\+Target/\mbox{\hyperlink{_camera_state___homing_target_8h}{Camera\+State\+\_\+\+Homing\+Target.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Camera/\+Camera\+State\+\_\+\+Homing\+Target/\mbox{\hyperlink{_camera_state___homing_target_8cpp}{Camera\+State\+\_\+\+Homing\+Target.\+cpp}}\end{DoxyCompactItemize}

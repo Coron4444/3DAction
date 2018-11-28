@@ -2,6 +2,7 @@ var _effekseer_8h =
 [
     [ "IReference", "class_effekseer_1_1_i_reference.html", "class_effekseer_1_1_i_reference" ],
     [ "ReferenceObject", "class_effekseer_1_1_reference_object.html", "class_effekseer_1_1_reference_object" ],
+    [ "IRandObject", "class_effekseer_1_1_i_rand_object.html", "class_effekseer_1_1_i_rand_object" ],
     [ "TextureData", "struct_effekseer_1_1_texture_data.html", "struct_effekseer_1_1_texture_data" ],
     [ "Vector2D", "struct_effekseer_1_1_vector2_d.html", "struct_effekseer_1_1_vector2_d" ],
     [ "Vector3D", "struct_effekseer_1_1_vector3_d.html", "struct_effekseer_1_1_vector3_d" ],
@@ -50,11 +51,8 @@ var _effekseer_8h =
     [ "Setting", "class_effekseer_1_1_setting.html", "class_effekseer_1_1_setting" ],
     [ "Server", "class_effekseer_1_1_server.html", "class_effekseer_1_1_server" ],
     [ "Client", "class_effekseer_1_1_client.html", "class_effekseer_1_1_client" ],
-    [ "CriticalSection", "class_effekseer_1_1_critical_section.html", "class_effekseer_1_1_critical_section" ],
-    [ "Thread", "class_effekseer_1_1_thread.html", "class_effekseer_1_1_thread" ],
     [ "__EFFEKSEER_CLIENT_H__", "_effekseer_8h.html#ae50d8e705e1df13802125a3d76262513", null ],
     [ "__EFFEKSEER_COLOR_H__", "_effekseer_8h.html#ad5142c5c895ceca81575cd84f98c6747", null ],
-    [ "__EFFEKSEER_CRITICALSESSION_H__", "_effekseer_8h.html#af31bbb4fc6e3d8779d8afd71649cf53d", null ],
     [ "__EFFEKSEER_DEFAULT_FILE_H__", "_effekseer_8h.html#a42a88a4452a028e268f094f6441d5b27", null ],
     [ "__EFFEKSEER_EFFECT_H__", "_effekseer_8h.html#a7875687b1f546a573428fe17ec3072f6", null ],
     [ "__EFFEKSEER_EFFECTLOADER_H__", "_effekseer_8h.html#a48c35637c94c664ab2fa403cdfe56fe1", null ],
@@ -74,7 +72,6 @@ var _effekseer_8h =
     [ "__EFFEKSEER_SOUNDLOADER_H__", "_effekseer_8h.html#a2e908c0a22356442812c1e097d381fc7", null ],
     [ "__EFFEKSEER_SPRITE_RENDERER_H__", "_effekseer_8h.html#a728866ed67e63ec6c59f93812cf5ea48", null ],
     [ "__EFFEKSEER_TEXTURELOADER_H__", "_effekseer_8h.html#af4dfa6acda3b8439c88e4cd0ea1a1e23", null ],
-    [ "__EFFEKSEER_THREAD_H__", "_effekseer_8h.html#a1e8df9806cb133e49638690e59e73baf", null ],
     [ "__EFFEKSEER_TRACK_RENDERER_H__", "_effekseer_8h.html#a8f4b7df74bc83cdcd05af856c0635cf6", null ],
     [ "__EFFEKSEER_VECTOR2D_H__", "_effekseer_8h.html#aa9370a43166c025ec921ec005658f427", null ],
     [ "__EFFEKSEER_VECTOR3D_H__", "_effekseer_8h.html#aa82b99d80736c984fa4fe4710ef5bd8b", null ],
@@ -83,7 +80,7 @@ var _effekseer_8h =
     [ "ES_SAFE_DELETE", "_effekseer_8h.html#a5278841d38f84c7fdf57770ece804d9b", null ],
     [ "ES_SAFE_DELETE_ARRAY", "_effekseer_8h.html#a09da01befa6b94eb8ca94be9b2bf558d", null ],
     [ "ES_SAFE_RELEASE", "_effekseer_8h.html#a552d766d4c7156ddd0042d4d94c8b562", null ],
-    [ "EFK_CHAR", "_effekseer_8h.html#aca7eb5de6dd019c19ac58ea35a193f2f", null ],
+    [ "EFK_CHAR", "_effekseer_8h.html#a50b026abea014b47854bcd835b3b6233", null ],
     [ "Handle", "_effekseer_8h.html#afba58b8d812da862190e9bbfc040824a", null ],
     [ "handle", "_effekseer_8h.html#afd99b336b206999bdcca3e431648efbc", null ],
     [ "isRemovingManager", "_effekseer_8h.html#a153d1bcf5fd3c14124e04d0dadf6827c", null ],
@@ -122,6 +119,10 @@ var _effekseer_8h =
       [ "Back", "_effekseer_8h.html#a3ae9542a9c9309ec191be1ae5e6dc00aa0557fa923dcee4d0f86b1409f5c2167f", null ],
       [ "Double", "_effekseer_8h.html#a3ae9542a9c9309ec191be1ae5e6dc00aad909d38d705ce75386dd86e611a82f5b", null ]
     ] ],
+    [ "RenderMode", "_effekseer_8h.html#ad1b82893021dd8e3697e46c1aa544092", [
+      [ "Normal", "_effekseer_8h.html#ad1b82893021dd8e3697e46c1aa544092a960b44c579bc2f6818d2daaf9e4c16f0", null ],
+      [ "Wireframe", "_effekseer_8h.html#ad1b82893021dd8e3697e46c1aa544092a33e42d0f3b166a4c405127e4412fbef2", null ]
+    ] ],
     [ "TextureFilterType", "_effekseer_8h.html#ae3518502cfcb4ec4991f13c0b3e4c6ee", [
       [ "Nearest", "_effekseer_8h.html#ae3518502cfcb4ec4991f13c0b3e4c6eea60494f02d440f316319dd0fad40ad007", null ],
       [ "Linear", "_effekseer_8h.html#ae3518502cfcb4ec4991f13c0b3e4c6eea32a843da6ea40ab3b17a3421ccdf671b", null ]
@@ -140,6 +141,11 @@ var _effekseer_8h =
     [ "TextureWrapType", "_effekseer_8h.html#a5320c83784602974b6278bf1a77b58a3", [
       [ "Repeat", "_effekseer_8h.html#a5320c83784602974b6278bf1a77b58a3a7020426cfb0a204051be4b3053d2acc8", null ],
       [ "Clamp", "_effekseer_8h.html#a5320c83784602974b6278bf1a77b58a3a08825280e3f8137556325061ba67ff8c", null ]
+    ] ],
+    [ "ZSortType", "_effekseer_8h.html#a7a8ec04f4de0308b5fdb7d66675bddaf", [
+      [ "None", "_effekseer_8h.html#a7a8ec04f4de0308b5fdb7d66675bddafa6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "NormalOrder", "_effekseer_8h.html#a7a8ec04f4de0308b5fdb7d66675bddafa0d1c57b4a0586a7ad9e29190c1ed8f9d", null ],
+      [ "ReverseOrder", "_effekseer_8h.html#a7a8ec04f4de0308b5fdb7d66675bddafacafcd34d9001dc412b1b6e9e52d6083c", null ]
     ] ],
     [ "Clamp", "_effekseer_8h.html#a524a62e3d5b25946bcccd60ffe448c9c", null ],
     [ "ConvertUtf16ToUtf8", "_effekseer_8h.html#afcbbbacdf23834fd7e8619e3af4e837c", null ],

@@ -2,72 +2,102 @@
 \label{class_failure_logo_draw}\index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
 
 
+失敗ロゴ描画クラス  
+
+
+
+
 {\ttfamily \#include $<$Failure\+Logo\+Draw.\+h$>$}
 
 Failure\+Logo\+Draw の継承関係図\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_failure_logo_draw}
+\includegraphics[height=4.000000cm]{class_failure_logo_draw}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}{Init}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_failure_logo_draw_a97646253380b54f37565650e211f33cd}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_failure_logo_draw_a8ee20e1697bbbaf7f41c18334830488a}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92}{Get\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-void \mbox{\hyperlink{class_failure_logo_draw_a9e594c09e4da69134e9f7384cc5f8392}{Draw}} (unsigned mesh\+\_\+index) override
+unsigned \mbox{\hyperlink{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_failure_logo_draw_a169800b9298e3186ef8b4aa82347e38e}{Get\+Mesh\+Num}} () override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_failure_logo_draw_a4fbb4cf8cfd42eeefcdf4fbfa9e52d7a}{Get\+Material}} (unsigned mesh\+\_\+index) override
-\item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_logo_draw_aa377e1852cbcda9df1e6d03eaab229c3}{Get\+Decale\+Texture}} (unsigned mesh\+\_\+index) override
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
-\subsection*{その他の継承メンバ}
 
+
+\subsection{詳解}
+失敗ロゴ描画クラス 
+
+失敗ロゴの描画クラス 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_failure_logo_draw_a9e594c09e4da69134e9f7384cc5f8392}\label{class_failure_logo_draw_a9e594c09e4da69134e9f7384cc5f8392}} 
+\mbox{\Hypertarget{class_failure_logo_draw_a8ee20e1697bbbaf7f41c18334830488a}\label{class_failure_logo_draw_a8ee20e1697bbbaf7f41c18334830488a}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Draw@{Draw}}
 \index{Draw@{Draw}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void Failure\+Logo\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Failure\+Logo\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_ae84bfb6ccc2fda9e54cdff45057ea2c3}{Draw\+Component}}を実装しています。
+描画関数 
 
-\mbox{\Hypertarget{class_failure_logo_draw_aa377e1852cbcda9df1e6d03eaab229c3}\label{class_failure_logo_draw_aa377e1852cbcda9df1e6d03eaab229c3}} 
+
+\begin{DoxyParams}{引数}
+{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd}\label{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
-{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Failure\+Logo\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Failure\+Logo\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a9ea98f4bcdfd76782d5234122b132c3d}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_failure_logo_draw_a4fbb4cf8cfd42eeefcdf4fbfa9e52d7a}\label{class_failure_logo_draw_a4fbb4cf8cfd42eeefcdf4fbfa9e52d7a}} 
+\mbox{\Hypertarget{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322}\label{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Failure\+Logo\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Failure\+Logo\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_adae078d5139f691997763bf6cac9e25a}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
-\mbox{\Hypertarget{class_failure_logo_draw_a169800b9298e3186ef8b4aa82347e38e}\label{class_failure_logo_draw_a169800b9298e3186ef8b4aa82347e38e}} 
+\mbox{\Hypertarget{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92}\label{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92}} 
+\index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Failure\+Logo\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+
+\mbox{\Hypertarget{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59}\label{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
 \subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Failure\+Logo\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily unsigned Failure\+Logo\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_component_a5f3bbcc8e563b740c0a5535170921c75}{Draw\+Component}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}\label{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Init@{Init}}
@@ -77,7 +107,11 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f674891257f2272b1636d8b6bb05d81}{Component\+Origin}}を実装しています。
+初期化関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
 \mbox{\Hypertarget{class_failure_logo_draw_a97646253380b54f37565650e211f33cd}\label{class_failure_logo_draw_a97646253380b54f37565650e211f33cd}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Uninit@{Uninit}}
@@ -87,7 +121,11 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 
 
-\mbox{\hyperlink{class_component_origin_a9f89a93f9c1954bd53f9750e35e6089d}{Component\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
 
 
 

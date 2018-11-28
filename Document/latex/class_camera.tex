@@ -2,38 +2,49 @@
 \label{class_camera}\index{Camera@{Camera}}
 
 
+カメラクラス  
+
+
+
+
 {\ttfamily \#include $<$Camera.\+h$>$}
 
 \subsection*{クラス}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{class_camera_1_1_state}{State}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em カメラステートクラス \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}} \{ \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcba12c79dd5dae61a931ff74c2855ec82f5}{N\+O\+NE}} = -\/1, 
-\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcbab0634eb8efa2896a2771ea868cbc241a}{N\+O\+R\+M\+AL}}, 
+enum \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}} \{ \newline
+\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcba12c79dd5dae61a931ff74c2855ec82f5}{N\+O\+NE}} = -\/1, 
+\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcba34783417054408fd9e024048b1cefa47}{P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}}, 
+\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcba5421bcd519dac606b7af9786b11f88d6}{O\+R\+T\+HO}}, 
+\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcbaa144a5dc97bc343a7ef630cf23b09a76}{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL}}, 
+\newline
 \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa}{M\+AX}}
  \}
 \end{DoxyCompactItemize}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_camera_ab0a4101da05afaa3355df78e43006c33}{Camera}} (\mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$state, \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}} type, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} position=\{0.\+0f, 0.\+0f, -\/10.\+0f\}, Vec3 look\+\_\+at\+\_\+point=\{0.\+0f, 0.\+0f, 0.\+0f\}, Vec3 up=\{0.\+0f, 1.\+0f, 0.\+0f\})
-\item 
-\mbox{\hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera}} ()
-\item 
+void \mbox{\hyperlink{class_camera_a03e3ca8b70417632f7b1b581426ec66d}{Init}} (\mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$state, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} position=\{0.\+0f, 0.\+0f, -\/10.\+0f\}, Vec3 look\+\_\+at\+\_\+point=\{0.\+0f, 0.\+0f, 0.\+0f\}, Vec3 up=\{0.\+0f, 1.\+0f, 0.\+0f\})
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a8b3337b3e560ea6a780d646bc8c509d7}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_camera_a4a596a3ea1fdc7d244ba4268031a360b}{Update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_camera_a5b4993ffb218536cb31d6d5224453b1a}{Create\+View\+Matrix}} ()
-\item 
-void \mbox{\hyperlink{class_camera_a3d34f1630680d8a8f719121c874a0830}{Create\+Projection\+Matrix}} (float angle\+\_\+of\+\_\+view, float aspect, float near\+\_\+clipping\+\_\+plane, float far\+\_\+clipping\+\_\+plane)
-\item 
+\begin{DoxyCompactList}\small\item\em ビュー行列作成関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_camera_a1786fe1adbe95e2ffa2de4cdb114546a}{Create\+Projection\+Matrix\+\_\+\+Perspective\+Fov}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em プロジェクション行列作成関数(透視投影行列) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_camera_a215010fc78cb35ed588ac9676c166f64}{Create\+Projection\+Matrix\+\_\+\+Ortho}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em プロジェクション行列作成関数(正射影行列) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_aaae8043a952b7675d209bdc9b80bcc3f}{Create\+Projection\+Matrix\+\_\+2D}} ()
+\begin{DoxyCompactList}\small\item\em プロジェクション行列作成関数(2\+D) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_abb88028a49a71e9a6774d58076816dbf}{Change\+State}} (\mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$new\+\_\+camera\+\_\+state)
+\begin{DoxyCompactList}\small\item\em カメラステートの変更 \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_camera_aa472374f61480c5a9dff89d30be029f4}{Get\+View\+Matrix}} () const
 \item 
 const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_camera_a473a7a8408bc7a1fdd46d12fa3852846}{Get\+Projection\+Matrix}} () const
@@ -44,28 +55,35 @@ const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\
 \item 
 \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_camera_aa767cb71ea435cee1e42effc912904eb}{Get\+Up}} ()
 \item 
-int $\ast$ \mbox{\hyperlink{class_camera_ade0384f73a582e21259a12cbcae0d642}{Get\+Angle\+Of\+View}} ()
+int \mbox{\hyperlink{class_camera_a9d54f574c141e6007d98ccd905501632}{Get\+Angle\+Of\+View}} ()
+\item 
+void \mbox{\hyperlink{class_camera_a4c22c8ceed9126db627df9be7eb53a42}{Set\+Angle\+Of\+View}} (int value)
 \item 
 \mbox{\hyperlink{class_axis_vector}{Axis\+Vector}} $\ast$ \mbox{\hyperlink{class_camera_a62c4371143e87e34c70d27f2728987d9}{Get\+Axis}} ()
 \item 
 const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_camera_aec9441c5c1924df0a0cacbcf28c839e2}{Get\+Forward\+Vector}} () const
 \item 
-void \mbox{\hyperlink{class_camera_abb88028a49a71e9a6774d58076816dbf}{Change\+State}} (\mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$new\+\_\+camera\+\_\+state)
-\item 
-bool \mbox{\hyperlink{class_camera_af1bd90387ddb83c2af82e92e3fc472af}{Is\+Camera\+Type\+Name}} (\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}} type)
-\item 
 const \mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$ \mbox{\hyperlink{class_camera_a47e72bd04f7aaac1657d7bce5322b97c}{Get\+Camera\+State}} () const
+\item 
+\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}} \mbox{\hyperlink{class_camera_a3bda45b352bfa163c306c638a2aee1f6}{Get\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_camera_a6218126e761a8289c6e6bc8c66b05e47}{Set\+Type}} (\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}} value)
 \end{DoxyCompactItemize}
 \subsection*{静的公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 static const float \mbox{\hyperlink{class_camera_ad2e91249b7878a87cd23cf7dd5d86e00}{N\+E\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE}} = 0.\+1f
-\item 
+\begin{DoxyCompactList}\small\item\em 近面クリップ \end{DoxyCompactList}\item 
 static const float \mbox{\hyperlink{class_camera_a90ee4c7f7bbcb5d2b0ab86d14ed60d90}{F\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE}} = 1000.\+0f
-\item 
+\begin{DoxyCompactList}\small\item\em 遠面クリップ \end{DoxyCompactList}\item 
 static const int \mbox{\hyperlink{class_camera_a0e0f326c66006cf7f9dc29b3e2b86b81}{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+N\+G\+L\+E\+\_\+\+O\+F\+\_\+\+V\+I\+EW}} = 60
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 画角 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{詳解}
+カメラクラス 
+
+カメラのクラス 
 
 \subsection{列挙型メンバ詳解}
 \mbox{\Hypertarget{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}\label{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}} 
@@ -79,8 +97,16 @@ static const int \mbox{\hyperlink{class_camera_a0e0f326c66006cf7f9dc29b3e2b86b81
 N\+O\+NE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+R\+M\+AL@{N\+O\+R\+M\+AL}!Camera@{Camera}}\index{Camera@{Camera}!N\+O\+R\+M\+AL@{N\+O\+R\+M\+AL}}}\mbox{\Hypertarget{class_camera_a3b0a1f58deca679ac665f61c480d1dcbab0634eb8efa2896a2771ea868cbc241a}\label{class_camera_a3b0a1f58deca679ac665f61c480d1dcbab0634eb8efa2896a2771ea868cbc241a}} 
-N\+O\+R\+M\+AL&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+E\+R\+S\+P\+E\+C\+T\+I\+VE@{P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}!Camera@{Camera}}\index{Camera@{Camera}!P\+E\+R\+S\+P\+E\+C\+T\+I\+VE@{P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}}}\mbox{\Hypertarget{class_camera_a3b0a1f58deca679ac665f61c480d1dcba34783417054408fd9e024048b1cefa47}\label{class_camera_a3b0a1f58deca679ac665f61c480d1dcba34783417054408fd9e024048b1cefa47}} 
+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+R\+T\+HO@{O\+R\+T\+HO}!Camera@{Camera}}\index{Camera@{Camera}!O\+R\+T\+HO@{O\+R\+T\+HO}}}\mbox{\Hypertarget{class_camera_a3b0a1f58deca679ac665f61c480d1dcba5421bcd519dac606b7af9786b11f88d6}\label{class_camera_a3b0a1f58deca679ac665f61c480d1dcba5421bcd519dac606b7af9786b11f88d6}} 
+O\+R\+T\+HO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL@{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL}!Camera@{Camera}}\index{Camera@{Camera}!T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL@{T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL}}}\mbox{\Hypertarget{class_camera_a3b0a1f58deca679ac665f61c480d1dcbaa144a5dc97bc343a7ef630cf23b09a76}\label{class_camera_a3b0a1f58deca679ac665f61c480d1dcbaa144a5dc97bc343a7ef630cf23b09a76}} 
+T\+W\+O\+\_\+\+D\+I\+M\+E\+N\+S\+I\+O\+N\+AL&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{M\+AX@{M\+AX}!Camera@{Camera}}\index{Camera@{Camera}!M\+AX@{M\+AX}}}\mbox{\Hypertarget{class_camera_a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa}\label{class_camera_a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa}} 
@@ -90,21 +116,6 @@ M\+AX&\\
 \end{DoxyEnumFields}
 
 
-\subsection{構築子と解体子}
-\mbox{\Hypertarget{class_camera_ab0a4101da05afaa3355df78e43006c33}\label{class_camera_ab0a4101da05afaa3355df78e43006c33}} 
-\index{Camera@{Camera}!Camera@{Camera}}
-\index{Camera@{Camera}!Camera@{Camera}}
-\subsubsection{\texorpdfstring{Camera()}{Camera()}}
-{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$}]{state,  }\item[{\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}}}]{type,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position = {\ttfamily \{0.0f,~0.0f,~-\/10.0f\}},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{look\+\_\+at\+\_\+point = {\ttfamily \{0.0f,~0.0f,~0.0f\}},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{up = {\ttfamily \{0.0f,~1.0f,~0.0f\}} }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_camera_ad1897942d0ccf91052386388a497349f}\label{class_camera_ad1897942d0ccf91052386388a497349f}} 
-\index{Camera@{Camera}!````~Camera@{$\sim$\+Camera}}
-\index{````~Camera@{$\sim$\+Camera}!Camera@{Camera}}
-\subsubsection{\texorpdfstring{$\sim$\+Camera()}{~Camera()}}
-{\footnotesize\ttfamily Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_camera_abb88028a49a71e9a6774d58076816dbf}\label{class_camera_abb88028a49a71e9a6774d58076816dbf}} 
 \index{Camera@{Camera}!Change\+State@{Change\+State}}
@@ -112,11 +123,19 @@ M\+AX&\\
 \subsubsection{\texorpdfstring{Change\+State()}{ChangeState()}}
 {\footnotesize\ttfamily void Camera\+::\+Change\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$}]{new\+\_\+camera\+\_\+state }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_camera_a3d34f1630680d8a8f719121c874a0830}\label{class_camera_a3d34f1630680d8a8f719121c874a0830}} 
-\index{Camera@{Camera}!Create\+Projection\+Matrix@{Create\+Projection\+Matrix}}
-\index{Create\+Projection\+Matrix@{Create\+Projection\+Matrix}!Camera@{Camera}}
-\subsubsection{\texorpdfstring{Create\+Projection\+Matrix()}{CreateProjectionMatrix()}}
-{\footnotesize\ttfamily void Camera\+::\+Create\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{float}]{angle\+\_\+of\+\_\+view,  }\item[{float}]{aspect,  }\item[{float}]{near\+\_\+clipping\+\_\+plane,  }\item[{float}]{far\+\_\+clipping\+\_\+plane }\end{DoxyParamCaption})}
+
+
+カメラステートの変更 
+
+\mbox{\Hypertarget{class_camera_aaae8043a952b7675d209bdc9b80bcc3f}\label{class_camera_aaae8043a952b7675d209bdc9b80bcc3f}} 
+\index{Camera@{Camera}!Create\+Projection\+Matrix\+\_\+2D@{Create\+Projection\+Matrix\+\_\+2D}}
+\index{Create\+Projection\+Matrix\+\_\+2D@{Create\+Projection\+Matrix\+\_\+2D}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Create\+Projection\+Matrix\+\_\+2\+D()}{CreateProjectionMatrix\_2D()}}
+{\footnotesize\ttfamily void Camera\+::\+Create\+Projection\+Matrix\+\_\+2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+プロジェクション行列作成関数(2\+D) 
 
 \mbox{\Hypertarget{class_camera_a215010fc78cb35ed588ac9676c166f64}\label{class_camera_a215010fc78cb35ed588ac9676c166f64}} 
 \index{Camera@{Camera}!Create\+Projection\+Matrix\+\_\+\+Ortho@{Create\+Projection\+Matrix\+\_\+\+Ortho}}
@@ -124,11 +143,19 @@ M\+AX&\\
 \subsubsection{\texorpdfstring{Create\+Projection\+Matrix\+\_\+\+Ortho()}{CreateProjectionMatrix\_Ortho()}}
 {\footnotesize\ttfamily void Camera\+::\+Create\+Projection\+Matrix\+\_\+\+Ortho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+プロジェクション行列作成関数(正射影行列) 
+
 \mbox{\Hypertarget{class_camera_a1786fe1adbe95e2ffa2de4cdb114546a}\label{class_camera_a1786fe1adbe95e2ffa2de4cdb114546a}} 
 \index{Camera@{Camera}!Create\+Projection\+Matrix\+\_\+\+Perspective\+Fov@{Create\+Projection\+Matrix\+\_\+\+Perspective\+Fov}}
 \index{Create\+Projection\+Matrix\+\_\+\+Perspective\+Fov@{Create\+Projection\+Matrix\+\_\+\+Perspective\+Fov}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{Create\+Projection\+Matrix\+\_\+\+Perspective\+Fov()}{CreateProjectionMatrix\_PerspectiveFov()}}
 {\footnotesize\ttfamily void Camera\+::\+Create\+Projection\+Matrix\+\_\+\+Perspective\+Fov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+プロジェクション行列作成関数(透視投影行列) 
 
 \mbox{\Hypertarget{class_camera_a5b4993ffb218536cb31d6d5224453b1a}\label{class_camera_a5b4993ffb218536cb31d6d5224453b1a}} 
 \index{Camera@{Camera}!Create\+View\+Matrix@{Create\+View\+Matrix}}
@@ -136,11 +163,15 @@ M\+AX&\\
 \subsubsection{\texorpdfstring{Create\+View\+Matrix()}{CreateViewMatrix()}}
 {\footnotesize\ttfamily void Camera\+::\+Create\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_camera_ade0384f73a582e21259a12cbcae0d642}\label{class_camera_ade0384f73a582e21259a12cbcae0d642}} 
+
+
+ビュー行列作成関数 
+
+\mbox{\Hypertarget{class_camera_a9d54f574c141e6007d98ccd905501632}\label{class_camera_a9d54f574c141e6007d98ccd905501632}} 
 \index{Camera@{Camera}!Get\+Angle\+Of\+View@{Get\+Angle\+Of\+View}}
 \index{Get\+Angle\+Of\+View@{Get\+Angle\+Of\+View}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{Get\+Angle\+Of\+View()}{GetAngleOfView()}}
-{\footnotesize\ttfamily int$\ast$ Camera\+::\+Get\+Angle\+Of\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Camera\+::\+Get\+Angle\+Of\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \mbox{\Hypertarget{class_camera_a62c4371143e87e34c70d27f2728987d9}\label{class_camera_a62c4371143e87e34c70d27f2728987d9}} 
 \index{Camera@{Camera}!Get\+Axis@{Get\+Axis}}
@@ -178,6 +209,12 @@ M\+AX&\\
 \subsubsection{\texorpdfstring{Get\+Projection\+Matrix()}{GetProjectionMatrix()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Camera\+::\+Get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+\mbox{\Hypertarget{class_camera_a3bda45b352bfa163c306c638a2aee1f6}\label{class_camera_a3bda45b352bfa163c306c638a2aee1f6}} 
+\index{Camera@{Camera}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}} Camera\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
 \mbox{\Hypertarget{class_camera_aa767cb71ea435cee1e42effc912904eb}\label{class_camera_aa767cb71ea435cee1e42effc912904eb}} 
 \index{Camera@{Camera}!Get\+Up@{Get\+Up}}
 \index{Get\+Up@{Get\+Up}!Camera@{Camera}}
@@ -190,17 +227,52 @@ M\+AX&\\
 \subsubsection{\texorpdfstring{Get\+View\+Matrix()}{GetViewMatrix()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Camera\+::\+Get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_camera_af1bd90387ddb83c2af82e92e3fc472af}\label{class_camera_af1bd90387ddb83c2af82e92e3fc472af}} 
-\index{Camera@{Camera}!Is\+Camera\+Type\+Name@{Is\+Camera\+Type\+Name}}
-\index{Is\+Camera\+Type\+Name@{Is\+Camera\+Type\+Name}!Camera@{Camera}}
-\subsubsection{\texorpdfstring{Is\+Camera\+Type\+Name()}{IsCameraTypeName()}}
-{\footnotesize\ttfamily bool Camera\+::\+Is\+Camera\+Type\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}}}]{type }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_camera_a03e3ca8b70417632f7b1b581426ec66d}\label{class_camera_a03e3ca8b70417632f7b1b581426ec66d}} 
+\index{Camera@{Camera}!Init@{Init}}
+\index{Init@{Init}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Camera\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_1_1_state}{State}} $\ast$}]{state,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position = {\ttfamily \{0.0f,~0.0f,~-\/10.0f\}},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{look\+\_\+at\+\_\+point = {\ttfamily \{0.0f,~0.0f,~0.0f\}},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{up = {\ttfamily \{0.0f,~1.0f,~0.0f\}} }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em state} & \+: ステート position \+: 座標 look\+\_\+at\+\_\+point \+: 注視点 up \+: 上ベクトル \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a4c22c8ceed9126db627df9be7eb53a42}\label{class_camera_a4c22c8ceed9126db627df9be7eb53a42}} 
+\index{Camera@{Camera}!Set\+Angle\+Of\+View@{Set\+Angle\+Of\+View}}
+\index{Set\+Angle\+Of\+View@{Set\+Angle\+Of\+View}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Set\+Angle\+Of\+View()}{SetAngleOfView()}}
+{\footnotesize\ttfamily void Camera\+::\+Set\+Angle\+Of\+View (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_camera_a6218126e761a8289c6e6bc8c66b05e47}\label{class_camera_a6218126e761a8289c6e6bc8c66b05e47}} 
+\index{Camera@{Camera}!Set\+Type@{Set\+Type}}
+\index{Set\+Type@{Set\+Type}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Set\+Type()}{SetType()}}
+{\footnotesize\ttfamily void Camera\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Type}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_camera_a8b3337b3e560ea6a780d646bc8c509d7}\label{class_camera_a8b3337b3e560ea6a780d646bc8c509d7}} 
+\index{Camera@{Camera}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Camera\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+終了関数 
 
 \mbox{\Hypertarget{class_camera_a4a596a3ea1fdc7d244ba4268031a360b}\label{class_camera_a4a596a3ea1fdc7d244ba4268031a360b}} 
 \index{Camera@{Camera}!Update@{Update}}
 \index{Update@{Update}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
 {\footnotesize\ttfamily void Camera\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+更新関数 
 
 
 
@@ -211,11 +283,19 @@ M\+AX&\\
 \subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+N\+G\+L\+E\+\_\+\+O\+F\+\_\+\+V\+I\+EW}{DEFAULT\_ANGLE\_OF\_VIEW}}
 {\footnotesize\ttfamily const int Camera\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+N\+G\+L\+E\+\_\+\+O\+F\+\_\+\+V\+I\+EW = 60\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+画角 
+
 \mbox{\Hypertarget{class_camera_a90ee4c7f7bbcb5d2b0ab86d14ed60d90}\label{class_camera_a90ee4c7f7bbcb5d2b0ab86d14ed60d90}} 
 \index{Camera@{Camera}!F\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE}}
 \index{F\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE@{F\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{F\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE}{FAR\_CLIPPING\_PLANE}}
 {\footnotesize\ttfamily const float Camera\+::\+F\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE = 1000.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+遠面クリップ 
 
 \mbox{\Hypertarget{class_camera_ad2e91249b7878a87cd23cf7dd5d86e00}\label{class_camera_ad2e91249b7878a87cd23cf7dd5d86e00}} 
 \index{Camera@{Camera}!N\+E\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE@{N\+E\+A\+R\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+\+P\+L\+A\+NE}}
@@ -225,7 +305,11 @@ M\+AX&\\
 
 
 
+近面クリップ 
+
+
+
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Camera/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Component\+Manager/\+Camera/\mbox{\hyperlink{_camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Camera/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Draw\+Manager/\+Camera/\mbox{\hyperlink{_camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}

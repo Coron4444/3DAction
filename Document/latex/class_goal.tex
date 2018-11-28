@@ -1,0 +1,84 @@
+\hypertarget{class_goal}{}\section{Goal クラス}
+\label{class_goal}\index{Goal@{Goal}}
+
+
+ゴールクラス  
+
+
+
+
+{\ttfamily \#include $<$Goal.\+h$>$}
+
+Goal の継承関係図\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_goal}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_goal_a694beb5a9164e2bea59fc43affbaa060}{Init}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_goal_a48126385a674bcda855e2a61561fbf9f}{Uninit}} () override
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_goal_a98b797c8012ab43d6fc8c42e4e91466b}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+ゴールクラス 
+
+ゴールのクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_goal_a694beb5a9164e2bea59fc43affbaa060}\label{class_goal_a694beb5a9164e2bea59fc43affbaa060}} 
+\index{Goal@{Goal}!Init@{Init}}
+\index{Init@{Init}!Goal@{Goal}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Goal\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス collision \+: 衝突基底クラス \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_goal_a98b797c8012ab43d6fc8c42e4e91466b}\label{class_goal_a98b797c8012ab43d6fc8c42e4e91466b}} 
+\index{Goal@{Goal}!Reset@{Reset}}
+\index{Reset@{Reset}!Goal@{Goal}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Goal\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_goal_a48126385a674bcda855e2a61561fbf9f}\label{class_goal_a48126385a674bcda855e2a61561fbf9f}} 
+\index{Goal@{Goal}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Goal@{Goal}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Goal\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Goal/\mbox{\hyperlink{_goal_8h}{Goal.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/03\+\_\+\+Object/3\+D/\+Goal/\mbox{\hyperlink{_goal_8cpp}{Goal.\+cpp}}\end{DoxyCompactItemize}

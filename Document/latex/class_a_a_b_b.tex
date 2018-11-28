@@ -2,6 +2,11 @@
 \label{class_a_a_b_b}\index{A\+A\+BB@{A\+A\+BB}}
 
 
+A\+A\+B\+Bクラス  
+
+
+
+
 {\ttfamily \#include $<$A\+A\+B\+B.\+h$>$}
 
 A\+A\+BB の継承関係図\begin{figure}[H]
@@ -13,50 +18,93 @@ A\+A\+BB の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_a_a_b_b_a409e2c536eb56fb3e3b1147f8478edea}{A\+A\+BB}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} min=\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.\+0f, 0.\+0f, 0.\+0f), Vec3 max=\+Vec3(0.\+0f, 0.\+0f, 0.\+0f))
+\mbox{\hyperlink{class_a_a_b_b_a5f5baf6c533905aa1456b3a3eb57bab2}{A\+A\+BB}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_a_b_b_a28167704c3b21de2ae9f70ac139781c4}{Init}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} position, \mbox{\hyperlink{class_vector3_d}{Vector3D}} length)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_a_b_b_a9698fec7358275832b6b84a146ea4a7c}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_a74b2c6a6acde4bf37eb0333358349fca}{get\+Length}} () const
 \item 
-virtual \mbox{\hyperlink{class_a_a_b_b_afd5f4956a2043597167ff66821f7b223}{$\sim$\+A\+A\+BB}} ()
-\end{DoxyCompactItemize}
-\subsection*{公開変数類}
-\begin{DoxyCompactItemize}
+void \mbox{\hyperlink{class_a_a_b_b_a76816b1eb872408d91dfa6880e5af109}{set\+Length}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} value)
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_a_a_b_b_a682f7bc02fc950a24ce8a8e512e4eb52}{min\+\_\+}}
+const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_a9a18cef6c33dd579c144700c79ea39f5}{get\+Min}} () const
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_a_a_b_b_a7f8dca79cab056729bde7139b219fcbe}{max\+\_\+}}
+const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_a8dc63902fbb2c8f83185bbe9feaaa4b0}{get\+Max}} () const
 \end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
+\subsection{詳解}
+A\+A\+B\+Bクラス 
+
+A\+A\+B\+Bの基底クラス 
+
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_a_a_b_b_a409e2c536eb56fb3e3b1147f8478edea}\label{class_a_a_b_b_a409e2c536eb56fb3e3b1147f8478edea}} 
+\mbox{\Hypertarget{class_a_a_b_b_a5f5baf6c533905aa1456b3a3eb57bab2}\label{class_a_a_b_b_a5f5baf6c533905aa1456b3a3eb57bab2}} 
 \index{A\+A\+BB@{A\+A\+BB}!A\+A\+BB@{A\+A\+BB}}
 \index{A\+A\+BB@{A\+A\+BB}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{A\+A\+B\+B()}{AABB()}}
-{\footnotesize\ttfamily A\+A\+B\+B\+::\+A\+A\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{min = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{max = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_a_a_b_b_afd5f4956a2043597167ff66821f7b223}\label{class_a_a_b_b_afd5f4956a2043597167ff66821f7b223}} 
-\index{A\+A\+BB@{A\+A\+BB}!````~A\+A\+BB@{$\sim$\+A\+A\+BB}}
-\index{````~A\+A\+BB@{$\sim$\+A\+A\+BB}!A\+A\+BB@{A\+A\+BB}}
-\subsubsection{\texorpdfstring{$\sim$\+A\+A\+B\+B()}{~AABB()}}
-{\footnotesize\ttfamily A\+A\+B\+B\+::$\sim$\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily A\+A\+B\+B\+::\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-\subsection{メンバ詳解}
-\mbox{\Hypertarget{class_a_a_b_b_a7f8dca79cab056729bde7139b219fcbe}\label{class_a_a_b_b_a7f8dca79cab056729bde7139b219fcbe}} 
-\index{A\+A\+BB@{A\+A\+BB}!max\+\_\+@{max\+\_\+}}
-\index{max\+\_\+@{max\+\_\+}!A\+A\+BB@{A\+A\+BB}}
-\subsubsection{\texorpdfstring{max\+\_\+}{max\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} A\+A\+B\+B\+::max\+\_\+}
+コンストラクタ 
 
-\mbox{\Hypertarget{class_a_a_b_b_a682f7bc02fc950a24ce8a8e512e4eb52}\label{class_a_a_b_b_a682f7bc02fc950a24ce8a8e512e4eb52}} 
-\index{A\+A\+BB@{A\+A\+BB}!min\+\_\+@{min\+\_\+}}
-\index{min\+\_\+@{min\+\_\+}!A\+A\+BB@{A\+A\+BB}}
-\subsubsection{\texorpdfstring{min\+\_\+}{min\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} A\+A\+B\+B\+::min\+\_\+}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_a_a_b_b_a74b2c6a6acde4bf37eb0333358349fca}\label{class_a_a_b_b_a74b2c6a6acde4bf37eb0333358349fca}} 
+\index{A\+A\+BB@{A\+A\+BB}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection{\texorpdfstring{get\+Length()}{getLength()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ A\+A\+B\+B\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_a_b_b_a8dc63902fbb2c8f83185bbe9feaaa4b0}\label{class_a_a_b_b_a8dc63902fbb2c8f83185bbe9feaaa4b0}} 
+\index{A\+A\+BB@{A\+A\+BB}!get\+Max@{get\+Max}}
+\index{get\+Max@{get\+Max}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection{\texorpdfstring{get\+Max()}{getMax()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ A\+A\+B\+B\+::get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_a_b_b_a9a18cef6c33dd579c144700c79ea39f5}\label{class_a_a_b_b_a9a18cef6c33dd579c144700c79ea39f5}} 
+\index{A\+A\+BB@{A\+A\+BB}!get\+Min@{get\+Min}}
+\index{get\+Min@{get\+Min}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection{\texorpdfstring{get\+Min()}{getMin()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ A\+A\+B\+B\+::get\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_a_b_b_a28167704c3b21de2ae9f70ac139781c4}\label{class_a_a_b_b_a28167704c3b21de2ae9f70ac139781c4}} 
+\index{A\+A\+BB@{A\+A\+BB}!Init@{Init}}
+\index{Init@{Init}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & \+: 座標 length \+: 各辺の長さ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_a_b_b_a76816b1eb872408d91dfa6880e5af109}\label{class_a_a_b_b_a76816b1eb872408d91dfa6880e5af109}} 
+\index{A\+A\+BB@{A\+A\+BB}!set\+Length@{set\+Length}}
+\index{set\+Length@{set\+Length}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection{\texorpdfstring{set\+Length()}{setLength()}}
+{\footnotesize\ttfamily void A\+A\+B\+B\+::set\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_a_a_b_b_a9698fec7358275832b6b84a146ea4a7c}\label{class_a_a_b_b_a9698fec7358275832b6b84a146ea4a7c}} 
+\index{A\+A\+BB@{A\+A\+BB}!Update@{Update}}
+\index{Update@{Update}!A\+A\+BB@{A\+A\+BB}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+更新関数 
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision\+Component/\+Collision\+Object/\+Collision\+Shape\+Origin/\+A\+A\+B\+B/\mbox{\hyperlink{_a_a_b_b_8h}{A\+A\+B\+B.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+A\+A\+B\+B/\mbox{\hyperlink{_a_a_b_b_8h}{A\+A\+B\+B.\+h}}\end{DoxyCompactItemize}

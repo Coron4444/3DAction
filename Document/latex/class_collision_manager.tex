@@ -1,0 +1,138 @@
+\hypertarget{class_collision_manager}{}\section{Collision\+Manager クラス}
+\label{class_collision_manager}\index{Collision\+Manager@{Collision\+Manager}}
+
+
+衝突マネージャークラス  
+
+
+
+
+{\ttfamily \#include $<$Collision\+Manager.\+h$>$}
+
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_collision_manager_a2c5770b90b7a46a5674df008a7a57145}{Init}} ()
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09}{Uninit}} ()
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb}{Uninit\+When\+Change\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーン変更時の終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc}{Update}} ()
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a42be7a26321110f5daaf1828da32f667}{Add\+Collision\+Base\+To\+Array}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision)
+\begin{DoxyCompactList}\small\item\em 衝突基底クラスの追加関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_af9c2ce87e0189cdd1256c83decc64673}{Overwrite\+Array\+Collision\+Base}} (\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$game\+\_\+object, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$new\+\_\+collision)
+\begin{DoxyCompactList}\small\item\em 衝突基底クラスの上書き関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a34318163f4256cebc7aefb95fc475030}{Release\+Collision\+Base\+From\+Array}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision)
+\begin{DoxyCompactList}\small\item\em 衝突基底クラスの解放関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666}{Set\+Ground}} (\mbox{\hyperlink{class_mesh_plane_polygon}{Mesh\+Plane\+Polygon}} $\ast$ground\+\_\+polygon)
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 10000
+\begin{DoxyCompactList}\small\item\em 配列数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+衝突マネージャークラス 
+
+登録されている衝突基底クラスを管理するクラス 
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_manager_a42be7a26321110f5daaf1828da32f667}\label{class_collision_manager_a42be7a26321110f5daaf1828da32f667}} 
+\index{Collision\+Manager@{Collision\+Manager}!Add\+Collision\+Base\+To\+Array@{Add\+Collision\+Base\+To\+Array}}
+\index{Add\+Collision\+Base\+To\+Array@{Add\+Collision\+Base\+To\+Array}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Collision\+Base\+To\+Array()}{AddCollisionBaseToArray()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Add\+Collision\+Base\+To\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision }\end{DoxyParamCaption})}
+
+
+
+衝突基底クラスの追加関数 
+
+\mbox{\Hypertarget{class_collision_manager_a2c5770b90b7a46a5674df008a7a57145}\label{class_collision_manager_a2c5770b90b7a46a5674df008a7a57145}} 
+\index{Collision\+Manager@{Collision\+Manager}!Init@{Init}}
+\index{Init@{Init}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初期化関数 
+
+\mbox{\Hypertarget{class_collision_manager_af9c2ce87e0189cdd1256c83decc64673}\label{class_collision_manager_af9c2ce87e0189cdd1256c83decc64673}} 
+\index{Collision\+Manager@{Collision\+Manager}!Overwrite\+Array\+Collision\+Base@{Overwrite\+Array\+Collision\+Base}}
+\index{Overwrite\+Array\+Collision\+Base@{Overwrite\+Array\+Collision\+Base}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Overwrite\+Array\+Collision\+Base()}{OverwriteArrayCollisionBase()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Overwrite\+Array\+Collision\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{game\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{new\+\_\+collision }\end{DoxyParamCaption})}
+
+
+
+衝突基底クラスの上書き関数 
+
+\mbox{\Hypertarget{class_collision_manager_a34318163f4256cebc7aefb95fc475030}\label{class_collision_manager_a34318163f4256cebc7aefb95fc475030}} 
+\index{Collision\+Manager@{Collision\+Manager}!Release\+Collision\+Base\+From\+Array@{Release\+Collision\+Base\+From\+Array}}
+\index{Release\+Collision\+Base\+From\+Array@{Release\+Collision\+Base\+From\+Array}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Release\+Collision\+Base\+From\+Array()}{ReleaseCollisionBaseFromArray()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Release\+Collision\+Base\+From\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision }\end{DoxyParamCaption})}
+
+
+
+衝突基底クラスの解放関数 
+
+\mbox{\Hypertarget{class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666}\label{class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666}} 
+\index{Collision\+Manager@{Collision\+Manager}!Set\+Ground@{Set\+Ground}}
+\index{Set\+Ground@{Set\+Ground}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Ground()}{SetGround()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Set\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mesh_plane_polygon}{Mesh\+Plane\+Polygon}} $\ast$}]{ground\+\_\+polygon }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09}\label{class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09}} 
+\index{Collision\+Manager@{Collision\+Manager}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+終了関数 
+
+\mbox{\Hypertarget{class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb}\label{class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb}} 
+\index{Collision\+Manager@{Collision\+Manager}!Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}}
+\index{Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+When\+Change\+Scene()}{UninitWhenChangeScene()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Uninit\+When\+Change\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シーン変更時の終了関数 
+
+\mbox{\Hypertarget{class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc}\label{class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc}} 
+\index{Collision\+Manager@{Collision\+Manager}!Update@{Update}}
+\index{Update@{Update}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+更新関数 
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}\label{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}} 
+\index{Collision\+Manager@{Collision\+Manager}!A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
+\index{A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{A\+R\+R\+A\+Y\+\_\+\+N\+UM}{ARRAY\_NUM}}
+{\footnotesize\ttfamily const unsigned Collision\+Manager\+::\+A\+R\+R\+A\+Y\+\_\+\+N\+UM = 10000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+配列数 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Manager/\mbox{\hyperlink{_collision_manager_8h}{Collision\+Manager.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Manager/\mbox{\hyperlink{_collision_manager_8cpp}{Collision\+Manager.\+cpp}}\end{DoxyCompactItemize}

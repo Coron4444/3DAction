@@ -13,21 +13,21 @@ Sky\+Dome の継承関係図\begin{figure}[H]
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_sky_dome_a5ff1af02dbdfa3e5b734a22bbae78395}{Init}} (\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$update\+\_\+component, \mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$draw\+\_\+component)
+void \mbox{\hyperlink{class_sky_dome_a948e0e90cea46c78053ac55610812d6c}{Init}} (\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$update, \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw)
 \item 
 void \mbox{\hyperlink{class_sky_dome_a7fc71bfa671cf6e7ab26a194459b0753}{Uninit}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sky_dome_abc6f8ed1471d7b03f25924a849cae590}{Reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_sky_dome_a5ff1af02dbdfa3e5b734a22bbae78395}\label{class_sky_dome_a5ff1af02dbdfa3e5b734a22bbae78395}} 
+\mbox{\Hypertarget{class_sky_dome_a948e0e90cea46c78053ac55610812d6c}\label{class_sky_dome_a948e0e90cea46c78053ac55610812d6c}} 
 \index{Sky\+Dome@{Sky\+Dome}!Init@{Init}}
 \index{Init@{Init}!Sky\+Dome@{Sky\+Dome}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Sky\+Dome\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_component}{Update\+Component}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_component}{Draw\+Component}} $\ast$}]{draw\+\_\+component }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Sky\+Dome\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_sky_dome_abc6f8ed1471d7b03f25924a849cae590}\label{class_sky_dome_abc6f8ed1471d7b03f25924a849cae590}} 
 \index{Sky\+Dome@{Sky\+Dome}!Reset@{Reset}}
@@ -37,7 +37,11 @@ void \mbox{\hyperlink{class_sky_dome_abc6f8ed1471d7b03f25924a849cae590}{Reset}} 
 
 
 
-\mbox{\hyperlink{class_game_object_origin_af9af378a4fd9028316a6fdb461ed6a10}{Game\+Object\+Origin}}を実装しています。
+リセット関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
 \mbox{\Hypertarget{class_sky_dome_a7fc71bfa671cf6e7ab26a194459b0753}\label{class_sky_dome_a7fc71bfa671cf6e7ab26a194459b0753}} 
 \index{Sky\+Dome@{Sky\+Dome}!Uninit@{Uninit}}
@@ -47,7 +51,11 @@ void \mbox{\hyperlink{class_sky_dome_abc6f8ed1471d7b03f25924a849cae590}{Reset}} 
 
 
 
-\mbox{\hyperlink{class_game_object_origin_aeac8fc4a1f625982313a9a60dd35d016}{Game\+Object\+Origin}}を実装しています。
+終了関数 
+
+
+
+\mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
 
 
 
