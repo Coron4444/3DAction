@@ -14,5 +14,7 @@ var class_draw_base =
     [ "RevivalCameraType", "class_draw_base.html#a48b144e61928b7658c7a849017e40c79", null ],
     [ "SettingAfterDrawing", "class_draw_base.html#afe64f27b0bbf8c45da7aa0de4c3f3d65", null ],
     [ "SettingBeforeDrawing", "class_draw_base.html#a3978252914ddde12197ea4577356bf25", null ],
-    [ "Update", "class_draw_base.html#af64b19d08a58927a789e2fb8a11cf524", null ]
+    [ "Update", "class_draw_base.html#af64b19d08a58927a789e2fb8a11cf524", null ],
+    [ "draw_order_list_", "class_draw_base.html#a6ebc8dc96176ddd3bd984b3d54739adb", null ],
+    [ "save_camera_type_", "class_draw_base.html#aa8be4980756a0af7cc76dfe455c492d4", null ]
 ];

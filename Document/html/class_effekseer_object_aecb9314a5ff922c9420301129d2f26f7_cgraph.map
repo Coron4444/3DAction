@@ -1,0 +1,13 @@
+<map id="EffekseerObject::Update" name="EffekseerObject::Update">
+<area shape="rect" id="node2" href="$class_effekseer_object.html#afde70f366e91d31a84ff9b280d4ae3c4" title="EffekseerObject::SetWorld\lMatrix" alt="" coords="217,5,393,47"/>
+<area shape="rect" id="node4" href="$class_transform.html#a060f9487a18ad34549eab53a7ca5100d" title="Transform::GetWorldMatrix" alt="" coords="216,71,395,98"/>
+<area shape="rect" id="node6" href="$class_effekseer_1_1_manager.html#ad95297e9170c9f9874eb6bf951aa5dc0" title="エフェクトのインスタンスが存在しているか取得する。 " alt="" coords="238,123,373,164"/>
+<area shape="rect" id="node7" href="$class_effekseer_object.html#a59c8a12b4eb558449622660d892b3cf4" title="EffekseerObject::Play" alt="" coords="231,189,379,215"/>
+<area shape="rect" id="node9" href="$class_effekseer_1_1_manager.html#ab810f714df5d12c566664183f365cbf4" title="今までのPlay等の処理をUpdate実行時に適用するようにする。 " alt="" coords="475,224,609,265"/>
+<area shape="rect" id="node10" href="$class_effekseer_object.html#adfbdfbe202b78441b33d76656453e536" title="EffekseerObject::Stop" alt="" coords="231,290,380,317"/>
+<area shape="rect" id="node12" href="$class_effekseer_1_1_manager.html#ac086ec64cb5f99172e8bf655b77e1464" title="更新処理を行う。 " alt="" coords="238,341,373,383"/>
+<area shape="rect" id="node3" href="$class_effekseer_1_1_manager.html#a69d0768ed69c30d3993ececa6159c4dd" title="エフェクトのインスタンスに変換行列を設定する。 " alt="" coords="475,5,609,47"/>
+<area shape="rect" id="node5" href="$class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="443,71,641,98"/>
+<area shape="rect" id="node8" href="$class_effekseer_1_1_manager.html#a5ea3211a3670843061238976dda54a4f" title="再生する。 " alt="" coords="475,159,609,200"/>
+<area shape="rect" id="node11" href="$class_effekseer_1_1_manager.html#a7a4a9ff929146f8ea21aa4705b352baa" title="エフェクトを停止する。 " alt="" coords="475,289,609,331"/>
+</map>

@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('class_tutorial_logo.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_tutorial_logo-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">TutorialLogo クラス</div>  </div>
@@ -102,12 +103,38 @@ $(document).ready(function(){initNavTree('class_tutorial_logo.html','');});
 <div class="dynheader">
 TutorialLogo の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_tutorial_logo.png" usemap="#TutorialLogo_map" alt=""/>
-  <map id="TutorialLogo_map" name="TutorialLogo_map">
-<area href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="GameObjectBase" shape="rect" coords="0,0,109,24"/>
+<div class="center"><img src="class_tutorial_logo__inherit__graph.png" border="0" usemap="#_tutorial_logo_inherit__map" alt="Inheritance graph"/></div>
+<map name="_tutorial_logo_inherit__map" id="_tutorial_logo_inherit__map">
+<area shape="rect" id="node2" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="5,5,131,32"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+TutorialLogo 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tutorial_logo__coll__graph.png" border="0" usemap="#_tutorial_logo_coll__map" alt="Collaboration graph"/></div>
+<map name="_tutorial_logo_coll__map" id="_tutorial_logo_coll__map">
+<area shape="rect" id="node2" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="875,104,1000,131"/>
+<area shape="rect" id="node4" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="1184,131,1303,157"/>
+<area shape="rect" id="node19" href="class_physics.html" title="Physics" alt="" coords="1209,185,1278,212"/>
+<area shape="rect" id="node3" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="1452,240,1553,267"/>
+<area shape="rect" id="node6" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1695,363,1811,389"/>
+<area shape="rect" id="node16" href="class_draw_base.html" title="描画基底クラス " alt="" coords="1462,125,1543,152"/>
+<area shape="rect" id="node20" href="class_update_base.html" title="更新基底クラス " alt="" coords="1456,64,1549,91"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="1992,241,2133,297"/>
+<area shape="rect" id="node12" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1952,379,2173,405"/>
+<area shape="rect" id="node7" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="677,419,736,445"/>
+<area shape="rect" id="node8" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="364,380,503,407"/>
+<area shape="rect" id="node15" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="652,368,761,395"/>
+<area shape="rect" id="node10" href="class_vector3_d.html" title="Vector3D" alt="" coords="107,293,183,320"/>
+<area shape="rect" id="node21" href="class_transform.html" title="Transform" alt="" coords="667,117,746,144"/>
+<area shape="rect" id="node23" href="class_axis_vector.html" title="AxisVector" alt="" coords="390,124,477,151"/>
+<area shape="rect" id="node13" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="2331,379,2551,405"/>
+<area shape="rect" id="node14" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="1024,353,1160,409"/>
+<area shape="rect" id="node17" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="1191,304,1295,331"/>
+<area shape="rect" id="node18" href="class_flag.html" title="Flag" alt="" coords="914,317,961,344"/>
+<area shape="rect" id="node22" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="384,73,483,100"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -152,6 +179,12 @@ TutorialLogo の継承関係図</div>
 <tr class="memitem:a4aeb0212f5a390570d050bfef51b7818 inherit pub_methods_class_game_object_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818">SetCollision</a> (<a class="el" href="class_collision_base.html">CollisionBase</a> *value)</td></tr>
 <tr class="separator:a4aeb0212f5a390570d050bfef51b7818 inherit pub_methods_class_game_object_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a8027b42e33a036e88277c4cd17fabdaa"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tutorial_logo.html#a8027b42e33a036e88277c4cd17fabdaa">logo_num_</a> = 0</td></tr>
+<tr class="memdesc:a8027b42e33a036e88277c4cd17fabdaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">チュートリアル  <a href="#a8027b42e33a036e88277c4cd17fabdaa">[詳解]</a><br /></td></tr>
+<tr class="separator:a8027b42e33a036e88277c4cd17fabdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 その他の継承メンバ</h2></td></tr>
 <tr class="inherit_header pro_methods_class_game_object_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_object_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_game_object_base.html">GameObjectBase</a> に属する継承限定公開メンバ関数</td></tr>
@@ -162,6 +195,8 @@ TutorialLogo の継承関係図</div>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>チュートリアルロゴクラス </p>
 <p>チュートリアルロゴのクラス </p>
+
+<p class="definition"> <a class="el" href="_tutorial_logo_8h_source.html">TutorialLogo.h</a> の <a class="el" href="_tutorial_logo_8h_source.html#l00026">26</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
 <a id="af4735bb34e06803ff13ae227fcf74e09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4735bb34e06803ff13ae227fcf74e09">&#9670;&nbsp;</a></span>GetLogoNum()</h2>
@@ -186,6 +221,16 @@ TutorialLogo の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_tutorial_logo_8h_source.html">TutorialLogo.h</a> の <a class="el" href="_tutorial_logo_8h_source.html#l00042">42</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09_icgraph.png" border="0" usemap="#class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09_icgraph" alt=""/></div>
+<map name="class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09_icgraph" id="class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09_icgraph">
+<area shape="rect" id="node2" href="class_tutorial_logo_draw.html#af69405fcc8b20684a19e982726d93ffa" title="更新関数 " alt="" coords="229,5,400,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a590f017a6b0532d08c1377b90b8fba3f"></a>
@@ -203,6 +248,34 @@ TutorialLogo の継承関係図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_tutorial_logo_8cpp_source.html">TutorialLogo.cpp</a> の <a class="el" href="_tutorial_logo_8cpp_source.html#l00032">32</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_cgraph.png" border="0" usemap="#class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_cgraph" alt=""/></div>
+<map name="class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_cgraph" id="class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_cgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="171,164,321,191"/>
+<area shape="rect" id="node3" href="class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="369,101,604,128"/>
+<area shape="rect" id="node7" href="class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6" title="コンポーネント初期化関数 " alt="" coords="379,164,595,191"/>
+<area shape="rect" id="node10" href="class_game_object_manager.html#ab42e8ca2c7e586d05d513e8a868a86ef" title="ゲームオブジェクト基底クラスの追加関数 " alt="" coords="390,241,583,282"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08" title="GameObjectBase::SetUpdate" alt="" coords="664,5,859,32"/>
+<area shape="rect" id="node5" href="class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="670,56,853,83"/>
+<area shape="rect" id="node6" href="class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="660,107,863,133"/>
+<area shape="rect" id="node8" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="652,157,871,184"/>
+<area shape="rect" id="node9" href="class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="690,208,833,235"/>
+<area shape="rect" id="node11" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="693,259,829,301"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_icgraph.png" border="0" usemap="#class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_icgraph" alt=""/></div>
+<map name="class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_icgraph" id="class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_icgraph">
+<area shape="rect" id="node2" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="171,5,307,47"/>
+<area shape="rect" id="node3" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="355,5,487,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -233,6 +306,8 @@ TutorialLogo の継承関係図</div>
 
 <p><a class="el" href="class_game_object_base.html#a85c59554f734bcb09f1a1e18d9517dce">GameObjectBase</a>を実装しています。</p>
 
+<p class="definition"> <a class="el" href="_tutorial_logo_8cpp_source.html">TutorialLogo.cpp</a> の <a class="el" href="_tutorial_logo_8cpp_source.html#l00060">60</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a18313074bc7242f5e8a9121414abd51d"></a>
@@ -258,6 +333,16 @@ TutorialLogo の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_tutorial_logo_8h_source.html">TutorialLogo.h</a> の <a class="el" href="_tutorial_logo_8h_source.html#l00043">43</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d_icgraph.png" border="0" usemap="#class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d_icgraph" alt=""/></div>
+<map name="class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d_icgraph" id="class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d_icgraph">
+<area shape="rect" id="node2" href="class_tutorial_scene_state___end.html#a572e5687140ff5ac43789f90462c05a5" title="初期化関数 " alt="" coords="228,5,360,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -288,11 +373,50 @@ TutorialLogo の継承関係図</div>
 
 <p><a class="el" href="class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c">GameObjectBase</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_tutorial_logo_8cpp_source.html">TutorialLogo.cpp</a> の <a class="el" href="_tutorial_logo_8cpp_source.html#l00046">46</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5_cgraph.png" border="0" usemap="#class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5_cgraph" alt=""/></div>
+<map name="class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5_cgraph" id="class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5_cgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c" title="終了関数 " alt="" coords="187,5,353,32"/>
+<area shape="rect" id="node3" href="class_game_object_base.html#aff8e4f486435f5d921c186b0824e8a0e" title="コンポーネント終了関数 " alt="" coords="401,5,633,32"/>
+<area shape="rect" id="node4" href="class_component_base.html#a9f42beaf0383d6f629819579cab4de57" title="終了関数 " alt="" coords="681,5,840,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a8027b42e33a036e88277c4cd17fabdaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8027b42e33a036e88277c4cd17fabdaa">&#9670;&nbsp;</a></span>logo_num_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned TutorialLogo::logo_num_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>チュートリアル </p>
+
+<p class="definition"> <a class="el" href="_tutorial_logo_8h_source.html">TutorialLogo.h</a> の <a class="el" href="_tutorial_logo_8h_source.html#l00032">32</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TutorialLogo/<a class="el" href="_tutorial_logo_8h_source.html">TutorialLogo.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TutorialLogo/<a class="el" href="_tutorial_logo_8cpp.html">TutorialLogo.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TutorialLogo/<a class="el" href="_tutorial_logo_8cpp_source.html">TutorialLogo.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

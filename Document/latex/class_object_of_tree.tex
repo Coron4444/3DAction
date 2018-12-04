@@ -9,6 +9,15 @@
 
 {\ttfamily \#include $<$Object\+Of\+Tree.\+h$>$}
 
+
+
+Object\+Of\+Tree$<$ Type $>$ 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_object_of_tree__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,6 +41,17 @@ void \mbox{\hyperlink{class_object_of_tree_aa0ec8f6f61eb41f346796141e8ec38d5}{se
 \item 
 void \mbox{\hyperlink{class_object_of_tree_a44fb225ed189197bcdfe23dcd2a7fe28}{set\+Next\+Pointer}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$value)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_object_of_tree_a4f0673854adc10539b4b99558ea3b696}{belonging\+\_\+space\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em 所属空間 \end{DoxyCompactList}\item 
+Type \mbox{\hyperlink{class_object_of_tree_ad3ce36879f78ba2c2171385a8428c7ba}{object\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em オブジェクト \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_object_of_tree_a77243aefc3b9766b6dcf28ec713eef8e}{previous\+\_\+pointer\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em 前ポインタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_object_of_tree_a3b8a98c6ba800927492a67ee6dd1d6de}{next\+\_\+pointer\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em 次ポインタ \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -41,6 +61,10 @@ class Object\+Of\+Tree$<$ Type $>$}
 分木オブジェクトクラス 
 
 分木のオブジェクトクラス 
+
+ Object\+Of\+Tree.\+h の 34 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_object_of_tree_a1356595b29749ca4555ca61a5bb30388}\label{class_object_of_tree_a1356595b29749ca4555ca61a5bb30388}} 
@@ -54,6 +78,18 @@ void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::De
 
 リストから消去する関数 
 
+
+
+ Object\+Of\+Tree.\+h の 54 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_of_tree_a1356595b29749ca4555ca61a5bb30388_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_object_of_tree_a94c5724ddb841da0bb31ab6ae63df304}\label{class_object_of_tree_a94c5724ddb841da0bb31ab6ae63df304}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!get\+Belonging\+Space@{get\+Belonging\+Space}}
 \index{get\+Belonging\+Space@{get\+Belonging\+Space}!Object\+Of\+Tree@{Object\+Of\+Tree}}
@@ -61,6 +97,17 @@ void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::De
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::get\+Belonging\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Object\+Of\+Tree.\+h の 76 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_of_tree_a94c5724ddb841da0bb31ab6ae63df304_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_object_of_tree_a596be7ee8c6e26a104bed5d26f7cf54e}\label{class_object_of_tree_a596be7ee8c6e26a104bed5d26f7cf54e}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!get\+Next\+Pointer@{get\+Next\+Pointer}}
 \index{get\+Next\+Pointer@{get\+Next\+Pointer}!Object\+Of\+Tree@{Object\+Of\+Tree}}
@@ -68,12 +115,27 @@ void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::De
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::get\+Next\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Object\+Of\+Tree.\+h の 82 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_of_tree_a596be7ee8c6e26a104bed5d26f7cf54e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_object_of_tree_a1b5839c677aa3c678733c1aa03d4f00f}\label{class_object_of_tree_a1b5839c677aa3c678733c1aa03d4f00f}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!get\+Next\+Pointer2@{get\+Next\+Pointer2}}
 \index{get\+Next\+Pointer2@{get\+Next\+Pointer2}!Object\+Of\+Tree@{Object\+Of\+Tree}}
 \subsubsection{\texorpdfstring{get\+Next\+Pointer2()}{getNextPointer2()}}
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$Type$>$$\ast$$\ast$ \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::get\+Next\+Pointer2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Object\+Of\+Tree.\+h の 83 行目に定義があります。
 
 \mbox{\Hypertarget{class_object_of_tree_a28214e15fffb72cb50b764e2f3ac863d}\label{class_object_of_tree_a28214e15fffb72cb50b764e2f3ac863d}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!get\+Object@{get\+Object}}
@@ -82,12 +144,28 @@ void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::De
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 Type \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::get\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Object\+Of\+Tree.\+h の 78 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_of_tree_a28214e15fffb72cb50b764e2f3ac863d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_object_of_tree_a02b74f20b90ec53dbae2d18648a9d5d1}\label{class_object_of_tree_a02b74f20b90ec53dbae2d18648a9d5d1}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!get\+Previous\+Pointer@{get\+Previous\+Pointer}}
 \index{get\+Previous\+Pointer@{get\+Previous\+Pointer}!Object\+Of\+Tree@{Object\+Of\+Tree}}
 \subsubsection{\texorpdfstring{get\+Previous\+Pointer()}{getPreviousPointer()}}
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::get\+Previous\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Object\+Of\+Tree.\+h の 80 行目に定義があります。
 
 \mbox{\Hypertarget{class_object_of_tree_a21dc9105d1a5a0d045dc43894bba3c1c}\label{class_object_of_tree_a21dc9105d1a5a0d045dc43894bba3c1c}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!set\+Belonging\+Space@{set\+Belonging\+Space}}
@@ -96,6 +174,17 @@ Type \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::ge
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::set\+Belonging\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$ $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Object\+Of\+Tree.\+h の 77 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_of_tree_a21dc9105d1a5a0d045dc43894bba3c1c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_object_of_tree_a44fb225ed189197bcdfe23dcd2a7fe28}\label{class_object_of_tree_a44fb225ed189197bcdfe23dcd2a7fe28}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!set\+Next\+Pointer@{set\+Next\+Pointer}}
 \index{set\+Next\+Pointer@{set\+Next\+Pointer}!Object\+Of\+Tree@{Object\+Of\+Tree}}
@@ -103,6 +192,17 @@ void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::se
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::set\+Next\+Pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Object\+Of\+Tree.\+h の 84 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_of_tree_a44fb225ed189197bcdfe23dcd2a7fe28_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_object_of_tree_aae14cb0e8ac8b701de737c547a1d3b8c}\label{class_object_of_tree_aae14cb0e8ac8b701de737c547a1d3b8c}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!set\+Object@{set\+Object}}
 \index{set\+Object@{set\+Object}!Object\+Of\+Tree@{Object\+Of\+Tree}}
@@ -110,12 +210,91 @@ void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::se
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::set\+Object (\begin{DoxyParamCaption}\item[{Type}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Object\+Of\+Tree.\+h の 79 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_of_tree_aae14cb0e8ac8b701de737c547a1d3b8c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_object_of_tree_aa0ec8f6f61eb41f346796141e8ec38d5}\label{class_object_of_tree_aa0ec8f6f61eb41f346796141e8ec38d5}} 
 \index{Object\+Of\+Tree@{Object\+Of\+Tree}!set\+Previous\+Pointer@{set\+Previous\+Pointer}}
 \index{set\+Previous\+Pointer@{set\+Previous\+Pointer}!Object\+Of\+Tree@{Object\+Of\+Tree}}
 \subsubsection{\texorpdfstring{set\+Previous\+Pointer()}{setPreviousPointer()}}
 {\footnotesize\ttfamily template$<$class Type$>$ \\
 void \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::set\+Previous\+Pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Object\+Of\+Tree.\+h の 81 行目に定義があります。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_object_of_tree_a4f0673854adc10539b4b99558ea3b696}\label{class_object_of_tree_a4f0673854adc10539b4b99558ea3b696}} 
+\index{Object\+Of\+Tree@{Object\+Of\+Tree}!belonging\+\_\+space\+\_\+@{belonging\+\_\+space\+\_\+}}
+\index{belonging\+\_\+space\+\_\+@{belonging\+\_\+space\+\_\+}!Object\+Of\+Tree@{Object\+Of\+Tree}}
+\subsubsection{\texorpdfstring{belonging\+\_\+space\+\_\+}{belonging\_space\_}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+\mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::belonging\+\_\+space\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+所属空間 
+
+
+
+ Object\+Of\+Tree.\+h の 40 行目に定義があります。
+
+\mbox{\Hypertarget{class_object_of_tree_a3b8a98c6ba800927492a67ee6dd1d6de}\label{class_object_of_tree_a3b8a98c6ba800927492a67ee6dd1d6de}} 
+\index{Object\+Of\+Tree@{Object\+Of\+Tree}!next\+\_\+pointer\+\_\+@{next\+\_\+pointer\+\_\+}}
+\index{next\+\_\+pointer\+\_\+@{next\+\_\+pointer\+\_\+}!Object\+Of\+Tree@{Object\+Of\+Tree}}
+\subsubsection{\texorpdfstring{next\+\_\+pointer\+\_\+}{next\_pointer\_}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::next\+\_\+pointer\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+次ポインタ 
+
+
+
+ Object\+Of\+Tree.\+h の 43 行目に定義があります。
+
+\mbox{\Hypertarget{class_object_of_tree_ad3ce36879f78ba2c2171385a8428c7ba}\label{class_object_of_tree_ad3ce36879f78ba2c2171385a8428c7ba}} 
+\index{Object\+Of\+Tree@{Object\+Of\+Tree}!object\+\_\+@{object\+\_\+}}
+\index{object\+\_\+@{object\+\_\+}!Object\+Of\+Tree@{Object\+Of\+Tree}}
+\subsubsection{\texorpdfstring{object\+\_\+}{object\_}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+Type \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::object\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+オブジェクト 
+
+
+
+ Object\+Of\+Tree.\+h の 41 行目に定義があります。
+
+\mbox{\Hypertarget{class_object_of_tree_a77243aefc3b9766b6dcf28ec713eef8e}\label{class_object_of_tree_a77243aefc3b9766b6dcf28ec713eef8e}} 
+\index{Object\+Of\+Tree@{Object\+Of\+Tree}!previous\+\_\+pointer\+\_\+@{previous\+\_\+pointer\+\_\+}}
+\index{previous\+\_\+pointer\+\_\+@{previous\+\_\+pointer\+\_\+}!Object\+Of\+Tree@{Object\+Of\+Tree}}
+\subsubsection{\texorpdfstring{previous\+\_\+pointer\+\_\+}{previous\_pointer\_}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$\+::previous\+\_\+pointer\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+前ポインタ 
+
+
+
+ Object\+Of\+Tree.\+h の 42 行目に定義があります。
 
 
 

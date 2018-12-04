@@ -14,5 +14,8 @@ var class_limited_pointer_array =
     [ "ReleaseObjectAndResetArray", "class_limited_pointer_array.html#a5e34faa11f4b901153f85428027aa21e", null ],
     [ "ResetArray", "class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c", null ],
     [ "SortArray", "class_limited_pointer_array.html#a1093a96cb123b3fed52bdfcea1055f33", null ],
-    [ "SortTheTwoObject", "class_limited_pointer_array.html#a0d33dc5dd8ed01bb00accd6378aa1b47", null ]
+    [ "SortTheTwoObject", "class_limited_pointer_array.html#a0d33dc5dd8ed01bb00accd6378aa1b47", null ],
+    [ "array_", "class_limited_pointer_array.html#a80e958d7818fc6ee0e757b56abc937a4", null ],
+    [ "end_pointer_", "class_limited_pointer_array.html#a7da38a8f2ea9a4b030f64f0e8adc27e8", null ],
+    [ "registration_map_", "class_limited_pointer_array.html#a4f3ca120f5fc23ee3db798cb701d61a0", null ]
 ];

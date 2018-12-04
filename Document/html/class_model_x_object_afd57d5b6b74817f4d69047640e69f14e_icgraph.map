@@ -1,0 +1,5 @@
+<map id="ModelXObject::GetDecaleTextureName" name="ModelXObject::GetDecaleTextureName">
+<area shape="rect" id="node2" href="$class_player_draw.html#a6cecfb28942044efff0b9d6213b511a5" title="PlayerDraw::GetDecaleTexture" alt="" coords="311,5,511,32"/>
+<area shape="rect" id="node3" href="$class_sky_dome_draw.html#a1d708782f13648724e423d1dca22b213" title="SkyDomeDraw::GetDecaleTexture" alt="" coords="301,56,521,83"/>
+<area shape="rect" id="node4" href="$class_stencil_shadow_test_draw.html#a387a97781f743aa0ea0727c050ef53b2" title="StencilShadowTestDraw\l::GetDecaleTexture" alt="" coords="330,107,493,149"/>
+</map>

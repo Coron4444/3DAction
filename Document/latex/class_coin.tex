@@ -4,10 +4,22 @@
 
 {\ttfamily \#include $<$Coin.\+h$>$}
 
-Coin の継承関係図\begin{figure}[H]
+
+
+Coin の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_coin}
+\includegraphics[width=174pt]{class_coin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Coin 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -25,7 +37,21 @@ int \mbox{\hyperlink{class_coin_a5b302d3ad7be44267e1f4e6a54b0f23c}{get\+Count}} 
 \item 
 void \mbox{\hyperlink{class_coin_acb3027a1a45470723b7952c73af69878}{set\+Count}} (int value)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}} $\ast$ \mbox{\hyperlink{class_coin_a30f920359d7dd4fa7b44f5135890c377}{polygon\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_coin_aae793812faef50ec76f8293676150a9a}{count\+\_\+}} = 0
+\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+
+
+ Coin.\+h の 31 行目に定義があります。
+
 
 
 \subsection{関数詳解}
@@ -35,18 +61,58 @@ void \mbox{\hyperlink{class_coin_acb3027a1a45470723b7952c73af69878}{set\+Count}}
 \subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
 {\footnotesize\ttfamily int Coin\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Coin.\+h の 43 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_a5b302d3ad7be44267e1f4e6a54b0f23c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_af435ca01cc92d7214e7bc94ed486ab7b}\label{class_coin_af435ca01cc92d7214e7bc94ed486ab7b}} 
 \index{Coin@{Coin}!Get\+Polygon@{Get\+Polygon}}
 \index{Get\+Polygon@{Get\+Polygon}!Coin@{Coin}}
 \subsubsection{\texorpdfstring{Get\+Polygon()}{GetPolygon()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}}$\ast$ Coin\+::\+Get\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Coin.\+h の 41 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_coin_af435ca01cc92d7214e7bc94ed486ab7b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_aecb007762f15ecc91cd6a699e60c2e19}\label{class_coin_aecb007762f15ecc91cd6a699e60c2e19}} 
 \index{Coin@{Coin}!Init@{Init}}
 \index{Init@{Init}!Coin@{Coin}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Coin\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision }\end{DoxyParamCaption})}
 
+
+
+ Coin.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_aecb007762f15ecc91cd6a699e60c2e19_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_aecb007762f15ecc91cd6a699e60c2e19_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_a52c50229ce7c1e0f459e198adac70c8d}\label{class_coin_a52c50229ce7c1e0f459e198adac70c8d}} 
 \index{Coin@{Coin}!Reset@{Reset}}
 \index{Reset@{Reset}!Coin@{Coin}}
@@ -61,12 +127,27 @@ void \mbox{\hyperlink{class_coin_acb3027a1a45470723b7952c73af69878}{set\+Count}}
 
 \mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
+
+
+ Coin.\+cpp の 67 行目に定義があります。
+
 \mbox{\Hypertarget{class_coin_acb3027a1a45470723b7952c73af69878}\label{class_coin_acb3027a1a45470723b7952c73af69878}} 
 \index{Coin@{Coin}!set\+Count@{set\+Count}}
 \index{set\+Count@{set\+Count}!Coin@{Coin}}
 \subsubsection{\texorpdfstring{set\+Count()}{setCount()}}
 {\footnotesize\ttfamily void Coin\+::set\+Count (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Coin.\+h の 44 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_acb3027a1a45470723b7952c73af69878_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_a4d364dcb4b57b80ea00ce931d0bb300f}\label{class_coin_a4d364dcb4b57b80ea00ce931d0bb300f}} 
 \index{Coin@{Coin}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Coin@{Coin}}
@@ -80,6 +161,40 @@ void \mbox{\hyperlink{class_coin_acb3027a1a45470723b7952c73af69878}{set\+Count}}
 
 
 \mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
+
+
+
+ Coin.\+cpp の 50 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_a4d364dcb4b57b80ea00ce931d0bb300f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_coin_aae793812faef50ec76f8293676150a9a}\label{class_coin_aae793812faef50ec76f8293676150a9a}} 
+\index{Coin@{Coin}!count\+\_\+@{count\+\_\+}}
+\index{count\+\_\+@{count\+\_\+}!Coin@{Coin}}
+\subsubsection{\texorpdfstring{count\+\_\+}{count\_}}
+{\footnotesize\ttfamily int Coin\+::count\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Coin.\+h の 50 行目に定義があります。
+
+\mbox{\Hypertarget{class_coin_a30f920359d7dd4fa7b44f5135890c377}\label{class_coin_a30f920359d7dd4fa7b44f5135890c377}} 
+\index{Coin@{Coin}!polygon\+\_\+@{polygon\+\_\+}}
+\index{polygon\+\_\+@{polygon\+\_\+}!Coin@{Coin}}
+\subsubsection{\texorpdfstring{polygon\+\_\+}{polygon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}}$\ast$ Coin\+::polygon\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Coin.\+h の 49 行目に定義があります。
 
 
 

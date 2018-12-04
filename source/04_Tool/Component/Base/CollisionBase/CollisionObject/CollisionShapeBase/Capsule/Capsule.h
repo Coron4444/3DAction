@@ -1,98 +1,93 @@
 //================================================================================
-//
-//    カプセルクラス
-//    Author : Araki Kai                                作成日 : 2017/12/21
-//
+//!	@file	 Capsule.h
+//!	@brief	 カプセルClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/02
 //================================================================================
-
 #ifndef	_CAPSULE_H_
 #define _CAPSULE_H_
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include "../CollisionShapeBase.h"
 #include "../Cylinder/Cylinder.h"
-#include "../Segment/Segment.h"
 #include "../Sphere/Sphere.h"
 
 #include <Vector3D.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+//************************************************************														   
+//! @brief   カプセルClass
+//!
+//! @details カプセルのClass
+//************************************************************
 class Capsule : public CollisionShapeBase
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デフォルトコンストラクタ
-	Capsule(Segment segment = Segment(Vec3(0.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 0.0f)), 
-		    float   radius  = 1.0f);
+//====================
+// 変数
+//====================
+private:
+	Cylinder cylinder_;		//!< 円柱
+	Sphere sphere0_;		//!< 球
+	Sphere sphere1_;		//!< 球
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デストラクタ
-	virtual ~Capsule();
+//====================
+// 関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	Capsule() : CollisionShapeBase(CollisionShapeBase::Type::CAPSULE) {}
 
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param[in] position 始点座標
+	//! @param[in] vector   方向
+	//! @param[in] radius   半径
+	//! @retval void なし
+	//----------------------------------------
+	void Init(Vector3D position, Vector3D vector, float radius)
+	{
+		// 円柱
+		cylinder_.Init(position, vector, radius);
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ変数
-	Segment  segment_;
-	float    radius_;
-	Sphere   sphere0_;
-	Sphere   sphere1_;
-	Cylinder cylinder_;
+		// 球
+		sphere0_.Init(*cylinder_.getpPosition(), radius);
+		sphere1_.Init(cylinder_.getAddVectorToPosition(), radius);
+	}
+
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Update()
+	{
+		// 球
+		*sphere0_.getpPosition() = *cylinder_.getpPosition();
+		sphere0_.setRadius(cylinder_.getRadius());
+		*sphere1_.getpPosition() = cylinder_.getAddVectorToPosition();
+		sphere1_.setRadius(cylinder_.getRadius());
+	}
+
+	// プロパティ
+	Sphere* getpSphere0() { return &sphere0_; }
+	Sphere* getpSphere1() { return &sphere1_; }
+	Cylinder* getpCylinder() { return &cylinder_; }
+	LineSegment* getpLineSegment() { return cylinder_.getpLineSegment(); }
+	Vector3D* getpPosition() { return cylinder_.getpPosition(); }
+	Vector3D* getpVector() { return cylinder_.getpVector(); }
+	Vector3D getAddVectorToPosition() { return cylinder_.getAddVectorToPosition(); }
+	float getRadius() { return cylinder_.getRadius(); }
+	void setRadius(float value) { cylinder_.setRadius(value); }
 };
-
-
-
-
-
-//======================================================================
-//
-// 非静的メンバ関数定義( inline )
-//
-//======================================================================
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デフォルトコンストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Capsule::Capsule(Segment segment, float radius)
-	: CollisionShapeBase(CollisionShapeBase::Type::CAPSULE),
-	  segment_ (segment), 
-	  radius_  (radius),
-	  sphere0_ (segment_.position_, radius_),
-	  sphere1_ (segment_.GetAddVectorPosition(), radius_),
-	  cylinder_(sphere0_.position_, sphere1_.position_, radius)
-{
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Capsule::~Capsule() 
-{
-}
 
 
 

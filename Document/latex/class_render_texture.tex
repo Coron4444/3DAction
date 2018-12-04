@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Render\+Texture.\+h$>$}
 
-Render\+Texture の継承関係図\begin{figure}[H]
+
+
+Render\+Texture の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_render_texture}
+\includegraphics[width=169pt]{class_render_texture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Render\+Texture 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -30,12 +42,23 @@ const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\
 \item 
 D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0}{Get\+Material}} ()
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}} $\ast$ \mbox{\hyperlink{class_render_texture_ad354ed8b9968b5741feb43775cc821b9}{plane\+\_\+polygon\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 板ポリゴン \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform}{Transform}} \mbox{\hyperlink{class_render_texture_a390e49a5efe8a6a977e8ba287ec969a2}{transform\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 状態 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 フェードクラス 
 
 フェードのクラス 
+
+ Render\+Texture.\+h の 31 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_render_texture_a529ab829c676470ae5764b42cba9efb0}\label{class_render_texture_a529ab829c676470ae5764b42cba9efb0}} 
@@ -52,12 +75,50 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
 \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
 
+
+
+ Render\+Texture.\+h の 77 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_render_texture_a529ab829c676470ae5764b42cba9efb0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_a529ab829c676470ae5764b42cba9efb0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0}\label{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0}} 
 \index{Render\+Texture@{Render\+Texture}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Render\+Texture@{Render\+Texture}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
 {\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$ Render\+Texture\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Render\+Texture.\+h の 93 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae}\label{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae}} 
 \index{Render\+Texture@{Render\+Texture}!Get\+Matrix@{Get\+Matrix}}
 \index{Get\+Matrix@{Get\+Matrix}!Render\+Texture@{Render\+Texture}}
@@ -68,6 +129,25 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
 \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
 
+
+
+ Render\+Texture.\+h の 87 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_render_texture_a498eb8be8672e01164b3770cdff43291}\label{class_render_texture_a498eb8be8672e01164b3770cdff43291}} 
 \index{Render\+Texture@{Render\+Texture}!Init@{Init}}
 \index{Init@{Init}!Render\+Texture@{Render\+Texture}}
@@ -82,6 +162,18 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
 \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
+
+
+ Render\+Texture.\+h の 48 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_a498eb8be8672e01164b3770cdff43291_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8}\label{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8}} 
 \index{Render\+Texture@{Render\+Texture}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Render\+Texture@{Render\+Texture}}
@@ -96,11 +188,82 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
 \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
 
+
+
+ Render\+Texture.\+h の 57 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_render_texture_ac27f8cfac7903dd502de61e22abfc457}\label{class_render_texture_ac27f8cfac7903dd502de61e22abfc457}} 
 \index{Render\+Texture@{Render\+Texture}!Update@{Update}}
 \index{Update@{Update}!Render\+Texture@{Render\+Texture}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
 {\footnotesize\ttfamily void Render\+Texture\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Render\+Texture.\+h の 62 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_ac27f8cfac7903dd502de61e22abfc457_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_render_texture_ac27f8cfac7903dd502de61e22abfc457_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_render_texture_ad354ed8b9968b5741feb43775cc821b9}\label{class_render_texture_ad354ed8b9968b5741feb43775cc821b9}} 
+\index{Render\+Texture@{Render\+Texture}!plane\+\_\+polygon\+\_\+@{plane\+\_\+polygon\+\_\+}}
+\index{plane\+\_\+polygon\+\_\+@{plane\+\_\+polygon\+\_\+}!Render\+Texture@{Render\+Texture}}
+\subsubsection{\texorpdfstring{plane\+\_\+polygon\+\_\+}{plane\_polygon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}}$\ast$ Render\+Texture\+::plane\+\_\+polygon\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+板ポリゴン 
+
+
+
+ Render\+Texture.\+h の 37 行目に定義があります。
+
+\mbox{\Hypertarget{class_render_texture_a390e49a5efe8a6a977e8ba287ec969a2}\label{class_render_texture_a390e49a5efe8a6a977e8ba287ec969a2}} 
+\index{Render\+Texture@{Render\+Texture}!transform\+\_\+@{transform\+\_\+}}
+\index{transform\+\_\+@{transform\+\_\+}!Render\+Texture@{Render\+Texture}}
+\subsubsection{\texorpdfstring{transform\+\_\+}{transform\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}} Render\+Texture\+::transform\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+状態 
+
+
+
+ Render\+Texture.\+h の 38 行目に定義があります。
 
 
 

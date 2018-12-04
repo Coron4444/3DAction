@@ -8,5 +8,7 @@ var class_coin_draw =
     [ "Init", "class_coin_draw.html#ad0f5da5cfb896541fd59b1ab4a8593d1", null ],
     [ "SettingBeforeDrawing", "class_coin_draw.html#a66c03acd675ac1820977cb21015abfdb", null ],
     [ "Uninit", "class_coin_draw.html#a6484c22a5598e298f18e7cd6083cd551", null ],
-    [ "Update", "class_coin_draw.html#a6157b17bf1706b85156aad0d88acfd7e", null ]
+    [ "Update", "class_coin_draw.html#a6157b17bf1706b85156aad0d88acfd7e", null ],
+    [ "coin_", "class_coin_draw.html#a62baab6b1a22df45ce4c81970f4a38f4", null ],
+    [ "decale_texture_", "class_coin_draw.html#ab694450b118b4a251bcff5816df85168", null ]
 ];

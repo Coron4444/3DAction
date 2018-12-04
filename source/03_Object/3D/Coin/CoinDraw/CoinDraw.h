@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    コイン描画クラス
-//    Author : Araki Kai                                作成日 : 2018/07/24
-//
+//!	@file	 CoinDraw.h
+//!	@brief	 コイン描画Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
-
 #ifndef	_COIN_DRAW_H_
 #define _COIN_DRAW_H_
 
@@ -15,81 +14,80 @@
 //****************************************
 #include <string>
 
-#include <Component/Draw/DrawNull/DrawNull.h>
 #include "../Coin.h"
+#include <Component/Draw/DrawNull/DrawNull.h>
 
 
 
-/*********************************************************//**
-* @brief
-* コインロゴ描画クラス
-*
-* コインロゴの描画クラス
-*************************************************************/
+//************************************************************														   
+//! @brief   コインロゴ描画Class
+//!
+//! @details コインロゴの描画Class
+//************************************************************
 class CoinDraw : public DrawNull
 {
-//==============================
+//====================
 // 定数
-//==============================
+//====================
 private:
 	static const std::string DECALE_TEXTURE;	//!< デカールテクスチャ名
 	
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	Coin* coin_;						//!< コイン
 	TextureObject* decale_texture_;		//!< デカールテクスチャ
 
 
-
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 初期化関数
-	*/
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Init() override;
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Uninit() override;
 
-	/**
-	* @brief
-	* 更新関数
-	*/
-	virtual void Update() override;
+	//----------------------------------------
+	//! @brief 更新関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Update() override;
 
-	/**
-	* @brief
-	* 描画関数
-	* @param
-	* object_index : オブジェクトインデックス
-	* mesh_index : メッシュインデックス
-	*/
+	//----------------------------------------
+	//! @brief 描画関数
+	//! @param[in] object_index オブジェクトインデックス
+	//! @param[in] mesh_index   メッシュインデックス
+	//! @retval void なし
+	//----------------------------------------
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
-	/**
-	* @brief
-	* 描画前設定関数
-	* @param
-	* camera : カメラ
-	* object_index : オブジェクトインデックス
-	*/
-	virtual void SettingBeforeDrawing(Camera* camera, unsigned object_index) override;
+	//----------------------------------------
+	//! @brief 描画前設定関数
+	//! @param[in] camera       カメラ
+	//! @param[in] object_index オブジェクトインデックス
+	//! @retval void なし
+	//----------------------------------------
+	void SettingBeforeDrawing(Camera* camera, unsigned object_index) override;
 
 
 	// プロパティ
-	const MATRIX* GetMatrix(unsigned object_index) override;
-	unsigned GetMeshNum(unsigned object_index) override;
-	D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) override;
-	LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) override;
+	unsigned getMeshNum(unsigned object_index) override;
+	MATRIX* getpMatrix(unsigned object_index) override;
+	D3DMATERIAL9* getpMaterial(unsigned object_index, unsigned mesh_index) override;
+	LPDIRECT3DTEXTURE9 getpDecaleTexture(unsigned object_index, unsigned mesh_index) override;
 };
 
 

@@ -90,7 +90,7 @@ EffekseerObject::~EffekseerObject()
 void EffekseerObject::Update()
 {
 	// ワールド行列の設定
-	SetWorldMatrix(transform_.GetWorldMatrix());
+	SetWorldMatrix(transform_.getpWorldMatrix());
 
 	// 再生中かどうか
 	is_playing_ = effekseer_manager_->Exists(effekseer_handle_);
@@ -240,7 +240,7 @@ void EffekseerObject::InitRenderer_Manager()
 {
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
-	Renderer::GetInstance()->GetDevice(&device);
+	Renderer::getpInstance()->getDevice(&device);
 	if (device == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(EffekseerObject.cpp)", "Error", MB_OK);

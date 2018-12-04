@@ -1,0 +1,5 @@
+<map id="GameScene::SetScore" name="GameScene::SetScore">
+<area shape="rect" id="node2" href="$class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="227,5,387,47"/>
+<area shape="rect" id="node3" href="$class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="209,71,404,98"/>
+<area shape="rect" id="node4" href="$class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="452,71,633,98"/>
+</map>

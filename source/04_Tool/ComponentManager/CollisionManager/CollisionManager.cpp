@@ -61,7 +61,7 @@ void CollisionManager::Uninit()
 		{
 			// 移動オブジェクトはリストから一時的に離脱する
 			ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
-				->getCollisionObjects(j)->getObjectOfTree();
+				->getpCollisionObjects(j)->getObjectOfTree();
 			temp->DeleteFromList();
 			SafeRelease::Normal(&temp);
 		}
@@ -95,7 +95,7 @@ void CollisionManager::UninitWhenChangeScene()
 		{
 			// 移動オブジェクトはリストから一時的に離脱する
 			ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
-				->getCollisionObjects(j)->getObjectOfTree();
+				->getpCollisionObjects(j)->getObjectOfTree();
 			temp->DeleteFromList();
 			SafeRelease::Normal(&temp);
 		}
@@ -140,13 +140,13 @@ void CollisionManager::Update()
 			{
 				// 移動オブジェクトはリストから一時的に離脱する
 				ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
-					->getCollisionObjects(j)->getObjectOfTree();
+					->getpCollisionObjects(j)->getObjectOfTree();
 				temp->DeleteFromList();
 
 				// 再登録
 				liner_octree_->Add(temp,
-								   temp->getObject()->getOctreeAABB()->getMin(),
-								   temp->getObject()->getOctreeAABB()->getMax());
+								   temp->getObject()->getOctreeAABB()->getpMin(),
+								   temp->getObject()->getOctreeAABB()->getpMax());
 			}
 		}
 		liner_octree_->UpdateCollisionList(&collision_objects_list_);
@@ -225,7 +225,7 @@ void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 
 		// 新規コンポーネントの初期化
 		game_object->SetCollision(new_collision);
-		new_collision->SetGameObject(game_object);
+		*new_collision->getpGameObject() = *game_object;
 		new_collision->Init();
 	}
 }
@@ -240,7 +240,7 @@ void CollisionManager::ReleaseCollisionBaseFromArray(CollisionBase* collision)
 	// 8分木から消去
 	for (unsigned i = 0; i < collision->getEndIndexOfArray(); i++)
 	{
-		ObjectOfTree<CollisionObjects*>* temp = collision->getCollisionObjects(i)->getObjectOfTree();
+		ObjectOfTree<CollisionObjects*>* temp = collision->getpCollisionObjects(i)->getObjectOfTree();
 		temp->DeleteFromList();
 		SafeRelease::Normal(&temp);
 	}
@@ -278,11 +278,11 @@ void CollisionManager::AddContentsOfAwaitAddArray()
 		for (unsigned j = 0; j < await_add_.GetArrayObject(i)->getEndIndexOfArray(); j++)
 		{
 			ObjectOfTree<CollisionObjects*>* temp = new ObjectOfTree<CollisionObjects*>;
-			CollisionObjects* temp_objects = await_add_.GetArrayObject(i)->getCollisionObjects(j);
+			CollisionObjects* temp_objects = await_add_.GetArrayObject(i)->getpCollisionObjects(j);
 			temp->setObject(temp_objects);
 			temp_objects->setObjectOfTree(temp);
-			liner_octree_->Add(temp, temp_objects->getOctreeAABB()->getMin(),
-							   temp_objects->getOctreeAABB()->getMax());
+			liner_octree_->Add(temp, temp_objects->getOctreeAABB()->getpMin(),
+							   temp_objects->getOctreeAABB()->getpMax());
 		}
 	}
 
@@ -333,7 +333,7 @@ void CollisionManager::CollisionDetermination()
 			if (!CollisionPairCheck::IsCheck(collision_objects_list_[i * 2]->getCollisionBase(),
 											 collision_objects_list_[i * 2 + 1]->getCollisionBase())) continue;
 		}
-		
+
 		// 実際の判定処理
 		ActualCalculation(collision_objects_list_[i * 2],
 						  collision_objects_list_[i * 2 + 1]);
@@ -379,28 +379,28 @@ void CollisionManager::OldCollisionDetermination()
 				if (!CollisionPairCheck::IsCheck(all_collision_.GetArrayObject(i),
 												 all_collision_.GetArrayObject(j))) continue;
 			}
-			
+
 			for (unsigned a = 0; a < all_collision_.GetArrayObject(i)->getEndIndexOfArray(); a++)
 			{
 				// 複数衝突オブジェクトが判定するかどうか
-				if (!all_collision_.GetArrayObject(i)->getCollisionObjects(a)
+				if (!all_collision_.GetArrayObject(i)->getpCollisionObjects(a)
 					->getIsJudgment()) continue;
 
 				for (unsigned b = 0; b < all_collision_.GetArrayObject(i)->getEndIndexOfArray(); b++)
 				{
 					// 複数衝突オブジェクトが判定するかどうか
-					if (!all_collision_.GetArrayObject(j)->getCollisionObjects(b)
+					if (!all_collision_.GetArrayObject(j)->getpCollisionObjects(b)
 						->getIsJudgment()) continue;
 
 					// 実際の判定処理
-					ActualCalculation(all_collision_.GetArrayObject(i)->getCollisionObjects(a),
-									  all_collision_.GetArrayObject(j)->getCollisionObjects(b));
+					ActualCalculation(all_collision_.GetArrayObject(i)->getpCollisionObjects(a),
+									  all_collision_.GetArrayObject(j)->getpCollisionObjects(b));
 
 					// 各コンポーネントの衝突オブジェクトの判定をリセット
-					if (all_collision_.GetArrayObject(i)->getCollisionObjects(a)
+					if (all_collision_.GetArrayObject(i)->getpCollisionObjects(a)
 						->getIsJudgment())
 					{
-						all_collision_.GetArrayObject(i)->getCollisionObjects(a)
+						all_collision_.GetArrayObject(i)->getpCollisionObjects(a)
 							->ResetHitDataAllCollisionObject();
 					}
 					else
@@ -409,10 +409,10 @@ void CollisionManager::OldCollisionDetermination()
 						break;
 					}
 
-					if (all_collision_.GetArrayObject(j)->getCollisionObjects(b)
+					if (all_collision_.GetArrayObject(j)->getpCollisionObjects(b)
 						->getIsJudgment())
 					{
-						all_collision_.GetArrayObject(j)->getCollisionObjects(b)
+						all_collision_.GetArrayObject(j)->getpCollisionObjects(b)
 							->ResetHitDataAllCollisionObject();
 					}
 					else
@@ -443,12 +443,12 @@ void CollisionManager::CollisionGround()
 
 		// 地面高さ取得
 		float position_y = ground_polygon_->GetHeight(*all_collision_.GetArrayObject(i)
-													  ->GetGameObject()->GetTransform()
+													  ->getpGameObject()->GetTransform()
 													  ->GetPosition());
 
 		// 衝突してるか
 		if (position_y >= all_collision_.GetArrayObject(i)
-			->GetGameObject()->GetTransform()->GetPosition()->y)
+			->getpGameObject()->GetTransform()->GetPosition()->y)
 		{
 			// 地面との衝突処理
 			all_collision_.GetArrayObject(i)->HitGround(position_y);
@@ -528,11 +528,11 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 {
 	bool is_hit = false;
 
-	switch (collision_object0->getCollisionShape()->getType())
+	switch (collision_object0->getpCollisionShape()->getType())
 	{
 		case CollisionShapeBase::Type::AABB:
 		{
-			/*switch(collision_object1->getCollisionShape()->getType())
+			/*switch(collision_object1->getpCollisionShape()->getType())
 			{
 				default :
 					break;
@@ -541,28 +541,28 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 		}
 		case CollisionShapeBase::Type::CAPSULE:
 		{
-			switch (collision_object1->getCollisionShape()->getType())
+			switch (collision_object1->getpCollisionShape()->getType())
 			{
 				case CollisionShapeBase::Type::CAPSULE:
 				{
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Capsule_Capsule(&temp_vector,
-						(Capsule*)collision_object0->getCollisionShape(),
-																		 (Capsule*)collision_object1->getCollisionShape());
+						(Capsule*)collision_object0->getpCollisionShape(),
+																		 (Capsule*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
 
 					break;
 				}
-				case CollisionShapeBase::Type::SEGMENT:
+				case CollisionShapeBase::Type::LINE_SEGMENT:
 				{
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Capsule(&temp_position,
-						(Segment*)collision_object1->getCollisionShape(),
-																		   (Capsule*)collision_object0->getCollisionShape());
+						(LineSegment*)collision_object1->getpCollisionShape(),
+																		   (Capsule*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -574,8 +574,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_Capsule(&temp_vector,
-						(Sphere*)collision_object1->getCollisionShape(),
-																		(Capsule*)collision_object0->getCollisionShape());
+						(Sphere*)collision_object1->getpCollisionShape(),
+																		(Capsule*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(-temp_vector);
 					collision_object1->setHitVector(temp_vector);
@@ -587,15 +587,15 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 		}
 		case CollisionShapeBase::Type::CYLINDER:
 		{
-			switch (collision_object1->getCollisionShape()->getType())
+			switch (collision_object1->getpCollisionShape()->getType())
 			{
-				case CollisionShapeBase::Type::SEGMENT:
+				case CollisionShapeBase::Type::LINE_SEGMENT:
 				{
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Cylinder(&temp_position,
-						(Segment*)collision_object1->getCollisionShape(),
-																			(Cylinder*)collision_object0->getCollisionShape());
+						(LineSegment*)collision_object1->getpCollisionShape(),
+																			(Cylinder*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -607,15 +607,15 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 		}
 		case CollisionShapeBase::Type::OBB:
 		{
-			switch (collision_object1->getCollisionShape()->getType())
+			switch (collision_object1->getpCollisionShape()->getType())
 			{
 				case CollisionShapeBase::Type::OBB:
 				{
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_OBB_OBB(&temp_vector,
-						(OBB*)collision_object0->getCollisionShape(),
-																 (OBB*)collision_object1->getCollisionShape());
+						(OBB*)collision_object0->getpCollisionShape(),
+																 (OBB*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
@@ -627,8 +627,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_OBB(&temp_vector,
-						(Sphere*)collision_object1->getCollisionShape(),
-																	(OBB*)collision_object0->getCollisionShape());
+						(Sphere*)collision_object1->getpCollisionShape(),
+																	(OBB*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(-temp_vector);
 					collision_object1->setHitVector(temp_vector);
@@ -640,26 +640,26 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 		}
 		case CollisionShapeBase::Type::PLANE:
 		{
-			switch (collision_object1->getCollisionShape()->getType())
+			switch (collision_object1->getpCollisionShape()->getType())
 			{
 				case CollisionShapeBase::Type::PLANE:
 				{
 					is_hit = CollisionJudgment::HitCheck_Plane_Plane(nullptr,
-						(Plane*)collision_object0->getCollisionShape(),
-																	 (Plane*)collision_object1->getCollisionShape());
+						(Plane*)collision_object0->getpCollisionShape(),
+																	 (Plane*)collision_object1->getpCollisionShape());
 
-					collision_object0->getHitVector()->ResetVector();
-					collision_object1->getHitVector()->ResetVector();
+					collision_object0->getpHitVector()->ResetVector();
+					collision_object1->getpHitVector()->ResetVector();
 
 					break;
 				}
-				case CollisionShapeBase::Type::SEGMENT:
+				case CollisionShapeBase::Type::LINE_SEGMENT:
 				{
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Plane(&temp_position,
-						(Segment*)collision_object1->getCollisionShape(),
-																		 (Plane*)collision_object0->getCollisionShape());
+						(LineSegment*)collision_object1->getpCollisionShape(),
+																		 (Plane*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -671,8 +671,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_Plane(&temp_vector,
-						(Sphere*)collision_object1->getCollisionShape(),
-																	  (Plane*)collision_object0->getCollisionShape());
+						(Sphere*)collision_object1->getpCollisionShape(),
+																	  (Plane*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(-temp_vector);
 					collision_object1->setHitVector(temp_vector);
@@ -681,28 +681,28 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 				}
 				case CollisionShapeBase::Type::TRIANGLE:
 				{
-					is_hit = CollisionJudgment::HitCheck_Plane_Triangle((Plane*)collision_object0->getCollisionShape(),
-						(Triangle*)collision_object1->getCollisionShape());
+					is_hit = CollisionJudgment::HitCheck_Plane_Triangle((Plane*)collision_object0->getpCollisionShape(),
+						(Triangle*)collision_object1->getpCollisionShape());
 
-					collision_object0->getHitVector()->ResetVector();
-					collision_object1->getHitVector()->ResetVector();
+					collision_object0->getpHitVector()->ResetVector();
+					collision_object1->getpHitVector()->ResetVector();
 
 					break;
 				}
 			}
 			break;
 		}
-		case CollisionShapeBase::Type::SEGMENT:
+		case CollisionShapeBase::Type::LINE_SEGMENT:
 		{
-			switch (collision_object1->getCollisionShape()->getType())
+			switch (collision_object1->getpCollisionShape()->getType())
 			{
 				case CollisionShapeBase::Type::CAPSULE:
 				{
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Capsule(&temp_position,
-						(Segment*)collision_object0->getCollisionShape(),
-																		   (Capsule*)collision_object1->getCollisionShape());
+						(LineSegment*)collision_object0->getpCollisionShape(),
+																		   (Capsule*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -713,8 +713,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Cylinder(&temp_position,
-						(Segment*)collision_object0->getCollisionShape(),
-																			(Cylinder*)collision_object1->getCollisionShape());
+						(LineSegment*)collision_object0->getpCollisionShape(),
+																			(Cylinder*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -726,21 +726,21 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Plane(&temp_position,
-						(Segment*)collision_object0->getCollisionShape(),
-																		 (Plane*)collision_object1->getCollisionShape());
+						(LineSegment*)collision_object0->getpCollisionShape(),
+																		 (Plane*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
 
 					break;
 				}
-				case CollisionShapeBase::Type::SEGMENT:
+				case CollisionShapeBase::Type::LINE_SEGMENT:
 				{
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment2D_Segment2D(&temp_position,
-						(Segment*)collision_object0->getCollisionShape(),
-																			 (Segment*)collision_object1->getCollisionShape());
+						(LineSegment*)collision_object0->getpCollisionShape(),
+																			 (LineSegment*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -752,8 +752,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Sphere(&temp_position,
-						(Segment*)collision_object0->getCollisionShape(),
-																		  (Sphere*)collision_object1->getCollisionShape());
+						(LineSegment*)collision_object0->getpCollisionShape(),
+																		  (Sphere*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -765,8 +765,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Triangle(&temp_position,
-						(Segment*)collision_object0->getCollisionShape(),
-																			(Triangle*)collision_object1->getCollisionShape());
+						(LineSegment*)collision_object0->getpCollisionShape(),
+																			(Triangle*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -778,15 +778,15 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 		}
 		case CollisionShapeBase::Type::SPHERE:
 		{
-			switch (collision_object1->getCollisionShape()->getType())
+			switch (collision_object1->getpCollisionShape()->getType())
 			{
 				case CollisionShapeBase::Type::CAPSULE:
 				{
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_Capsule(&temp_vector,
-						(Sphere*)collision_object0->getCollisionShape(),
-																		(Capsule*)collision_object1->getCollisionShape());
+						(Sphere*)collision_object0->getpCollisionShape(),
+																		(Capsule*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
@@ -798,8 +798,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_OBB(&temp_vector,
-						(Sphere*)collision_object0->getCollisionShape(),
-																	(OBB*)collision_object1->getCollisionShape());
+						(Sphere*)collision_object0->getpCollisionShape(),
+																	(OBB*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
@@ -812,21 +812,21 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_Plane(&temp_vector,
-						(Sphere*)collision_object0->getCollisionShape(),
-																	  (Plane*)collision_object1->getCollisionShape());
+						(Sphere*)collision_object0->getpCollisionShape(),
+																	  (Plane*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
 
 					break;
 				}
-				case CollisionShapeBase::Type::SEGMENT:
+				case CollisionShapeBase::Type::LINE_SEGMENT:
 				{
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Sphere(&temp_position,
-						(Segment*)collision_object0->getCollisionShape(),
-																		  (Sphere*)collision_object1->getCollisionShape());
+						(LineSegment*)collision_object0->getpCollisionShape(),
+																		  (Sphere*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -839,8 +839,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_Sphere(&temp_vector,
-						(Sphere*)collision_object0->getCollisionShape(),
-																	   (Sphere*)collision_object1->getCollisionShape());
+						(Sphere*)collision_object0->getpCollisionShape(),
+																	   (Sphere*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
@@ -853,8 +853,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_Triangle(&temp_vector,
-						(Sphere*)collision_object0->getCollisionShape(),
-																		 (Triangle*)collision_object1->getCollisionShape());
+						(Sphere*)collision_object0->getpCollisionShape(),
+																		 (Triangle*)collision_object1->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
@@ -866,25 +866,25 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 		}
 		case CollisionShapeBase::Type::TRIANGLE:
 		{
-			switch (collision_object1->getCollisionShape()->getType())
+			switch (collision_object1->getpCollisionShape()->getType())
 			{
 				case CollisionShapeBase::Type::PLANE:
 				{
-					is_hit = CollisionJudgment::HitCheck_Plane_Triangle((Plane*)collision_object1->getCollisionShape(),
-						(Triangle*)collision_object0->getCollisionShape());
+					is_hit = CollisionJudgment::HitCheck_Plane_Triangle((Plane*)collision_object1->getpCollisionShape(),
+						(Triangle*)collision_object0->getpCollisionShape());
 
-					collision_object0->getHitVector()->ResetVector();
-					collision_object1->getHitVector()->ResetVector();
+					collision_object0->getpHitVector()->ResetVector();
+					collision_object1->getpHitVector()->ResetVector();
 
 					break;
 				}
-				case CollisionShapeBase::Type::SEGMENT:
+				case CollisionShapeBase::Type::LINE_SEGMENT:
 				{
 					Vector3D temp_position;
 
 					is_hit = CollisionJudgment::HitCheck_Segment3D_Triangle(&temp_position,
-						(Segment*)collision_object1->getCollisionShape(),
-																			(Triangle*)collision_object0->getCollisionShape());
+						(LineSegment*)collision_object1->getpCollisionShape(),
+																			(Triangle*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_position);
 					collision_object1->setHitVector(temp_position);
@@ -896,8 +896,8 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 					Vector3D temp_vector;
 
 					is_hit = CollisionJudgment::HitCheck_Sphere_Triangle(&temp_vector,
-						(Sphere*)collision_object1->getCollisionShape(),
-																		 (Triangle*)collision_object0->getCollisionShape());
+						(Sphere*)collision_object1->getpCollisionShape(),
+																		 (Triangle*)collision_object0->getpCollisionShape());
 
 					collision_object0->setHitVector(temp_vector);
 					collision_object1->setHitVector(-temp_vector);
@@ -906,11 +906,11 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 				}
 				case CollisionShapeBase::Type::TRIANGLE:
 				{
-					is_hit = CollisionJudgment::HitCheck_Triangle_Triangle((Triangle*)collision_object0->getCollisionShape(),
-						(Triangle*)collision_object1->getCollisionShape());
+					is_hit = CollisionJudgment::HitCheck_Triangle_Triangle((Triangle*)collision_object0->getpCollisionShape(),
+						(Triangle*)collision_object1->getpCollisionShape());
 
-					collision_object0->getHitVector()->ResetVector();
-					collision_object1->getHitVector()->ResetVector();
+					collision_object0->getpHitVector()->ResetVector();
+					collision_object1->getpHitVector()->ResetVector();
 
 					break;
 				}
@@ -967,9 +967,9 @@ void CollisionManager::DebugDisplay()
 		is_octree_ ^= 1;
 	}
 
-	
 
-	
+
+
 
 	// 終了
 	ImGui::End();

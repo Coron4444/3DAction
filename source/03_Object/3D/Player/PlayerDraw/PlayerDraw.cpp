@@ -35,10 +35,10 @@ const std::string PlayerDraw::NORMAL_TEXTURE_SWORD = "knight_low/sword_01.png";
 void PlayerDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
@@ -77,25 +77,25 @@ void PlayerDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* PlayerDraw::GetMatrix(unsigned object_index)
+unsigned PlayerDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return player_model_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned PlayerDraw::GetMeshNum(unsigned object_index)
+MATRIX* PlayerDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return player_model_->GetMeshNum();
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -103,7 +103,7 @@ unsigned PlayerDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* PlayerDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* PlayerDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 
@@ -115,7 +115,7 @@ D3DMATERIAL9* PlayerDraw::GetMaterial(unsigned object_index, unsigned mesh_index
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 PlayerDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
+LPDIRECT3DTEXTURE9 PlayerDraw::getpDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 
@@ -127,7 +127,7 @@ LPDIRECT3DTEXTURE9 PlayerDraw::GetDecaleTexture(unsigned object_index, unsigned 
 //--------------------------------------------------
 // +法線テクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 PlayerDraw::GetNormalTexture(unsigned object_index, unsigned mesh_index)
+LPDIRECT3DTEXTURE9 PlayerDraw::getpNormalTexture(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 

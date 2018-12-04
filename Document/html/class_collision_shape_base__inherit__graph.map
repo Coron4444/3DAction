@@ -1,0 +1,10 @@
+<map id="CollisionShapeBase" name="CollisionShapeBase">
+<area shape="rect" id="node2" href="$class_a_a_b_b.html" title="AABBクラス " alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$class_capsule.html" title="Capsule" alt="" coords="88,80,157,107"/>
+<area shape="rect" id="node4" href="$class_cylinder.html" title="Cylinder" alt="" coords="181,80,251,107"/>
+<area shape="rect" id="node5" href="$class_o_b_b.html" title="OBB" alt="" coords="275,80,325,107"/>
+<area shape="rect" id="node6" href="$class_plane.html" title="Plane" alt="" coords="350,80,405,107"/>
+<area shape="rect" id="node7" href="$class_segment.html" title="Segment" alt="" coords="429,80,504,107"/>
+<area shape="rect" id="node8" href="$class_sphere.html" title="Sphere" alt="" coords="529,80,591,107"/>
+<area shape="rect" id="node9" href="$class_triangle.html" title="Triangle" alt="" coords="616,80,683,107"/>
+</map>

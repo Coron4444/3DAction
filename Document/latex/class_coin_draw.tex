@@ -2,17 +2,29 @@
 \label{class_coin_draw}\index{Coin\+Draw@{Coin\+Draw}}
 
 
-コインロゴ描画クラス  
+コインロゴ描画\+Class  
 
 
 
 
 {\ttfamily \#include $<$Coin\+Draw.\+h$>$}
 
-Coin\+Draw の継承関係図\begin{figure}[H]
+
+
+Coin\+Draw の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_coin_draw}
+\includegraphics[width=169pt]{class_coin_draw__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Coin\+Draw 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_draw__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -22,11 +34,11 @@ void \mbox{\hyperlink{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}{Init}} 
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}{Uninit}} () override
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}{Update}} () override
+void \mbox{\hyperlink{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}{Update}} () override
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}{Setting\+Before\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
+void \mbox{\hyperlink{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}{Setting\+Before\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画前設定関数 \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}{Get\+Matrix}} (unsigned object\+\_\+index) override
 \item 
@@ -36,12 +48,28 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_coin_draw_a869a6b72
 \item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_coin}{Coin}} $\ast$ \mbox{\hyperlink{class_coin_draw_a62baab6b1a22df45ce4c81970f4a38f4}{coin\+\_\+}}
+\begin{DoxyCompactList}\small\item\em コイン \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_coin_draw_ab694450b118b4a251bcff5816df85168}{decale\+\_\+texture\+\_\+}}
+\begin{DoxyCompactList}\small\item\em デカールテクスチャ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{class_coin_draw_a3c6a7373d27976867c12bbbd543e1567}{D\+E\+C\+A\+L\+E\+\_\+\+T\+E\+X\+T\+U\+RE}} = \char`\"{}Coin.\+png\char`\"{}
+\begin{DoxyCompactList}\small\item\em デカールテクスチャ名 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
-コインロゴ描画クラス 
+コインロゴ描画\+Class 
 
-コインロゴの描画クラス 
+コインロゴの描画\+Class 
+
+ Coin\+Draw.\+h の 27 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563}\label{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563}} 
@@ -55,14 +83,32 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 描画関数 
 
 
-\begin{DoxyParams}{引数}
-{\em object\+\_\+index} & \+: オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+index} & メッシュインデックス \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
 
+
+
+ Coin\+Draw.\+cpp の 81 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5}\label{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5}} 
 \index{Coin\+Draw@{Coin\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Coin\+Draw@{Coin\+Draw}}
@@ -73,6 +119,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 
 \mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
+
+
+ Coin\+Draw.\+cpp の 143 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_draw_a869a6b7273b273048dd56822fae4d644}\label{class_coin_draw_a869a6b7273b273048dd56822fae4d644}} 
 \index{Coin\+Draw@{Coin\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Coin\+Draw@{Coin\+Draw}}
@@ -83,6 +140,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 
 \mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
+
+
+ Coin\+Draw.\+cpp の 130 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_draw_a869a6b7273b273048dd56822fae4d644_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}\label{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}} 
 \index{Coin\+Draw@{Coin\+Draw}!Get\+Matrix@{Get\+Matrix}}
 \index{Get\+Matrix@{Get\+Matrix}!Coin\+Draw@{Coin\+Draw}}
@@ -93,6 +161,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 
 \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
 
+
+
+ Coin\+Draw.\+cpp の 106 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566}\label{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566}} 
 \index{Coin\+Draw@{Coin\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Coin\+Draw@{Coin\+Draw}}
@@ -103,6 +182,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 
 \mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
+
+
+ Coin\+Draw.\+cpp の 118 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}\label{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}} 
 \index{Coin\+Draw@{Coin\+Draw}!Init@{Init}}
 \index{Init@{Init}!Coin\+Draw@{Coin\+Draw}}
@@ -114,9 +204,30 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 初期化関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
+
+
+ Coin\+Draw.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}\label{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}} 
 \index{Coin\+Draw@{Coin\+Draw}!Setting\+Before\+Drawing@{Setting\+Before\+Drawing}}
 \index{Setting\+Before\+Drawing@{Setting\+Before\+Drawing}!Coin\+Draw@{Coin\+Draw}}
@@ -128,13 +239,24 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 描画前設定関数 
 
 
-\begin{DoxyParams}{引数}
-{\em camera} & \+: カメラ object\+\_\+index \+: オブジェクトインデックス \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em camera} & カメラ \\
+\hline
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
 \hline
 \end{DoxyParams}
 
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}{Draw\+Null}}を再実装しています。
+
+
+
+ Coin\+Draw.\+cpp の 95 行目に定義があります。
 
 \mbox{\Hypertarget{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}\label{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}} 
 \index{Coin\+Draw@{Coin\+Draw}!Uninit@{Uninit}}
@@ -147,8 +269,22 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 終了関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
+
+
+
+ Coin\+Draw.\+cpp の 53 行目に定義があります。
 
 \mbox{\Hypertarget{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}\label{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}} 
 \index{Coin\+Draw@{Coin\+Draw}!Update@{Update}}
@@ -161,8 +297,74 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_coin_dra
 更新関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}{Draw\+Null}}を再実装しています。
+
+
+
+ Coin\+Draw.\+cpp の 62 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_coin_draw_a62baab6b1a22df45ce4c81970f4a38f4}\label{class_coin_draw_a62baab6b1a22df45ce4c81970f4a38f4}} 
+\index{Coin\+Draw@{Coin\+Draw}!coin\+\_\+@{coin\+\_\+}}
+\index{coin\+\_\+@{coin\+\_\+}!Coin\+Draw@{Coin\+Draw}}
+\subsubsection{\texorpdfstring{coin\+\_\+}{coin\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coin}{Coin}}$\ast$ Coin\+Draw\+::coin\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+コイン 
+
+
+
+ Coin\+Draw.\+h の 40 行目に定義があります。
+
+\mbox{\Hypertarget{class_coin_draw_a3c6a7373d27976867c12bbbd543e1567}\label{class_coin_draw_a3c6a7373d27976867c12bbbd543e1567}} 
+\index{Coin\+Draw@{Coin\+Draw}!D\+E\+C\+A\+L\+E\+\_\+\+T\+E\+X\+T\+U\+RE@{D\+E\+C\+A\+L\+E\+\_\+\+T\+E\+X\+T\+U\+RE}}
+\index{D\+E\+C\+A\+L\+E\+\_\+\+T\+E\+X\+T\+U\+RE@{D\+E\+C\+A\+L\+E\+\_\+\+T\+E\+X\+T\+U\+RE}!Coin\+Draw@{Coin\+Draw}}
+\subsubsection{\texorpdfstring{D\+E\+C\+A\+L\+E\+\_\+\+T\+E\+X\+T\+U\+RE}{DECALE\_TEXTURE}}
+{\footnotesize\ttfamily const std\+::string Coin\+Draw\+::\+D\+E\+C\+A\+L\+E\+\_\+\+T\+E\+X\+T\+U\+RE = \char`\"{}Coin.\+png\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+デカールテクスチャ名 
+
+
+
+ Coin\+Draw.\+h の 33 行目に定義があります。
+
+\mbox{\Hypertarget{class_coin_draw_ab694450b118b4a251bcff5816df85168}\label{class_coin_draw_ab694450b118b4a251bcff5816df85168}} 
+\index{Coin\+Draw@{Coin\+Draw}!decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}}
+\index{decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}!Coin\+Draw@{Coin\+Draw}}
+\subsubsection{\texorpdfstring{decale\+\_\+texture\+\_\+}{decale\_texture\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}}$\ast$ Coin\+Draw\+::decale\+\_\+texture\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+デカールテクスチャ 
+
+
+
+ Coin\+Draw.\+h の 41 行目に定義があります。
 
 
 

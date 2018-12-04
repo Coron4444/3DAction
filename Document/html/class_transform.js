@@ -2,6 +2,7 @@ var class_transform =
 [
     [ "Transform", "class_transform.html#aa08ca4266efabc768973cdeea51945ab", null ],
     [ "~Transform", "class_transform.html#aa72e286c069850db80927b0e6554cd3e", null ],
+    [ "CreateQuaternion", "class_transform.html#a7884cb828ace5c921e7138d83c43d689", null ],
     [ "GetAnglePitch", "class_transform.html#a8c4966ea0a5d6cafa79c430e31bf0dff", null ],
     [ "GetAngleRoll", "class_transform.html#a124d6afb5dd0a86952c99f1cec72e394", null ],
     [ "GetAngleYaw", "class_transform.html#a8be9cd3526cc18d64e47b55f4c527dd8", null ],
@@ -26,5 +27,16 @@ var class_transform =
     [ "UpdateInverseMatrix", "class_transform.html#a3d2e5da24fb1c8015f5bb9a6c0a7a7de", null ],
     [ "UpdateTransposeMatrix", "class_transform.html#a486ae5501b5081b22ee053f787e0e4a2", null ],
     [ "UpdateWorldMatrixISRT", "class_transform.html#a3d56e19fba7f44d5f938d62481846fbc", null ],
-    [ "UpdateWorldMatrixSRT", "class_transform.html#af1a2dcb4a9d37dd71c203ec248535887", null ]
+    [ "UpdateWorldMatrixSRT", "class_transform.html#af1a2dcb4a9d37dd71c203ec248535887", null ],
+    [ "axis_vector_", "class_transform.html#a2bde97ec180664c5587c445737c04cbe", null ],
+    [ "look_at_change_amount_", "class_transform.html#acda35632e3895b925eaae4625c564b5f", null ],
+    [ "look_at_speed_", "class_transform.html#a762490e0b35915244f767d618bb875b4", null ],
+    [ "matrix_extend_", "class_transform.html#a150c78be6568eaf017165ff5c90d6928", null ],
+    [ "now_quaternion_", "class_transform.html#a00d46dfb43b1e60b4f6ca8728d6aff54", null ],
+    [ "old_target_quaternion_", "class_transform.html#a52fa2db52356033f42908fde94f9cb28", null ],
+    [ "position_", "class_transform.html#aa36f8a9ae39411699f7ff77f017f618a", null ],
+    [ "scale_", "class_transform.html#ade54d2d37f01b20758b0ce11def76104", null ],
+    [ "target_quaternion_", "class_transform.html#acb5b22818929f01f4765a39f2da01579", null ],
+    [ "yaw_pitch_roll_", "class_transform.html#a725d32ecbcf8da99d63bb6296d9cd123", null ],
+    [ "yaw_pitch_roll_quaternion_", "class_transform.html#ac9985a4b70b9af742c9f26f47784ba7b", null ]
 ];

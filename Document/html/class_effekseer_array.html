@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_effekseer_array-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">EffekseerArray クラス</div>  </div>
@@ -111,8 +114,34 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
 <tr class="separator:a8c86aa79851ef86f253c13765f708383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bbf7d610ef2219e3699d3f26182af03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_effekseer_object.html">EffekseerObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#a0bbf7d610ef2219e3699d3f26182af03">GetReferenceEffekseerObject</a> ()</td></tr>
 <tr class="separator:a0bbf7d610ef2219e3699d3f26182af03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a39f6631cc74add5fe2193998df78ec1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#a39f6631cc74add5fe2193998df78ec1e">UpdateList</a> ()</td></tr>
+<tr class="separator:a39f6631cc74add5fe2193998df78ec1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:afe05ea57a5b118100a40a32374a9df32"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_effekseer_object.html">EffekseerObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#afe05ea57a5b118100a40a32374a9df32">disposable_effekseer_array_</a></td></tr>
+<tr class="separator:afe05ea57a5b118100a40a32374a9df32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e61bc691a4173f64da8d7c657147f0"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_effekseer_object.html">EffekseerObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#ac6e61bc691a4173f64da8d7c657147f0">disposable_effekseer_list_</a></td></tr>
+<tr class="separator:ac6e61bc691a4173f64da8d7c657147f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fc19ba8c5a587817d9ac202c722f21"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_effekseer_object.html">EffekseerObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#ab4fc19ba8c5a587817d9ac202c722f21">reference_effekseer_array_</a></td></tr>
+<tr class="separator:ab4fc19ba8c5a587817d9ac202c722f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f92d34cdcfaac9d0e64db04339832be"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#a6f92d34cdcfaac9d0e64db04339832be">next_reference_index_</a></td></tr>
+<tr class="separator:a6f92d34cdcfaac9d0e64db04339832be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a60c93a372a378026ae115faa3bbc5a2d"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#a60c93a372a378026ae115faa3bbc5a2d">DISPOSABLE_ARRAY_NUM</a> = 5</td></tr>
+<tr class="separator:a60c93a372a378026ae115faa3bbc5a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58d9c8f0e75d233f3bb2a92c3374bbb"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_array.html#aa58d9c8f0e75d233f3bb2a92c3374bbb">REFERENCE_ARRAY_NUM</a> = 5</td></tr>
+<tr class="separator:aa58d9c8f0e75d233f3bb2a92c3374bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">構築子と解体子</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a> の <a class="el" href="_effekseer_array_8h_source.html#l00033">33</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
 <a id="ae598c1486d263356b63ba8d08a3afc20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae598c1486d263356b63ba8d08a3afc20">&#9670;&nbsp;</a></span>EffekseerArray()</h2>
 
@@ -128,6 +157,8 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a> の <a class="el" href="_effekseer_array_8cpp_source.html#l00044">44</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -145,6 +176,16 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a> の <a class="el" href="_effekseer_array_8cpp_source.html#l00070">70</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_array_af5e7c360c77737f0c46b3a9dad2725ac_cgraph.png" border="0" usemap="#class_effekseer_array_af5e7c360c77737f0c46b3a9dad2725ac_cgraph" alt=""/></div>
+<map name="class_effekseer_array_af5e7c360c77737f0c46b3a9dad2725ac_cgraph" id="class_effekseer_array_af5e7c360c77737f0c46b3a9dad2725ac_cgraph">
+<area shape="rect" id="node2" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="231,13,375,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -175,6 +216,17 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a> の <a class="el" href="_effekseer_array_8cpp_source.html#l00146">146</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_array_a8c86aa79851ef86f253c13765f708383_icgraph.png" border="0" usemap="#class_effekseer_array_a8c86aa79851ef86f253c13765f708383_icgraph" alt=""/></div>
+<map name="class_effekseer_array_a8c86aa79851ef86f253c13765f708383_icgraph" id="class_effekseer_array_a8c86aa79851ef86f253c13765f708383_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#ab8fd5fdd35e1336974f217797c010ee3" title="EffekseerManager::Create\lDisposableEffekseerObjectFromArray" alt="" coords="271,5,509,47"/>
+<area shape="rect" id="node3" href="class_effekseer_manager.html#a0b82fe25fbe1dacc0d904fb54267b2fa" title="EffekseerManager::Create\lDisposableEffekseerObject" alt="" coords="557,5,736,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af915edc4a955bfc7927721a71016524d"></a>
@@ -192,6 +244,8 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a> の <a class="el" href="_effekseer_array_8cpp_source.html#l00123">123</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a0bbf7d610ef2219e3699d3f26182af03"></a>
@@ -208,6 +262,18 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a> の <a class="el" href="_effekseer_array_8cpp_source.html#l00176">176</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_array_a0bbf7d610ef2219e3699d3f26182af03_icgraph.png" border="0" usemap="#class_effekseer_array_a0bbf7d610ef2219e3699d3f26182af03_icgraph" alt=""/></div>
+<map name="class_effekseer_array_a0bbf7d610ef2219e3699d3f26182af03_icgraph" id="class_effekseer_array_a0bbf7d610ef2219e3699d3f26182af03_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#a1469d014a3d10dd38dc7d03db7f2ebfe" title="EffekseerManager::GetReference\lEffekseerObjectFromArray" alt="" coords="248,5,461,47"/>
+<area shape="rect" id="node3" href="class_effekseer_manager.html#a44878c9abb7f43521c7e8a9700668a28" title="EffekseerManager::GetReference\lEffekseerObject" alt="" coords="509,5,723,47"/>
+<area shape="rect" id="node4" href="class_goal_draw.html#a3eb0a555fa2db9d2c1253018ea65796e" title="初期化関数 " alt="" coords="771,13,873,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -237,11 +303,201 @@ $(document).ready(function(){initNavTree('class_effekseer_array.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a> の <a class="el" href="_effekseer_array_8cpp_source.html#l00093">93</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_array_a41fcca7eb106c1c83851eca1284800f4_cgraph.png" border="0" usemap="#class_effekseer_array_a41fcca7eb106c1c83851eca1284800f4_cgraph" alt=""/></div>
+<map name="class_effekseer_array_a41fcca7eb106c1c83851eca1284800f4_cgraph" id="class_effekseer_array_a41fcca7eb106c1c83851eca1284800f4_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_array.html#a39f6631cc74add5fe2193998df78ec1e" title="EffekseerArray::UpdateList" alt="" coords="209,5,387,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39f6631cc74add5fe2193998df78ec1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f6631cc74add5fe2193998df78ec1e">&#9670;&nbsp;</a></span>UpdateList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EffekseerArray::UpdateList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a> の <a class="el" href="_effekseer_array_8cpp_source.html#l00191">191</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_array_a39f6631cc74add5fe2193998df78ec1e_icgraph.png" border="0" usemap="#class_effekseer_array_a39f6631cc74add5fe2193998df78ec1e_icgraph" alt=""/></div>
+<map name="class_effekseer_array_a39f6631cc74add5fe2193998df78ec1e_icgraph" id="class_effekseer_array_a39f6631cc74add5fe2193998df78ec1e_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_array.html#a41fcca7eb106c1c83851eca1284800f4" title="EffekseerArray::Update" alt="" coords="231,5,387,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a60c93a372a378026ae115faa3bbc5a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c93a372a378026ae115faa3bbc5a2d">&#9670;&nbsp;</a></span>DISPOSABLE_ARRAY_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned EffekseerArray::DISPOSABLE_ARRAY_NUM = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a> の <a class="el" href="_effekseer_array_8h_source.html#l00037">37</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="afe05ea57a5b118100a40a32374a9df32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe05ea57a5b118100a40a32374a9df32">&#9670;&nbsp;</a></span>disposable_effekseer_array_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_effekseer_object.html">EffekseerObject</a>*&gt; EffekseerArray::disposable_effekseer_array_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a> の <a class="el" href="_effekseer_array_8h_source.html#l00072">72</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac6e61bc691a4173f64da8d7c657147f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e61bc691a4173f64da8d7c657147f0">&#9670;&nbsp;</a></span>disposable_effekseer_list_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_effekseer_object.html">EffekseerObject</a>*&gt; EffekseerArray::disposable_effekseer_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a> の <a class="el" href="_effekseer_array_8h_source.html#l00073">73</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6f92d34cdcfaac9d0e64db04339832be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f92d34cdcfaac9d0e64db04339832be">&#9670;&nbsp;</a></span>next_reference_index_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned EffekseerArray::next_reference_index_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a> の <a class="el" href="_effekseer_array_8h_source.html#l00077">77</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa58d9c8f0e75d233f3bb2a92c3374bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58d9c8f0e75d233f3bb2a92c3374bbb">&#9670;&nbsp;</a></span>REFERENCE_ARRAY_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned EffekseerArray::REFERENCE_ARRAY_NUM = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a> の <a class="el" href="_effekseer_array_8h_source.html#l00038">38</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab4fc19ba8c5a587817d9ac202c722f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fc19ba8c5a587817d9ac202c722f21">&#9670;&nbsp;</a></span>reference_effekseer_array_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_effekseer_object.html">EffekseerObject</a>*&gt; EffekseerArray::reference_effekseer_array_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a> の <a class="el" href="_effekseer_array_8h_source.html#l00076">76</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/EffekseerArray/<a class="el" href="_effekseer_array_8h_source.html">EffekseerArray.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/EffekseerArray/<a class="el" href="_effekseer_array_8cpp.html">EffekseerArray.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/EffekseerArray/<a class="el" href="_effekseer_array_8cpp_source.html">EffekseerArray.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

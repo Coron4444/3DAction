@@ -1,0 +1,4 @@
+<map id="EffekseerObject::Play" name="EffekseerObject::Play">
+<area shape="rect" id="node2" href="$class_effekseer_1_1_manager.html#a5ea3211a3670843061238976dda54a4f" title="再生する。 " alt="" coords="201,5,336,47"/>
+<area shape="rect" id="node3" href="$class_effekseer_1_1_manager.html#ab810f714df5d12c566664183f365cbf4" title="今までのPlay等の処理をUpdate実行時に適用するようにする。 " alt="" coords="201,71,336,112"/>
+</map>

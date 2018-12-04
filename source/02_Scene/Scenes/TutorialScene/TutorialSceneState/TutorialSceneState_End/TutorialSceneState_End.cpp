@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    チュートリアルシーンステートクラス(スタート)
-//    Author : Araki Kai                                作成日 : 2018/11/06
-//
+//!	@file	 TutorialSceneState_End.cpp
+//!	@brief	 チュートリアルシーンステート(エンド)Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
 
 
@@ -26,7 +26,7 @@
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -36,7 +36,7 @@ void TutorialSceneState_End::Init()
 	// チュートリアルシーンの取得
 	tutorial_scene_ = (TutorialScene*)scene_;
 
-	tutorial_scene_->GetTutorialLogo()->SetLogoNum(1);
+	tutorial_scene_->getpTutorialLogo()->SetLogoNum(1);
 }
 
 
@@ -57,8 +57,8 @@ void TutorialSceneState_End::Update()
 {
 	if (GetKeyboardTrigger(DIK_SPACE))
 	{
-		tutorial_scene_->GetSceneManager()
-			->SetNextScene(new GameScene(new GameSceneState_Start()));
+		tutorial_scene_->getpSceneManager()
+			->setNextScene(new GameScene(new GameSceneState_Start()));
 	}
 }
 

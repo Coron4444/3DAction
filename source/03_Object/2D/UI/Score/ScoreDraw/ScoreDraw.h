@@ -54,7 +54,7 @@ public:
 	void Draw(unsigned object_index, unsigned mesh_index) override;
 
 	// プロパティ
-	const MATRIX* GetMatrix(unsigned object_index) override;
+	MATRIX* getpMatrix(unsigned object_index) override;
 };
 
 

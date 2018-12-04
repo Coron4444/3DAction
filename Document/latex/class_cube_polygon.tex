@@ -19,6 +19,48 @@ unsigned \mbox{\hyperlink{class_cube_polygon_adf0956096c0d5dd31cf5b730dc8ca9c4}{
 \item 
 D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_cube_polygon_a6bd49d47a58c9c89a1ddaee37f7f4d22}{Get\+Material}} ()
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cube_polygon_ae36048a1ae7b13b6bc8571231b372627}{Create\+Vertex}} (\mbox{\hyperlink{_vector3_d_8h_a9c2339f516cf07ce4753b8a99fab3791}{Color4}} color)
+\item 
+void \mbox{\hyperlink{class_cube_polygon_ade2e155c44798710b8e91ac84b02340f}{Create\+Index}} ()
+\item 
+void \mbox{\hyperlink{class_cube_polygon_abc3b69a3cb237dec28d0bba9229f0b8d}{Create\+Material}} ()
+\item 
+void \mbox{\hyperlink{class_cube_polygon_a715db255bf7ebd3c3aec2095d73b9399}{Access\+V\+R\+AM}} ()
+\item 
+void \mbox{\hyperlink{class_cube_polygon_adde345ed591e3e81abcffdcac5068f98}{Registration\+Vertex}} ()
+\item 
+void \mbox{\hyperlink{class_cube_polygon_a5a935712a3e3c1e12552aeedf2f409c1}{Registration\+Index}} ()
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_renderer_direct_x9_1_1_v_e_r_t_e_x__3_d}{Renderer\+Direct\+X9\+::\+V\+E\+R\+T\+E\+X\+\_\+3D}} $>$ \mbox{\hyperlink{class_cube_polygon_adef890976f8ff8675aeb1c8a5a56ba7b}{vertex\+\_\+}}
+\item 
+std\+::vector$<$ W\+O\+RD $>$ \mbox{\hyperlink{class_cube_polygon_ac1405f52ed52453068575f2fb8d420a5}{index\+\_\+}}
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+B\+U\+F\+F\+E\+R9 \mbox{\hyperlink{class_cube_polygon_adbb5b6de2c10bfaba0d91569ac81e589}{vertex\+\_\+buffer\+\_\+}}
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+I\+N\+D\+E\+X\+B\+U\+F\+F\+E\+R9 \mbox{\hyperlink{class_cube_polygon_a42d5b3b2ed933782a28db4456ff552d3}{index\+\_\+buffer\+\_\+}}
+\item 
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 \mbox{\hyperlink{class_cube_polygon_a19348e35d55775f543a191b0a374b853}{material\+\_\+}}
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 \mbox{\hyperlink{class_cube_polygon_a769fe3f6b4695d5bf4823489b76ea805}{device\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_cube_polygon_a9d08fbf2d854fdbf0232750573f3aeee}{P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+N\+UM}} = 12
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Cube\+Polygon.\+h の 34 行目に定義があります。
+
 
 
 \subsection{構築子と解体子}
@@ -28,6 +70,18 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_cube_polygon_a6bd49
 \subsubsection{\texorpdfstring{Cube\+Polygon()}{CubePolygon()}}
 {\footnotesize\ttfamily Cube\+Polygon\+::\+Cube\+Polygon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}(1.0f,~1.0f,~1.0f,~1.0f)} }\end{DoxyParamCaption})}
 
+
+
+ Cube\+Polygon.\+cpp の 43 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_aee418cf078227778280dafb22d7586bb_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_cube_polygon_ae6cd078c65ba32e8da56b8f7d5e92d2a}\label{class_cube_polygon_ae6cd078c65ba32e8da56b8f7d5e92d2a}} 
 \index{Cube\+Polygon@{Cube\+Polygon}!````~Cube\+Polygon@{$\sim$\+Cube\+Polygon}}
 \index{````~Cube\+Polygon@{$\sim$\+Cube\+Polygon}!Cube\+Polygon@{Cube\+Polygon}}
@@ -36,30 +90,274 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_cube_polygon_a6bd49
 
 
 
+ Cube\+Polygon.\+cpp の 70 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_ae6cd078c65ba32e8da56b8f7d5e92d2a_cgraph}
+\end{center}
+\end{figure}
+
+
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_cube_polygon_a715db255bf7ebd3c3aec2095d73b9399}\label{class_cube_polygon_a715db255bf7ebd3c3aec2095d73b9399}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!Access\+V\+R\+AM@{Access\+V\+R\+AM}}
+\index{Access\+V\+R\+AM@{Access\+V\+R\+AM}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{Access\+V\+R\+A\+M()}{AccessVRAM()}}
+{\footnotesize\ttfamily void Cube\+Polygon\+::\+Access\+V\+R\+AM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+cpp の 252 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_a715db255bf7ebd3c3aec2095d73b9399_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_a715db255bf7ebd3c3aec2095d73b9399_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cube_polygon_ade2e155c44798710b8e91ac84b02340f}\label{class_cube_polygon_ade2e155c44798710b8e91ac84b02340f}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!Create\+Index@{Create\+Index}}
+\index{Create\+Index@{Create\+Index}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{Create\+Index()}{CreateIndex()}}
+{\footnotesize\ttfamily void Cube\+Polygon\+::\+Create\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+cpp の 188 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_ade2e155c44798710b8e91ac84b02340f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cube_polygon_abc3b69a3cb237dec28d0bba9229f0b8d}\label{class_cube_polygon_abc3b69a3cb237dec28d0bba9229f0b8d}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!Create\+Material@{Create\+Material}}
+\index{Create\+Material@{Create\+Material}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{Create\+Material()}{CreateMaterial()}}
+{\footnotesize\ttfamily void Cube\+Polygon\+::\+Create\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+cpp の 226 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_abc3b69a3cb237dec28d0bba9229f0b8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cube_polygon_ae36048a1ae7b13b6bc8571231b372627}\label{class_cube_polygon_ae36048a1ae7b13b6bc8571231b372627}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{Create\+Vertex()}{CreateVertex()}}
+{\footnotesize\ttfamily void Cube\+Polygon\+::\+Create\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a9c2339f516cf07ce4753b8a99fab3791}{Color4}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+cpp の 141 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_ae36048a1ae7b13b6bc8571231b372627_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_cube_polygon_ac9003cd00eea402f2b6c5fb5a77feae2}\label{class_cube_polygon_ac9003cd00eea402f2b6c5fb5a77feae2}} 
 \index{Cube\+Polygon@{Cube\+Polygon}!Draw@{Draw}}
 \index{Draw@{Draw}!Cube\+Polygon@{Cube\+Polygon}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
 {\footnotesize\ttfamily void Cube\+Polygon\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+ Cube\+Polygon.\+cpp の 110 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_cube_polygon_ac9003cd00eea402f2b6c5fb5a77feae2_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_cube_polygon_a6bd49d47a58c9c89a1ddaee37f7f4d22}\label{class_cube_polygon_a6bd49d47a58c9c89a1ddaee37f7f4d22}} 
 \index{Cube\+Polygon@{Cube\+Polygon}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Cube\+Polygon@{Cube\+Polygon}}
 \subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
 {\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$ Cube\+Polygon\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Cube\+Polygon.\+h の 62 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_a6bd49d47a58c9c89a1ddaee37f7f4d22_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_cube_polygon_adf0956096c0d5dd31cf5b730dc8ca9c4}\label{class_cube_polygon_adf0956096c0d5dd31cf5b730dc8ca9c4}} 
 \index{Cube\+Polygon@{Cube\+Polygon}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Cube\+Polygon@{Cube\+Polygon}}
 \subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
 {\footnotesize\ttfamily unsigned Cube\+Polygon\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Cube\+Polygon.\+h の 61 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_adf0956096c0d5dd31cf5b730dc8ca9c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cube_polygon_a5a935712a3e3c1e12552aeedf2f409c1}\label{class_cube_polygon_a5a935712a3e3c1e12552aeedf2f409c1}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!Registration\+Index@{Registration\+Index}}
+\index{Registration\+Index@{Registration\+Index}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{Registration\+Index()}{RegistrationIndex()}}
+{\footnotesize\ttfamily void Cube\+Polygon\+::\+Registration\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+cpp の 324 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_a5a935712a3e3c1e12552aeedf2f409c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cube_polygon_adde345ed591e3e81abcffdcac5068f98}\label{class_cube_polygon_adde345ed591e3e81abcffdcac5068f98}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!Registration\+Vertex@{Registration\+Vertex}}
+\index{Registration\+Vertex@{Registration\+Vertex}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{Registration\+Vertex()}{RegistrationVertex()}}
+{\footnotesize\ttfamily void Cube\+Polygon\+::\+Registration\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+cpp の 294 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_adde345ed591e3e81abcffdcac5068f98_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_cube_polygon_acf6a30c30c22dd887ed570db6cbe285d}\label{class_cube_polygon_acf6a30c30c22dd887ed570db6cbe285d}} 
 \index{Cube\+Polygon@{Cube\+Polygon}!Set\+Color@{Set\+Color}}
 \index{Set\+Color@{Set\+Color}!Cube\+Polygon@{Cube\+Polygon}}
 \subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}}
 {\footnotesize\ttfamily void Cube\+Polygon\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color }\end{DoxyParamCaption})}
+
+
+
+ Cube\+Polygon.\+cpp の 87 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_acf6a30c30c22dd887ed570db6cbe285d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cube_polygon_acf6a30c30c22dd887ed570db6cbe285d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_cube_polygon_a769fe3f6b4695d5bf4823489b76ea805}\label{class_cube_polygon_a769fe3f6b4695d5bf4823489b76ea805}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{device\+\_\+}{device\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 Cube\+Polygon\+::device\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+h の 87 行目に定義があります。
+
+\mbox{\Hypertarget{class_cube_polygon_ac1405f52ed52453068575f2fb8d420a5}\label{class_cube_polygon_ac1405f52ed52453068575f2fb8d420a5}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!index\+\_\+@{index\+\_\+}}
+\index{index\+\_\+@{index\+\_\+}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{index\+\_\+}{index\_}}
+{\footnotesize\ttfamily std\+::vector$<$W\+O\+RD$>$ Cube\+Polygon\+::index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+h の 82 行目に定義があります。
+
+\mbox{\Hypertarget{class_cube_polygon_a42d5b3b2ed933782a28db4456ff552d3}\label{class_cube_polygon_a42d5b3b2ed933782a28db4456ff552d3}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!index\+\_\+buffer\+\_\+@{index\+\_\+buffer\+\_\+}}
+\index{index\+\_\+buffer\+\_\+@{index\+\_\+buffer\+\_\+}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{index\+\_\+buffer\+\_\+}{index\_buffer\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+I\+N\+D\+E\+X\+B\+U\+F\+F\+E\+R9 Cube\+Polygon\+::index\+\_\+buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+h の 85 行目に定義があります。
+
+\mbox{\Hypertarget{class_cube_polygon_a19348e35d55775f543a191b0a374b853}\label{class_cube_polygon_a19348e35d55775f543a191b0a374b853}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!material\+\_\+@{material\+\_\+}}
+\index{material\+\_\+@{material\+\_\+}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{material\+\_\+}{material\_}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 Cube\+Polygon\+::material\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+h の 86 行目に定義があります。
+
+\mbox{\Hypertarget{class_cube_polygon_a9d08fbf2d854fdbf0232750573f3aeee}\label{class_cube_polygon_a9d08fbf2d854fdbf0232750573f3aeee}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+N\+UM@{P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+N\+UM}}
+\index{P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+N\+UM@{P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+N\+UM}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+N\+UM}{PRIMITIVE\_NUM}}
+{\footnotesize\ttfamily const int Cube\+Polygon\+::\+P\+R\+I\+M\+I\+T\+I\+V\+E\+\_\+\+N\+UM = 12\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+h の 39 行目に定義があります。
+
+\mbox{\Hypertarget{class_cube_polygon_adef890976f8ff8675aeb1c8a5a56ba7b}\label{class_cube_polygon_adef890976f8ff8675aeb1c8a5a56ba7b}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!vertex\+\_\+@{vertex\+\_\+}}
+\index{vertex\+\_\+@{vertex\+\_\+}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{vertex\+\_\+}{vertex\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_renderer_direct_x9_1_1_v_e_r_t_e_x__3_d}{Renderer\+Direct\+X9\+::\+V\+E\+R\+T\+E\+X\+\_\+3D}}$>$ Cube\+Polygon\+::vertex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+h の 81 行目に定義があります。
+
+\mbox{\Hypertarget{class_cube_polygon_adbb5b6de2c10bfaba0d91569ac81e589}\label{class_cube_polygon_adbb5b6de2c10bfaba0d91569ac81e589}} 
+\index{Cube\+Polygon@{Cube\+Polygon}!vertex\+\_\+buffer\+\_\+@{vertex\+\_\+buffer\+\_\+}}
+\index{vertex\+\_\+buffer\+\_\+@{vertex\+\_\+buffer\+\_\+}!Cube\+Polygon@{Cube\+Polygon}}
+\subsubsection{\texorpdfstring{vertex\+\_\+buffer\+\_\+}{vertex\_buffer\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+B\+U\+F\+F\+E\+R9 Cube\+Polygon\+::vertex\+\_\+buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Cube\+Polygon.\+h の 84 行目に定義があります。
 
 
 

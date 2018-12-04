@@ -51,7 +51,7 @@ static EffekseerObject* temp_object_;
 void PlayerUpdate::Init()
 {
 	// ダウンキャスト
-	player_ = (Player*)GetGameObject();
+	player_ = (Player*)getpGameObject();
 
 	// 剛体設定
 	player_->CreatePhysics();

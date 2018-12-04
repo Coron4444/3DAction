@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    リザルトシーンステートクラス(スタート)
-//    Author : Araki Kai                                作成日 : 2018/11/06
-//
+//!	@file	 ResultSceneState_Start.cpp
+//!	@brief	 リザルトシーンステート(スタート)Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
 
 
@@ -29,7 +29,7 @@
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -43,7 +43,7 @@ void ResultSceneState_Start::Init()
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
 		->GetCamera()->ChangeState(nullptr);
 
-	if (result_scene_->GetSceneManager()->GetCommonData()->GetIsClear())
+	if (result_scene_->getpSceneManager()->getpCommonData()->getIsClear())
 	{
 		// クリアロゴ
 		ClearLogoFactory clear_logo_factory;
@@ -79,7 +79,8 @@ void ResultSceneState_Start::Update()
 {
 	if (GetKeyboardTrigger(DIK_SPACE))
 	{
-		result_scene_->GetSceneManager()->SetNextScene(new TitleScene(new TitleSceneState_Start()));
+		result_scene_->getpSceneManager()
+			->setNextScene(new TitleScene(new TitleSceneState_Start()));
 	}
 }
 

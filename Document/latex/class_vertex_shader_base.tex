@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Vertex\+Shader\+Base.\+h$>$}
 
-Vertex\+Shader\+Base の継承関係図\begin{figure}[H]
+
+
+Vertex\+Shader\+Base の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_vertex_shader_base}
+\includegraphics[width=336pt]{class_vertex_shader_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Vertex\+Shader\+Base 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_vertex_shader_base__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -26,6 +38,11 @@ void \mbox{\hyperlink{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63
 \begin{DoxyCompactList}\small\item\em 頂点シェーダー解放関数 \end{DoxyCompactList}\item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{class_vertex_shader_base_ab10cf1aac4a54653c553b5c84e1d3703}{Get\+Vertex\+Shader}} ()
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{class_vertex_shader_base_a06f34810bedce79d6115c88a61dfbea4}{vertex\+\_\+shader\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -33,12 +50,20 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink
 
 頂点シェーダー基底クラス 
 
+ Vertex\+Shader\+Base.\+h の 26 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_vertex_shader_base_ab10cf1aac4a54653c553b5c84e1d3703}\label{class_vertex_shader_base_ab10cf1aac4a54653c553b5c84e1d3703}} 
 \index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Get\+Vertex\+Shader@{Get\+Vertex\+Shader}}
 \index{Get\+Vertex\+Shader@{Get\+Vertex\+Shader}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
 \subsubsection{\texorpdfstring{Get\+Vertex\+Shader()}{GetVertexShader()}}
 {\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 Vertex\+Shader\+Base\+::\+Get\+Vertex\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Vertex\+Shader\+Base.\+h の 87 行目に定義があります。
 
 \mbox{\Hypertarget{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63}\label{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63}} 
 \index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Release\+Vertex\+Shader@{Release\+Vertex\+Shader}}
@@ -50,6 +75,24 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink
 
 頂点シェーダー解放関数 
 
+
+
+ Vertex\+Shader\+Base.\+h の 81 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f}\label{class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f}} 
 \index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Set\+Shader@{Set\+Shader}}
 \index{Set\+Shader@{Set\+Shader}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
@@ -64,6 +107,25 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink
 
 \mbox{\hyperlink{class_shader_base_af45063254b80602db8626360d643baee}{Shader\+Base}}を実装しています。
 
+
+
+ Vertex\+Shader\+Base.\+h の 43 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c}\label{class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c}} 
 \index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!Vertex\+Shader\+Compile@{Vertex\+Shader\+Compile}}
 \index{Vertex\+Shader\+Compile@{Vertex\+Shader\+Compile}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
@@ -82,6 +144,41 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink
 \begin{DoxyReturn}{戻り値}
 コンパイル成功ならtrue 
 \end{DoxyReturn}
+
+
+ Vertex\+Shader\+Base.\+h の 57 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_vertex_shader_base_a06f34810bedce79d6115c88a61dfbea4}\label{class_vertex_shader_base_a06f34810bedce79d6115c88a61dfbea4}} 
+\index{Vertex\+Shader\+Base@{Vertex\+Shader\+Base}!vertex\+\_\+shader\+\_\+@{vertex\+\_\+shader\+\_\+}}
+\index{vertex\+\_\+shader\+\_\+@{vertex\+\_\+shader\+\_\+}!Vertex\+Shader\+Base@{Vertex\+Shader\+Base}}
+\subsubsection{\texorpdfstring{vertex\+\_\+shader\+\_\+}{vertex\_shader\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+V\+E\+R\+T\+E\+X\+S\+H\+A\+D\+E\+R9 Vertex\+Shader\+Base\+::vertex\+\_\+shader\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+頂点シェーダー 
+
+
+
+ Vertex\+Shader\+Base.\+h の 32 行目に定義があります。
+
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}

@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    コイン描画クラス
-//    Author : Araki Kai                                作成日 : 2018/07/24
-//
+//!	@file	 CoinDraw.cpp
+//!	@brief	 コイン描画Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
 
 
@@ -24,7 +24,7 @@ const std::string CoinDraw::DECALE_TEXTURE = "Coin.png";
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -32,14 +32,14 @@ const std::string CoinDraw::DECALE_TEXTURE = "Coin.png";
 void CoinDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
-	GetDrawOrderList()->SetIsBillboard(true);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetIsBillboard(true);
 
 	// ダウンキャスト
-	coin_ = (Coin*)GetGameObject();
+	coin_ = (Coin*)getpGameObject();
 
 	// デカールテクスチャの読み込み
 	decale_texture_ = TextureManager::AddUniqueData(&DECALE_TEXTURE);
@@ -101,25 +101,25 @@ void CoinDraw::SettingBeforeDrawing(Camera* camera, unsigned object_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* CoinDraw::GetMatrix(unsigned object_index)
+unsigned CoinDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return coin_->GetTransform()->GetWorldMatrix();
+	return coin_->GetPolygon()->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned CoinDraw::GetMeshNum(unsigned object_index)
+MATRIX* CoinDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return coin_->GetPolygon()->GetMeshNum();
+	return coin_->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -127,7 +127,7 @@ unsigned CoinDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* CoinDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* CoinDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -140,8 +140,8 @@ D3DMATERIAL9* CoinDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 CoinDraw::GetDecaleTexture(unsigned object_index, 
-											  unsigned mesh_index)
+LPDIRECT3DTEXTURE9 CoinDraw::getpDecaleTexture(unsigned object_index,
+											   unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

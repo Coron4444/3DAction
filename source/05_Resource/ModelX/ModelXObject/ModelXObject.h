@@ -49,7 +49,7 @@ public :
 public :
 	// メッシュ
 	LPD3DXMESH GetMesh(){return mesh_;}
-	unsigned GetMeshNum(){return material_num_;}	// Xモデルはマテリアル数がメッシュ数の代わり
+	unsigned getMeshNum(){return material_num_;}	// Xモデルはマテリアル数がメッシュ数の代わり
 	void UpdateMeshDeclaration(const D3DVERTEXELEMENT9* DECLARATION);
 	
 	// マテリアル

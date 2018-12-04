@@ -4,10 +4,22 @@
 
 {\ttfamily \#include $<$Player\+Collision.\+h$>$}
 
-Player\+Collision の継承関係図\begin{figure}[H]
+
+
+Player\+Collision の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_player_collision}
+\includegraphics[width=169pt]{class_player_collision__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Player\+Collision 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開型}
@@ -34,6 +46,38 @@ void \mbox{\hyperlink{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}{
 \begin{DoxyCompactList}\small\item\em 非衝突時関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}{Hit\+Ground}} (float position\+\_\+y) override
 \begin{DoxyCompactList}\small\item\em フィールドとの衝突時関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_collision_ae54c44acd4a1ef4569c1bb9202af3570}{Hit\+Bounding\+Sphere}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object)
+\item 
+void \mbox{\hyperlink{class_player_collision_adce9e2df2361cadba7bbe397810a1893}{Not\+Hit\+Bounding\+Sphere}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object)
+\item 
+void \mbox{\hyperlink{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10}{Hit\+Substance}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object)
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$ \mbox{\hyperlink{class_player_collision_a6d1b6d6e69a44697fdd3e6d74939fc17}{collision\+\_\+objects\+\_\+}}
+\item 
+\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$ \mbox{\hyperlink{class_player_collision_adf8368bcd0e09b6ddd8cb2756daf2d48}{bounding\+\_\+sphere\+\_\+}}
+\item 
+\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$ \mbox{\hyperlink{class_player_collision_a96ea29b4d3b42d6e3bba7f609ba9f1ea}{substance\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{class_player_collision_a4582ff2dada9d60339a67f37d15119a2}{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}} = 3.\+0f
+\item 
+static const float \mbox{\hyperlink{class_player_collision_ab6bab4a28016089c86a90d3f77f46fdf}{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}} = 1.\+0f
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Player\+Collision.\+h の 32 行目に定義があります。
+
 
 
 \subsection{列挙型メンバ詳解}
@@ -63,7 +107,35 @@ M\+AX&\\
 \end{DoxyEnumFields}
 
 
+ Player\+Collision.\+h の 43 行目に定義があります。
+
+
+
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_player_collision_ae54c44acd4a1ef4569c1bb9202af3570}\label{class_player_collision_ae54c44acd4a1ef4569c1bb9202af3570}} 
+\index{Player\+Collision@{Player\+Collision}!Hit\+Bounding\+Sphere@{Hit\+Bounding\+Sphere}}
+\index{Hit\+Bounding\+Sphere@{Hit\+Bounding\+Sphere}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Hit\+Bounding\+Sphere()}{HitBoundingSphere()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Hit\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+cpp の 200 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_ae54c44acd4a1ef4569c1bb9202af3570_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_ae54c44acd4a1ef4569c1bb9202af3570_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_collision_ad937a5fd226e742270202bf4eff53767}\label{class_player_collision_ad937a5fd226e742270202bf4eff53767}} 
 \index{Player\+Collision@{Player\+Collision}!Hit\+Collision@{Hit\+Collision}}
 \index{Hit\+Collision@{Hit\+Collision}!Player\+Collision@{Player\+Collision}}
@@ -83,6 +155,18 @@ M\+AX&\\
 
 \mbox{\hyperlink{class_collision_null_a580f507d8918865679feec3cc7b613d1}{Collision\+Null}}を再実装しています。
 
+
+
+ Player\+Collision.\+cpp の 128 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_ad937a5fd226e742270202bf4eff53767_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}\label{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}} 
 \index{Player\+Collision@{Player\+Collision}!Hit\+Ground@{Hit\+Ground}}
 \index{Hit\+Ground@{Hit\+Ground}!Player\+Collision@{Player\+Collision}}
@@ -97,6 +181,42 @@ M\+AX&\\
 
 \mbox{\hyperlink{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}{Collision\+Null}}を再実装しています。
 
+
+
+ Player\+Collision.\+cpp の 179 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10}\label{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10}} 
+\index{Player\+Collision@{Player\+Collision}!Hit\+Substance@{Hit\+Substance}}
+\index{Hit\+Substance@{Hit\+Substance}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Hit\+Substance()}{HitSubstance()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Hit\+Substance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+cpp の 267 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}\label{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}} 
 \index{Player\+Collision@{Player\+Collision}!Init@{Init}}
 \index{Init@{Init}!Player\+Collision@{Player\+Collision}}
@@ -111,6 +231,41 @@ M\+AX&\\
 
 \mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
 
+
+
+ Player\+Collision.\+cpp の 49 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_a3dd6238b75933fd60aee77e92353cc44_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_player_collision_adce9e2df2361cadba7bbe397810a1893}\label{class_player_collision_adce9e2df2361cadba7bbe397810a1893}} 
+\index{Player\+Collision@{Player\+Collision}!Not\+Hit\+Bounding\+Sphere@{Not\+Hit\+Bounding\+Sphere}}
+\index{Not\+Hit\+Bounding\+Sphere@{Not\+Hit\+Bounding\+Sphere}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{Not\+Hit\+Bounding\+Sphere()}{NotHitBoundingSphere()}}
+{\footnotesize\ttfamily void Player\+Collision\+::\+Not\+Hit\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+cpp の 237 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_adce9e2df2361cadba7bbe397810a1893_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_adce9e2df2361cadba7bbe397810a1893_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}\label{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}} 
 \index{Player\+Collision@{Player\+Collision}!Not\+Hit\+Collision@{Not\+Hit\+Collision}}
 \index{Not\+Hit\+Collision@{Not\+Hit\+Collision}!Player\+Collision@{Player\+Collision}}
@@ -130,6 +285,17 @@ M\+AX&\\
 
 \mbox{\hyperlink{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}{Collision\+Null}}を再実装しています。
 
+
+
+ Player\+Collision.\+cpp の 156 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}\label{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}} 
 \index{Player\+Collision@{Player\+Collision}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Player\+Collision@{Player\+Collision}}
@@ -144,6 +310,17 @@ M\+AX&\\
 
 \mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Collision\+Null}}を再実装しています。
 
+
+
+ Player\+Collision.\+cpp の 90 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_collision_a09f97f220903f5724a3af6b97af3a336}\label{class_player_collision_a09f97f220903f5724a3af6b97af3a336}} 
 \index{Player\+Collision@{Player\+Collision}!Update@{Update}}
 \index{Update@{Update}!Player\+Collision@{Player\+Collision}}
@@ -157,6 +334,70 @@ M\+AX&\\
 
 
 \mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Collision\+Null}}を再実装しています。
+
+
+
+ Player\+Collision.\+cpp の 104 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_collision_a09f97f220903f5724a3af6b97af3a336_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_player_collision_adf8368bcd0e09b6ddd8cb2756daf2d48}\label{class_player_collision_adf8368bcd0e09b6ddd8cb2756daf2d48}} 
+\index{Player\+Collision@{Player\+Collision}!bounding\+\_\+sphere\+\_\+@{bounding\+\_\+sphere\+\_\+}}
+\index{bounding\+\_\+sphere\+\_\+@{bounding\+\_\+sphere\+\_\+}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{bounding\+\_\+sphere\+\_\+}{bounding\_sphere\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_object}{Collision\+Object}}$\ast$ Player\+Collision\+::bounding\+\_\+sphere\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+h の 92 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_collision_a4582ff2dada9d60339a67f37d15119a2}\label{class_player_collision_a4582ff2dada9d60339a67f37d15119a2}} 
+\index{Player\+Collision@{Player\+Collision}!B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}}
+\index{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}{BOUNDING\_SPHERE\_RADIUS}}
+{\footnotesize\ttfamily const float Player\+Collision\+::\+B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US = 3.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+h の 37 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_collision_a6d1b6d6e69a44697fdd3e6d74939fc17}\label{class_player_collision_a6d1b6d6e69a44697fdd3e6d74939fc17}} 
+\index{Player\+Collision@{Player\+Collision}!collision\+\_\+objects\+\_\+@{collision\+\_\+objects\+\_\+}}
+\index{collision\+\_\+objects\+\_\+@{collision\+\_\+objects\+\_\+}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{collision\+\_\+objects\+\_\+}{collision\_objects\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}}$\ast$ Player\+Collision\+::collision\+\_\+objects\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+h の 91 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_collision_a96ea29b4d3b42d6e3bba7f609ba9f1ea}\label{class_player_collision_a96ea29b4d3b42d6e3bba7f609ba9f1ea}} 
+\index{Player\+Collision@{Player\+Collision}!substance\+\_\+@{substance\+\_\+}}
+\index{substance\+\_\+@{substance\+\_\+}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{substance\+\_\+}{substance\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_object}{Collision\+Object}}$\ast$ Player\+Collision\+::substance\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+h の 93 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_collision_ab6bab4a28016089c86a90d3f77f46fdf}\label{class_player_collision_ab6bab4a28016089c86a90d3f77f46fdf}} 
+\index{Player\+Collision@{Player\+Collision}!S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US@{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}}
+\index{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US@{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}!Player\+Collision@{Player\+Collision}}
+\subsubsection{\texorpdfstring{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}{SUBSTANCE\_RADIUS}}
+{\footnotesize\ttfamily const float Player\+Collision\+::\+S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US = 1.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Player\+Collision.\+h の 38 行目に定義があります。
 
 
 

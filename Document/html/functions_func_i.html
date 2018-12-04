@@ -222,7 +222,8 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 , <a class="el" href="class_render_texture.html#a498eb8be8672e01164b3770cdff43291">RenderTexture</a>
 , <a class="el" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55">ResultSceneState_Start</a>
 , <a class="el" href="class_scene_base.html#a494ba624fdd95b296e4487ed1a34f47b">SceneBase</a>
-, <a class="el" href="class_scene_base_1_1_state_abstract.html#a2f5ea12e789aa52df179e6df469b870d">SceneBase::StateAbstract</a>
+, <a class="el" href="class_scene_base_1_1_state_base.html#a33350231b039a2178c19beac0211c5b8">SceneBase::StateBase</a>
+, <a class="el" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00">SceneManager</a>
 , <a class="el" href="class_score.html#a7d461a8b72ddfd00213858286d702486">Score</a>
 , <a class="el" href="class_score_draw.html#af013abb96136825e71d4fee06529fc69">ScoreDraw</a>
 , <a class="el" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc">ScoreUpdate</a>
@@ -251,11 +252,20 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 , <a class="el" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b">ResourceManager</a>
 , <a class="el" href="class_texture_manager.html#aee4c784f3f32bfe810bf66313735dece">TextureManager</a>
 </li>
+<li>InitComponent()
+: <a class="el" href="class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6">GameObjectBase</a>
+</li>
 <li>InitDevice()
 : <a class="el" href="class_shader_base.html#aaac3419f1fce5bf12973e827daadbf8c">ShaderBase</a>
 </li>
 <li>InitFade()
 : <a class="el" href="class_back_buffer.html#add3a034c7758dc6a72bb4582bf6ce78e">BackBuffer</a>
+</li>
+<li>InitPixelShaders()
+: <a class="el" href="class_shader_manager.html#a6e1c2dc6c381081bc0e5ef1624b8e0f0">ShaderManager</a>
+</li>
+<li>InitRenderer_Manager()
+: <a class="el" href="class_effekseer_object.html#a4f8e7ad6b6ebfa341302f6b78e846f1e">EffekseerObject</a>
 </li>
 <li>InitShareData()
 : <a class="el" href="class_effekseer_manager.html#a881d9bdd981c35de66174363517050b4">EffekseerManager</a>
@@ -269,8 +279,23 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 , <a class="el" href="class_resource_manager.html#ab1ea00fb7eb4006bb9cbb48612da2c79">ResourceManager</a>
 , <a class="el" href="class_texture_manager.html#abfba2c4293e692a351d9b98e28f6ed31">TextureManager</a>
 </li>
+<li>InitVertexShaders()
+: <a class="el" href="class_shader_manager.html#a9881e89daff32662e10f6ac48212ca06">ShaderManager</a>
+</li>
+<li>InputEffect()
+: <a class="el" href="class_effekseer_object.html#a1566339dd4acebff341a867a2fd05c17">EffekseerObject</a>
+</li>
 <li>InputEffectFile()
 : <a class="el" href="class_effect_file.html#a8106530f6c71c81e7e2843cec9fe1094">EffectFile</a>
+</li>
+<li>InputMaterial()
+: <a class="el" href="class_model_x_object.html#a612ecc2cb9b19ae1674dcc5ee8aab710">ModelXObject</a>
+</li>
+<li>InputModelX()
+: <a class="el" href="class_model_x_object.html#ac7a86f4d034600ae5d8f8fd3610f4628">ModelXObject</a>
+</li>
+<li>InputTexture()
+: <a class="el" href="class_texture_object.html#a93196fc80c026672b8a15cec21ef5dea">TextureObject</a>
 </li>
 <li>insert()
 : <a class="el" href="class_im_vector.html#a52fdb731c13c82a1fd971186c6a701b5">ImVector&lt; T &gt;</a>
@@ -290,11 +315,20 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <li>IsActive()
 : <a class="el" href="struct_im_gui_text_filter.html#a493158f2ab8f45fcf303c3f953be9b88">ImGuiTextFilter</a>
 </li>
+<li>IsAcuteAngle_Segment3D_Capsule()
+: <a class="el" href="class_collision_judgment.html#af4da6d6923d8ee57253b1e86436e6ec5">CollisionJudgment</a>
+</li>
+<li>IsAllInSegment()
+: <a class="el" href="class_collision_judgment.html#a4aa40ec5573967470aeac8f7cb59b67d">CollisionJudgment</a>
+</li>
 <li>IsCheck()
 : <a class="el" href="class_collision_pair_check.html#aa7603c32ae782ad890280d360ae19dfe">CollisionPairCheck</a>
 </li>
 <li>IsConnected()
 : <a class="el" href="class_effekseer_1_1_client.html#a83c2f00111623d0fe4536a197b7ac9b7">Effekseer::Client</a>
+</li>
+<li>IsCountStop()
+: <a class="el" href="class_numbers.html#ab172b8637d38b710a4ff6dd3808522e0">Numbers</a>
 </li>
 <li>IsFadeEnd()
 : <a class="el" href="class_back_buffer.html#aab8b2f4a0fdbadccdd9413c12830a377">BackBuffer</a>
@@ -308,17 +342,68 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <li>IsGravity()
 : <a class="el" href="class_physics.html#a666e85a519fcb5f350a1f42273842f4d">Physics</a>
 </li>
+<li>IsHit_CrossSeparationAxis_OBB_OBB()
+: <a class="el" href="class_collision_judgment.html#a86d5dd5817ff244d22c9efa3eeecbcb7">CollisionJudgment</a>
+</li>
+<li>IsHit_NormalSeparationAxis_OBB_OBB()
+: <a class="el" href="class_collision_judgment.html#abb475bce4c67d02d0964355aa60f1362">CollisionJudgment</a>
+</li>
+<li>IsHit_Plane_Plane()
+: <a class="el" href="class_collision_judgment.html#a549042895226422e8551afff35519a59">CollisionJudgment</a>
+</li>
+<li>IsHit_Segment3D_Plane()
+: <a class="el" href="class_collision_judgment.html#a0f5514dbfaa4dde5531cb6e5512502e5">CollisionJudgment</a>
+</li>
+<li>IsHit_Sphere_Plane()
+: <a class="el" href="class_collision_judgment.html#a7ec99cbf152e28907e2770ed44a7cefa">CollisionJudgment</a>
+</li>
+<li>IsHit_Sphere_Triangle()
+: <a class="el" href="class_collision_judgment.html#a3a594014c7ee4ba7adae21f2da9c7612">CollisionJudgment</a>
+</li>
+<li>IsHit_Sphere_TriangleSide()
+: <a class="el" href="class_collision_judgment.html#a1bd97fffa0335f66531ba624c3beccda">CollisionJudgment</a>
+</li>
+<li>IsHit_Triangle_Triangle()
+: <a class="el" href="class_collision_judgment.html#a96728b80c578cd9566677788b5e5fad8">CollisionJudgment</a>
+</li>
+<li>IsHitSquare_Segment3D_Plane()
+: <a class="el" href="class_collision_judgment.html#a85481c15b123971458a612a31b1cc57e">CollisionJudgment</a>
+</li>
+<li>IsHitSquare_Sphere_Sphere()
+: <a class="el" href="class_collision_judgment.html#ae67e650c3a7b610a6bafaef3f17dadeb">CollisionJudgment</a>
+</li>
+<li>IsInSegment()
+: <a class="el" href="class_collision_judgment.html#a5fd5784d3e7d0ce09f5bda5603a8ca36">CollisionJudgment</a>
+</li>
 <li>IsLoaded()
 : <a class="el" href="struct_im_font.html#a97dafa61cc94e84be396d69b0d42b1ce">ImFont</a>
 </li>
 <li>IsMax()
 : <a class="el" href="class_limited_pointer_array.html#a8bd3a7ea969f307c35934a1bf2803b40">LimitedPointerArray&lt; Type, ARRAY_NUM &gt;</a>
 </li>
+<li>IsObtuseAngle_Segment3D_Capsule()
+: <a class="el" href="class_collision_judgment.html#a58785d1cd51b4d7af4c19dca42d842e5">CollisionJudgment</a>
+</li>
 <li>IsPacked()
 : <a class="el" href="struct_im_font_atlas_1_1_custom_rect.html#ac15602342c8eabbddf559bc84a3e6700">ImFontAtlas::CustomRect</a>
 </li>
+<li>IsPair()
+: <a class="el" href="class_collision_pair_check.html#a52eefe9e5b104075d4c812ca9b68ff16">CollisionPairCheck</a>
+</li>
+<li>IsParallelSegment()
+: <a class="el" href="class_collision_judgment.html#a5176f1eb6b0a2fd70efc0c08054064d0">CollisionJudgment</a>
+</li>
 <li>IsPlaing()
 : <a class="el" href="class_effekseer_object.html#a6fe253dd3387bdfd9305878ff194f305">EffekseerObject</a>
+</li>
+<li>IsState()
+: <a class="el" href="class_collision_pair_check.html#ab0f449965867269dc3115e831547a869">CollisionPairCheck</a>
+</li>
+<li>IsZeroAllSegmentVectorX()
+: <a class="el" href="class_collision_judgment.html#adf77fae28d72345f9fda1668a1077f0d">CollisionJudgment</a>
+</li>
+<li>IsZeroOneSideSegmentVectorX()
+: <a class="el" href="class_collision_judgment.html#ab2e5a2c714c8c7c7f26ef9b025b57d01">CollisionJudgment</a>
 </li>
 </ul>
 </div><!-- contents -->

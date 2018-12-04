@@ -202,7 +202,7 @@ void EffekseerManager::Draw()
 	if (!is_draw) return;
 
 	// サンプラーステートを元に戻す
-	((RendererDirectX9*)Renderer::GetInstance()->GetRenderer())->SetDefaultSamplerState();
+	((RendererDirectX9*)Renderer::getpInstance()->getpRenderer())->SetDefaultSamplerState();
 }
 
 

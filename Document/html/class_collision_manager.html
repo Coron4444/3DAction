@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_collision_manager-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">CollisionManager クラス</div>  </div>
@@ -100,6 +102,36 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
  <a href="class_collision_manager.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a>&gt;</code></p>
+<div class="dynheader">
+CollisionManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager__coll__graph.png" border="0" usemap="#_collision_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_collision_manager_coll__map" id="_collision_manager_coll__map">
+<area shape="rect" id="node2" href="class_mesh_plane_polygon.html" title="MeshPlanePolygon" alt="" coords="2309,57,2444,84"/>
+<area shape="rect" id="node3" href="class_liner_octree.html" title="LinerOctree\&lt; CollisionObjects *\&gt;" alt="" coords="1295,5,1507,32"/>
+<area shape="rect" id="node4" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="652,63,872,89"/>
+<area shape="rect" id="node5" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1049,108,1271,135"/>
+<area shape="rect" id="node6" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1531,180,1647,207"/>
+<area shape="rect" id="node23" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="1760,240,1901,296"/>
+<area shape="rect" id="node7" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="733,240,791,267"/>
+<area shape="rect" id="node8" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="364,171,503,197"/>
+<area shape="rect" id="node25" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="707,171,817,197"/>
+<area shape="rect" id="node10" href="class_vector3_d.html" title="Vector3D" alt="" coords="107,307,183,333"/>
+<area shape="rect" id="node18" href="class_physics.html" title="Physics" alt="" coords="2677,463,2746,489"/>
+<area shape="rect" id="node20" href="class_transform.html" title="Transform" alt="" coords="723,364,801,391"/>
+<area shape="rect" id="node22" href="class_axis_vector.html" title="AxisVector" alt="" coords="390,364,477,391"/>
+<area shape="rect" id="node12" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="2057,241,2159,268"/>
+<area shape="rect" id="node14" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="2314,364,2439,391"/>
+<area shape="rect" id="node26" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionBase *, ARRAY_NUM \&gt;" alt="" coords="2265,125,2488,166"/>
+<area shape="rect" id="node13" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="2652,256,2771,283"/>
+<area shape="rect" id="node15" href="class_draw_base.html" title="描画基底クラス " alt="" coords="2925,253,3006,280"/>
+<area shape="rect" id="node19" href="class_update_base.html" title="更新基底クラス " alt="" coords="2919,343,3012,369"/>
+<area shape="rect" id="node16" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="2659,200,2763,227"/>
+<area shape="rect" id="node17" href="class_flag.html" title="Flag" alt="" coords="2353,191,2400,217"/>
+<area shape="rect" id="node21" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="384,313,483,340"/>
+<area shape="rect" id="node24" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="1092,159,1228,215"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -132,11 +164,177 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 <tr class="memitem:addbc64e1fa0b01f3be07c897887f44ec"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a> = 10000</td></tr>
 <tr class="memdesc:addbc64e1fa0b01f3be07c897887f44ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列数  <a href="#addbc64e1fa0b01f3be07c897887f44ec">[詳解]</a><br /></td></tr>
 <tr class="separator:addbc64e1fa0b01f3be07c897887f44ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a53e468bb8624f84a5c65c9779781033f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a53e468bb8624f84a5c65c9779781033f">AddContentsOfAwaitAddArray</a> ()</td></tr>
+<tr class="memdesc:a53e468bb8624f84a5c65c9779781033f"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加待ち配列の中身を追加関数  <a href="#a53e468bb8624f84a5c65c9779781033f">[詳解]</a><br /></td></tr>
+<tr class="separator:a53e468bb8624f84a5c65c9779781033f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351353ddde07f2ff4f6642c8e1fc4ede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede">ReleaseContentsOfAwaitReleaseArray</a> ()</td></tr>
+<tr class="memdesc:a351353ddde07f2ff4f6642c8e1fc4ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放待ち配列の中身を解放関数  <a href="#a351353ddde07f2ff4f6642c8e1fc4ede">[詳解]</a><br /></td></tr>
+<tr class="separator:a351353ddde07f2ff4f6642c8e1fc4ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c1ebc4d4a19e06122f11c3eeec89ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec">CollisionDetermination</a> ()</td></tr>
+<tr class="memdesc:a67c1ebc4d4a19e06122f11c3eeec89ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突判定関数  <a href="#a67c1ebc4d4a19e06122f11c3eeec89ec">[詳解]</a><br /></td></tr>
+<tr class="separator:a67c1ebc4d4a19e06122f11c3eeec89ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25dbc14dbc709a6bc2dc4424e3965dbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe">OldCollisionDetermination</a> ()</td></tr>
+<tr class="memdesc:a25dbc14dbc709a6bc2dc4424e3965dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">古い衝突判定関数  <a href="#a25dbc14dbc709a6bc2dc4424e3965dbe">[詳解]</a><br /></td></tr>
+<tr class="separator:a25dbc14dbc709a6bc2dc4424e3965dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d67f4076eb71e191db5cff4e5abe3b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a1d67f4076eb71e191db5cff4e5abe3b0">CollisionGround</a> ()</td></tr>
+<tr class="memdesc:a1d67f4076eb71e191db5cff4e5abe3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">地面との衝突判定関数  <a href="#a1d67f4076eb71e191db5cff4e5abe3b0">[詳解]</a><br /></td></tr>
+<tr class="separator:a1d67f4076eb71e191db5cff4e5abe3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a212529ce17392d2ca120153318090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090">ActualCalculation</a> (<a class="el" href="class_collision_objects.html">CollisionObjects</a> *collision_objects0, <a class="el" href="class_collision_objects.html">CollisionObjects</a> *collision_objects1)</td></tr>
+<tr class="memdesc:ab7a212529ce17392d2ca120153318090"><td class="mdescLeft">&#160;</td><td class="mdescRight">実際の計算関数  <a href="#ab7a212529ce17392d2ca120153318090">[詳解]</a><br /></td></tr>
+<tr class="separator:ab7a212529ce17392d2ca120153318090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f64affda1906cd6eee3d177ca25045"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045">SortCollisionCalculation</a> (<a class="el" href="class_collision_object.html">CollisionObject</a> *collision_object0, <a class="el" href="class_collision_object.html">CollisionObject</a> *collision_object1)</td></tr>
+<tr class="memdesc:a87f64affda1906cd6eee3d177ca25045"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突計算振り分け関数  <a href="#a87f64affda1906cd6eee3d177ca25045">[詳解]</a><br /></td></tr>
+<tr class="separator:a87f64affda1906cd6eee3d177ca25045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da1241f3905c3855b31d7e20ceed5a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a4da1241f3905c3855b31d7e20ceed5a1">DebugDisplay</a> ()</td></tr>
+<tr class="memdesc:a4da1241f3905c3855b31d7e20ceed5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug表示関数  <a href="#a4da1241f3905c3855b31d7e20ceed5a1">[詳解]</a><br /></td></tr>
+<tr class="separator:a4da1241f3905c3855b31d7e20ceed5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a1be7aa8904688724543897d58b22a406"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt; <a class="el" href="class_collision_base.html">CollisionBase</a> *, <a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a1be7aa8904688724543897d58b22a406">all_collision_</a></td></tr>
+<tr class="memdesc:a1be7aa8904688724543897d58b22a406"><td class="mdescLeft">&#160;</td><td class="mdescRight">全衝突配列  <a href="#a1be7aa8904688724543897d58b22a406">[詳解]</a><br /></td></tr>
+<tr class="separator:a1be7aa8904688724543897d58b22a406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca55a8f7b3f67f58b5455cf1ac17fc8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt; <a class="el" href="class_collision_base.html">CollisionBase</a> *, <a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#aca55a8f7b3f67f58b5455cf1ac17fc8b">await_add_</a></td></tr>
+<tr class="memdesc:aca55a8f7b3f67f58b5455cf1ac17fc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加待ち配列  <a href="#aca55a8f7b3f67f58b5455cf1ac17fc8b">[詳解]</a><br /></td></tr>
+<tr class="separator:aca55a8f7b3f67f58b5455cf1ac17fc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077c3b33557c56afef69c69698fc76e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt; <a class="el" href="class_collision_base.html">CollisionBase</a> *, <a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a077c3b33557c56afef69c69698fc76e0">await_release_</a></td></tr>
+<tr class="memdesc:a077c3b33557c56afef69c69698fc76e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放待ち配列  <a href="#a077c3b33557c56afef69c69698fc76e0">[詳解]</a><br /></td></tr>
+<tr class="separator:a077c3b33557c56afef69c69698fc76e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab080264a45322bec38189279428d44cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mesh_plane_polygon.html">MeshPlanePolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#ab080264a45322bec38189279428d44cb">ground_polygon_</a></td></tr>
+<tr class="memdesc:ab080264a45322bec38189279428d44cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">地面ポリゴン  <a href="#ab080264a45322bec38189279428d44cb">[詳解]</a><br /></td></tr>
+<tr class="separator:ab080264a45322bec38189279428d44cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e8919f4e8af9764106a26a0cfcf6a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; <a class="el" href="class_collision_objects.html">CollisionObjects</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#aa7e8919f4e8af9764106a26a0cfcf6a7">liner_octree_</a> = nullptr</td></tr>
+<tr class="memdesc:aa7e8919f4e8af9764106a26a0cfcf6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">8分木  <a href="#aa7e8919f4e8af9764106a26a0cfcf6a7">[詳解]</a><br /></td></tr>
+<tr class="separator:aa7e8919f4e8af9764106a26a0cfcf6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3350981cdf6a6ecd6b5151bedb72ef"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_collision_objects.html">CollisionObjects</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a9e3350981cdf6a6ecd6b5151bedb72ef">collision_objects_list_</a></td></tr>
+<tr class="separator:a9e3350981cdf6a6ecd6b5151bedb72ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6520ff69c7035e61267998885669d960"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a6520ff69c7035e61267998885669d960">time_</a></td></tr>
+<tr class="separator:a6520ff69c7035e61267998885669d960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356e89f8204c643179e68d0b50758f21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a356e89f8204c643179e68d0b50758f21">is_octree_</a> = true</td></tr>
+<tr class="separator:a356e89f8204c643179e68d0b50758f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba36f21dfb636d6b2c8b84bb07560ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_manager.html#a5ba36f21dfb636d6b2c8b84bb07560ad">is_pair_check_</a> = true</td></tr>
+<tr class="separator:a5ba36f21dfb636d6b2c8b84bb07560ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>衝突マネージャークラス </p>
 <p>登録されている衝突基底クラスを管理するクラス </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00041">41</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
+<a id="ab7a212529ce17392d2ca120153318090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a212529ce17392d2ca120153318090">&#9670;&nbsp;</a></span>ActualCalculation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::ActualCalculation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collision_objects.html">CollisionObjects</a> *&#160;</td>
+          <td class="paramname"><em>collision_objects0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collision_objects.html">CollisionObjects</a> *&#160;</td>
+          <td class="paramname"><em>collision_objects1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>実際の計算関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00469">469</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_ab7a212529ce17392d2ca120153318090_cgraph.png" border="0" usemap="#class_collision_manager_ab7a212529ce17392d2ca120153318090_cgraph" alt=""/></div>
+<map name="class_collision_manager_ab7a212529ce17392d2ca120153318090_cgraph" id="class_collision_manager_ab7a212529ce17392d2ca120153318090_cgraph">
+<area shape="rect" id="node2" href="class_collision_objects.html#a309eef4695b4a19f389eaf5d0753c256" title="CollisionObjects::getEnd\lIndexOfArray" alt="" coords="248,136,413,177"/>
+<area shape="rect" id="node4" href="class_collision_objects.html#a4f5c029b20a7ed4c7fdee815f73d20be" title="CollisionObjects::getCollision\lObject" alt="" coords="235,332,426,373"/>
+<area shape="rect" id="node6" href="class_collision_object.html#ac11b01882a159efadbe62bd5a66c49aa" title="CollisionObject::getIsJudgment" alt="" coords="230,659,431,686"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="229,711,432,752"/>
+<area shape="rect" id="node47" href="class_collision_objects.html#af95769194fff92babcf411c2262c9d10" title="CollisionObjects::getCollisionBase" alt="" coords="220,777,441,803"/>
+<area shape="rect" id="node48" href="class_collision_base.html#a5c94fe03f875595758e83eb2a176e45d" title="衝突時関数 " alt="" coords="243,827,418,854"/>
+<area shape="rect" id="node49" href="class_collision_base.html#a9b64fc5c3f2aac2a05296985ef799fb1" title="非衝突時関数 " alt="" coords="233,878,428,905"/>
+<area shape="rect" id="node50" href="class_collision_objects.html#a1320a57aae5798c04e65b2b7c8433aae" title="CollisionObjects::getIsJudgment" alt="" coords="227,929,435,955"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="534,5,670,47"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="534,71,670,112"/>
+<area shape="rect" id="node8" href="class_collision_object.html#a3ff1c2d794f520c96b6bc6037a8f8f8c" title="CollisionObject::getCollision\lShape" alt="" coords="510,515,694,556"/>
+<area shape="rect" id="node9" href="class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc" title="CollisionShapeBase\l::getType" alt="" coords="533,580,671,621"/>
+<area shape="rect" id="node10" href="class_collision_judgment.html#a95962556f370a964ec1961b1c461ae2a" title="CollisionJudgment::\lHitCheck_Capsule_Capsule" alt="" coords="511,645,693,687"/>
+<area shape="rect" id="node15" href="class_collision_object.html#a1087fa9cebfe0b1675923807b73d8868" title="CollisionObject::setHitVector" alt="" coords="507,842,697,869"/>
+<area shape="rect" id="node16" href="class_collision_judgment.html#a21938f544146999d01d96f855277727b" title="CollisionJudgment::\lHitCheck_Segment3D_Capsule" alt="" coords="500,995,704,1036"/>
+<area shape="rect" id="node17" href="class_collision_judgment.html#a92531c1254846a0a06ee7e95796f1070" title="CollisionJudgment::\lHitCheck_Segment3D_Sphere" alt="" coords="785,1013,983,1055"/>
+<area shape="rect" id="node21" href="class_collision_judgment.html#a61308e967a8569bcee4b25c74e28826d" title="CollisionJudgment::\lHitCheck_Segment3D_Cylinder" alt="" coords="782,948,986,989"/>
+<area shape="rect" id="node26" href="class_collision_judgment.html#a4cc335999fcbeadf0aa1b6ebcb749e5b" title="CollisionJudgment::\lHitCheck_Sphere_Capsule" alt="" coords="513,711,691,752"/>
+<area shape="rect" id="node28" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="529,776,675,817"/>
+<area shape="rect" id="node35" href="class_collision_judgment.html#acd1d157a361d756632c73f4406442ce2" title="CollisionJudgment::\lHitCheck_Sphere_OBB" alt="" coords="523,1060,681,1101"/>
+<area shape="rect" id="node36" href="class_collision_judgment.html#a01ad684bee6964d4315df1a23ac3ec7d" title="CollisionJudgment::\lHitCheck_Plane_Plane" alt="" coords="525,1125,679,1167"/>
+<area shape="rect" id="node37" href="class_collision_object.html#adb01187ec10302f13034407a3c852860" title="CollisionObject::getHitVector" alt="" coords="507,1191,697,1218"/>
+<area shape="rect" id="node38" href="class_vector3_d.html#a9cfe261f14b3b2e6704c5649058d3ecd" title="Vector3D::ResetVector" alt="" coords="524,1242,680,1269"/>
+<area shape="rect" id="node39" href="class_collision_judgment.html#ac31167bc6d89d20f7220220ee3f21f4e" title="CollisionJudgment::\lHitCheck_Segment3D_Plane" alt="" coords="789,1341,979,1383"/>
+<area shape="rect" id="node40" href="class_collision_judgment.html#a47628fb2aef868f75942f378f63478cc" title="CollisionJudgment::\lHitCheck_Sphere_Plane" alt="" coords="803,165,965,207"/>
+<area shape="rect" id="node41" href="class_collision_judgment.html#a473c94087dc9cd3937016ccba5f12abd" title="CollisionJudgment::\lHitCheck_Plane_Triangle" alt="" coords="519,253,685,295"/>
+<area shape="rect" id="node42" href="class_collision_judgment.html#a612bc9e5cfcb243324417f5059c6e24d" title="CollisionJudgment::\lHitCheck_Segment2D_Segment2D" alt="" coords="489,319,715,360"/>
+<area shape="rect" id="node43" href="class_collision_judgment.html#a4f5344d6ac14db5d3732db47050bd549" title="CollisionJudgment::\lHitCheck_Segment3D_Triangle" alt="" coords="501,1293,703,1335"/>
+<area shape="rect" id="node44" href="class_collision_judgment.html#a21e4ce202f713f1b2a7fc593f4daf7d2" title="CollisionJudgment::\lHitCheck_Sphere_Sphere" alt="" coords="517,384,687,425"/>
+<area shape="rect" id="node45" href="class_collision_judgment.html#a2b4e851cf1fc45dca09175b36fb4f50c" title="CollisionJudgment::\lHitCheck_Sphere_Triangle" alt="" coords="515,136,689,177"/>
+<area shape="rect" id="node46" href="class_collision_judgment.html#ab33b8936e62bdb9b6cf6f3d383c033b9" title="CollisionJudgment::\lHitCheck_Triangle_Triangle" alt="" coords="513,449,691,491"/>
+<area shape="rect" id="node11" href="_segment_8h.html#a3ca962c690b73355253042cdab29b337" title="ShortestDistance_Segment\l_Segment" alt="" coords="793,396,975,437"/>
+<area shape="rect" id="node12" href="class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="1061,374,1246,401"/>
+<area shape="rect" id="node14" href="class_vector3_d.html#a030384bdfe25863cd4be77fa73052cf1" title="Vector3D::AnyLengthVector" alt="" coords="1061,643,1245,670"/>
+<area shape="rect" id="node13" href="_segment_8h.html#a0575d6a616fa95075f88623632bae170" title="ShortestDistance_Segment\l_Point" alt="" coords="1063,451,1244,492"/>
+<area shape="rect" id="node19" href="class_collision_judgment.html#a58785d1cd51b4d7af4c19dca42d842e5" title="CollisionJudgment::\lIsObtuseAngle_Segment3D\l_Capsule" alt="" coords="793,1239,975,1295"/>
+<area shape="rect" id="node20" href="class_collision_judgment.html#a9d7bd7435d9e116c8d0dfb62662e60d5" title="CollisionJudgment::\lCrossPointCalculation\l_Segment3D_Capsule" alt="" coords="809,1079,959,1135"/>
+<area shape="rect" id="node25" href="class_collision_judgment.html#af4da6d6923d8ee57253b1e86436e6ec5" title="CollisionJudgment::\lIsAcuteAngle_Segment3D\l_Capsule" alt="" coords="797,1159,971,1215"/>
+<area shape="rect" id="node18" href="class_collision_judgment.html#a5fd5784d3e7d0ce09f5bda5603a8ca36" title="CollisionJudgment::\lIsInSegment" alt="" coords="1301,1093,1436,1135"/>
+<area shape="rect" id="node22" href="class_collision_judgment.html#aa7d814d54f323c366de1d068440ded2b" title="CollisionJudgment::\lQuadraticEquation_Calculation\l_Segment3D_Cylinder" alt="" coords="1053,861,1253,917"/>
+<area shape="rect" id="node23" href="class_collision_judgment.html#a413d713064c810f1bea6760e76db5221" title="CollisionJudgment::\lAskForTheFrontT_Segment3D\l_Cylinder" alt="" coords="1055,1021,1252,1077"/>
+<area shape="rect" id="node24" href="class_collision_judgment.html#ad369f21f29dfe28a337d10d8a9a06874" title="CollisionJudgment::\lCrossPointCalculation\l_Segment3D_Cylinder" alt="" coords="1078,941,1229,997"/>
+<area shape="rect" id="node27" href="class_collision_judgment.html#ae992df185735a5348aef01754ebf9b80" title="CollisionJudgment::\lAmountOfSqueezingVectorCalculation\l_Sphere_Capsule" alt="" coords="763,563,1005,619"/>
+<area shape="rect" id="node29" href="class_axis_vector.html#a79013d5b090ce9232d57f528f18e982e" title="AxisVector::GetForawrd" alt="" coords="1073,751,1234,778"/>
+<area shape="rect" id="node30" href="class_axis_vector.html#a1d4f944d118d6f999c516dbdc0827a39" title="AxisVector::GetRight" alt="" coords="1081,694,1226,721"/>
+<area shape="rect" id="node31" href="class_axis_vector.html#aba45ae6f91ac516e6e42fdb8bcfcae2e" title="AxisVector::GetUp" alt="" coords="1088,810,1219,837"/>
+<area shape="rect" id="node32" href="class_o_b_b.html#a03218b64dad1985876e7bad09f4a61ce" title="OBB::GetVectorForwardHalf" alt="" coords="791,745,977,771"/>
+<area shape="rect" id="node33" href="class_o_b_b.html#a1c3a21fd4ff8dcc55d4f5d20c563ebd6" title="OBB::GetVectorRightHalf" alt="" coords="799,643,969,670"/>
+<area shape="rect" id="node34" href="class_o_b_b.html#a48255d7b9af2d2ea109de41787c30a3a" title="OBB::GetVectorUpHalf" alt="" coords="807,846,961,873"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_ab7a212529ce17392d2ca120153318090_icgraph.png" border="0" usemap="#class_collision_manager_ab7a212529ce17392d2ca120153318090_icgraph" alt=""/></div>
+<map name="class_collision_manager_ab7a212529ce17392d2ca120153318090_icgraph" id="class_collision_manager_ab7a212529ce17392d2ca120153318090_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="230,5,409,47"/>
+<area shape="rect" id="node9" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="220,71,419,112"/>
+<area shape="rect" id="node3" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="467,46,637,73"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="685,39,839,80"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="887,46,1081,73"/>
+<area shape="rect" id="node6" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1129,46,1280,73"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1328,46,1489,73"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1537,46,1611,73"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a42be7a26321110f5daaf1828da32f667"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42be7a26321110f5daaf1828da32f667">&#9670;&nbsp;</a></span>AddCollisionBaseToArray()</h2>
 
@@ -154,6 +352,348 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 </div><div class="memdoc">
 
 <p>衝突基底クラスの追加関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00190">190</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a42be7a26321110f5daaf1828da32f667_cgraph.png" border="0" usemap="#class_collision_manager_a42be7a26321110f5daaf1828da32f667_cgraph" alt=""/></div>
+<map name="class_collision_manager_a42be7a26321110f5daaf1828da32f667_cgraph" id="class_collision_manager_a42be7a26321110f5daaf1828da32f667_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="255,5,391,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a42be7a26321110f5daaf1828da32f667_icgraph.png" border="0" usemap="#class_collision_manager_a42be7a26321110f5daaf1828da32f667_icgraph" alt=""/></div>
+<map name="class_collision_manager_a42be7a26321110f5daaf1828da32f667_icgraph" id="class_collision_manager_a42be7a26321110f5daaf1828da32f667_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a4c6cdb6d0a1f43a2e2e705677fa2f5f6" title="コンポーネントをマネージャーへ設定関数 " alt="" coords="255,5,427,47"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09" title="追加待ち配列の中身を追加関数 " alt="" coords="475,5,671,47"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="719,5,872,47"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="920,13,1115,39"/>
+<area shape="rect" id="node6" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1163,13,1313,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1361,13,1523,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1571,13,1644,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a53e468bb8624f84a5c65c9779781033f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e468bb8624f84a5c65c9779781033f">&#9670;&nbsp;</a></span>AddContentsOfAwaitAddArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::AddContentsOfAwaitAddArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>追加待ち配列の中身を追加関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00267">267</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a53e468bb8624f84a5c65c9779781033f_cgraph.png" border="0" usemap="#class_collision_manager_a53e468bb8624f84a5c65c9779781033f_cgraph" alt=""/></div>
+<map name="class_collision_manager_a53e468bb8624f84a5c65c9779781033f_cgraph" id="class_collision_manager_a53e468bb8624f84a5c65c9779781033f_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="523,98,659,140"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="298,49,434,90"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="523,189,659,230"/>
+<area shape="rect" id="node5" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="275,114,457,156"/>
+<area shape="rect" id="node6" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="278,232,454,273"/>
+<area shape="rect" id="node7" href="class_object_of_tree.html#aae14cb0e8ac8b701de737c547a1d3b8c" title="ObjectOfTree::setObject" alt="" coords="285,298,447,324"/>
+<area shape="rect" id="node8" href="class_collision_objects.html#a3d5a69741d66dcdebfae5a54a15c4b88" title="CollisionObjects::setObject\lOfTree" alt="" coords="276,349,456,390"/>
+<area shape="rect" id="node9" href="class_liner_octree.html#ac5773a5193942a68f77a33baed9d69d4" title="追加関数 " alt="" coords="306,415,426,442"/>
+<area shape="rect" id="node10" href="class_collision_objects.html#aee138e1c28f7f3dcbdce56181d59b628" title="CollisionObjects::getOctreeAABB" alt="" coords="257,466,475,492"/>
+<area shape="rect" id="node11" href="class_a_a_b_b.html#a9a18cef6c33dd579c144700c79ea39f5" title="AABB::getMin" alt="" coords="313,516,419,543"/>
+<area shape="rect" id="node12" href="class_a_a_b_b.html#a8dc63902fbb2c8f83185bbe9feaaa4b0" title="AABB::getMax" alt="" coords="311,567,421,594"/>
+<area shape="rect" id="node13" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="298,618,434,660"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a53e468bb8624f84a5c65c9779781033f_icgraph.png" border="0" usemap="#class_collision_manager_a53e468bb8624f84a5c65c9779781033f_icgraph" alt=""/></div>
+<map name="class_collision_manager_a53e468bb8624f84a5c65c9779781033f_icgraph" id="class_collision_manager_a53e468bb8624f84a5c65c9779781033f_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="257,13,428,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="476,5,629,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="677,13,872,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="920,13,1071,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1119,13,1280,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1328,13,1401,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a67c1ebc4d4a19e06122f11c3eeec89ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c1ebc4d4a19e06122f11c3eeec89ec">&#9670;&nbsp;</a></span>CollisionDetermination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::CollisionDetermination </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>衝突判定関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00319">319</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_cgraph.png" border="0" usemap="#class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_cgraph" alt=""/></div>
+<map name="class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_cgraph" id="class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_cgraph">
+<area shape="rect" id="node2" href="class_collision_pair_check.html#aa7603c32ae782ad890280d360ae19dfe" title="衝突基底クラスペア判定関数 " alt="" coords="250,148,381,189"/>
+<area shape="rect" id="node8" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="232,289,399,331"/>
+<area shape="rect" id="node3" href="class_collision_pair_check.html#a52eefe9e5b104075d4c812ca9b68ff16" title="ペア判定関数 " alt="" coords="492,71,623,112"/>
+<area shape="rect" id="node4" href="class_collision_pair_check.html#ab0f449965867269dc3115e831547a869" title="指定した衝突ステートの検索関数 " alt="" coords="763,5,894,47"/>
+<area shape="rect" id="node6" href="class_collision_pair_check.html#a97c459f98bce9f88d9f506423395c40c" title="指定したコンポーネントの逆を返す関数 " alt="" coords="751,136,906,177"/>
+<area shape="rect" id="node7" href="class_collision_pair_check.html#a9f1819e873a51fcf50a7dbbf5f9d8690" title="プレイヤーのペアリスト関数 " alt="" coords="763,71,894,112"/>
+<area shape="rect" id="node5" href="class_collision_base.html#af4e773951a4e1965e64410841a0292a4" title="CollisionBase::getState" alt="" coords="1031,46,1190,73"/>
+<area shape="rect" id="node9" href="class_collision_objects.html#a309eef4695b4a19f389eaf5d0753c256" title="CollisionObjects::getEnd\lIndexOfArray" alt="" coords="475,289,640,331"/>
+<area shape="rect" id="node11" href="class_collision_objects.html#a4f5c029b20a7ed4c7fdee815f73d20be" title="CollisionObjects::getCollision\lObject" alt="" coords="462,355,653,396"/>
+<area shape="rect" id="node13" href="class_collision_object.html#ac11b01882a159efadbe62bd5a66c49aa" title="CollisionObject::getIsJudgment" alt="" coords="457,421,658,447"/>
+<area shape="rect" id="node14" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="456,901,659,943"/>
+<area shape="rect" id="node47" href="class_collision_objects.html#af95769194fff92babcf411c2262c9d10" title="CollisionObjects::getCollisionBase" alt="" coords="447,967,668,994"/>
+<area shape="rect" id="node48" href="class_collision_base.html#a5c94fe03f875595758e83eb2a176e45d" title="衝突時関数 " alt="" coords="470,137,645,163"/>
+<area shape="rect" id="node49" href="class_collision_base.html#a9b64fc5c3f2aac2a05296985ef799fb1" title="非衝突時関数 " alt="" coords="460,187,655,214"/>
+<area shape="rect" id="node50" href="class_collision_objects.html#a1320a57aae5798c04e65b2b7c8433aae" title="CollisionObjects::getIsJudgment" alt="" coords="453,238,661,265"/>
+<area shape="rect" id="node10" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="761,245,897,287"/>
+<area shape="rect" id="node12" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="761,311,897,352"/>
+<area shape="rect" id="node15" href="class_collision_object.html#a3ff1c2d794f520c96b6bc6037a8f8f8c" title="CollisionObject::getCollision\lShape" alt="" coords="737,1272,921,1313"/>
+<area shape="rect" id="node16" href="class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc" title="CollisionShapeBase\l::getType" alt="" coords="759,1337,898,1379"/>
+<area shape="rect" id="node17" href="class_collision_judgment.html#a95962556f370a964ec1961b1c461ae2a" title="CollisionJudgment::\lHitCheck_Capsule_Capsule" alt="" coords="737,1468,920,1509"/>
+<area shape="rect" id="node22" href="class_collision_object.html#a1087fa9cebfe0b1675923807b73d8868" title="CollisionObject::setHitVector" alt="" coords="734,1534,923,1561"/>
+<area shape="rect" id="node23" href="class_collision_judgment.html#a21938f544146999d01d96f855277727b" title="CollisionJudgment::\lHitCheck_Segment3D_Capsule" alt="" coords="727,792,931,833"/>
+<area shape="rect" id="node24" href="class_collision_judgment.html#a92531c1254846a0a06ee7e95796f1070" title="CollisionJudgment::\lHitCheck_Segment3D_Sphere" alt="" coords="1011,851,1210,892"/>
+<area shape="rect" id="node28" href="class_collision_judgment.html#a61308e967a8569bcee4b25c74e28826d" title="CollisionJudgment::\lHitCheck_Segment3D_Cylinder" alt="" coords="1009,916,1213,957"/>
+<area shape="rect" id="node32" href="class_collision_judgment.html#a4cc335999fcbeadf0aa1b6ebcb749e5b" title="CollisionJudgment::\lHitCheck_Sphere_Capsule" alt="" coords="740,1585,917,1627"/>
+<area shape="rect" id="node34" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="756,493,901,535"/>
+<area shape="rect" id="node35" href="class_collision_judgment.html#acd1d157a361d756632c73f4406442ce2" title="CollisionJudgment::\lHitCheck_Sphere_OBB" alt="" coords="749,559,908,600"/>
+<area shape="rect" id="node36" href="class_collision_judgment.html#a01ad684bee6964d4315df1a23ac3ec7d" title="CollisionJudgment::\lHitCheck_Plane_Plane" alt="" coords="751,624,906,665"/>
+<area shape="rect" id="node37" href="class_collision_object.html#adb01187ec10302f13034407a3c852860" title="CollisionObject::getHitVector" alt="" coords="734,690,923,717"/>
+<area shape="rect" id="node38" href="class_vector3_d.html#a9cfe261f14b3b2e6704c5649058d3ecd" title="Vector3D::ResetVector" alt="" coords="751,741,907,767"/>
+<area shape="rect" id="node39" href="class_collision_judgment.html#ac31167bc6d89d20f7220220ee3f21f4e" title="CollisionJudgment::\lHitCheck_Segment3D_Plane" alt="" coords="1015,1167,1206,1208"/>
+<area shape="rect" id="node40" href="class_collision_judgment.html#a47628fb2aef868f75942f378f63478cc" title="CollisionJudgment::\lHitCheck_Sphere_Plane" alt="" coords="1029,405,1192,447"/>
+<area shape="rect" id="node41" href="class_collision_judgment.html#a473c94087dc9cd3937016ccba5f12abd" title="CollisionJudgment::\lHitCheck_Plane_Triangle" alt="" coords="745,1011,912,1052"/>
+<area shape="rect" id="node42" href="class_collision_judgment.html#a612bc9e5cfcb243324417f5059c6e24d" title="CollisionJudgment::\lHitCheck_Segment2D_Segment2D" alt="" coords="716,1076,941,1117"/>
+<area shape="rect" id="node43" href="class_collision_judgment.html#a4f5344d6ac14db5d3732db47050bd549" title="CollisionJudgment::\lHitCheck_Segment3D_Triangle" alt="" coords="727,1403,930,1444"/>
+<area shape="rect" id="node44" href="class_collision_judgment.html#a21e4ce202f713f1b2a7fc593f4daf7d2" title="CollisionJudgment::\lHitCheck_Sphere_Sphere" alt="" coords="743,1141,914,1183"/>
+<area shape="rect" id="node45" href="class_collision_judgment.html#a2b4e851cf1fc45dca09175b36fb4f50c" title="CollisionJudgment::\lHitCheck_Sphere_Triangle" alt="" coords="741,376,916,417"/>
+<area shape="rect" id="node46" href="class_collision_judgment.html#ab33b8936e62bdb9b6cf6f3d383c033b9" title="CollisionJudgment::\lHitCheck_Triangle_Triangle" alt="" coords="739,1207,918,1248"/>
+<area shape="rect" id="node18" href="_segment_8h.html#a3ca962c690b73355253042cdab29b337" title="ShortestDistance_Segment\l_Segment" alt="" coords="1020,1468,1201,1509"/>
+<area shape="rect" id="node19" href="class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="1287,1446,1473,1473"/>
+<area shape="rect" id="node21" href="class_vector3_d.html#a030384bdfe25863cd4be77fa73052cf1" title="Vector3D::AnyLengthVector" alt="" coords="1288,1606,1472,1633"/>
+<area shape="rect" id="node20" href="_segment_8h.html#a0575d6a616fa95075f88623632bae170" title="ShortestDistance_Segment\l_Point" alt="" coords="1289,1537,1471,1579"/>
+<area shape="rect" id="node26" href="class_collision_judgment.html#a58785d1cd51b4d7af4c19dca42d842e5" title="CollisionJudgment::\lIsObtuseAngle_Segment3D\l_Capsule" alt="" coords="1019,690,1202,746"/>
+<area shape="rect" id="node27" href="class_collision_judgment.html#a9d7bd7435d9e116c8d0dfb62662e60d5" title="CollisionJudgment::\lCrossPointCalculation\l_Segment3D_Capsule" alt="" coords="1035,770,1186,826"/>
+<area shape="rect" id="node31" href="class_collision_judgment.html#af4da6d6923d8ee57253b1e86436e6ec5" title="CollisionJudgment::\lIsAcuteAngle_Segment3D\l_Capsule" alt="" coords="1023,610,1198,666"/>
+<area shape="rect" id="node25" href="class_collision_judgment.html#a5fd5784d3e7d0ce09f5bda5603a8ca36" title="CollisionJudgment::\lIsInSegment" alt="" coords="1528,876,1663,917"/>
+<area shape="rect" id="node29" href="class_collision_judgment.html#aa7d814d54f323c366de1d068440ded2b" title="CollisionJudgment::\lQuadraticEquation_Calculation\l_Segment3D_Cylinder" alt="" coords="1280,1014,1480,1070"/>
+<area shape="rect" id="node30" href="class_collision_judgment.html#a413d713064c810f1bea6760e76db5221" title="CollisionJudgment::\lAskForTheFrontT_Segment3D\l_Cylinder" alt="" coords="1281,934,1479,990"/>
+<area shape="rect" id="node33" href="class_collision_judgment.html#ae992df185735a5348aef01754ebf9b80" title="CollisionJudgment::\lAmountOfSqueezingVectorCalculation\l_Sphere_Capsule" alt="" coords="989,1635,1232,1691"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_icgraph.png" border="0" usemap="#class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_icgraph" alt=""/></div>
+<map name="class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_icgraph" id="class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="232,13,403,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="451,5,604,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="652,13,847,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="895,13,1045,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1093,13,1255,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1303,13,1376,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1d67f4076eb71e191db5cff4e5abe3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d67f4076eb71e191db5cff4e5abe3b0">&#9670;&nbsp;</a></span>CollisionGround()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::CollisionGround </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地面との衝突判定関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00435">435</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_cgraph.png" border="0" usemap="#class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_cgraph" alt=""/></div>
+<map name="class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_cgraph" id="class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="274,5,410,47"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="274,71,410,112"/>
+<area shape="rect" id="node4" href="class_collision_base.html#a7b9cd927976308f8719f3becc03b99a1" title="CollisionBase::getIsJudgment\lGround" alt="" coords="245,136,439,177"/>
+<area shape="rect" id="node5" href="class_mesh_plane_polygon.html#ac04d763b16a962f00c99e3354e45f320" title="MeshPlanePolygon::GetHeight" alt="" coords="242,202,442,229"/>
+<area shape="rect" id="node9" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="232,253,452,279"/>
+<area shape="rect" id="node10" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="237,303,447,330"/>
+<area shape="rect" id="node11" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="265,354,419,381"/>
+<area shape="rect" id="node12" href="class_collision_base.html#a48c9d1d9e4286cde5054d4d2aa70bdd8" title="フィールドとの衝突時関数 " alt="" coords="259,405,425,431"/>
+<area shape="rect" id="node13" href="class_collision_base.html#ac1ed5b1c0c9b6b70b432e6656f9c4b45" title="フィールドとの非衝突時関数 " alt="" coords="249,455,435,482"/>
+<area shape="rect" id="node6" href="namespace_effekseer.html#ace0abf7c2e6947e519ebe8b54cbcc30a" title="ランダム関数 " alt="" coords="554,173,653,199"/>
+<area shape="rect" id="node7" href="class_mesh_plane_polygon.html#a815092659c44ccd2f626445c7dd95c9e" title="MeshPlanePolygon::Calculation\lHeight" alt="" coords="500,224,707,265"/>
+<area shape="rect" id="node8" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="755,231,949,258"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_icgraph.png" border="0" usemap="#class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_icgraph" alt=""/></div>
+<map name="class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_icgraph" id="class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="232,13,403,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="451,5,604,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="652,13,847,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="895,13,1045,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1093,13,1255,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1303,13,1376,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4da1241f3905c3855b31d7e20ceed5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da1241f3905c3855b31d7e20ceed5a1">&#9670;&nbsp;</a></span>DebugDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::DebugDisplay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Debug表示関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00930">930</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_cgraph.png" border="0" usemap="#class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_cgraph" alt=""/></div>
+<map name="class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_cgraph" id="class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_cgraph">
+<area shape="rect" id="node2" href="namespace_im_gui.html#afbccd31113430670b5ab2bf0d6f509bf" title="ImGui::SetNextWindowPos" alt="" coords="264,5,444,32"/>
+<area shape="rect" id="node3" href="namespace_im_gui.html#ab33717bb71ef5e393ae18656fc6b229d" title="ImGui::SetNextWindowSize" alt="" coords="263,56,445,83"/>
+<area shape="rect" id="node4" href="namespace_im_gui.html#a77ee84afb636e05eb4b2d6eeddcc2aa8" title="ImGui::PushStyleColor" alt="" coords="277,224,431,251"/>
+<area shape="rect" id="node7" href="namespace_im_gui.html#a581e58db0bc930bafa4a5d23093a2b99" title="ImGui::Begin" alt="" coords="305,477,403,504"/>
+<area shape="rect" id="node11" href="namespace_im_gui.html#a9e7b83611fe441d54fad2effb4bf4965" title="ImGui::Text" alt="" coords="309,376,399,403"/>
+<area shape="rect" id="node22" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="286,529,422,570"/>
+<area shape="rect" id="node23" href="namespace_im_gui.html#a38094c568ce398db5a3abb9d3ac92030" title="ImGui::Button" alt="" coords="303,427,405,453"/>
+<area shape="rect" id="node36" href="namespace_im_gui.html#a5479d93794a004c67ceb6d13f37c8254" title="ImGui::End" alt="" coords="311,325,397,352"/>
+<area shape="rect" id="node50" href="namespace_im_gui.html#a9795f730b4043a98b6254738d86efcdc" title="ImGui::PopStyleColor" alt="" coords="745,123,892,149"/>
+<area shape="rect" id="node5" href="class_im_vector.html#a68387993f2a5f5c3b2a7139d9ab778b8" title="ImVector::push_back" alt="" coords="983,249,1129,276"/>
+<area shape="rect" id="node6" href="namespace_im_gui.html#a74df648cad381b5ad979c3609b7f4b2a" title="ImGui::ColorConvertU32To\lFloat4" alt="" coords="499,158,673,199"/>
+<area shape="rect" id="node8" href="namespace_im_gui.html#abca25f22c02e73d5eb2e9c72c4557813" title="ImGui::FindWindowByName" alt="" coords="493,1339,679,1365"/>
+<area shape="rect" id="node9" href="imgui_8cpp.html#aa55e55e944172fc87494a342da489970" title="ImHash" alt="" coords="1023,1339,1089,1365"/>
+<area shape="rect" id="node10" href="struct_im_gui_storage.html#aaf87a98ede89da09113b0189f6d878ca" title="ImGuiStorage::GetVoidPtr" alt="" coords="732,1389,905,1416"/>
+<area shape="rect" id="node12" href="namespace_im_gui.html#a10a0d6362178c2f743092f21e1b6cd20" title="ImGui::TextV" alt="" coords="537,705,635,732"/>
+<area shape="rect" id="node13" href="namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="969,680,1143,707"/>
+<area shape="rect" id="node14" href="imgui_8cpp.html#a1c61ee979ec8d777ba415296e12950a3" title="ImFormatStringV" alt="" coords="759,731,879,757"/>
+<area shape="rect" id="node15" href="namespace_im_gui.html#a96a5f42789ecc419b2ae8af7b2acc28e" title="ImGui::TextUnformatted" alt="" coords="739,883,898,909"/>
+<area shape="rect" id="node16" href="namespace_im_gui.html#aaba5637199d31ea23d4d143b30a44aff" title="ImGui::GetTextLineHeight" alt="" coords="971,832,1141,859"/>
+<area shape="rect" id="node17" href="namespace_effekseer.html#ace0abf7c2e6947e519ebe8b54cbcc30a" title="ランダム関数 " alt="" coords="1007,933,1105,960"/>
+<area shape="rect" id="node18" href="namespace_im_gui.html#a8674467ae34d04bc99df1f7f98f47407" title="ImGui::IsClippedEx" alt="" coords="989,984,1123,1011"/>
+<area shape="rect" id="node19" href="namespace_im_gui.html#a848b9db6cc4a186751c0ecebcaadc33b" title="ImGui::CalcTextSize" alt="" coords="985,883,1127,909"/>
+<area shape="rect" id="node20" href="namespace_im_gui.html#a7671e1dbc803a31b06081b52a771d83f" title="ImGui::FindRenderedTextEnd" alt="" coords="1201,984,1393,1011"/>
+<area shape="rect" id="node21" href="struct_im_font.html#ad67f64fd206ad197f4b93b1a1ae27cfe" title="ImFont::CalcTextSizeA" alt="" coords="1219,883,1375,909"/>
+<area shape="rect" id="node24" href="namespace_im_gui.html#ae479220c66b039874c6e4c9e9b22849f" title="ImGui::ButtonEx" alt="" coords="527,1035,645,1061"/>
+<area shape="rect" id="node25" href="struct_im_gui_window.html#a66400a63bc0b54d7d29e08d1b1b1a42b" title="ImGuiWindow::GetID" alt="" coords="747,1187,890,1213"/>
+<area shape="rect" id="node27" href="namespace_im_gui.html#a3c1505e785f9571ed82500692a727c5f" title="ImGui::CalcItemSize" alt="" coords="748,1288,889,1315"/>
+<area shape="rect" id="node29" href="namespace_im_gui.html#ac7b9a7399d9606b25278002303f545b6" title="ImGui::ItemSize" alt="" coords="761,1237,876,1264"/>
+<area shape="rect" id="node30" href="namespace_im_gui.html#a454e81b7c3befcc51c900f2fb3bd5a9a" title="ImGui::ItemAdd" alt="" coords="763,1035,875,1061"/>
+<area shape="rect" id="node32" href="namespace_im_gui.html#a65a4f18b1bc8ce0f351687922089f374" title="ImGui::ButtonBehavior" alt="" coords="743,781,894,808"/>
+<area shape="rect" id="node33" href="namespace_im_gui.html#a0de2d9bd347d9866511eb8d014e62556" title="ImGui::GetColorU32" alt="" coords="987,1136,1125,1163"/>
+<area shape="rect" id="node34" href="namespace_im_gui.html#a621ba649568ede3939d4f10d83b86d04" title="ImGui::RenderFrame" alt="" coords="747,1136,890,1163"/>
+<area shape="rect" id="node35" href="namespace_im_gui.html#ab362eafae794c7364a6b96ea06f38eb9" title="ImGui::RenderTextClipped" alt="" coords="732,984,905,1011"/>
+<area shape="rect" id="node26" href="namespace_im_gui.html#a85a245c78a9f7c351636bdad6e60c488" title="ImGui::KeepAliveID" alt="" coords="989,1187,1123,1213"/>
+<area shape="rect" id="node28" href="namespace_im_gui.html#a0a4dbfabbfa45d74319ef541962ce2eb" title="ImGui::GetContentRegionMax" alt="" coords="959,1288,1153,1315"/>
+<area shape="rect" id="node31" href="namespace_im_gui.html#ae0b8ea0e06c457316d6aed6c5b2a1c25" title="ImGui::IsMouseHoveringRect" alt="" coords="961,1085,1151,1112"/>
+<area shape="rect" id="node37" href="namespace_im_gui.html#af93bed3bce5475fe4d525d744f16aa20" title="ImGui::EndColumns" alt="" coords="517,325,655,352"/>
+<area shape="rect" id="node39" href="class_im_vector.html#a3db7ce62d3c429effdb893fbf7148c1c" title="ImVector::pop_back" alt="" coords="987,129,1125,156"/>
+<area shape="rect" id="node41" href="namespace_im_gui.html#aef1c8a6e5a3c70cb10d03d2a2a66dfd8" title="ImGui::PopClipRect" alt="" coords="751,325,887,352"/>
+<area shape="rect" id="node44" href="namespace_im_gui.html#a2ebcd048d1ca025fb972e1c2e920e3f3" title="ImGui::LogFinish" alt="" coords="526,503,646,529"/>
+<area shape="rect" id="node38" href="namespace_im_gui.html#ad29a3fc0cb5dfc7f9fc7224512ce90bf" title="ImGui::PopItemWidth" alt="" coords="745,275,892,301"/>
+<area shape="rect" id="node43" href="struct_im_draw_list.html#a2ed82c3f663cda520c90c55b94196274" title="ImDrawList::ChannelsMerge" alt="" coords="727,173,911,200"/>
+<area shape="rect" id="node40" href="class_im_vector.html#a3e4424d3fca190894598a6575f9d2401" title="ImVector::back" alt="" coords="1001,187,1111,213"/>
+<area shape="rect" id="node42" href="struct_im_draw_list.html#a44f40c59ca755f559020f5a7fa81103a" title="ImDrawList::PopClipRect" alt="" coords="973,325,1139,352"/>
+<area shape="rect" id="node45" href="namespace_im_gui.html#aa548475d8f771ab6524d73d900a41198" title="ImGui::LogText" alt="" coords="763,579,874,605"/>
+<area shape="rect" id="node46" href="struct_im_gui_text_buffer.html#a2811fcd43e0224eb3bd0f3464b634289" title="ImGuiTextBuffer::size" alt="" coords="745,629,892,656"/>
+<area shape="rect" id="node47" href="namespace_im_gui.html#aa4824a1b351c063b4aff9b9f4fb5fd4d" title="ImGui::SetClipboardText" alt="" coords="737,477,900,504"/>
+<area shape="rect" id="node48" href="struct_im_gui_text_buffer.html#aab6d83c6b9a8061287a4cb6135c1cab4" title="ImGuiTextBuffer::begin" alt="" coords="742,528,895,555"/>
+<area shape="rect" id="node49" href="struct_im_gui_text_buffer.html#a9e4edc9f950bc9e35d5c3b3071dbc0df" title="ImGuiTextBuffer::clear" alt="" coords="743,427,894,453"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_icgraph.png" border="0" usemap="#class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_icgraph" alt=""/></div>
+<map name="class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_icgraph" id="class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="263,13,433,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="481,5,635,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="683,13,877,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="925,13,1076,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1124,13,1285,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1333,13,1407,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -173,6 +713,126 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 </div><div class="memdoc">
 
 <p>初期化関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00033">33</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_cgraph.png" border="0" usemap="#class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_cgraph" alt=""/></div>
+<map name="class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_cgraph" id="class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_cgraph">
+<area shape="rect" id="node2" href="class_liner_octree.html#a715d655c722c00c002d0bb006d0600d8" title="初期化関数 " alt="" coords="200,5,315,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_icgraph.png" border="0" usemap="#class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_icgraph" alt=""/></div>
+<map name="class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_icgraph" id="class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="200,5,371,32"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="419,5,553,32"/>
+<area shape="rect" id="node4" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="601,5,728,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="776,5,937,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="985,5,1059,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25dbc14dbc709a6bc2dc4424e3965dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25dbc14dbc709a6bc2dc4424e3965dbe">&#9670;&nbsp;</a></span>OldCollisionDetermination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::OldCollisionDetermination </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>古い衝突判定関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00359">359</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_cgraph.png" border="0" usemap="#class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_cgraph" alt=""/></div>
+<map name="class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_cgraph" id="class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="795,201,931,243"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="795,1531,931,1572"/>
+<area shape="rect" id="node4" href="class_collision_pair_check.html#aa7603c32ae782ad890280d360ae19dfe" title="衝突基底クラスペア判定関数 " alt="" coords="277,148,408,189"/>
+<area shape="rect" id="node10" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="252,356,433,397"/>
+<area shape="rect" id="node11" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="255,1519,431,1560"/>
+<area shape="rect" id="node12" href="class_collision_objects.html#a1320a57aae5798c04e65b2b7c8433aae" title="CollisionObjects::getIsJudgment" alt="" coords="488,509,696,535"/>
+<area shape="rect" id="node13" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="259,669,426,711"/>
+<area shape="rect" id="node49" href="class_collision_objects.html#a01ffe9567540a819f19cd66f96981b47" title="全ての衝突用データのリセット関数 " alt="" coords="255,947,430,988"/>
+<area shape="rect" id="node5" href="class_collision_pair_check.html#a52eefe9e5b104075d4c812ca9b68ff16" title="ペア判定関数 " alt="" coords="527,104,657,145"/>
+<area shape="rect" id="node6" href="class_collision_pair_check.html#ab0f449965867269dc3115e831547a869" title="指定した衝突ステートの検索関数 " alt="" coords="798,71,929,112"/>
+<area shape="rect" id="node8" href="class_collision_pair_check.html#a97c459f98bce9f88d9f506423395c40c" title="指定したコンポーネントの逆を返す関数 " alt="" coords="786,136,941,177"/>
+<area shape="rect" id="node9" href="class_collision_pair_check.html#a9f1819e873a51fcf50a7dbbf5f9d8690" title="プレイヤーのペアリスト関数 " alt="" coords="798,5,929,47"/>
+<area shape="rect" id="node7" href="class_collision_base.html#af4e773951a4e1965e64410841a0292a4" title="CollisionBase::getState" alt="" coords="1047,46,1205,73"/>
+<area shape="rect" id="node14" href="class_collision_objects.html#a309eef4695b4a19f389eaf5d0753c256" title="CollisionObjects::getEnd\lIndexOfArray" alt="" coords="509,560,675,601"/>
+<area shape="rect" id="node15" href="class_collision_objects.html#a4f5c029b20a7ed4c7fdee815f73d20be" title="CollisionObjects::getCollision\lObject" alt="" coords="497,968,687,1009"/>
+<area shape="rect" id="node16" href="class_collision_object.html#ac11b01882a159efadbe62bd5a66c49aa" title="CollisionObject::getIsJudgment" alt="" coords="491,727,693,754"/>
+<area shape="rect" id="node17" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="491,880,693,921"/>
+<area shape="rect" id="node46" href="class_collision_objects.html#af95769194fff92babcf411c2262c9d10" title="CollisionObjects::getCollisionBase" alt="" coords="481,778,703,805"/>
+<area shape="rect" id="node47" href="class_collision_base.html#a5c94fe03f875595758e83eb2a176e45d" title="衝突時関数 " alt="" coords="505,626,679,653"/>
+<area shape="rect" id="node48" href="class_collision_base.html#a9b64fc5c3f2aac2a05296985ef799fb1" title="非衝突時関数 " alt="" coords="495,677,689,703"/>
+<area shape="rect" id="node18" href="class_collision_object.html#a3ff1c2d794f520c96b6bc6037a8f8f8c" title="CollisionObject::getCollision\lShape" alt="" coords="771,880,955,921"/>
+<area shape="rect" id="node19" href="class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc" title="CollisionShapeBase\l::getType" alt="" coords="794,945,933,987"/>
+<area shape="rect" id="node20" href="class_collision_judgment.html#a95962556f370a964ec1961b1c461ae2a" title="CollisionJudgment::\lHitCheck_Capsule_Capsule" alt="" coords="772,749,955,791"/>
+<area shape="rect" id="node25" href="class_collision_object.html#a1087fa9cebfe0b1675923807b73d8868" title="CollisionObject::setHitVector" alt="" coords="769,1062,958,1089"/>
+<area shape="rect" id="node26" href="class_collision_judgment.html#a21938f544146999d01d96f855277727b" title="CollisionJudgment::\lHitCheck_Segment3D_Capsule" alt="" coords="761,1113,965,1155"/>
+<area shape="rect" id="node27" href="class_collision_judgment.html#a92531c1254846a0a06ee7e95796f1070" title="CollisionJudgment::\lHitCheck_Segment3D_Sphere" alt="" coords="1027,917,1225,959"/>
+<area shape="rect" id="node30" href="class_collision_judgment.html#a61308e967a8569bcee4b25c74e28826d" title="CollisionJudgment::\lHitCheck_Segment3D_Cylinder" alt="" coords="1024,1224,1228,1265"/>
+<area shape="rect" id="node32" href="class_collision_judgment.html#a4cc335999fcbeadf0aa1b6ebcb749e5b" title="CollisionJudgment::\lHitCheck_Sphere_Capsule" alt="" coords="1037,625,1215,667"/>
+<area shape="rect" id="node33" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="791,1348,936,1389"/>
+<area shape="rect" id="node34" href="class_collision_judgment.html#acd1d157a361d756632c73f4406442ce2" title="CollisionJudgment::\lHitCheck_Sphere_OBB" alt="" coords="784,1413,943,1455"/>
+<area shape="rect" id="node35" href="class_collision_judgment.html#a01ad684bee6964d4315df1a23ac3ec7d" title="CollisionJudgment::\lHitCheck_Plane_Plane" alt="" coords="786,267,941,308"/>
+<area shape="rect" id="node36" href="class_collision_object.html#adb01187ec10302f13034407a3c852860" title="CollisionObject::getHitVector" alt="" coords="769,333,958,359"/>
+<area shape="rect" id="node37" href="class_vector3_d.html#a9cfe261f14b3b2e6704c5649058d3ecd" title="Vector3D::ResetVector" alt="" coords="785,1479,941,1506"/>
+<area shape="rect" id="node38" href="class_collision_judgment.html#ac31167bc6d89d20f7220220ee3f21f4e" title="CollisionJudgment::\lHitCheck_Segment3D_Plane" alt="" coords="1031,413,1221,455"/>
+<area shape="rect" id="node39" href="class_collision_judgment.html#a47628fb2aef868f75942f378f63478cc" title="CollisionJudgment::\lHitCheck_Sphere_Plane" alt="" coords="1045,1289,1207,1331"/>
+<area shape="rect" id="node40" href="class_collision_judgment.html#a473c94087dc9cd3937016ccba5f12abd" title="CollisionJudgment::\lHitCheck_Plane_Triangle" alt="" coords="780,501,947,543"/>
+<area shape="rect" id="node41" href="class_collision_judgment.html#a612bc9e5cfcb243324417f5059c6e24d" title="CollisionJudgment::\lHitCheck_Segment2D_Segment2D" alt="" coords="751,567,976,608"/>
+<area shape="rect" id="node42" href="class_collision_judgment.html#a4f5344d6ac14db5d3732db47050bd549" title="CollisionJudgment::\lHitCheck_Segment3D_Triangle" alt="" coords="762,384,965,425"/>
+<area shape="rect" id="node43" href="class_collision_judgment.html#a21e4ce202f713f1b2a7fc593f4daf7d2" title="CollisionJudgment::\lHitCheck_Sphere_Sphere" alt="" coords="778,684,949,725"/>
+<area shape="rect" id="node44" href="class_collision_judgment.html#a2b4e851cf1fc45dca09175b36fb4f50c" title="CollisionJudgment::\lHitCheck_Sphere_Triangle" alt="" coords="776,1231,951,1272"/>
+<area shape="rect" id="node45" href="class_collision_judgment.html#ab33b8936e62bdb9b6cf6f3d383c033b9" title="CollisionJudgment::\lHitCheck_Triangle_Triangle" alt="" coords="774,815,953,856"/>
+<area shape="rect" id="node21" href="_segment_8h.html#a3ca962c690b73355253042cdab29b337" title="ShortestDistance_Segment\l_Segment" alt="" coords="1035,691,1217,732"/>
+<area shape="rect" id="node22" href="class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="1276,727,1461,754"/>
+<area shape="rect" id="node24" href="class_vector3_d.html#a030384bdfe25863cd4be77fa73052cf1" title="Vector3D::AnyLengthVector" alt="" coords="1034,807,1218,834"/>
+<area shape="rect" id="node23" href="_segment_8h.html#a0575d6a616fa95075f88623632bae170" title="ShortestDistance_Segment\l_Point" alt="" coords="1278,661,1459,703"/>
+<area shape="rect" id="node28" href="class_collision_judgment.html#a58785d1cd51b4d7af4c19dca42d842e5" title="CollisionJudgment::\lIsObtuseAngle_Segment3D\l_Capsule" alt="" coords="1035,1063,1217,1119"/>
+<area shape="rect" id="node29" href="class_collision_judgment.html#a9d7bd7435d9e116c8d0dfb62662e60d5" title="CollisionJudgment::\lCrossPointCalculation\l_Segment3D_Capsule" alt="" coords="1051,1143,1201,1199"/>
+<area shape="rect" id="node31" href="class_collision_judgment.html#af4da6d6923d8ee57253b1e86436e6ec5" title="CollisionJudgment::\lIsAcuteAngle_Segment3D\l_Capsule" alt="" coords="1039,983,1213,1039"/>
+<area shape="rect" id="node50" href="class_collision_object.html#a92dd5d21c6674605d290e0d37d64505a" title="衝突用データのリセット関数 " alt="" coords="495,1079,689,1106"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_icgraph.png" border="0" usemap="#class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_icgraph" alt=""/></div>
+<map name="class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_icgraph" id="class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="252,13,423,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="471,5,624,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="672,13,867,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="915,13,1065,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1113,13,1275,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1323,13,1396,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -204,6 +864,29 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 
 <p>衝突基底クラスの上書き関数 </p>
 
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00201">201</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_af9c2ce87e0189cdd1256c83decc64673_cgraph.png" border="0" usemap="#class_collision_manager_af9c2ce87e0189cdd1256c83decc64673_cgraph" alt=""/></div>
+<map name="class_collision_manager_af9c2ce87e0189cdd1256c83decc64673_cgraph" id="class_collision_manager_af9c2ce87e0189cdd1256c83decc64673_cgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a34318163f4256cebc7aefb95fc475030" title="衝突基底クラスの解放関数 " alt="" coords="257,195,433,236"/>
+<area shape="rect" id="node9" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="528,319,672,346"/>
+<area shape="rect" id="node11" href="class_game_object_base.html#a8158138ea811db49445845d8aaacaf3a" title="GameObjectBase::GetCollision" alt="" coords="244,341,447,367"/>
+<area shape="rect" id="node12" href="class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="244,391,447,418"/>
+<area shape="rect" id="node13" href="class_limited_pointer_array.html#a7cf64a1731ab6d0d63182b6c223fae0b" title="LimitedPointerArray\l::OverwriteArray" alt="" coords="277,443,413,484"/>
+<area shape="rect" id="node14" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="236,509,455,535"/>
+<area shape="rect" id="node15" href="class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="274,559,417,586"/>
+<area shape="rect" id="node3" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="509,5,691,47"/>
+<area shape="rect" id="node5" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="512,71,688,112"/>
+<area shape="rect" id="node7" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="510,136,690,177"/>
+<area shape="rect" id="node8" href="class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="503,202,697,229"/>
+<area shape="rect" id="node10" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="532,253,668,295"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="745,5,881,47"/>
+<area shape="rect" id="node6" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="745,71,881,112"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a34318163f4256cebc7aefb95fc475030"></a>
@@ -224,6 +907,111 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 
 <p>衝突基底クラスの解放関数 </p>
 
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00238">238</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a34318163f4256cebc7aefb95fc475030_cgraph.png" border="0" usemap="#class_collision_manager_a34318163f4256cebc7aefb95fc475030_cgraph" alt=""/></div>
+<map name="class_collision_manager_a34318163f4256cebc7aefb95fc475030_cgraph" id="class_collision_manager_a34318163f4256cebc7aefb95fc475030_cgraph">
+<area shape="rect" id="node2" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="236,5,417,47"/>
+<area shape="rect" id="node4" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="239,71,415,112"/>
+<area shape="rect" id="node6" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="237,136,417,177"/>
+<area shape="rect" id="node7" href="class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="229,202,424,229"/>
+<area shape="rect" id="node8" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="255,253,399,279"/>
+<area shape="rect" id="node9" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="259,304,395,345"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="472,5,608,47"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="472,71,608,112"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a34318163f4256cebc7aefb95fc475030_icgraph.png" border="0" usemap="#class_collision_manager_a34318163f4256cebc7aefb95fc475030_icgraph" alt=""/></div>
+<map name="class_collision_manager_a34318163f4256cebc7aefb95fc475030_icgraph" id="class_collision_manager_a34318163f4256cebc7aefb95fc475030_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#af9c2ce87e0189cdd1256c83decc64673" title="衝突基底クラスの上書き関数 " alt="" coords="245,25,428,66"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="229,90,444,131"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="492,90,725,131"/>
+<area shape="rect" id="node5" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="773,23,968,49"/>
+<area shape="rect" id="node7" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="794,90,947,131"/>
+<area shape="rect" id="node16" href="class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="783,188,958,215"/>
+<area shape="rect" id="node6" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1016,5,1197,32"/>
+<area shape="rect" id="node8" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="1030,57,1183,98"/>
+<area shape="rect" id="node10" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="1021,122,1192,163"/>
+<area shape="rect" id="node9" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1269,64,1420,91"/>
+<area shape="rect" id="node11" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1245,129,1444,156"/>
+<area shape="rect" id="node12" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1498,129,1657,156"/>
+<area shape="rect" id="node13" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1711,129,1887,156"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1935,129,2096,156"/>
+<area shape="rect" id="node15" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2144,129,2217,156"/>
+<area shape="rect" id="node17" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1031,188,1182,215"/>
+<area shape="rect" id="node21" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1021,239,1192,265"/>
+<area shape="rect" id="node18" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1267,224,1422,251"/>
+<area shape="rect" id="node19" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1516,195,1639,221"/>
+<area shape="rect" id="node20" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1492,245,1663,272"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a351353ddde07f2ff4f6642c8e1fc4ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351353ddde07f2ff4f6642c8e1fc4ede">&#9670;&nbsp;</a></span>ReleaseContentsOfAwaitReleaseArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionManager::ReleaseContentsOfAwaitReleaseArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放待ち配列の中身を解放関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00298">298</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_cgraph.png" border="0" usemap="#class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_cgraph" alt=""/></div>
+<map name="class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_cgraph" id="class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="286,5,422,47"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="251,71,457,112"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="286,136,422,177"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="286,201,422,243"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_icgraph.png" border="0" usemap="#class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_icgraph" alt=""/></div>
+<map name="class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_icgraph" id="class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#abfa4b87f3ce102f0d173e112e7963f09" title="終了関数 " alt="" coords="251,17,413,43"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#a33ce56b5a6f68d71b0f2bf733413dddb" title="シーン変更時の終了関数 " alt="" coords="251,71,413,112"/>
+<area shape="rect" id="node12" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="461,137,632,163"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="470,5,623,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="704,13,855,39"/>
+<area shape="rect" id="node6" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="461,71,632,112"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="680,78,879,105"/>
+<area shape="rect" id="node8" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="945,79,1103,106"/>
+<area shape="rect" id="node9" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1169,81,1345,107"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1393,107,1555,134"/>
+<area shape="rect" id="node11" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1603,107,1676,134"/>
+<area shape="rect" id="node13" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="703,129,856,171"/>
+<area shape="rect" id="node14" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="927,133,1121,159"/>
+<area shape="rect" id="node15" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1182,133,1333,159"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a63ce6003d8d042085d7b388a4cfa0666"></a>
@@ -241,6 +1029,130 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00257">257</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666_icgraph.png" border="0" usemap="#class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666_icgraph" alt=""/></div>
+<map name="class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666_icgraph" id="class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666_icgraph">
+<area shape="rect" id="node2" href="class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="244,13,319,39"/>
+<area shape="rect" id="node3" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="367,13,507,39"/>
+<area shape="rect" id="node4" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="555,5,715,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a87f64affda1906cd6eee3d177ca25045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f64affda1906cd6eee3d177ca25045">&#9670;&nbsp;</a></span>SortCollisionCalculation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionManager::SortCollisionCalculation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collision_object.html">CollisionObject</a> *&#160;</td>
+          <td class="paramname"><em>collision_object0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collision_object.html">CollisionObject</a> *&#160;</td>
+          <td class="paramname"><em>collision_object1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>衝突計算振り分け関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00526">526</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a87f64affda1906cd6eee3d177ca25045_cgraph.png" border="0" usemap="#class_collision_manager_a87f64affda1906cd6eee3d177ca25045_cgraph" alt=""/></div>
+<map name="class_collision_manager_a87f64affda1906cd6eee3d177ca25045_cgraph" id="class_collision_manager_a87f64affda1906cd6eee3d177ca25045_cgraph">
+<area shape="rect" id="node2" href="class_collision_object.html#a3ff1c2d794f520c96b6bc6037a8f8f8c" title="CollisionObject::getCollision\lShape" alt="" coords="277,223,461,265"/>
+<area shape="rect" id="node3" href="class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc" title="CollisionShapeBase\l::getType" alt="" coords="299,289,438,330"/>
+<area shape="rect" id="node4" href="class_collision_judgment.html#a95962556f370a964ec1961b1c461ae2a" title="CollisionJudgment::\lHitCheck_Capsule_Capsule" alt="" coords="277,947,460,989"/>
+<area shape="rect" id="node10" href="class_collision_object.html#a1087fa9cebfe0b1675923807b73d8868" title="CollisionObject::setHitVector" alt="" coords="274,1064,463,1091"/>
+<area shape="rect" id="node11" href="class_collision_judgment.html#a21938f544146999d01d96f855277727b" title="CollisionJudgment::\lHitCheck_Segment3D_Capsule" alt="" coords="267,457,471,498"/>
+<area shape="rect" id="node12" href="class_collision_judgment.html#a92531c1254846a0a06ee7e95796f1070" title="CollisionJudgment::\lHitCheck_Segment3D_Sphere" alt="" coords="543,194,741,235"/>
+<area shape="rect" id="node16" href="class_collision_judgment.html#a61308e967a8569bcee4b25c74e28826d" title="CollisionJudgment::\lHitCheck_Segment3D_Cylinder" alt="" coords="540,259,744,301"/>
+<area shape="rect" id="node22" href="class_collision_judgment.html#a4cc335999fcbeadf0aa1b6ebcb749e5b" title="CollisionJudgment::\lHitCheck_Sphere_Capsule" alt="" coords="553,905,731,946"/>
+<area shape="rect" id="node24" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="569,717,715,758"/>
+<area shape="rect" id="node33" href="class_collision_judgment.html#acd1d157a361d756632c73f4406442ce2" title="CollisionJudgment::\lHitCheck_Sphere_OBB" alt="" coords="563,1321,721,1362"/>
+<area shape="rect" id="node37" href="class_collision_judgment.html#a01ad684bee6964d4315df1a23ac3ec7d" title="CollisionJudgment::\lHitCheck_Plane_Plane" alt="" coords="291,643,446,685"/>
+<area shape="rect" id="node40" href="class_collision_object.html#adb01187ec10302f13034407a3c852860" title="CollisionObject::getHitVector" alt="" coords="274,1115,463,1141"/>
+<area shape="rect" id="node41" href="class_vector3_d.html#a9cfe261f14b3b2e6704c5649058d3ecd" title="Vector3D::ResetVector" alt="" coords="291,1165,447,1192"/>
+<area shape="rect" id="node42" href="class_collision_judgment.html#ac31167bc6d89d20f7220220ee3f21f4e" title="CollisionJudgment::\lHitCheck_Segment3D_Plane" alt="" coords="547,810,737,851"/>
+<area shape="rect" id="node44" href="class_collision_judgment.html#a47628fb2aef868f75942f378f63478cc" title="CollisionJudgment::\lHitCheck_Sphere_Plane" alt="" coords="561,1386,723,1427"/>
+<area shape="rect" id="node45" href="class_collision_judgment.html#a473c94087dc9cd3937016ccba5f12abd" title="CollisionJudgment::\lHitCheck_Plane_Triangle" alt="" coords="285,1333,452,1374"/>
+<area shape="rect" id="node46" href="class_collision_judgment.html#a612bc9e5cfcb243324417f5059c6e24d" title="CollisionJudgment::\lHitCheck_Segment2D_Segment2D" alt="" coords="256,1398,481,1439"/>
+<area shape="rect" id="node47" href="class_collision_judgment.html#a4f5344d6ac14db5d3732db47050bd549" title="CollisionJudgment::\lHitCheck_Segment3D_Triangle" alt="" coords="267,779,470,821"/>
+<area shape="rect" id="node48" href="class_collision_judgment.html#a21e4ce202f713f1b2a7fc593f4daf7d2" title="CollisionJudgment::\lHitCheck_Sphere_Sphere" alt="" coords="283,1463,454,1505"/>
+<area shape="rect" id="node49" href="class_collision_judgment.html#a2b4e851cf1fc45dca09175b36fb4f50c" title="CollisionJudgment::\lHitCheck_Sphere_Triangle" alt="" coords="281,1267,456,1309"/>
+<area shape="rect" id="node50" href="class_collision_judgment.html#ab33b8936e62bdb9b6cf6f3d383c033b9" title="CollisionJudgment::\lHitCheck_Triangle_Triangle" alt="" coords="279,1529,458,1570"/>
+<area shape="rect" id="node5" href="_segment_8h.html#a3ca962c690b73355253042cdab29b337" title="ShortestDistance_Segment\l_Segment" alt="" coords="551,1171,733,1213"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="1093,1095,1279,1121"/>
+<area shape="rect" id="node9" href="class_vector3_d.html#a030384bdfe25863cd4be77fa73052cf1" title="Vector3D::AnyLengthVector" alt="" coords="1094,892,1278,919"/>
+<area shape="rect" id="node7" href="class_vector3_d.html#a8b10872079076291bbbc81b7d48aa514" title="Vector3D::GetLength" alt="" coords="1114,1263,1258,1289"/>
+<area shape="rect" id="node8" href="_segment_8h.html#a0575d6a616fa95075f88623632bae170" title="ShortestDistance_Segment\l_Point" alt="" coords="833,1197,1015,1238"/>
+<area shape="rect" id="node14" href="class_collision_judgment.html#a58785d1cd51b4d7af4c19dca42d842e5" title="CollisionJudgment::\lIsObtuseAngle_Segment3D\l_Capsule" alt="" coords="551,329,733,385"/>
+<area shape="rect" id="node15" href="class_collision_judgment.html#a9d7bd7435d9e116c8d0dfb62662e60d5" title="CollisionJudgment::\lCrossPointCalculation\l_Segment3D_Capsule" alt="" coords="567,409,717,465"/>
+<area shape="rect" id="node21" href="class_collision_judgment.html#af4da6d6923d8ee57253b1e86436e6ec5" title="CollisionJudgment::\lIsAcuteAngle_Segment3D\l_Capsule" alt="" coords="555,489,729,545"/>
+<area shape="rect" id="node13" href="class_collision_judgment.html#a5fd5784d3e7d0ce09f5bda5603a8ca36" title="CollisionJudgment::\lIsInSegment" alt="" coords="1119,49,1253,90"/>
+<area shape="rect" id="node17" href="class_collision_judgment.html#aa7d814d54f323c366de1d068440ded2b" title="CollisionJudgment::\lQuadraticEquation_Calculation\l_Segment3D_Cylinder" alt="" coords="824,252,1024,308"/>
+<area shape="rect" id="node19" href="class_collision_judgment.html#a413d713064c810f1bea6760e76db5221" title="CollisionJudgment::\lAskForTheFrontT_Segment3D\l_Cylinder" alt="" coords="825,41,1023,97"/>
+<area shape="rect" id="node20" href="class_collision_judgment.html#ad369f21f29dfe28a337d10d8a9a06874" title="CollisionJudgment::\lCrossPointCalculation\l_Segment3D_Cylinder" alt="" coords="849,172,999,228"/>
+<area shape="rect" id="node18" href="class_vector3_d.html#aed4c9936346cfbcb7238bd64ae1601d3" title="Vector3D::CreateVectorDot" alt="" coords="1096,397,1276,424"/>
+<area shape="rect" id="node23" href="class_collision_judgment.html#ae992df185735a5348aef01754ebf9b80" title="CollisionJudgment::\lAmountOfSqueezingVectorCalculation\l_Sphere_Capsule" alt="" coords="803,897,1045,953"/>
+<area shape="rect" id="node25" href="class_axis_vector.html#a79013d5b090ce9232d57f528f18e982e" title="AxisVector::GetForawrd" alt="" coords="1105,821,1267,848"/>
+<area shape="rect" id="node26" href="class_axis_vector.html#a1d4f944d118d6f999c516dbdc0827a39" title="AxisVector::GetRight" alt="" coords="1113,513,1259,540"/>
+<area shape="rect" id="node27" href="class_axis_vector.html#aba45ae6f91ac516e6e42fdb8bcfcae2e" title="AxisVector::GetUp" alt="" coords="1121,640,1251,667"/>
+<area shape="rect" id="node28" href="class_o_b_b.html#a03218b64dad1985876e7bad09f4a61ce" title="OBB::GetVectorForwardHalf" alt="" coords="831,847,1017,873"/>
+<area shape="rect" id="node29" href="class_o_b_b.html#a1c3a21fd4ff8dcc55d4f5d20c563ebd6" title="OBB::GetVectorRightHalf" alt="" coords="839,564,1009,591"/>
+<area shape="rect" id="node30" href="class_o_b_b.html#a48255d7b9af2d2ea109de41787c30a3a" title="OBB::GetVectorUpHalf" alt="" coords="847,665,1001,692"/>
+<area shape="rect" id="node31" href="class_collision_judgment.html#abb475bce4c67d02d0964355aa60f1362" title="CollisionJudgment::\lIsHit_NormalSeparationAxis\l_OBB_OBB" alt="" coords="832,716,1016,772"/>
+<area shape="rect" id="node32" href="class_collision_judgment.html#a86d5dd5817ff244d22c9efa3eeecbcb7" title="CollisionJudgment::\lIsHit_CrossSeparationAxis\l_OBB_OBB" alt="" coords="835,383,1013,439"/>
+<area shape="rect" id="node34" href="_o_b_b_8h.html#ab9242e6680d0988078a78f825c944d5e" title="ShortestDistance_OBB\l_Point" alt="" coords="845,1510,1003,1551"/>
+<area shape="rect" id="node35" href="class_collision_judgment.html#a76fe4aa5e6400073823c1f60395c1f94" title="CollisionJudgment::\lFroatTruncation" alt="" coords="857,1445,991,1486"/>
+<area shape="rect" id="node36" href="class_collision_judgment.html#a0d9af21fba97d2f396c8200b6fccaeb4" title="CollisionJudgment::\lAmountOfSqueezingVectorCalculation\l_Sphere_OBB" alt="" coords="803,1313,1045,1369"/>
+<area shape="rect" id="node38" href="class_collision_judgment.html#a549042895226422e8551afff35519a59" title="CollisionJudgment::\lIsHit_Plane_Plane" alt="" coords="575,570,709,611"/>
+<area shape="rect" id="node39" href="class_collision_judgment.html#ab454b739b07f965ae4c3c94c53357b45" title="CollisionJudgment::\lCalculationOfIntersectionSegments\l_Plane_Plane" alt="" coords="529,636,755,692"/>
+<area shape="rect" id="node43" href="class_collision_judgment.html#a85481c15b123971458a612a31b1cc57e" title="CollisionJudgment::\lIsHitSquare_Segment3D_Plane" alt="" coords="822,1029,1026,1070"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a87f64affda1906cd6eee3d177ca25045_icgraph.png" border="0" usemap="#class_collision_manager_a87f64affda1906cd6eee3d177ca25045_icgraph" alt=""/></div>
+<map name="class_collision_manager_a87f64affda1906cd6eee3d177ca25045_icgraph" id="class_collision_manager_a87f64affda1906cd6eee3d177ca25045_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="256,39,423,80"/>
+<area shape="rect" id="node3" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="481,5,659,47"/>
+<area shape="rect" id="node10" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="471,71,669,112"/>
+<area shape="rect" id="node4" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="717,46,888,73"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="936,39,1089,80"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1137,46,1332,73"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1380,46,1531,73"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1579,46,1740,73"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1788,46,1861,73"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -261,6 +1173,35 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 
 <p>終了関数 </p>
 
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00051">51</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_cgraph.png" border="0" usemap="#class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_cgraph" alt=""/></div>
+<map name="class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_cgraph" id="class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_cgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="216,112,413,154"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="497,44,633,86"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="497,280,633,322"/>
+<area shape="rect" id="node6" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="497,175,633,216"/>
+<area shape="rect" id="node7" href="class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="233,229,396,256"/>
+<area shape="rect" id="node8" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="224,47,405,88"/>
+<area shape="rect" id="node9" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="227,280,403,322"/>
+<area shape="rect" id="node10" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="225,398,405,439"/>
+<area shape="rect" id="node11" href="class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="217,464,412,490"/>
+<area shape="rect" id="node12" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="243,514,387,541"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="461,110,668,151"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_icgraph.png" border="0" usemap="#class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_icgraph" alt=""/></div>
+<map name="class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_icgraph" id="class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="216,5,369,47"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="417,13,568,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a33ce56b5a6f68d71b0f2bf733413dddb"></a>
@@ -279,6 +1220,38 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 </div><div class="memdoc">
 
 <p>シーン変更時の終了関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00086">86</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_cgraph.png" border="0" usemap="#class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_cgraph" alt=""/></div>
+<map name="class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_cgraph" id="class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_cgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="216,123,413,164"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="497,51,633,92"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="497,247,633,288"/>
+<area shape="rect" id="node6" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="497,181,633,223"/>
+<area shape="rect" id="node7" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="224,5,405,47"/>
+<area shape="rect" id="node8" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="227,240,403,281"/>
+<area shape="rect" id="node9" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="225,357,405,399"/>
+<area shape="rect" id="node10" href="class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="217,423,412,450"/>
+<area shape="rect" id="node11" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="243,474,387,501"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="461,116,668,157"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_icgraph.png" border="0" usemap="#class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_icgraph" alt=""/></div>
+<map name="class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_icgraph" id="class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="216,5,387,47"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="435,13,633,39"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="681,13,840,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="888,13,1064,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1112,13,1273,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1321,13,1395,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -299,9 +1272,105 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 
 <p>更新関数 </p>
 
+<p class="definition"> <a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a> の <a class="el" href="_collision_manager_8cpp_source.html#l00120">120</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_cgraph.png" border="0" usemap="#class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_cgraph" alt=""/></div>
+<map name="class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_cgraph" id="class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_cgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a53e468bb8624f84a5c65c9779781033f" title="追加待ち配列の中身を追加関数 " alt="" coords="227,1153,431,1194"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="1045,634,1181,675"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="1045,827,1181,869"/>
+<area shape="rect" id="node6" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="499,626,681,667"/>
+<area shape="rect" id="node7" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="502,861,678,902"/>
+<area shape="rect" id="node10" href="class_liner_octree.html#ac5773a5193942a68f77a33baed9d69d4" title="追加関数 " alt="" coords="530,1277,650,1304"/>
+<area shape="rect" id="node11" href="class_collision_objects.html#aee138e1c28f7f3dcbdce56181d59b628" title="CollisionObjects::getOctreeAABB" alt="" coords="481,1328,699,1355"/>
+<area shape="rect" id="node12" href="class_a_a_b_b.html#a9a18cef6c33dd579c144700c79ea39f5" title="AABB::getMin" alt="" coords="537,1379,643,1405"/>
+<area shape="rect" id="node13" href="class_a_a_b_b.html#a8dc63902fbb2c8f83185bbe9feaaa4b0" title="AABB::getMax" alt="" coords="535,1429,645,1456"/>
+<area shape="rect" id="node15" href="class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="230,802,427,843"/>
+<area shape="rect" id="node17" href="class_collision_base.html#a0f967cf5de4178ee99f434c3ff4f16fd" title="更新関数 " alt="" coords="253,1936,404,1963"/>
+<area shape="rect" id="node18" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="239,1987,419,2029"/>
+<area shape="rect" id="node19" href="class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="231,2053,426,2080"/>
+<area shape="rect" id="node20" href="class_object_of_tree.html#a28214e15fffb72cb50b764e2f3ac863d" title="ObjectOfTree::getObject" alt="" coords="247,2104,410,2131"/>
+<area shape="rect" id="node21" href="class_liner_octree.html#a880276cc9099c29f447f3ca0043b9ce9" title="衝突リスト更新関数 " alt="" coords="225,2155,433,2181"/>
+<area shape="rect" id="node22" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="239,357,418,398"/>
+<area shape="rect" id="node31" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="229,517,428,558"/>
+<area shape="rect" id="node33" href="class_collision_manager.html#a1d67f4076eb71e191db5cff4e5abe3b0" title="地面との衝突判定関数 " alt="" coords="761,1983,940,2025"/>
+<area shape="rect" id="node41" href="class_collision_manager.html#a4da1241f3905c3855b31d7e20ceed5a1" title="Debug表示関数 " alt="" coords="224,1657,433,1684"/>
+<area shape="rect" id="node50" href="class_collision_base.html#a0b2c1e3b090431d596b6a17e81360932" title="デバッグ表示関数 " alt="" coords="234,2205,423,2232"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="522,1211,658,1253"/>
+<area shape="rect" id="node8" href="class_object_of_tree.html#aae14cb0e8ac8b701de737c547a1d3b8c" title="ObjectOfTree::setObject" alt="" coords="509,992,671,1019"/>
+<area shape="rect" id="node9" href="class_collision_objects.html#a3d5a69741d66dcdebfae5a54a15c4b88" title="CollisionObjects::setObject\lOfTree" alt="" coords="500,1094,680,1135"/>
+<area shape="rect" id="node14" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="522,926,658,967"/>
+<area shape="rect" id="node16" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="487,743,693,785"/>
+<area shape="rect" id="node23" href="class_collision_pair_check.html#aa7603c32ae782ad890280d360ae19dfe" title="衝突基底クラスペア判定関数 " alt="" coords="525,357,655,398"/>
+<area shape="rect" id="node25" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="507,291,673,333"/>
+<area shape="rect" id="node24" href="class_collision_pair_check.html#a52eefe9e5b104075d4c812ca9b68ff16" title="ペア判定関数 " alt="" coords="785,357,916,398"/>
+<area shape="rect" id="node26" href="class_collision_objects.html#a309eef4695b4a19f389eaf5d0753c256" title="CollisionObjects::getEnd\lIndexOfArray" alt="" coords="768,174,933,215"/>
+<area shape="rect" id="node27" href="class_collision_objects.html#a4f5c029b20a7ed4c7fdee815f73d20be" title="CollisionObjects::getCollision\lObject" alt="" coords="755,239,946,281"/>
+<area shape="rect" id="node28" href="class_collision_object.html#ac11b01882a159efadbe62bd5a66c49aa" title="CollisionObject::getIsJudgment" alt="" coords="750,305,951,332"/>
+<area shape="rect" id="node29" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="749,109,952,150"/>
+<area shape="rect" id="node30" href="class_collision_objects.html#a1320a57aae5798c04e65b2b7c8433aae" title="CollisionObjects::getIsJudgment" alt="" coords="747,473,955,500"/>
+<area shape="rect" id="node32" href="class_collision_objects.html#a01ffe9567540a819f19cd66f96981b47" title="全ての衝突用データのリセット関数 " alt="" coords="763,525,938,566"/>
+<area shape="rect" id="node34" href="class_collision_base.html#a7b9cd927976308f8719f3becc03b99a1" title="CollisionBase::getIsJudgment\lGround" alt="" coords="1016,2042,1209,2083"/>
+<area shape="rect" id="node35" href="class_mesh_plane_polygon.html#ac04d763b16a962f00c99e3354e45f320" title="MeshPlanePolygon::GetHeight" alt="" coords="1013,2108,1213,2135"/>
+<area shape="rect" id="node36" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="1003,2159,1223,2185"/>
+<area shape="rect" id="node37" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="1007,1839,1218,1865"/>
+<area shape="rect" id="node38" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="1035,1889,1190,1916"/>
+<area shape="rect" id="node39" href="class_collision_base.html#a48c9d1d9e4286cde5054d4d2aa70bdd8" title="フィールドとの衝突時関数 " alt="" coords="1029,1940,1196,1967"/>
+<area shape="rect" id="node40" href="class_collision_base.html#ac1ed5b1c0c9b6b70b432e6656f9c4b45" title="フィールドとの非衝突時関数 " alt="" coords="1019,1991,1206,2017"/>
+<area shape="rect" id="node42" href="namespace_im_gui.html#afbccd31113430670b5ab2bf0d6f509bf" title="ImGui::SetNextWindowPos" alt="" coords="500,1784,680,1811"/>
+<area shape="rect" id="node43" href="namespace_im_gui.html#ab33717bb71ef5e393ae18656fc6b229d" title="ImGui::SetNextWindowSize" alt="" coords="499,1835,681,1861"/>
+<area shape="rect" id="node44" href="namespace_im_gui.html#a77ee84afb636e05eb4b2d6eeddcc2aa8" title="ImGui::PushStyleColor" alt="" coords="513,1885,667,1912"/>
+<area shape="rect" id="node45" href="namespace_im_gui.html#a581e58db0bc930bafa4a5d23093a2b99" title="ImGui::Begin" alt="" coords="541,1480,639,1507"/>
+<area shape="rect" id="node46" href="namespace_im_gui.html#a9e7b83611fe441d54fad2effb4bf4965" title="ImGui::Text" alt="" coords="545,1531,635,1557"/>
+<area shape="rect" id="node47" href="namespace_im_gui.html#a38094c568ce398db5a3abb9d3ac92030" title="ImGui::Button" alt="" coords="539,1581,641,1608"/>
+<area shape="rect" id="node48" href="namespace_im_gui.html#a5479d93794a004c67ceb6d13f37c8254" title="ImGui::End" alt="" coords="547,1632,633,1659"/>
+<area shape="rect" id="node49" href="namespace_im_gui.html#a9795f730b4043a98b6254738d86efcdc" title="ImGui::PopStyleColor" alt="" coords="517,1683,663,1709"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_icgraph.png" border="0" usemap="#class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_icgraph" alt=""/></div>
+<map name="class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_icgraph" id="class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="224,5,377,47"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="425,13,620,39"/>
+<area shape="rect" id="node4" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="668,13,819,39"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="867,13,1028,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1076,13,1149,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">メンバ詳解</h2>
+<a id="a1be7aa8904688724543897d58b22a406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be7aa8904688724543897d58b22a406">&#9670;&nbsp;</a></span>all_collision_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt;<a class="el" href="class_collision_base.html">CollisionBase</a>*, <a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a>&gt; CollisionManager::all_collision_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全衝突配列 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00054">54</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="addbc64e1fa0b01f3be07c897887f44ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addbc64e1fa0b01f3be07c897887f44ec">&#9670;&nbsp;</a></span>ARRAY_NUM</h2>
 
@@ -324,11 +1393,213 @@ $(document).ready(function(){initNavTree('class_collision_manager.html','');});
 
 <p>配列数 </p>
 
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00047">47</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aca55a8f7b3f67f58b5455cf1ac17fc8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca55a8f7b3f67f58b5455cf1ac17fc8b">&#9670;&nbsp;</a></span>await_add_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt;<a class="el" href="class_collision_base.html">CollisionBase</a>*, <a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a>&gt; CollisionManager::await_add_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>追加待ち配列 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00055">55</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a077c3b33557c56afef69c69698fc76e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077c3b33557c56afef69c69698fc76e0">&#9670;&nbsp;</a></span>await_release_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt;<a class="el" href="class_collision_base.html">CollisionBase</a>*, <a class="el" href="class_collision_manager.html#addbc64e1fa0b01f3be07c897887f44ec">ARRAY_NUM</a>&gt; CollisionManager::await_release_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放待ち配列 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00056">56</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9e3350981cdf6a6ecd6b5151bedb72ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e3350981cdf6a6ecd6b5151bedb72ef">&#9670;&nbsp;</a></span>collision_objects_list_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_collision_objects.html">CollisionObjects</a>*&gt; CollisionManager::collision_objects_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00061">61</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab080264a45322bec38189279428d44cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab080264a45322bec38189279428d44cb">&#9670;&nbsp;</a></span>ground_polygon_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mesh_plane_polygon.html">MeshPlanePolygon</a>* CollisionManager::ground_polygon_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地面ポリゴン </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00058">58</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a356e89f8204c643179e68d0b50758f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356e89f8204c643179e68d0b50758f21">&#9670;&nbsp;</a></span>is_octree_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionManager::is_octree_ = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00065">65</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5ba36f21dfb636d6b2c8b84bb07560ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba36f21dfb636d6b2c8b84bb07560ad">&#9670;&nbsp;</a></span>is_pair_check_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionManager::is_pair_check_ = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00066">66</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa7e8919f4e8af9764106a26a0cfcf6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e8919f4e8af9764106a26a0cfcf6a7">&#9670;&nbsp;</a></span>liner_octree_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_liner_octree.html">LinerOctree</a>&lt;<a class="el" href="class_collision_objects.html">CollisionObjects</a>*&gt;* CollisionManager::liner_octree_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>8分木 </p>
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00060">60</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6520ff69c7035e61267998885669d960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6520ff69c7035e61267998885669d960">&#9670;&nbsp;</a></span>time_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD CollisionManager::time_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a> の <a class="el" href="_collision_manager_8h_source.html#l00064">64</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/<a class="el" href="_collision_manager_8h_source.html">CollisionManager.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/<a class="el" href="_collision_manager_8cpp.html">CollisionManager.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/<a class="el" href="_collision_manager_8cpp_source.html">CollisionManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

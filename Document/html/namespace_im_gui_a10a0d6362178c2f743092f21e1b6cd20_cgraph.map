@@ -1,0 +1,14 @@
+<map id="ImGui::TextV" name="ImGui::TextV">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="359,5,532,32"/>
+<area shape="rect" id="node3" href="$imgui_8cpp.html#a1c61ee979ec8d777ba415296e12950a3" title="ImFormatStringV" alt="" coords="171,56,291,83"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a96a5f42789ecc419b2ae8af7b2acc28e" title="ImGui::TextUnformatted" alt="" coords="152,107,311,133"/>
+<area shape="rect" id="node5" href="$namespace_im_gui.html#aaba5637199d31ea23d4d143b30a44aff" title="ImGui::GetTextLineHeight" alt="" coords="360,56,531,83"/>
+<area shape="rect" id="node6" href="$namespace_effekseer.html#ace0abf7c2e6947e519ebe8b54cbcc30a" title="ランダム関数 " alt="" coords="396,107,495,133"/>
+<area shape="rect" id="node7" href="$namespace_im_gui.html#a8674467ae34d04bc99df1f7f98f47407" title="ImGui::IsClippedEx" alt="" coords="379,157,512,184"/>
+<area shape="rect" id="node11" href="$namespace_im_gui.html#a848b9db6cc4a186751c0ecebcaadc33b" title="ImGui::CalcTextSize" alt="" coords="375,208,516,235"/>
+<area shape="rect" id="node8" href="$struct_im_rect.html#a0af3bade3781e5e7c6afdf71ccfb0d43" title="ImRect::Overlaps" alt="" coords="615,157,737,184"/>
+<area shape="rect" id="node9" href="$namespace_effekseer.html#afc3d4e56cf4f8d0f12ac7d4bee7591b9" title="最大値取得 " alt="" coords="820,132,929,159"/>
+<area shape="rect" id="node10" href="$namespace_effekseer.html#ad4d523c19d4088c7566fadd84449eba7" title="最小値取得 " alt="" coords="822,183,927,209"/>
+<area shape="rect" id="node12" href="$namespace_im_gui.html#a7671e1dbc803a31b06081b52a771d83f" title="ImGui::FindRenderedTextEnd" alt="" coords="580,208,772,235"/>
+<area shape="rect" id="node13" href="$struct_im_font.html#ad67f64fd206ad197f4b93b1a1ae27cfe" title="ImFont::CalcTextSizeA" alt="" coords="598,259,754,285"/>
+</map>

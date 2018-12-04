@@ -9,6 +9,15 @@
 
 {\ttfamily \#include $<$Shader\+Manager.\+h$>$}
 
+
+
+Shader\+Manager 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_shader_manager__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,12 +46,46 @@ void \mbox{\hyperlink{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4}{Co
 \begin{DoxyCompactList}\small\item\em 共通設定関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_shader_manager_af016392b9b0477d49165d753e9404ff4}{Specific\+Setting}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} forced\+\_\+vertex\+\_\+type, \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} forced\+\_\+pixel\+\_\+type, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
 \begin{DoxyCompactList}\small\item\em 固有設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shader_manager_a9881e89daff32662e10f6ac48212ca06}{Init\+Vertex\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a6e1c2dc6c381081bc0e5ef1624b8e0f0}{Init\+Pixel\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダー初期化関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_af3b8f2931857016315e018041321f35a}{Uninit\+Vertex\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a1edd1b68c7949022217f98bce8360d3c}{Uninit\+Pixel\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダー終了関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a3661a079ae4e9e7e4d5da35f2171b41e}{Set\+Vertex\+Shader}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} forced\+\_\+vertex\+\_\+type)
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー設定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a6c954293001a33fafff216ff719618d5}{Set\+Pixel\+Shader}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} forced\+\_\+pixel\+\_\+type)
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダー設定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a836c92ee48dfbf8b8c8085f9413027bd}{Common\+Setting\+Vertex\+Shader}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} forced\+\_\+vertex\+\_\+type, unsigned object\+\_\+index)
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー共通設定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_ad2b591958e1d22d746e5ed3d7941e4c1}{Common\+Setting\+Pixel\+Shader}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} forced\+\_\+pixel\+\_\+type, unsigned object\+\_\+index)
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダー共通設定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a2433c0715142fd310a497e080f7d0ddb}{Specific\+Setting\+Vertex\+Shader}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, \mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}} forced\+\_\+vertex\+\_\+type, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
+\begin{DoxyCompactList}\small\item\em 頂点シェーダー固有設定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_manager_a1158156785098fe426dd514e4c2a97c1}{Specific\+Setting\+Pixel\+Shader}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, \mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}} forced\+\_\+pixel\+\_\+type, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダー固有設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vertex_shader_base}{Vertex\+Shader\+Base}} $\ast$ \mbox{\hyperlink{class_shader_manager_a56ae173a708111646ae72973f623b036}{vertex\+\_\+shaders\+\_\+}} \mbox{[}\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940}{V\+E\+R\+T\+E\+X\+\_\+\+M\+AX}}\mbox{]} = \{nullptr\}
+\item 
+\mbox{\hyperlink{class_pixel_shader_base}{Pixel\+Shader\+Base}} $\ast$ \mbox{\hyperlink{class_shader_manager_a236d319ea6fb7a9c7233b942fdf4f464}{pixel\+\_\+shaders\+\_\+}} \mbox{[}\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e}{P\+I\+X\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{nullptr\}
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 シェーダーマネージャークラス 
 
 シェーダーを管理するクラス 
+
+ Shader\+Manager.\+h の 36 行目に定義があります。
+
+
 
 \subsection{列挙型メンバ詳解}
 \mbox{\Hypertarget{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}\label{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}} 
@@ -69,6 +112,10 @@ P\+I\+X\+E\+L\+\_\+\+M\+AX&\\
 \hline
 
 \end{DoxyEnumFields}
+
+
+ Shader\+Manager.\+h の 52 行目に定義があります。
+
 \mbox{\Hypertarget{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}\label{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}} 
 \index{Shader\+Manager@{Shader\+Manager}!Vertex\+Shader\+Type@{Vertex\+Shader\+Type}}
 \index{Vertex\+Shader\+Type@{Vertex\+Shader\+Type}!Shader\+Manager@{Shader\+Manager}}
@@ -95,6 +142,10 @@ V\+E\+R\+T\+E\+X\+\_\+\+M\+AX&\\
 \end{DoxyEnumFields}
 
 
+ Shader\+Manager.\+h の 43 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4}\label{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4}} 
 \index{Shader\+Manager@{Shader\+Manager}!Common\+Setting@{Common\+Setting}}
@@ -111,6 +162,93 @@ V\+E\+R\+T\+E\+X\+\_\+\+M\+AX&\\
 {\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス \\
 \hline
 \end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 69 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a6cfff8f4aee59d9bc5162a5a6f4d07d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_ad2b591958e1d22d746e5ed3d7941e4c1}\label{class_shader_manager_ad2b591958e1d22d746e5ed3d7941e4c1}} 
+\index{Shader\+Manager@{Shader\+Manager}!Common\+Setting\+Pixel\+Shader@{Common\+Setting\+Pixel\+Shader}}
+\index{Common\+Setting\+Pixel\+Shader@{Common\+Setting\+Pixel\+Shader}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Common\+Setting\+Pixel\+Shader()}{CommonSettingPixelShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Common\+Setting\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}}}]{forced\+\_\+pixel\+\_\+type,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ピクセルシェーダー共通設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 223 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_ad2b591958e1d22d746e5ed3d7941e4c1_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_ad2b591958e1d22d746e5ed3d7941e4c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a836c92ee48dfbf8b8c8085f9413027bd}\label{class_shader_manager_a836c92ee48dfbf8b8c8085f9413027bd}} 
+\index{Shader\+Manager@{Shader\+Manager}!Common\+Setting\+Vertex\+Shader@{Common\+Setting\+Vertex\+Shader}}
+\index{Common\+Setting\+Vertex\+Shader@{Common\+Setting\+Vertex\+Shader}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Common\+Setting\+Vertex\+Shader()}{CommonSettingVertexShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Common\+Setting\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}}}]{forced\+\_\+vertex\+\_\+type,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+頂点シェーダー共通設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 203 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a836c92ee48dfbf8b8c8085f9413027bd_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a836c92ee48dfbf8b8c8085f9413027bd_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_shader_manager_a8e8fd62a28cc18addcd5ec6507a5dcb0}\label{class_shader_manager_a8e8fd62a28cc18addcd5ec6507a5dcb0}} 
 \index{Shader\+Manager@{Shader\+Manager}!Init@{Init}}
 \index{Init@{Init}!Shader\+Manager@{Shader\+Manager}}
@@ -121,6 +259,120 @@ V\+E\+R\+T\+E\+X\+\_\+\+M\+AX&\\
 
 初期化関数 
 
+
+
+ Shader\+Manager.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a8e8fd62a28cc18addcd5ec6507a5dcb0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a8e8fd62a28cc18addcd5ec6507a5dcb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a6e1c2dc6c381081bc0e5ef1624b8e0f0}\label{class_shader_manager_a6e1c2dc6c381081bc0e5ef1624b8e0f0}} 
+\index{Shader\+Manager@{Shader\+Manager}!Init\+Pixel\+Shaders@{Init\+Pixel\+Shaders}}
+\index{Init\+Pixel\+Shaders@{Init\+Pixel\+Shaders}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Pixel\+Shaders()}{InitPixelShaders()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Init\+Pixel\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ピクセルシェーダー初期化関数 
+
+
+
+ Shader\+Manager.\+cpp の 123 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_shader_manager_a6e1c2dc6c381081bc0e5ef1624b8e0f0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a6e1c2dc6c381081bc0e5ef1624b8e0f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a9881e89daff32662e10f6ac48212ca06}\label{class_shader_manager_a9881e89daff32662e10f6ac48212ca06}} 
+\index{Shader\+Manager@{Shader\+Manager}!Init\+Vertex\+Shaders@{Init\+Vertex\+Shaders}}
+\index{Init\+Vertex\+Shaders@{Init\+Vertex\+Shaders}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Init\+Vertex\+Shaders()}{InitVertexShaders()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Init\+Vertex\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+頂点シェーダー初期化関数 
+
+
+
+ Shader\+Manager.\+cpp の 105 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_shader_manager_a9881e89daff32662e10f6ac48212ca06_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a9881e89daff32662e10f6ac48212ca06_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a6c954293001a33fafff216ff719618d5}\label{class_shader_manager_a6c954293001a33fafff216ff719618d5}} 
+\index{Shader\+Manager@{Shader\+Manager}!Set\+Pixel\+Shader@{Set\+Pixel\+Shader}}
+\index{Set\+Pixel\+Shader@{Set\+Pixel\+Shader}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Pixel\+Shader()}{SetPixelShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Set\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}}}]{forced\+\_\+pixel\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ピクセルシェーダー設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ \\
+\hline
+\end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 186 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a6c954293001a33fafff216ff719618d5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a6c954293001a33fafff216ff719618d5_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_shader_manager_ad2caed4ae50c1ca784151d0f9e50c381}\label{class_shader_manager_ad2caed4ae50c1ca784151d0f9e50c381}} 
 \index{Shader\+Manager@{Shader\+Manager}!Set\+Shader@{Set\+Shader}}
 \index{Set\+Shader@{Set\+Shader}!Shader\+Manager@{Shader\+Manager}}
@@ -136,6 +388,61 @@ V\+E\+R\+T\+E\+X\+\_\+\+M\+AX&\\
 {\em draw} & \+: 描画基底クラス forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ \\
 \hline
 \end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 54 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_ad2caed4ae50c1ca784151d0f9e50c381_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_ad2caed4ae50c1ca784151d0f9e50c381_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a3661a079ae4e9e7e4d5da35f2171b41e}\label{class_shader_manager_a3661a079ae4e9e7e4d5da35f2171b41e}} 
+\index{Shader\+Manager@{Shader\+Manager}!Set\+Vertex\+Shader@{Set\+Vertex\+Shader}}
+\index{Set\+Vertex\+Shader@{Set\+Vertex\+Shader}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Vertex\+Shader()}{SetVertexShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Set\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}}}]{forced\+\_\+vertex\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+頂点シェーダー設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ \\
+\hline
+\end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 169 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a3661a079ae4e9e7e4d5da35f2171b41e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a3661a079ae4e9e7e4d5da35f2171b41e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_shader_manager_af016392b9b0477d49165d753e9404ff4}\label{class_shader_manager_af016392b9b0477d49165d753e9404ff4}} 
 \index{Shader\+Manager@{Shader\+Manager}!Specific\+Setting@{Specific\+Setting}}
 \index{Specific\+Setting@{Specific\+Setting}!Shader\+Manager@{Shader\+Manager}}
@@ -151,6 +458,96 @@ V\+E\+R\+T\+E\+X\+\_\+\+M\+AX&\\
 {\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
 \hline
 \end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 86 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_af016392b9b0477d49165d753e9404ff4_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_af016392b9b0477d49165d753e9404ff4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a1158156785098fe426dd514e4c2a97c1}\label{class_shader_manager_a1158156785098fe426dd514e4c2a97c1}} 
+\index{Shader\+Manager@{Shader\+Manager}!Specific\+Setting\+Pixel\+Shader@{Specific\+Setting\+Pixel\+Shader}}
+\index{Specific\+Setting\+Pixel\+Shader@{Specific\+Setting\+Pixel\+Shader}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Specific\+Setting\+Pixel\+Shader()}{SpecificSettingPixelShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Specific\+Setting\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5f}{Pixel\+Shader\+Type}}}]{forced\+\_\+pixel\+\_\+type,  }\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ピクセルシェーダー固有設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 265 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a1158156785098fe426dd514e4c2a97c1_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a1158156785098fe426dd514e4c2a97c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a2433c0715142fd310a497e080f7d0ddb}\label{class_shader_manager_a2433c0715142fd310a497e080f7d0ddb}} 
+\index{Shader\+Manager@{Shader\+Manager}!Specific\+Setting\+Vertex\+Shader@{Specific\+Setting\+Vertex\+Shader}}
+\index{Specific\+Setting\+Vertex\+Shader@{Specific\+Setting\+Vertex\+Shader}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Specific\+Setting\+Vertex\+Shader()}{SpecificSettingVertexShader()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Specific\+Setting\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbd}{Vertex\+Shader\+Type}}}]{forced\+\_\+vertex\+\_\+type,  }\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+頂点シェーダー固有設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em draw} & \+: 描画基底クラス camera \+: カメラ forced\+\_\+vertex\+\_\+type \+: 強制頂点シェーダータイプ forced\+\_\+pixel\+\_\+type \+: 強制ピクセルシェーダータイプ object\+\_\+index \+: 描画オブジェクトインデックス mesh\+\_\+index \+: メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+
+ Shader\+Manager.\+cpp の 243 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a2433c0715142fd310a497e080f7d0ddb_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a2433c0715142fd310a497e080f7d0ddb_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_shader_manager_afc31a6bbe86e6b57edd7be0972f48ab1}\label{class_shader_manager_afc31a6bbe86e6b57edd7be0972f48ab1}} 
 \index{Shader\+Manager@{Shader\+Manager}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Shader\+Manager@{Shader\+Manager}}
@@ -160,6 +557,101 @@ V\+E\+R\+T\+E\+X\+\_\+\+M\+AX&\\
 
 
 終了関数 
+
+
+
+ Shader\+Manager.\+cpp の 43 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_afc31a6bbe86e6b57edd7be0972f48ab1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_a1edd1b68c7949022217f98bce8360d3c}\label{class_shader_manager_a1edd1b68c7949022217f98bce8360d3c}} 
+\index{Shader\+Manager@{Shader\+Manager}!Uninit\+Pixel\+Shaders@{Uninit\+Pixel\+Shaders}}
+\index{Uninit\+Pixel\+Shaders@{Uninit\+Pixel\+Shaders}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Pixel\+Shaders()}{UninitPixelShaders()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Uninit\+Pixel\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ピクセルシェーダー終了関数 
+
+
+
+ Shader\+Manager.\+cpp の 155 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a1edd1b68c7949022217f98bce8360d3c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_a1edd1b68c7949022217f98bce8360d3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_shader_manager_af3b8f2931857016315e018041321f35a}\label{class_shader_manager_af3b8f2931857016315e018041321f35a}} 
+\index{Shader\+Manager@{Shader\+Manager}!Uninit\+Vertex\+Shaders@{Uninit\+Vertex\+Shaders}}
+\index{Uninit\+Vertex\+Shaders@{Uninit\+Vertex\+Shaders}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{Uninit\+Vertex\+Shaders()}{UninitVertexShaders()}}
+{\footnotesize\ttfamily void Shader\+Manager\+::\+Uninit\+Vertex\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+頂点シェーダー終了関数 
+
+
+
+ Shader\+Manager.\+cpp の 141 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_af3b8f2931857016315e018041321f35a_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shader_manager_af3b8f2931857016315e018041321f35a_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_shader_manager_a236d319ea6fb7a9c7233b942fdf4f464}\label{class_shader_manager_a236d319ea6fb7a9c7233b942fdf4f464}} 
+\index{Shader\+Manager@{Shader\+Manager}!pixel\+\_\+shaders\+\_\+@{pixel\+\_\+shaders\+\_\+}}
+\index{pixel\+\_\+shaders\+\_\+@{pixel\+\_\+shaders\+\_\+}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{pixel\+\_\+shaders\+\_\+}{pixel\_shaders\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pixel_shader_base}{Pixel\+Shader\+Base}}$\ast$ Shader\+Manager\+::pixel\+\_\+shaders\+\_\+\mbox{[}\mbox{\hyperlink{class_shader_manager_a7d15d773b3c6a99dd7086c45c8b0be5fa9281ee100f356fae9f9432679705bb9e}{P\+I\+X\+E\+L\+\_\+\+M\+AX}}\mbox{]} = \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Shader\+Manager.\+h の 67 行目に定義があります。
+
+\mbox{\Hypertarget{class_shader_manager_a56ae173a708111646ae72973f623b036}\label{class_shader_manager_a56ae173a708111646ae72973f623b036}} 
+\index{Shader\+Manager@{Shader\+Manager}!vertex\+\_\+shaders\+\_\+@{vertex\+\_\+shaders\+\_\+}}
+\index{vertex\+\_\+shaders\+\_\+@{vertex\+\_\+shaders\+\_\+}!Shader\+Manager@{Shader\+Manager}}
+\subsubsection{\texorpdfstring{vertex\+\_\+shaders\+\_\+}{vertex\_shaders\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex_shader_base}{Vertex\+Shader\+Base}}$\ast$ Shader\+Manager\+::vertex\+\_\+shaders\+\_\+\mbox{[}\mbox{\hyperlink{class_shader_manager_a9b51e49d70eb3cc58f6d1f3994e8cfbda2a90d8502c5060ffb7b4a7d1c1f0e940}{V\+E\+R\+T\+E\+X\+\_\+\+M\+AX}}\mbox{]} = \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Shader\+Manager.\+h の 66 行目に定義があります。
 
 
 

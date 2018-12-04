@@ -1,0 +1,5 @@
+<map id="GameObjectBase::SetAllComponent" name="GameObjectBase::SetAllComponent">
+<area shape="rect" id="node2" href="$class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08" title="GameObjectBase::SetUpdate" alt="" coords="292,5,487,32"/>
+<area shape="rect" id="node3" href="$class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="298,56,481,83"/>
+<area shape="rect" id="node4" href="$class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="288,107,491,133"/>
+</map>

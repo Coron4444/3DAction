@@ -5,6 +5,7 @@ var searchData=
   ['textureloader',['TextureLoader',['../class_effekseer_1_1_texture_loader.html',1,'Effekseer']]],
   ['texturemanager',['TextureManager',['../class_texture_manager.html',1,'']]],
   ['textureobject',['TextureObject',['../class_texture_object.html',1,'']]],
+  ['textureuv',['TextureUV',['../struct_texture_object_1_1_texture_u_v.html',1,'TextureObject']]],
   ['titlelogo',['TitleLogo',['../class_title_logo.html',1,'']]],
   ['titlelogodraw',['TitleLogoDraw',['../class_title_logo_draw.html',1,'']]],
   ['titlelogofactory',['TitleLogoFactory',['../class_title_logo_factory.html',1,'']]],

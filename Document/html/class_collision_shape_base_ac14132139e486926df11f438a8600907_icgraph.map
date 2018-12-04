@@ -1,0 +1,11 @@
+<map id="CollisionShapeBase::setPosition" name="CollisionShapeBase::setPosition">
+<area shape="rect" id="node2" href="$class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="199,5,346,32"/>
+<area shape="rect" id="node3" href="$class_enemy_collision.html#ab54133504d867c6d2070d2f3854a0aaf" title="更新関数 " alt="" coords="192,56,353,83"/>
+<area shape="rect" id="node4" href="$class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936" title="更新関数 " alt="" coords="199,107,346,133"/>
+<area shape="rect" id="node5" href="$class_player_collision.html#a09f97f220903f5724a3af6b97af3a336" title="更新関数 " alt="" coords="194,157,351,184"/>
+<area shape="rect" id="node6" href="$class_a_a_b_b.html#a28167704c3b21de2ae9f70ac139781c4" title="初期化関数 " alt="" coords="231,208,314,235"/>
+<area shape="rect" id="node7" href="$class_coin_collision.html#a4119a7decab2410a4ada3568ad0c132d" title="初期化関数 " alt="" coords="409,132,531,159"/>
+<area shape="rect" id="node8" href="$class_enemy_collision.html#ae5c000a30c8c4a023dd0c8e658def772" title="初期化関数 " alt="" coords="401,183,539,209"/>
+<area shape="rect" id="node9" href="$class_goal_collision.html#ab6089638f5390e019a55ae11952e1cf9" title="初期化関数 " alt="" coords="409,233,531,260"/>
+<area shape="rect" id="node10" href="$class_player_collision.html#a3dd6238b75933fd60aee77e92353cc44" title="初期化関数 " alt="" coords="403,284,537,311"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="TextureObject::GetUV" name="TextureObject::GetUV">
+<area shape="rect" id="node2" href="$class_plane_polygon.html#a081458fcb9e758dd8be5b027c66a92ad" title="PlanePolygon::SetUV" alt="" coords="204,31,352,57"/>
+<area shape="rect" id="node3" href="$class_number.html#ac825b1ee1f46a6ac4ffd3bc904964745" title="Number::SetNumber" alt="" coords="400,31,540,57"/>
+<area shape="rect" id="node4" href="$class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="588,31,680,57"/>
+<area shape="rect" id="node5" href="$class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="728,31,885,57"/>
+<area shape="rect" id="node6" href="$class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="943,5,1094,32"/>
+<area shape="rect" id="node10" href="$class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="933,56,1104,83"/>
+<area shape="rect" id="node7" href="$class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1152,31,1307,57"/>
+<area shape="rect" id="node8" href="$class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1379,5,1501,32"/>
+<area shape="rect" id="node9" href="$class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1355,56,1525,83"/>
+</map>

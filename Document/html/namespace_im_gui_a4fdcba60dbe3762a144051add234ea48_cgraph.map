@@ -1,0 +1,8 @@
+<map id="ImGui::DragBehavior" name="ImGui::DragBehavior">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a0de2d9bd347d9866511eb8d014e62556" title="ImGui::GetColorU32" alt="" coords="441,13,579,39"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a621ba649568ede3939d4f10d83b86d04" title="ImGui::RenderFrame" alt="" coords="213,63,355,90"/>
+<area shape="rect" id="node7" href="$namespace_im_gui.html#a94b8aecab8a4128145fea1ad7d381197" title="ImGui::GetMouseDragDelta" alt="" coords="193,114,375,141"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#abe2691de0b1a71c774ab24cc91564a94" title="ImGui::ColorConvertFloat4\lToU32" alt="" coords="645,5,819,47"/>
+<area shape="rect" id="node5" href="$struct_im_draw_list.html#a1fa7c9165958909bba53c9740a607872" title="ImDrawList::AddRectFilled" alt="" coords="423,63,597,90"/>
+<area shape="rect" id="node6" href="$struct_im_draw_list.html#a6738c7d0b696273a37808554e1f15a0a" title="ImDrawList::AddRect" alt="" coords="438,114,582,141"/>
+</map>

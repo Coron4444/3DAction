@@ -45,6 +45,7 @@ var _effekseer_8h =
     [ "VertexWithIndex", "struct_effekseer_1_1_model_1_1_vertex_with_index.html", "struct_effekseer_1_1_model_1_1_vertex_with_index" ],
     [ "Face", "struct_effekseer_1_1_model_1_1_face.html", "struct_effekseer_1_1_model_1_1_face" ],
     [ "Emitter", "struct_effekseer_1_1_model_1_1_emitter.html", "struct_effekseer_1_1_model_1_1_emitter" ],
+    [ "InternalModel", "struct_effekseer_1_1_model_1_1_internal_model.html", "struct_effekseer_1_1_model_1_1_internal_model" ],
     [ "SoundPlayer", "class_effekseer_1_1_sound_player.html", "class_effekseer_1_1_sound_player" ],
     [ "InstanceParameter", "struct_effekseer_1_1_sound_player_1_1_instance_parameter.html", "struct_effekseer_1_1_sound_player_1_1_instance_parameter" ],
     [ "SoundLoader", "class_effekseer_1_1_sound_loader.html", "class_effekseer_1_1_sound_loader" ],

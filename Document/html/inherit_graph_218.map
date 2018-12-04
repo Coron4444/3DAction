@@ -1,0 +1,7 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$class_scene_base.html" title="シーンBaseClass " alt="" coords="5,81,95,108"/>
+<area shape="rect" id="node2" href="$class_game_scene.html" title="ゲームシーンClass " alt="" coords="146,5,241,32"/>
+<area shape="rect" id="node3" href="$class_result_scene.html" title="リザルトシーンClass " alt="" coords="145,56,241,83"/>
+<area shape="rect" id="node4" href="$class_title_scene.html" title="タイトルシーンClass " alt="" coords="152,107,235,133"/>
+<area shape="rect" id="node5" href="$class_tutorial_scene.html" title="チュートリアルシーンClass " alt="" coords="143,157,244,184"/>
+</map>

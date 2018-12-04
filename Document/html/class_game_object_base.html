@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('class_game_object_base.html','');});
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_game_object_base-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">GameObjectBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -103,26 +105,51 @@ $(document).ready(function(){initNavTree('class_game_object_base.html','');});
 <div class="dynheader">
 GameObjectBase の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_game_object_base.png" usemap="#GameObjectBase_map" alt=""/>
-  <map id="GameObjectBase_map" name="GameObjectBase_map">
-<area href="class_clear_logo.html" alt="ClearLogo" shape="rect" coords="128,56,246,80"/>
-<area href="class_coin.html" alt="Coin" shape="rect" coords="128,112,246,136"/>
-<area href="class_enemy.html" alt="Enemy" shape="rect" coords="128,168,246,192"/>
-<area href="class_failure_logo.html" alt="FailureLogo" shape="rect" coords="128,224,246,248"/>
-<area href="class_field.html" alt="Field" shape="rect" coords="128,280,246,304"/>
-<area href="class_goal.html" title="ゴールクラス " alt="Goal" shape="rect" coords="128,336,246,360"/>
-<area href="class_number.html" alt="Number" shape="rect" coords="128,392,246,416"/>
-<area href="class_numbers.html" alt="Numbers" shape="rect" coords="128,448,246,472"/>
-<area href="class_player.html" alt="Player" shape="rect" coords="128,504,246,528"/>
-<area href="class_push_space_logo.html" alt="PushSpaceLogo" shape="rect" coords="128,560,246,584"/>
-<area href="class_score.html" alt="Score" shape="rect" coords="128,616,246,640"/>
-<area href="class_sky_dome.html" alt="SkyDome" shape="rect" coords="128,672,246,696"/>
-<area href="class_stencil_shadow_test.html" alt="StencilShadowTest" shape="rect" coords="128,728,246,752"/>
-<area href="class_title_logo.html" alt="TitleLogo" shape="rect" coords="128,784,246,808"/>
-<area href="class_tutorial_logo.html" title="チュートリアルロゴクラス " alt="TutorialLogo" shape="rect" coords="128,840,246,864"/>
+<div class="center"><img src="class_game_object_base__inherit__graph.png" border="0" usemap="#_game_object_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="_game_object_base_inherit__map" id="_game_object_base_inherit__map">
+<area shape="rect" id="node2" href="class_clear_logo.html" title="ClearLogo" alt="" coords="205,5,285,32"/>
+<area shape="rect" id="node3" href="class_coin.html" title="Coin" alt="" coords="221,56,269,83"/>
+<area shape="rect" id="node4" href="class_enemy.html" title="Enemy" alt="" coords="214,107,277,133"/>
+<area shape="rect" id="node5" href="class_failure_logo.html" title="FailureLogo" alt="" coords="201,157,290,184"/>
+<area shape="rect" id="node6" href="class_field.html" title="Field" alt="" coords="220,208,271,235"/>
+<area shape="rect" id="node7" href="class_goal.html" title="ゴールクラス " alt="" coords="221,259,270,285"/>
+<area shape="rect" id="node8" href="class_number.html" title="Number" alt="" coords="212,309,279,336"/>
+<area shape="rect" id="node9" href="class_numbers.html" title="Numbers" alt="" coords="208,360,283,387"/>
+<area shape="rect" id="node10" href="class_player.html" title="Player" alt="" coords="216,411,275,437"/>
+<area shape="rect" id="node11" href="class_push_space_logo.html" title="PushSpaceLogo" alt="" coords="187,461,304,488"/>
+<area shape="rect" id="node12" href="class_score.html" title="Score" alt="" coords="217,512,273,539"/>
+<area shape="rect" id="node13" href="class_sky_dome.html" title="SkyDome" alt="" coords="206,563,285,589"/>
+<area shape="rect" id="node14" href="class_stencil_shadow_test.html" title="StencilShadowTest" alt="" coords="179,613,312,640"/>
+<area shape="rect" id="node15" href="class_title_logo.html" title="TitleLogo" alt="" coords="208,664,283,691"/>
+<area shape="rect" id="node16" href="class_tutorial_logo.html" title="チュートリアルロゴクラス " alt="" coords="199,715,291,741"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+GameObjectBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base__coll__graph.png" border="0" usemap="#_game_object_base_coll__map" alt="Collaboration graph"/></div>
+<map name="_game_object_base_coll__map" id="_game_object_base_coll__map">
+<area shape="rect" id="node3" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="1184,215,1303,241"/>
+<area shape="rect" id="node18" href="class_physics.html" title="Physics" alt="" coords="1209,91,1278,117"/>
+<area shape="rect" id="node2" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="1452,323,1553,349"/>
+<area shape="rect" id="node5" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1695,395,1811,421"/>
+<area shape="rect" id="node15" href="class_draw_base.html" title="描画基底クラス " alt="" coords="1462,153,1543,180"/>
+<area shape="rect" id="node19" href="class_update_base.html" title="更新基底クラス " alt="" coords="1456,247,1549,273"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="1992,303,2133,359"/>
+<area shape="rect" id="node11" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1952,437,2173,464"/>
+<area shape="rect" id="node6" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="677,445,736,472"/>
+<area shape="rect" id="node7" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="364,481,503,508"/>
+<area shape="rect" id="node14" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="652,376,761,403"/>
+<area shape="rect" id="node9" href="class_vector3_d.html" title="Vector3D" alt="" coords="107,297,183,324"/>
+<area shape="rect" id="node20" href="class_transform.html" title="Transform" alt="" coords="667,184,746,211"/>
+<area shape="rect" id="node22" href="class_axis_vector.html" title="AxisVector" alt="" coords="390,133,477,160"/>
+<area shape="rect" id="node12" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="2331,437,2551,464"/>
+<area shape="rect" id="node13" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="1024,372,1160,428"/>
+<area shape="rect" id="node16" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="1191,23,1295,49"/>
+<area shape="rect" id="node17" href="class_flag.html" title="Flag" alt="" coords="914,5,961,32"/>
+<area shape="rect" id="node21" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="384,184,483,211"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -165,10 +192,42 @@ GameObjectBase の継承関係図</div>
 <tr class="memitem:aca14cf5d66f945347653c4965876e75b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#aca14cf5d66f945347653c4965876e75b">Init</a> (<a class="el" href="class_update_base.html">UpdateBase</a> *update, <a class="el" href="class_draw_base.html">DrawBase</a> *draw, <a class="el" href="class_collision_base.html">CollisionBase</a> *collision)</td></tr>
 <tr class="memdesc:aca14cf5d66f945347653c4965876e75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#aca14cf5d66f945347653c4965876e75b">[詳解]</a><br /></td></tr>
 <tr class="separator:aca14cf5d66f945347653c4965876e75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5f4d4e3d23603d8e32ddb220a53039a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6">InitComponent</a> ()</td></tr>
+<tr class="memdesc:a5f4d4e3d23603d8e32ddb220a53039a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンポーネント初期化関数  <a href="#a5f4d4e3d23603d8e32ddb220a53039a6">[詳解]</a><br /></td></tr>
+<tr class="separator:a5f4d4e3d23603d8e32ddb220a53039a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8e4f486435f5d921c186b0824e8a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#aff8e4f486435f5d921c186b0824e8a0e">UninitComponent</a> ()</td></tr>
+<tr class="memdesc:aff8e4f486435f5d921c186b0824e8a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンポーネント終了関数  <a href="#aff8e4f486435f5d921c186b0824e8a0e">[詳解]</a><br /></td></tr>
+<tr class="separator:aff8e4f486435f5d921c186b0824e8a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a9e84cc5213c2ee289e2ca2c8b0fc73ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#a9e84cc5213c2ee289e2ca2c8b0fc73ba">transform_</a></td></tr>
+<tr class="memdesc:a9e84cc5213c2ee289e2ca2c8b0fc73ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">トランスフォーム  <a href="#a9e84cc5213c2ee289e2ca2c8b0fc73ba">[詳解]</a><br /></td></tr>
+<tr class="separator:a9e84cc5213c2ee289e2ca2c8b0fc73ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239603d2b9d165f9e666e35795a5a30c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_physics.html">Physics</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#a239603d2b9d165f9e666e35795a5a30c">physics_</a></td></tr>
+<tr class="memdesc:a239603d2b9d165f9e666e35795a5a30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">剛体  <a href="#a239603d2b9d165f9e666e35795a5a30c">[詳解]</a><br /></td></tr>
+<tr class="separator:a239603d2b9d165f9e666e35795a5a30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1118bad7222ee50ff135e3eddbe5b1b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#a1118bad7222ee50ff135e3eddbe5b1b4">is_registration_</a></td></tr>
+<tr class="memdesc:a1118bad7222ee50ff135e3eddbe5b1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録フラグ  <a href="#a1118bad7222ee50ff135e3eddbe5b1b4">[詳解]</a><br /></td></tr>
+<tr class="separator:a1118bad7222ee50ff135e3eddbe5b1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2051ab9bbbc33c9307ea669f8f7b548b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_update_base.html">UpdateBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#a2051ab9bbbc33c9307ea669f8f7b548b">update_</a></td></tr>
+<tr class="memdesc:a2051ab9bbbc33c9307ea669f8f7b548b"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新コンポーネント  <a href="#a2051ab9bbbc33c9307ea669f8f7b548b">[詳解]</a><br /></td></tr>
+<tr class="separator:a2051ab9bbbc33c9307ea669f8f7b548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98b5356a668abe576a0d20a37f26e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_draw_base.html">DrawBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#af98b5356a668abe576a0d20a37f26e03">draw_</a></td></tr>
+<tr class="memdesc:af98b5356a668abe576a0d20a37f26e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画コンポーネント  <a href="#af98b5356a668abe576a0d20a37f26e03">[詳解]</a><br /></td></tr>
+<tr class="separator:af98b5356a668abe576a0d20a37f26e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c44924e1e0c90461d191fdb11f33b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_base.html">CollisionBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object_base.html#a63c44924e1e0c90461d191fdb11f33b0">collision_</a></td></tr>
+<tr class="memdesc:a63c44924e1e0c90461d191fdb11f33b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突コンポーネント  <a href="#a63c44924e1e0c90461d191fdb11f33b0">[詳解]</a><br /></td></tr>
+<tr class="separator:a63c44924e1e0c90461d191fdb11f33b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>ゲームオブジェクト基底クラス </p>
 <p>ゲームオブジェクトの基底クラス </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00032">32</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a4682a3e88a45a462de288f14e9a8545d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4682a3e88a45a462de288f14e9a8545d">&#9670;&nbsp;</a></span>GameObjectBase()</h2>
@@ -193,6 +252,8 @@ GameObjectBase の継承関係図</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition"> <a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a> の <a class="el" href="_game_object_base_8cpp_source.html#l00028">28</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -221,6 +282,16 @@ GameObjectBase の継承関係図</div>
 
 <p>仮想デストラクタ </p>
 
+<p class="definition"> <a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a> の <a class="el" href="_game_object_base_8cpp_source.html#l00042">42</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a0cb813d5c7af673a3d190eb1b2d26275_cgraph.png" border="0" usemap="#class_game_object_base_a0cb813d5c7af673a3d190eb1b2d26275_cgraph" alt=""/></div>
+<map name="class_game_object_base_a0cb813d5c7af673a3d190eb1b2d26275_cgraph" id="class_game_object_base_a0cb813d5c7af673a3d190eb1b2d26275_cgraph">
+<area shape="rect" id="node2" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="297,5,441,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
@@ -240,6 +311,17 @@ GameObjectBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p>剛体生成関数 </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a> の <a class="el" href="_game_object_base_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_adf7df49baa04363c63f9515317776e40_icgraph.png" border="0" usemap="#class_game_object_base_adf7df49baa04363c63f9515317776e40_icgraph" alt=""/></div>
+<map name="class_game_object_base_adf7df49baa04363c63f9515317776e40_icgraph" id="class_game_object_base_adf7df49baa04363c63f9515317776e40_icgraph">
+<area shape="rect" id="node2" href="class_player_update.html#ac72b39db7b7bfaf094bde9ed1adef4b7" title="初期化関数 " alt="" coords="285,5,410,32"/>
+<area shape="rect" id="node3" href="class_player_update___special.html#a48906da6915325d92d5cc6ec67212259" title="初期化関数 " alt="" coords="272,57,423,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -266,6 +348,40 @@ GameObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00098">98</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a8158138ea811db49445845d8aaacaf3a_icgraph.png" border="0" usemap="#class_game_object_base_a8158138ea811db49445845d8aaacaf3a_icgraph" alt=""/></div>
+<map name="class_game_object_base_a8158138ea811db49445845d8aaacaf3a_icgraph" id="class_game_object_base_a8158138ea811db49445845d8aaacaf3a_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#af9c2ce87e0189cdd1256c83decc64673" title="衝突基底クラスの上書き関数 " alt="" coords="272,5,455,47"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a4c6cdb6d0a1f43a2e2e705677fa2f5f6" title="コンポーネントをマネージャーへ設定関数 " alt="" coords="277,71,449,112"/>
+<area shape="rect" id="node10" href="class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="256,149,471,191"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09" title="追加待ち配列の中身を追加関数 " alt="" coords="537,64,733,105"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="821,60,974,101"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1043,67,1237,94"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1763,107,1914,134"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1975,138,2136,165"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2184,138,2257,165"/>
+<area shape="rect" id="node11" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="519,175,752,216"/>
+<area shape="rect" id="node12" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="800,126,995,153"/>
+<area shape="rect" id="node14" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="821,177,974,219"/>
+<area shape="rect" id="node21" href="class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="810,301,985,327"/>
+<area shape="rect" id="node13" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1049,118,1231,145"/>
+<area shape="rect" id="node15" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="1063,169,1217,211"/>
+<area shape="rect" id="node17" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="1055,235,1225,276"/>
+<area shape="rect" id="node16" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1309,177,1460,203"/>
+<area shape="rect" id="node18" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1285,235,1484,262"/>
+<area shape="rect" id="node19" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1538,190,1697,217"/>
+<area shape="rect" id="node20" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1751,169,1927,195"/>
+<area shape="rect" id="node22" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1065,301,1215,327"/>
+<area shape="rect" id="node26" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1055,351,1225,378"/>
+<area shape="rect" id="node23" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1307,322,1462,349"/>
+<area shape="rect" id="node24" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1556,282,1679,309"/>
+<area shape="rect" id="node25" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1532,333,1703,359"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="acb893b1827cb7fbb27f0caf6a8e0fb88"></a>
@@ -290,6 +406,40 @@ GameObjectBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00096">96</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_acb893b1827cb7fbb27f0caf6a8e0fb88_icgraph.png" border="0" usemap="#class_game_object_base_acb893b1827cb7fbb27f0caf6a8e0fb88_icgraph" alt=""/></div>
+<map name="class_game_object_base_acb893b1827cb7fbb27f0caf6a8e0fb88_icgraph" id="class_game_object_base_acb893b1827cb7fbb27f0caf6a8e0fb88_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#a94ef5a241c8d78187a2a6c0ed3c9efec" title="描画基底クラスの上書き関数 " alt="" coords="247,5,440,47"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a4c6cdb6d0a1f43a2e2e705677fa2f5f6" title="コンポーネントをマネージャーへ設定関数 " alt="" coords="257,71,429,112"/>
+<area shape="rect" id="node10" href="class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="236,149,451,191"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09" title="追加待ち配列の中身を追加関数 " alt="" coords="517,64,713,105"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="801,60,954,101"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1023,67,1217,94"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1743,107,1894,134"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1955,138,2116,165"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2164,138,2237,165"/>
+<area shape="rect" id="node11" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="499,175,732,216"/>
+<area shape="rect" id="node12" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="780,126,975,153"/>
+<area shape="rect" id="node14" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="801,177,954,219"/>
+<area shape="rect" id="node21" href="class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="790,301,965,327"/>
+<area shape="rect" id="node13" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1029,118,1211,145"/>
+<area shape="rect" id="node15" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="1043,169,1197,211"/>
+<area shape="rect" id="node17" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="1035,235,1205,276"/>
+<area shape="rect" id="node16" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1289,177,1440,203"/>
+<area shape="rect" id="node18" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1265,235,1464,262"/>
+<area shape="rect" id="node19" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1518,190,1677,217"/>
+<area shape="rect" id="node20" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1731,169,1907,195"/>
+<area shape="rect" id="node22" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1045,301,1195,327"/>
+<area shape="rect" id="node26" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1035,351,1205,378"/>
+<area shape="rect" id="node23" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1287,322,1442,349"/>
+<area shape="rect" id="node24" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1536,282,1659,309"/>
+<area shape="rect" id="node25" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1512,333,1683,359"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -316,6 +466,28 @@ GameObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00087">87</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a853cdb5dbb2edf28e45e49540f85e554_icgraph.png" border="0" usemap="#class_game_object_base_a853cdb5dbb2edf28e45e49540f85e554_icgraph" alt=""/></div>
+<map name="class_game_object_base_a853cdb5dbb2edf28e45e49540f85e554_icgraph" id="class_game_object_base_a853cdb5dbb2edf28e45e49540f85e554_icgraph">
+<area shape="rect" id="node2" href="class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0" title="フィールドとの衝突時関数 " alt="" coords="261,5,436,32"/>
+<area shape="rect" id="node3" href="class_player_update.html#ac72b39db7b7bfaf094bde9ed1adef4b7" title="初期化関数 " alt="" coords="286,56,411,83"/>
+<area shape="rect" id="node4" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="274,107,423,133"/>
+<area shape="rect" id="node5" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="255,157,443,184"/>
+<area shape="rect" id="node6" href="class_player_update___special.html#a48906da6915325d92d5cc6ec67212259" title="初期化関数 " alt="" coords="273,209,424,250"/>
+<area shape="rect" id="node7" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="273,274,424,315"/>
+<area shape="rect" id="node8" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="273,339,424,381"/>
+<area shape="rect" id="node9" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="267,405,430,432"/>
+<area shape="rect" id="node10" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="491,398,644,439"/>
+<area shape="rect" id="node11" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="692,405,887,432"/>
+<area shape="rect" id="node12" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="935,405,1085,432"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1133,405,1295,432"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1343,405,1416,432"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a7df1e16838f8fa578a27e8ba64652b49"></a>
@@ -341,6 +513,64 @@ GameObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00086">86</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a7df1e16838f8fa578a27e8ba64652b49_icgraph.png" border="0" usemap="#class_game_object_base_a7df1e16838f8fa578a27e8ba64652b49_icgraph" alt=""/></div>
+<map name="class_game_object_base_a7df1e16838f8fa578a27e8ba64652b49_icgraph" id="class_game_object_base_a7df1e16838f8fa578a27e8ba64652b49_icgraph">
+<area shape="rect" id="node2" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="281,5,441,47"/>
+<area shape="rect" id="node3" href="class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd" title="初期化関数 " alt="" coords="294,71,429,98"/>
+<area shape="rect" id="node4" href="class_clear_logo_draw.html#af5d12b717020101e5c956cf3574f0e2a" title="ClearLogoDraw::GetMatrix" alt="" coords="274,122,449,149"/>
+<area shape="rect" id="node5" href="class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176" title="初期化関数 " alt="" coords="290,173,433,199"/>
+<area shape="rect" id="node6" href="class_failure_logo_draw.html#aefc4be9e6ead4d90a5fc9c22cc07fe92" title="FailureLogoDraw::GetMatrix" alt="" coords="270,223,453,250"/>
+<area shape="rect" id="node7" href="class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e" title="初期化関数 " alt="" coords="276,274,447,301"/>
+<area shape="rect" id="node8" href="class_push_space_logo_draw.html#a1ab6229ba2d68b730797f5016c99f359" title="PushSpaceLogoDraw::\lGetMatrix" alt="" coords="284,325,439,367"/>
+<area shape="rect" id="node9" href="class_score_draw.html#a62aa20ef4b40544bf0a95770b925c780" title="ScoreDraw::GetMatrix" alt="" coords="286,391,437,418"/>
+<area shape="rect" id="node10" href="class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30" title="初期化関数 " alt="" coords="297,442,425,469"/>
+<area shape="rect" id="node11" href="class_title_logo_draw.html#af21cd1dbd79c741a2e3ca2b8e26c5f61" title="TitleLogoDraw::GetMatrix" alt="" coords="277,493,445,519"/>
+<area shape="rect" id="node12" href="class_tutorial_logo_draw.html#a53fc4b1b23c7f9e249600be67510f944" title="初期化関数 " alt="" coords="288,543,435,570"/>
+<area shape="rect" id="node13" href="class_tutorial_logo_draw.html#ab700e592d00574dff6ee342138343d7b" title="TutorialLogoDraw::GetMatrix" alt="" coords="268,594,455,621"/>
+<area shape="rect" id="node14" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="288,645,435,671"/>
+<area shape="rect" id="node15" href="class_coin_draw.html#a8f5fd8668a4c66fe31446cc6f7c4afd7" title="CoinDraw::GetMatrix" alt="" coords="290,695,433,722"/>
+<area shape="rect" id="node16" href="class_enemy_collision.html#ab54133504d867c6d2070d2f3854a0aaf" title="更新関数 " alt="" coords="281,746,442,773"/>
+<area shape="rect" id="node17" href="class_enemy_draw.html#a6f2a052a45caf0d255112cbe81b8bfa3" title="EnemyDraw::GetMatrix" alt="" coords="283,797,440,823"/>
+<area shape="rect" id="node18" href="class_field_draw.html#a2629b4c4cd8e240e39c65b879c6e82b6" title="FieldDraw::GetMatrix" alt="" coords="289,847,433,874"/>
+<area shape="rect" id="node19" href="class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936" title="更新関数 " alt="" coords="288,898,435,925"/>
+<area shape="rect" id="node20" href="class_goal_draw.html#a6e003277ed44eb9c800a616b6acbcb20" title="更新関数 " alt="" coords="298,949,425,975"/>
+<area shape="rect" id="node21" href="class_goal_draw.html#a50fa9ceaaecdff9910e0f91e65ad9e95" title="GoalDraw::GetMatrix" alt="" coords="290,999,433,1026"/>
+<area shape="rect" id="node22" href="class_player_collision.html#a09f97f220903f5724a3af6b97af3a336" title="更新関数 " alt="" coords="283,1050,440,1077"/>
+<area shape="rect" id="node23" href="class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0" title="フィールドとの衝突時関数 " alt="" coords="274,1101,449,1127"/>
+<area shape="rect" id="node24" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="264,1151,459,1178"/>
+<area shape="rect" id="node26" href="class_player_draw.html#a8edf1441ea23f298c6a0ca707f54021a" title="PlayerDraw::GetMatrix" alt="" coords="285,1202,438,1229"/>
+<area shape="rect" id="node27" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="287,1253,436,1279"/>
+<area shape="rect" id="node28" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="267,1303,455,1330"/>
+<area shape="rect" id="node29" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="286,1355,437,1396"/>
+<area shape="rect" id="node30" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="286,1420,437,1461"/>
+<area shape="rect" id="node31" href="class_sky_dome_draw.html#ab947a3d43975a6d95149bc112c08ce05" title="SkyDomeDraw::GetMatrix" alt="" coords="275,1486,448,1513"/>
+<area shape="rect" id="node32" href="class_sky_dome_update.html#ab4fec6d13590c07e39e6e8b4f7f7613a" title="初期化関数 " alt="" coords="289,1537,434,1563"/>
+<area shape="rect" id="node33" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="280,1588,443,1629"/>
+<area shape="rect" id="node34" href="class_stencil_shadow_test_draw.html#adfa99798c61ac13f209dc99f1e2694c5" title="StencilShadowTestDraw\l::GetMatrix" alt="" coords="280,1653,443,1695"/>
+<area shape="rect" id="node35" href="class_collision_manager.html#a1d67f4076eb71e191db5cff4e5abe3b0" title="地面との衝突判定関数 " alt="" coords="272,1719,451,1760"/>
+<area shape="rect" id="node39" href="class_camera_state___homing_target.html#a98f04985c06033febdad32d6357088c9" title="更新関数 " alt="" coords="269,1784,454,1825"/>
+<area shape="rect" id="node41" href="class_back_buffer.html#af363b4d69affd48a1b0f65a000ff12b5" title="透明描画基底クラスのソート関数 " alt="" coords="507,1850,692,1877"/>
+<area shape="rect" id="node45" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="280,1901,443,1943"/>
+<area shape="rect" id="node47" href="class_number_draw.html#a78f50afa05e728811d89a491f5eec899" title="NumberDraw::GetMatrix" alt="" coords="281,1967,442,1994"/>
+<area shape="rect" id="node48" href="class_physics.html#a481f06d777c1b1f52dc2c06c71e93932" title="Physics::UpdatePosition" alt="" coords="517,2009,682,2035"/>
+<area shape="rect" id="node25" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="509,1151,690,1178"/>
+<area shape="rect" id="node36" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="941,1775,1111,1802"/>
+<area shape="rect" id="node37" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1388,1872,1541,1913"/>
+<area shape="rect" id="node38" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1589,1879,1784,1906"/>
+<area shape="rect" id="node40" href="class_camera_state___homing_target.html#a9222190a5f26d564e99623b05941d382" title="初期化関数 " alt="" coords="507,1784,692,1825"/>
+<area shape="rect" id="node42" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="740,1879,875,1906"/>
+<area shape="rect" id="node43" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="923,1872,1129,1913"/>
+<area shape="rect" id="node44" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1183,1879,1334,1906"/>
+<area shape="rect" id="node46" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="520,1901,679,1943"/>
+<area shape="rect" id="node49" href="class_physics.html#a13bf3e9de07a12afc3c0a4012e00d0a1" title="Physics::Update" alt="" coords="748,1998,867,2025"/>
+<area shape="rect" id="node50" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="1177,1943,1340,1970"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a177985be1be1252df6588fa29f2c7f41"></a>
@@ -365,6 +595,41 @@ GameObjectBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00094">94</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a177985be1be1252df6588fa29f2c7f41_icgraph.png" border="0" usemap="#class_game_object_base_a177985be1be1252df6588fa29f2c7f41_icgraph" alt=""/></div>
+<map name="class_game_object_base_a177985be1be1252df6588fa29f2c7f41_icgraph" id="class_game_object_base_a177985be1be1252df6588fa29f2c7f41_icgraph">
+<area shape="rect" id="node2" href="class_update_manager.html#ab4f492c33ed941ddd01ccae8218080ff" title="更新基底クラスの上書き関数 " alt="" coords="268,5,443,47"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a4c6cdb6d0a1f43a2e2e705677fa2f5f6" title="コンポーネントをマネージャーへ設定関数 " alt="" coords="269,71,441,112"/>
+<area shape="rect" id="node11" href="class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="248,149,463,191"/>
+<area shape="rect" id="node3" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="552,5,703,47"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09" title="追加待ち配列の中身を追加関数 " alt="" coords="529,71,725,112"/>
+<area shape="rect" id="node6" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="813,64,966,105"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1035,71,1229,98"/>
+<area shape="rect" id="node8" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1755,111,1906,138"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1967,142,2128,169"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2176,142,2249,169"/>
+<area shape="rect" id="node12" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="511,175,744,216"/>
+<area shape="rect" id="node13" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="792,130,987,157"/>
+<area shape="rect" id="node15" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="813,181,966,223"/>
+<area shape="rect" id="node22" href="class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="802,305,977,331"/>
+<area shape="rect" id="node14" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1041,122,1223,149"/>
+<area shape="rect" id="node16" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="1055,173,1209,215"/>
+<area shape="rect" id="node18" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="1047,239,1217,280"/>
+<area shape="rect" id="node17" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1301,181,1452,207"/>
+<area shape="rect" id="node19" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1277,239,1476,266"/>
+<area shape="rect" id="node20" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1530,194,1689,221"/>
+<area shape="rect" id="node21" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1743,173,1919,199"/>
+<area shape="rect" id="node23" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1057,305,1207,331"/>
+<area shape="rect" id="node27" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1047,355,1217,382"/>
+<area shape="rect" id="node24" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1299,326,1454,353"/>
+<area shape="rect" id="node25" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1548,286,1671,313"/>
+<area shape="rect" id="node26" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1524,337,1695,363"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -416,6 +681,155 @@ GameObjectBase の継承関係図</div>
   </dd>
 </dl>
 
+<p class="definition"> <a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a> の <a class="el" href="_game_object_base_8cpp_source.html#l00078">78</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_aca14cf5d66f945347653c4965876e75b_cgraph.png" border="0" usemap="#class_game_object_base_aca14cf5d66f945347653c4965876e75b_cgraph" alt=""/></div>
+<map name="class_game_object_base_aca14cf5d66f945347653c4965876e75b_cgraph" id="class_game_object_base_aca14cf5d66f945347653c4965876e75b_cgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="204,101,439,128"/>
+<area shape="rect" id="node6" href="class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6" title="コンポーネント初期化関数 " alt="" coords="213,164,429,191"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#ab42e8ca2c7e586d05d513e8a868a86ef" title="ゲームオブジェクト基底クラスの追加関数 " alt="" coords="225,241,418,282"/>
+<area shape="rect" id="node3" href="class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08" title="GameObjectBase::SetUpdate" alt="" coords="499,5,693,32"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="505,56,687,83"/>
+<area shape="rect" id="node5" href="class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="495,107,697,133"/>
+<area shape="rect" id="node7" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="487,157,705,184"/>
+<area shape="rect" id="node8" href="class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="525,208,667,235"/>
+<area shape="rect" id="node10" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="528,259,664,301"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_aca14cf5d66f945347653c4965876e75b_icgraph.png" border="0" usemap="#class_game_object_base_aca14cf5d66f945347653c4965876e75b_icgraph" alt=""/></div>
+<map name="class_game_object_base_aca14cf5d66f945347653c4965876e75b_icgraph" id="class_game_object_base_aca14cf5d66f945347653c4965876e75b_icgraph">
+<area shape="rect" id="node2" href="class_clear_logo.html#a46c1a948342d75bb418047a31e70999d" title="ClearLogo::Init" alt="" coords="231,77,336,103"/>
+<area shape="rect" id="node5" href="class_failure_logo.html#a22da89def55023f43860cf646da7a74c" title="FailureLogo::Init" alt="" coords="226,19,341,46"/>
+<area shape="rect" id="node7" href="class_push_space_logo.html#a381d34d0dfdd493eb46f299d2a2ba858" title="PushSpaceLogo::Init" alt="" coords="212,190,355,217"/>
+<area shape="rect" id="node11" href="class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="681,463,762,490"/>
+<area shape="rect" id="node14" href="class_title_logo.html#a1e07aae4771bd7a44cb7e3b55b72b9f3" title="TitleLogo::Init" alt="" coords="234,131,333,158"/>
+<area shape="rect" id="node16" href="class_tutorial_logo.html#a590f017a6b0532d08c1377b90b8fba3f" title="TutorialLogo::Init" alt="" coords="225,250,342,277"/>
+<area shape="rect" id="node18" href="class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="685,526,758,553"/>
+<area shape="rect" id="node20" href="class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="677,583,765,610"/>
+<area shape="rect" id="node22" href="class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="684,659,759,686"/>
+<area shape="rect" id="node24" href="class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="684,305,759,331"/>
+<area shape="rect" id="node26" href="class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="457,355,541,382"/>
+<area shape="rect" id="node28" href="class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="231,406,335,433"/>
+<area shape="rect" id="node30" href="class_stencil_shadow_test.html#a4a58695fafd134d750eb23ee5ec2bdb6" title="StencilShadowTest::Init" alt="" coords="204,714,363,741"/>
+<area shape="rect" id="node32" href="class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="237,773,329,799"/>
+<area shape="rect" id="node39" href="class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="234,507,333,534"/>
+<area shape="rect" id="node3" href="class_clear_logo_factory.html#a98ea5747e5605f30d58be670ad4cac4a" title="ClearLogoFactory::Create" alt="" coords="414,71,585,98"/>
+<area shape="rect" id="node4" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="640,64,803,105"/>
+<area shape="rect" id="node6" href="class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3" title="FailureLogoFactory\l::Create" alt="" coords="433,5,566,47"/>
+<area shape="rect" id="node8" href="class_push_space_logo_factory.html#a40ed4a7781d8f5a6e802b90f3aa599cb" title="PushSpaceLogoFactory\l::Create" alt="" coords="419,173,580,215"/>
+<area shape="rect" id="node9" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="647,151,796,192"/>
+<area shape="rect" id="node10" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="655,239,787,280"/>
+<area shape="rect" id="node12" href="class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="866,463,1013,490"/>
+<area shape="rect" id="node13" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1077,456,1237,497"/>
+<area shape="rect" id="node15" href="class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150" title="TitleLogoFactory::Create" alt="" coords="417,122,581,149"/>
+<area shape="rect" id="node17" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="431,239,567,280"/>
+<area shape="rect" id="node19" href="class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="870,521,1009,547"/>
+<area shape="rect" id="node21" href="class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="863,583,1016,610"/>
+<area shape="rect" id="node23" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="869,647,1009,674"/>
+<area shape="rect" id="node25" href="class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="870,306,1009,333"/>
+<area shape="rect" id="node27" href="class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="865,358,1014,385"/>
+<area shape="rect" id="node29" href="class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="855,410,1024,437"/>
+<area shape="rect" id="node31" href="class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2" title="StencilShadowTestFactory\l::Create" alt="" coords="411,711,588,752"/>
+<area shape="rect" id="node33" href="class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="421,777,578,803"/>
+<area shape="rect" id="node34" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="646,751,797,778"/>
+<area shape="rect" id="node38" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="636,802,807,829"/>
+<area shape="rect" id="node35" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="862,777,1017,803"/>
+<area shape="rect" id="node36" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1096,802,1219,829"/>
+<area shape="rect" id="node37" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1072,751,1243,778"/>
+<area shape="rect" id="node40" href="class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="417,507,581,534"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f4d4e3d23603d8e32ddb220a53039a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4d4e3d23603d8e32ddb220a53039a6">&#9670;&nbsp;</a></span>InitComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectBase::InitComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンポーネント初期化関数 </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a> の <a class="el" href="_game_object_base_8cpp_source.html#l00096">96</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_cgraph.png" border="0" usemap="#class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_cgraph" alt=""/></div>
+<map name="class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_cgraph" id="class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_cgraph">
+<area shape="rect" id="node2" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="269,5,488,32"/>
+<area shape="rect" id="node3" href="class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="307,56,450,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_icgraph.png" border="0" usemap="#class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_icgraph" alt=""/></div>
+<map name="class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_icgraph" id="class_game_object_base_a5f4d4e3d23603d8e32ddb220a53039a6_icgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="269,406,420,433"/>
+<area shape="rect" id="node3" href="class_clear_logo.html#a46c1a948342d75bb418047a31e70999d" title="ClearLogo::Init" alt="" coords="495,77,600,103"/>
+<area shape="rect" id="node6" href="class_failure_logo.html#a22da89def55023f43860cf646da7a74c" title="FailureLogo::Init" alt="" coords="490,19,605,46"/>
+<area shape="rect" id="node8" href="class_push_space_logo.html#a381d34d0dfdd493eb46f299d2a2ba858" title="PushSpaceLogo::Init" alt="" coords="476,190,619,217"/>
+<area shape="rect" id="node12" href="class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="945,463,1026,490"/>
+<area shape="rect" id="node15" href="class_title_logo.html#a1e07aae4771bd7a44cb7e3b55b72b9f3" title="TitleLogo::Init" alt="" coords="498,131,597,158"/>
+<area shape="rect" id="node17" href="class_tutorial_logo.html#a590f017a6b0532d08c1377b90b8fba3f" title="TutorialLogo::Init" alt="" coords="489,250,606,277"/>
+<area shape="rect" id="node19" href="class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="949,526,1022,553"/>
+<area shape="rect" id="node21" href="class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="941,583,1029,610"/>
+<area shape="rect" id="node23" href="class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="948,659,1023,686"/>
+<area shape="rect" id="node25" href="class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="948,305,1023,331"/>
+<area shape="rect" id="node27" href="class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="721,355,805,382"/>
+<area shape="rect" id="node29" href="class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="495,406,599,433"/>
+<area shape="rect" id="node31" href="class_stencil_shadow_test.html#a4a58695fafd134d750eb23ee5ec2bdb6" title="StencilShadowTest::Init" alt="" coords="468,714,627,741"/>
+<area shape="rect" id="node33" href="class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="501,773,593,799"/>
+<area shape="rect" id="node40" href="class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="498,507,597,534"/>
+<area shape="rect" id="node4" href="class_clear_logo_factory.html#a98ea5747e5605f30d58be670ad4cac4a" title="ClearLogoFactory::Create" alt="" coords="678,71,849,98"/>
+<area shape="rect" id="node5" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="904,64,1067,105"/>
+<area shape="rect" id="node7" href="class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3" title="FailureLogoFactory\l::Create" alt="" coords="697,5,830,47"/>
+<area shape="rect" id="node9" href="class_push_space_logo_factory.html#a40ed4a7781d8f5a6e802b90f3aa599cb" title="PushSpaceLogoFactory\l::Create" alt="" coords="683,173,844,215"/>
+<area shape="rect" id="node10" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="911,151,1060,192"/>
+<area shape="rect" id="node11" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="919,239,1051,280"/>
+<area shape="rect" id="node13" href="class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="1130,463,1277,490"/>
+<area shape="rect" id="node14" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1341,456,1501,497"/>
+<area shape="rect" id="node16" href="class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150" title="TitleLogoFactory::Create" alt="" coords="681,122,845,149"/>
+<area shape="rect" id="node18" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="695,239,831,280"/>
+<area shape="rect" id="node20" href="class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="1134,521,1273,547"/>
+<area shape="rect" id="node22" href="class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="1127,583,1280,610"/>
+<area shape="rect" id="node24" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="1133,647,1273,674"/>
+<area shape="rect" id="node26" href="class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="1134,306,1273,333"/>
+<area shape="rect" id="node28" href="class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="1129,358,1278,385"/>
+<area shape="rect" id="node30" href="class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="1119,410,1288,437"/>
+<area shape="rect" id="node32" href="class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2" title="StencilShadowTestFactory\l::Create" alt="" coords="675,711,852,752"/>
+<area shape="rect" id="node34" href="class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="685,777,842,803"/>
+<area shape="rect" id="node35" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="910,751,1061,778"/>
+<area shape="rect" id="node39" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="900,802,1071,829"/>
+<area shape="rect" id="node36" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1126,777,1281,803"/>
+<area shape="rect" id="node37" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1360,802,1483,829"/>
+<area shape="rect" id="node38" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1336,751,1507,778"/>
+<area shape="rect" id="node41" href="class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="681,507,845,534"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a85c59554f734bcb09f1a1e18d9517dce"></a>
@@ -444,6 +858,19 @@ GameObjectBase の継承関係図</div>
 <p>リセット関数 </p>
 
 <p><a class="el" href="class_number.html#a7c6facdb1b3d0acc8309e0a915863d44">Number</a>, <a class="el" href="class_goal.html#a98b797c8012ab43d6fc8c42e4e91466b">Goal</a>, <a class="el" href="class_push_space_logo.html#afa163b1aff8df494b4f09f378bf983f0">PushSpaceLogo</a>, <a class="el" href="class_numbers.html#a1ab67e439ba1695c8fd545dfc1650990">Numbers</a>, <a class="el" href="class_clear_logo.html#aa19369cbace0cc79957ef7b4d4dbd0f5">ClearLogo</a>, <a class="el" href="class_failure_logo.html#a542b1617087a6701f7edb345e2a72e01">FailureLogo</a>, <a class="el" href="class_title_logo.html#a8bca39d06592b95b26024c2d86ac349c">TitleLogo</a>, <a class="el" href="class_field.html#a5b140074dcca821ac702da348238c6d4">Field</a>, <a class="el" href="class_player.html#a457153d0edd58932e37e1356f5fe5fed">Player</a>, <a class="el" href="class_score.html#ad01d461a2b6ca345858b2ae0a3d81cc1">Score</a>, <a class="el" href="class_tutorial_logo.html#a2c9e22c81cfeafbd34f50cc766a66cf1">TutorialLogo</a>, <a class="el" href="class_enemy.html#ab86571061e7fcabcf8c646b1abad5581">Enemy</a>, <a class="el" href="class_coin.html#a52c50229ce7c1e0f459e198adac70c8d">Coin</a>, <a class="el" href="class_stencil_shadow_test.html#a7691120143c64b99d6c8f5391be56e83">StencilShadowTest</a>, <a class="el" href="class_sky_dome.html#abc6f8ed1471d7b03f25924a849cae590">SkyDome</a> (計15項目)で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce_icgraph.png" border="0" usemap="#class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce_icgraph" alt=""/></div>
+<map name="class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce_icgraph" id="class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a38f980aec0970f45eb9bc55db8ac01a3" title="全ゲームオブジェクトリセット関数 " alt="" coords="220,5,373,47"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="421,13,609,39"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="657,13,816,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="864,13,1040,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1088,13,1249,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1297,13,1371,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -487,6 +914,65 @@ GameObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00088">88</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_cgraph.png" border="0" usemap="#class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_cgraph" alt=""/></div>
+<map name="class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_cgraph" id="class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_cgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08" title="GameObjectBase::SetUpdate" alt="" coords="292,5,487,32"/>
+<area shape="rect" id="node3" href="class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="298,56,481,83"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="288,107,491,133"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_icgraph.png" border="0" usemap="#class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_icgraph" alt=""/></div>
+<map name="class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_icgraph" id="class_game_object_base_aad0e581dfba83d11af6412a0df6ecd90_icgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="288,406,439,433"/>
+<area shape="rect" id="node3" href="class_clear_logo.html#a46c1a948342d75bb418047a31e70999d" title="ClearLogo::Init" alt="" coords="513,77,619,103"/>
+<area shape="rect" id="node6" href="class_failure_logo.html#a22da89def55023f43860cf646da7a74c" title="FailureLogo::Init" alt="" coords="509,19,623,46"/>
+<area shape="rect" id="node8" href="class_push_space_logo.html#a381d34d0dfdd493eb46f299d2a2ba858" title="PushSpaceLogo::Init" alt="" coords="495,190,637,217"/>
+<area shape="rect" id="node12" href="class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="963,463,1045,490"/>
+<area shape="rect" id="node15" href="class_title_logo.html#a1e07aae4771bd7a44cb7e3b55b72b9f3" title="TitleLogo::Init" alt="" coords="517,131,615,158"/>
+<area shape="rect" id="node17" href="class_tutorial_logo.html#a590f017a6b0532d08c1377b90b8fba3f" title="TutorialLogo::Init" alt="" coords="507,250,625,277"/>
+<area shape="rect" id="node19" href="class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="967,526,1041,553"/>
+<area shape="rect" id="node21" href="class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="960,583,1048,610"/>
+<area shape="rect" id="node23" href="class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="967,659,1041,686"/>
+<area shape="rect" id="node25" href="class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="967,305,1041,331"/>
+<area shape="rect" id="node27" href="class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="740,355,824,382"/>
+<area shape="rect" id="node29" href="class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="514,406,618,433"/>
+<area shape="rect" id="node31" href="class_stencil_shadow_test.html#a4a58695fafd134d750eb23ee5ec2bdb6" title="StencilShadowTest::Init" alt="" coords="487,714,645,741"/>
+<area shape="rect" id="node33" href="class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="520,773,612,799"/>
+<area shape="rect" id="node40" href="class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="517,507,615,534"/>
+<area shape="rect" id="node4" href="class_clear_logo_factory.html#a98ea5747e5605f30d58be670ad4cac4a" title="ClearLogoFactory::Create" alt="" coords="697,71,867,98"/>
+<area shape="rect" id="node5" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="923,64,1085,105"/>
+<area shape="rect" id="node7" href="class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3" title="FailureLogoFactory\l::Create" alt="" coords="715,5,849,47"/>
+<area shape="rect" id="node9" href="class_push_space_logo_factory.html#a40ed4a7781d8f5a6e802b90f3aa599cb" title="PushSpaceLogoFactory\l::Create" alt="" coords="701,173,863,215"/>
+<area shape="rect" id="node10" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="929,151,1079,192"/>
+<area shape="rect" id="node11" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="938,239,1070,280"/>
+<area shape="rect" id="node13" href="class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="1149,463,1295,490"/>
+<area shape="rect" id="node14" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1360,456,1520,497"/>
+<area shape="rect" id="node16" href="class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150" title="TitleLogoFactory::Create" alt="" coords="700,122,864,149"/>
+<area shape="rect" id="node18" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="714,239,850,280"/>
+<area shape="rect" id="node20" href="class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="1153,521,1291,547"/>
+<area shape="rect" id="node22" href="class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="1145,583,1299,610"/>
+<area shape="rect" id="node24" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="1152,647,1292,674"/>
+<area shape="rect" id="node26" href="class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="1153,306,1291,333"/>
+<area shape="rect" id="node28" href="class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="1147,358,1297,385"/>
+<area shape="rect" id="node30" href="class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="1137,410,1307,437"/>
+<area shape="rect" id="node32" href="class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2" title="StencilShadowTestFactory\l::Create" alt="" coords="693,711,871,752"/>
+<area shape="rect" id="node34" href="class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="703,777,861,803"/>
+<area shape="rect" id="node35" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="929,751,1079,778"/>
+<area shape="rect" id="node39" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="919,802,1089,829"/>
+<area shape="rect" id="node36" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1145,777,1299,803"/>
+<area shape="rect" id="node37" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1379,802,1501,829"/>
+<area shape="rect" id="node38" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1355,751,1525,778"/>
+<area shape="rect" id="node41" href="class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="700,507,864,534"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a4aeb0212f5a390570d050bfef51b7818"></a>
@@ -512,6 +998,57 @@ GameObjectBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00099">99</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a4aeb0212f5a390570d050bfef51b7818_icgraph.png" border="0" usemap="#class_game_object_base_a4aeb0212f5a390570d050bfef51b7818_icgraph" alt=""/></div>
+<map name="class_game_object_base_a4aeb0212f5a390570d050bfef51b7818_icgraph" id="class_game_object_base_a4aeb0212f5a390570d050bfef51b7818_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#af9c2ce87e0189cdd1256c83decc64673" title="衝突基底クラスの上書き関数 " alt="" coords="282,340,465,381"/>
+<area shape="rect" id="node3" href="class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="256,406,491,433"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="539,406,689,433"/>
+<area shape="rect" id="node5" href="class_clear_logo.html#a46c1a948342d75bb418047a31e70999d" title="ClearLogo::Init" alt="" coords="764,77,869,103"/>
+<area shape="rect" id="node8" href="class_failure_logo.html#a22da89def55023f43860cf646da7a74c" title="FailureLogo::Init" alt="" coords="759,19,874,46"/>
+<area shape="rect" id="node10" href="class_push_space_logo.html#a381d34d0dfdd493eb46f299d2a2ba858" title="PushSpaceLogo::Init" alt="" coords="745,190,888,217"/>
+<area shape="rect" id="node14" href="class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="1214,463,1295,490"/>
+<area shape="rect" id="node17" href="class_title_logo.html#a1e07aae4771bd7a44cb7e3b55b72b9f3" title="TitleLogo::Init" alt="" coords="767,131,866,158"/>
+<area shape="rect" id="node19" href="class_tutorial_logo.html#a590f017a6b0532d08c1377b90b8fba3f" title="TutorialLogo::Init" alt="" coords="758,250,875,277"/>
+<area shape="rect" id="node21" href="class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="1218,526,1291,553"/>
+<area shape="rect" id="node23" href="class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="1211,583,1299,610"/>
+<area shape="rect" id="node25" href="class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="1217,659,1292,686"/>
+<area shape="rect" id="node27" href="class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="1217,305,1292,331"/>
+<area shape="rect" id="node29" href="class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="991,355,1075,382"/>
+<area shape="rect" id="node31" href="class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="765,406,869,433"/>
+<area shape="rect" id="node33" href="class_stencil_shadow_test.html#a4a58695fafd134d750eb23ee5ec2bdb6" title="StencilShadowTest::Init" alt="" coords="737,714,896,741"/>
+<area shape="rect" id="node35" href="class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="771,773,863,799"/>
+<area shape="rect" id="node42" href="class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="767,507,866,534"/>
+<area shape="rect" id="node6" href="class_clear_logo_factory.html#a98ea5747e5605f30d58be670ad4cac4a" title="ClearLogoFactory::Create" alt="" coords="947,71,1118,98"/>
+<area shape="rect" id="node7" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="1173,64,1336,105"/>
+<area shape="rect" id="node9" href="class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3" title="FailureLogoFactory\l::Create" alt="" coords="966,5,1099,47"/>
+<area shape="rect" id="node11" href="class_push_space_logo_factory.html#a40ed4a7781d8f5a6e802b90f3aa599cb" title="PushSpaceLogoFactory\l::Create" alt="" coords="952,173,1113,215"/>
+<area shape="rect" id="node12" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="1180,151,1329,192"/>
+<area shape="rect" id="node13" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="1189,239,1321,280"/>
+<area shape="rect" id="node15" href="class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="1399,463,1546,490"/>
+<area shape="rect" id="node16" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1611,456,1771,497"/>
+<area shape="rect" id="node18" href="class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150" title="TitleLogoFactory::Create" alt="" coords="951,122,1115,149"/>
+<area shape="rect" id="node20" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="965,239,1101,280"/>
+<area shape="rect" id="node22" href="class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="1403,521,1542,547"/>
+<area shape="rect" id="node24" href="class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="1396,583,1549,610"/>
+<area shape="rect" id="node26" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="1403,647,1543,674"/>
+<area shape="rect" id="node28" href="class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="1403,306,1542,333"/>
+<area shape="rect" id="node30" href="class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="1398,358,1547,385"/>
+<area shape="rect" id="node32" href="class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="1388,410,1557,437"/>
+<area shape="rect" id="node34" href="class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2" title="StencilShadowTestFactory\l::Create" alt="" coords="944,711,1121,752"/>
+<area shape="rect" id="node36" href="class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="954,777,1111,803"/>
+<area shape="rect" id="node37" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1179,751,1330,778"/>
+<area shape="rect" id="node41" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1169,802,1340,829"/>
+<area shape="rect" id="node38" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1395,777,1550,803"/>
+<area shape="rect" id="node39" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1629,802,1752,829"/>
+<area shape="rect" id="node40" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1605,751,1776,778"/>
+<area shape="rect" id="node43" href="class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="951,507,1115,534"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -539,6 +1076,57 @@ GameObjectBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00097">97</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_ab548b4208b8da2af6e3abb533ea53da9_icgraph.png" border="0" usemap="#class_game_object_base_ab548b4208b8da2af6e3abb533ea53da9_icgraph" alt=""/></div>
+<map name="class_game_object_base_ab548b4208b8da2af6e3abb533ea53da9_icgraph" id="class_game_object_base_ab548b4208b8da2af6e3abb533ea53da9_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#a94ef5a241c8d78187a2a6c0ed3c9efec" title="描画基底クラスの上書き関数 " alt="" coords="257,340,450,381"/>
+<area shape="rect" id="node3" href="class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="236,406,471,433"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="519,406,669,433"/>
+<area shape="rect" id="node5" href="class_clear_logo.html#a46c1a948342d75bb418047a31e70999d" title="ClearLogo::Init" alt="" coords="744,77,849,103"/>
+<area shape="rect" id="node8" href="class_failure_logo.html#a22da89def55023f43860cf646da7a74c" title="FailureLogo::Init" alt="" coords="739,19,854,46"/>
+<area shape="rect" id="node10" href="class_push_space_logo.html#a381d34d0dfdd493eb46f299d2a2ba858" title="PushSpaceLogo::Init" alt="" coords="725,190,868,217"/>
+<area shape="rect" id="node14" href="class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="1194,463,1275,490"/>
+<area shape="rect" id="node17" href="class_title_logo.html#a1e07aae4771bd7a44cb7e3b55b72b9f3" title="TitleLogo::Init" alt="" coords="747,131,846,158"/>
+<area shape="rect" id="node19" href="class_tutorial_logo.html#a590f017a6b0532d08c1377b90b8fba3f" title="TutorialLogo::Init" alt="" coords="738,250,855,277"/>
+<area shape="rect" id="node21" href="class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="1198,526,1271,553"/>
+<area shape="rect" id="node23" href="class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="1191,583,1279,610"/>
+<area shape="rect" id="node25" href="class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="1197,659,1272,686"/>
+<area shape="rect" id="node27" href="class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="1197,305,1272,331"/>
+<area shape="rect" id="node29" href="class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="971,355,1055,382"/>
+<area shape="rect" id="node31" href="class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="745,406,849,433"/>
+<area shape="rect" id="node33" href="class_stencil_shadow_test.html#a4a58695fafd134d750eb23ee5ec2bdb6" title="StencilShadowTest::Init" alt="" coords="717,714,876,741"/>
+<area shape="rect" id="node35" href="class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="751,773,843,799"/>
+<area shape="rect" id="node42" href="class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="747,507,846,534"/>
+<area shape="rect" id="node6" href="class_clear_logo_factory.html#a98ea5747e5605f30d58be670ad4cac4a" title="ClearLogoFactory::Create" alt="" coords="927,71,1098,98"/>
+<area shape="rect" id="node7" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="1153,64,1316,105"/>
+<area shape="rect" id="node9" href="class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3" title="FailureLogoFactory\l::Create" alt="" coords="946,5,1079,47"/>
+<area shape="rect" id="node11" href="class_push_space_logo_factory.html#a40ed4a7781d8f5a6e802b90f3aa599cb" title="PushSpaceLogoFactory\l::Create" alt="" coords="932,173,1093,215"/>
+<area shape="rect" id="node12" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="1160,151,1309,192"/>
+<area shape="rect" id="node13" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="1169,239,1301,280"/>
+<area shape="rect" id="node15" href="class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="1379,463,1526,490"/>
+<area shape="rect" id="node16" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1591,456,1751,497"/>
+<area shape="rect" id="node18" href="class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150" title="TitleLogoFactory::Create" alt="" coords="931,122,1095,149"/>
+<area shape="rect" id="node20" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="945,239,1081,280"/>
+<area shape="rect" id="node22" href="class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="1383,521,1522,547"/>
+<area shape="rect" id="node24" href="class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="1376,583,1529,610"/>
+<area shape="rect" id="node26" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="1383,647,1523,674"/>
+<area shape="rect" id="node28" href="class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="1383,306,1522,333"/>
+<area shape="rect" id="node30" href="class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="1378,358,1527,385"/>
+<area shape="rect" id="node32" href="class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="1368,410,1537,437"/>
+<area shape="rect" id="node34" href="class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2" title="StencilShadowTestFactory\l::Create" alt="" coords="924,711,1101,752"/>
+<area shape="rect" id="node36" href="class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="934,777,1091,803"/>
+<area shape="rect" id="node37" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1159,751,1310,778"/>
+<area shape="rect" id="node41" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1149,802,1320,829"/>
+<area shape="rect" id="node38" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1375,777,1530,803"/>
+<area shape="rect" id="node39" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1609,802,1732,829"/>
+<area shape="rect" id="node40" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1585,751,1756,778"/>
+<area shape="rect" id="node43" href="class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="931,507,1095,534"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a71704e8310b3183f3f88869f8fd27d08"></a>
@@ -564,6 +1152,58 @@ GameObjectBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00095">95</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a71704e8310b3183f3f88869f8fd27d08_icgraph.png" border="0" usemap="#class_game_object_base_a71704e8310b3183f3f88869f8fd27d08_icgraph" alt=""/></div>
+<map name="class_game_object_base_a71704e8310b3183f3f88869f8fd27d08_icgraph" id="class_game_object_base_a71704e8310b3183f3f88869f8fd27d08_icgraph">
+<area shape="rect" id="node2" href="class_update_manager.html#ab4f492c33ed941ddd01ccae8218080ff" title="更新基底クラスの上書き関数 " alt="" coords="278,340,453,381"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="248,406,483,433"/>
+<area shape="rect" id="node3" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="531,340,681,381"/>
+<area shape="rect" id="node5" href="class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="531,406,681,433"/>
+<area shape="rect" id="node6" href="class_clear_logo.html#a46c1a948342d75bb418047a31e70999d" title="ClearLogo::Init" alt="" coords="756,77,861,103"/>
+<area shape="rect" id="node9" href="class_failure_logo.html#a22da89def55023f43860cf646da7a74c" title="FailureLogo::Init" alt="" coords="751,19,866,46"/>
+<area shape="rect" id="node11" href="class_push_space_logo.html#a381d34d0dfdd493eb46f299d2a2ba858" title="PushSpaceLogo::Init" alt="" coords="737,190,880,217"/>
+<area shape="rect" id="node15" href="class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="1206,463,1287,490"/>
+<area shape="rect" id="node18" href="class_title_logo.html#a1e07aae4771bd7a44cb7e3b55b72b9f3" title="TitleLogo::Init" alt="" coords="759,131,858,158"/>
+<area shape="rect" id="node20" href="class_tutorial_logo.html#a590f017a6b0532d08c1377b90b8fba3f" title="TutorialLogo::Init" alt="" coords="750,250,867,277"/>
+<area shape="rect" id="node22" href="class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="1210,526,1283,553"/>
+<area shape="rect" id="node24" href="class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="1203,583,1291,610"/>
+<area shape="rect" id="node26" href="class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="1209,659,1284,686"/>
+<area shape="rect" id="node28" href="class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="1209,305,1284,331"/>
+<area shape="rect" id="node30" href="class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="983,355,1067,382"/>
+<area shape="rect" id="node32" href="class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="757,406,861,433"/>
+<area shape="rect" id="node34" href="class_stencil_shadow_test.html#a4a58695fafd134d750eb23ee5ec2bdb6" title="StencilShadowTest::Init" alt="" coords="729,714,888,741"/>
+<area shape="rect" id="node36" href="class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="763,773,855,799"/>
+<area shape="rect" id="node43" href="class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="759,507,858,534"/>
+<area shape="rect" id="node7" href="class_clear_logo_factory.html#a98ea5747e5605f30d58be670ad4cac4a" title="ClearLogoFactory::Create" alt="" coords="939,71,1110,98"/>
+<area shape="rect" id="node8" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="1165,64,1328,105"/>
+<area shape="rect" id="node10" href="class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3" title="FailureLogoFactory\l::Create" alt="" coords="958,5,1091,47"/>
+<area shape="rect" id="node12" href="class_push_space_logo_factory.html#a40ed4a7781d8f5a6e802b90f3aa599cb" title="PushSpaceLogoFactory\l::Create" alt="" coords="944,173,1105,215"/>
+<area shape="rect" id="node13" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="1172,151,1321,192"/>
+<area shape="rect" id="node14" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="1181,239,1313,280"/>
+<area shape="rect" id="node16" href="class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="1391,463,1538,490"/>
+<area shape="rect" id="node17" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1603,456,1763,497"/>
+<area shape="rect" id="node19" href="class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150" title="TitleLogoFactory::Create" alt="" coords="943,122,1107,149"/>
+<area shape="rect" id="node21" href="class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="957,239,1093,280"/>
+<area shape="rect" id="node23" href="class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="1395,521,1534,547"/>
+<area shape="rect" id="node25" href="class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="1388,583,1541,610"/>
+<area shape="rect" id="node27" href="class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="1395,647,1535,674"/>
+<area shape="rect" id="node29" href="class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="1395,306,1534,333"/>
+<area shape="rect" id="node31" href="class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="1390,358,1539,385"/>
+<area shape="rect" id="node33" href="class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="1380,410,1549,437"/>
+<area shape="rect" id="node35" href="class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2" title="StencilShadowTestFactory\l::Create" alt="" coords="936,711,1113,752"/>
+<area shape="rect" id="node37" href="class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="946,777,1103,803"/>
+<area shape="rect" id="node38" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1171,751,1322,778"/>
+<area shape="rect" id="node42" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1161,802,1332,829"/>
+<area shape="rect" id="node39" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1387,777,1542,803"/>
+<area shape="rect" id="node40" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1621,802,1744,829"/>
+<area shape="rect" id="node41" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1597,751,1768,778"/>
+<area shape="rect" id="node44" href="class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="943,507,1107,534"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -594,11 +1234,297 @@ GameObjectBase の継承関係図</div>
 
 <p><a class="el" href="class_number.html#a7c3bf9c55f7a0a19d80129c5f07f99f2">Number</a>, <a class="el" href="class_push_space_logo.html#a06404113db417c58941ca7a13bba161e">PushSpaceLogo</a>, <a class="el" href="class_numbers.html#aeaad3cc1b8ae7defe79813b983b04101">Numbers</a>, <a class="el" href="class_goal.html#a48126385a674bcda855e2a61561fbf9f">Goal</a>, <a class="el" href="class_clear_logo.html#ab55def116615b92a8e8cc40b364b7a4c">ClearLogo</a>, <a class="el" href="class_failure_logo.html#adbe01fc4567ade0e788f511f5162299c">FailureLogo</a>, <a class="el" href="class_title_logo.html#a177943b3becc80fcdb7a34f131b07ee9">TitleLogo</a>, <a class="el" href="class_field.html#a6d1015e2409daa87cd00485ac1efc06b">Field</a>, <a class="el" href="class_player.html#a7455a83ac23d2f5e0cce0ddd7d92db0c">Player</a>, <a class="el" href="class_score.html#a605e163dc59ccc4d19a3cb6b5db813b8">Score</a>, <a class="el" href="class_tutorial_logo.html#a8e1f1dba47dadf7d1bb40f616324ffb5">TutorialLogo</a>, <a class="el" href="class_enemy.html#a9aeaa757abdf0c37fd67c4ce5aed6962">Enemy</a>, <a class="el" href="class_coin.html#a4d364dcb4b57b80ea00ce931d0bb300f">Coin</a>, <a class="el" href="class_stencil_shadow_test.html#a51b5d75aaba5673a13f950bd6b742720">StencilShadowTest</a>, <a class="el" href="class_sky_dome.html#a7fc71bfa671cf6e7ab26a194459b0753">SkyDome</a> (計15項目)で再実装されています。</p>
 
+<p class="definition"> <a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a> の <a class="el" href="_game_object_base_8cpp_source.html#l00056">56</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_cgraph.png" border="0" usemap="#class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_cgraph" alt=""/></div>
+<map name="class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_cgraph" id="class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_cgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#aff8e4f486435f5d921c186b0824e8a0e" title="コンポーネント終了関数 " alt="" coords="220,5,452,32"/>
+<area shape="rect" id="node3" href="class_component_base.html#a9f42beaf0383d6f629819579cab4de57" title="終了関数 " alt="" coords="500,5,659,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_icgraph.png" border="0" usemap="#class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_icgraph" alt=""/></div>
+<map name="class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_icgraph" id="class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c_icgraph">
+<area shape="rect" id="node2" href="class_clear_logo.html#ab55def116615b92a8e8cc40b364b7a4c" title="終了関数 " alt="" coords="276,5,397,32"/>
+<area shape="rect" id="node3" href="class_failure_logo.html#adbe01fc4567ade0e788f511f5162299c" title="終了関数 " alt="" coords="271,56,402,83"/>
+<area shape="rect" id="node4" href="class_push_space_logo.html#a06404113db417c58941ca7a13bba161e" title="終了関数 " alt="" coords="257,107,416,133"/>
+<area shape="rect" id="node5" href="class_score.html#a605e163dc59ccc4d19a3cb6b5db813b8" title="終了関数 " alt="" coords="288,157,385,184"/>
+<area shape="rect" id="node6" href="class_title_logo.html#a177943b3becc80fcdb7a34f131b07ee9" title="終了関数 " alt="" coords="279,208,394,235"/>
+<area shape="rect" id="node7" href="class_tutorial_logo.html#a8e1f1dba47dadf7d1bb40f616324ffb5" title="終了関数 " alt="" coords="270,259,403,285"/>
+<area shape="rect" id="node8" href="class_coin.html#a4d364dcb4b57b80ea00ce931d0bb300f" title="終了関数 " alt="" coords="292,309,381,336"/>
+<area shape="rect" id="node9" href="class_enemy.html#a9aeaa757abdf0c37fd67c4ce5aed6962" title="終了関数 " alt="" coords="285,360,389,387"/>
+<area shape="rect" id="node10" href="class_field.html#a6d1015e2409daa87cd00485ac1efc06b" title="終了関数 " alt="" coords="291,411,382,437"/>
+<area shape="rect" id="node11" href="class_goal.html#a48126385a674bcda855e2a61561fbf9f" title="終了関数 " alt="" coords="291,461,382,488"/>
+<area shape="rect" id="node12" href="class_player.html#a7455a83ac23d2f5e0cce0ddd7d92db0c" title="終了関数 " alt="" coords="287,512,387,539"/>
+<area shape="rect" id="node13" href="class_sky_dome.html#a7fc71bfa671cf6e7ab26a194459b0753" title="終了関数 " alt="" coords="277,563,397,589"/>
+<area shape="rect" id="node14" href="class_stencil_shadow_test.html#a51b5d75aaba5673a13f950bd6b742720" title="終了関数 " alt="" coords="266,614,407,655"/>
+<area shape="rect" id="node15" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="220,679,453,721"/>
+<area shape="rect" id="node33" href="class_number.html#a7c3bf9c55f7a0a19d80129c5f07f99f2" title="終了関数 " alt="" coords="283,745,391,772"/>
+<area shape="rect" id="node34" href="class_numbers.html#aeaad3cc1b8ae7defe79813b983b04101" title="終了関数 " alt="" coords="279,796,394,823"/>
+<area shape="rect" id="node16" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="501,612,696,639"/>
+<area shape="rect" id="node18" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="522,679,675,721"/>
+<area shape="rect" id="node27" href="class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="511,777,686,804"/>
+<area shape="rect" id="node17" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="744,595,925,621"/>
+<area shape="rect" id="node19" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="758,646,911,687"/>
+<area shape="rect" id="node21" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="749,711,920,753"/>
+<area shape="rect" id="node20" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="997,653,1148,680"/>
+<area shape="rect" id="node22" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="973,719,1172,745"/>
+<area shape="rect" id="node23" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1226,719,1385,745"/>
+<area shape="rect" id="node24" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1439,719,1615,745"/>
+<area shape="rect" id="node25" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1663,719,1824,745"/>
+<area shape="rect" id="node26" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1872,719,1945,745"/>
+<area shape="rect" id="node28" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="759,777,910,804"/>
+<area shape="rect" id="node32" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="749,828,920,855"/>
+<area shape="rect" id="node29" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="995,813,1150,840"/>
+<area shape="rect" id="node30" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1244,784,1367,811"/>
+<area shape="rect" id="node31" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1220,835,1391,861"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aff8e4f486435f5d921c186b0824e8a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8e4f486435f5d921c186b0824e8a0e">&#9670;&nbsp;</a></span>UninitComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameObjectBase::UninitComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンポーネント終了関数 </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a> の <a class="el" href="_game_object_base_8cpp_source.html#l00122">122</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_cgraph.png" border="0" usemap="#class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_cgraph" alt=""/></div>
+<map name="class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_cgraph" id="class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_cgraph">
+<area shape="rect" id="node2" href="class_component_base.html#a9f42beaf0383d6f629819579cab4de57" title="終了関数 " alt="" coords="285,5,444,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_icgraph.png" border="0" usemap="#class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_icgraph" alt=""/></div>
+<map name="class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_icgraph" id="class_game_object_base_aff8e4f486435f5d921c186b0824e8a0e_icgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c" title="終了関数 " alt="" coords="285,385,452,412"/>
+<area shape="rect" id="node3" href="class_clear_logo.html#ab55def116615b92a8e8cc40b364b7a4c" title="終了関数 " alt="" coords="556,5,677,32"/>
+<area shape="rect" id="node4" href="class_failure_logo.html#adbe01fc4567ade0e788f511f5162299c" title="終了関数 " alt="" coords="551,56,682,83"/>
+<area shape="rect" id="node5" href="class_push_space_logo.html#a06404113db417c58941ca7a13bba161e" title="終了関数 " alt="" coords="537,107,696,133"/>
+<area shape="rect" id="node6" href="class_score.html#a605e163dc59ccc4d19a3cb6b5db813b8" title="終了関数 " alt="" coords="568,157,665,184"/>
+<area shape="rect" id="node7" href="class_title_logo.html#a177943b3becc80fcdb7a34f131b07ee9" title="終了関数 " alt="" coords="559,208,674,235"/>
+<area shape="rect" id="node8" href="class_tutorial_logo.html#a8e1f1dba47dadf7d1bb40f616324ffb5" title="終了関数 " alt="" coords="550,259,683,285"/>
+<area shape="rect" id="node9" href="class_coin.html#a4d364dcb4b57b80ea00ce931d0bb300f" title="終了関数 " alt="" coords="572,309,661,336"/>
+<area shape="rect" id="node10" href="class_enemy.html#a9aeaa757abdf0c37fd67c4ce5aed6962" title="終了関数 " alt="" coords="565,360,669,387"/>
+<area shape="rect" id="node11" href="class_field.html#a6d1015e2409daa87cd00485ac1efc06b" title="終了関数 " alt="" coords="571,411,662,437"/>
+<area shape="rect" id="node12" href="class_goal.html#a48126385a674bcda855e2a61561fbf9f" title="終了関数 " alt="" coords="571,461,662,488"/>
+<area shape="rect" id="node13" href="class_player.html#a7455a83ac23d2f5e0cce0ddd7d92db0c" title="終了関数 " alt="" coords="567,512,667,539"/>
+<area shape="rect" id="node14" href="class_sky_dome.html#a7fc71bfa671cf6e7ab26a194459b0753" title="終了関数 " alt="" coords="557,563,677,589"/>
+<area shape="rect" id="node15" href="class_stencil_shadow_test.html#a51b5d75aaba5673a13f950bd6b742720" title="終了関数 " alt="" coords="546,614,687,655"/>
+<area shape="rect" id="node16" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="500,679,733,721"/>
+<area shape="rect" id="node34" href="class_number.html#a7c3bf9c55f7a0a19d80129c5f07f99f2" title="終了関数 " alt="" coords="563,745,671,772"/>
+<area shape="rect" id="node35" href="class_numbers.html#aeaad3cc1b8ae7defe79813b983b04101" title="終了関数 " alt="" coords="559,796,674,823"/>
+<area shape="rect" id="node17" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="781,612,976,639"/>
+<area shape="rect" id="node19" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="802,679,955,721"/>
+<area shape="rect" id="node28" href="class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="791,777,966,804"/>
+<area shape="rect" id="node18" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1024,595,1205,621"/>
+<area shape="rect" id="node20" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="1038,646,1191,687"/>
+<area shape="rect" id="node22" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="1029,711,1200,753"/>
+<area shape="rect" id="node21" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1277,653,1428,680"/>
+<area shape="rect" id="node23" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1253,719,1452,745"/>
+<area shape="rect" id="node24" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1506,719,1665,745"/>
+<area shape="rect" id="node25" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1719,719,1895,745"/>
+<area shape="rect" id="node26" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1943,719,2104,745"/>
+<area shape="rect" id="node27" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2152,719,2225,745"/>
+<area shape="rect" id="node29" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1039,777,1190,804"/>
+<area shape="rect" id="node33" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1029,828,1200,855"/>
+<area shape="rect" id="node30" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1275,813,1430,840"/>
+<area shape="rect" id="node31" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1524,784,1647,811"/>
+<area shape="rect" id="node32" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1500,835,1671,861"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a63c44924e1e0c90461d191fdb11f33b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c44924e1e0c90461d191fdb11f33b0">&#9670;&nbsp;</a></span>collision_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_collision_base.html">CollisionBase</a>* GameObjectBase::collision_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>衝突コンポーネント </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00045">45</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af98b5356a668abe576a0d20a37f26e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98b5356a668abe576a0d20a37f26e03">&#9670;&nbsp;</a></span>draw_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_draw_base.html">DrawBase</a>* GameObjectBase::draw_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画コンポーネント </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00044">44</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a1118bad7222ee50ff135e3eddbe5b1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1118bad7222ee50ff135e3eddbe5b1b4">&#9670;&nbsp;</a></span>is_registration_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameObjectBase::is_registration_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登録フラグ </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a239603d2b9d165f9e666e35795a5a30c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239603d2b9d165f9e666e35795a5a30c">&#9670;&nbsp;</a></span>physics_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_physics.html">Physics</a>* GameObjectBase::physics_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>剛体 </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00039">39</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9e84cc5213c2ee289e2ca2c8b0fc73ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e84cc5213c2ee289e2ca2c8b0fc73ba">&#9670;&nbsp;</a></span>transform_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_transform.html">Transform</a> GameObjectBase::transform_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>トランスフォーム </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00038">38</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2051ab9bbbc33c9307ea669f8f7b548b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2051ab9bbbc33c9307ea669f8f7b548b">&#9670;&nbsp;</a></span>update_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_update_base.html">UpdateBase</a>* GameObjectBase::update_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新コンポーネント </p>
+
+<p class="definition"> <a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a> の <a class="el" href="_game_object_base_8h_source.html#l00043">43</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/GameObjectBase/<a class="el" href="_game_object_base_8h_source.html">GameObjectBase.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/GameObjectBase/<a class="el" href="_game_object_base_8cpp.html">GameObjectBase.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/GameObjectBase/<a class="el" href="_game_object_base_8cpp_source.html">GameObjectBase.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

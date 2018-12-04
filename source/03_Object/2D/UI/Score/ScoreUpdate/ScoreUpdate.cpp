@@ -44,10 +44,10 @@ const XColor4 ScoreUpdate::SCORE_COLOR(0.0f, 0.0f, 0.0f, 1.0f);
 
 void ScoreUpdate::Init()
 {
-	Score* score = (Score*)GetGameObject();
+	Score* score = (Score*)getpGameObject();
 
 	// スコアセット
-	score->score_num_->SetNumbers(score->game_scene_->GetScore(), 4, true, 
+	score->score_num_->SetNumbers(score->game_scene_->getScore(), 4, true, 
 								  SCORE_POSITION, SCORE_SCALE, SCORE_COLOR);
 }
 
@@ -87,9 +87,9 @@ void ScoreUpdate::Update()
 
 void ScoreUpdate::LateUpdate()
 {
-	Score* score = (Score*)GetGameObject();
+	Score* score = (Score*)getpGameObject();
 
 	// スコアセット
-	score->score_num_->SetNumbers(score->game_scene_->GetScore(), 4, true,
+	score->score_num_->SetNumbers(score->game_scene_->getScore(), 4, true,
 								  SCORE_POSITION, SCORE_SCALE, SCORE_COLOR);
 }

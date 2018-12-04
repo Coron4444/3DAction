@@ -4,10 +4,23 @@
 
 {\ttfamily \#include $<$Player.\+h$>$}
 
-Player の継承関係図\begin{figure}[H]
+
+
+Player の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_player}
+\includegraphics[width=174pt]{class_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Player 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -27,6 +40,13 @@ void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} ()
 \subsection*{その他の継承メンバ}
 
 
+\subsection{詳解}
+
+
+ Player.\+h の 31 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_player_a171167a4b1a6dddbe94b8f3c6f7462c4}\label{class_player_a171167a4b1a6dddbe94b8f3c6f7462c4}} 
 \index{Player@{Player}!Init@{Init}}
@@ -34,6 +54,24 @@ void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} ()
 \subsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Player\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision,  }\item[{\mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$}]{game\+\_\+scene }\end{DoxyParamCaption})}
 
+
+
+ Player.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a171167a4b1a6dddbe94b8f3c6f7462c4_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a171167a4b1a6dddbe94b8f3c6f7462c4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_a457153d0edd58932e37e1356f5fe5fed}\label{class_player_a457153d0edd58932e37e1356f5fe5fed}} 
 \index{Player@{Player}!Reset@{Reset}}
 \index{Reset@{Reset}!Player@{Player}}
@@ -47,6 +85,10 @@ void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} ()
 
 
 \mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
+
+
+
+ Player.\+cpp の 66 行目に定義があります。
 
 \mbox{\Hypertarget{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c}\label{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c}} 
 \index{Player@{Player}!Uninit@{Uninit}}
@@ -64,12 +106,27 @@ void \mbox{\hyperlink{class_player_a457153d0edd58932e37e1356f5fe5fed}{Reset}} ()
 
 
 
+ Player.\+cpp の 52 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a7455a83ac23d2f5e0cce0ddd7d92db0c_cgraph}
+\end{center}
+\end{figure}
+
+
 \subsection{メンバ詳解}
 \mbox{\Hypertarget{class_player_ab41e7ebf6f975f2eea365923bc2dca7f}\label{class_player_ab41e7ebf6f975f2eea365923bc2dca7f}} 
 \index{Player@{Player}!game\+\_\+scene\+\_\+@{game\+\_\+scene\+\_\+}}
 \index{game\+\_\+scene\+\_\+@{game\+\_\+scene\+\_\+}!Player@{Player}}
 \subsubsection{\texorpdfstring{game\+\_\+scene\+\_\+}{game\_scene\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_game_scene}{Game\+Scene}}$\ast$ Player\+::game\+\_\+scene\+\_\+}
+
+
+
+ Player.\+h の 47 行目に定義があります。
 
 
 

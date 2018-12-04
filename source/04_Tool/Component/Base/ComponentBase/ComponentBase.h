@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    コンポーネント基底クラス
-//    Author : Araki Kai                                作成日 : 2018/03/30
-//
+//!	@file	 ComponentBase.h
+//!	@brief	 コンポーネントBaseClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/02
 //================================================================================
-
 #ifndef	_COMPONENT_BASE_H_
 #define _COMPONENT_BASE_H_
 
@@ -13,8 +12,10 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <Vector3D.h>
-#include <Renderer\RendererDirectX9\RendererDirectX9.h>
+#ifdef _DEBUG
+#include <ImGUI/imgui.h>
+#include <ImGUI/imgui_impl_dx9.h>
+#endif
 
 
 
@@ -25,45 +26,61 @@ class GameObjectBase;
 
 
 
-/*********************************************************//**
-* @brief
-* コンポーネント基底クラス
-*
-* コンポーネントの基底クラス
-*************************************************************/
+//************************************************************														   
+//! @brief   コンポーネントBaseClass
+//!
+//! @details コンポーネントのBaseClass
+//************************************************************
 class ComponentBase
 {
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	GameObjectBase* game_object_;		//!< ゲームオブジェクト
 
-//==============================
-// 非静的メンバ関数
-//==============================
+
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 仮想デストラクタ
-	*/
-	virtual ~ComponentBase(){}
+	//----------------------------------------
+	//! @brief 仮想デストラクタ
+	//! @param void なし
+	//----------------------------------------
+	virtual ~ComponentBase() {}
 
-	/**
-	* @brief
-	* 初期化関数
-	*/
-	virtual void Init()	  = 0;
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	virtual void Init() = 0;
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	virtual void Uninit() = 0;
 
+	//----------------------------------------
+	//! @brief 更新関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	virtual void Update() = 0;
+
+	//----------------------------------------
+	//! @brief デバッグ表示関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	virtual void DebugDisplay() = 0;
+
 	// プロパティ
-	void SetGameObject(GameObjectBase* value){game_object_ = value;}
-	GameObjectBase* GetGameObject(){return game_object_;}
+	GameObjectBase* getpGameObject() { return game_object_; }
+	void setGameObject(GameObjectBase* value) { game_object_ = value; }
 };
 
 

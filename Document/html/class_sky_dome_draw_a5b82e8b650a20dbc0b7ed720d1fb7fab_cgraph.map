@@ -1,0 +1,12 @@
+<map id="SkyDomeDraw::Init" name="SkyDomeDraw::Init">
+<area shape="rect" id="node2" href="$class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="206,5,398,32"/>
+<area shape="rect" id="node3" href="$class_draw_order_list.html#a5b3ff99f9297293edc057b95d23e8f2d" title="DrawOrderList::SetDrawType" alt="" coords="207,56,397,83"/>
+<area shape="rect" id="node4" href="$class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f" title="DrawOrderList::GetRender\lTargetFlag" alt="" coords="215,107,389,149"/>
+<area shape="rect" id="node5" href="$class_flag.html#a362d2f64c03c0b596004f3eba4cb14a3" title="Flag::Set" alt="" coords="265,173,339,200"/>
+<area shape="rect" id="node6" href="$class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481" title="DrawOrderList::SetVertex\lShaderType" alt="" coords="217,225,387,266"/>
+<area shape="rect" id="node7" href="$class_draw_order_list.html#a0fd7f50f4078001983f88014d59f8f29" title="DrawOrderList::SetPixelShaderType" alt="" coords="187,291,417,317"/>
+<area shape="rect" id="node8" href="$class_draw_order_list.html#a233843bc98d389d9cfc79108b599c7a9" title="DrawOrderList::SetIsLighting" alt="" coords="209,341,395,368"/>
+<area shape="rect" id="node9" href="$class_model_x_manager.html#a0a0cd728e7b92de6c18e96026708d97b" title="ModelXManager::AddUniqueData" alt="" coords="196,392,408,419"/>
+<area shape="rect" id="node10" href="$class_model_x_manager.html#a70cc89b8314e5e91b74770606c734c97" title="ModelXManager::GetModelXObject" alt="" coords="465,367,688,393"/>
+<area shape="rect" id="node11" href="$class_model_x_manager.html#a2d367047714442f8a928e4360d11b773" title="ModelXManager::MakeFilePath" alt="" coords="475,417,678,444"/>
+</map>

@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('class_goal_draw.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_goal_draw-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">GoalDraw クラス</div>  </div>
@@ -102,14 +104,50 @@ $(document).ready(function(){initNavTree('class_goal_draw.html','');});
 <div class="dynheader">
 GoalDraw の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_goal_draw.png" usemap="#GoalDraw_map" alt=""/>
-  <map id="GoalDraw_map" name="GoalDraw_map">
-<area href="class_draw_null.html" title="空白描画クラス " alt="DrawNull" shape="rect" coords="0,112,103,136"/>
-<area href="class_draw_base.html" title="描画基底クラス " alt="DrawBase" shape="rect" coords="0,56,103,80"/>
-<area href="class_component_base.html" title="コンポーネント基底クラス " alt="ComponentBase" shape="rect" coords="0,0,103,24"/>
+<div class="center"><img src="class_goal_draw__inherit__graph.png" border="0" usemap="#_goal_draw_inherit__map" alt="Inheritance graph"/></div>
+<map name="_goal_draw_inherit__map" id="_goal_draw_inherit__map">
+<area shape="rect" id="node2" href="class_draw_null.html" title="空白描画クラス " alt="" coords="28,155,101,181"/>
+<area shape="rect" id="node3" href="class_draw_base.html" title="描画基底クラス " alt="" coords="24,80,105,107"/>
+<area shape="rect" id="node4" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="5,5,124,32"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+GoalDraw 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw__coll__graph.png" border="0" usemap="#_goal_draw_coll__map" alt="Collaboration graph"/></div>
+<map name="_goal_draw_coll__map" id="_goal_draw_coll__map">
+<area shape="rect" id="node2" href="class_draw_null.html" title="空白描画クラス " alt="" coords="1226,563,1299,589"/>
+<area shape="rect" id="node3" href="class_draw_base.html" title="描画基底クラス " alt="" coords="789,491,871,517"/>
+<area shape="rect" id="node5" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="1071,389,1196,416"/>
+<area shape="rect" id="node4" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="1329,404,1448,431"/>
+<area shape="rect" id="node6" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="1632,287,1733,313"/>
+<area shape="rect" id="node19" href="class_update_base.html" title="更新基底クラス " alt="" coords="1636,435,1729,461"/>
+<area shape="rect" id="node18" href="class_physics.html" title="Physics" alt="" coords="1354,348,1423,375"/>
+<area shape="rect" id="node25" href="class_goal.html" title="ゴールクラス " alt="" coords="1364,517,1413,544"/>
+<area shape="rect" id="node8" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1875,188,1991,215"/>
+<area shape="rect" id="node7" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="2172,236,2313,292"/>
+<area shape="rect" id="node14" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="2132,173,2353,200"/>
+<area shape="rect" id="node9" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="801,172,859,199"/>
+<area shape="rect" id="node10" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="433,111,572,137"/>
+<area shape="rect" id="node17" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="775,111,885,137"/>
+<area shape="rect" id="node12" href="class_vector3_d.html" title="Vector3D" alt="" coords="141,223,217,249"/>
+<area shape="rect" id="node20" href="class_transform.html" title="Transform" alt="" coords="791,396,869,423"/>
+<area shape="rect" id="node22" href="class_axis_vector.html" title="AxisVector" alt="" coords="459,396,546,423"/>
+<area shape="rect" id="node15" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="2511,173,2731,200"/>
+<area shape="rect" id="node16" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="1472,101,1608,157"/>
+<area shape="rect" id="node26" href="class_effekseer_object.html" title="EffekseerObject" alt="" coords="1076,665,1191,692"/>
+<area shape="rect" id="node21" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="453,447,552,473"/>
+<area shape="rect" id="node23" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="451,497,555,524"/>
+<area shape="rect" id="node24" href="class_flag.html" title="Flag" alt="" coords="156,497,203,524"/>
+<area shape="rect" id="node27" href="class_effekseer_1_1_effect.html" title="エフェクトパラメータークラス " alt="" coords="605,659,722,685"/>
+<area shape="rect" id="node28" href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="" coords="107,659,252,685"/>
+<area shape="rect" id="node30" href="class_effekseer_renderer_1_1_renderer.html" title="EffekseerRenderer::\lRenderer" alt="" coords="435,725,571,766"/>
+<area shape="rect" id="node31" href="class_effekseer_1_1_manager.html" title="エフェクト管理クラス " alt="" coords="596,600,731,627"/>
+<area shape="rect" id="node29" href="class_effekseer_renderer_d_x9_1_1_renderer.html" title="描画クラス " alt="" coords="755,771,905,813"/>
+<area shape="rect" id="node32" href="struct_effekseer_1_1_matrix43.html" title="4x3行列 " alt="" coords="763,720,897,747"/>
+<area shape="rect" id="node33" href="class_cube_polygon.html" title="CubePolygon" alt="" coords="1339,619,1438,645"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -170,10 +208,30 @@ GoalDraw の継承関係図</div>
 <tr class="separator:ac9fc08588e3d29caf8d692a3392fc7b0 inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_base.html">GameObjectBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">GetGameObject</a> ()</td></tr>
 <tr class="separator:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:abbb3b4db65f3908bad9b918c6feb6a7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_goal.html">Goal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_goal_draw.html#abbb3b4db65f3908bad9b918c6feb6a7a">goal_</a></td></tr>
+<tr class="memdesc:abbb3b4db65f3908bad9b918c6feb6a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゴール  <a href="#abbb3b4db65f3908bad9b918c6feb6a7a">[詳解]</a><br /></td></tr>
+<tr class="separator:abbb3b4db65f3908bad9b918c6feb6a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3ff2a5f7cd52a76ccfb95c27aa8a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cube_polygon.html">CubePolygon</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_goal_draw.html#add3ff2a5f7cd52a76ccfb95c27aa8a07">cube_polygon_</a></td></tr>
+<tr class="memdesc:add3ff2a5f7cd52a76ccfb95c27aa8a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">キューブポリゴン  <a href="#add3ff2a5f7cd52a76ccfb95c27aa8a07">[詳解]</a><br /></td></tr>
+<tr class="separator:add3ff2a5f7cd52a76ccfb95c27aa8a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4449f780f6b6fd6dd3e8763fc67b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_effekseer_object.html">EffekseerObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_goal_draw.html#a2d4449f780f6b6fd6dd3e8763fc67b2d">effekseer_object_</a></td></tr>
+<tr class="memdesc:a2d4449f780f6b6fd6dd3e8763fc67b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクシアオブジェクト  <a href="#a2d4449f780f6b6fd6dd3e8763fc67b2d">[詳解]</a><br /></td></tr>
+<tr class="separator:a2d4449f780f6b6fd6dd3e8763fc67b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a1600b9846c344c03b4bae2919674ed90"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_goal_draw.html#a1600b9846c344c03b4bae2919674ed90">EFFECT</a> = &quot;CoinEffect/CoinEffect.efk&quot;</td></tr>
+<tr class="memdesc:a1600b9846c344c03b4bae2919674ed90"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクト名  <a href="#a1600b9846c344c03b4bae2919674ed90">[詳解]</a><br /></td></tr>
+<tr class="separator:a1600b9846c344c03b4bae2919674ed90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>ゴール描画クラス </p>
 <p>ゴールの描画クラス </p>
+
+<p class="definition"> <a class="el" href="_goal_draw_8h_source.html">GoalDraw.h</a> の <a class="el" href="_goal_draw_8h_source.html#l00039">39</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
 <a id="a554c826d7a4534ee489dfe18edf7ee0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a554c826d7a4534ee489dfe18edf7ee0e">&#9670;&nbsp;</a></span>Draw()</h2>
@@ -219,6 +277,16 @@ GoalDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#afe50f6fd820b18d673f70f048743f339">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a> の <a class="el" href="_goal_draw_8cpp_source.html#l00086">86</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e_cgraph.png" border="0" usemap="#class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e_cgraph" alt=""/></div>
+<map name="class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e_cgraph" id="class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e_cgraph">
+<area shape="rect" id="node2" href="class_cube_polygon.html#ac9003cd00eea402f2b6c5fb5a77feae2" title="CubePolygon::Draw" alt="" coords="168,5,304,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a47baf72f8c1c961176610f161069b8d1"></a>
@@ -257,6 +325,16 @@ GoalDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#a84969d22d3436986f214e9896fe44fc6">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a> の <a class="el" href="_goal_draw_8cpp_source.html#l00124">124</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw_a47baf72f8c1c961176610f161069b8d1_cgraph.png" border="0" usemap="#class_goal_draw_a47baf72f8c1c961176610f161069b8d1_cgraph" alt=""/></div>
+<map name="class_goal_draw_a47baf72f8c1c961176610f161069b8d1_cgraph" id="class_goal_draw_a47baf72f8c1c961176610f161069b8d1_cgraph">
+<area shape="rect" id="node2" href="class_cube_polygon.html#a6bd49d47a58c9c89a1ddaee37f7f4d22" title="CubePolygon::GetMaterial" alt="" coords="207,5,381,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a50fa9ceaaecdff9910e0f91e65ad9e95"></a>
@@ -285,6 +363,18 @@ GoalDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#adede079e9c11a756090740b20bb43022">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a> の <a class="el" href="_goal_draw_8cpp_source.html#l00100">100</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95_cgraph.png" border="0" usemap="#class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95_cgraph" alt=""/></div>
+<map name="class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95_cgraph" id="class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95_cgraph">
+<area shape="rect" id="node2" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="196,5,407,32"/>
+<area shape="rect" id="node3" href="class_transform.html#a060f9487a18ad34549eab53a7ca5100d" title="Transform::GetWorldMatrix" alt="" coords="212,56,391,83"/>
+<area shape="rect" id="node4" href="class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="455,56,653,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a7f30c7a4325668eebd8730ad2bea1ad8"></a>
@@ -312,6 +402,16 @@ GoalDraw の継承関係図</div>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_draw_null.html#ad735978a85a5f3583eecd82d6bfe6413">DrawNull</a>を再実装しています。</p>
+
+<p class="definition"> <a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a> の <a class="el" href="_goal_draw_8cpp_source.html#l00112">112</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8_cgraph.png" border="0" usemap="#class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8_cgraph" alt=""/></div>
+<map name="class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8_cgraph" id="class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8_cgraph">
+<area shape="rect" id="node2" href="class_cube_polygon.html#adf0956096c0d5dd31cf5b730dc8ca9c4" title="CubePolygon::GetMeshNum" alt="" coords="220,5,407,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -342,6 +442,35 @@ GoalDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#acd7fef3ccea1da537ac9507ffbb6dd2e">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a> の <a class="el" href="_goal_draw_8cpp_source.html#l00032">32</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e_cgraph.png" border="0" usemap="#class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e_cgraph" alt=""/></div>
+<map name="class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e_cgraph" id="class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e_cgraph">
+<area shape="rect" id="node2" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="175,5,367,32"/>
+<area shape="rect" id="node3" href="class_draw_order_list.html#a5b3ff99f9297293edc057b95d23e8f2d" title="DrawOrderList::SetDrawType" alt="" coords="177,56,366,83"/>
+<area shape="rect" id="node4" href="class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f" title="DrawOrderList::GetRender\lTargetFlag" alt="" coords="184,107,359,149"/>
+<area shape="rect" id="node5" href="class_flag.html#a362d2f64c03c0b596004f3eba4cb14a3" title="Flag::Set" alt="" coords="234,173,309,200"/>
+<area shape="rect" id="node6" href="class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481" title="DrawOrderList::SetVertex\lShaderType" alt="" coords="186,225,357,266"/>
+<area shape="rect" id="node7" href="class_draw_order_list.html#a0fd7f50f4078001983f88014d59f8f29" title="DrawOrderList::SetPixelShaderType" alt="" coords="156,291,387,317"/>
+<area shape="rect" id="node8" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="161,341,381,368"/>
+<area shape="rect" id="node9" href="class_cube_polygon.html#acf6a30c30c22dd887ed570db6cbe285d" title="CubePolygon::SetColor" alt="" coords="193,392,350,419"/>
+<area shape="rect" id="node11" href="class_effekseer_manager.html#ad89f0ad2a840f191c088d35ddfd2ec62" title="EffekseerManager::AddUniqueData" alt="" coords="159,443,383,469"/>
+<area shape="rect" id="node13" href="class_effekseer_manager.html#a44878c9abb7f43521c7e8a9700668a28" title="EffekseerManager::GetReference\lEffekseerObject" alt="" coords="165,494,378,535"/>
+<area shape="rect" id="node16" href="class_effekseer_object.html#a5c496e56785ef7b784b13642d59d4e7f" title="EffekseerObject::SetColor" alt="" coords="185,560,357,587"/>
+<area shape="rect" id="node18" href="class_effekseer_object.html#a77122f2d71d44d6cceec2b6bdedb4b2a" title="EffekseerObject::SetRepeat" alt="" coords="180,611,363,637"/>
+<area shape="rect" id="node19" href="class_effekseer_object.html#a59c8a12b4eb558449622660d892b3cf4" title="EffekseerObject::Play" alt="" coords="197,661,345,688"/>
+<area shape="rect" id="node10" href="class_cube_polygon.html#adde345ed591e3e81abcffdcac5068f98" title="CubePolygon::Registration\lVertex" alt="" coords="454,377,630,418"/>
+<area shape="rect" id="node12" href="class_effekseer_manager.html#ad6c9359de20c955af42a72c145571168" title="EffekseerManager::MakeFilePath" alt="" coords="435,443,649,469"/>
+<area shape="rect" id="node14" href="class_effekseer_manager.html#a1469d014a3d10dd38dc7d03db7f2ebfe" title="EffekseerManager::GetReference\lEffekseerObjectFromArray" alt="" coords="435,494,649,535"/>
+<area shape="rect" id="node15" href="class_effekseer_array.html#a0bbf7d610ef2219e3699d3f26182af03" title="EffekseerArray::GetReference\lEffekseerObject" alt="" coords="697,494,892,535"/>
+<area shape="rect" id="node17" href="class_effekseer_1_1_manager.html#ae0613bf8762c0948d9361d558ba4b56b" title="エフェクト全体の色を指定する。 " alt="" coords="475,559,609,601"/>
+<area shape="rect" id="node20" href="class_effekseer_1_1_manager.html#a5ea3211a3670843061238976dda54a4f" title="再生する。 " alt="" coords="475,639,609,681"/>
+<area shape="rect" id="node21" href="class_effekseer_1_1_manager.html#ab810f714df5d12c566664183f365cbf4" title="今までのPlay等の処理をUpdate実行時に適用するようにする。 " alt="" coords="475,705,609,746"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a01318a0606848a3ca8ca7b7acbf4df24"></a>
@@ -370,6 +499,19 @@ GoalDraw の継承関係図</div>
 <p>終了関数 </p>
 
 <p><a class="el" href="class_draw_null.html#a12d44e341c7364b5ab9cdd661dc16187">DrawNull</a>を再実装しています。</p>
+
+<p class="definition"> <a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a> の <a class="el" href="_goal_draw_8cpp_source.html#l00060">60</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24_cgraph.png" border="0" usemap="#class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24_cgraph" alt=""/></div>
+<map name="class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24_cgraph" id="class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24_cgraph">
+<area shape="rect" id="node2" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="191,5,335,32"/>
+<area shape="rect" id="node3" href="class_effekseer_object.html#adfbdfbe202b78441b33d76656453e536" title="EffekseerObject::Stop" alt="" coords="189,56,338,83"/>
+<area shape="rect" id="node5" href="class_effekseer_object.html#a77122f2d71d44d6cceec2b6bdedb4b2a" title="EffekseerObject::SetRepeat" alt="" coords="172,107,355,133"/>
+<area shape="rect" id="node4" href="class_effekseer_1_1_manager.html#a7a4a9ff929146f8ea21aa4705b352baa" title="エフェクトを停止する。 " alt="" coords="403,49,537,90"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -400,11 +542,134 @@ GoalDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#a0149bcf84a34b138642ab7975ae46f30">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a> の <a class="el" href="_goal_draw_8cpp_source.html#l00074">74</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20_cgraph.png" border="0" usemap="#class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20_cgraph" alt=""/></div>
+<map name="class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20_cgraph" id="class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_object.html#ad7e825d08856df48459437ad759d7a00" title="EffekseerObject::GetTransform" alt="" coords="191,5,391,32"/>
+<area shape="rect" id="node3" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="214,56,369,83"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="186,107,397,133"/>
+<area shape="rect" id="node5" href="class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="180,157,403,184"/>
+<area shape="rect" id="node6" href="class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="465,33,647,74"/>
+<area shape="rect" id="node7" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="462,99,650,125"/>
+<area shape="rect" id="node8" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="458,150,654,191"/>
+<area shape="rect" id="node9" href="class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="451,215,661,257"/>
+<area shape="rect" id="node10" href="class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd" title="MatrixExtend::UpdateWorld\lMatrixSRT" alt="" coords="465,281,647,322"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="add3ff2a5f7cd52a76ccfb95c27aa8a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3ff2a5f7cd52a76ccfb95c27aa8a07">&#9670;&nbsp;</a></span>cube_polygon_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_cube_polygon.html">CubePolygon</a>* GoalDraw::cube_polygon_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>キューブポリゴン </p>
+
+<p class="definition"> <a class="el" href="_goal_draw_8h_source.html">GoalDraw.h</a> の <a class="el" href="_goal_draw_8h_source.html#l00053">53</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a1600b9846c344c03b4bae2919674ed90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1600b9846c344c03b4bae2919674ed90">&#9670;&nbsp;</a></span>EFFECT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string GoalDraw::EFFECT = &quot;CoinEffect/CoinEffect.efk&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>エフェクト名 </p>
+
+<p class="definition"> <a class="el" href="_goal_draw_8h_source.html">GoalDraw.h</a> の <a class="el" href="_goal_draw_8h_source.html#l00045">45</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2d4449f780f6b6fd6dd3e8763fc67b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4449f780f6b6fd6dd3e8763fc67b2d">&#9670;&nbsp;</a></span>effekseer_object_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_effekseer_object.html">EffekseerObject</a>* GoalDraw::effekseer_object_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>エフェクシアオブジェクト </p>
+
+<p class="definition"> <a class="el" href="_goal_draw_8h_source.html">GoalDraw.h</a> の <a class="el" href="_goal_draw_8h_source.html#l00054">54</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abbb3b4db65f3908bad9b918c6feb6a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb3b4db65f3908bad9b918c6feb6a7a">&#9670;&nbsp;</a></span>goal_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_goal.html">Goal</a>* GoalDraw::goal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゴール </p>
+
+<p class="definition"> <a class="el" href="_goal_draw_8h_source.html">GoalDraw.h</a> の <a class="el" href="_goal_draw_8h_source.html#l00052">52</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/3D/Goal/GoalDraw/<a class="el" href="_goal_draw_8h_source.html">GoalDraw.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/3D/Goal/GoalDraw/<a class="el" href="_goal_draw_8cpp.html">GoalDraw.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/3D/Goal/GoalDraw/<a class="el" href="_goal_draw_8cpp_source.html">GoalDraw.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

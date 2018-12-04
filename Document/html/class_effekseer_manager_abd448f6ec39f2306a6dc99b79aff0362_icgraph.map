@@ -1,0 +1,11 @@
+<map id="EffekseerManager::UninitUniqueData" name="EffekseerManager::UninitUniqueData">
+<area shape="rect" id="node2" href="$class_effekseer_manager.html#aa9f5c911182097238d979cc628f2dc13" title="EffekseerManager::Uninit\lAllData" alt="" coords="254,5,421,47"/>
+<area shape="rect" id="node5" href="$class_resource_manager.html#abcb135906cb991a49ec6e8c8db057de1" title="ResourceManager::UninitUniqueData" alt="" coords="220,71,455,98"/>
+<area shape="rect" id="node3" href="$class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="503,13,713,39"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="765,13,916,39"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="509,71,707,98"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="761,71,920,98"/>
+<area shape="rect" id="node8" href="$class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="968,71,1144,98"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1192,71,1353,98"/>
+<area shape="rect" id="node10" href="$main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1401,71,1475,98"/>
+</map>

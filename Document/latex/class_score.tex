@@ -4,10 +4,23 @@
 
 {\ttfamily \#include $<$Score.\+h$>$}
 
-Score の継承関係図\begin{figure}[H]
+
+
+Score の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_score}
+\includegraphics[width=174pt]{class_score__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Score 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_score__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -29,6 +42,13 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 \subsection*{その他の継承メンバ}
 
 
+\subsection{詳解}
+
+
+ Score.\+h の 31 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_score_a7d461a8b72ddfd00213858286d702486}\label{class_score_a7d461a8b72ddfd00213858286d702486}} 
 \index{Score@{Score}!Init@{Init}}
@@ -36,6 +56,24 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 \subsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Score\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update\+\_\+component,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$}]{game\+\_\+scene }\end{DoxyParamCaption})}
 
+
+
+ Score.\+cpp の 33 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_score_a7d461a8b72ddfd00213858286d702486_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_score_a7d461a8b72ddfd00213858286d702486_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}\label{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}} 
 \index{Score@{Score}!Reset@{Reset}}
 \index{Reset@{Reset}!Score@{Score}}
@@ -49,6 +87,10 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 
 
 \mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
+
+
+
+ Score.\+cpp の 70 行目に定義があります。
 
 \mbox{\Hypertarget{class_score_a605e163dc59ccc4d19a3cb6b5db813b8}\label{class_score_a605e163dc59ccc4d19a3cb6b5db813b8}} 
 \index{Score@{Score}!Uninit@{Uninit}}
@@ -66,6 +108,17 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 
 
 
+ Score.\+cpp の 56 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_score_a605e163dc59ccc4d19a3cb6b5db813b8_cgraph}
+\end{center}
+\end{figure}
+
+
 \subsection{メンバ詳解}
 \mbox{\Hypertarget{class_score_ada5a957b01fbed0c1bb52cea4e1bcbc4}\label{class_score_ada5a957b01fbed0c1bb52cea4e1bcbc4}} 
 \index{Score@{Score}!game\+\_\+scene\+\_\+@{game\+\_\+scene\+\_\+}}
@@ -73,11 +126,19 @@ void \mbox{\hyperlink{class_score_ad01d461a2b6ca345858b2ae0a3d81cc1}{Reset}} () 
 \subsubsection{\texorpdfstring{game\+\_\+scene\+\_\+}{game\_scene\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_game_scene}{Game\+Scene}}$\ast$ Score\+::game\+\_\+scene\+\_\+}
 
+
+
+ Score.\+h の 47 行目に定義があります。
+
 \mbox{\Hypertarget{class_score_a5d178c5581627f1fa4c06f95f9558dcd}\label{class_score_a5d178c5581627f1fa4c06f95f9558dcd}} 
 \index{Score@{Score}!score\+\_\+num\+\_\+@{score\+\_\+num\+\_\+}}
 \index{score\+\_\+num\+\_\+@{score\+\_\+num\+\_\+}!Score@{Score}}
 \subsubsection{\texorpdfstring{score\+\_\+num\+\_\+}{score\_num\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_numbers}{Numbers}}$\ast$ Score\+::score\+\_\+num\+\_\+}
+
+
+
+ Score.\+h の 46 行目に定義があります。
 
 
 

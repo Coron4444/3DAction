@@ -1802,7 +1802,7 @@ public:
 		@param	handle	[in]	インスタンスのハンドル
 		@return	行列
 	*/
-	virtual Matrix43 GetMatrix( Handle handle ) = 0;
+	virtual Matrix43 getMatrix( Handle handle ) = 0;
 
 	/**
 		@brief	エフェクトのインスタンスに変換行列を設定する。

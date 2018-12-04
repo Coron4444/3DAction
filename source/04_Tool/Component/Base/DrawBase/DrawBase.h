@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    描画基底クラス
-//    Author : Araki Kai                                作成日 : 2018/03/22
-//
+//!	@file	 DrawBase.h
+//!	@brief	 描画BaseClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/02
 //================================================================================
-
 #ifndef	_DRAW_BASE_H_
 #define _DRAW_BASE_H_
 
@@ -19,98 +18,74 @@
 
 #include <Vector3D.h>
 
-#ifdef _DEBUG
-#include <ImGUI\imgui.h>
-#include <ImGUI\imgui_impl_dx9.h>
-#endif
 
 
-
-/*********************************************************//**
-* @brief
-* 描画基底クラス
-*
-* 描画の基底クラス
-*************************************************************/
+//************************************************************														   
+//! @brief   描画BaseClass
+//!
+//! @details 描画のBaseClass
+//************************************************************
 class DrawBase : public ComponentBase
 {
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	DrawOrderList draw_order_list_;							//!< 描画注文リスト
 	Camera::Type save_camera_type_ = Camera::Type::NONE;	//!< カメラタイプ保存用
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 仮想デストラクタ
-	*/
+	//----------------------------------------
+	//! @brief 仮想デストラクタ
+	//! @param void なし
+	//----------------------------------------
 	virtual ~DrawBase() {}
 
-	/**
-	* @brief
-	* 更新関数
-	*/
-	virtual void Update() = 0;
-
-	/**
-	* @brief
-	* 描画関数
-	* @param
-	* object_index : オブジェクトインデックス
-	* mesh_index : メッシュインデックス
-	*/
+	//----------------------------------------
+	//! @brief 描画関数
+	//! @param[in] object_index オブジェクトインデックス
+	//! @param[in] mesh_index   メッシュインデックス
+	//! @retval void なし
+	//----------------------------------------
 	virtual void Draw(unsigned object_index, unsigned mesh_index) = 0;
 
-	/**
-	* @brief
-	* デバッグ表示関数
-	*/
-	virtual void DebugDisplay() {}
-
-	/**
-	* @brief
-	* 描画前設定関数
-	* @param
-	* camera : カメラ
-	* object_index : オブジェクトインデックス
-	*/
+	//----------------------------------------
+	//! @brief 描画前設定関数
+	//! @param[in, out] camera       カメラ
+	//! @param[in]      object_index オブジェクトインデックス
+	//! @retval void なし
+	//----------------------------------------
 	virtual void SettingBeforeDrawing(Camera* camera, unsigned object_index) = 0;
 
-	/**
-	* @brief
-	* 描画後設定関数
-	* @param
-	* camera : カメラ
-	* object_index : オブジェクトインデックス
-	*/
+	//----------------------------------------
+	//! @brief 描画後設定関数
+	//! @param[in, out] camera       カメラ
+	//! @param[in]      object_index オブジェクトインデックス
+	//! @retval void なし
+	//----------------------------------------
 	virtual void SettingAfterDrawing(Camera* camera, unsigned object_index) = 0;
 
-
-	/**
-	* @brief
-	* 限定カメラタイプ変更関数
-	* @param
-	* camera : カメラ
-	* type : カメラタイプ
-	*/
+	//----------------------------------------
+	//! @brief 限定カメラタイプ変更関数
+	//! @param[in, out] camera  カメラ
+	//! @param[in]      type 　 カメラタイプ
+	//! @retval void なし
+	//----------------------------------------
 	void LimitedChangeCameraType(Camera* camera, Camera::Type type)
 	{
 		save_camera_type_ = camera->GetType();
 		camera->SetType(type);
 	}
 
-	/**
-	* @brief
-	* カメラタイプ復活関数
-	* @param
-	* camera : カメラ
-	*/
+	//----------------------------------------
+	//! @brief カメラタイプ復活関数
+	//! @param[in, out] camera カメラ
+	//! @retval void なし
+	//----------------------------------------
 	void RevivalCameraType(Camera* camera)
 	{
 		if (save_camera_type_ == Camera::Type::NONE) return;
@@ -118,13 +93,13 @@ public:
 	}
 
 	// プロパティ
-	virtual unsigned GetObjectNum() = 0;
-	virtual unsigned GetMeshNum(unsigned object_index) = 0;
-	virtual const MATRIX* GetMatrix(unsigned object_index) = 0;
-	virtual D3DMATERIAL9* GetMaterial(unsigned object_index, unsigned mesh_index) = 0;
-	virtual LPDIRECT3DTEXTURE9 GetDecaleTexture(unsigned object_index, unsigned mesh_index) = 0;
-	virtual LPDIRECT3DTEXTURE9 GetNormalTexture(unsigned object_index, unsigned mesh_index) = 0;
-	DrawOrderList* GetDrawOrderList() { return &draw_order_list_; }
+	virtual unsigned getObjectNum() = 0;
+	virtual unsigned getMeshNum(unsigned object_index) = 0;
+	virtual MATRIX* getpMatrix(unsigned object_index) = 0;
+	virtual D3DMATERIAL9* getpMaterial(unsigned object_index, unsigned mesh_index) = 0;
+	virtual LPDIRECT3DTEXTURE9 getpDecaleTexture(unsigned object_index, unsigned mesh_index) = 0;
+	virtual LPDIRECT3DTEXTURE9 getpNormalTexture(unsigned object_index, unsigned mesh_index) = 0;
+	DrawOrderList* getpDrawOrderList() { return &draw_order_list_; }
 };
 
 

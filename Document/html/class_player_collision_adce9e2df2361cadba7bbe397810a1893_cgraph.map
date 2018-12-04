@@ -1,0 +1,4 @@
+<map id="PlayerCollision::NotHitBoundingSphere" name="PlayerCollision::NotHitBoundingSphere">
+<area shape="rect" id="node2" href="$class_collision_base.html#af4e773951a4e1965e64410841a0292a4" title="CollisionBase::getState" alt="" coords="281,5,440,32"/>
+<area shape="rect" id="node3" href="$class_collision_object.html#a3000144caea71e39cbdafebb249fef7e" title="CollisionObject::setIsJudgment" alt="" coords="260,56,461,83"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="ImGui::EndMenuBar" name="ImGui::EndMenuBar">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="444,5,617,32"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#aef1c8a6e5a3c70cb10d03d2a2a66dfd8" title="ImGui::PopClipRect" alt="" coords="219,56,355,83"/>
+<area shape="rect" id="node5" href="$class_im_vector.html#a3e4424d3fca190894598a6575f9d2401" title="ImVector::back" alt="" coords="475,107,586,133"/>
+<area shape="rect" id="node6" href="$namespace_im_gui.html#aba0b2d8f890a5d435ae43d0c4a2d4dd1" title="ImGui::PopID" alt="" coords="237,208,336,235"/>
+<area shape="rect" id="node9" href="$struct_im_gui_window.html#a59df76c1445aaaf0b43456c83c1a88e5" title="ImGuiWindow::MenuBarRect" alt="" coords="192,259,381,285"/>
+<area shape="rect" id="node10" href="$namespace_im_gui.html#a05fc97fc64f28a55486087f503d9a622" title="ImGui::EndGroup" alt="" coords="225,107,348,133"/>
+<area shape="rect" id="node4" href="$struct_im_draw_list.html#a44f40c59ca755f559020f5a7fa81103a" title="ImDrawList::PopClipRect" alt="" coords="447,56,614,83"/>
+<area shape="rect" id="node7" href="$namespace_im_gui.html#a408f9ddac92f8629a7e273ced5f8c3aa" title="ImGui::GetCurrentWindowRead" alt="" coords="429,208,632,235"/>
+<area shape="rect" id="node8" href="$class_im_vector.html#a3db7ce62d3c429effdb893fbf7148c1c" title="ImVector::pop_back" alt="" coords="461,259,600,285"/>
+<area shape="rect" id="node11" href="$class_im_vector.html#aa53e48a5272f4bad1099368769514ff1" title="ImVector::empty" alt="" coords="471,157,590,184"/>
+</map>

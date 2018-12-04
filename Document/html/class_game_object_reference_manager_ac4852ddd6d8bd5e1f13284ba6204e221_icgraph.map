@@ -1,0 +1,12 @@
+<map id="GameObjectReferenceManager::AllReleaseReference" name="GameObjectReferenceManager::AllReleaseReference">
+<area shape="rect" id="node2" href="$class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="289,37,442,79"/>
+<area shape="rect" id="node11" href="$class_game_object_reference_manager.html#a9ed62220afb840cdc3e8cbe4bbc3a19e" title="GameObjectReferenceManager\l::~GameObjectReferenceManager" alt="" coords="256,103,475,144"/>
+<area shape="rect" id="node3" href="$class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="531,5,685,47"/>
+<area shape="rect" id="node5" href="$class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="523,71,693,112"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="765,13,916,39"/>
+<area shape="rect" id="node6" href="$class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="741,78,940,105"/>
+<area shape="rect" id="node7" href="$class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="988,78,1147,105"/>
+<area shape="rect" id="node8" href="$class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1195,78,1371,105"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1419,78,1580,105"/>
+<area shape="rect" id="node10" href="$main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1628,78,1701,105"/>
+</map>

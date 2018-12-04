@@ -1,0 +1,5 @@
+<map id="ModelXObject::GetMaterial" name="ModelXObject::GetMaterial">
+<area shape="rect" id="node2" href="$class_player_draw.html#ae818d3adaf5120845c2a78c230b5365e" title="PlayerDraw::GetMaterial" alt="" coords="241,5,403,32"/>
+<area shape="rect" id="node3" href="$class_sky_dome_draw.html#acbc487d912b464474ae6f1afd7d6bb74" title="SkyDomeDraw::GetMaterial" alt="" coords="231,56,413,83"/>
+<area shape="rect" id="node4" href="$class_stencil_shadow_test_draw.html#abfc9caaaa1b6120e2013701a9d264f2d" title="StencilShadowTestDraw\l::GetMaterial" alt="" coords="241,107,403,149"/>
+</map>

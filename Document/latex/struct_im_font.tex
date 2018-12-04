@@ -4,6 +4,15 @@
 
 {\ttfamily \#include $<$imgui.\+h$>$}
 
+
+
+Im\+Font 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_im_font__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
@@ -77,12 +86,23 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \end{DoxyCompactItemize}
 
 
+\subsection{詳解}
+
+
+ imgui.\+h の 1487 行目に定義があります。
+
+
+
 \subsection{型定義メンバ詳解}
 \mbox{\Hypertarget{struct_im_font_a4b802233ac8d3f3beddc395837288683}\label{struct_im_font_a4b802233ac8d3f3beddc395837288683}} 
 \index{Im\+Font@{Im\+Font}!Glyph@{Glyph}}
 \index{Glyph@{Glyph}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Glyph}{Glyph}}
 {\footnotesize\ttfamily typedef \mbox{\hyperlink{struct_im_font_glyph}{Im\+Font\+Glyph}} \mbox{\hyperlink{struct_im_font_a4b802233ac8d3f3beddc395837288683}{Im\+Font\+::\+Glyph}}}
+
+
+
+ imgui.\+h の 1530 行目に定義があります。
 
 
 
@@ -93,11 +113,19 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Im\+Font()}{ImFont()}}
 {\footnotesize\ttfamily Im\+Font\+::\+Im\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2007 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_a377366ed7c5d076363ad4760aeff63ec}\label{struct_im_font_a377366ed7c5d076363ad4760aeff63ec}} 
 \index{Im\+Font@{Im\+Font}!````~Im\+Font@{$\sim$\+Im\+Font}}
 \index{````~Im\+Font@{$\sim$\+Im\+Font}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{$\sim$\+Im\+Font()}{~ImFont()}}
 {\footnotesize\ttfamily Im\+Font\+::$\sim$\+Im\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ imgui\+\_\+draw.\+cpp の 2015 行目に定義があります。
 
 
 
@@ -108,11 +136,26 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Add\+Glyph()}{AddGlyph()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Add\+Glyph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}}}]{c,  }\item[{float}]{x0,  }\item[{float}]{y0,  }\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{u0,  }\item[{float}]{v0,  }\item[{float}]{u1,  }\item[{float}]{v1,  }\item[{float}]{advance\+\_\+x }\end{DoxyParamCaption})}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2097 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{struct_im_font_ae63d3d343052336d7718aacac8f394b7_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_aba8cd20f14ba47175d45d3f2063aa329}\label{struct_im_font_aba8cd20f14ba47175d45d3f2063aa329}} 
 \index{Im\+Font@{Im\+Font}!Add\+Remap\+Char@{Add\+Remap\+Char}}
 \index{Add\+Remap\+Char@{Add\+Remap\+Char}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Add\+Remap\+Char()}{AddRemapChar()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Add\+Remap\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}}}]{dst,  }\item[{\mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}}}]{src,  }\item[{bool}]{overwrite\+\_\+dst = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+ imgui\+\_\+draw.\+cpp の 2119 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_a04b3a1437bd0032722bbbd3613941162}\label{struct_im_font_a04b3a1437bd0032722bbbd3613941162}} 
 \index{Im\+Font@{Im\+Font}!Build\+Lookup\+Table@{Build\+Lookup\+Table}}
@@ -120,41 +163,104 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Build\+Lookup\+Table()}{BuildLookupTable()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Build\+Lookup\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2043 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_ad67f64fd206ad197f4b93b1a1ae27cfe}\label{struct_im_font_ad67f64fd206ad197f4b93b1a1ae27cfe}} 
 \index{Im\+Font@{Im\+Font}!Calc\+Text\+SizeA@{Calc\+Text\+SizeA}}
 \index{Calc\+Text\+SizeA@{Calc\+Text\+SizeA}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Calc\+Text\+Size\+A()}{CalcTextSizeA()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} Im\+Font\+::\+Calc\+Text\+SizeA (\begin{DoxyParamCaption}\item[{float}]{size,  }\item[{float}]{max\+\_\+width,  }\item[{float}]{wrap\+\_\+width,  }\item[{const char $\ast$}]{text\+\_\+begin,  }\item[{const char $\ast$}]{text\+\_\+end = {\ttfamily NULL},  }\item[{const char $\ast$$\ast$}]{remaining = {\ttfamily NULL} }\end{DoxyParamCaption}) const}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2244 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_im_font_ad67f64fd206ad197f4b93b1a1ae27cfe_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_a3781bb82a1ceba919cb6c98a398c7a67}\label{struct_im_font_a3781bb82a1ceba919cb6c98a398c7a67}} 
 \index{Im\+Font@{Im\+Font}!Calc\+Word\+Wrap\+PositionA@{Calc\+Word\+Wrap\+PositionA}}
 \index{Calc\+Word\+Wrap\+PositionA@{Calc\+Word\+Wrap\+PositionA}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Calc\+Word\+Wrap\+Position\+A()}{CalcWordWrapPositionA()}}
 {\footnotesize\ttfamily const char $\ast$ Im\+Font\+::\+Calc\+Word\+Wrap\+PositionA (\begin{DoxyParamCaption}\item[{float}]{scale,  }\item[{const char $\ast$}]{text,  }\item[{const char $\ast$}]{text\+\_\+end,  }\item[{float}]{wrap\+\_\+width }\end{DoxyParamCaption}) const}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2145 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_im_font_a3781bb82a1ceba919cb6c98a398c7a67_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_aecf7773b1c40b433f91ee245f463de12}\label{struct_im_font_aecf7773b1c40b433f91ee245f463de12}} 
 \index{Im\+Font@{Im\+Font}!Clear\+Output\+Data@{Clear\+Output\+Data}}
 \index{Clear\+Output\+Data@{Clear\+Output\+Data}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Clear\+Output\+Data()}{ClearOutputData()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Clear\+Output\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2028 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_im_font_aecf7773b1c40b433f91ee245f463de12_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_ac6a773b73c6406fd8f08c4c93213a501}\label{struct_im_font_ac6a773b73c6406fd8f08c4c93213a501}} 
 \index{Im\+Font@{Im\+Font}!Find\+Glyph@{Find\+Glyph}}
 \index{Find\+Glyph@{Find\+Glyph}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Find\+Glyph()}{FindGlyph()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{struct_im_font_glyph}{Im\+Font\+Glyph}} $\ast$ Im\+Font\+::\+Find\+Glyph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}}}]{c }\end{DoxyParamCaption}) const}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2134 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_im_font_ac6a773b73c6406fd8f08c4c93213a501_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_adffcff4e4e2d17455410bd4ba76b42e4}\label{struct_im_font_adffcff4e4e2d17455410bd4ba76b42e4}} 
 \index{Im\+Font@{Im\+Font}!Get\+Char\+Advance@{Get\+Char\+Advance}}
 \index{Get\+Char\+Advance@{Get\+Char\+Advance}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Get\+Char\+Advance()}{GetCharAdvance()}}
 {\footnotesize\ttfamily float Im\+Font\+::\+Get\+Char\+Advance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}}}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ imgui.\+h の 1514 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{struct_im_font_adffcff4e4e2d17455410bd4ba76b42e4_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_ab7865a365d9653b4636b198d2f222fd6}\label{struct_im_font_ab7865a365d9653b4636b198d2f222fd6}} 
 \index{Im\+Font@{Im\+Font}!Grow\+Index@{Grow\+Index}}
 \index{Grow\+Index@{Grow\+Index}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Grow\+Index()}{GrowIndex()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Grow\+Index (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+ imgui\+\_\+draw.\+cpp の 2088 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_a97dafa61cc94e84be396d69b0d42b1ce}\label{struct_im_font_a97dafa61cc94e84be396d69b0d42b1ce}} 
 \index{Im\+Font@{Im\+Font}!Is\+Loaded@{Is\+Loaded}}
@@ -162,23 +268,60 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Is\+Loaded()}{IsLoaded()}}
 {\footnotesize\ttfamily bool Im\+Font\+::\+Is\+Loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ imgui.\+h の 1515 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_im_font_a97dafa61cc94e84be396d69b0d42b1ce_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_af602fe8f445ae4142436ee3e6baa3ede}\label{struct_im_font_af602fe8f445ae4142436ee3e6baa3ede}} 
 \index{Im\+Font@{Im\+Font}!Render\+Char@{Render\+Char}}
 \index{Render\+Char@{Render\+Char}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Render\+Char()}{RenderChar()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Render\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_im_draw_list}{Im\+Draw\+List}} $\ast$}]{draw\+\_\+list,  }\item[{float}]{size,  }\item[{\mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}}}]{pos,  }\item[{\mbox{\hyperlink{imgui_8h_a118cff4eeb8d00e7d07ce3d6460eed36}{Im\+U32}}}]{col,  }\item[{unsigned short}]{c }\end{DoxyParamCaption}) const}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2338 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{struct_im_font_af602fe8f445ae4142436ee3e6baa3ede_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_a2877acf1cfcd964bc2e7fe600a08849e}\label{struct_im_font_a2877acf1cfcd964bc2e7fe600a08849e}} 
 \index{Im\+Font@{Im\+Font}!Render\+Text@{Render\+Text}}
 \index{Render\+Text@{Render\+Text}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Render\+Text()}{RenderText()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Render\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_im_draw_list}{Im\+Draw\+List}} $\ast$}]{draw\+\_\+list,  }\item[{float}]{size,  }\item[{\mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}}}]{pos,  }\item[{\mbox{\hyperlink{imgui_8h_a118cff4eeb8d00e7d07ce3d6460eed36}{Im\+U32}}}]{col,  }\item[{const \mbox{\hyperlink{struct_im_vec4}{Im\+Vec4}} \&}]{clip\+\_\+rect,  }\item[{const char $\ast$}]{text\+\_\+begin,  }\item[{const char $\ast$}]{text\+\_\+end,  }\item[{float}]{wrap\+\_\+width = {\ttfamily 0.0f},  }\item[{bool}]{cpu\+\_\+fine\+\_\+clip = {\ttfamily false} }\end{DoxyParamCaption}) const}
 
+
+
+ imgui\+\_\+draw.\+cpp の 2352 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{struct_im_font_a2877acf1cfcd964bc2e7fe600a08849e_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{struct_im_font_a1f504f78cc066db20ea2d688e73a560b}\label{struct_im_font_a1f504f78cc066db20ea2d688e73a560b}} 
 \index{Im\+Font@{Im\+Font}!Set\+Fallback\+Char@{Set\+Fallback\+Char}}
 \index{Set\+Fallback\+Char@{Set\+Fallback\+Char}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Set\+Fallback\+Char()}{SetFallbackChar()}}
 {\footnotesize\ttfamily void Im\+Font\+::\+Set\+Fallback\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}}}]{c }\end{DoxyParamCaption})}
+
+
+
+ imgui\+\_\+draw.\+cpp の 2082 行目に定義があります。
 
 
 
@@ -189,11 +332,19 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Ascent}{Ascent}}
 {\footnotesize\ttfamily float Im\+Font\+::\+Ascent}
 
+
+
+ imgui.\+h の 1504 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_afa4eb6cfb979ffa120e9795f328623a1}\label{struct_im_font_afa4eb6cfb979ffa120e9795f328623a1}} 
 \index{Im\+Font@{Im\+Font}!Config\+Data@{Config\+Data}}
 \index{Config\+Data@{Config\+Data}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Config\+Data}{ConfigData}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_im_font_config}{Im\+Font\+Config}}$\ast$ Im\+Font\+::\+Config\+Data}
+
+
+
+ imgui.\+h の 1502 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_a4a30fc7711d628ad582ccb3188a51ddd}\label{struct_im_font_a4a30fc7711d628ad582ccb3188a51ddd}} 
 \index{Im\+Font@{Im\+Font}!Config\+Data\+Count@{Config\+Data\+Count}}
@@ -201,11 +352,19 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Config\+Data\+Count}{ConfigDataCount}}
 {\footnotesize\ttfamily short Im\+Font\+::\+Config\+Data\+Count}
 
+
+
+ imgui.\+h の 1501 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_a8a5e0df6be5e3cabe91ae830524db960}\label{struct_im_font_a8a5e0df6be5e3cabe91ae830524db960}} 
 \index{Im\+Font@{Im\+Font}!Container\+Atlas@{Container\+Atlas}}
 \index{Container\+Atlas@{Container\+Atlas}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Container\+Atlas}{ContainerAtlas}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_im_font_atlas}{Im\+Font\+Atlas}}$\ast$ Im\+Font\+::\+Container\+Atlas}
+
+
+
+ imgui.\+h の 1503 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_abcca12aa908bf7105433e7db6088a5e5}\label{struct_im_font_abcca12aa908bf7105433e7db6088a5e5}} 
 \index{Im\+Font@{Im\+Font}!Descent@{Descent}}
@@ -213,11 +372,19 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Descent}{Descent}}
 {\footnotesize\ttfamily float Im\+Font\+::\+Descent}
 
+
+
+ imgui.\+h の 1504 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_af9b95f3df0b6d45f45903d82301d7f84}\label{struct_im_font_af9b95f3df0b6d45f45903d82301d7f84}} 
 \index{Im\+Font@{Im\+Font}!Display\+Offset@{Display\+Offset}}
 \index{Display\+Offset@{Display\+Offset}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Display\+Offset}{DisplayOffset}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_im_vec2}{Im\+Vec2}} Im\+Font\+::\+Display\+Offset}
+
+
+
+ imgui.\+h の 1492 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_ad58a5ee4492a3a9fa56f73e5a40d728d}\label{struct_im_font_ad58a5ee4492a3a9fa56f73e5a40d728d}} 
 \index{Im\+Font@{Im\+Font}!Fallback\+AdvanceX@{Fallback\+AdvanceX}}
@@ -225,11 +392,19 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Fallback\+AdvanceX}{FallbackAdvanceX}}
 {\footnotesize\ttfamily float Im\+Font\+::\+Fallback\+AdvanceX}
 
+
+
+ imgui.\+h の 1497 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_ae54c2c4184bfcbc7b8f6da9cbc4f93c0}\label{struct_im_font_ae54c2c4184bfcbc7b8f6da9cbc4f93c0}} 
 \index{Im\+Font@{Im\+Font}!Fallback\+Char@{Fallback\+Char}}
 \index{Fallback\+Char@{Fallback\+Char}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Fallback\+Char}{FallbackChar}}
 {\footnotesize\ttfamily \mbox{\hyperlink{imgui_8h_af2c7badaf05a0008e15ef76d40875e97}{Im\+Wchar}} Im\+Font\+::\+Fallback\+Char}
+
+
+
+ imgui.\+h の 1498 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_a0e666b0c49646bd294103f4d288df4b8}\label{struct_im_font_a0e666b0c49646bd294103f4d288df4b8}} 
 \index{Im\+Font@{Im\+Font}!Fallback\+Glyph@{Fallback\+Glyph}}
@@ -237,11 +412,19 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Fallback\+Glyph}{FallbackGlyph}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{struct_im_font_glyph}{Im\+Font\+Glyph}}$\ast$ Im\+Font\+::\+Fallback\+Glyph}
 
+
+
+ imgui.\+h の 1496 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_a423e36d1594281f1a5a537e5b0d0a3d4}\label{struct_im_font_a423e36d1594281f1a5a537e5b0d0a3d4}} 
 \index{Im\+Font@{Im\+Font}!Font\+Size@{Font\+Size}}
 \index{Font\+Size@{Font\+Size}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Font\+Size}{FontSize}}
 {\footnotesize\ttfamily float Im\+Font\+::\+Font\+Size}
+
+
+
+ imgui.\+h の 1490 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_a1a0901fc1a8cbd41d582d6cef4946bc9}\label{struct_im_font_a1a0901fc1a8cbd41d582d6cef4946bc9}} 
 \index{Im\+Font@{Im\+Font}!Glyphs@{Glyphs}}
@@ -249,11 +432,19 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Glyphs}{Glyphs}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$\mbox{\hyperlink{struct_im_font_glyph}{Im\+Font\+Glyph}}$>$ Im\+Font\+::\+Glyphs}
 
+
+
+ imgui.\+h の 1493 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_af906476eda06d8a842d0a843a247f530}\label{struct_im_font_af906476eda06d8a842d0a843a247f530}} 
 \index{Im\+Font@{Im\+Font}!Index\+AdvanceX@{Index\+AdvanceX}}
 \index{Index\+AdvanceX@{Index\+AdvanceX}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Index\+AdvanceX}{IndexAdvanceX}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$float$>$ Im\+Font\+::\+Index\+AdvanceX}
+
+
+
+ imgui.\+h の 1494 行目に定義があります。
 
 \mbox{\Hypertarget{struct_im_font_aaab48cbf05ca962d71ab3e7b597b992f}\label{struct_im_font_aaab48cbf05ca962d71ab3e7b597b992f}} 
 \index{Im\+Font@{Im\+Font}!Index\+Lookup@{Index\+Lookup}}
@@ -261,17 +452,29 @@ int \mbox{\hyperlink{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}{Metrics\+
 \subsubsection{\texorpdfstring{Index\+Lookup}{IndexLookup}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_im_vector}{Im\+Vector}}$<$unsigned short$>$ Im\+Font\+::\+Index\+Lookup}
 
+
+
+ imgui.\+h の 1495 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}\label{struct_im_font_a8087b2ee8b27dcf5c6e30a8318f87cc7}} 
 \index{Im\+Font@{Im\+Font}!Metrics\+Total\+Surface@{Metrics\+Total\+Surface}}
 \index{Metrics\+Total\+Surface@{Metrics\+Total\+Surface}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Metrics\+Total\+Surface}{MetricsTotalSurface}}
 {\footnotesize\ttfamily int Im\+Font\+::\+Metrics\+Total\+Surface}
 
+
+
+ imgui.\+h の 1505 行目に定義があります。
+
 \mbox{\Hypertarget{struct_im_font_ae98fb07fd8862a7243d77b11f38bba19}\label{struct_im_font_ae98fb07fd8862a7243d77b11f38bba19}} 
 \index{Im\+Font@{Im\+Font}!Scale@{Scale}}
 \index{Scale@{Scale}!Im\+Font@{Im\+Font}}
 \subsubsection{\texorpdfstring{Scale}{Scale}}
 {\footnotesize\ttfamily float Im\+Font\+::\+Scale}
+
+
+
+ imgui.\+h の 1491 行目に定義があります。
 
 
 

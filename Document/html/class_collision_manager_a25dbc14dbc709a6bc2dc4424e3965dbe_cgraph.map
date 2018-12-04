@@ -1,0 +1,51 @@
+<map id="CollisionManager::OldCollisionDetermination" name="CollisionManager::OldCollisionDetermination">
+<area shape="rect" id="node2" href="$class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="795,201,931,243"/>
+<area shape="rect" id="node3" href="$class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="795,1531,931,1572"/>
+<area shape="rect" id="node4" href="$class_collision_pair_check.html#aa7603c32ae782ad890280d360ae19dfe" title="衝突基底クラスペア判定関数 " alt="" coords="277,148,408,189"/>
+<area shape="rect" id="node10" href="$class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="252,356,433,397"/>
+<area shape="rect" id="node11" href="$class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="255,1519,431,1560"/>
+<area shape="rect" id="node12" href="$class_collision_objects.html#a1320a57aae5798c04e65b2b7c8433aae" title="CollisionObjects::getIsJudgment" alt="" coords="488,509,696,535"/>
+<area shape="rect" id="node13" href="$class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="259,669,426,711"/>
+<area shape="rect" id="node49" href="$class_collision_objects.html#a01ffe9567540a819f19cd66f96981b47" title="全ての衝突用データのリセット関数 " alt="" coords="255,947,430,988"/>
+<area shape="rect" id="node5" href="$class_collision_pair_check.html#a52eefe9e5b104075d4c812ca9b68ff16" title="ペア判定関数 " alt="" coords="527,104,657,145"/>
+<area shape="rect" id="node6" href="$class_collision_pair_check.html#ab0f449965867269dc3115e831547a869" title="指定した衝突ステートの検索関数 " alt="" coords="798,71,929,112"/>
+<area shape="rect" id="node8" href="$class_collision_pair_check.html#a97c459f98bce9f88d9f506423395c40c" title="指定したコンポーネントの逆を返す関数 " alt="" coords="786,136,941,177"/>
+<area shape="rect" id="node9" href="$class_collision_pair_check.html#a9f1819e873a51fcf50a7dbbf5f9d8690" title="プレイヤーのペアリスト関数 " alt="" coords="798,5,929,47"/>
+<area shape="rect" id="node7" href="$class_collision_base.html#af4e773951a4e1965e64410841a0292a4" title="CollisionBase::getState" alt="" coords="1047,46,1205,73"/>
+<area shape="rect" id="node14" href="$class_collision_objects.html#a309eef4695b4a19f389eaf5d0753c256" title="CollisionObjects::getEnd\lIndexOfArray" alt="" coords="509,560,675,601"/>
+<area shape="rect" id="node15" href="$class_collision_objects.html#a4f5c029b20a7ed4c7fdee815f73d20be" title="CollisionObjects::getCollision\lObject" alt="" coords="497,968,687,1009"/>
+<area shape="rect" id="node16" href="$class_collision_object.html#ac11b01882a159efadbe62bd5a66c49aa" title="CollisionObject::getIsJudgment" alt="" coords="491,727,693,754"/>
+<area shape="rect" id="node17" href="$class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="491,880,693,921"/>
+<area shape="rect" id="node46" href="$class_collision_objects.html#af95769194fff92babcf411c2262c9d10" title="CollisionObjects::getCollisionBase" alt="" coords="481,778,703,805"/>
+<area shape="rect" id="node47" href="$class_collision_base.html#a5c94fe03f875595758e83eb2a176e45d" title="衝突時関数 " alt="" coords="505,626,679,653"/>
+<area shape="rect" id="node48" href="$class_collision_base.html#a9b64fc5c3f2aac2a05296985ef799fb1" title="非衝突時関数 " alt="" coords="495,677,689,703"/>
+<area shape="rect" id="node18" href="$class_collision_object.html#a3ff1c2d794f520c96b6bc6037a8f8f8c" title="CollisionObject::getCollision\lShape" alt="" coords="771,880,955,921"/>
+<area shape="rect" id="node19" href="$class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc" title="CollisionShapeBase\l::getType" alt="" coords="794,945,933,987"/>
+<area shape="rect" id="node20" href="$class_collision_judgment.html#a95962556f370a964ec1961b1c461ae2a" title="CollisionJudgment::\lHitCheck_Capsule_Capsule" alt="" coords="772,749,955,791"/>
+<area shape="rect" id="node25" href="$class_collision_object.html#a1087fa9cebfe0b1675923807b73d8868" title="CollisionObject::setHitVector" alt="" coords="769,1062,958,1089"/>
+<area shape="rect" id="node26" href="$class_collision_judgment.html#a21938f544146999d01d96f855277727b" title="CollisionJudgment::\lHitCheck_Segment3D_Capsule" alt="" coords="761,1113,965,1155"/>
+<area shape="rect" id="node27" href="$class_collision_judgment.html#a92531c1254846a0a06ee7e95796f1070" title="CollisionJudgment::\lHitCheck_Segment3D_Sphere" alt="" coords="1027,917,1225,959"/>
+<area shape="rect" id="node30" href="$class_collision_judgment.html#a61308e967a8569bcee4b25c74e28826d" title="CollisionJudgment::\lHitCheck_Segment3D_Cylinder" alt="" coords="1024,1224,1228,1265"/>
+<area shape="rect" id="node32" href="$class_collision_judgment.html#a4cc335999fcbeadf0aa1b6ebcb749e5b" title="CollisionJudgment::\lHitCheck_Sphere_Capsule" alt="" coords="1037,625,1215,667"/>
+<area shape="rect" id="node33" href="$class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="791,1348,936,1389"/>
+<area shape="rect" id="node34" href="$class_collision_judgment.html#acd1d157a361d756632c73f4406442ce2" title="CollisionJudgment::\lHitCheck_Sphere_OBB" alt="" coords="784,1413,943,1455"/>
+<area shape="rect" id="node35" href="$class_collision_judgment.html#a01ad684bee6964d4315df1a23ac3ec7d" title="CollisionJudgment::\lHitCheck_Plane_Plane" alt="" coords="786,267,941,308"/>
+<area shape="rect" id="node36" href="$class_collision_object.html#adb01187ec10302f13034407a3c852860" title="CollisionObject::getHitVector" alt="" coords="769,333,958,359"/>
+<area shape="rect" id="node37" href="$class_vector3_d.html#a9cfe261f14b3b2e6704c5649058d3ecd" title="Vector3D::ResetVector" alt="" coords="785,1479,941,1506"/>
+<area shape="rect" id="node38" href="$class_collision_judgment.html#ac31167bc6d89d20f7220220ee3f21f4e" title="CollisionJudgment::\lHitCheck_Segment3D_Plane" alt="" coords="1031,413,1221,455"/>
+<area shape="rect" id="node39" href="$class_collision_judgment.html#a47628fb2aef868f75942f378f63478cc" title="CollisionJudgment::\lHitCheck_Sphere_Plane" alt="" coords="1045,1289,1207,1331"/>
+<area shape="rect" id="node40" href="$class_collision_judgment.html#a473c94087dc9cd3937016ccba5f12abd" title="CollisionJudgment::\lHitCheck_Plane_Triangle" alt="" coords="780,501,947,543"/>
+<area shape="rect" id="node41" href="$class_collision_judgment.html#a612bc9e5cfcb243324417f5059c6e24d" title="CollisionJudgment::\lHitCheck_Segment2D_Segment2D" alt="" coords="751,567,976,608"/>
+<area shape="rect" id="node42" href="$class_collision_judgment.html#a4f5344d6ac14db5d3732db47050bd549" title="CollisionJudgment::\lHitCheck_Segment3D_Triangle" alt="" coords="762,384,965,425"/>
+<area shape="rect" id="node43" href="$class_collision_judgment.html#a21e4ce202f713f1b2a7fc593f4daf7d2" title="CollisionJudgment::\lHitCheck_Sphere_Sphere" alt="" coords="778,684,949,725"/>
+<area shape="rect" id="node44" href="$class_collision_judgment.html#a2b4e851cf1fc45dca09175b36fb4f50c" title="CollisionJudgment::\lHitCheck_Sphere_Triangle" alt="" coords="776,1231,951,1272"/>
+<area shape="rect" id="node45" href="$class_collision_judgment.html#ab33b8936e62bdb9b6cf6f3d383c033b9" title="CollisionJudgment::\lHitCheck_Triangle_Triangle" alt="" coords="774,815,953,856"/>
+<area shape="rect" id="node21" href="$_segment_8h.html#a3ca962c690b73355253042cdab29b337" title="ShortestDistance_Segment\l_Segment" alt="" coords="1035,691,1217,732"/>
+<area shape="rect" id="node22" href="$class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="1276,727,1461,754"/>
+<area shape="rect" id="node24" href="$class_vector3_d.html#a030384bdfe25863cd4be77fa73052cf1" title="Vector3D::AnyLengthVector" alt="" coords="1034,807,1218,834"/>
+<area shape="rect" id="node23" href="$_segment_8h.html#a0575d6a616fa95075f88623632bae170" title="ShortestDistance_Segment\l_Point" alt="" coords="1278,661,1459,703"/>
+<area shape="rect" id="node28" href="$class_collision_judgment.html#a58785d1cd51b4d7af4c19dca42d842e5" title="CollisionJudgment::\lIsObtuseAngle_Segment3D\l_Capsule" alt="" coords="1035,1063,1217,1119"/>
+<area shape="rect" id="node29" href="$class_collision_judgment.html#a9d7bd7435d9e116c8d0dfb62662e60d5" title="CollisionJudgment::\lCrossPointCalculation\l_Segment3D_Capsule" alt="" coords="1051,1143,1201,1199"/>
+<area shape="rect" id="node31" href="$class_collision_judgment.html#af4da6d6923d8ee57253b1e86436e6ec5" title="CollisionJudgment::\lIsAcuteAngle_Segment3D\l_Capsule" alt="" coords="1039,983,1213,1039"/>
+<area shape="rect" id="node50" href="$class_collision_object.html#a92dd5d21c6674605d290e0d37d64505a" title="衝突用データのリセット関数 " alt="" coords="495,1079,689,1106"/>
+</map>

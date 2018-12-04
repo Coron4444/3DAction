@@ -23,10 +23,10 @@
 void ScoreDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 }
 
 
@@ -55,10 +55,10 @@ void ScoreDraw::Draw(unsigned object_index, unsigned mesh_index)
 //--------------------------------------------------
 // +行列取得関数
 //--------------------------------------------------
-const MATRIX* ScoreDraw::GetMatrix(unsigned object_index)
+MATRIX* ScoreDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
 	// メッシュ数の取得
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }

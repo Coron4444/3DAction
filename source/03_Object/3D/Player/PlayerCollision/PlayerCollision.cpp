@@ -55,13 +55,14 @@ void PlayerCollision::Init()
 	collision_objects_ = new CollisionObjects();
 	collision_objects_->setCollisionBase(this);
 	collision_objects_->getOctreeAABB()
-		->Init(*GetGameObject()->GetTransform()->GetPosition(),
+		->Init(*getpGameObject()->GetTransform()->GetPosition(),
 			   Vec3(3.0f, 3.0f, 3.0f));
 	CollisionBase::AddCollisionObjectsToArray(collision_objects_);
 
 	// バウンディングスフィアの作成
-	Sphere* temp_sphere = new Sphere(*GetGameObject()->GetTransform()->GetPosition(),
-									 BOUNDING_SPHERE_RADIUS);
+	Sphere* temp_sphere = new Sphere();
+	temp_sphere->Init(*getpGameObject()->GetTransform()->GetPosition(),
+					  BOUNDING_SPHERE_RADIUS);
 
 	bounding_sphere_ = new CollisionObject(temp_sphere, ObjectTag::BOUNDING_SPHERE);
 
@@ -70,8 +71,9 @@ void PlayerCollision::Init()
 
 
 	// 本体スフィアの作成
-	temp_sphere = new Sphere(*GetGameObject()->GetTransform()->GetPosition(),
-							 SUBSTANCE_RADIUS);
+	temp_sphere = new Sphere();
+	temp_sphere->Init(*getpGameObject()->GetTransform()->GetPosition(),
+					  SUBSTANCE_RADIUS);
 
 	substance_ = new CollisionObject(temp_sphere, ObjectTag::SUBSTANCE);
 
@@ -104,17 +106,17 @@ void PlayerCollision::Uninit()
 void PlayerCollision::Update()
 {
 	// 複数衝突オブジェクトの更新
-	collision_objects_->getOctreeAABB()
-		->setPosition(*GetGameObject()->GetTransform()->GetPosition());
+	*collision_objects_->getOctreeAABB()->getpPositon() = *getpGameObject()
+		->GetTransform()->GetPosition();
 	collision_objects_->getOctreeAABB()->Update();
 
 	// バウンディングスフィアの更新
-	Sphere* temp_sphere = (Sphere*)bounding_sphere_->getCollisionShape();
-	temp_sphere->position_ = *GetGameObject()->GetTransform()->GetPosition();
+	Sphere* temp_sphere = (Sphere*)bounding_sphere_->getpCollisionShape();
+	*temp_sphere->getpPosition() = *getpGameObject()->GetTransform()->GetPosition();
 
 	//// 本体スフィアの更新
-	temp_sphere = (Sphere*)substance_->getCollisionShape();
-	temp_sphere->position_ = *GetGameObject()->GetTransform()->GetPosition();
+	temp_sphere = (Sphere*)substance_->getpCollisionShape();
+	*temp_sphere->getpPosition() = *getpGameObject()->GetTransform()->GetPosition();
 }
 
 
@@ -179,7 +181,7 @@ void PlayerCollision::NotHitCollision(CollisionBase* hit_collision,
 void PlayerCollision::HitGround(float position_y)
 {
 	// ダウンキャスト
-	Player* player = (Player*)GetGameObject();
+	Player* player = (Player*)getpGameObject();
 
 	// 地面の上に立つ
 	player->GetTransform()->GetPosition()->y = position_y;
@@ -279,20 +281,20 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 				case CoinCollision::ObjectTag::BOUNDING_OBB :
 				{
 					// ダウンキャスト
-					Player* player = (Player*)GetGameObject();
-					Coin* coin = (Coin*)hit_collision->GetGameObject();
+					Player* player = (Player*)getpGameObject();
+					Coin* coin = (Coin*)hit_collision->getpGameObject();
 					if (coin->getCount() <= 0)
 					{
 						coin->setCount(120);
 						// スコアアップ
-						player->game_scene_->SetScore(player->game_scene_->GetScore() + 10);
+						player->game_scene_->setScore(player->game_scene_->getScore() + 10);
 					}
 
 					// めり込み解消
-					//EliminationOfNesting(player->GetTransform(), hit_my_object->getHitVector());
+					//EliminationOfNesting(player->GetTransform(), hit_my_object->getpHitVector());
 
 					// 相手のオブジェクトを消去
-					//GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->GetGameObject());
+					//GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->getpGameObject());
 					
 					break;
 				}
@@ -307,16 +309,16 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 				case EnemyCollision::ObjectTag::SUBSTANCE :
 				{
 					// ダウンキャスト
-					Player* player = (Player*)GetGameObject();
+					Player* player = (Player*)getpGameObject();
 					
 					// めり込み解消
-					EliminationOfNesting(player->GetTransform(), hit_my_object->getHitVector());
+					EliminationOfNesting(player->GetTransform(), hit_my_object->getpHitVector());
 
 					// スコアダウン
 					player->game_scene_->setGameOver(1);
 
 					// 相手のオブジェクトを消去
-					GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->GetGameObject());
+					GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->getpGameObject());
 					
 					break;
 				}
@@ -331,16 +333,16 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 				case EnemyCollision::ObjectTag::SUBSTANCE:
 				{
 					// ダウンキャスト
-					Player* player = (Player*)GetGameObject();
+					Player* player = (Player*)getpGameObject();
 
 					// めり込み解消
-					EliminationOfNesting(player->GetTransform(), hit_my_object->getHitVector());
+					EliminationOfNesting(player->GetTransform(), hit_my_object->getpHitVector());
 
 					// スコアダウン
 					player->game_scene_->setGameOver(0);
 
 					// 相手のオブジェクトを消去
-					GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->GetGameObject());
+					GameObjectManager::ReleaseGameObjectBaseFromArray(hit_collision->getpGameObject());
 
 					break;
 				}

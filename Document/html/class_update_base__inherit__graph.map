@@ -1,0 +1,10 @@
+<map id="UpdateBase" name="UpdateBase">
+<area shape="rect" id="node3" href="$class_player_update___special.html" title="PlayerUpdate_Special" alt="" coords="119,155,270,181"/>
+<area shape="rect" id="node4" href="$class_update_null.html" title="空白更新クラス " alt="" coords="295,155,380,181"/>
+<area shape="rect" id="node2" href="$class_component_base.html" title="コンポーネント基底クラス " alt="" coords="206,5,325,32"/>
+<area shape="rect" id="node5" href="$class_enemy_update.html" title="EnemyUpdate" alt="" coords="5,229,109,256"/>
+<area shape="rect" id="node6" href="$class_player_update.html" title="PlayerUpdate" alt="" coords="134,229,234,256"/>
+<area shape="rect" id="node7" href="$class_push_space_logo_update.html" title="PushSpaceLogoUpdate" alt="" coords="258,229,417,256"/>
+<area shape="rect" id="node8" href="$class_score_update.html" title="ScoreUpdate" alt="" coords="441,229,538,256"/>
+<area shape="rect" id="node9" href="$class_sky_dome_update.html" title="SkyDomeUpdate" alt="" coords="563,229,683,256"/>
+</map>

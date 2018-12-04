@@ -1,0 +1,11 @@
+<map id="ResourceManager::UninitAllData" name="ResourceManager::UninitAllData">
+<area shape="rect" id="node2" href="$class_model_x_manager.html#a915bf3c57058e235d91db06f3fe5f538" title="ModelXManager::UninitAllData" alt="" coords="265,56,462,83"/>
+<area shape="rect" id="node5" href="$class_texture_manager.html#a5e81df5cd89e7794fb9230357663a729" title="TextureManager::UninitAllData" alt="" coords="264,132,463,159"/>
+<area shape="rect" id="node8" href="$class_effekseer_manager.html#aa9f5c911182097238d979cc628f2dc13" title="EffekseerManager::Uninit\lAllData" alt="" coords="280,209,447,250"/>
+<area shape="rect" id="node3" href="$class_model_x_manager.html#a7dde269502f40b7d1208c8e0f84b13f0" title="ModelXManager::UninitUniqueData" alt="" coords="511,5,733,32"/>
+<area shape="rect" id="node4" href="$class_model_x_manager.html#a9e3d0dc8addebebc87f450cde6c5e659" title="ModelXManager::UninitShareData" alt="" coords="514,56,730,83"/>
+<area shape="rect" id="node6" href="$class_texture_manager.html#a9d9dd61edf4153bd70ba830ae2dc62e8" title="TextureManager::UninitUniqueData" alt="" coords="511,107,733,133"/>
+<area shape="rect" id="node7" href="$class_texture_manager.html#a770b76a28bac4c20c16960f58a2d3b77" title="TextureManager::UninitShareData" alt="" coords="513,157,731,184"/>
+<area shape="rect" id="node9" href="$class_effekseer_manager.html#abd448f6ec39f2306a6dc99b79aff0362" title="EffekseerManager::Uninit\lUniqueData" alt="" coords="539,209,705,250"/>
+<area shape="rect" id="node10" href="$class_effekseer_manager.html#ab83021d09eeeaba41852c8db2f07fe55" title="EffekseerManager::Uninit\lShareData" alt="" coords="539,274,705,315"/>
+</map>

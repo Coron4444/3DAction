@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Pixel\+Shader\+Bump\+Mapping.\+h$>$}
 
-Pixel\+Shader\+Bump\+Mapping の継承関係図\begin{figure}[H]
+
+
+Pixel\+Shader\+Bump\+Mapping の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_pixel_shader_bump_mapping}
+\includegraphics[width=211pt]{class_pixel_shader_bump_mapping__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Pixel\+Shader\+Bump\+Mapping 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_pixel_shader_bump_mapping__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -26,12 +38,26 @@ void \mbox{\hyperlink{class_pixel_shader_bump_mapping_af62a2b40930533a3bae17319f
 \begin{DoxyCompactList}\small\item\em 共通設定関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c681ca8f}{Specific\+Setting}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
 \begin{DoxyCompactList}\small\item\em 固有設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+D3\+D\+X\+M\+A\+T\+R\+IX \mbox{\hyperlink{class_pixel_shader_bump_mapping_a3c24357ac9611761eece892054847c83}{math\+\_\+matrix\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \mbox{\hyperlink{class_pixel_shader_bump_mapping_a62c06006cdfad9bc6158b5d779aa732c}{P\+A\+TH}} = \char`\"{}resource/H\+L\+SL/Effect/Pixel\+Shader/Bump\+Mapping.\+psh\char`\"{}
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 バンプマッピングピクセルシェーダークラス 
 
 バンプマッピングのピクセルシェーダークラス 
+
+ Pixel\+Shader\+Bump\+Mapping.\+h の 26 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_pixel_shader_bump_mapping_af62a2b40930533a3bae17319f876705d}\label{class_pixel_shader_bump_mapping_af62a2b40930533a3bae17319f876705d}} 
@@ -53,6 +79,17 @@ void \mbox{\hyperlink{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c
 
 \mbox{\hyperlink{class_pixel_shader_null_a99c712ab174da29ba26a893820b64799}{Pixel\+Shader\+Null}}を再実装しています。
 
+
+
+ Pixel\+Shader\+Bump\+Mapping.\+cpp の 57 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_bump_mapping_af62a2b40930533a3bae17319f876705d_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_pixel_shader_bump_mapping_ab7807b7c56242e965ddb23e66e1a5d9e}\label{class_pixel_shader_bump_mapping_ab7807b7c56242e965ddb23e66e1a5d9e}} 
 \index{Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}!Init@{Init}}
 \index{Init@{Init}!Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}}
@@ -67,6 +104,18 @@ void \mbox{\hyperlink{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c
 
 \mbox{\hyperlink{class_pixel_shader_null_abfd7a6a986da09061a55d31024219eba}{Pixel\+Shader\+Null}}を再実装しています。
 
+
+
+ Pixel\+Shader\+Bump\+Mapping.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_bump_mapping_ab7807b7c56242e965ddb23e66e1a5d9e_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c681ca8f}\label{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c681ca8f}} 
 \index{Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}!Specific\+Setting@{Specific\+Setting}}
 \index{Specific\+Setting@{Specific\+Setting}!Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}}
@@ -86,6 +135,17 @@ void \mbox{\hyperlink{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c
 
 \mbox{\hyperlink{class_pixel_shader_null_a8dd0194b5a22da5261ab35233a7cfdcd}{Pixel\+Shader\+Null}}を再実装しています。
 
+
+
+ Pixel\+Shader\+Bump\+Mapping.\+cpp の 78 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c681ca8f_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_pixel_shader_bump_mapping_a004f731db6dab6b59949baed4a5a32d7}\label{class_pixel_shader_bump_mapping_a004f731db6dab6b59949baed4a5a32d7}} 
 \index{Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}}
@@ -99,6 +159,40 @@ void \mbox{\hyperlink{class_pixel_shader_bump_mapping_afa80c2404b490a444d54cc47c
 
 
 \mbox{\hyperlink{class_pixel_shader_null_ae5ee2fa95e5da787918ccbd1877cd0ef}{Pixel\+Shader\+Null}}を再実装しています。
+
+
+
+ Pixel\+Shader\+Bump\+Mapping.\+cpp の 46 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_bump_mapping_a004f731db6dab6b59949baed4a5a32d7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_pixel_shader_bump_mapping_a3c24357ac9611761eece892054847c83}\label{class_pixel_shader_bump_mapping_a3c24357ac9611761eece892054847c83}} 
+\index{Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}!math\+\_\+matrix\+\_\+@{math\+\_\+matrix\+\_\+}}
+\index{math\+\_\+matrix\+\_\+@{math\+\_\+matrix\+\_\+}!Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}}
+\subsubsection{\texorpdfstring{math\+\_\+matrix\+\_\+}{math\_matrix\_}}
+{\footnotesize\ttfamily D3\+D\+X\+M\+A\+T\+R\+IX Pixel\+Shader\+Bump\+Mapping\+::math\+\_\+matrix\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Pixel\+Shader\+Bump\+Mapping.\+h の 40 行目に定義があります。
+
+\mbox{\Hypertarget{class_pixel_shader_bump_mapping_a62c06006cdfad9bc6158b5d779aa732c}\label{class_pixel_shader_bump_mapping_a62c06006cdfad9bc6158b5d779aa732c}} 
+\index{Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}!P\+A\+TH@{P\+A\+TH}}
+\index{P\+A\+TH@{P\+A\+TH}!Pixel\+Shader\+Bump\+Mapping@{Pixel\+Shader\+Bump\+Mapping}}
+\subsubsection{\texorpdfstring{P\+A\+TH}{PATH}}
+{\footnotesize\ttfamily const char $\ast$ Pixel\+Shader\+Bump\+Mapping\+::\+P\+A\+TH = \char`\"{}resource/H\+L\+SL/Effect/Pixel\+Shader/Bump\+Mapping.\+psh\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Pixel\+Shader\+Bump\+Mapping.\+h の 32 行目に定義があります。
 
 
 

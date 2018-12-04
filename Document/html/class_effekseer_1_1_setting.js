@@ -11,5 +11,10 @@ var class_effekseer_1_1_setting =
     [ "SetEffectLoader", "class_effekseer_1_1_setting.html#acc38b8b4013c440242f1bba9a9696639", null ],
     [ "SetModelLoader", "class_effekseer_1_1_setting.html#a98982ad75809cd84b95865fc58fbd325", null ],
     [ "SetSoundLoader", "class_effekseer_1_1_setting.html#a7f383e108785141004f9ed4008ae6b20", null ],
-    [ "SetTextureLoader", "class_effekseer_1_1_setting.html#a0475d684fcef475fae8250d8b43a5ffc", null ]
+    [ "SetTextureLoader", "class_effekseer_1_1_setting.html#a0475d684fcef475fae8250d8b43a5ffc", null ],
+    [ "m_coordinateSystem", "class_effekseer_1_1_setting.html#af37739356b4116d84dd38d2aba817836", null ],
+    [ "m_effectLoader", "class_effekseer_1_1_setting.html#aa72aea5933efe362ecf28210ea202350", null ],
+    [ "m_modelLoader", "class_effekseer_1_1_setting.html#a85340df413c521f9372f617512bc58d8", null ],
+    [ "m_soundLoader", "class_effekseer_1_1_setting.html#a1da02ce0c370b60c2fa5a0d76e85eeb6", null ],
+    [ "m_textureLoader", "class_effekseer_1_1_setting.html#a05cf55c34e1d640e2080f15b3478ea0b", null ]
 ];

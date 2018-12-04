@@ -4,10 +4,22 @@
 
 {\ttfamily \#include $<$Enemy.\+h$>$}
 
-Enemy の継承関係図\begin{figure}[H]
+
+
+Enemy の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_enemy}
+\includegraphics[width=174pt]{class_enemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Enemy 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -27,6 +39,13 @@ void \mbox{\hyperlink{class_enemy_ab86571061e7fcabcf8c646b1abad5581}{Reset}} () 
 \subsection*{その他の継承メンバ}
 
 
+\subsection{詳解}
+
+
+ Enemy.\+h の 31 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_enemy_a678f73f8af13e1bc55be3fdad2608399}\label{class_enemy_a678f73f8af13e1bc55be3fdad2608399}} 
 \index{Enemy@{Enemy}!Init@{Init}}
@@ -34,6 +53,24 @@ void \mbox{\hyperlink{class_enemy_ab86571061e7fcabcf8c646b1abad5581}{Reset}} () 
 \subsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Enemy\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_update_base}{Update\+Base}} $\ast$}]{update,  }\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision }\end{DoxyParamCaption})}
 
+
+
+ Enemy.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_a678f73f8af13e1bc55be3fdad2608399_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_a678f73f8af13e1bc55be3fdad2608399_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_enemy_ab86571061e7fcabcf8c646b1abad5581}\label{class_enemy_ab86571061e7fcabcf8c646b1abad5581}} 
 \index{Enemy@{Enemy}!Reset@{Reset}}
 \index{Reset@{Reset}!Enemy@{Enemy}}
@@ -47,6 +84,10 @@ void \mbox{\hyperlink{class_enemy_ab86571061e7fcabcf8c646b1abad5581}{Reset}} () 
 
 
 \mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
+
+
+
+ Enemy.\+cpp の 69 行目に定義があります。
 
 \mbox{\Hypertarget{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962}\label{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962}} 
 \index{Enemy@{Enemy}!Uninit@{Uninit}}
@@ -64,12 +105,27 @@ void \mbox{\hyperlink{class_enemy_ab86571061e7fcabcf8c646b1abad5581}{Reset}} () 
 
 
 
+ Enemy.\+cpp の 52 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_enemy_a9aeaa757abdf0c37fd67c4ce5aed6962_cgraph}
+\end{center}
+\end{figure}
+
+
 \subsection{メンバ詳解}
 \mbox{\Hypertarget{class_enemy_a9a24b765d76b789cc678701886570511}\label{class_enemy_a9a24b765d76b789cc678701886570511}} 
 \index{Enemy@{Enemy}!cube\+\_\+polygon\+\_\+@{cube\+\_\+polygon\+\_\+}}
 \index{cube\+\_\+polygon\+\_\+@{cube\+\_\+polygon\+\_\+}!Enemy@{Enemy}}
 \subsubsection{\texorpdfstring{cube\+\_\+polygon\+\_\+}{cube\_polygon\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_cube_polygon}{Cube\+Polygon}}$\ast$ Enemy\+::cube\+\_\+polygon\+\_\+}
+
+
+
+ Enemy.\+h の 46 行目に定義があります。
 
 
 

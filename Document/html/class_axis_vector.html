@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_axis_vector-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">AxisVector クラス</div>  </div>
@@ -96,6 +99,14 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a>&gt;</code></p>
+<div class="dynheader">
+AxisVector 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector__coll__graph.png" border="0" usemap="#_axis_vector_coll__map" alt="Collaboration graph"/></div>
+<map name="_axis_vector_coll__map" id="_axis_vector_coll__map">
+<area shape="rect" id="node2" href="class_vector3_d.html" title="Vector3D" alt="" coords="11,81,87,108"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -133,8 +144,36 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
 <tr class="separator:a32f68ef0864e7b589d3c1996a61e11fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacf0879e0b9ace6cfbd29c8a300cd960"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#aacf0879e0b9ace6cfbd29c8a300cd960">GetDefaultRight</a> () const</td></tr>
 <tr class="separator:aacf0879e0b9ace6cfbd29c8a300cd960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1b7758fdc7a7ef1809a7a5de1777ee65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65">CalculationAxis_ConfirmAxisForward</a> ()</td></tr>
+<tr class="separator:a1b7758fdc7a7ef1809a7a5de1777ee65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3b0ec608bc18dc9996cf9fa1d121b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0">NormalizeAxis_All</a> ()</td></tr>
+<tr class="separator:abd3b0ec608bc18dc9996cf9fa1d121b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aec3d9026c069398bc320bc978c060b67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#aec3d9026c069398bc320bc978c060b67">forward_</a></td></tr>
+<tr class="separator:aec3d9026c069398bc320bc978c060b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73c08b8dbf399af48b01b4a17bd5d33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#ab73c08b8dbf399af48b01b4a17bd5d33">up_</a></td></tr>
+<tr class="separator:ab73c08b8dbf399af48b01b4a17bd5d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e806442baa272fe79a08a38c8a6669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#af3e806442baa272fe79a08a38c8a6669">right_</a></td></tr>
+<tr class="separator:af3e806442baa272fe79a08a38c8a6669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a9c1883607bb0b10748eed84d40f11c93"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#a9c1883607bb0b10748eed84d40f11c93">DEFAULT_FORWARD</a></td></tr>
+<tr class="separator:a9c1883607bb0b10748eed84d40f11c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24f32af06534dacd474ba969b48ad4c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#ae24f32af06534dacd474ba969b48ad4c">DEFAULT_UP</a></td></tr>
+<tr class="separator:ae24f32af06534dacd474ba969b48ad4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2527f9327895a4c50e668d90aa7b45fc"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis_vector.html#a2527f9327895a4c50e668d90aa7b45fc">DEFAULT_RIGHT</a></td></tr>
+<tr class="separator:a2527f9327895a4c50e668d90aa7b45fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">構築子と解体子</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00029">29</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
 <a id="ae77a05cd990defedbd04914dba1f2326"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae77a05cd990defedbd04914dba1f2326">&#9670;&nbsp;</a></span>AxisVector()</h2>
 
@@ -150,9 +189,83 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00044">44</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="a1b7758fdc7a7ef1809a7a5de1777ee65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b7758fdc7a7ef1809a7a5de1777ee65">&#9670;&nbsp;</a></span>CalculationAxis_ConfirmAxisForward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AxisVector::CalculationAxis_ConfirmAxisForward </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00270">270</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_cgraph.png" border="0" usemap="#class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_cgraph" alt=""/></div>
+<map name="class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_cgraph" id="class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="237,13,432,39"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_icgraph.png" border="0" usemap="#class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_icgraph" alt=""/></div>
+<map name="class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_icgraph" id="class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_icgraph">
+<area shape="rect" id="node2" href="class_axis_vector.html#a33aab769ff2de997393c13414fa23873" title="AxisVector::RotationMatrix" alt="" coords="237,5,416,32"/>
+<area shape="rect" id="node17" href="class_axis_vector.html#ad3110d0a45e303109caa1e0dfb2ca027" title="AxisVector::RotationAxis\l_PivotX" alt="" coords="243,57,411,98"/>
+<area shape="rect" id="node18" href="class_axis_vector.html#aee4198c9fcf78d6912b129e2210a58fa" title="AxisVector::RotationAxis\l_PivotY" alt="" coords="243,122,411,163"/>
+<area shape="rect" id="node20" href="class_axis_vector.html#adde5b636a046a4fe6c5c943646045843" title="AxisVector::RotationAxis\l_PivotZ" alt="" coords="243,187,411,229"/>
+<area shape="rect" id="node21" href="class_axis_vector.html#a42872a62f656e7249af84e39fd519475" title="AxisVector::RotationAxis\l_PivotForward" alt="" coords="243,253,411,294"/>
+<area shape="rect" id="node22" href="class_axis_vector.html#ad33eef7f1b3912b6a1d0eaa18fff8f29" title="AxisVector::RotationAxis\l_PivotUp" alt="" coords="243,318,411,359"/>
+<area shape="rect" id="node23" href="class_axis_vector.html#a71a7638817a488d824cdc757d4e28a0c" title="AxisVector::RotationAxis\l_PivotRight" alt="" coords="243,383,411,425"/>
+<area shape="rect" id="node24" href="class_axis_vector.html#a7cab74dd54bf4fc97770aee2278f2fa4" title="AxisVector::RotationAxis\l_PivotFree" alt="" coords="243,449,411,490"/>
+<area shape="rect" id="node25" href="class_axis_vector.html#ac429404c0b565c24307da4442e49bb61" title="AxisVector::SetForward" alt="" coords="247,515,407,541"/>
+<area shape="rect" id="node3" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="464,169,656,196"/>
+<area shape="rect" id="node4" href="class_transform.html#af02515be1947506212ca1c23223ce0b3" title="Transform::UpdateAxisVector\l_WorldMatrixSRT" alt="" coords="704,162,896,203"/>
+<area shape="rect" id="node6" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="704,227,896,269"/>
+<area shape="rect" id="node5" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="950,162,1101,203"/>
+<area shape="rect" id="node7" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="944,338,1107,379"/>
+<area shape="rect" id="node8" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="1155,366,1313,407"/>
+<area shape="rect" id="node9" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="1379,380,1514,407"/>
+<area shape="rect" id="node10" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="1580,377,1787,418"/>
+<area shape="rect" id="node11" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1835,384,1985,411"/>
+<area shape="rect" id="node12" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="2033,377,2187,418"/>
+<area shape="rect" id="node13" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="2235,387,2429,413"/>
+<area shape="rect" id="node14" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2477,391,2628,417"/>
+<area shape="rect" id="node15" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2676,417,2837,444"/>
+<area shape="rect" id="node16" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2885,417,2959,444"/>
+<area shape="rect" id="node19" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="483,383,637,425"/>
+<area shape="rect" id="node26" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="754,513,846,540"/>
+<area shape="rect" id="node27" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="970,513,1081,540"/>
+<area shape="rect" id="node28" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="1171,459,1297,485"/>
+<area shape="rect" id="node29" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="1361,445,1532,472"/>
+<area shape="rect" id="node30" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="1616,444,1751,471"/>
+<area shape="rect" id="node31" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1847,443,1973,469"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a83ead17514eb08954dc74c0e72b6158c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83ead17514eb08954dc74c0e72b6158c">&#9670;&nbsp;</a></span>GetDefaultForawrd()</h2>
 
@@ -175,6 +288,17 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00068">68</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a83ead17514eb08954dc74c0e72b6158c_icgraph.png" border="0" usemap="#class_axis_vector_a83ead17514eb08954dc74c0e72b6158c_icgraph" alt=""/></div>
+<map name="class_axis_vector_a83ead17514eb08954dc74c0e72b6158c_icgraph" id="class_axis_vector_a83ead17514eb08954dc74c0e72b6158c_icgraph">
+<area shape="rect" id="node2" href="class_transform.html#a39b78acbdbf3ee98cad0c4e640988745" title="Transform::SetLookAtVector" alt="" coords="255,5,441,32"/>
+<area shape="rect" id="node3" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="489,5,639,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -201,6 +325,8 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00070">70</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a32f68ef0864e7b589d3c1996a61e11fc"></a>
@@ -225,6 +351,17 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00069">69</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a32f68ef0864e7b589d3c1996a61e11fc_icgraph.png" border="0" usemap="#class_axis_vector_a32f68ef0864e7b589d3c1996a61e11fc_icgraph" alt=""/></div>
+<map name="class_axis_vector_a32f68ef0864e7b589d3c1996a61e11fc_icgraph" id="class_axis_vector_a32f68ef0864e7b589d3c1996a61e11fc_icgraph">
+<area shape="rect" id="node2" href="class_transform.html#a39b78acbdbf3ee98cad0c4e640988745" title="Transform::SetLookAtVector" alt="" coords="224,5,411,32"/>
+<area shape="rect" id="node3" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="459,5,608,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -251,6 +388,35 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00065">65</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a79013d5b090ce9232d57f528f18e982e_icgraph.png" border="0" usemap="#class_axis_vector_a79013d5b090ce9232d57f528f18e982e_icgraph" alt=""/></div>
+<map name="class_axis_vector_a79013d5b090ce9232d57f528f18e982e_icgraph" id="class_axis_vector_a79013d5b090ce9232d57f528f18e982e_icgraph">
+<area shape="rect" id="node2" href="class_o_b_b.html#a03fdc91609b94007369d3ba168dbb54d" title="OBB::GetVectorForward" alt="" coords="226,5,389,32"/>
+<area shape="rect" id="node3" href="class_o_b_b.html#a03218b64dad1985876e7bad09f4a61ce" title="OBB::GetVectorForwardHalf" alt="" coords="215,56,400,83"/>
+<area shape="rect" id="node4" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="469,74,615,115"/>
+<area shape="rect" id="node15" href="class_camera.html#aec9441c5c1924df0a0cacbcf28c839e2" title="Camera::GetForwardVector" alt="" coords="217,157,397,184"/>
+<area shape="rect" id="node16" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="231,209,384,250"/>
+<area shape="rect" id="node17" href="class_transform.html#a25e4832e15334d74ff847f0ff0b3564f" title="Transform::GetForawrd" alt="" coords="230,275,385,301"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="684,74,887,115"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="935,74,1101,115"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="1159,41,1338,82"/>
+<area shape="rect" id="node14" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="1149,106,1348,147"/>
+<area shape="rect" id="node8" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="1396,81,1567,108"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1615,74,1768,115"/>
+<area shape="rect" id="node10" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1816,81,2011,108"/>
+<area shape="rect" id="node11" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2059,81,2209,108"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2257,81,2419,108"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2467,81,2540,108"/>
+<area shape="rect" id="node18" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="467,165,617,192"/>
+<area shape="rect" id="node19" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="448,216,636,243"/>
+<area shape="rect" id="node20" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="467,267,617,309"/>
+<area shape="rect" id="node21" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="467,333,617,374"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a1d4f944d118d6f999c516dbdc0827a39"></a>
@@ -275,6 +441,34 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00067">67</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a1d4f944d118d6f999c516dbdc0827a39_icgraph.png" border="0" usemap="#class_axis_vector_a1d4f944d118d6f999c516dbdc0827a39_icgraph" alt=""/></div>
+<map name="class_axis_vector_a1d4f944d118d6f999c516dbdc0827a39_icgraph" id="class_axis_vector_a1d4f944d118d6f999c516dbdc0827a39_icgraph">
+<area shape="rect" id="node2" href="class_o_b_b.html#ace28639ea3a6c38d994d82d0dd40496e" title="OBB::GetVectorRight" alt="" coords="210,5,357,32"/>
+<area shape="rect" id="node3" href="class_o_b_b.html#a1c3a21fd4ff8dcc55d4f5d20c563ebd6" title="OBB::GetVectorRightHalf" alt="" coords="199,56,368,83"/>
+<area shape="rect" id="node4" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="437,62,583,103"/>
+<area shape="rect" id="node15" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="207,158,360,199"/>
+<area shape="rect" id="node16" href="class_transform.html#a57d1da919d8df7d2452149c4bbade4d2" title="Transform::GetRight" alt="" coords="214,224,353,251"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="652,62,855,103"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="903,62,1069,103"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="1127,29,1306,70"/>
+<area shape="rect" id="node14" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="1117,94,1316,135"/>
+<area shape="rect" id="node8" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="1364,69,1535,96"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1583,62,1736,103"/>
+<area shape="rect" id="node10" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1784,69,1979,96"/>
+<area shape="rect" id="node11" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2027,69,2177,96"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2225,69,2387,96"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2435,69,2508,96"/>
+<area shape="rect" id="node17" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="435,140,585,167"/>
+<area shape="rect" id="node18" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="416,191,604,217"/>
+<area shape="rect" id="node19" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="435,242,585,283"/>
+<area shape="rect" id="node20" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="435,307,585,349"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -301,6 +495,103 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00066">66</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_aba45ae6f91ac516e6e42fdb8bcfcae2e_icgraph.png" border="0" usemap="#class_axis_vector_aba45ae6f91ac516e6e42fdb8bcfcae2e_icgraph" alt=""/></div>
+<map name="class_axis_vector_aba45ae6f91ac516e6e42fdb8bcfcae2e_icgraph" id="class_axis_vector_aba45ae6f91ac516e6e42fdb8bcfcae2e_icgraph">
+<area shape="rect" id="node2" href="class_o_b_b.html#a0c0fd050224beb2c196e923e177bc0d5" title="OBB::GetVectorUp" alt="" coords="195,5,328,32"/>
+<area shape="rect" id="node3" href="class_o_b_b.html#a48255d7b9af2d2ea109de41787c30a3a" title="OBB::GetVectorUpHalf" alt="" coords="184,56,339,83"/>
+<area shape="rect" id="node4" href="class_collision_judgment.html#a3c0a99feef4531370096d458aefa8941" title="CollisionJudgment::\lHitCheck_OBB_OBB" alt="" coords="408,70,553,111"/>
+<area shape="rect" id="node15" href="class_transform.html#a9f5700481ae42556f763726947feaf36" title="Transform::GetUp" alt="" coords="199,157,323,184"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="623,70,825,111"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="873,70,1040,111"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="1098,37,1277,78"/>
+<area shape="rect" id="node14" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="1088,102,1287,143"/>
+<area shape="rect" id="node8" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="1335,77,1505,104"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1553,70,1707,111"/>
+<area shape="rect" id="node10" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1755,77,1949,104"/>
+<area shape="rect" id="node11" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1997,77,2148,104"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2196,77,2357,104"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2405,77,2479,104"/>
+<area shape="rect" id="node16" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="387,147,575,173"/>
+<area shape="rect" id="node17" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="405,198,556,239"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd3b0ec608bc18dc9996cf9fa1d121b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3b0ec608bc18dc9996cf9fa1d121b0">&#9670;&nbsp;</a></span>NormalizeAxis_All()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AxisVector::NormalizeAxis_All </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00287">287</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_cgraph.png" border="0" usemap="#class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_cgraph" alt=""/></div>
+<map name="class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_cgraph" id="class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="253,5,433,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_icgraph.png" border="0" usemap="#class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_icgraph" alt=""/></div>
+<map name="class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_icgraph" id="class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_icgraph">
+<area shape="rect" id="node2" href="class_axis_vector.html#a33aab769ff2de997393c13414fa23873" title="AxisVector::RotationMatrix" alt="" coords="253,5,432,32"/>
+<area shape="rect" id="node17" href="class_axis_vector.html#ad3110d0a45e303109caa1e0dfb2ca027" title="AxisVector::RotationAxis\l_PivotX" alt="" coords="259,57,427,98"/>
+<area shape="rect" id="node18" href="class_axis_vector.html#aee4198c9fcf78d6912b129e2210a58fa" title="AxisVector::RotationAxis\l_PivotY" alt="" coords="259,122,427,163"/>
+<area shape="rect" id="node20" href="class_axis_vector.html#adde5b636a046a4fe6c5c943646045843" title="AxisVector::RotationAxis\l_PivotZ" alt="" coords="259,187,427,229"/>
+<area shape="rect" id="node21" href="class_axis_vector.html#a42872a62f656e7249af84e39fd519475" title="AxisVector::RotationAxis\l_PivotForward" alt="" coords="259,253,427,294"/>
+<area shape="rect" id="node22" href="class_axis_vector.html#ad33eef7f1b3912b6a1d0eaa18fff8f29" title="AxisVector::RotationAxis\l_PivotUp" alt="" coords="259,318,427,359"/>
+<area shape="rect" id="node23" href="class_axis_vector.html#a71a7638817a488d824cdc757d4e28a0c" title="AxisVector::RotationAxis\l_PivotRight" alt="" coords="259,383,427,425"/>
+<area shape="rect" id="node24" href="class_axis_vector.html#a7cab74dd54bf4fc97770aee2278f2fa4" title="AxisVector::RotationAxis\l_PivotFree" alt="" coords="259,449,427,490"/>
+<area shape="rect" id="node25" href="class_axis_vector.html#ac429404c0b565c24307da4442e49bb61" title="AxisVector::SetForward" alt="" coords="263,515,423,541"/>
+<area shape="rect" id="node3" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="480,169,672,196"/>
+<area shape="rect" id="node4" href="class_transform.html#af02515be1947506212ca1c23223ce0b3" title="Transform::UpdateAxisVector\l_WorldMatrixSRT" alt="" coords="720,162,912,203"/>
+<area shape="rect" id="node6" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="720,227,912,269"/>
+<area shape="rect" id="node5" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="966,162,1117,203"/>
+<area shape="rect" id="node7" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="960,338,1123,379"/>
+<area shape="rect" id="node8" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="1171,366,1329,407"/>
+<area shape="rect" id="node9" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="1395,380,1530,407"/>
+<area shape="rect" id="node10" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="1596,377,1803,418"/>
+<area shape="rect" id="node11" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1851,384,2001,411"/>
+<area shape="rect" id="node12" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="2049,377,2203,418"/>
+<area shape="rect" id="node13" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="2251,387,2445,413"/>
+<area shape="rect" id="node14" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2493,391,2644,417"/>
+<area shape="rect" id="node15" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2692,417,2853,444"/>
+<area shape="rect" id="node16" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2901,417,2975,444"/>
+<area shape="rect" id="node19" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="499,383,653,425"/>
+<area shape="rect" id="node26" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="770,513,862,540"/>
+<area shape="rect" id="node27" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="986,513,1097,540"/>
+<area shape="rect" id="node28" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="1187,459,1313,485"/>
+<area shape="rect" id="node29" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="1377,445,1548,472"/>
+<area shape="rect" id="node30" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="1632,444,1767,471"/>
+<area shape="rect" id="node31" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1863,443,1989,469"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a1414c1390a31d9e98c26d9803c61d2b8"></a>
@@ -317,6 +608,29 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00059">59</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a1414c1390a31d9e98c26d9803c61d2b8_icgraph.png" border="0" usemap="#class_axis_vector_a1414c1390a31d9e98c26d9803c61d2b8_icgraph" alt=""/></div>
+<map name="class_axis_vector_a1414c1390a31d9e98c26d9803c61d2b8_icgraph" id="class_axis_vector_a1414c1390a31d9e98c26d9803c61d2b8_icgraph">
+<area shape="rect" id="node2" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="245,46,437,73"/>
+<area shape="rect" id="node3" href="class_transform.html#af02515be1947506212ca1c23223ce0b3" title="Transform::UpdateAxisVector\l_WorldMatrixSRT" alt="" coords="485,5,677,47"/>
+<area shape="rect" id="node5" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="485,71,677,112"/>
+<area shape="rect" id="node4" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="731,5,882,47"/>
+<area shape="rect" id="node6" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="725,71,888,112"/>
+<area shape="rect" id="node7" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="936,71,1095,112"/>
+<area shape="rect" id="node8" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="1143,78,1277,105"/>
+<area shape="rect" id="node9" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="1325,71,1532,112"/>
+<area shape="rect" id="node10" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1580,78,1731,105"/>
+<area shape="rect" id="node11" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1779,71,1932,112"/>
+<area shape="rect" id="node12" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1980,78,2175,105"/>
+<area shape="rect" id="node13" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2223,78,2373,105"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2421,78,2583,105"/>
+<area shape="rect" id="node15" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2631,78,2704,105"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -335,6 +649,20 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00164">164</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a42872a62f656e7249af84e39fd519475_cgraph.png" border="0" usemap="#class_axis_vector_a42872a62f656e7249af84e39fd519475_cgraph" alt=""/></div>
+<map name="class_axis_vector_a42872a62f656e7249af84e39fd519475_cgraph" id="class_axis_vector_a42872a62f656e7249af84e39fd519475_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#aadbe9f3e0ee3298c59cf123b592140bd" title="Vector3D::RotationVector\l_AxisFree" alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="229,71,413,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="221,137,421,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="469,78,664,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="477,137,657,163"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -364,6 +692,20 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00227">227</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a7cab74dd54bf4fc97770aee2278f2fa4_cgraph.png" border="0" usemap="#class_axis_vector_a7cab74dd54bf4fc97770aee2278f2fa4_cgraph" alt=""/></div>
+<map name="class_axis_vector_a7cab74dd54bf4fc97770aee2278f2fa4_cgraph" id="class_axis_vector_a7cab74dd54bf4fc97770aee2278f2fa4_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#aadbe9f3e0ee3298c59cf123b592140bd" title="Vector3D::RotationVector\l_AxisFree" alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="229,71,413,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="221,137,421,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="469,78,664,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="477,137,657,163"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a71a7638817a488d824cdc757d4e28a0c"></a>
@@ -381,6 +723,28 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00204">204</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_cgraph.png" border="0" usemap="#class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_cgraph" alt=""/></div>
+<map name="class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_cgraph" id="class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#aadbe9f3e0ee3298c59cf123b592140bd" title="Vector3D::RotationVector\l_AxisFree" alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="229,71,413,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="221,137,421,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="469,78,664,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="477,137,657,163"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_icgraph.png" border="0" usemap="#class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_icgraph" alt=""/></div>
+<map name="class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_icgraph" id="class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_icgraph">
+<area shape="rect" id="node2" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="221,5,375,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -400,6 +764,20 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00184">184</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_ad33eef7f1b3912b6a1d0eaa18fff8f29_cgraph.png" border="0" usemap="#class_axis_vector_ad33eef7f1b3912b6a1d0eaa18fff8f29_cgraph" alt=""/></div>
+<map name="class_axis_vector_ad33eef7f1b3912b6a1d0eaa18fff8f29_cgraph" id="class_axis_vector_ad33eef7f1b3912b6a1d0eaa18fff8f29_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#aadbe9f3e0ee3298c59cf123b592140bd" title="Vector3D::RotationVector\l_AxisFree" alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="229,71,413,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="221,137,421,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="469,78,664,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="477,137,657,163"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ad3110d0a45e303109caa1e0dfb2ca027"></a>
@@ -417,6 +795,20 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00095">95</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_ad3110d0a45e303109caa1e0dfb2ca027_cgraph.png" border="0" usemap="#class_axis_vector_ad3110d0a45e303109caa1e0dfb2ca027_cgraph" alt=""/></div>
+<map name="class_axis_vector_ad3110d0a45e303109caa1e0dfb2ca027_cgraph" id="class_axis_vector_ad3110d0a45e303109caa1e0dfb2ca027_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#a0b058c605bbea7ea97bd96efa3c0bc26" title="Vector3D::RotationVector\l_AxisX" alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="229,71,413,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="221,137,421,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="469,78,664,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="477,137,657,163"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -436,6 +828,28 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00118">118</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_cgraph.png" border="0" usemap="#class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_cgraph" alt=""/></div>
+<map name="class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_cgraph" id="class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#a0a8556c9bd5caef8592174a8c095080f" title="Vector3D::RotationVector\l_AxisY" alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="229,71,413,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="221,137,421,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="469,78,664,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="477,137,657,163"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_icgraph.png" border="0" usemap="#class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_icgraph" alt=""/></div>
+<map name="class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_icgraph" id="class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_icgraph">
+<area shape="rect" id="node2" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="221,5,375,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="adde5b636a046a4fe6c5c943646045843"></a>
@@ -453,6 +867,20 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00141">141</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_adde5b636a046a4fe6c5c943646045843_cgraph.png" border="0" usemap="#class_axis_vector_adde5b636a046a4fe6c5c943646045843_cgraph" alt=""/></div>
+<map name="class_axis_vector_adde5b636a046a4fe6c5c943646045843_cgraph" id="class_axis_vector_adde5b636a046a4fe6c5c943646045843_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#ac893f738dde87e5981dcff5d5515ede6" title="Vector3D::RotationVector\l_AxisZ" alt="" coords="236,5,407,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="229,71,413,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="221,137,421,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="469,78,664,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="477,137,657,163"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -472,6 +900,41 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00074">74</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a33aab769ff2de997393c13414fa23873_cgraph.png" border="0" usemap="#class_axis_vector_a33aab769ff2de997393c13414fa23873_cgraph" alt=""/></div>
+<map name="class_axis_vector_a33aab769ff2de997393c13414fa23873_cgraph" id="class_axis_vector_a33aab769ff2de997393c13414fa23873_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#aa368719da4c1ac4e8a727edbd09ec390" title="Vector3D::RotationVector\l_Matrix" alt="" coords="247,5,417,47"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="240,71,424,112"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="232,137,432,163"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="480,78,675,105"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="487,137,667,163"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_a33aab769ff2de997393c13414fa23873_icgraph.png" border="0" usemap="#class_axis_vector_a33aab769ff2de997393c13414fa23873_icgraph" alt=""/></div>
+<map name="class_axis_vector_a33aab769ff2de997393c13414fa23873_icgraph" id="class_axis_vector_a33aab769ff2de997393c13414fa23873_icgraph">
+<area shape="rect" id="node2" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="232,46,424,73"/>
+<area shape="rect" id="node3" href="class_transform.html#af02515be1947506212ca1c23223ce0b3" title="Transform::UpdateAxisVector\l_WorldMatrixSRT" alt="" coords="472,5,664,47"/>
+<area shape="rect" id="node5" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="472,71,664,112"/>
+<area shape="rect" id="node4" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="718,5,869,47"/>
+<area shape="rect" id="node6" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="712,71,875,112"/>
+<area shape="rect" id="node7" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="923,71,1081,112"/>
+<area shape="rect" id="node8" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="1129,78,1264,105"/>
+<area shape="rect" id="node9" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="1312,71,1519,112"/>
+<area shape="rect" id="node10" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1567,78,1717,105"/>
+<area shape="rect" id="node11" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1765,71,1919,112"/>
+<area shape="rect" id="node12" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1967,78,2161,105"/>
+<area shape="rect" id="node13" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2209,78,2360,105"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2408,78,2569,105"/>
+<area shape="rect" id="node15" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2617,78,2691,105"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac429404c0b565c24307da4442e49bb61"></a>
@@ -490,11 +953,185 @@ $(document).ready(function(){initNavTree('class_axis_vector.html','');});
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a> の <a class="el" href="_axis_vector_8cpp_source.html#l00251">251</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_ac429404c0b565c24307da4442e49bb61_cgraph.png" border="0" usemap="#class_axis_vector_ac429404c0b565c24307da4442e49bb61_cgraph" alt=""/></div>
+<map name="class_axis_vector_ac429404c0b565c24307da4442e49bb61_cgraph" id="class_axis_vector_ac429404c0b565c24307da4442e49bb61_cgraph">
+<area shape="rect" id="node2" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="221,5,405,47"/>
+<area shape="rect" id="node4" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="213,71,413,98"/>
+<area shape="rect" id="node3" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="461,13,656,39"/>
+<area shape="rect" id="node5" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="469,71,649,98"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis_vector_ac429404c0b565c24307da4442e49bb61_icgraph.png" border="0" usemap="#class_axis_vector_ac429404c0b565c24307da4442e49bb61_icgraph" alt=""/></div>
+<map name="class_axis_vector_ac429404c0b565c24307da4442e49bb61_icgraph" id="class_axis_vector_ac429404c0b565c24307da4442e49bb61_icgraph">
+<area shape="rect" id="node2" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="244,5,336,32"/>
+<area shape="rect" id="node10" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="213,57,367,98"/>
+<area shape="rect" id="node3" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="415,5,525,32"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="573,5,700,32"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="748,5,919,32"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="967,5,1101,32"/>
+<area shape="rect" id="node7" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1149,5,1276,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1324,5,1485,32"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1533,5,1607,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9c1883607bb0b10748eed84d40f11c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1883607bb0b10748eed84d40f11c93">&#9670;&nbsp;</a></span>DEFAULT_FORWARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3_d.html">Vector3D</a> AxisVector::DEFAULT_FORWARD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00033">33</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2527f9327895a4c50e668d90aa7b45fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2527f9327895a4c50e668d90aa7b45fc">&#9670;&nbsp;</a></span>DEFAULT_RIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3_d.html">Vector3D</a> AxisVector::DEFAULT_RIGHT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00035">35</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ae24f32af06534dacd474ba969b48ad4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24f32af06534dacd474ba969b48ad4c">&#9670;&nbsp;</a></span>DEFAULT_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3_d.html">Vector3D</a> AxisVector::DEFAULT_UP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00034">34</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aec3d9026c069398bc320bc978c060b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3d9026c069398bc320bc978c060b67">&#9670;&nbsp;</a></span>forward_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> AxisVector::forward_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00087">87</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af3e806442baa272fe79a08a38c8a6669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e806442baa272fe79a08a38c8a6669">&#9670;&nbsp;</a></span>right_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> AxisVector::right_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00089">89</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab73c08b8dbf399af48b01b4a17bd5d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73c08b8dbf399af48b01b4a17bd5d33">&#9670;&nbsp;</a></span>up_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> AxisVector::up_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a> の <a class="el" href="_axis_vector_8h_source.html#l00088">88</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Vector/Transform/AxisVector/<a class="el" href="_axis_vector_8h_source.html">AxisVector.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Vector/Transform/AxisVector/<a class="el" href="_axis_vector_8cpp.html">AxisVector.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Vector/Transform/AxisVector/<a class="el" href="_axis_vector_8cpp_source.html">AxisVector.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

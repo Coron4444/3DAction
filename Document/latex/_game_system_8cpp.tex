@@ -1,17 +1,41 @@
 \hypertarget{_game_system_8cpp}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Game\+System/\+Game\+System.cpp ファイル}
 \label{_game_system_8cpp}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Game\+System/\+Game\+System.\+cpp@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/01\+\_\+\+Main/\+Game\+System/\+Game\+System.\+cpp}}
+
+
+ゲームシステム\+Class  
+
+
 {\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}Game\+System.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$Safe\+Release/\+Safe\+Release.\+h$>$}\newline
 {\ttfamily \#include $<$Renderer/\+Renderer.\+h$>$}\newline
-{\ttfamily \#include $<$Renderer/\+Renderer\+Factory/\+Renderer\+Factory\+Direct\+X9.\+h$>$}\newline
-{\ttfamily \#include $<$Keyboard\textbackslash{}\+Keyboard.\+h$>$}\newline
-{\ttfamily \#include $<$Controller\textbackslash{}\+Controller.\+h$>$}\newline
-{\ttfamily \#include $<$Sound\textbackslash{}\+Sound.\+h$>$}\newline
-{\ttfamily \#include $<$Scene\+Manager\textbackslash{}\+Scene\+Manager.\+h$>$}\newline
-{\ttfamily \#include $<$Scenes\textbackslash{}\+Title\+Scene\textbackslash{}\+Title\+Scene.\+h$>$}\newline
+{\ttfamily \#include $<$Renderer/\+Renderer\+Factory/\+Renderer\+Factory\+Direct\+X9/\+Renderer\+Factory\+Direct\+X9.\+h$>$}\newline
+{\ttfamily \#include $<$Safe\+Release/\+Safe\+Release.\+h$>$}\newline
+{\ttfamily \#include $<$Controller/\+Controller.\+h$>$}\newline
+{\ttfamily \#include $<$Keyboard/\+Keyboard.\+h$>$}\newline
+{\ttfamily \#include $<$Sound/\+Sound.\+h$>$}\newline
+{\ttfamily \#include $<$Scene\+Manager/\+Scene\+Manager.\+h$>$}\newline
+{\ttfamily \#include $<$Scenes/\+Title\+Scene/\+Title\+Scene.\+h$>$}\newline
 {\ttfamily \#include $<$Scenes/\+Title\+Scene/\+Title\+Scene\+State/\+Title\+Scene\+State\+\_\+\+Start/\+Title\+Scene\+State\+\_\+\+Start.\+h$>$}\newline
-{\ttfamily \#include $<$Scenes\textbackslash{}\+Game\+Scene\textbackslash{}\+Game\+Scene.\+h$>$}\newline
+{\ttfamily \#include $<$Scenes/\+Game\+Scene/\+Game\+Scene.\+h$>$}\newline
 {\ttfamily \#include $<$Scenes/\+Game\+Scene/\+Game\+Scene\+State/\+Game\+Scene\+State\+\_\+\+Start/\+Game\+Scene\+State\+\_\+\+Start.\+h$>$}\newline
-{\ttfamily \#include $<$Im\+G\+U\+I\textbackslash{}imgui.\+h$>$}\newline
-{\ttfamily \#include $<$Im\+G\+U\+I\textbackslash{}imgui\+\_\+impl\+\_\+dx9.\+h$>$}\newline
+{\ttfamily \#include $<$Im\+G\+U\+I/imgui.\+h$>$}\newline
+{\ttfamily \#include $<$Im\+G\+U\+I/imgui\+\_\+impl\+\_\+dx9.\+h$>$}\newline
+Game\+System.\+cpp の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_game_system_8cpp__incl}
+\end{center}
+\end{figure}
+
+
+\subsection{詳解}
+ゲームシステム\+Class 
+
+\begin{DoxyAuthor}{著者}
+Kai Araki 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/05/08 
+\end{DoxyDate}

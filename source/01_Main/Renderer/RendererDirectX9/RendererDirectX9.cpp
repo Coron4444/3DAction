@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    レンダラーDirectX9クラス
-//    Author : Araki Kai                                作成日 : 2018/05/08
-//
+//!	@file	 RendererDirectX9.cpp
+//!	@brief	 レンダラーDirectX9Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
 
 
@@ -11,6 +11,7 @@
 // インクルード文
 //****************************************
 #include "RendererDirectX9.h"
+
 #include <SafeRelease/SafeRelease.h>
 
 
@@ -23,7 +24,7 @@ const DWORD	RendererDirectX9::FVF_VERTEX_3D = (D3DFVF_XYZ | D3DFVF_NORMAL | D3DF
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -132,26 +133,6 @@ void RendererDirectX9::Present()
 {
 	// バックバッファをフロントバッファに描画
 	direct3d_device_->Present(NULL, NULL, NULL, NULL);
-}
-
-
-
-//--------------------------------------------------
-// +インタフェース取得関数
-//--------------------------------------------------
-LPDIRECT3D9 RendererDirectX9::GetInterface()
-{
-	return direct3d_interface_;
-}
-
-
-
-//--------------------------------------------------
-// +ダイレクト3Dデバイス取得関数
-//--------------------------------------------------
-LPDIRECT3DDEVICE9 RendererDirectX9::GetDevice()
-{
-	return direct3d_device_;
 }
 
 

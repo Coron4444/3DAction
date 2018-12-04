@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Vertex\+Shader\+Bump\+Mapping.\+h$>$}
 
-Vertex\+Shader\+Bump\+Mapping の継承関係図\begin{figure}[H]
+
+
+Vertex\+Shader\+Bump\+Mapping の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_vertex_shader_bump_mapping}
+\includegraphics[width=218pt]{class_vertex_shader_bump_mapping__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Vertex\+Shader\+Bump\+Mapping 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_vertex_shader_bump_mapping__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -31,12 +43,30 @@ void \mbox{\hyperlink{class_vertex_shader_bump_mapping_ad81d57336763441c4071f967
 \item 
 static void \mbox{\hyperlink{class_vertex_shader_bump_mapping_a659d50e57533b9cd0204fc169985f1e0}{Update\+Mesh\+Declaration}} (\mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$model\+\_\+x)
 \begin{DoxyCompactList}\small\item\em 頂点宣言用メッシュ更新関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+D3\+D\+X\+M\+A\+T\+R\+IX \mbox{\hyperlink{class_vertex_shader_bump_mapping_add6402e968835f3fe5e9c7681c33daef}{math\+\_\+matrix\+\_\+}}
+\item 
+I\+Direct3\+D\+Vertex\+Declaration9 $\ast$ \mbox{\hyperlink{class_vertex_shader_bump_mapping_a6e45d81a2a9c8ba7071b7f2686264a49}{declaration\+\_\+object\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \mbox{\hyperlink{class_vertex_shader_bump_mapping_aa4b686f9aeb9e327ca79adf5974bc86d}{P\+A\+TH}} = \char`\"{}resource/H\+L\+SL/Effect/Vertex\+Shader/Bump\+Mapping.\+vsh\char`\"{}
+\item 
+static const D3\+D\+V\+E\+R\+T\+E\+X\+E\+L\+E\+M\+E\+N\+T9 \mbox{\hyperlink{class_vertex_shader_bump_mapping_ae4b0d38d68dc86b47ae17693cb214e06}{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 バンプマッピング頂点シェーダークラス 
 
 バンプマッピングの頂点シェーダークラス 
+
+ Vertex\+Shader\+Bump\+Mapping.\+h の 27 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_vertex_shader_bump_mapping_a7979584d035fff86d386c99617a8dd2c}\label{class_vertex_shader_bump_mapping_a7979584d035fff86d386c99617a8dd2c}} 
@@ -58,6 +88,17 @@ static void \mbox{\hyperlink{class_vertex_shader_bump_mapping_a659d50e57533b9cd0
 
 \mbox{\hyperlink{class_vertex_shader_null_a95f1a66045fb39c42cf0566f1990b6a1}{Vertex\+Shader\+Null}}を再実装しています。
 
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+cpp の 89 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_bump_mapping_a7979584d035fff86d386c99617a8dd2c_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_bump_mapping_a6c0f59d1f29fd883943a66bfe61b6b03}\label{class_vertex_shader_bump_mapping_a6c0f59d1f29fd883943a66bfe61b6b03}} 
 \index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!Init@{Init}}
 \index{Init@{Init}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
@@ -72,6 +113,18 @@ static void \mbox{\hyperlink{class_vertex_shader_bump_mapping_a659d50e57533b9cd0
 
 \mbox{\hyperlink{class_vertex_shader_null_af30eb8057fe0537bc6ade214647b6fb5}{Vertex\+Shader\+Null}}を再実装しています。
 
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+cpp の 54 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_bump_mapping_a6c0f59d1f29fd883943a66bfe61b6b03_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_bump_mapping_ad81d57336763441c4071f967b57dbce1}\label{class_vertex_shader_bump_mapping_ad81d57336763441c4071f967b57dbce1}} 
 \index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!Specific\+Setting@{Specific\+Setting}}
 \index{Specific\+Setting@{Specific\+Setting}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
@@ -91,6 +144,17 @@ static void \mbox{\hyperlink{class_vertex_shader_bump_mapping_a659d50e57533b9cd0
 
 \mbox{\hyperlink{class_vertex_shader_null_aa2234c6ea083e3c0233d59f222145992}{Vertex\+Shader\+Null}}を再実装しています。
 
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+cpp の 135 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_bump_mapping_ad81d57336763441c4071f967b57dbce1_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_bump_mapping_abed4e0aa9655fa7a7a21e03d00e7c0e5}\label{class_vertex_shader_bump_mapping_abed4e0aa9655fa7a7a21e03d00e7c0e5}} 
 \index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
@@ -105,6 +169,17 @@ static void \mbox{\hyperlink{class_vertex_shader_bump_mapping_a659d50e57533b9cd0
 
 \mbox{\hyperlink{class_vertex_shader_null_a16334df4ac02db3dd63f042622032301}{Vertex\+Shader\+Null}}を再実装しています。
 
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+cpp の 78 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_bump_mapping_abed4e0aa9655fa7a7a21e03d00e7c0e5_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_bump_mapping_a659d50e57533b9cd0204fc169985f1e0}\label{class_vertex_shader_bump_mapping_a659d50e57533b9cd0204fc169985f1e0}} 
 \index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!Update\+Mesh\+Declaration@{Update\+Mesh\+Declaration}}
 \index{Update\+Mesh\+Declaration@{Update\+Mesh\+Declaration}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
@@ -120,6 +195,77 @@ static void \mbox{\hyperlink{class_vertex_shader_bump_mapping_a659d50e57533b9cd0
 {\em model\+\_\+x} & \+: Xモデルオブジェクト \\
 \hline
 \end{DoxyParams}
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+cpp の 39 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_bump_mapping_a659d50e57533b9cd0204fc169985f1e0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_vertex_shader_bump_mapping_a659d50e57533b9cd0204fc169985f1e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_vertex_shader_bump_mapping_ae4b0d38d68dc86b47ae17693cb214e06}\label{class_vertex_shader_bump_mapping_ae4b0d38d68dc86b47ae17693cb214e06}} 
+\index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!D\+E\+C\+L\+A\+R\+A\+T\+I\+ON@{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}
+\index{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON@{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}{DECLARATION}}
+{\footnotesize\ttfamily const D3\+D\+V\+E\+R\+T\+E\+X\+E\+L\+E\+M\+E\+N\+T9 Vertex\+Shader\+Bump\+Mapping\+::\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries 初期値\+:}
+\begin{DoxyCode}
+= \{\{0,  0, D3DDECLTYPE\_FLOAT3, D3DDECLMETHOD\_DEFAULT, D3DDECLUSAGE\_POSITION, 0\},
+   \{0, 12, D3DDECLTYPE\_FLOAT3, D3DDECLMETHOD\_DEFAULT, D3DDECLUSAGE\_NORMAL,   0\},
+   \{0, 24, D3DDECLTYPE\_FLOAT3, D3DDECLMETHOD\_DEFAULT, D3DDECLUSAGE\_TANGENT,  0\},
+   \{0, 36, D3DDECLTYPE\_FLOAT2, D3DDECLMETHOD\_DEFAULT, D3DDECLUSAGE\_TEXCOORD, 0\},
+
+\}
+\end{DoxyCode}
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+h の 34 行目に定義があります。
+
+\mbox{\Hypertarget{class_vertex_shader_bump_mapping_a6e45d81a2a9c8ba7071b7f2686264a49}\label{class_vertex_shader_bump_mapping_a6e45d81a2a9c8ba7071b7f2686264a49}} 
+\index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!declaration\+\_\+object\+\_\+@{declaration\+\_\+object\+\_\+}}
+\index{declaration\+\_\+object\+\_\+@{declaration\+\_\+object\+\_\+}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
+\subsubsection{\texorpdfstring{declaration\+\_\+object\+\_\+}{declaration\_object\_}}
+{\footnotesize\ttfamily I\+Direct3\+D\+Vertex\+Declaration9$\ast$ Vertex\+Shader\+Bump\+Mapping\+::declaration\+\_\+object\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+h の 45 行目に定義があります。
+
+\mbox{\Hypertarget{class_vertex_shader_bump_mapping_add6402e968835f3fe5e9c7681c33daef}\label{class_vertex_shader_bump_mapping_add6402e968835f3fe5e9c7681c33daef}} 
+\index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!math\+\_\+matrix\+\_\+@{math\+\_\+matrix\+\_\+}}
+\index{math\+\_\+matrix\+\_\+@{math\+\_\+matrix\+\_\+}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
+\subsubsection{\texorpdfstring{math\+\_\+matrix\+\_\+}{math\_matrix\_}}
+{\footnotesize\ttfamily D3\+D\+X\+M\+A\+T\+R\+IX Vertex\+Shader\+Bump\+Mapping\+::math\+\_\+matrix\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+h の 42 行目に定義があります。
+
+\mbox{\Hypertarget{class_vertex_shader_bump_mapping_aa4b686f9aeb9e327ca79adf5974bc86d}\label{class_vertex_shader_bump_mapping_aa4b686f9aeb9e327ca79adf5974bc86d}} 
+\index{Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}!P\+A\+TH@{P\+A\+TH}}
+\index{P\+A\+TH@{P\+A\+TH}!Vertex\+Shader\+Bump\+Mapping@{Vertex\+Shader\+Bump\+Mapping}}
+\subsubsection{\texorpdfstring{P\+A\+TH}{PATH}}
+{\footnotesize\ttfamily const char $\ast$ Vertex\+Shader\+Bump\+Mapping\+::\+P\+A\+TH = \char`\"{}resource/H\+L\+SL/Effect/Vertex\+Shader/Bump\+Mapping.\+vsh\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Vertex\+Shader\+Bump\+Mapping.\+h の 33 行目に定義があります。
+
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}

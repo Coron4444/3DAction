@@ -33,13 +33,13 @@ const float TitleLogoDraw::SCALE = 1.25f;
 void TitleLogoDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// ダウンキャスト
-	title_logo_ = (TitleLogo*)GetGameObject();
+	title_logo_ = (TitleLogo*)getpGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
@@ -75,26 +75,26 @@ void TitleLogoDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* TitleLogoDraw::GetMatrix(unsigned object_index)
+unsigned TitleLogoDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	// メッシュ数の取得
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return title_logo_->plane_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned TitleLogoDraw::GetMeshNum(unsigned object_index)
+MATRIX* TitleLogoDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return title_logo_->plane_polygon_->GetMeshNum();
+	// メッシュ数の取得
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -102,7 +102,7 @@ unsigned TitleLogoDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* TitleLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* TitleLogoDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -115,7 +115,7 @@ D3DMATERIAL9* TitleLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_in
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 TitleLogoDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
+LPDIRECT3DTEXTURE9 TitleLogoDraw::getpDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

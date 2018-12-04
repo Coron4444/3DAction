@@ -1,0 +1,13 @@
+<map id="CoinFactory::Create" name="CoinFactory::Create">
+<area shape="rect" id="node2" href="$class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="192,164,265,191"/>
+<area shape="rect" id="node3" href="$class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="313,164,464,191"/>
+<area shape="rect" id="node4" href="$class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="512,101,747,128"/>
+<area shape="rect" id="node8" href="$class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6" title="コンポーネント初期化関数 " alt="" coords="521,164,737,191"/>
+<area shape="rect" id="node11" href="$class_game_object_manager.html#ab42e8ca2c7e586d05d513e8a868a86ef" title="ゲームオブジェクト基底クラスの追加関数 " alt="" coords="533,241,726,282"/>
+<area shape="rect" id="node5" href="$class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08" title="GameObjectBase::SetUpdate" alt="" coords="807,5,1001,32"/>
+<area shape="rect" id="node6" href="$class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="813,56,995,83"/>
+<area shape="rect" id="node7" href="$class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="803,107,1005,133"/>
+<area shape="rect" id="node9" href="$class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="795,157,1013,184"/>
+<area shape="rect" id="node10" href="$class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="833,208,975,235"/>
+<area shape="rect" id="node12" href="$class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="836,259,972,301"/>
+</map>

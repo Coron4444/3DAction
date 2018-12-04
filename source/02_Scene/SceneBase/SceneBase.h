@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    シーン基底クラス
-//    Author : Araki Kai                                作成日 : 2018/11/02
-//
+//!	@file	 SceneBase.h
+//!	@brief	 シーンBaseClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/02
 //================================================================================
-
 #ifndef	_SCENE_BASE_H_
 #define _SCENE_BASE_H_
 
@@ -24,136 +23,139 @@ class SceneManager;
 
 
 
-/*********************************************************//**
-* @brief
-* シーン基底クラス
-*
-* シーンの基底クラス
-*************************************************************/
+//************************************************************														   
+//! @brief   シーンBaseClass
+//!
+//! @details シーンのBaseClass
+//************************************************************
 class SceneBase
 {
-/***************************//**
-* @brief
-* シーンステート抽象クラス
-*
-* シーンステートの抽象クラス
-*******************************/
+//****************************************														   
+//! @brief   シーンステートBaseClass
+//!
+//! @details シーンステートのBaseClass
+//****************************************
 public:
-	class StateAbstract
+	class StateBase
 	{
-	//==============================
-	// 非静的メンバ変数
-	//==============================
+	//====================
+	// 変数
+	//====================
 	protected:
 		SceneBase* scene_ = nullptr;		//!< シーン
 
 
-	//==============================
-	// 非静的メンバ関数
-	//==============================
+	//====================
+	// 関数
+	//====================
 	public:
-		/**
-		* @brief
-		* デストラクタ
-		*/
-		virtual ~StateAbstract() {}
+		//----------------------------------------
+		//! @brief 仮想デストラクタ
+		//! @param void なし
+		//----------------------------------------
+		virtual ~StateBase() {}
 
-		/**
-		* @brief
-		* 初期化関数
-		*/
+		//----------------------------------------
+		//! @brief 初期化関数
+		//! @param void なし
+		//! @retval void なし
+		//----------------------------------------
 		virtual void Init() = 0;
 
-		/**
-		* @brief
-		* 終了関数
-		*/
+		//----------------------------------------
+		//! @brief 終了関数
+		//! @param void なし
+		//! @retval void なし
+		//----------------------------------------
 		virtual void Uninit() = 0;
 
-		/**
-		* @brief
-		* 更新関数
-		*/
+		//----------------------------------------
+		//! @brief 更新関数
+		//! @param void なし
+		//! @retval void なし
+		//----------------------------------------
 		virtual void Update() = 0;
 
-		/**
-		* @brief
-		* リセット関数
-		*/
+		//----------------------------------------
+		//! @brief リセット関数
+		//! @param void なし
+		//! @retval void なし
+		//----------------------------------------
 		virtual void Reset() = 0;
 
 		// プロパティ
-		void SetScene(SceneBase* value) { scene_ = value; }
+		void setScene(SceneBase* value) { scene_ = value; }
 	};
 
 
-
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	SceneManager* scene_manager_ = nullptr;		//!< シーンマネージャ
-	StateAbstract* state_ = nullptr;			//!< ステート
+	StateBase* state_ = nullptr;				//!< ステート
 
 
-
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* コンストラクタ
-	* @param
-	* state : 最初のステート
-	*/
-	SceneBase(StateAbstract* state)
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param[in] state 最初のステート
+	//----------------------------------------
+	SceneBase(StateBase* state) 
 	{
 		state_ = state;
-		state_->SetScene(this);
+		state_->setScene(this);
 	}
 
-	/**
-	* @brief
-	* 仮想デストラクタ
-	*/
+	//----------------------------------------
+	//! @brief 仮想デストラクタ
+	//! @param void なし
+	//----------------------------------------
 	virtual ~SceneBase() {}
 
-	/**
-	* @brief
-	* 初期化関数
-	*/
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Init();
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Uninit();
 
-	/**
-	* @brief
-	* 更新関数
-	*/
+	//----------------------------------------
+	//! @brief 更新関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Update();
 
-	/**
-	* @brief
-	* リセット関数
-	*/
+	//----------------------------------------
+	//! @brief リセット関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Reset();
 
-	/**
-	* @brief
-	* ステート解放関数
-	*/
+	//----------------------------------------
+	//! @brief ステート解放関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void ReleaseState();
 
 	// プロパティ
-	SceneManager* GetSceneManager() { return scene_manager_; }
-	void SetSceneManager(SceneManager* value) { scene_manager_ = value; }
-	StateAbstract* GetState() { return state_; }
-	void SetState(StateAbstract* value)
+	SceneManager* getpSceneManager() { return scene_manager_; }
+	void setSceneManager(SceneManager* value) { scene_manager_ = value; }
+	StateBase* getpState() { return state_; }
+	void setState(StateBase* value)
 	{
 		if (state_ != nullptr)
 		{
@@ -164,7 +166,7 @@ public:
 
 		if (state_ != nullptr)
 		{
-			state_->SetScene(this);
+			state_->setScene(this);
 			state_->Init();
 		}
 	}

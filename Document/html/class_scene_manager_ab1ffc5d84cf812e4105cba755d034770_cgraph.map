@@ -1,0 +1,51 @@
+<map id="SceneManager::SceneChange" name="SceneManager::SceneChange">
+<area shape="rect" id="node2" href="$class_game_object_manager.html#a862e76bfd74495c20bddd377c62a22b7" title="GameObjectManager::\lGetDrawManager" alt="" coords="293,5,446,47"/>
+<area shape="rect" id="node3" href="$class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="1383,97,1546,123"/>
+<area shape="rect" id="node4" href="$class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="284,325,455,367"/>
+<area shape="rect" id="node29" href="$class_resource_manager.html#abcb135906cb991a49ec6e8c8db057de1" title="ResourceManager::UninitUniqueData" alt="" coords="252,474,487,501"/>
+<area shape="rect" id="node33" href="$class_scene_base.html#aae1930cae97c27ee7d54b4bd8896a515" title="SceneBase::setSceneManager" alt="" coords="268,525,471,551"/>
+<area shape="rect" id="node34" href="$class_scene_base.html#a494ba624fdd95b296e4487ed1a34f47b" title="初期化関数 " alt="" coords="312,575,427,602"/>
+<area shape="rect" id="node36" href="$class_draw_manager.html#a0e7e11e650f1c1736e9d3199a58191a7" title="DrawManager::GetBackBuffer" alt="" coords="273,626,466,653"/>
+<area shape="rect" id="node37" href="$class_back_buffer.html#ad3d3626427f53f060f5057ea6a22cac6" title="フェード終了関数 " alt="" coords="292,677,447,703"/>
+<area shape="rect" id="node39" href="$class_back_buffer.html#add3a034c7758dc6a72bb4582bf6ce78e" title="フェード初期化関数 " alt="" coords="300,727,439,754"/>
+<area shape="rect" id="node50" href="$class_scene_manager_1_1_common_data.html#acff0faeef41334781fc49184ada1a5a4" title="SceneManager::CommonData\l::setIsUpdate" alt="" coords="271,779,467,820"/>
+<area shape="rect" id="node5" href="$class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="840,507,993,548"/>
+<area shape="rect" id="node18" href="$class_collision_manager.html#a33ce56b5a6f68d71b0f2bf733413dddb" title="シーン変更時の終了関数 " alt="" coords="835,761,998,803"/>
+<area shape="rect" id="node24" href="$class_draw_manager.html#a8b4ea38d625efbcc08d9b168cb5465f9" title="シーン変更時の終了関数 " alt="" coords="536,216,756,257"/>
+<area shape="rect" id="node28" href="$class_update_manager.html#a2e0a6b1a620ba620783d929e532b6148" title="シーン変更時の終了関数 " alt="" coords="823,275,1011,316"/>
+<area shape="rect" id="node6" href="$class_game_object_reference_manager.html#ac4852ddd6d8bd5e1f13284ba6204e221" title="GameObjectReferenceManager\l::AllReleaseReference" alt="" coords="1091,507,1294,548"/>
+<area shape="rect" id="node8" href="$class_game_object_manager.html#a5a6c1208229decd93c6ef396bce35b3a" title="解放待ち配列の中身を解放関数 " alt="" coords="1086,426,1299,482"/>
+<area shape="rect" id="node9" href="$class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="1397,681,1533,723"/>
+<area shape="rect" id="node11" href="$class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="1397,849,1533,891"/>
+<area shape="rect" id="node12" href="$class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="1397,317,1533,359"/>
+<area shape="rect" id="node13" href="$class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="1076,1024,1309,1065"/>
+<area shape="rect" id="node7" href="$class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="1393,514,1537,541"/>
+<area shape="rect" id="node10" href="$class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="1361,440,1568,481"/>
+<area shape="rect" id="node14" href="$class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c" title="終了関数 " alt="" coords="1381,943,1548,970"/>
+<area shape="rect" id="node15" href="$class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="1357,995,1572,1036"/>
+<area shape="rect" id="node16" href="$class_game_object_reference_manager.html#ac7d117427de3052f893228408a3de5d7" title="GameObjectReferenceManager\l::ReleaseReference" alt="" coords="1363,1060,1566,1101"/>
+<area shape="rect" id="node17" href="$class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="1397,1125,1533,1167"/>
+<area shape="rect" id="node19" href="$class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="1094,572,1291,613"/>
+<area shape="rect" id="node20" href="$class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="1102,791,1283,832"/>
+<area shape="rect" id="node21" href="$class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="1105,959,1281,1000"/>
+<area shape="rect" id="node22" href="$class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="1103,1089,1283,1131"/>
+<area shape="rect" id="node23" href="$class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="1095,1155,1290,1182"/>
+<area shape="rect" id="node25" href="$class_back_buffer.html#a989c5474cabde7f88c197a2a235e8424" title="シーン変更時の終了関数 " alt="" coords="815,157,1019,199"/>
+<area shape="rect" id="node26" href="$class_back_buffer.html#a04e942576ac5de94d16764d347111234" title="全配列のリセット関数 " alt="" coords="1106,173,1279,199"/>
+<area shape="rect" id="node27" href="$class_camera.html#a8b3337b3e560ea6a780d646bc8c509d7" title="終了関数 " alt="" coords="1139,122,1247,149"/>
+<area shape="rect" id="node30" href="$class_model_x_manager.html#a7dde269502f40b7d1208c8e0f84b13f0" title="ModelXManager::UninitUniqueData" alt="" coords="535,434,757,461"/>
+<area shape="rect" id="node31" href="$class_texture_manager.html#a9d9dd61edf4153bd70ba830ae2dc62e8" title="TextureManager::UninitUniqueData" alt="" coords="535,485,757,511"/>
+<area shape="rect" id="node32" href="$class_effekseer_manager.html#abd448f6ec39f2306a6dc99b79aff0362" title="EffekseerManager::Uninit\lUniqueData" alt="" coords="563,536,729,577"/>
+<area shape="rect" id="node35" href="$class_scene_base_1_1_state_base.html#a33350231b039a2178c19beac0211c5b8" title="初期化関数 " alt="" coords="567,601,725,643"/>
+<area shape="rect" id="node38" href="$class_fade.html#ae77d06811869d3c8162a42c3e0e14f7f" title="終了関数 " alt="" coords="600,677,692,703"/>
+<area shape="rect" id="node40" href="$class_fade.html#aab12848f7102a219968c86ed699a6e5d" title="初期化関数 " alt="" coords="608,1302,684,1329"/>
+<area shape="rect" id="node41" href="$class_transform.html#accedf33a4ddbdcf2d4fc4274f85bf818" title="Transform::GetScale" alt="" coords="846,1251,987,1278"/>
+<area shape="rect" id="node42" href="$class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="805,1302,1028,1329"/>
+<area shape="rect" id="node48" href="$class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113" title="PlanePolygon::SetColor" alt="" coords="837,1353,997,1379"/>
+<area shape="rect" id="node49" href="$_time_to_frame_8h.html#acce6a90aebf40509e02a2c7c6cc3dc3d" title="Second_To_Frame" alt="" coords="851,1403,982,1430"/>
+<area shape="rect" id="node43" href="$class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="1102,1207,1283,1248"/>
+<area shape="rect" id="node44" href="$class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="1099,1273,1287,1299"/>
+<area shape="rect" id="node45" href="$class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="1095,1324,1291,1365"/>
+<area shape="rect" id="node46" href="$class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="1087,1389,1298,1431"/>
+<area shape="rect" id="node47" href="$class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd" title="MatrixExtend::UpdateWorld\lMatrixSRT" alt="" coords="1101,1455,1284,1496"/>
+</map>

@@ -2,49 +2,78 @@
 \label{class_game_scene}\index{Game\+Scene@{Game\+Scene}}
 
 
-ゲームシーンクラス  
+ゲームシーン\+Class  
 
 
 
 
 {\ttfamily \#include $<$Game\+Scene.\+h$>$}
 
-Game\+Scene の継承関係図\begin{figure}[H]
+
+
+Game\+Scene の継承関係図
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_game_scene}
+\includegraphics[width=151pt]{class_game_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Game\+Scene 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_game_scene_a7c9e00b7dddd016d9c07f8cb49e7bbb2}{Game\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$state)
+\mbox{\hyperlink{class_game_scene_a25e9e82ce85255dac27cd6489751bd40}{Game\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$state)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_game_scene_afb9c99f2e9b94bfc4f151bed83b1a522}{Get\+Is\+Clear}} ()
+bool \mbox{\hyperlink{class_game_scene_a56604f01c0fa914660c3d8b788a94405}{get\+Is\+Clear}} ()
 \item 
-void \mbox{\hyperlink{class_game_scene_aac6f0f69d7ad5745e49f41425d7df793}{Set\+Is\+Clear}} (bool value)
+void \mbox{\hyperlink{class_game_scene_a1bd84ecb8d44bd5e57b4a2d772ef1bf9}{set\+Is\+Clear}} (bool value)
 \item 
-int \mbox{\hyperlink{class_game_scene_a903dffd64231c226daf27f22893893d8}{Get\+Score}} ()
+int \mbox{\hyperlink{class_game_scene_a16b26b3b8ea91dcaf762292414bf5d6d}{get\+Score}} ()
 \item 
-void \mbox{\hyperlink{class_game_scene_aec5425818644ea2cb22ccffc89c56378}{Set\+Score}} (int value)
+void \mbox{\hyperlink{class_game_scene_a853fefbf82ff85b9f34e325108ae7e3b}{set\+Score}} (int value)
 \item 
 int \mbox{\hyperlink{class_game_scene_a2f8413f473bc9a937fa02bfd4678d61d}{get\+Game\+Over}} ()
 \item 
 void \mbox{\hyperlink{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}{set\+Game\+Over}} (int value)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_scene_a48cf67b81c80718df80ee03aa6e73e74}{is\+\_\+clear\+\_\+}} = false
+\begin{DoxyCompactList}\small\item\em クリアフラグ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_scene_afe49ee089b9ad8415f7ab432a3c554aa}{score\+\_\+}} = 0
+\begin{DoxyCompactList}\small\item\em スコア \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_scene_a92b5476dc1536c43b604bef51cc36c70}{game\+\_\+over\+\_\+}} = -\/1
+\begin{DoxyCompactList}\small\item\em ゲームオーバーフラグ \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
-ゲームシーンクラス 
+ゲームシーン\+Class 
 
-ゲームシーンを管理するクラス。 ゲームシーン特有の共有データを持っている。 
+ゲームシーンを管理する\+Class
+
+ゲームシーン特有の共有データを持っている 
+
+ Game\+Scene.\+h の 25 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_game_scene_a7c9e00b7dddd016d9c07f8cb49e7bbb2}\label{class_game_scene_a7c9e00b7dddd016d9c07f8cb49e7bbb2}} 
+\mbox{\Hypertarget{class_game_scene_a25e9e82ce85255dac27cd6489751bd40}\label{class_game_scene_a25e9e82ce85255dac27cd6489751bd40}} 
 \index{Game\+Scene@{Game\+Scene}!Game\+Scene@{Game\+Scene}}
 \index{Game\+Scene@{Game\+Scene}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{Game\+Scene()}{GameScene()}}
-{\footnotesize\ttfamily Game\+Scene\+::\+Game\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Game\+Scene\+::\+Game\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -52,9 +81,13 @@ void \mbox{\hyperlink{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}{set\+G
 
 
 \begin{DoxyParams}{引数}
-{\em state} & \+: 最初のステート \\
+{\em state} & 最初のステート \\
 \hline
 \end{DoxyParams}
+
+
+ Game\+Scene.\+h の 44 行目に定義があります。
+
 
 
 \subsection{関数詳解}
@@ -64,35 +97,142 @@ void \mbox{\hyperlink{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}{set\+G
 \subsubsection{\texorpdfstring{get\+Game\+Over()}{getGameOver()}}
 {\footnotesize\ttfamily int Game\+Scene\+::get\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_game_scene_afb9c99f2e9b94bfc4f151bed83b1a522}\label{class_game_scene_afb9c99f2e9b94bfc4f151bed83b1a522}} 
-\index{Game\+Scene@{Game\+Scene}!Get\+Is\+Clear@{Get\+Is\+Clear}}
-\index{Get\+Is\+Clear@{Get\+Is\+Clear}!Game\+Scene@{Game\+Scene}}
-\subsubsection{\texorpdfstring{Get\+Is\+Clear()}{GetIsClear()}}
-{\footnotesize\ttfamily bool Game\+Scene\+::\+Get\+Is\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_game_scene_a903dffd64231c226daf27f22893893d8}\label{class_game_scene_a903dffd64231c226daf27f22893893d8}} 
-\index{Game\+Scene@{Game\+Scene}!Get\+Score@{Get\+Score}}
-\index{Get\+Score@{Get\+Score}!Game\+Scene@{Game\+Scene}}
-\subsubsection{\texorpdfstring{Get\+Score()}{GetScore()}}
-{\footnotesize\ttfamily int Game\+Scene\+::\+Get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+ Game\+Scene.\+h の 51 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_a2f8413f473bc9a937fa02bfd4678d61d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_scene_a56604f01c0fa914660c3d8b788a94405}\label{class_game_scene_a56604f01c0fa914660c3d8b788a94405}} 
+\index{Game\+Scene@{Game\+Scene}!get\+Is\+Clear@{get\+Is\+Clear}}
+\index{get\+Is\+Clear@{get\+Is\+Clear}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{get\+Is\+Clear()}{getIsClear()}}
+{\footnotesize\ttfamily bool Game\+Scene\+::get\+Is\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Game\+Scene.\+h の 47 行目に定義があります。
+
+\mbox{\Hypertarget{class_game_scene_a16b26b3b8ea91dcaf762292414bf5d6d}\label{class_game_scene_a16b26b3b8ea91dcaf762292414bf5d6d}} 
+\index{Game\+Scene@{Game\+Scene}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{get\+Score()}{getScore()}}
+{\footnotesize\ttfamily int Game\+Scene\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Game\+Scene.\+h の 49 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_a16b26b3b8ea91dcaf762292414bf5d6d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}\label{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}} 
 \index{Game\+Scene@{Game\+Scene}!set\+Game\+Over@{set\+Game\+Over}}
 \index{set\+Game\+Over@{set\+Game\+Over}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{set\+Game\+Over()}{setGameOver()}}
 {\footnotesize\ttfamily void Game\+Scene\+::set\+Game\+Over (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_game_scene_aac6f0f69d7ad5745e49f41425d7df793}\label{class_game_scene_aac6f0f69d7ad5745e49f41425d7df793}} 
-\index{Game\+Scene@{Game\+Scene}!Set\+Is\+Clear@{Set\+Is\+Clear}}
-\index{Set\+Is\+Clear@{Set\+Is\+Clear}!Game\+Scene@{Game\+Scene}}
-\subsubsection{\texorpdfstring{Set\+Is\+Clear()}{SetIsClear()}}
-{\footnotesize\ttfamily void Game\+Scene\+::\+Set\+Is\+Clear (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{class_game_scene_aec5425818644ea2cb22ccffc89c56378}\label{class_game_scene_aec5425818644ea2cb22ccffc89c56378}} 
-\index{Game\+Scene@{Game\+Scene}!Set\+Score@{Set\+Score}}
-\index{Set\+Score@{Set\+Score}!Game\+Scene@{Game\+Scene}}
-\subsubsection{\texorpdfstring{Set\+Score()}{SetScore()}}
-{\footnotesize\ttfamily void Game\+Scene\+::\+Set\+Score (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+ Game\+Scene.\+h の 52 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_scene_a1bd84ecb8d44bd5e57b4a2d772ef1bf9}\label{class_game_scene_a1bd84ecb8d44bd5e57b4a2d772ef1bf9}} 
+\index{Game\+Scene@{Game\+Scene}!set\+Is\+Clear@{set\+Is\+Clear}}
+\index{set\+Is\+Clear@{set\+Is\+Clear}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{set\+Is\+Clear()}{setIsClear()}}
+{\footnotesize\ttfamily void Game\+Scene\+::set\+Is\+Clear (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Game\+Scene.\+h の 48 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_a1bd84ecb8d44bd5e57b4a2d772ef1bf9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_scene_a853fefbf82ff85b9f34e325108ae7e3b}\label{class_game_scene_a853fefbf82ff85b9f34e325108ae7e3b}} 
+\index{Game\+Scene@{Game\+Scene}!set\+Score@{set\+Score}}
+\index{set\+Score@{set\+Score}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{set\+Score()}{setScore()}}
+{\footnotesize\ttfamily void Game\+Scene\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Game\+Scene.\+h の 50 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_a853fefbf82ff85b9f34e325108ae7e3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_game_scene_a92b5476dc1536c43b604bef51cc36c70}\label{class_game_scene_a92b5476dc1536c43b604bef51cc36c70}} 
+\index{Game\+Scene@{Game\+Scene}!game\+\_\+over\+\_\+@{game\+\_\+over\+\_\+}}
+\index{game\+\_\+over\+\_\+@{game\+\_\+over\+\_\+}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{game\+\_\+over\+\_\+}{game\_over\_}}
+{\footnotesize\ttfamily int Game\+Scene\+::game\+\_\+over\+\_\+ = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ゲームオーバーフラグ 
+
+
+
+ Game\+Scene.\+h の 33 行目に定義があります。
+
+\mbox{\Hypertarget{class_game_scene_a48cf67b81c80718df80ee03aa6e73e74}\label{class_game_scene_a48cf67b81c80718df80ee03aa6e73e74}} 
+\index{Game\+Scene@{Game\+Scene}!is\+\_\+clear\+\_\+@{is\+\_\+clear\+\_\+}}
+\index{is\+\_\+clear\+\_\+@{is\+\_\+clear\+\_\+}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{is\+\_\+clear\+\_\+}{is\_clear\_}}
+{\footnotesize\ttfamily bool Game\+Scene\+::is\+\_\+clear\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+クリアフラグ 
+
+
+
+ Game\+Scene.\+h の 31 行目に定義があります。
+
+\mbox{\Hypertarget{class_game_scene_afe49ee089b9ad8415f7ab432a3c554aa}\label{class_game_scene_afe49ee089b9ad8415f7ab432a3c554aa}} 
+\index{Game\+Scene@{Game\+Scene}!score\+\_\+@{score\+\_\+}}
+\index{score\+\_\+@{score\+\_\+}!Game\+Scene@{Game\+Scene}}
+\subsubsection{\texorpdfstring{score\+\_\+}{score\_}}
+{\footnotesize\ttfamily int Game\+Scene\+::score\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+スコア 
+
+
+
+ Game\+Scene.\+h の 32 行目に定義があります。
 
 
 

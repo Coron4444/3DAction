@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    チュートリアルシーンステートクラス(スタート)
-//    Author : Araki Kai                                作成日 : 2018/11/06
-//
+//!	@file	 TutorialSceneState_Start.cpp
+//!	@brief	 チュートリアルシーンステート(スタート)Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
 
 
@@ -28,7 +28,7 @@
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -44,7 +44,7 @@ void TutorialSceneState_Start::Init()
 
 	// チュートリアルロゴ
 	TutorialLogoFactory tutorial_logo_factory;
-	tutorial_scene_->SetTutorialLogo(tutorial_logo_factory.Create());
+	tutorial_scene_->setTutorialLogo(tutorial_logo_factory.Create());
 
 	// プッシュスペースロゴ
 	PushSpaceLogoFactory push_space_logo_factory;
@@ -70,7 +70,7 @@ void TutorialSceneState_Start::Update()
 {
 	if (GetKeyboardTrigger(DIK_SPACE))
 	{
-		tutorial_scene_->SetState(new TutorialSceneState_End());
+		tutorial_scene_->setState(new TutorialSceneState_End());
 	}
 }
 

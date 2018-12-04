@@ -6,5 +6,6 @@ var class_sky_dome_draw =
     [ "GetMatrix", "class_sky_dome_draw.html#ab947a3d43975a6d95149bc112c08ce05", null ],
     [ "GetMeshNum", "class_sky_dome_draw.html#a7ecd8d4b987e4d58a247d3438a45f9d4", null ],
     [ "Init", "class_sky_dome_draw.html#a5b82e8b650a20dbc0b7ed720d1fb7fab", null ],
-    [ "Uninit", "class_sky_dome_draw.html#aee1c6b102a97033073b2559b8c2c328b", null ]
+    [ "Uninit", "class_sky_dome_draw.html#aee1c6b102a97033073b2559b8c2c328b", null ],
+    [ "sky_dome_model_", "class_sky_dome_draw.html#a2453fb04f979443c61acc10eafa183aa", null ]
 ];

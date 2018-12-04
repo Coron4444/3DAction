@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    ゲームシステムクラス
-//    Author : Araki Kai                                作成日 : 2018/05/08
-//
+//!	@file	 GameSystem.cpp
+//!	@brief	 ゲームシステムClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
 
 
@@ -13,28 +13,29 @@
 #include <assert.h>
 
 #include "GameSystem.h"
-#include <SafeRelease/SafeRelease.h>
+
 #include <Renderer/Renderer.h>
-#include <Renderer/RendererFactory/RendererFactoryDirectX9.h>
-#include <Keyboard\Keyboard.h>
-#include <Controller\Controller.h>
-#include <Sound\Sound.h>
-#include <SceneManager\SceneManager.h>
-#include <Scenes\TitleScene\TitleScene.h>
+#include <Renderer/RendererFactory/RendererFactoryDirectX9/RendererFactoryDirectX9.h>
+#include <SafeRelease/SafeRelease.h>
+#include <Controller/Controller.h>
+#include <Keyboard/Keyboard.h>
+#include <Sound/Sound.h>
+#include <SceneManager/SceneManager.h>
+#include <Scenes/TitleScene/TitleScene.h>
 #include <Scenes/TitleScene/TitleSceneState/TitleSceneState_Start/TitleSceneState_Start.h>
-#include <Scenes\GameScene\GameScene.h>
+#include <Scenes/GameScene/GameScene.h>
 #include <Scenes/GameScene/GameSceneState/GameSceneState_Start/GameSceneState_Start.h>
 
 
 //#ifdef _DEBUG
-#include <ImGUI\imgui.h>
-#include <ImGUI\imgui_impl_dx9.h>
+#include <ImGUI/imgui.h>
+#include <ImGUI/imgui_impl_dx9.h>
 //#endif
 
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -43,10 +44,10 @@ bool GameSystem::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 					  int window_width, int window_height)
 {
 	// レンダラーの初期化
-	Renderer::GetInstance()->SetRenderer(new RendererFactoryDirectX9(),
-										 Renderer::MODE::DIRECTX9);
-	bool is_init = Renderer::GetInstance()->Init(hInstance, hWnd, is_full_screen,
-												 window_width, window_height);
+	Renderer::getpInstance()->setRenderer(new RendererFactoryDirectX9(),
+										  Renderer::MODE::DIRECTX9);
+	bool is_init = Renderer::getpInstance()->Init(hInstance, hWnd, is_full_screen,
+												  window_width, window_height);
 
 #ifdef _DEBUG
 	assert(is_init && "DirectX9用レンダラーの初期化に失敗!!");
@@ -63,7 +64,7 @@ bool GameSystem::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 	// ImGUIの初期化
 //#ifdef _DEBUG
 	LPDIRECT3DDEVICE9 device = nullptr;
-	Renderer::GetInstance()->GetDevice(&device);
+	Renderer::getpInstance()->getDevice(&device);
 	if (device == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(GameSystem.cpp)", "Error", MB_OK);
@@ -73,7 +74,8 @@ bool GameSystem::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 //#endif
 
 	// シーンマネージャーの生成
-	scene_manager_ = new SceneManager(new TitleScene(new TitleSceneState_Start()));
+	scene_manager_ = new SceneManager();
+	scene_manager_->Init(new TitleScene(new TitleSceneState_Start()));
 
 	return true;
 }
@@ -86,7 +88,7 @@ bool GameSystem::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 void GameSystem::Uninit()
 {
 	// シーンマネージャーの解放
-	SafeRelease::Normal(&scene_manager_);
+	SafeRelease::PlusUninit(&scene_manager_);
 
 	// ImGUIの終了
 //#ifdef _DEBUG
@@ -100,7 +102,7 @@ void GameSystem::Uninit()
 	UninitSound();
 
 	// レンダラーの終了
-	Renderer::GetInstance()->Uninit();
+	Renderer::getpInstance()->Uninit();
 	Renderer::ReleaseInstance();
 }
 
@@ -148,7 +150,7 @@ void GameSystem::Draw()
 //#endif
 
 	// バックバッファをフロントバッファに反映
-	Renderer::GetInstance()->Present();
+	Renderer::getpInstance()->Present();
 }
 
 

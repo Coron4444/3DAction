@@ -28,13 +28,13 @@
 void NumberDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// ダウンキャスト
-	number_ = (Number*)GetGameObject();
+	number_ = (Number*)getpGameObject();
 }
 
 
@@ -44,7 +44,7 @@ void NumberDraw::Init()
 //--------------------------------------------------
 void NumberDraw::Uninit()
 {
-	
+
 }
 
 
@@ -63,24 +63,24 @@ void NumberDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* NumberDraw::GetMatrix(unsigned object_index)
+unsigned NumberDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
-
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return number_->plane_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned NumberDraw::GetMeshNum(unsigned object_index)
+MATRIX* NumberDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
-	return number_->plane_polygon_->GetMeshNum();
+
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -88,7 +88,7 @@ unsigned NumberDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* NumberDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* NumberDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -101,8 +101,8 @@ D3DMATERIAL9* NumberDraw::GetMaterial(unsigned object_index, unsigned mesh_index
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 NumberDraw::GetDecaleTexture(unsigned object_index, 
-												unsigned mesh_index)
+LPDIRECT3DTEXTURE9 NumberDraw::getpDecaleTexture(unsigned object_index,
+												 unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

@@ -1,21 +1,17 @@
 //================================================================================
-//
-//    三角形クラス
-//    Author : Araki Kai                                作成日 : 2017/11/28
-//
+//!	@file	 Triangle.h
+//!	@brief	 三角形Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/02
 //================================================================================
-
 #ifndef	_TRIANGLE_H_
 #define _TRIANGLE_H_
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include "../CollisionShapeBase.h"
 #include "../Plane/Plane.h"
 
@@ -23,96 +19,78 @@
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+//************************************************************														   
+//! @brief   三角形Class
+//!
+//! @details 三角形のClass
+//************************************************************
 class Triangle : public CollisionShapeBase
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// 3点引数コンストラクタ
-	Triangle(Vec3 point0 = Vec3(0.0f, 0.0f, 0.0f), Vec3 point1 = Vec3(0.0f, 0.0f, 0.0f), Vec3 point2 = Vec3(0.0f, 0.0f, 0.0f));
+//====================
+// 変数
+//====================
+private:
+	Vector3D point0_;		//!< 点
+	Vector3D point1_;		//!< 点
+	Vector3D point2_;		//!< 点
+	Plane plane_;			//!< 平面
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デストラクタ
-	virtual ~Triangle();
+//====================
+// 関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	Triangle() : CollisionShapeBase(CollisionShapeBase::Type::TRIANGLE) {}
+	
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param[in] point0 点
+	//! @param[in] point0 点
+	//! @param[in] point0 点
+	//! @retval void なし
+	//----------------------------------------
+	void Init(Vec3 point0, Vec3 point1, Vec3 point2)
+	{
+		// 3点
+		point0_ = point0;
+		point1_ = point1;
+		point2_ = point2;
 
+		// 平面
+		plane_.Init(point0, point1, point2);
+	}
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ関数	
-	bool CheckInnerPoint( Vec3 point ) const;
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ変数
-	Vector3D point_[3];
-	Plane    plane_;
+	// プロパティ
+	Vector3D* getpPoint0() { return &point0_; }
+	Vector3D* getpPoint1() { return &point1_; }
+	Vector3D* getpPoint2() { return &point2_; }
+	Plane* getpPlane() { return &plane_; }
 };
 
 
 
-
-
-//======================================================================
-//
-// 非静的メンバ関数定義( inline )
-//
-//======================================================================
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
-// [ 3点引数コンストラクタ ]
+// [ 点が三角平面に含まれているかどうか ]
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-inline Triangle::Triangle(Vec3 point0, Vec3 point1, Vec3 point2)
-	: CollisionShapeBase(CollisionShapeBase::Type::TRIANGLE),
-	  plane_(point0, point1, point2)
-{
-	point_[0] = point0;
-	point_[1] = point1;
-	point_[2] = point2;
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Triangle::~Triangle() 
-{
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline bool Triangle::CheckInnerPoint( Vec3 point ) const
+bool CheckInnerPoint(Triangle* triangle, Vec3* point)
 {
 	// 任意の点から各頂点へのベクトルを算出
-	Vector3D vector0 = point_[0] - point;
-	Vector3D vector1 = point_[1] - point;
-	Vector3D vector2 = point_[2] - point;
+	Vector3D vector0 = *triangle->getpPoint0() - *point;
+	Vector3D vector1 = *triangle->getpPoint1() - *point;
+	Vector3D vector2 = *triangle->getpPoint2() - *point;
 
 
 	// 3角形の辺をなぞるベクトルを算出
-	Vector3D edge_vector0 = point_[0] - point_[1];
-	Vector3D edge_vector1 = point_[1] - point_[2];
-	Vector3D edge_vector2 = point_[2] - point_[0];
+	Vector3D edge_vector0 = *triangle->getpPoint0() - *triangle->getpPoint1();
+	Vector3D edge_vector1 = *triangle->getpPoint1() - *triangle->getpPoint2();
+	Vector3D edge_vector2 = *triangle->getpPoint2() - *triangle->getpPoint0();
 
 
 	// 外積の算出

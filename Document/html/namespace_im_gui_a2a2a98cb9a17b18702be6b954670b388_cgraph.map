@@ -1,0 +1,13 @@
+<map id="ImGui::ColorPicker3" name="ImGui::ColorPicker3">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a3d5aae9e0a14aa051d5a799abbe97b32" title="ImGui::ColorPicker4" alt="" coords="192,157,331,184"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="573,157,747,184"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a27a8533605dc5b8cabf161bf7715bbde" title="ImGui::PushID" alt="" coords="391,81,498,108"/>
+<area shape="rect" id="node10" href="$namespace_im_gui.html#a42407e196b7ed2a8755bff28aae9805f" title="ImGui::BeginGroup" alt="" coords="379,208,511,235"/>
+<area shape="rect" id="node5" href="$namespace_im_gui.html#a408f9ddac92f8629a7e273ced5f8c3aa" title="ImGui::GetCurrentWindowRead" alt="" coords="559,107,761,133"/>
+<area shape="rect" id="node6" href="$class_im_vector.html#a68387993f2a5f5c3b2a7139d9ab778b8" title="ImVector::push_back" alt="" coords="587,5,733,32"/>
+<area shape="rect" id="node7" href="$struct_im_gui_window.html#a66400a63bc0b54d7d29e08d1b1b1a42b" title="ImGuiWindow::GetID" alt="" coords="589,56,731,83"/>
+<area shape="rect" id="node8" href="$imgui_8cpp.html#aa55e55e944172fc87494a342da489970" title="ImHash" alt="" coords="843,31,909,57"/>
+<area shape="rect" id="node9" href="$namespace_im_gui.html#a85a245c78a9f7c351636bdad6e60c488" title="ImGui::KeepAliveID" alt="" coords="809,81,943,108"/>
+<area shape="rect" id="node11" href="$class_im_vector.html#ac371dd62e56ae486b1a5038cf07eee56" title="ImVector::resize" alt="" coords="601,208,719,235"/>
+<area shape="rect" id="node12" href="$class_im_vector.html#a3e4424d3fca190894598a6575f9d2401" title="ImVector::back" alt="" coords="605,259,715,285"/>
+</map>

@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Pixel\+Shader\+Base.\+h$>$}
 
-Pixel\+Shader\+Base の継承関係図\begin{figure}[H]
+
+
+Pixel\+Shader\+Base の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_pixel_shader_base}
+\includegraphics[width=211pt]{class_pixel_shader_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Pixel\+Shader\+Base 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_pixel_shader_base__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -26,6 +38,11 @@ void \mbox{\hyperlink{class_pixel_shader_base_a8e00c19f5ece0a08762442f355195591}
 \begin{DoxyCompactList}\small\item\em ピクセルシェーダー解放関数 \end{DoxyCompactList}\item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{class_pixel_shader_base_a936a4a1e99488854ffdd4cc245134481}{Get\+Pixel\+Shader}} ()
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{class_pixel_shader_base_a5d7213c21268dc57ef82d37a64ff942f}{pixel\+\_\+shader\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em ピクセルシェーダー \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -33,12 +50,20 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{cl
 
 ピクセルシェーダー基底クラス 
 
+ Pixel\+Shader\+Base.\+h の 26 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_pixel_shader_base_a936a4a1e99488854ffdd4cc245134481}\label{class_pixel_shader_base_a936a4a1e99488854ffdd4cc245134481}} 
 \index{Pixel\+Shader\+Base@{Pixel\+Shader\+Base}!Get\+Pixel\+Shader@{Get\+Pixel\+Shader}}
 \index{Get\+Pixel\+Shader@{Get\+Pixel\+Shader}!Pixel\+Shader\+Base@{Pixel\+Shader\+Base}}
 \subsubsection{\texorpdfstring{Get\+Pixel\+Shader()}{GetPixelShader()}}
 {\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 Pixel\+Shader\+Base\+::\+Get\+Pixel\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Pixel\+Shader\+Base.\+h の 87 行目に定義があります。
 
 \mbox{\Hypertarget{class_pixel_shader_base_ac572f1cb13a4486fc8bc2e60e5a14dc4}\label{class_pixel_shader_base_ac572f1cb13a4486fc8bc2e60e5a14dc4}} 
 \index{Pixel\+Shader\+Base@{Pixel\+Shader\+Base}!Pixel\+Shader\+Compile@{Pixel\+Shader\+Compile}}
@@ -58,6 +83,24 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{cl
 \begin{DoxyReturn}{戻り値}
 コンパイル成功ならtrue 
 \end{DoxyReturn}
+
+
+ Pixel\+Shader\+Base.\+h の 57 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_base_ac572f1cb13a4486fc8bc2e60e5a14dc4_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_base_ac572f1cb13a4486fc8bc2e60e5a14dc4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_pixel_shader_base_a8e00c19f5ece0a08762442f355195591}\label{class_pixel_shader_base_a8e00c19f5ece0a08762442f355195591}} 
 \index{Pixel\+Shader\+Base@{Pixel\+Shader\+Base}!Release\+Pixel\+Shader@{Release\+Pixel\+Shader}}
 \index{Release\+Pixel\+Shader@{Release\+Pixel\+Shader}!Pixel\+Shader\+Base@{Pixel\+Shader\+Base}}
@@ -68,6 +111,24 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{cl
 
 ピクセルシェーダー解放関数 
 
+
+
+ Pixel\+Shader\+Base.\+h の 81 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_base_a8e00c19f5ece0a08762442f355195591_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_base_a8e00c19f5ece0a08762442f355195591_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_pixel_shader_base_a73f41bda5cbb9309ad415cdc471954a2}\label{class_pixel_shader_base_a73f41bda5cbb9309ad415cdc471954a2}} 
 \index{Pixel\+Shader\+Base@{Pixel\+Shader\+Base}!Set\+Shader@{Set\+Shader}}
 \index{Set\+Shader@{Set\+Shader}!Pixel\+Shader\+Base@{Pixel\+Shader\+Base}}
@@ -81,6 +142,42 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 \mbox{\hyperlink{cl
 
 
 \mbox{\hyperlink{class_shader_base_af45063254b80602db8626360d643baee}{Shader\+Base}}を実装しています。
+
+
+
+ Pixel\+Shader\+Base.\+h の 43 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_base_a73f41bda5cbb9309ad415cdc471954a2_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pixel_shader_base_a73f41bda5cbb9309ad415cdc471954a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_pixel_shader_base_a5d7213c21268dc57ef82d37a64ff942f}\label{class_pixel_shader_base_a5d7213c21268dc57ef82d37a64ff942f}} 
+\index{Pixel\+Shader\+Base@{Pixel\+Shader\+Base}!pixel\+\_\+shader\+\_\+@{pixel\+\_\+shader\+\_\+}}
+\index{pixel\+\_\+shader\+\_\+@{pixel\+\_\+shader\+\_\+}!Pixel\+Shader\+Base@{Pixel\+Shader\+Base}}
+\subsubsection{\texorpdfstring{pixel\+\_\+shader\+\_\+}{pixel\_shader\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+P\+I\+X\+E\+L\+S\+H\+A\+D\+E\+R9 Pixel\+Shader\+Base\+::pixel\+\_\+shader\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ピクセルシェーダー 
+
+
+
+ Pixel\+Shader\+Base.\+h の 32 行目に定義があります。
 
 
 

@@ -84,14 +84,15 @@ public:
 	}
 
 	// プロパティ
-	const MATRIX* GetMatrix(unsigned object_index) override
+	MATRIX* getpMatrix(unsigned object_index) override
 	{
 		object_index = object_index;
-		return transform_.GetMatrixExtend()->GetWorldMatrix();
+		return transform_.getpMatrixExtend()->GetWorldMatrix();
 	}
-
-	D3DMATERIAL9* GetMaterial()
+	D3DMATERIAL9* getpMaterial(unsigned object_index, unsigned mesh_index) override
 	{
+		object_index = object_index;
+		mesh_index = mesh_index;
 		return plane_polygon_->GetMaterial();
 	}
 };

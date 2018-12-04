@@ -91,16 +91,27 @@ $(document).ready(function(){initNavTree('class_renderer.html','');});
 <a href="#pub-types">公開型</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_renderer-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">Renderer クラス</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>レンダラークラス  
+<p>レンダラーClass  
  <a href="class_renderer.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="_renderer_8h_source.html">Renderer.h</a>&gt;</code></p>
+<div class="dynheader">
+Renderer 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer__coll__graph.png" border="0" usemap="#_renderer_coll__map" alt="Collaboration graph"/></div>
+<map name="_renderer_coll__map" id="_renderer_coll__map">
+<area shape="rect" id="node2" href="class_renderer_interface.html" title="レンダラーInterfaceClass " alt="" coords="5,5,128,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 公開型</h2></td></tr>
@@ -132,31 +143,55 @@ $(document).ready(function(){initNavTree('class_renderer.html','');});
 <tr class="memitem:a1dac4baae1fa79166442b0778a9c8728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a1dac4baae1fa79166442b0778a9c8728">Present</a> ()</td></tr>
 <tr class="memdesc:a1dac4baae1fa79166442b0778a9c8728"><td class="mdescLeft">&#160;</td><td class="mdescRight">バックバッファをフロントバッファに反映関数  <a href="#a1dac4baae1fa79166442b0778a9c8728">[詳解]</a><br /></td></tr>
 <tr class="separator:a1dac4baae1fa79166442b0778a9c8728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a249147991a8187a3d373fd6bd43e8c54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a249147991a8187a3d373fd6bd43e8c54">SetRenderer</a> (<a class="el" href="class_renderer_factory.html">RendererFactory</a> *factory, <a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835fec">MODE</a> mode)</td></tr>
-<tr class="memdesc:a249147991a8187a3d373fd6bd43e8c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダラー設定関数  <a href="#a249147991a8187a3d373fd6bd43e8c54">[詳解]</a><br /></td></tr>
-<tr class="separator:a249147991a8187a3d373fd6bd43e8c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ee43ba8d87142ff334ae7016cae9050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer_interface.html">RendererInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a4ee43ba8d87142ff334ae7016cae9050">GetRenderer</a> ()</td></tr>
-<tr class="memdesc:a4ee43ba8d87142ff334ae7016cae9050"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダラー取得関数  <a href="#a4ee43ba8d87142ff334ae7016cae9050">[詳解]</a><br /></td></tr>
-<tr class="separator:a4ee43ba8d87142ff334ae7016cae9050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15585698849fcba4722ac0f00b8b62e6"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:a15585698849fcba4722ac0f00b8b62e6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_renderer.html#a15585698849fcba4722ac0f00b8b62e6">GetInterface</a> (Type **pointer)</td></tr>
-<tr class="memdesc:a15585698849fcba4722ac0f00b8b62e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">インターフェース取得関数  <a href="#a15585698849fcba4722ac0f00b8b62e6">[詳解]</a><br /></td></tr>
-<tr class="separator:a15585698849fcba4722ac0f00b8b62e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6610c3a85a8170141c4584cecf4a6d15"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:a6610c3a85a8170141c4584cecf4a6d15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_renderer.html#a6610c3a85a8170141c4584cecf4a6d15">GetDevice</a> (Type **pointer)</td></tr>
-<tr class="memdesc:a6610c3a85a8170141c4584cecf4a6d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバイス取得関数  <a href="#a6610c3a85a8170141c4584cecf4a6d15">[詳解]</a><br /></td></tr>
-<tr class="separator:a6610c3a85a8170141c4584cecf4a6d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581267c3eeedce9b333c119d009e315c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer_interface.html">RendererInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a581267c3eeedce9b333c119d009e315c">getRenderer</a> ()</td></tr>
+<tr class="separator:a581267c3eeedce9b333c119d009e315c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e3c483b2c9d8024e51639a06159066"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a02e3c483b2c9d8024e51639a06159066">setRenderer</a> (<a class="el" href="class_renderer_factory_interface.html">RendererFactoryInterface</a> *factory, <a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835fec">MODE</a> mode)</td></tr>
+<tr class="separator:a02e3c483b2c9d8024e51639a06159066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e77556825755be3db8a5a734460e66f"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a6e77556825755be3db8a5a734460e66f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_renderer.html#a6e77556825755be3db8a5a734460e66f">getInterface</a> (Type **pointer)</td></tr>
+<tr class="separator:a6e77556825755be3db8a5a734460e66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56662123051f8898c4e8e9d5457fd317"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a56662123051f8898c4e8e9d5457fd317"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_renderer.html#a56662123051f8898c4e8e9d5457fd317">getDevice</a> (Type **pointer)</td></tr>
+<tr class="separator:a56662123051f8898c4e8e9d5457fd317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
-<tr class="memitem:a8c287bd7009d4717336ab1a9e1a556bd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a8c287bd7009d4717336ab1a9e1a556bd">GetInstance</a> ()</td></tr>
-<tr class="separator:a8c287bd7009d4717336ab1a9e1a556bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ac523172faaf376ecddaed4bdc0781"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#aa7ac523172faaf376ecddaed4bdc0781">ReleaseInstance</a> ()</td></tr>
+<tr class="memdesc:aa7ac523172faaf376ecddaed4bdc0781"><td class="mdescLeft">&#160;</td><td class="mdescRight">インスタンス解放関数  <a href="#aa7ac523172faaf376ecddaed4bdc0781">[詳解]</a><br /></td></tr>
 <tr class="separator:aa7ac523172faaf376ecddaed4bdc0781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bf10ff8b4f967f0d416a26d482abd6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6">getInstance</a> ()</td></tr>
+<tr class="separator:ac1bf10ff8b4f967f0d416a26d482abd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7ebf46f54dab9905f79b80f7fddb76a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6">Renderer</a> ()</td></tr>
+<tr class="memdesc:a7ebf46f54dab9905f79b80f7fddb76a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a7ebf46f54dab9905f79b80f7fddb76a6">[詳解]</a><br /></td></tr>
+<tr class="separator:a7ebf46f54dab9905f79b80f7fddb76a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7732f4c952f3c13d9bb03a7510b7aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a1e7732f4c952f3c13d9bb03a7510b7aa">Renderer</a> (const <a class="el" href="class_renderer.html">Renderer</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:a1e7732f4c952f3c13d9bb03a7510b7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80abe5f35a095f221f8c43916900d66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer.html">Renderer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ab80abe5f35a095f221f8c43916900d66">operator=</a> (const <a class="el" href="class_renderer.html">Renderer</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:ab80abe5f35a095f221f8c43916900d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:adaed44b3c6c8b0879b8cd52f677941cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835fec">MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#adaed44b3c6c8b0879b8cd52f677941cf">mode_</a> = MODE::NONE</td></tr>
+<tr class="memdesc:adaed44b3c6c8b0879b8cd52f677941cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">モード  <a href="#adaed44b3c6c8b0879b8cd52f677941cf">[詳解]</a><br /></td></tr>
+<tr class="separator:adaed44b3c6c8b0879b8cd52f677941cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:aa0ca48ac8408e8726d5dd135432ae4fa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_renderer.html">Renderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#aa0ca48ac8408e8726d5dd135432ae4fa">instance_</a> = nullptr</td></tr>
+<tr class="memdesc:aa0ca48ac8408e8726d5dd135432ae4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">インスタンス  <a href="#aa0ca48ac8408e8726d5dd135432ae4fa">[詳解]</a><br /></td></tr>
+<tr class="separator:aa0ca48ac8408e8726d5dd135432ae4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d00cd885d84ff355228d884c0215dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_renderer_interface.html">RendererInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a64d00cd885d84ff355228d884c0215dc">renderer_</a> = nullptr</td></tr>
+<tr class="memdesc:a64d00cd885d84ff355228d884c0215dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">レンダラー  <a href="#a64d00cd885d84ff355228d884c0215dc">[詳解]</a><br /></td></tr>
+<tr class="separator:a64d00cd885d84ff355228d884c0215dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>レンダラークラス </p>
-<p>レンダラークラス </p>
+<div class="textblock"><p>レンダラーClass </p>
+<p>レンダラーのClass(Singleton) </p>
+
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00026">26</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="ab5a9379ccadcf2b3394c61cf8c835fec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5a9379ccadcf2b3394c61cf8c835fec">&#9670;&nbsp;</a></span>MODE</h2>
@@ -177,6 +212,113 @@ $(document).ready(function(){initNavTree('class_renderer.html','');});
 <tr><td class="fieldname"><a id="ab5a9379ccadcf2b3394c61cf8c835feca3304c74929f96df4042bc148ee9f3b50"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00032">32</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a7ebf46f54dab9905f79b80f7fddb76a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebf46f54dab9905f79b80f7fddb76a6">&#9670;&nbsp;</a></span>Renderer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Renderer::Renderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00184">184</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6_icgraph.png" border="0" usemap="#class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6_icgraph" alt=""/></div>
+<map name="class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6_icgraph" id="class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6_icgraph">
+<area shape="rect" id="node2" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="188,475,337,502"/>
+<area shape="rect" id="node3" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1357,90,1484,117"/>
+<area shape="rect" id="node6" href="class_game_system.html#af76866bd03b84dca6880f1493fd3c9d1" title="終了関数 " alt="" coords="1560,27,1703,54"/>
+<area shape="rect" id="node7" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1562,239,1701,266"/>
+<area shape="rect" id="node8" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c" title="描画前設定関数 " alt="" coords="407,167,570,208"/>
+<area shape="rect" id="node9" href="class_stencil_shadow_test_draw.html#a68917115d3f151ed91ce297924ee5bbb" title="描画後設定関数 " alt="" coords="407,232,570,273"/>
+<area shape="rect" id="node10" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="433,115,544,142"/>
+<area shape="rect" id="node14" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="675,574,797,601"/>
+<area shape="rect" id="node18" href="class_shader_base.html#aaac3419f1fce5bf12973e827daadbf8c" title="デバイスの初期化関数 " alt="" coords="411,349,567,375"/>
+<area shape="rect" id="node23" href="class_vertex_shader_fixed.html#ae829ff736b33c45543804059255125b6" title="初期化関数 " alt="" coords="657,523,815,550"/>
+<area shape="rect" id="node24" href="class_cube_polygon.html#aee418cf078227778280dafb22d7586bb" title="CubePolygon::CubePolygon" alt="" coords="397,501,581,527"/>
+<area shape="rect" id="node25" href="class_grid_polygon.html#a4fdbbc978d24c751b07c6803eb53075e" title="GridPolygon::GridPolygon" alt="" coords="403,551,575,578"/>
+<area shape="rect" id="node26" href="class_mesh_plane_polygon.html#a7db07104974799895b42997c71ba8d3e" title="MeshPlanePolygon::MeshPlane\lPolygon" alt="" coords="385,603,592,644"/>
+<area shape="rect" id="node27" href="class_plane_polygon.html#a27987c23a242840b142e0fa11650daf6" title="PlanePolygon::PlanePolygon" alt="" coords="393,669,584,695"/>
+<area shape="rect" id="node28" href="class_effekseer_manager.html#a0c9155e72b0552e5138e68be682a63a4" title="EffekseerManager::Draw" alt="" coords="407,719,570,746"/>
+<area shape="rect" id="node29" href="class_effekseer_object.html#a4f8e7ad6b6ebfa341302f6b78e846f1e" title="EffekseerObject::InitRenderer\l_Manager" alt="" coords="393,771,584,812"/>
+<area shape="rect" id="node31" href="class_model_x_object.html#ac005f3f164a1f75d6cfc0772e2e95382" title="ModelXObject::UpdateMesh\lDeclaration" alt="" coords="397,836,580,877"/>
+<area shape="rect" id="node34" href="class_model_x_object.html#ac7a86f4d034600ae5d8f8fd3610f4628" title="ModelXObject::InputModelX" alt="" coords="399,902,579,929"/>
+<area shape="rect" id="node36" href="class_texture_object.html#a93196fc80c026672b8a15cec21ef5dea" title="TextureObject::InputTexture" alt="" coords="397,953,580,979"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1751,90,1912,117"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1960,90,2033,117"/>
+<area shape="rect" id="node11" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="673,115,799,142"/>
+<area shape="rect" id="node12" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="880,115,1051,142"/>
+<area shape="rect" id="node13" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="1123,115,1257,142"/>
+<area shape="rect" id="node15" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="896,503,1035,530"/>
+<area shape="rect" id="node16" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="1099,431,1281,458"/>
+<area shape="rect" id="node17" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1329,361,1512,387"/>
+<area shape="rect" id="node19" href="class_pixel_shader_bump_mapping.html#ab7807b7c56242e965ddb23e66e1a5d9e" title="初期化関数 " alt="" coords="649,407,823,448"/>
+<area shape="rect" id="node20" href="class_pixel_shader_null.html#abfd7a6a986da09061a55d31024219eba" title="初期化関数 " alt="" coords="667,473,805,499"/>
+<area shape="rect" id="node21" href="class_vertex_shader_null.html#af30eb8057fe0537bc6ade214647b6fb5" title="初期化関数 " alt="" coords="662,290,810,317"/>
+<area shape="rect" id="node22" href="class_vertex_shader_bump_mapping.html#a6c0f59d1f29fd883943a66bfe61b6b03" title="初期化関数 " alt="" coords="644,341,828,383"/>
+<area shape="rect" id="node30" href="class_effekseer_object.html#a8e1e081f62efa87b31e00bcfd9cf1a45" title="EffekseerObject::Effekseer\lObject" alt="" coords="648,771,824,812"/>
+<area shape="rect" id="node32" href="class_vertex_shader_bump_mapping.html#a659d50e57533b9cd0204fc169985f1e0" title="頂点宣言用メッシュ更新関数 " alt="" coords="644,836,828,877"/>
+<area shape="rect" id="node33" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68" title="初期化関数 " alt="" coords="909,843,1022,870"/>
+<area shape="rect" id="node35" href="class_model_x_object.html#a83bd334b1f24a69c4cbdcaa62464ff31" title="ModelXObject::ModelXObject" alt="" coords="641,902,831,929"/>
+<area shape="rect" id="node37" href="class_texture_object.html#add74bde2c60ec3d61229ce70b26602f2" title="TextureObject::TextureObject" alt="" coords="640,953,832,979"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e7732f4c952f3c13d9bb03a7510b7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e7732f4c952f3c13d9bb03a7510b7aa">&#9670;&nbsp;</a></span>Renderer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Renderer::Renderer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_renderer.html">Renderer</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
@@ -196,6 +338,42 @@ $(document).ready(function(){initNavTree('class_renderer.html','');});
 </div><div class="memdoc">
 
 <p>描画開始関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>描画開始成功の有無 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a> の <a class="el" href="_renderer_8cpp_source.html#l00086">86</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_af420951c9c163f1151bd6600df204cee_cgraph.png" border="0" usemap="#class_renderer_af420951c9c163f1151bd6600df204cee_cgraph" alt=""/></div>
+<map name="class_renderer_af420951c9c163f1151bd6600df204cee_cgraph" id="class_renderer_af420951c9c163f1151bd6600df204cee_cgraph">
+<area shape="rect" id="node2" href="class_renderer_interface.html#a86a487deb4e4207a67410d00ec670fd7" title="描画開始関数 " alt="" coords="197,5,328,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_af420951c9c163f1151bd6600df204cee_icgraph.png" border="0" usemap="#class_renderer_af420951c9c163f1151bd6600df204cee_icgraph" alt=""/></div>
+<map name="class_renderer_af420951c9c163f1151bd6600df204cee_icgraph" id="class_renderer_af420951c9c163f1151bd6600df204cee_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="197,5,320,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="368,5,507,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="555,5,737,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="785,5,968,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1016,5,1155,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1203,5,1364,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1412,5,1485,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -218,15 +396,45 @@ $(document).ready(function(){initNavTree('class_renderer.html','');});
 <p>描画終了関数 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">is_begin_scene</td><td>: 描画開始が成功しているかフラグ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_begin_scene</td><td>描画開始成功フラグ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
   </table>
   </dd>
 </dl>
 
+<p class="definition"> <a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a> の <a class="el" href="_renderer_8cpp_source.html#l00098">98</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a0393849bd4178a33861780bf07b0deee_cgraph.png" border="0" usemap="#class_renderer_a0393849bd4178a33861780bf07b0deee_cgraph" alt=""/></div>
+<map name="class_renderer_a0393849bd4178a33861780bf07b0deee_cgraph" id="class_renderer_a0393849bd4178a33861780bf07b0deee_cgraph">
+<area shape="rect" id="node2" href="class_renderer_interface.html#a0034a44420e4746062e70e4d66d3bee2" title="描画終了関数 " alt="" coords="188,5,319,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a0393849bd4178a33861780bf07b0deee_icgraph.png" border="0" usemap="#class_renderer_a0393849bd4178a33861780bf07b0deee_icgraph" alt=""/></div>
+<map name="class_renderer_a0393849bd4178a33861780bf07b0deee_icgraph" id="class_renderer_a0393849bd4178a33861780bf07b0deee_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="188,5,311,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="359,5,497,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="545,5,728,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="776,5,959,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1007,5,1145,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1193,5,1355,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1403,5,1476,32"/>
+</map>
+</div>
+
 </div>
 </div>
-<a id="a6610c3a85a8170141c4584cecf4a6d15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6610c3a85a8170141c4584cecf4a6d15">&#9670;&nbsp;</a></span>GetDevice()</h2>
+<a id="a56662123051f8898c4e8e9d5457fd317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56662123051f8898c4e8e9d5457fd317">&#9670;&nbsp;</a></span>getDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +445,7 @@ template&lt;class Type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Renderer::GetDevice </td>
+          <td class="memname">void Renderer::getDevice </td>
           <td>(</td>
           <td class="paramtype">Type **&#160;</td>
           <td class="paramname"><em>pointer</em></td><td>)</td>
@@ -251,12 +459,52 @@ template&lt;class Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>デバイス取得関数 </p>
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00154">154</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a56662123051f8898c4e8e9d5457fd317_icgraph.png" border="0" usemap="#class_renderer_a56662123051f8898c4e8e9d5457fd317_icgraph" alt=""/></div>
+<map name="class_renderer_a56662123051f8898c4e8e9d5457fd317_icgraph" id="class_renderer_a56662123051f8898c4e8e9d5457fd317_icgraph">
+<area shape="rect" id="node2" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1154,108,1281,134"/>
+<area shape="rect" id="node5" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c" title="描画前設定関数 " alt="" coords="214,68,377,110"/>
+<area shape="rect" id="node6" href="class_stencil_shadow_test_draw.html#a68917115d3f151ed91ce297924ee5bbb" title="描画後設定関数 " alt="" coords="214,134,377,175"/>
+<area shape="rect" id="node7" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="240,200,351,226"/>
+<area shape="rect" id="node11" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="234,250,357,277"/>
+<area shape="rect" id="node16" href="class_shader_base.html#aaac3419f1fce5bf12973e827daadbf8c" title="デバイスの初期化関数 " alt="" coords="217,301,373,328"/>
+<area shape="rect" id="node22" href="class_cube_polygon.html#aee418cf078227778280dafb22d7586bb" title="CubePolygon::CubePolygon" alt="" coords="203,352,387,378"/>
+<area shape="rect" id="node23" href="class_grid_polygon.html#a4fdbbc978d24c751b07c6803eb53075e" title="GridPolygon::GridPolygon" alt="" coords="209,402,381,429"/>
+<area shape="rect" id="node24" href="class_mesh_plane_polygon.html#a7db07104974799895b42997c71ba8d3e" title="MeshPlanePolygon::MeshPlane\lPolygon" alt="" coords="192,454,399,495"/>
+<area shape="rect" id="node25" href="class_plane_polygon.html#a27987c23a242840b142e0fa11650daf6" title="PlanePolygon::PlanePolygon" alt="" coords="200,520,391,546"/>
+<area shape="rect" id="node26" href="class_effekseer_object.html#a4f8e7ad6b6ebfa341302f6b78e846f1e" title="EffekseerObject::InitRenderer\l_Manager" alt="" coords="200,571,391,612"/>
+<area shape="rect" id="node28" href="class_model_x_object.html#ac005f3f164a1f75d6cfc0772e2e95382" title="ModelXObject::UpdateMesh\lDeclaration" alt="" coords="204,636,387,678"/>
+<area shape="rect" id="node31" href="class_model_x_object.html#ac7a86f4d034600ae5d8f8fd3610f4628" title="ModelXObject::InputModelX" alt="" coords="205,702,385,729"/>
+<area shape="rect" id="node33" href="class_texture_object.html#a93196fc80c026672b8a15cec21ef5dea" title="TextureObject::InputTexture" alt="" coords="204,753,387,780"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1335,133,1496,160"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1544,133,1617,160"/>
+<area shape="rect" id="node8" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="479,108,606,134"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="693,108,863,134"/>
+<area shape="rect" id="node10" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="941,108,1076,134"/>
+<area shape="rect" id="node12" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="473,158,612,185"/>
+<area shape="rect" id="node13" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="687,158,869,185"/>
+<area shape="rect" id="node14" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="917,158,1100,185"/>
+<area shape="rect" id="node15" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1148,158,1287,185"/>
+<area shape="rect" id="node17" href="class_pixel_shader_bump_mapping.html#ab7807b7c56242e965ddb23e66e1a5d9e" title="初期化関数 " alt="" coords="455,210,630,251"/>
+<area shape="rect" id="node18" href="class_pixel_shader_null.html#abfd7a6a986da09061a55d31024219eba" title="初期化関数 " alt="" coords="473,276,612,302"/>
+<area shape="rect" id="node19" href="class_vertex_shader_null.html#af30eb8057fe0537bc6ade214647b6fb5" title="初期化関数 " alt="" coords="469,326,617,353"/>
+<area shape="rect" id="node20" href="class_vertex_shader_bump_mapping.html#a6c0f59d1f29fd883943a66bfe61b6b03" title="初期化関数 " alt="" coords="451,378,635,419"/>
+<area shape="rect" id="node21" href="class_vertex_shader_fixed.html#ae829ff736b33c45543804059255125b6" title="初期化関数 " alt="" coords="463,444,622,470"/>
+<area shape="rect" id="node27" href="class_effekseer_object.html#a8e1e081f62efa87b31e00bcfd9cf1a45" title="EffekseerObject::Effekseer\lObject" alt="" coords="455,571,631,612"/>
+<area shape="rect" id="node29" href="class_vertex_shader_bump_mapping.html#a659d50e57533b9cd0204fc169985f1e0" title="頂点宣言用メッシュ更新関数 " alt="" coords="451,636,635,678"/>
+<area shape="rect" id="node30" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68" title="初期化関数 " alt="" coords="721,644,835,670"/>
+<area shape="rect" id="node32" href="class_model_x_object.html#a83bd334b1f24a69c4cbdcaa62464ff31" title="ModelXObject::ModelXObject" alt="" coords="447,702,638,729"/>
+<area shape="rect" id="node34" href="class_texture_object.html#add74bde2c60ec3d61229ce70b26602f2" title="TextureObject::TextureObject" alt="" coords="447,753,639,780"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a8c287bd7009d4717336ab1a9e1a556bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c287bd7009d4717336ab1a9e1a556bd">&#9670;&nbsp;</a></span>GetInstance()</h2>
+<a id="ac1bf10ff8b4f967f0d416a26d482abd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1bf10ff8b4f967f0d416a26d482abd6">&#9670;&nbsp;</a></span>getInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +513,7 @@ template&lt;class Type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_renderer.html">Renderer</a> * Renderer::GetInstance </td>
+          <td class="memname"><a class="el" href="class_renderer.html">Renderer</a> * Renderer::getInstance </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -278,10 +526,62 @@ template&lt;class Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a> の <a class="el" href="_renderer_8cpp_source.html#l00043">43</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_cgraph.png" border="0" usemap="#class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_cgraph" alt=""/></div>
+<map name="class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_cgraph" id="class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_cgraph">
+<area shape="rect" id="node2" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="203,5,337,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_icgraph.png" border="0" usemap="#class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_icgraph" alt=""/></div>
+<map name="class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_icgraph" id="class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_icgraph">
+<area shape="rect" id="node2" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1175,90,1301,117"/>
+<area shape="rect" id="node5" href="class_game_system.html#af76866bd03b84dca6880f1493fd3c9d1" title="終了関数 " alt="" coords="1377,27,1520,54"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1379,239,1518,266"/>
+<area shape="rect" id="node7" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c" title="描画前設定関数 " alt="" coords="225,167,387,208"/>
+<area shape="rect" id="node8" href="class_stencil_shadow_test_draw.html#a68917115d3f151ed91ce297924ee5bbb" title="描画後設定関数 " alt="" coords="225,232,387,273"/>
+<area shape="rect" id="node9" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="251,115,361,142"/>
+<area shape="rect" id="node13" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="492,574,615,601"/>
+<area shape="rect" id="node17" href="class_shader_base.html#aaac3419f1fce5bf12973e827daadbf8c" title="デバイスの初期化関数 " alt="" coords="228,349,384,375"/>
+<area shape="rect" id="node22" href="class_vertex_shader_fixed.html#ae829ff736b33c45543804059255125b6" title="初期化関数 " alt="" coords="474,523,633,550"/>
+<area shape="rect" id="node23" href="class_cube_polygon.html#aee418cf078227778280dafb22d7586bb" title="CubePolygon::CubePolygon" alt="" coords="214,501,398,527"/>
+<area shape="rect" id="node24" href="class_grid_polygon.html#a4fdbbc978d24c751b07c6803eb53075e" title="GridPolygon::GridPolygon" alt="" coords="220,551,392,578"/>
+<area shape="rect" id="node25" href="class_mesh_plane_polygon.html#a7db07104974799895b42997c71ba8d3e" title="MeshPlanePolygon::MeshPlane\lPolygon" alt="" coords="203,603,409,644"/>
+<area shape="rect" id="node26" href="class_plane_polygon.html#a27987c23a242840b142e0fa11650daf6" title="PlanePolygon::PlanePolygon" alt="" coords="211,669,401,695"/>
+<area shape="rect" id="node27" href="class_effekseer_manager.html#a0c9155e72b0552e5138e68be682a63a4" title="EffekseerManager::Draw" alt="" coords="225,719,387,746"/>
+<area shape="rect" id="node28" href="class_effekseer_object.html#a4f8e7ad6b6ebfa341302f6b78e846f1e" title="EffekseerObject::InitRenderer\l_Manager" alt="" coords="211,771,401,812"/>
+<area shape="rect" id="node30" href="class_model_x_object.html#ac005f3f164a1f75d6cfc0772e2e95382" title="ModelXObject::UpdateMesh\lDeclaration" alt="" coords="215,836,397,877"/>
+<area shape="rect" id="node33" href="class_model_x_object.html#ac7a86f4d034600ae5d8f8fd3610f4628" title="ModelXObject::InputModelX" alt="" coords="216,902,396,929"/>
+<area shape="rect" id="node35" href="class_texture_object.html#a93196fc80c026672b8a15cec21ef5dea" title="TextureObject::InputTexture" alt="" coords="215,953,397,979"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1568,90,1729,117"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1777,90,1851,117"/>
+<area shape="rect" id="node10" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="490,115,617,142"/>
+<area shape="rect" id="node11" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="697,115,868,142"/>
+<area shape="rect" id="node12" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="940,115,1075,142"/>
+<area shape="rect" id="node14" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="713,503,852,530"/>
+<area shape="rect" id="node15" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="916,431,1099,458"/>
+<area shape="rect" id="node16" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1147,361,1329,387"/>
+<area shape="rect" id="node18" href="class_pixel_shader_bump_mapping.html#ab7807b7c56242e965ddb23e66e1a5d9e" title="初期化関数 " alt="" coords="466,407,641,448"/>
+<area shape="rect" id="node19" href="class_pixel_shader_null.html#abfd7a6a986da09061a55d31024219eba" title="初期化関数 " alt="" coords="484,473,623,499"/>
+<area shape="rect" id="node20" href="class_vertex_shader_null.html#af30eb8057fe0537bc6ade214647b6fb5" title="初期化関数 " alt="" coords="479,290,627,317"/>
+<area shape="rect" id="node21" href="class_vertex_shader_bump_mapping.html#a6c0f59d1f29fd883943a66bfe61b6b03" title="初期化関数 " alt="" coords="461,341,645,383"/>
+<area shape="rect" id="node29" href="class_effekseer_object.html#a8e1e081f62efa87b31e00bcfd9cf1a45" title="EffekseerObject::Effekseer\lObject" alt="" coords="465,771,641,812"/>
+<area shape="rect" id="node31" href="class_vertex_shader_bump_mapping.html#a659d50e57533b9cd0204fc169985f1e0" title="頂点宣言用メッシュ更新関数 " alt="" coords="461,836,645,877"/>
+<area shape="rect" id="node32" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68" title="初期化関数 " alt="" coords="726,843,839,870"/>
+<area shape="rect" id="node34" href="class_model_x_object.html#a83bd334b1f24a69c4cbdcaa62464ff31" title="ModelXObject::ModelXObject" alt="" coords="458,902,649,929"/>
+<area shape="rect" id="node36" href="class_texture_object.html#add74bde2c60ec3d61229ce70b26602f2" title="TextureObject::TextureObject" alt="" coords="457,953,649,979"/>
+</map>
+</div>
+
 </div>
 </div>
-<a id="a15585698849fcba4722ac0f00b8b62e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15585698849fcba4722ac0f00b8b62e6">&#9670;&nbsp;</a></span>GetInterface()</h2>
+<a id="a6e77556825755be3db8a5a734460e66f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e77556825755be3db8a5a734460e66f">&#9670;&nbsp;</a></span>getInterface()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +592,7 @@ template&lt;class Type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Renderer::GetInterface </td>
+          <td class="memname">void Renderer::getInterface </td>
           <td>(</td>
           <td class="paramtype">Type **&#160;</td>
           <td class="paramname"><em>pointer</em></td><td>)</td>
@@ -306,12 +606,12 @@ template&lt;class Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>インターフェース取得関数 </p>
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00129">129</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a4ee43ba8d87142ff334ae7016cae9050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ee43ba8d87142ff334ae7016cae9050">&#9670;&nbsp;</a></span>GetRenderer()</h2>
+<a id="a581267c3eeedce9b333c119d009e315c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581267c3eeedce9b333c119d009e315c">&#9670;&nbsp;</a></span>getRenderer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,7 +620,7 @@ template&lt;class Type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_renderer_interface.html">RendererInterface</a>* Renderer::GetRenderer </td>
+          <td class="memname"><a class="el" href="class_renderer_interface.html">RendererInterface</a>* Renderer::getRenderer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -333,7 +633,23 @@ template&lt;class Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>レンダラー取得関数 </p>
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00117">117</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a581267c3eeedce9b333c119d009e315c_icgraph.png" border="0" usemap="#class_renderer_a581267c3eeedce9b333c119d009e315c_icgraph" alt=""/></div>
+<map name="class_renderer_a581267c3eeedce9b333c119d009e315c_icgraph" id="class_renderer_a581267c3eeedce9b333c119d009e315c_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="416,23,539,50"/>
+<area shape="rect" id="node9" href="class_vertex_shader_fixed.html#ae829ff736b33c45543804059255125b6" title="初期化関数 " alt="" coords="207,23,366,50"/>
+<area shape="rect" id="node10" href="class_effekseer_manager.html#a0c9155e72b0552e5138e68be682a63a4" title="EffekseerManager::Draw" alt="" coords="205,74,368,101"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="587,23,725,50"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="773,23,956,50"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1004,23,1187,50"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1235,23,1373,50"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1421,23,1583,50"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1631,23,1704,50"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -384,10 +700,66 @@ template&lt;class Type &gt; </div>
 <p>初期化関数 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hInstance</td><td>: インスタンスハンドル hWnd : Windowsハンドル is_full_screen : フルスクリーンフラグ window_width : Window幅 window_height : Window高さ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hInstance</td><td>インスタンスハンドル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hWnd</td><td>Windowsハンドル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_full_screen</td><td>フルスクリーンフラグ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">window_width</td><td>ウィンドウ幅 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">window_height</td><td>ウィンドウ高さ </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>初期化成功の有無 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a> の <a class="el" href="_renderer_8cpp_source.html#l00060">60</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a8d576add80187f5be3f24ec6a8108100_cgraph.png" border="0" usemap="#class_renderer_a8d576add80187f5be3f24ec6a8108100_cgraph" alt=""/></div>
+<map name="class_renderer_a8d576add80187f5be3f24ec6a8108100_cgraph" id="class_renderer_a8d576add80187f5be3f24ec6a8108100_cgraph">
+<area shape="rect" id="node2" href="class_renderer_interface.html#aabef76c27c2332c1af2dbcf7e8de5d38" title="初期化関数 " alt="" coords="152,5,300,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a8d576add80187f5be3f24ec6a8108100_icgraph.png" border="0" usemap="#class_renderer_a8d576add80187f5be3f24ec6a8108100_icgraph" alt=""/></div>
+<map name="class_renderer_a8d576add80187f5be3f24ec6a8108100_icgraph" id="class_renderer_a8d576add80187f5be3f24ec6a8108100_icgraph">
+<area shape="rect" id="node2" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="152,5,279,32"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="327,5,488,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="536,5,609,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab80abe5f35a095f221f8c43916900d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80abe5f35a095f221f8c43916900d66">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_renderer.html">Renderer</a>&amp; Renderer::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_renderer.html">Renderer</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -407,6 +779,38 @@ template&lt;class Type &gt; </div>
 </div><div class="memdoc">
 
 <p>バックバッファをフロントバッファに反映関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a> の <a class="el" href="_renderer_8cpp_source.html#l00109">109</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a1dac4baae1fa79166442b0778a9c8728_cgraph.png" border="0" usemap="#class_renderer_a1dac4baae1fa79166442b0778a9c8728_cgraph" alt=""/></div>
+<map name="class_renderer_a1dac4baae1fa79166442b0778a9c8728_cgraph" id="class_renderer_a1dac4baae1fa79166442b0778a9c8728_cgraph">
+<area shape="rect" id="node2" href="class_renderer_interface.html#aa9e12d2a2f5ffa351c457cfc7806b6f1" title="バックバッファをフロントバッファに反映関数 " alt="" coords="180,5,311,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a1dac4baae1fa79166442b0778a9c8728_icgraph.png" border="0" usemap="#class_renderer_a1dac4baae1fa79166442b0778a9c8728_icgraph" alt=""/></div>
+<map name="class_renderer_a1dac4baae1fa79166442b0778a9c8728_icgraph" id="class_renderer_a1dac4baae1fa79166442b0778a9c8728_icgraph">
+<area shape="rect" id="node2" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="180,5,319,32"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="367,5,528,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="576,5,649,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -433,18 +837,55 @@ template&lt;class Type &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>インスタンス解放関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a> の <a class="el" href="_renderer_8cpp_source.html#l00033">33</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_aa7ac523172faaf376ecddaed4bdc0781_cgraph.png" border="0" usemap="#class_renderer_aa7ac523172faaf376ecddaed4bdc0781_cgraph" alt=""/></div>
+<map name="class_renderer_aa7ac523172faaf376ecddaed4bdc0781_cgraph" id="class_renderer_aa7ac523172faaf376ecddaed4bdc0781_cgraph">
+<area shape="rect" id="node2" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="232,5,376,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_aa7ac523172faaf376ecddaed4bdc0781_icgraph.png" border="0" usemap="#class_renderer_aa7ac523172faaf376ecddaed4bdc0781_icgraph" alt=""/></div>
+<map name="class_renderer_aa7ac523172faaf376ecddaed4bdc0781_icgraph" id="class_renderer_aa7ac523172faaf376ecddaed4bdc0781_icgraph">
+<area shape="rect" id="node2" href="class_game_system.html#af76866bd03b84dca6880f1493fd3c9d1" title="終了関数 " alt="" coords="232,5,375,32"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="423,5,584,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="632,5,705,32"/>
+</map>
+</div>
+
 </div>
 </div>
-<a id="a249147991a8187a3d373fd6bd43e8c54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a249147991a8187a3d373fd6bd43e8c54">&#9670;&nbsp;</a></span>SetRenderer()</h2>
+<a id="a02e3c483b2c9d8024e51639a06159066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e3c483b2c9d8024e51639a06159066">&#9670;&nbsp;</a></span>setRenderer()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Renderer::SetRenderer </td>
+          <td class="memname">void Renderer::setRenderer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_renderer_factory.html">RendererFactory</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_renderer_factory_interface.html">RendererFactoryInterface</a> *&#160;</td>
           <td class="paramname"><em>factory</em>, </td>
         </tr>
         <tr>
@@ -459,15 +900,33 @@ template&lt;class Type &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>レンダラー設定関数 </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">factory</td><td>: レンダラーファクトリー mode : モード </td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00118">118</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a02e3c483b2c9d8024e51639a06159066_cgraph.png" border="0" usemap="#class_renderer_a02e3c483b2c9d8024e51639a06159066_cgraph" alt=""/></div>
+<map name="class_renderer_a02e3c483b2c9d8024e51639a06159066_cgraph" id="class_renderer_a02e3c483b2c9d8024e51639a06159066_cgraph">
+<area shape="rect" id="node2" href="class_renderer_factory_interface.html#aa81911973b6079fda8489409385d71e3" title="生成関数 " alt="" coords="205,5,372,47"/>
+<area shape="rect" id="node3" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="217,71,361,98"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_a02e3c483b2c9d8024e51639a06159066_icgraph.png" border="0" usemap="#class_renderer_a02e3c483b2c9d8024e51639a06159066_icgraph" alt=""/></div>
+<map name="class_renderer_a02e3c483b2c9d8024e51639a06159066_icgraph" id="class_renderer_a02e3c483b2c9d8024e51639a06159066_icgraph">
+<area shape="rect" id="node2" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="205,5,332,32"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="380,5,541,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="589,5,663,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -487,12 +946,123 @@ template&lt;class Type &gt; </div>
 </div><div class="memdoc">
 
 <p>終了関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a> の <a class="el" href="_renderer_8cpp_source.html#l00072">72</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_ae865246d6a04d467ac22458f6f5f69d4_cgraph.png" border="0" usemap="#class_renderer_ae865246d6a04d467ac22458f6f5f69d4_cgraph" alt=""/></div>
+<map name="class_renderer_ae865246d6a04d467ac22458f6f5f69d4_cgraph" id="class_renderer_ae865246d6a04d467ac22458f6f5f69d4_cgraph">
+<area shape="rect" id="node2" href="class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="168,5,331,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_renderer_ae865246d6a04d467ac22458f6f5f69d4_icgraph.png" border="0" usemap="#class_renderer_ae865246d6a04d467ac22458f6f5f69d4_icgraph" alt=""/></div>
+<map name="class_renderer_ae865246d6a04d467ac22458f6f5f69d4_icgraph" id="class_renderer_ae865246d6a04d467ac22458f6f5f69d4_icgraph">
+<area shape="rect" id="node2" href="class_game_system.html#af76866bd03b84dca6880f1493fd3c9d1" title="終了関数 " alt="" coords="168,5,311,32"/>
+<area shape="rect" id="node3" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="359,5,520,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="568,5,641,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aa0ca48ac8408e8726d5dd135432ae4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ca48ac8408e8726d5dd135432ae4fa">&#9670;&nbsp;</a></span>instance_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_renderer.html">Renderer</a> * Renderer::instance_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インスタンス </p>
+
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00046">46</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="adaed44b3c6c8b0879b8cd52f677941cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaed44b3c6c8b0879b8cd52f677941cf">&#9670;&nbsp;</a></span>mode_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_renderer.html#ab5a9379ccadcf2b3394c61cf8c835fec">MODE</a> Renderer::mode_ = MODE::NONE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>モード </p>
+
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00054">54</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a64d00cd885d84ff355228d884c0215dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d00cd885d84ff355228d884c0215dc">&#9670;&nbsp;</a></span>renderer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_renderer_interface.html">RendererInterface</a> * Renderer::renderer_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レンダラー </p>
+
+<p class="definition"> <a class="el" href="_renderer_8h_source.html">Renderer.h</a> の <a class="el" href="_renderer_8h_source.html#l00047">47</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/01_Main/Renderer/<a class="el" href="_renderer_8h_source.html">Renderer.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/01_Main/Renderer/<a class="el" href="_renderer_8cpp.html">Renderer.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/01_Main/Renderer/<a class="el" href="_renderer_8cpp_source.html">Renderer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

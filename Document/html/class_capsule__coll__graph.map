@@ -1,0 +1,7 @@
+<map id="Capsule" name="Capsule">
+<area shape="rect" id="node2" href="$class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="148,172,287,199"/>
+<area shape="rect" id="node6" href="$class_cylinder.html" title="Cylinder" alt="" coords="107,249,176,276"/>
+<area shape="rect" id="node7" href="$class_segment.html" title="Segment" alt="" coords="8,249,83,276"/>
+<area shape="rect" id="node8" href="$class_sphere.html" title="Sphere" alt="" coords="255,249,318,276"/>
+<area shape="rect" id="node4" href="$class_vector3_d.html" title="Vector3D" alt="" coords="101,81,177,108"/>
+</map>

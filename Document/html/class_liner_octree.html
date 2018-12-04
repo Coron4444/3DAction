@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('class_liner_octree.html','');});
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_liner_octree-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">LinerOctree&lt; Type &gt; クラステンプレート</div>  </div>
@@ -121,6 +123,51 @@ $(document).ready(function(){initNavTree('class_liner_octree.html','');});
 <tr class="memitem:aced865f2822181486eb805e4db1f0a32"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#aced865f2822181486eb805e4db1f0a32">MAX_LEVEL</a> = 9</td></tr>
 <tr class="memdesc:aced865f2822181486eb805e4db1f0a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大レベル  <a href="#aced865f2822181486eb805e4db1f0a32">[詳解]</a><br /></td></tr>
 <tr class="separator:aced865f2822181486eb805e4db1f0a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:acfa567ec0f969684f55443fc9ee98432"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#acfa567ec0f969684f55443fc9ee98432">SeparateInto3BitIntervals</a> (DWORD *num)</td></tr>
+<tr class="memdesc:acfa567ec0f969684f55443fc9ee98432"><td class="mdescLeft">&#160;</td><td class="mdescRight">3bit間隔へ分離関数  <a href="#acfa567ec0f969684f55443fc9ee98432">[詳解]</a><br /></td></tr>
+<tr class="separator:acfa567ec0f969684f55443fc9ee98432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad931e5f3ae94cd4337dd96d133ee42a8"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#ad931e5f3ae94cd4337dd96d133ee42a8">GetMortonNumber</a> (const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *position)</td></tr>
+<tr class="memdesc:ad931e5f3ae94cd4337dd96d133ee42a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">3Dモートン空間番号取得関数  <a href="#ad931e5f3ae94cd4337dd96d133ee42a8">[詳解]</a><br /></td></tr>
+<tr class="separator:ad931e5f3ae94cd4337dd96d133ee42a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7c6e47990d16ed28e3ab89443c1af4"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#a4d7c6e47990d16ed28e3ab89443c1af4">GetArrayIndexOfBelonginSpace</a> (const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *object_min, const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *object_max)</td></tr>
+<tr class="memdesc:a4d7c6e47990d16ed28e3ab89443c1af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">所属空間の配列インデックス取得関数  <a href="#a4d7c6e47990d16ed28e3ab89443c1af4">[詳解]</a><br /></td></tr>
+<tr class="separator:a4d7c6e47990d16ed28e3ab89443c1af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62aa42a787a399c3651bac3bbef8f1a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#a62aa42a787a399c3651bac3bbef8f1a6">CreateSpace</a> (DWORD array_index)</td></tr>
+<tr class="memdesc:a62aa42a787a399c3651bac3bbef8f1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">空間の生成関数  <a href="#a62aa42a787a399c3651bac3bbef8f1a6">[詳解]</a><br /></td></tr>
+<tr class="separator:a62aa42a787a399c3651bac3bbef8f1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74ebba8b5f12fa94745a899b222e2b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#ac74ebba8b5f12fa94745a899b222e2b6">GetCollisionList</a> (DWORD space_index, std::vector&lt; Type &gt; *collision_vector, std::list&lt; Type &gt; *collision_stack)</td></tr>
+<tr class="memdesc:ac74ebba8b5f12fa94745a899b222e2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突リストの作成関数  <a href="#ac74ebba8b5f12fa94745a899b222e2b6">[詳解]</a><br /></td></tr>
+<tr class="separator:ac74ebba8b5f12fa94745a899b222e2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ab7ddbc8f86cfa3ff46f01f080b56572a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#ab7ddbc8f86cfa3ff46f01f080b56572a">power_of_eight_array_</a> [<a class="el" href="class_liner_octree.html#aced865f2822181486eb805e4db1f0a32">MAX_LEVEL</a>+1] = {0}</td></tr>
+<tr class="memdesc:ab7ddbc8f86cfa3ff46f01f080b56572a"><td class="mdescLeft">&#160;</td><td class="mdescRight">８のべき乗数値配列  <a href="#ab7ddbc8f86cfa3ff46f01f080b56572a">[詳解]</a><br /></td></tr>
+<tr class="separator:ab7ddbc8f86cfa3ff46f01f080b56572a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffc2effd42779c7f88c4eecc8a68bfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_space_of_tree.html">SpaceOfTree</a>&lt; Type &gt; **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#a0ffc2effd42779c7f88c4eecc8a68bfb">space_pointer_array_</a> = nullptr</td></tr>
+<tr class="memdesc:a0ffc2effd42779c7f88c4eecc8a68bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">各空間ポインタ配列  <a href="#a0ffc2effd42779c7f88c4eecc8a68bfb">[詳解]</a><br /></td></tr>
+<tr class="separator:a0ffc2effd42779c7f88c4eecc8a68bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf45495e9a4cbf5ed3d8a839eda9806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#accf45495e9a4cbf5ed3d8a839eda9806">octree_width_</a> = {1.0f, 1.0f, 1.0f}</td></tr>
+<tr class="memdesc:accf45495e9a4cbf5ed3d8a839eda9806"><td class="mdescLeft">&#160;</td><td class="mdescRight">8分木の幅  <a href="#accf45495e9a4cbf5ed3d8a839eda9806">[詳解]</a><br /></td></tr>
+<tr class="separator:accf45495e9a4cbf5ed3d8a839eda9806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391dbd4c22c6b16bfe49884d8b156738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#a391dbd4c22c6b16bfe49884d8b156738">octree_width_min_</a> = {0.0f, 0.0f, 0.0f}</td></tr>
+<tr class="memdesc:a391dbd4c22c6b16bfe49884d8b156738"><td class="mdescLeft">&#160;</td><td class="mdescRight">8分木の幅の最小値  <a href="#a391dbd4c22c6b16bfe49884d8b156738">[詳解]</a><br /></td></tr>
+<tr class="separator:a391dbd4c22c6b16bfe49884d8b156738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf54d24034d8ae53d7f7d17e6dfe02ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#abf54d24034d8ae53d7f7d17e6dfe02ff">octree_width_max_</a> = {1.0f, 1.0f, 1.0f}</td></tr>
+<tr class="memdesc:abf54d24034d8ae53d7f7d17e6dfe02ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">8分木の幅の最大値  <a href="#abf54d24034d8ae53d7f7d17e6dfe02ff">[詳解]</a><br /></td></tr>
+<tr class="separator:abf54d24034d8ae53d7f7d17e6dfe02ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af412add67f71dd8ceb8af82be6015988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#af412add67f71dd8ceb8af82be6015988">octree_unit_length_</a> = {1.0f, 1.0f, 1.0f}</td></tr>
+<tr class="memdesc:af412add67f71dd8ceb8af82be6015988"><td class="mdescLeft">&#160;</td><td class="mdescRight">8分木の単位長さ  <a href="#af412add67f71dd8ceb8af82be6015988">[詳解]</a><br /></td></tr>
+<tr class="separator:af412add67f71dd8ceb8af82be6015988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1d6fcdf606bb2e42461714c0e7aa50"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#aff1d6fcdf606bb2e42461714c0e7aa50">all_space_num_</a> = 0</td></tr>
+<tr class="memdesc:aff1d6fcdf606bb2e42461714c0e7aa50"><td class="mdescLeft">&#160;</td><td class="mdescRight">空間数  <a href="#aff1d6fcdf606bb2e42461714c0e7aa50">[詳解]</a><br /></td></tr>
+<tr class="separator:aff1d6fcdf606bb2e42461714c0e7aa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62a6ad34ceed4a8fef93123ca45350d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_liner_octree.html#aa62a6ad34ceed4a8fef93123ca45350d">lowest_level_</a> = 0</td></tr>
+<tr class="memdesc:aa62a6ad34ceed4a8fef93123ca45350d"><td class="mdescLeft">&#160;</td><td class="mdescRight">最下位レベル(一番末端のLevel数)  <a href="#aa62a6ad34ceed4a8fef93123ca45350d">[詳解]</a><br /></td></tr>
+<tr class="separator:aa62a6ad34ceed4a8fef93123ca45350d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Type&gt;<br />
@@ -128,6 +175,8 @@ class LinerOctree&lt; Type &gt;</h3>
 
 <p>線形8分木クラス </p>
 <p>線形配列による8分木の管理クラス </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00035">35</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
 <a id="ac5773a5193942a68f77a33baed9d69d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5773a5193942a68f77a33baed9d69d4">&#9670;&nbsp;</a></span>Add()</h2>
@@ -178,6 +227,234 @@ template&lt;class Type&gt; </div>
   </table>
   </dd>
 </dl>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00145">145</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_ac5773a5193942a68f77a33baed9d69d4_icgraph.png" border="0" usemap="#class_liner_octree_ac5773a5193942a68f77a33baed9d69d4_icgraph" alt=""/></div>
+<map name="class_liner_octree_ac5773a5193942a68f77a33baed9d69d4_icgraph" id="class_liner_octree_ac5773a5193942a68f77a33baed9d69d4_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="425,13,596,39"/>
+<area shape="rect" id="node8" href="class_collision_manager.html#a53e468bb8624f84a5c65c9779781033f" title="追加待ち配列の中身を追加関数 " alt="" coords="173,35,377,76"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="644,5,797,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="845,13,1040,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1088,13,1239,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1287,13,1448,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1496,13,1569,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a62aa42a787a399c3651bac3bbef8f1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62aa42a787a399c3651bac3bbef8f1a6">&#9670;&nbsp;</a></span>CreateSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::CreateSpace </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>array_index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>空間の生成関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array_index</td><td>: 配列インデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00241">241</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_a62aa42a787a399c3651bac3bbef8f1a6_icgraph.png" border="0" usemap="#class_liner_octree_a62aa42a787a399c3651bac3bbef8f1a6_icgraph" alt=""/></div>
+<map name="class_liner_octree_a62aa42a787a399c3651bac3bbef8f1a6_icgraph" id="class_liner_octree_a62aa42a787a399c3651bac3bbef8f1a6_icgraph">
+<area shape="rect" id="node2" href="class_liner_octree.html#ac5773a5193942a68f77a33baed9d69d4" title="追加関数 " alt="" coords="225,5,420,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d7c6e47990d16ed28e3ab89443c1af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7c6e47990d16ed28e3ab89443c1af4">&#9670;&nbsp;</a></span>GetArrayIndexOfBelonginSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::GetArrayIndexOfBelonginSpace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *&#160;</td>
+          <td class="paramname"><em>object_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *&#160;</td>
+          <td class="paramname"><em>object_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>所属空間の配列インデックス取得関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object_min</td><td>: 所属空間の配列インデックスを取得したいオブジェクトの最小値 object_max : 所属空間の配列インデックスを取得したいオブジェクトの最大値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>所属空間の配列番号 </dd></dl>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00210">210</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_a4d7c6e47990d16ed28e3ab89443c1af4_icgraph.png" border="0" usemap="#class_liner_octree_a4d7c6e47990d16ed28e3ab89443c1af4_icgraph" alt=""/></div>
+<map name="class_liner_octree_a4d7c6e47990d16ed28e3ab89443c1af4_icgraph" id="class_liner_octree_a4d7c6e47990d16ed28e3ab89443c1af4_icgraph">
+<area shape="rect" id="node2" href="class_liner_octree.html#ac5773a5193942a68f77a33baed9d69d4" title="追加関数 " alt="" coords="233,5,428,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac74ebba8b5f12fa94745a899b222e2b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74ebba8b5f12fa94745a899b222e2b6">&#9670;&nbsp;</a></span>GetCollisionList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::GetCollisionList </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>space_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Type &gt; *&#160;</td>
+          <td class="paramname"><em>collision_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::list&lt; Type &gt; *&#160;</td>
+          <td class="paramname"><em>collision_stack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>衝突リストの作成関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">space_index</td><td>: 空間配列インデックス collision_vector : 衝突オブジェクトリスト collision_stack : 衝突オブジェクトスタック </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00262">262</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_ac74ebba8b5f12fa94745a899b222e2b6_icgraph.png" border="0" usemap="#class_liner_octree_ac74ebba8b5f12fa94745a899b222e2b6_icgraph" alt=""/></div>
+<map name="class_liner_octree_ac74ebba8b5f12fa94745a899b222e2b6_icgraph" id="class_liner_octree_ac74ebba8b5f12fa94745a899b222e2b6_icgraph">
+<area shape="rect" id="node2" href="class_liner_octree.html#a880276cc9099c29f447f3ca0043b9ce9" title="衝突リスト更新関数 " alt="" coords="241,22,436,63"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad931e5f3ae94cd4337dd96d133ee42a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad931e5f3ae94cd4337dd96d133ee42a8">&#9670;&nbsp;</a></span>GetMortonNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::GetMortonNumber </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> *&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>3Dモートン空間番号取得関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>: モートン番号を取得したい座標へのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>モートン番号 </dd></dl>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00186">186</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_ad931e5f3ae94cd4337dd96d133ee42a8_icgraph.png" border="0" usemap="#class_liner_octree_ad931e5f3ae94cd4337dd96d133ee42a8_icgraph" alt=""/></div>
+<map name="class_liner_octree_ad931e5f3ae94cd4337dd96d133ee42a8_icgraph" id="class_liner_octree_ad931e5f3ae94cd4337dd96d133ee42a8_icgraph">
+<area shape="rect" id="node2" href="class_liner_octree.html#a4d7c6e47990d16ed28e3ab89443c1af4" title="所属空間の配列インデックス取得関数 " alt="" coords="256,5,487,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -231,6 +508,67 @@ template&lt;class Type&gt; </div>
   </dd>
 </dl>
 
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00070">70</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_a715d655c722c00c002d0bb006d0600d8_icgraph.png" border="0" usemap="#class_liner_octree_a715d655c722c00c002d0bb006d0600d8_icgraph" alt=""/></div>
+<map name="class_liner_octree_a715d655c722c00c002d0bb006d0600d8_icgraph" id="class_liner_octree_a715d655c722c00c002d0bb006d0600d8_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a2c5770b90b7a46a5674df008a7a57145" title="初期化関数 " alt="" coords="168,5,315,32"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="363,5,533,32"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="581,5,716,32"/>
+<area shape="rect" id="node5" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="764,5,891,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="939,5,1100,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1148,5,1221,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acfa567ec0f969684f55443fc9ee98432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa567ec0f969684f55443fc9ee98432">&#9670;&nbsp;</a></span>SeparateInto3BitIntervals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::SeparateInto3BitIntervals </td>
+          <td>(</td>
+          <td class="paramtype">DWORD *&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>3bit間隔へ分離関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>: 分離したい数値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00172">172</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_acfa567ec0f969684f55443fc9ee98432_icgraph.png" border="0" usemap="#class_liner_octree_acfa567ec0f969684f55443fc9ee98432_icgraph" alt=""/></div>
+<map name="class_liner_octree_acfa567ec0f969684f55443fc9ee98432_icgraph" id="class_liner_octree_acfa567ec0f969684f55443fc9ee98432_icgraph">
+<area shape="rect" id="node2" href="class_liner_octree.html#ad931e5f3ae94cd4337dd96d133ee42a8" title="3Dモートン空間番号取得関数 " alt="" coords="231,5,425,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a86b5b9bc86630644e84508ff385cda69"></a>
@@ -259,6 +597,8 @@ template&lt;class Type&gt; </div>
 </div><div class="memdoc">
 
 <p>終了関数 </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00108">108</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -290,9 +630,80 @@ template&lt;class Type&gt; </div>
 
 <p>衝突リスト更新関数 </p>
 
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00124">124</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_liner_octree_a880276cc9099c29f447f3ca0043b9ce9_icgraph.png" border="0" usemap="#class_liner_octree_a880276cc9099c29f447f3ca0043b9ce9_icgraph" alt=""/></div>
+<map name="class_liner_octree_a880276cc9099c29f447f3ca0043b9ce9_icgraph" id="class_liner_octree_a880276cc9099c29f447f3ca0043b9ce9_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="261,13,432,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="480,5,633,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="681,13,876,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="924,13,1075,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1123,13,1284,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1332,13,1405,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">メンバ詳解</h2>
+<a id="aff1d6fcdf606bb2e42461714c0e7aa50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1d6fcdf606bb2e42461714c0e7aa50">&#9670;&nbsp;</a></span>all_space_num_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::all_space_num_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>空間数 </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00054">54</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa62a6ad34ceed4a8fef93123ca45350d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62a6ad34ceed4a8fef93123ca45350d">&#9670;&nbsp;</a></span>lowest_level_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::lowest_level_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最下位レベル(一番末端のLevel数) </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00055">55</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="aced865f2822181486eb805e4db1f0a32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aced865f2822181486eb805e4db1f0a32">&#9670;&nbsp;</a></span>MAX_LEVEL</h2>
 
@@ -316,6 +727,176 @@ template&lt;class Type&gt; </div>
 </div><div class="memdoc">
 
 <p>最大レベル </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af412add67f71dd8ceb8af82be6015988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af412add67f71dd8ceb8af82be6015988">&#9670;&nbsp;</a></span>octree_unit_length_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::octree_unit_length_ = {1.0f, 1.0f, 1.0f}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>8分木の単位長さ </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00053">53</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="accf45495e9a4cbf5ed3d8a839eda9806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf45495e9a4cbf5ed3d8a839eda9806">&#9670;&nbsp;</a></span>octree_width_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::octree_width_ = {1.0f, 1.0f, 1.0f}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>8分木の幅 </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00050">50</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abf54d24034d8ae53d7f7d17e6dfe02ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf54d24034d8ae53d7f7d17e6dfe02ff">&#9670;&nbsp;</a></span>octree_width_max_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::octree_width_max_ = {1.0f, 1.0f, 1.0f}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>8分木の幅の最大値 </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00052">52</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a391dbd4c22c6b16bfe49884d8b156738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391dbd4c22c6b16bfe49884d8b156738">&#9670;&nbsp;</a></span>octree_width_min_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::octree_width_min_ = {0.0f, 0.0f, 0.0f}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>8分木の幅の最小値 </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00051">51</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab7ddbc8f86cfa3ff46f01f080b56572a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7ddbc8f86cfa3ff46f01f080b56572a">&#9670;&nbsp;</a></span>power_of_eight_array_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::power_of_eight_array_[<a class="el" href="class_liner_octree.html#aced865f2822181486eb805e4db1f0a32">MAX_LEVEL</a>+1] = {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>８のべき乗数値配列 </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00048">48</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0ffc2effd42779c7f88c4eecc8a68bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ffc2effd42779c7f88c4eecc8a68bfb">&#9670;&nbsp;</a></span>space_pointer_array_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_space_of_tree.html">SpaceOfTree</a>&lt;Type&gt;** <a class="el" href="class_liner_octree.html">LinerOctree</a>&lt; Type &gt;::space_pointer_array_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>各空間ポインタ配列 </p>
+
+<p class="definition"> <a class="el" href="_liner_octree_8h_source.html">LinerOctree.h</a> の <a class="el" href="_liner_octree_8h_source.html#l00049">49</a> 行目に定義があります。</p>
 
 </div>
 </div>

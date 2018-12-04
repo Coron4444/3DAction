@@ -1,0 +1,5 @@
+<map id="TutorialLogoDraw::GetMatrix" name="TutorialLogoDraw::GetMatrix">
+<area shape="rect" id="node2" href="$class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="240,5,451,32"/>
+<area shape="rect" id="node3" href="$class_transform.html#a060f9487a18ad34549eab53a7ca5100d" title="Transform::GetWorldMatrix" alt="" coords="256,56,435,83"/>
+<area shape="rect" id="node4" href="$class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="499,56,697,83"/>
+</map>

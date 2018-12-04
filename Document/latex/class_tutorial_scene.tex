@@ -2,41 +2,66 @@
 \label{class_tutorial_scene}\index{Tutorial\+Scene@{Tutorial\+Scene}}
 
 
-タイトルシーンクラス  
+チュートリアルシーン\+Class  
 
 
 
 
 {\ttfamily \#include $<$Tutorial\+Scene.\+h$>$}
 
-Tutorial\+Scene の継承関係図\begin{figure}[H]
+
+
+Tutorial\+Scene の継承関係図
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_tutorial_scene}
+\includegraphics[width=156pt]{class_tutorial_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Tutorial\+Scene 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_scene__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_tutorial_scene_ad4cae04d2651e485f7f7233f4fd810a7}{Tutorial\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$state)
+\mbox{\hyperlink{class_tutorial_scene_a90f8c010bd72aa3dae61a5294fdfbeb7}{Tutorial\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$state)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ \mbox{\hyperlink{class_tutorial_scene_a7879e29d0af5f7bfbe3b458b4f14d50c}{Get\+Tutorial\+Logo}} ()
+\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ \mbox{\hyperlink{class_tutorial_scene_a2038b4fe667b7a69080a8c9c752f7fb9}{get\+Tutorial\+Logo}} ()
 \item 
-void \mbox{\hyperlink{class_tutorial_scene_a2157d0e553c71b46699765df4a164739}{Set\+Tutorial\+Logo}} (\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$value)
+void \mbox{\hyperlink{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}{set\+Tutorial\+Logo}} (\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$value)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ \mbox{\hyperlink{class_tutorial_scene_a3c2e0e47c2e6078bb7eff928d72fde2a}{tutorial\+\_\+logo\+\_\+}}
+\begin{DoxyCompactList}\small\item\em チュートリアルロゴ \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
-タイトルシーンクラス 
+チュートリアルシーン\+Class 
 
-タイトルシーンのクラス 
+チュートリアルシーンを管理する\+Class
+
+チュートリアルシーン特有の共有データを持っている 
+
+ Tutorial\+Scene.\+h の 27 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_tutorial_scene_ad4cae04d2651e485f7f7233f4fd810a7}\label{class_tutorial_scene_ad4cae04d2651e485f7f7233f4fd810a7}} 
+\mbox{\Hypertarget{class_tutorial_scene_a90f8c010bd72aa3dae61a5294fdfbeb7}\label{class_tutorial_scene_a90f8c010bd72aa3dae61a5294fdfbeb7}} 
 \index{Tutorial\+Scene@{Tutorial\+Scene}!Tutorial\+Scene@{Tutorial\+Scene}}
 \index{Tutorial\+Scene@{Tutorial\+Scene}!Tutorial\+Scene@{Tutorial\+Scene}}
 \subsubsection{\texorpdfstring{Tutorial\+Scene()}{TutorialScene()}}
-{\footnotesize\ttfamily Tutorial\+Scene\+::\+Tutorial\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Tutorial\+Scene\+::\+Tutorial\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -44,23 +69,68 @@ void \mbox{\hyperlink{class_tutorial_scene_a2157d0e553c71b46699765df4a164739}{Se
 
 
 \begin{DoxyParams}{引数}
-{\em state} & \+: 最初のステート \\
+{\em state} & 最初のステート \\
 \hline
 \end{DoxyParams}
 
 
-\subsection{関数詳解}
-\mbox{\Hypertarget{class_tutorial_scene_a7879e29d0af5f7bfbe3b458b4f14d50c}\label{class_tutorial_scene_a7879e29d0af5f7bfbe3b458b4f14d50c}} 
-\index{Tutorial\+Scene@{Tutorial\+Scene}!Get\+Tutorial\+Logo@{Get\+Tutorial\+Logo}}
-\index{Get\+Tutorial\+Logo@{Get\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
-\subsubsection{\texorpdfstring{Get\+Tutorial\+Logo()}{GetTutorialLogo()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}}$\ast$ Tutorial\+Scene\+::\+Get\+Tutorial\+Logo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+ Tutorial\+Scene.\+h の 44 行目に定義があります。
 
-\mbox{\Hypertarget{class_tutorial_scene_a2157d0e553c71b46699765df4a164739}\label{class_tutorial_scene_a2157d0e553c71b46699765df4a164739}} 
-\index{Tutorial\+Scene@{Tutorial\+Scene}!Set\+Tutorial\+Logo@{Set\+Tutorial\+Logo}}
-\index{Set\+Tutorial\+Logo@{Set\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
-\subsubsection{\texorpdfstring{Set\+Tutorial\+Logo()}{SetTutorialLogo()}}
-{\footnotesize\ttfamily void Tutorial\+Scene\+::\+Set\+Tutorial\+Logo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_tutorial_scene_a2038b4fe667b7a69080a8c9c752f7fb9}\label{class_tutorial_scene_a2038b4fe667b7a69080a8c9c752f7fb9}} 
+\index{Tutorial\+Scene@{Tutorial\+Scene}!get\+Tutorial\+Logo@{get\+Tutorial\+Logo}}
+\index{get\+Tutorial\+Logo@{get\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
+\subsubsection{\texorpdfstring{get\+Tutorial\+Logo()}{getTutorialLogo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}}$\ast$ Tutorial\+Scene\+::get\+Tutorial\+Logo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Tutorial\+Scene.\+h の 47 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_scene_a2038b4fe667b7a69080a8c9c752f7fb9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}\label{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}} 
+\index{Tutorial\+Scene@{Tutorial\+Scene}!set\+Tutorial\+Logo@{set\+Tutorial\+Logo}}
+\index{set\+Tutorial\+Logo@{set\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
+\subsubsection{\texorpdfstring{set\+Tutorial\+Logo()}{setTutorialLogo()}}
+{\footnotesize\ttfamily void Tutorial\+Scene\+::set\+Tutorial\+Logo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Tutorial\+Scene.\+h の 48 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_tutorial_scene_a3c2e0e47c2e6078bb7eff928d72fde2a}\label{class_tutorial_scene_a3c2e0e47c2e6078bb7eff928d72fde2a}} 
+\index{Tutorial\+Scene@{Tutorial\+Scene}!tutorial\+\_\+logo\+\_\+@{tutorial\+\_\+logo\+\_\+}}
+\index{tutorial\+\_\+logo\+\_\+@{tutorial\+\_\+logo\+\_\+}!Tutorial\+Scene@{Tutorial\+Scene}}
+\subsubsection{\texorpdfstring{tutorial\+\_\+logo\+\_\+}{tutorial\_logo\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}}$\ast$ Tutorial\+Scene\+::tutorial\+\_\+logo\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+チュートリアルロゴ 
+
+
+
+ Tutorial\+Scene.\+h の 33 行目に定義があります。
 
 
 

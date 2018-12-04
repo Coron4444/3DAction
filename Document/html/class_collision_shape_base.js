@@ -16,5 +16,7 @@ var class_collision_shape_base =
     [ "~CollisionShapeBase", "class_collision_shape_base.html#a64fa9e1ae6b582be42360e926ce5d6cb", null ],
     [ "getPositon", "class_collision_shape_base.html#a17bd2d81ebf464459dd977152e02055b", null ],
     [ "getType", "class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc", null ],
-    [ "setPosition", "class_collision_shape_base.html#ac14132139e486926df11f438a8600907", null ]
+    [ "setPosition", "class_collision_shape_base.html#ac14132139e486926df11f438a8600907", null ],
+    [ "position_", "class_collision_shape_base.html#a0a60d112797f3026af9cbe79badbc66b", null ],
+    [ "type_", "class_collision_shape_base.html#a46413b1e4d4b3a35075232fa9012addb", null ]
 ];

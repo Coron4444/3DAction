@@ -175,7 +175,7 @@ void ShaderManager::SetVertexShader(DrawBase* draw,
 		return;
 	}
 
-	vertex_shaders_[draw->GetDrawOrderList()->GetVertexShaderType()]->SetShader();
+	vertex_shaders_[draw->getpDrawOrderList()->GetVertexShaderType()]->SetShader();
 }
 
 
@@ -192,7 +192,7 @@ void ShaderManager::SetPixelShader(DrawBase* draw, PixelShaderType forced_pixel_
 		return;
 	}
 
-	pixel_shaders_[draw->GetDrawOrderList()->GetPixelShaderType()]->SetShader();
+	pixel_shaders_[draw->getpDrawOrderList()->GetPixelShaderType()]->SetShader();
 }
 
 
@@ -211,7 +211,7 @@ void ShaderManager::CommonSettingVertexShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	vertex_shaders_[draw->GetDrawOrderList()->GetVertexShaderType()]
+	vertex_shaders_[draw->getpDrawOrderList()->GetVertexShaderType()]
 		->CommonSetting(draw, camera, object_index);
 }
 
@@ -231,7 +231,7 @@ void ShaderManager::CommonSettingPixelShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	pixel_shaders_[draw->GetDrawOrderList()->GetPixelShaderType()]
+	pixel_shaders_[draw->getpDrawOrderList()->GetPixelShaderType()]
 		->CommonSetting(draw, camera, object_index);
 }
 
@@ -253,7 +253,7 @@ void ShaderManager::SpecificSettingVertexShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	vertex_shaders_[draw->GetDrawOrderList()->GetVertexShaderType()]
+	vertex_shaders_[draw->getpDrawOrderList()->GetVertexShaderType()]
 		->SpecificSetting(draw, camera, object_index, mesh_index);
 }
 
@@ -275,6 +275,6 @@ void ShaderManager::SpecificSettingPixelShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	pixel_shaders_[draw->GetDrawOrderList()->GetPixelShaderType()]
+	pixel_shaders_[draw->getpDrawOrderList()->GetPixelShaderType()]
 		->SpecificSetting(draw, camera, object_index, mesh_index);
 }

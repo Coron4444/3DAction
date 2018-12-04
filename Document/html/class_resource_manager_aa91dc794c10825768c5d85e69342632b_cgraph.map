@@ -1,0 +1,11 @@
+<map id="ResourceManager::InitAllData" name="ResourceManager::InitAllData">
+<area shape="rect" id="node2" href="$class_texture_manager.html#aee4c784f3f32bfe810bf66313735dece" title="TextureManager::InitAllData" alt="" coords="253,56,436,83"/>
+<area shape="rect" id="node5" href="$class_model_x_manager.html#a8d7965d9eaa41fcf0297eebea287ee82" title="ModelXManager::InitAllData" alt="" coords="254,132,435,159"/>
+<area shape="rect" id="node8" href="$class_effekseer_manager.html#ac5744fba29048e417bf46a8fbf5a8e76" title="EffekseerManager::InitAllData" alt="" coords="248,208,441,235"/>
+<area shape="rect" id="node3" href="$class_texture_manager.html#abfba2c4293e692a351d9b98e28f6ed31" title="TextureManager::InitUniqueData" alt="" coords="495,5,702,32"/>
+<area shape="rect" id="node4" href="$class_texture_manager.html#aed1e9666d0ef8698db754280a1d4bad4" title="TextureManager::InitShareData" alt="" coords="498,56,699,83"/>
+<area shape="rect" id="node6" href="$class_model_x_manager.html#a9bed6cb5ffcd2cbfec6c405e21af362e" title="ModelXManager::InitUniqueData" alt="" coords="495,107,702,133"/>
+<area shape="rect" id="node7" href="$class_model_x_manager.html#a8096a9ed1b19c41270df944aa855015a" title="ModelXManager::InitShareData" alt="" coords="499,157,699,184"/>
+<area shape="rect" id="node9" href="$class_effekseer_manager.html#a95d9d2eda8cb691c2565d022198b5787" title="EffekseerManager::InitUniqueData" alt="" coords="489,208,708,235"/>
+<area shape="rect" id="node10" href="$class_effekseer_manager.html#a881d9bdd981c35de66174363517050b4" title="EffekseerManager::InitShareData" alt="" coords="493,259,705,285"/>
+</map>

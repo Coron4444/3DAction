@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Goal\+Draw.\+h$>$}
 
-Goal\+Draw の継承関係図\begin{figure}[H]
+
+
+Goal\+Draw の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_goal_draw}
+\includegraphics[width=169pt]{class_goal_draw__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Goal\+Draw 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_draw__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -32,12 +44,30 @@ unsigned \mbox{\hyperlink{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}{Get
 \item 
 D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_goal}{Goal}} $\ast$ \mbox{\hyperlink{class_goal_draw_abbb3b4db65f3908bad9b918c6feb6a7a}{goal\+\_\+}}
+\begin{DoxyCompactList}\small\item\em ゴール \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cube_polygon}{Cube\+Polygon}} $\ast$ \mbox{\hyperlink{class_goal_draw_add3ff2a5f7cd52a76ccfb95c27aa8a07}{cube\+\_\+polygon\+\_\+}}
+\begin{DoxyCompactList}\small\item\em キューブポリゴン \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_effekseer_object}{Effekseer\+Object}} $\ast$ \mbox{\hyperlink{class_goal_draw_a2d4449f780f6b6fd6dd3e8763fc67b2d}{effekseer\+\_\+object\+\_\+}}
+\begin{DoxyCompactList}\small\item\em エフェクシアオブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{class_goal_draw_a1600b9846c344c03b4bae2919674ed90}{E\+F\+F\+E\+CT}} = \char`\"{}Coin\+Effect/Coin\+Effect.\+efk\char`\"{}
+\begin{DoxyCompactList}\small\item\em エフェクト名 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 ゴール描画クラス 
 
 ゴールの描画クラス 
+
+ Goal\+Draw.\+h の 39 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e}\label{class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e}} 
@@ -59,6 +89,17 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f
 
 \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
 
+
+
+ Goal\+Draw.\+cpp の 86 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}\label{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}} 
 \index{Goal\+Draw@{Goal\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Goal\+Draw@{Goal\+Draw}}
@@ -69,6 +110,17 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f
 
 \mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
+
+
+ Goal\+Draw.\+cpp の 124 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_draw_a47baf72f8c1c961176610f161069b8d1_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95}\label{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95}} 
 \index{Goal\+Draw@{Goal\+Draw}!Get\+Matrix@{Get\+Matrix}}
 \index{Get\+Matrix@{Get\+Matrix}!Goal\+Draw@{Goal\+Draw}}
@@ -79,6 +131,17 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f
 
 \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
 
+
+
+ Goal\+Draw.\+cpp の 100 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}\label{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}} 
 \index{Goal\+Draw@{Goal\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Goal\+Draw@{Goal\+Draw}}
@@ -89,6 +152,17 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f
 
 \mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
+
+
+ Goal\+Draw.\+cpp の 112 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e}\label{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e}} 
 \index{Goal\+Draw@{Goal\+Draw}!Init@{Init}}
 \index{Init@{Init}!Goal\+Draw@{Goal\+Draw}}
@@ -103,6 +177,17 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f
 
 \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
+
+
+ Goal\+Draw.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24}\label{class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24}} 
 \index{Goal\+Draw@{Goal\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Goal\+Draw@{Goal\+Draw}}
@@ -117,6 +202,17 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f
 
 \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
 
+
+
+ Goal\+Draw.\+cpp の 60 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20}\label{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20}} 
 \index{Goal\+Draw@{Goal\+Draw}!Update@{Update}}
 \index{Update@{Update}!Goal\+Draw@{Goal\+Draw}}
@@ -130,6 +226,76 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f
 
 
 \mbox{\hyperlink{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}{Draw\+Null}}を再実装しています。
+
+
+
+ Goal\+Draw.\+cpp の 74 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_goal_draw_add3ff2a5f7cd52a76ccfb95c27aa8a07}\label{class_goal_draw_add3ff2a5f7cd52a76ccfb95c27aa8a07}} 
+\index{Goal\+Draw@{Goal\+Draw}!cube\+\_\+polygon\+\_\+@{cube\+\_\+polygon\+\_\+}}
+\index{cube\+\_\+polygon\+\_\+@{cube\+\_\+polygon\+\_\+}!Goal\+Draw@{Goal\+Draw}}
+\subsubsection{\texorpdfstring{cube\+\_\+polygon\+\_\+}{cube\_polygon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cube_polygon}{Cube\+Polygon}}$\ast$ Goal\+Draw\+::cube\+\_\+polygon\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+キューブポリゴン 
+
+
+
+ Goal\+Draw.\+h の 53 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_draw_a1600b9846c344c03b4bae2919674ed90}\label{class_goal_draw_a1600b9846c344c03b4bae2919674ed90}} 
+\index{Goal\+Draw@{Goal\+Draw}!E\+F\+F\+E\+CT@{E\+F\+F\+E\+CT}}
+\index{E\+F\+F\+E\+CT@{E\+F\+F\+E\+CT}!Goal\+Draw@{Goal\+Draw}}
+\subsubsection{\texorpdfstring{E\+F\+F\+E\+CT}{EFFECT}}
+{\footnotesize\ttfamily const std\+::string Goal\+Draw\+::\+E\+F\+F\+E\+CT = \char`\"{}Coin\+Effect/Coin\+Effect.\+efk\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+エフェクト名 
+
+
+
+ Goal\+Draw.\+h の 45 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_draw_a2d4449f780f6b6fd6dd3e8763fc67b2d}\label{class_goal_draw_a2d4449f780f6b6fd6dd3e8763fc67b2d}} 
+\index{Goal\+Draw@{Goal\+Draw}!effekseer\+\_\+object\+\_\+@{effekseer\+\_\+object\+\_\+}}
+\index{effekseer\+\_\+object\+\_\+@{effekseer\+\_\+object\+\_\+}!Goal\+Draw@{Goal\+Draw}}
+\subsubsection{\texorpdfstring{effekseer\+\_\+object\+\_\+}{effekseer\_object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_effekseer_object}{Effekseer\+Object}}$\ast$ Goal\+Draw\+::effekseer\+\_\+object\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+エフェクシアオブジェクト 
+
+
+
+ Goal\+Draw.\+h の 54 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_draw_abbb3b4db65f3908bad9b918c6feb6a7a}\label{class_goal_draw_abbb3b4db65f3908bad9b918c6feb6a7a}} 
+\index{Goal\+Draw@{Goal\+Draw}!goal\+\_\+@{goal\+\_\+}}
+\index{goal\+\_\+@{goal\+\_\+}!Goal\+Draw@{Goal\+Draw}}
+\subsubsection{\texorpdfstring{goal\+\_\+}{goal\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_goal}{Goal}}$\ast$ Goal\+Draw\+::goal\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ゴール 
+
+
+
+ Goal\+Draw.\+h の 52 行目に定義があります。
 
 
 

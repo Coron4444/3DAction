@@ -1,0 +1,28 @@
+<map id="ImGui::PushMultiItemsWidths" name="ImGui::PushMultiItemsWidths">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a3ffffbdfe59f18a2321dd1cb39dfb6e1" title="ImGui::SliderFloatN" alt="" coords="263,81,397,108"/>
+<area shape="rect" id="node6" href="$namespace_im_gui.html#a13fe35db80c7d1002c98fd5e8ea90239" title="ImGui::SliderIntN" alt="" coords="270,233,390,260"/>
+<area shape="rect" id="node10" href="$namespace_im_gui.html#a2a2764b6f0b3291ad0df4d99127dd751" title="ImGui::DragFloatN" alt="" coords="265,373,395,400"/>
+<area shape="rect" id="node14" href="$namespace_im_gui.html#ad6e3b0e5a2171679c53d6b18e16a460b" title="ImGui::DragFloatRange2" alt="" coords="248,449,412,476"/>
+<area shape="rect" id="node15" href="$namespace_im_gui.html#a2854d672b818938e6e9fb1de6de3dbe7" title="ImGui::DragIntN" alt="" coords="273,500,387,527"/>
+<area shape="rect" id="node19" href="$namespace_im_gui.html#a6aaacf92126bf45ce0e58348b5297a43" title="ImGui::DragIntRange2" alt="" coords="255,551,405,577"/>
+<area shape="rect" id="node20" href="$namespace_im_gui.html#a7fe2c74d1c0042b77d8e6788faed0983" title="ImGui::InputFloatN" alt="" coords="265,639,395,665"/>
+<area shape="rect" id="node24" href="$namespace_im_gui.html#a9b9aaec8d095156b74ee191b532fa137" title="ImGui::InputIntN" alt="" coords="273,791,387,817"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#a0d5270d08284202523130e8b6ef66350" title="ImGui::SliderFloat2" alt="" coords="460,5,593,32"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#aab33732d7951627f9c32d708f263889f" title="ImGui::SliderFloat3" alt="" coords="460,56,593,83"/>
+<area shape="rect" id="node5" href="$namespace_im_gui.html#aab6b7e99cab3975fece12fb1cd56e281" title="ImGui::SliderFloat4" alt="" coords="460,107,593,133"/>
+<area shape="rect" id="node7" href="$namespace_im_gui.html#a9dbd0490704d3bb4be10fdebe21d402d" title="ImGui::SliderInt2" alt="" coords="467,157,586,184"/>
+<area shape="rect" id="node8" href="$namespace_im_gui.html#a099188a7fdaad1a8103e6e24f41e1a8a" title="ImGui::SliderInt3" alt="" coords="467,208,586,235"/>
+<area shape="rect" id="node9" href="$namespace_im_gui.html#a88c24aa0e5af4cbb14559b5789886810" title="ImGui::SliderInt4" alt="" coords="467,259,586,285"/>
+<area shape="rect" id="node11" href="$namespace_im_gui.html#a2852e4c3b872ed5a5d28047f0290f29c" title="ImGui::DragFloat2" alt="" coords="463,309,590,336"/>
+<area shape="rect" id="node12" href="$namespace_im_gui.html#a3a365703646c6fb5357f21a13c531bfe" title="ImGui::DragFloat3" alt="" coords="463,360,590,387"/>
+<area shape="rect" id="node13" href="$namespace_im_gui.html#a6dfd9e5d7adc6106e9391fc971d2f8bc" title="ImGui::DragFloat4" alt="" coords="463,411,590,437"/>
+<area shape="rect" id="node16" href="$namespace_im_gui.html#aa74f28deeb62f0aa96e1c34b27e7bcd9" title="ImGui::DragInt2" alt="" coords="471,461,583,488"/>
+<area shape="rect" id="node17" href="$namespace_im_gui.html#ab0b40f3d0631113d54fa8e0c90ed4f77" title="ImGui::DragInt3" alt="" coords="471,512,583,539"/>
+<area shape="rect" id="node18" href="$namespace_im_gui.html#a65b6e42ba7a4aa73fd3e1dc74f93d180" title="ImGui::DragInt4" alt="" coords="471,563,583,589"/>
+<area shape="rect" id="node21" href="$namespace_im_gui.html#a0c7aea6408696de9696f38a2f32419c4" title="ImGui::InputFloat2" alt="" coords="463,613,591,640"/>
+<area shape="rect" id="node22" href="$namespace_im_gui.html#a77e8d23f2e0477d11a7eb6b0aa773eb9" title="ImGui::InputFloat3" alt="" coords="463,664,591,691"/>
+<area shape="rect" id="node23" href="$namespace_im_gui.html#a2c9bbb9a99bd8fee134a196fd1ec3dfb" title="ImGui::InputFloat4" alt="" coords="463,715,591,741"/>
+<area shape="rect" id="node25" href="$namespace_im_gui.html#a4142cc4545d789d76d51dee61c959a03" title="ImGui::InputInt2" alt="" coords="470,765,583,792"/>
+<area shape="rect" id="node26" href="$namespace_im_gui.html#ab02fc4a19ed153984d3585296e1c74b1" title="ImGui::InputInt3" alt="" coords="470,816,583,843"/>
+<area shape="rect" id="node27" href="$namespace_im_gui.html#ac714ecf202c82dc6caa0cbf344c85a13" title="ImGui::InputInt4" alt="" coords="470,867,583,893"/>
+</map>

@@ -1,0 +1,50 @@
+<map id="GameSceneState_Start::Init" name="GameSceneState_Start::Init">
+<area shape="rect" id="node2" href="$class_game_scene.html#a1bd84ecb8d44bd5e57b4a2d772ef1bf9" title="GameScene::setIsClear" alt="" coords="245,5,405,32"/>
+<area shape="rect" id="node3" href="$class_game_scene.html#a853fefbf82ff85b9f34e325108ae7e3b" title="GameScene::setScore" alt="" coords="247,56,402,83"/>
+<area shape="rect" id="node4" href="$class_game_object_manager.html#a862e76bfd74495c20bddd377c62a22b7" title="GameObjectManager::\lGetDrawManager" alt="" coords="248,107,401,149"/>
+<area shape="rect" id="node5" href="$class_draw_manager.html#a0e7e11e650f1c1736e9d3199a58191a7" title="DrawManager::GetBackBuffer" alt="" coords="228,173,421,200"/>
+<area shape="rect" id="node6" href="$class_back_buffer.html#addd0da33667c19cfba7f1d81009486f2" title="BackBuffer::GetCamera" alt="" coords="245,224,404,251"/>
+<area shape="rect" id="node7" href="$class_camera.html#abb88028a49a71e9a6774d58076816dbf" title="カメラステートの変更 " alt="" coords="249,275,400,301"/>
+<area shape="rect" id="node11" href="$class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="255,325,394,352"/>
+<area shape="rect" id="node23" href="$class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="219,376,430,403"/>
+<area shape="rect" id="node24" href="$class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="247,427,402,453"/>
+<area shape="rect" id="node25" href="$class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="213,477,436,504"/>
+<area shape="rect" id="node31" href="$class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="753,451,923,477"/>
+<area shape="rect" id="node33" href="$class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="255,619,395,645"/>
+<area shape="rect" id="node37" href="$class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="763,669,913,696"/>
+<area shape="rect" id="node39" href="$class_camera.html#a47e72bd04f7aaac1657d7bce5322b97c" title="Camera::GetCameraState" alt="" coords="239,720,411,747"/>
+<area shape="rect" id="node40" href="$class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="248,771,401,797"/>
+<area shape="rect" id="node44" href="$class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="769,825,907,852"/>
+<area shape="rect" id="node46" href="$class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="251,876,398,903"/>
+<area shape="rect" id="node8" href="$class_camera_1_1_state.html#adb3f43b6c3f8100da7877867180e804b" title="終了関数 " alt="" coords="516,51,663,77"/>
+<area shape="rect" id="node9" href="$class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="517,101,661,128"/>
+<area shape="rect" id="node10" href="$class_camera_1_1_state.html#aa1b81471ab15e64b3117ffe7de9560ff" title="初期化関数 " alt="" coords="524,152,655,179"/>
+<area shape="rect" id="node12" href="$class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="1033,301,1106,328"/>
+<area shape="rect" id="node13" href="$class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="1205,687,1356,713"/>
+<area shape="rect" id="node14" href="$class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="1404,585,1639,612"/>
+<area shape="rect" id="node18" href="$class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6" title="コンポーネント初期化関数 " alt="" coords="1413,687,1629,713"/>
+<area shape="rect" id="node21" href="$class_game_object_manager.html#ab42e8ca2c7e586d05d513e8a868a86ef" title="ゲームオブジェクト基底クラスの追加関数 " alt="" coords="1425,738,1618,779"/>
+<area shape="rect" id="node15" href="$class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08" title="GameObjectBase::SetUpdate" alt="" coords="1699,509,1893,536"/>
+<area shape="rect" id="node16" href="$class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="1705,560,1887,587"/>
+<area shape="rect" id="node17" href="$class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="1695,611,1897,637"/>
+<area shape="rect" id="node19" href="$class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="1687,661,1905,688"/>
+<area shape="rect" id="node20" href="$class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="1725,712,1867,739"/>
+<area shape="rect" id="node22" href="$class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="1728,763,1864,805"/>
+<area shape="rect" id="node26" href="$class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="499,254,680,295"/>
+<area shape="rect" id="node27" href="$class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="495,320,683,347"/>
+<area shape="rect" id="node28" href="$class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="491,371,687,413"/>
+<area shape="rect" id="node29" href="$class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="484,437,695,478"/>
+<area shape="rect" id="node30" href="$class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd" title="MatrixExtend::UpdateWorld\lMatrixSRT" alt="" coords="498,502,681,543"/>
+<area shape="rect" id="node32" href="$class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="1017,451,1121,477"/>
+<area shape="rect" id="node34" href="$class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="552,619,627,645"/>
+<area shape="rect" id="node35" href="$class_game_object_manager.html#a41775a8308691a84b468a0aeeb1b3376" title="GameObjectManager::\lGetCollisionManager" alt="" coords="761,553,915,594"/>
+<area shape="rect" id="node36" href="$class_collision_manager.html#a63ce6003d8d042085d7b388a4cfa0666" title="CollisionManager::SetGround" alt="" coords="743,619,933,645"/>
+<area shape="rect" id="node38" href="$class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="1027,661,1111,688"/>
+<area shape="rect" id="node41" href="$class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="545,771,633,797"/>
+<area shape="rect" id="node42" href="$class_cube_polygon.html#acf6a30c30c22dd887ed570db6cbe285d" title="CubePolygon::SetColor" alt="" coords="759,771,917,797"/>
+<area shape="rect" id="node43" href="$class_cube_polygon.html#adde345ed591e3e81abcffdcac5068f98" title="CubePolygon::Registration\lVertex" alt="" coords="981,763,1157,805"/>
+<area shape="rect" id="node45" href="$class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="1032,829,1107,856"/>
+<area shape="rect" id="node47" href="$class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="549,880,630,907"/>
+<area shape="rect" id="node48" href="$class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="756,931,920,957"/>
+<area shape="rect" id="node49" href="$class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="1020,931,1119,957"/>
+</map>

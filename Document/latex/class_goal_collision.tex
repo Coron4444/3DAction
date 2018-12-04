@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Goal\+Collision.\+h$>$}
 
-Goal\+Collision の継承関係図\begin{figure}[H]
+
+
+Goal\+Collision の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_goal_collision}
+\includegraphics[width=169pt]{class_goal_collision__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Goal\+Collision 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_collision__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開型}
@@ -33,12 +45,32 @@ void \mbox{\hyperlink{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348}{Un
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936}{Update}} () override
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$ \mbox{\hyperlink{class_goal_collision_ae04c3bbf4fd5e382b63443466a8cc141}{collision\+\_\+objects\+\_\+}}
+\item 
+\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$ \mbox{\hyperlink{class_goal_collision_a584c7b2e79411a9fb86fe03f0235ea02}{bounding\+\_\+sphere\+\_\+}}
+\item 
+\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$ \mbox{\hyperlink{class_goal_collision_a8fa4a9b7ed96d453d4615641073937bb}{substance\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{class_goal_collision_ad2a608feb369a4d10d8ab06ebc656959}{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}} = 3.\+0f
+\item 
+static const float \mbox{\hyperlink{class_goal_collision_a6eb0dff2f8f77b38067eee8b22cce08a}{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}} = 1.\+0f
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 ゴール衝突クラス 
 
 ゴールの衝突クラス 
+
+ Goal\+Collision.\+h の 29 行目に定義があります。
+
+
 
 \subsection{列挙型メンバ詳解}
 \mbox{\Hypertarget{class_goal_collision_a8d0d760973816d9086df90491f38ff62}\label{class_goal_collision_a8d0d760973816d9086df90491f38ff62}} 
@@ -67,6 +99,10 @@ M\+AX&\\
 \end{DoxyEnumFields}
 
 
+ Goal\+Collision.\+h の 43 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}\label{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}} 
 \index{Goal\+Collision@{Goal\+Collision}!Init@{Init}}
@@ -82,6 +118,17 @@ M\+AX&\\
 
 \mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
 
+
+
+ Goal\+Collision.\+cpp の 36 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348}\label{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348}} 
 \index{Goal\+Collision@{Goal\+Collision}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Goal\+Collision@{Goal\+Collision}}
@@ -96,6 +143,17 @@ M\+AX&\\
 
 \mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Collision\+Null}}を再実装しています。
 
+
+
+ Goal\+Collision.\+cpp の 74 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936}\label{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936}} 
 \index{Goal\+Collision@{Goal\+Collision}!Update@{Update}}
 \index{Update@{Update}!Goal\+Collision@{Goal\+Collision}}
@@ -109,6 +167,70 @@ M\+AX&\\
 
 
 \mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Collision\+Null}}を再実装しています。
+
+
+
+ Goal\+Collision.\+cpp の 85 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_goal_collision_a584c7b2e79411a9fb86fe03f0235ea02}\label{class_goal_collision_a584c7b2e79411a9fb86fe03f0235ea02}} 
+\index{Goal\+Collision@{Goal\+Collision}!bounding\+\_\+sphere\+\_\+@{bounding\+\_\+sphere\+\_\+}}
+\index{bounding\+\_\+sphere\+\_\+@{bounding\+\_\+sphere\+\_\+}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{bounding\+\_\+sphere\+\_\+}{bounding\_sphere\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_object}{Collision\+Object}}$\ast$ Goal\+Collision\+::bounding\+\_\+sphere\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Goal\+Collision.\+h の 57 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_collision_ad2a608feb369a4d10d8ab06ebc656959}\label{class_goal_collision_ad2a608feb369a4d10d8ab06ebc656959}} 
+\index{Goal\+Collision@{Goal\+Collision}!B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}}
+\index{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US@{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US}{BOUNDING\_SPHERE\_RADIUS}}
+{\footnotesize\ttfamily const float Goal\+Collision\+::\+B\+O\+U\+N\+D\+I\+N\+G\+\_\+\+S\+P\+H\+E\+R\+E\+\_\+\+R\+A\+D\+I\+US = 3.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Goal\+Collision.\+h の 35 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_collision_ae04c3bbf4fd5e382b63443466a8cc141}\label{class_goal_collision_ae04c3bbf4fd5e382b63443466a8cc141}} 
+\index{Goal\+Collision@{Goal\+Collision}!collision\+\_\+objects\+\_\+@{collision\+\_\+objects\+\_\+}}
+\index{collision\+\_\+objects\+\_\+@{collision\+\_\+objects\+\_\+}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{collision\+\_\+objects\+\_\+}{collision\_objects\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}}$\ast$ Goal\+Collision\+::collision\+\_\+objects\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Goal\+Collision.\+h の 56 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_collision_a8fa4a9b7ed96d453d4615641073937bb}\label{class_goal_collision_a8fa4a9b7ed96d453d4615641073937bb}} 
+\index{Goal\+Collision@{Goal\+Collision}!substance\+\_\+@{substance\+\_\+}}
+\index{substance\+\_\+@{substance\+\_\+}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{substance\+\_\+}{substance\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_object}{Collision\+Object}}$\ast$ Goal\+Collision\+::substance\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Goal\+Collision.\+h の 58 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_collision_a6eb0dff2f8f77b38067eee8b22cce08a}\label{class_goal_collision_a6eb0dff2f8f77b38067eee8b22cce08a}} 
+\index{Goal\+Collision@{Goal\+Collision}!S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US@{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}}
+\index{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US@{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}!Goal\+Collision@{Goal\+Collision}}
+\subsubsection{\texorpdfstring{S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US}{SUBSTANCE\_RADIUS}}
+{\footnotesize\ttfamily const float Goal\+Collision\+::\+S\+U\+B\+S\+T\+A\+N\+C\+E\+\_\+\+R\+A\+D\+I\+US = 1.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Goal\+Collision.\+h の 36 行目に定義があります。
 
 
 

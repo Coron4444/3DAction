@@ -1,0 +1,5 @@
+<map id="ModelXObject::GetMeshNum" name="ModelXObject::GetMeshNum">
+<area shape="rect" id="node2" href="$class_player_draw.html#ad9e2e09a32c7474fcea5e7e24e22bc71" title="PlayerDraw::GetMeshNum" alt="" coords="254,5,430,32"/>
+<area shape="rect" id="node3" href="$class_sky_dome_draw.html#a7ecd8d4b987e4d58a247d3438a45f9d4" title="SkyDomeDraw::GetMeshNum" alt="" coords="244,56,440,83"/>
+<area shape="rect" id="node4" href="$class_stencil_shadow_test_draw.html#acfa569f1dcdc3829796138e313f204ad" title="StencilShadowTestDraw\l::GetMeshNum" alt="" coords="261,107,423,149"/>
+</map>

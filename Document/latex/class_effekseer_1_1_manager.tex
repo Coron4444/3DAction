@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Effekseer.\+h$>$}
 
-Effekseer\+:\+:Manager の継承関係図\begin{figure}[H]
+
+
+Effekseer\+:\+:Manager の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_effekseer_1_1_manager}
+\includegraphics[width=189pt]{class_effekseer_1_1_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Effekseer\+:\+:Manager 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_effekseer_1_1_manager__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -195,6 +207,10 @@ virtual \mbox{\hyperlink{class_effekseer_1_1_manager_af620a54ced00bb2d9f7b7d919e
 \subsection{詳解}
 エフェクト管理クラス 
 
+ Effekseer.\+h の 1570 行目に定義があります。
+
+
+
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a95f452d6946c93cece08532dc73e8fa2}\label{class_effekseer_1_1_manager_a95f452d6946c93cece08532dc73e8fa2}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Manager@{Manager}}
@@ -202,11 +218,19 @@ virtual \mbox{\hyperlink{class_effekseer_1_1_manager_af620a54ced00bb2d9f7b7d919e
 \subsubsection{\texorpdfstring{Manager()}{Manager()}}
 {\footnotesize\ttfamily Effekseer\+::\+Manager\+::\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
 
+
+
+ Effekseer.\+h の 1574 行目に定義があります。
+
 \mbox{\Hypertarget{class_effekseer_1_1_manager_af620a54ced00bb2d9f7b7d919e89fc98}\label{class_effekseer_1_1_manager_af620a54ced00bb2d9f7b7d919e89fc98}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!````~Manager@{$\sim$\+Manager}}
 \index{````~Manager@{$\sim$\+Manager}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
 \subsubsection{\texorpdfstring{$\sim$\+Manager()}{~Manager()}}
 {\footnotesize\ttfamily virtual Effekseer\+::\+Manager\+::$\sim$\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ Effekseer.\+h の 1575 行目に定義があります。
 
 
 
@@ -276,6 +300,13 @@ Updateを実行する際は、実行する必要はない。
 \begin{DoxyReturn}{戻り値}
 マネージャー 
 \end{DoxyReturn}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a1de74a159f3646d325f49e940e72181c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a38e954ce0e584f2830d90b5d7763614b}\label{class_effekseer_1_1_manager_a38e954ce0e584f2830d90b5d7763614b}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Create\+Culling\+World@{Create\+Culling\+World}}
 \index{Create\+Culling\+World@{Create\+Culling\+World}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -310,6 +341,13 @@ Updateを実行する際は、実行する必要はない。
 \begin{DoxyNote}{覚え書き}
 このマネージャーから生成されたエフェクトは全て強制的に破棄される。 
 \end{DoxyNote}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a59eeea8d94285186a5d04dfad0b682ff_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a17431b7d96325535fa62bcbb066f0a9c}\label{class_effekseer_1_1_manager_a17431b7d96325535fa62bcbb066f0a9c}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Draw@{Draw}}
 \index{Draw@{Draw}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -320,6 +358,13 @@ Updateを実行する際は、実行する必要はない。
 
 描画処理を行う。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_effekseer_1_1_manager_a17431b7d96325535fa62bcbb066f0a9c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_abcb4f71e94b1ff2ee3b8088fc53f4841}\label{class_effekseer_1_1_manager_abcb4f71e94b1ff2ee3b8088fc53f4841}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Draw\+Back@{Draw\+Back}}
 \index{Draw\+Back@{Draw\+Back}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -401,6 +446,13 @@ Updateを実行する際は、実行する必要はない。
 \begin{DoxyReturn}{戻り値}
 存在してるか? 
 \end{DoxyReturn}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_effekseer_1_1_manager_ad95297e9170c9f9874eb6bf951aa5dc0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_ab810f714df5d12c566664183f365cbf4}\label{class_effekseer_1_1_manager_ab810f714df5d12c566664183f365cbf4}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Flip@{Flip}}
 \index{Flip@{Flip}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -411,6 +463,13 @@ Updateを実行する際は、実行する必要はない。
 
 今までの\+Play等の処理を\+Update実行時に適用するようにする。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_ab810f714df5d12c566664183f365cbf4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a095085007e1df5de623fea1a96c31a04}\label{class_effekseer_1_1_manager_a095085007e1df5de623fea1a96c31a04}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Get\+Base\+Matrix@{Get\+Base\+Matrix}}
 \index{Get\+Base\+Matrix@{Get\+Base\+Matrix}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -751,6 +810,13 @@ Update処理時間を取得。
 \begin{DoxyReturn}{戻り値}
 エフェクトのインスタンスのハンドル 
 \end{DoxyReturn}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a5ea3211a3670843061238976dda54a4f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a15bf6eee981b682ed35b7660e8caf435}\label{class_effekseer_1_1_manager_a15bf6eee981b682ed35b7660e8caf435}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Ressign\+Culling@{Ressign\+Culling}}
 \index{Ressign\+Culling@{Ressign\+Culling}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -771,6 +837,13 @@ Update処理時間を取得。
 
 エフェクト全体の色を指定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_ae0613bf8762c0948d9361d558ba4b56b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a3829cb7c98f3c41d79394eead1eaaa04}\label{class_effekseer_1_1_manager_a3829cb7c98f3c41d79394eead1eaaa04}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Auto\+Drawing@{Set\+Auto\+Drawing}}
 \index{Set\+Auto\+Drawing@{Set\+Auto\+Drawing}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -824,6 +897,13 @@ Update処理時間を取得。
 \begin{DoxyNote}{覚え書き}
 座標系を設定する。 エフェクトファイルを読み込む前に設定する必要がある。 
 \end{DoxyNote}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a804730036eada2d3e1883ed366c265cc_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a1e183d9310c8562279707786e5503f8f}\label{class_effekseer_1_1_manager_a1e183d9310c8562279707786e5503f8f}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Effect\+Loader@{Set\+Effect\+Loader}}
 \index{Set\+Effect\+Loader@{Set\+Effect\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -905,6 +985,13 @@ Update処理時間を取得。
 {\em mat} & \mbox{[}in\mbox{]} 変換行列 \\
 \hline
 \end{DoxyParams}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a69d0768ed69c30d3993ececa6159c4dd_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a994104b9b353a09861d27ec87b09fa1c}\label{class_effekseer_1_1_manager_a994104b9b353a09861d27ec87b09fa1c}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Model\+Loader@{Set\+Model\+Loader}}
 \index{Set\+Model\+Loader@{Set\+Model\+Loader}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -915,6 +1002,13 @@ Update処理時間を取得。
 
 モデル読込クラスを設定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a994104b9b353a09861d27ec87b09fa1c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_aa423ee424d0b713ac4939fc7faf39b9c}\label{class_effekseer_1_1_manager_aa423ee424d0b713ac4939fc7faf39b9c}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Model\+Renderer@{Set\+Model\+Renderer}}
 \index{Set\+Model\+Renderer@{Set\+Model\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -925,6 +1019,13 @@ Update処理時間を取得。
 
 モデル描画機能を設定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_aa423ee424d0b713ac4939fc7faf39b9c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a6414ea849302b7cef51b61a38c7ecd76}\label{class_effekseer_1_1_manager_a6414ea849302b7cef51b61a38c7ecd76}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Paused@{Set\+Paused}}
 \index{Set\+Paused@{Set\+Paused}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -942,6 +1043,13 @@ Update処理時間を取得。
 {\em paused} & \mbox{[}in\mbox{]} 更新するか? \\
 \hline
 \end{DoxyParams}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a6414ea849302b7cef51b61a38c7ecd76_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a08c4c39a56fcc93b8acb284ff9bc933b}\label{class_effekseer_1_1_manager_a08c4c39a56fcc93b8acb284ff9bc933b}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Paused\+To\+All\+Effects@{Set\+Paused\+To\+All\+Effects}}
 \index{Set\+Paused\+To\+All\+Effects@{Set\+Paused\+To\+All\+Effects}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1004,6 +1112,13 @@ Update処理時間を取得。
 
 ストライプ描画機能を設定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_afe6fa26d93c9c80a0afb8f4fbe0afe20_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_afe6f77af79fd2bea3a36eed5b5dea383}\label{class_effekseer_1_1_manager_afe6f77af79fd2bea3a36eed5b5dea383}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Ring\+Renderer@{Set\+Ring\+Renderer}}
 \index{Set\+Ring\+Renderer@{Set\+Ring\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1014,6 +1129,13 @@ Update処理時間を取得。
 
 リング描画機能を設定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_afe6f77af79fd2bea3a36eed5b5dea383_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_aab0df458615143d664e8f84d176a5be6}\label{class_effekseer_1_1_manager_aab0df458615143d664e8f84d176a5be6}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Rotation@{Set\+Rotation}}
 \index{Set\+Rotation@{Set\+Rotation}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1133,6 +1255,13 @@ Update処理時間を取得。
 {\em speed} & \mbox{[}in\mbox{]} スピード \\
 \hline
 \end{DoxyParams}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_aa85b08562c442cfdce24781158a71431_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a1b4f22221e7068d6604c18aa4ca4b80e}\label{class_effekseer_1_1_manager_a1b4f22221e7068d6604c18aa4ca4b80e}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Sprite\+Renderer@{Set\+Sprite\+Renderer}}
 \index{Set\+Sprite\+Renderer@{Set\+Sprite\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1143,6 +1272,13 @@ Update処理時間を取得。
 
 スプライト描画機能を設定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a1b4f22221e7068d6604c18aa4ca4b80e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a3c709343770c431420772ab3ca6639e1}\label{class_effekseer_1_1_manager_a3c709343770c431420772ab3ca6639e1}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Target\+Location@{Set\+Target\+Location}}
 \index{Set\+Target\+Location@{Set\+Target\+Location}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1187,6 +1323,13 @@ Update処理時間を取得。
 
 テクスチャ読込クラスを設定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a35915c6406f06e7502abed5eeba6ee51_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a7bff3a7ec23d6ae4a66b6f6ba4bd58fc}\label{class_effekseer_1_1_manager_a7bff3a7ec23d6ae4a66b6f6ba4bd58fc}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Set\+Track\+Renderer@{Set\+Track\+Renderer}}
 \index{Set\+Track\+Renderer@{Set\+Track\+Renderer}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1197,6 +1340,13 @@ Update処理時間を取得。
 
 軌跡描画機能を設定する。 
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a7bff3a7ec23d6ae4a66b6f6ba4bd58fc_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_a65a6043aace92f52bcb8f7fc1052d3f0}\label{class_effekseer_1_1_manager_a65a6043aace92f52bcb8f7fc1052d3f0}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Stop\+All\+Effects@{Stop\+All\+Effects}}
 \index{Stop\+All\+Effects@{Stop\+All\+Effects}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1222,6 +1372,13 @@ Update処理時間を取得。
 {\em handle} & \mbox{[}in\mbox{]} インスタンスのハンドル \\
 \hline
 \end{DoxyParams}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_manager_a7a4a9ff929146f8ea21aa4705b352baa_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_adbde475d5977ca36c0a3a4c1e6878b33}\label{class_effekseer_1_1_manager_adbde475d5977ca36c0a3a4c1e6878b33}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Stop\+Root@{Stop\+Root}}
 \index{Stop\+Root@{Stop\+Root}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}
@@ -1267,6 +1424,13 @@ Update処理時間を取得。
 {\em delta\+Frame} & \mbox{[}in\mbox{]} 更新するフレーム数(60fps基準) \\
 \hline
 \end{DoxyParams}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_effekseer_1_1_manager_ac086ec64cb5f99172e8bf655b77e1464_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_effekseer_1_1_manager_afe8a0df796e161f68a511540c76df839}\label{class_effekseer_1_1_manager_afe8a0df796e161f68a511540c76df839}} 
 \index{Effekseer\+::\+Manager@{Effekseer\+::\+Manager}!Update\+Handle@{Update\+Handle}}
 \index{Update\+Handle@{Update\+Handle}!Effekseer\+::\+Manager@{Effekseer\+::\+Manager}}

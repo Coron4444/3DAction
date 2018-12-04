@@ -86,7 +86,7 @@ void ModelXObject::UpdateMeshDeclaration(const D3DVERTEXELEMENT9* DECLARATION)
 
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
-	Renderer::GetInstance()->GetDevice(&device);
+	Renderer::getpInstance()->getDevice(&device);
 	if (device == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(ModelXObject.cpp)", "Error", MB_OK);
@@ -115,7 +115,7 @@ void ModelXObject::InputModelX(const std::string* file_path, LPD3DXBUFFER* mater
 {
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
-	Renderer::GetInstance()->GetDevice(&device);
+	Renderer::getpInstance()->getDevice(&device);
 	if (device == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(ModelXObject.cpp)", "Error", MB_OK);

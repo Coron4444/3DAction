@@ -8,5 +8,8 @@ var class_coin_collision =
     ] ],
     [ "Init", "class_coin_collision.html#a4119a7decab2410a4ada3568ad0c132d", null ],
     [ "Uninit", "class_coin_collision.html#aa852afdcdbedcf82809df9c7fd99be9e", null ],
-    [ "Update", "class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b", null ]
+    [ "Update", "class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b", null ],
+    [ "bounding_obb_", "class_coin_collision.html#ac604781e9ab6194c06bf9ca7f426bd95", null ],
+    [ "collision_objects_", "class_coin_collision.html#a6a110ab9ad9acd6942a5725380443151", null ],
+    [ "substance_", "class_coin_collision.html#a255c792770274eebf85df921467e6f1c", null ]
 ];

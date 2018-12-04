@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    レンダラークラス
-//    Author : Araki Kai                                作成日 : 2018/11/01
-//
+//!	@file	 Renderer.h
+//!	@brief	 レンダラーClass
+//! @details Singleton
+//!	@author  Kai Araki									@date 2018/11/01
 //================================================================================
-
 #ifndef	_RENDERE_H_
 #define _RENDERE_H_
 
@@ -13,24 +12,22 @@
 //****************************************
 // インクルード文
 //****************************************
-#include "RendererInterface/RendererInterface.h"
-#include "RendererFactory/RendererFactory.h"
-#include "RendererDirectX9/RendererDirectX9.h"
+#include <renderer/RendererFactory/RendererFactoryDirectX9/RendererFactoryDirectX9.h>
+#include <SafeRelease/SafeRelease.h>
 #include <Vector3D.h>
 
 
 
-/*********************************************************//**
-* @brief
-* レンダラークラス
-*
-* レンダラークラス
-*************************************************************/
+//************************************************************														   
+//! @brief   レンダラーClass
+//!
+//! @details レンダラーのClass(Singleton)
+//************************************************************
 class Renderer
 {
-//==============================
+//====================
 // 列挙型定義
-//==============================
+//====================
 public:
 	enum MODE
 	{
@@ -42,113 +39,126 @@ public:
 	};
 
 
-//==============================
-// 静的メンバ変数
-//==============================
+//====================
+// static変数
+//====================
 private:
 	static Renderer* instance_;				//!< インスタンス
 	static RendererInterface* renderer_;	//!< レンダラー
 
 
-
-//==============================
-// メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	MODE mode_ = MODE::NONE;		//!< モード
 
 
-
-//==============================
-// 静的メンバ関数
-//==============================
+//====================
+// static関数
+//====================
 public:
-	static Renderer* GetInstance();
+	//----------------------------------------
+	//! @brief インスタンス解放関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	static void ReleaseInstance();
 
+	// プロパティ
+	static Renderer* getpInstance();
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
-private:
-	/**
-	* @brief
-	* コンストラクタ
-	*/
-	Renderer() {}
-	Renderer(const Renderer& class_name) = delete;
-	Renderer& operator = (const Renderer& class_name) = delete;
-
-
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 初期化関数
-	* @param
-	* hInstance : インスタンスハンドル
-	* hWnd : Windowsハンドル
-	* is_full_screen : フルスクリーンフラグ
-	* window_width : Window幅
-	* window_height : Window高さ
-	*/
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param[in] hInstance	  インスタンスハンドル
+	//! @param[in] hWnd			  Windowsハンドル
+	//! @param[in] is_full_screen フルスクリーンフラグ
+	//! @param[in] window_width	  ウィンドウ幅
+	//! @param[in] window_height  ウィンドウ高さ
+	//! @retval bool 初期化成功の有無
+	//----------------------------------------
 	bool Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 			  int window_width, int window_height);
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Uninit();
 
-	/**
-	* @brief
-	* 描画開始関数
-	*/
+	//----------------------------------------
+	//! @brief 描画開始関数
+	//! @param void なし
+	//! @retval bool 描画開始成功の有無
+	//----------------------------------------
 	bool DrawBegin();
 
-	/**
-	* @brief
-	* 描画終了関数
-	* @param
-	* is_begin_scene : 描画開始が成功しているかフラグ
-	*/
+	//----------------------------------------
+	//! @brief 描画終了関数
+	//! @param[in] is_begin_scene 描画開始成功フラグ
+	//! @retval void なし
+	//----------------------------------------
 	void DrawEnd(bool is_begin_scene);
 
-	/**
-	* @brief
-	* バックバッファをフロントバッファに反映関数
-	*/
+	//----------------------------------------
+	//! @brief バックバッファをフロントバッファに反映関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Present();
 
-	/**
-	* @brief
-	* レンダラー設定関数
-	* @param
-	* factory : レンダラーファクトリー
-	* mode : モード
-	*/
-	void SetRenderer(RendererFactory* factory, MODE mode);
+	// プロパティ
+	RendererInterface* getpRenderer() { return renderer_; }
+	void setRenderer(RendererFactoryInterface* factory, MODE mode)
+	{
+		if (renderer_ == nullptr)
+		{
+			renderer_ = factory->Create();
+			mode_ = mode;
+		}
 
-	/**
-	* @brief
-	* レンダラー取得関数
-	*/
-	RendererInterface* GetRenderer() { return renderer_; }
-
-	/**
-	* @brief
-	* インターフェース取得関数
-	*/
+		SafeRelease::Normal(&factory);
+	}
 	template <class Type>
-	void GetInterface(Type** pointer)
+	void getInterface(Type** pointer)
 	{
 		if (renderer_ == nullptr) return;
 		switch (mode_)
 		{
 			case Renderer::DIRECTX9:
 			{
-				*pointer = ((RendererDirectX9*)renderer_)->GetInterface();
+				*pointer = ((RendererDirectX9*)renderer_)->getpInterface();
+				break;
+			}
+			case Renderer::DIRECTX11:
+			{
+				break;
+			}
+			case Renderer::OPEN_GL:
+			{
+				break;
+			}
+			default:
+			{
+				break;
+			}
+		}
+	}
+	template <class Type>
+	void getDevice(Type** pointer)
+	{
+		if (renderer_ == nullptr) return;
+		switch (mode_)
+		{
+			case Renderer::DIRECTX9:
+			{
+				*pointer = ((RendererDirectX9*)renderer_)->getpDevice();
 				break;
 			}
 			case Renderer::DIRECTX11:
@@ -166,35 +176,14 @@ public:
 		}
 	}
 
-	/**
-	* @brief
-	* デバイス取得関数
-	*/
-	template <class Type>
-	void GetDevice(Type** pointer)
-	{
-		if (renderer_ == nullptr) return;
-		switch (mode_)
-		{
-			case Renderer::DIRECTX9:
-			{
-				*pointer = ((RendererDirectX9*)renderer_)->GetDevice();
-				break;
-			}
-			case Renderer::DIRECTX11:
-			{
-				break;
-			}
-			case Renderer::OPEN_GL:
-			{
-				break;
-			}
-			default:
-			{
-				break;
-			}
-		}
-	}
+private:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	Renderer() {}
+	Renderer(const Renderer& class_name) = delete;
+	Renderer& operator = (const Renderer& class_name) = delete;
 };
 
 

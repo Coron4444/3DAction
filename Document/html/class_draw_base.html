@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('class_draw_base.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_draw_base-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">DrawBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -102,29 +103,54 @@ $(document).ready(function(){initNavTree('class_draw_base.html','');});
 <div class="dynheader">
 DrawBase の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_draw_base.png" usemap="#DrawBase_map" alt=""/>
-  <map id="DrawBase_map" name="DrawBase_map">
-<area href="class_component_base.html" title="コンポーネント基底クラス " alt="ComponentBase" shape="rect" coords="0,0,148,24"/>
-<area href="class_draw_null.html" title="空白描画クラス " alt="DrawNull" shape="rect" coords="0,112,148,136"/>
-<area href="class_clear_logo_draw.html" title="クリアロゴ描画クラス " alt="ClearLogoDraw" shape="rect" coords="158,168,306,192"/>
-<area href="class_coin_draw.html" title="コインロゴ描画クラス " alt="CoinDraw" shape="rect" coords="158,224,306,248"/>
-<area href="class_enemy_draw.html" title="敵描画クラス " alt="EnemyDraw" shape="rect" coords="158,280,306,304"/>
-<area href="class_fade.html" title="フェードクラス " alt="Fade" shape="rect" coords="158,336,306,360"/>
-<area href="class_failure_logo_draw.html" title="失敗ロゴ描画クラス " alt="FailureLogoDraw" shape="rect" coords="158,392,306,416"/>
-<area href="class_field_draw.html" title="地面描画クラス " alt="FieldDraw" shape="rect" coords="158,448,306,472"/>
-<area href="class_goal_draw.html" title="ゴール描画クラス " alt="GoalDraw" shape="rect" coords="158,504,306,528"/>
-<area href="class_number_draw.html" title="数字描画クラス " alt="NumberDraw" shape="rect" coords="158,560,306,584"/>
-<area href="class_player_draw.html" title="プレイヤー描画クラス " alt="PlayerDraw" shape="rect" coords="158,616,306,640"/>
-<area href="class_push_space_logo_draw.html" title="プッシュスペースロゴ描画クラス " alt="PushSpaceLogoDraw" shape="rect" coords="158,672,306,696"/>
-<area href="class_render_texture.html" title="フェードクラス " alt="RenderTexture" shape="rect" coords="158,728,306,752"/>
-<area href="class_score_draw.html" title="スコア描画クラス " alt="ScoreDraw" shape="rect" coords="158,784,306,808"/>
-<area href="class_sky_dome_draw.html" title="プレイヤー描画クラス " alt="SkyDomeDraw" shape="rect" coords="158,840,306,864"/>
-<area href="class_stencil_shadow_test_draw.html" title="ステンシルシャドウ描画クラス " alt="StencilShadowTestDraw" shape="rect" coords="158,896,306,920"/>
-<area href="class_title_logo_draw.html" title="タイトルロゴ描画クラス " alt="TitleLogoDraw" shape="rect" coords="158,952,306,976"/>
-<area href="class_tutorial_logo_draw.html" title="チュートリアルロゴ描画クラス " alt="TutorialLogoDraw" shape="rect" coords="158,1008,306,1032"/>
+<div class="center"><img src="class_draw_base__inherit__graph.png" border="0" usemap="#_draw_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="_draw_base_inherit__map" id="_draw_base_inherit__map">
+<area shape="rect" id="node3" href="class_draw_null.html" title="空白描画クラス " alt="" coords="301,385,375,412"/>
+<area shape="rect" id="node2" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="5,385,124,412"/>
+<area shape="rect" id="node4" href="class_clear_logo_draw.html" title="クリアロゴ描画クラス " alt="" coords="449,5,559,32"/>
+<area shape="rect" id="node5" href="class_coin_draw.html" title="コインロゴ描画Class " alt="" coords="465,56,543,83"/>
+<area shape="rect" id="node6" href="class_enemy_draw.html" title="敵描画クラス " alt="" coords="458,107,550,133"/>
+<area shape="rect" id="node7" href="class_fade.html" title="フェードクラス " alt="" coords="479,157,529,184"/>
+<area shape="rect" id="node8" href="class_failure_logo_draw.html" title="失敗ロゴ描画クラス " alt="" coords="445,208,563,235"/>
+<area shape="rect" id="node9" href="class_field_draw.html" title="地面描画クラス " alt="" coords="465,259,543,285"/>
+<area shape="rect" id="node10" href="class_goal_draw.html" title="ゴール描画クラス " alt="" coords="465,309,543,336"/>
+<area shape="rect" id="node11" href="class_number_draw.html" title="数字描画クラス " alt="" coords="456,360,552,387"/>
+<area shape="rect" id="node12" href="class_player_draw.html" title="プレイヤー描画クラス " alt="" coords="460,411,548,437"/>
+<area shape="rect" id="node13" href="class_push_space_logo_draw.html" title="プッシュスペースロゴ描画クラス " alt="" coords="431,461,577,488"/>
+<area shape="rect" id="node14" href="class_render_texture.html" title="フェードクラス " alt="" coords="451,512,557,539"/>
+<area shape="rect" id="node15" href="class_score_draw.html" title="スコア描画クラス " alt="" coords="461,563,547,589"/>
+<area shape="rect" id="node16" href="class_sky_dome_draw.html" title="プレイヤー描画クラス " alt="" coords="450,613,558,640"/>
+<area shape="rect" id="node17" href="class_stencil_shadow_test_draw.html" title="ステンシルシャドウ描画クラス " alt="" coords="423,664,585,691"/>
+<area shape="rect" id="node18" href="class_title_logo_draw.html" title="タイトルロゴ描画クラス " alt="" coords="453,715,555,741"/>
+<area shape="rect" id="node19" href="class_tutorial_logo_draw.html" title="チュートリアルロゴ描画クラス " alt="" coords="443,765,565,792"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+DrawBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base__coll__graph.png" border="0" usemap="#_draw_base_coll__map" alt="Collaboration graph"/></div>
+<map name="_draw_base_coll__map" id="_draw_base_coll__map">
+<area shape="rect" id="node3" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="875,367,1000,393"/>
+<area shape="rect" id="node2" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="1184,372,1303,399"/>
+<area shape="rect" id="node4" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="1452,347,1553,373"/>
+<area shape="rect" id="node17" href="class_update_base.html" title="更新基底クラス " alt="" coords="1456,283,1549,309"/>
+<area shape="rect" id="node16" href="class_physics.html" title="Physics" alt="" coords="1209,319,1278,345"/>
+<area shape="rect" id="node6" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1695,204,1811,231"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="1992,283,2133,339"/>
+<area shape="rect" id="node12" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1952,209,2173,236"/>
+<area shape="rect" id="node7" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="677,84,736,111"/>
+<area shape="rect" id="node8" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="364,111,503,137"/>
+<area shape="rect" id="node15" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="652,143,761,169"/>
+<area shape="rect" id="node10" href="class_vector3_d.html" title="Vector3D" alt="" coords="107,193,183,220"/>
+<area shape="rect" id="node18" href="class_transform.html" title="Transform" alt="" coords="667,367,746,393"/>
+<area shape="rect" id="node20" href="class_axis_vector.html" title="AxisVector" alt="" coords="390,367,477,393"/>
+<area shape="rect" id="node13" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="2331,209,2551,236"/>
+<area shape="rect" id="node14" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="1024,147,1160,203"/>
+<area shape="rect" id="node19" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="384,417,483,444"/>
+<area shape="rect" id="node21" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="381,468,485,495"/>
+<area shape="rect" id="node22" href="class_flag.html" title="Flag" alt="" coords="121,468,168,495"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -180,10 +206,21 @@ DrawBase の継承関係図</div>
 <tr class="separator:ac9fc08588e3d29caf8d692a3392fc7b0 inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_base.html">GameObjectBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">GetGameObject</a> ()</td></tr>
 <tr class="separator:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a6ebc8dc96176ddd3bd984b3d54739adb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_draw_order_list.html">DrawOrderList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_base.html#a6ebc8dc96176ddd3bd984b3d54739adb">draw_order_list_</a></td></tr>
+<tr class="memdesc:a6ebc8dc96176ddd3bd984b3d54739adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画注文リスト  <a href="#a6ebc8dc96176ddd3bd984b3d54739adb">[詳解]</a><br /></td></tr>
+<tr class="separator:a6ebc8dc96176ddd3bd984b3d54739adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8be4980756a0af7cc76dfe455c492d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Camera::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_base.html#aa8be4980756a0af7cc76dfe455c492d4">save_camera_type_</a> = Camera::Type::NONE</td></tr>
+<tr class="memdesc:aa8be4980756a0af7cc76dfe455c492d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラタイプ保存用  <a href="#aa8be4980756a0af7cc76dfe455c492d4">[詳解]</a><br /></td></tr>
+<tr class="separator:aa8be4980756a0af7cc76dfe455c492d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>描画基底クラス </p>
 <p>描画の基底クラス </p>
+
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00035">35</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a799597f696c5cbf6074fb2655dea5e18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a799597f696c5cbf6074fb2655dea5e18">&#9670;&nbsp;</a></span>~DrawBase()</h2>
@@ -209,6 +246,8 @@ DrawBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p>仮想デストラクタ </p>
+
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00053">53</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -239,6 +278,21 @@ DrawBase の継承関係図</div>
 <p>デバッグ表示関数 </p>
 
 <p><a class="el" href="class_draw_null.html#aa78d05c51ff3943888678b9b2c6bd027">DrawNull</a>で再実装されています。</p>
+
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00074">74</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a2ba175f791ee01508ffb2be24c68fe7f_icgraph.png" border="0" usemap="#class_draw_base_a2ba175f791ee01508ffb2be24c68fe7f_icgraph" alt=""/></div>
+<map name="class_draw_base_a2ba175f791ee01508ffb2be24c68fe7f_icgraph" id="class_draw_base_a2ba175f791ee01508ffb2be24c68fe7f_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="223,13,373,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="421,5,575,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="623,13,817,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="865,13,1016,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1064,13,1225,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1273,13,1347,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -285,6 +339,20 @@ DrawBase の継承関係図</div>
 </dl>
 
 <p><a class="el" href="class_fade.html#a84a9e688650ac500e03cde74ff0210b8">Fade</a>, <a class="el" href="class_goal_draw.html#a554c826d7a4534ee489dfe18edf7ee0e">GoalDraw</a>, <a class="el" href="class_tutorial_logo_draw.html#aa808cfb8bc59d58bbd698a195603429f">TutorialLogoDraw</a>, <a class="el" href="class_stencil_shadow_test_draw.html#abb5f9445b7d94c213a3751fa57e36643">StencilShadowTestDraw</a>, <a class="el" href="class_render_texture.html#a529ab829c676470ae5764b42cba9efb0">RenderTexture</a>, <a class="el" href="class_coin_draw.html#ac7d91fecb6845cebe276eb81a4953563">CoinDraw</a>, <a class="el" href="class_player_draw.html#a8b9e8caa6bea7295f58a0aaddeb9458b">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#ab018f370071f370ae7016d8ee402c456">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#a8ee20e1697bbbaf7f41c18334830488a">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a647dddefc43d66cb3c720ee8fbb6a783">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a01e4cb21d580bac86a226fa2e35bf4a3">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#a1915497654d079074dbd3e058db06a78">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a42364ea42618cbab588d55050edfe95a">SkyDomeDraw</a>, <a class="el" href="class_draw_null.html#afe50f6fd820b18d673f70f048743f339">DrawNull</a>, <a class="el" href="class_enemy_draw.html#a20a23c1c5fd5e510d15e8ca27aabd821">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a15e4e602b3f9372349d0b6ff9e4fc423">NumberDraw</a>, <a class="el" href="class_score_draw.html#a799e71943140a264cedba6002308b976">ScoreDraw</a> (計17項目)で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a408080106630a1146d7af0bb46a4d8d1_icgraph.png" border="0" usemap="#class_draw_base_a408080106630a1146d7af0bb46a4d8d1_icgraph" alt=""/></div>
+<map name="class_draw_base_a408080106630a1146d7af0bb46a4d8d1_icgraph" id="class_draw_base_a408080106630a1146d7af0bb46a4d8d1_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="172,5,295,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="343,5,481,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="529,5,712,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="760,5,943,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="991,5,1129,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1177,5,1339,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1387,5,1460,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -323,6 +391,16 @@ DrawBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_draw_null.html#a8496ed1b1f765a331a8f1704122b8ca4">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#a387a97781f743aa0ea0727c050ef53b2">StencilShadowTestDraw</a>, <a class="el" href="class_coin_draw.html#a1d4ab1a5c480833b8d8e7fe226136ad5">CoinDraw</a>, <a class="el" href="class_tutorial_logo_draw.html#ad9df98aa8a5b11872dba6f6609589035">TutorialLogoDraw</a>, <a class="el" href="class_player_draw.html#a6cecfb28942044efff0b9d6213b511a5">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#a04ae25ae9cb59df0d0c346b65baed3f2">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#a2a74fafba17b2f63b1c61abd67289afd">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a4990a9f5662af324f2632e8647cbdde4">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#ab727012424a02249a90a0f7d247371a8">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#a67eabcc5ffd6697b87e89a1c4ddb95f6">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a1d708782f13648724e423d1dca22b213">SkyDomeDraw</a>, <a class="el" href="class_number_draw.html#ad1d9a4cee49e7bddce51b5c58e739de9">NumberDraw</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a4e36184dbb605bcae13bfb38722ddc24_icgraph.png" border="0" usemap="#class_draw_base_a4e36184dbb605bcae13bfb38722ddc24_icgraph" alt=""/></div>
+<map name="class_draw_base_a4e36184dbb605bcae13bfb38722ddc24_icgraph" id="class_draw_base_a4e36184dbb605bcae13bfb38722ddc24_icgraph">
+<area shape="rect" id="node2" href="class_pixel_shader_bump_mapping.html#afa80c2404b490a444d54cc47c681ca8f" title="固有設定関数 " alt="" coords="247,5,421,47"/>
+<area shape="rect" id="node3" href="class_vertex_shader_fixed.html#a1caad0cf4c86788ed17c2a8da8645414" title="VertexShaderFixed::\lSetTexture" alt="" coords="263,71,405,112"/>
+<area shape="rect" id="node4" href="class_vertex_shader_fixed.html#a87523c320f6f6767d59d7b24265db7ec" title="固有設定関数 " alt="" coords="469,71,611,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -348,6 +426,58 @@ DrawBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00127">127</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a894bf875b80745150b250e584f00fa0c_icgraph.png" border="0" usemap="#class_draw_base_a894bf875b80745150b250e584f00fa0c_icgraph" alt=""/></div>
+<map name="class_draw_base_a894bf875b80745150b250e584f00fa0c_icgraph" id="class_draw_base_a894bf875b80745150b250e584f00fa0c_icgraph">
+<area shape="rect" id="node2" href="class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd" title="初期化関数 " alt="" coords="285,5,420,32"/>
+<area shape="rect" id="node3" href="class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176" title="初期化関数 " alt="" coords="281,56,424,83"/>
+<area shape="rect" id="node4" href="class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e" title="初期化関数 " alt="" coords="267,107,438,133"/>
+<area shape="rect" id="node5" href="class_score_draw.html#af013abb96136825e71d4fee06529fc69" title="初期化関数 " alt="" coords="297,157,408,184"/>
+<area shape="rect" id="node6" href="class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30" title="初期化関数 " alt="" coords="289,208,417,235"/>
+<area shape="rect" id="node7" href="class_tutorial_logo_draw.html#a53fc4b1b23c7f9e249600be67510f944" title="初期化関数 " alt="" coords="279,259,426,285"/>
+<area shape="rect" id="node8" href="class_coin_draw.html#ad0f5da5cfb896541fd59b1ab4a8593d1" title="初期化関数 " alt="" coords="301,309,404,336"/>
+<area shape="rect" id="node9" href="class_enemy_draw.html#aa1659c35fa757db6a6cf07e26ad9ddfb" title="初期化関数 " alt="" coords="294,360,411,387"/>
+<area shape="rect" id="node10" href="class_field_draw.html#a4287d2ce33033b2413c1d3a81b173373" title="初期化関数 " alt="" coords="301,411,405,437"/>
+<area shape="rect" id="node11" href="class_goal_draw.html#a3eb0a555fa2db9d2c1253018ea65796e" title="初期化関数 " alt="" coords="301,461,404,488"/>
+<area shape="rect" id="node12" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68" title="初期化関数 " alt="" coords="296,512,409,539"/>
+<area shape="rect" id="node13" href="class_sky_dome_draw.html#a5b82e8b650a20dbc0b7ed720d1fb7fab" title="初期化関数 " alt="" coords="286,563,419,589"/>
+<area shape="rect" id="node14" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="271,614,434,655"/>
+<area shape="rect" id="node15" href="class_draw_manager.html#a9a09cb524187bc11f1e4812a06fe46d6" title="描画基底クラス振り分け関数 " alt="" coords="508,739,731,765"/>
+<area shape="rect" id="node22" href="class_fade.html#aec1ac5a0a80be8d7a2a43dbde2a741ee" title="コンストラクタ " alt="" coords="309,1292,397,1319"/>
+<area shape="rect" id="node23" href="class_back_buffer.html#ab9cae17a69086b467f6e016e432b224b" title="描画基底クラスの追加関数 " alt="" coords="258,731,447,773"/>
+<area shape="rect" id="node24" href="class_back_buffer.html#a1530979126918a1a76b6555a5d9de9b8" title="2D描画基底クラスのソート関数 " alt="" coords="286,797,419,824"/>
+<area shape="rect" id="node27" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="273,849,432,890"/>
+<area shape="rect" id="node28" href="class_vertex_shader_fixed.html#a82bf2829b6fd0df26faedcbf650ba08d" title="共通設定関数 " alt="" coords="282,1343,423,1385"/>
+<area shape="rect" id="node29" href="class_shader_manager.html#a3661a079ae4e9e7e4d5da35f2171b41e" title="頂点シェーダー設定関数 " alt="" coords="263,1175,442,1217"/>
+<area shape="rect" id="node37" href="class_shader_manager.html#a6c954293001a33fafff216ff719618d5" title="ピクセルシェーダー設定関数 " alt="" coords="247,1241,458,1268"/>
+<area shape="rect" id="node38" href="class_shader_manager.html#a836c92ee48dfbf8b8c8085f9413027bd" title="頂点シェーダー共通設定関数 " alt="" coords="245,914,460,955"/>
+<area shape="rect" id="node40" href="class_shader_manager.html#ad2b591958e1d22d746e5ed3d7941e4c1" title="ピクセルシェーダー共通設定関数 " alt="" coords="245,979,460,1021"/>
+<area shape="rect" id="node41" href="class_shader_manager.html#a2433c0715142fd310a497e080f7d0ddb" title="頂点シェーダー固有設定関数 " alt="" coords="249,1045,457,1086"/>
+<area shape="rect" id="node43" href="class_shader_manager.html#a1158156785098fe426dd514e4c2a97c1" title="ピクセルシェーダー固有設定関数 " alt="" coords="249,1110,457,1151"/>
+<area shape="rect" id="node44" href="class_number_draw.html#ad52c1e8b9ae6e830a82c440cc18cb6c9" title="初期化関数 " alt="" coords="292,1409,413,1436"/>
+<area shape="rect" id="node16" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1033,827,1184,853"/>
+<area shape="rect" id="node17" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1232,879,1385,921"/>
+<area shape="rect" id="node18" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1433,889,1628,916"/>
+<area shape="rect" id="node19" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1907,900,2057,927"/>
+<area shape="rect" id="node20" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2105,927,2267,953"/>
+<area shape="rect" id="node21" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2315,927,2388,953"/>
+<area shape="rect" id="node25" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="552,827,687,853"/>
+<area shape="rect" id="node26" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="779,819,985,861"/>
+<area shape="rect" id="node30" href="class_shader_manager.html#ad2caed4ae50c1ca784151d0f9e50c381" title="シェーダー設定関数 " alt="" coords="528,1172,711,1199"/>
+<area shape="rect" id="node31" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="1047,1037,1170,1064"/>
+<area shape="rect" id="node36" href="class_back_buffer.html#a9835a5db9850f774a382c4f8e611b1d1" title="フェード描画関数 " alt="" coords="807,1088,957,1115"/>
+<area shape="rect" id="node32" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="1239,976,1378,1003"/>
+<area shape="rect" id="node33" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="1439,957,1622,984"/>
+<area shape="rect" id="node34" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1676,955,1859,981"/>
+<area shape="rect" id="node35" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1913,952,2051,979"/>
+<area shape="rect" id="node39" href="class_shader_manager.html#a6cfff8f4aee59d9bc5162a5a6f4d07d4" title="共通設定関数 " alt="" coords="512,987,727,1013"/>
+<area shape="rect" id="node42" href="class_shader_manager.html#af016392b9b0477d49165d753e9404ff4" title="固有設定関数 " alt="" coords="515,1071,723,1097"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -385,7 +515,17 @@ DrawBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_draw_null.html#a84969d22d3436986f214e9896fe44fc6">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#abfc9caaaa1b6120e2013701a9d264f2d">StencilShadowTestDraw</a>, <a class="el" href="class_coin_draw.html#a869a6b7273b273048dd56822fae4d644">CoinDraw</a>, <a class="el" href="class_goal_draw.html#a47baf72f8c1c961176610f161069b8d1">GoalDraw</a>, <a class="el" href="class_tutorial_logo_draw.html#a3a97860361e32a727246e99052715f37">TutorialLogoDraw</a>, <a class="el" href="class_player_draw.html#ae818d3adaf5120845c2a78c230b5365e">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#ab356bf5d56c10a6689e101b35c30d889">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#aaac019fb396a354ef0f823ed2bd72322">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a0734eed4096afb12e6c9ef1f4d82b9d8">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a8858aa1b1eb9a6d4cb4605519efb20eb">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#ab126f938895211ff170bc37045a8e7a2">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#acbc487d912b464474ae6f1afd7d6bb74">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#a12f00116f7fa97e07317a949d5c27bb4">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a3348d9d1cdd9dd03be25b82069275ca5">NumberDraw</a>で実装されています。</p>
+<p><a class="el" href="class_draw_null.html#a84969d22d3436986f214e9896fe44fc6">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#abfc9caaaa1b6120e2013701a9d264f2d">StencilShadowTestDraw</a>, <a class="el" href="class_goal_draw.html#a47baf72f8c1c961176610f161069b8d1">GoalDraw</a>, <a class="el" href="class_coin_draw.html#a869a6b7273b273048dd56822fae4d644">CoinDraw</a>, <a class="el" href="class_tutorial_logo_draw.html#a3a97860361e32a727246e99052715f37">TutorialLogoDraw</a>, <a class="el" href="class_player_draw.html#ae818d3adaf5120845c2a78c230b5365e">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#ab356bf5d56c10a6689e101b35c30d889">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#aaac019fb396a354ef0f823ed2bd72322">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a0734eed4096afb12e6c9ef1f4d82b9d8">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a8858aa1b1eb9a6d4cb4605519efb20eb">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#ab126f938895211ff170bc37045a8e7a2">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#acbc487d912b464474ae6f1afd7d6bb74">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#a12f00116f7fa97e07317a949d5c27bb4">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a3348d9d1cdd9dd03be25b82069275ca5">NumberDraw</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_ad82a75dff8e4e2f2ebbec2dd0d0734e5_icgraph.png" border="0" usemap="#class_draw_base_ad82a75dff8e4e2f2ebbec2dd0d0734e5_icgraph" alt=""/></div>
+<map name="class_draw_base_ad82a75dff8e4e2f2ebbec2dd0d0734e5_icgraph" id="class_draw_base_ad82a75dff8e4e2f2ebbec2dd0d0734e5_icgraph">
+<area shape="rect" id="node2" href="class_vertex_shader_bump_mapping.html#ad81d57336763441c4071f967b57dbce1" title="固有設定関数 " alt="" coords="209,5,393,47"/>
+<area shape="rect" id="node3" href="class_vertex_shader_fixed.html#a05ce5fdd8ff190b9934497f42cf19a38" title="VertexShaderFixed::\lSetMaterial" alt="" coords="231,71,372,112"/>
+<area shape="rect" id="node4" href="class_vertex_shader_fixed.html#a87523c320f6f6767d59d7b24265db7ec" title="固有設定関数 " alt="" coords="441,71,583,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -413,7 +553,17 @@ DrawBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_fade.html#a6aed6912ebf9c243c52cb82f298d8d64">Fade</a>, <a class="el" href="class_draw_null.html#adede079e9c11a756090740b20bb43022">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#adfa99798c61ac13f209dc99f1e2694c5">StencilShadowTestDraw</a>, <a class="el" href="class_coin_draw.html#a8f5fd8668a4c66fe31446cc6f7c4afd7">CoinDraw</a>, <a class="el" href="class_goal_draw.html#a50fa9ceaaecdff9910e0f91e65ad9e95">GoalDraw</a>, <a class="el" href="class_render_texture.html#a0e9746f5cebdd088f2303e18cbc52eae">RenderTexture</a>, <a class="el" href="class_tutorial_logo_draw.html#ab700e592d00574dff6ee342138343d7b">TutorialLogoDraw</a>, <a class="el" href="class_player_draw.html#a8edf1441ea23f298c6a0ca707f54021a">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#af5d12b717020101e5c956cf3574f0e2a">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#aefc4be9e6ead4d90a5fc9c22cc07fe92">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a1ab6229ba2d68b730797f5016c99f359">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#af21cd1dbd79c741a2e3ca2b8e26c5f61">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#a2629b4c4cd8e240e39c65b879c6e82b6">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#ab947a3d43975a6d95149bc112c08ce05">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#a6f2a052a45caf0d255112cbe81b8bfa3">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a78f50afa05e728811d89a491f5eec899">NumberDraw</a>, <a class="el" href="class_score_draw.html#a62aa20ef4b40544bf0a95770b925c780">ScoreDraw</a> (計17項目)で実装されています。</p>
+<p><a class="el" href="class_fade.html#a6aed6912ebf9c243c52cb82f298d8d64">Fade</a>, <a class="el" href="class_draw_null.html#adede079e9c11a756090740b20bb43022">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#adfa99798c61ac13f209dc99f1e2694c5">StencilShadowTestDraw</a>, <a class="el" href="class_goal_draw.html#a50fa9ceaaecdff9910e0f91e65ad9e95">GoalDraw</a>, <a class="el" href="class_coin_draw.html#a8f5fd8668a4c66fe31446cc6f7c4afd7">CoinDraw</a>, <a class="el" href="class_render_texture.html#a0e9746f5cebdd088f2303e18cbc52eae">RenderTexture</a>, <a class="el" href="class_tutorial_logo_draw.html#ab700e592d00574dff6ee342138343d7b">TutorialLogoDraw</a>, <a class="el" href="class_player_draw.html#a8edf1441ea23f298c6a0ca707f54021a">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#af5d12b717020101e5c956cf3574f0e2a">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#aefc4be9e6ead4d90a5fc9c22cc07fe92">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a1ab6229ba2d68b730797f5016c99f359">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#af21cd1dbd79c741a2e3ca2b8e26c5f61">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#a2629b4c4cd8e240e39c65b879c6e82b6">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#ab947a3d43975a6d95149bc112c08ce05">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#a6f2a052a45caf0d255112cbe81b8bfa3">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a78f50afa05e728811d89a491f5eec899">NumberDraw</a>, <a class="el" href="class_score_draw.html#a62aa20ef4b40544bf0a95770b925c780">ScoreDraw</a> (計17項目)で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a01239bf362040f7f2ef5e5f5371dcf18_icgraph.png" border="0" usemap="#class_draw_base_a01239bf362040f7f2ef5e5f5371dcf18_icgraph" alt=""/></div>
+<map name="class_draw_base_a01239bf362040f7f2ef5e5f5371dcf18_icgraph" id="class_draw_base_a01239bf362040f7f2ef5e5f5371dcf18_icgraph">
+<area shape="rect" id="node2" href="class_pixel_shader_bump_mapping.html#af62a2b40930533a3bae17319f876705d" title="共通設定関数 " alt="" coords="205,5,379,47"/>
+<area shape="rect" id="node3" href="class_vertex_shader_bump_mapping.html#a7979584d035fff86d386c99617a8dd2c" title="共通設定関数 " alt="" coords="200,71,384,112"/>
+<area shape="rect" id="node4" href="class_vertex_shader_fixed.html#a82bf2829b6fd0df26faedcbf650ba08d" title="共通設定関数 " alt="" coords="221,136,363,177"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -441,7 +591,21 @@ DrawBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_draw_null.html#ad735978a85a5f3583eecd82d6bfe6413">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#acfa569f1dcdc3829796138e313f204ad">StencilShadowTestDraw</a>, <a class="el" href="class_coin_draw.html#a178c8d88effe55aaad7d0e45b02e0566">CoinDraw</a>, <a class="el" href="class_goal_draw.html#a7f30c7a4325668eebd8730ad2bea1ad8">GoalDraw</a>, <a class="el" href="class_tutorial_logo_draw.html#a19de254c5460e3728d7c79243fd65e6f">TutorialLogoDraw</a>, <a class="el" href="class_player_draw.html#ad9e2e09a32c7474fcea5e7e24e22bc71">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#a99aba47b4693f15498daf7df2bfee2d7">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#aa7164b6f5788416788482893aa747d59">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a9a40fca53e23b9970a7c5decaa3d2da6">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a14212f1ee003c40d63db3822a84af7fb">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#aeb54d8cba559ef615ee46c8a7bbd3b9f">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a7ecd8d4b987e4d58a247d3438a45f9d4">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#acda1a2487aea432b08fc816351a12239">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a8234fb06d885feaa8a2f0ecf256db9a0">NumberDraw</a>で実装されています。</p>
+<p><a class="el" href="class_draw_null.html#ad735978a85a5f3583eecd82d6bfe6413">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#acfa569f1dcdc3829796138e313f204ad">StencilShadowTestDraw</a>, <a class="el" href="class_goal_draw.html#a7f30c7a4325668eebd8730ad2bea1ad8">GoalDraw</a>, <a class="el" href="class_coin_draw.html#a178c8d88effe55aaad7d0e45b02e0566">CoinDraw</a>, <a class="el" href="class_tutorial_logo_draw.html#a19de254c5460e3728d7c79243fd65e6f">TutorialLogoDraw</a>, <a class="el" href="class_player_draw.html#ad9e2e09a32c7474fcea5e7e24e22bc71">PlayerDraw</a>, <a class="el" href="class_clear_logo_draw.html#a99aba47b4693f15498daf7df2bfee2d7">ClearLogoDraw</a>, <a class="el" href="class_failure_logo_draw.html#aa7164b6f5788416788482893aa747d59">FailureLogoDraw</a>, <a class="el" href="class_push_space_logo_draw.html#a9a40fca53e23b9970a7c5decaa3d2da6">PushSpaceLogoDraw</a>, <a class="el" href="class_title_logo_draw.html#a14212f1ee003c40d63db3822a84af7fb">TitleLogoDraw</a>, <a class="el" href="class_field_draw.html#aeb54d8cba559ef615ee46c8a7bbd3b9f">FieldDraw</a>, <a class="el" href="class_sky_dome_draw.html#a7ecd8d4b987e4d58a247d3438a45f9d4">SkyDomeDraw</a>, <a class="el" href="class_enemy_draw.html#acda1a2487aea432b08fc816351a12239">EnemyDraw</a>, <a class="el" href="class_number_draw.html#a8234fb06d885feaa8a2f0ecf256db9a0">NumberDraw</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a194eb48924f205d60d4e63c5becdd2fe_icgraph.png" border="0" usemap="#class_draw_base_a194eb48924f205d60d4e63c5becdd2fe_icgraph" alt=""/></div>
+<map name="class_draw_base_a194eb48924f205d60d4e63c5becdd2fe_icgraph" id="class_draw_base_a194eb48924f205d60d4e63c5becdd2fe_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="223,5,345,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="393,5,532,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="580,5,763,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="811,5,993,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1041,5,1180,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1228,5,1389,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1437,5,1511,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -480,6 +644,14 @@ DrawBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_draw_null.html#a41b7d148612b2d328e85289e32dc374c">DrawNull</a>, <a class="el" href="class_player_draw.html#abb93b530e38fc224ecbfe17d623f10fb">PlayerDraw</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a87bb54e7f422959e84ac00aa7631bd3b_icgraph.png" border="0" usemap="#class_draw_base_a87bb54e7f422959e84ac00aa7631bd3b_icgraph" alt=""/></div>
+<map name="class_draw_base_a87bb54e7f422959e84ac00aa7631bd3b_icgraph" id="class_draw_base_a87bb54e7f422959e84ac00aa7631bd3b_icgraph">
+<area shape="rect" id="node2" href="class_pixel_shader_bump_mapping.html#afa80c2404b490a444d54cc47c681ca8f" title="固有設定関数 " alt="" coords="248,5,423,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -507,6 +679,20 @@ DrawBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_draw_null.html#aaffa15d184f1d09512ccaa3bdad3f658">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#a8cc9a54a2bcb1fd006331fca1add02dc">StencilShadowTestDraw</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_aed79e9db49de4fa2dff064495b877bcd_icgraph.png" border="0" usemap="#class_draw_base_aed79e9db49de4fa2dff064495b877bcd_icgraph" alt=""/></div>
+<map name="class_draw_base_aed79e9db49de4fa2dff064495b877bcd_icgraph" id="class_draw_base_aed79e9db49de4fa2dff064495b877bcd_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="228,5,351,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="399,5,537,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="585,5,768,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="816,5,999,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1047,5,1185,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1233,5,1395,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1443,5,1516,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -552,6 +738,25 @@ DrawBase の継承関係図</div>
   </dd>
 </dl>
 
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00102">102</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_aa18abd488181eed72822f92a0f2521fe_cgraph.png" border="0" usemap="#class_draw_base_aa18abd488181eed72822f92a0f2521fe_cgraph" alt=""/></div>
+<map name="class_draw_base_aa18abd488181eed72822f92a0f2521fe_cgraph" id="class_draw_base_aa18abd488181eed72822f92a0f2521fe_cgraph">
+<area shape="rect" id="node2" href="class_camera.html#a3bda45b352bfa163c306c638a2aee1f6" title="Camera::GetType" alt="" coords="301,5,425,32"/>
+<area shape="rect" id="node3" href="class_camera.html#a6218126e761a8289c6e6bc8c66b05e47" title="Camera::SetType" alt="" coords="302,56,425,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_aa18abd488181eed72822f92a0f2521fe_icgraph.png" border="0" usemap="#class_draw_base_aa18abd488181eed72822f92a0f2521fe_icgraph" alt=""/></div>
+<map name="class_draw_base_aa18abd488181eed72822f92a0f2521fe_icgraph" id="class_draw_base_aa18abd488181eed72822f92a0f2521fe_icgraph">
+<area shape="rect" id="node2" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c" title="描画前設定関数 " alt="" coords="301,5,464,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a48b144e61928b7658c7a849017e40c79"></a>
@@ -585,6 +790,24 @@ DrawBase の継承関係図</div>
   </table>
   </dd>
 </dl>
+
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00114">114</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a48b144e61928b7658c7a849017e40c79_cgraph.png" border="0" usemap="#class_draw_base_a48b144e61928b7658c7a849017e40c79_cgraph" alt=""/></div>
+<map name="class_draw_base_a48b144e61928b7658c7a849017e40c79_cgraph" id="class_draw_base_a48b144e61928b7658c7a849017e40c79_cgraph">
+<area shape="rect" id="node2" href="class_camera.html#a6218126e761a8289c6e6bc8c66b05e47" title="Camera::SetType" alt="" coords="255,5,377,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a48b144e61928b7658c7a849017e40c79_icgraph.png" border="0" usemap="#class_draw_base_a48b144e61928b7658c7a849017e40c79_icgraph" alt=""/></div>
+<map name="class_draw_base_a48b144e61928b7658c7a849017e40c79_icgraph" id="class_draw_base_a48b144e61928b7658c7a849017e40c79_icgraph">
+<area shape="rect" id="node2" href="class_stencil_shadow_test_draw.html#a68917115d3f151ed91ce297924ee5bbb" title="描画後設定関数 " alt="" coords="255,5,417,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -631,6 +854,20 @@ DrawBase の継承関係図</div>
 </dl>
 
 <p><a class="el" href="class_draw_null.html#a76edfc5af0bf3275f96f40394aff8510">DrawNull</a>, <a class="el" href="class_stencil_shadow_test_draw.html#a68917115d3f151ed91ce297924ee5bbb">StencilShadowTestDraw</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_afe64f27b0bbf8c45da7aa0de4c3f3d65_icgraph.png" border="0" usemap="#class_draw_base_afe64f27b0bbf8c45da7aa0de4c3f3d65_icgraph" alt=""/></div>
+<map name="class_draw_base_afe64f27b0bbf8c45da7aa0de4c3f3d65_icgraph" id="class_draw_base_afe64f27b0bbf8c45da7aa0de4c3f3d65_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="256,5,379,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="427,5,565,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="613,5,796,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="844,5,1027,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1075,5,1213,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1261,5,1423,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1471,5,1544,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -676,7 +913,21 @@ DrawBase の継承関係図</div>
   </dd>
 </dl>
 
-<p><a class="el" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c">StencilShadowTestDraw</a>, <a class="el" href="class_coin_draw.html#a66c03acd675ac1820977cb21015abfdb">CoinDraw</a>, <a class="el" href="class_draw_null.html#a7f0d52c5c2fb2d9b8eb423f363862290">DrawNull</a>で実装されています。</p>
+<p><a class="el" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c">StencilShadowTestDraw</a>, <a class="el" href="class_draw_null.html#a7f0d52c5c2fb2d9b8eb423f363862290">DrawNull</a>, <a class="el" href="class_coin_draw.html#a66c03acd675ac1820977cb21015abfdb">CoinDraw</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_a3978252914ddde12197ea4577356bf25_icgraph.png" border="0" usemap="#class_draw_base_a3978252914ddde12197ea4577356bf25_icgraph" alt=""/></div>
+<map name="class_draw_base_a3978252914ddde12197ea4577356bf25_icgraph" id="class_draw_base_a3978252914ddde12197ea4577356bf25_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="267,5,389,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="437,5,576,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="624,5,807,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="855,5,1037,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1085,5,1224,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1272,5,1433,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1481,5,1555,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -706,6 +957,73 @@ DrawBase の継承関係図</div>
 <p>更新関数 </p>
 
 <p><a class="el" href="class_fade.html#a1579b5b9020344a1131ea11c15f2c0bd">Fade</a>, <a class="el" href="class_goal_draw.html#a6e003277ed44eb9c800a616b6acbcb20">GoalDraw</a>, <a class="el" href="class_tutorial_logo_draw.html#af69405fcc8b20684a19e982726d93ffa">TutorialLogoDraw</a>, <a class="el" href="class_coin_draw.html#a6157b17bf1706b85156aad0d88acfd7e">CoinDraw</a>, <a class="el" href="class_draw_null.html#a0149bcf84a34b138642ab7975ae46f30">DrawNull</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_base_af64b19d08a58927a789e2fb8a11cf524_icgraph.png" border="0" usemap="#class_draw_base_af64b19d08a58927a789e2fb8a11cf524_icgraph" alt=""/></div>
+<map name="class_draw_base_af64b19d08a58927a789e2fb8a11cf524_icgraph" id="class_draw_base_af64b19d08a58927a789e2fb8a11cf524_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#a7c989a2beae5de5a1fc7ab0bef8692f9" title="全描画基底クラス更新関数 " alt="" coords="184,13,408,39"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="456,13,607,39"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="655,5,808,47"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="856,13,1051,39"/>
+<area shape="rect" id="node6" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1099,13,1249,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1297,13,1459,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1507,13,1580,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6ebc8dc96176ddd3bd984b3d54739adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebc8dc96176ddd3bd984b3d54739adb">&#9670;&nbsp;</a></span>draw_order_list_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_draw_order_list.html">DrawOrderList</a> DrawBase::draw_order_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画注文リスト </p>
+
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa8be4980756a0af7cc76dfe455c492d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8be4980756a0af7cc76dfe455c492d4">&#9670;&nbsp;</a></span>save_camera_type_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Camera::Type</a> DrawBase::save_camera_type_ = Camera::Type::NONE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カメラタイプ保存用 </p>
+
+<p class="definition"> <a class="el" href="_draw_base_8h_source.html">DrawBase.h</a> の <a class="el" href="_draw_base_8h_source.html#l00042">42</a> 行目に定義があります。</p>
 
 </div>
 </div>

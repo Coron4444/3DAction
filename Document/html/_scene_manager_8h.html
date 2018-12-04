@@ -93,21 +93,85 @@ $(document).ready(function(){initNavTree('_scene_manager_8h.html','');});
 <div class="title">SceneManager.h ファイル</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_vector3_d_8h_source.html">Vector3D.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_game_object_manager_8h_source.html">GameObjectManager\GameObjectManager.h</a>&gt;</code><br />
+
+<p>シーンマネージャClass  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="_game_object_manager_8h_source.html">GameObjectManager\GameObjectManager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_vector3_d_8h_source.html">Vector3D.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+SceneManager.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_scene_manager_8h__incl.png" border="0" usemap="#_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_202___scene_2_scene_manager_2_scene_manager_8h" alt=""/></div>
+<map name="_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_202___scene_2_scene_manager_2_scene_manager_8h" id="_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_202___scene_2_scene_manager_2_scene_manager_8h">
+<area shape="rect" id="node2" href="_game_object_manager_8h.html" title="GameObjectManager\\GameObject\lManager.h" alt="" coords="1433,139,1655,180"/>
+<area shape="rect" id="node14" href="_vector3_d_8h.html" title="../../Vector3D.h" alt="" coords="691,965,802,991"/>
+<area shape="rect" id="node3" href="_limited_pointer_array_8h.html" title="LimitedPointerArray\l\\LimitedPointerArray.h" alt="" coords="1509,600,1659,641"/>
+<area shape="rect" id="node8" href="_game_object_reference_manager_8h.html" title="GameObjectReferenceManager\l\\GameObjectReferenceManager.h" alt="" coords="1267,511,1485,552"/>
+<area shape="rect" id="node9" href="_update_manager_8h.html" title="ComponentManager/UpdateManager\l/UpdateManager.h" alt="" coords="1502,317,1735,359"/>
+<area shape="rect" id="node10" href="_draw_manager_8h.html" title="ComponentManager/DrawManager\l/DrawManager.h" alt="" coords="1360,228,1581,269"/>
+<area shape="rect" id="node41" href="_collision_manager_8h.html" title="ComponentManager/Collision\lManager/CollisionManager.h" alt="" coords="1729,511,1919,552"/>
+<area shape="rect" id="node6" href="_safe_release_8h.html" title="SafeRelease/SafeRelease.h" alt="" coords="1622,779,1805,805"/>
+<area shape="rect" id="node11" href="_back_buffer_8h.html" title="RenderTarget/BackBuffer\l/BackBuffer.h" alt="" coords="658,317,825,359"/>
+<area shape="rect" id="node12" href="_camera_8h.html" title="../../Camera/Camera.h" alt="" coords="61,689,211,716"/>
+<area shape="rect" id="node17" href="_camera_state___crawl_up_8h.html" title="../../Camera/CameraState\l_CrawlUp/CameraState_CrawlUp.h" alt="" coords="347,414,570,455"/>
+<area shape="rect" id="node18" href="_camera_state___homing_target_8h.html" title="../../Camera/CameraState\l_HomingTarget/CameraState\l_HomingTarget.h" alt="" coords="43,407,232,463"/>
+<area shape="rect" id="node19" href="_fade_8h.html" title="../../Fade/Fade.h" alt="" coords="905,421,1023,448"/>
+<area shape="rect" id="node40" href="_render_texture_8h.html" title="ComponentManager/DrawManager\l/RenderTexture/RenderTexture.h" alt="" coords="631,414,852,455"/>
+<area shape="rect" id="node13" href="_axis_vector_8h.html" title="Transform\\AxisVector\l\\AxisVector.h" alt="" coords="452,771,599,813"/>
+<area shape="rect" id="node21" href="_draw_null_8h.html" title="Component/Draw/DrawNull\l/DrawNull.h" alt="" coords="779,511,955,552"/>
+<area shape="rect" id="node31" href="_transform_8h.html" title="Transform\\Transform.h" alt="" coords="502,518,653,545"/>
+<area shape="rect" id="node33" href="_plane_polygon_8h.html" title="Polygon\\PlanePolygon\l\\PlanePolygon.h" alt="" coords="951,600,1105,641"/>
+<area shape="rect" id="node38" href="_texture_manager_8h.html" title="Texture\\TextureManager\l\\TextureManager.h" alt="" coords="1080,511,1243,552"/>
+<area shape="rect" id="node22" href="_draw_base_8h.html" title="../../Base/DrawBase\l/DrawBase.h" alt="" coords="357,600,496,641"/>
+<area shape="rect" id="node23" href="_component_base_8h.html" title="../ComponentBase/Component\lBase.h" alt="" coords="673,771,873,813"/>
+<area shape="rect" id="node27" href="_draw_order_list_8h.html" title="DrawOrderList/DrawOrderList.h" alt="" coords="287,689,489,716"/>
+<area shape="rect" id="node24" href="_renderer_direct_x9_8h.html" title="レンダラーDirectX9Class " alt="" coords="1101,868,1280,909"/>
+<area shape="rect" id="node26" href="_renderer_interface_8h.html" title="レンダラーInterfaceClass " alt="" coords="1331,957,1469,999"/>
+<area shape="rect" id="node28" href="_shader_manager_8h.html" title="ComponentManager/DrawManager\l/ShaderManager/ShaderManager.h" alt="" coords="205,771,427,813"/>
+<area shape="rect" id="node29" href="_flag_8h.html" title="Flag/Flag.h" alt="" coords="94,779,181,805"/>
+<area shape="rect" id="node32" href="_matrix_extend_8h.html" title="MatrixExtend/MatrixExtend.h" alt="" coords="886,875,1077,902"/>
+<area shape="rect" id="node35" href="_renderer_8h.html" title="レンダラーClass " alt="" coords="1077,689,1219,716"/>
+<area shape="rect" id="node36" href="_renderer_factory_direct_x9_8h.html" title="DirectX9レンダラー生成Class " alt="" coords="1100,764,1281,820"/>
+<area shape="rect" id="node37" href="_renderer_factory_interface_8h.html" title="レンダラー生成InterfaceClass " alt="" coords="1305,875,1495,902"/>
+<area shape="rect" id="node39" href="_texture_object_8h.html" title="Texture\\TextureObject\l\\TextureObject.h" alt="" coords="1181,600,1331,641"/>
+<area shape="rect" id="node42" href="_liner_octree_8h.html" title="LinerOctree/LinerOctree.h" alt="" coords="1736,607,1907,634"/>
+<area shape="rect" id="node45" href="_object_of_tree_8h.html" title="ObjectOfTree/ObjectOfTree.h" alt="" coords="1928,779,2117,805"/>
+<area shape="rect" id="node46" href="_space_of_tree_8h.html" title="SpaceOfTree/SpaceOfTree.h" alt="" coords="1727,689,1913,716"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_scene_manager_8h__dep__incl.png" border="0" usemap="#_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_202___scene_2_scene_manager_2_scene_manager_8hdep" alt=""/></div>
+<map name="_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_202___scene_2_scene_manager_2_scene_manager_8hdep" id="_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_202___scene_2_scene_manager_2_scene_manager_8hdep">
+<area shape="rect" id="node2" href="_game_system_8cpp.html" title="ゲームシステムClass " alt="" coords="5,153,252,239"/>
+<area shape="rect" id="node3" href="_scene_manager_8cpp.html" title="シーンマネージャClass " alt="" coords="277,153,506,239"/>
+<area shape="rect" id="node4" href="_game_scene_state___start_8cpp.html" title="ゲームシーンステート(スタート)Class " alt="" coords="531,139,801,253"/>
+<area shape="rect" id="node5" href="_result_scene_state___start_8cpp.html" title="リザルトシーンステート(スタート)Class " alt="" coords="825,146,1160,246"/>
+<area shape="rect" id="node6" href="_title_scene_state___start_8cpp.html" title="タイトルシーンステート(スタート)Class " alt="" coords="1184,139,1433,253"/>
+<area shape="rect" id="node7" href="_tutorial_scene_state___end_8cpp.html" title="チュートリアルシーンステート(エンド)Class " alt="" coords="1458,139,1738,253"/>
+<area shape="rect" id="node8" href="_tutorial_scene_state___start_8cpp.html" title="チュートリアルシーンステート(スタート)Class " alt="" coords="1763,139,1999,253"/>
+</map>
+</div>
 </div>
 <p><a href="_scene_manager_8h_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager.html">SceneManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーンマネージャクラス  <a href="class_scene_manager.html#details">[詳解]</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーンマネージャClass  <a href="class_scene_manager.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_manager_1_1_common_data.html">SceneManager::CommonData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン間共通データクラス  <a href="class_scene_manager_1_1_common_data.html#details">[詳解]</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン間共通データClass  <a href="class_scene_manager_1_1_common_data.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>シーンマネージャClass </p>
+<dl class="section author"><dt>著者</dt><dd>Kai Araki </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2018/11/01 </dd></dl>
+
+<p class="definition"> <a class="el" href="_scene_manager_8h_source.html">SceneManager.h</a> に定義があります。</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

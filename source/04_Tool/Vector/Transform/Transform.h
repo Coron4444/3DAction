@@ -76,8 +76,8 @@ public :
 	void UpdateInverseMatrix(const MATRIX* matrix){matrix_extend_.UpdateInverseMatrix(matrix);}
 	void UpdateTransposeMatrix(const MATRIX* matrix){matrix_extend_.UpdateTransposeMatrix(matrix);}
 	void TransposeMatrixTranslationOff(){matrix_extend_.TransposeMatrixTranslationOff();}
-	const MATRIX* GetWorldMatrix(){return matrix_extend_.GetWorldMatrix();}
-	MatrixExtend* GetMatrixExtend(){return &matrix_extend_;}
+	MATRIX* getpWorldMatrix(){return matrix_extend_.GetWorldMatrix();}
+	MatrixExtend* getpMatrixExtend(){return &matrix_extend_;}
 
 	// ‘S‘Ì
 	void UpdateAxisVector_WorldMatrixSRT();

@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    レンダラーインターフェースクラス
-//    Author : Araki Kai                                作成日 : 2018/05/08
-//
+//!	@file	 RendererInterface.h
+//!	@brief	 レンダラーInterfaceClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
-
 #ifndef	_RENDERER_INTERFACE_H_
 #define _RENDERER_INTERFACE_H_
 
@@ -17,75 +16,63 @@
 
 
 
-/*********************************************************//**
-* @brief
-* レンダラーインターフェースクラス
-*
-* レンダラーのインターフェース
-*************************************************************/
+//************************************************************														   
+//! @brief   レンダラーInterfaceClass
+//!
+//! @details レンダラーのInterfaceClass
+//************************************************************
 class RendererInterface
 {
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 純粋仮想デストラクタ
-	*/
-	virtual ~RendererInterface() = 0;
+	//----------------------------------------
+	//! @brief 仮想デストラクタ
+	//! @param void なし
+	//----------------------------------------
+	virtual ~RendererInterface() {}
 	
-	/**
-	* @brief
-	* 初期化関数
-	* @param
-	* hInstance : インスタンスハンドル
-	* hWnd : Windowsハンドル
-	* is_full_screen : フルスクリーンフラグ
-	* window_width : Window幅
-	* window_height : Window高さ
-	*/
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param[in] hInstance	  インスタンスハンドル
+	//! @param[in] hWnd			  Windowsハンドル
+	//! @param[in] is_full_screen フルスクリーンフラグ
+	//! @param[in] window_width	  ウィンドウ幅
+	//! @param[in] window_height  ウィンドウ高さ
+	//! @retval bool 初期化成功の有無
+	//----------------------------------------
 	virtual bool Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 					  int window_width, int window_height) = 0;
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	virtual void Uninit() = 0;
 
-	/**
-	* @brief
-	* 描画開始関数
-	*/
+	//----------------------------------------
+	//! @brief 描画開始関数
+	//! @param void なし
+	//! @retval bool 描画開始成功の有無
+	//----------------------------------------
 	virtual bool DrawBegin() = 0;
 
-	/**
-	* @brief
-	* 描画終了関数
-	* @param
-	* is_begin_scene : 描画開始が成功しているかフラグ
-	*/
-	virtual void DrawEnd(bool is_begin_scene) = 0;	
+	//----------------------------------------
+	//! @brief 描画終了関数
+	//! @param[in] is_begin_scene 描画開始成功フラグ
+	//! @retval void なし
+	//----------------------------------------
+	virtual void DrawEnd(bool is_begin_scene) = 0;
 
-	/**
-	* @brief
-	* バックバッファをフロントバッファに反映関数
-	*/
-	virtual void Present() = 0;;
+	//----------------------------------------
+	//! @brief バックバッファをフロントバッファに反映関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	virtual void Present() = 0;
 };
-
-
-
-//****************************************
-// 非静的メンバ関数定義(inline)
-//****************************************
-//--------------------------------------------------
-// +純粋仮想デストラクタ
-//--------------------------------------------------
-inline RendererInterface::~RendererInterface()
-{
-}
 
 
 

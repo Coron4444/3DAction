@@ -30,8 +30,8 @@ void VertexShaderFixed::Init()
 	ShaderBase::InitDevice();
 
 	// レンダーステートの設定( 最適化の場合はあまり呼ばないように設計する )
-	((RendererDirectX9*)Renderer::GetInstance()->GetRenderer())->UseAlphaBlending(true);
-	((RendererDirectX9*)Renderer::GetInstance()->GetRenderer())->SetAlphaBlending_Linear();
+	((RendererDirectX9*)Renderer::getpInstance()->getpRenderer())->UseAlphaBlending(true);
+	((RendererDirectX9*)Renderer::getpInstance()->getpRenderer())->SetAlphaBlending_Linear();
 
 	// テクスチャーステージステートの設定
 	// 第一引数テクスチャステージ番号
@@ -41,7 +41,7 @@ void VertexShaderFixed::Init()
 	ShaderBase::GetDevice()->SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_DIFFUSE);
 
 	// サンプラーステートの設定
-	((RendererDirectX9*)Renderer::GetInstance()->GetRenderer())->SetDefaultSamplerState();
+	((RendererDirectX9*)Renderer::getpInstance()->getpRenderer())->SetDefaultSamplerState();
 }
 
 
@@ -67,10 +67,10 @@ void VertexShaderFixed::CommonSetting(DrawBase* draw, Camera* camera, unsigned o
 	// 行列のセット
 	ShaderBase::GetDevice()->SetTransform(D3DTS_VIEW, camera->GetViewMatrix());
 	ShaderBase::GetDevice()->SetTransform(D3DTS_PROJECTION, camera->GetProjectionMatrix());
-	ShaderBase::GetDevice()->SetTransform(D3DTS_WORLD, draw->GetMatrix(object_index));
+	ShaderBase::GetDevice()->SetTransform(D3DTS_WORLD, draw->getpMatrix(object_index));
 	
 	// ライトセット
-	ShaderBase::GetDevice()->SetRenderState(D3DRS_LIGHTING, draw->GetDrawOrderList()->GetIsLighting());
+	ShaderBase::GetDevice()->SetRenderState(D3DRS_LIGHTING, draw->getpDrawOrderList()->GetIsLighting());
 
 	// ライトの更新
 	UpdateDirectionalLignt();
@@ -96,7 +96,7 @@ void VertexShaderFixed::SpecificSetting(DrawBase* draw, Camera* camera,
 void VertexShaderFixed::SetTexture(DrawBase* draw, unsigned object_index,
 								   unsigned mesh_index)
 {
-	LPDIRECT3DTEXTURE9 temp = draw->GetDecaleTexture(object_index, mesh_index);
+	LPDIRECT3DTEXTURE9 temp = draw->getpDecaleTexture(object_index, mesh_index);
 
 	ShaderBase::GetDevice()->SetTexture(0, temp);
 }
@@ -109,7 +109,7 @@ void VertexShaderFixed::SetTexture(DrawBase* draw, unsigned object_index,
 void VertexShaderFixed::SetMaterial(DrawBase* draw, unsigned object_index,
 									unsigned mesh_index)
 {
-	D3DMATERIAL9* temp = draw->GetMaterial(object_index, mesh_index);
+	D3DMATERIAL9* temp = draw->getpMaterial(object_index, mesh_index);
 
 	if (temp == nullptr) return;
 

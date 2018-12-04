@@ -2,17 +2,31 @@
 \label{class_game_scene_state___start}\index{Game\+Scene\+State\+\_\+\+Start@{Game\+Scene\+State\+\_\+\+Start}}
 
 
-ゲームシーンステートクラス(スタート)  
+ゲームシーンステート(スタート)Class  
 
 
 
 
 {\ttfamily \#include $<$Game\+Scene\+State\+\_\+\+Start.\+h$>$}
 
-Game\+Scene\+State\+\_\+\+Start の継承関係図\begin{figure}[H]
+
+
+Game\+Scene\+State\+\_\+\+Start の継承関係図
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_game_scene_state___start}
+\includegraphics[width=200pt]{class_game_scene_state___start__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Game\+Scene\+State\+\_\+\+Start 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_state___start__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -30,15 +44,19 @@ void \mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_game_scene}{Game\+Scene}} $\ast$ \mbox{\hyperlink{class_game_scene_state___start_af9389c7c8496419a6a4a3d3339acd94f}{game\+\_\+scene\+\_\+}} = nullptr
-\begin{DoxyCompactList}\small\item\em ゲームシーン \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_game_scene_state___start_a55544e766cf6dce7f69f1af6de20a903}{plaeyr\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em ゲームシーン \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
-ゲームシーンステートクラス(スタート) 
+ゲームシーンステート(スタート)Class 
 
-ゲームシーンのステートクラス 最初の状態を表す 
+ゲームシーンのステート(スタート)Class
+
+最初の状態を表す 
+
+ Game\+Scene\+State\+\_\+\+Start.\+h の 32 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_game_scene_state___start_ae921c57f349fbb2f00a197d40a3404b7}\label{class_game_scene_state___start_ae921c57f349fbb2f00a197d40a3404b7}} 
@@ -52,9 +70,31 @@ void \mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3
 初期化関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
-\mbox{\hyperlink{class_scene_base_1_1_state_abstract_a2f5ea12e789aa52df179e6df469b870d}{Scene\+Base\+::\+State\+Abstract}}を実装しています。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
+
+\mbox{\hyperlink{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8}{Scene\+Base\+::\+State\+Base}}を実装しています。
+
+
+
+ Game\+Scene\+State\+\_\+\+Start.\+cpp の 42 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_state___start_ae921c57f349fbb2f00a197d40a3404b7_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_game_scene_state___start_a59270f7b65613f580864ed8ea3056179}\label{class_game_scene_state___start_a59270f7b65613f580864ed8ea3056179}} 
 \index{Game\+Scene\+State\+\_\+\+Start@{Game\+Scene\+State\+\_\+\+Start}!Reset@{Reset}}
 \index{Reset@{Reset}!Game\+Scene\+State\+\_\+\+Start@{Game\+Scene\+State\+\_\+\+Start}}
@@ -66,8 +106,22 @@ void \mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3
 リセット関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
-\mbox{\hyperlink{class_scene_base_1_1_state_abstract_a7e00d36fa023d91a0f205f12662584a0}{Scene\+Base\+::\+State\+Abstract}}を実装しています。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977}{Scene\+Base\+::\+State\+Base}}を実装しています。
+
+
+
+ Game\+Scene\+State\+\_\+\+Start.\+cpp の 159 行目に定義があります。
 
 \mbox{\Hypertarget{class_game_scene_state___start_a636df8b7ac0173b044b0efc2927fb83b}\label{class_game_scene_state___start_a636df8b7ac0173b044b0efc2927fb83b}} 
 \index{Game\+Scene\+State\+\_\+\+Start@{Game\+Scene\+State\+\_\+\+Start}!Uninit@{Uninit}}
@@ -80,8 +134,22 @@ void \mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3
 終了関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
-\mbox{\hyperlink{class_scene_base_1_1_state_abstract_a7a92fbd3fd68177a4e807bf7c359641c}{Scene\+Base\+::\+State\+Abstract}}を実装しています。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_scene_base_1_1_state_base_a2763fa37e45b39bd8d3bbb735c76c59b}{Scene\+Base\+::\+State\+Base}}を実装しています。
+
+
+
+ Game\+Scene\+State\+\_\+\+Start.\+cpp の 128 行目に定義があります。
 
 \mbox{\Hypertarget{class_game_scene_state___start_ae11bb8d8ea9eae4fea2a9acf33dd1c8b}\label{class_game_scene_state___start_ae11bb8d8ea9eae4fea2a9acf33dd1c8b}} 
 \index{Game\+Scene\+State\+\_\+\+Start@{Game\+Scene\+State\+\_\+\+Start}!Update@{Update}}
@@ -94,9 +162,31 @@ void \mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3
 更新関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
-\mbox{\hyperlink{class_scene_base_1_1_state_abstract_a7fca4c5e7d0174af8a147c404f4e6eee}{Scene\+Base\+::\+State\+Abstract}}を実装しています。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
+
+\mbox{\hyperlink{class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c}{Scene\+Base\+::\+State\+Base}}を実装しています。
+
+
+
+ Game\+Scene\+State\+\_\+\+Start.\+cpp の 137 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_scene_state___start_ae11bb8d8ea9eae4fea2a9acf33dd1c8b_cgraph}
+\end{center}
+\end{figure}
 
 
 \subsection{メンバ詳解}
@@ -110,11 +200,9 @@ void \mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3
 
 ゲームシーン 
 
-\mbox{\Hypertarget{class_game_scene_state___start_a55544e766cf6dce7f69f1af6de20a903}\label{class_game_scene_state___start_a55544e766cf6dce7f69f1af6de20a903}} 
-\index{Game\+Scene\+State\+\_\+\+Start@{Game\+Scene\+State\+\_\+\+Start}!plaeyr\+\_\+@{plaeyr\+\_\+}}
-\index{plaeyr\+\_\+@{plaeyr\+\_\+}!Game\+Scene\+State\+\_\+\+Start@{Game\+Scene\+State\+\_\+\+Start}}
-\subsubsection{\texorpdfstring{plaeyr\+\_\+}{plaeyr\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Game\+Scene\+State\+\_\+\+Start\+::plaeyr\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+ Game\+Scene\+State\+\_\+\+Start.\+h の 38 行目に定義があります。
 
 
 

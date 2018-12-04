@@ -6,6 +6,7 @@ var classmfmlib_1_1_model =
     [ "FileSaveMeshData", "classmfmlib_1_1_model.html#a27950e34a457b62b0d6474cd8f7017aa", null ],
     [ "SetFileName", "classmfmlib_1_1_model.html#a56abf4bae21e85d159a306aaac20e851", null ],
     [ "BoneData", "classmfmlib_1_1_model.html#a54babd8cc910d4f54935b75bcaf81023", null ],
+    [ "Filename", "classmfmlib_1_1_model.html#a83e1a5e9ec5967b0aae2889672831c21", null ],
     [ "FrameNum", "classmfmlib_1_1_model.html#a3ad1641bef61a820154ac7e9d7806f52", null ],
     [ "MaterialData", "classmfmlib_1_1_model.html#ab9e64c1b2c11cdc0bf8844ee076d2f78", null ],
     [ "materialNum", "classmfmlib_1_1_model.html#a0a25d19e204a8075af58d3cf84c9446e", null ],

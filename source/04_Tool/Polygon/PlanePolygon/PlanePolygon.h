@@ -71,7 +71,7 @@ public:
 
 	XColor4 GetColor(){ return vertex_[0].color_; }
 
-	unsigned GetMeshNum(){return 1;}
+	unsigned getMeshNum(){return 1;}
 	D3DMATERIAL9* GetMaterial(){return &material_;}
 
 

@@ -1,0 +1,19 @@
+<map id="Number::Init" name="Number::Init">
+<area shape="rect" id="node2" href="$class_texture_manager.html#af86003fd2afaf09f0295745d486e42e4" title="TextureManager::AddUniqueData" alt="" coords="145,71,359,98"/>
+<area shape="rect" id="node5" href="$class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="177,198,327,225"/>
+<area shape="rect" id="node15" href="$class_number.html#ac825b1ee1f46a6ac4ffd3bc904964745" title="Number::SetNumber" alt="" coords="182,294,322,321"/>
+<area shape="rect" id="node3" href="$class_texture_manager.html#a18d1f3418511075804f9d11cff1010ff" title="TextureManager::GetTexture\lObject" alt="" coords="431,5,617,47"/>
+<area shape="rect" id="node4" href="$class_texture_manager.html#a950562ff671a620592708906925fad7f" title="TextureManager::MakeFilePath" alt="" coords="423,71,625,98"/>
+<area shape="rect" id="node6" href="$class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90" title="GameObjectBase::SetAllComponent" alt="" coords="407,122,641,149"/>
+<area shape="rect" id="node10" href="$class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6" title="コンポーネント初期化関数 " alt="" coords="416,198,632,225"/>
+<area shape="rect" id="node13" href="$class_game_object_manager.html#ab42e8ca2c7e586d05d513e8a868a86ef" title="ゲームオブジェクト基底クラスの追加関数 " alt="" coords="427,263,621,304"/>
+<area shape="rect" id="node7" href="$class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08" title="GameObjectBase::SetUpdate" alt="" coords="701,21,896,47"/>
+<area shape="rect" id="node8" href="$class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="707,71,890,98"/>
+<area shape="rect" id="node9" href="$class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818" title="GameObjectBase::SetCollision" alt="" coords="697,122,900,149"/>
+<area shape="rect" id="node11" href="$class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="689,173,908,199"/>
+<area shape="rect" id="node12" href="$class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="727,223,870,250"/>
+<area shape="rect" id="node14" href="$class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="731,275,867,316"/>
+<area shape="rect" id="node16" href="$class_plane_polygon.html#a081458fcb9e758dd8be5b027c66a92ad" title="PlanePolygon::SetUV" alt="" coords="450,341,598,367"/>
+<area shape="rect" id="node17" href="$class_texture_object.html#a51b8a2723302c2d38624a62f9205c4bb" title="TextureObject::GetUV" alt="" coords="723,341,874,367"/>
+<area shape="rect" id="node18" href="$class_plane_polygon.html#af4ba95cfaf0aba506eeb58cdc80bfd46" title="PlanePolygon::Registration\lVertex" alt="" coords="709,392,888,433"/>
+</map>

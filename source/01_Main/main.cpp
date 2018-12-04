@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    メイン
-//    Author : Araki Kai                                作成日 : 2017/09/01
-//
+//!	@file	 main.cpp
+//!	@brief	 メイン
+//! @details 
+//!	@author  Kai Araki									@date 2017/09/01
 //================================================================================
 
 
@@ -15,6 +15,7 @@
 #include <assert.h>
 
 #include "main.h"
+
 #include <SafeRelease/SafeRelease.h>
 #include <GameSystem\GameSystem.h>
 
@@ -40,8 +41,8 @@ void SetWindowPositionCenter(int* window_position_x, int* window_position_y,
 void MessageAndGameLoop(HINSTANCE hInstance, HWND window_handle, MSG* message);
 LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
-//#ifdef _DEBUG
 // ImGUIマウス操作
+//#ifdef _DEBUG
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 //#endif
 

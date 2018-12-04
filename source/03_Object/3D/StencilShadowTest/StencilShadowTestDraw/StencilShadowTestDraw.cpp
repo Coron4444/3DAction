@@ -34,15 +34,15 @@ const std::string StencilShadowTestDraw::MODEL_NAME = "knight_low/knight_low.X";
 void StencilShadowTestDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
-	GetGameObject()->GetTransform()->GetPosition()->y += -1.0f;
-	GetGameObject()->GetTransform()->UpdateWorldMatrixSRT();
+	getpGameObject()->GetTransform()->GetPosition()->y += -1.0f;
+	getpGameObject()->GetTransform()->UpdateWorldMatrixSRT();
 
 	// プレーンポリゴン作成
 	plane_polygon_ = new PlanePolygon();
@@ -89,7 +89,7 @@ void StencilShadowTestDraw::Draw(unsigned object_index, unsigned mesh_index)
 void StencilShadowTestDraw::SettingBeforeDrawing(Camera* camera, unsigned object_index)
 {
 	LPDIRECT3DDEVICE9 device;
-	Renderer::GetInstance()->GetDevice(&device);
+	Renderer::getpInstance()->getDevice(&device);
 	switch (object_index)
 	{
 		case 0: 
@@ -130,7 +130,7 @@ void StencilShadowTestDraw::SettingAfterDrawing(Camera* camera, unsigned object_
 	if (object_index == 2)
 	{
 		LPDIRECT3DDEVICE9 device;
-		Renderer::GetInstance()->GetDevice(&device);
+		Renderer::getpInstance()->getDevice(&device);
 		DrawBase::RevivalCameraType(camera);
 		device->SetRenderState(D3DRS_ZWRITEENABLE, TRUE);
 		device->SetRenderState(D3DRS_STENCILENABLE, FALSE);
@@ -142,7 +142,7 @@ void StencilShadowTestDraw::SettingAfterDrawing(Camera* camera, unsigned object_
 //--------------------------------------------------
 // +オブジェクト数取得関数
 //--------------------------------------------------
-unsigned StencilShadowTestDraw::GetObjectNum()
+unsigned StencilShadowTestDraw::getObjectNum()
 {
 	return 3;
 }
@@ -152,11 +152,11 @@ unsigned StencilShadowTestDraw::GetObjectNum()
 //--------------------------------------------------
 // +メッシュ数取得関数
 //--------------------------------------------------
-unsigned StencilShadowTestDraw::GetMeshNum(unsigned object_index)
+unsigned StencilShadowTestDraw::getMeshNum(unsigned object_index)
 {
 	if (object_index == 2) return 1;
 
-	return player_model_->GetMeshNum();
+	return player_model_->getMeshNum();
 }
 
 
@@ -164,14 +164,14 @@ unsigned StencilShadowTestDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +行列取得関数
 //--------------------------------------------------
-const MATRIX* StencilShadowTestDraw::GetMatrix(unsigned object_index)
+MATRIX* StencilShadowTestDraw::getpMatrix(unsigned object_index)
 {
 	if (object_index == 2)
 	{
-		return plane_polygon_transform_.GetWorldMatrix();
+		return plane_polygon_transform_.getpWorldMatrix();
 	}
 	
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -179,7 +179,7 @@ const MATRIX* StencilShadowTestDraw::GetMatrix(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* StencilShadowTestDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* StencilShadowTestDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	if (object_index == 2) return nullptr;
 
@@ -193,7 +193,7 @@ D3DMATERIAL9* StencilShadowTestDraw::GetMaterial(unsigned object_index, unsigned
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 StencilShadowTestDraw::GetDecaleTexture(unsigned object_index, unsigned mesh_index)
+LPDIRECT3DTEXTURE9 StencilShadowTestDraw::getpDecaleTexture(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 

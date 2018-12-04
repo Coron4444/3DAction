@@ -2,6 +2,21 @@
 \label{_keyboard_8h}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Keyboard/\+Keyboard.\+h@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Input/\+Keyboard/\+Keyboard.\+h}}
 {\ttfamily \#include $<$Windows.\+h$>$}\newline
 {\ttfamily \#include $<$dinput.\+h$>$}\newline
+Keyboard.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{_keyboard_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
 \subsection*{マクロ定義}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,6 +50,10 @@ bool \mbox{\hyperlink{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}{Get\+Keybo
 
 
 
+ Keyboard.\+h の 20 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{_keyboard_8h_a917a78a60e6a139fbf17148721e7ceac}\label{_keyboard_8h_a917a78a60e6a139fbf17148721e7ceac}} 
 \index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Press@{Get\+Keyboard\+Press}}
@@ -42,11 +61,26 @@ bool \mbox{\hyperlink{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}{Get\+Keybo
 \subsubsection{\texorpdfstring{Get\+Keyboard\+Press()}{GetKeyboardPress()}}
 {\footnotesize\ttfamily bool Get\+Keyboard\+Press (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
 
+
+
+ Keyboard.\+cpp の 426 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{_keyboard_8h_a917a78a60e6a139fbf17148721e7ceac_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}\label{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}} 
 \index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Release@{Get\+Keyboard\+Release}}
 \index{Get\+Keyboard\+Release@{Get\+Keyboard\+Release}!Keyboard.\+h@{Keyboard.\+h}}
 \subsubsection{\texorpdfstring{Get\+Keyboard\+Release()}{GetKeyboardRelease()}}
 {\footnotesize\ttfamily bool Get\+Keyboard\+Release (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
+
+
+
+ Keyboard.\+cpp の 504 行目に定義があります。
 
 \mbox{\Hypertarget{_keyboard_8h_ab826be402a29bdcab22cbd4bd01986a2}\label{_keyboard_8h_ab826be402a29bdcab22cbd4bd01986a2}} 
 \index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Repeat@{Get\+Keyboard\+Repeat}}
@@ -54,27 +88,89 @@ bool \mbox{\hyperlink{_keyboard_8h_a7e1722fee78dd40461d6dd2059eb4d03}{Get\+Keybo
 \subsubsection{\texorpdfstring{Get\+Keyboard\+Repeat()}{GetKeyboardRepeat()}}
 {\footnotesize\ttfamily bool Get\+Keyboard\+Repeat (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
 
+
+
+ Keyboard.\+cpp の 478 行目に定義があります。
+
 \mbox{\Hypertarget{_keyboard_8h_a13e2791881c044ebf911d3522fa7fa9a}\label{_keyboard_8h_a13e2791881c044ebf911d3522fa7fa9a}} 
 \index{Keyboard.\+h@{Keyboard.\+h}!Get\+Keyboard\+Trigger@{Get\+Keyboard\+Trigger}}
 \index{Get\+Keyboard\+Trigger@{Get\+Keyboard\+Trigger}!Keyboard.\+h@{Keyboard.\+h}}
 \subsubsection{\texorpdfstring{Get\+Keyboard\+Trigger()}{GetKeyboardTrigger()}}
 {\footnotesize\ttfamily bool Get\+Keyboard\+Trigger (\begin{DoxyParamCaption}\item[{int}]{n\+Key }\end{DoxyParamCaption})}
 
+
+
+ Keyboard.\+cpp の 452 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{_keyboard_8h_a13e2791881c044ebf911d3522fa7fa9a_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_keyboard_8h_ac6c5ef03598b5e66143f526d200b4801}\label{_keyboard_8h_ac6c5ef03598b5e66143f526d200b4801}} 
 \index{Keyboard.\+h@{Keyboard.\+h}!Init\+Keyboard@{Init\+Keyboard}}
 \index{Init\+Keyboard@{Init\+Keyboard}!Keyboard.\+h@{Keyboard.\+h}}
 \subsubsection{\texorpdfstring{Init\+Keyboard()}{InitKeyboard()}}
 {\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Init\+Keyboard (\begin{DoxyParamCaption}\item[{H\+I\+N\+S\+T\+A\+N\+CE}]{h\+Instance,  }\item[{H\+W\+ND}]{h\+Wnd }\end{DoxyParamCaption})}
 
+
+
+ Keyboard.\+cpp の 257 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{_keyboard_8h_ac6c5ef03598b5e66143f526d200b4801_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_keyboard_8h_ac6c5ef03598b5e66143f526d200b4801_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_keyboard_8h_acffdec32c8240d863bcca339cce38ea1}\label{_keyboard_8h_acffdec32c8240d863bcca339cce38ea1}} 
 \index{Keyboard.\+h@{Keyboard.\+h}!Uninit\+Keyboard@{Uninit\+Keyboard}}
 \index{Uninit\+Keyboard@{Uninit\+Keyboard}!Keyboard.\+h@{Keyboard.\+h}}
 \subsubsection{\texorpdfstring{Uninit\+Keyboard()}{UninitKeyboard()}}
 {\footnotesize\ttfamily void Uninit\+Keyboard (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
+
+
+ Keyboard.\+cpp の 319 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{_keyboard_8h_acffdec32c8240d863bcca339cce38ea1_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_keyboard_8h_acffdec32c8240d863bcca339cce38ea1_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{_keyboard_8h_ad65caca75418587ece61987dc0bc8cc9}\label{_keyboard_8h_ad65caca75418587ece61987dc0bc8cc9}} 
 \index{Keyboard.\+h@{Keyboard.\+h}!Update\+Keyboard@{Update\+Keyboard}}
 \index{Update\+Keyboard@{Update\+Keyboard}!Keyboard.\+h@{Keyboard.\+h}}
 \subsubsection{\texorpdfstring{Update\+Keyboard()}{UpdateKeyboard()}}
 {\footnotesize\ttfamily void Update\+Keyboard (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
+
+
+ Keyboard.\+cpp の 355 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_keyboard_8h_ad65caca75418587ece61987dc0bc8cc9_icgraph}
+\end{center}
+\end{figure}

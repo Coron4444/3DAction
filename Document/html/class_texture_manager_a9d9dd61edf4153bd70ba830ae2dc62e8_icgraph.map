@@ -1,0 +1,11 @@
+<map id="TextureManager::UninitUniqueData" name="TextureManager::UninitUniqueData">
+<area shape="rect" id="node2" href="$class_resource_manager.html#abcb135906cb991a49ec6e8c8db057de1" title="ResourceManager::UninitUniqueData" alt="" coords="276,5,511,32"/>
+<area shape="rect" id="node8" href="$class_texture_manager.html#a5e81df5cd89e7794fb9230357663a729" title="TextureManager::UninitAllData" alt="" coords="294,56,493,83"/>
+<area shape="rect" id="node3" href="$class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="565,5,763,32"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="817,5,976,32"/>
+<area shape="rect" id="node5" href="$class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1024,5,1200,32"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1248,5,1409,32"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1457,5,1531,32"/>
+<area shape="rect" id="node9" href="$class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="559,56,769,83"/>
+<area shape="rect" id="node10" href="$class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="821,56,972,83"/>
+</map>

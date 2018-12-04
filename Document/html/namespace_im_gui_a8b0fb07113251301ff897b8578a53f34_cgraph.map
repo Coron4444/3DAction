@@ -1,0 +1,12 @@
+<map id="ImGui::Dummy" name="ImGui::Dummy">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="163,5,336,32"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#ac7b9a7399d9606b25278002303f545b6" title="ImGui::ItemSize" alt="" coords="192,56,307,83"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a454e81b7c3befcc51c900f2fb3bd5a9a" title="ImGui::ItemAdd" alt="" coords="193,107,305,133"/>
+<area shape="rect" id="node5" href="$namespace_im_gui.html#a8674467ae34d04bc99df1f7f98f47407" title="ImGui::IsClippedEx" alt="" coords="412,81,545,108"/>
+<area shape="rect" id="node9" href="$namespace_im_gui.html#ae0b8ea0e06c457316d6aed6c5b2a1c25" title="ImGui::IsMouseHoveringRect" alt="" coords="384,132,573,159"/>
+<area shape="rect" id="node6" href="$struct_im_rect.html#a0af3bade3781e5e7c6afdf71ccfb0d43" title="ImRect::Overlaps" alt="" coords="622,81,743,108"/>
+<area shape="rect" id="node7" href="$namespace_effekseer.html#afc3d4e56cf4f8d0f12ac7d4bee7591b9" title="最大値取得 " alt="" coords="792,95,901,121"/>
+<area shape="rect" id="node8" href="$namespace_effekseer.html#ad4d523c19d4088c7566fadd84449eba7" title="最小値取得 " alt="" coords="794,157,899,184"/>
+<area shape="rect" id="node10" href="$struct_im_rect.html#a5e220ababe2fa079638aab8f4b0b8ace" title="ImRect::ClipWith" alt="" coords="623,183,743,209"/>
+<area shape="rect" id="node11" href="$struct_im_rect.html#ac583156fd0e9306181fff5d120b262ea" title="ImRect::Contains" alt="" coords="621,132,744,159"/>
+</map>

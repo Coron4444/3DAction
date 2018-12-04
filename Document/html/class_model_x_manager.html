@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_model_x_manager-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">ModelXManager クラス</div>  </div>
@@ -117,7 +120,85 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
 <tr class="separator:a0a0cd728e7b92de6c18e96026708d97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70cc89b8314e5e91b74770606c734c97"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model_x_object.html">ModelXObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#a70cc89b8314e5e91b74770606c734c97">GetModelXObject</a> (const std::string *key_name)</td></tr>
 <tr class="separator:a70cc89b8314e5e91b74770606c734c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4e3620210fca89770bf08b9ec1265357"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#a4e3620210fca89770bf08b9ec1265357">ModelXManager</a> ()=delete</td></tr>
+<tr class="separator:a4e3620210fca89770bf08b9ec1265357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df03f9aef72a490b755955e70f12685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#a6df03f9aef72a490b755955e70f12685">ModelXManager</a> (const <a class="el" href="class_model_x_manager.html">ModelXManager</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:a6df03f9aef72a490b755955e70f12685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc65f6b4b9b06b4a20923245606175d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model_x_manager.html">ModelXManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#adc65f6b4b9b06b4a20923245606175d8">operator=</a> (const <a class="el" href="class_model_x_manager.html">ModelXManager</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:adc65f6b4b9b06b4a20923245606175d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2d367047714442f8a928e4360d11b773"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#a2d367047714442f8a928e4360d11b773">MakeFilePath</a> (const std::string *key_name, const std::string *file_path)</td></tr>
+<tr class="separator:a2d367047714442f8a928e4360d11b773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a745ad339e5fc73cec28d205881a969f8"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#a745ad339e5fc73cec28d205881a969f8">DEFAULT_PATH</a> = &quot;resource/ModelX/&quot;</td></tr>
+<tr class="separator:a745ad339e5fc73cec28d205881a969f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76c3a0fa42d0e562487f27c20096a12"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="class_model_x_object.html">ModelXObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#ad76c3a0fa42d0e562487f27c20096a12">share_model_map_</a></td></tr>
+<tr class="separator:ad76c3a0fa42d0e562487f27c20096a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ce902ab239fbb67a9fbbbb87929079"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="class_model_x_object.html">ModelXObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_x_manager.html#a77ce902ab239fbb67a9fbbbb87929079">unique_model_map_</a></td></tr>
+<tr class="separator:a77ce902ab239fbb67a9fbbbb87929079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_model_x_manager_8h_source.html">ModelXManager.h</a> の <a class="el" href="_model_x_manager_8h_source.html#l00033">33</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a4e3620210fca89770bf08b9ec1265357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3620210fca89770bf08b9ec1265357">&#9670;&nbsp;</a></span>ModelXManager() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelXManager::ModelXManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6df03f9aef72a490b755955e70f12685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df03f9aef72a490b755955e70f12685">&#9670;&nbsp;</a></span>ModelXManager() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelXManager::ModelXManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_model_x_manager.html">ModelXManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">関数詳解</h2>
 <a id="a395565622dff14d4ff80bf64611f9a36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a395565622dff14d4ff80bf64611f9a36">&#9670;&nbsp;</a></span>AddShareData()</h2>
@@ -152,6 +233,17 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00161">161</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a395565622dff14d4ff80bf64611f9a36_cgraph.png" border="0" usemap="#class_model_x_manager_a395565622dff14d4ff80bf64611f9a36_cgraph" alt=""/></div>
+<map name="class_model_x_manager_a395565622dff14d4ff80bf64611f9a36_cgraph" id="class_model_x_manager_a395565622dff14d4ff80bf64611f9a36_cgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a70cc89b8314e5e91b74770606c734c97" title="ModelXManager::GetModelXObject" alt="" coords="260,5,483,32"/>
+<area shape="rect" id="node3" href="class_model_x_manager.html#a2d367047714442f8a928e4360d11b773" title="ModelXManager::MakeFilePath" alt="" coords="270,56,473,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -189,6 +281,27 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00183">183</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_cgraph.png" border="0" usemap="#class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_cgraph" alt=""/></div>
+<map name="class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_cgraph" id="class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_cgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a70cc89b8314e5e91b74770606c734c97" title="ModelXManager::GetModelXObject" alt="" coords="265,5,488,32"/>
+<area shape="rect" id="node3" href="class_model_x_manager.html#a2d367047714442f8a928e4360d11b773" title="ModelXManager::MakeFilePath" alt="" coords="275,56,478,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_icgraph.png" border="0" usemap="#class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_icgraph" id="class_model_x_manager_a0a0cd728e7b92de6c18e96026708d97b_icgraph">
+<area shape="rect" id="node2" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68" title="初期化関数 " alt="" coords="290,5,403,32"/>
+<area shape="rect" id="node3" href="class_sky_dome_draw.html#a5b82e8b650a20dbc0b7ed720d1fb7fab" title="初期化関数 " alt="" coords="280,56,413,83"/>
+<area shape="rect" id="node4" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="265,107,428,149"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a70cc89b8314e5e91b74770606c734c97"></a>
@@ -215,6 +328,20 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00205">205</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a70cc89b8314e5e91b74770606c734c97_icgraph.png" border="0" usemap="#class_model_x_manager_a70cc89b8314e5e91b74770606c734c97_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a70cc89b8314e5e91b74770606c734c97_icgraph" id="class_model_x_manager_a70cc89b8314e5e91b74770606c734c97_icgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a395565622dff14d4ff80bf64611f9a36" title="ModelXManager::AddShareData" alt="" coords="279,5,485,32"/>
+<area shape="rect" id="node3" href="class_model_x_manager.html#a0a0cd728e7b92de6c18e96026708d97b" title="ModelXManager::AddUniqueData" alt="" coords="276,56,488,83"/>
+<area shape="rect" id="node4" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68" title="初期化関数 " alt="" coords="561,5,674,32"/>
+<area shape="rect" id="node5" href="class_sky_dome_draw.html#a5b82e8b650a20dbc0b7ed720d1fb7fab" title="初期化関数 " alt="" coords="551,56,684,83"/>
+<area shape="rect" id="node6" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="536,107,699,149"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a8d7965d9eaa41fcf0297eebea287ee82"></a>
@@ -239,6 +366,29 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00055">55</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_cgraph.png" border="0" usemap="#class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_cgraph" alt=""/></div>
+<map name="class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_cgraph" id="class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_cgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a9bed6cb5ffcd2cbfec6c405e21af362e" title="ModelXManager::InitUniqueData" alt="" coords="235,5,441,32"/>
+<area shape="rect" id="node3" href="class_model_x_manager.html#a8096a9ed1b19c41270df944aa855015a" title="ModelXManager::InitShareData" alt="" coords="238,56,438,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_icgraph.png" border="0" usemap="#class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_icgraph" id="class_model_x_manager_a8d7965d9eaa41fcf0297eebea287ee82_icgraph">
+<area shape="rect" id="node2" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b" title="ResourceManager::InitAllData" alt="" coords="235,5,429,32"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="477,5,612,32"/>
+<area shape="rect" id="node4" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="660,5,787,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="835,5,996,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1044,5,1117,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -265,6 +415,22 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00070">70</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a8096a9ed1b19c41270df944aa855015a_icgraph.png" border="0" usemap="#class_model_x_manager_a8096a9ed1b19c41270df944aa855015a_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a8096a9ed1b19c41270df944aa855015a_icgraph" id="class_model_x_manager_a8096a9ed1b19c41270df944aa855015a_icgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a8d7965d9eaa41fcf0297eebea287ee82" title="ModelXManager::InitAllData" alt="" coords="269,5,451,32"/>
+<area shape="rect" id="node8" href="class_resource_manager.html#af9be166f96250b01b9070a262cdb5d34" title="ResourceManager::InitShareData" alt="" coords="253,56,467,83"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b" title="ResourceManager::InitAllData" alt="" coords="515,5,709,32"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="757,5,892,32"/>
+<area shape="rect" id="node5" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="940,5,1067,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1115,5,1276,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1324,5,1397,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a9bed6cb5ffcd2cbfec6c405e21af362e"></a>
@@ -286,6 +452,98 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00084">84</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a9bed6cb5ffcd2cbfec6c405e21af362e_icgraph.png" border="0" usemap="#class_model_x_manager_a9bed6cb5ffcd2cbfec6c405e21af362e_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a9bed6cb5ffcd2cbfec6c405e21af362e_icgraph" id="class_model_x_manager_a9bed6cb5ffcd2cbfec6c405e21af362e_icgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a8d7965d9eaa41fcf0297eebea287ee82" title="ModelXManager::InitAllData" alt="" coords="279,5,460,32"/>
+<area shape="rect" id="node8" href="class_resource_manager.html#ab1ea00fb7eb4006bb9cbb48612da2c79" title="ResourceManager::InitUniqueData" alt="" coords="260,56,479,83"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b" title="ResourceManager::InitAllData" alt="" coords="527,5,721,32"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="769,5,904,32"/>
+<area shape="rect" id="node5" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="952,5,1079,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1127,5,1288,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1336,5,1409,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d367047714442f8a928e4360d11b773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d367047714442f8a928e4360d11b773">&#9670;&nbsp;</a></span>MakeFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModelXManager::MakeFilePath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string *&#160;</td>
+          <td class="paramname"><em>key_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string *&#160;</td>
+          <td class="paramname"><em>file_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00226">226</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a2d367047714442f8a928e4360d11b773_icgraph.png" border="0" usemap="#class_model_x_manager_a2d367047714442f8a928e4360d11b773_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a2d367047714442f8a928e4360d11b773_icgraph" id="class_model_x_manager_a2d367047714442f8a928e4360d11b773_icgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a395565622dff14d4ff80bf64611f9a36" title="ModelXManager::AddShareData" alt="" coords="259,5,465,32"/>
+<area shape="rect" id="node3" href="class_model_x_manager.html#a0a0cd728e7b92de6c18e96026708d97b" title="ModelXManager::AddUniqueData" alt="" coords="256,56,468,83"/>
+<area shape="rect" id="node4" href="class_player_draw.html#ad79a0fbeb618e0913822b573e5d0be68" title="初期化関数 " alt="" coords="541,5,654,32"/>
+<area shape="rect" id="node5" href="class_sky_dome_draw.html#a5b82e8b650a20dbc0b7ed720d1fb7fab" title="初期化関数 " alt="" coords="531,56,664,83"/>
+<area shape="rect" id="node6" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="516,107,679,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adc65f6b4b9b06b4a20923245606175d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc65f6b4b9b06b4a20923245606175d8">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model_x_manager.html">ModelXManager</a>&amp; ModelXManager::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_model_x_manager.html">ModelXManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -315,6 +573,26 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00098">98</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_cgraph.png" border="0" usemap="#class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_cgraph" alt=""/></div>
+<map name="class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_cgraph" id="class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_cgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a7dde269502f40b7d1208c8e0f84b13f0" title="ModelXManager::UninitUniqueData" alt="" coords="251,5,473,32"/>
+<area shape="rect" id="node3" href="class_model_x_manager.html#a9e3d0dc8addebebc87f450cde6c5e659" title="ModelXManager::UninitShareData" alt="" coords="254,56,470,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_icgraph.png" border="0" usemap="#class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_icgraph" id="class_model_x_manager_a915bf3c57058e235d91db06f3fe5f538_icgraph">
+<area shape="rect" id="node2" href="class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="251,5,461,32"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="509,5,660,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a9e3d0dc8addebebc87f450cde6c5e659"></a>
@@ -339,6 +617,19 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00113">113</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a9e3d0dc8addebebc87f450cde6c5e659_icgraph.png" border="0" usemap="#class_model_x_manager_a9e3d0dc8addebebc87f450cde6c5e659_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a9e3d0dc8addebebc87f450cde6c5e659_icgraph" id="class_model_x_manager_a9e3d0dc8addebebc87f450cde6c5e659_icgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a915bf3c57058e235d91db06f3fe5f538" title="ModelXManager::UninitAllData" alt="" coords="285,5,483,32"/>
+<area shape="rect" id="node5" href="class_resource_manager.html#a786915d9c4df5a023a43db8c5332cb93" title="ResourceManager::UninitShareData" alt="" coords="269,56,499,83"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="547,5,757,32"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="805,5,956,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -365,11 +656,102 @@ $(document).ready(function(){initNavTree('class_model_x_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a> の <a class="el" href="_model_x_manager_8cpp_source.html#l00137">137</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_x_manager_a7dde269502f40b7d1208c8e0f84b13f0_icgraph.png" border="0" usemap="#class_model_x_manager_a7dde269502f40b7d1208c8e0f84b13f0_icgraph" alt=""/></div>
+<map name="class_model_x_manager_a7dde269502f40b7d1208c8e0f84b13f0_icgraph" id="class_model_x_manager_a7dde269502f40b7d1208c8e0f84b13f0_icgraph">
+<area shape="rect" id="node2" href="class_model_x_manager.html#a915bf3c57058e235d91db06f3fe5f538" title="ModelXManager::UninitAllData" alt="" coords="295,5,492,32"/>
+<area shape="rect" id="node5" href="class_resource_manager.html#abcb135906cb991a49ec6e8c8db057de1" title="ResourceManager::UninitUniqueData" alt="" coords="276,56,511,83"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="559,5,769,32"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="821,5,972,32"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="565,56,763,83"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="817,56,976,83"/>
+<area shape="rect" id="node8" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1024,56,1200,83"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1248,56,1409,83"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1457,56,1531,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a745ad339e5fc73cec28d205881a969f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a745ad339e5fc73cec28d205881a969f8">&#9670;&nbsp;</a></span>DEFAULT_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string ModelXManager::DEFAULT_PATH = &quot;resource/ModelX/&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8h_source.html">ModelXManager.h</a> の <a class="el" href="_model_x_manager_8h_source.html#l00037">37</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad76c3a0fa42d0e562487f27c20096a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad76c3a0fa42d0e562487f27c20096a12">&#9670;&nbsp;</a></span>share_model_map_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string, <a class="el" href="class_model_x_object.html">ModelXObject</a> * &gt; ModelXManager::share_model_map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8h_source.html">ModelXManager.h</a> の <a class="el" href="_model_x_manager_8h_source.html#l00080">80</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a77ce902ab239fbb67a9fbbbb87929079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ce902ab239fbb67a9fbbbb87929079">&#9670;&nbsp;</a></span>unique_model_map_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string, <a class="el" href="class_model_x_object.html">ModelXObject</a> * &gt; ModelXManager::unique_model_map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_model_x_manager_8h_source.html">ModelXManager.h</a> の <a class="el" href="_model_x_manager_8h_source.html#l00081">81</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/ModelX/ModelXManager/<a class="el" href="_model_x_manager_8h_source.html">ModelXManager.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/ModelX/ModelXManager/<a class="el" href="_model_x_manager_8cpp.html">ModelXManager.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/ModelX/ModelXManager/<a class="el" href="_model_x_manager_8cpp_source.html">ModelXManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

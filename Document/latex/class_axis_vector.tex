@@ -4,6 +4,15 @@
 
 {\ttfamily \#include $<$Axis\+Vector.\+h$>$}
 
+
+
+Axis\+Vector 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_axis_vector__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,6 +50,38 @@ const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class
 \item 
 const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_axis_vector_aacf0879e0b9ace6cfbd29c8a300cd960}{Get\+Default\+Right}} () const
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65}{Calculation\+Axis\+\_\+\+Confirm\+Axis\+Forward}} ()
+\item 
+void \mbox{\hyperlink{class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0}{Normalize\+Axis\+\_\+\+All}} ()
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_axis_vector_aec3d9026c069398bc320bc978c060b67}{forward\+\_\+}}
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_axis_vector_ab73c08b8dbf399af48b01b4a17bd5d33}{up\+\_\+}}
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_axis_vector_af3e806442baa272fe79a08a38c8a6669}{right\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_axis_vector_a9c1883607bb0b10748eed84d40f11c93}{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+R\+W\+A\+RD}}
+\item 
+static const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_axis_vector_ae24f32af06534dacd474ba969b48ad4c}{D\+E\+F\+A\+U\+L\+T\+\_\+\+UP}}
+\item 
+static const \mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_axis_vector_a2527f9327895a4c50e668d90aa7b45fc}{D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+I\+G\+HT}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Axis\+Vector.\+h の 29 行目に定義があります。
+
 
 
 \subsection{構築子と解体子}
@@ -52,18 +93,63 @@ const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class
 
 
 
+ Axis\+Vector.\+cpp の 44 行目に定義があります。
+
+
+
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65}\label{class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65}} 
+\index{Axis\+Vector@{Axis\+Vector}!Calculation\+Axis\+\_\+\+Confirm\+Axis\+Forward@{Calculation\+Axis\+\_\+\+Confirm\+Axis\+Forward}}
+\index{Calculation\+Axis\+\_\+\+Confirm\+Axis\+Forward@{Calculation\+Axis\+\_\+\+Confirm\+Axis\+Forward}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{Calculation\+Axis\+\_\+\+Confirm\+Axis\+Forward()}{CalculationAxis\_ConfirmAxisForward()}}
+{\footnotesize\ttfamily void Axis\+Vector\+::\+Calculation\+Axis\+\_\+\+Confirm\+Axis\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+cpp の 270 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a1b7758fdc7a7ef1809a7a5de1777ee65_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a83ead17514eb08954dc74c0e72b6158c}\label{class_axis_vector_a83ead17514eb08954dc74c0e72b6158c}} 
 \index{Axis\+Vector@{Axis\+Vector}!Get\+Default\+Forawrd@{Get\+Default\+Forawrd}}
 \index{Get\+Default\+Forawrd@{Get\+Default\+Forawrd}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Get\+Default\+Forawrd()}{GetDefaultForawrd()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Axis\+Vector\+::\+Get\+Default\+Forawrd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Axis\+Vector.\+h の 68 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a83ead17514eb08954dc74c0e72b6158c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_aacf0879e0b9ace6cfbd29c8a300cd960}\label{class_axis_vector_aacf0879e0b9ace6cfbd29c8a300cd960}} 
 \index{Axis\+Vector@{Axis\+Vector}!Get\+Default\+Right@{Get\+Default\+Right}}
 \index{Get\+Default\+Right@{Get\+Default\+Right}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Get\+Default\+Right()}{GetDefaultRight()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Axis\+Vector\+::\+Get\+Default\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Axis\+Vector.\+h の 70 行目に定義があります。
 
 \mbox{\Hypertarget{class_axis_vector_a32f68ef0864e7b589d3c1996a61e11fc}\label{class_axis_vector_a32f68ef0864e7b589d3c1996a61e11fc}} 
 \index{Axis\+Vector@{Axis\+Vector}!Get\+Default\+Up@{Get\+Default\+Up}}
@@ -71,83 +157,372 @@ const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class
 \subsubsection{\texorpdfstring{Get\+Default\+Up()}{GetDefaultUp()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Axis\+Vector\+::\+Get\+Default\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Axis\+Vector.\+h の 69 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a32f68ef0864e7b589d3c1996a61e11fc_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a79013d5b090ce9232d57f528f18e982e}\label{class_axis_vector_a79013d5b090ce9232d57f528f18e982e}} 
 \index{Axis\+Vector@{Axis\+Vector}!Get\+Forawrd@{Get\+Forawrd}}
 \index{Get\+Forawrd@{Get\+Forawrd}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Get\+Forawrd()}{GetForawrd()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Axis\+Vector\+::\+Get\+Forawrd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Axis\+Vector.\+h の 65 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a79013d5b090ce9232d57f528f18e982e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a1d4f944d118d6f999c516dbdc0827a39}\label{class_axis_vector_a1d4f944d118d6f999c516dbdc0827a39}} 
 \index{Axis\+Vector@{Axis\+Vector}!Get\+Right@{Get\+Right}}
 \index{Get\+Right@{Get\+Right}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Get\+Right()}{GetRight()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Axis\+Vector\+::\+Get\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Axis\+Vector.\+h の 67 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a1d4f944d118d6f999c516dbdc0827a39_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_aba45ae6f91ac516e6e42fdb8bcfcae2e}\label{class_axis_vector_aba45ae6f91ac516e6e42fdb8bcfcae2e}} 
 \index{Axis\+Vector@{Axis\+Vector}!Get\+Up@{Get\+Up}}
 \index{Get\+Up@{Get\+Up}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Get\+Up()}{GetUp()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Axis\+Vector\+::\+Get\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Axis\+Vector.\+h の 66 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_aba45ae6f91ac516e6e42fdb8bcfcae2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0}\label{class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0}} 
+\index{Axis\+Vector@{Axis\+Vector}!Normalize\+Axis\+\_\+\+All@{Normalize\+Axis\+\_\+\+All}}
+\index{Normalize\+Axis\+\_\+\+All@{Normalize\+Axis\+\_\+\+All}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{Normalize\+Axis\+\_\+\+All()}{NormalizeAxis\_All()}}
+{\footnotesize\ttfamily void Axis\+Vector\+::\+Normalize\+Axis\+\_\+\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+cpp の 287 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_abd3b0ec608bc18dc9996cf9fa1d121b0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a1414c1390a31d9e98c26d9803c61d2b8}\label{class_axis_vector_a1414c1390a31d9e98c26d9803c61d2b8}} 
 \index{Axis\+Vector@{Axis\+Vector}!Reset\+Axis\+Vector@{Reset\+Axis\+Vector}}
 \index{Reset\+Axis\+Vector@{Reset\+Axis\+Vector}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Reset\+Axis\+Vector()}{ResetAxisVector()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Reset\+Axis\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 59 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a1414c1390a31d9e98c26d9803c61d2b8_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a42872a62f656e7249af84e39fd519475}\label{class_axis_vector_a42872a62f656e7249af84e39fd519475}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Axis\+\_\+\+Pivot\+Forward@{Rotation\+Axis\+\_\+\+Pivot\+Forward}}
 \index{Rotation\+Axis\+\_\+\+Pivot\+Forward@{Rotation\+Axis\+\_\+\+Pivot\+Forward}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Axis\+\_\+\+Pivot\+Forward()}{RotationAxis\_PivotForward()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Axis\+\_\+\+Pivot\+Forward (\begin{DoxyParamCaption}\item[{const float}]{radian }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 164 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a42872a62f656e7249af84e39fd519475_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a7cab74dd54bf4fc97770aee2278f2fa4}\label{class_axis_vector_a7cab74dd54bf4fc97770aee2278f2fa4}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Axis\+\_\+\+Pivot\+Free@{Rotation\+Axis\+\_\+\+Pivot\+Free}}
 \index{Rotation\+Axis\+\_\+\+Pivot\+Free@{Rotation\+Axis\+\_\+\+Pivot\+Free}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Axis\+\_\+\+Pivot\+Free()}{RotationAxis\_PivotFree()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Axis\+\_\+\+Pivot\+Free (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{axis\+\_\+vector,  }\item[{const float}]{radian }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 227 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a7cab74dd54bf4fc97770aee2278f2fa4_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a71a7638817a488d824cdc757d4e28a0c}\label{class_axis_vector_a71a7638817a488d824cdc757d4e28a0c}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Axis\+\_\+\+Pivot\+Right@{Rotation\+Axis\+\_\+\+Pivot\+Right}}
 \index{Rotation\+Axis\+\_\+\+Pivot\+Right@{Rotation\+Axis\+\_\+\+Pivot\+Right}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Axis\+\_\+\+Pivot\+Right()}{RotationAxis\_PivotRight()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Axis\+\_\+\+Pivot\+Right (\begin{DoxyParamCaption}\item[{const float}]{radian }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 204 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a71a7638817a488d824cdc757d4e28a0c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_ad33eef7f1b3912b6a1d0eaa18fff8f29}\label{class_axis_vector_ad33eef7f1b3912b6a1d0eaa18fff8f29}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Axis\+\_\+\+Pivot\+Up@{Rotation\+Axis\+\_\+\+Pivot\+Up}}
 \index{Rotation\+Axis\+\_\+\+Pivot\+Up@{Rotation\+Axis\+\_\+\+Pivot\+Up}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Axis\+\_\+\+Pivot\+Up()}{RotationAxis\_PivotUp()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Axis\+\_\+\+Pivot\+Up (\begin{DoxyParamCaption}\item[{const float}]{radian }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 184 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_ad33eef7f1b3912b6a1d0eaa18fff8f29_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_ad3110d0a45e303109caa1e0dfb2ca027}\label{class_axis_vector_ad3110d0a45e303109caa1e0dfb2ca027}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Axis\+\_\+\+PivotX@{Rotation\+Axis\+\_\+\+PivotX}}
 \index{Rotation\+Axis\+\_\+\+PivotX@{Rotation\+Axis\+\_\+\+PivotX}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Axis\+\_\+\+Pivot\+X()}{RotationAxis\_PivotX()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Axis\+\_\+\+PivotX (\begin{DoxyParamCaption}\item[{const float}]{radian }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 95 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_ad3110d0a45e303109caa1e0dfb2ca027_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa}\label{class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Axis\+\_\+\+PivotY@{Rotation\+Axis\+\_\+\+PivotY}}
 \index{Rotation\+Axis\+\_\+\+PivotY@{Rotation\+Axis\+\_\+\+PivotY}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Axis\+\_\+\+Pivot\+Y()}{RotationAxis\_PivotY()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Axis\+\_\+\+PivotY (\begin{DoxyParamCaption}\item[{const float}]{radian }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 118 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_aee4198c9fcf78d6912b129e2210a58fa_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_adde5b636a046a4fe6c5c943646045843}\label{class_axis_vector_adde5b636a046a4fe6c5c943646045843}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Axis\+\_\+\+PivotZ@{Rotation\+Axis\+\_\+\+PivotZ}}
 \index{Rotation\+Axis\+\_\+\+PivotZ@{Rotation\+Axis\+\_\+\+PivotZ}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Axis\+\_\+\+Pivot\+Z()}{RotationAxis\_PivotZ()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Axis\+\_\+\+PivotZ (\begin{DoxyParamCaption}\item[{const float}]{radian }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 141 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_adde5b636a046a4fe6c5c943646045843_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_a33aab769ff2de997393c13414fa23873}\label{class_axis_vector_a33aab769ff2de997393c13414fa23873}} 
 \index{Axis\+Vector@{Axis\+Vector}!Rotation\+Matrix@{Rotation\+Matrix}}
 \index{Rotation\+Matrix@{Rotation\+Matrix}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Rotation\+Matrix()}{RotationMatrix()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Rotation\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$}]{rotation\+\_\+matrix }\end{DoxyParamCaption})}
 
+
+
+ Axis\+Vector.\+cpp の 74 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a33aab769ff2de997393c13414fa23873_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_a33aab769ff2de997393c13414fa23873_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_axis_vector_ac429404c0b565c24307da4442e49bb61}\label{class_axis_vector_ac429404c0b565c24307da4442e49bb61}} 
 \index{Axis\+Vector@{Axis\+Vector}!Set\+Forward@{Set\+Forward}}
 \index{Set\+Forward@{Set\+Forward}!Axis\+Vector@{Axis\+Vector}}
 \subsubsection{\texorpdfstring{Set\+Forward()}{SetForward()}}
 {\footnotesize\ttfamily void Axis\+Vector\+::\+Set\+Forward (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{forward }\end{DoxyParamCaption})}
+
+
+
+ Axis\+Vector.\+cpp の 251 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_ac429404c0b565c24307da4442e49bb61_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis_vector_ac429404c0b565c24307da4442e49bb61_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_axis_vector_a9c1883607bb0b10748eed84d40f11c93}\label{class_axis_vector_a9c1883607bb0b10748eed84d40f11c93}} 
+\index{Axis\+Vector@{Axis\+Vector}!D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+R\+W\+A\+RD@{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+R\+W\+A\+RD}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+R\+W\+A\+RD@{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+R\+W\+A\+RD}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+R\+W\+A\+RD}{DEFAULT\_FORWARD}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}} Axis\+Vector\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+O\+R\+W\+A\+RD\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+h の 33 行目に定義があります。
+
+\mbox{\Hypertarget{class_axis_vector_a2527f9327895a4c50e668d90aa7b45fc}\label{class_axis_vector_a2527f9327895a4c50e668d90aa7b45fc}} 
+\index{Axis\+Vector@{Axis\+Vector}!D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+I\+G\+HT@{D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+I\+G\+HT}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+I\+G\+HT@{D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+I\+G\+HT}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+I\+G\+HT}{DEFAULT\_RIGHT}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}} Axis\+Vector\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+I\+G\+HT\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+h の 35 行目に定義があります。
+
+\mbox{\Hypertarget{class_axis_vector_ae24f32af06534dacd474ba969b48ad4c}\label{class_axis_vector_ae24f32af06534dacd474ba969b48ad4c}} 
+\index{Axis\+Vector@{Axis\+Vector}!D\+E\+F\+A\+U\+L\+T\+\_\+\+UP@{D\+E\+F\+A\+U\+L\+T\+\_\+\+UP}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+UP@{D\+E\+F\+A\+U\+L\+T\+\_\+\+UP}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+UP}{DEFAULT\_UP}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}} Axis\+Vector\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+UP\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+h の 34 行目に定義があります。
+
+\mbox{\Hypertarget{class_axis_vector_aec3d9026c069398bc320bc978c060b67}\label{class_axis_vector_aec3d9026c069398bc320bc978c060b67}} 
+\index{Axis\+Vector@{Axis\+Vector}!forward\+\_\+@{forward\+\_\+}}
+\index{forward\+\_\+@{forward\+\_\+}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{forward\+\_\+}{forward\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Axis\+Vector\+::forward\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+h の 87 行目に定義があります。
+
+\mbox{\Hypertarget{class_axis_vector_af3e806442baa272fe79a08a38c8a6669}\label{class_axis_vector_af3e806442baa272fe79a08a38c8a6669}} 
+\index{Axis\+Vector@{Axis\+Vector}!right\+\_\+@{right\+\_\+}}
+\index{right\+\_\+@{right\+\_\+}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{right\+\_\+}{right\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Axis\+Vector\+::right\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+h の 89 行目に定義があります。
+
+\mbox{\Hypertarget{class_axis_vector_ab73c08b8dbf399af48b01b4a17bd5d33}\label{class_axis_vector_ab73c08b8dbf399af48b01b4a17bd5d33}} 
+\index{Axis\+Vector@{Axis\+Vector}!up\+\_\+@{up\+\_\+}}
+\index{up\+\_\+@{up\+\_\+}!Axis\+Vector@{Axis\+Vector}}
+\subsubsection{\texorpdfstring{up\+\_\+}{up\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Axis\+Vector\+::up\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Axis\+Vector.\+h の 88 行目に定義があります。
 
 
 

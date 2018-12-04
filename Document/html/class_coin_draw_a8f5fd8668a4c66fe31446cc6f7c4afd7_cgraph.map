@@ -1,0 +1,5 @@
+<map id="CoinDraw::GetMatrix" name="CoinDraw::GetMatrix">
+<area shape="rect" id="node2" href="$class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="196,5,407,32"/>
+<area shape="rect" id="node3" href="$class_transform.html#a060f9487a18ad34549eab53a7ca5100d" title="Transform::GetWorldMatrix" alt="" coords="212,56,391,83"/>
+<area shape="rect" id="node4" href="$class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="455,56,653,83"/>
+</map>

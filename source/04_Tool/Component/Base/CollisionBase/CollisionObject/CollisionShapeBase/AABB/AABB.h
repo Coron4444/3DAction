@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    AABBクラス
-//    Author : Araki Kai                                作成日 : 2017/11/27
-//
+//!	@file	 AABB.h
+//!	@brief	 AABBClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
-
 #ifndef	_AABB_H_
 #define _AABB_H_
 
@@ -15,46 +14,50 @@
 //****************************************
 #include "../CollisionShapeBase.h"
 
+#include <Vector3D.h>
 
 
-/*********************************************************//**
-* @brief
-* AABBクラス
-*
-* AABBの基底クラス
-*************************************************************/
+//************************************************************														   
+//! @brief   AABBClass
+//!
+//! @details AABBのClass
+//************************************************************
 class AABB : public CollisionShapeBase
 {
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
-	Vector3D length_;	//!< 長さ
+	Vector3D position_;	//!< 座標
+	Vector3D length_;	//!< 各辺の長さ
 	Vector3D min_;		//!< 最小値
 	Vector3D max_;		//!< 最大値
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
 	/**
 	* @brief
 	* コンストラクタ
 	*/
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
 	AABB() : CollisionShapeBase(CollisionShapeBase::Type::AABB) {}
 
-	/**
-	* @brief
-	* 初期化関数
-	* @param
-	* position : 座標
-	* length : 各辺の長さ
-	*/
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param[in] position 座標
+	//! @param[in] length   各辺の長さ
+	//! @retval void なし
+	//----------------------------------------
 	void Init(Vector3D position, Vector3D length)
 	{
 		// 座標を設定
-		CollisionShapeBase::setPosition(position);
+		position_ = position;
 
 		// 長さを設定
 		length_ = length;
@@ -63,10 +66,11 @@ public:
 		UpdateMinAndMax();
 	}
 
-	/**
-	* @brief
-	* 更新関数
-	*/
+	//----------------------------------------
+	//! @brief 更新関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Update()
 	{
 		// 最小値と最大値
@@ -74,21 +78,23 @@ public:
 	}
 
 	// プロパティ
-	const Vector3D* getLength() const { return &length_; }
+	Vector3D* getpPositon() { return &position_; }
+	Vector3D* getpLength() { return &length_; }
 	void setLength(Vector3D value) { length_ = value; };
-	const Vector3D* getMin() const { return &min_; }
-	const Vector3D* getMax() const { return &max_; }
+	Vector3D* getpMin() { return &min_; }
+	Vector3D* getpMax() { return &max_; }
 
 
 private:
-	/**
-	* @brief
-	* 最小値と最大値更新関数
-	*/
+	//----------------------------------------
+	//! @brief 最小値と最大値更新関数
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void UpdateMinAndMax()
 	{
-		min_ = *CollisionShapeBase::getPositon() - length_;
-		max_ = *CollisionShapeBase::getPositon() + length_;
+		min_ = position_ - length_;
+		max_ = position_ + length_;
 	}
 };
 
@@ -101,8 +107,8 @@ private:
 // +1次元線分と点の最短距離のべき乗を求める関数
 //--------------------------------------------------
 inline float ShortestDistanceSquareAABB_Segment1D_Point(float position_min,
-														float position_max,
-														float point_any)
+												 float position_max,
+												 float point_any)
 {
 	float length = 0.0f;
 
@@ -126,20 +132,20 @@ inline float ShortestDistanceSquareAABB_Segment1D_Point(float position_min,
 //--------------------------------------------------
 // +AABBと点の最短距離を求める関数
 //--------------------------------------------------
-inline float ShortestDistance_AABB_Point(const AABB* aabb, const Vector3D* point)
+inline float ShortestDistance_AABB_Point(AABB* aabb, Vector3D* point)
 {
 	// 長さのべき乗で計算していく
 	float length = 0.0f;
 
 	// 各軸に対してべき乗を計算する
-	length = ShortestDistanceSquareAABB_Segment1D_Point(aabb->getMin()->x,
-														aabb->getMax()->x,
+	length = ShortestDistanceSquareAABB_Segment1D_Point(aabb->getpMin()->x,
+														aabb->getpMax()->x,
 														point->x);
-	length = ShortestDistanceSquareAABB_Segment1D_Point(aabb->getMin()->y,
-														aabb->getMax()->y,
+	length = ShortestDistanceSquareAABB_Segment1D_Point(aabb->getpMin()->y,
+														aabb->getpMax()->y,
 														point->y);
-	length = ShortestDistanceSquareAABB_Segment1D_Point(aabb->getMin()->z,
-														aabb->getMax()->z,
+	length = ShortestDistanceSquareAABB_Segment1D_Point(aabb->getpMin()->z,
+														aabb->getpMax()->z,
 														point->z);
 
 	return (float)sqrt(length);

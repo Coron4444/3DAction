@@ -93,8 +93,8 @@ void UpdateManager::Update()
 	// 物理更新
 	for (unsigned i = 0; i < all_update_.GetEndPointer(); i++)
 	{
-		if (all_update_.GetArrayObject(i)->GetGameObject()->GetPhysics() == nullptr) continue;
-		all_update_.GetArrayObject(i)->GetGameObject()->GetPhysics()->Update();
+		if (all_update_.GetArrayObject(i)->getpGameObject()->GetPhysics() == nullptr) continue;
+		all_update_.GetArrayObject(i)->getpGameObject()->GetPhysics()->Update();
 	}
 
 
@@ -151,7 +151,7 @@ void UpdateManager::OverwriteArrayUpdateBase(GameObjectBase* game_object,
 
 		// 新規更新基底クラスの初期化
 		game_object->SetUpdate(new_update);
-		new_update->SetGameObject(game_object);
+		*new_update->getpGameObject() = *game_object;
 		new_update->Init();
 	}
 }

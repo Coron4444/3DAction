@@ -91,21 +91,73 @@ $(document).ready(function(){initNavTree('_game_system_8cpp.html','');});
 <div class="title">GameSystem.cpp ファイル</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>ゲームシステムClass  
+<a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_game_system_8h_source.html">GameSystem.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_safe_release_8h_source.html">SafeRelease/SafeRelease.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_renderer_8h_source.html">Renderer/Renderer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_renderer_factory_direct_x9_8h_source.html">Renderer/RendererFactory/RendererFactoryDirectX9.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_keyboard_8h_source.html">Keyboard\Keyboard.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_controller_8h_source.html">Controller\Controller.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_sound_8h_source.html">Sound\Sound.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_scene_manager_8h_source.html">SceneManager\SceneManager.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_title_scene_8h_source.html">Scenes\TitleScene\TitleScene.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_renderer_factory_direct_x9_8h_source.html">Renderer/RendererFactory/RendererFactoryDirectX9/RendererFactoryDirectX9.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_safe_release_8h_source.html">SafeRelease/SafeRelease.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_controller_8h_source.html">Controller/Controller.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_keyboard_8h_source.html">Keyboard/Keyboard.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_sound_8h_source.html">Sound/Sound.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_scene_manager_8h_source.html">SceneManager/SceneManager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_title_scene_8h_source.html">Scenes/TitleScene/TitleScene.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_title_scene_state___start_8h_source.html">Scenes/TitleScene/TitleSceneState/TitleSceneState_Start/TitleSceneState_Start.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_game_scene_8h_source.html">Scenes\GameScene\GameScene.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_game_scene_8h_source.html">Scenes/GameScene/GameScene.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_game_scene_state___start_8h_source.html">Scenes/GameScene/GameSceneState/GameSceneState_Start/GameSceneState_Start.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="imgui_8h_source.html">ImGUI\imgui.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="imgui__impl__dx9_8h_source.html">ImGUI\imgui_impl_dx9.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="imgui_8h_source.html">ImGUI/imgui.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="imgui__impl__dx9_8h_source.html">ImGUI/imgui_impl_dx9.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+GameSystem.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_game_system_8cpp__incl.png" border="0" usemap="#_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_201___main_2_game_system_2_game_system_8cpp" alt=""/></div>
+<map name="_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_201___main_2_game_system_2_game_system_8cpp" id="_c_1_2_h_a_l_2_p_g_xE9_x96_xA2_xE4_xBF_x82_203___xE4_xBD_x9C_xE6_x88_x90_xE3_x83_x97_xE3_x83_xAD_xE3_x82_xB0_xE3_x83_xA9_xE3_x83_xA0_203___h_a_l_xE6_x8E_x88_xE6_xA5_xAD_2_xE5_xB0_xB1_xE8_x81_xB7_xE4_xBD_x9C_xE5_x93_x81_2_project_2source_201___main_2_game_system_2_game_system_8cpp">
+<area shape="rect" id="node3" href="_game_system_8h.html" title="ゲームシステムClass " alt="" coords="3357,339,3470,366"/>
+<area shape="rect" id="node5" href="_renderer_8h.html" title="レンダラーClass " alt="" coords="1836,339,1977,366"/>
+<area shape="rect" id="node6" href="_renderer_factory_direct_x9_8h.html" title="DirectX9レンダラー生成Class " alt="" coords="1800,421,1981,477"/>
+<area shape="rect" id="node14" href="_safe_release_8h.html" title="SafeRelease/SafeRelease.h" alt="" coords="2177,637,2359,663"/>
+<area shape="rect" id="node15" href="_controller_8h.html" title="Controller/Controller.h" alt="" coords="3064,153,3211,180"/>
+<area shape="rect" id="node17" href="_keyboard_8h.html" title="Keyboard/Keyboard.h" alt="" coords="3235,153,3381,180"/>
+<area shape="rect" id="node19" href="_sound_8h.html" title="Sound/Sound.h" alt="" coords="2994,339,3105,366"/>
+<area shape="rect" id="node20" href="_scene_manager_8h.html" title="シーンマネージャClass " alt="" coords="1283,153,1493,180"/>
+<area shape="rect" id="node39" href="_title_scene_8h.html" title="タイトルシーンClass " alt="" coords="2181,153,2387,180"/>
+<area shape="rect" id="node41" href="_title_scene_state___start_8h.html" title="タイトルシーンステート(スタート)Class " alt="" coords="2411,139,2607,195"/>
+<area shape="rect" id="node42" href="_game_scene_8h.html" title="ゲームシーンClass " alt="" coords="2632,153,2861,180"/>
+<area shape="rect" id="node43" href="_game_scene_state___start_8h.html" title="ゲームシーンステート(スタート)Class " alt="" coords="1937,139,2156,195"/>
+<area shape="rect" id="node44" href="imgui_8h.html" title="ImGUI/imgui.h" alt="" coords="2885,153,2989,180"/>
+<area shape="rect" id="node50" href="imgui__impl__dx9_8h.html" title="ImGUI/imgui_impl_dx9.h" alt="" coords="3456,153,3619,180"/>
+<area shape="rect" id="node12" href="_vector3_d_8h.html" title="Vector3D.h" alt="" coords="1595,637,1682,663"/>
+<area shape="rect" id="node7" href="_renderer_factory_interface_8h.html" title="レンダラー生成InterfaceClass " alt="" coords="1989,540,2179,567"/>
+<area shape="rect" id="node9" href="_renderer_direct_x9_8h.html" title="レンダラーDirectX9Class " alt="" coords="1785,533,1964,574"/>
+<area shape="rect" id="node8" href="_renderer_interface_8h.html" title="レンダラーInterfaceClass " alt="" coords="2013,629,2152,671"/>
+<area shape="rect" id="node21" href="_game_object_manager_8h.html" title="GameObjectManager\\GameObject\lManager.h" alt="" coords="1277,243,1499,284"/>
+<area shape="rect" id="node22" href="_limited_pointer_array_8h.html" title="LimitedPointerArray\l\\LimitedPointerArray.h" alt="" coords="1458,533,1609,574"/>
+<area shape="rect" id="node24" href="_game_object_reference_manager_8h.html" title="GameObjectReferenceManager\l\\GameObjectReferenceManager.h" alt="" coords="1277,429,1496,470"/>
+<area shape="rect" id="node25" href="_update_manager_8h.html" title="ComponentManager/UpdateManager\l/UpdateManager.h" alt="" coords="1477,332,1710,373"/>
+<area shape="rect" id="node26" href="_draw_manager_8h.html" title="ComponentManager/DrawManager\l/DrawManager.h" alt="" coords="1129,332,1351,373"/>
+<area shape="rect" id="node33" href="_collision_manager_8h.html" title="ComponentManager/Collision\lManager/CollisionManager.h" alt="" coords="515,429,706,470"/>
+<area shape="rect" id="node27" href="_back_buffer_8h.html" title="RenderTarget/BackBuffer\l/BackBuffer.h" alt="" coords="923,429,1090,470"/>
+<area shape="rect" id="node28" href="_camera_8h.html" title="../../Camera/Camera.h" alt="" coords="931,637,1082,663"/>
+<area shape="rect" id="node29" href="_camera_state___crawl_up_8h.html" title="../../Camera/CameraState\l_CrawlUp/CameraState_CrawlUp.h" alt="" coords="895,533,1118,574"/>
+<area shape="rect" id="node30" href="_camera_state___homing_target_8h.html" title="../../Camera/CameraState\l_HomingTarget/CameraState\l_HomingTarget.h" alt="" coords="1143,525,1332,581"/>
+<area shape="rect" id="node31" href="_fade_8h.html" title="../../Fade/Fade.h" alt="" coords="506,540,625,567"/>
+<area shape="rect" id="node32" href="_render_texture_8h.html" title="ComponentManager/DrawManager\l/RenderTexture/RenderTexture.h" alt="" coords="649,533,871,574"/>
+<area shape="rect" id="node35" href="_liner_octree_8h.html" title="LinerOctree/LinerOctree.h" alt="" coords="209,540,380,567"/>
+<area shape="rect" id="node38" href="_object_of_tree_8h.html" title="ObjectOfTree/ObjectOfTree.h" alt="" coords="5,637,195,663"/>
+<area shape="rect" id="node40" href="_scene_base_8h.html" title="シーンBaseClass " alt="" coords="2199,250,2369,277"/>
+<area shape="rect" id="node45" href="imconfig_8h.html" title="imconfig.h" alt="" coords="2550,250,2631,277"/>
+</map>
+</div>
+</div>
+<p><a href="_game_system_8cpp_source.html">[ソースコード]</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲームシステムClass </p>
+<dl class="section author"><dt>著者</dt><dd>Kai Araki </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2018/05/08 </dd></dl>
+
+<p class="definition"> <a class="el" href="_game_system_8cpp_source.html">GameSystem.cpp</a> に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

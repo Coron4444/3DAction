@@ -1,0 +1,24 @@
+<map id="BackBuffer::SetBillboardMatrix" name="BackBuffer::SetBillboardMatrix">
+<area shape="rect" id="node2" href="$class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="216,5,436,32"/>
+<area shape="rect" id="node3" href="$class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="221,56,431,83"/>
+<area shape="rect" id="node4" href="$class_transform.html#a486ae5501b5081b22ee053f787e0e4a2" title="Transform::UpdateTranspose\lMatrix" alt="" coords="232,107,420,149"/>
+<area shape="rect" id="node6" href="$class_camera.html#aa472374f61480c5a9dff89d30be029f4" title="Camera::GetViewMatrix" alt="" coords="246,173,406,200"/>
+<area shape="rect" id="node7" href="$class_transform.html#a053037b225e6fb11e680cc60df15dd45" title="Transform::TransposeMatrix\lTranslationOff" alt="" coords="235,225,417,266"/>
+<area shape="rect" id="node9" href="$class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="230,315,422,357"/>
+<area shape="rect" id="node5" href="$class_matrix_extend.html#a81e92fe4305ff9569809b61e2e92df31" title="MatrixExtend::UpdateTranspose\lMatrix" alt="" coords="485,107,693,149"/>
+<area shape="rect" id="node8" href="$class_matrix_extend.html#ae567bb2d140dff892ed1b63f8de33ba9" title="MatrixExtend::TransposeMatrix\lTranslationOff" alt="" coords="488,198,691,239"/>
+<area shape="rect" id="node10" href="$class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="493,264,685,291"/>
+<area shape="rect" id="node21" href="$class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="499,315,680,357"/>
+<area shape="rect" id="node22" href="$class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="484,381,695,422"/>
+<area shape="rect" id="node23" href="$class_matrix_extend.html#ab0aaf14f8621fde91f9db5537a4187e6" title="MatrixExtend::UpdateWorld\lMatrixISRT" alt="" coords="498,446,681,487"/>
+<area shape="rect" id="node11" href="$class_axis_vector.html#a1414c1390a31d9e98c26d9803c61d2b8" title="AxisVector::ResetAxisVector" alt="" coords="745,155,937,181"/>
+<area shape="rect" id="node12" href="$class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="747,205,935,232"/>
+<area shape="rect" id="node13" href="$class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="743,257,939,298"/>
+<area shape="rect" id="node14" href="$class_axis_vector.html#a33aab769ff2de997393c13414fa23873" title="AxisVector::RotationMatrix" alt="" coords="751,323,930,349"/>
+<area shape="rect" id="node20" href="$class_matrix_extend.html#a6e10c2692b92f15ea4a1a69fc22c66c4" title="MatrixExtend::GetRotation\lMatrix" alt="" coords="753,374,929,415"/>
+<area shape="rect" id="node15" href="$class_vector3_d.html#aa368719da4c1ac4e8a727edbd09ec390" title="Vector3D::RotationVector\l_Matrix" alt="" coords="1001,250,1172,291"/>
+<area shape="rect" id="node16" href="$class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="995,315,1179,357"/>
+<area shape="rect" id="node18" href="$class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="987,381,1187,408"/>
+<area shape="rect" id="node17" href="$class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="1235,323,1429,349"/>
+<area shape="rect" id="node19" href="$class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="1242,381,1422,408"/>
+</map>

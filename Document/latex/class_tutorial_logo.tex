@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Tutorial\+Logo.\+h$>$}
 
-Tutorial\+Logo の継承関係図\begin{figure}[H]
+
+
+Tutorial\+Logo の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_tutorial_logo}
+\includegraphics[width=174pt]{class_tutorial_logo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Tutorial\+Logo 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -28,6 +40,11 @@ unsigned \mbox{\hyperlink{class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09}
 \item 
 void \mbox{\hyperlink{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}{Set\+Logo\+Num}} (unsigned value)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{class_tutorial_logo_a8027b42e33a036e88277c4cd17fabdaa}{logo\+\_\+num\+\_\+}} = 0
+\begin{DoxyCompactList}\small\item\em チュートリアル \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
@@ -36,6 +53,10 @@ void \mbox{\hyperlink{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}{Set
 
 チュートリアルロゴのクラス 
 
+ Tutorial\+Logo.\+h の 26 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09}\label{class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09}} 
 \index{Tutorial\+Logo@{Tutorial\+Logo}!Get\+Logo\+Num@{Get\+Logo\+Num}}
@@ -43,12 +64,41 @@ void \mbox{\hyperlink{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}{Set
 \subsubsection{\texorpdfstring{Get\+Logo\+Num()}{GetLogoNum()}}
 {\footnotesize\ttfamily unsigned Tutorial\+Logo\+::\+Get\+Logo\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Tutorial\+Logo.\+h の 42 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_af4735bb34e06803ff13ae227fcf74e09_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f}\label{class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f}} 
 \index{Tutorial\+Logo@{Tutorial\+Logo}!Init@{Init}}
 \index{Init@{Init}!Tutorial\+Logo@{Tutorial\+Logo}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Tutorial\+Logo\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw }\end{DoxyParamCaption})}
 
+
+
+ Tutorial\+Logo.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_a590f017a6b0532d08c1377b90b8fba3f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_a2c9e22c81cfeafbd34f50cc766a66cf1}\label{class_tutorial_logo_a2c9e22c81cfeafbd34f50cc766a66cf1}} 
 \index{Tutorial\+Logo@{Tutorial\+Logo}!Reset@{Reset}}
 \index{Reset@{Reset}!Tutorial\+Logo@{Tutorial\+Logo}}
@@ -63,12 +113,27 @@ void \mbox{\hyperlink{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}{Set
 
 \mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
+
+
+ Tutorial\+Logo.\+cpp の 60 行目に定義があります。
+
 \mbox{\Hypertarget{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}\label{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}} 
 \index{Tutorial\+Logo@{Tutorial\+Logo}!Set\+Logo\+Num@{Set\+Logo\+Num}}
 \index{Set\+Logo\+Num@{Set\+Logo\+Num}!Tutorial\+Logo@{Tutorial\+Logo}}
 \subsubsection{\texorpdfstring{Set\+Logo\+Num()}{SetLogoNum()}}
 {\footnotesize\ttfamily void Tutorial\+Logo\+::\+Set\+Logo\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Tutorial\+Logo.\+h の 43 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5}\label{class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5}} 
 \index{Tutorial\+Logo@{Tutorial\+Logo}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Tutorial\+Logo@{Tutorial\+Logo}}
@@ -82,6 +147,34 @@ void \mbox{\hyperlink{class_tutorial_logo_a18313074bc7242f5e8a9121414abd51d}{Set
 
 
 \mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
+
+
+
+ Tutorial\+Logo.\+cpp の 46 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_a8e1f1dba47dadf7d1bb40f616324ffb5_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_tutorial_logo_a8027b42e33a036e88277c4cd17fabdaa}\label{class_tutorial_logo_a8027b42e33a036e88277c4cd17fabdaa}} 
+\index{Tutorial\+Logo@{Tutorial\+Logo}!logo\+\_\+num\+\_\+@{logo\+\_\+num\+\_\+}}
+\index{logo\+\_\+num\+\_\+@{logo\+\_\+num\+\_\+}!Tutorial\+Logo@{Tutorial\+Logo}}
+\subsubsection{\texorpdfstring{logo\+\_\+num\+\_\+}{logo\_num\_}}
+{\footnotesize\ttfamily unsigned Tutorial\+Logo\+::logo\+\_\+num\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+チュートリアル 
+
+
+
+ Tutorial\+Logo.\+h の 32 行目に定義があります。
 
 
 

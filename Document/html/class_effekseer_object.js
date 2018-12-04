@@ -6,6 +6,8 @@ var class_effekseer_object =
     [ "GetPause", "class_effekseer_object.html#a482a0e824d8719b7676ae15948ae7348", null ],
     [ "GetRepeat", "class_effekseer_object.html#a3c44b29c016fb5b3618e2d39060844be", null ],
     [ "GetTransform", "class_effekseer_object.html#ad7e825d08856df48459437ad759d7a00", null ],
+    [ "InitRenderer_Manager", "class_effekseer_object.html#a4f8e7ad6b6ebfa341302f6b78e846f1e", null ],
+    [ "InputEffect", "class_effekseer_object.html#a1566339dd4acebff341a867a2fd05c17", null ],
     [ "IsPlaing", "class_effekseer_object.html#a6fe253dd3387bdfd9305878ff194f305", null ],
     [ "Play", "class_effekseer_object.html#a59c8a12b4eb558449622660d892b3cf4", null ],
     [ "SetColor", "class_effekseer_object.html#a5c496e56785ef7b784b13642d59d4e7f", null ],
@@ -14,6 +16,16 @@ var class_effekseer_object =
     [ "SetRepeat", "class_effekseer_object.html#a77122f2d71d44d6cceec2b6bdedb4b2a", null ],
     [ "SetVelocity", "class_effekseer_object.html#a3c14fd4215640b648b14e445b99564f7", null ],
     [ "SetViewMatrix", "class_effekseer_object.html#ac7f3145b79b5e65e45014abd30ee5de8", null ],
+    [ "SetWorldMatrix", "class_effekseer_object.html#afde70f366e91d31a84ff9b280d4ae3c4", null ],
     [ "Stop", "class_effekseer_object.html#adfbdfbe202b78441b33d76656453e536", null ],
-    [ "Update", "class_effekseer_object.html#aecb9314a5ff922c9420301129d2f26f7", null ]
+    [ "Update", "class_effekseer_object.html#aecb9314a5ff922c9420301129d2f26f7", null ],
+    [ "effekseer_effect_", "class_effekseer_object.html#a66c732f526b92301c72070648ca7e70f", null ],
+    [ "effekseer_handle_", "class_effekseer_object.html#ac3e771c9f05d91dfe392959591595b7e", null ],
+    [ "effekseer_manager_", "class_effekseer_object.html#a9f66433b8cecd6753b478a73f93f8179", null ],
+    [ "effekseer_renderer_", "class_effekseer_object.html#a39d29eb6a967f325b3d8659c231e0525", null ],
+    [ "is_pause_", "class_effekseer_object.html#ad34fd902c49b1f68dc7b212fe9d2676d", null ],
+    [ "is_playing_", "class_effekseer_object.html#a4ec40aadcda493d25823d95a3035c29d", null ],
+    [ "is_repeat_", "class_effekseer_object.html#a4beb29e4b63e4013d1916ccada3c5635", null ],
+    [ "transform_", "class_effekseer_object.html#a53e096d7eebae5339b2df3c91bc30e7e", null ],
+    [ "world_matrix_", "class_effekseer_object.html#a16171d7157607b9d6a5fc0aa4ad9d454", null ]
 ];

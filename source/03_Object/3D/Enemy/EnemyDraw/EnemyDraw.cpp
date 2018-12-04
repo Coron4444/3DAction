@@ -23,13 +23,13 @@
 void EnemyDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// ダウンキャスト
-	enemy_ = (Enemy*)GetGameObject();
+	enemy_ = (Enemy*)getpGameObject();
 }
 
 
@@ -59,25 +59,25 @@ void EnemyDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* EnemyDraw::GetMatrix(unsigned object_index)
+unsigned EnemyDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return enemy_->GetTransform()->GetWorldMatrix();
+	return enemy_->cube_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned EnemyDraw::GetMeshNum(unsigned object_index)
+MATRIX* EnemyDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return enemy_->cube_polygon_->GetMeshNum();
+	return enemy_->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -85,7 +85,7 @@ unsigned EnemyDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* EnemyDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* EnemyDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

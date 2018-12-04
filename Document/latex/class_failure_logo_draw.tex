@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Failure\+Logo\+Draw.\+h$>$}
 
-Failure\+Logo\+Draw の継承関係図\begin{figure}[H]
+
+
+Failure\+Logo\+Draw の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_failure_logo_draw}
+\includegraphics[width=169pt]{class_failure_logo_draw__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Failure\+Logo\+Draw 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_failure_logo_draw__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -32,12 +44,30 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_failure_logo_draw_a
 \item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_failure_logo}{Failure\+Logo}} $\ast$ \mbox{\hyperlink{class_failure_logo_draw_aa6b60e289acc232d5bd1bc5a656a2551}{failure\+\_\+logo\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 失敗ロゴ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_failure_logo_draw_a02463e67fa2053739c667bb1213e1b9e}{decale\+\_\+texture\+\_\+}}
+\begin{DoxyCompactList}\small\item\em デカールテクスチャ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{class_failure_logo_draw_a287b81d9dcab4be17a88d9aff7c97a9a}{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}} = \char`\"{}UI/Game\+Over.\+png\char`\"{}
+\begin{DoxyCompactList}\small\item\em テクスチャ名 \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_failure_logo_draw_a356d2f6f14682ad6f2e9a01ffdd587b0}{S\+C\+A\+LE}} = 1.\+25f
+\begin{DoxyCompactList}\small\item\em 拡縮 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 失敗ロゴ描画クラス 
 
 失敗ロゴの描画クラス 
+
+ Failure\+Logo\+Draw.\+h の 31 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_failure_logo_draw_a8ee20e1697bbbaf7f41c18334830488a}\label{class_failure_logo_draw_a8ee20e1697bbbaf7f41c18334830488a}} 
@@ -59,6 +89,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
 
+
+
+ Failure\+Logo\+Draw.\+cpp の 70 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_failure_logo_draw_a8ee20e1697bbbaf7f41c18334830488a_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd}\label{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
@@ -69,6 +110,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 \mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
+
+
+ Failure\+Logo\+Draw.\+cpp の 121 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322}\label{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
@@ -79,6 +131,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 \mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
+
+
+ Failure\+Logo\+Draw.\+cpp の 108 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92}\label{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Matrix@{Get\+Matrix}}
 \index{Get\+Matrix@{Get\+Matrix}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
@@ -89,6 +152,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
 
+
+
+ Failure\+Logo\+Draw.\+cpp の 83 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59}\label{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
@@ -99,6 +173,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 \mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
+
+
+ Failure\+Logo\+Draw.\+cpp の 96 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}\label{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Init@{Init}}
 \index{Init@{Init}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
@@ -113,6 +198,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
+
+
+ Failure\+Logo\+Draw.\+cpp の 34 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_failure_logo_draw_a97646253380b54f37565650e211f33cd}\label{class_failure_logo_draw_a97646253380b54f37565650e211f33cd}} 
 \index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
@@ -126,6 +222,69 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_failure_
 
 
 \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
+
+
+
+ Failure\+Logo\+Draw.\+cpp の 61 行目に定義があります。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_failure_logo_draw_a02463e67fa2053739c667bb1213e1b9e}\label{class_failure_logo_draw_a02463e67fa2053739c667bb1213e1b9e}} 
+\index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}}
+\index{decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{decale\+\_\+texture\+\_\+}{decale\_texture\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}}$\ast$ Failure\+Logo\+Draw\+::decale\+\_\+texture\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+デカールテクスチャ 
+
+
+
+ Failure\+Logo\+Draw.\+h の 46 行目に定義があります。
+
+\mbox{\Hypertarget{class_failure_logo_draw_aa6b60e289acc232d5bd1bc5a656a2551}\label{class_failure_logo_draw_aa6b60e289acc232d5bd1bc5a656a2551}} 
+\index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!failure\+\_\+logo\+\_\+@{failure\+\_\+logo\+\_\+}}
+\index{failure\+\_\+logo\+\_\+@{failure\+\_\+logo\+\_\+}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{failure\+\_\+logo\+\_\+}{failure\_logo\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_failure_logo}{Failure\+Logo}}$\ast$ Failure\+Logo\+Draw\+::failure\+\_\+logo\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+失敗ロゴ 
+
+
+
+ Failure\+Logo\+Draw.\+h の 45 行目に定義があります。
+
+\mbox{\Hypertarget{class_failure_logo_draw_a356d2f6f14682ad6f2e9a01ffdd587b0}\label{class_failure_logo_draw_a356d2f6f14682ad6f2e9a01ffdd587b0}} 
+\index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!S\+C\+A\+LE@{S\+C\+A\+LE}}
+\index{S\+C\+A\+LE@{S\+C\+A\+LE}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{S\+C\+A\+LE}{SCALE}}
+{\footnotesize\ttfamily const float Failure\+Logo\+Draw\+::\+S\+C\+A\+LE = 1.\+25f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+拡縮 
+
+
+
+ Failure\+Logo\+Draw.\+h の 38 行目に定義があります。
+
+\mbox{\Hypertarget{class_failure_logo_draw_a287b81d9dcab4be17a88d9aff7c97a9a}\label{class_failure_logo_draw_a287b81d9dcab4be17a88d9aff7c97a9a}} 
+\index{Failure\+Logo\+Draw@{Failure\+Logo\+Draw}!T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}}
+\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}!Failure\+Logo\+Draw@{Failure\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}{TEXTURE\_NAME}}
+{\footnotesize\ttfamily const std\+::string Failure\+Logo\+Draw\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME = \char`\"{}UI/Game\+Over.\+png\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+テクスチャ名 
+
+
+
+ Failure\+Logo\+Draw.\+h の 37 行目に定義があります。
 
 
 

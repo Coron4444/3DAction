@@ -83,7 +83,7 @@ void TextureObject::InputTexture(const std::string* file_path)
 {
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
-	Renderer::GetInstance()->GetDevice(&device);
+	Renderer::getpInstance()->getDevice(&device);
 	if (device == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(EffekseerObject.cpp)", "Error", MB_OK);

@@ -1,0 +1,11 @@
+<map id="Fade::Fade" name="Fade::Fade">
+<area shape="rect" id="node2" href="$class_texture_manager.html#a571c5b288fe16c53965f45d8bd7c8769" title="TextureManager::AddShareData" alt="" coords="153,42,360,69"/>
+<area shape="rect" id="node5" href="$class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="161,93,353,119"/>
+<area shape="rect" id="node6" href="$class_draw_order_list.html#a5b3ff99f9297293edc057b95d23e8f2d" title="DrawOrderList::SetDrawType" alt="" coords="162,143,351,170"/>
+<area shape="rect" id="node7" href="$class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f" title="DrawOrderList::GetRender\lTargetFlag" alt="" coords="169,195,344,236"/>
+<area shape="rect" id="node8" href="$class_flag.html#a362d2f64c03c0b596004f3eba4cb14a3" title="Flag::Set" alt="" coords="219,261,294,287"/>
+<area shape="rect" id="node9" href="$class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481" title="DrawOrderList::SetVertex\lShaderType" alt="" coords="171,312,342,353"/>
+<area shape="rect" id="node10" href="$class_draw_order_list.html#a0fd7f50f4078001983f88014d59f8f29" title="DrawOrderList::SetPixelShaderType" alt="" coords="141,378,372,405"/>
+<area shape="rect" id="node3" href="$class_texture_manager.html#a18d1f3418511075804f9d11cff1010ff" title="TextureManager::GetTexture\lObject" alt="" coords="428,5,615,47"/>
+<area shape="rect" id="node4" href="$class_texture_manager.html#a950562ff671a620592708906925fad7f" title="TextureManager::MakeFilePath" alt="" coords="420,71,623,98"/>
+</map>

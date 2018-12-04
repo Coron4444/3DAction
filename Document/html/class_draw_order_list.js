@@ -19,5 +19,12 @@ var class_draw_order_list =
     [ "SetIsLighting", "class_draw_order_list.html#a233843bc98d389d9cfc79108b599c7a9", null ],
     [ "SetLayerNum", "class_draw_order_list.html#a5559a24f4d87d9d087d9daabed9a11f3", null ],
     [ "SetPixelShaderType", "class_draw_order_list.html#a0fd7f50f4078001983f88014d59f8f29", null ],
-    [ "SetVertexShaderType", "class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481", null ]
+    [ "SetVertexShaderType", "class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481", null ],
+    [ "draw_type_", "class_draw_order_list.html#ad2ce43c1b177ba4dae4198aa272eeb23", null ],
+    [ "is_billboard_", "class_draw_order_list.html#ae9a77121ff108d8f0ee0c73065f99a75", null ],
+    [ "is_lighting_", "class_draw_order_list.html#a26e72a0f47cc2c791eeb87fe6aadeee9", null ],
+    [ "layer_num_", "class_draw_order_list.html#aff49851688a106fc572abab6e65506b8", null ],
+    [ "pixel_shader_type_", "class_draw_order_list.html#a8c2adbcac9f724deae8da0a698e93c57", null ],
+    [ "render_target_flag_", "class_draw_order_list.html#a8da2b635d5b2a9191088f9180d1fe6d6", null ],
+    [ "vertex_shader_type_", "class_draw_order_list.html#afcb0968108f4e6932358393a8bc90a8b", null ]
 ];

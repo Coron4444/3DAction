@@ -4,6 +4,15 @@
 
 {\ttfamily \#include $<$Limited\+Pointer\+Array.\+h$>$}
 
+
+
+Limited\+Pointer\+Array$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$ 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_limited_pointer_array__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,6 +46,25 @@ unsigned \mbox{\hyperlink{class_limited_pointer_array_a2b9d42b57662f29f357b2faf1
 \item 
 bool \mbox{\hyperlink{class_limited_pointer_array_a8bd3a7ea969f307c35934a1bf2803b40}{Is\+Max}} ()
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+Type \mbox{\hyperlink{class_limited_pointer_array_a80e958d7818fc6ee0e757b56abc937a4}{array\+\_\+}} \mbox{[}A\+R\+R\+A\+Y\+\_\+\+N\+UM\mbox{]}
+\item 
+unsigned \mbox{\hyperlink{class_limited_pointer_array_a7da38a8f2ea9a4b030f64f0e8adc27e8}{end\+\_\+pointer\+\_\+}}
+\item 
+std\+::unordered\+\_\+map$<$ Type, unsigned $>$ \mbox{\hyperlink{class_limited_pointer_array_a4f3ca120f5fc23ee3db798cb701d61a0}{registration\+\_\+map\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$\newline
+class Limited\+Pointer\+Array$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+U\+M $>$}
+
+
+
+ Limited\+Pointer\+Array.\+h の 33 行目に定義があります。
+
 
 
 \subsection{構築子と解体子}
@@ -49,6 +77,10 @@ bool \mbox{\hyperlink{class_limited_pointer_array_a8bd3a7ea969f307c35934a1bf2803
 
 
 
+ Limited\+Pointer\+Array.\+h の 38 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_limited_pointer_array_a57eb08357204668710021965425f4f46}\label{class_limited_pointer_array_a57eb08357204668710021965425f4f46}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Add\+To\+Array@{Add\+To\+Array}}
@@ -57,12 +89,27 @@ bool \mbox{\hyperlink{class_limited_pointer_array_a8bd3a7ea969f307c35934a1bf2803
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Add\+To\+Array (\begin{DoxyParamCaption}\item[{Type}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 56 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_a57eb08357204668710021965425f4f46_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_limited_pointer_array_a02cfaed541d27980883ec9eb90ad3813}\label{class_limited_pointer_array_a02cfaed541d27980883ec9eb90ad3813}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Delete\+From\+Array@{Delete\+From\+Array}}
 \index{Delete\+From\+Array@{Delete\+From\+Array}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
 \subsubsection{\texorpdfstring{Delete\+From\+Array()}{DeleteFromArray()}}
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Delete\+From\+Array (\begin{DoxyParamCaption}\item[{Type}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 167 行目に定義があります。
 
 \mbox{\Hypertarget{class_limited_pointer_array_a32dd58543bee490df6dcea079ebe4586}\label{class_limited_pointer_array_a32dd58543bee490df6dcea079ebe4586}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Delete\+From\+Array\+And\+Sort\+Array@{Delete\+From\+Array\+And\+Sort\+Array}}
@@ -71,12 +118,28 @@ void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ 
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Delete\+From\+Array\+And\+Sort\+Array (\begin{DoxyParamCaption}\item[{Type}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 208 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_a32dd58543bee490df6dcea079ebe4586_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_limited_pointer_array_a404c188412a49f58ecacabd41c974de2}\label{class_limited_pointer_array_a404c188412a49f58ecacabd41c974de2}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Get\+Array\+Num@{Get\+Array\+Num}}
 \index{Get\+Array\+Num@{Get\+Array\+Num}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
 \subsubsection{\texorpdfstring{Get\+Array\+Num()}{GetArrayNum()}}
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 unsigned \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Get\+Array\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 282 行目に定義があります。
 
 \mbox{\Hypertarget{class_limited_pointer_array_aae48443929a3766e602eb96f515c3a34}\label{class_limited_pointer_array_aae48443929a3766e602eb96f515c3a34}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Get\+Array\+Object@{Get\+Array\+Object}}
@@ -85,6 +148,18 @@ unsigned \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 Type \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Get\+Array\+Object (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 268 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_aae48443929a3766e602eb96f515c3a34_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_limited_pointer_array_a4c070b87cde4d2ea173aa28918af6223}\label{class_limited_pointer_array_a4c070b87cde4d2ea173aa28918af6223}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Get\+End\+Pointer@{Get\+End\+Pointer}}
 \index{Get\+End\+Pointer@{Get\+End\+Pointer}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
@@ -92,12 +167,28 @@ Type \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ 
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 unsigned \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Get\+End\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 276 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_a4c070b87cde4d2ea173aa28918af6223_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_limited_pointer_array_a2b9d42b57662f29f357b2faf1793aa66}\label{class_limited_pointer_array_a2b9d42b57662f29f357b2faf1793aa66}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Get\+Index\+Num@{Get\+Index\+Num}}
 \index{Get\+Index\+Num@{Get\+Index\+Num}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
 \subsubsection{\texorpdfstring{Get\+Index\+Num()}{GetIndexNum()}}
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 unsigned \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Get\+Index\+Num (\begin{DoxyParamCaption}\item[{Type}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 288 行目に定義があります。
 
 \mbox{\Hypertarget{class_limited_pointer_array_a8bd3a7ea969f307c35934a1bf2803b40}\label{class_limited_pointer_array_a8bd3a7ea969f307c35934a1bf2803b40}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Is\+Max@{Is\+Max}}
@@ -106,6 +197,10 @@ unsigned \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 bool \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Is\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 304 行目に定義があります。
+
 \mbox{\Hypertarget{class_limited_pointer_array_a7cf64a1731ab6d0d63182b6c223fae0b}\label{class_limited_pointer_array_a7cf64a1731ab6d0d63182b6c223fae0b}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Overwrite\+Array@{Overwrite\+Array}}
 \index{Overwrite\+Array@{Overwrite\+Array}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
@@ -113,12 +208,27 @@ bool \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ 
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Overwrite\+Array (\begin{DoxyParamCaption}\item[{Type}]{old\+\_\+object,  }\item[{Type}]{new\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 85 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_a7cf64a1731ab6d0d63182b6c223fae0b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_limited_pointer_array_a6c46bb77df04a9e1226025f8c48e26cb}\label{class_limited_pointer_array_a6c46bb77df04a9e1226025f8c48e26cb}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Overwrite\+Array\+And\+Release\+Old\+Object@{Overwrite\+Array\+And\+Release\+Old\+Object}}
 \index{Overwrite\+Array\+And\+Release\+Old\+Object@{Overwrite\+Array\+And\+Release\+Old\+Object}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
 \subsubsection{\texorpdfstring{Overwrite\+Array\+And\+Release\+Old\+Object()}{OverwriteArrayAndReleaseOldObject()}}
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Overwrite\+Array\+And\+Release\+Old\+Object (\begin{DoxyParamCaption}\item[{Type}]{old\+\_\+object,  }\item[{Type}]{new\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 108 行目に定義があります。
 
 \mbox{\Hypertarget{class_limited_pointer_array_a5e34faa11f4b901153f85428027aa21e}\label{class_limited_pointer_array_a5e34faa11f4b901153f85428027aa21e}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Release\+Object\+And\+Reset\+Array@{Release\+Object\+And\+Reset\+Array}}
@@ -127,6 +237,17 @@ void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ 
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Release\+Object\+And\+Reset\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 150 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_a5e34faa11f4b901153f85428027aa21e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_limited_pointer_array_ae5a41fe945c1ee5ea73116b823011a8c}\label{class_limited_pointer_array_ae5a41fe945c1ee5ea73116b823011a8c}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Reset\+Array@{Reset\+Array}}
 \index{Reset\+Array@{Reset\+Array}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
@@ -134,6 +255,18 @@ void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ 
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Reset\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 134 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_ae5a41fe945c1ee5ea73116b823011a8c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_limited_pointer_array_a1093a96cb123b3fed52bdfcea1055f33}\label{class_limited_pointer_array_a1093a96cb123b3fed52bdfcea1055f33}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Sort\+Array@{Sort\+Array}}
 \index{Sort\+Array@{Sort\+Array}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
@@ -141,12 +274,64 @@ void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ 
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Sort\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Limited\+Pointer\+Array.\+h の 179 行目に定義があります。
+
 \mbox{\Hypertarget{class_limited_pointer_array_a0d33dc5dd8ed01bb00accd6378aa1b47}\label{class_limited_pointer_array_a0d33dc5dd8ed01bb00accd6378aa1b47}} 
 \index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!Sort\+The\+Two\+Object@{Sort\+The\+Two\+Object}}
 \index{Sort\+The\+Two\+Object@{Sort\+The\+Two\+Object}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
 \subsubsection{\texorpdfstring{Sort\+The\+Two\+Object()}{SortTheTwoObject()}}
 {\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
 void \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::Sort\+The\+Two\+Object (\begin{DoxyParamCaption}\item[{unsigned}]{index0,  }\item[{unsigned}]{index1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 246 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_limited_pointer_array_a0d33dc5dd8ed01bb00accd6378aa1b47_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_limited_pointer_array_a80e958d7818fc6ee0e757b56abc937a4}\label{class_limited_pointer_array_a80e958d7818fc6ee0e757b56abc937a4}} 
+\index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!array\+\_\+@{array\+\_\+}}
+\index{array\+\_\+@{array\+\_\+}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
+\subsubsection{\texorpdfstring{array\+\_\+}{array\_}}
+{\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
+Type \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::array\+\_\+\mbox{[}A\+R\+R\+A\+Y\+\_\+\+N\+UM\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 314 行目に定義があります。
+
+\mbox{\Hypertarget{class_limited_pointer_array_a7da38a8f2ea9a4b030f64f0e8adc27e8}\label{class_limited_pointer_array_a7da38a8f2ea9a4b030f64f0e8adc27e8}} 
+\index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!end\+\_\+pointer\+\_\+@{end\+\_\+pointer\+\_\+}}
+\index{end\+\_\+pointer\+\_\+@{end\+\_\+pointer\+\_\+}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
+\subsubsection{\texorpdfstring{end\+\_\+pointer\+\_\+}{end\_pointer\_}}
+{\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
+unsigned \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::end\+\_\+pointer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 315 行目に定義があります。
+
+\mbox{\Hypertarget{class_limited_pointer_array_a4f3ca120f5fc23ee3db798cb701d61a0}\label{class_limited_pointer_array_a4f3ca120f5fc23ee3db798cb701d61a0}} 
+\index{Limited\+Pointer\+Array@{Limited\+Pointer\+Array}!registration\+\_\+map\+\_\+@{registration\+\_\+map\+\_\+}}
+\index{registration\+\_\+map\+\_\+@{registration\+\_\+map\+\_\+}!Limited\+Pointer\+Array@{Limited\+Pointer\+Array}}
+\subsubsection{\texorpdfstring{registration\+\_\+map\+\_\+}{registration\_map\_}}
+{\footnotesize\ttfamily template$<$class Type, unsigned A\+R\+R\+A\+Y\+\_\+\+N\+UM = 100000$>$ \\
+std\+::unordered\+\_\+map$<$Type, unsigned$>$ \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ Type, A\+R\+R\+A\+Y\+\_\+\+N\+UM $>$\+::registration\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Limited\+Pointer\+Array.\+h の 316 行目に定義があります。
 
 
 

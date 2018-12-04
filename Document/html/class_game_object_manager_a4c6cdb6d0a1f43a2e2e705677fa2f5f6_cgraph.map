@@ -1,0 +1,9 @@
+<map id="GameObjectManager::SetComponentToManager" name="GameObjectManager::SetComponentToManager">
+<area shape="rect" id="node2" href="$class_game_object_base.html#a177985be1be1252df6588fa29f2c7f41" title="GameObjectBase::GetUpdate" alt="" coords="229,5,424,32"/>
+<area shape="rect" id="node3" href="$class_update_manager.html#afe4b39d94cde8294cc273cde32788eaa" title="更新基底クラスの追加関数 " alt="" coords="234,57,419,98"/>
+<area shape="rect" id="node5" href="$class_game_object_base.html#acb893b1827cb7fbb27f0caf6a8e0fb88" title="GameObjectBase::GetDraw" alt="" coords="235,123,418,149"/>
+<area shape="rect" id="node6" href="$class_draw_manager.html#a9dbd645fdbf927cd43d400335ff9b286" title="描画基底クラスの追加関数 " alt="" coords="231,174,422,215"/>
+<area shape="rect" id="node7" href="$class_game_object_base.html#a8158138ea811db49445845d8aaacaf3a" title="GameObjectBase::GetCollision" alt="" coords="225,240,428,267"/>
+<area shape="rect" id="node8" href="$class_collision_manager.html#a42be7a26321110f5daaf1828da32f667" title="衝突基底クラスの追加関数 " alt="" coords="226,291,427,333"/>
+<area shape="rect" id="node4" href="$class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="476,174,612,215"/>
+</map>

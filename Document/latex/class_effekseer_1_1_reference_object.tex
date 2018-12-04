@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Effekseer.\+h$>$}
 
-Effekseer\+:\+:Reference\+Object の継承関係図\begin{figure}[H]
+
+
+Effekseer\+:\+:Reference\+Object の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_effekseer_1_1_reference_object}
+\includegraphics[width=215pt]{class_effekseer_1_1_reference_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Effekseer\+:\+:Reference\+Object 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_effekseer_1_1_reference_object__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -28,10 +40,19 @@ virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{
 \begin{DoxyCompactList}\small\item\em 参照カウンタを取得する。 \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{int}} \mbox{\hyperlink{class_effekseer_1_1_reference_object_a6b0e9aa4d994b557d499b15359b580d8}{Release}} ()
 \begin{DoxyCompactList}\small\item\em 参照カウンタを減算する。0になった時、インスタンスを削除する。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::atomic$<$ int32\+\_\+t $>$ \mbox{\hyperlink{class_effekseer_1_1_reference_object_a916a836400f9a2876ec6f0e0a0003aa7}{m\+\_\+reference}}
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 参照カウンタオブジェクト 
+
+ Effekseer.\+h の 425 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_effekseer_1_1_reference_object_a8754e7232ae958c9e5b0d85f83ce7c3a}\label{class_effekseer_1_1_reference_object_a8754e7232ae958c9e5b0d85f83ce7c3a}} 
@@ -40,11 +61,19 @@ virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{
 \subsubsection{\texorpdfstring{Reference\+Object()}{ReferenceObject()}}
 {\footnotesize\ttfamily Effekseer\+::\+Reference\+Object\+::\+Reference\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Effekseer.\+h の 432 行目に定義があります。
+
 \mbox{\Hypertarget{class_effekseer_1_1_reference_object_a41396f9ecf1d190e4768b134a0c19e26}\label{class_effekseer_1_1_reference_object_a41396f9ecf1d190e4768b134a0c19e26}} 
 \index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!````~Reference\+Object@{$\sim$\+Reference\+Object}}
 \index{````~Reference\+Object@{$\sim$\+Reference\+Object}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
 \subsubsection{\texorpdfstring{$\sim$\+Reference\+Object()}{~ReferenceObject()}}
 {\footnotesize\ttfamily virtual Effekseer\+::\+Reference\+Object\+::$\sim$\+Reference\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+ Effekseer.\+h の 437 行目に定義があります。
 
 
 
@@ -66,6 +95,10 @@ virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{
 
 \mbox{\hyperlink{class_effekseer_1_1_i_reference_a3e3b54e8e5081e24f5784e4f9b8f6257}{Effekseer\+::\+I\+Reference}}を実装しています。
 
+
+
+ Effekseer.\+h の 440 行目に定義があります。
+
 \mbox{\Hypertarget{class_effekseer_1_1_reference_object_a4b8c3d79c58ca527850733691053cf5a}\label{class_effekseer_1_1_reference_object_a4b8c3d79c58ca527850733691053cf5a}} 
 \index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!Get\+Ref@{Get\+Ref}}
 \index{Get\+Ref@{Get\+Ref}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
@@ -83,6 +116,10 @@ virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{
 
 \mbox{\hyperlink{class_effekseer_1_1_i_reference_a95274c788c8c03d27a3e424facc728b6}{Effekseer\+::\+I\+Reference}}を実装しています。
 
+
+
+ Effekseer.\+h の 447 行目に定義があります。
+
 \mbox{\Hypertarget{class_effekseer_1_1_reference_object_a6b0e9aa4d994b557d499b15359b580d8}\label{class_effekseer_1_1_reference_object_a6b0e9aa4d994b557d499b15359b580d8}} 
 \index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!Release@{Release}}
 \index{Release@{Release}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
@@ -99,6 +136,23 @@ virtual \mbox{\hyperlink{namespace_effekseer_ace0abf7c2e6947e519ebe8b54cbcc30a}{
 
 
 \mbox{\hyperlink{class_effekseer_1_1_i_reference_ad8d601188c0f088f4748aa2da8758bb5}{Effekseer\+::\+I\+Reference}}を実装しています。
+
+
+
+ Effekseer.\+h の 452 行目に定義があります。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_reference_object_a916a836400f9a2876ec6f0e0a0003aa7}\label{class_effekseer_1_1_reference_object_a916a836400f9a2876ec6f0e0a0003aa7}} 
+\index{Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}!m\+\_\+reference@{m\+\_\+reference}}
+\index{m\+\_\+reference@{m\+\_\+reference}!Effekseer\+::\+Reference\+Object@{Effekseer\+::\+Reference\+Object}}
+\subsubsection{\texorpdfstring{m\+\_\+reference}{m\_reference}}
+{\footnotesize\ttfamily std\+::atomic$<$int32\+\_\+t$>$ Effekseer\+::\+Reference\+Object\+::m\+\_\+reference\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+
+
+ Effekseer.\+h の 429 行目に定義があります。
 
 
 

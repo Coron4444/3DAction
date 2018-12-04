@@ -61,7 +61,7 @@ void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsig
 		->GetDirectionalLightVector();
 	light_position.w = 0.0f;
 	D3DXMatrixIdentity(&math_matrix_);
-	D3DXMatrixInverse(&math_matrix_, nullptr, draw->GetMatrix(object_index));
+	D3DXMatrixInverse(&math_matrix_, nullptr, draw->getpMatrix(object_index));
 	D3DXVec4Transform(&light_position, &light_position, &math_matrix_);
 	D3DXVec3Normalize((Vec3*)&light_position, (Vec3*)&light_position);
 	light_position.w = -0.7f;		// 環境光の比率
@@ -81,10 +81,10 @@ void PixelShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
 	// デカールテクスチャの設定
 	int sampler_index = GetConstantTable()->GetSamplerIndex("DECALE_SAMPLER");
 	GetDevice()->SetTexture(sampler_index, 
-							draw->GetDecaleTexture(object_index, mesh_index));
+							draw->getpDecaleTexture(object_index, mesh_index));
 
 	// 法線テクスチャの設定
 	sampler_index = GetConstantTable()->GetSamplerIndex("NORMAL_SAMPLER");
 	GetDevice()->SetTexture(sampler_index, 
-							draw->GetNormalTexture(object_index, mesh_index));
+							draw->getpNormalTexture(object_index, mesh_index));
 }

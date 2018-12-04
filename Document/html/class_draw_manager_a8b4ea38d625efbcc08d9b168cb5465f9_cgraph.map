@@ -1,0 +1,7 @@
+<map id="DrawManager::UninitWhenChangeScene" name="DrawManager::UninitWhenChangeScene">
+<area shape="rect" id="node2" href="$class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="760,5,896,47"/>
+<area shape="rect" id="node3" href="$class_back_buffer.html#a989c5474cabde7f88c197a2a235e8424" title="シーン変更時の終了関数 " alt="" coords="273,43,477,84"/>
+<area shape="rect" id="node4" href="$class_back_buffer.html#a04e942576ac5de94d16764d347111234" title="全配列のリセット関数 " alt="" coords="525,42,699,69"/>
+<area shape="rect" id="node5" href="$class_camera.html#a8b3337b3e560ea6a780d646bc8c509d7" title="終了関数 " alt="" coords="558,93,666,119"/>
+<area shape="rect" id="node6" href="$class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="747,93,909,119"/>
+</map>

@@ -4,10 +4,23 @@
 
 {\ttfamily \#include $<$Player\+Update.\+h$>$}
 
-Player\+Update の継承関係図\begin{figure}[H]
+
+
+Player\+Update の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_player_update}
+\includegraphics[width=169pt]{class_player_update__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Player\+Update 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -23,6 +36,23 @@ void \mbox{\hyperlink{class_player_update_ae376f517f3458edfef61ac366aa78e36}{Lat
 \begin{DoxyCompactList}\small\item\em 後更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}{Debug\+Display}} () override
 \begin{DoxyCompactList}\small\item\em デバッグ表示関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_player_update_abd75bd3c4e3ecc2863e272a5e14b677f}{player\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{class_player_update_ade4f68ed032e187334cc2e3922e365c5}{S\+P\+E\+ED}} = \mbox{\hyperlink{_meter_to_frame_8h_a3a2c155748ceb2eab2a3c303ae48ecc0}{Meter\+Per\+Second\+Squared\+\_\+\+To\+\_\+\+Meter\+Per\+Frame\+Squared}}(50.\+0f)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Player\+Update.\+h の 31 行目に定義があります。
+
 
 
 \subsection{関数詳解}
@@ -40,6 +70,17 @@ void \mbox{\hyperlink{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}{Deb
 
 \mbox{\hyperlink{class_update_null_a77aee1e614cf6dafe4f9af58b2205e4b}{Update\+Null}}を再実装しています。
 
+
+
+ Player\+Update.\+cpp の 197 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}\label{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}} 
 \index{Player\+Update@{Player\+Update}!Init@{Init}}
 \index{Init@{Init}!Player\+Update@{Player\+Update}}
@@ -54,6 +95,17 @@ void \mbox{\hyperlink{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}{Deb
 
 \mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
 
+
+
+ Player\+Update.\+cpp の 51 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_update_ae376f517f3458edfef61ac366aa78e36}\label{class_player_update_ae376f517f3458edfef61ac366aa78e36}} 
 \index{Player\+Update@{Player\+Update}!Late\+Update@{Late\+Update}}
 \index{Late\+Update@{Late\+Update}!Player\+Update@{Player\+Update}}
@@ -67,6 +119,10 @@ void \mbox{\hyperlink{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}{Deb
 
 
 \mbox{\hyperlink{class_update_null_ac68da1ba7f3fbcae833442bb1c169200}{Update\+Null}}を再実装しています。
+
+
+
+ Player\+Update.\+cpp の 184 行目に定義があります。
 
 \mbox{\Hypertarget{class_player_update_a997e0813a825d7525da4b5b89a290168}\label{class_player_update_a997e0813a825d7525da4b5b89a290168}} 
 \index{Player\+Update@{Player\+Update}!Uninit@{Uninit}}
@@ -82,6 +138,10 @@ void \mbox{\hyperlink{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}{Deb
 
 \mbox{\hyperlink{class_component_base_a9f42beaf0383d6f629819579cab4de57}{Component\+Base}}を実装しています。
 
+
+
+ Player\+Update.\+cpp の 76 行目に定義があります。
+
 \mbox{\Hypertarget{class_player_update_af6e1b8ca60399f232e64d2acb4968c75}\label{class_player_update_af6e1b8ca60399f232e64d2acb4968c75}} 
 \index{Player\+Update@{Player\+Update}!Update@{Update}}
 \index{Update@{Update}!Player\+Update@{Player\+Update}}
@@ -95,6 +155,40 @@ void \mbox{\hyperlink{class_player_update_ac15fd0faf356c6e66f6c62c2b6b8d3ac}{Deb
 
 
 \mbox{\hyperlink{class_update_null_a692f4f34e4ef35ca286a1d3606fdf473}{Update\+Null}}を再実装しています。
+
+
+
+ Player\+Update.\+cpp の 89 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update_af6e1b8ca60399f232e64d2acb4968c75_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_player_update_abd75bd3c4e3ecc2863e272a5e14b677f}\label{class_player_update_abd75bd3c4e3ecc2863e272a5e14b677f}} 
+\index{Player\+Update@{Player\+Update}!player\+\_\+@{player\+\_\+}}
+\index{player\+\_\+@{player\+\_\+}!Player\+Update@{Player\+Update}}
+\subsubsection{\texorpdfstring{player\+\_\+}{player\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Player\+Update\+::player\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Update.\+h の 51 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_update_ade4f68ed032e187334cc2e3922e365c5}\label{class_player_update_ade4f68ed032e187334cc2e3922e365c5}} 
+\index{Player\+Update@{Player\+Update}!S\+P\+E\+ED@{S\+P\+E\+ED}}
+\index{S\+P\+E\+ED@{S\+P\+E\+ED}!Player\+Update@{Player\+Update}}
+\subsubsection{\texorpdfstring{S\+P\+E\+ED}{SPEED}}
+{\footnotesize\ttfamily const float Player\+Update\+::\+S\+P\+E\+ED = \mbox{\hyperlink{_meter_to_frame_8h_a3a2c155748ceb2eab2a3c303ae48ecc0}{Meter\+Per\+Second\+Squared\+\_\+\+To\+\_\+\+Meter\+Per\+Frame\+Squared}}(50.\+0f)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Player\+Update.\+h の 36 行目に定義があります。
 
 
 

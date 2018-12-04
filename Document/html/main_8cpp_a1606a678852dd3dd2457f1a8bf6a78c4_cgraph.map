@@ -1,0 +1,8 @@
+<map id="Create_Window" name="Create_Window">
+<area shape="rect" id="node2" href="$main_8cpp.html#a008e28aa2cf40386c3230ba3e544e34b" title="RegistrationWindowClassEx" alt="" coords="167,5,353,32"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a644d1e6582ae891ff72df1b650f92083" title="SetClientAreaSize" alt="" coords="196,56,324,83"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a82106eedd2d769357b708bafef71d9f0" title="SetWindowPositionCenter" alt="" coords="173,107,347,133"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae749e989b362e19783c7af4a2bf46c95" title="WndProc" alt="" coords="401,5,477,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a48c0c047146040501474d98b32dfaa24" title="ImGui_ImplWin32_WndProcHandler" alt="" coords="525,5,755,32"/>
+<area shape="rect" id="node5" href="$namespace_im_gui.html#a3179e560812f878f3961ce803a5d9302" title="ImGui::GetIO" alt="" coords="803,5,901,32"/>
+</map>

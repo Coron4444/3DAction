@@ -6,5 +6,6 @@ var class_flag =
     [ "GetFlags", "class_flag.html#a0a2b25c70f1a7d90cd90c595b37ffc2a", null ],
     [ "Release", "class_flag.html#a69ac5240829e3f509c64ca28b2344b6d", null ],
     [ "Reset", "class_flag.html#aef13ac09901558208fa1d8b63549c2ae", null ],
-    [ "Set", "class_flag.html#a362d2f64c03c0b596004f3eba4cb14a3", null ]
+    [ "Set", "class_flag.html#a362d2f64c03c0b596004f3eba4cb14a3", null ],
+    [ "flags_", "class_flag.html#abd957aebe38d770132485740992bc41e", null ]
 ];

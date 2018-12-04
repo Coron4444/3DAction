@@ -91,7 +91,7 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 	// 行列のセット
 	GetConstantTable()->SetMatrix(ShaderBase::GetDevice(),
 								  "MATRIX_WORLD",
-								  draw->GetMatrix(object_index));
+								  draw->getpMatrix(object_index));
 	GetConstantTable()->SetMatrix(ShaderBase::GetDevice(),
 								  "MATRIX_VIEW",
 								  camera->GetViewMatrix());
@@ -104,7 +104,7 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 		->GetDirectionalLightVector();
 	light_position.w = 0.0f;
 	D3DXMatrixIdentity(&math_matrix_);
-	D3DXMatrixInverse(&math_matrix_, nullptr, draw->GetMatrix(object_index));
+	D3DXMatrixInverse(&math_matrix_, nullptr, draw->getpMatrix(object_index));
 	D3DXVec4Transform(&light_position, &light_position, &math_matrix_);
 	D3DXVec3Normalize((Vec3*)&light_position, (Vec3*)&light_position);
 	light_position.w = -0.7f;		// 環境光の比率
@@ -114,7 +114,7 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 
 	// 視点の設定(オブジェクトごとのローカル座標でのカメラの座標を取得する)
 	D3DXMatrixIdentity(&math_matrix_);
-	D3DXMatrixMultiply(&math_matrix_, draw->GetMatrix(object_index),
+	D3DXMatrixMultiply(&math_matrix_, draw->getpMatrix(object_index),
 					   camera->GetViewMatrix());
 	D3DXMatrixInverse(&math_matrix_, nullptr, &math_matrix_);
 	Vec4 object_local_camera_position(0.0f, 0.0f, 0.0f, 1.0f);
@@ -137,10 +137,10 @@ void VertexShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
 {
 	// ディヒューズ色の設定
 	Vec4 lambert_diffuse_light_color_;
-	lambert_diffuse_light_color_.x = draw->GetMaterial(object_index, mesh_index)->Diffuse.r;
-	lambert_diffuse_light_color_.y = draw->GetMaterial(object_index, mesh_index)->Diffuse.g;
-	lambert_diffuse_light_color_.z = draw->GetMaterial(object_index, mesh_index)->Diffuse.b;
-	lambert_diffuse_light_color_.w = draw->GetMaterial(object_index, mesh_index)->Diffuse.a;
+	lambert_diffuse_light_color_.x = draw->getpMaterial(object_index, mesh_index)->Diffuse.r;
+	lambert_diffuse_light_color_.y = draw->getpMaterial(object_index, mesh_index)->Diffuse.g;
+	lambert_diffuse_light_color_.z = draw->getpMaterial(object_index, mesh_index)->Diffuse.b;
+	lambert_diffuse_light_color_.w = draw->getpMaterial(object_index, mesh_index)->Diffuse.a;
 	GetConstantTable()->SetVector(GetDevice(),
 								  "LAMBERT_DIFFUSE_LIGHT_COLOR",
 								  &lambert_diffuse_light_color_);

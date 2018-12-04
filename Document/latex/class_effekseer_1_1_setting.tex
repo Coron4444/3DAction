@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Effekseer.\+h$>$}
 
-Effekseer\+:\+:Setting の継承関係図\begin{figure}[H]
+
+
+Effekseer\+:\+:Setting の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_effekseer_1_1_setting}
+\includegraphics[width=215pt]{class_effekseer_1_1_setting__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Effekseer\+:\+:Setting 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_effekseer_1_1_setting__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -50,6 +62,19 @@ static \mbox{\hyperlink{class_effekseer_1_1_setting}{Setting}} $\ast$ \mbox{\hyp
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_effekseer_1_1_setting_a0f16b991666d7968cefd52f61c61ccec}{$\sim$\+Setting}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} \mbox{\hyperlink{class_effekseer_1_1_setting_af37739356b4116d84dd38d2aba817836}{m\+\_\+coordinate\+System}}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_effect_loader}{Effect\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_setting_aa72aea5933efe362ecf28210ea202350}{m\+\_\+effect\+Loader}}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Texture\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_setting_a05cf55c34e1d640e2080f15b3478ea0b}{m\+\_\+texture\+Loader}}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Sound\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_setting_a1da02ce0c370b60c2fa5a0d76e85eeb6}{m\+\_\+sound\+Loader}}
+\item 
+\mbox{\hyperlink{class_effekseer_1_1_model_loader}{Model\+Loader}} $\ast$ \mbox{\hyperlink{class_effekseer_1_1_setting_a85340df413c521f9372f617512bc58d8}{m\+\_\+model\+Loader}}
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -58,6 +83,10 @@ static \mbox{\hyperlink{class_effekseer_1_1_setting}{Setting}} $\ast$ \mbox{\hyp
 \begin{DoxyNote}{覚え書き}
 Effect\+Loader等、ファイル読み込みに関する設定することができる。 Managerの代わりにエフェクト読み込み時に使用することで、\+Managerとは独立して\+Effectインスタンスを生成することができる。 
 \end{DoxyNote}
+
+
+ Effekseer.\+h の 3165 行目に定義があります。
+
 
 
 \subsection{構築子と解体子}
@@ -237,6 +266,59 @@ Effect\+Loader等、ファイル読み込みに関する設定することがで
 {\em loader} & \mbox{[}in\mbox{]} ローダー \\
 \hline
 \end{DoxyParams}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_effekseer_1_1_setting_af37739356b4116d84dd38d2aba817836}\label{class_effekseer_1_1_setting_af37739356b4116d84dd38d2aba817836}} 
+\index{Effekseer\+::\+Setting@{Effekseer\+::\+Setting}!m\+\_\+coordinate\+System@{m\+\_\+coordinate\+System}}
+\index{m\+\_\+coordinate\+System@{m\+\_\+coordinate\+System}!Effekseer\+::\+Setting@{Effekseer\+::\+Setting}}
+\subsubsection{\texorpdfstring{m\+\_\+coordinate\+System}{m\_coordinateSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_effekseer_ac8508f8823c5fcf36aac5d2ddee23765}{Coordinate\+System}} Effekseer\+::\+Setting\+::m\+\_\+coordinate\+System\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Effekseer.\+h の 3170 行目に定義があります。
+
+\mbox{\Hypertarget{class_effekseer_1_1_setting_aa72aea5933efe362ecf28210ea202350}\label{class_effekseer_1_1_setting_aa72aea5933efe362ecf28210ea202350}} 
+\index{Effekseer\+::\+Setting@{Effekseer\+::\+Setting}!m\+\_\+effect\+Loader@{m\+\_\+effect\+Loader}}
+\index{m\+\_\+effect\+Loader@{m\+\_\+effect\+Loader}!Effekseer\+::\+Setting@{Effekseer\+::\+Setting}}
+\subsubsection{\texorpdfstring{m\+\_\+effect\+Loader}{m\_effectLoader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_effekseer_1_1_effect_loader}{Effect\+Loader}}$\ast$ Effekseer\+::\+Setting\+::m\+\_\+effect\+Loader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Effekseer.\+h の 3172 行目に定義があります。
+
+\mbox{\Hypertarget{class_effekseer_1_1_setting_a85340df413c521f9372f617512bc58d8}\label{class_effekseer_1_1_setting_a85340df413c521f9372f617512bc58d8}} 
+\index{Effekseer\+::\+Setting@{Effekseer\+::\+Setting}!m\+\_\+model\+Loader@{m\+\_\+model\+Loader}}
+\index{m\+\_\+model\+Loader@{m\+\_\+model\+Loader}!Effekseer\+::\+Setting@{Effekseer\+::\+Setting}}
+\subsubsection{\texorpdfstring{m\+\_\+model\+Loader}{m\_modelLoader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_effekseer_1_1_model_loader}{Model\+Loader}}$\ast$ Effekseer\+::\+Setting\+::m\+\_\+model\+Loader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Effekseer.\+h の 3175 行目に定義があります。
+
+\mbox{\Hypertarget{class_effekseer_1_1_setting_a1da02ce0c370b60c2fa5a0d76e85eeb6}\label{class_effekseer_1_1_setting_a1da02ce0c370b60c2fa5a0d76e85eeb6}} 
+\index{Effekseer\+::\+Setting@{Effekseer\+::\+Setting}!m\+\_\+sound\+Loader@{m\+\_\+sound\+Loader}}
+\index{m\+\_\+sound\+Loader@{m\+\_\+sound\+Loader}!Effekseer\+::\+Setting@{Effekseer\+::\+Setting}}
+\subsubsection{\texorpdfstring{m\+\_\+sound\+Loader}{m\_soundLoader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_effekseer_1_1_sound_loader}{Sound\+Loader}}$\ast$ Effekseer\+::\+Setting\+::m\+\_\+sound\+Loader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Effekseer.\+h の 3174 行目に定義があります。
+
+\mbox{\Hypertarget{class_effekseer_1_1_setting_a05cf55c34e1d640e2080f15b3478ea0b}\label{class_effekseer_1_1_setting_a05cf55c34e1d640e2080f15b3478ea0b}} 
+\index{Effekseer\+::\+Setting@{Effekseer\+::\+Setting}!m\+\_\+texture\+Loader@{m\+\_\+texture\+Loader}}
+\index{m\+\_\+texture\+Loader@{m\+\_\+texture\+Loader}!Effekseer\+::\+Setting@{Effekseer\+::\+Setting}}
+\subsubsection{\texorpdfstring{m\+\_\+texture\+Loader}{m\_textureLoader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_effekseer_1_1_texture_loader}{Texture\+Loader}}$\ast$ Effekseer\+::\+Setting\+::m\+\_\+texture\+Loader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Effekseer.\+h の 3173 行目に定義があります。
+
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}

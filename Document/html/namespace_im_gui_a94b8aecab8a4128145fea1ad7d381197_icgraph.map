@@ -1,0 +1,15 @@
+<map id="ImGui::GetMouseDragDelta" name="ImGui::GetMouseDragDelta">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a4fdcba60dbe3762a144051add234ea48" title="ImGui::DragBehavior" alt="" coords="235,107,375,133"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#ac62335909eaaa63a1ead0226e836baeb" title="ImGui::DragFloat" alt="" coords="423,107,543,133"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a2a2764b6f0b3291ad0df4d99127dd751" title="ImGui::DragFloatN" alt="" coords="608,56,737,83"/>
+<area shape="rect" id="node8" href="$namespace_im_gui.html#ad6e3b0e5a2171679c53d6b18e16a460b" title="ImGui::DragFloatRange2" alt="" coords="591,107,755,133"/>
+<area shape="rect" id="node9" href="$namespace_im_gui.html#abc3ac739a79de5897b61df4e6764fc9e" title="ImGui::DragInt" alt="" coords="620,157,725,184"/>
+<area shape="rect" id="node5" href="$namespace_im_gui.html#a2852e4c3b872ed5a5d28047f0290f29c" title="ImGui::DragFloat2" alt="" coords="814,5,941,32"/>
+<area shape="rect" id="node6" href="$namespace_im_gui.html#a3a365703646c6fb5357f21a13c531bfe" title="ImGui::DragFloat3" alt="" coords="814,56,941,83"/>
+<area shape="rect" id="node7" href="$namespace_im_gui.html#a6dfd9e5d7adc6106e9391fc971d2f8bc" title="ImGui::DragFloat4" alt="" coords="814,107,941,133"/>
+<area shape="rect" id="node10" href="$namespace_im_gui.html#a2854d672b818938e6e9fb1de6de3dbe7" title="ImGui::DragIntN" alt="" coords="820,157,935,184"/>
+<area shape="rect" id="node14" href="$namespace_im_gui.html#a6aaacf92126bf45ce0e58348b5297a43" title="ImGui::DragIntRange2" alt="" coords="803,208,952,235"/>
+<area shape="rect" id="node11" href="$namespace_im_gui.html#aa74f28deeb62f0aa96e1c34b27e7bcd9" title="ImGui::DragInt2" alt="" coords="1000,107,1112,133"/>
+<area shape="rect" id="node12" href="$namespace_im_gui.html#ab0b40f3d0631113d54fa8e0c90ed4f77" title="ImGui::DragInt3" alt="" coords="1000,157,1112,184"/>
+<area shape="rect" id="node13" href="$namespace_im_gui.html#a65b6e42ba7a4aa73fd3e1dc74f93d180" title="ImGui::DragInt4" alt="" coords="1000,208,1112,235"/>
+</map>

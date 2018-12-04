@@ -32,13 +32,13 @@ const std::string GoalDraw::EFFECT = "CoinEffect/CoinEffect.efk";
 void GoalDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// ダウンキャスト
-	goal_ = (Goal*)GetGameObject();
+	goal_ = (Goal*)getpGameObject();
 
 	// キューブポリゴンの生成
 	cube_polygon_ = new CubePolygon();
@@ -95,25 +95,25 @@ void GoalDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* GoalDraw::GetMatrix(unsigned object_index)
+unsigned GoalDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return goal_->GetTransform()->GetWorldMatrix();
+	return cube_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned GoalDraw::GetMeshNum(unsigned object_index)
+MATRIX* GoalDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return cube_polygon_->GetMeshNum();
+	return goal_->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -121,7 +121,7 @@ unsigned GoalDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* GoalDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* GoalDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

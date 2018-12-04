@@ -33,13 +33,13 @@ const float ClearLogoDraw::SCALE = 1.25f;
 void ClearLogoDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// ダウンキャスト
-	clear_logo_ = (ClearLogo*)GetGameObject();
+	clear_logo_ = (ClearLogo*)getpGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
@@ -76,25 +76,25 @@ void ClearLogoDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* ClearLogoDraw::GetMatrix(unsigned object_index)
+unsigned ClearLogoDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return clear_logo_->plane_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned ClearLogoDraw::GetMeshNum(unsigned object_index)
+MATRIX* ClearLogoDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return clear_logo_->plane_polygon_->GetMeshNum();
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -102,7 +102,7 @@ unsigned ClearLogoDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* ClearLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* ClearLogoDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -115,8 +115,8 @@ D3DMATERIAL9* ClearLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_in
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 ClearLogoDraw::GetDecaleTexture(unsigned object_index,
-												   unsigned mesh_index)
+LPDIRECT3DTEXTURE9 ClearLogoDraw::getpDecaleTexture(unsigned object_index,
+													unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

@@ -1,0 +1,51 @@
+<map id="LimitedPointerArray::GetEndPointer" name="LimitedPointerArray::GetEndPointer">
+<area shape="rect" id="node2" href="$class_collision_base.html#a54d52219e2bf43ed2a9b2a11813934ea" title="複数衝突オブジェクト全解放関数 " alt="" coords="213,5,390,47"/>
+<area shape="rect" id="node4" href="$class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="211,565,392,607"/>
+<area shape="rect" id="node10" href="$class_collision_manager.html#abfa4b87f3ce102f0d173e112e7963f09" title="終了関数 " alt="" coords="482,741,645,767"/>
+<area shape="rect" id="node13" href="$class_collision_manager.html#a33ce56b5a6f68d71b0f2bf733413dddb" title="シーン変更時の終了関数 " alt="" coords="482,843,645,884"/>
+<area shape="rect" id="node16" href="$class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="990,305,1161,331"/>
+<area shape="rect" id="node22" href="$class_collision_manager.html#a53e468bb8624f84a5c65c9779781033f" title="追加待ち配列の中身を追加関数 " alt="" coords="461,675,665,716"/>
+<area shape="rect" id="node23" href="$class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="721,188,920,229"/>
+<area shape="rect" id="node24" href="$class_collision_objects.html#a01ffe9567540a819f19cd66f96981b47" title="全ての衝突用データのリセット関数 " alt="" coords="476,188,651,229"/>
+<area shape="rect" id="node25" href="$class_collision_objects.html#a309eef4695b4a19f389eaf5d0753c256" title="CollisionObjects::getEnd\lIndexOfArray" alt="" coords="219,125,384,167"/>
+<area shape="rect" id="node28" href="$class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="203,733,400,775"/>
+<area shape="rect" id="node29" href="$class_collision_manager.html#a1d67f4076eb71e191db5cff4e5abe3b0" title="地面との衝突判定関数 " alt="" coords="731,57,910,99"/>
+<area shape="rect" id="node30" href="$class_collision_manager.html#a4da1241f3905c3855b31d7e20ceed5a1" title="Debug表示関数 " alt="" coords="716,254,925,281"/>
+<area shape="rect" id="node31" href="$class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="488,1082,639,1109"/>
+<area shape="rect" id="node32" href="$class_draw_manager.html#a984cd9de288151fd1d170f80f93a11e8" title="追加待ち配列の中身を追加関数 " alt="" coords="209,1133,393,1175"/>
+<area shape="rect" id="node33" href="$class_draw_manager.html#a76361402a035f02084e9faf31e782d69" title="解放待ち配列の中身を解放関数 " alt="" coords="197,1199,405,1240"/>
+<area shape="rect" id="node34" href="$class_draw_manager.html#a7c989a2beae5de5a1fc7ab0bef8692f9" title="全描画基底クラス更新関数 " alt="" coords="189,981,413,1007"/>
+<area shape="rect" id="node35" href="$class_draw_manager.html#a9a09cb524187bc11f1e4812a06fe46d6" title="描画基底クラス振り分け関数 " alt="" coords="190,1031,413,1058"/>
+<area shape="rect" id="node36" href="$class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="240,1498,363,1525"/>
+<area shape="rect" id="node39" href="$class_back_buffer.html#af363b4d69affd48a1b0f65a000ff12b5" title="透明描画基底クラスのソート関数 " alt="" coords="209,1666,394,1693"/>
+<area shape="rect" id="node41" href="$class_back_buffer.html#a1530979126918a1a76b6555a5d9de9b8" title="2D描画基底クラスのソート関数 " alt="" coords="235,1549,368,1575"/>
+<area shape="rect" id="node42" href="$class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="222,1600,381,1641"/>
+<area shape="rect" id="node43" href="$class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="482,1301,645,1327"/>
+<area shape="rect" id="node44" href="$class_update_manager.html#a7bb1af3bffcc4d72333ac86ae411891e" title="追加待ち配列の中身を追加関数 " alt="" coords="203,1381,399,1423"/>
+<area shape="rect" id="node45" href="$class_update_manager.html#ac87db8037fbfb800187c50ca22a1f01d" title="解放待ち配列の中身を解放関数 " alt="" coords="191,1264,411,1305"/>
+<area shape="rect" id="node46" href="$class_game_object_manager.html#a38f980aec0970f45eb9bc55db8ac01a3" title="全ゲームオブジェクトリセット関数 " alt="" coords="225,1717,378,1759"/>
+<area shape="rect" id="node48" href="$class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09" title="追加待ち配列の中身を追加関数 " alt="" coords="977,1376,1173,1417"/>
+<area shape="rect" id="node49" href="$class_game_object_manager.html#a5a6c1208229decd93c6ef396bce35b3a" title="解放待ち配列の中身を解放関数 " alt="" coords="195,901,408,957"/>
+<area shape="rect" id="node50" href="$class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="487,908,640,949"/>
+<area shape="rect" id="node3" href="$class_collision_null.html#a2eaef584b2ae2c4062df8bf3a6533fb3" title="仮想デストラクタ " alt="" coords="473,13,653,39"/>
+<area shape="rect" id="node5" href="$class_collision_null.html#a7c6d0ec502efc55e2f406415451152f5" title="終了関数 " alt="" coords="496,573,631,599"/>
+<area shape="rect" id="node19" href="$class_collision_manager.html#a34318163f4256cebc7aefb95fc475030" title="衝突基底クラスの解放関数 " alt="" coords="475,457,651,499"/>
+<area shape="rect" id="node6" href="$class_coin_collision.html#aa852afdcdbedcf82809df9c7fd99be9e" title="終了関数 " alt="" coords="751,589,890,615"/>
+<area shape="rect" id="node7" href="$class_enemy_collision.html#a2a194c606fd162db803c70c6fed9b9e4" title="終了関数 " alt="" coords="744,639,897,666"/>
+<area shape="rect" id="node8" href="$class_goal_collision.html#ab818bad44ffcd595f1c495e659c0b348" title="終了関数 " alt="" coords="751,487,890,514"/>
+<area shape="rect" id="node9" href="$class_player_collision.html#aa1ab60a62fa2ae3231a1ea0bc8faf801" title="終了関数 " alt="" coords="746,538,895,565"/>
+<area shape="rect" id="node11" href="$class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="744,843,897,884"/>
+<area shape="rect" id="node12" href="$class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1000,850,1151,877"/>
+<area shape="rect" id="node14" href="$class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="735,908,906,949"/>
+<area shape="rect" id="node15" href="$class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="976,915,1175,942"/>
+<area shape="rect" id="node17" href="$class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1223,1075,1376,1116"/>
+<area shape="rect" id="node18" href="$class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1424,1082,1619,1109"/>
+<area shape="rect" id="node20" href="$class_collision_manager.html#af9c2ce87e0189cdd1256c83decc64673" title="衝突基底クラスの上書き関数 " alt="" coords="729,421,912,463"/>
+<area shape="rect" id="node21" href="$class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="713,356,928,397"/>
+<area shape="rect" id="node26" href="$class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="480,123,647,164"/>
+<area shape="rect" id="node27" href="$class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="731,123,910,164"/>
+<area shape="rect" id="node37" href="$class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="494,1498,633,1525"/>
+<area shape="rect" id="node38" href="$class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="729,1498,912,1525"/>
+<area shape="rect" id="node40" href="$class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="496,1607,631,1634"/>
+<area shape="rect" id="node47" href="$class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="469,1725,657,1751"/>
+</map>

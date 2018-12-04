@@ -1,21 +1,17 @@
 //================================================================================
-//
-//    OBBクラス
-//    Author : Araki Kai                                作成日 : 2017/11/27
-//
+//!	@file	 OBB.h
+//!	@brief	 円柱Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/02
 //================================================================================
-
 #ifndef	_OBB_H_
 #define _OBB_H_
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include "../CollisionShapeBase.h"
 
 #include <Vector3D.h>
@@ -23,202 +19,87 @@
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+//************************************************************														   
+//! @brief   OBBClass
+//!
+//! @details OBBのClass
+//************************************************************
 class OBB : public CollisionShapeBase
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デフォルトコンストラクタ
-	OBB(float lenght_right   = 1.0f, 
-		float lenght_up      = 1.0f, 
-		float lenght_forward = 1.0f, 
-		Vec3 position		 = Vec3(0.0f, 0.0f, 0.0f));
+//====================
+// 変数
+//====================
+private:
+	Vector3D position_;		//!< 座標
+	Vector3D length_;		//!< 各辺の長さ
+	AxisVector axis_;		//!< 軸ベクトル
+	Vector3D math_vector_;	//!< 計算用ベクトル
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デストラクタ
-	virtual ~OBB();
+//====================
+// 関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	OBB() : CollisionShapeBase(CollisionShapeBase::Type::OBB) {}
 
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @param[in] position 座標
+	//! @param[in] length   各辺の長さ
+	//! @retval void なし
+	//----------------------------------------
+	void Init(Vector3D position, Vector3D length)
+	{
+		// 座標を設定
+		position_ = position;
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// ゲッタ
-	Vector3D* GetVectorForward();
-	Vector3D* GetVectorUp     ();
-	Vector3D* GetVectorRight  ();
+		// 長さを設定
+		length_ = length;
+	}
 
-	Vector3D* GetVectorForwardHalf();
-	Vector3D* GetVectorUpHalf     ();
-	Vector3D* GetVectorRightHalf  ();
+	// プロパティ
+	Vector3D* getpPosition() { return &position_; }
+	Vector3D* getpLength() { return &length_; }
+	AxisVector* getpAxisVector() { return &axis_; }
+	Vector3D getRightVector()
+	{
+		math_vector_ = *axis_.GetForawrd();
+		math_vector_.AnyLengthVector(length_.x);
+		return math_vector_;
+	}
+	Vector3D getUpVector()
+	{
+		math_vector_ = *axis_.GetForawrd();
 
+		math_vector_.AnyLengthVector(length_.y);
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メンバ変数
-	Vector3D   position_;
-	AxisVector axis_;
-	float      lenght_right_;
-	float      lenght_up_;
-	float      lenght_forward_;
+		return math_vector_;
+	}
+	Vector3D getForwardVector()
+	{
+		math_vector_ = *axis_.GetForawrd();
 
+		math_vector_.AnyLengthVector(length_.z);
 
-
-
-//------------------------------------------------------------
-private	:
-	// 非公開メンバ変数
-	Vector3D   math_vector_;
+		return math_vector_;
+	}	
+	Vector3D getRightVectorHalf()
+	{
+		return getRightVector() / 2;
+	}
+	Vector3D getUpVectorHalf()
+	{
+		return getUpVector() / 2;
+	}
+	Vector3D getForwardVectorHalf()
+	{
+		return getForwardVector() / 2;
+	}
 };
-
-
-
-
-
-
-//======================================================================
-//
-// 非静的メンバ関数定義( inline )
-//
-//======================================================================
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デフォルトコンストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline OBB::OBB(float lenght_right, float lenght_up, float lenght_forward, Vec3 position )
-	: CollisionShapeBase(CollisionShapeBase::Type::OBB),
-	  lenght_right_  ( lenght_right ),
-	  lenght_up_     ( lenght_up ),
-	  lenght_forward_( lenght_forward ),
-	  position_      ( position )
-{
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline OBB::~OBB() 
-{
-
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 前ベクトルを取得 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Vector3D* OBB::GetVectorForward() 
-{
-	math_vector_ = *axis_.GetForawrd();
-
-	math_vector_.AnyLengthVector(lenght_forward_);
-
-	return &math_vector_;
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 上ベクトルを取得 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Vector3D* OBB::GetVectorUp() 
-{
-	math_vector_ = *axis_.GetUp();
-
-	math_vector_.AnyLengthVector(lenght_up_);
-
-	return &math_vector_;
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 右ベクトルを取得 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Vector3D* OBB::GetVectorRight() 
-{
-	math_vector_ = *axis_.GetRight();
-
-	math_vector_.AnyLengthVector(lenght_right_);
-
-	return &math_vector_;
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 前ベクトルを取得( 半分 ) ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Vector3D* OBB::GetVectorForwardHalf() 
-{
-	math_vector_ = *axis_.GetForawrd();
-
-	math_vector_.AnyLengthVector(lenght_forward_ / 2);
-
-	return &math_vector_;
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 上ベクトルを取得( 半分 ) ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Vector3D* OBB::GetVectorUpHalf() 
-{
-	math_vector_ = *axis_.GetUp();
-
-	math_vector_.AnyLengthVector(lenght_up_ / 2);
-
-	return &math_vector_;
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 右ベクトルを取得( 半分 ) ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-inline Vector3D* OBB::GetVectorRightHalf() 
-{
-	math_vector_ = *axis_.GetRight();
-
-	math_vector_.AnyLengthVector(lenght_right_ / 2);
-
-	return &math_vector_;
-}
-
-
-
 
 //======================================================================
 //
@@ -232,28 +113,28 @@ inline Vector3D* OBB::GetVectorRightHalf()
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-inline void OverhangingPartOBB_Segment1D_Point( Vector3D* shortest_distance_vector, 
-	                                            const Vector3D* obb_position, 
-	                                            const Vector3D* obb_vector_half,
-											    const Vector3D* obb_axis_vector,
-	                                            const Vector3D* point )
+inline void OverhangingPartOBB_Segment1D_Point(Vector3D* shortest_distance_vector,
+											   Vector3D* obb_position,
+											   Vector3D obb_vector_half,
+											   Vector3D obb_axis_vector,
+											   Vector3D* point)
 {
 	// 長さが0以上か
-	float temp_length = obb_vector_half -> GetLength();
-	if ( temp_length <= 0.0f ) return;
-	
+	float temp_length = obb_vector_half.GetLength();
+	if (temp_length <= 0.0f) return;
+
 	// 点から直線に垂線を降ろしたときの交点の位置を表す値(tとする)を算出
 	Vector3D temp_vector = *point - *obb_position;
-	float t = temp_vector.CreateVectorDot( *obb_axis_vector ) / temp_length;
+	float t = temp_vector.CreateVectorDot(obb_axis_vector) / temp_length;
 
 	// はみ出した部分のベクトルを算出
-	if ( t < -1.0f )
+	if (t < -1.0f)
 	{
-		*shortest_distance_vector += ( t + 1.0f ) * ( *obb_vector_half );
+		*shortest_distance_vector += (t + 1.0f) * (obb_vector_half);
 	}
-	else if ( t > 1.0f )
+	else if (t > 1.0f)
 	{
-		*shortest_distance_vector += ( t - 1.0f ) * ( *obb_vector_half );
+		*shortest_distance_vector += (t - 1.0f) * (obb_vector_half);
 	}
 }
 
@@ -265,29 +146,29 @@ inline void OverhangingPartOBB_Segment1D_Point( Vector3D* shortest_distance_vect
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-inline Vector3D ShortestDistance_OBB_Point( OBB* obb, const Vector3D* point )
+inline Vector3D ShortestDistance_OBB_Point(OBB* obb, Vector3D* point)
 {
 	// OBBまでの最短距離を求めるベクトル
 	Vector3D temp_vector;
-	
+
 	// 各軸に対してはみ出し部分を算出
-	OverhangingPartOBB_Segment1D_Point( &temp_vector, 
-	                                    &obb -> position_,
-									    obb -> GetVectorForwardHalf(),
-								        obb ->axis_.GetForawrd(),
-	                                    point );
+	OverhangingPartOBB_Segment1D_Point(&temp_vector,
+									   obb->getpPosition(),
+									   obb->getForwardVectorHalf(),
+									   *obb->getpAxisVector()->GetForawrd(),
+									   point);
 
-	OverhangingPartOBB_Segment1D_Point( &temp_vector, 
-	                                    &obb -> position_,
-									    obb -> GetVectorRightHalf(),
-								        obb ->axis_.GetRight(),
-	                                    point );
+	OverhangingPartOBB_Segment1D_Point(&temp_vector,
+									   obb->getpPosition(),
+									   obb->getUpVectorHalf(),
+									   *obb->getpAxisVector()->GetUp(),
+									   point);
 
-	OverhangingPartOBB_Segment1D_Point( &temp_vector, 
-	                                    &obb -> position_,
-									    obb -> GetVectorUpHalf(),
-								        obb ->axis_.GetUp(),
-	                                    point );
+	OverhangingPartOBB_Segment1D_Point(&temp_vector,
+									   obb->getpPosition(),
+									   obb->getRightVectorHalf(),
+									   *obb->getpAxisVector()->GetRight(),
+									   point);
 	return temp_vector;
 }
 

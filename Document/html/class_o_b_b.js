@@ -12,5 +12,6 @@ var class_o_b_b =
     [ "lenght_forward_", "class_o_b_b.html#a999f5165cf4cb28b7b59a75e81613bab", null ],
     [ "lenght_right_", "class_o_b_b.html#a33c3db74caad2f0827d71ab16e9c5f1d", null ],
     [ "lenght_up_", "class_o_b_b.html#a4c7f9246708424221b38051cc763ca3c", null ],
+    [ "math_vector_", "class_o_b_b.html#ae2bb48bafa38fdf30f0e383da193152c", null ],
     [ "position_", "class_o_b_b.html#ab05a884fc030d7a3cf7b355880d9194c", null ]
 ];

@@ -1,0 +1,7 @@
+<map id="VertexShaderFixed::SpecificSetting" name="VertexShaderFixed::SpecificSetting">
+<area shape="rect" id="node2" href="$class_vertex_shader_fixed.html#a1caad0cf4c86788ed17c2a8da8645414" title="VertexShaderFixed::\lSetTexture" alt="" coords="195,17,336,58"/>
+<area shape="rect" id="node5" href="$class_vertex_shader_fixed.html#a05ce5fdd8ff190b9934497f42cf19a38" title="VertexShaderFixed::\lSetMaterial" alt="" coords="195,82,336,123"/>
+<area shape="rect" id="node3" href="$class_draw_base.html#a4e36184dbb605bcae13bfb38722ddc24" title="DrawBase::GetDecaleTexture" alt="" coords="384,5,577,32"/>
+<area shape="rect" id="node4" href="$class_shader_base.html#a4601ff3d20f01800ffd676d3db8d9289" title="ShaderBase::GetDevice" alt="" coords="401,56,561,83"/>
+<area shape="rect" id="node6" href="$class_draw_base.html#ad82a75dff8e4e2f2ebbec2dd0d0734e5" title="DrawBase::GetMaterial" alt="" coords="403,107,559,133"/>
+</map>

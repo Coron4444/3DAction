@@ -9,5 +9,9 @@ var class_object_of_tree =
     [ "setBelongingSpace", "class_object_of_tree.html#a21dc9105d1a5a0d045dc43894bba3c1c", null ],
     [ "setNextPointer", "class_object_of_tree.html#a44fb225ed189197bcdfe23dcd2a7fe28", null ],
     [ "setObject", "class_object_of_tree.html#aae14cb0e8ac8b701de737c547a1d3b8c", null ],
-    [ "setPreviousPointer", "class_object_of_tree.html#aa0ec8f6f61eb41f346796141e8ec38d5", null ]
+    [ "setPreviousPointer", "class_object_of_tree.html#aa0ec8f6f61eb41f346796141e8ec38d5", null ],
+    [ "belonging_space_", "class_object_of_tree.html#a4f0673854adc10539b4b99558ea3b696", null ],
+    [ "next_pointer_", "class_object_of_tree.html#a3b8a98c6ba800927492a67ee6dd1d6de", null ],
+    [ "object_", "class_object_of_tree.html#ad3ce36879f78ba2c2171385a8428c7ba", null ],
+    [ "previous_pointer_", "class_object_of_tree.html#a77243aefc3b9766b6dcf28ec713eef8e", null ]
 ];

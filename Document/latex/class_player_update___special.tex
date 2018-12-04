@@ -4,10 +4,23 @@
 
 {\ttfamily \#include $<$Player\+Update\+\_\+\+Special.\+h$>$}
 
-Player\+Update\+\_\+\+Special の継承関係図\begin{figure}[H]
+
+
+Player\+Update\+\_\+\+Special の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{class_player_update___special}
+\includegraphics[width=193pt]{class_player_update___special__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Player\+Update\+\_\+\+Special 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update___special__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -23,6 +36,23 @@ void \mbox{\hyperlink{class_player_update___special_a1daae8fdcd87bf907313a98e022
 \begin{DoxyCompactList}\small\item\em 後更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_player_update___special_a6253000b53b2c5bc73ce0ed4d3b4a82a}{Debug\+Display}} () override
 \begin{DoxyCompactList}\small\item\em デバッグ表示関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_player_update___special_adbf3a64a60324cc274e2084bbeef04c9}{player\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{class_player_update___special_a483e5e5a21d22c31c90194eb4e05e26f}{S\+P\+E\+ED}} = \mbox{\hyperlink{_meter_to_frame_8h_a3a2c155748ceb2eab2a3c303ae48ecc0}{Meter\+Per\+Second\+Squared\+\_\+\+To\+\_\+\+Meter\+Per\+Frame\+Squared}}(1.\+0f)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Player\+Update\+\_\+\+Special.\+h の 31 行目に定義があります。
+
 
 
 \subsection{関数詳解}
@@ -40,6 +70,17 @@ void \mbox{\hyperlink{class_player_update___special_a6253000b53b2c5bc73ce0ed4d3b
 
 \mbox{\hyperlink{class_update_base_a5c63c3c3ef1b85f3701718ec3f7b39e2}{Update\+Base}}を実装しています。
 
+
+
+ Player\+Update\+\_\+\+Special.\+cpp の 146 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update___special_a6253000b53b2c5bc73ce0ed4d3b4a82a_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_update___special_a48906da6915325d92d5cc6ec67212259}\label{class_player_update___special_a48906da6915325d92d5cc6ec67212259}} 
 \index{Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}!Init@{Init}}
 \index{Init@{Init}!Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}}
@@ -54,6 +95,17 @@ void \mbox{\hyperlink{class_player_update___special_a6253000b53b2c5bc73ce0ed4d3b
 
 \mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
 
+
+
+ Player\+Update\+\_\+\+Special.\+cpp の 51 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update___special_a48906da6915325d92d5cc6ec67212259_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_update___special_a1daae8fdcd87bf907313a98e022f254c}\label{class_player_update___special_a1daae8fdcd87bf907313a98e022f254c}} 
 \index{Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}!Late\+Update@{Late\+Update}}
 \index{Late\+Update@{Late\+Update}!Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}}
@@ -67,6 +119,10 @@ void \mbox{\hyperlink{class_player_update___special_a6253000b53b2c5bc73ce0ed4d3b
 
 
 \mbox{\hyperlink{class_update_base_afc4956f78135aed5fc4e4f9991be50b9}{Update\+Base}}を実装しています。
+
+
+
+ Player\+Update\+\_\+\+Special.\+cpp の 133 行目に定義があります。
 
 \mbox{\Hypertarget{class_player_update___special_a60b5982ed56b52293a9e651ae7bf305f}\label{class_player_update___special_a60b5982ed56b52293a9e651ae7bf305f}} 
 \index{Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}!Uninit@{Uninit}}
@@ -82,6 +138,10 @@ void \mbox{\hyperlink{class_player_update___special_a6253000b53b2c5bc73ce0ed4d3b
 
 \mbox{\hyperlink{class_component_base_a9f42beaf0383d6f629819579cab4de57}{Component\+Base}}を実装しています。
 
+
+
+ Player\+Update\+\_\+\+Special.\+cpp の 76 行目に定義があります。
+
 \mbox{\Hypertarget{class_player_update___special_afef3503e292dbaded809068fd87deadd}\label{class_player_update___special_afef3503e292dbaded809068fd87deadd}} 
 \index{Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}!Update@{Update}}
 \index{Update@{Update}!Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}}
@@ -95,6 +155,40 @@ void \mbox{\hyperlink{class_player_update___special_a6253000b53b2c5bc73ce0ed4d3b
 
 
 \mbox{\hyperlink{class_update_base_a9fdc8924001cf6fa89c1f5fa0d867682}{Update\+Base}}を実装しています。
+
+
+
+ Player\+Update\+\_\+\+Special.\+cpp の 89 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_update___special_afef3503e292dbaded809068fd87deadd_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_player_update___special_adbf3a64a60324cc274e2084bbeef04c9}\label{class_player_update___special_adbf3a64a60324cc274e2084bbeef04c9}} 
+\index{Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}!player\+\_\+@{player\+\_\+}}
+\index{player\+\_\+@{player\+\_\+}!Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}}
+\subsubsection{\texorpdfstring{player\+\_\+}{player\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ Player\+Update\+\_\+\+Special\+::player\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Player\+Update\+\_\+\+Special.\+h の 51 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_update___special_a483e5e5a21d22c31c90194eb4e05e26f}\label{class_player_update___special_a483e5e5a21d22c31c90194eb4e05e26f}} 
+\index{Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}!S\+P\+E\+ED@{S\+P\+E\+ED}}
+\index{S\+P\+E\+ED@{S\+P\+E\+ED}!Player\+Update\+\_\+\+Special@{Player\+Update\+\_\+\+Special}}
+\subsubsection{\texorpdfstring{S\+P\+E\+ED}{SPEED}}
+{\footnotesize\ttfamily const float Player\+Update\+\_\+\+Special\+::\+S\+P\+E\+ED = \mbox{\hyperlink{_meter_to_frame_8h_a3a2c155748ceb2eab2a3c303ae48ecc0}{Meter\+Per\+Second\+Squared\+\_\+\+To\+\_\+\+Meter\+Per\+Frame\+Squared}}(1.\+0f)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Player\+Update\+\_\+\+Special.\+h の 36 行目に定義があります。
 
 
 

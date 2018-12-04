@@ -18,7 +18,7 @@
 #include "CollisionShapeBase/Cylinder/Cylinder.h"
 #include "CollisionShapeBase/OBB/OBB.h"
 #include "CollisionShapeBase/Plane/Plane.h"
-#include "CollisionShapeBase/Segment/Segment.h"
+#include "CollisionShapeBase/LineSegment/LineSegment.h"
 #include "CollisionShapeBase/Sphere/Sphere.h"
 #include "CollisionShapeBase/Triangle/Triangle.h"
 
@@ -79,8 +79,8 @@ public:
 
 	// プロパティ
 	int	 getTag() const { return tag_; }
-	CollisionShapeBase* getCollisionShape() const { return collision_shape_; }
-	Vector3D* getHitVector() { return &hit_vector_; }
+	CollisionShapeBase* getpCollisionShape() { return collision_shape_; }
+	Vector3D* getpHitVector() { return &hit_vector_; }
 	void setHitVector(Vector3D value) { hit_vector_ = value; }
 	bool getIsJudgment() const { return is_judgment_; }
 	void setIsJudgment(bool value) { is_judgment_ = value; }

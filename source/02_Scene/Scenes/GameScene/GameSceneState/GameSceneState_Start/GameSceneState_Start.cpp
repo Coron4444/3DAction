@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    ゲームシーンステートクラス(スタート)
-//    Author : Araki Kai                                作成日 : 2018/11/06
-//
+//!	@file	 GameSceneState_Start.cpp
+//!	@brief	 ゲームシーンステート(スタート)Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/06
 //================================================================================
 
 
@@ -34,7 +34,7 @@
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -45,8 +45,8 @@ void GameSceneState_Start::Init()
 	game_scene_ = (GameScene*)scene_;
 
 	// ゲームシーン共通データーの初期化
-	game_scene_->SetIsClear(false);
-	game_scene_->SetScore(0);
+	game_scene_->setIsClear(false);
+	game_scene_->setScore(0);
 
 	// デフォルトカメラの作成
 	//GameObjectManager::GetDrawManager()->GetBackBuffer()
@@ -139,15 +139,15 @@ void GameSceneState_Start::Update()
 	// クリア
 	if (game_scene_->getGameOver() == 0)
 	{
-		game_scene_->GetSceneManager()->GetCommonData()->SetIsClear(true);
-		game_scene_->GetSceneManager()->SetNextScene(new ResultScene(new ResultSceneState_Start()));
+		game_scene_->getpSceneManager()->getpCommonData()->setIsClear(true);
+		game_scene_->getpSceneManager()->setNextScene(new ResultScene(new ResultSceneState_Start()));
 	}
 
 	// 失敗
 	if (game_scene_->getGameOver() == 1)
 	{
-		game_scene_->GetSceneManager()->GetCommonData()->SetIsClear(false);
-		game_scene_->GetSceneManager()->SetNextScene(new ResultScene(new ResultSceneState_Start()));
+		game_scene_->getpSceneManager()->getpCommonData()->setIsClear(false);
+		game_scene_->getpSceneManager()->setNextScene(new ResultScene(new ResultSceneState_Start()));
 	}
 }
 

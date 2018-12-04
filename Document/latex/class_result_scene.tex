@@ -2,37 +2,57 @@
 \label{class_result_scene}\index{Result\+Scene@{Result\+Scene}}
 
 
-リザルトシーンクラス  
+リザルトシーン\+Class  
 
 
 
 
 {\ttfamily \#include $<$Result\+Scene.\+h$>$}
 
-Result\+Scene の継承関係図\begin{figure}[H]
+
+
+Result\+Scene の継承関係図
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_result_scene}
+\includegraphics[width=152pt]{class_result_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Result\+Scene 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_result_scene__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_result_scene_aa3eb389e877dcf1062b42991903ca7c2}{Result\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$state)
+\mbox{\hyperlink{class_result_scene_ac184d41a92125eda200a132fe7aadd2e}{Result\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$state)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
-リザルトシーンクラス 
+リザルトシーン\+Class 
 
-リザルトシーンのクラス 
+リザルトシーンを管理する\+Class
+
+リザルトシーン特有の共有データを持っている 
+
+ Result\+Scene.\+h の 25 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_result_scene_aa3eb389e877dcf1062b42991903ca7c2}\label{class_result_scene_aa3eb389e877dcf1062b42991903ca7c2}} 
+\mbox{\Hypertarget{class_result_scene_ac184d41a92125eda200a132fe7aadd2e}\label{class_result_scene_ac184d41a92125eda200a132fe7aadd2e}} 
 \index{Result\+Scene@{Result\+Scene}!Result\+Scene@{Result\+Scene}}
 \index{Result\+Scene@{Result\+Scene}!Result\+Scene@{Result\+Scene}}
 \subsubsection{\texorpdfstring{Result\+Scene()}{ResultScene()}}
-{\footnotesize\ttfamily Result\+Scene\+::\+Result\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_abstract}{State\+Abstract}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Result\+Scene\+::\+Result\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -40,9 +60,13 @@ Result\+Scene の継承関係図\begin{figure}[H]
 
 
 \begin{DoxyParams}{引数}
-{\em state} & \+: 最初のステート \\
+{\em state} & 最初のステート \\
 \hline
 \end{DoxyParams}
+
+
+ Result\+Scene.\+h の 35 行目に定義があります。
+
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}

@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    シーンマネージャクラスヘッダ
-//    Author : Araki Kai                                作成日 : 2018/11/02
-//
+//!	@file	 SceneManager.cpp
+//!	@brief	 シーンマネージャClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/01
 //================================================================================
 
 
@@ -29,19 +29,12 @@ const XColor4    SceneManager::DEFAULT_FADE_COLOR(0.0f, 0.0f, 0.0f, 1.0f);
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
-// +コンストラクタ
+// +初期化関数
 //--------------------------------------------------
-SceneManager::SceneManager(SceneBase* scene)
-	: state_(SceneManager::State::NONE),
-	common_data_(nullptr),
-	current_scene_(nullptr),
-	next_scene_(nullptr),
-	fade_type_(DEFAULT_FADE_TYPE),
-	fade_speed_(DEFAULT_FADE_SPEED),
-	fade_color_(DEFAULT_FADE_COLOR)
+void SceneManager::Init(SceneBase* scene)
 {
 	// 共有データーの初期化
 	common_data_ = new CommonData();
@@ -55,16 +48,16 @@ SceneManager::SceneManager(SceneBase* scene)
 
 	// シーンの初期化
 	current_scene_ = scene;
-	current_scene_->SetSceneManager(this);
+	current_scene_->setSceneManager(this);
 	current_scene_->Init();
 }
 
 
 
 //--------------------------------------------------
-// +デストラクタ
+// +終了関数
 //--------------------------------------------------
-SceneManager::~SceneManager()
+void SceneManager::Uninit()
 {
 	// シーンの終了処理
 	if (current_scene_ != nullptr) current_scene_->Uninit();
@@ -140,7 +133,7 @@ void SceneManager::DrawScene()
 //--------------------------------------------------
 // +次のシーン設定関数
 //--------------------------------------------------
-void SceneManager::SetNextScene(SceneBase* value)
+void SceneManager::setNextScene(SceneBase* value)
 {
 	// 既にほかの要求を受け付けている場合
 	if (state_ != SceneManager::State::NONE)
@@ -157,7 +150,7 @@ void SceneManager::SetNextScene(SceneBase* value)
 	state_ = SceneManager::State::CHANGE_SCENE;
 
 	// UpdateフラグOFF
-	common_data_->SetIsUpdate(false);
+	common_data_->setIsUpdate(false);
 
 	// フェードアウト初期化
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
@@ -212,7 +205,7 @@ void SceneManager::SceneChange()
 		// 新しいシーンへ移行
 		current_scene_ = next_scene_;
 		next_scene_ = nullptr;
-		current_scene_->SetSceneManager(this);
+		current_scene_->setSceneManager(this);
 		current_scene_->Init();
 
 		// フェード終了
@@ -229,7 +222,7 @@ void SceneManager::SceneChange()
 	{
 		// フェード終了処理
 		state_ = SceneManager::State::NONE;
-		common_data_->SetIsUpdate(true);
+		common_data_->setIsUpdate(true);
 		GameObjectManager::GetDrawManager()->GetBackBuffer()->UninitFade();
 	}
 }
@@ -266,7 +259,7 @@ void SceneManager::SceneReset()
 	{
 		// フェード終了処理
 		state_ = SceneManager::State::NONE;
-		common_data_->SetIsUpdate(true);
+		common_data_->setIsUpdate(true);
 		GameObjectManager::GetDrawManager()->GetBackBuffer()->UninitFade();
 	}
 }

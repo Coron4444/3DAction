@@ -1,0 +1,18 @@
+<map id="ImGui::ListBoxHeader" name="ImGui::ListBoxHeader">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="203,5,376,32"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#abafef4bb3e3654efd96a47b2e22870a7" title="ImGui::GetStyle" alt="" coords="232,56,347,83"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a3329b04bd4235e90ad9deb00ffb38ae4" title="ImGui::GetID" alt="" coords="241,107,338,133"/>
+<area shape="rect" id="node8" href="$namespace_im_gui.html#a848b9db6cc4a186751c0ecebcaadc33b" title="ImGui::CalcTextSize" alt="" coords="219,157,360,184"/>
+<area shape="rect" id="node11" href="$namespace_im_gui.html#a3c1505e785f9571ed82500692a727c5f" title="ImGui::CalcItemSize" alt="" coords="452,309,593,336"/>
+<area shape="rect" id="node15" href="$namespace_im_gui.html#ab3b3ba92ebd8bca4a552dd93321a1994" title="ImGui::CalcItemWidth" alt="" coords="215,208,364,235"/>
+<area shape="rect" id="node17" href="$namespace_im_gui.html#aa1616f6082fd210fde8d98c511bf8f56" title="ImGui::GetTextLineHeight\lWithSpacing" alt="" coords="204,310,375,351"/>
+<area shape="rect" id="node5" href="$struct_im_gui_window.html#a66400a63bc0b54d7d29e08d1b1b1a42b" title="ImGuiWindow::GetID" alt="" coords="451,56,594,83"/>
+<area shape="rect" id="node6" href="$imgui_8cpp.html#aa55e55e944172fc87494a342da489970" title="ImHash" alt="" coords="733,81,800,108"/>
+<area shape="rect" id="node7" href="$namespace_im_gui.html#a85a245c78a9f7c351636bdad6e60c488" title="ImGui::KeepAliveID" alt="" coords="700,31,833,57"/>
+<area shape="rect" id="node9" href="$namespace_im_gui.html#a7671e1dbc803a31b06081b52a771d83f" title="ImGui::FindRenderedTextEnd" alt="" coords="427,107,619,133"/>
+<area shape="rect" id="node10" href="$struct_im_font.html#ad67f64fd206ad197f4b93b1a1ae27cfe" title="ImFont::CalcTextSizeA" alt="" coords="445,157,601,184"/>
+<area shape="rect" id="node12" href="$namespace_im_gui.html#a0a4dbfabbfa45d74319ef541962ce2eb" title="ImGui::GetContentRegionMax" alt="" coords="669,309,864,336"/>
+<area shape="rect" id="node13" href="$namespace_im_gui.html#a408f9ddac92f8629a7e273ced5f8c3aa" title="ImGui::GetCurrentWindowRead" alt="" coords="1123,284,1325,311"/>
+<area shape="rect" id="node14" href="$namespace_im_gui.html#a79c22e9c5c208b6c9534a273be71a9e6" title="ImGui::GetColumnOffset" alt="" coords="912,309,1075,336"/>
+<area shape="rect" id="node16" href="$namespace_im_gui.html#a410c8e19b2fea8b52746ca11b3930301" title="ImGui::GetContentRegionAvail" alt="" coords="424,259,621,285"/>
+</map>

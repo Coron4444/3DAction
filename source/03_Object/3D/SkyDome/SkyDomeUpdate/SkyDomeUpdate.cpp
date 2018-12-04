@@ -46,8 +46,8 @@ const float SkyDomeUpdate::SCALE = 100.0f;
 void SkyDomeUpdate::Init()
 {
 	// Šgk‚Ì•ÏX
-	*GetGameObject()->GetTransform()->GetScale() *= SCALE;
-	GetGameObject()->GetTransform()->UpdateWorldMatrixSRT();
+	*getpGameObject()->GetTransform()->GetScale() *= SCALE;
+	getpGameObject()->GetTransform()->UpdateWorldMatrixSRT();
 }
 
 

@@ -74,7 +74,7 @@ public :
 
 	float GetHeight(Vec3 position);
 
-	unsigned GetMeshNum(){return 1;}
+	unsigned getMeshNum(){return 1;}
 	D3DMATERIAL9* GetMaterial(){return &material_;}
 
 

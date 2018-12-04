@@ -171,7 +171,7 @@ void DrawManager::OverwriteArrayDrawBase(GameObjectBase* game_object,
 
 		// 新規コンポーネントの初期化
 		game_object->SetDraw(new_draw);
-		new_draw->SetGameObject(game_object);
+		*new_draw->getpGameObject() = *game_object;
 		new_draw->Init();
 	}
 }
@@ -272,7 +272,7 @@ void DrawManager::DistributeDrawBase()
 	for (unsigned i = 0; i < all_draw_.GetEndPointer(); i++)
 	{
 		// バックバッファ
-		if (all_draw_.GetArrayObject(i)->GetDrawOrderList()->GetRenderTargetFlag()
+		if (all_draw_.GetArrayObject(i)->getpDrawOrderList()->GetRenderTargetFlag()
 			->CheckAny(DrawOrderList::RENDER_TARGET_BACK_BUFFER))
 		{
 			back_buffer_->AddDrawBaseToArray(all_draw_.GetArrayObject(i));

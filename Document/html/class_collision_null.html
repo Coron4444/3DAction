@@ -102,17 +102,43 @@ $(document).ready(function(){initNavTree('class_collision_null.html','');});
 <div class="dynheader">
 CollisionNull の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_collision_null.png" usemap="#CollisionNull_map" alt=""/>
-  <map id="CollisionNull_map" name="CollisionNull_map">
-<area href="class_collision_base.html" title="衝突基底クラス " alt="CollisionBase" shape="rect" coords="169,56,272,80"/>
-<area href="class_component_base.html" title="コンポーネント基底クラス " alt="ComponentBase" shape="rect" coords="169,0,272,24"/>
-<area href="class_coin_collision.html" alt="CoinCollision" shape="rect" coords="0,168,103,192"/>
-<area href="class_enemy_collision.html" alt="EnemyCollision" shape="rect" coords="113,168,216,192"/>
-<area href="class_goal_collision.html" title="ゴール衝突クラス " alt="GoalCollision" shape="rect" coords="226,168,329,192"/>
-<area href="class_player_collision.html" alt="PlayerCollision" shape="rect" coords="339,168,442,192"/>
+<div class="center"><img src="class_collision_null__inherit__graph.png" border="0" usemap="#_collision_null_inherit__map" alt="Inheritance graph"/></div>
+<map name="_collision_null_inherit__map" id="_collision_null_inherit__map">
+<area shape="rect" id="node4" href="class_coin_collision.html" title="CoinCollision" alt="" coords="5,229,103,256"/>
+<area shape="rect" id="node5" href="class_enemy_collision.html" title="EnemyCollision" alt="" coords="127,229,239,256"/>
+<area shape="rect" id="node6" href="class_goal_collision.html" title="ゴール衝突クラス " alt="" coords="263,229,362,256"/>
+<area shape="rect" id="node7" href="class_player_collision.html" title="PlayerCollision" alt="" coords="387,229,495,256"/>
+<area shape="rect" id="node2" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="197,80,298,107"/>
+<area shape="rect" id="node3" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="188,5,307,32"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+CollisionNull 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_null__coll__graph.png" border="0" usemap="#_collision_null_coll__map" alt="Collaboration graph"/></div>
+<map name="_collision_null_coll__map" id="_collision_null_coll__map">
+<area shape="rect" id="node2" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="656,372,757,399"/>
+<area shape="rect" id="node4" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="880,171,1005,197"/>
+<area shape="rect" id="node16" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1175,511,1291,537"/>
+<area shape="rect" id="node3" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="1173,120,1292,147"/>
+<area shape="rect" id="node5" href="class_draw_base.html" title="描画基底クラス " alt="" coords="1509,59,1590,85"/>
+<area shape="rect" id="node11" href="class_update_base.html" title="更新基底クラス " alt="" coords="1503,157,1596,184"/>
+<area shape="rect" id="node8" href="class_physics.html" title="Physics" alt="" coords="1198,251,1267,277"/>
+<area shape="rect" id="node6" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="1181,7,1285,33"/>
+<area shape="rect" id="node7" href="class_flag.html" title="Flag" alt="" coords="919,7,966,33"/>
+<area shape="rect" id="node9" href="class_vector3_d.html" title="Vector3D" alt="" coords="107,325,183,352"/>
+<area shape="rect" id="node12" href="class_transform.html" title="Transform" alt="" coords="667,149,746,176"/>
+<area shape="rect" id="node14" href="class_axis_vector.html" title="AxisVector" alt="" coords="390,193,477,220"/>
+<area shape="rect" id="node17" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="677,500,736,527"/>
+<area shape="rect" id="node18" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="364,419,503,445"/>
+<area shape="rect" id="node23" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="652,423,761,449"/>
+<area shape="rect" id="node13" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="384,244,483,271"/>
+<area shape="rect" id="node15" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="1479,395,1620,451"/>
+<area shape="rect" id="node20" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1439,540,1660,567"/>
+<area shape="rect" id="node21" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1817,540,2037,567"/>
+<area shape="rect" id="node22" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="875,520,1011,576"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -201,6 +227,8 @@ CollisionNull の継承関係図</div>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>空白衝突クラス </p>
 <p>衝突の空白クラス </p>
+
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00027">27</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a2eaef584b2ae2c4062df8bf3a6533fb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2eaef584b2ae2c4062df8bf3a6533fb3">&#9670;&nbsp;</a></span>~CollisionNull()</h2>
@@ -226,6 +254,20 @@ CollisionNull の継承関係図</div>
 </div><div class="memdoc">
 
 <p>仮想デストラクタ </p>
+
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00037">37</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3_cgraph.png" border="0" usemap="#class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3_cgraph" alt=""/></div>
+<map name="class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3_cgraph" id="class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3_cgraph">
+<area shape="rect" id="node2" href="class_collision_base.html#a54d52219e2bf43ed2a9b2a11813934ea" title="複数衝突オブジェクト全解放関数 " alt="" coords="233,104,411,145"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="483,5,619,47"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="483,71,619,112"/>
+<area shape="rect" id="node5" href="class_collision_objects.html#a2efe32f283fe9b2a30ff8d1e370f152d" title="衝突オブジェクト全解放関数 " alt="" coords="459,136,644,177"/>
+<area shape="rect" id="node6" href="class_limited_pointer_array.html#a5e34faa11f4b901153f85428027aa21e" title="LimitedPointerArray\l::ReleaseObjectAndResetArray" alt="" coords="692,165,895,207"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -256,6 +298,8 @@ CollisionNull の継承関係図</div>
 <p>デバッグ表示関数 </p>
 
 <p><a class="el" href="class_collision_base.html#a0b2c1e3b090431d596b6a17e81360932">CollisionBase</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00065">65</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -311,6 +355,8 @@ CollisionNull の継承関係図</div>
 
 <p><a class="el" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767">PlayerCollision</a>で再実装されています。</p>
 
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00075">75</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a75900c2cec4e49336701e2e3c64e5bfe"></a>
@@ -342,6 +388,8 @@ CollisionNull の継承関係図</div>
 <p><a class="el" href="class_collision_base.html#a48c9d1d9e4286cde5054d4d2aa70bdd8">CollisionBase</a>を実装しています。</p>
 
 <p><a class="el" href="class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0">PlayerCollision</a>で再実装されています。</p>
+
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00107">107</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -397,6 +445,8 @@ CollisionNull の継承関係図</div>
 
 <p><a class="el" href="class_player_collision.html#a21b8f825ea142024212ab5fe3f427ab0">PlayerCollision</a>で再実装されています。</p>
 
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00093">93</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="ad456a03a3e3d55d8d408b7ed28ce7911"></a>
@@ -426,6 +476,8 @@ CollisionNull の継承関係図</div>
 <p>フィールドとの非衝突時関数 </p>
 
 <p><a class="el" href="class_collision_base.html#ac1ed5b1c0c9b6b70b432e6656f9c4b45">CollisionBase</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00113">113</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -458,6 +510,31 @@ CollisionNull の継承関係図</div>
 
 <p><a class="el" href="class_goal_collision.html#ab818bad44ffcd595f1c495e659c0b348">GoalCollision</a>, <a class="el" href="class_coin_collision.html#aa852afdcdbedcf82809df9c7fd99be9e">CoinCollision</a>, <a class="el" href="class_enemy_collision.html#a2a194c606fd162db803c70c6fed9b9e4">EnemyCollision</a>, <a class="el" href="class_player_collision.html#aa1ab60a62fa2ae3231a1ea0bc8faf801">PlayerCollision</a>で再実装されています。</p>
 
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00046">46</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_null_a7c6d0ec502efc55e2f406415451152f5_cgraph.png" border="0" usemap="#class_collision_null_a7c6d0ec502efc55e2f406415451152f5_cgraph" alt=""/></div>
+<map name="class_collision_null_a7c6d0ec502efc55e2f406415451152f5_cgraph" id="class_collision_null_a7c6d0ec502efc55e2f406415451152f5_cgraph">
+<area shape="rect" id="node2" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="201,5,383,47"/>
+<area shape="rect" id="node4" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="204,71,380,112"/>
+<area shape="rect" id="node6" href="class_collision_objects.html#a61e67c1c0ea20a01d9e4a5b2d1b45428" title="CollisionObjects::setIsJudgment" alt="" coords="188,137,396,163"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="444,5,580,47"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="444,71,580,112"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_null_a7c6d0ec502efc55e2f406415451152f5_icgraph.png" border="0" usemap="#class_collision_null_a7c6d0ec502efc55e2f406415451152f5_icgraph" alt=""/></div>
+<map name="class_collision_null_a7c6d0ec502efc55e2f406415451152f5_icgraph" id="class_collision_null_a7c6d0ec502efc55e2f406415451152f5_icgraph">
+<area shape="rect" id="node2" href="class_coin_collision.html#aa852afdcdbedcf82809df9c7fd99be9e" title="終了関数 " alt="" coords="195,5,334,32"/>
+<area shape="rect" id="node3" href="class_enemy_collision.html#a2a194c606fd162db803c70c6fed9b9e4" title="終了関数 " alt="" coords="188,56,341,83"/>
+<area shape="rect" id="node4" href="class_goal_collision.html#ab818bad44ffcd595f1c495e659c0b348" title="終了関数 " alt="" coords="195,107,334,133"/>
+<area shape="rect" id="node5" href="class_player_collision.html#aa1ab60a62fa2ae3231a1ea0bc8faf801" title="終了関数 " alt="" coords="190,157,339,184"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a5e5e094e3fbe3ccc0515e485c739bd15"></a>
@@ -488,6 +565,8 @@ CollisionNull の継承関係図</div>
 <p><a class="el" href="class_collision_base.html#a0f967cf5de4178ee99f434c3ff4f16fd">CollisionBase</a>を実装しています。</p>
 
 <p><a class="el" href="class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936">GoalCollision</a>, <a class="el" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b">CoinCollision</a>, <a class="el" href="class_enemy_collision.html#ab54133504d867c6d2070d2f3854a0aaf">EnemyCollision</a>, <a class="el" href="class_player_collision.html#a09f97f220903f5724a3af6b97af3a336">PlayerCollision</a>で再実装されています。</p>
+
+<p class="definition"> <a class="el" href="_collision_null_8h_source.html">CollisionNull.h</a> の <a class="el" href="_collision_null_8h_source.html#l00059">59</a> 行目に定義があります。</p>
 
 </div>
 </div>

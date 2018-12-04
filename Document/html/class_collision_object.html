@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_collision_object-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">CollisionObject クラス</div>  </div>
@@ -99,10 +101,19 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
  <a href="class_collision_object.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a>&gt;</code></p>
+<div class="dynheader">
+CollisionObject 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object__coll__graph.png" border="0" usemap="#_collision_object_coll__map" alt="Collaboration graph"/></div>
+<map name="_collision_object_coll__map" id="_collision_object_coll__map">
+<area shape="rect" id="node2" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="5,171,144,197"/>
+<area shape="rect" id="node4" href="class_vector3_d.html" title="Vector3D" alt="" coords="129,81,205,108"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a6f502c16aaae1dc1470107a930f28808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a6f502c16aaae1dc1470107a930f28808">CollisionObject</a> (<a class="el" href="class_collision_shape_base.html">CollisionShapeBase</a> *collision_shape, int tag=TAG_NONE)</td></tr>
+<tr class="memitem:a6f502c16aaae1dc1470107a930f28808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a6f502c16aaae1dc1470107a930f28808">CollisionObject</a> (<a class="el" href="class_collision_shape_base.html">CollisionShapeBase</a> *collision_shape, int tag=<a class="el" href="class_collision_object.html#a22badef1e6fc9c2b1f002bd99ede049f">TAG_NONE</a>)</td></tr>
 <tr class="memdesc:a6f502c16aaae1dc1470107a930f28808"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a6f502c16aaae1dc1470107a930f28808">[詳解]</a><br /></td></tr>
 <tr class="separator:a6f502c16aaae1dc1470107a930f28808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4e6916bc5911b8a82498536d5a27e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a8c4e6916bc5911b8a82498536d5a27e1">~CollisionObject</a> ()</td></tr>
@@ -123,10 +134,36 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 <tr class="separator:ac11b01882a159efadbe62bd5a66c49aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3000144caea71e39cbdafebb249fef7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a3000144caea71e39cbdafebb249fef7e">setIsJudgment</a> (bool value)</td></tr>
 <tr class="separator:a3000144caea71e39cbdafebb249fef7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a4ed81be0cf60ec47e54f83955853a6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_shape_base.html">CollisionShapeBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a4ed81be0cf60ec47e54f83955853a6b1">collision_shape_</a></td></tr>
+<tr class="memdesc:a4ed81be0cf60ec47e54f83955853a6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">形状  <a href="#a4ed81be0cf60ec47e54f83955853a6b1">[詳解]</a><br /></td></tr>
+<tr class="separator:a4ed81be0cf60ec47e54f83955853a6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb64c6aaab4606a4e0a1058a844d10e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a5fb64c6aaab4606a4e0a1058a844d10e">hit_vector_</a></td></tr>
+<tr class="memdesc:a5fb64c6aaab4606a4e0a1058a844d10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">めり込みベクトル  <a href="#a5fb64c6aaab4606a4e0a1058a844d10e">[詳解]</a><br /></td></tr>
+<tr class="separator:a5fb64c6aaab4606a4e0a1058a844d10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104bfc5534ba8ea189a45de9ba32f6ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a104bfc5534ba8ea189a45de9ba32f6ee">tag_</a></td></tr>
+<tr class="memdesc:a104bfc5534ba8ea189a45de9ba32f6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">タグ  <a href="#a104bfc5534ba8ea189a45de9ba32f6ee">[詳解]</a><br /></td></tr>
+<tr class="separator:a104bfc5534ba8ea189a45de9ba32f6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd29059add616ce619c72ebce6af720"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a0dd29059add616ce619c72ebce6af720">is_judgment_</a> = true</td></tr>
+<tr class="memdesc:a0dd29059add616ce619c72ebce6af720"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定するかフラグ  <a href="#a0dd29059add616ce619c72ebce6af720">[詳解]</a><br /></td></tr>
+<tr class="separator:a0dd29059add616ce619c72ebce6af720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af3618b5605c1bcff1e403c85c3b1ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a5af3618b5605c1bcff1e403c85c3b1ca">is_trigger_</a> = true</td></tr>
+<tr class="memdesc:a5af3618b5605c1bcff1e403c85c3b1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理演算をするかのフラグ  <a href="#a5af3618b5605c1bcff1e403c85c3b1ca">[詳解]</a><br /></td></tr>
+<tr class="separator:a5af3618b5605c1bcff1e403c85c3b1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a22badef1e6fc9c2b1f002bd99ede049f"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_object.html#a22badef1e6fc9c2b1f002bd99ede049f">TAG_NONE</a> = -1</td></tr>
+<tr class="memdesc:a22badef1e6fc9c2b1f002bd99ede049f"><td class="mdescLeft">&#160;</td><td class="mdescRight">タグなし時の値  <a href="#a22badef1e6fc9c2b1f002bd99ede049f">[詳解]</a><br /></td></tr>
+<tr class="separator:a22badef1e6fc9c2b1f002bd99ede049f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>衝突オブジェクトクラス </p>
 <p>衝突オブジェクトのクラス </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00033">33</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a6f502c16aaae1dc1470107a930f28808"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f502c16aaae1dc1470107a930f28808">&#9670;&nbsp;</a></span>CollisionObject()</h2>
@@ -144,7 +181,7 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>tag</em> = <code>TAG_NONE</code>&#160;</td>
+          <td class="paramname"><em>tag</em> = <code><a class="el" href="class_collision_object.html#a22badef1e6fc9c2b1f002bd99ede049f">TAG_NONE</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -161,6 +198,8 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
   </table>
   </dd>
 </dl>
+
+<p class="definition"> <a class="el" href="_collision_object_8cpp_source.html">CollisionObject.cpp</a> の <a class="el" href="_collision_object_8cpp_source.html#l00023">23</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -180,6 +219,17 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 </div><div class="memdoc">
 
 <p>デストラクタ </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8cpp_source.html">CollisionObject.cpp</a> の <a class="el" href="_collision_object_8cpp_source.html#l00035">35</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1_cgraph.png" border="0" usemap="#class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1_cgraph" alt=""/></div>
+<map name="class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1_cgraph" id="class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1_cgraph">
+<area shape="rect" id="node2" href="class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc" title="CollisionShapeBase\l::getType" alt="" coords="231,5,369,47"/>
+<area shape="rect" id="node3" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="228,71,372,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -207,6 +257,29 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00082">82</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c_icgraph.png" border="0" usemap="#class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c_icgraph" alt=""/></div>
+<map name="class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c_icgraph" id="class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c_icgraph">
+<area shape="rect" id="node2" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="265,5,412,32"/>
+<area shape="rect" id="node3" href="class_enemy_collision.html#ab54133504d867c6d2070d2f3854a0aaf" title="更新関数 " alt="" coords="258,56,419,83"/>
+<area shape="rect" id="node4" href="class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936" title="更新関数 " alt="" coords="265,107,412,133"/>
+<area shape="rect" id="node5" href="class_player_collision.html#a09f97f220903f5724a3af6b97af3a336" title="更新関数 " alt="" coords="260,157,417,184"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="237,209,440,250"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="488,209,655,250"/>
+<area shape="rect" id="node8" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="713,175,891,217"/>
+<area shape="rect" id="node15" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="703,241,901,282"/>
+<area shape="rect" id="node9" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="949,216,1120,243"/>
+<area shape="rect" id="node10" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1168,209,1321,250"/>
+<area shape="rect" id="node11" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1369,216,1564,243"/>
+<area shape="rect" id="node12" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1612,216,1763,243"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1811,216,1972,243"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2020,216,2093,243"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="adb01187ec10302f13034407a3c852860"></a>
@@ -231,6 +304,27 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00083">83</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_adb01187ec10302f13034407a3c852860_icgraph.png" border="0" usemap="#class_collision_object_adb01187ec10302f13034407a3c852860_icgraph" alt=""/></div>
+<map name="class_collision_object_adb01187ec10302f13034407a3c852860_icgraph" id="class_collision_object_adb01187ec10302f13034407a3c852860_icgraph">
+<area shape="rect" id="node2" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="247,5,441,32"/>
+<area shape="rect" id="node4" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="243,57,445,98"/>
+<area shape="rect" id="node3" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="493,5,675,32"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="501,57,667,98"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="733,23,911,65"/>
+<area shape="rect" id="node13" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="723,89,921,130"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="969,64,1140,91"/>
+<area shape="rect" id="node8" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1188,57,1341,98"/>
+<area shape="rect" id="node9" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1389,64,1584,91"/>
+<area shape="rect" id="node10" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1632,64,1783,91"/>
+<area shape="rect" id="node11" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1831,64,1992,91"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2040,64,2113,91"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -257,6 +351,24 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00085">85</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_ac11b01882a159efadbe62bd5a66c49aa_icgraph.png" border="0" usemap="#class_collision_object_ac11b01882a159efadbe62bd5a66c49aa_icgraph" alt=""/></div>
+<map name="class_collision_object_ac11b01882a159efadbe62bd5a66c49aa_icgraph" id="class_collision_object_ac11b01882a159efadbe62bd5a66c49aa_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="255,39,421,80"/>
+<area shape="rect" id="node3" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="479,5,658,47"/>
+<area shape="rect" id="node10" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="469,71,668,112"/>
+<area shape="rect" id="node4" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="716,46,887,73"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="935,39,1088,80"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1136,46,1331,73"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1379,46,1529,73"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1577,46,1739,73"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1787,46,1860,73"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a1198d5941d2ba8a9b394c0e43e4b9fd9"></a>
@@ -282,6 +394,19 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00081">81</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9_icgraph.png" border="0" usemap="#class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9_icgraph" alt=""/></div>
+<map name="class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9_icgraph" id="class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9_icgraph">
+<area shape="rect" id="node2" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="459,92,640,119"/>
+<area shape="rect" id="node3" href="class_player_collision.html#a21b8f825ea142024212ab5fe3f427ab0" title="非衝突時関数 " alt="" coords="209,34,411,60"/>
+<area shape="rect" id="node4" href="class_player_collision.html#ae54c44acd4a1ef4569c1bb9202af3570" title="PlayerCollision::HitBounding\lSphere" alt="" coords="217,85,403,126"/>
+<area shape="rect" id="node5" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="213,151,407,178"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a92dd5d21c6674605d290e0d37d64505a"></a>
@@ -300,6 +425,31 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 </div><div class="memdoc">
 
 <p>衝突用データのリセット関数 </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8cpp_source.html">CollisionObject.cpp</a> の <a class="el" href="_collision_object_8cpp_source.html#l00101">101</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_a92dd5d21c6674605d290e0d37d64505a_cgraph.png" border="0" usemap="#class_collision_object_a92dd5d21c6674605d290e0d37d64505a_cgraph" alt=""/></div>
+<map name="class_collision_object_a92dd5d21c6674605d290e0d37d64505a_cgraph" id="class_collision_object_a92dd5d21c6674605d290e0d37d64505a_cgraph">
+<area shape="rect" id="node2" href="class_vector3_d.html#a9cfe261f14b3b2e6704c5649058d3ecd" title="Vector3D::ResetVector" alt="" coords="248,5,404,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_a92dd5d21c6674605d290e0d37d64505a_icgraph.png" border="0" usemap="#class_collision_object_a92dd5d21c6674605d290e0d37d64505a_icgraph" alt=""/></div>
+<map name="class_collision_object_a92dd5d21c6674605d290e0d37d64505a_icgraph" id="class_collision_object_a92dd5d21c6674605d290e0d37d64505a_icgraph">
+<area shape="rect" id="node2" href="class_collision_objects.html#a01ffe9567540a819f19cd66f96981b47" title="全ての衝突用データのリセット関数 " alt="" coords="248,5,423,47"/>
+<area shape="rect" id="node3" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="471,5,669,47"/>
+<area shape="rect" id="node4" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="717,13,888,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="936,5,1089,47"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1137,13,1332,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1380,13,1531,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1579,13,1740,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1788,13,1861,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -327,6 +477,25 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00084">84</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_a1087fa9cebfe0b1675923807b73d8868_icgraph.png" border="0" usemap="#class_collision_object_a1087fa9cebfe0b1675923807b73d8868_icgraph" alt=""/></div>
+<map name="class_collision_object_a1087fa9cebfe0b1675923807b73d8868_icgraph" id="class_collision_object_a1087fa9cebfe0b1675923807b73d8868_icgraph">
+<area shape="rect" id="node2" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="243,39,445,80"/>
+<area shape="rect" id="node3" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="493,39,660,80"/>
+<area shape="rect" id="node4" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="718,5,897,47"/>
+<area shape="rect" id="node11" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="708,71,907,112"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="955,46,1125,73"/>
+<area shape="rect" id="node6" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1173,39,1327,80"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1375,46,1569,73"/>
+<area shape="rect" id="node8" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1617,46,1768,73"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1816,46,1977,73"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2025,46,2099,73"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a3000144caea71e39cbdafebb249fef7e"></a>
@@ -353,11 +522,179 @@ $(document).ready(function(){initNavTree('class_collision_object.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00086">86</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_object_a3000144caea71e39cbdafebb249fef7e_icgraph.png" border="0" usemap="#class_collision_object_a3000144caea71e39cbdafebb249fef7e_icgraph" alt=""/></div>
+<map name="class_collision_object_a3000144caea71e39cbdafebb249fef7e_icgraph" id="class_collision_object_a3000144caea71e39cbdafebb249fef7e_icgraph">
+<area shape="rect" id="node2" href="class_player_collision.html#adce9e2df2361cadba7bbe397810a1893" title="PlayerCollision::NotHitBounding\lSphere" alt="" coords="255,5,461,47"/>
+<area shape="rect" id="node3" href="class_player_collision.html#a21b8f825ea142024212ab5fe3f427ab0" title="非衝突時関数 " alt="" coords="509,13,711,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a4ed81be0cf60ec47e54f83955853a6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed81be0cf60ec47e54f83955853a6b1">&#9670;&nbsp;</a></span>collision_shape_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_collision_shape_base.html">CollisionShapeBase</a>* CollisionObject::collision_shape_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>形状 </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00047">47</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5fb64c6aaab4606a4e0a1058a844d10e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb64c6aaab4606a4e0a1058a844d10e">&#9670;&nbsp;</a></span>hit_vector_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> CollisionObject::hit_vector_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>めり込みベクトル </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00048">48</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0dd29059add616ce619c72ebce6af720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd29059add616ce619c72ebce6af720">&#9670;&nbsp;</a></span>is_judgment_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionObject::is_judgment_ = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判定するかフラグ </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00051">51</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5af3618b5605c1bcff1e403c85c3b1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af3618b5605c1bcff1e403c85c3b1ca">&#9670;&nbsp;</a></span>is_trigger_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionObject::is_trigger_ = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>物理演算をするかのフラグ </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00052">52</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a104bfc5534ba8ea189a45de9ba32f6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104bfc5534ba8ea189a45de9ba32f6ee">&#9670;&nbsp;</a></span>tag_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CollisionObject::tag_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タグ </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00050">50</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a22badef1e6fc9c2b1f002bd99ede049f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22badef1e6fc9c2b1f002bd99ede049f">&#9670;&nbsp;</a></span>TAG_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CollisionObject::TAG_NONE = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タグなし時の値 </p>
+
+<p class="definition"> <a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a> の <a class="el" href="_collision_object_8h_source.html#l00039">39</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Base/CollisionBase/CollisionObject/<a class="el" href="_collision_object_8h_source.html">CollisionObject.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Base/CollisionBase/CollisionObject/<a class="el" href="_collision_object_8cpp.html">CollisionObject.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Base/CollisionBase/CollisionObject/<a class="el" href="_collision_object_8cpp_source.html">CollisionObject.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

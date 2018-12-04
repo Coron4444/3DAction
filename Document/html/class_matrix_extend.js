@@ -8,6 +8,12 @@ var class_matrix_extend =
     [ "GetTranslationMatrix", "class_matrix_extend.html#a95b114379190ca0fee5d40394f9842f1", null ],
     [ "GetWorldMatrix", "class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15", null ],
     [ "MultiplicationParentMatrix", "class_matrix_extend.html#a1847728feb977bd7ccdf1987953fe203", null ],
+    [ "ResetAllMatrix", "class_matrix_extend.html#a81db064716c74390d9c4b7e1022a4b27", null ],
+    [ "ResetInverseMatrix", "class_matrix_extend.html#a14f5cf7ced273e96c238cc416d0719ac", null ],
+    [ "ResetRotationMatrix", "class_matrix_extend.html#a52ebf23df3851d1225faf7211595811f", null ],
+    [ "ResetScaleMatrix", "class_matrix_extend.html#a1932807f81cebd1d4d101ad4be13e55d", null ],
+    [ "ResetTranslationMatrix", "class_matrix_extend.html#aea89536d6cbcc73909ee79111f13dd28", null ],
+    [ "ResetWorldMatrix", "class_matrix_extend.html#a06d4bd42be11fba786917bef61a4e66d", null ],
     [ "TransposeMatrixTranslationOff", "class_matrix_extend.html#ae567bb2d140dff892ed1b63f8de33ba9", null ],
     [ "UpdateInverseMatrix", "class_matrix_extend.html#a5aa7bce55ed92acb79d21fda51e83146", null ],
     [ "UpdateRotationMatrix", "class_matrix_extend.html#afa307701c3147fc345ed10dee054affb", null ],
@@ -15,5 +21,10 @@ var class_matrix_extend =
     [ "UpdateTranslationMatrix", "class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6", null ],
     [ "UpdateTransposeMatrix", "class_matrix_extend.html#a81e92fe4305ff9569809b61e2e92df31", null ],
     [ "UpdateWorldMatrixISRT", "class_matrix_extend.html#ab0aaf14f8621fde91f9db5537a4187e6", null ],
-    [ "UpdateWorldMatrixSRT", "class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd", null ]
+    [ "UpdateWorldMatrixSRT", "class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd", null ],
+    [ "matrix_inverse_", "class_matrix_extend.html#a5b0c6e48cb1c541aabe7173378b7bc36", null ],
+    [ "matrix_rotation_", "class_matrix_extend.html#a13ea114cb34c9bafd161218a5dc9a910", null ],
+    [ "matrix_scale_", "class_matrix_extend.html#ad52c6304eb4d66c787b386b60b8f3492", null ],
+    [ "matrix_translation_", "class_matrix_extend.html#a265c3939a53787d87ee9c27386ebff7f", null ],
+    [ "matrix_world_", "class_matrix_extend.html#ae464d60827194857bc39c2f0cffd768b", null ]
 ];

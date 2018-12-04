@@ -4,6 +4,30 @@
 
 {\ttfamily \#include $<$Model\+F\+B\+X\+Object.\+h$>$}
 
+
+
+Model\+F\+B\+X\+Object 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_model_f_b_x_object_1_1_bone}{Bone}}
+\item 
+struct \mbox{\hyperlink{struct_model_f_b_x_object_1_1_impact}{Impact}}
+\item 
+struct \mbox{\hyperlink{struct_model_f_b_x_object_1_1_mesh___direct_x9}{Mesh\+\_\+\+Direct\+X9}}
+\item 
+class \mbox{\hyperlink{class_model_f_b_x_object_1_1_m_f_m_a_n_i_m_e_d_a_t_a}{M\+F\+M\+A\+N\+I\+M\+E\+D\+A\+TA}}
+\item 
+struct \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}}
+\item 
+struct \mbox{\hyperlink{struct_model_f_b_x_object_1_1_v_e_r_t_e_x__3_d}{V\+E\+R\+T\+E\+X\+\_\+3D}}
+\end{DoxyCompactItemize}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,6 +50,35 @@ int \mbox{\hyperlink{class_model_f_b_x_object_abbeaa886c4f8f6c0d1608d58cc013226}
 \item 
 std\+::string \mbox{\hyperlink{class_model_f_b_x_object_a9a1728e6b2d5f1a49b26c1aaf75049f0}{shader\+\_\+name\+\_\+}}
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_model_f_b_x_object_a962ffe35009b920c09e2aaa3154051e4}{Create\+Vertex}} (\mbox{\hyperlink{classmfmlib_1_1_model}{mfmlib\+::\+Model}} $\ast$temp\+\_\+model, std\+::vector$<$ \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}} $>$ $\ast$temp\+\_\+mesh, const std\+::string $\ast$file\+\_\+path)
+\item 
+void \mbox{\hyperlink{class_model_f_b_x_object_a3fba4178f5a21dd3c180cb16f0a05106}{Create\+Material}} (\mbox{\hyperlink{classmfmlib_1_1_model}{mfmlib\+::\+Model}} $\ast$temp\+\_\+model)
+\item 
+void \mbox{\hyperlink{class_model_f_b_x_object_a930e90d4107466549946b1f318857954}{Access\+V\+R\+AM}} (L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 p\+Device, std\+::vector$<$ \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}} $>$ $\ast$temp\+\_\+mesh)
+\item 
+void \mbox{\hyperlink{class_model_f_b_x_object_aa74ce889c6840f2a9d0fa54b420b9e2d}{Registration\+Vertex}} (std\+::vector$<$ \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}} $>$ $\ast$temp\+\_\+mesh)
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_f_b_x_object_1_1_m_f_m_a_n_i_m_e_d_a_t_a}{M\+F\+M\+A\+N\+I\+M\+E\+D\+A\+TA}} \mbox{\hyperlink{class_model_f_b_x_object_a2dd981a6140173ff3ef10f4f6c633a6e}{mfm\+\_\+model\+\_\+data\+\_\+}}
+\item 
+\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} $\ast$ \mbox{\hyperlink{class_model_f_b_x_object_ab7f88e9b17a28e644d1967b2e39a450d}{texture\+\_\+manager\+\_\+}}
+\item 
+I\+Direct3\+D\+Vertex\+Declaration9 $\ast$ \mbox{\hyperlink{class_model_f_b_x_object_a7b592156afe70e5dd416967a44bc1470}{vertex\+\_\+declaration\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}} $>$ \mbox{\hyperlink{class_model_f_b_x_object_a3e2d4d9bd6d754a18f3e1bf713ff5012}{mesh\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Model\+F\+B\+X\+Object.\+h の 54 行目に定義があります。
+
 
 
 \subsection{構築子と解体子}
@@ -35,6 +88,18 @@ std\+::string \mbox{\hyperlink{class_model_f_b_x_object_a9a1728e6b2d5f1a49b26c1a
 \subsubsection{\texorpdfstring{Model\+F\+B\+X\+Object()}{ModelFBXObject()}}
 {\footnotesize\ttfamily Model\+F\+B\+X\+Object\+::\+Model\+F\+B\+X\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} $\ast$}]{texture\+\_\+manager,  }\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 61 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_a45586ead07b17f4a90ba320c41d7f1c3_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_model_f_b_x_object_a3fa838235e50d797539d6b266f8e2c96}\label{class_model_f_b_x_object_a3fa838235e50d797539d6b266f8e2c96}} 
 \index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!````~Model\+F\+B\+X\+Object@{$\sim$\+Model\+F\+B\+X\+Object}}
 \index{````~Model\+F\+B\+X\+Object@{$\sim$\+Model\+F\+B\+X\+Object}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
@@ -43,12 +108,82 @@ std\+::string \mbox{\hyperlink{class_model_f_b_x_object_a9a1728e6b2d5f1a49b26c1a
 
 
 
+ Model\+F\+B\+X\+Object.\+cpp の 103 行目に定義があります。
+
+
+
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_model_f_b_x_object_a930e90d4107466549946b1f318857954}\label{class_model_f_b_x_object_a930e90d4107466549946b1f318857954}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Access\+V\+R\+AM@{Access\+V\+R\+AM}}
+\index{Access\+V\+R\+AM@{Access\+V\+R\+AM}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{Access\+V\+R\+A\+M()}{AccessVRAM()}}
+{\footnotesize\ttfamily void Model\+F\+B\+X\+Object\+::\+Access\+V\+R\+AM (\begin{DoxyParamCaption}\item[{L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9}]{p\+Device,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}} $>$ $\ast$}]{temp\+\_\+mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 308 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_a930e90d4107466549946b1f318857954_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_a930e90d4107466549946b1f318857954_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_f_b_x_object_a3fba4178f5a21dd3c180cb16f0a05106}\label{class_model_f_b_x_object_a3fba4178f5a21dd3c180cb16f0a05106}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Create\+Material@{Create\+Material}}
+\index{Create\+Material@{Create\+Material}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{Create\+Material()}{CreateMaterial()}}
+{\footnotesize\ttfamily void Model\+F\+B\+X\+Object\+::\+Create\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmfmlib_1_1_model}{mfmlib\+::\+Model}} $\ast$}]{temp\+\_\+model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 263 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_a3fba4178f5a21dd3c180cb16f0a05106_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_model_f_b_x_object_a962ffe35009b920c09e2aaa3154051e4}\label{class_model_f_b_x_object_a962ffe35009b920c09e2aaa3154051e4}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{Create\+Vertex()}{CreateVertex()}}
+{\footnotesize\ttfamily void Model\+F\+B\+X\+Object\+::\+Create\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmfmlib_1_1_model}{mfmlib\+::\+Model}} $\ast$}]{temp\+\_\+model,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}} $>$ $\ast$}]{temp\+\_\+mesh,  }\item[{const std\+::string $\ast$}]{file\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 120 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_a962ffe35009b920c09e2aaa3154051e4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_model_f_b_x_object_abbeaa886c4f8f6c0d1608d58cc013226}\label{class_model_f_b_x_object_abbeaa886c4f8f6c0d1608d58cc013226}} 
 \index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Get\+Animation\+Frame\+Max@{Get\+Animation\+Frame\+Max}}
 \index{Get\+Animation\+Frame\+Max@{Get\+Animation\+Frame\+Max}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
 \subsubsection{\texorpdfstring{Get\+Animation\+Frame\+Max()}{GetAnimationFrameMax()}}
 {\footnotesize\ttfamily int Model\+F\+B\+X\+Object\+::\+Get\+Animation\+Frame\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+h の 129 行目に定義があります。
 
 \mbox{\Hypertarget{class_model_f_b_x_object_a87516b4e5aa6341188e47f956d4a180f}\label{class_model_f_b_x_object_a87516b4e5aa6341188e47f956d4a180f}} 
 \index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Get\+Animation\+Frame\+Num@{Get\+Animation\+Frame\+Num}}
@@ -56,18 +191,64 @@ std\+::string \mbox{\hyperlink{class_model_f_b_x_object_a9a1728e6b2d5f1a49b26c1a
 \subsubsection{\texorpdfstring{Get\+Animation\+Frame\+Num()}{GetAnimationFrameNum()}}
 {\footnotesize\ttfamily int Model\+F\+B\+X\+Object\+::\+Get\+Animation\+Frame\+Num (\begin{DoxyParamCaption}\item[{const int}]{animation\+\_\+count,  }\item[{int}]{animation\+\_\+speed }\end{DoxyParamCaption})}
 
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 505 行目に定義があります。
+
+\mbox{\Hypertarget{class_model_f_b_x_object_aa74ce889c6840f2a9d0fa54b420b9e2d}\label{class_model_f_b_x_object_aa74ce889c6840f2a9d0fa54b420b9e2d}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Registration\+Vertex@{Registration\+Vertex}}
+\index{Registration\+Vertex@{Registration\+Vertex}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{Registration\+Vertex()}{RegistrationVertex()}}
+{\footnotesize\ttfamily void Model\+F\+B\+X\+Object\+::\+Registration\+Vertex (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}} $>$ $\ast$}]{temp\+\_\+mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 343 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_aa74ce889c6840f2a9d0fa54b420b9e2d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_model_f_b_x_object_acbe9d90631a3ac39b9cf65097c39aaa9}\label{class_model_f_b_x_object_acbe9d90631a3ac39b9cf65097c39aaa9}} 
 \index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Set\+Color@{Set\+Color}}
 \index{Set\+Color@{Set\+Color}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
 \subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}}
 {\footnotesize\ttfamily void Model\+F\+B\+X\+Object\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color }\end{DoxyParamCaption})}
 
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 483 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_acbe9d90631a3ac39b9cf65097c39aaa9_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_model_f_b_x_object_a3c101cf65da1bdb55b7a11e71cefcad0}\label{class_model_f_b_x_object_a3c101cf65da1bdb55b7a11e71cefcad0}} 
 \index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!Set\+Model\+F\+B\+X\+Object@{Set\+Model\+F\+B\+X\+Object}}
 \index{Set\+Model\+F\+B\+X\+Object@{Set\+Model\+F\+B\+X\+Object}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
 \subsubsection{\texorpdfstring{Set\+Model\+F\+B\+X\+Object()}{SetModelFBXObject()}}
 {\footnotesize\ttfamily void Model\+F\+B\+X\+Object\+::\+Set\+Model\+F\+B\+X\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+ Model\+F\+B\+X\+Object.\+cpp の 377 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_f_b_x_object_a3c101cf65da1bdb55b7a11e71cefcad0_cgraph}
+\end{center}
+\end{figure}
 
 
 \subsection{メンバ詳解}
@@ -77,11 +258,59 @@ std\+::string \mbox{\hyperlink{class_model_f_b_x_object_a9a1728e6b2d5f1a49b26c1a
 \subsubsection{\texorpdfstring{light\+\_\+vector\+\_\+}{light\_vector\_}}
 {\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} Model\+F\+B\+X\+Object\+::light\+\_\+vector\+\_\+}
 
+
+
+ Model\+F\+B\+X\+Object.\+h の 145 行目に定義があります。
+
+\mbox{\Hypertarget{class_model_f_b_x_object_a3e2d4d9bd6d754a18f3e1bf713ff5012}\label{class_model_f_b_x_object_a3e2d4d9bd6d754a18f3e1bf713ff5012}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!mesh\+\_\+@{mesh\+\_\+}}
+\index{mesh\+\_\+@{mesh\+\_\+}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{mesh\+\_\+}{mesh\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_model_f_b_x_object_1_1_shaderbuff}{Shaderbuff}}$>$ Model\+F\+B\+X\+Object\+::mesh\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+h の 161 行目に定義があります。
+
+\mbox{\Hypertarget{class_model_f_b_x_object_a2dd981a6140173ff3ef10f4f6c633a6e}\label{class_model_f_b_x_object_a2dd981a6140173ff3ef10f4f6c633a6e}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!mfm\+\_\+model\+\_\+data\+\_\+@{mfm\+\_\+model\+\_\+data\+\_\+}}
+\index{mfm\+\_\+model\+\_\+data\+\_\+@{mfm\+\_\+model\+\_\+data\+\_\+}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{mfm\+\_\+model\+\_\+data\+\_\+}{mfm\_model\_data\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_f_b_x_object_1_1_m_f_m_a_n_i_m_e_d_a_t_a}{M\+F\+M\+A\+N\+I\+M\+E\+D\+A\+TA}} Model\+F\+B\+X\+Object\+::mfm\+\_\+model\+\_\+data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+h の 152 行目に定義があります。
+
 \mbox{\Hypertarget{class_model_f_b_x_object_a9a1728e6b2d5f1a49b26c1aaf75049f0}\label{class_model_f_b_x_object_a9a1728e6b2d5f1a49b26c1aaf75049f0}} 
 \index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!shader\+\_\+name\+\_\+@{shader\+\_\+name\+\_\+}}
 \index{shader\+\_\+name\+\_\+@{shader\+\_\+name\+\_\+}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
 \subsubsection{\texorpdfstring{shader\+\_\+name\+\_\+}{shader\_name\_}}
 {\footnotesize\ttfamily std\+::string Model\+F\+B\+X\+Object\+::shader\+\_\+name\+\_\+}
+
+
+
+ Model\+F\+B\+X\+Object.\+h の 146 行目に定義があります。
+
+\mbox{\Hypertarget{class_model_f_b_x_object_ab7f88e9b17a28e644d1967b2e39a450d}\label{class_model_f_b_x_object_ab7f88e9b17a28e644d1967b2e39a450d}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!texture\+\_\+manager\+\_\+@{texture\+\_\+manager\+\_\+}}
+\index{texture\+\_\+manager\+\_\+@{texture\+\_\+manager\+\_\+}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{texture\+\_\+manager\+\_\+}{texture\_manager\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}$\ast$ Model\+F\+B\+X\+Object\+::texture\+\_\+manager\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+h の 155 行目に定義があります。
+
+\mbox{\Hypertarget{class_model_f_b_x_object_a7b592156afe70e5dd416967a44bc1470}\label{class_model_f_b_x_object_a7b592156afe70e5dd416967a44bc1470}} 
+\index{Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}!vertex\+\_\+declaration\+\_\+@{vertex\+\_\+declaration\+\_\+}}
+\index{vertex\+\_\+declaration\+\_\+@{vertex\+\_\+declaration\+\_\+}!Model\+F\+B\+X\+Object@{Model\+F\+B\+X\+Object}}
+\subsubsection{\texorpdfstring{vertex\+\_\+declaration\+\_\+}{vertex\_declaration\_}}
+{\footnotesize\ttfamily I\+Direct3\+D\+Vertex\+Declaration9$\ast$ Model\+F\+B\+X\+Object\+::vertex\+\_\+declaration\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Object.\+h の 158 行目に定義があります。
 
 
 

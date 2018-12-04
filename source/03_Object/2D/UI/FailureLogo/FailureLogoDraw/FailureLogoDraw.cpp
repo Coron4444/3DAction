@@ -34,14 +34,14 @@ const float FailureLogoDraw::SCALE = 1.25f;
 void FailureLogoDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 
 	// ダウンキャスト
-	failure_logo_ = (FailureLogo*)GetGameObject();
+	failure_logo_ = (FailureLogo*)getpGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
@@ -59,7 +59,7 @@ void FailureLogoDraw::Init()
 // +終了関数
 //--------------------------------------------------
 void FailureLogoDraw::Uninit()
-{	
+{
 }
 
 
@@ -78,26 +78,26 @@ void FailureLogoDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* FailureLogoDraw::GetMatrix(unsigned object_index)
+unsigned FailureLogoDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	// メッシュ数の取得
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return failure_logo_->plane_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned FailureLogoDraw::GetMeshNum(unsigned object_index)
+MATRIX* FailureLogoDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return failure_logo_->plane_polygon_->GetMeshNum();
+	// メッシュ数の取得
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -105,7 +105,7 @@ unsigned FailureLogoDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* FailureLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* FailureLogoDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -118,8 +118,8 @@ D3DMATERIAL9* FailureLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 FailureLogoDraw::GetDecaleTexture(unsigned object_index, 
-													 unsigned mesh_index)
+LPDIRECT3DTEXTURE9 FailureLogoDraw::getpDecaleTexture(unsigned object_index,
+													  unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

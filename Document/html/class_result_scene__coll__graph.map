@@ -1,0 +1,6 @@
+<map id="ResultScene" name="ResultScene">
+<area shape="rect" id="node2" href="$class_scene_base.html" title="シーンBaseClass " alt="" coords="161,5,250,32"/>
+<area shape="rect" id="node3" href="$class_scene_base_1_1_state_base.html" title="シーンステートBaseClass " alt="" coords="126,109,285,136"/>
+<area shape="rect" id="node4" href="$class_scene_manager.html" title="シーンマネージャClass " alt="" coords="343,109,452,136"/>
+<area shape="rect" id="node5" href="$class_scene_manager_1_1_common_data.html" title="シーン間共通データClass " alt="" coords="434,5,630,32"/>
+</map>

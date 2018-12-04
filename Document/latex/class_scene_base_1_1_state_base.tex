@@ -1,0 +1,245 @@
+\hypertarget{class_scene_base_1_1_state_base}{}\section{Scene\+Base\+:\+:State\+Base クラス}
+\label{class_scene_base_1_1_state_base}\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+
+
+シーンステート\+Base\+Class  
+
+
+
+
+{\ttfamily \#include $<$Scene\+Base.\+h$>$}
+
+
+
+Scene\+Base\+:\+:State\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_base_1_1_state_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Scene\+Base\+:\+:State\+Base 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_base_1_1_state_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_scene_base_1_1_state_base_afc993757f908babc872063e1e2465e3e}{$\sim$\+State\+Base}} ()
+\begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8}{Init}} ()=0
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_a2763fa37e45b39bd8d3bbb735c76c59b}{Uninit}} ()=0
+\begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c}{Update}} ()=0
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977}{Reset}} ()=0
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44}{set\+Scene}} (\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$value)
+\end{DoxyCompactItemize}
+\subsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$ \mbox{\hyperlink{class_scene_base_1_1_state_base_ae1062afb3f96664e24504151eaccf40f}{scene\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em シーン \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+シーンステート\+Base\+Class 
+
+シーンステートの\+Base\+Class 
+
+ Scene\+Base.\+h の 39 行目に定義があります。
+
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_afc993757f908babc872063e1e2465e3e}\label{class_scene_base_1_1_state_base_afc993757f908babc872063e1e2465e3e}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!````~State\+Base@{$\sim$\+State\+Base}}
+\index{````~State\+Base@{$\sim$\+State\+Base}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+State\+Base()}{~StateBase()}}
+{\footnotesize\ttfamily virtual Scene\+Base\+::\+State\+Base\+::$\sim$\+State\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+仮想デストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+
+ Scene\+Base.\+h の 56 行目に定義があります。
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8}\label{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!Init@{Init}}
+\index{Init@{Init}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Scene\+Base\+::\+State\+Base\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_title_scene_state___start_a3e785ba088ac3fd0989fd657e5d0cd34}{Title\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___end_a572e5687140ff5ac43789f90462c05a5}{Tutorial\+Scene\+State\+\_\+\+End}}, \mbox{\hyperlink{class_game_scene_state___start_ae921c57f349fbb2f00a197d40a3404b7}{Game\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_result_scene_state___start_a615c7e05efd2320b8956c5fd94398f55}{Result\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___start_acd4cd7e4efeebffa9616d7ca31c7b1c0}{Tutorial\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977}\label{class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!Reset@{Reset}}
+\index{Reset@{Reset}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Scene\+Base\+::\+State\+Base\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+リセット関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_title_scene_state___start_af4dfe902a4391ca8f0cff5d1aa9507f8}{Title\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___end_ada1a87235a021b40f8eca96e31879227}{Tutorial\+Scene\+State\+\_\+\+End}}, \mbox{\hyperlink{class_game_scene_state___start_a59270f7b65613f580864ed8ea3056179}{Game\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_result_scene_state___start_a8f776a7b2d31451c434fb74ffdd65960}{Result\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___start_a40bfdf7acd93b619138bf708adff31e4}{Tutorial\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44}\label{class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!set\+Scene@{set\+Scene}}
+\index{set\+Scene@{set\+Scene}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{set\+Scene()}{setScene()}}
+{\footnotesize\ttfamily void Scene\+Base\+::\+State\+Base\+::set\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Scene\+Base.\+h の 87 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_a2763fa37e45b39bd8d3bbb735c76c59b}\label{class_scene_base_1_1_state_base_a2763fa37e45b39bd8d3bbb735c76c59b}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!Uninit@{Uninit}}
+\index{Uninit@{Uninit}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
+{\footnotesize\ttfamily virtual void Scene\+Base\+::\+State\+Base\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+終了関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_title_scene_state___start_a5bcb4d7a9250ea1c0041c38616ffabfe}{Title\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___end_aafc0d8d042de8c7f79d84fcdc35a807c}{Tutorial\+Scene\+State\+\_\+\+End}}, \mbox{\hyperlink{class_game_scene_state___start_a636df8b7ac0173b044b0efc2927fb83b}{Game\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_result_scene_state___start_af5b9af607074e3296481a1660607fb9a}{Result\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___start_a974962addfb0bcba90fbab64ac6d50f0}{Tutorial\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c}\label{class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!Update@{Update}}
+\index{Update@{Update}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Scene\+Base\+::\+State\+Base\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+更新関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_title_scene_state___start_a2e98cf6810711b58766d7147168d02eb}{Title\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___end_a7cdf03fa9a0e41ab86c2b41b8165ad09}{Tutorial\+Scene\+State\+\_\+\+End}}, \mbox{\hyperlink{class_game_scene_state___start_ae11bb8d8ea9eae4fea2a9acf33dd1c8b}{Game\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_result_scene_state___start_a2ecdef2bef0cd1a04055e8687e11199b}{Result\+Scene\+State\+\_\+\+Start}}, \mbox{\hyperlink{class_tutorial_scene_state___start_a93c322692bf56172f383d3e5b17cd85c}{Tutorial\+Scene\+State\+\_\+\+Start}}で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_ae1062afb3f96664e24504151eaccf40f}\label{class_scene_base_1_1_state_base_ae1062afb3f96664e24504151eaccf40f}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!scene\+\_\+@{scene\+\_\+}}
+\index{scene\+\_\+@{scene\+\_\+}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{scene\+\_\+}{scene\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_base}{Scene\+Base}}$\ast$ Scene\+Base\+::\+State\+Base\+::scene\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+シーン 
+
+
+
+ Scene\+Base.\+h の 45 行目に定義があります。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scene\+Base/\mbox{\hyperlink{_scene_base_8h}{Scene\+Base.\+h}}\end{DoxyCompactItemize}

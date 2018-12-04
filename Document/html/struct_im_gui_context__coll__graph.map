@@ -1,0 +1,51 @@
+<map id="ImGuiContext" name="ImGuiContext">
+<area shape="rect" id="node2" href="$struct_im_gui_text_edit_state.html" title="ImGuiTextEditState" alt="" coords="2272,83,2407,109"/>
+<area shape="rect" id="node3" href="$struct_im_gui_stb_1_1_s_t_b___textedit_state.html" title="ImGuiStb::STB_TexteditState" alt="" coords="1876,7,2069,33"/>
+<area shape="rect" id="node4" href="$struct_im_gui_stb_1_1_stb_undo_state.html" title="ImGuiStb::StbUndoState" alt="" coords="1467,7,1633,33"/>
+<area shape="rect" id="node5" href="$class_im_vector.html" title="ImVector\&lt; char \&gt;" alt="" coords="1911,161,2034,188"/>
+<area shape="rect" id="node43" href="$struct_im_gui_text_buffer.html" title="ImGuiTextBuffer" alt="" coords="2282,223,2397,249"/>
+<area shape="rect" id="node6" href="$class_im_vector.html" title="ImVector\&lt; ImWchar \&gt;" alt="" coords="1897,57,2048,84"/>
+<area shape="rect" id="node7" href="$class_im_vector.html" title="ImVector\&lt; ImGuiPopupRef \&gt;" alt="" coords="2245,576,2433,603"/>
+<area shape="rect" id="node8" href="$struct_im_gui_popup_ref.html" title="ImGuiPopupRef" alt="" coords="1917,576,2029,603"/>
+<area shape="rect" id="node9" href="$struct_im_vec2.html" title="ImVec2" alt="" coords="20,1349,87,1376"/>
+<area shape="rect" id="node10" href="$struct_im_gui_window.html" title="ImGuiWindow" alt="" coords="1499,688,1601,715"/>
+<area shape="rect" id="node14" href="$struct_im_gui_draw_context.html" title="ImGuiDrawContext" alt="" coords="2274,627,2405,653"/>
+<area shape="rect" id="node15" href="$struct_im_rect.html" title="ImRect" alt="" coords="1134,497,1197,524"/>
+<area shape="rect" id="node24" href="$struct_im_draw_vert.html" title="ImDrawVert" alt="" coords="293,799,383,825"/>
+<area shape="rect" id="node26" href="$class_im_vector.html" title="ImVector\&lt; ImVec2 \&gt;" alt="" coords="459,1025,602,1052"/>
+<area shape="rect" id="node31" href="$struct_im_gui_size_constraint_callback_data.html" title="ImGuiSizeConstraintCallbackData" alt="" coords="849,1452,1068,1479"/>
+<area shape="rect" id="node34" href="$struct_im_gui_i_o.html" title="ImGuiIO" alt="" coords="1131,1597,1200,1624"/>
+<area shape="rect" id="node35" href="$struct_im_font_atlas.html" title="ImFontAtlas" alt="" coords="292,1705,384,1732"/>
+<area shape="rect" id="node37" href="$struct_im_font_config.html" title="ImFontConfig" alt="" coords="1116,1873,1215,1900"/>
+<area shape="rect" id="node38" href="$struct_im_font.html" title="ImFont" alt="" coords="700,1912,763,1939"/>
+<area shape="rect" id="node45" href="$struct_im_gui_ini_data.html" title="ImGuiIniData" alt="" coords="290,2084,386,2111"/>
+<area shape="rect" id="node46" href="$struct_im_gui_style.html" title="ImGuiStyle" alt="" coords="688,1277,775,1304"/>
+<area shape="rect" id="node47" href="$struct_im_gui_mouse_cursor_data.html" title="ImGuiMouseCursorData" alt="" coords="451,2148,611,2175"/>
+<area shape="rect" id="node17" href="$class_im_vector.html" title="ImVector\&lt; ImGuiWindow *\&gt;" alt="" coords="1881,691,2064,717"/>
+<area shape="rect" id="node11" href="$struct_im_gui_storage.html" title="ImGuiStorage" alt="" coords="1115,289,1216,316"/>
+<area shape="rect" id="node12" href="$class_im_vector.html" title="ImVector\&lt; ImGuiStorage\l::Pair \&gt;" alt="" coords="649,282,814,323"/>
+<area shape="rect" id="node13" href="$struct_im_gui_storage_1_1_pair.html" title="ImGuiStorage::Pair" alt="" coords="272,289,404,316"/>
+<area shape="rect" id="node16" href="$class_im_vector.html" title="ImVector\&lt; float \&gt;" alt="" coords="277,1512,399,1539"/>
+<area shape="rect" id="node18" href="$class_im_vector.html" title="ImVector\&lt; ImGuiID \&gt;" alt="" coords="1093,736,1237,763"/>
+<area shape="rect" id="node19" href="$struct_im_gui_simple_columns.html" title="ImGuiSimpleColumns" alt="" coords="1092,787,1239,813"/>
+<area shape="rect" id="node20" href="$struct_im_draw_list.html" title="ImDrawList" alt="" coords="1122,935,1209,961"/>
+<area shape="rect" id="node30" href="$class_im_vector.html" title="ImVector\&lt; ImDrawList *\&gt;" alt="" coords="1669,872,1836,899"/>
+<area shape="rect" id="node48" href="$struct_im_draw_data.html" title="ImDrawData" alt="" coords="2115,964,2207,991"/>
+<area shape="rect" id="node21" href="$class_im_vector.html" title="ImVector\&lt; ImVec4 \&gt;" alt="" coords="660,1075,803,1101"/>
+<area shape="rect" id="node22" href="$struct_im_vec4.html" title="ImVec4" alt="" coords="305,1089,371,1116"/>
+<area shape="rect" id="node33" href="$struct_im_gui_col_mod.html" title="ImGuiColMod" alt="" coords="681,1227,781,1253"/>
+<area shape="rect" id="node23" href="$class_im_vector.html" title="ImVector\&lt; ImDrawVert \&gt;" alt="" coords="649,747,814,773"/>
+<area shape="rect" id="node25" href="$class_im_vector.html" title="ImVector\&lt; ImDrawChannel \&gt;" alt="" coords="637,1125,825,1152"/>
+<area shape="rect" id="node27" href="$class_im_vector.html" title="ImVector\&lt; ImDrawCmd \&gt;" alt="" coords="647,860,815,887"/>
+<area shape="rect" id="node28" href="$class_im_vector.html" title="ImVector\&lt; ImDrawIdx \&gt;" alt="" coords="652,911,811,937"/>
+<area shape="rect" id="node29" href="$class_im_vector.html" title="ImVector\&lt; ImTextureID \&gt;" alt="" coords="648,961,815,988"/>
+<area shape="rect" id="node32" href="$class_im_vector.html" title="ImVector\&lt; ImGuiColMod \&gt;" alt="" coords="1263,1105,1439,1132"/>
+<area shape="rect" id="node36" href="$class_im_vector.html" title="ImVector\&lt; ImFontConfig \&gt;" alt="" coords="1463,1816,1637,1843"/>
+<area shape="rect" id="node42" href="$class_im_vector.html" title="ImVector\&lt; ImFont *\&gt;" alt="" coords="1094,1693,1237,1720"/>
+<area shape="rect" id="node39" href="$class_im_vector.html" title="ImVector\&lt; ImFontGlyph \&gt;" alt="" coords="252,1971,424,1997"/>
+<area shape="rect" id="node40" href="$struct_im_font_glyph.html" title="ImFontGlyph" alt="" coords="5,1999,101,2025"/>
+<area shape="rect" id="node41" href="$class_im_vector.html" title="ImVector\&lt; unsigned\l short \&gt;" alt="" coords="269,1905,407,1946"/>
+<area shape="rect" id="node44" href="$class_im_vector.html" title="ImVector\&lt; ImGuiIniData \&gt;" alt="" coords="873,2069,1045,2096"/>
+<area shape="rect" id="node49" href="$class_im_vector.html" title="ImVector\&lt; ImGuiStyleMod \&gt;" alt="" coords="2246,1504,2433,1531"/>
+<area shape="rect" id="node50" href="$struct_im_gui_style_mod.html" title="ImGuiStyleMod" alt="" coords="1917,1504,2028,1531"/>
+</map>

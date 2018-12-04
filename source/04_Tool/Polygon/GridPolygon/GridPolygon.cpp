@@ -38,7 +38,7 @@ GridPolygon::GridPolygon()
 	CreateVertex();
 	CreateMaterial();
 
-	Renderer::GetInstance()->GetDevice(&device_);
+	Renderer::getpInstance()->getDevice(&device_);
 	if (device_ == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(GridPolygon.cpp)", "Error", MB_OK);

@@ -1,0 +1,14 @@
+<map id="TextureObject::GetHandler" name="TextureObject::GetHandler">
+<area shape="rect" id="node2" href="$class_clear_logo_draw.html#a04ae25ae9cb59df0d0c346b65baed3f2" title="ClearLogoDraw::GetDecale\lTexture" alt="" coords="250,5,429,47"/>
+<area shape="rect" id="node3" href="$class_failure_logo_draw.html#a2a74fafba17b2f63b1c61abd67289afd" title="FailureLogoDraw::GetDecale\lTexture" alt="" coords="246,71,433,112"/>
+<area shape="rect" id="node4" href="$class_push_space_logo_draw.html#a4990a9f5662af324f2632e8647cbdde4" title="PushSpaceLogoDraw::\lGetDecaleTexture" alt="" coords="262,136,417,177"/>
+<area shape="rect" id="node5" href="$class_title_logo_draw.html#ab727012424a02249a90a0f7d247371a8" title="TitleLogoDraw::GetDecale\lTexture" alt="" coords="253,201,425,243"/>
+<area shape="rect" id="node6" href="$class_tutorial_logo_draw.html#ad9df98aa8a5b11872dba6f6609589035" title="TutorialLogoDraw::GetDecale\lTexture" alt="" coords="244,267,435,308"/>
+<area shape="rect" id="node7" href="$class_coin_draw.html#a1d4ab1a5c480833b8d8e7fe226136ad5" title="CoinDraw::GetDecaleTexture" alt="" coords="245,333,434,359"/>
+<area shape="rect" id="node8" href="$class_field_draw.html#a67eabcc5ffd6697b87e89a1c4ddb95f6" title="FieldDraw::GetDecaleTexture" alt="" coords="244,383,435,410"/>
+<area shape="rect" id="node9" href="$class_player_draw.html#a6cecfb28942044efff0b9d6213b511a5" title="PlayerDraw::GetDecaleTexture" alt="" coords="239,434,439,461"/>
+<area shape="rect" id="node10" href="$class_player_draw.html#abb93b530e38fc224ecbfe17d623f10fb" title="PlayerDraw::GetNormalTexture" alt="" coords="239,485,440,511"/>
+<area shape="rect" id="node11" href="$class_sky_dome_draw.html#a1d708782f13648724e423d1dca22b213" title="SkyDomeDraw::GetDecaleTexture" alt="" coords="229,535,449,562"/>
+<area shape="rect" id="node12" href="$class_stencil_shadow_test_draw.html#a387a97781f743aa0ea0727c050ef53b2" title="StencilShadowTestDraw\l::GetDecaleTexture" alt="" coords="258,587,421,628"/>
+<area shape="rect" id="node13" href="$class_number_draw.html#ad1d9a4cee49e7bddce51b5c58e739de9" title="NumberDraw::GetDecaleTexture" alt="" coords="235,653,443,679"/>
+</map>

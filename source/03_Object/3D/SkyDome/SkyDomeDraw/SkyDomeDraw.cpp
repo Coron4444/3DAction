@@ -30,11 +30,11 @@ const std::string SkyDomeDraw::MODEL_NAME = "SkyDome/SkyDome.x";
 void SkyDomeDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
-	GetDrawOrderList()->SetIsLighting(false);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetIsLighting(false);
 
 	// Xモデル登録
 	sky_dome_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
@@ -47,7 +47,7 @@ void SkyDomeDraw::Init()
 //--------------------------------------------------
 void SkyDomeDraw::Uninit()
 {
-	
+
 }
 
 
@@ -64,25 +64,25 @@ void SkyDomeDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* SkyDomeDraw::GetMatrix(unsigned object_index)
+unsigned SkyDomeDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return sky_dome_model_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned SkyDomeDraw::GetMeshNum(unsigned object_index)
+MATRIX* SkyDomeDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return sky_dome_model_->GetMeshNum();
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -90,7 +90,7 @@ unsigned SkyDomeDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* SkyDomeDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* SkyDomeDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 
@@ -102,8 +102,8 @@ D3DMATERIAL9* SkyDomeDraw::GetMaterial(unsigned object_index, unsigned mesh_inde
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 SkyDomeDraw::GetDecaleTexture(unsigned object_index, 
-												 unsigned mesh_index)
+LPDIRECT3DTEXTURE9 SkyDomeDraw::getpDecaleTexture(unsigned object_index,
+												  unsigned mesh_index)
 {
 	object_index = object_index;
 

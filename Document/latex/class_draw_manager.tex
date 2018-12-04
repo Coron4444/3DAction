@@ -9,6 +9,15 @@
 
 {\ttfamily \#include $<$Draw\+Manager.\+h$>$}
 
+
+
+Draw\+Manager 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,6 +48,36 @@ void \mbox{\hyperlink{class_draw_manager_a470edae8248d36956a02bab7e59a4140}{Set\
 \item 
 static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 10000
 \begin{DoxyCompactList}\small\item\em 描画配列数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_draw_manager_a984cd9de288151fd1d170f80f93a11e8}{Add\+Contents\+Of\+Await\+Add\+Array}} ()
+\begin{DoxyCompactList}\small\item\em 追加待ち配列の中身を追加関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a76361402a035f02084e9faf31e782d69}{Release\+Contents\+Of\+Await\+Release\+Array}} ()
+\begin{DoxyCompactList}\small\item\em 解放待ち配列の中身を解放関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9}{Update\+All\+Draw\+Base}} ()
+\begin{DoxyCompactList}\small\item\em 全描画基底クラス更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744}{Update\+All\+Render\+Target}} ()
+\begin{DoxyCompactList}\small\item\em 全レンダーターゲット更新関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a20787acc9c5a096e80651dc1909ae60d}{Reset\+All\+Render\+Target}} ()
+\begin{DoxyCompactList}\small\item\em 全レンダーターゲットリセット関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6}{Distribute\+Draw\+Base}} ()
+\begin{DoxyCompactList}\small\item\em 描画基底クラス振り分け関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$, \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}} $>$ \mbox{\hyperlink{class_draw_manager_a328d73b404a5609d3e89a299362253fd}{all\+\_\+draw\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 全描画配列 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$, \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}} $>$ \mbox{\hyperlink{class_draw_manager_aa6a8468dd4469cde2cf162b91a5c1faf}{await\+\_\+add\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 追加待ち配列 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ \mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$, \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}} $>$ \mbox{\hyperlink{class_draw_manager_a59fa29ded26b3609545a04b5c6927824}{await\+\_\+release\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 解放待ち配列 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_manager}{Shader\+Manager}} $\ast$ \mbox{\hyperlink{class_draw_manager_aac4cfc76f2953c30ed5eac54b544d0ad}{shader\+\_\+manager\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em シェーダーマネージャ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_back_buffer}{Back\+Buffer}} $\ast$ \mbox{\hyperlink{class_draw_manager_a53e3e9c0794c049fde69e7e5603df22f}{back\+\_\+buffer\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em バックバッファ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} \mbox{\hyperlink{class_draw_manager_a0ec52b1d65b765e4fe336d814c2bc11c}{directional\+\_\+light\+\_\+vector\+\_\+}} = \{0.\+5f, -\/1.\+0f, 0.\+8f\}
+\begin{DoxyCompactList}\small\item\em 拡散反射光ベクトル \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -46,7 +85,40 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 登録されている描画基底クラスを管理するクラス 
 
+ Draw\+Manager.\+h の 37 行目に定義があります。
+
+
+
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_draw_manager_a984cd9de288151fd1d170f80f93a11e8}\label{class_draw_manager_a984cd9de288151fd1d170f80f93a11e8}} 
+\index{Draw\+Manager@{Draw\+Manager}!Add\+Contents\+Of\+Await\+Add\+Array@{Add\+Contents\+Of\+Await\+Add\+Array}}
+\index{Add\+Contents\+Of\+Await\+Add\+Array@{Add\+Contents\+Of\+Await\+Add\+Array}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Contents\+Of\+Await\+Add\+Array()}{AddContentsOfAwaitAddArray()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Add\+Contents\+Of\+Await\+Add\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+追加待ち配列の中身を追加関数 
+
+
+
+ Draw\+Manager.\+cpp の 195 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286}\label{class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286}} 
 \index{Draw\+Manager@{Draw\+Manager}!Add\+Draw\+Base\+To\+Array@{Add\+Draw\+Base\+To\+Array}}
 \index{Add\+Draw\+Base\+To\+Array@{Add\+Draw\+Base\+To\+Array}!Draw\+Manager@{Draw\+Manager}}
@@ -57,6 +129,54 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 描画基底クラスの追加関数 
 
+
+
+ Draw\+Manager.\+cpp の 136 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6}\label{class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6}} 
+\index{Draw\+Manager@{Draw\+Manager}!Distribute\+Draw\+Base@{Distribute\+Draw\+Base}}
+\index{Distribute\+Draw\+Base@{Distribute\+Draw\+Base}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Distribute\+Draw\+Base()}{DistributeDrawBase()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Distribute\+Draw\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+描画基底クラス振り分け関数 
+
+
+
+ Draw\+Manager.\+cpp の 270 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a43372495e68d77a2698f211cf921b37e}\label{class_draw_manager_a43372495e68d77a2698f211cf921b37e}} 
 \index{Draw\+Manager@{Draw\+Manager}!Draw@{Draw}}
 \index{Draw@{Draw}!Draw\+Manager@{Draw\+Manager}}
@@ -67,18 +187,61 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 描画関数 
 
+
+
+ Draw\+Manager.\+cpp の 125 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a43372495e68d77a2698f211cf921b37e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a43372495e68d77a2698f211cf921b37e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7}\label{class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7}} 
 \index{Draw\+Manager@{Draw\+Manager}!Get\+Back\+Buffer@{Get\+Back\+Buffer}}
 \index{Get\+Back\+Buffer@{Get\+Back\+Buffer}!Draw\+Manager@{Draw\+Manager}}
 \subsubsection{\texorpdfstring{Get\+Back\+Buffer()}{GetBackBuffer()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_back_buffer}{Back\+Buffer}}$\ast$ Draw\+Manager\+::\+Get\+Back\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Draw\+Manager.\+h の 116 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a952023ad9e2e12844c93e37029a32700}\label{class_draw_manager_a952023ad9e2e12844c93e37029a32700}} 
 \index{Draw\+Manager@{Draw\+Manager}!Get\+Directional\+Light\+Vector@{Get\+Directional\+Light\+Vector}}
 \index{Get\+Directional\+Light\+Vector@{Get\+Directional\+Light\+Vector}!Draw\+Manager@{Draw\+Manager}}
 \subsubsection{\texorpdfstring{Get\+Directional\+Light\+Vector()}{GetDirectionalLightVector()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}$\ast$ Draw\+Manager\+::\+Get\+Directional\+Light\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Draw\+Manager.\+h の 114 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a952023ad9e2e12844c93e37029a32700_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f}\label{class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f}} 
 \index{Draw\+Manager@{Draw\+Manager}!Init@{Init}}
 \index{Init@{Init}!Draw\+Manager@{Draw\+Manager}}
@@ -89,6 +252,26 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 初期化関数 
 
+
+
+ Draw\+Manager.\+cpp の 32 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec}\label{class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec}} 
 \index{Draw\+Manager@{Draw\+Manager}!Overwrite\+Array\+Draw\+Base@{Overwrite\+Array\+Draw\+Base}}
 \index{Overwrite\+Array\+Draw\+Base@{Overwrite\+Array\+Draw\+Base}!Draw\+Manager@{Draw\+Manager}}
@@ -99,6 +282,48 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 描画基底クラスの上書き関数 
 
+
+
+ Draw\+Manager.\+cpp の 147 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_draw_manager_a76361402a035f02084e9faf31e782d69}\label{class_draw_manager_a76361402a035f02084e9faf31e782d69}} 
+\index{Draw\+Manager@{Draw\+Manager}!Release\+Contents\+Of\+Await\+Release\+Array@{Release\+Contents\+Of\+Await\+Release\+Array}}
+\index{Release\+Contents\+Of\+Await\+Release\+Array@{Release\+Contents\+Of\+Await\+Release\+Array}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Release\+Contents\+Of\+Await\+Release\+Array()}{ReleaseContentsOfAwaitReleaseArray()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Release\+Contents\+Of\+Await\+Release\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+解放待ち配列の中身を解放関数 
+
+
+
+ Draw\+Manager.\+cpp の 215 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a76361402a035f02084e9faf31e782d69_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a76361402a035f02084e9faf31e782d69_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a287d1f359b87f075b22df6a9b6e99316}\label{class_draw_manager_a287d1f359b87f075b22df6a9b6e99316}} 
 \index{Draw\+Manager@{Draw\+Manager}!Release\+Draw\+Base\+From\+Array@{Release\+Draw\+Base\+From\+Array}}
 \index{Release\+Draw\+Base\+From\+Array@{Release\+Draw\+Base\+From\+Array}!Draw\+Manager@{Draw\+Manager}}
@@ -109,11 +334,65 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 描画基底クラスの解放関数 
 
+
+
+ Draw\+Manager.\+cpp の 184 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_draw_manager_a20787acc9c5a096e80651dc1909ae60d}\label{class_draw_manager_a20787acc9c5a096e80651dc1909ae60d}} 
+\index{Draw\+Manager@{Draw\+Manager}!Reset\+All\+Render\+Target@{Reset\+All\+Render\+Target}}
+\index{Reset\+All\+Render\+Target@{Reset\+All\+Render\+Target}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Reset\+All\+Render\+Target()}{ResetAllRenderTarget()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Reset\+All\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+全レンダーターゲットリセット関数 
+
+
+
+ Draw\+Manager.\+cpp の 259 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a470edae8248d36956a02bab7e59a4140}\label{class_draw_manager_a470edae8248d36956a02bab7e59a4140}} 
 \index{Draw\+Manager@{Draw\+Manager}!Set\+Directional\+Light\+Vector@{Set\+Directional\+Light\+Vector}}
 \index{Set\+Directional\+Light\+Vector@{Set\+Directional\+Light\+Vector}!Draw\+Manager@{Draw\+Manager}}
 \subsubsection{\texorpdfstring{Set\+Directional\+Light\+Vector()}{SetDirectionalLightVector()}}
 {\footnotesize\ttfamily void Draw\+Manager\+::\+Set\+Directional\+Light\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Draw\+Manager.\+h の 115 行目に定義があります。
 
 \mbox{\Hypertarget{class_draw_manager_ae58095d9d734f30211011e9205aa57aa}\label{class_draw_manager_ae58095d9d734f30211011e9205aa57aa}} 
 \index{Draw\+Manager@{Draw\+Manager}!Uninit@{Uninit}}
@@ -125,6 +404,26 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 終了関数 
 
+
+
+ Draw\+Manager.\+cpp の 49 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_draw_manager_ae58095d9d734f30211011e9205aa57aa_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_ae58095d9d734f30211011e9205aa57aa_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9}\label{class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9}} 
 \index{Draw\+Manager@{Draw\+Manager}!Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}}
 \index{Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}!Draw\+Manager@{Draw\+Manager}}
@@ -135,6 +434,26 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 シーン変更時の終了関数 
 
+
+
+ Draw\+Manager.\+cpp の 70 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_manager_af498c44ff698bf3ef473df970e24c917}\label{class_draw_manager_af498c44ff698bf3ef473df970e24c917}} 
 \index{Draw\+Manager@{Draw\+Manager}!Update@{Update}}
 \index{Update@{Update}!Draw\+Manager@{Draw\+Manager}}
@@ -147,7 +466,157 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 
 
+ Draw\+Manager.\+cpp の 90 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_af498c44ff698bf3ef473df970e24c917_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_af498c44ff698bf3ef473df970e24c917_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9}\label{class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9}} 
+\index{Draw\+Manager@{Draw\+Manager}!Update\+All\+Draw\+Base@{Update\+All\+Draw\+Base}}
+\index{Update\+All\+Draw\+Base@{Update\+All\+Draw\+Base}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Update\+All\+Draw\+Base()}{UpdateAllDrawBase()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Update\+All\+Draw\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+全描画基底クラス更新関数 
+
+
+
+ Draw\+Manager.\+cpp の 235 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744}\label{class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744}} 
+\index{Draw\+Manager@{Draw\+Manager}!Update\+All\+Render\+Target@{Update\+All\+Render\+Target}}
+\index{Update\+All\+Render\+Target@{Update\+All\+Render\+Target}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{Update\+All\+Render\+Target()}{UpdateAllRenderTarget()}}
+{\footnotesize\ttfamily void Draw\+Manager\+::\+Update\+All\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+全レンダーターゲット更新関数 
+
+
+
+ Draw\+Manager.\+cpp の 248 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_icgraph}
+\end{center}
+\end{figure}
+
+
 \subsection{メンバ詳解}
+\mbox{\Hypertarget{class_draw_manager_a328d73b404a5609d3e89a299362253fd}\label{class_draw_manager_a328d73b404a5609d3e89a299362253fd}} 
+\index{Draw\+Manager@{Draw\+Manager}!all\+\_\+draw\+\_\+@{all\+\_\+draw\+\_\+}}
+\index{all\+\_\+draw\+\_\+@{all\+\_\+draw\+\_\+}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{all\+\_\+draw\+\_\+}{all\_draw\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$\mbox{\hyperlink{class_draw_base}{Draw\+Base}}$\ast$, \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}}$>$ Draw\+Manager\+::all\+\_\+draw\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+全描画配列 
+
+
+
+ Draw\+Manager.\+h の 50 行目に定義があります。
+
+\mbox{\Hypertarget{class_draw_manager_aa6a8468dd4469cde2cf162b91a5c1faf}\label{class_draw_manager_aa6a8468dd4469cde2cf162b91a5c1faf}} 
+\index{Draw\+Manager@{Draw\+Manager}!await\+\_\+add\+\_\+@{await\+\_\+add\+\_\+}}
+\index{await\+\_\+add\+\_\+@{await\+\_\+add\+\_\+}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{await\+\_\+add\+\_\+}{await\_add\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$\mbox{\hyperlink{class_draw_base}{Draw\+Base}}$\ast$, \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}}$>$ Draw\+Manager\+::await\+\_\+add\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+追加待ち配列 
+
+
+
+ Draw\+Manager.\+h の 51 行目に定義があります。
+
+\mbox{\Hypertarget{class_draw_manager_a59fa29ded26b3609545a04b5c6927824}\label{class_draw_manager_a59fa29ded26b3609545a04b5c6927824}} 
+\index{Draw\+Manager@{Draw\+Manager}!await\+\_\+release\+\_\+@{await\+\_\+release\+\_\+}}
+\index{await\+\_\+release\+\_\+@{await\+\_\+release\+\_\+}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{await\+\_\+release\+\_\+}{await\_release\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$\mbox{\hyperlink{class_draw_base}{Draw\+Base}}$\ast$, \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}}$>$ Draw\+Manager\+::await\+\_\+release\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+解放待ち配列 
+
+
+
+ Draw\+Manager.\+h の 52 行目に定義があります。
+
+\mbox{\Hypertarget{class_draw_manager_a53e3e9c0794c049fde69e7e5603df22f}\label{class_draw_manager_a53e3e9c0794c049fde69e7e5603df22f}} 
+\index{Draw\+Manager@{Draw\+Manager}!back\+\_\+buffer\+\_\+@{back\+\_\+buffer\+\_\+}}
+\index{back\+\_\+buffer\+\_\+@{back\+\_\+buffer\+\_\+}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{back\+\_\+buffer\+\_\+}{back\_buffer\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_back_buffer}{Back\+Buffer}}$\ast$ Draw\+Manager\+::back\+\_\+buffer\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+バックバッファ 
+
+
+
+ Draw\+Manager.\+h の 55 行目に定義があります。
+
+\mbox{\Hypertarget{class_draw_manager_a0ec52b1d65b765e4fe336d814c2bc11c}\label{class_draw_manager_a0ec52b1d65b765e4fe336d814c2bc11c}} 
+\index{Draw\+Manager@{Draw\+Manager}!directional\+\_\+light\+\_\+vector\+\_\+@{directional\+\_\+light\+\_\+vector\+\_\+}}
+\index{directional\+\_\+light\+\_\+vector\+\_\+@{directional\+\_\+light\+\_\+vector\+\_\+}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{directional\+\_\+light\+\_\+vector\+\_\+}{directional\_light\_vector\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} Draw\+Manager\+::directional\+\_\+light\+\_\+vector\+\_\+ = \{0.\+5f, -\/1.\+0f, 0.\+8f\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+拡散反射光ベクトル 
+
+
+
+ Draw\+Manager.\+h の 57 行目に定義があります。
+
 \mbox{\Hypertarget{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}\label{class_draw_manager_ad4326cddcb1cc4cec198c4f8069b81f0}} 
 \index{Draw\+Manager@{Draw\+Manager}!D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
 \index{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM@{D\+R\+A\+W\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Draw\+Manager@{Draw\+Manager}}
@@ -157,6 +626,24 @@ static const unsigned \mbox{\hyperlink{class_draw_manager_ad4326cddcb1cc4cec198c
 
 
 描画配列数 
+
+
+
+ Draw\+Manager.\+h の 43 行目に定義があります。
+
+\mbox{\Hypertarget{class_draw_manager_aac4cfc76f2953c30ed5eac54b544d0ad}\label{class_draw_manager_aac4cfc76f2953c30ed5eac54b544d0ad}} 
+\index{Draw\+Manager@{Draw\+Manager}!shader\+\_\+manager\+\_\+@{shader\+\_\+manager\+\_\+}}
+\index{shader\+\_\+manager\+\_\+@{shader\+\_\+manager\+\_\+}!Draw\+Manager@{Draw\+Manager}}
+\subsubsection{\texorpdfstring{shader\+\_\+manager\+\_\+}{shader\_manager\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shader_manager}{Shader\+Manager}}$\ast$ Draw\+Manager\+::shader\+\_\+manager\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+シェーダーマネージャ 
+
+
+
+ Draw\+Manager.\+h の 54 行目に定義があります。
 
 
 

@@ -1,0 +1,8 @@
+<map id="ImGui::BeginChildFrame" name="ImGui::BeginChildFrame">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a77ee84afb636e05eb4b2d6eeddcc2aa8" title="ImGui::PushStyleColor" alt="" coords="216,43,371,69"/>
+<area shape="rect" id="node5" href="$namespace_im_gui.html#aab3f43009094462cf2a5eb554785949b" title="ImGui::PushStyleVar" alt="" coords="221,93,365,120"/>
+<area shape="rect" id="node6" href="$namespace_im_gui.html#a93b10a516e6da427b743906ad97d7f16" title="ImGui::BeginChild" alt="" coords="230,144,357,171"/>
+<area shape="rect" id="node3" href="$class_im_vector.html#a68387993f2a5f5c3b2a7139d9ab778b8" title="ImVector::push_back" alt="" coords="433,5,579,32"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a74df648cad381b5ad979c3609b7f4b2a" title="ImGui::ColorConvertU32To\lFloat4" alt="" coords="419,57,593,98"/>
+<area shape="rect" id="node7" href="$namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="419,144,593,171"/>
+</map>

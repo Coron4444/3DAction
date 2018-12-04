@@ -8,5 +8,8 @@ var class_goal_collision =
     ] ],
     [ "Init", "class_goal_collision.html#ab6089638f5390e019a55ae11952e1cf9", null ],
     [ "Uninit", "class_goal_collision.html#ab818bad44ffcd595f1c495e659c0b348", null ],
-    [ "Update", "class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936", null ]
+    [ "Update", "class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936", null ],
+    [ "bounding_sphere_", "class_goal_collision.html#a584c7b2e79411a9fb86fe03f0235ea02", null ],
+    [ "collision_objects_", "class_goal_collision.html#ae04c3bbf4fd5e382b63443466a8cc141", null ],
+    [ "substance_", "class_goal_collision.html#a8fa4a9b7ed96d453d4615641073937bb", null ]
 ];

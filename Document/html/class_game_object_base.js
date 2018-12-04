@@ -9,10 +9,18 @@ var class_game_object_base =
     [ "GetTransform", "class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49", null ],
     [ "GetUpdate", "class_game_object_base.html#a177985be1be1252df6588fa29f2c7f41", null ],
     [ "Init", "class_game_object_base.html#aca14cf5d66f945347653c4965876e75b", null ],
+    [ "InitComponent", "class_game_object_base.html#a5f4d4e3d23603d8e32ddb220a53039a6", null ],
     [ "Reset", "class_game_object_base.html#a85c59554f734bcb09f1a1e18d9517dce", null ],
     [ "SetAllComponent", "class_game_object_base.html#aad0e581dfba83d11af6412a0df6ecd90", null ],
     [ "SetCollision", "class_game_object_base.html#a4aeb0212f5a390570d050bfef51b7818", null ],
     [ "SetDraw", "class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9", null ],
     [ "SetUpdate", "class_game_object_base.html#a71704e8310b3183f3f88869f8fd27d08", null ],
-    [ "Uninit", "class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c", null ]
+    [ "Uninit", "class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c", null ],
+    [ "UninitComponent", "class_game_object_base.html#aff8e4f486435f5d921c186b0824e8a0e", null ],
+    [ "collision_", "class_game_object_base.html#a63c44924e1e0c90461d191fdb11f33b0", null ],
+    [ "draw_", "class_game_object_base.html#af98b5356a668abe576a0d20a37f26e03", null ],
+    [ "is_registration_", "class_game_object_base.html#a1118bad7222ee50ff135e3eddbe5b1b4", null ],
+    [ "physics_", "class_game_object_base.html#a239603d2b9d165f9e666e35795a5a30c", null ],
+    [ "transform_", "class_game_object_base.html#a9e84cc5213c2ee289e2ca2c8b0fc73ba", null ],
+    [ "update_", "class_game_object_base.html#a2051ab9bbbc33c9307ea669f8f7b548b", null ]
 ];

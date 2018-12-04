@@ -4,6 +4,11 @@
 
 {\ttfamily \#include $<$Texture\+Object.\+h$>$}
 
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_texture_object_1_1_texture_u_v}{Texture\+UV}}
+\end{DoxyCompactItemize}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -19,10 +24,37 @@ int \mbox{\hyperlink{class_texture_object_af312bd8d8cdb31918a00e1fe096c26e0}{Get
 \item 
 int \mbox{\hyperlink{class_texture_object_a7d6efe951d81051ed4c763db1208aa40}{Get\+Pattern\+Num\+All}} () const
 \item 
-Texture\+UV \mbox{\hyperlink{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb}{Get\+UV}} (int index) const
+\mbox{\hyperlink{struct_texture_object_1_1_texture_u_v}{Texture\+UV}} \mbox{\hyperlink{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb}{Get\+UV}} (int index) const
 \item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_texture_object_a1b6c93f36e03686f7198b93355c73c8a}{Get\+Handler}} () const
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_texture_object_a93196fc80c026672b8a15cec21ef5dea}{Input\+Texture}} (const std\+::string $\ast$file\+\_\+path)
+\item 
+void \mbox{\hyperlink{class_texture_object_a76d33ff56004c8f8f00b004849990940}{Set\+Texture\+Information}} (const std\+::string $\ast$file\+\_\+path, const int $\ast$pattern\+\_\+num\+\_\+width, const int $\ast$pattern\+\_\+num\+\_\+height)
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_texture_object_a8e3d1b2b233672e0ea161b21d9c1cae0}{width\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_texture_object_a093e31e35a181fe208cc8a0c0cdb5e2f}{height\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_texture_object_ad1a6d93638b7b6f2c69612e04a03d879}{pattern\+\_\+num\+\_\+all\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_texture_object_1_1_texture_u_v}{Texture\+UV}} $>$ \mbox{\hyperlink{class_texture_object_a494307c92847607e702d51f31c24dba6}{texture\+\_\+uv}}
+\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_texture_object_a7274bd60ef37cd410b49e8cfc579624e}{texture\+\_\+handler\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Texture\+Object.\+h の 32 行目に定義があります。
+
 
 
 \subsection{構築子と解体子}
@@ -32,12 +64,35 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_texture_
 \subsubsection{\texorpdfstring{Texture\+Object()}{TextureObject()}}
 {\footnotesize\ttfamily Texture\+Object\+::\+Texture\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{file\+\_\+path,  }\item[{int}]{pattern\+\_\+num\+\_\+all = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+width = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+height = {\ttfamily 1} }\end{DoxyParamCaption})}
 
+
+
+ Texture\+Object.\+cpp の 35 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_add74bde2c60ec3d61229ce70b26602f2_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_object_aeed25fa5ca8e892b96145f4a649e090a}\label{class_texture_object_aeed25fa5ca8e892b96145f4a649e090a}} 
 \index{Texture\+Object@{Texture\+Object}!````~Texture\+Object@{$\sim$\+Texture\+Object}}
 \index{````~Texture\+Object@{$\sim$\+Texture\+Object}!Texture\+Object@{Texture\+Object}}
 \subsubsection{\texorpdfstring{$\sim$\+Texture\+Object()}{~TextureObject()}}
 {\footnotesize\ttfamily Texture\+Object\+::$\sim$\+Texture\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+ Texture\+Object.\+cpp の 54 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_aeed25fa5ca8e892b96145f4a649e090a_cgraph}
+\end{center}
+\end{figure}
 
 
 \subsection{関数詳解}
@@ -47,17 +102,43 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_texture_
 \subsubsection{\texorpdfstring{Get\+Handler()}{GetHandler()}}
 {\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Texture\+Object\+::\+Get\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Texture\+Object.\+h の 68 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_a1b6c93f36e03686f7198b93355c73c8a_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_object_af312bd8d8cdb31918a00e1fe096c26e0}\label{class_texture_object_af312bd8d8cdb31918a00e1fe096c26e0}} 
 \index{Texture\+Object@{Texture\+Object}!Get\+Height@{Get\+Height}}
 \index{Get\+Height@{Get\+Height}!Texture\+Object@{Texture\+Object}}
 \subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
 {\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Texture\+Object.\+h の 65 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_af312bd8d8cdb31918a00e1fe096c26e0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_object_a7d6efe951d81051ed4c763db1208aa40}\label{class_texture_object_a7d6efe951d81051ed4c763db1208aa40}} 
 \index{Texture\+Object@{Texture\+Object}!Get\+Pattern\+Num\+All@{Get\+Pattern\+Num\+All}}
 \index{Get\+Pattern\+Num\+All@{Get\+Pattern\+Num\+All}!Texture\+Object@{Texture\+Object}}
 \subsubsection{\texorpdfstring{Get\+Pattern\+Num\+All()}{GetPatternNumAll()}}
 {\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Pattern\+Num\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Texture\+Object.\+h の 66 行目に定義があります。
 
 \mbox{\Hypertarget{class_texture_object_a5bfee4b09a77e078a51117363a6ede34}\label{class_texture_object_a5bfee4b09a77e078a51117363a6ede34}} 
 \index{Texture\+Object@{Texture\+Object}!Get\+Texture\+Pattern\+Num@{Get\+Texture\+Pattern\+Num}}
@@ -65,17 +146,145 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_texture_
 \subsubsection{\texorpdfstring{Get\+Texture\+Pattern\+Num()}{GetTexturePatternNum()}}
 {\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Texture\+Pattern\+Num (\begin{DoxyParamCaption}\item[{const int}]{animation\+\_\+count,  }\item[{int}]{animation\+\_\+speed }\end{DoxyParamCaption})}
 
+
+
+ Texture\+Object.\+cpp の 67 行目に定義があります。
+
 \mbox{\Hypertarget{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb}\label{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb}} 
 \index{Texture\+Object@{Texture\+Object}!Get\+UV@{Get\+UV}}
 \index{Get\+UV@{Get\+UV}!Texture\+Object@{Texture\+Object}}
 \subsubsection{\texorpdfstring{Get\+U\+V()}{GetUV()}}
-{\footnotesize\ttfamily Texture\+UV Texture\+Object\+::\+Get\+UV (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_texture_object_1_1_texture_u_v}{Texture\+UV}} Texture\+Object\+::\+Get\+UV (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Texture\+Object.\+h の 67 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_a51b8a2723302c2d38624a62f9205c4bb_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_object_a72c079770e7e4355b6481d28a0a472ac}\label{class_texture_object_a72c079770e7e4355b6481d28a0a472ac}} 
 \index{Texture\+Object@{Texture\+Object}!Get\+Width@{Get\+Width}}
 \index{Get\+Width@{Get\+Width}!Texture\+Object@{Texture\+Object}}
 \subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
 {\footnotesize\ttfamily int Texture\+Object\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Texture\+Object.\+h の 64 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_a72c079770e7e4355b6481d28a0a472ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_object_a93196fc80c026672b8a15cec21ef5dea}\label{class_texture_object_a93196fc80c026672b8a15cec21ef5dea}} 
+\index{Texture\+Object@{Texture\+Object}!Input\+Texture@{Input\+Texture}}
+\index{Input\+Texture@{Input\+Texture}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Input\+Texture()}{InputTexture()}}
+{\footnotesize\ttfamily void Texture\+Object\+::\+Input\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{file\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Texture\+Object.\+cpp の 82 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_a93196fc80c026672b8a15cec21ef5dea_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_a93196fc80c026672b8a15cec21ef5dea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_object_a76d33ff56004c8f8f00b004849990940}\label{class_texture_object_a76d33ff56004c8f8f00b004849990940}} 
+\index{Texture\+Object@{Texture\+Object}!Set\+Texture\+Information@{Set\+Texture\+Information}}
+\index{Set\+Texture\+Information@{Set\+Texture\+Information}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{Set\+Texture\+Information()}{SetTextureInformation()}}
+{\footnotesize\ttfamily void Texture\+Object\+::\+Set\+Texture\+Information (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{file\+\_\+path,  }\item[{const int $\ast$}]{pattern\+\_\+num\+\_\+width,  }\item[{const int $\ast$}]{pattern\+\_\+num\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Texture\+Object.\+cpp の 112 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_texture_object_a76d33ff56004c8f8f00b004849990940_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_object_a76d33ff56004c8f8f00b004849990940_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_texture_object_a093e31e35a181fe208cc8a0c0cdb5e2f}\label{class_texture_object_a093e31e35a181fe208cc8a0c0cdb5e2f}} 
+\index{Texture\+Object@{Texture\+Object}!height\+\_\+@{height\+\_\+}}
+\index{height\+\_\+@{height\+\_\+}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{height\+\_\+}{height\_}}
+{\footnotesize\ttfamily int Texture\+Object\+::height\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Texture\+Object.\+h の 83 行目に定義があります。
+
+\mbox{\Hypertarget{class_texture_object_ad1a6d93638b7b6f2c69612e04a03d879}\label{class_texture_object_ad1a6d93638b7b6f2c69612e04a03d879}} 
+\index{Texture\+Object@{Texture\+Object}!pattern\+\_\+num\+\_\+all\+\_\+@{pattern\+\_\+num\+\_\+all\+\_\+}}
+\index{pattern\+\_\+num\+\_\+all\+\_\+@{pattern\+\_\+num\+\_\+all\+\_\+}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{pattern\+\_\+num\+\_\+all\+\_\+}{pattern\_num\_all\_}}
+{\footnotesize\ttfamily int Texture\+Object\+::pattern\+\_\+num\+\_\+all\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Texture\+Object.\+h の 84 行目に定義があります。
+
+\mbox{\Hypertarget{class_texture_object_a7274bd60ef37cd410b49e8cfc579624e}\label{class_texture_object_a7274bd60ef37cd410b49e8cfc579624e}} 
+\index{Texture\+Object@{Texture\+Object}!texture\+\_\+handler\+\_\+@{texture\+\_\+handler\+\_\+}}
+\index{texture\+\_\+handler\+\_\+@{texture\+\_\+handler\+\_\+}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{texture\+\_\+handler\+\_\+}{texture\_handler\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Texture\+Object\+::texture\+\_\+handler\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Texture\+Object.\+h の 87 行目に定義があります。
+
+\mbox{\Hypertarget{class_texture_object_a494307c92847607e702d51f31c24dba6}\label{class_texture_object_a494307c92847607e702d51f31c24dba6}} 
+\index{Texture\+Object@{Texture\+Object}!texture\+\_\+uv@{texture\+\_\+uv}}
+\index{texture\+\_\+uv@{texture\+\_\+uv}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{texture\+\_\+uv}{texture\_uv}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_texture_object_1_1_texture_u_v}{Texture\+UV}}$>$ Texture\+Object\+::texture\+\_\+uv\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Texture\+Object.\+h の 86 行目に定義があります。
+
+\mbox{\Hypertarget{class_texture_object_a8e3d1b2b233672e0ea161b21d9c1cae0}\label{class_texture_object_a8e3d1b2b233672e0ea161b21d9c1cae0}} 
+\index{Texture\+Object@{Texture\+Object}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!Texture\+Object@{Texture\+Object}}
+\subsubsection{\texorpdfstring{width\+\_\+}{width\_}}
+{\footnotesize\ttfamily int Texture\+Object\+::width\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Texture\+Object.\+h の 82 行目に定義があります。
 
 
 

@@ -2,24 +2,28 @@
 \label{class_renderer_interface}\index{Renderer\+Interface@{Renderer\+Interface}}
 
 
-レンダラーインターフェースクラス  
+レンダラー\+Interface\+Class  
 
 
 
 
 {\ttfamily \#include $<$Renderer\+Interface.\+h$>$}
 
-Renderer\+Interface の継承関係図\begin{figure}[H]
+
+
+Renderer\+Interface の継承関係図
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_renderer_interface}
+\includegraphics[width=172pt]{class_renderer_interface__inherit__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{class_renderer_interface_a571638543a7544e023dc186f7dfc7523}{$\sim$\+Renderer\+Interface}} ()=0
-\begin{DoxyCompactList}\small\item\em 純粋仮想デストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_renderer_interface_a1dfa67d2c714f8c66759ab677569a750}{$\sim$\+Renderer\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height)=0
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_renderer_interface_ada105489f9db98e7e9542b278699d558}{Uninit}} ()=0
@@ -33,20 +37,33 @@ virtual void \mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc
 
 
 \subsection{詳解}
-レンダラーインターフェースクラス 
+レンダラー\+Interface\+Class 
 
-レンダラーのインターフェース 
+レンダラーの\+Interface\+Class 
+
+ Renderer\+Interface.\+h の 24 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_renderer_interface_a571638543a7544e023dc186f7dfc7523}\label{class_renderer_interface_a571638543a7544e023dc186f7dfc7523}} 
+\mbox{\Hypertarget{class_renderer_interface_a1dfa67d2c714f8c66759ab677569a750}\label{class_renderer_interface_a1dfa67d2c714f8c66759ab677569a750}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!````~Renderer\+Interface@{$\sim$\+Renderer\+Interface}}
 \index{````~Renderer\+Interface@{$\sim$\+Renderer\+Interface}!Renderer\+Interface@{Renderer\+Interface}}
 \subsubsection{\texorpdfstring{$\sim$\+Renderer\+Interface()}{~RendererInterface()}}
-{\footnotesize\ttfamily Renderer\+Interface\+::$\sim$\+Renderer\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual Renderer\+Interface\+::$\sim$\+Renderer\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
-純粋仮想デストラクタ 
+仮想デストラクタ 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+
+ Renderer\+Interface.\+h の 34 行目に定義があります。
 
 
 
@@ -62,9 +79,27 @@ virtual void \mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc
 描画開始関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 描画開始成功の有無 \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_renderer_direct_x9_a5113bf4e6aefdb7bcab2016fbbee0174}{Renderer\+Direct\+X9}}で実装されています。
 
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_renderer_interface_a86a487deb4e4207a67410d00ec670fd7_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}\label{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!Draw\+End@{Draw\+End}}
 \index{Draw\+End@{Draw\+End}!Renderer\+Interface@{Renderer\+Interface}}
@@ -76,14 +111,27 @@ virtual void \mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc
 描画終了関数 
 
 
-\begin{DoxyParams}{引数}
-{\em is\+\_\+begin\+\_\+scene} & \+: 描画開始が成功しているかフラグ \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em is\+\_\+begin\+\_\+scene} & 描画開始成功フラグ \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_renderer_direct_x9_a5f934597020f77dc9cf729acfb13a830}{Renderer\+Direct\+X9}}で実装されています。
 
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_renderer_interface_a0034a44420e4746062e70e4d66d3bee2_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}\label{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!Init@{Init}}
 \index{Init@{Init}!Renderer\+Interface@{Renderer\+Interface}}
@@ -95,14 +143,34 @@ virtual void \mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc
 初期化関数 
 
 
-\begin{DoxyParams}{引数}
-{\em h\+Instance} & \+: インスタンスハンドル h\+Wnd \+: Windowsハンドル is\+\_\+full\+\_\+screen \+: フルスクリーンフラグ window\+\_\+width \+: Window幅 window\+\_\+height \+: Window高さ \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em h\+Instance} & インスタンスハンドル \\
+\hline
+\mbox{\tt in}  & {\em h\+Wnd} & Windowsハンドル \\
+\hline
+\mbox{\tt in}  & {\em is\+\_\+full\+\_\+screen} & フルスクリーンフラグ \\
+\hline
+\mbox{\tt in}  & {\em window\+\_\+width} & ウィンドウ幅 \\
+\hline
+\mbox{\tt in}  & {\em window\+\_\+height} & ウィンドウ高さ \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 初期化成功の有無 \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}{Renderer\+Direct\+X9}}で実装されています。
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_renderer_interface_aabef76c27c2332c1af2dbcf7e8de5d38_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc7806b6f1}\label{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc7806b6f1}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!Present@{Present}}
 \index{Present@{Present}!Renderer\+Interface@{Renderer\+Interface}}
@@ -114,9 +182,26 @@ virtual void \mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc
 バックバッファをフロントバッファに反映関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_renderer_direct_x9_a77dbc76e8adbe4f9ee41c5f09e5ebe81}{Renderer\+Direct\+X9}}で実装されています。
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc7806b6f1_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_renderer_interface_ada105489f9db98e7e9542b278699d558}\label{class_renderer_interface_ada105489f9db98e7e9542b278699d558}} 
 \index{Renderer\+Interface@{Renderer\+Interface}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Renderer\+Interface@{Renderer\+Interface}}
@@ -127,6 +212,16 @@ virtual void \mbox{\hyperlink{class_renderer_interface_aa9e12d2a2f5ffa351c457cfc
 
 終了関数 
 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}{Renderer\+Direct\+X9}}で実装されています。

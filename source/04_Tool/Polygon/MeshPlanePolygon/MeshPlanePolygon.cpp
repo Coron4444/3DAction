@@ -89,7 +89,7 @@ MeshPlanePolygon::MeshPlanePolygon(Vec2 mesh_num, Vec2 mesh_scale, XColor4 color
 
 	CreateMaterial();
 
-	Renderer::GetInstance()->GetDevice(&device_);
+	Renderer::getpInstance()->getDevice(&device_);
 	if (device_ == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(MeshPlanePolygon.cpp)", "Error", MB_OK);

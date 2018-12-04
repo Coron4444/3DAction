@@ -1,0 +1,22 @@
+<map id="TitleLogoDraw::Init" name="TitleLogoDraw::Init">
+<area shape="rect" id="node2" href="$class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="201,5,393,32"/>
+<area shape="rect" id="node3" href="$class_draw_order_list.html#a5b3ff99f9297293edc057b95d23e8f2d" title="DrawOrderList::SetDrawType" alt="" coords="202,56,391,83"/>
+<area shape="rect" id="node4" href="$class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f" title="DrawOrderList::GetRender\lTargetFlag" alt="" coords="209,107,384,149"/>
+<area shape="rect" id="node5" href="$class_flag.html#a362d2f64c03c0b596004f3eba4cb14a3" title="Flag::Set" alt="" coords="259,173,334,200"/>
+<area shape="rect" id="node6" href="$class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481" title="DrawOrderList::SetVertex\lShaderType" alt="" coords="211,225,382,266"/>
+<area shape="rect" id="node7" href="$class_draw_order_list.html#a0fd7f50f4078001983f88014d59f8f29" title="DrawOrderList::SetPixelShaderType" alt="" coords="181,291,412,317"/>
+<area shape="rect" id="node8" href="$class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="187,341,407,368"/>
+<area shape="rect" id="node9" href="$class_texture_manager.html#af86003fd2afaf09f0295745d486e42e4" title="TextureManager::AddUniqueData" alt="" coords="190,392,403,419"/>
+<area shape="rect" id="node12" href="$class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="191,443,402,469"/>
+<area shape="rect" id="node13" href="$class_transform.html#accedf33a4ddbdcf2d4fc4274f85bf818" title="Transform::GetScale" alt="" coords="226,493,367,520"/>
+<area shape="rect" id="node14" href="$class_texture_object.html#a72c079770e7e4355b6481d28a0a472ac" title="TextureObject::GetWidth" alt="" coords="213,544,380,571"/>
+<area shape="rect" id="node15" href="$class_texture_object.html#af312bd8d8cdb31918a00e1fe096c26e0" title="TextureObject::GetHeight" alt="" coords="212,595,381,621"/>
+<area shape="rect" id="node16" href="$class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="185,645,408,672"/>
+<area shape="rect" id="node10" href="$class_texture_manager.html#a18d1f3418511075804f9d11cff1010ff" title="TextureManager::GetTexture\lObject" alt="" coords="472,355,659,397"/>
+<area shape="rect" id="node11" href="$class_texture_manager.html#a950562ff671a620592708906925fad7f" title="TextureManager::MakeFilePath" alt="" coords="464,421,667,448"/>
+<area shape="rect" id="node17" href="$class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="475,521,656,562"/>
+<area shape="rect" id="node18" href="$class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="471,587,659,613"/>
+<area shape="rect" id="node19" href="$class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="467,638,663,679"/>
+<area shape="rect" id="node20" href="$class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="460,703,671,745"/>
+<area shape="rect" id="node21" href="$class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd" title="MatrixExtend::UpdateWorld\lMatrixSRT" alt="" coords="474,769,657,810"/>
+</map>

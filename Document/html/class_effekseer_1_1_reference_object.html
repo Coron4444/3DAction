@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('class_effekseer_1_1_reference_object.h
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_effekseer_1_1_reference_object-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">Effekseer::ReferenceObject クラス</div>  </div>
@@ -102,13 +103,20 @@ $(document).ready(function(){initNavTree('class_effekseer_1_1_reference_object.h
 <div class="dynheader">
 Effekseer::ReferenceObject の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_effekseer_1_1_reference_object.png" usemap="#Effekseer::ReferenceObject_map" alt=""/>
-  <map id="Effekseer::ReferenceObject_map" name="Effekseer::ReferenceObject_map">
-<area href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="Effekseer::IReference" shape="rect" coords="0,0,168,24"/>
-<area href="class_effekseer_1_1_setting.html" title="設定クラス " alt="Effekseer::Setting" shape="rect" coords="0,112,168,136"/>
+<div class="center"><img src="class_effekseer_1_1_reference_object__inherit__graph.png" border="0" usemap="#_effekseer_1_1_reference_object_inherit__map" alt="Inheritance graph"/></div>
+<map name="_effekseer_1_1_reference_object_inherit__map" id="_effekseer_1_1_reference_object_inherit__map">
+<area shape="rect" id="node3" href="class_effekseer_1_1_setting.html" title="設定クラス " alt="" coords="33,155,158,181"/>
+<area shape="rect" id="node2" href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="" coords="23,5,168,32"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+Effekseer::ReferenceObject 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_1_1_reference_object__coll__graph.png" border="0" usemap="#_effekseer_1_1_reference_object_coll__map" alt="Collaboration graph"/></div>
+<map name="_effekseer_1_1_reference_object_coll__map" id="_effekseer_1_1_reference_object_coll__map">
+<area shape="rect" id="node2" href="class_effekseer_1_1_i_reference.html" title="参照カウンタのインターフェース " alt="" coords="23,5,168,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -125,9 +133,16 @@ Effekseer::ReferenceObject の継承関係図</div>
 <tr class="memitem:a6b0e9aa4d994b557d499b15359b580d8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_effekseer.html#ace0abf7c2e6947e519ebe8b54cbcc30a">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_reference_object.html#a6b0e9aa4d994b557d499b15359b580d8">Release</a> ()</td></tr>
 <tr class="memdesc:a6b0e9aa4d994b557d499b15359b580d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照カウンタを減算する。0になった時、インスタンスを削除する。  <a href="#a6b0e9aa4d994b557d499b15359b580d8">[詳解]</a><br /></td></tr>
 <tr class="separator:a6b0e9aa4d994b557d499b15359b580d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a916a836400f9a2876ec6f0e0a0003aa7"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_1_1_reference_object.html#a916a836400f9a2876ec6f0e0a0003aa7">m_reference</a></td></tr>
+<tr class="separator:a916a836400f9a2876ec6f0e0a0003aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>参照カウンタオブジェクト </p>
+
+<p class="definition"> <a class="el" href="_effekseer_8h_source.html">Effekseer.h</a> の <a class="el" href="_effekseer_8h_source.html#l00425">425</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a8754e7232ae958c9e5b0d85f83ce7c3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8754e7232ae958c9e5b0d85f83ce7c3a">&#9670;&nbsp;</a></span>ReferenceObject()</h2>
@@ -151,6 +166,8 @@ Effekseer::ReferenceObject の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_8h_source.html">Effekseer.h</a> の <a class="el" href="_effekseer_8h_source.html#l00432">432</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -176,6 +193,8 @@ Effekseer::ReferenceObject の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_8h_source.html">Effekseer.h</a> の <a class="el" href="_effekseer_8h_source.html#l00437">437</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -208,6 +227,8 @@ Effekseer::ReferenceObject の継承関係図</div>
 
 <p><a class="el" href="class_effekseer_1_1_i_reference.html#a3e3b54e8e5081e24f5784e4f9b8f6257">Effekseer::IReference</a>を実装しています。</p>
 
+<p class="definition"> <a class="el" href="_effekseer_8h_source.html">Effekseer.h</a> の <a class="el" href="_effekseer_8h_source.html#l00440">440</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a4b8c3d79c58ca527850733691053cf5a"></a>
@@ -238,6 +259,8 @@ Effekseer::ReferenceObject の継承関係図</div>
 
 <p><a class="el" href="class_effekseer_1_1_i_reference.html#a95274c788c8c03d27a3e424facc728b6">Effekseer::IReference</a>を実装しています。</p>
 
+<p class="definition"> <a class="el" href="_effekseer_8h_source.html">Effekseer.h</a> の <a class="el" href="_effekseer_8h_source.html#l00447">447</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a6b0e9aa4d994b557d499b15359b580d8"></a>
@@ -267,6 +290,33 @@ Effekseer::ReferenceObject の継承関係図</div>
 <dl class="section return"><dt>戻り値</dt><dd>減算後の参照カウンタ </dd></dl>
 
 <p><a class="el" href="class_effekseer_1_1_i_reference.html#ad8d601188c0f088f4748aa2da8758bb5">Effekseer::IReference</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_effekseer_8h_source.html">Effekseer.h</a> の <a class="el" href="_effekseer_8h_source.html#l00452">452</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a916a836400f9a2876ec6f0e0a0003aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916a836400f9a2876ec6f0e0a0003aa7">&#9670;&nbsp;</a></span>m_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;int32_t&gt; Effekseer::ReferenceObject::m_reference</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_8h_source.html">Effekseer.h</a> の <a class="el" href="_effekseer_8h_source.html#l00429">429</a> 行目に定義があります。</p>
 
 </div>
 </div>

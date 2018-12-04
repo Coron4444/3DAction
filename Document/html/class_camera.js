@@ -27,5 +27,17 @@ var class_camera =
     [ "SetAngleOfView", "class_camera.html#a4c22c8ceed9126db627df9be7eb53a42", null ],
     [ "SetType", "class_camera.html#a6218126e761a8289c6e6bc8c66b05e47", null ],
     [ "Uninit", "class_camera.html#a8b3337b3e560ea6a780d646bc8c509d7", null ],
-    [ "Update", "class_camera.html#a4a596a3ea1fdc7d244ba4268031a360b", null ]
+    [ "Update", "class_camera.html#a4a596a3ea1fdc7d244ba4268031a360b", null ],
+    [ "angle_of_view_", "class_camera.html#a8c8ccaf83b140c65c458aa5d0077806c", null ],
+    [ "axis_", "class_camera.html#ad803bf87c68409f7f60836ae8fc25ab0", null ],
+    [ "look_at_point_", "class_camera.html#a8253e46e7580737e7d22afae9aa5c0b6", null ],
+    [ "position_", "class_camera.html#a0a3450c7cdfaa59456d92779ac9ea574", null ],
+    [ "projection_2D_", "class_camera.html#a67951793f883b6b9372ea08213278eee", null ],
+    [ "projection_ortho_", "class_camera.html#a624f360dabc01f89cc988ca16599eff4", null ],
+    [ "projection_perspective_", "class_camera.html#ab0abb153efc1642da91ec0716847231c", null ],
+    [ "state_", "class_camera.html#ab2f0ce08b9fee8a4481b323f2856b245", null ],
+    [ "type_", "class_camera.html#a18f6d287c98a979a2ca1579eb928d9aa", null ],
+    [ "up_", "class_camera.html#a8df7d311c10a0c640ac480cb5cbada83", null ],
+    [ "view_", "class_camera.html#a5839ccb2cd4931e904a7a6cd412260ad", null ],
+    [ "view_2D_", "class_camera.html#af6dbadc718d75c621fec94b76365ca57", null ]
 ];

@@ -5,5 +5,6 @@ var class_space_of_tree =
     [ "getFirstObject", "class_space_of_tree.html#a97ee8bf10b8d88d49e61875c88608b15", null ],
     [ "ResetLink", "class_space_of_tree.html#a3231408434cb3066768cfd9d33d86190", null ],
     [ "setFirstObject", "class_space_of_tree.html#a43844bf7bfbf0d021b9ae4708cb2e6f4", null ],
-    [ "Uninit", "class_space_of_tree.html#a8f7238becd1df9192e5f5ddc442b7ee3", null ]
+    [ "Uninit", "class_space_of_tree.html#a8f7238becd1df9192e5f5ddc442b7ee3", null ],
+    [ "first_pointer_", "class_space_of_tree.html#afc9920e9fc6499dfe6fada154e69fa0f", null ]
 ];

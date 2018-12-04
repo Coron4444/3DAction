@@ -6,5 +6,6 @@ var class_number_draw =
     [ "GetMatrix", "class_number_draw.html#a78f50afa05e728811d89a491f5eec899", null ],
     [ "GetMeshNum", "class_number_draw.html#a8234fb06d885feaa8a2f0ecf256db9a0", null ],
     [ "Init", "class_number_draw.html#ad52c1e8b9ae6e830a82c440cc18cb6c9", null ],
-    [ "Uninit", "class_number_draw.html#a2b203d101f23f0d3f584937ff5ad662a", null ]
+    [ "Uninit", "class_number_draw.html#a2b203d101f23f0d3f584937ff5ad662a", null ],
+    [ "number_", "class_number_draw.html#a8063f58804542a7f86b341eec4cc1e60", null ]
 ];

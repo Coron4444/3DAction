@@ -33,13 +33,13 @@ const float PushSpaceLogoDraw::SCALE = 0.5f;
 void PushSpaceLogoDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// ダウンキャスト
-	push_space_logo_ = (PushSpaceLogo*)GetGameObject();
+	push_space_logo_ = (PushSpaceLogo*)getpGameObject();
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
@@ -76,26 +76,26 @@ void PushSpaceLogoDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* PushSpaceLogoDraw::GetMatrix(unsigned object_index)
+unsigned PushSpaceLogoDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	// メッシュ数の取得
-	return GetGameObject()->GetTransform()->GetWorldMatrix();
+	return push_space_logo_->plane_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned PushSpaceLogoDraw::GetMeshNum(unsigned object_index)
+MATRIX* PushSpaceLogoDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return push_space_logo_->plane_polygon_->GetMeshNum();
+	// メッシュ数の取得
+	return getpGameObject()->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -103,7 +103,8 @@ unsigned PushSpaceLogoDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* PushSpaceLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* PushSpaceLogoDraw::getpMaterial(unsigned object_index, 
+											  unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -116,7 +117,7 @@ D3DMATERIAL9* PushSpaceLogoDraw::GetMaterial(unsigned object_index, unsigned mes
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 PushSpaceLogoDraw::GetDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 PushSpaceLogoDraw::getpDecaleTexture(unsigned object_index,
 												   unsigned mesh_index)
 {
 	object_index = object_index;

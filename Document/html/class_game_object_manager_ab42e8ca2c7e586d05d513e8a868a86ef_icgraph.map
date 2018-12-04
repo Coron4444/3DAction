@@ -1,0 +1,42 @@
+<map id="GameObjectManager::AddGameObjectBaseToArray" name="GameObjectManager::AddGameObjectBaseToArray">
+<area shape="rect" id="node2" href="$class_game_object_base.html#aca14cf5d66f945347653c4965876e75b" title="初期化関数 " alt="" coords="247,406,397,433"/>
+<area shape="rect" id="node3" href="$class_clear_logo.html#a46c1a948342d75bb418047a31e70999d" title="ClearLogo::Init" alt="" coords="472,77,577,103"/>
+<area shape="rect" id="node6" href="$class_failure_logo.html#a22da89def55023f43860cf646da7a74c" title="FailureLogo::Init" alt="" coords="467,19,582,46"/>
+<area shape="rect" id="node8" href="$class_push_space_logo.html#a381d34d0dfdd493eb46f299d2a2ba858" title="PushSpaceLogo::Init" alt="" coords="453,190,596,217"/>
+<area shape="rect" id="node12" href="$class_score.html#a7d461a8b72ddfd00213858286d702486" title="Score::Init" alt="" coords="922,463,1003,490"/>
+<area shape="rect" id="node15" href="$class_title_logo.html#a1e07aae4771bd7a44cb7e3b55b72b9f3" title="TitleLogo::Init" alt="" coords="475,131,574,158"/>
+<area shape="rect" id="node17" href="$class_tutorial_logo.html#a590f017a6b0532d08c1377b90b8fba3f" title="TutorialLogo::Init" alt="" coords="466,250,583,277"/>
+<area shape="rect" id="node19" href="$class_coin.html#aecb007762f15ecc91cd6a699e60c2e19" title="Coin::Init" alt="" coords="926,526,999,553"/>
+<area shape="rect" id="node21" href="$class_enemy.html#a678f73f8af13e1bc55be3fdad2608399" title="Enemy::Init" alt="" coords="919,583,1007,610"/>
+<area shape="rect" id="node23" href="$class_field.html#a8360ab68eaf346984eab8bce4c37c3b3" title="Field::Init" alt="" coords="925,659,1000,686"/>
+<area shape="rect" id="node25" href="$class_goal.html#a694beb5a9164e2bea59fc43affbaa060" title="初期化関数 " alt="" coords="925,305,1000,331"/>
+<area shape="rect" id="node27" href="$class_player.html#a171167a4b1a6dddbe94b8f3c6f7462c4" title="Player::Init" alt="" coords="699,355,783,382"/>
+<area shape="rect" id="node29" href="$class_sky_dome.html#a948e0e90cea46c78053ac55610812d6c" title="SkyDome::Init" alt="" coords="473,406,577,433"/>
+<area shape="rect" id="node31" href="$class_stencil_shadow_test.html#a4a58695fafd134d750eb23ee5ec2bdb6" title="StencilShadowTest::Init" alt="" coords="445,714,604,741"/>
+<area shape="rect" id="node33" href="$class_number.html#ad92c9038810d0f831fdb9b5b13901b79" title="Number::Init" alt="" coords="479,773,571,799"/>
+<area shape="rect" id="node40" href="$class_numbers.html#a42158aa8dbb71308161c642aed8752e8" title="Numbers::Init" alt="" coords="475,507,574,534"/>
+<area shape="rect" id="node4" href="$class_clear_logo_factory.html#a98ea5747e5605f30d58be670ad4cac4a" title="ClearLogoFactory::Create" alt="" coords="655,71,826,98"/>
+<area shape="rect" id="node5" href="$class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="881,64,1044,105"/>
+<area shape="rect" id="node7" href="$class_failure_logo_factory.html#a623d73668a89fceca9dc013112b4c8a3" title="FailureLogoFactory\l::Create" alt="" coords="674,5,807,47"/>
+<area shape="rect" id="node9" href="$class_push_space_logo_factory.html#a40ed4a7781d8f5a6e802b90f3aa599cb" title="PushSpaceLogoFactory\l::Create" alt="" coords="660,173,821,215"/>
+<area shape="rect" id="node10" href="$class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="888,151,1037,192"/>
+<area shape="rect" id="node11" href="$class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="897,239,1029,280"/>
+<area shape="rect" id="node13" href="$class_score_factory.html#a1c3047d657151d5bbda8157a743b154d" title="ScoreFactory::Create" alt="" coords="1107,463,1254,490"/>
+<area shape="rect" id="node14" href="$class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1319,456,1479,497"/>
+<area shape="rect" id="node16" href="$class_title_logo_factory.html#acbd10f361541910e9c0cee26770f0150" title="TitleLogoFactory::Create" alt="" coords="659,122,823,149"/>
+<area shape="rect" id="node18" href="$class_tutorial_logo_factory.html#adc1e80456f8ab75ba30c7a1e9767afd8" title="TutorialLogoFactory\l::Create" alt="" coords="673,239,809,280"/>
+<area shape="rect" id="node20" href="$class_coin_factory.html#a0d2390aa7215c9802edabfe11ab62006" title="CoinFactory::Create" alt="" coords="1111,521,1250,547"/>
+<area shape="rect" id="node22" href="$class_enemy_factory.html#a74729ede6a5f0e1cbdf3215a052e314a" title="EnemyFactory::Create" alt="" coords="1104,583,1257,610"/>
+<area shape="rect" id="node24" href="$class_field_factory.html#a7e2a9847756bbb43f9942a219cc69125" title="FieldFactory::Create" alt="" coords="1111,647,1251,674"/>
+<area shape="rect" id="node26" href="$class_goal_factory.html#af0b52f5fd6e567a05985285369be7b2e" title="作成関数 " alt="" coords="1111,306,1250,333"/>
+<area shape="rect" id="node28" href="$class_player_factory.html#a7429328c81ec97fdaafb9eef756c0dba" title="PlayerFactory::Create" alt="" coords="1106,358,1255,385"/>
+<area shape="rect" id="node30" href="$class_sky_dome_factory.html#a70f27fa64d7cbd5164fc44de566a1683" title="SkyDomeFactory::Create" alt="" coords="1096,410,1265,437"/>
+<area shape="rect" id="node32" href="$class_stencil_shadow_test_factory.html#a4eec5b125ff810267c784c8a922909a2" title="StencilShadowTestFactory\l::Create" alt="" coords="652,711,829,752"/>
+<area shape="rect" id="node34" href="$class_number_factory.html#aace5458332c982b3f12265abaf5a3308" title="NumberFactory::Create" alt="" coords="662,777,819,803"/>
+<area shape="rect" id="node35" href="$class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="887,751,1038,778"/>
+<area shape="rect" id="node39" href="$class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="877,802,1048,829"/>
+<area shape="rect" id="node36" href="$class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1103,777,1258,803"/>
+<area shape="rect" id="node37" href="$class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1337,802,1460,829"/>
+<area shape="rect" id="node38" href="$class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1313,751,1484,778"/>
+<area shape="rect" id="node41" href="$class_numbers_factory.html#a2d2d0ae4f2d27c25cc73989b64d78c77" title="NumbersFactory::Create" alt="" coords="659,507,823,534"/>
+</map>

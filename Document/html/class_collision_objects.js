@@ -13,5 +13,10 @@ var class_collision_objects =
     [ "ResetHitDataAllCollisionObject", "class_collision_objects.html#a01ffe9567540a819f19cd66f96981b47", null ],
     [ "setCollisionBase", "class_collision_objects.html#a144f0c9160c0dda1579c26a0726fdbb6", null ],
     [ "setIsJudgment", "class_collision_objects.html#a61e67c1c0ea20a01d9e4a5b2d1b45428", null ],
-    [ "setObjectOfTree", "class_collision_objects.html#a3d5a69741d66dcdebfae5a54a15c4b88", null ]
+    [ "setObjectOfTree", "class_collision_objects.html#a3d5a69741d66dcdebfae5a54a15c4b88", null ],
+    [ "collision_base_", "class_collision_objects.html#a03e2ef7152dac946f5bbf887d9e190b1", null ],
+    [ "collision_object_", "class_collision_objects.html#a35339b83828ab664fdcd51caca09cb79", null ],
+    [ "is_judgment_", "class_collision_objects.html#a913a0ae61bcea2210e20c0cdc505b55b", null ],
+    [ "object_of_tree_", "class_collision_objects.html#a649c1aa07a6043611aa8f7394690250a", null ],
+    [ "octree_aabb_", "class_collision_objects.html#a611be393dff69dc143e729c4f3f37399", null ]
 ];

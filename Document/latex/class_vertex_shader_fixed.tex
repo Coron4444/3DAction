@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Vertex\+Shader\+Fixed.\+h$>$}
 
-Vertex\+Shader\+Fixed の継承関係図\begin{figure}[H]
+
+
+Vertex\+Shader\+Fixed の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_vertex_shader_fixed}
+\includegraphics[width=180pt]{class_vertex_shader_fixed__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Vertex\+Shader\+Fixed 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_vertex_shader_fixed__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -26,12 +38,30 @@ void \mbox{\hyperlink{class_vertex_shader_fixed_a82bf2829b6fd0df26faedcbf650ba08
 \begin{DoxyCompactList}\small\item\em 共通設定関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7ec}{Specific\+Setting}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, \mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
 \begin{DoxyCompactList}\small\item\em 固有設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_vertex_shader_fixed_a1caad0cf4c86788ed17c2a8da8645414}{Set\+Texture}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
+\item 
+void \mbox{\hyperlink{class_vertex_shader_fixed_a05ce5fdd8ff190b9934497f42cf19a38}{Set\+Material}} (\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$draw, unsigned object\+\_\+index, unsigned mesh\+\_\+index)
+\item 
+void \mbox{\hyperlink{class_vertex_shader_fixed_ae15e2c1ce81ca57cf657a6edff36cf9c}{Update\+Directional\+Lignt}} ()
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+D3\+D\+L\+I\+G\+H\+T9 \mbox{\hyperlink{class_vertex_shader_fixed_ae2409965de90816f89ba8797880b3cd2}{directional\+\_\+light\+\_\+}}
+\begin{DoxyCompactList}\small\item\em ディレクショナルライト \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 固定機能頂点シェーダークラス 
 
 固定機能の頂点シェーダークラス 
+
+ Vertex\+Shader\+Fixed.\+h の 34 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_vertex_shader_fixed_a82bf2829b6fd0df26faedcbf650ba08d}\label{class_vertex_shader_fixed_a82bf2829b6fd0df26faedcbf650ba08d}} 
@@ -53,6 +83,17 @@ void \mbox{\hyperlink{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7e
 
 \mbox{\hyperlink{class_vertex_shader_null_a95f1a66045fb39c42cf0566f1990b6a1}{Vertex\+Shader\+Null}}を再実装しています。
 
+
+
+ Vertex\+Shader\+Fixed.\+cpp の 62 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_fixed_a82bf2829b6fd0df26faedcbf650ba08d_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_fixed_ae829ff736b33c45543804059255125b6}\label{class_vertex_shader_fixed_ae829ff736b33c45543804059255125b6}} 
 \index{Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}!Init@{Init}}
 \index{Init@{Init}!Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}}
@@ -67,6 +108,66 @@ void \mbox{\hyperlink{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7e
 
 \mbox{\hyperlink{class_vertex_shader_null_af30eb8057fe0537bc6ade214647b6fb5}{Vertex\+Shader\+Null}}を再実装しています。
 
+
+
+ Vertex\+Shader\+Fixed.\+cpp の 27 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_fixed_ae829ff736b33c45543804059255125b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vertex_shader_fixed_a05ce5fdd8ff190b9934497f42cf19a38}\label{class_vertex_shader_fixed_a05ce5fdd8ff190b9934497f42cf19a38}} 
+\index{Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}!Set\+Material@{Set\+Material}}
+\index{Set\+Material@{Set\+Material}!Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}}
+\subsubsection{\texorpdfstring{Set\+Material()}{SetMaterial()}}
+{\footnotesize\ttfamily void Vertex\+Shader\+Fixed\+::\+Set\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Vertex\+Shader\+Fixed.\+cpp の 109 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_vertex_shader_fixed_a05ce5fdd8ff190b9934497f42cf19a38_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_vertex_shader_fixed_a05ce5fdd8ff190b9934497f42cf19a38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_vertex_shader_fixed_a1caad0cf4c86788ed17c2a8da8645414}\label{class_vertex_shader_fixed_a1caad0cf4c86788ed17c2a8da8645414}} 
+\index{Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}!Set\+Texture@{Set\+Texture}}
+\index{Set\+Texture@{Set\+Texture}!Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}}
+\subsubsection{\texorpdfstring{Set\+Texture()}{SetTexture()}}
+{\footnotesize\ttfamily void Vertex\+Shader\+Fixed\+::\+Set\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_draw_base}{Draw\+Base}} $\ast$}]{draw,  }\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Vertex\+Shader\+Fixed.\+cpp の 96 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_fixed_a1caad0cf4c86788ed17c2a8da8645414_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_vertex_shader_fixed_a1caad0cf4c86788ed17c2a8da8645414_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7ec}\label{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7ec}} 
 \index{Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}!Specific\+Setting@{Specific\+Setting}}
 \index{Specific\+Setting@{Specific\+Setting}!Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}}
@@ -86,6 +187,17 @@ void \mbox{\hyperlink{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7e
 
 \mbox{\hyperlink{class_vertex_shader_null_aa2234c6ea083e3c0233d59f222145992}{Vertex\+Shader\+Null}}を再実装しています。
 
+
+
+ Vertex\+Shader\+Fixed.\+cpp の 84 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7ec_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_vertex_shader_fixed_a49f630aee4757c8fd8bae886f22dfeb0}\label{class_vertex_shader_fixed_a49f630aee4757c8fd8bae886f22dfeb0}} 
 \index{Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}}
@@ -99,6 +211,51 @@ void \mbox{\hyperlink{class_vertex_shader_fixed_a87523c320f6f6767d59d7b24265db7e
 
 
 \mbox{\hyperlink{class_vertex_shader_null_a16334df4ac02db3dd63f042622032301}{Vertex\+Shader\+Null}}を再実装しています。
+
+
+
+ Vertex\+Shader\+Fixed.\+cpp の 52 行目に定義があります。
+
+\mbox{\Hypertarget{class_vertex_shader_fixed_ae15e2c1ce81ca57cf657a6edff36cf9c}\label{class_vertex_shader_fixed_ae15e2c1ce81ca57cf657a6edff36cf9c}} 
+\index{Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}!Update\+Directional\+Lignt@{Update\+Directional\+Lignt}}
+\index{Update\+Directional\+Lignt@{Update\+Directional\+Lignt}!Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}}
+\subsubsection{\texorpdfstring{Update\+Directional\+Lignt()}{UpdateDirectionalLignt()}}
+{\footnotesize\ttfamily void Vertex\+Shader\+Fixed\+::\+Update\+Directional\+Lignt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Vertex\+Shader\+Fixed.\+cpp の 124 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_shader_fixed_ae15e2c1ce81ca57cf657a6edff36cf9c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_vertex_shader_fixed_ae15e2c1ce81ca57cf657a6edff36cf9c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_vertex_shader_fixed_ae2409965de90816f89ba8797880b3cd2}\label{class_vertex_shader_fixed_ae2409965de90816f89ba8797880b3cd2}} 
+\index{Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}!directional\+\_\+light\+\_\+@{directional\+\_\+light\+\_\+}}
+\index{directional\+\_\+light\+\_\+@{directional\+\_\+light\+\_\+}!Vertex\+Shader\+Fixed@{Vertex\+Shader\+Fixed}}
+\subsubsection{\texorpdfstring{directional\+\_\+light\+\_\+}{directional\_light\_}}
+{\footnotesize\ttfamily D3\+D\+L\+I\+G\+H\+T9 Vertex\+Shader\+Fixed\+::directional\+\_\+light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ディレクショナルライト 
+
+
+
+ Vertex\+Shader\+Fixed.\+h の 40 行目に定義があります。
 
 
 

@@ -1,0 +1,5 @@
+<map id="CollisionJudgment::IsAcuteAngle_Segment3D_Capsule" name="CollisionJudgment::IsAcuteAngle_Segment3D_Capsule">
+<area shape="rect" id="node2" href="$_vector3_d_8h.html#ab7b2c371eae601b49a78b23e68ffc0a2" title="IsObtuseAngle" alt="" coords="228,20,335,47"/>
+<area shape="rect" id="node3" href="$_vector3_d_8h.html#a8b0cdafb4964973d6daa41a3058d1ff1" title="Point3_Dot" alt="" coords="383,20,469,47"/>
+<area shape="rect" id="node4" href="$class_vector3_d.html#aed4c9936346cfbcb7238bd64ae1601d3" title="Vector3D::CreateVectorDot" alt="" coords="517,20,697,47"/>
+</map>

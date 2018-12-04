@@ -1,0 +1,4 @@
+<map id="PlayerCollision::HitBoundingSphere" name="PlayerCollision::HitBoundingSphere">
+<area shape="rect" id="node2" href="$class_collision_base.html#af4e773951a4e1965e64410841a0292a4" title="CollisionBase::getState" alt="" coords="240,5,399,32"/>
+<area shape="rect" id="node3" href="$class_collision_object.html#a1198d5941d2ba8a9b394c0e43e4b9fd9" title="CollisionObject::getTag" alt="" coords="241,56,397,83"/>
+</map>

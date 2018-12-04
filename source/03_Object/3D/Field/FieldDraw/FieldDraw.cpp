@@ -32,16 +32,16 @@ const std::string FieldDraw::TEXTURE_NAME = "Field.png";
 void FieldDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// テクスチャの登録
 	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
 
 	// ダウンキャスト
-	field_ = (Field*)GetGameObject();
+	field_ = (Field*)getpGameObject();
 }
 
 
@@ -51,7 +51,7 @@ void FieldDraw::Init()
 //--------------------------------------------------
 void FieldDraw::Uninit()
 {
-	
+
 }
 
 
@@ -70,25 +70,25 @@ void FieldDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* FieldDraw::GetMatrix(unsigned object_index)
+unsigned FieldDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return field_->GetTransform()->GetWorldMatrix();
+	return field_->mesh_plane_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned FieldDraw::GetMeshNum(unsigned object_index)
+MATRIX* FieldDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return field_->mesh_plane_polygon_->GetMeshNum();
+	return field_->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -96,7 +96,7 @@ unsigned FieldDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* FieldDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* FieldDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -109,8 +109,8 @@ D3DMATERIAL9* FieldDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 FieldDraw::GetDecaleTexture(unsigned object_index, 
-											   unsigned mesh_index)
+LPDIRECT3DTEXTURE9 FieldDraw::getpDecaleTexture(unsigned object_index,
+												unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

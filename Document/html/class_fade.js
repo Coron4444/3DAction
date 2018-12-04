@@ -23,5 +23,13 @@ var class_fade =
     [ "GetType", "class_fade.html#aed5a29d39a5fd6161a9aed73d5f30870", null ],
     [ "Init", "class_fade.html#aab12848f7102a219968c86ed699a6e5d", null ],
     [ "Uninit", "class_fade.html#ae77d06811869d3c8162a42c3e0e14f7f", null ],
-    [ "Update", "class_fade.html#a1579b5b9020344a1131ea11c15f2c0bd", null ]
+    [ "Update", "class_fade.html#a1579b5b9020344a1131ea11c15f2c0bd", null ],
+    [ "color_", "class_fade.html#af3b40978f7e38980379c9189aadcf310", null ],
+    [ "end_flag_", "class_fade.html#aeeddfe04f4dc156f2f4f0db903bb7fa1", null ],
+    [ "plane_polygon_", "class_fade.html#ab51b04ff5e6225016ccb012fce80dd74", null ],
+    [ "speed_", "class_fade.html#af46cade81dd992a5d8a0fe241aefd8b2", null ],
+    [ "state_", "class_fade.html#ad5ff5a5645edb88fd5544819077ff13f", null ],
+    [ "transform_", "class_fade.html#a3b94f7f5317c98e1db1cc17346313626", null ],
+    [ "transition01_texture_", "class_fade.html#a4ff29d821f15a33e2110acc03c8d8a84", null ],
+    [ "type_", "class_fade.html#a1d04a65762c863a1d3571f0e1d47532a", null ]
 ];

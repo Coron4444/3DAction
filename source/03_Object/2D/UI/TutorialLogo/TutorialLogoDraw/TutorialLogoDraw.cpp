@@ -34,14 +34,14 @@ const std::string TutorialLogoDraw::TEXTURE_NAME[TEXTURE_NUM] = {"UI/Tutorial01.
 void TutorialLogoDraw::Init()
 {
 	// オーダーリスト設定
-	GetDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	GetDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	GetDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	GetDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
-	GetDrawOrderList()->SetLayerNum(0);
+	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->SetLayerNum(0);
 
 	// ダウンキャスト
-	tutorial_logo_ = (TutorialLogo*)GetGameObject();
+	tutorial_logo_ = (TutorialLogo*)getpGameObject();
 
 	// 平面ポリゴン作成
 	plane_polygon_ = new PlanePolygon();
@@ -98,25 +98,25 @@ void TutorialLogoDraw::Draw(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +行列取得関数
+// +メッシュ数取得関数
 //--------------------------------------------------
-const MATRIX* TutorialLogoDraw::GetMatrix(unsigned object_index)
+unsigned TutorialLogoDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return tutorial_logo_->GetTransform()->GetWorldMatrix();
+	return plane_polygon_->getMeshNum();
 }
 
 
 
 //--------------------------------------------------
-// +メッシュ数取得関数
+// +行列取得関数
 //--------------------------------------------------
-unsigned TutorialLogoDraw::GetMeshNum(unsigned object_index)
+MATRIX* TutorialLogoDraw::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 
-	return plane_polygon_->GetMeshNum();
+	return tutorial_logo_->GetTransform()->getpWorldMatrix();
 }
 
 
@@ -124,7 +124,7 @@ unsigned TutorialLogoDraw::GetMeshNum(unsigned object_index)
 //--------------------------------------------------
 // +マテリアル取得関数
 //--------------------------------------------------
-D3DMATERIAL9* TutorialLogoDraw::GetMaterial(unsigned object_index, unsigned mesh_index)
+D3DMATERIAL9* TutorialLogoDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
@@ -137,7 +137,7 @@ D3DMATERIAL9* TutorialLogoDraw::GetMaterial(unsigned object_index, unsigned mesh
 //--------------------------------------------------
 // +デカールテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 TutorialLogoDraw::GetDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 TutorialLogoDraw::getpDecaleTexture(unsigned object_index,
 														unsigned mesh_index)
 {
 	object_index = object_index;

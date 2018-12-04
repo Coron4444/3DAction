@@ -2,13 +2,23 @@
 \label{class_game_system}\index{Game\+System@{Game\+System}}
 
 
-ゲームシステムクラス  
+ゲームシステム\+Class  
 
 
 
 
 {\ttfamily \#include $<$Game\+System.\+h$>$}
 
+
+
+Game\+System 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,12 +32,23 @@ void \mbox{\hyperlink{class_game_system_a474db0066b23d39e94e0a830140edce5}{Draw}
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_system_aa416827abc995e1b8df4a5cf87911baf}{Late\+Update}} ()
 \begin{DoxyCompactList}\small\item\em 後更新関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $\ast$ \mbox{\hyperlink{class_game_system_ac398ab7a013177879fd3dd9a9f8d7e48}{scene\+\_\+manager\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em シーン管理者 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
-ゲームシステムクラス 
+ゲームシステム\+Class 
 
-ゲームシステム全体を管理する Renderer、\+Scene\+Manager、\+Input、\+Sound、\+Debuger等を管理する 
+ゲームシステム全体を管理する
+
+Renderer、\+Scene\+Manager、\+Input、\+Sound、\+Debuger等を管理する 
+
+ Game\+System.\+h の 32 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_game_system_a474db0066b23d39e94e0a830140edce5}\label{class_game_system_a474db0066b23d39e94e0a830140edce5}} 
@@ -40,6 +61,35 @@ void \mbox{\hyperlink{class_game_system_aa416827abc995e1b8df4a5cf87911baf}{Late\
 
 描画関数 
 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+System.\+cpp の 136 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_a474db0066b23d39e94e0a830140edce5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_a474db0066b23d39e94e0a830140edce5_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_game_system_ad4c08500b98490e00ce87a770bb5e981}\label{class_game_system_ad4c08500b98490e00ce87a770bb5e981}} 
 \index{Game\+System@{Game\+System}!Init@{Init}}
 \index{Init@{Init}!Game\+System@{Game\+System}}
@@ -51,10 +101,43 @@ void \mbox{\hyperlink{class_game_system_aa416827abc995e1b8df4a5cf87911baf}{Late\
 初期化関数 
 
 
-\begin{DoxyParams}{引数}
-{\em h\+Instance} & \+: インスタンスハンドル h\+Wnd \+: Windowsハンドル is\+\_\+full\+\_\+screen \+: フルスクリーンフラグ window\+\_\+width \+: Window幅 window\+\_\+height \+: Window高さ \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em h\+Instance} & インスタンスハンドル \\
+\hline
+\mbox{\tt in}  & {\em h\+Wnd} & Windowsハンドル \\
+\hline
+\mbox{\tt in}  & {\em is\+\_\+full\+\_\+screen} & フルスクリーンフラグ \\
+\hline
+\mbox{\tt in}  & {\em window\+\_\+width} & ウィンドウ幅 \\
+\hline
+\mbox{\tt in}  & {\em window\+\_\+height} & ウィンドウ高さ \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 初期化成功の有無 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+System.\+cpp の 43 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_ad4c08500b98490e00ce87a770bb5e981_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_ad4c08500b98490e00ce87a770bb5e981_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_game_system_aa416827abc995e1b8df4a5cf87911baf}\label{class_game_system_aa416827abc995e1b8df4a5cf87911baf}} 
 \index{Game\+System@{Game\+System}!Late\+Update@{Late\+Update}}
 \index{Late\+Update@{Late\+Update}!Game\+System@{Game\+System}}
@@ -65,6 +148,36 @@ void \mbox{\hyperlink{class_game_system_aa416827abc995e1b8df4a5cf87911baf}{Late\
 
 後更新関数 
 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+System.\+cpp の 161 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_aa416827abc995e1b8df4a5cf87911baf_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_aa416827abc995e1b8df4a5cf87911baf_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_game_system_af76866bd03b84dca6880f1493fd3c9d1}\label{class_game_system_af76866bd03b84dca6880f1493fd3c9d1}} 
 \index{Game\+System@{Game\+System}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Game\+System@{Game\+System}}
@@ -75,6 +188,36 @@ void \mbox{\hyperlink{class_game_system_aa416827abc995e1b8df4a5cf87911baf}{Late\
 
 終了関数 
 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+System.\+cpp の 88 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_af76866bd03b84dca6880f1493fd3c9d1_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_af76866bd03b84dca6880f1493fd3c9d1_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_game_system_ab0add1f2bd97d3b125a5682f571053a3}\label{class_game_system_ab0add1f2bd97d3b125a5682f571053a3}} 
 \index{Game\+System@{Game\+System}!Update@{Update}}
 \index{Update@{Update}!Game\+System@{Game\+System}}
@@ -84,6 +227,53 @@ void \mbox{\hyperlink{class_game_system_aa416827abc995e1b8df4a5cf87911baf}{Late\
 
 
 更新関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+System.\+cpp の 114 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_ab0add1f2bd97d3b125a5682f571053a3_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_system_ab0add1f2bd97d3b125a5682f571053a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_game_system_ac398ab7a013177879fd3dd9a9f8d7e48}\label{class_game_system_ac398ab7a013177879fd3dd9a9f8d7e48}} 
+\index{Game\+System@{Game\+System}!scene\+\_\+manager\+\_\+@{scene\+\_\+manager\+\_\+}}
+\index{scene\+\_\+manager\+\_\+@{scene\+\_\+manager\+\_\+}!Game\+System@{Game\+System}}
+\subsubsection{\texorpdfstring{scene\+\_\+manager\+\_\+}{scene\_manager\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}}$\ast$ Game\+System\+::scene\+\_\+manager\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+シーン管理者 
+
+
+
+ Game\+System.\+h の 38 行目に定義があります。
 
 
 

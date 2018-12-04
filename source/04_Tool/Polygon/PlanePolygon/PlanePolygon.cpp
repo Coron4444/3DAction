@@ -55,7 +55,7 @@ PlanePolygon::PlanePolygon(XColor4 color, Vec2 plane_size)
 
 	CreateMaterial();
 
-	Renderer::GetInstance()->GetDevice(&device_);
+	Renderer::getpInstance()->getDevice(&device_);
 	if (device_ == nullptr)
 	{
 		MessageBox(nullptr, "NotGetDevice!(PlanePolygon.cpp)", "Error", MB_OK);

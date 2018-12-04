@@ -1,6 +1,7 @@
 var searchData=
 [
   ['fade',['Fade',['../class_fade.html#aec1ac5a0a80be8d7a2a43dbde2a741ee',1,'Fade']]],
+  ['fadedraw',['FadeDraw',['../class_back_buffer.html#a9835a5db9850f774a382c4f8e611b1d1',1,'BackBuffer']]],
   ['fileloadfulldata',['FileLoadFullData',['../classmfmlib_1_1_model.html#a0b260e285347695a8a9f0092b57ddb7f',1,'mfmlib::Model']]],
   ['fileloadmeshdata',['FileLoadMeshData',['../classmfmlib_1_1_model.html#a906eb59ce0373f757c5473512e95c5a4',1,'mfmlib::Model']]],
   ['filereader',['FileReader',['../class_effekseer_1_1_file_reader.html#aa5ae7f1e7a6c8a8147e4f6d819b361c0',1,'Effekseer::FileReader']]],
@@ -21,5 +22,6 @@ var searchData=
   ['frame_5fto_5fminute',['Frame_To_Minute',['../_time_to_frame_8h.html#a6e4cb71501e5e89d1417b88761ab6668',1,'TimeToFrame.h']]],
   ['frame_5fto_5fsecond',['Frame_To_Second',['../_time_to_frame_8h.html#af153be6b19b17a72edab4138511fac75',1,'TimeToFrame.h']]],
   ['frame_5fto_5ftime',['Frame_To_Time',['../_time_to_frame_8cpp.html#af6a071d55ccd0660497205eeea953f2c',1,'Frame_To_Time(int frame, float *hour, float *min, float *sec):&#160;TimeToFrame.cpp'],['../_time_to_frame_8h.html#af6a071d55ccd0660497205eeea953f2c',1,'Frame_To_Time(int frame, float *hour, float *min, float *sec):&#160;TimeToFrame.cpp']]],
+  ['froattruncation',['FroatTruncation',['../class_collision_judgment.html#a76fe4aa5e6400073823c1f60395c1f94',1,'CollisionJudgment']]],
   ['front',['front',['../class_im_vector.html#a5b0108d6b1a4a11609723f8305fb9011',1,'ImVector::front()'],['../class_im_vector.html#a76dc6bb045574ba79b15a1941b662597',1,'ImVector::front() const'],['../struct_im_gui_text_filter_1_1_text_range.html#a7d0b405b4db5d33351812b4b3b6e9107',1,'ImGuiTextFilter::TextRange::front()']]]
 ];

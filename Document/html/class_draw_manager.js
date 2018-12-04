@@ -1,14 +1,26 @@
 var class_draw_manager =
 [
+    [ "AddContentsOfAwaitAddArray", "class_draw_manager.html#a984cd9de288151fd1d170f80f93a11e8", null ],
     [ "AddDrawBaseToArray", "class_draw_manager.html#a9dbd645fdbf927cd43d400335ff9b286", null ],
+    [ "DistributeDrawBase", "class_draw_manager.html#a9a09cb524187bc11f1e4812a06fe46d6", null ],
     [ "Draw", "class_draw_manager.html#a43372495e68d77a2698f211cf921b37e", null ],
     [ "GetBackBuffer", "class_draw_manager.html#a0e7e11e650f1c1736e9d3199a58191a7", null ],
     [ "GetDirectionalLightVector", "class_draw_manager.html#a952023ad9e2e12844c93e37029a32700", null ],
     [ "Init", "class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f", null ],
     [ "OverwriteArrayDrawBase", "class_draw_manager.html#a94ef5a241c8d78187a2a6c0ed3c9efec", null ],
+    [ "ReleaseContentsOfAwaitReleaseArray", "class_draw_manager.html#a76361402a035f02084e9faf31e782d69", null ],
     [ "ReleaseDrawBaseFromArray", "class_draw_manager.html#a287d1f359b87f075b22df6a9b6e99316", null ],
+    [ "ResetAllRenderTarget", "class_draw_manager.html#a20787acc9c5a096e80651dc1909ae60d", null ],
     [ "SetDirectionalLightVector", "class_draw_manager.html#a470edae8248d36956a02bab7e59a4140", null ],
     [ "Uninit", "class_draw_manager.html#ae58095d9d734f30211011e9205aa57aa", null ],
     [ "UninitWhenChangeScene", "class_draw_manager.html#a8b4ea38d625efbcc08d9b168cb5465f9", null ],
-    [ "Update", "class_draw_manager.html#af498c44ff698bf3ef473df970e24c917", null ]
+    [ "Update", "class_draw_manager.html#af498c44ff698bf3ef473df970e24c917", null ],
+    [ "UpdateAllDrawBase", "class_draw_manager.html#a7c989a2beae5de5a1fc7ab0bef8692f9", null ],
+    [ "UpdateAllRenderTarget", "class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744", null ],
+    [ "all_draw_", "class_draw_manager.html#a328d73b404a5609d3e89a299362253fd", null ],
+    [ "await_add_", "class_draw_manager.html#aa6a8468dd4469cde2cf162b91a5c1faf", null ],
+    [ "await_release_", "class_draw_manager.html#a59fa29ded26b3609545a04b5c6927824", null ],
+    [ "back_buffer_", "class_draw_manager.html#a53e3e9c0794c049fde69e7e5603df22f", null ],
+    [ "directional_light_vector_", "class_draw_manager.html#a0ec52b1d65b765e4fe336d814c2bc11c", null ],
+    [ "shader_manager_", "class_draw_manager.html#aac4cfc76f2953c30ed5eac54b544d0ad", null ]
 ];

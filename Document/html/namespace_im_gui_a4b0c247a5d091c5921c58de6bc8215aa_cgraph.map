@@ -1,0 +1,13 @@
+<map id="ImGui::BeginColumns" name="ImGui::BeginColumns">
+<area shape="rect" id="node2" href="$namespace_im_gui.html#a7ceba68eca2b09fb6bf1ad88037e6203" title="ImGui::GetCurrentWindow" alt="" coords="201,5,375,32"/>
+<area shape="rect" id="node3" href="$namespace_im_gui.html#a27a8533605dc5b8cabf161bf7715bbde" title="ImGui::PushID" alt="" coords="235,107,341,133"/>
+<area shape="rect" id="node6" href="$struct_im_gui_window.html#a66400a63bc0b54d7d29e08d1b1b1a42b" title="ImGuiWindow::GetID" alt="" coords="453,5,595,32"/>
+<area shape="rect" id="node8" href="$namespace_im_gui.html#a85a245c78a9f7c351636bdad6e60c488" title="ImGui::KeepAliveID" alt="" coords="673,132,807,159"/>
+<area shape="rect" id="node9" href="$namespace_im_gui.html#aba0b2d8f890a5d435ae43d0c4a2d4dd1" title="ImGui::PopID" alt="" coords="239,157,337,184"/>
+<area shape="rect" id="node11" href="$class_im_vector.html#ac371dd62e56ae486b1a5038cf07eee56" title="ImVector::resize" alt="" coords="229,259,347,285"/>
+<area shape="rect" id="node12" href="$struct_im_gui_storage.html#a0f51ef327f7e548d003b0e006967c1eb" title="ImGuiStorage::GetFloat" alt="" coords="209,309,367,336"/>
+<area shape="rect" id="node4" href="$namespace_im_gui.html#a408f9ddac92f8629a7e273ced5f8c3aa" title="ImGui::GetCurrentWindowRead" alt="" coords="423,107,625,133"/>
+<area shape="rect" id="node5" href="$class_im_vector.html#a68387993f2a5f5c3b2a7139d9ab778b8" title="ImVector::push_back" alt="" coords="451,56,597,83"/>
+<area shape="rect" id="node7" href="$imgui_8cpp.html#aa55e55e944172fc87494a342da489970" title="ImHash" alt="" coords="707,5,773,32"/>
+<area shape="rect" id="node10" href="$class_im_vector.html#a3db7ce62d3c429effdb893fbf7148c1c" title="ImVector::pop_back" alt="" coords="455,157,593,184"/>
+</map>

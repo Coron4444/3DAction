@@ -25,5 +25,8 @@ var class_collision_base =
     [ "ReleaseCollisionObjectsFromArray", "class_collision_base.html#a46bbb58a0dd818fc172f34462b1d5b08", null ],
     [ "setIsJudgmentGround", "class_collision_base.html#a231cb5c715701444db63db030c06b694", null ],
     [ "setState", "class_collision_base.html#a01db1e666b8e71c33969e9ab6bbc724e", null ],
-    [ "Update", "class_collision_base.html#a0f967cf5de4178ee99f434c3ff4f16fd", null ]
+    [ "Update", "class_collision_base.html#a0f967cf5de4178ee99f434c3ff4f16fd", null ],
+    [ "collision_objects_", "class_collision_base.html#a9ef8dfac9a07e31cb1d058b6a22e9640", null ],
+    [ "is_judgment_ground_", "class_collision_base.html#acc56eed7a6366d77bb2b80810f0a4ea7", null ],
+    [ "state_", "class_collision_base.html#a00000e1adbe3869939c8119a4ae830d0", null ]
 ];

@@ -9,10 +9,23 @@
 
 {\ttfamily \#include $<$Draw\+Base.\+h$>$}
 
-Draw\+Base の継承関係図\begin{figure}[H]
+
+
+Draw\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=12.000000cm]{class_draw_base}
+\includegraphics[width=350pt]{class_draw_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Draw\+Base 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -48,12 +61,23 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 \item 
 \mbox{\hyperlink{class_draw_order_list}{Draw\+Order\+List}} $\ast$ \mbox{\hyperlink{class_draw_base_a894bf875b80745150b250e584f00fa0c}{Get\+Draw\+Order\+List}} ()
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_draw_order_list}{Draw\+Order\+List}} \mbox{\hyperlink{class_draw_base_a6ebc8dc96176ddd3bd984b3d54739adb}{draw\+\_\+order\+\_\+list\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 描画注文リスト \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Camera\+::\+Type}} \mbox{\hyperlink{class_draw_base_aa8be4980756a0af7cc76dfe455c492d4}{save\+\_\+camera\+\_\+type\+\_\+}} = Camera\+::\+Type\+::\+N\+O\+NE
+\begin{DoxyCompactList}\small\item\em カメラタイプ保存用 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 描画基底クラス 
 
 描画の基底クラス 
+
+ Draw\+Base.\+h の 35 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_draw_base_a799597f696c5cbf6074fb2655dea5e18}\label{class_draw_base_a799597f696c5cbf6074fb2655dea5e18}} 
@@ -65,6 +89,10 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 仮想デストラクタ 
+
+
+
+ Draw\+Base.\+h の 53 行目に定義があります。
 
 
 
@@ -83,6 +111,18 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 \mbox{\hyperlink{class_draw_null_aa78d05c51ff3943888678b9b2c6bd027}{Draw\+Null}}で再実装されています。
 
+
+
+ Draw\+Base.\+h の 74 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a2ba175f791ee01508ffb2be24c68fe7f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a408080106630a1146d7af0bb46a4d8d1}\label{class_draw_base_a408080106630a1146d7af0bb46a4d8d1}} 
 \index{Draw\+Base@{Draw\+Base}!Draw@{Draw}}
 \index{Draw@{Draw}!Draw\+Base@{Draw\+Base}}
@@ -102,6 +142,14 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 \mbox{\hyperlink{class_fade_a84a9e688650ac500e03cde74ff0210b8}{Fade}}, \mbox{\hyperlink{class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e}{Goal\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_aa808cfb8bc59d58bbd698a195603429f}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_abb5f9445b7d94c213a3751fa57e36643}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_render_texture_a529ab829c676470ae5764b42cba9efb0}{Render\+Texture}}, \mbox{\hyperlink{class_coin_draw_ac7d91fecb6845cebe276eb81a4953563}{Coin\+Draw}}, \mbox{\hyperlink{class_player_draw_a8b9e8caa6bea7295f58a0aaddeb9458b}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_ab018f370071f370ae7016d8ee402c456}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_a8ee20e1697bbbaf7f41c18334830488a}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a647dddefc43d66cb3c720ee8fbb6a783}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a01e4cb21d580bac86a226fa2e35bf4a3}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_a1915497654d079074dbd3e058db06a78}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_a42364ea42618cbab588d55050edfe95a}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}, \mbox{\hyperlink{class_enemy_draw_a20a23c1c5fd5e510d15e8ca27aabd821}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a15e4e602b3f9372349d0b6ff9e4fc423}{Number\+Draw}}, \mbox{\hyperlink{class_score_draw_a799e71943140a264cedba6002308b976}{Score\+Draw}} (計17項目)で実装されています。
 
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a408080106630a1146d7af0bb46a4d8d1_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a4e36184dbb605bcae13bfb38722ddc24}\label{class_draw_base_a4e36184dbb605bcae13bfb38722ddc24}} 
 \index{Draw\+Base@{Draw\+Base}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Draw\+Base@{Draw\+Base}}
@@ -112,12 +160,31 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 \mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_a387a97781f743aa0ea0727c050ef53b2}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_coin_draw_a1d4ab1a5c480833b8d8e7fe226136ad5}{Coin\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_a6cecfb28942044efff0b9d6213b511a5}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_a04ae25ae9cb59df0d0c346b65baed3f2}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_a2a74fafba17b2f63b1c61abd67289afd}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a4990a9f5662af324f2632e8647cbdde4}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_ab727012424a02249a90a0f7d247371a8}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_a67eabcc5ffd6697b87e89a1c4ddb95f6}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_a1d708782f13648724e423d1dca22b213}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_number_draw_ad1d9a4cee49e7bddce51b5c58e739de9}{Number\+Draw}}で実装されています。
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a4e36184dbb605bcae13bfb38722ddc24_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a894bf875b80745150b250e584f00fa0c}\label{class_draw_base_a894bf875b80745150b250e584f00fa0c}} 
 \index{Draw\+Base@{Draw\+Base}!Get\+Draw\+Order\+List@{Get\+Draw\+Order\+List}}
 \index{Get\+Draw\+Order\+List@{Get\+Draw\+Order\+List}!Draw\+Base@{Draw\+Base}}
 \subsubsection{\texorpdfstring{Get\+Draw\+Order\+List()}{GetDrawOrderList()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_draw_order_list}{Draw\+Order\+List}}$\ast$ Draw\+Base\+::\+Get\+Draw\+Order\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Draw\+Base.\+h の 127 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a894bf875b80745150b250e584f00fa0c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_ad82a75dff8e4e2f2ebbec2dd0d0734e5}\label{class_draw_base_ad82a75dff8e4e2f2ebbec2dd0d0734e5}} 
 \index{Draw\+Base@{Draw\+Base}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Draw\+Base@{Draw\+Base}}
@@ -126,8 +193,15 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
-\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_abfc9caaaa1b6120e2013701a9d264f2d}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_coin_draw_a869a6b7273b273048dd56822fae4d644}{Coin\+Draw}}, \mbox{\hyperlink{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}{Goal\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_ae818d3adaf5120845c2a78c230b5365e}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_ab356bf5d56c10a6689e101b35c30d889}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a0734eed4096afb12e6c9ef1f4d82b9d8}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a8858aa1b1eb9a6d4cb4605519efb20eb}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_ab126f938895211ff170bc37045a8e7a2}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_acbc487d912b464474ae6f1afd7d6bb74}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_enemy_draw_a12f00116f7fa97e07317a949d5c27bb4}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a3348d9d1cdd9dd03be25b82069275ca5}{Number\+Draw}}で実装されています。
+\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_abfc9caaaa1b6120e2013701a9d264f2d}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}{Goal\+Draw}}, \mbox{\hyperlink{class_coin_draw_a869a6b7273b273048dd56822fae4d644}{Coin\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_ae818d3adaf5120845c2a78c230b5365e}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_ab356bf5d56c10a6689e101b35c30d889}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_aaac019fb396a354ef0f823ed2bd72322}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a0734eed4096afb12e6c9ef1f4d82b9d8}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a8858aa1b1eb9a6d4cb4605519efb20eb}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_ab126f938895211ff170bc37045a8e7a2}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_acbc487d912b464474ae6f1afd7d6bb74}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_enemy_draw_a12f00116f7fa97e07317a949d5c27bb4}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a3348d9d1cdd9dd03be25b82069275ca5}{Number\+Draw}}で実装されています。
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_ad82a75dff8e4e2f2ebbec2dd0d0734e5_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a01239bf362040f7f2ef5e5f5371dcf18}\label{class_draw_base_a01239bf362040f7f2ef5e5f5371dcf18}} 
 \index{Draw\+Base@{Draw\+Base}!Get\+Matrix@{Get\+Matrix}}
 \index{Get\+Matrix@{Get\+Matrix}!Draw\+Base@{Draw\+Base}}
@@ -136,8 +210,15 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
-\mbox{\hyperlink{class_fade_a6aed6912ebf9c243c52cb82f298d8d64}{Fade}}, \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_adfa99798c61ac13f209dc99f1e2694c5}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}{Coin\+Draw}}, \mbox{\hyperlink{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95}{Goal\+Draw}}, \mbox{\hyperlink{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae}{Render\+Texture}}, \mbox{\hyperlink{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_af5d12b717020101e5c956cf3574f0e2a}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a1ab6229ba2d68b730797f5016c99f359}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_af21cd1dbd79c741a2e3ca2b8e26c5f61}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_a2629b4c4cd8e240e39c65b879c6e82b6}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_ab947a3d43975a6d95149bc112c08ce05}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_enemy_draw_a6f2a052a45caf0d255112cbe81b8bfa3}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a78f50afa05e728811d89a491f5eec899}{Number\+Draw}}, \mbox{\hyperlink{class_score_draw_a62aa20ef4b40544bf0a95770b925c780}{Score\+Draw}} (計17項目)で実装されています。
+\mbox{\hyperlink{class_fade_a6aed6912ebf9c243c52cb82f298d8d64}{Fade}}, \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_adfa99798c61ac13f209dc99f1e2694c5}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95}{Goal\+Draw}}, \mbox{\hyperlink{class_coin_draw_a8f5fd8668a4c66fe31446cc6f7c4afd7}{Coin\+Draw}}, \mbox{\hyperlink{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae}{Render\+Texture}}, \mbox{\hyperlink{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_af5d12b717020101e5c956cf3574f0e2a}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_aefc4be9e6ead4d90a5fc9c22cc07fe92}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a1ab6229ba2d68b730797f5016c99f359}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_af21cd1dbd79c741a2e3ca2b8e26c5f61}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_a2629b4c4cd8e240e39c65b879c6e82b6}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_ab947a3d43975a6d95149bc112c08ce05}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_enemy_draw_a6f2a052a45caf0d255112cbe81b8bfa3}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a78f50afa05e728811d89a491f5eec899}{Number\+Draw}}, \mbox{\hyperlink{class_score_draw_a62aa20ef4b40544bf0a95770b925c780}{Score\+Draw}} (計17項目)で実装されています。
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a01239bf362040f7f2ef5e5f5371dcf18_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a194eb48924f205d60d4e63c5becdd2fe}\label{class_draw_base_a194eb48924f205d60d4e63c5becdd2fe}} 
 \index{Draw\+Base@{Draw\+Base}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Draw\+Base@{Draw\+Base}}
@@ -146,8 +227,16 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
-\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_acfa569f1dcdc3829796138e313f204ad}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566}{Coin\+Draw}}, \mbox{\hyperlink{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}{Goal\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_a99aba47b4693f15498daf7df2bfee2d7}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a9a40fca53e23b9970a7c5decaa3d2da6}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a14212f1ee003c40d63db3822a84af7fb}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_aeb54d8cba559ef615ee46c8a7bbd3b9f}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_a7ecd8d4b987e4d58a247d3438a45f9d4}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_enemy_draw_acda1a2487aea432b08fc816351a12239}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a8234fb06d885feaa8a2f0ecf256db9a0}{Number\+Draw}}で実装されています。
+\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_acfa569f1dcdc3829796138e313f204ad}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}{Goal\+Draw}}, \mbox{\hyperlink{class_coin_draw_a178c8d88effe55aaad7d0e45b02e0566}{Coin\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_a99aba47b4693f15498daf7df2bfee2d7}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_aa7164b6f5788416788482893aa747d59}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a9a40fca53e23b9970a7c5decaa3d2da6}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a14212f1ee003c40d63db3822a84af7fb}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_aeb54d8cba559ef615ee46c8a7bbd3b9f}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_a7ecd8d4b987e4d58a247d3438a45f9d4}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_enemy_draw_acda1a2487aea432b08fc816351a12239}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a8234fb06d885feaa8a2f0ecf256db9a0}{Number\+Draw}}で実装されています。
 
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a194eb48924f205d60d4e63c5becdd2fe_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a87bb54e7f422959e84ac00aa7631bd3b}\label{class_draw_base_a87bb54e7f422959e84ac00aa7631bd3b}} 
 \index{Draw\+Base@{Draw\+Base}!Get\+Normal\+Texture@{Get\+Normal\+Texture}}
 \index{Get\+Normal\+Texture@{Get\+Normal\+Texture}!Draw\+Base@{Draw\+Base}}
@@ -158,6 +247,13 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 \mbox{\hyperlink{class_draw_null_a41b7d148612b2d328e85289e32dc374c}{Draw\+Null}}, \mbox{\hyperlink{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb}{Player\+Draw}}で実装されています。
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a87bb54e7f422959e84ac00aa7631bd3b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_aed79e9db49de4fa2dff064495b877bcd}\label{class_draw_base_aed79e9db49de4fa2dff064495b877bcd}} 
 \index{Draw\+Base@{Draw\+Base}!Get\+Object\+Num@{Get\+Object\+Num}}
 \index{Get\+Object\+Num@{Get\+Object\+Num}!Draw\+Base@{Draw\+Base}}
@@ -168,6 +264,14 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 \mbox{\hyperlink{class_draw_null_aaffa15d184f1d09512ccaa3bdad3f658}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_a8cc9a54a2bcb1fd006331fca1add02dc}{Stencil\+Shadow\+Test\+Draw}}で実装されています。
 
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_aed79e9db49de4fa2dff064495b877bcd_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_aa18abd488181eed72822f92a0f2521fe}\label{class_draw_base_aa18abd488181eed72822f92a0f2521fe}} 
 \index{Draw\+Base@{Draw\+Base}!Limited\+Change\+Camera\+Type@{Limited\+Change\+Camera\+Type}}
 \index{Limited\+Change\+Camera\+Type@{Limited\+Change\+Camera\+Type}!Draw\+Base@{Draw\+Base}}
@@ -183,6 +287,24 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 {\em camera} & \+: カメラ type \+: カメラタイプ \\
 \hline
 \end{DoxyParams}
+
+
+ Draw\+Base.\+h の 102 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_aa18abd488181eed72822f92a0f2521fe_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_aa18abd488181eed72822f92a0f2521fe_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a48b144e61928b7658c7a849017e40c79}\label{class_draw_base_a48b144e61928b7658c7a849017e40c79}} 
 \index{Draw\+Base@{Draw\+Base}!Revival\+Camera\+Type@{Revival\+Camera\+Type}}
 \index{Revival\+Camera\+Type@{Revival\+Camera\+Type}!Draw\+Base@{Draw\+Base}}
@@ -198,6 +320,24 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 {\em camera} & \+: カメラ \\
 \hline
 \end{DoxyParams}
+
+
+ Draw\+Base.\+h の 114 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a48b144e61928b7658c7a849017e40c79_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a48b144e61928b7658c7a849017e40c79_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_afe64f27b0bbf8c45da7aa0de4c3f3d65}\label{class_draw_base_afe64f27b0bbf8c45da7aa0de4c3f3d65}} 
 \index{Draw\+Base@{Draw\+Base}!Setting\+After\+Drawing@{Setting\+After\+Drawing}}
 \index{Setting\+After\+Drawing@{Setting\+After\+Drawing}!Draw\+Base@{Draw\+Base}}
@@ -217,6 +357,14 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 \mbox{\hyperlink{class_draw_null_a76edfc5af0bf3275f96f40394aff8510}{Draw\+Null}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_a68917115d3f151ed91ce297924ee5bbb}{Stencil\+Shadow\+Test\+Draw}}で実装されています。
 
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_afe64f27b0bbf8c45da7aa0de4c3f3d65_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_a3978252914ddde12197ea4577356bf25}\label{class_draw_base_a3978252914ddde12197ea4577356bf25}} 
 \index{Draw\+Base@{Draw\+Base}!Setting\+Before\+Drawing@{Setting\+Before\+Drawing}}
 \index{Setting\+Before\+Drawing@{Setting\+Before\+Drawing}!Draw\+Base@{Draw\+Base}}
@@ -234,8 +382,16 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 \end{DoxyParams}
 
 
-\mbox{\hyperlink{class_stencil_shadow_test_draw_a0f697b6dad67048c7f8916a53cca6b1c}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}{Coin\+Draw}}, \mbox{\hyperlink{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}{Draw\+Null}}で実装されています。
+\mbox{\hyperlink{class_stencil_shadow_test_draw_a0f697b6dad67048c7f8916a53cca6b1c}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}{Draw\+Null}}, \mbox{\hyperlink{class_coin_draw_a66c03acd675ac1820977cb21015abfdb}{Coin\+Draw}}で実装されています。
 
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_a3978252914ddde12197ea4577356bf25_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_draw_base_af64b19d08a58927a789e2fb8a11cf524}\label{class_draw_base_af64b19d08a58927a789e2fb8a11cf524}} 
 \index{Draw\+Base@{Draw\+Base}!Update@{Update}}
 \index{Update@{Update}!Draw\+Base@{Draw\+Base}}
@@ -249,6 +405,45 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 \mbox{\hyperlink{class_fade_a1579b5b9020344a1131ea11c15f2c0bd}{Fade}}, \mbox{\hyperlink{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20}{Goal\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_af69405fcc8b20684a19e982726d93ffa}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_coin_draw_a6157b17bf1706b85156aad0d88acfd7e}{Coin\+Draw}}, \mbox{\hyperlink{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}{Draw\+Null}}で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_draw_base_af64b19d08a58927a789e2fb8a11cf524_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_draw_base_a6ebc8dc96176ddd3bd984b3d54739adb}\label{class_draw_base_a6ebc8dc96176ddd3bd984b3d54739adb}} 
+\index{Draw\+Base@{Draw\+Base}!draw\+\_\+order\+\_\+list\+\_\+@{draw\+\_\+order\+\_\+list\+\_\+}}
+\index{draw\+\_\+order\+\_\+list\+\_\+@{draw\+\_\+order\+\_\+list\+\_\+}!Draw\+Base@{Draw\+Base}}
+\subsubsection{\texorpdfstring{draw\+\_\+order\+\_\+list\+\_\+}{draw\_order\_list\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_draw_order_list}{Draw\+Order\+List}} Draw\+Base\+::draw\+\_\+order\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+描画注文リスト 
+
+
+
+ Draw\+Base.\+h の 41 行目に定義があります。
+
+\mbox{\Hypertarget{class_draw_base_aa8be4980756a0af7cc76dfe455c492d4}\label{class_draw_base_aa8be4980756a0af7cc76dfe455c492d4}} 
+\index{Draw\+Base@{Draw\+Base}!save\+\_\+camera\+\_\+type\+\_\+@{save\+\_\+camera\+\_\+type\+\_\+}}
+\index{save\+\_\+camera\+\_\+type\+\_\+@{save\+\_\+camera\+\_\+type\+\_\+}!Draw\+Base@{Draw\+Base}}
+\subsubsection{\texorpdfstring{save\+\_\+camera\+\_\+type\+\_\+}{save\_camera\_type\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_a3b0a1f58deca679ac665f61c480d1dcb}{Camera\+::\+Type}} Draw\+Base\+::save\+\_\+camera\+\_\+type\+\_\+ = Camera\+::\+Type\+::\+N\+O\+NE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+カメラタイプ保存用 
+
+
+
+ Draw\+Base.\+h の 42 行目に定義があります。
 
 
 

@@ -6,5 +6,7 @@ var class_title_logo_draw =
     [ "GetMatrix", "class_title_logo_draw.html#af21cd1dbd79c741a2e3ca2b8e26c5f61", null ],
     [ "GetMeshNum", "class_title_logo_draw.html#a14212f1ee003c40d63db3822a84af7fb", null ],
     [ "Init", "class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30", null ],
-    [ "Uninit", "class_title_logo_draw.html#a07bbf9e8de5c7b9ee028408496c13c50", null ]
+    [ "Uninit", "class_title_logo_draw.html#a07bbf9e8de5c7b9ee028408496c13c50", null ],
+    [ "decale_texture_", "class_title_logo_draw.html#a84be55e143853754d0b5f21647e3c595", null ],
+    [ "title_logo_", "class_title_logo_draw.html#a73a6a0f44bd8d9b5dd5c4e31182881d2", null ]
 ];

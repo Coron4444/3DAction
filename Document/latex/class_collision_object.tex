@@ -9,10 +9,19 @@
 
 {\ttfamily \#include $<$Collision\+Object.\+h$>$}
 
+
+
+Collision\+Object 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_collision_object__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_collision_object_a6f502c16aaae1dc1470107a930f28808}{Collision\+Object}} (\mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}} $\ast$collision\+\_\+shape, int tag=T\+A\+G\+\_\+\+N\+O\+NE)
+\mbox{\hyperlink{class_collision_object_a6f502c16aaae1dc1470107a930f28808}{Collision\+Object}} (\mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}} $\ast$collision\+\_\+shape, int tag=\mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002bd99ede049f}{T\+A\+G\+\_\+\+N\+O\+NE}})
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1}{$\sim$\+Collision\+Object}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
@@ -30,6 +39,24 @@ bool \mbox{\hyperlink{class_collision_object_ac11b01882a159efadbe62bd5a66c49aa}{
 \item 
 void \mbox{\hyperlink{class_collision_object_a3000144caea71e39cbdafebb249fef7e}{set\+Is\+Judgment}} (bool value)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}} $\ast$ \mbox{\hyperlink{class_collision_object_a4ed81be0cf60ec47e54f83955853a6b1}{collision\+\_\+shape\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 形状 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_collision_object_a5fb64c6aaab4606a4e0a1058a844d10e}{hit\+\_\+vector\+\_\+}}
+\begin{DoxyCompactList}\small\item\em めり込みベクトル \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_collision_object_a104bfc5534ba8ea189a45de9ba32f6ee}{tag\+\_\+}}
+\begin{DoxyCompactList}\small\item\em タグ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_object_a0dd29059add616ce619c72ebce6af720}{is\+\_\+judgment\+\_\+}} = true
+\begin{DoxyCompactList}\small\item\em 判定するかフラグ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_object_a5af3618b5605c1bcff1e403c85c3b1ca}{is\+\_\+trigger\+\_\+}} = true
+\begin{DoxyCompactList}\small\item\em 物理演算をするかのフラグ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002bd99ede049f}{T\+A\+G\+\_\+\+N\+O\+NE}} = -\/1
+\begin{DoxyCompactList}\small\item\em タグなし時の値 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -37,12 +64,16 @@ void \mbox{\hyperlink{class_collision_object_a3000144caea71e39cbdafebb249fef7e}{
 
 衝突オブジェクトのクラス 
 
+ Collision\+Object.\+h の 33 行目に定義があります。
+
+
+
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_collision_object_a6f502c16aaae1dc1470107a930f28808}\label{class_collision_object_a6f502c16aaae1dc1470107a930f28808}} 
 \index{Collision\+Object@{Collision\+Object}!Collision\+Object@{Collision\+Object}}
 \index{Collision\+Object@{Collision\+Object}!Collision\+Object@{Collision\+Object}}
 \subsubsection{\texorpdfstring{Collision\+Object()}{CollisionObject()}}
-{\footnotesize\ttfamily Collision\+Object\+::\+Collision\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}} $\ast$}]{collision\+\_\+shape,  }\item[{int}]{tag = {\ttfamily TAG\+\_\+NONE} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Collision\+Object\+::\+Collision\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}} $\ast$}]{collision\+\_\+shape,  }\item[{int}]{tag = {\ttfamily \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002bd99ede049f}{T\+A\+G\+\_\+\+N\+O\+NE}}} }\end{DoxyParamCaption})}
 
 
 
@@ -53,6 +84,10 @@ void \mbox{\hyperlink{class_collision_object_a3000144caea71e39cbdafebb249fef7e}{
 {\em collision\+\_\+shape} & \+: 衝突オブジェクトの形状 tag \+: コリジョンオブジェクトを識別するタグ \\
 \hline
 \end{DoxyParams}
+
+
+ Collision\+Object.\+cpp の 23 行目に定義があります。
+
 \mbox{\Hypertarget{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1}\label{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1}} 
 \index{Collision\+Object@{Collision\+Object}!````~Collision\+Object@{$\sim$\+Collision\+Object}}
 \index{````~Collision\+Object@{$\sim$\+Collision\+Object}!Collision\+Object@{Collision\+Object}}
@@ -65,6 +100,17 @@ void \mbox{\hyperlink{class_collision_object_a3000144caea71e39cbdafebb249fef7e}{
 
 
 
+ Collision\+Object.\+cpp の 35 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1_cgraph}
+\end{center}
+\end{figure}
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c}\label{class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c}} 
 \index{Collision\+Object@{Collision\+Object}!get\+Collision\+Shape@{get\+Collision\+Shape}}
@@ -72,24 +118,71 @@ void \mbox{\hyperlink{class_collision_object_a3000144caea71e39cbdafebb249fef7e}{
 \subsubsection{\texorpdfstring{get\+Collision\+Shape()}{getCollisionShape()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}}$\ast$ Collision\+Object\+::get\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Collision\+Object.\+h の 82 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_object_adb01187ec10302f13034407a3c852860}\label{class_collision_object_adb01187ec10302f13034407a3c852860}} 
 \index{Collision\+Object@{Collision\+Object}!get\+Hit\+Vector@{get\+Hit\+Vector}}
 \index{get\+Hit\+Vector@{get\+Hit\+Vector}!Collision\+Object@{Collision\+Object}}
 \subsubsection{\texorpdfstring{get\+Hit\+Vector()}{getHitVector()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Collision\+Object\+::get\+Hit\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Collision\+Object.\+h の 83 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_adb01187ec10302f13034407a3c852860_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_object_ac11b01882a159efadbe62bd5a66c49aa}\label{class_collision_object_ac11b01882a159efadbe62bd5a66c49aa}} 
 \index{Collision\+Object@{Collision\+Object}!get\+Is\+Judgment@{get\+Is\+Judgment}}
 \index{get\+Is\+Judgment@{get\+Is\+Judgment}!Collision\+Object@{Collision\+Object}}
 \subsubsection{\texorpdfstring{get\+Is\+Judgment()}{getIsJudgment()}}
 {\footnotesize\ttfamily bool Collision\+Object\+::get\+Is\+Judgment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Collision\+Object.\+h の 85 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_ac11b01882a159efadbe62bd5a66c49aa_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9}\label{class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9}} 
 \index{Collision\+Object@{Collision\+Object}!get\+Tag@{get\+Tag}}
 \index{get\+Tag@{get\+Tag}!Collision\+Object@{Collision\+Object}}
 \subsubsection{\texorpdfstring{get\+Tag()}{getTag()}}
 {\footnotesize\ttfamily int Collision\+Object\+::get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Collision\+Object.\+h の 81 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}\label{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}} 
 \index{Collision\+Object@{Collision\+Object}!Reset\+Hit\+Data@{Reset\+Hit\+Data}}
 \index{Reset\+Hit\+Data@{Reset\+Hit\+Data}!Collision\+Object@{Collision\+Object}}
@@ -100,17 +193,146 @@ void \mbox{\hyperlink{class_collision_object_a3000144caea71e39cbdafebb249fef7e}{
 
 衝突用データのリセット関数 
 
+
+
+ Collision\+Object.\+cpp の 101 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_a92dd5d21c6674605d290e0d37d64505a_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_a92dd5d21c6674605d290e0d37d64505a_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_object_a1087fa9cebfe0b1675923807b73d8868}\label{class_collision_object_a1087fa9cebfe0b1675923807b73d8868}} 
 \index{Collision\+Object@{Collision\+Object}!set\+Hit\+Vector@{set\+Hit\+Vector}}
 \index{set\+Hit\+Vector@{set\+Hit\+Vector}!Collision\+Object@{Collision\+Object}}
 \subsubsection{\texorpdfstring{set\+Hit\+Vector()}{setHitVector()}}
 {\footnotesize\ttfamily void Collision\+Object\+::set\+Hit\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Collision\+Object.\+h の 84 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_a1087fa9cebfe0b1675923807b73d8868_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_object_a3000144caea71e39cbdafebb249fef7e}\label{class_collision_object_a3000144caea71e39cbdafebb249fef7e}} 
 \index{Collision\+Object@{Collision\+Object}!set\+Is\+Judgment@{set\+Is\+Judgment}}
 \index{set\+Is\+Judgment@{set\+Is\+Judgment}!Collision\+Object@{Collision\+Object}}
 \subsubsection{\texorpdfstring{set\+Is\+Judgment()}{setIsJudgment()}}
 {\footnotesize\ttfamily void Collision\+Object\+::set\+Is\+Judgment (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Collision\+Object.\+h の 86 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_object_a3000144caea71e39cbdafebb249fef7e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_collision_object_a4ed81be0cf60ec47e54f83955853a6b1}\label{class_collision_object_a4ed81be0cf60ec47e54f83955853a6b1}} 
+\index{Collision\+Object@{Collision\+Object}!collision\+\_\+shape\+\_\+@{collision\+\_\+shape\+\_\+}}
+\index{collision\+\_\+shape\+\_\+@{collision\+\_\+shape\+\_\+}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{collision\+\_\+shape\+\_\+}{collision\_shape\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}}$\ast$ Collision\+Object\+::collision\+\_\+shape\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+形状 
+
+
+
+ Collision\+Object.\+h の 47 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_object_a5fb64c6aaab4606a4e0a1058a844d10e}\label{class_collision_object_a5fb64c6aaab4606a4e0a1058a844d10e}} 
+\index{Collision\+Object@{Collision\+Object}!hit\+\_\+vector\+\_\+@{hit\+\_\+vector\+\_\+}}
+\index{hit\+\_\+vector\+\_\+@{hit\+\_\+vector\+\_\+}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{hit\+\_\+vector\+\_\+}{hit\_vector\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Collision\+Object\+::hit\+\_\+vector\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+めり込みベクトル 
+
+
+
+ Collision\+Object.\+h の 48 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_object_a0dd29059add616ce619c72ebce6af720}\label{class_collision_object_a0dd29059add616ce619c72ebce6af720}} 
+\index{Collision\+Object@{Collision\+Object}!is\+\_\+judgment\+\_\+@{is\+\_\+judgment\+\_\+}}
+\index{is\+\_\+judgment\+\_\+@{is\+\_\+judgment\+\_\+}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{is\+\_\+judgment\+\_\+}{is\_judgment\_}}
+{\footnotesize\ttfamily bool Collision\+Object\+::is\+\_\+judgment\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+判定するかフラグ 
+
+
+
+ Collision\+Object.\+h の 51 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_object_a5af3618b5605c1bcff1e403c85c3b1ca}\label{class_collision_object_a5af3618b5605c1bcff1e403c85c3b1ca}} 
+\index{Collision\+Object@{Collision\+Object}!is\+\_\+trigger\+\_\+@{is\+\_\+trigger\+\_\+}}
+\index{is\+\_\+trigger\+\_\+@{is\+\_\+trigger\+\_\+}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{is\+\_\+trigger\+\_\+}{is\_trigger\_}}
+{\footnotesize\ttfamily bool Collision\+Object\+::is\+\_\+trigger\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+物理演算をするかのフラグ 
+
+
+
+ Collision\+Object.\+h の 52 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_object_a104bfc5534ba8ea189a45de9ba32f6ee}\label{class_collision_object_a104bfc5534ba8ea189a45de9ba32f6ee}} 
+\index{Collision\+Object@{Collision\+Object}!tag\+\_\+@{tag\+\_\+}}
+\index{tag\+\_\+@{tag\+\_\+}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{tag\+\_\+}{tag\_}}
+{\footnotesize\ttfamily int Collision\+Object\+::tag\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+タグ 
+
+
+
+ Collision\+Object.\+h の 50 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_object_a22badef1e6fc9c2b1f002bd99ede049f}\label{class_collision_object_a22badef1e6fc9c2b1f002bd99ede049f}} 
+\index{Collision\+Object@{Collision\+Object}!T\+A\+G\+\_\+\+N\+O\+NE@{T\+A\+G\+\_\+\+N\+O\+NE}}
+\index{T\+A\+G\+\_\+\+N\+O\+NE@{T\+A\+G\+\_\+\+N\+O\+NE}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{T\+A\+G\+\_\+\+N\+O\+NE}{TAG\_NONE}}
+{\footnotesize\ttfamily const int Collision\+Object\+::\+T\+A\+G\+\_\+\+N\+O\+NE = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+タグなし時の値 
+
+
+
+ Collision\+Object.\+h の 39 行目に定義があります。
 
 
 

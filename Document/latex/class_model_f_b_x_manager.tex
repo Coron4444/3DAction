@@ -4,6 +4,15 @@
 
 {\ttfamily \#include $<$Model\+F\+B\+X\+Manager.\+h$>$}
 
+
+
+Model\+F\+B\+X\+Manager 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_model_f_b_x_manager__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -17,6 +26,20 @@ void \mbox{\hyperlink{class_model_f_b_x_manager_a9a010cad6b7ddf07169daec28807b14
 \item 
 void \mbox{\hyperlink{class_model_f_b_x_manager_a1b25dfc755e529dc5f61913697ef99d1}{Set\+Model\+F\+B\+X\+Object}} (const std\+::string $\ast$key\+\_\+name)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_model_f_b_x_object}{Model\+F\+B\+X\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_model_f_b_x_manager_adac581d36a055c584179261b328d1909}{model\+\_\+map\+\_\+}}
+\item 
+\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} $\ast$ \mbox{\hyperlink{class_model_f_b_x_manager_ab44f914c3afd05163a190a55022e3f7b}{texture\+\_\+manager\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Model\+F\+B\+X\+Manager.\+h の 42 行目に定義があります。
+
 
 
 \subsection{構築子と解体子}
@@ -26,11 +49,19 @@ void \mbox{\hyperlink{class_model_f_b_x_manager_a1b25dfc755e529dc5f61913697ef99d
 \subsubsection{\texorpdfstring{Model\+F\+B\+X\+Manager()}{ModelFBXManager()}}
 {\footnotesize\ttfamily Model\+F\+B\+X\+Manager\+::\+Model\+F\+B\+X\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} $\ast$}]{texture\+\_\+manager }\end{DoxyParamCaption})}
 
+
+
+ Model\+F\+B\+X\+Manager.\+cpp の 35 行目に定義があります。
+
 \mbox{\Hypertarget{class_model_f_b_x_manager_a6714c69d45e3aad2d0d04b0d1a69d2dc}\label{class_model_f_b_x_manager_a6714c69d45e3aad2d0d04b0d1a69d2dc}} 
 \index{Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}!````~Model\+F\+B\+X\+Manager@{$\sim$\+Model\+F\+B\+X\+Manager}}
 \index{````~Model\+F\+B\+X\+Manager@{$\sim$\+Model\+F\+B\+X\+Manager}!Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}}
 \subsubsection{\texorpdfstring{$\sim$\+Model\+F\+B\+X\+Manager()}{~ModelFBXManager()}}
 {\footnotesize\ttfamily Model\+F\+B\+X\+Manager\+::$\sim$\+Model\+F\+B\+X\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+ Model\+F\+B\+X\+Manager.\+cpp の 48 行目に定義があります。
 
 
 
@@ -41,17 +72,52 @@ void \mbox{\hyperlink{class_model_f_b_x_manager_a1b25dfc755e529dc5f61913697ef99d
 \subsubsection{\texorpdfstring{Get\+Model\+F\+B\+X\+Object()}{GetModelFBXObject()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_model_f_b_x_object}{Model\+F\+B\+X\+Object}} $\ast$ Model\+F\+B\+X\+Manager\+::\+Get\+Model\+F\+B\+X\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name }\end{DoxyParamCaption})}
 
+
+
+ Model\+F\+B\+X\+Manager.\+cpp の 97 行目に定義があります。
+
 \mbox{\Hypertarget{class_model_f_b_x_manager_a9a010cad6b7ddf07169daec28807b143}\label{class_model_f_b_x_manager_a9a010cad6b7ddf07169daec28807b143}} 
 \index{Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}!Registration\+Model\+F\+B\+X\+Object@{Registration\+Model\+F\+B\+X\+Object}}
 \index{Registration\+Model\+F\+B\+X\+Object@{Registration\+Model\+F\+B\+X\+Object}!Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}}
 \subsubsection{\texorpdfstring{Registration\+Model\+F\+B\+X\+Object()}{RegistrationModelFBXObject()}}
 {\footnotesize\ttfamily void Model\+F\+B\+X\+Manager\+::\+Registration\+Model\+F\+B\+X\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
+
+
+ Model\+F\+B\+X\+Manager.\+cpp の 72 行目に定義があります。
+
 \mbox{\Hypertarget{class_model_f_b_x_manager_a1b25dfc755e529dc5f61913697ef99d1}\label{class_model_f_b_x_manager_a1b25dfc755e529dc5f61913697ef99d1}} 
 \index{Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}!Set\+Model\+F\+B\+X\+Object@{Set\+Model\+F\+B\+X\+Object}}
 \index{Set\+Model\+F\+B\+X\+Object@{Set\+Model\+F\+B\+X\+Object}!Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}}
 \subsubsection{\texorpdfstring{Set\+Model\+F\+B\+X\+Object()}{SetModelFBXObject()}}
 {\footnotesize\ttfamily void Model\+F\+B\+X\+Manager\+::\+Set\+Model\+F\+B\+X\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+ Model\+F\+B\+X\+Manager.\+cpp の 122 行目に定義があります。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_model_f_b_x_manager_adac581d36a055c584179261b328d1909}\label{class_model_f_b_x_manager_adac581d36a055c584179261b328d1909}} 
+\index{Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}!model\+\_\+map\+\_\+@{model\+\_\+map\+\_\+}}
+\index{model\+\_\+map\+\_\+@{model\+\_\+map\+\_\+}!Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}}
+\subsubsection{\texorpdfstring{model\+\_\+map\+\_\+}{model\_map\_}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{class_model_f_b_x_object}{Model\+F\+B\+X\+Object}}$\ast$$>$ Model\+F\+B\+X\+Manager\+::model\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Manager.\+h の 68 行目に定義があります。
+
+\mbox{\Hypertarget{class_model_f_b_x_manager_ab44f914c3afd05163a190a55022e3f7b}\label{class_model_f_b_x_manager_ab44f914c3afd05163a190a55022e3f7b}} 
+\index{Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}!texture\+\_\+manager\+\_\+@{texture\+\_\+manager\+\_\+}}
+\index{texture\+\_\+manager\+\_\+@{texture\+\_\+manager\+\_\+}!Model\+F\+B\+X\+Manager@{Model\+F\+B\+X\+Manager}}
+\subsubsection{\texorpdfstring{texture\+\_\+manager\+\_\+}{texture\_manager\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}$\ast$ Model\+F\+B\+X\+Manager\+::texture\+\_\+manager\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Model\+F\+B\+X\+Manager.\+h の 69 行目に定義があります。
 
 
 

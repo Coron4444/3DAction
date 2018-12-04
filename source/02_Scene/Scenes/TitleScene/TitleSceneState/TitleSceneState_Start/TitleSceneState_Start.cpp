@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    タイトルシーンステートクラス(スタート)
-//    Author : Araki Kai                                作成日 : 2018/11/06
-//
+//!	@file	 TitleSceneState_Start.cpp
+//!	@brief	 タイトルシーンステート(スタート)Class
+//! @details 
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
 
 
@@ -28,7 +28,7 @@
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
 //--------------------------------------------------
 // +初期化関数
@@ -69,8 +69,8 @@ void TitleSceneState_Start::Update()
 {
 	if (GetKeyboardTrigger(DIK_SPACE))
 	{
-		title_scene_->GetSceneManager()
-			->SetNextScene(new TutorialScene(new TutorialSceneState_Start()));
+		title_scene_->getpSceneManager()
+			->setNextScene(new TutorialScene(new TutorialSceneState_Start()));
 	}
 }
 

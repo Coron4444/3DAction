@@ -9,10 +9,23 @@
 
 {\ttfamily \#include $<$Component\+Base.\+h$>$}
 
-Component\+Base の継承関係図\begin{figure}[H]
+
+
+Component\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=11.367521cm]{class_component_base}
+\includegraphics[height=550pt]{class_component_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Component\+Base 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_base__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -28,12 +41,21 @@ void \mbox{\hyperlink{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0}{Se
 \item 
 \mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$ \mbox{\hyperlink{class_component_base_a0ac0d71aeeb768401f34a2e780b1e25d}{Get\+Game\+Object}} ()
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$ \mbox{\hyperlink{class_component_base_a60a43b42437cd5be2b05d2f4f4dd8147}{game\+\_\+object\+\_\+}}
+\begin{DoxyCompactList}\small\item\em ゲームオブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 コンポーネント基底クラス 
 
 コンポーネントの基底クラス 
+
+ Component\+Base.\+h の 34 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_component_base_a5d22c6d5f792ff42ab6cb11a8ac38478}\label{class_component_base_a5d22c6d5f792ff42ab6cb11a8ac38478}} 
@@ -48,6 +70,10 @@ void \mbox{\hyperlink{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0}{Se
 
 
 
+ Component\+Base.\+h の 50 行目に定義があります。
+
+
+
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_component_base_a0ac0d71aeeb768401f34a2e780b1e25d}\label{class_component_base_a0ac0d71aeeb768401f34a2e780b1e25d}} 
 \index{Component\+Base@{Component\+Base}!Get\+Game\+Object@{Get\+Game\+Object}}
@@ -55,6 +81,18 @@ void \mbox{\hyperlink{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0}{Se
 \subsubsection{\texorpdfstring{Get\+Game\+Object()}{GetGameObject()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}}$\ast$ Component\+Base\+::\+Get\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Component\+Base.\+h の 66 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_base_a0ac0d71aeeb768401f34a2e780b1e25d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_component_base_a125939d6befe42f28886a6523e86b18b}\label{class_component_base_a125939d6befe42f28886a6523e86b18b}} 
 \index{Component\+Base@{Component\+Base}!Init@{Init}}
 \index{Init@{Init}!Component\+Base@{Component\+Base}}
@@ -67,14 +105,32 @@ void \mbox{\hyperlink{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0}{Se
 
 
 
-\mbox{\hyperlink{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}{Goal\+Collision}}, \mbox{\hyperlink{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e}{Goal\+Draw}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_a65be72e71cd12cacf315b0364c12c3e3}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_coin_collision_a4119a7decab2410a4ada3568ad0c132d}{Coin\+Collision}}, \mbox{\hyperlink{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_a9af656c0a8ebfb5fa133a0983add6ffd}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a7ad3fe53d9bda4ea16c958bc102ff54e}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a9f70fb70639510908f4e07ee14667e30}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_a4287d2ce33033b2413c1d3a81b173373}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}{Coin\+Draw}}, \mbox{\hyperlink{class_enemy_collision_ae5c000a30c8c4a023dd0c8e658def772}{Enemy\+Collision}}, \mbox{\hyperlink{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}{Player\+Collision}}, \mbox{\hyperlink{class_enemy_draw_aa1659c35fa757db6a6cf07e26ad9ddfb}{Enemy\+Draw}}, \mbox{\hyperlink{class_render_texture_a498eb8be8672e01164b3770cdff43291}{Render\+Texture}}, \mbox{\hyperlink{class_number_draw_ad52c1e8b9ae6e830a82c440cc18cb6c9}{Number\+Draw}}, \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}, \mbox{\hyperlink{class_push_space_logo_update_a9c165604160c012b429c1db1d67ffb2a}{Push\+Space\+Logo\+Update}}, \mbox{\hyperlink{class_score_update_afd51e11ad00ebc15d9b3139398437afc}{Score\+Update}}, \mbox{\hyperlink{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}{Player\+Update}}, \mbox{\hyperlink{class_player_update___special_a48906da6915325d92d5cc6ec67212259}{Player\+Update\+\_\+\+Special}}, \mbox{\hyperlink{class_enemy_update_a5b68696e964f71fca73c9143e3770c9d}{Enemy\+Update}}, \mbox{\hyperlink{class_sky_dome_update_ab4fec6d13590c07e39e6e8b4f7f7613a}{Sky\+Dome\+Update}}, \mbox{\hyperlink{class_score_draw_af013abb96136825e71d4fee06529fc69}{Score\+Draw}} (計26項目)で実装されています。
+\mbox{\hyperlink{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}{Goal\+Collision}}, \mbox{\hyperlink{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e}{Goal\+Draw}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_a65be72e71cd12cacf315b0364c12c3e3}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_coin_collision_a4119a7decab2410a4ada3568ad0c132d}{Coin\+Collision}}, \mbox{\hyperlink{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_a9af656c0a8ebfb5fa133a0983add6ffd}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_a718d587edcabb1feea72153a79a65176}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a7ad3fe53d9bda4ea16c958bc102ff54e}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a9f70fb70639510908f4e07ee14667e30}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_field_draw_a4287d2ce33033b2413c1d3a81b173373}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_enemy_collision_ae5c000a30c8c4a023dd0c8e658def772}{Enemy\+Collision}}, \mbox{\hyperlink{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}{Player\+Collision}}, \mbox{\hyperlink{class_coin_draw_ad0f5da5cfb896541fd59b1ab4a8593d1}{Coin\+Draw}}, \mbox{\hyperlink{class_enemy_draw_aa1659c35fa757db6a6cf07e26ad9ddfb}{Enemy\+Draw}}, \mbox{\hyperlink{class_render_texture_a498eb8be8672e01164b3770cdff43291}{Render\+Texture}}, \mbox{\hyperlink{class_number_draw_ad52c1e8b9ae6e830a82c440cc18cb6c9}{Number\+Draw}}, \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}, \mbox{\hyperlink{class_push_space_logo_update_a9c165604160c012b429c1db1d67ffb2a}{Push\+Space\+Logo\+Update}}, \mbox{\hyperlink{class_score_update_afd51e11ad00ebc15d9b3139398437afc}{Score\+Update}}, \mbox{\hyperlink{class_player_update_ac72b39db7b7bfaf094bde9ed1adef4b7}{Player\+Update}}, \mbox{\hyperlink{class_player_update___special_a48906da6915325d92d5cc6ec67212259}{Player\+Update\+\_\+\+Special}}, \mbox{\hyperlink{class_enemy_update_a5b68696e964f71fca73c9143e3770c9d}{Enemy\+Update}}, \mbox{\hyperlink{class_sky_dome_update_ab4fec6d13590c07e39e6e8b4f7f7613a}{Sky\+Dome\+Update}}, \mbox{\hyperlink{class_score_draw_af013abb96136825e71d4fee06529fc69}{Score\+Draw}} (計26項目)で実装されています。
 
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_base_a125939d6befe42f28886a6523e86b18b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0}\label{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0}} 
 \index{Component\+Base@{Component\+Base}!Set\+Game\+Object@{Set\+Game\+Object}}
 \index{Set\+Game\+Object@{Set\+Game\+Object}!Component\+Base@{Component\+Base}}
 \subsubsection{\texorpdfstring{Set\+Game\+Object()}{SetGameObject()}}
 {\footnotesize\ttfamily void Component\+Base\+::\+Set\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Component\+Base.\+h の 65 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_component_base_a9f42beaf0383d6f629819579cab4de57}\label{class_component_base_a9f42beaf0383d6f629819579cab4de57}} 
 \index{Component\+Base@{Component\+Base}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Component\+Base@{Component\+Base}}
@@ -88,6 +144,31 @@ void \mbox{\hyperlink{class_component_base_ac9fc08588e3d29caf8d692a3392fc7b0}{Se
 
 
 \mbox{\hyperlink{class_fade_ae77d06811869d3c8162a42c3e0e14f7f}{Fade}}, \mbox{\hyperlink{class_goal_collision_ab818bad44ffcd595f1c495e659c0b348}{Goal\+Collision}}, \mbox{\hyperlink{class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24}{Goal\+Draw}}, \mbox{\hyperlink{class_stencil_shadow_test_draw_ad0672bf4ecfc8091cf54ed6f2c76b618}{Stencil\+Shadow\+Test\+Draw}}, \mbox{\hyperlink{class_tutorial_logo_draw_a949fb70954e3df28f87b8ed5c61bf8f1}{Tutorial\+Logo\+Draw}}, \mbox{\hyperlink{class_player_draw_a917b2947914287f23d87ca75cd68f553}{Player\+Draw}}, \mbox{\hyperlink{class_clear_logo_draw_aa73db5b701e644f8e552ddb254a0a9aa}{Clear\+Logo\+Draw}}, \mbox{\hyperlink{class_failure_logo_draw_a97646253380b54f37565650e211f33cd}{Failure\+Logo\+Draw}}, \mbox{\hyperlink{class_push_space_logo_draw_a79021c1df43968d6008de74126d53fba}{Push\+Space\+Logo\+Draw}}, \mbox{\hyperlink{class_title_logo_draw_a07bbf9e8de5c7b9ee028408496c13c50}{Title\+Logo\+Draw}}, \mbox{\hyperlink{class_coin_collision_aa852afdcdbedcf82809df9c7fd99be9e}{Coin\+Collision}}, \mbox{\hyperlink{class_field_draw_a89a78212c141714d9e39e25e663aaeff}{Field\+Draw}}, \mbox{\hyperlink{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}{Sky\+Dome\+Draw}}, \mbox{\hyperlink{class_coin_draw_a6484c22a5598e298f18e7cd6083cd551}{Coin\+Draw}}, \mbox{\hyperlink{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8}{Render\+Texture}}, \mbox{\hyperlink{class_enemy_collision_a2a194c606fd162db803c70c6fed9b9e4}{Enemy\+Collision}}, \mbox{\hyperlink{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}{Player\+Collision}}, \mbox{\hyperlink{class_enemy_draw_a2861dc0623b0be7726bc69a6a469190e}{Enemy\+Draw}}, \mbox{\hyperlink{class_number_draw_a2b203d101f23f0d3f584937ff5ad662a}{Number\+Draw}}, \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}, \mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Collision\+Null}}, \mbox{\hyperlink{class_score_draw_aad744f8a7a1202e6ba8117c660f297ee}{Score\+Draw}}, \mbox{\hyperlink{class_push_space_logo_update_a94f791874cb6160cd33cd7068fcde0d0}{Push\+Space\+Logo\+Update}}, \mbox{\hyperlink{class_score_update_a701d9c84c3ef92b1c54f33b37e23605f}{Score\+Update}}, \mbox{\hyperlink{class_player_update_a997e0813a825d7525da4b5b89a290168}{Player\+Update}}, \mbox{\hyperlink{class_player_update___special_a60b5982ed56b52293a9e651ae7bf305f}{Player\+Update\+\_\+\+Special}}, \mbox{\hyperlink{class_enemy_update_a294a5d4c65551af43e933cb65036f279}{Enemy\+Update}}, \mbox{\hyperlink{class_sky_dome_update_a54da74ef017a22075ce473abe1345489}{Sky\+Dome\+Update}} (計28項目)で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_base_a9f42beaf0383d6f629819579cab4de57_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_component_base_a60a43b42437cd5be2b05d2f4f4dd8147}\label{class_component_base_a60a43b42437cd5be2b05d2f4f4dd8147}} 
+\index{Component\+Base@{Component\+Base}!game\+\_\+object\+\_\+@{game\+\_\+object\+\_\+}}
+\index{game\+\_\+object\+\_\+@{game\+\_\+object\+\_\+}!Component\+Base@{Component\+Base}}
+\subsubsection{\texorpdfstring{game\+\_\+object\+\_\+}{game\_object\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}}$\ast$ Component\+Base\+::game\+\_\+object\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ゲームオブジェクト 
+
+
+
+ Component\+Base.\+h の 40 行目に定義があります。
 
 
 

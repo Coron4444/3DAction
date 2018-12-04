@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('class_vertex_shader_base.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_vertex_shader_base-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">VertexShaderBase クラス</div>  </div>
@@ -102,15 +103,22 @@ $(document).ready(function(){initNavTree('class_vertex_shader_base.html','');});
 <div class="dynheader">
 VertexShaderBase の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_vertex_shader_base.png" usemap="#VertexShaderBase_map" alt=""/>
-  <map id="VertexShaderBase_map" name="VertexShaderBase_map">
-<area href="class_shader_base.html" title="シェーダー基底クラス " alt="ShaderBase" shape="rect" coords="90,0,260,24"/>
-<area href="class_vertex_shader_null.html" title="空白頂点シェーダークラス " alt="VertexShaderNull" shape="rect" coords="90,112,260,136"/>
-<area href="class_vertex_shader_bump_mapping.html" title="バンプマッピング頂点シェーダークラス " alt="VertexShaderBumpMapping" shape="rect" coords="0,168,170,192"/>
-<area href="class_vertex_shader_fixed.html" title="固定機能頂点シェーダークラス " alt="VertexShaderFixed" shape="rect" coords="180,168,350,192"/>
+<div class="center"><img src="class_vertex_shader_base__inherit__graph.png" border="0" usemap="#_vertex_shader_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="_vertex_shader_base_inherit__map" id="_vertex_shader_base_inherit__map">
+<area shape="rect" id="node3" href="class_vertex_shader_null.html" title="空白頂点シェーダークラス " alt="" coords="127,155,249,181"/>
+<area shape="rect" id="node2" href="class_shader_base.html" title="シェーダー基底クラス " alt="" coords="141,5,235,32"/>
+<area shape="rect" id="node4" href="class_vertex_shader_bump_mapping.html" title="バンプマッピング頂点シェーダークラス " alt="" coords="5,229,189,256"/>
+<area shape="rect" id="node5" href="class_vertex_shader_fixed.html" title="固定機能頂点シェーダークラス " alt="" coords="213,229,347,256"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+VertexShaderBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vertex_shader_base__coll__graph.png" border="0" usemap="#_vertex_shader_base_coll__map" alt="Collaboration graph"/></div>
+<map name="_vertex_shader_base_coll__map" id="_vertex_shader_base_coll__map">
+<area shape="rect" id="node2" href="class_shader_base.html" title="シェーダー基底クラス " alt="" coords="24,5,117,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -148,10 +156,18 @@ VertexShaderBase の継承関係図</div>
 <tr class="separator:a4601ff3d20f01800ffd676d3db8d9289 inherit pub_methods_class_shader_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85a5c17b56b6ffa29f7784ab42696d7c inherit pub_methods_class_shader_base"><td class="memItemLeft" align="right" valign="top">LPD3DXCONSTANTTABLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shader_base.html#a85a5c17b56b6ffa29f7784ab42696d7c">GetConstantTable</a> ()</td></tr>
 <tr class="separator:a85a5c17b56b6ffa29f7784ab42696d7c inherit pub_methods_class_shader_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a06f34810bedce79d6115c88a61dfbea4"><td class="memItemLeft" align="right" valign="top">LPDIRECT3DVERTEXSHADER9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vertex_shader_base.html#a06f34810bedce79d6115c88a61dfbea4">vertex_shader_</a> = nullptr</td></tr>
+<tr class="memdesc:a06f34810bedce79d6115c88a61dfbea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点シェーダー  <a href="#a06f34810bedce79d6115c88a61dfbea4">[詳解]</a><br /></td></tr>
+<tr class="separator:a06f34810bedce79d6115c88a61dfbea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>頂点シェーダー基底クラス </p>
 <p>頂点シェーダー基底クラス </p>
+
+<p class="definition"> <a class="el" href="_vertex_shader_base_8h_source.html">VertexShaderBase.h</a> の <a class="el" href="_vertex_shader_base_8h_source.html#l00026">26</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
 <a id="ab10cf1aac4a54653c553b5c84e1d3703"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab10cf1aac4a54653c553b5c84e1d3703">&#9670;&nbsp;</a></span>GetVertexShader()</h2>
@@ -175,6 +191,8 @@ VertexShaderBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_vertex_shader_base_8h_source.html">VertexShaderBase.h</a> の <a class="el" href="_vertex_shader_base_8h_source.html#l00087">87</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -202,6 +220,24 @@ VertexShaderBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p>頂点シェーダー解放関数 </p>
+
+<p class="definition"> <a class="el" href="_vertex_shader_base_8h_source.html">VertexShaderBase.h</a> の <a class="el" href="_vertex_shader_base_8h_source.html#l00081">81</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_cgraph.png" border="0" usemap="#class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_cgraph" alt=""/></div>
+<map name="class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_cgraph" id="class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_cgraph">
+<area shape="rect" id="node2" href="class_safe_release.html#a507950335a85da67c1722cce83dca9ae" title="解放関数(Release有) " alt="" coords="240,13,416,39"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_icgraph.png" border="0" usemap="#class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_icgraph" alt=""/></div>
+<map name="class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_icgraph" id="class_vertex_shader_base_a42ff1e32a2c231f77d0ba0e6a8312e63_icgraph">
+<area shape="rect" id="node2" href="class_vertex_shader_bump_mapping.html#abed4e0aa9655fa7a7a21e03d00e7c0e5" title="終了関数 " alt="" coords="240,5,424,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -231,6 +267,33 @@ VertexShaderBase の継承関係図</div>
 <p>シェーダー設定関数 </p>
 
 <p><a class="el" href="class_shader_base.html#af45063254b80602db8626360d643baee">ShaderBase</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="_vertex_shader_base_8h_source.html">VertexShaderBase.h</a> の <a class="el" href="_vertex_shader_base_8h_source.html#l00043">43</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_cgraph.png" border="0" usemap="#class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_cgraph" alt=""/></div>
+<map name="class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_cgraph" id="class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_cgraph">
+<area shape="rect" id="node2" href="class_shader_base.html#a4601ff3d20f01800ffd676d3db8d9289" title="ShaderBase::GetDevice" alt="" coords="253,5,413,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_icgraph.png" border="0" usemap="#class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_icgraph" alt=""/></div>
+<map name="class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_icgraph" id="class_vertex_shader_base_a9f93697c5668852850f0a7b7ef7cb67f_icgraph">
+<area shape="rect" id="node2" href="class_shader_manager.html#a3661a079ae4e9e7e4d5da35f2171b41e" title="頂点シェーダー設定関数 " alt="" coords="253,5,432,47"/>
+<area shape="rect" id="node3" href="class_shader_manager.html#ad2caed4ae50c1ca784151d0f9e50c381" title="シェーダー設定関数 " alt="" coords="480,13,663,39"/>
+<area shape="rect" id="node4" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="909,13,1032,39"/>
+<area shape="rect" id="node11" href="class_back_buffer.html#a9835a5db9850f774a382c4f8e611b1d1" title="フェード描画関数 " alt="" coords="711,38,861,65"/>
+<area shape="rect" id="node5" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="1080,13,1219,39"/>
+<area shape="rect" id="node6" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="1267,13,1449,39"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1497,13,1680,39"/>
+<area shape="rect" id="node8" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1728,13,1867,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1915,13,2076,39"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2124,13,2197,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -282,6 +345,52 @@ VertexShaderBase の継承関係図</div>
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>コンパイル成功ならtrue </dd></dl>
+
+<p class="definition"> <a class="el" href="_vertex_shader_base_8h_source.html">VertexShaderBase.h</a> の <a class="el" href="_vertex_shader_base_8h_source.html#l00057">57</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_cgraph.png" border="0" usemap="#class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_cgraph" alt=""/></div>
+<map name="class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_cgraph" id="class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_cgraph">
+<area shape="rect" id="node2" href="class_shader_base.html#ac6e791440374f97592cfb4cb36f4fa55" title="シェーダーコンパイル関数 " alt="" coords="231,5,420,32"/>
+<area shape="rect" id="node3" href="class_shader_base.html#a4601ff3d20f01800ffd676d3db8d9289" title="ShaderBase::GetDevice" alt="" coords="245,56,405,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_icgraph.png" border="0" usemap="#class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_icgraph" alt=""/></div>
+<map name="class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_icgraph" id="class_vertex_shader_base_a6565abadb8ac173d3273ab1698d31c6c_icgraph">
+<area shape="rect" id="node2" href="class_vertex_shader_bump_mapping.html#a6c0f59d1f29fd883943a66bfe61b6b03" title="初期化関数 " alt="" coords="231,5,415,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a06f34810bedce79d6115c88a61dfbea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f34810bedce79d6115c88a61dfbea4">&#9670;&nbsp;</a></span>vertex_shader_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DVERTEXSHADER9 VertexShaderBase::vertex_shader_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>頂点シェーダー </p>
+
+<p class="definition"> <a class="el" href="_vertex_shader_base_8h_source.html">VertexShaderBase.h</a> の <a class="el" href="_vertex_shader_base_8h_source.html#l00032">32</a> 行目に定義があります。</p>
 
 </div>
 </div>

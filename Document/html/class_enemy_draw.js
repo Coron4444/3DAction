@@ -5,5 +5,6 @@ var class_enemy_draw =
     [ "GetMatrix", "class_enemy_draw.html#a6f2a052a45caf0d255112cbe81b8bfa3", null ],
     [ "GetMeshNum", "class_enemy_draw.html#acda1a2487aea432b08fc816351a12239", null ],
     [ "Init", "class_enemy_draw.html#aa1659c35fa757db6a6cf07e26ad9ddfb", null ],
-    [ "Uninit", "class_enemy_draw.html#a2861dc0623b0be7726bc69a6a469190e", null ]
+    [ "Uninit", "class_enemy_draw.html#a2861dc0623b0be7726bc69a6a469190e", null ],
+    [ "enemy_", "class_enemy_draw.html#a95b8a7f07e810d1347f1704669c8f790", null ]
 ];

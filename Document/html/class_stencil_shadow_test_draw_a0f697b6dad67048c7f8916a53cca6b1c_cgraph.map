@@ -1,0 +1,8 @@
+<map id="StencilShadowTestDraw::SettingBeforeDrawing" name="StencilShadowTestDraw::SettingBeforeDrawing">
+<area shape="rect" id="node2" href="$class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="265,5,415,32"/>
+<area shape="rect" id="node4" href="$class_renderer.html#a56662123051f8898c4e8e9d5457fd317" title="Renderer::getDevice" alt="" coords="271,56,409,83"/>
+<area shape="rect" id="node5" href="$class_draw_base.html#aa18abd488181eed72822f92a0f2521fe" title="限定カメラタイプ変更関数 " alt="" coords="216,107,464,133"/>
+<area shape="rect" id="node3" href="$class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="512,5,647,32"/>
+<area shape="rect" id="node6" href="$class_camera.html#a3bda45b352bfa163c306c638a2aee1f6" title="Camera::GetType" alt="" coords="517,81,641,108"/>
+<area shape="rect" id="node7" href="$class_camera.html#a6218126e761a8289c6e6bc8c66b05e47" title="Camera::SetType" alt="" coords="518,132,641,159"/>
+</map>

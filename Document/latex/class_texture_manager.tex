@@ -25,6 +25,51 @@ static \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hy
 \item 
 static \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_texture_manager_a18d1f3418511075804f9d11cff1010ff}{Get\+Texture\+Object}} (const std\+::string $\ast$key\+\_\+name)
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_texture_manager_a379a79168e8481b70c188259e0672981}{Texture\+Manager}} ()=delete
+\item 
+\mbox{\hyperlink{class_texture_manager_a4ef42214937c5c9e58f87c28a079a858}{Texture\+Manager}} (const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&class\+\_\+name)=delete
+\item 
+\mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \& \mbox{\hyperlink{class_texture_manager_a3f13712c65812a9053852165a9a67824}{operator=}} (const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&class\+\_\+name)=delete
+\end{DoxyCompactItemize}
+\subsection*{静的非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_texture_manager_a950562ff671a620592708906925fad7f}{Make\+File\+Path}} (const std\+::string $\ast$key\+\_\+name, const std\+::string $\ast$file\+\_\+path)
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{class_texture_manager_a7cdcbb47cf36d179ae88716210e7db65}{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+TH}} = \char`\"{}resource/Texture/\char`\"{}
+\item 
+static std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_texture_manager_a8488bb78ab5b797291a5a82e33da3486}{share\+\_\+texture\+\_\+map\+\_\+}}
+\item 
+static std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_texture_manager_af9d3a68306acf224380084508ee2fbdd}{unique\+\_\+texture\+\_\+map\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Texture\+Manager.\+h の 33 行目に定義があります。
+
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_texture_manager_a379a79168e8481b70c188259e0672981}\label{class_texture_manager_a379a79168e8481b70c188259e0672981}} 
+\index{Texture\+Manager@{Texture\+Manager}!Texture\+Manager@{Texture\+Manager}}
+\index{Texture\+Manager@{Texture\+Manager}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Texture\+Manager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_texture_manager_a4ef42214937c5c9e58f87c28a079a858}\label{class_texture_manager_a4ef42214937c5c9e58f87c28a079a858}} 
+\index{Texture\+Manager@{Texture\+Manager}!Texture\+Manager@{Texture\+Manager}}
+\index{Texture\+Manager@{Texture\+Manager}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Texture\+Manager()}{TextureManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Texture\+Manager\+::\+Texture\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
 
 
 \subsection{関数詳解}
@@ -34,35 +79,149 @@ static \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hy
 \subsubsection{\texorpdfstring{Add\+Share\+Data()}{AddShareData()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ Texture\+Manager\+::\+Add\+Share\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr},  }\item[{int}]{pattern\+\_\+num\+\_\+all = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+width = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+height = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Texture\+Manager.\+cpp の 159 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a571c5b288fe16c53965f45d8bd7c8769_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a571c5b288fe16c53965f45d8bd7c8769_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_manager_af86003fd2afaf09f0295745d486e42e4}\label{class_texture_manager_af86003fd2afaf09f0295745d486e42e4}} 
 \index{Texture\+Manager@{Texture\+Manager}!Add\+Unique\+Data@{Add\+Unique\+Data}}
 \index{Add\+Unique\+Data@{Add\+Unique\+Data}!Texture\+Manager@{Texture\+Manager}}
 \subsubsection{\texorpdfstring{Add\+Unique\+Data()}{AddUniqueData()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ Texture\+Manager\+::\+Add\+Unique\+Data (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path = {\ttfamily nullptr},  }\item[{int}]{pattern\+\_\+num\+\_\+all = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+width = {\ttfamily 1},  }\item[{int}]{pattern\+\_\+num\+\_\+height = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Texture\+Manager.\+cpp の 182 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_af86003fd2afaf09f0295745d486e42e4_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_af86003fd2afaf09f0295745d486e42e4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_manager_a18d1f3418511075804f9d11cff1010ff}\label{class_texture_manager_a18d1f3418511075804f9d11cff1010ff}} 
 \index{Texture\+Manager@{Texture\+Manager}!Get\+Texture\+Object@{Get\+Texture\+Object}}
 \index{Get\+Texture\+Object@{Get\+Texture\+Object}!Texture\+Manager@{Texture\+Manager}}
 \subsubsection{\texorpdfstring{Get\+Texture\+Object()}{GetTextureObject()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ Texture\+Manager\+::\+Get\+Texture\+Object (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Texture\+Manager.\+cpp の 205 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a18d1f3418511075804f9d11cff1010ff_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_manager_aee4c784f3f32bfe810bf66313735dece}\label{class_texture_manager_aee4c784f3f32bfe810bf66313735dece}} 
 \index{Texture\+Manager@{Texture\+Manager}!Init\+All\+Data@{Init\+All\+Data}}
 \index{Init\+All\+Data@{Init\+All\+Data}!Texture\+Manager@{Texture\+Manager}}
 \subsubsection{\texorpdfstring{Init\+All\+Data()}{InitAllData()}}
 {\footnotesize\ttfamily void Texture\+Manager\+::\+Init\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Texture\+Manager.\+cpp の 53 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_aee4c784f3f32bfe810bf66313735dece_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_aee4c784f3f32bfe810bf66313735dece_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_manager_aed1e9666d0ef8698db754280a1d4bad4}\label{class_texture_manager_aed1e9666d0ef8698db754280a1d4bad4}} 
 \index{Texture\+Manager@{Texture\+Manager}!Init\+Share\+Data@{Init\+Share\+Data}}
 \index{Init\+Share\+Data@{Init\+Share\+Data}!Texture\+Manager@{Texture\+Manager}}
 \subsubsection{\texorpdfstring{Init\+Share\+Data()}{InitShareData()}}
 {\footnotesize\ttfamily void Texture\+Manager\+::\+Init\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Texture\+Manager.\+cpp の 68 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_aed1e9666d0ef8698db754280a1d4bad4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_manager_abfba2c4293e692a351d9b98e28f6ed31}\label{class_texture_manager_abfba2c4293e692a351d9b98e28f6ed31}} 
 \index{Texture\+Manager@{Texture\+Manager}!Init\+Unique\+Data@{Init\+Unique\+Data}}
 \index{Init\+Unique\+Data@{Init\+Unique\+Data}!Texture\+Manager@{Texture\+Manager}}
 \subsubsection{\texorpdfstring{Init\+Unique\+Data()}{InitUniqueData()}}
 {\footnotesize\ttfamily void Texture\+Manager\+::\+Init\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ Texture\+Manager.\+cpp の 82 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_abfba2c4293e692a351d9b98e28f6ed31_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_a950562ff671a620592708906925fad7f}\label{class_texture_manager_a950562ff671a620592708906925fad7f}} 
+\index{Texture\+Manager@{Texture\+Manager}!Make\+File\+Path@{Make\+File\+Path}}
+\index{Make\+File\+Path@{Make\+File\+Path}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{Make\+File\+Path()}{MakeFilePath()}}
+{\footnotesize\ttfamily std\+::string Texture\+Manager\+::\+Make\+File\+Path (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{key\+\_\+name,  }\item[{const std\+::string $\ast$}]{file\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Texture\+Manager.\+cpp の 226 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a950562ff671a620592708906925fad7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_texture_manager_a3f13712c65812a9053852165a9a67824}\label{class_texture_manager_a3f13712c65812a9053852165a9a67824}} 
+\index{Texture\+Manager@{Texture\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}}\& Texture\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_texture_manager}{Texture\+Manager}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
 \mbox{\Hypertarget{class_texture_manager_a5e81df5cd89e7794fb9230357663a729}\label{class_texture_manager_a5e81df5cd89e7794fb9230357663a729}} 
 \index{Texture\+Manager@{Texture\+Manager}!Uninit\+All\+Data@{Uninit\+All\+Data}}
@@ -70,17 +229,94 @@ static \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hy
 \subsubsection{\texorpdfstring{Uninit\+All\+Data()}{UninitAllData()}}
 {\footnotesize\ttfamily void Texture\+Manager\+::\+Uninit\+All\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Texture\+Manager.\+cpp の 96 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a5e81df5cd89e7794fb9230357663a729_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a5e81df5cd89e7794fb9230357663a729_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_manager_a770b76a28bac4c20c16960f58a2d3b77}\label{class_texture_manager_a770b76a28bac4c20c16960f58a2d3b77}} 
 \index{Texture\+Manager@{Texture\+Manager}!Uninit\+Share\+Data@{Uninit\+Share\+Data}}
 \index{Uninit\+Share\+Data@{Uninit\+Share\+Data}!Texture\+Manager@{Texture\+Manager}}
 \subsubsection{\texorpdfstring{Uninit\+Share\+Data()}{UninitShareData()}}
 {\footnotesize\ttfamily void Texture\+Manager\+::\+Uninit\+Share\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Texture\+Manager.\+cpp の 111 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a770b76a28bac4c20c16960f58a2d3b77_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_texture_manager_a9d9dd61edf4153bd70ba830ae2dc62e8}\label{class_texture_manager_a9d9dd61edf4153bd70ba830ae2dc62e8}} 
 \index{Texture\+Manager@{Texture\+Manager}!Uninit\+Unique\+Data@{Uninit\+Unique\+Data}}
 \index{Uninit\+Unique\+Data@{Uninit\+Unique\+Data}!Texture\+Manager@{Texture\+Manager}}
 \subsubsection{\texorpdfstring{Uninit\+Unique\+Data()}{UninitUniqueData()}}
 {\footnotesize\ttfamily void Texture\+Manager\+::\+Uninit\+Unique\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ Texture\+Manager.\+cpp の 135 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_texture_manager_a9d9dd61edf4153bd70ba830ae2dc62e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_texture_manager_a7cdcbb47cf36d179ae88716210e7db65}\label{class_texture_manager_a7cdcbb47cf36d179ae88716210e7db65}} 
+\index{Texture\+Manager@{Texture\+Manager}!D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+TH@{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+TH}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+TH@{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+TH}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+TH}{DEFAULT\_PATH}}
+{\footnotesize\ttfamily const std\+::string Texture\+Manager\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+A\+TH = \char`\"{}resource/Texture/\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Texture\+Manager.\+h の 37 行目に定義があります。
+
+\mbox{\Hypertarget{class_texture_manager_a8488bb78ab5b797291a5a82e33da3486}\label{class_texture_manager_a8488bb78ab5b797291a5a82e33da3486}} 
+\index{Texture\+Manager@{Texture\+Manager}!share\+\_\+texture\+\_\+map\+\_\+@{share\+\_\+texture\+\_\+map\+\_\+}}
+\index{share\+\_\+texture\+\_\+map\+\_\+@{share\+\_\+texture\+\_\+map\+\_\+}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{share\+\_\+texture\+\_\+map\+\_\+}{share\_texture\_map\_}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ $>$ Texture\+Manager\+::share\+\_\+texture\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Texture\+Manager.\+h の 80 行目に定義があります。
+
+\mbox{\Hypertarget{class_texture_manager_af9d3a68306acf224380084508ee2fbdd}\label{class_texture_manager_af9d3a68306acf224380084508ee2fbdd}} 
+\index{Texture\+Manager@{Texture\+Manager}!unique\+\_\+texture\+\_\+map\+\_\+@{unique\+\_\+texture\+\_\+map\+\_\+}}
+\index{unique\+\_\+texture\+\_\+map\+\_\+@{unique\+\_\+texture\+\_\+map\+\_\+}!Texture\+Manager@{Texture\+Manager}}
+\subsubsection{\texorpdfstring{unique\+\_\+texture\+\_\+map\+\_\+}{unique\_texture\_map\_}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ $>$ Texture\+Manager\+::unique\+\_\+texture\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Texture\+Manager.\+h の 81 行目に定義があります。
 
 
 

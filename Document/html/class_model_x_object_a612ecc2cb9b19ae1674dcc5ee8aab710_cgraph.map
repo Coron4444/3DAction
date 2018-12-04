@@ -1,0 +1,8 @@
+<map id="ModelXObject::InputMaterial" name="ModelXObject::InputMaterial">
+<area shape="rect" id="node2" href="$class_model_x_object.html#a83995ec817bccb4584d635b2005578a8" title="ModelXObject::MakeTexture\lFilePathAndKeyName" alt="" coords="251,5,437,47"/>
+<area shape="rect" id="node3" href="$class_texture_manager.html#a571c5b288fe16c53965f45d8bd7c8769" title="TextureManager::AddShareData" alt="" coords="241,71,447,98"/>
+<area shape="rect" id="node6" href="$class_texture_manager.html#af86003fd2afaf09f0295745d486e42e4" title="TextureManager::AddUniqueData" alt="" coords="237,122,451,149"/>
+<area shape="rect" id="node7" href="$class_safe_release.html#a507950335a85da67c1722cce83dca9ae" title="解放関数(Release有) " alt="" coords="256,173,432,199"/>
+<area shape="rect" id="node4" href="$class_texture_manager.html#a18d1f3418511075804f9d11cff1010ff" title="TextureManager::GetTexture\lObject" alt="" coords="507,60,693,101"/>
+<area shape="rect" id="node5" href="$class_texture_manager.html#a950562ff671a620592708906925fad7f" title="TextureManager::MakeFilePath" alt="" coords="499,126,701,153"/>
+</map>

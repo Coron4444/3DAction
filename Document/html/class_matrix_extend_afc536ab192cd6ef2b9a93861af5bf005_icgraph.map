@@ -1,0 +1,51 @@
+<map id="MatrixExtend::UpdateScaleMatrix" name="MatrixExtend::UpdateScaleMatrix">
+<area shape="rect" id="node2" href="$class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="731,325,953,351"/>
+<area shape="rect" id="node33" href="$class_transform.html#a3d56e19fba7f44d5f938d62481846fbc" title="Transform::UpdateWorldMatrixISRT" alt="" coords="235,677,461,703"/>
+<area shape="rect" id="node43" href="$class_transform.html#af02515be1947506212ca1c23223ce0b3" title="Transform::UpdateAxisVector\l_WorldMatrixSRT" alt="" coords="252,728,444,769"/>
+<area shape="rect" id="node45" href="$class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="252,793,444,835"/>
+<area shape="rect" id="node3" href="$class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1012,5,1172,47"/>
+<area shape="rect" id="node4" href="$class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd" title="初期化関数 " alt="" coords="1025,71,1159,98"/>
+<area shape="rect" id="node5" href="$class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176" title="初期化関数 " alt="" coords="1021,122,1163,149"/>
+<area shape="rect" id="node6" href="$class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e" title="初期化関数 " alt="" coords="1007,173,1177,199"/>
+<area shape="rect" id="node7" href="$class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30" title="初期化関数 " alt="" coords="1028,223,1156,250"/>
+<area shape="rect" id="node8" href="$class_tutorial_logo_draw.html#a53fc4b1b23c7f9e249600be67510f944" title="初期化関数 " alt="" coords="1019,274,1165,301"/>
+<area shape="rect" id="node9" href="$class_goal_draw.html#a6e003277ed44eb9c800a616b6acbcb20" title="更新関数 " alt="" coords="1029,325,1155,351"/>
+<area shape="rect" id="node10" href="$class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0" title="フィールドとの衝突時関数 " alt="" coords="1005,375,1179,402"/>
+<area shape="rect" id="node11" href="$class_sky_dome_update.html#ab4fec6d13590c07e39e6e8b4f7f7613a" title="初期化関数 " alt="" coords="1019,426,1165,453"/>
+<area shape="rect" id="node12" href="$class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="1011,477,1173,519"/>
+<area shape="rect" id="node13" href="$class_fade.html#aab12848f7102a219968c86ed699a6e5d" title="初期化関数 " alt="" coords="1054,543,1130,570"/>
+<area shape="rect" id="node27" href="$class_render_texture.html#ac27f8cfac7903dd502de61e22abfc457" title="RenderTexture::Update" alt="" coords="1015,594,1169,621"/>
+<area shape="rect" id="node14" href="$class_back_buffer.html#add3a034c7758dc6a72bb4582bf6ce78e" title="フェード初期化関数 " alt="" coords="1265,543,1403,570"/>
+<area shape="rect" id="node15" href="$class_scene_manager.html#a208cc1690dcb260ae7fb94d13118f6ce" title="SceneManager::setNextScene" alt="" coords="1485,442,1684,469"/>
+<area shape="rect" id="node20" href="$class_scene_manager.html#a1759161a38025ec8212dc98439fd7335" title="シーンリセット関数 " alt="" coords="1491,493,1679,519"/>
+<area shape="rect" id="node21" href="$class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1485,543,1684,570"/>
+<area shape="rect" id="node26" href="$class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="1491,594,1679,621"/>
+<area shape="rect" id="node16" href="$class_game_scene_state___start.html#ae11bb8d8ea9eae4fea2a9acf33dd1c8b" title="更新関数 " alt="" coords="1743,319,1903,360"/>
+<area shape="rect" id="node17" href="$class_result_scene_state___start.html#a2ecdef2bef0cd1a04055e8687e11199b" title="更新関数 " alt="" coords="1742,384,1905,425"/>
+<area shape="rect" id="node18" href="$class_title_scene_state___start.html#a2e98cf6810711b58766d7147168d02eb" title="更新関数 " alt="" coords="1749,449,1898,491"/>
+<area shape="rect" id="node19" href="$class_tutorial_scene_state___end.html#a7cdf03fa9a0e41ab86c2b41b8165ad09" title="更新関数 " alt="" coords="1757,515,1889,556"/>
+<area shape="rect" id="node22" href="$class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1744,594,1903,621"/>
+<area shape="rect" id="node23" href="$class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="2205,594,2381,621"/>
+<area shape="rect" id="node24" href="$main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2429,645,2591,671"/>
+<area shape="rect" id="node25" href="$main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2639,645,2712,671"/>
+<area shape="rect" id="node28" href="$class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="1273,619,1395,646"/>
+<area shape="rect" id="node29" href="$class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="1515,645,1654,671"/>
+<area shape="rect" id="node30" href="$class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="1732,645,1915,671"/>
+<area shape="rect" id="node31" href="$class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1969,645,2151,671"/>
+<area shape="rect" id="node32" href="$class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="2224,645,2363,671"/>
+<area shape="rect" id="node34" href="$class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb" title="めり込み解消関数 " alt="" coords="509,611,683,652"/>
+<area shape="rect" id="node37" href="$class_physics.html#a481f06d777c1b1f52dc2c06c71e93932" title="Physics::UpdatePosition" alt="" coords="513,677,679,703"/>
+<area shape="rect" id="node35" href="$class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="745,622,939,649"/>
+<area shape="rect" id="node36" href="$class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1001,645,1183,671"/>
+<area shape="rect" id="node38" href="$class_physics.html#a13bf3e9de07a12afc3c0a4012e00d0a1" title="Physics::Update" alt="" coords="783,693,901,719"/>
+<area shape="rect" id="node39" href="$class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="1253,695,1415,722"/>
+<area shape="rect" id="node40" href="$class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1747,696,1900,737"/>
+<area shape="rect" id="node41" href="$class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1963,701,2157,727"/>
+<area shape="rect" id="node42" href="$class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2218,699,2369,726"/>
+<area shape="rect" id="node44" href="$class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="521,728,671,769"/>
+<area shape="rect" id="node46" href="$class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="515,793,677,835"/>
+<area shape="rect" id="node47" href="$class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="763,761,921,803"/>
+<area shape="rect" id="node48" href="$class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="1025,761,1159,787"/>
+<area shape="rect" id="node49" href="$class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="1231,749,1437,791"/>
+<area shape="rect" id="node50" href="$class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1509,754,1660,781"/>
+</map>

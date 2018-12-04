@@ -44,12 +44,44 @@ void \mbox{\hyperlink{class_matrix_extend_ab0aaf14f8621fde91f9db5537a4187e6}{Upd
 \item 
 void \mbox{\hyperlink{class_matrix_extend_a1847728feb977bd7ccdf1987953fe203}{Multiplication\+Parent\+Matrix}} (const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$parent\+\_\+matrix)
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_matrix_extend_a81db064716c74390d9c4b7e1022a4b27}{Reset\+All\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_extend_aea89536d6cbcc73909ee79111f13dd28}{Reset\+Translation\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_extend_a1932807f81cebd1d4d101ad4be13e55d}{Reset\+Scale\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_extend_a52ebf23df3851d1225faf7211595811f}{Reset\+Rotation\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_extend_a14f5cf7ced273e96c238cc416d0719ac}{Reset\+Inverse\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_extend_a06d4bd42be11fba786917bef61a4e66d}{Reset\+World\+Matrix}} ()
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} \mbox{\hyperlink{class_matrix_extend_a265c3939a53787d87ee9c27386ebff7f}{matrix\+\_\+translation\+\_\+}}
+\item 
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} \mbox{\hyperlink{class_matrix_extend_ad52c6304eb4d66c787b386b60b8f3492}{matrix\+\_\+scale\+\_\+}}
+\item 
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} \mbox{\hyperlink{class_matrix_extend_a13ea114cb34c9bafd161218a5dc9a910}{matrix\+\_\+rotation\+\_\+}}
+\item 
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} \mbox{\hyperlink{class_matrix_extend_a5b0c6e48cb1c541aabe7173378b7bc36}{matrix\+\_\+inverse\+\_\+}}
+\item 
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} \mbox{\hyperlink{class_matrix_extend_ae464d60827194857bc39c2f0cffd768b}{matrix\+\_\+world\+\_\+}}
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 Direct\+X9の行列の拡張版クラス 
 
 各種行列が揃っています。 
+
+ Matrix\+Extend.\+h の 36 行目に定義があります。
+
+
 
 \subsection{構築子と解体子}
 \mbox{\Hypertarget{class_matrix_extend_a0058bf9dcf42d7f0c53b6fb3559b6a6e}\label{class_matrix_extend_a0058bf9dcf42d7f0c53b6fb3559b6a6e}} 
@@ -65,13 +97,28 @@ Direct\+X9の行列の拡張版クラス
 
 \begin{DoxyItemize}
 \item 
-\end{DoxyItemize}\mbox{\Hypertarget{class_matrix_extend_ae1d80dfa20420bdc58e85eccc525fe91}\label{class_matrix_extend_ae1d80dfa20420bdc58e85eccc525fe91}} 
+\end{DoxyItemize}
+
+ Matrix\+Extend.\+h の 140 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a0058bf9dcf42d7f0c53b6fb3559b6a6e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_matrix_extend_ae1d80dfa20420bdc58e85eccc525fe91}\label{class_matrix_extend_ae1d80dfa20420bdc58e85eccc525fe91}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!````~Matrix\+Extend@{$\sim$\+Matrix\+Extend}}
 \index{````~Matrix\+Extend@{$\sim$\+Matrix\+Extend}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{$\sim$\+Matrix\+Extend()}{~MatrixExtend()}}
 {\footnotesize\ttfamily Matrix\+Extend\+::$\sim$\+Matrix\+Extend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 デストラクタ 
+
+ Matrix\+Extend.\+h の 153 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_matrix_extend_aedfee5eb2eb7df8cac4b17045233748a}\label{class_matrix_extend_aedfee5eb2eb7df8cac4b17045233748a}} 
@@ -80,12 +127,28 @@ Direct\+X9の行列の拡張版クラス
 \subsubsection{\texorpdfstring{Get\+Inverse\+Matrix()}{GetInverseMatrix()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Matrix\+Extend\+::\+Get\+Inverse\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 85 行目に定義があります。
+
 \mbox{\Hypertarget{class_matrix_extend_a6e10c2692b92f15ea4a1a69fc22c66c4}\label{class_matrix_extend_a6e10c2692b92f15ea4a1a69fc22c66c4}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}}
 \index{Get\+Rotation\+Matrix@{Get\+Rotation\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Get\+Rotation\+Matrix()}{GetRotationMatrix()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Matrix\+Extend\+::\+Get\+Rotation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 81 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a6e10c2692b92f15ea4a1a69fc22c66c4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_a13d6cb82385873959bde75fb64235943}\label{class_matrix_extend_a13d6cb82385873959bde75fb64235943}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Get\+Scale\+Matrix@{Get\+Scale\+Matrix}}
 \index{Get\+Scale\+Matrix@{Get\+Scale\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
@@ -99,6 +162,10 @@ Direct\+X9の行列の拡張版クラス
 \begin{DoxyReturn}{戻り値}
 行列のポインタを取得 
 \end{DoxyReturn}
+
+
+ Matrix\+Extend.\+h の 77 行目に定義があります。
+
 \mbox{\Hypertarget{class_matrix_extend_a95b114379190ca0fee5d40394f9842f1}\label{class_matrix_extend_a95b114379190ca0fee5d40394f9842f1}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Get\+Translation\+Matrix@{Get\+Translation\+Matrix}}
 \index{Get\+Translation\+Matrix@{Get\+Translation\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
@@ -112,36 +179,200 @@ Direct\+X9の行列の拡張版クラス
 \begin{DoxyReturn}{戻り値}
 行列のポインタを取得 
 \end{DoxyReturn}
+
+
+ Matrix\+Extend.\+h の 65 行目に定義があります。
+
 \mbox{\Hypertarget{class_matrix_extend_a1a88845d1b9da14c33c91fa8da2e3a15}\label{class_matrix_extend_a1a88845d1b9da14c33c91fa8da2e3a15}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Get\+World\+Matrix@{Get\+World\+Matrix}}
 \index{Get\+World\+Matrix@{Get\+World\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Get\+World\+Matrix()}{GetWorldMatrix()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Matrix\+Extend\+::\+Get\+World\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 95 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a1a88845d1b9da14c33c91fa8da2e3a15_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_a1847728feb977bd7ccdf1987953fe203}\label{class_matrix_extend_a1847728feb977bd7ccdf1987953fe203}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Multiplication\+Parent\+Matrix@{Multiplication\+Parent\+Matrix}}
 \index{Multiplication\+Parent\+Matrix@{Multiplication\+Parent\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Multiplication\+Parent\+Matrix()}{MultiplicationParentMatrix()}}
 {\footnotesize\ttfamily void Matrix\+Extend\+::\+Multiplication\+Parent\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$}]{parent\+\_\+matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 276 行目に定義があります。
+
+\mbox{\Hypertarget{class_matrix_extend_a81db064716c74390d9c4b7e1022a4b27}\label{class_matrix_extend_a81db064716c74390d9c4b7e1022a4b27}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!Reset\+All\+Matrix@{Reset\+All\+Matrix}}
+\index{Reset\+All\+Matrix@{Reset\+All\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{Reset\+All\+Matrix()}{ResetAllMatrix()}}
+{\footnotesize\ttfamily void Matrix\+Extend\+::\+Reset\+All\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 289 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a81db064716c74390d9c4b7e1022a4b27_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a81db064716c74390d9c4b7e1022a4b27_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_matrix_extend_a14f5cf7ced273e96c238cc416d0719ac}\label{class_matrix_extend_a14f5cf7ced273e96c238cc416d0719ac}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!Reset\+Inverse\+Matrix@{Reset\+Inverse\+Matrix}}
+\index{Reset\+Inverse\+Matrix@{Reset\+Inverse\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{Reset\+Inverse\+Matrix()}{ResetInverseMatrix()}}
+{\footnotesize\ttfamily void Matrix\+Extend\+::\+Reset\+Inverse\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 346 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a14f5cf7ced273e96c238cc416d0719ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_matrix_extend_a52ebf23df3851d1225faf7211595811f}\label{class_matrix_extend_a52ebf23df3851d1225faf7211595811f}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!Reset\+Rotation\+Matrix@{Reset\+Rotation\+Matrix}}
+\index{Reset\+Rotation\+Matrix@{Reset\+Rotation\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{Reset\+Rotation\+Matrix()}{ResetRotationMatrix()}}
+{\footnotesize\ttfamily void Matrix\+Extend\+::\+Reset\+Rotation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 332 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a52ebf23df3851d1225faf7211595811f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_matrix_extend_a1932807f81cebd1d4d101ad4be13e55d}\label{class_matrix_extend_a1932807f81cebd1d4d101ad4be13e55d}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!Reset\+Scale\+Matrix@{Reset\+Scale\+Matrix}}
+\index{Reset\+Scale\+Matrix@{Reset\+Scale\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{Reset\+Scale\+Matrix()}{ResetScaleMatrix()}}
+{\footnotesize\ttfamily void Matrix\+Extend\+::\+Reset\+Scale\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 319 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a1932807f81cebd1d4d101ad4be13e55d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_matrix_extend_aea89536d6cbcc73909ee79111f13dd28}\label{class_matrix_extend_aea89536d6cbcc73909ee79111f13dd28}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!Reset\+Translation\+Matrix@{Reset\+Translation\+Matrix}}
+\index{Reset\+Translation\+Matrix@{Reset\+Translation\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{Reset\+Translation\+Matrix()}{ResetTranslationMatrix()}}
+{\footnotesize\ttfamily void Matrix\+Extend\+::\+Reset\+Translation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 306 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_aea89536d6cbcc73909ee79111f13dd28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_matrix_extend_a06d4bd42be11fba786917bef61a4e66d}\label{class_matrix_extend_a06d4bd42be11fba786917bef61a4e66d}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!Reset\+World\+Matrix@{Reset\+World\+Matrix}}
+\index{Reset\+World\+Matrix@{Reset\+World\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{Reset\+World\+Matrix()}{ResetWorldMatrix()}}
+{\footnotesize\ttfamily void Matrix\+Extend\+::\+Reset\+World\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 359 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a06d4bd42be11fba786917bef61a4e66d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_ae567bb2d140dff892ed1b63f8de33ba9}\label{class_matrix_extend_ae567bb2d140dff892ed1b63f8de33ba9}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Transpose\+Matrix\+Translation\+Off@{Transpose\+Matrix\+Translation\+Off}}
 \index{Transpose\+Matrix\+Translation\+Off@{Transpose\+Matrix\+Translation\+Off}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Transpose\+Matrix\+Translation\+Off()}{TransposeMatrixTranslationOff()}}
 {\footnotesize\ttfamily void Matrix\+Extend\+::\+Transpose\+Matrix\+Translation\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 231 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_ae567bb2d140dff892ed1b63f8de33ba9_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_a5aa7bce55ed92acb79d21fda51e83146}\label{class_matrix_extend_a5aa7bce55ed92acb79d21fda51e83146}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Update\+Inverse\+Matrix@{Update\+Inverse\+Matrix}}
 \index{Update\+Inverse\+Matrix@{Update\+Inverse\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Update\+Inverse\+Matrix()}{UpdateInverseMatrix()}}
 {\footnotesize\ttfamily void Matrix\+Extend\+::\+Update\+Inverse\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 205 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a5aa7bce55ed92acb79d21fda51e83146_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_afa307701c3147fc345ed10dee054affb}\label{class_matrix_extend_afa307701c3147fc345ed10dee054affb}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Update\+Rotation\+Matrix@{Update\+Rotation\+Matrix}}
 \index{Update\+Rotation\+Matrix@{Update\+Rotation\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Update\+Rotation\+Matrix()}{UpdateRotationMatrix()}}
 {\footnotesize\ttfamily void Matrix\+Extend\+::\+Update\+Rotation\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8h_a3ee38c9c46d9851e33a9a1113328dafc}{Quaternion}} $\ast$}]{quaternion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 192 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_afa307701c3147fc345ed10dee054affb_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_afc536ab192cd6ef2b9a93861af5bf005}\label{class_matrix_extend_afc536ab192cd6ef2b9a93861af5bf005}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Update\+Scale\+Matrix@{Update\+Scale\+Matrix}}
 \index{Update\+Scale\+Matrix@{Update\+Scale\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
@@ -157,6 +388,18 @@ Direct\+X9の行列の拡張版クラス
 {\em scale} & \+: 行列にしたい拡縮値 \\
 \hline
 \end{DoxyParams}
+
+
+ Matrix\+Extend.\+h の 179 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_afc536ab192cd6ef2b9a93861af5bf005_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_a6ca471ad3fea88a84fde7623c84f52f6}\label{class_matrix_extend_a6ca471ad3fea88a84fde7623c84f52f6}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Update\+Translation\+Matrix@{Update\+Translation\+Matrix}}
 \index{Update\+Translation\+Matrix@{Update\+Translation\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
@@ -172,23 +415,124 @@ Direct\+X9の行列の拡張版クラス
 {\em position} & \+: 行列にしたい座標値 \\
 \hline
 \end{DoxyParams}
+
+
+ Matrix\+Extend.\+h の 166 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a6ca471ad3fea88a84fde7623c84f52f6_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_a81e92fe4305ff9569809b61e2e92df31}\label{class_matrix_extend_a81e92fe4305ff9569809b61e2e92df31}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Update\+Transpose\+Matrix@{Update\+Transpose\+Matrix}}
 \index{Update\+Transpose\+Matrix@{Update\+Transpose\+Matrix}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Update\+Transpose\+Matrix()}{UpdateTransposeMatrix()}}
 {\footnotesize\ttfamily void Matrix\+Extend\+::\+Update\+Transpose\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 218 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a81e92fe4305ff9569809b61e2e92df31_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_ab0aaf14f8621fde91f9db5537a4187e6}\label{class_matrix_extend_ab0aaf14f8621fde91f9db5537a4187e6}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Update\+World\+Matrix\+I\+S\+RT@{Update\+World\+Matrix\+I\+S\+RT}}
 \index{Update\+World\+Matrix\+I\+S\+RT@{Update\+World\+Matrix\+I\+S\+RT}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Update\+World\+Matrix\+I\+S\+R\+T()}{UpdateWorldMatrixISRT()}}
 {\footnotesize\ttfamily void Matrix\+Extend\+::\+Update\+World\+Matrix\+I\+S\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+ Matrix\+Extend.\+h の 260 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_ab0aaf14f8621fde91f9db5537a4187e6_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_matrix_extend_a4c92a6d037b00bc2514064e00323c5dd}\label{class_matrix_extend_a4c92a6d037b00bc2514064e00323c5dd}} 
 \index{Matrix\+Extend@{Matrix\+Extend}!Update\+World\+Matrix\+S\+RT@{Update\+World\+Matrix\+S\+RT}}
 \index{Update\+World\+Matrix\+S\+RT@{Update\+World\+Matrix\+S\+RT}!Matrix\+Extend@{Matrix\+Extend}}
 \subsubsection{\texorpdfstring{Update\+World\+Matrix\+S\+R\+T()}{UpdateWorldMatrixSRT()}}
 {\footnotesize\ttfamily void Matrix\+Extend\+::\+Update\+World\+Matrix\+S\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Matrix\+Extend.\+h の 246 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_matrix_extend_a4c92a6d037b00bc2514064e00323c5dd_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_matrix_extend_a5b0c6e48cb1c541aabe7173378b7bc36}\label{class_matrix_extend_a5b0c6e48cb1c541aabe7173378b7bc36}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!matrix\+\_\+inverse\+\_\+@{matrix\+\_\+inverse\+\_\+}}
+\index{matrix\+\_\+inverse\+\_\+@{matrix\+\_\+inverse\+\_\+}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{matrix\+\_\+inverse\+\_\+}{matrix\_inverse\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} Matrix\+Extend\+::matrix\+\_\+inverse\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 120 行目に定義があります。
+
+\mbox{\Hypertarget{class_matrix_extend_a13ea114cb34c9bafd161218a5dc9a910}\label{class_matrix_extend_a13ea114cb34c9bafd161218a5dc9a910}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!matrix\+\_\+rotation\+\_\+@{matrix\+\_\+rotation\+\_\+}}
+\index{matrix\+\_\+rotation\+\_\+@{matrix\+\_\+rotation\+\_\+}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{matrix\+\_\+rotation\+\_\+}{matrix\_rotation\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} Matrix\+Extend\+::matrix\+\_\+rotation\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 119 行目に定義があります。
+
+\mbox{\Hypertarget{class_matrix_extend_ad52c6304eb4d66c787b386b60b8f3492}\label{class_matrix_extend_ad52c6304eb4d66c787b386b60b8f3492}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!matrix\+\_\+scale\+\_\+@{matrix\+\_\+scale\+\_\+}}
+\index{matrix\+\_\+scale\+\_\+@{matrix\+\_\+scale\+\_\+}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{matrix\+\_\+scale\+\_\+}{matrix\_scale\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} Matrix\+Extend\+::matrix\+\_\+scale\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 118 行目に定義があります。
+
+\mbox{\Hypertarget{class_matrix_extend_a265c3939a53787d87ee9c27386ebff7f}\label{class_matrix_extend_a265c3939a53787d87ee9c27386ebff7f}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!matrix\+\_\+translation\+\_\+@{matrix\+\_\+translation\+\_\+}}
+\index{matrix\+\_\+translation\+\_\+@{matrix\+\_\+translation\+\_\+}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{matrix\+\_\+translation\+\_\+}{matrix\_translation\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} Matrix\+Extend\+::matrix\+\_\+translation\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 117 行目に定義があります。
+
+\mbox{\Hypertarget{class_matrix_extend_ae464d60827194857bc39c2f0cffd768b}\label{class_matrix_extend_ae464d60827194857bc39c2f0cffd768b}} 
+\index{Matrix\+Extend@{Matrix\+Extend}!matrix\+\_\+world\+\_\+@{matrix\+\_\+world\+\_\+}}
+\index{matrix\+\_\+world\+\_\+@{matrix\+\_\+world\+\_\+}!Matrix\+Extend@{Matrix\+Extend}}
+\subsubsection{\texorpdfstring{matrix\+\_\+world\+\_\+}{matrix\_world\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} Matrix\+Extend\+::matrix\+\_\+world\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Matrix\+Extend.\+h の 121 行目に定義があります。
 
 
 

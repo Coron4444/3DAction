@@ -1,9 +1,11 @@
 var searchData=
 [
   ['effect',['Effect',['../class_effekseer_1_1_effect.html#ac36d4aa804244d12a64ad8e2f9681ed0',1,'Effekseer::Effect']]],
+  ['effectfile',['EffectFile',['../class_effect_file.html#a7c3363080d705db79fada75691d4a9c8',1,'EffectFile']]],
   ['effectloader',['EffectLoader',['../class_effekseer_1_1_effect_loader.html#a38e316829c64864d3a0cac68cd7724a0',1,'Effekseer::EffectLoader']]],
   ['effectnode',['EffectNode',['../class_effekseer_1_1_effect_node.html#aba9378c17ee790783c2d2add7ec4c16c',1,'Effekseer::EffectNode']]],
   ['effekseerarray',['EffekseerArray',['../class_effekseer_array.html#ae598c1486d263356b63ba8d08a3afc20',1,'EffekseerArray']]],
+  ['effekseermanager',['EffekseerManager',['../class_effekseer_manager.html#a4338611775d36aaef84ddb178b7f13ce',1,'EffekseerManager::EffekseerManager()=delete'],['../class_effekseer_manager.html#ab6e170775c5ba410dc03b59eda589688',1,'EffekseerManager::EffekseerManager(const EffekseerManager &amp;class_name)=delete']]],
   ['effekseerobject',['EffekseerObject',['../class_effekseer_object.html#a8e1e081f62efa87b31e00bcfd9cf1a45',1,'EffekseerObject']]],
   ['eliminationofnesting',['EliminationOfNesting',['../class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb',1,'CollisionBase']]],
   ['empty',['empty',['../class_im_vector.html#aa53e48a5272f4bad1099368769514ff1',1,'ImVector::empty()'],['../struct_im_gui_text_filter_1_1_text_range.html#ab8d74e3b0ce63997746828e4b8ae3bbf',1,'ImGuiTextFilter::TextRange::empty()'],['../struct_im_gui_text_buffer.html#afdef38ae725bb5495f0143170fa902c8',1,'ImGuiTextBuffer::empty()']]],

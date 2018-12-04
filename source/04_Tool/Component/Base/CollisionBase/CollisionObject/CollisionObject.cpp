@@ -69,9 +69,9 @@ CollisionObject::~CollisionObject()
 
 			break;
 		}
-		case CollisionShapeBase::Type::SEGMENT:
+		case CollisionShapeBase::Type::LINE_SEGMENT:
 		{
-			Segment* temp = (Segment*)collision_shape_;
+			LineSegment* temp = (LineSegment*)collision_shape_;
 			SafeRelease::Normal(&temp);
 
 			break;

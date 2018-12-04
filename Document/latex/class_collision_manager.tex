@@ -9,6 +9,15 @@
 
 {\ttfamily \#include $<$Collision\+Manager.\+h$>$}
 
+
+
+Collision\+Manager 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,6 +42,46 @@ void \mbox{\hyperlink{class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666}
 \item 
 static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} = 10000
 \begin{DoxyCompactList}\small\item\em 配列数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_collision_manager_a53e468bb8624f84a5c65c9779781033f}{Add\+Contents\+Of\+Await\+Add\+Array}} ()
+\begin{DoxyCompactList}\small\item\em 追加待ち配列の中身を追加関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede}{Release\+Contents\+Of\+Await\+Release\+Array}} ()
+\begin{DoxyCompactList}\small\item\em 解放待ち配列の中身を解放関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec}{Collision\+Determination}} ()
+\begin{DoxyCompactList}\small\item\em 衝突判定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe}{Old\+Collision\+Determination}} ()
+\begin{DoxyCompactList}\small\item\em 古い衝突判定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0}{Collision\+Ground}} ()
+\begin{DoxyCompactList}\small\item\em 地面との衝突判定関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_ab7a212529ce17392d2ca120153318090}{Actual\+Calculation}} (\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$collision\+\_\+objects0, \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$collision\+\_\+objects1)
+\begin{DoxyCompactList}\small\item\em 実際の計算関数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_manager_a87f64affda1906cd6eee3d177ca25045}{Sort\+Collision\+Calculation}} (\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$collision\+\_\+object0, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$collision\+\_\+object1)
+\begin{DoxyCompactList}\small\item\em 衝突計算振り分け関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1}{Debug\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Debug表示関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$, \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} $>$ \mbox{\hyperlink{class_collision_manager_a1be7aa8904688724543897d58b22a406}{all\+\_\+collision\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 全衝突配列 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$, \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} $>$ \mbox{\hyperlink{class_collision_manager_aca55a8f7b3f67f58b5455cf1ac17fc8b}{await\+\_\+add\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 追加待ち配列 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$ \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$, \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}} $>$ \mbox{\hyperlink{class_collision_manager_a077c3b33557c56afef69c69698fc76e0}{await\+\_\+release\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 解放待ち配列 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mesh_plane_polygon}{Mesh\+Plane\+Polygon}} $\ast$ \mbox{\hyperlink{class_collision_manager_ab080264a45322bec38189279428d44cb}{ground\+\_\+polygon\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 地面ポリゴン \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_liner_octree}{Liner\+Octree}}$<$ \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_collision_manager_aa7e8919f4e8af9764106a26a0cfcf6a7}{liner\+\_\+octree\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em 8分木 \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$ $>$ \mbox{\hyperlink{class_collision_manager_a9e3350981cdf6a6ecd6b5151bedb72ef}{collision\+\_\+objects\+\_\+list\+\_\+}}
+\item 
+D\+W\+O\+RD \mbox{\hyperlink{class_collision_manager_a6520ff69c7035e61267998885669d960}{time\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_collision_manager_a356e89f8204c643179e68d0b50758f21}{is\+\_\+octree\+\_\+}} = true
+\item 
+bool \mbox{\hyperlink{class_collision_manager_a5ba36f21dfb636d6b2c8b84bb07560ad}{is\+\_\+pair\+\_\+check\+\_\+}} = true
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -40,7 +89,40 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 登録されている衝突基底クラスを管理するクラス 
 
+ Collision\+Manager.\+h の 41 行目に定義があります。
+
+
+
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_manager_ab7a212529ce17392d2ca120153318090}\label{class_collision_manager_ab7a212529ce17392d2ca120153318090}} 
+\index{Collision\+Manager@{Collision\+Manager}!Actual\+Calculation@{Actual\+Calculation}}
+\index{Actual\+Calculation@{Actual\+Calculation}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Actual\+Calculation()}{ActualCalculation()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Actual\+Calculation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$}]{collision\+\_\+objects0,  }\item[{\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$}]{collision\+\_\+objects1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+実際の計算関数 
+
+
+
+ Collision\+Manager.\+cpp の 469 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_ab7a212529ce17392d2ca120153318090_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_ab7a212529ce17392d2ca120153318090_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_a42be7a26321110f5daaf1828da32f667}\label{class_collision_manager_a42be7a26321110f5daaf1828da32f667}} 
 \index{Collision\+Manager@{Collision\+Manager}!Add\+Collision\+Base\+To\+Array@{Add\+Collision\+Base\+To\+Array}}
 \index{Add\+Collision\+Base\+To\+Array@{Add\+Collision\+Base\+To\+Array}!Collision\+Manager@{Collision\+Manager}}
@@ -51,6 +133,141 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 衝突基底クラスの追加関数 
 
+
+
+ Collision\+Manager.\+cpp の 190 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a42be7a26321110f5daaf1828da32f667_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a42be7a26321110f5daaf1828da32f667_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a53e468bb8624f84a5c65c9779781033f}\label{class_collision_manager_a53e468bb8624f84a5c65c9779781033f}} 
+\index{Collision\+Manager@{Collision\+Manager}!Add\+Contents\+Of\+Await\+Add\+Array@{Add\+Contents\+Of\+Await\+Add\+Array}}
+\index{Add\+Contents\+Of\+Await\+Add\+Array@{Add\+Contents\+Of\+Await\+Add\+Array}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Contents\+Of\+Await\+Add\+Array()}{AddContentsOfAwaitAddArray()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Add\+Contents\+Of\+Await\+Add\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+追加待ち配列の中身を追加関数 
+
+
+
+ Collision\+Manager.\+cpp の 267 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a53e468bb8624f84a5c65c9779781033f_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a53e468bb8624f84a5c65c9779781033f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec}\label{class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec}} 
+\index{Collision\+Manager@{Collision\+Manager}!Collision\+Determination@{Collision\+Determination}}
+\index{Collision\+Determination@{Collision\+Determination}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Collision\+Determination()}{CollisionDetermination()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Collision\+Determination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+衝突判定関数 
+
+
+
+ Collision\+Manager.\+cpp の 319 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a67c1ebc4d4a19e06122f11c3eeec89ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0}\label{class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0}} 
+\index{Collision\+Manager@{Collision\+Manager}!Collision\+Ground@{Collision\+Ground}}
+\index{Collision\+Ground@{Collision\+Ground}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Collision\+Ground()}{CollisionGround()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Collision\+Ground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+地面との衝突判定関数 
+
+
+
+ Collision\+Manager.\+cpp の 435 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a1d67f4076eb71e191db5cff4e5abe3b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1}\label{class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1}} 
+\index{Collision\+Manager@{Collision\+Manager}!Debug\+Display@{Debug\+Display}}
+\index{Debug\+Display@{Debug\+Display}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Debug\+Display()}{DebugDisplay()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Debug\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Debug表示関数 
+
+
+
+ Collision\+Manager.\+cpp の 930 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a4da1241f3905c3855b31d7e20ceed5a1_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_a2c5770b90b7a46a5674df008a7a57145}\label{class_collision_manager_a2c5770b90b7a46a5674df008a7a57145}} 
 \index{Collision\+Manager@{Collision\+Manager}!Init@{Init}}
 \index{Init@{Init}!Collision\+Manager@{Collision\+Manager}}
@@ -61,6 +278,55 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 初期化関数 
 
+
+
+ Collision\+Manager.\+cpp の 33 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a2c5770b90b7a46a5674df008a7a57145_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe}\label{class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe}} 
+\index{Collision\+Manager@{Collision\+Manager}!Old\+Collision\+Determination@{Old\+Collision\+Determination}}
+\index{Old\+Collision\+Determination@{Old\+Collision\+Determination}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Old\+Collision\+Determination()}{OldCollisionDetermination()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Old\+Collision\+Determination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+古い衝突判定関数 
+
+
+
+ Collision\+Manager.\+cpp の 359 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a25dbc14dbc709a6bc2dc4424e3965dbe_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_af9c2ce87e0189cdd1256c83decc64673}\label{class_collision_manager_af9c2ce87e0189cdd1256c83decc64673}} 
 \index{Collision\+Manager@{Collision\+Manager}!Overwrite\+Array\+Collision\+Base@{Overwrite\+Array\+Collision\+Base}}
 \index{Overwrite\+Array\+Collision\+Base@{Overwrite\+Array\+Collision\+Base}!Collision\+Manager@{Collision\+Manager}}
@@ -71,6 +337,18 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 衝突基底クラスの上書き関数 
 
+
+
+ Collision\+Manager.\+cpp の 201 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_af9c2ce87e0189cdd1256c83decc64673_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_a34318163f4256cebc7aefb95fc475030}\label{class_collision_manager_a34318163f4256cebc7aefb95fc475030}} 
 \index{Collision\+Manager@{Collision\+Manager}!Release\+Collision\+Base\+From\+Array@{Release\+Collision\+Base\+From\+Array}}
 \index{Release\+Collision\+Base\+From\+Array@{Release\+Collision\+Base\+From\+Array}!Collision\+Manager@{Collision\+Manager}}
@@ -81,12 +359,104 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 衝突基底クラスの解放関数 
 
+
+
+ Collision\+Manager.\+cpp の 238 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a34318163f4256cebc7aefb95fc475030_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a34318163f4256cebc7aefb95fc475030_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede}\label{class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede}} 
+\index{Collision\+Manager@{Collision\+Manager}!Release\+Contents\+Of\+Await\+Release\+Array@{Release\+Contents\+Of\+Await\+Release\+Array}}
+\index{Release\+Contents\+Of\+Await\+Release\+Array@{Release\+Contents\+Of\+Await\+Release\+Array}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Release\+Contents\+Of\+Await\+Release\+Array()}{ReleaseContentsOfAwaitReleaseArray()}}
+{\footnotesize\ttfamily void Collision\+Manager\+::\+Release\+Contents\+Of\+Await\+Release\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+解放待ち配列の中身を解放関数 
+
+
+
+ Collision\+Manager.\+cpp の 298 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a351353ddde07f2ff4f6642c8e1fc4ede_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666}\label{class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666}} 
 \index{Collision\+Manager@{Collision\+Manager}!Set\+Ground@{Set\+Ground}}
 \index{Set\+Ground@{Set\+Ground}!Collision\+Manager@{Collision\+Manager}}
 \subsubsection{\texorpdfstring{Set\+Ground()}{SetGround()}}
 {\footnotesize\ttfamily void Collision\+Manager\+::\+Set\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mesh_plane_polygon}{Mesh\+Plane\+Polygon}} $\ast$}]{ground\+\_\+polygon }\end{DoxyParamCaption})}
 
+
+
+ Collision\+Manager.\+cpp の 257 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a63ce6003d8d042085d7b388a4cfa0666_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_manager_a87f64affda1906cd6eee3d177ca25045}\label{class_collision_manager_a87f64affda1906cd6eee3d177ca25045}} 
+\index{Collision\+Manager@{Collision\+Manager}!Sort\+Collision\+Calculation@{Sort\+Collision\+Calculation}}
+\index{Sort\+Collision\+Calculation@{Sort\+Collision\+Calculation}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{Sort\+Collision\+Calculation()}{SortCollisionCalculation()}}
+{\footnotesize\ttfamily bool Collision\+Manager\+::\+Sort\+Collision\+Calculation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{collision\+\_\+object0,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{collision\+\_\+object1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+衝突計算振り分け関数 
+
+
+
+ Collision\+Manager.\+cpp の 526 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a87f64affda1906cd6eee3d177ca25045_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a87f64affda1906cd6eee3d177ca25045_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09}\label{class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09}} 
 \index{Collision\+Manager@{Collision\+Manager}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Collision\+Manager@{Collision\+Manager}}
@@ -97,6 +467,26 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 終了関数 
 
+
+
+ Collision\+Manager.\+cpp の 51 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_abfa4b87f3ce102f0d173e112e7963f09_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb}\label{class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb}} 
 \index{Collision\+Manager@{Collision\+Manager}!Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}}
 \index{Uninit\+When\+Change\+Scene@{Uninit\+When\+Change\+Scene}!Collision\+Manager@{Collision\+Manager}}
@@ -107,6 +497,26 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 シーン変更時の終了関数 
 
+
+
+ Collision\+Manager.\+cpp の 86 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a33ce56b5a6f68d71b0f2bf733413dddb_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc}\label{class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc}} 
 \index{Collision\+Manager@{Collision\+Manager}!Update@{Update}}
 \index{Update@{Update}!Collision\+Manager@{Collision\+Manager}}
@@ -119,7 +529,41 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 
 
+ Collision\+Manager.\+cpp の 120 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_manager_a23c21d077dbfd7ca86e7c0649d775dfc_icgraph}
+\end{center}
+\end{figure}
+
+
 \subsection{メンバ詳解}
+\mbox{\Hypertarget{class_collision_manager_a1be7aa8904688724543897d58b22a406}\label{class_collision_manager_a1be7aa8904688724543897d58b22a406}} 
+\index{Collision\+Manager@{Collision\+Manager}!all\+\_\+collision\+\_\+@{all\+\_\+collision\+\_\+}}
+\index{all\+\_\+collision\+\_\+@{all\+\_\+collision\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{all\+\_\+collision\+\_\+}{all\_collision\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$\mbox{\hyperlink{class_collision_base}{Collision\+Base}}$\ast$, \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}}$>$ Collision\+Manager\+::all\+\_\+collision\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+全衝突配列 
+
+
+
+ Collision\+Manager.\+h の 54 行目に定義があります。
+
 \mbox{\Hypertarget{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}\label{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}} 
 \index{Collision\+Manager@{Collision\+Manager}!A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}}
 \index{A\+R\+R\+A\+Y\+\_\+\+N\+UM@{A\+R\+R\+A\+Y\+\_\+\+N\+UM}!Collision\+Manager@{Collision\+Manager}}
@@ -129,6 +573,106 @@ static const unsigned \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3
 
 
 配列数 
+
+
+
+ Collision\+Manager.\+h の 47 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_aca55a8f7b3f67f58b5455cf1ac17fc8b}\label{class_collision_manager_aca55a8f7b3f67f58b5455cf1ac17fc8b}} 
+\index{Collision\+Manager@{Collision\+Manager}!await\+\_\+add\+\_\+@{await\+\_\+add\+\_\+}}
+\index{await\+\_\+add\+\_\+@{await\+\_\+add\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{await\+\_\+add\+\_\+}{await\_add\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$\mbox{\hyperlink{class_collision_base}{Collision\+Base}}$\ast$, \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}}$>$ Collision\+Manager\+::await\+\_\+add\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+追加待ち配列 
+
+
+
+ Collision\+Manager.\+h の 55 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_a077c3b33557c56afef69c69698fc76e0}\label{class_collision_manager_a077c3b33557c56afef69c69698fc76e0}} 
+\index{Collision\+Manager@{Collision\+Manager}!await\+\_\+release\+\_\+@{await\+\_\+release\+\_\+}}
+\index{await\+\_\+release\+\_\+@{await\+\_\+release\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{await\+\_\+release\+\_\+}{await\_release\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_limited_pointer_array}{Limited\+Pointer\+Array}}$<$\mbox{\hyperlink{class_collision_base}{Collision\+Base}}$\ast$, \mbox{\hyperlink{class_collision_manager_addbc64e1fa0b01f3be07c897887f44ec}{A\+R\+R\+A\+Y\+\_\+\+N\+UM}}$>$ Collision\+Manager\+::await\+\_\+release\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+解放待ち配列 
+
+
+
+ Collision\+Manager.\+h の 56 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_a9e3350981cdf6a6ecd6b5151bedb72ef}\label{class_collision_manager_a9e3350981cdf6a6ecd6b5151bedb72ef}} 
+\index{Collision\+Manager@{Collision\+Manager}!collision\+\_\+objects\+\_\+list\+\_\+@{collision\+\_\+objects\+\_\+list\+\_\+}}
+\index{collision\+\_\+objects\+\_\+list\+\_\+@{collision\+\_\+objects\+\_\+list\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{collision\+\_\+objects\+\_\+list\+\_\+}{collision\_objects\_list\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}}$\ast$$>$ Collision\+Manager\+::collision\+\_\+objects\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Collision\+Manager.\+h の 61 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_ab080264a45322bec38189279428d44cb}\label{class_collision_manager_ab080264a45322bec38189279428d44cb}} 
+\index{Collision\+Manager@{Collision\+Manager}!ground\+\_\+polygon\+\_\+@{ground\+\_\+polygon\+\_\+}}
+\index{ground\+\_\+polygon\+\_\+@{ground\+\_\+polygon\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{ground\+\_\+polygon\+\_\+}{ground\_polygon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mesh_plane_polygon}{Mesh\+Plane\+Polygon}}$\ast$ Collision\+Manager\+::ground\+\_\+polygon\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+地面ポリゴン 
+
+
+
+ Collision\+Manager.\+h の 58 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_a356e89f8204c643179e68d0b50758f21}\label{class_collision_manager_a356e89f8204c643179e68d0b50758f21}} 
+\index{Collision\+Manager@{Collision\+Manager}!is\+\_\+octree\+\_\+@{is\+\_\+octree\+\_\+}}
+\index{is\+\_\+octree\+\_\+@{is\+\_\+octree\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{is\+\_\+octree\+\_\+}{is\_octree\_}}
+{\footnotesize\ttfamily bool Collision\+Manager\+::is\+\_\+octree\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Collision\+Manager.\+h の 65 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_a5ba36f21dfb636d6b2c8b84bb07560ad}\label{class_collision_manager_a5ba36f21dfb636d6b2c8b84bb07560ad}} 
+\index{Collision\+Manager@{Collision\+Manager}!is\+\_\+pair\+\_\+check\+\_\+@{is\+\_\+pair\+\_\+check\+\_\+}}
+\index{is\+\_\+pair\+\_\+check\+\_\+@{is\+\_\+pair\+\_\+check\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{is\+\_\+pair\+\_\+check\+\_\+}{is\_pair\_check\_}}
+{\footnotesize\ttfamily bool Collision\+Manager\+::is\+\_\+pair\+\_\+check\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Collision\+Manager.\+h の 66 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_aa7e8919f4e8af9764106a26a0cfcf6a7}\label{class_collision_manager_aa7e8919f4e8af9764106a26a0cfcf6a7}} 
+\index{Collision\+Manager@{Collision\+Manager}!liner\+\_\+octree\+\_\+@{liner\+\_\+octree\+\_\+}}
+\index{liner\+\_\+octree\+\_\+@{liner\+\_\+octree\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{liner\+\_\+octree\+\_\+}{liner\_octree\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_liner_octree}{Liner\+Octree}}$<$\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}}$\ast$$>$$\ast$ Collision\+Manager\+::liner\+\_\+octree\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+8分木 
+
+
+
+ Collision\+Manager.\+h の 60 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_manager_a6520ff69c7035e61267998885669d960}\label{class_collision_manager_a6520ff69c7035e61267998885669d960}} 
+\index{Collision\+Manager@{Collision\+Manager}!time\+\_\+@{time\+\_\+}}
+\index{time\+\_\+@{time\+\_\+}!Collision\+Manager@{Collision\+Manager}}
+\subsubsection{\texorpdfstring{time\+\_\+}{time\_}}
+{\footnotesize\ttfamily D\+W\+O\+RD Collision\+Manager\+::time\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Collision\+Manager.\+h の 64 行目に定義があります。
 
 
 

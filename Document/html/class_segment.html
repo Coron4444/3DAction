@@ -100,12 +100,20 @@ $(document).ready(function(){initNavTree('class_segment.html','');});
 <div class="dynheader">
 Segment の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_segment.png" usemap="#Segment_map" alt=""/>
-  <map id="Segment_map" name="Segment_map">
-<area href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="CollisionShapeBase" shape="rect" coords="0,0,124,24"/>
+<div class="center"><img src="class_segment__inherit__graph.png" border="0" usemap="#_segment_inherit__map" alt="Inheritance graph"/></div>
+<map name="_segment_inherit__map" id="_segment_inherit__map">
+<area shape="rect" id="node2" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="5,5,144,32"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+Segment 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_segment__coll__graph.png" border="0" usemap="#_segment_coll__map" alt="Collaboration graph"/></div>
+<map name="_segment_coll__map" id="_segment_coll__map">
+<area shape="rect" id="node2" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="5,172,144,199"/>
+<area shape="rect" id="node4" href="class_vector3_d.html" title="Vector3D" alt="" coords="125,81,201,108"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -158,7 +166,10 @@ Segment の継承関係図</div>
  }</td></tr>
 <tr class="separator:a8abcef092855ad0ca191047044b002cb inherit pub_types_class_collision_shape_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">構築子と解体子</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_segment_8h_source.html">Segment.h</a> の <a class="el" href="_segment_8h_source.html#l00031">31</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
 <a id="af491ed36fc8467aaaf503ba1053b85fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af491ed36fc8467aaaf503ba1053b85fd">&#9670;&nbsp;</a></span>Segment()</h2>
 
@@ -193,6 +204,8 @@ Segment の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_segment_8h_source.html">Segment.h</a> の <a class="el" href="_segment_8h_source.html#l00077">77</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a76b45a453304f1f485e3bc2fcad58b59"></a>
@@ -217,6 +230,8 @@ Segment の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_segment_8h_source.html">Segment.h</a> の <a class="el" href="_segment_8h_source.html#l00092">92</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -244,6 +259,29 @@ Segment の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_segment_8h_source.html">Segment.h</a> の <a class="el" href="_segment_8h_source.html#l00050">50</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_segment_a4223e990a42cc9e487ef51b82e63e777_icgraph.png" border="0" usemap="#class_segment_a4223e990a42cc9e487ef51b82e63e777_icgraph" alt=""/></div>
+<map name="class_segment_a4223e990a42cc9e487ef51b82e63e777_icgraph" id="class_segment_a4223e990a42cc9e487ef51b82e63e777_icgraph">
+<area shape="rect" id="node2" href="_segment_8h.html#a0575d6a616fa95075f88623632bae170" title="ShortestDistance_Segment\l_Point" alt="" coords="264,39,445,80"/>
+<area shape="rect" id="node3" href="_segment_8h.html#a3ca962c690b73355253042cdab29b337" title="ShortestDistance_Segment\l_Segment" alt="" coords="493,8,675,49"/>
+<area shape="rect" id="node15" href="class_collision_judgment.html#a4cc335999fcbeadf0aa1b6ebcb749e5b" title="CollisionJudgment::\lHitCheck_Sphere_Capsule" alt="" coords="725,71,903,112"/>
+<area shape="rect" id="node4" href="class_collision_judgment.html#a95962556f370a964ec1961b1c461ae2a" title="CollisionJudgment::\lHitCheck_Capsule_Capsule" alt="" coords="723,5,905,47"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="953,39,1156,80"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="1204,39,1371,80"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="1429,5,1607,47"/>
+<area shape="rect" id="node14" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="1419,71,1617,112"/>
+<area shape="rect" id="node8" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="1665,46,1836,73"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1884,39,2037,80"/>
+<area shape="rect" id="node10" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="2085,46,2280,73"/>
+<area shape="rect" id="node11" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2328,46,2479,73"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2527,46,2688,73"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2736,46,2809,73"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a889d62f6d4c10701464726da706ae043"></a>
@@ -269,6 +307,28 @@ Segment の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_segment_8h_source.html">Segment.h</a> の <a class="el" href="_segment_8h_source.html#l00104">104</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_segment_a889d62f6d4c10701464726da706ae043_icgraph.png" border="0" usemap="#class_segment_a889d62f6d4c10701464726da706ae043_icgraph" alt=""/></div>
+<map name="class_segment_a889d62f6d4c10701464726da706ae043_icgraph" id="class_segment_a889d62f6d4c10701464726da706ae043_icgraph">
+<area shape="rect" id="node2" href="class_collision_judgment.html#aef83b0d1bff8ede9c3e1f836694a3153" title="CollisionJudgment::\lCrossPointCalculation\l_OneSideZeroSegment2D\l_Segment2D" alt="" coords="257,5,429,76"/>
+<area shape="rect" id="node14" href="class_collision_judgment.html#a25e0fb020e2a075322c9540bdd13b6c2" title="CollisionJudgment::\lCrossPointCalculation\l_Segment2D_Segment2D" alt="" coords="257,101,429,157"/>
+<area shape="rect" id="node3" href="class_collision_judgment.html#a612bc9e5cfcb243324417f5059c6e24d" title="CollisionJudgment::\lHitCheck_Segment2D_Segment2D" alt="" coords="477,64,703,105"/>
+<area shape="rect" id="node4" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="751,64,953,105"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="1001,64,1168,105"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="1226,31,1405,72"/>
+<area shape="rect" id="node13" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="1216,96,1415,137"/>
+<area shape="rect" id="node7" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="1463,71,1633,98"/>
+<area shape="rect" id="node8" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1681,64,1835,105"/>
+<area shape="rect" id="node9" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1883,71,2077,98"/>
+<area shape="rect" id="node10" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2125,71,2276,98"/>
+<area shape="rect" id="node11" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2324,71,2485,98"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2533,71,2607,98"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">メンバ詳解</h2>
@@ -284,6 +344,8 @@ Segment の継承関係図</div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_segment_8h_source.html">Segment.h</a> の <a class="el" href="_segment_8h_source.html#l00057">57</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a6834b88ecae688f0fc5b4ed95fab824b"></a>
@@ -297,6 +359,8 @@ Segment の継承関係図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_segment_8h_source.html">Segment.h</a> の <a class="el" href="_segment_8h_source.html#l00058">58</a> 行目に定義があります。</p>
 
 </div>
 </div>

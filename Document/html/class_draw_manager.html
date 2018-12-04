@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_draw_manager-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">DrawManager クラス</div>  </div>
@@ -100,6 +102,47 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
  <a href="class_draw_manager.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a>&gt;</code></p>
+<div class="dynheader">
+DrawManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager__coll__graph.png" border="0" usemap="#_draw_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_draw_manager_coll__map" id="_draw_manager_coll__map">
+<area shape="rect" id="node2" href="class_shader_manager.html" title="シェーダーマネージャークラス " alt="" coords="1979,521,2093,547"/>
+<area shape="rect" id="node6" href="class_back_buffer.html" title="バックバッファークラス " alt="" coords="1465,675,1551,701"/>
+<area shape="rect" id="node3" href="class_vertex_shader_base.html" title="頂点シェーダー基底クラス " alt="" coords="2113,373,2244,399"/>
+<area shape="rect" id="node4" href="class_shader_base.html" title="シェーダー基底クラス " alt="" coords="2057,266,2151,293"/>
+<area shape="rect" id="node5" href="class_pixel_shader_base.html" title="ピクセルシェーダー基底クラス " alt="" coords="1967,373,2089,399"/>
+<area shape="rect" id="node7" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; DrawBase *, ARRAY_NUM \&gt;" alt="" coords="1545,432,1748,473"/>
+<area shape="rect" id="node8" href="class_draw_base.html" title="描画基底クラス " alt="" coords="1423,266,1505,293"/>
+<area shape="rect" id="node10" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="593,521,719,547"/>
+<area shape="rect" id="node33" href="class_draw_null.html" title="空白描画クラス " alt="" coords="1427,373,1501,399"/>
+<area shape="rect" id="node37" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; DrawBase *, DRAW_ARRAY_NUM \&gt;" alt="" coords="1755,432,2005,473"/>
+<area shape="rect" id="node9" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="731,675,850,701"/>
+<area shape="rect" id="node11" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="375,764,476,791"/>
+<area shape="rect" id="node24" href="class_update_base.html" title="更新基底クラス " alt="" coords="660,764,753,791"/>
+<area shape="rect" id="node23" href="class_physics.html" title="Physics" alt="" coords="501,675,571,701"/>
+<area shape="rect" id="node13" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="146,853,262,880"/>
+<area shape="rect" id="node12" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="380,943,521,999"/>
+<area shape="rect" id="node19" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="5,957,227,984"/>
+<area shape="rect" id="node14" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="177,373,236,399"/>
+<area shape="rect" id="node15" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="209,266,348,293"/>
+<area shape="rect" id="node22" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="31,373,140,399"/>
+<area shape="rect" id="node35" href="class_fade.html" title="フェードクラス " alt="" coords="1205,521,1256,547"/>
+<area shape="rect" id="node17" href="class_vector3_d.html" title="Vector3D" alt="" coords="347,95,423,121"/>
+<area shape="rect" id="node25" href="class_transform.html" title="Transform" alt="" coords="797,373,875,399"/>
+<area shape="rect" id="node27" href="class_axis_vector.html" title="AxisVector" alt="" coords="687,266,774,293"/>
+<area shape="rect" id="node30" href="class_camera.html" title="カメラクラス " alt="" coords="600,373,667,399"/>
+<area shape="rect" id="node20" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="6,1061,226,1088"/>
+<area shape="rect" id="node21" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="17,595,153,651"/>
+<area shape="rect" id="node32" href="class_render_texture.html" title="フェードクラス " alt="" coords="1369,521,1476,547"/>
+<area shape="rect" id="node26" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="940,266,1039,293"/>
+<area shape="rect" id="node28" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="1412,95,1516,121"/>
+<area shape="rect" id="node29" href="class_flag.html" title="Flag" alt="" coords="1441,5,1487,32"/>
+<area shape="rect" id="node31" href="class_camera_1_1_state.html" title="カメラステートクラス " alt="" coords="556,266,663,293"/>
+<area shape="rect" id="node34" href="class_plane_polygon.html" title="PlanePolygon" alt="" coords="1261,373,1363,399"/>
+<area shape="rect" id="node36" href="class_texture_object.html" title="TextureObject" alt="" coords="1057,373,1159,399"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -139,11 +182,108 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 <tr class="memitem:ad4326cddcb1cc4cec198c4f8069b81f0"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#ad4326cddcb1cc4cec198c4f8069b81f0">DRAW_ARRAY_NUM</a> = 10000</td></tr>
 <tr class="memdesc:ad4326cddcb1cc4cec198c4f8069b81f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画配列数  <a href="#ad4326cddcb1cc4cec198c4f8069b81f0">[詳解]</a><br /></td></tr>
 <tr class="separator:ad4326cddcb1cc4cec198c4f8069b81f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a984cd9de288151fd1d170f80f93a11e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a984cd9de288151fd1d170f80f93a11e8">AddContentsOfAwaitAddArray</a> ()</td></tr>
+<tr class="memdesc:a984cd9de288151fd1d170f80f93a11e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加待ち配列の中身を追加関数  <a href="#a984cd9de288151fd1d170f80f93a11e8">[詳解]</a><br /></td></tr>
+<tr class="separator:a984cd9de288151fd1d170f80f93a11e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76361402a035f02084e9faf31e782d69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a76361402a035f02084e9faf31e782d69">ReleaseContentsOfAwaitReleaseArray</a> ()</td></tr>
+<tr class="memdesc:a76361402a035f02084e9faf31e782d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放待ち配列の中身を解放関数  <a href="#a76361402a035f02084e9faf31e782d69">[詳解]</a><br /></td></tr>
+<tr class="separator:a76361402a035f02084e9faf31e782d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c989a2beae5de5a1fc7ab0bef8692f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a7c989a2beae5de5a1fc7ab0bef8692f9">UpdateAllDrawBase</a> ()</td></tr>
+<tr class="memdesc:a7c989a2beae5de5a1fc7ab0bef8692f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">全描画基底クラス更新関数  <a href="#a7c989a2beae5de5a1fc7ab0bef8692f9">[詳解]</a><br /></td></tr>
+<tr class="separator:a7c989a2beae5de5a1fc7ab0bef8692f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb2f1e3957113ae99e8240c40c89744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744">UpdateAllRenderTarget</a> ()</td></tr>
+<tr class="memdesc:a8eb2f1e3957113ae99e8240c40c89744"><td class="mdescLeft">&#160;</td><td class="mdescRight">全レンダーターゲット更新関数  <a href="#a8eb2f1e3957113ae99e8240c40c89744">[詳解]</a><br /></td></tr>
+<tr class="separator:a8eb2f1e3957113ae99e8240c40c89744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20787acc9c5a096e80651dc1909ae60d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a20787acc9c5a096e80651dc1909ae60d">ResetAllRenderTarget</a> ()</td></tr>
+<tr class="memdesc:a20787acc9c5a096e80651dc1909ae60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">全レンダーターゲットリセット関数  <a href="#a20787acc9c5a096e80651dc1909ae60d">[詳解]</a><br /></td></tr>
+<tr class="separator:a20787acc9c5a096e80651dc1909ae60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a09cb524187bc11f1e4812a06fe46d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a9a09cb524187bc11f1e4812a06fe46d6">DistributeDrawBase</a> ()</td></tr>
+<tr class="memdesc:a9a09cb524187bc11f1e4812a06fe46d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画基底クラス振り分け関数  <a href="#a9a09cb524187bc11f1e4812a06fe46d6">[詳解]</a><br /></td></tr>
+<tr class="separator:a9a09cb524187bc11f1e4812a06fe46d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a328d73b404a5609d3e89a299362253fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt; <a class="el" href="class_draw_base.html">DrawBase</a> *, <a class="el" href="class_draw_manager.html#ad4326cddcb1cc4cec198c4f8069b81f0">DRAW_ARRAY_NUM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a328d73b404a5609d3e89a299362253fd">all_draw_</a></td></tr>
+<tr class="memdesc:a328d73b404a5609d3e89a299362253fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">全描画配列  <a href="#a328d73b404a5609d3e89a299362253fd">[詳解]</a><br /></td></tr>
+<tr class="separator:a328d73b404a5609d3e89a299362253fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a8468dd4469cde2cf162b91a5c1faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt; <a class="el" href="class_draw_base.html">DrawBase</a> *, <a class="el" href="class_draw_manager.html#ad4326cddcb1cc4cec198c4f8069b81f0">DRAW_ARRAY_NUM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#aa6a8468dd4469cde2cf162b91a5c1faf">await_add_</a></td></tr>
+<tr class="memdesc:aa6a8468dd4469cde2cf162b91a5c1faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">追加待ち配列  <a href="#aa6a8468dd4469cde2cf162b91a5c1faf">[詳解]</a><br /></td></tr>
+<tr class="separator:aa6a8468dd4469cde2cf162b91a5c1faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fa29ded26b3609545a04b5c6927824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt; <a class="el" href="class_draw_base.html">DrawBase</a> *, <a class="el" href="class_draw_manager.html#ad4326cddcb1cc4cec198c4f8069b81f0">DRAW_ARRAY_NUM</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a59fa29ded26b3609545a04b5c6927824">await_release_</a></td></tr>
+<tr class="memdesc:a59fa29ded26b3609545a04b5c6927824"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放待ち配列  <a href="#a59fa29ded26b3609545a04b5c6927824">[詳解]</a><br /></td></tr>
+<tr class="separator:a59fa29ded26b3609545a04b5c6927824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4cfc76f2953c30ed5eac54b544d0ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_shader_manager.html">ShaderManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#aac4cfc76f2953c30ed5eac54b544d0ad">shader_manager_</a> = nullptr</td></tr>
+<tr class="memdesc:aac4cfc76f2953c30ed5eac54b544d0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">シェーダーマネージャ  <a href="#aac4cfc76f2953c30ed5eac54b544d0ad">[詳解]</a><br /></td></tr>
+<tr class="separator:aac4cfc76f2953c30ed5eac54b544d0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e3e9c0794c049fde69e7e5603df22f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_back_buffer.html">BackBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a53e3e9c0794c049fde69e7e5603df22f">back_buffer_</a> = nullptr</td></tr>
+<tr class="memdesc:a53e3e9c0794c049fde69e7e5603df22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">バックバッファ  <a href="#a53e3e9c0794c049fde69e7e5603df22f">[詳解]</a><br /></td></tr>
+<tr class="separator:a53e3e9c0794c049fde69e7e5603df22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec52b1d65b765e4fe336d814c2bc11c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_draw_manager.html#a0ec52b1d65b765e4fe336d814c2bc11c">directional_light_vector_</a> = {0.5f, -1.0f, 0.8f}</td></tr>
+<tr class="memdesc:a0ec52b1d65b765e4fe336d814c2bc11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">拡散反射光ベクトル  <a href="#a0ec52b1d65b765e4fe336d814c2bc11c">[詳解]</a><br /></td></tr>
+<tr class="separator:a0ec52b1d65b765e4fe336d814c2bc11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>描画マネージャークラス </p>
 <p>登録されている描画基底クラスを管理するクラス </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00037">37</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
+<a id="a984cd9de288151fd1d170f80f93a11e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984cd9de288151fd1d170f80f93a11e8">&#9670;&nbsp;</a></span>AddContentsOfAwaitAddArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawManager::AddContentsOfAwaitAddArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>追加待ち配列の中身を追加関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00195">195</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_cgraph.png" border="0" usemap="#class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_cgraph" alt=""/></div>
+<map name="class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_cgraph" id="class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="237,5,373,47"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="237,71,373,112"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="237,136,373,177"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="237,201,373,243"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_icgraph.png" border="0" usemap="#class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_icgraph" alt=""/></div>
+<map name="class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_icgraph" id="class_draw_manager_a984cd9de288151fd1d170f80f93a11e8_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="237,13,388,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="436,5,589,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="637,13,832,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="880,13,1031,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1079,13,1240,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1288,13,1361,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a9dbd645fdbf927cd43d400335ff9b286"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9dbd645fdbf927cd43d400335ff9b286">&#9670;&nbsp;</a></span>AddDrawBaseToArray()</h2>
 
@@ -161,6 +301,87 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </div><div class="memdoc">
 
 <p>描画基底クラスの追加関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00136">136</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_cgraph.png" border="0" usemap="#class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_cgraph" alt=""/></div>
+<map name="class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_cgraph" id="class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="244,5,380,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_icgraph.png" border="0" usemap="#class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_icgraph" alt=""/></div>
+<map name="class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_icgraph" id="class_draw_manager_a9dbd645fdbf927cd43d400335ff9b286_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a4c6cdb6d0a1f43a2e2e705677fa2f5f6" title="コンポーネントをマネージャーへ設定関数 " alt="" coords="244,5,416,47"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09" title="追加待ち配列の中身を追加関数 " alt="" coords="464,5,660,47"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="708,5,861,47"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="909,13,1104,39"/>
+<area shape="rect" id="node6" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1152,13,1303,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1351,13,1512,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1560,13,1633,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9a09cb524187bc11f1e4812a06fe46d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a09cb524187bc11f1e4812a06fe46d6">&#9670;&nbsp;</a></span>DistributeDrawBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawManager::DistributeDrawBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画基底クラス振り分け関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00270">270</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_cgraph.png" border="0" usemap="#class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_cgraph" alt=""/></div>
+<map name="class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_cgraph" id="class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="303,5,439,47"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="303,71,439,112"/>
+<area shape="rect" id="node4" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="513,185,705,211"/>
+<area shape="rect" id="node5" href="class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f" title="DrawOrderList::GetRender\lTargetFlag" alt="" coords="283,188,458,229"/>
+<area shape="rect" id="node6" href="class_flag.html#a3efc58733cf4aae0ff1ab0752aa4c702" title="Flag::CheckAny" alt="" coords="313,254,428,281"/>
+<area shape="rect" id="node7" href="class_back_buffer.html#ab9cae17a69086b467f6e016e432b224b" title="描画基底クラスの追加関数 " alt="" coords="276,305,465,347"/>
+<area shape="rect" id="node8" href="class_draw_order_list.html#a50dcac9d342e61f67b4d2a1d9a96bb21" title="DrawOrderList::GetDrawType" alt="" coords="514,283,705,310"/>
+<area shape="rect" id="node9" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="541,335,677,376"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_icgraph.png" border="0" usemap="#class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_icgraph" alt=""/></div>
+<map name="class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_icgraph" id="class_draw_manager_a9a09cb524187bc11f1e4812a06fe46d6_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="276,13,427,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="475,5,628,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="676,13,871,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="919,13,1069,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1117,13,1279,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1327,13,1400,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -180,6 +401,76 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </div><div class="memdoc">
 
 <p>描画関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00125">125</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a43372495e68d77a2698f211cf921b37e_cgraph.png" border="0" usemap="#class_draw_manager_a43372495e68d77a2698f211cf921b37e_cgraph" alt=""/></div>
+<map name="class_draw_manager_a43372495e68d77a2698f211cf921b37e_cgraph" id="class_draw_manager_a43372495e68d77a2698f211cf921b37e_cgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="192,617,315,643"/>
+<area shape="rect" id="node3" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="661,31,810,58"/>
+<area shape="rect" id="node5" href="class_renderer.html#a56662123051f8898c4e8e9d5457fd317" title="Renderer::getDevice" alt="" coords="400,170,539,197"/>
+<area shape="rect" id="node6" href="class_renderer.html#af420951c9c163f1151bd6600df204cee" title="描画開始関数 " alt="" coords="397,221,541,247"/>
+<area shape="rect" id="node8" href="class_camera.html#a6218126e761a8289c6e6bc8c66b05e47" title="Camera::SetType" alt="" coords="674,271,797,298"/>
+<area shape="rect" id="node9" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="401,576,537,617"/>
+<area shape="rect" id="node10" href="class_shader_manager.html#ad2caed4ae50c1ca784151d0f9e50c381" title="シェーダー設定関数 " alt="" coords="644,322,827,349"/>
+<area shape="rect" id="node16" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="401,641,537,683"/>
+<area shape="rect" id="node17" href="class_draw_base.html#aed79e9db49de4fa2dff064495b877bcd" title="DrawBase::GetObjectNum" alt="" coords="382,707,557,734"/>
+<area shape="rect" id="node18" href="class_draw_base.html#a3978252914ddde12197ea4577356bf25" title="描画前設定関数 " alt="" coords="363,758,576,785"/>
+<area shape="rect" id="node19" href="class_shader_manager.html#a6cfff8f4aee59d9bc5162a5a6f4d07d4" title="共通設定関数 " alt="" coords="628,575,843,602"/>
+<area shape="rect" id="node22" href="class_draw_base.html#a194eb48924f205d60d4e63c5becdd2fe" title="DrawBase::GetMeshNum" alt="" coords="385,809,554,835"/>
+<area shape="rect" id="node23" href="class_shader_manager.html#af016392b9b0477d49165d753e9404ff4" title="固有設定関数 " alt="" coords="631,373,839,399"/>
+<area shape="rect" id="node26" href="class_draw_base.html#a408080106630a1146d7af0bb46a4d8d1" title="描画関数 " alt="" coords="410,859,529,886"/>
+<area shape="rect" id="node27" href="class_draw_base.html#afe64f27b0bbf8c45da7aa0de4c3f3d65" title="描画後設定関数 " alt="" coords="368,910,571,937"/>
+<area shape="rect" id="node28" href="class_effekseer_manager.html#a0c9155e72b0552e5138e68be682a63a4" title="EffekseerManager::Draw" alt="" coords="388,69,551,95"/>
+<area shape="rect" id="node29" href="class_renderer.html#a581267c3eeedce9b333c119d009e315c" title="Renderer::getRenderer" alt="" coords="659,107,811,134"/>
+<area shape="rect" id="node30" href="class_render_texture.html#adb19f86d2ac55e95d8725c64a846e8d0" title="RenderTexture::GetMaterial" alt="" coords="379,961,560,987"/>
+<area shape="rect" id="node32" href="class_camera.html#aa472374f61480c5a9dff89d30be029f4" title="Camera::GetViewMatrix" alt="" coords="389,1011,549,1038"/>
+<area shape="rect" id="node33" href="class_camera.html#a473a7a8408bc7a1fdd46d12fa3852846" title="Camera::GetProjectionMatrix" alt="" coords="374,1062,565,1089"/>
+<area shape="rect" id="node34" href="class_render_texture.html#ac27f8cfac7903dd502de61e22abfc457" title="RenderTexture::Update" alt="" coords="392,1113,547,1139"/>
+<area shape="rect" id="node39" href="class_render_texture.html#a0e9746f5cebdd088f2303e18cbc52eae" title="RenderTexture::GetMatrix" alt="" coords="384,1214,555,1241"/>
+<area shape="rect" id="node42" href="class_back_buffer.html#a9835a5db9850f774a382c4f8e611b1d1" title="フェード描画関数 " alt="" coords="394,423,545,450"/>
+<area shape="rect" id="node48" href="class_renderer.html#a0393849bd4178a33861780bf07b0deee" title="描画終了関数 " alt="" coords="402,1294,537,1321"/>
+<area shape="rect" id="node50" href="class_render_texture.html#a529ab829c676470ae5764b42cba9efb0" title="描画関数 " alt="" coords="398,525,541,551"/>
+<area shape="rect" id="node4" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="935,31,1069,58"/>
+<area shape="rect" id="node7" href="class_renderer_interface.html#a86a487deb4e4207a67410d00ec670fd7" title="描画開始関数 " alt="" coords="670,205,801,247"/>
+<area shape="rect" id="node11" href="class_shader_manager.html#a3661a079ae4e9e7e4d5da35f2171b41e" title="頂点シェーダー設定関数 " alt="" coords="913,256,1091,297"/>
+<area shape="rect" id="node15" href="class_shader_manager.html#a6c954293001a33fafff216ff719618d5" title="ピクセルシェーダー設定関数 " alt="" coords="897,322,1107,349"/>
+<area shape="rect" id="node12" href="class_vertex_shader_base.html#a9f93697c5668852850f0a7b7ef7cb67f" title="シェーダー設定関数 " alt="" coords="1157,263,1357,290"/>
+<area shape="rect" id="node13" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="1161,443,1353,470"/>
+<area shape="rect" id="node14" href="class_draw_order_list.html#a6533ffbf1cd3f27583e0de8a08648b75" title="DrawOrderList::GetVertex\lShaderType" alt="" coords="1172,373,1343,415"/>
+<area shape="rect" id="node20" href="class_shader_manager.html#a836c92ee48dfbf8b8c8085f9413027bd" title="頂点シェーダー共通設定関数 " alt="" coords="895,439,1109,480"/>
+<area shape="rect" id="node21" href="class_shader_manager.html#ad2b591958e1d22d746e5ed3d7941e4c1" title="ピクセルシェーダー共通設定関数 " alt="" coords="895,569,1109,611"/>
+<area shape="rect" id="node24" href="class_shader_manager.html#a2433c0715142fd310a497e080f7d0ddb" title="頂点シェーダー固有設定関数 " alt="" coords="898,373,1106,415"/>
+<area shape="rect" id="node25" href="class_shader_manager.html#a1158156785098fe426dd514e4c2a97c1" title="ピクセルシェーダー固有設定関数 " alt="" coords="898,504,1106,545"/>
+<area shape="rect" id="node31" href="class_plane_polygon.html#a808087c9d82c0eb7cfb0709c9906e833" title="PlanePolygon::GetMaterial" alt="" coords="647,961,824,987"/>
+<area shape="rect" id="node35" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="658,1011,813,1038"/>
+<area shape="rect" id="node36" href="class_transform.html#accedf33a4ddbdcf2d4fc4274f85bf818" title="Transform::GetScale" alt="" coords="665,1062,806,1089"/>
+<area shape="rect" id="node37" href="class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="624,1113,847,1139"/>
+<area shape="rect" id="node38" href="class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113" title="PlanePolygon::SetColor" alt="" coords="655,1163,815,1190"/>
+<area shape="rect" id="node40" href="class_transform.html#ab1101d4467d772f3ddc0558586e39c79" title="Transform::GetMatrixExtend" alt="" coords="643,1214,828,1241"/>
+<area shape="rect" id="node41" href="class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="636,1265,835,1291"/>
+<area shape="rect" id="node43" href="class_fade.html#aed5a29d39a5fd6161a9aed73d5f30870" title="Fade::GetType" alt="" coords="681,423,789,450"/>
+<area shape="rect" id="node44" href="class_draw_null.html#aaffa15d184f1d09512ccaa3bdad3f658" title="DrawNull::GetObjectNum" alt="" coords="652,474,819,501"/>
+<area shape="rect" id="node45" href="class_draw_null.html#ad735978a85a5f3583eecd82d6bfe6413" title="DrawNull::GetMeshNum" alt="" coords="655,525,816,551"/>
+<area shape="rect" id="node46" href="class_fade.html#a84a9e688650ac500e03cde74ff0210b8" title="描画関数 " alt="" coords="691,626,779,653"/>
+<area shape="rect" id="node47" href="class_plane_polygon.html#a2f20691ee0feee4fa428f5d017d7062a" title="PlanePolygon::Draw" alt="" coords="933,655,1071,682"/>
+<area shape="rect" id="node49" href="class_renderer_interface.html#a0034a44420e4746062e70e4d66d3bee2" title="描画終了関数 " alt="" coords="670,1316,801,1357"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a43372495e68d77a2698f211cf921b37e_icgraph.png" border="0" usemap="#class_draw_manager_a43372495e68d77a2698f211cf921b37e_icgraph" alt=""/></div>
+<map name="class_draw_manager_a43372495e68d77a2698f211cf921b37e_icgraph" id="class_draw_manager_a43372495e68d77a2698f211cf921b37e_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="192,5,375,32"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="423,5,605,32"/>
+<area shape="rect" id="node4" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="653,5,792,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="840,5,1001,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1049,5,1123,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -206,6 +497,31 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00116">116</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7_icgraph.png" border="0" usemap="#class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7_icgraph" alt=""/></div>
+<map name="class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7_icgraph" id="class_draw_manager_a0e7e11e650f1c1736e9d3199a58191a7_icgraph">
+<area shape="rect" id="node2" href="class_scene_manager.html#a208cc1690dcb260ae7fb94d13118f6ce" title="SceneManager::setNextScene" alt="" coords="247,135,445,162"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#a1759161a38025ec8212dc98439fd7335" title="シーンリセット関数 " alt="" coords="252,186,440,213"/>
+<area shape="rect" id="node8" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="247,237,445,263"/>
+<area shape="rect" id="node13" href="class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="252,287,440,314"/>
+<area shape="rect" id="node14" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="266,339,426,380"/>
+<area shape="rect" id="node15" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="265,404,427,445"/>
+<area shape="rect" id="node16" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="271,469,421,511"/>
+<area shape="rect" id="node17" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="280,535,412,576"/>
+<area shape="rect" id="node3" href="class_game_scene_state___start.html#ae11bb8d8ea9eae4fea2a9acf33dd1c8b" title="更新関数 " alt="" coords="495,5,655,47"/>
+<area shape="rect" id="node4" href="class_result_scene_state___start.html#a2ecdef2bef0cd1a04055e8687e11199b" title="更新関数 " alt="" coords="493,71,656,112"/>
+<area shape="rect" id="node5" href="class_title_scene_state___start.html#a2e98cf6810711b58766d7147168d02eb" title="更新関数 " alt="" coords="500,136,649,177"/>
+<area shape="rect" id="node6" href="class_tutorial_scene_state___end.html#a7cdf03fa9a0e41ab86c2b41b8165ad09" title="更新関数 " alt="" coords="509,201,641,243"/>
+<area shape="rect" id="node9" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="495,274,654,301"/>
+<area shape="rect" id="node10" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="704,274,880,301"/>
+<area shape="rect" id="node11" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="928,274,1089,301"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1137,274,1211,301"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a952023ad9e2e12844c93e37029a32700"></a>
@@ -231,6 +547,19 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00114">114</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a952023ad9e2e12844c93e37029a32700_icgraph.png" border="0" usemap="#class_draw_manager_a952023ad9e2e12844c93e37029a32700_icgraph" alt=""/></div>
+<map name="class_draw_manager_a952023ad9e2e12844c93e37029a32700_icgraph" id="class_draw_manager_a952023ad9e2e12844c93e37029a32700_icgraph">
+<area shape="rect" id="node2" href="class_pixel_shader_bump_mapping.html#af62a2b40930533a3bae17319f876705d" title="共通設定関数 " alt="" coords="249,5,423,47"/>
+<area shape="rect" id="node3" href="class_vertex_shader_bump_mapping.html#a7979584d035fff86d386c99617a8dd2c" title="共通設定関数 " alt="" coords="244,71,428,112"/>
+<area shape="rect" id="node4" href="class_vertex_shader_fixed.html#ae15e2c1ce81ca57cf657a6edff36cf9c" title="VertexShaderFixed::\lUpdateDirectionalLignt" alt="" coords="260,136,412,177"/>
+<area shape="rect" id="node5" href="class_vertex_shader_fixed.html#a82bf2829b6fd0df26faedcbf650ba08d" title="共通設定関数 " alt="" coords="476,136,617,177"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a3cb9319d492285bd9dfc983d27e5d04f"></a>
@@ -249,6 +578,50 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </div><div class="memdoc">
 
 <p>初期化関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00032">32</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_cgraph.png" border="0" usemap="#class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_cgraph" alt=""/></div>
+<map name="class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_cgraph" id="class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_cgraph">
+<area shape="rect" id="node2" href="class_shader_manager.html#a8e8fd62a28cc18addcd5ec6507a5dcb0" title="初期化関数 " alt="" coords="213,78,351,105"/>
+<area shape="rect" id="node6" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="227,257,337,283"/>
+<area shape="rect" id="node24" href="class_back_buffer.html#a44566449a4df988cb1cfe5ffbb0455cc" title="BackBuffer::SetShaderManager" alt="" coords="180,307,384,334"/>
+<area shape="rect" id="node3" href="class_shader_manager.html#a9881e89daff32662e10f6ac48212ca06" title="頂点シェーダー初期化関数 " alt="" coords="432,5,608,47"/>
+<area shape="rect" id="node5" href="class_shader_manager.html#a6e1c2dc6c381081bc0e5ef1624b8e0f0" title="ピクセルシェーダー初期化関数 " alt="" coords="437,71,603,112"/>
+<area shape="rect" id="node4" href="class_shader_base.html#a9622b2f5e0184a78d3af82820dc5113d" title="初期化関数 " alt="" coords="685,13,804,39"/>
+<area shape="rect" id="node7" href="class_back_buffer.html#a04e942576ac5de94d16764d347111234" title="全配列のリセット関数 " alt="" coords="433,159,607,186"/>
+<area shape="rect" id="node9" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="474,231,566,258"/>
+<area shape="rect" id="node20" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="445,282,595,309"/>
+<area shape="rect" id="node22" href="class_renderer.html#a56662123051f8898c4e8e9d5457fd317" title="Renderer::getDevice" alt="" coords="451,333,589,359"/>
+<area shape="rect" id="node23" href="class_render_texture.html#a498eb8be8672e01164b3770cdff43291" title="初期化関数 " alt="" coords="455,383,585,410"/>
+<area shape="rect" id="node8" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="677,64,813,105"/>
+<area shape="rect" id="node10" href="class_axis_vector.html#ac429404c0b565c24307da4442e49bb61" title="AxisVector::SetForward" alt="" coords="665,130,825,157"/>
+<area shape="rect" id="node15" href="class_camera_1_1_state.html#aa1b81471ab15e64b3117ffe7de9560ff" title="初期化関数 " alt="" coords="679,181,810,207"/>
+<area shape="rect" id="node16" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a" title="ビュー行列作成関数 " alt="" coords="656,231,833,258"/>
+<area shape="rect" id="node17" href="class_camera.html#a1786fe1adbe95e2ffa2de4cdb114546a" title="プロジェクション行列作成関数(透視投影行列) " alt="" coords="659,283,830,324"/>
+<area shape="rect" id="node18" href="class_camera.html#a215010fc78cb35ed588ac9676c166f64" title="プロジェクション行列作成関数(正射影行列) " alt="" coords="659,348,830,389"/>
+<area shape="rect" id="node19" href="class_camera.html#aaae8043a952b7675d209bdc9b80bcc3f" title="プロジェクション行列作成関数(2D) " alt="" coords="659,413,830,455"/>
+<area shape="rect" id="node11" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="889,93,1073,135"/>
+<area shape="rect" id="node13" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="881,159,1081,186"/>
+<area shape="rect" id="node12" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="1129,101,1324,127"/>
+<area shape="rect" id="node14" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="1137,159,1317,186"/>
+<area shape="rect" id="node21" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="677,479,812,506"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_icgraph.png" border="0" usemap="#class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_icgraph" alt=""/></div>
+<map name="class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_icgraph" id="class_draw_manager_a3cb9319d492285bd9dfc983d27e5d04f_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="180,5,351,32"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="399,5,533,32"/>
+<area shape="rect" id="node4" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="581,5,708,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="756,5,917,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="965,5,1039,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -280,6 +653,76 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 
 <p>描画基底クラスの上書き関数 </p>
 
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00147">147</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec_cgraph.png" border="0" usemap="#class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec_cgraph" alt=""/></div>
+<map name="class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec_cgraph" id="class_draw_manager_a94ef5a241c8d78187a2a6c0ed3c9efec_cgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#a287d1f359b87f075b22df6a9b6e99316" title="描画基底クラスの解放関数 " alt="" coords="263,5,449,47"/>
+<area shape="rect" id="node4" href="class_game_object_base.html#acb893b1827cb7fbb27f0caf6a8e0fb88" title="GameObjectBase::GetDraw" alt="" coords="265,71,447,98"/>
+<area shape="rect" id="node5" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="284,122,428,149"/>
+<area shape="rect" id="node6" href="class_game_object_base.html#ab548b4208b8da2af6e3abb533ea53da9" title="GameObjectBase::SetDraw" alt="" coords="265,173,447,199"/>
+<area shape="rect" id="node7" href="class_limited_pointer_array.html#a7cf64a1731ab6d0d63182b6c223fae0b" title="LimitedPointerArray\l::OverwriteArray" alt="" coords="288,224,424,265"/>
+<area shape="rect" id="node8" href="class_component_base.html#ac9fc08588e3d29caf8d692a3392fc7b0" title="ComponentBase::SetGameObject" alt="" coords="247,290,465,317"/>
+<area shape="rect" id="node9" href="class_component_base.html#a125939d6befe42f28886a6523e86b18b" title="初期化関数 " alt="" coords="285,341,427,367"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="513,5,649,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a76361402a035f02084e9faf31e782d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76361402a035f02084e9faf31e782d69">&#9670;&nbsp;</a></span>ReleaseContentsOfAwaitReleaseArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawManager::ReleaseContentsOfAwaitReleaseArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放待ち配列の中身を解放関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00215">215</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a76361402a035f02084e9faf31e782d69_cgraph.png" border="0" usemap="#class_draw_manager_a76361402a035f02084e9faf31e782d69_cgraph" alt=""/></div>
+<map name="class_draw_manager_a76361402a035f02084e9faf31e782d69_cgraph" id="class_draw_manager_a76361402a035f02084e9faf31e782d69_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="297,5,433,47"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="261,71,468,112"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="297,136,433,177"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="297,201,433,243"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a76361402a035f02084e9faf31e782d69_icgraph.png" border="0" usemap="#class_draw_manager_a76361402a035f02084e9faf31e782d69_icgraph" alt=""/></div>
+<map name="class_draw_manager_a76361402a035f02084e9faf31e782d69_icgraph" id="class_draw_manager_a76361402a035f02084e9faf31e782d69_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="261,13,412,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="460,5,613,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="661,13,856,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="904,13,1055,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1103,13,1264,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1312,13,1385,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a287d1f359b87f075b22df6a9b6e99316"></a>
@@ -299,6 +742,94 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </div><div class="memdoc">
 
 <p>描画基底クラスの解放関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00184">184</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_cgraph.png" border="0" usemap="#class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_cgraph" alt=""/></div>
+<map name="class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_cgraph" id="class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="239,5,375,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_icgraph.png" border="0" usemap="#class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_icgraph" alt=""/></div>
+<map name="class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_icgraph" id="class_draw_manager_a287d1f359b87f075b22df6a9b6e99316_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#a94ef5a241c8d78187a2a6c0ed3c9efec" title="描画基底クラスの上書き関数 " alt="" coords="249,25,443,66"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="239,90,453,131"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="501,90,735,131"/>
+<area shape="rect" id="node5" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="783,23,977,49"/>
+<area shape="rect" id="node7" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="803,90,957,131"/>
+<area shape="rect" id="node16" href="class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="793,188,967,215"/>
+<area shape="rect" id="node6" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1025,5,1207,32"/>
+<area shape="rect" id="node8" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="1039,57,1193,98"/>
+<area shape="rect" id="node10" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="1031,122,1201,163"/>
+<area shape="rect" id="node9" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1279,64,1429,91"/>
+<area shape="rect" id="node11" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1255,129,1453,156"/>
+<area shape="rect" id="node12" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1507,129,1666,156"/>
+<area shape="rect" id="node13" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1720,129,1896,156"/>
+<area shape="rect" id="node14" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1944,129,2105,156"/>
+<area shape="rect" id="node15" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2153,129,2227,156"/>
+<area shape="rect" id="node17" href="class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1041,188,1191,215"/>
+<area shape="rect" id="node21" href="class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1031,239,1201,265"/>
+<area shape="rect" id="node18" href="class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1277,224,1431,251"/>
+<area shape="rect" id="node19" href="class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1525,195,1648,221"/>
+<area shape="rect" id="node20" href="class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1501,245,1672,272"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20787acc9c5a096e80651dc1909ae60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20787acc9c5a096e80651dc1909ae60d">&#9670;&nbsp;</a></span>ResetAllRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawManager::ResetAllRenderTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全レンダーターゲットリセット関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00259">259</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_cgraph.png" border="0" usemap="#class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_cgraph" alt=""/></div>
+<map name="class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_cgraph" id="class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_cgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a04e942576ac5de94d16764d347111234" title="全配列のリセット関数 " alt="" coords="252,13,425,39"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="473,5,609,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_icgraph.png" border="0" usemap="#class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_icgraph" alt=""/></div>
+<map name="class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_icgraph" id="class_draw_manager_a20787acc9c5a096e80651dc1909ae60d_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="252,13,403,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="451,5,604,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="652,13,847,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="895,13,1045,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1093,13,1255,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1303,13,1376,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -326,6 +857,8 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00115">115</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="ae58095d9d734f30211011e9205aa57aa"></a>
@@ -344,6 +877,26 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 </div><div class="memdoc">
 
 <p>終了関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00049">49</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_ae58095d9d734f30211011e9205aa57aa_cgraph.png" border="0" usemap="#class_draw_manager_ae58095d9d734f30211011e9205aa57aa_cgraph" alt=""/></div>
+<map name="class_draw_manager_ae58095d9d734f30211011e9205aa57aa_cgraph" id="class_draw_manager_ae58095d9d734f30211011e9205aa57aa_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="209,5,345,47"/>
+<area shape="rect" id="node3" href="class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="196,71,359,98"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_ae58095d9d734f30211011e9205aa57aa_icgraph.png" border="0" usemap="#class_draw_manager_ae58095d9d734f30211011e9205aa57aa_icgraph" alt=""/></div>
+<map name="class_draw_manager_ae58095d9d734f30211011e9205aa57aa_icgraph" id="class_draw_manager_ae58095d9d734f30211011e9205aa57aa_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="196,5,349,47"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="397,13,548,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -364,6 +917,33 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 
 <p>シーン変更時の終了関数 </p>
 
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00070">70</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_cgraph.png" border="0" usemap="#class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_cgraph" alt=""/></div>
+<map name="class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_cgraph" id="class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="760,5,896,47"/>
+<area shape="rect" id="node3" href="class_back_buffer.html#a989c5474cabde7f88c197a2a235e8424" title="シーン変更時の終了関数 " alt="" coords="273,43,477,84"/>
+<area shape="rect" id="node4" href="class_back_buffer.html#a04e942576ac5de94d16764d347111234" title="全配列のリセット関数 " alt="" coords="525,42,699,69"/>
+<area shape="rect" id="node5" href="class_camera.html#a8b3337b3e560ea6a780d646bc8c509d7" title="終了関数 " alt="" coords="558,93,666,119"/>
+<area shape="rect" id="node6" href="class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="747,93,909,119"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_icgraph.png" border="0" usemap="#class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_icgraph" alt=""/></div>
+<map name="class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_icgraph" id="class_draw_manager_a8b4ea38d625efbcc08d9b168cb5465f9_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="273,5,444,47"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="492,13,691,39"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="739,13,897,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="945,13,1121,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1169,13,1331,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1379,13,1452,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af498c44ff698bf3ef473df970e24c917"></a>
@@ -383,9 +963,359 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 
 <p>更新関数 </p>
 
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00090">90</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_af498c44ff698bf3ef473df970e24c917_cgraph.png" border="0" usemap="#class_draw_manager_af498c44ff698bf3ef473df970e24c917_cgraph" alt=""/></div>
+<map name="class_draw_manager_af498c44ff698bf3ef473df970e24c917_cgraph" id="class_draw_manager_af498c44ff698bf3ef473df970e24c917_cgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#a984cd9de288151fd1d170f80f93a11e8" title="追加待ち配列の中身を追加関数 " alt="" coords="749,122,933,163"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="1037,381,1173,422"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="1037,309,1173,350"/>
+<area shape="rect" id="node7" href="class_draw_manager.html#a76361402a035f02084e9faf31e782d69" title="解放待ち配列の中身を解放関数 " alt="" coords="737,57,945,98"/>
+<area shape="rect" id="node9" href="class_draw_manager.html#a7c989a2beae5de5a1fc7ab0bef8692f9" title="全描画基底クラス更新関数 " alt="" coords="729,188,953,215"/>
+<area shape="rect" id="node11" href="class_draw_manager.html#a20787acc9c5a096e80651dc1909ae60d" title="全レンダーターゲットリセット関数 " alt="" coords="208,11,407,53"/>
+<area shape="rect" id="node13" href="class_draw_manager.html#a9a09cb524187bc11f1e4812a06fe46d6" title="描画基底クラス振り分け関数 " alt="" coords="459,441,681,468"/>
+<area shape="rect" id="node19" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="204,391,411,433"/>
+<area shape="rect" id="node50" href="class_draw_base.html#a2ba175f791ee01508ffb2be24c68fe7f" title="デバッグ表示関数 " alt="" coords="223,457,392,484"/>
+<area shape="rect" id="node4" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="1037,241,1173,282"/>
+<area shape="rect" id="node6" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="1037,27,1173,69"/>
+<area shape="rect" id="node8" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="1001,93,1208,134"/>
+<area shape="rect" id="node10" href="class_draw_base.html#af64b19d08a58927a789e2fb8a11cf524" title="更新関数 " alt="" coords="1039,188,1170,215"/>
+<area shape="rect" id="node12" href="class_back_buffer.html#a04e942576ac5de94d16764d347111234" title="全配列のリセット関数 " alt="" coords="755,5,928,32"/>
+<area shape="rect" id="node14" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="1009,523,1201,549"/>
+<area shape="rect" id="node15" href="class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f" title="DrawOrderList::GetRender\lTargetFlag" alt="" coords="754,558,929,599"/>
+<area shape="rect" id="node16" href="class_flag.html#a3efc58733cf4aae0ff1ab0752aa4c702" title="Flag::CheckAny" alt="" coords="784,441,899,468"/>
+<area shape="rect" id="node17" href="class_back_buffer.html#ab9cae17a69086b467f6e016e432b224b" title="描画基底クラスの追加関数 " alt="" coords="747,493,936,534"/>
+<area shape="rect" id="node18" href="class_draw_order_list.html#a50dcac9d342e61f67b4d2a1d9a96bb21" title="DrawOrderList::GetDrawType" alt="" coords="1009,472,1200,499"/>
+<area shape="rect" id="node20" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="503,1161,637,1188"/>
+<area shape="rect" id="node21" href="class_camera.html#a4a596a3ea1fdc7d244ba4268031a360b" title="更新関数 " alt="" coords="783,1111,899,1137"/>
+<area shape="rect" id="node24" href="class_back_buffer.html#af363b4d69affd48a1b0f65a000ff12b5" title="透明描画基底クラスのソート関数 " alt="" coords="749,908,934,935"/>
+<area shape="rect" id="node28" href="class_camera.html#a18f380bd6b2c42162c8fcf7e4441a355" title="Camera::GetPositon" alt="" coords="1035,1060,1175,1087"/>
+<area shape="rect" id="node34" href="class_back_buffer.html#a1530979126918a1a76b6555a5d9de9b8" title="2D描画基底クラスのソート関数 " alt="" coords="775,675,908,701"/>
+<area shape="rect" id="node36" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="762,726,921,767"/>
+<area shape="rect" id="node40" href="class_fade.html#a1579b5b9020344a1131ea11c15f2c0bd" title="更新関数 " alt="" coords="791,1161,891,1188"/>
+<area shape="rect" id="node42" href="class_effekseer_manager.html#ae4faa1c46f9b4a372559567748df2384" title="EffekseerManager::Create\lProjectionMatrix" alt="" coords="755,1263,927,1305"/>
+<area shape="rect" id="node44" href="class_camera.html#a9d54f574c141e6007d98ccd905501632" title="Camera::GetAngleOfView" alt="" coords="756,1212,927,1239"/>
+<area shape="rect" id="node45" href="class_effekseer_manager.html#ad36867f996af58d4b788a17cf25244a7" title="EffekseerManager::Create\lViewMatrix" alt="" coords="755,1482,927,1523"/>
+<area shape="rect" id="node47" href="class_camera.html#a4cc3e87e6522b4a1ae72eab5b87430a6" title="Camera::GetLookAtPoint" alt="" coords="758,1329,925,1356"/>
+<area shape="rect" id="node48" href="class_camera.html#aa767cb71ea435cee1e42effc912904eb" title="Camera::GetUp" alt="" coords="785,1380,897,1407"/>
+<area shape="rect" id="node49" href="class_effekseer_manager.html#a2278033d786e1ada0fcaa390a613a8f9" title="EffekseerManager::Update" alt="" coords="754,1431,929,1457"/>
+<area shape="rect" id="node22" href="class_camera_1_1_state.html#a2d41e0cb783666bae6c6ea167fcc7874" title="更新関数 " alt="" coords="1027,1161,1182,1188"/>
+<area shape="rect" id="node23" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a" title="ビュー行列作成関数 " alt="" coords="1016,1111,1193,1137"/>
+<area shape="rect" id="node25" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="1256,765,1476,792"/>
+<area shape="rect" id="node26" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="1261,877,1471,904"/>
+<area shape="rect" id="node27" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="1027,908,1182,935"/>
+<area shape="rect" id="node29" href="class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="1012,1009,1197,1036"/>
+<area shape="rect" id="node33" href="class_limited_pointer_array.html#a0d33dc5dd8ed01bb00accd6378aa1b47" title="LimitedPointerArray\l::SortTheTwoObject" alt="" coords="1037,791,1173,833"/>
+<area shape="rect" id="node30" href="class_vector3_d.html#a77ee5fc836fd4024bd8bdae603b1677e" title="Vector3D::GetSquareX" alt="" coords="1289,959,1443,985"/>
+<area shape="rect" id="node31" href="class_vector3_d.html#a151d4791ff98d3f99d038c1dc372e0fc" title="Vector3D::GetSquareY" alt="" coords="1289,1009,1443,1036"/>
+<area shape="rect" id="node32" href="class_vector3_d.html#a8ede9efe34b69e067153688aea96574f" title="Vector3D::GetSquareZ" alt="" coords="1289,1060,1443,1087"/>
+<area shape="rect" id="node35" href="class_draw_order_list.html#a28c14812ea793a3f3d752d58ccb481b2" title="DrawOrderList::GetLayerNum" alt="" coords="1009,573,1201,600"/>
+<area shape="rect" id="node37" href="class_camera.html#a6218126e761a8289c6e6bc8c66b05e47" title="Camera::SetType" alt="" coords="1043,675,1166,701"/>
+<area shape="rect" id="node38" href="class_draw_order_list.html#a265a403c0d87abbcdc71d37a2c4f7b57" title="DrawOrderList::GetIsBillboard" alt="" coords="1008,624,1201,651"/>
+<area shape="rect" id="node39" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="1023,726,1186,767"/>
+<area shape="rect" id="node41" href="class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113" title="PlanePolygon::SetColor" alt="" coords="1025,1212,1185,1239"/>
+<area shape="rect" id="node43" href="struct_effekseer_1_1_matrix44.html#a01facdf54829125dfefa4b1f29210c74" title="射影行列化(左手系) " alt="" coords="1037,1263,1172,1305"/>
+<area shape="rect" id="node46" href="struct_effekseer_1_1_matrix44.html#ade916ab8e0c99fe658b9d089d2bd55b9" title="カメラ行列化(左手系) " alt="" coords="1037,1482,1172,1523"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_af498c44ff698bf3ef473df970e24c917_icgraph.png" border="0" usemap="#class_draw_manager_af498c44ff698bf3ef473df970e24c917_icgraph" alt=""/></div>
+<map name="class_draw_manager_af498c44ff698bf3ef473df970e24c917_icgraph" id="class_draw_manager_af498c44ff698bf3ef473df970e24c917_icgraph">
+<area shape="rect" id="node2" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="204,5,357,47"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="405,13,600,39"/>
+<area shape="rect" id="node4" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="648,13,799,39"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="847,13,1008,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1056,13,1129,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c989a2beae5de5a1fc7ab0bef8692f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c989a2beae5de5a1fc7ab0bef8692f9">&#9670;&nbsp;</a></span>UpdateAllDrawBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawManager::UpdateAllDrawBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全描画基底クラス更新関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00235">235</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_cgraph.png" border="0" usemap="#class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_cgraph" alt=""/></div>
+<map name="class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_cgraph" id="class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_cgraph">
+<area shape="rect" id="node2" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="277,5,413,47"/>
+<area shape="rect" id="node3" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="277,71,413,112"/>
+<area shape="rect" id="node4" href="class_draw_base.html#af64b19d08a58927a789e2fb8a11cf524" title="更新関数 " alt="" coords="280,137,411,163"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_icgraph.png" border="0" usemap="#class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_icgraph" alt=""/></div>
+<map name="class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_icgraph" id="class_draw_manager_a7c989a2beae5de5a1fc7ab0bef8692f9_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="277,13,428,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="476,5,629,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="677,13,872,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="920,13,1071,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1119,13,1280,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1328,13,1401,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8eb2f1e3957113ae99e8240c40c89744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb2f1e3957113ae99e8240c40c89744">&#9670;&nbsp;</a></span>UpdateAllRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DrawManager::UpdateAllRenderTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全レンダーターゲット更新関数 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a> の <a class="el" href="_draw_manager_8cpp_source.html#l00248">248</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_cgraph.png" border="0" usemap="#class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_cgraph" alt=""/></div>
+<map name="class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_cgraph" id="class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_cgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="260,780,395,807"/>
+<area shape="rect" id="node3" href="class_camera.html#a4a596a3ea1fdc7d244ba4268031a360b" title="更新関数 " alt="" coords="477,56,593,83"/>
+<area shape="rect" id="node6" href="class_back_buffer.html#af363b4d69affd48a1b0f65a000ff12b5" title="透明描画基底クラスのソート関数 " alt="" coords="443,625,628,652"/>
+<area shape="rect" id="node12" href="class_camera.html#a18f380bd6b2c42162c8fcf7e4441a355" title="Camera::GetPositon" alt="" coords="703,777,843,804"/>
+<area shape="rect" id="node18" href="class_back_buffer.html#a1530979126918a1a76b6555a5d9de9b8" title="2D描画基底クラスのソート関数 " alt="" coords="469,421,602,448"/>
+<area shape="rect" id="node21" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="456,267,615,309"/>
+<area shape="rect" id="node40" href="class_fade.html#a1579b5b9020344a1131ea11c15f2c0bd" title="更新関数 " alt="" coords="485,751,585,777"/>
+<area shape="rect" id="node43" href="class_effekseer_manager.html#ae4faa1c46f9b4a372559567748df2384" title="EffekseerManager::Create\lProjectionMatrix" alt="" coords="449,802,621,843"/>
+<area shape="rect" id="node45" href="class_camera.html#a9d54f574c141e6007d98ccd905501632" title="Camera::GetAngleOfView" alt="" coords="450,868,621,895"/>
+<area shape="rect" id="node46" href="class_effekseer_manager.html#ad36867f996af58d4b788a17cf25244a7" title="EffekseerManager::Create\lViewMatrix" alt="" coords="449,919,621,961"/>
+<area shape="rect" id="node48" href="class_camera.html#a4cc3e87e6522b4a1ae72eab5b87430a6" title="Camera::GetLookAtPoint" alt="" coords="452,985,619,1012"/>
+<area shape="rect" id="node49" href="class_camera.html#aa767cb71ea435cee1e42effc912904eb" title="Camera::GetUp" alt="" coords="479,1036,591,1063"/>
+<area shape="rect" id="node50" href="class_effekseer_manager.html#a2278033d786e1ada0fcaa390a613a8f9" title="EffekseerManager::Update" alt="" coords="448,1087,623,1113"/>
+<area shape="rect" id="node4" href="class_camera_1_1_state.html#a2d41e0cb783666bae6c6ea167fcc7874" title="更新関数 " alt="" coords="695,5,850,32"/>
+<area shape="rect" id="node5" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a" title="ビュー行列作成関数 " alt="" coords="684,56,861,83"/>
+<area shape="rect" id="node7" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="705,443,841,485"/>
+<area shape="rect" id="node8" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="705,326,841,367"/>
+<area shape="rect" id="node9" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="917,404,1137,431"/>
+<area shape="rect" id="node10" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="922,544,1133,571"/>
+<area shape="rect" id="node11" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="695,676,850,703"/>
+<area shape="rect" id="node13" href="class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="680,727,865,753"/>
+<area shape="rect" id="node17" href="class_limited_pointer_array.html#a0d33dc5dd8ed01bb00accd6378aa1b47" title="LimitedPointerArray\l::SortTheTwoObject" alt="" coords="705,509,841,550"/>
+<area shape="rect" id="node14" href="class_vector3_d.html#a77ee5fc836fd4024bd8bdae603b1677e" title="Vector3D::GetSquareX" alt="" coords="951,672,1104,699"/>
+<area shape="rect" id="node15" href="class_vector3_d.html#a151d4791ff98d3f99d038c1dc372e0fc" title="Vector3D::GetSquareY" alt="" coords="950,723,1105,749"/>
+<area shape="rect" id="node16" href="class_vector3_d.html#a8ede9efe34b69e067153688aea96574f" title="Vector3D::GetSquareZ" alt="" coords="951,773,1104,800"/>
+<area shape="rect" id="node19" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="677,275,869,301"/>
+<area shape="rect" id="node20" href="class_draw_order_list.html#a28c14812ea793a3f3d752d58ccb481b2" title="DrawOrderList::GetLayerNum" alt="" coords="677,392,869,419"/>
+<area shape="rect" id="node22" href="class_camera.html#a6218126e761a8289c6e6bc8c66b05e47" title="Camera::SetType" alt="" coords="711,107,834,133"/>
+<area shape="rect" id="node23" href="class_draw_order_list.html#a265a403c0d87abbcdc71d37a2c4f7b57" title="DrawOrderList::GetIsBillboard" alt="" coords="676,157,869,184"/>
+<area shape="rect" id="node24" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="691,209,854,250"/>
+<area shape="rect" id="node25" href="class_transform.html#a486ae5501b5081b22ee053f787e0e4a2" title="Transform::UpdateTranspose\lMatrix" alt="" coords="933,242,1121,283"/>
+<area shape="rect" id="node27" href="class_camera.html#aa472374f61480c5a9dff89d30be029f4" title="Camera::GetViewMatrix" alt="" coords="947,308,1107,335"/>
+<area shape="rect" id="node28" href="class_transform.html#a053037b225e6fb11e680cc60df15dd45" title="Transform::TransposeMatrix\lTranslationOff" alt="" coords="936,53,1119,94"/>
+<area shape="rect" id="node30" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="931,177,1123,218"/>
+<area shape="rect" id="node26" href="class_matrix_extend.html#a81e92fe4305ff9569809b61e2e92df31" title="MatrixExtend::UpdateTranspose\lMatrix" alt="" coords="1187,337,1395,378"/>
+<area shape="rect" id="node29" href="class_matrix_extend.html#ae567bb2d140dff892ed1b63f8de33ba9" title="MatrixExtend::TransposeMatrix\lTranslationOff" alt="" coords="1189,23,1392,65"/>
+<area shape="rect" id="node31" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="1195,155,1387,181"/>
+<area shape="rect" id="node37" href="class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="1200,206,1381,247"/>
+<area shape="rect" id="node38" href="class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="1185,271,1396,313"/>
+<area shape="rect" id="node39" href="class_matrix_extend.html#ab0aaf14f8621fde91f9db5537a4187e6" title="MatrixExtend::UpdateWorld\lMatrixISRT" alt="" coords="1199,89,1382,130"/>
+<area shape="rect" id="node32" href="class_axis_vector.html#a1414c1390a31d9e98c26d9803c61d2b8" title="AxisVector::ResetAxisVector" alt="" coords="1446,45,1638,72"/>
+<area shape="rect" id="node33" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="1448,96,1636,123"/>
+<area shape="rect" id="node34" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="1444,147,1640,189"/>
+<area shape="rect" id="node35" href="class_axis_vector.html#a33aab769ff2de997393c13414fa23873" title="AxisVector::RotationMatrix" alt="" coords="1453,213,1631,240"/>
+<area shape="rect" id="node36" href="class_matrix_extend.html#a6e10c2692b92f15ea4a1a69fc22c66c4" title="MatrixExtend::GetRotation\lMatrix" alt="" coords="1454,265,1630,306"/>
+<area shape="rect" id="node41" href="class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113" title="PlanePolygon::SetColor" alt="" coords="693,828,853,855"/>
+<area shape="rect" id="node42" href="class_plane_polygon.html#af4ba95cfaf0aba506eeb58cdc80bfd46" title="PlanePolygon::Registration\lVertex" alt="" coords="938,825,1117,866"/>
+<area shape="rect" id="node44" href="struct_effekseer_1_1_matrix44.html#a01facdf54829125dfefa4b1f29210c74" title="射影行列化(左手系) " alt="" coords="705,879,840,921"/>
+<area shape="rect" id="node47" href="struct_effekseer_1_1_matrix44.html#ade916ab8e0c99fe658b9d089d2bd55b9" title="カメラ行列化(左手系) " alt="" coords="705,945,840,986"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_icgraph.png" border="0" usemap="#class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_icgraph" alt=""/></div>
+<map name="class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_icgraph" id="class_draw_manager_a8eb2f1e3957113ae99e8240c40c89744_icgraph">
+<area shape="rect" id="node2" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="260,13,411,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="459,5,612,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="660,13,855,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="903,13,1053,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1101,13,1263,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1311,13,1384,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">メンバ詳解</h2>
+<a id="a328d73b404a5609d3e89a299362253fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328d73b404a5609d3e89a299362253fd">&#9670;&nbsp;</a></span>all_draw_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt;<a class="el" href="class_draw_base.html">DrawBase</a>*, <a class="el" href="class_draw_manager.html#ad4326cddcb1cc4cec198c4f8069b81f0">DRAW_ARRAY_NUM</a>&gt; DrawManager::all_draw_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全描画配列 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00050">50</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa6a8468dd4469cde2cf162b91a5c1faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a8468dd4469cde2cf162b91a5c1faf">&#9670;&nbsp;</a></span>await_add_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt;<a class="el" href="class_draw_base.html">DrawBase</a>*, <a class="el" href="class_draw_manager.html#ad4326cddcb1cc4cec198c4f8069b81f0">DRAW_ARRAY_NUM</a>&gt; DrawManager::await_add_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>追加待ち配列 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00051">51</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a59fa29ded26b3609545a04b5c6927824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59fa29ded26b3609545a04b5c6927824">&#9670;&nbsp;</a></span>await_release_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_limited_pointer_array.html">LimitedPointerArray</a>&lt;<a class="el" href="class_draw_base.html">DrawBase</a>*, <a class="el" href="class_draw_manager.html#ad4326cddcb1cc4cec198c4f8069b81f0">DRAW_ARRAY_NUM</a>&gt; DrawManager::await_release_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放待ち配列 </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00052">52</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a53e3e9c0794c049fde69e7e5603df22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e3e9c0794c049fde69e7e5603df22f">&#9670;&nbsp;</a></span>back_buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_back_buffer.html">BackBuffer</a>* DrawManager::back_buffer_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バックバッファ </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00055">55</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0ec52b1d65b765e4fe336d814c2bc11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec52b1d65b765e4fe336d814c2bc11c">&#9670;&nbsp;</a></span>directional_light_vector_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> DrawManager::directional_light_vector_ = {0.5f, -1.0f, 0.8f}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拡散反射光ベクトル </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00057">57</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="ad4326cddcb1cc4cec198c4f8069b81f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4326cddcb1cc4cec198c4f8069b81f0">&#9670;&nbsp;</a></span>DRAW_ARRAY_NUM</h2>
 
@@ -408,11 +1338,39 @@ $(document).ready(function(){initNavTree('class_draw_manager.html','');});
 
 <p>描画配列数 </p>
 
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00043">43</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aac4cfc76f2953c30ed5eac54b544d0ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac4cfc76f2953c30ed5eac54b544d0ad">&#9670;&nbsp;</a></span>shader_manager_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_shader_manager.html">ShaderManager</a>* DrawManager::shader_manager_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シェーダーマネージャ </p>
+
+<p class="definition"> <a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a> の <a class="el" href="_draw_manager_8h_source.html#l00054">54</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/<a class="el" href="_draw_manager_8h_source.html">DrawManager.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/<a class="el" href="_draw_manager_8cpp.html">DrawManager.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/<a class="el" href="_draw_manager_8cpp_source.html">DrawManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

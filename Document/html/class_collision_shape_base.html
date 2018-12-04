@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('class_collision_shape_base.html','');}
   <div class="summary">
 <a href="#pub-types">公開型</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_collision_shape_base-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">CollisionShapeBase クラス</div>  </div>
@@ -103,19 +104,26 @@ $(document).ready(function(){initNavTree('class_collision_shape_base.html','');}
 <div class="dynheader">
 CollisionShapeBase の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_collision_shape_base.png" usemap="#CollisionShapeBase_map" alt=""/>
-  <map id="CollisionShapeBase_map" name="CollisionShapeBase_map">
-<area href="class_a_a_b_b.html" title="AABBクラス " alt="AABB" shape="rect" coords="134,56,258,80"/>
-<area href="class_capsule.html" alt="Capsule" shape="rect" coords="134,112,258,136"/>
-<area href="class_cylinder.html" alt="Cylinder" shape="rect" coords="134,168,258,192"/>
-<area href="class_o_b_b.html" alt="OBB" shape="rect" coords="134,224,258,248"/>
-<area href="class_plane.html" alt="Plane" shape="rect" coords="134,280,258,304"/>
-<area href="class_segment.html" alt="Segment" shape="rect" coords="134,336,258,360"/>
-<area href="class_sphere.html" alt="Sphere" shape="rect" coords="134,392,258,416"/>
-<area href="class_triangle.html" alt="Triangle" shape="rect" coords="134,448,258,472"/>
+<div class="center"><img src="class_collision_shape_base__inherit__graph.png" border="0" usemap="#_collision_shape_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="_collision_shape_base_inherit__map" id="_collision_shape_base_inherit__map">
+<area shape="rect" id="node2" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="class_capsule.html" title="Capsule" alt="" coords="88,80,157,107"/>
+<area shape="rect" id="node4" href="class_cylinder.html" title="Cylinder" alt="" coords="181,80,251,107"/>
+<area shape="rect" id="node5" href="class_o_b_b.html" title="OBB" alt="" coords="275,80,325,107"/>
+<area shape="rect" id="node6" href="class_plane.html" title="Plane" alt="" coords="350,80,405,107"/>
+<area shape="rect" id="node7" href="class_segment.html" title="Segment" alt="" coords="429,80,504,107"/>
+<area shape="rect" id="node8" href="class_sphere.html" title="Sphere" alt="" coords="529,80,591,107"/>
+<area shape="rect" id="node9" href="class_triangle.html" title="Triangle" alt="" coords="616,80,683,107"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+CollisionShapeBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_shape_base__coll__graph.png" border="0" usemap="#_collision_shape_base_coll__map" alt="Collaboration graph"/></div>
+<map name="_collision_shape_base_coll__map" id="_collision_shape_base_coll__map">
+<area shape="rect" id="node3" href="class_vector3_d.html" title="Vector3D" alt="" coords="86,81,162,108"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 公開型</h2></td></tr>
@@ -150,10 +158,21 @@ CollisionShapeBase の継承関係図</div>
 <tr class="separator:a17bd2d81ebf464459dd977152e02055b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac14132139e486926df11f438a8600907"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#ac14132139e486926df11f438a8600907">setPosition</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> value)</td></tr>
 <tr class="separator:ac14132139e486926df11f438a8600907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a46413b1e4d4b3a35075232fa9012addb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#a46413b1e4d4b3a35075232fa9012addb">type_</a></td></tr>
+<tr class="memdesc:a46413b1e4d4b3a35075232fa9012addb"><td class="mdescLeft">&#160;</td><td class="mdescRight">形状タイプ  <a href="#a46413b1e4d4b3a35075232fa9012addb">[詳解]</a><br /></td></tr>
+<tr class="separator:a46413b1e4d4b3a35075232fa9012addb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a60d112797f3026af9cbe79badbc66b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#a0a60d112797f3026af9cbe79badbc66b">position_</a></td></tr>
+<tr class="memdesc:a0a60d112797f3026af9cbe79badbc66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">座標  <a href="#a0a60d112797f3026af9cbe79badbc66b">[詳解]</a><br /></td></tr>
+<tr class="separator:a0a60d112797f3026af9cbe79badbc66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>衝突形状基底クラス </p>
 <p>衝突形状の基底クラス </p>
+
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00026">26</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="a8abcef092855ad0ca191047044b002cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8abcef092855ad0ca191047044b002cb">&#9670;&nbsp;</a></span>Type</h2>
@@ -178,6 +197,8 @@ CollisionShapeBase の継承関係図</div>
 <tr><td class="fieldname"><a id="a8abcef092855ad0ca191047044b002cba4b6a6ea5d0152ec22ef54af55a4c872b"></a>TRIANGLE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a8abcef092855ad0ca191047044b002cba4636454f94c8f39be9fed0b1a3124a2c"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00033">33</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -208,6 +229,8 @@ CollisionShapeBase の継承関係図</div>
 
 <p>コンストラクタ </p>
 
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00064">64</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="a64fa9e1ae6b582be42360e926ce5d6cb"></a>
@@ -235,6 +258,8 @@ CollisionShapeBase の継承関係図</div>
 
 <p>仮想デストラクタ </p>
 
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00070">70</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
@@ -261,6 +286,26 @@ CollisionShapeBase の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00074">74</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b_icgraph.png" border="0" usemap="#class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b_icgraph" alt=""/></div>
+<map name="class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b_icgraph" id="class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b_icgraph">
+<area shape="rect" id="node2" href="class_a_a_b_b.html#aad10f509f6726aed8285063a69df9085" title="最小値と最大値更新関数 " alt="" coords="192,183,368,209"/>
+<area shape="rect" id="node3" href="class_a_a_b_b.html#a28167704c3b21de2ae9f70ac139781c4" title="初期化関数 " alt="" coords="428,107,511,133"/>
+<area shape="rect" id="node8" href="class_a_a_b_b.html#a9698fec7358275832b6b84a146ea4a7c" title="更新関数 " alt="" coords="416,259,523,285"/>
+<area shape="rect" id="node4" href="class_coin_collision.html#a4119a7decab2410a4ada3568ad0c132d" title="初期化関数 " alt="" coords="590,5,713,32"/>
+<area shape="rect" id="node5" href="class_enemy_collision.html#ae5c000a30c8c4a023dd0c8e658def772" title="初期化関数 " alt="" coords="583,56,720,83"/>
+<area shape="rect" id="node6" href="class_goal_collision.html#ab6089638f5390e019a55ae11952e1cf9" title="初期化関数 " alt="" coords="590,107,713,133"/>
+<area shape="rect" id="node7" href="class_player_collision.html#a3dd6238b75933fd60aee77e92353cc44" title="初期化関数 " alt="" coords="585,157,718,184"/>
+<area shape="rect" id="node9" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="578,208,725,235"/>
+<area shape="rect" id="node10" href="class_enemy_collision.html#ab54133504d867c6d2070d2f3854a0aaf" title="更新関数 " alt="" coords="571,259,732,285"/>
+<area shape="rect" id="node11" href="class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936" title="更新関数 " alt="" coords="578,309,725,336"/>
+<area shape="rect" id="node12" href="class_player_collision.html#a09f97f220903f5724a3af6b97af3a336" title="更新関数 " alt="" coords="573,360,730,387"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a662af47ebcd9f29d7c54047a0227b8bc"></a>
@@ -285,6 +330,26 @@ CollisionShapeBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00073">73</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc_icgraph.png" border="0" usemap="#class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc_icgraph" alt=""/></div>
+<map name="class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc_icgraph" id="class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc_icgraph">
+<area shape="rect" id="node2" href="class_collision_object.html#a8c4e6916bc5911b8a82498536d5a27e1" title="デストラクタ " alt="" coords="206,5,381,47"/>
+<area shape="rect" id="node3" href="class_collision_manager.html#a87f64affda1906cd6eee3d177ca25045" title="衝突計算振り分け関数 " alt="" coords="192,71,395,112"/>
+<area shape="rect" id="node4" href="class_collision_manager.html#ab7a212529ce17392d2ca120153318090" title="実際の計算関数 " alt="" coords="443,71,609,112"/>
+<area shape="rect" id="node5" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="667,37,846,79"/>
+<area shape="rect" id="node12" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="657,103,856,144"/>
+<area shape="rect" id="node6" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="904,78,1075,105"/>
+<area shape="rect" id="node7" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1123,71,1276,112"/>
+<area shape="rect" id="node8" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1324,78,1519,105"/>
+<area shape="rect" id="node9" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1567,78,1717,105"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1765,78,1927,105"/>
+<area shape="rect" id="node11" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1975,78,2048,105"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -311,6 +376,77 @@ CollisionShapeBase の継承関係図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00075">75</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_collision_shape_base_ac14132139e486926df11f438a8600907_icgraph.png" border="0" usemap="#class_collision_shape_base_ac14132139e486926df11f438a8600907_icgraph" alt=""/></div>
+<map name="class_collision_shape_base_ac14132139e486926df11f438a8600907_icgraph" id="class_collision_shape_base_ac14132139e486926df11f438a8600907_icgraph">
+<area shape="rect" id="node2" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="199,5,346,32"/>
+<area shape="rect" id="node3" href="class_enemy_collision.html#ab54133504d867c6d2070d2f3854a0aaf" title="更新関数 " alt="" coords="192,56,353,83"/>
+<area shape="rect" id="node4" href="class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936" title="更新関数 " alt="" coords="199,107,346,133"/>
+<area shape="rect" id="node5" href="class_player_collision.html#a09f97f220903f5724a3af6b97af3a336" title="更新関数 " alt="" coords="194,157,351,184"/>
+<area shape="rect" id="node6" href="class_a_a_b_b.html#a28167704c3b21de2ae9f70ac139781c4" title="初期化関数 " alt="" coords="231,208,314,235"/>
+<area shape="rect" id="node7" href="class_coin_collision.html#a4119a7decab2410a4ada3568ad0c132d" title="初期化関数 " alt="" coords="409,132,531,159"/>
+<area shape="rect" id="node8" href="class_enemy_collision.html#ae5c000a30c8c4a023dd0c8e658def772" title="初期化関数 " alt="" coords="401,183,539,209"/>
+<area shape="rect" id="node9" href="class_goal_collision.html#ab6089638f5390e019a55ae11952e1cf9" title="初期化関数 " alt="" coords="409,233,531,260"/>
+<area shape="rect" id="node10" href="class_player_collision.html#a3dd6238b75933fd60aee77e92353cc44" title="初期化関数 " alt="" coords="403,284,537,311"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a0a60d112797f3026af9cbe79badbc66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a60d112797f3026af9cbe79badbc66b">&#9670;&nbsp;</a></span>position_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> CollisionShapeBase::position_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>座標 </p>
+
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00053">53</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a46413b1e4d4b3a35075232fa9012addb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46413b1e4d4b3a35075232fa9012addb">&#9670;&nbsp;</a></span>type_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">Type</a> CollisionShapeBase::type_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>形状タイプ </p>
+
+<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00052">52</a> 行目に定義があります。</p>
 
 </div>
 </div>

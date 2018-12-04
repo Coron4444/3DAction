@@ -4,10 +4,22 @@
 
 {\ttfamily \#include $<$Numbers.\+h$>$}
 
-Numbers の継承関係図\begin{figure}[H]
+
+
+Numbers の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_numbers}
+\includegraphics[width=174pt]{class_numbers__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Numbers 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -21,7 +33,34 @@ void \mbox{\hyperlink{class_numbers_a1ab67e439ba1695c8fd545dfc1650990}{Reset}} (
 \begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d}{Set\+Numbers}} (int numbers, int digits, bool is\+\_\+zero, \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} position, \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} scale, \mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} color)
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_numbers_af4a06e0dd7dece56d60098837aae5aa5}{Left\+Justified}} (int numbers, int $\ast$digits)
+\item 
+void \mbox{\hyperlink{class_numbers_a1aaad1f057da0064766bfd25d57caa17}{Not\+Left\+Justified}} (int $\ast$digits)
+\item 
+void \mbox{\hyperlink{class_numbers_ab172b8637d38b710a4ff6dd3808522e0}{Is\+Count\+Stop}} (int numbers, int digits)
+\item 
+void \mbox{\hyperlink{class_numbers_a629383f243c0aeb25bf9e8d067e965a2}{Update\+Each\+Digit}} (int numbers, int digits, bool is\+\_\+zero, \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} position, \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} scale, \mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}} color)
+\item 
+void \mbox{\hyperlink{class_numbers_a1eb0843ca2449c52e21c84b96bfa4dc5}{Release\+Number}} ()
+\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_number_factory}{Number\+Factory}} $\ast$ \mbox{\hyperlink{class_numbers_af9e8fa1658caf4beddfb6f450d8dc053}{number\+\_\+factory\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_number}{Number}} $\ast$ $>$ \mbox{\hyperlink{class_numbers_ab0649eccc71117670e5dc1ecc4cbe2a2}{numbers\+\_\+}}
+\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+
+
+ Numbers.\+h の 41 行目に定義があります。
+
 
 
 \subsection{関数詳解}
@@ -31,6 +70,113 @@ void \mbox{\hyperlink{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d}{Set\+Numb
 \subsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Numbers\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+ Numbers.\+cpp の 35 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_a42158aa8dbb71308161c642aed8752e8_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_a42158aa8dbb71308161c642aed8752e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_numbers_ab172b8637d38b710a4ff6dd3808522e0}\label{class_numbers_ab172b8637d38b710a4ff6dd3808522e0}} 
+\index{Numbers@{Numbers}!Is\+Count\+Stop@{Is\+Count\+Stop}}
+\index{Is\+Count\+Stop@{Is\+Count\+Stop}!Numbers@{Numbers}}
+\subsubsection{\texorpdfstring{Is\+Count\+Stop()}{IsCountStop()}}
+{\footnotesize\ttfamily void Numbers\+::\+Is\+Count\+Stop (\begin{DoxyParamCaption}\item[{int}]{numbers,  }\item[{int}]{digits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Numbers.\+cpp の 165 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_ab172b8637d38b710a4ff6dd3808522e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_numbers_af4a06e0dd7dece56d60098837aae5aa5}\label{class_numbers_af4a06e0dd7dece56d60098837aae5aa5}} 
+\index{Numbers@{Numbers}!Left\+Justified@{Left\+Justified}}
+\index{Left\+Justified@{Left\+Justified}!Numbers@{Numbers}}
+\subsubsection{\texorpdfstring{Left\+Justified()}{LeftJustified()}}
+{\footnotesize\ttfamily void Numbers\+::\+Left\+Justified (\begin{DoxyParamCaption}\item[{int}]{numbers,  }\item[{int $\ast$}]{digits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Numbers.\+cpp の 110 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_af4a06e0dd7dece56d60098837aae5aa5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_af4a06e0dd7dece56d60098837aae5aa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_numbers_a1aaad1f057da0064766bfd25d57caa17}\label{class_numbers_a1aaad1f057da0064766bfd25d57caa17}} 
+\index{Numbers@{Numbers}!Not\+Left\+Justified@{Not\+Left\+Justified}}
+\index{Not\+Left\+Justified@{Not\+Left\+Justified}!Numbers@{Numbers}}
+\subsubsection{\texorpdfstring{Not\+Left\+Justified()}{NotLeftJustified()}}
+{\footnotesize\ttfamily void Numbers\+::\+Not\+Left\+Justified (\begin{DoxyParamCaption}\item[{int $\ast$}]{digits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Numbers.\+cpp の 143 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_a1aaad1f057da0064766bfd25d57caa17_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_a1aaad1f057da0064766bfd25d57caa17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_numbers_a1eb0843ca2449c52e21c84b96bfa4dc5}\label{class_numbers_a1eb0843ca2449c52e21c84b96bfa4dc5}} 
+\index{Numbers@{Numbers}!Release\+Number@{Release\+Number}}
+\index{Release\+Number@{Release\+Number}!Numbers@{Numbers}}
+\subsubsection{\texorpdfstring{Release\+Number()}{ReleaseNumber()}}
+{\footnotesize\ttfamily void Numbers\+::\+Release\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Numbers.\+cpp の 219 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_a1eb0843ca2449c52e21c84b96bfa4dc5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_a1eb0843ca2449c52e21c84b96bfa4dc5_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_numbers_a1ab67e439ba1695c8fd545dfc1650990}\label{class_numbers_a1ab67e439ba1695c8fd545dfc1650990}} 
 \index{Numbers@{Numbers}!Reset@{Reset}}
 \index{Reset@{Reset}!Numbers@{Numbers}}
@@ -45,12 +191,34 @@ void \mbox{\hyperlink{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d}{Set\+Numb
 
 \mbox{\hyperlink{class_game_object_base_a85c59554f734bcb09f1a1e18d9517dce}{Game\+Object\+Base}}を実装しています。
 
+
+
+ Numbers.\+cpp の 67 行目に定義があります。
+
 \mbox{\Hypertarget{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d}\label{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d}} 
 \index{Numbers@{Numbers}!Set\+Numbers@{Set\+Numbers}}
 \index{Set\+Numbers@{Set\+Numbers}!Numbers@{Numbers}}
 \subsubsection{\texorpdfstring{Set\+Numbers()}{SetNumbers()}}
 {\footnotesize\ttfamily void Numbers\+::\+Set\+Numbers (\begin{DoxyParamCaption}\item[{int}]{numbers,  }\item[{int}]{digits,  }\item[{bool}]{is\+\_\+zero,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}}}]{position,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}}}]{scale,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color }\end{DoxyParamCaption})}
 
+
+
+ Numbers.\+cpp の 79 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_numbers_aeaad3cc1b8ae7defe79813b983b04101}\label{class_numbers_aeaad3cc1b8ae7defe79813b983b04101}} 
 \index{Numbers@{Numbers}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Numbers@{Numbers}}
@@ -64,6 +232,57 @@ void \mbox{\hyperlink{class_numbers_aeb51ecf4e148f4ca67ac7788e061f94d}{Set\+Numb
 
 
 \mbox{\hyperlink{class_game_object_base_a97e1bc277d7b1c0156d4735de29a022c}{Game\+Object\+Base}}を再実装しています。
+
+
+
+ Numbers.\+cpp の 51 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_aeaad3cc1b8ae7defe79813b983b04101_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_numbers_a629383f243c0aeb25bf9e8d067e965a2}\label{class_numbers_a629383f243c0aeb25bf9e8d067e965a2}} 
+\index{Numbers@{Numbers}!Update\+Each\+Digit@{Update\+Each\+Digit}}
+\index{Update\+Each\+Digit@{Update\+Each\+Digit}!Numbers@{Numbers}}
+\subsubsection{\texorpdfstring{Update\+Each\+Digit()}{UpdateEachDigit()}}
+{\footnotesize\ttfamily void Numbers\+::\+Update\+Each\+Digit (\begin{DoxyParamCaption}\item[{int}]{numbers,  }\item[{int}]{digits,  }\item[{bool}]{is\+\_\+zero,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}}}]{position,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}}}]{scale,  }\item[{\mbox{\hyperlink{_vector3_d_8h_a680c30c4a07d86fe763c7e01169cd6cc}{X\+Color4}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Numbers.\+cpp の 187 行目に定義があります。
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_numbers_a629383f243c0aeb25bf9e8d067e965a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_numbers_af9e8fa1658caf4beddfb6f450d8dc053}\label{class_numbers_af9e8fa1658caf4beddfb6f450d8dc053}} 
+\index{Numbers@{Numbers}!number\+\_\+factory\+\_\+@{number\+\_\+factory\+\_\+}}
+\index{number\+\_\+factory\+\_\+@{number\+\_\+factory\+\_\+}!Numbers@{Numbers}}
+\subsubsection{\texorpdfstring{number\+\_\+factory\+\_\+}{number\_factory\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_number_factory}{Number\+Factory}}$\ast$ Numbers\+::number\+\_\+factory\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Numbers.\+h の 68 行目に定義があります。
+
+\mbox{\Hypertarget{class_numbers_ab0649eccc71117670e5dc1ecc4cbe2a2}\label{class_numbers_ab0649eccc71117670e5dc1ecc4cbe2a2}} 
+\index{Numbers@{Numbers}!numbers\+\_\+@{numbers\+\_\+}}
+\index{numbers\+\_\+@{numbers\+\_\+}!Numbers@{Numbers}}
+\subsubsection{\texorpdfstring{numbers\+\_\+}{numbers\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_number}{Number}}$\ast$$>$ Numbers\+::numbers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Numbers.\+h の 70 行目に定義があります。
 
 
 

@@ -1,0 +1,6 @@
+<map id="GameScene::getScore" name="GameScene::getScore">
+<area shape="rect" id="node2" href="$class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="244,5,367,32"/>
+<area shape="rect" id="node3" href="$class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="220,56,391,83"/>
+<area shape="rect" id="node4" href="$class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="208,107,403,133"/>
+<area shape="rect" id="node5" href="$class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="451,107,632,133"/>
+</map>

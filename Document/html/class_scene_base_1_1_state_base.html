@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: SceneBase::StateBase クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_scene_base_1_1_state_base.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_scene_base_1_1_state_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">SceneBase::StateBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>シーンステートBaseClass  
+ <a href="class_scene_base_1_1_state_base.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_scene_base_8h_source.html">SceneBase.h</a>&gt;</code></p>
+<div class="dynheader">
+SceneBase::StateBase の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_base_1_1_state_base__inherit__graph.png" border="0" usemap="#_scene_base_1_1_state_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="_scene_base_1_1_state_base_inherit__map" id="_scene_base_1_1_state_base_inherit__map">
+<area shape="rect" id="node2" href="class_game_scene_state___start.html" title="ゲームシーンステート(スタート)Class " alt="" coords="213,5,373,32"/>
+<area shape="rect" id="node3" href="class_result_scene_state___start.html" title="リザルトシーンステート(スタート)Class " alt="" coords="212,56,375,83"/>
+<area shape="rect" id="node4" href="class_title_scene_state___start.html" title="タイトルシーンステート(スタート)Class " alt="" coords="219,107,368,133"/>
+<area shape="rect" id="node5" href="class_tutorial_scene_state___end.html" title="チュートリアルシーンステート(エンド)Class " alt="" coords="212,157,375,184"/>
+<area shape="rect" id="node6" href="class_tutorial_scene_state___start.html" title="チュートリアルシーンステート(スタート)Class " alt="" coords="227,209,359,250"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+SceneBase::StateBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_base_1_1_state_base__coll__graph.png" border="0" usemap="#_scene_base_1_1_state_base_coll__map" alt="Collaboration graph"/></div>
+<map name="_scene_base_1_1_state_base_coll__map" id="_scene_base_1_1_state_base_coll__map">
+<area shape="rect" id="node2" href="class_scene_base.html" title="シーンBaseClass " alt="" coords="40,95,129,121"/>
+<area shape="rect" id="node3" href="class_scene_manager.html" title="シーンマネージャClass " alt="" coords="106,199,215,225"/>
+<area shape="rect" id="node4" href="class_scene_manager_1_1_common_data.html" title="シーン間共通データClass " alt="" coords="197,95,393,121"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:afc993757f908babc872063e1e2465e3e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#afc993757f908babc872063e1e2465e3e">~StateBase</a> ()</td></tr>
+<tr class="memdesc:afc993757f908babc872063e1e2465e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="#afc993757f908babc872063e1e2465e3e">[詳解]</a><br /></td></tr>
+<tr class="separator:afc993757f908babc872063e1e2465e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33350231b039a2178c19beac0211c5b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#a33350231b039a2178c19beac0211c5b8">Init</a> ()=0</td></tr>
+<tr class="memdesc:a33350231b039a2178c19beac0211c5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化関数  <a href="#a33350231b039a2178c19beac0211c5b8">[詳解]</a><br /></td></tr>
+<tr class="separator:a33350231b039a2178c19beac0211c5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2763fa37e45b39bd8d3bbb735c76c59b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#a2763fa37e45b39bd8d3bbb735c76c59b">Uninit</a> ()=0</td></tr>
+<tr class="memdesc:a2763fa37e45b39bd8d3bbb735c76c59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了関数  <a href="#a2763fa37e45b39bd8d3bbb735c76c59b">[詳解]</a><br /></td></tr>
+<tr class="separator:a2763fa37e45b39bd8d3bbb735c76c59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c6c8fd9f020eb02f64f394edee129c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#ad2c6c8fd9f020eb02f64f394edee129c">Update</a> ()=0</td></tr>
+<tr class="memdesc:ad2c6c8fd9f020eb02f64f394edee129c"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <a href="#ad2c6c8fd9f020eb02f64f394edee129c">[詳解]</a><br /></td></tr>
+<tr class="separator:ad2c6c8fd9f020eb02f64f394edee129c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e14a3afece0b1d8db9edcebf514a977"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#a2e14a3afece0b1d8db9edcebf514a977">Reset</a> ()=0</td></tr>
+<tr class="memdesc:a2e14a3afece0b1d8db9edcebf514a977"><td class="mdescLeft">&#160;</td><td class="mdescRight">リセット関数  <a href="#a2e14a3afece0b1d8db9edcebf514a977">[詳解]</a><br /></td></tr>
+<tr class="separator:a2e14a3afece0b1d8db9edcebf514a977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb19da59b938832387aa10528bedb44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#adfb19da59b938832387aa10528bedb44">setScene</a> (<a class="el" href="class_scene_base.html">SceneBase</a> *value)</td></tr>
+<tr class="separator:adfb19da59b938832387aa10528bedb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:ae1062afb3f96664e24504151eaccf40f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene_base.html">SceneBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#ae1062afb3f96664e24504151eaccf40f">scene_</a> = nullptr</td></tr>
+<tr class="memdesc:ae1062afb3f96664e24504151eaccf40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン  <a href="#ae1062afb3f96664e24504151eaccf40f">[詳解]</a><br /></td></tr>
+<tr class="separator:ae1062afb3f96664e24504151eaccf40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>シーンステートBaseClass </p>
+<p>シーンステートのBaseClass </p>
+
+<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00039">39</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="afc993757f908babc872063e1e2465e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc993757f908babc872063e1e2465e3e">&#9670;&nbsp;</a></span>~StateBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SceneBase::StateBase::~StateBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>仮想デストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00056">56</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a33350231b039a2178c19beac0211c5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33350231b039a2178c19beac0211c5b8">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBase::StateBase::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34">TitleSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___end.html#a572e5687140ff5ac43789f90462c05a5">TutorialSceneState_End</a>, <a class="el" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7">GameSceneState_Start</a>, <a class="el" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55">ResultSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0">TutorialSceneState_Start</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8_icgraph.png" border="0" usemap="#class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8_icgraph" alt=""/></div>
+<map name="class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8_icgraph" id="class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8_icgraph">
+<area shape="rect" id="node2" href="class_scene_base.html#a494ba624fdd95b296e4487ed1a34f47b" title="初期化関数 " alt="" coords="228,56,343,83"/>
+<area shape="rect" id="node10" href="class_scene_base.html#a95d33774db6a05cf1e9da201720ea3db" title="SceneBase::setState" alt="" coords="212,111,359,137"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="439,5,573,32"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="407,56,605,83"/>
+<area shape="rect" id="node4" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="885,5,1011,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1084,31,1245,57"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1293,31,1367,57"/>
+<area shape="rect" id="node8" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="653,56,812,83"/>
+<area shape="rect" id="node9" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="860,56,1036,83"/>
+<area shape="rect" id="node11" href="class_tutorial_scene_state___start.html#a93c322692bf56172f383d3e5b17cd85c" title="更新関数 " alt="" coords="440,107,572,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e14a3afece0b1d8db9edcebf514a977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e14a3afece0b1d8db9edcebf514a977">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBase::StateBase::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>リセット関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_title_scene_state___start.html#af4dfe902a4391ca8f0cff5d1aa9507f8">TitleSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___end.html#ada1a87235a021b40f8eca96e31879227">TutorialSceneState_End</a>, <a class="el" href="class_game_scene_state___start.html#a59270f7b65613f580864ed8ea3056179">GameSceneState_Start</a>, <a class="el" href="class_result_scene_state___start.html#a8f776a7b2d31451c434fb74ffdd65960">ResultSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___start.html#a40bfdf7acd93b619138bf708adff31e4">TutorialSceneState_Start</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977_icgraph.png" border="0" usemap="#class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977_icgraph" alt=""/></div>
+<map name="class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977_icgraph" id="class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977_icgraph">
+<area shape="rect" id="node2" href="class_scene_base.html#ae2dc09554ec21ffe231fa73a6cdd7ca1" title="リセット関数 " alt="" coords="212,13,343,39"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="391,13,579,39"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="627,13,785,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="833,13,1009,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1057,13,1219,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1267,13,1340,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adfb19da59b938832387aa10528bedb44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb19da59b938832387aa10528bedb44">&#9670;&nbsp;</a></span>setScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SceneBase::StateBase::setScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_scene_base.html">SceneBase</a> *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00087">87</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44_icgraph.png" border="0" usemap="#class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44_icgraph" alt=""/></div>
+<map name="class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44_icgraph" id="class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44_icgraph">
+<area shape="rect" id="node2" href="class_scene_base.html#aeafd60485ad8b2191f40da3013d50f2c" title="コンストラクタ " alt="" coords="212,5,376,32"/>
+<area shape="rect" id="node3" href="class_scene_base.html#a95d33774db6a05cf1e9da201720ea3db" title="SceneBase::setState" alt="" coords="221,56,367,83"/>
+<area shape="rect" id="node4" href="class_tutorial_scene_state___start.html#a93c322692bf56172f383d3e5b17cd85c" title="更新関数 " alt="" coords="424,49,556,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2763fa37e45b39bd8d3bbb735c76c59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2763fa37e45b39bd8d3bbb735c76c59b">&#9670;&nbsp;</a></span>Uninit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBase::StateBase::Uninit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_title_scene_state___start.html#a5bcb4d7a9250ea1c0041c38616ffabfe">TitleSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___end.html#aafc0d8d042de8c7f79d84fcdc35a807c">TutorialSceneState_End</a>, <a class="el" href="class_game_scene_state___start.html#a636df8b7ac0173b044b0efc2927fb83b">GameSceneState_Start</a>, <a class="el" href="class_result_scene_state___start.html#af5b9af607074e3296481a1660607fb9a">ResultSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___start.html#a974962addfb0bcba90fbab64ac6d50f0">TutorialSceneState_Start</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="ad2c6c8fd9f020eb02f64f394edee129c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c6c8fd9f020eb02f64f394edee129c">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SceneBase::StateBase::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_title_scene_state___start.html#a2e98cf6810711b58766d7147168d02eb">TitleSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___end.html#a7cdf03fa9a0e41ab86c2b41b8165ad09">TutorialSceneState_End</a>, <a class="el" href="class_game_scene_state___start.html#ae11bb8d8ea9eae4fea2a9acf33dd1c8b">GameSceneState_Start</a>, <a class="el" href="class_result_scene_state___start.html#a2ecdef2bef0cd1a04055e8687e11199b">ResultSceneState_Start</a>, <a class="el" href="class_tutorial_scene_state___start.html#a93c322692bf56172f383d3e5b17cd85c">TutorialSceneState_Start</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c_icgraph.png" border="0" usemap="#class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c_icgraph" alt=""/></div>
+<map name="class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c_icgraph" id="class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c_icgraph">
+<area shape="rect" id="node2" href="class_scene_base.html#a71f332a32d99548b3aa912210a2dd0b0" title="更新関数 " alt="" coords="212,13,351,39"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="399,13,593,39"/>
+<area shape="rect" id="node4" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="641,13,792,39"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="840,13,1001,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1049,13,1123,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ae1062afb3f96664e24504151eaccf40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1062afb3f96664e24504151eaccf40f">&#9670;&nbsp;</a></span>scene_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_scene_base.html">SceneBase</a>* SceneBase::StateBase::scene_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シーン </p>
+
+<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00045">45</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/02_Scene/SceneBase/<a class="el" href="_scene_base_8h_source.html">SceneBase.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_scene_base.html">SceneBase</a></li><li class="navelem"><a class="el" href="class_scene_base_1_1_state_base.html">StateBase</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

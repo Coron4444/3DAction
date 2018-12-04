@@ -39,105 +39,1425 @@ static bool \mbox{\hyperlink{class_collision_judgment_a95962556f370a964ec1961b1c
 \item 
 static bool \mbox{\hyperlink{class_collision_judgment_a3c0a99feef4531370096d458aefa8941}{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb0, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb1)
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_judgment_a9dc2db0e4f4373d85c070f96c97e6003}{Collision\+Judgment}} ()=delete
+\item 
+\mbox{\hyperlink{class_collision_judgment_af49c808becf4f2813aef32257865e6a4}{Collision\+Judgment}} (const \mbox{\hyperlink{class_collision_judgment}{Collision\+Judgment}} \&class\+\_\+name)=delete
+\item 
+\mbox{\hyperlink{class_collision_judgment}{Collision\+Judgment}} \& \mbox{\hyperlink{class_collision_judgment_a240135a0a865032c624fd0b364b1a400}{operator=}} (const \mbox{\hyperlink{class_collision_judgment}{Collision\+Judgment}} \&class\+\_\+name)=delete
+\end{DoxyCompactItemize}
+\subsection*{静的非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_ab2e5a2c714c8c7c7f26ef9b025b57d01}{Is\+Zero\+One\+Side\+Segment\+VectorX}} (const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_adf77fae28d72345f9fda1668a1077f0d}{Is\+Zero\+All\+Segment\+VectorX}} (const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a5fd5784d3e7d0ce09f5bda5603a8ca36}{Is\+In\+Segment}} (float t)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a4aa40ec5573967470aeac8f7cb59b67d}{Is\+All\+In\+Segment}} (float t0, float t1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a5176f1eb6b0a2fd70efc0c08054064d0}{Is\+Parallel\+Segment}} (float a0, float a1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a85481c15b123971458a612a31b1cc57e}{Is\+Hit\+Square\+\_\+\+Segment3\+D\+\_\+\+Plane}} (const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, float length)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a0f5514dbfaa4dde5531cb6e5512502e5}{Is\+Hit\+\_\+\+Segment3\+D\+\_\+\+Plane}} (const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, float length)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a58785d1cd51b4d7af4c19dca42d842e5}{Is\+Obtuse\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule}} (const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere0, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere1, const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$hit\+\_\+position)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_af4da6d6923d8ee57253b1e86436e6ec5}{Is\+Acute\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule}} (const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere0, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere1, const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$hit\+\_\+position)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_ae67e650c3a7b610a6bafaef3f17dadeb}{Is\+Hit\+Square\+\_\+\+Sphere\+\_\+\+Sphere}} (const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$center\+\_\+to\+\_\+center\+\_\+vector, float two\+\_\+radius)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a7ec99cbf152e28907e2770ed44a7cefa}{Is\+Hit\+\_\+\+Sphere\+\_\+\+Plane}} (const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a1bd97fffa0335f66531ba624c3beccda}{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle\+Side}} (const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a3a594014c7ee4ba7adae21f2da9c7612}{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle}} (const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a549042895226422e8551afff35519a59}{Is\+Hit\+\_\+\+Plane\+\_\+\+Plane}} (const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane0, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a96728b80c578cd9566677788b5e5fad8}{Is\+Hit\+\_\+\+Triangle\+\_\+\+Triangle}} (const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle0, const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle1, bool $\ast$is\+\_\+hit\+\_\+segment\+\_\+one)
+\item 
+static float \mbox{\hyperlink{class_collision_judgment_a76fe4aa5e6400073823c1f60395c1f94}{Froat\+Truncation}} (float num)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a93ec7cb67dde5798661d14c52272dc99}{Cross\+Point\+Calculation\+\_\+\+In\+All\+Segment\+\_\+\+Segment2\+D\+\_\+\+Segment2D}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} cross\+\_\+point, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_aef83b0d1bff8ede9c3e1f836694a3153}{Cross\+Point\+Calculation\+\_\+\+One\+Side\+Zero\+Segment2\+D\+\_\+\+Segment2D}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a25e0fb020e2a075322c9540bdd13b6c2}{Cross\+Point\+Calculation\+\_\+\+Segment2\+D\+\_\+\+Segment2D}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment0, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment1)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_adf8acb73719d92f6b5dbd9a6989571ad}{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere}} (\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$equation, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere)
+\item 
+static float \mbox{\hyperlink{class_collision_judgment_adbf036202ba174c7e9fc10329aeaa2c1}{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Sphere}} (float t0, float t1)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a5a2de0fe24c1a632c3ee23a20853a57a}{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, float t)
+\item 
+static float \mbox{\hyperlink{class_collision_judgment_aad2a3d57a7b1c44e894b7a6c1a6ecde0}{Calculate\+Colliding\+Length\+\_\+\+Segment3\+D\+\_\+\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} segment\+\_\+vector, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane, float length)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a1a36d9be481597ed39b42e6f261ee508}{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, \mbox{\hyperlink{class_segment}{Segment}} segment, float length)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a663c13a9729109b140b9ab6e022fd469}{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Triangle}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} position)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_aa7d814d54f323c366de1d068440ded2b}{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder}} (\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$equation, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, const \mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$cylinder)
+\item 
+static float \mbox{\hyperlink{class_collision_judgment_a413d713064c810f1bea6760e76db5221}{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Cylinder}} (float t0, float t1)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_ad369f21f29dfe28a337d10d8a9a06874}{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{class_segment}{Segment}} $\ast$segment, float t)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a9d7bd7435d9e116c8d0dfb62662e60d5}{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Capsule}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$hit\+\_\+position, const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$temp\+\_\+position)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a987df18ee059d409ebb64ea67c6e2777}{Necessary\+Length\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$center\+\_\+to\+\_\+center\+\_\+vector, float $\ast$two\+\_\+radius, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere0, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere1)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_aeb97af19dd3282bb85eb342c315a1ac3}{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$center\+\_\+to\+\_\+center\+\_\+vector, float two\+\_\+radius)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a6d5a391e5cc4bdafff98d04c219f9087}{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a9b00e793394f46bdc74e6efa434c0255}{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Triangle}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$vector)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_ae992df185735a5348aef01754ebf9b80}{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Capsule}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$sphere\+\_\+position, const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point, const float $\ast$length)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_a0d9af21fba97d2f396c8200b6fccaeb4}{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, const float $\ast$radius, const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$vector)
+\item 
+static void \mbox{\hyperlink{class_collision_judgment_ab454b739b07f965ae4c3c94c53357b45}{Calculation\+Of\+Intersection\+Segments\+\_\+\+Plane\+\_\+\+Plane}} (\mbox{\hyperlink{class_segment}{Segment}} $\ast$cross\+\_\+segment, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane0, const \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane1)
+\item 
+static float \mbox{\hyperlink{class_collision_judgment_ac9e908375427b6b00bd82e2f5a5b034a}{Len\+Seg\+On\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$separation\+\_\+axis, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$e1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$e2, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$e3=nullptr)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_abb475bce4c67d02d0964355aa60f1362}{Is\+Hit\+\_\+\+Normal\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$separation\+\_\+axis, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$separation\+\_\+axis\+\_\+normal, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$e1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$e2, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$e3, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$interval\+\_\+vector)
+\item 
+static bool \mbox{\hyperlink{class_collision_judgment_a86d5dd5817ff244d22c9efa3eeecbcb7}{Is\+Hit\+\_\+\+Cross\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$separation\+\_\+axis\+\_\+normal0, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$separation\+\_\+axis\+\_\+normal1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$a\+\_\+e1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$a\+\_\+e2, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$b\+\_\+e1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$b\+\_\+e2, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$interval\+\_\+vector)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Collision\+Judgment.\+h の 46 行目に定義があります。
+
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_collision_judgment_a9dc2db0e4f4373d85c070f96c97e6003}\label{class_collision_judgment_a9dc2db0e4f4373d85c070f96c97e6003}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Collision\+Judgment@{Collision\+Judgment}}
+\index{Collision\+Judgment@{Collision\+Judgment}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Collision\+Judgment()}{CollisionJudgment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Collision\+Judgment\+::\+Collision\+Judgment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_judgment_af49c808becf4f2813aef32257865e6a4}\label{class_collision_judgment_af49c808becf4f2813aef32257865e6a4}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Collision\+Judgment@{Collision\+Judgment}}
+\index{Collision\+Judgment@{Collision\+Judgment}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Collision\+Judgment()}{CollisionJudgment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Collision\+Judgment\+::\+Collision\+Judgment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_judgment}{Collision\+Judgment}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
 
 
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_judgment_ae992df185735a5348aef01754ebf9b80}\label{class_collision_judgment_ae992df185735a5348aef01754ebf9b80}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Capsule@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Capsule}}
+\index{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Capsule@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Capsule()}{AmountOfSqueezingVectorCalculation\_Sphere\_Capsule()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{sphere\+\_\+position,  }\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point,  }\item[{const float $\ast$}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1223 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ae992df185735a5348aef01754ebf9b80_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ae992df185735a5348aef01754ebf9b80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a0d9af21fba97d2f396c8200b6fccaeb4}\label{class_collision_judgment_a0d9af21fba97d2f396c8200b6fccaeb4}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+O\+BB@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+O\+BB}}
+\index{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+O\+BB@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+O\+B\+B()}{AmountOfSqueezingVectorCalculation\_Sphere\_OBB()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const float $\ast$}]{radius,  }\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1241 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a0d9af21fba97d2f396c8200b6fccaeb4_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a0d9af21fba97d2f396c8200b6fccaeb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a6d5a391e5cc4bdafff98d04c219f9087}\label{class_collision_judgment_a6d5a391e5cc4bdafff98d04c219f9087}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Plane@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Plane}}
+\index{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Plane@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Plane()}{AmountOfSqueezingVectorCalculation\_Sphere\_Plane()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1186 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a6d5a391e5cc4bdafff98d04c219f9087_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a6d5a391e5cc4bdafff98d04c219f9087_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_aeb97af19dd3282bb85eb342c315a1ac3}\label{class_collision_judgment_aeb97af19dd3282bb85eb342c315a1ac3}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere}}
+\index{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere()}{AmountOfSqueezingVectorCalculation\_Sphere\_Sphere()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{center\+\_\+to\+\_\+center\+\_\+vector,  }\item[{float}]{two\+\_\+radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1167 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aeb97af19dd3282bb85eb342c315a1ac3_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aeb97af19dd3282bb85eb342c315a1ac3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a9b00e793394f46bdc74e6efa434c0255}\label{class_collision_judgment_a9b00e793394f46bdc74e6efa434c0255}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Triangle@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Triangle}}
+\index{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Triangle@{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Triangle()}{AmountOfSqueezingVectorCalculation\_Sphere\_Triangle()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Amount\+Of\+Squeezing\+Vector\+Calculation\+\_\+\+Sphere\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1207 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a9b00e793394f46bdc74e6efa434c0255_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a413d713064c810f1bea6760e76db5221}\label{class_collision_judgment_a413d713064c810f1bea6760e76db5221}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Cylinder}}
+\index{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Cylinder}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Cylinder()}{AskForTheFrontT\_Segment3D\_Cylinder()}}
+{\footnotesize\ttfamily float Collision\+Judgment\+::\+Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Cylinder (\begin{DoxyParamCaption}\item[{float}]{t0,  }\item[{float}]{t1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1088 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a413d713064c810f1bea6760e76db5221_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a413d713064c810f1bea6760e76db5221_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_adbf036202ba174c7e9fc10329aeaa2c1}\label{class_collision_judgment_adbf036202ba174c7e9fc10329aeaa2c1}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Sphere}}
+\index{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Sphere()}{AskForTheFrontT\_Segment3D\_Sphere()}}
+{\footnotesize\ttfamily float Collision\+Judgment\+::\+Ask\+For\+The\+Front\+T\+\_\+\+Segment3\+D\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{float}]{t0,  }\item[{float}]{t1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 948 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_adbf036202ba174c7e9fc10329aeaa2c1_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_adbf036202ba174c7e9fc10329aeaa2c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_aad2a3d57a7b1c44e894b7a6c1a6ecde0}\label{class_collision_judgment_aad2a3d57a7b1c44e894b7a6c1a6ecde0}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Calculate\+Colliding\+Length\+\_\+\+Segment3\+D\+\_\+\+Plane@{Calculate\+Colliding\+Length\+\_\+\+Segment3\+D\+\_\+\+Plane}}
+\index{Calculate\+Colliding\+Length\+\_\+\+Segment3\+D\+\_\+\+Plane@{Calculate\+Colliding\+Length\+\_\+\+Segment3\+D\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Calculate\+Colliding\+Length\+\_\+\+Segment3\+D\+\_\+\+Plane()}{CalculateCollidingLength\_Segment3D\_Plane()}}
+{\footnotesize\ttfamily float Collision\+Judgment\+::\+Calculate\+Colliding\+Length\+\_\+\+Segment3\+D\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{segment\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 996 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aad2a3d57a7b1c44e894b7a6c1a6ecde0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aad2a3d57a7b1c44e894b7a6c1a6ecde0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_ab454b739b07f965ae4c3c94c53357b45}\label{class_collision_judgment_ab454b739b07f965ae4c3c94c53357b45}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Calculation\+Of\+Intersection\+Segments\+\_\+\+Plane\+\_\+\+Plane@{Calculation\+Of\+Intersection\+Segments\+\_\+\+Plane\+\_\+\+Plane}}
+\index{Calculation\+Of\+Intersection\+Segments\+\_\+\+Plane\+\_\+\+Plane@{Calculation\+Of\+Intersection\+Segments\+\_\+\+Plane\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Calculation\+Of\+Intersection\+Segments\+\_\+\+Plane\+\_\+\+Plane()}{CalculationOfIntersectionSegments\_Plane\_Plane()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Calculation\+Of\+Intersection\+Segments\+\_\+\+Plane\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{cross\+\_\+segment,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane0,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1261 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ab454b739b07f965ae4c3c94c53357b45_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ab454b739b07f965ae4c3c94c53357b45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a93ec7cb67dde5798661d14c52272dc99}\label{class_collision_judgment_a93ec7cb67dde5798661d14c52272dc99}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+In\+All\+Segment\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Cross\+Point\+Calculation\+\_\+\+In\+All\+Segment\+\_\+\+Segment2\+D\+\_\+\+Segment2D}}
+\index{Cross\+Point\+Calculation\+\_\+\+In\+All\+Segment\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Cross\+Point\+Calculation\+\_\+\+In\+All\+Segment\+\_\+\+Segment2\+D\+\_\+\+Segment2D}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+In\+All\+Segment\+\_\+\+Segment2\+D\+\_\+\+Segment2\+D()}{CrossPointCalculation\_InAllSegment\_Segment2D\_Segment2D()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+In\+All\+Segment\+\_\+\+Segment2\+D\+\_\+\+Segment2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{cross\+\_\+point,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 839 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a93ec7cb67dde5798661d14c52272dc99_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a93ec7cb67dde5798661d14c52272dc99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_aef83b0d1bff8ede9c3e1f836694a3153}\label{class_collision_judgment_aef83b0d1bff8ede9c3e1f836694a3153}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+One\+Side\+Zero\+Segment2\+D\+\_\+\+Segment2D@{Cross\+Point\+Calculation\+\_\+\+One\+Side\+Zero\+Segment2\+D\+\_\+\+Segment2D}}
+\index{Cross\+Point\+Calculation\+\_\+\+One\+Side\+Zero\+Segment2\+D\+\_\+\+Segment2D@{Cross\+Point\+Calculation\+\_\+\+One\+Side\+Zero\+Segment2\+D\+\_\+\+Segment2D}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+One\+Side\+Zero\+Segment2\+D\+\_\+\+Segment2\+D()}{CrossPointCalculation\_OneSideZeroSegment2D\_Segment2D()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+One\+Side\+Zero\+Segment2\+D\+\_\+\+Segment2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 864 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aef83b0d1bff8ede9c3e1f836694a3153_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aef83b0d1bff8ede9c3e1f836694a3153_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a25e0fb020e2a075322c9540bdd13b6c2}\label{class_collision_judgment_a25e0fb020e2a075322c9540bdd13b6c2}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Cross\+Point\+Calculation\+\_\+\+Segment2\+D\+\_\+\+Segment2D}}
+\index{Cross\+Point\+Calculation\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Cross\+Point\+Calculation\+\_\+\+Segment2\+D\+\_\+\+Segment2D}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+Segment2\+D\+\_\+\+Segment2\+D()}{CrossPointCalculation\_Segment2D\_Segment2D()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+Segment2\+D\+\_\+\+Segment2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 889 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a25e0fb020e2a075322c9540bdd13b6c2_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a25e0fb020e2a075322c9540bdd13b6c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a9d7bd7435d9e116c8d0dfb62662e60d5}\label{class_collision_judgment_a9d7bd7435d9e116c8d0dfb62662e60d5}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Capsule}}
+\index{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Capsule()}{CrossPointCalculation\_Segment3D\_Capsule()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{temp\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1136 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a9d7bd7435d9e116c8d0dfb62662e60d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_ad369f21f29dfe28a337d10d8a9a06874}\label{class_collision_judgment_ad369f21f29dfe28a337d10d8a9a06874}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder}}
+\index{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder()}{CrossPointCalculation\_Segment3D\_Cylinder()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1120 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ad369f21f29dfe28a337d10d8a9a06874_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a1a36d9be481597ed39b42e6f261ee508}\label{class_collision_judgment_a1a36d9be481597ed39b42e6f261ee508}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Plane@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Plane}}
+\index{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Plane@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Plane()}{CrossPointCalculation\_Segment3D\_Plane()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{\mbox{\hyperlink{class_segment}{Segment}}}]{segment,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1016 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a1a36d9be481597ed39b42e6f261ee508_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a1a36d9be481597ed39b42e6f261ee508_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a5a2de0fe24c1a632c3ee23a20853a57a}\label{class_collision_judgment_a5a2de0fe24c1a632c3ee23a20853a57a}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere}}
+\index{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere()}{CrossPointCalculation\_Segment3D\_Sphere()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 980 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a5a2de0fe24c1a632c3ee23a20853a57a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a663c13a9729109b140b9ab6e022fd469}\label{class_collision_judgment_a663c13a9729109b140b9ab6e022fd469}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Triangle@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Triangle}}
+\index{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Triangle@{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Triangle()}{CrossPointCalculation\_Segment3D\_Triangle()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Cross\+Point\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1034 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a663c13a9729109b140b9ab6e022fd469_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a76fe4aa5e6400073823c1f60395c1f94}\label{class_collision_judgment_a76fe4aa5e6400073823c1f60395c1f94}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Froat\+Truncation@{Froat\+Truncation}}
+\index{Froat\+Truncation@{Froat\+Truncation}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Froat\+Truncation()}{FroatTruncation()}}
+{\footnotesize\ttfamily float Collision\+Judgment\+::\+Froat\+Truncation (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 818 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a76fe4aa5e6400073823c1f60395c1f94_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a95962556f370a964ec1961b1c461ae2a}\label{class_collision_judgment_a95962556f370a964ec1961b1c461ae2a}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule}}
 \index{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule()}{HitCheck\_Capsule\_Capsule()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Capsule\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule0,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{active\+\_\+vector = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 450 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a95962556f370a964ec1961b1c461ae2a_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a95962556f370a964ec1961b1c461ae2a_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a3c0a99feef4531370096d458aefa8941}\label{class_collision_judgment_a3c0a99feef4531370096d458aefa8941}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB}}
 \index{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+B\+B()}{HitCheck\_OBB\_OBB()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+O\+B\+B\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb0,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 494 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a3c0a99feef4531370096d458aefa8941_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a3c0a99feef4531370096d458aefa8941_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a01ad684bee6964d4315df1a23ac3ec7d}\label{class_collision_judgment_a01ad684bee6964d4315df1a23ac3ec7d}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Plane\+\_\+\+Plane@{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane}}
 \index{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane@{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Plane\+\_\+\+Plane()}{HitCheck\_Plane\_Plane()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Plane\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{cross\+\_\+segment,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane0,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 380 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a01ad684bee6964d4315df1a23ac3ec7d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a01ad684bee6964d4315df1a23ac3ec7d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a473c94087dc9cd3937016ccba5f12abd}\label{class_collision_judgment_a473c94087dc9cd3937016ccba5f12abd}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle}}
 \index{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle()}{HitCheck\_Plane\_Triangle()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Plane\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 402 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_collision_judgment_a473c94087dc9cd3937016ccba5f12abd_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a473c94087dc9cd3937016ccba5f12abd_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a612bc9e5cfcb243324417f5059c6e24d}\label{class_collision_judgment_a612bc9e5cfcb243324417f5059c6e24d}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D}}
 \index{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D@{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2\+D()}{HitCheck\_Segment2D\_Segment2D()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment2\+D\+\_\+\+Segment2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 37 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a612bc9e5cfcb243324417f5059c6e24d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a612bc9e5cfcb243324417f5059c6e24d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a21938f544146999d01d96f855277727b}\label{class_collision_judgment_a21938f544146999d01d96f855277727b}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule}}
 \index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule()}{HitCheck\_Segment3D\_Capsule()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 195 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a21938f544146999d01d96f855277727b_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a21938f544146999d01d96f855277727b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a61308e967a8569bcee4b25c74e28826d}\label{class_collision_judgment_a61308e967a8569bcee4b25c74e28826d}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder}}
 \index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder()}{HitCheck\_Segment3D\_Cylinder()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$}]{cylinder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 164 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a61308e967a8569bcee4b25c74e28826d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a61308e967a8569bcee4b25c74e28826d_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_ac31167bc6d89d20f7220220ee3f21f4e}\label{class_collision_judgment_ac31167bc6d89d20f7220220ee3f21f4e}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane}}
 \index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane()}{HitCheck\_Segment3D\_Plane()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 104 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ac31167bc6d89d20f7220220ee3f21f4e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ac31167bc6d89d20f7220220ee3f21f4e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a92531c1254846a0a06ee7e95796f1070}\label{class_collision_judgment_a92531c1254846a0a06ee7e95796f1070}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere}}
 \index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere()}{HitCheck\_Segment3D\_Sphere()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 72 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a92531c1254846a0a06ee7e95796f1070_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a92531c1254846a0a06ee7e95796f1070_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a4f5344d6ac14db5d3732db47050bd549}\label{class_collision_judgment_a4f5344d6ac14db5d3732db47050bd549}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle}}
 \index{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle()}{HitCheck\_Segment3D\_Triangle()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Segment3\+D\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+position,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 138 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a4f5344d6ac14db5d3732db47050bd549_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a4f5344d6ac14db5d3732db47050bd549_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a4cc335999fcbeadf0aa1b6ebcb749e5b}\label{class_collision_judgment_a4cc335999fcbeadf0aa1b6ebcb749e5b}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule}}
 \index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule()}{HitCheck\_Sphere\_Capsule()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 327 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a4cc335999fcbeadf0aa1b6ebcb749e5b_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a4cc335999fcbeadf0aa1b6ebcb749e5b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_acd1d157a361d756632c73f4406442ce2}\label{class_collision_judgment_acd1d157a361d756632c73f4406442ce2}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB}}
 \index{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB@{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+B\+B()}{HitCheck\_Sphere\_OBB()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 356 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_acd1d157a361d756632c73f4406442ce2_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_acd1d157a361d756632c73f4406442ce2_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a47628fb2aef868f75942f378f63478cc}\label{class_collision_judgment_a47628fb2aef868f75942f378f63478cc}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane}}
 \index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane()}{HitCheck\_Sphere\_Plane()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 273 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a47628fb2aef868f75942f378f63478cc_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a47628fb2aef868f75942f378f63478cc_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a21e4ce202f713f1b2a7fc593f4daf7d2}\label{class_collision_judgment_a21e4ce202f713f1b2a7fc593f4daf7d2}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere}}
 \index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere()}{HitCheck\_Sphere\_Sphere()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere0,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 248 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a21e4ce202f713f1b2a7fc593f4daf7d2_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a21e4ce202f713f1b2a7fc593f4daf7d2_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_a2b4e851cf1fc45dca09175b36fb4f50c}\label{class_collision_judgment_a2b4e851cf1fc45dca09175b36fb4f50c}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle}}
 \index{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle()}{HitCheck\_Sphere\_Triangle()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Sphere\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 292 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a2b4e851cf1fc45dca09175b36fb4f50c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a2b4e851cf1fc45dca09175b36fb4f50c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_judgment_ab33b8936e62bdb9b6cf6f3d383c033b9}\label{class_collision_judgment_ab33b8936e62bdb9b6cf6f3d383c033b9}} 
 \index{Collision\+Judgment@{Collision\+Judgment}!Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle}}
 \index{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle@{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
 \subsubsection{\texorpdfstring{Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle()}{HitCheck\_Triangle\_Triangle()}}
 {\footnotesize\ttfamily bool Collision\+Judgment\+::\+Hit\+Check\+\_\+\+Triangle\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle0,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Collision\+Judgment.\+cpp の 426 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ab33b8936e62bdb9b6cf6f3d383c033b9_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ab33b8936e62bdb9b6cf6f3d383c033b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_af4da6d6923d8ee57253b1e86436e6ec5}\label{class_collision_judgment_af4da6d6923d8ee57253b1e86436e6ec5}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Acute\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Is\+Acute\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule}}
+\index{Is\+Acute\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Is\+Acute\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Acute\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule()}{IsAcuteAngle\_Segment3D\_Capsule()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Acute\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere0,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere1,  }\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{hit\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 675 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_af4da6d6923d8ee57253b1e86436e6ec5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_af4da6d6923d8ee57253b1e86436e6ec5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a4aa40ec5573967470aeac8f7cb59b67d}\label{class_collision_judgment_a4aa40ec5573967470aeac8f7cb59b67d}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+All\+In\+Segment@{Is\+All\+In\+Segment}}
+\index{Is\+All\+In\+Segment@{Is\+All\+In\+Segment}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+All\+In\+Segment()}{IsAllInSegment()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+All\+In\+Segment (\begin{DoxyParamCaption}\item[{float}]{t0,  }\item[{float}]{t1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 603 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_collision_judgment_a4aa40ec5573967470aeac8f7cb59b67d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a4aa40ec5573967470aeac8f7cb59b67d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a86d5dd5817ff244d22c9efa3eeecbcb7}\label{class_collision_judgment_a86d5dd5817ff244d22c9efa3eeecbcb7}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Cross\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Is\+Hit\+\_\+\+Cross\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}}
+\index{Is\+Hit\+\_\+\+Cross\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Is\+Hit\+\_\+\+Cross\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Cross\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+B\+B()}{IsHit\_CrossSeparationAxis\_OBB\_OBB()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Cross\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{separation\+\_\+axis\+\_\+normal0,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{separation\+\_\+axis\+\_\+normal1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{a\+\_\+e1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{a\+\_\+e2,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{b\+\_\+e1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{b\+\_\+e2,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{interval\+\_\+vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1334 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a86d5dd5817ff244d22c9efa3eeecbcb7_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a86d5dd5817ff244d22c9efa3eeecbcb7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_abb475bce4c67d02d0964355aa60f1362}\label{class_collision_judgment_abb475bce4c67d02d0964355aa60f1362}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Normal\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Is\+Hit\+\_\+\+Normal\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}}
+\index{Is\+Hit\+\_\+\+Normal\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Is\+Hit\+\_\+\+Normal\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Normal\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+B\+B()}{IsHit\_NormalSeparationAxis\_OBB\_OBB()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Normal\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{separation\+\_\+axis,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{separation\+\_\+axis\+\_\+normal,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{e1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{e2,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{e3,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{interval\+\_\+vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1313 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_abb475bce4c67d02d0964355aa60f1362_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_abb475bce4c67d02d0964355aa60f1362_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a549042895226422e8551afff35519a59}\label{class_collision_judgment_a549042895226422e8551afff35519a59}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Plane\+\_\+\+Plane@{Is\+Hit\+\_\+\+Plane\+\_\+\+Plane}}
+\index{Is\+Hit\+\_\+\+Plane\+\_\+\+Plane@{Is\+Hit\+\_\+\+Plane\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Plane\+\_\+\+Plane()}{IsHit\_Plane\_Plane()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Plane\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane0,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 765 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a549042895226422e8551afff35519a59_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a549042895226422e8551afff35519a59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a0f5514dbfaa4dde5531cb6e5512502e5}\label{class_collision_judgment_a0f5514dbfaa4dde5531cb6e5512502e5}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Segment3\+D\+\_\+\+Plane@{Is\+Hit\+\_\+\+Segment3\+D\+\_\+\+Plane}}
+\index{Is\+Hit\+\_\+\+Segment3\+D\+\_\+\+Plane@{Is\+Hit\+\_\+\+Segment3\+D\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Segment3\+D\+\_\+\+Plane()}{IsHit\_Segment3D\_Plane()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Segment3\+D\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 648 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_collision_judgment_a0f5514dbfaa4dde5531cb6e5512502e5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a0f5514dbfaa4dde5531cb6e5512502e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a7ec99cbf152e28907e2770ed44a7cefa}\label{class_collision_judgment_a7ec99cbf152e28907e2770ed44a7cefa}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Sphere\+\_\+\+Plane@{Is\+Hit\+\_\+\+Sphere\+\_\+\+Plane}}
+\index{Is\+Hit\+\_\+\+Sphere\+\_\+\+Plane@{Is\+Hit\+\_\+\+Sphere\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Sphere\+\_\+\+Plane()}{IsHit\_Sphere\_Plane()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Sphere\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 706 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_collision_judgment_a7ec99cbf152e28907e2770ed44a7cefa_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a7ec99cbf152e28907e2770ed44a7cefa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a3a594014c7ee4ba7adae21f2da9c7612}\label{class_collision_judgment_a3a594014c7ee4ba7adae21f2da9c7612}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle@{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle}}
+\index{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle@{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle()}{IsHit\_Sphere\_Triangle()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 747 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a3a594014c7ee4ba7adae21f2da9c7612_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a3a594014c7ee4ba7adae21f2da9c7612_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a1bd97fffa0335f66531ba624c3beccda}\label{class_collision_judgment_a1bd97fffa0335f66531ba624c3beccda}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle\+Side@{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle\+Side}}
+\index{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle\+Side@{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle\+Side}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle\+Side()}{IsHit\_Sphere\_TriangleSide()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Sphere\+\_\+\+Triangle\+Side (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 719 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a1bd97fffa0335f66531ba624c3beccda_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a1bd97fffa0335f66531ba624c3beccda_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a96728b80c578cd9566677788b5e5fad8}\label{class_collision_judgment_a96728b80c578cd9566677788b5e5fad8}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+\_\+\+Triangle\+\_\+\+Triangle@{Is\+Hit\+\_\+\+Triangle\+\_\+\+Triangle}}
+\index{Is\+Hit\+\_\+\+Triangle\+\_\+\+Triangle@{Is\+Hit\+\_\+\+Triangle\+\_\+\+Triangle}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+\_\+\+Triangle\+\_\+\+Triangle()}{IsHit\_Triangle\_Triangle()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+\_\+\+Triangle\+\_\+\+Triangle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle0,  }\item[{const \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle1,  }\item[{bool $\ast$}]{is\+\_\+hit\+\_\+segment\+\_\+one }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 782 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a96728b80c578cd9566677788b5e5fad8_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a96728b80c578cd9566677788b5e5fad8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a85481c15b123971458a612a31b1cc57e}\label{class_collision_judgment_a85481c15b123971458a612a31b1cc57e}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+Square\+\_\+\+Segment3\+D\+\_\+\+Plane@{Is\+Hit\+Square\+\_\+\+Segment3\+D\+\_\+\+Plane}}
+\index{Is\+Hit\+Square\+\_\+\+Segment3\+D\+\_\+\+Plane@{Is\+Hit\+Square\+\_\+\+Segment3\+D\+\_\+\+Plane}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+Square\+\_\+\+Segment3\+D\+\_\+\+Plane()}{IsHitSquare\_Segment3D\_Plane()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+Square\+\_\+\+Segment3\+D\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 635 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a85481c15b123971458a612a31b1cc57e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a85481c15b123971458a612a31b1cc57e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_ae67e650c3a7b610a6bafaef3f17dadeb}\label{class_collision_judgment_ae67e650c3a7b610a6bafaef3f17dadeb}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Hit\+Square\+\_\+\+Sphere\+\_\+\+Sphere@{Is\+Hit\+Square\+\_\+\+Sphere\+\_\+\+Sphere}}
+\index{Is\+Hit\+Square\+\_\+\+Sphere\+\_\+\+Sphere@{Is\+Hit\+Square\+\_\+\+Sphere\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Hit\+Square\+\_\+\+Sphere\+\_\+\+Sphere()}{IsHitSquare\_Sphere\_Sphere()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Hit\+Square\+\_\+\+Sphere\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{center\+\_\+to\+\_\+center\+\_\+vector,  }\item[{float}]{two\+\_\+radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 692 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ae67e650c3a7b610a6bafaef3f17dadeb_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ae67e650c3a7b610a6bafaef3f17dadeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a5fd5784d3e7d0ce09f5bda5603a8ca36}\label{class_collision_judgment_a5fd5784d3e7d0ce09f5bda5603a8ca36}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+In\+Segment@{Is\+In\+Segment}}
+\index{Is\+In\+Segment@{Is\+In\+Segment}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+In\+Segment()}{IsInSegment()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+In\+Segment (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 587 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a5fd5784d3e7d0ce09f5bda5603a8ca36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a58785d1cd51b4d7af4c19dca42d842e5}\label{class_collision_judgment_a58785d1cd51b4d7af4c19dca42d842e5}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Obtuse\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Is\+Obtuse\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule}}
+\index{Is\+Obtuse\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule@{Is\+Obtuse\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Obtuse\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule()}{IsObtuseAngle\_Segment3D\_Capsule()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Obtuse\+Angle\+\_\+\+Segment3\+D\+\_\+\+Capsule (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere0,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere1,  }\item[{const \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{hit\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 661 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a58785d1cd51b4d7af4c19dca42d842e5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a58785d1cd51b4d7af4c19dca42d842e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a5176f1eb6b0a2fd70efc0c08054064d0}\label{class_collision_judgment_a5176f1eb6b0a2fd70efc0c08054064d0}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Parallel\+Segment@{Is\+Parallel\+Segment}}
+\index{Is\+Parallel\+Segment@{Is\+Parallel\+Segment}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Parallel\+Segment()}{IsParallelSegment()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Parallel\+Segment (\begin{DoxyParamCaption}\item[{float}]{a0,  }\item[{float}]{a1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 619 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a5176f1eb6b0a2fd70efc0c08054064d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_adf77fae28d72345f9fda1668a1077f0d}\label{class_collision_judgment_adf77fae28d72345f9fda1668a1077f0d}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Zero\+All\+Segment\+VectorX@{Is\+Zero\+All\+Segment\+VectorX}}
+\index{Is\+Zero\+All\+Segment\+VectorX@{Is\+Zero\+All\+Segment\+VectorX}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Zero\+All\+Segment\+Vector\+X()}{IsZeroAllSegmentVectorX()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Zero\+All\+Segment\+VectorX (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 571 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_adf77fae28d72345f9fda1668a1077f0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_ab2e5a2c714c8c7c7f26ef9b025b57d01}\label{class_collision_judgment_ab2e5a2c714c8c7c7f26ef9b025b57d01}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Is\+Zero\+One\+Side\+Segment\+VectorX@{Is\+Zero\+One\+Side\+Segment\+VectorX}}
+\index{Is\+Zero\+One\+Side\+Segment\+VectorX@{Is\+Zero\+One\+Side\+Segment\+VectorX}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Is\+Zero\+One\+Side\+Segment\+Vector\+X()}{IsZeroOneSideSegmentVectorX()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Is\+Zero\+One\+Side\+Segment\+VectorX (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment0,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 555 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ab2e5a2c714c8c7c7f26ef9b025b57d01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_ac9e908375427b6b00bd82e2f5a5b034a}\label{class_collision_judgment_ac9e908375427b6b00bd82e2f5a5b034a}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Len\+Seg\+On\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Len\+Seg\+On\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}}
+\index{Len\+Seg\+On\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB@{Len\+Seg\+On\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Len\+Seg\+On\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+B\+B()}{LenSegOnSeparationAxis\_OBB\_OBB()}}
+{\footnotesize\ttfamily float Collision\+Judgment\+::\+Len\+Seg\+On\+Separation\+Axis\+\_\+\+O\+B\+B\+\_\+\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{separation\+\_\+axis,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{e1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{e2,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{e3 = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1296 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ac9e908375427b6b00bd82e2f5a5b034a_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_ac9e908375427b6b00bd82e2f5a5b034a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a987df18ee059d409ebb64ea67c6e2777}\label{class_collision_judgment_a987df18ee059d409ebb64ea67c6e2777}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Necessary\+Length\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere@{Necessary\+Length\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere}}
+\index{Necessary\+Length\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere@{Necessary\+Length\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Necessary\+Length\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere()}{NecessaryLengthCalculation\_Sphere\_Sphere()}}
+{\footnotesize\ttfamily void Collision\+Judgment\+::\+Necessary\+Length\+Calculation\+\_\+\+Sphere\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{center\+\_\+to\+\_\+center\+\_\+vector,  }\item[{float $\ast$}]{two\+\_\+radius,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere0,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1152 行目に定義があります。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_a987df18ee059d409ebb64ea67c6e2777_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_a240135a0a865032c624fd0b364b1a400}\label{class_collision_judgment_a240135a0a865032c624fd0b364b1a400}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!operator=@{operator=}}
+\index{operator=@{operator=}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_judgment}{Collision\+Judgment}}\& Collision\+Judgment\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_judgment}{Collision\+Judgment}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_judgment_aa7d814d54f323c366de1d068440ded2b}\label{class_collision_judgment_aa7d814d54f323c366de1d068440ded2b}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder}}
+\index{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder@{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder()}{QuadraticEquation\_Calculation\_Segment3D\_Cylinder()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$}]{equation,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$}]{cylinder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 1050 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aa7d814d54f323c366de1d068440ded2b_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_aa7d814d54f323c366de1d068440ded2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_judgment_adf8acb73719d92f6b5dbd9a6989571ad}\label{class_collision_judgment_adf8acb73719d92f6b5dbd9a6989571ad}} 
+\index{Collision\+Judgment@{Collision\+Judgment}!Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere}}
+\index{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere@{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere}!Collision\+Judgment@{Collision\+Judgment}}
+\subsubsection{\texorpdfstring{Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere()}{QuadraticEquation\_Calculation\_Segment3D\_Sphere()}}
+{\footnotesize\ttfamily bool Collision\+Judgment\+::\+Quadratic\+Equation\+\_\+\+Calculation\+\_\+\+Segment3\+D\+\_\+\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$}]{equation,  }\item[{const \mbox{\hyperlink{class_segment}{Segment}} $\ast$}]{segment,  }\item[{const \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Collision\+Judgment.\+cpp の 919 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_adf8acb73719d92f6b5dbd9a6989571ad_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_judgment_adf8acb73719d92f6b5dbd9a6989571ad_icgraph}
+\end{center}
+\end{figure}
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}

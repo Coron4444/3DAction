@@ -97,19 +97,19 @@ void GameObjectBase::InitComponent()
 {
 	if (update_ != nullptr)
 	{
-		update_->SetGameObject(this);
+		update_->setGameObject(this);
 		update_->Init();
 	}
 
 	if (draw_ != nullptr)
 	{
-		draw_->SetGameObject(this);
+		draw_->setGameObject(this);
 		draw_->Init();
 	}
 
 	if (collision_ != nullptr)
 	{
-		collision_->SetGameObject(this);
+		collision_->setGameObject(this);
 		collision_->Init();
 	}
 }

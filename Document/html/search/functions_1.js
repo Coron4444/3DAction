@@ -1,6 +1,8 @@
 var searchData=
 [
   ['aabb',['AABB',['../class_a_a_b_b.html#a5f5baf6c533905aa1456b3a3eb57bab2',1,'AABB']]],
+  ['accessvram',['AccessVRAM',['../class_cube_polygon.html#a715db255bf7ebd3c3aec2095d73b9399',1,'CubePolygon::AccessVRAM()'],['../class_mesh_plane_polygon.html#a30fd785154d01644ba76165673c5a7ac',1,'MeshPlanePolygon::AccessVRAM()'],['../class_plane_polygon.html#a88e476aa4b627d7242dc4f1b5eccf889',1,'PlanePolygon::AccessVRAM()'],['../class_model_f_b_x_object.html#a930e90d4107466549946b1f318857954',1,'ModelFBXObject::AccessVRAM()']]],
+  ['actualcalculation',['ActualCalculation',['../class_collision_manager.html#ab7a212529ce17392d2ca120153318090',1,'CollisionManager']]],
   ['add',['Add',['../class_liner_octree.html#ac5773a5193942a68f77a33baed9d69d4',1,'LinerOctree::Add()'],['../struct_effekseer_1_1_vector3_d.html#a79225e27a6ca17af79e5eca70ff44cb0',1,'Effekseer::Vector3D::Add()'],['../struct_im_rect.html#a9d6cbef8c86ca01a16bb0fd35b457f88',1,'ImRect::Add(const ImVec2 &amp;rhs)'],['../struct_im_rect.html#a9bcb65fd17843c74555291a522e9ebdf',1,'ImRect::Add(const ImRect &amp;rhs)']]],
   ['addbeziercurve',['AddBezierCurve',['../struct_im_draw_list.html#afd2eeeb8ed23b6222513953b03620101',1,'ImDrawList']]],
   ['addbounciness',['AddBounciness',['../class_physics.html#af88191e5605a97952caefd19319b05f9',1,'Physics']]],
@@ -11,6 +13,7 @@ var searchData=
   ['addcollisionbasetoarray',['AddCollisionBaseToArray',['../class_collision_manager.html#a42be7a26321110f5daaf1828da32f667',1,'CollisionManager']]],
   ['addcollisionobjectstoarray',['AddCollisionObjectsToArray',['../class_collision_base.html#ace98d75317a9f56bc6cada7980285b53',1,'CollisionBase']]],
   ['addcollisionobjecttoarray',['AddCollisionObjectToArray',['../class_collision_objects.html#a50d6593f98cd04e23ad7ea9102eccc3c',1,'CollisionObjects']]],
+  ['addcontentsofawaitaddarray',['AddContentsOfAwaitAddArray',['../class_collision_manager.html#a53e468bb8624f84a5c65c9779781033f',1,'CollisionManager::AddContentsOfAwaitAddArray()'],['../class_draw_manager.html#a984cd9de288151fd1d170f80f93a11e8',1,'DrawManager::AddContentsOfAwaitAddArray()'],['../class_update_manager.html#a7bb1af3bffcc4d72333ac86ae411891e',1,'UpdateManager::AddContentsOfAwaitAddArray()'],['../class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09',1,'GameObjectManager::AddContentsOfAwaitAddArray()']]],
   ['addconvexpolyfilled',['AddConvexPolyFilled',['../struct_im_draw_list.html#a3ba618d0615e410dce9eaa0b80a30126',1,'ImDrawList']]],
   ['addcustomrectfontglyph',['AddCustomRectFontGlyph',['../struct_im_font_atlas.html#a5643182be4e3f1a442cfa6cdc0321c7c',1,'ImFontAtlas']]],
   ['addcustomrectregular',['AddCustomRectRegular',['../struct_im_font_atlas.html#ac51952803d2205f28ca9fc996c5f6243',1,'ImFontAtlas']]],
@@ -50,11 +53,20 @@ var searchData=
   ['adduniquedata',['AddUniqueData',['../class_effekseer_manager.html#ad89f0ad2a840f191c088d35ddfd2ec62',1,'EffekseerManager::AddUniqueData()'],['../class_model_x_manager.html#a0a0cd728e7b92de6c18e96026708d97b',1,'ModelXManager::AddUniqueData()'],['../class_texture_manager.html#af86003fd2afaf09f0295745d486e42e4',1,'TextureManager::AddUniqueData()']]],
   ['addupdatebasetoarray',['AddUpdateBaseToArray',['../class_update_manager.html#afe4b39d94cde8294cc273cde32788eaa',1,'UpdateManager']]],
   ['aligntexttoframepadding',['AlignTextToFramePadding',['../namespace_im_gui.html#ae14be3a3bec106de7c91aaa2a9a558a1',1,'ImGui']]],
+  ['allbillboardupdate',['AllBillboardUpdate',['../class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc',1,'BackBuffer']]],
+  ['allrelease',['AllRelease',['../class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae',1,'GameObjectManager']]],
   ['allreleasereference',['AllReleaseReference',['../class_game_object_reference_manager.html#ac4852ddd6d8bd5e1f13284ba6204e221',1,'GameObjectReferenceManager']]],
   ['allreset',['AllReset',['../class_game_object_manager.html#a38f980aec0970f45eb9bc55db8ac01a3',1,'GameObjectManager']]],
+  ['amountofsqueezingvectorcalculation_5fsphere_5fcapsule',['AmountOfSqueezingVectorCalculation_Sphere_Capsule',['../class_collision_judgment.html#ae992df185735a5348aef01754ebf9b80',1,'CollisionJudgment']]],
+  ['amountofsqueezingvectorcalculation_5fsphere_5fobb',['AmountOfSqueezingVectorCalculation_Sphere_OBB',['../class_collision_judgment.html#a0d9af21fba97d2f396c8200b6fccaeb4',1,'CollisionJudgment']]],
+  ['amountofsqueezingvectorcalculation_5fsphere_5fplane',['AmountOfSqueezingVectorCalculation_Sphere_Plane',['../class_collision_judgment.html#a6d5a391e5cc4bdafff98d04c219f9087',1,'CollisionJudgment']]],
+  ['amountofsqueezingvectorcalculation_5fsphere_5fsphere',['AmountOfSqueezingVectorCalculation_Sphere_Sphere',['../class_collision_judgment.html#aeb97af19dd3282bb85eb342c315a1ac3',1,'CollisionJudgment']]],
+  ['amountofsqueezingvectorcalculation_5fsphere_5ftriangle',['AmountOfSqueezingVectorCalculation_Sphere_Triangle',['../class_collision_judgment.html#a9b00e793394f46bdc74e6efa434c0255',1,'CollisionJudgment']]],
   ['anylengthvector',['AnyLengthVector',['../class_vector3_d.html#a030384bdfe25863cd4be77fa73052cf1',1,'Vector3D']]],
   ['append',['append',['../struct_im_gui_text_buffer.html#a791ac3e5638c58b53772e14bee1323db',1,'ImGuiTextBuffer']]],
   ['appendv',['appendv',['../struct_im_gui_text_buffer.html#ad7c7e0d7ec1a12dd2a96a3dbb204deaf',1,'ImGuiTextBuffer']]],
   ['arrowbutton',['ArrowButton',['../namespace_im_gui.html#ac7c2bd67d2bb2d8ee4b583b1576a0bd3',1,'ImGui']]],
+  ['askforthefrontt_5fsegment3d_5fcylinder',['AskForTheFrontT_Segment3D_Cylinder',['../class_collision_judgment.html#a413d713064c810f1bea6760e76db5221',1,'CollisionJudgment']]],
+  ['askforthefrontt_5fsegment3d_5fsphere',['AskForTheFrontT_Segment3D_Sphere',['../class_collision_judgment.html#adbf036202ba174c7e9fc10329aeaa2c1',1,'CollisionJudgment']]],
   ['axisvector',['AxisVector',['../class_axis_vector.html#ae77a05cd990defedbd04914dba1f2326',1,'AxisVector']]]
 ];

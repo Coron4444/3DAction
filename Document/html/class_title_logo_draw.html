@@ -89,6 +89,8 @@ $(document).ready(function(){initNavTree('class_title_logo_draw.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_title_logo_draw-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">TitleLogoDraw クラス</div>  </div>
@@ -102,14 +104,44 @@ $(document).ready(function(){initNavTree('class_title_logo_draw.html','');});
 <div class="dynheader">
 TitleLogoDraw の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_title_logo_draw.png" usemap="#TitleLogoDraw_map" alt=""/>
-  <map id="TitleLogoDraw_map" name="TitleLogoDraw_map">
-<area href="class_draw_null.html" title="空白描画クラス " alt="DrawNull" shape="rect" coords="0,112,103,136"/>
-<area href="class_draw_base.html" title="描画基底クラス " alt="DrawBase" shape="rect" coords="0,56,103,80"/>
-<area href="class_component_base.html" title="コンポーネント基底クラス " alt="ComponentBase" shape="rect" coords="0,0,103,24"/>
+<div class="center"><img src="class_title_logo_draw__inherit__graph.png" border="0" usemap="#_title_logo_draw_inherit__map" alt="Inheritance graph"/></div>
+<map name="_title_logo_draw_inherit__map" id="_title_logo_draw_inherit__map">
+<area shape="rect" id="node2" href="class_draw_null.html" title="空白描画クラス " alt="" coords="28,155,101,181"/>
+<area shape="rect" id="node3" href="class_draw_base.html" title="描画基底クラス " alt="" coords="24,80,105,107"/>
+<area shape="rect" id="node4" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="5,5,124,32"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+TitleLogoDraw 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_title_logo_draw__coll__graph.png" border="0" usemap="#_title_logo_draw_coll__map" alt="Collaboration graph"/></div>
+<map name="_title_logo_draw_coll__map" id="_title_logo_draw_coll__map">
+<area shape="rect" id="node2" href="class_draw_null.html" title="空白描画クラス " alt="" coords="1035,585,1108,612"/>
+<area shape="rect" id="node3" href="class_draw_base.html" title="描画基底クラス " alt="" coords="666,488,747,515"/>
+<area shape="rect" id="node5" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="875,375,1000,401"/>
+<area shape="rect" id="node4" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="1143,365,1261,392"/>
+<area shape="rect" id="node6" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="1446,232,1547,259"/>
+<area shape="rect" id="node19" href="class_update_base.html" title="更新基底クラス " alt="" coords="1450,396,1543,423"/>
+<area shape="rect" id="node18" href="class_physics.html" title="Physics" alt="" coords="1167,283,1237,309"/>
+<area shape="rect" id="node25" href="class_title_logo.html" title="TitleLogo" alt="" coords="1165,535,1239,561"/>
+<area shape="rect" id="node8" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1689,148,1805,175"/>
+<area shape="rect" id="node7" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="1987,193,2128,249"/>
+<area shape="rect" id="node14" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1947,131,2168,157"/>
+<area shape="rect" id="node9" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="677,93,736,120"/>
+<area shape="rect" id="node10" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="364,129,503,156"/>
+<area shape="rect" id="node17" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="652,155,761,181"/>
+<area shape="rect" id="node12" href="class_vector3_d.html" title="Vector3D" alt="" coords="107,219,183,245"/>
+<area shape="rect" id="node20" href="class_transform.html" title="Transform" alt="" coords="667,381,746,408"/>
+<area shape="rect" id="node22" href="class_axis_vector.html" title="AxisVector" alt="" coords="390,391,477,417"/>
+<area shape="rect" id="node15" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="2325,131,2545,157"/>
+<area shape="rect" id="node16" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="1285,137,1421,193"/>
+<area shape="rect" id="node21" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="384,441,483,468"/>
+<area shape="rect" id="node23" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="381,492,485,519"/>
+<area shape="rect" id="node24" href="class_flag.html" title="Flag" alt="" coords="121,492,168,519"/>
+<area shape="rect" id="node26" href="class_plane_polygon.html" title="PlanePolygon" alt="" coords="886,535,989,561"/>
+<area shape="rect" id="node27" href="class_texture_object.html" title="TextureObject" alt="" coords="1151,636,1253,663"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -170,10 +202,30 @@ TitleLogoDraw の継承関係図</div>
 <tr class="separator:ac9fc08588e3d29caf8d692a3392fc7b0 inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object_base.html">GameObjectBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">GetGameObject</a> ()</td></tr>
 <tr class="separator:a0ac0d71aeeb768401f34a2e780b1e25d inherit pub_methods_class_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a73a6a0f44bd8d9b5dd5c4e31182881d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_title_logo.html">TitleLogo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_title_logo_draw.html#a73a6a0f44bd8d9b5dd5c4e31182881d2">title_logo_</a></td></tr>
+<tr class="memdesc:a73a6a0f44bd8d9b5dd5c4e31182881d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイトルロゴ  <a href="#a73a6a0f44bd8d9b5dd5c4e31182881d2">[詳解]</a><br /></td></tr>
+<tr class="separator:a73a6a0f44bd8d9b5dd5c4e31182881d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84be55e143853754d0b5f21647e3c595"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_texture_object.html">TextureObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_title_logo_draw.html#a84be55e143853754d0b5f21647e3c595">decale_texture_</a></td></tr>
+<tr class="memdesc:a84be55e143853754d0b5f21647e3c595"><td class="mdescLeft">&#160;</td><td class="mdescRight">デカールテクスチャ  <a href="#a84be55e143853754d0b5f21647e3c595">[詳解]</a><br /></td></tr>
+<tr class="separator:a84be55e143853754d0b5f21647e3c595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a663026976213673c6bcc66533b89ffa1"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_title_logo_draw.html#a663026976213673c6bcc66533b89ffa1">TEXTURE_NAME</a> = &quot;UI/Title.png&quot;</td></tr>
+<tr class="memdesc:a663026976213673c6bcc66533b89ffa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャ名  <a href="#a663026976213673c6bcc66533b89ffa1">[詳解]</a><br /></td></tr>
+<tr class="separator:a663026976213673c6bcc66533b89ffa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22181b94dc000a9fb9f68a21af9523ab"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_title_logo_draw.html#a22181b94dc000a9fb9f68a21af9523ab">SCALE</a> = 1.25f</td></tr>
+<tr class="memdesc:a22181b94dc000a9fb9f68a21af9523ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">拡縮  <a href="#a22181b94dc000a9fb9f68a21af9523ab">[詳解]</a><br /></td></tr>
+<tr class="separator:a22181b94dc000a9fb9f68a21af9523ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>タイトルロゴ描画クラス </p>
 <p>タイトルロゴの描画クラス </p>
+
+<p class="definition"> <a class="el" href="_title_logo_draw_8h_source.html">TitleLogoDraw.h</a> の <a class="el" href="_title_logo_draw_8h_source.html#l00031">31</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
 <a id="a01e4cb21d580bac86a226fa2e35bf4a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01e4cb21d580bac86a226fa2e35bf4a3">&#9670;&nbsp;</a></span>Draw()</h2>
@@ -219,6 +271,16 @@ TitleLogoDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#afe50f6fd820b18d673f70f048743f339">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a> の <a class="el" href="_title_logo_draw_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_title_logo_draw_a01e4cb21d580bac86a226fa2e35bf4a3_cgraph.png" border="0" usemap="#class_title_logo_draw_a01e4cb21d580bac86a226fa2e35bf4a3_cgraph" alt=""/></div>
+<map name="class_title_logo_draw_a01e4cb21d580bac86a226fa2e35bf4a3_cgraph" id="class_title_logo_draw_a01e4cb21d580bac86a226fa2e35bf4a3_cgraph">
+<area shape="rect" id="node2" href="class_plane_polygon.html#a2f20691ee0feee4fa428f5d017d7062a" title="PlanePolygon::Draw" alt="" coords="193,5,332,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ab727012424a02249a90a0f7d247371a8"></a>
@@ -256,6 +318,16 @@ TitleLogoDraw の継承関係図</div>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_draw_null.html#a8496ed1b1f765a331a8f1704122b8ca4">DrawNull</a>を再実装しています。</p>
+
+<p class="definition"> <a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a> の <a class="el" href="_title_logo_draw_8cpp_source.html#l00118">118</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_title_logo_draw_ab727012424a02249a90a0f7d247371a8_cgraph.png" border="0" usemap="#class_title_logo_draw_ab727012424a02249a90a0f7d247371a8_cgraph" alt=""/></div>
+<map name="class_title_logo_draw_ab727012424a02249a90a0f7d247371a8_cgraph" id="class_title_logo_draw_ab727012424a02249a90a0f7d247371a8_cgraph">
+<area shape="rect" id="node2" href="class_texture_object.html#a1b6c93f36e03686f7198b93355c73c8a" title="TextureObject::GetHandler" alt="" coords="225,13,401,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -295,6 +367,16 @@ TitleLogoDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#a84969d22d3436986f214e9896fe44fc6">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a> の <a class="el" href="_title_logo_draw_8cpp_source.html#l00105">105</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_title_logo_draw_a8858aa1b1eb9a6d4cb4605519efb20eb_cgraph.png" border="0" usemap="#class_title_logo_draw_a8858aa1b1eb9a6d4cb4605519efb20eb_cgraph" alt=""/></div>
+<map name="class_title_logo_draw_a8858aa1b1eb9a6d4cb4605519efb20eb_cgraph" id="class_title_logo_draw_a8858aa1b1eb9a6d4cb4605519efb20eb_cgraph">
+<area shape="rect" id="node2" href="class_plane_polygon.html#a808087c9d82c0eb7cfb0709c9906e833" title="PlanePolygon::GetMaterial" alt="" coords="232,5,409,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af21cd1dbd79c741a2e3ca2b8e26c5f61"></a>
@@ -323,6 +405,19 @@ TitleLogoDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#adede079e9c11a756090740b20bb43022">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a> の <a class="el" href="_title_logo_draw_8cpp_source.html#l00080">80</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_title_logo_draw_af21cd1dbd79c741a2e3ca2b8e26c5f61_cgraph.png" border="0" usemap="#class_title_logo_draw_af21cd1dbd79c741a2e3ca2b8e26c5f61_cgraph" alt=""/></div>
+<map name="class_title_logo_draw_af21cd1dbd79c741a2e3ca2b8e26c5f61_cgraph" id="class_title_logo_draw_af21cd1dbd79c741a2e3ca2b8e26c5f61_cgraph">
+<area shape="rect" id="node2" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="221,5,441,32"/>
+<area shape="rect" id="node3" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="226,56,437,83"/>
+<area shape="rect" id="node4" href="class_transform.html#a060f9487a18ad34549eab53a7ca5100d" title="Transform::GetWorldMatrix" alt="" coords="242,107,421,133"/>
+<area shape="rect" id="node5" href="class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="489,107,688,133"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a14212f1ee003c40d63db3822a84af7fb"></a>
@@ -350,6 +445,16 @@ TitleLogoDraw の継承関係図</div>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_draw_null.html#ad735978a85a5f3583eecd82d6bfe6413">DrawNull</a>を再実装しています。</p>
+
+<p class="definition"> <a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a> の <a class="el" href="_title_logo_draw_8cpp_source.html#l00093">93</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_title_logo_draw_a14212f1ee003c40d63db3822a84af7fb_cgraph.png" border="0" usemap="#class_title_logo_draw_a14212f1ee003c40d63db3822a84af7fb_cgraph" alt=""/></div>
+<map name="class_title_logo_draw_a14212f1ee003c40d63db3822a84af7fb_cgraph" id="class_title_logo_draw_a14212f1ee003c40d63db3822a84af7fb_cgraph">
+<area shape="rect" id="node2" href="class_plane_polygon.html#a05f4f63c2d04d30f7b9808c009101403" title="PlanePolygon::GetMeshNum" alt="" coords="244,5,435,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -380,6 +485,35 @@ TitleLogoDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#acd7fef3ccea1da537ac9507ffbb6dd2e">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a> の <a class="el" href="_title_logo_draw_8cpp_source.html#l00033">33</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_title_logo_draw_a9f70fb70639510908f4e07ee14667e30_cgraph.png" border="0" usemap="#class_title_logo_draw_a9f70fb70639510908f4e07ee14667e30_cgraph" alt=""/></div>
+<map name="class_title_logo_draw_a9f70fb70639510908f4e07ee14667e30_cgraph" id="class_title_logo_draw_a9f70fb70639510908f4e07ee14667e30_cgraph">
+<area shape="rect" id="node2" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c" title="DrawBase::GetDrawOrderList" alt="" coords="201,5,393,32"/>
+<area shape="rect" id="node3" href="class_draw_order_list.html#a5b3ff99f9297293edc057b95d23e8f2d" title="DrawOrderList::SetDrawType" alt="" coords="202,56,391,83"/>
+<area shape="rect" id="node4" href="class_draw_order_list.html#aff90f57ce3ff0e2d7cd715267bfe024f" title="DrawOrderList::GetRender\lTargetFlag" alt="" coords="209,107,384,149"/>
+<area shape="rect" id="node5" href="class_flag.html#a362d2f64c03c0b596004f3eba4cb14a3" title="Flag::Set" alt="" coords="259,173,334,200"/>
+<area shape="rect" id="node6" href="class_draw_order_list.html#a1c2d881dd0d31f1c7cde4494f7c38481" title="DrawOrderList::SetVertex\lShaderType" alt="" coords="211,225,382,266"/>
+<area shape="rect" id="node7" href="class_draw_order_list.html#a0fd7f50f4078001983f88014d59f8f29" title="DrawOrderList::SetPixelShaderType" alt="" coords="181,291,412,317"/>
+<area shape="rect" id="node8" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="187,341,407,368"/>
+<area shape="rect" id="node9" href="class_texture_manager.html#af86003fd2afaf09f0295745d486e42e4" title="TextureManager::AddUniqueData" alt="" coords="190,392,403,419"/>
+<area shape="rect" id="node12" href="class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="191,443,402,469"/>
+<area shape="rect" id="node13" href="class_transform.html#accedf33a4ddbdcf2d4fc4274f85bf818" title="Transform::GetScale" alt="" coords="226,493,367,520"/>
+<area shape="rect" id="node14" href="class_texture_object.html#a72c079770e7e4355b6481d28a0a472ac" title="TextureObject::GetWidth" alt="" coords="213,544,380,571"/>
+<area shape="rect" id="node15" href="class_texture_object.html#af312bd8d8cdb31918a00e1fe096c26e0" title="TextureObject::GetHeight" alt="" coords="212,595,381,621"/>
+<area shape="rect" id="node16" href="class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="185,645,408,672"/>
+<area shape="rect" id="node10" href="class_texture_manager.html#a18d1f3418511075804f9d11cff1010ff" title="TextureManager::GetTexture\lObject" alt="" coords="472,355,659,397"/>
+<area shape="rect" id="node11" href="class_texture_manager.html#a950562ff671a620592708906925fad7f" title="TextureManager::MakeFilePath" alt="" coords="464,421,667,448"/>
+<area shape="rect" id="node17" href="class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="475,521,656,562"/>
+<area shape="rect" id="node18" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="471,587,659,613"/>
+<area shape="rect" id="node19" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="467,638,663,679"/>
+<area shape="rect" id="node20" href="class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="460,703,671,745"/>
+<area shape="rect" id="node21" href="class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd" title="MatrixExtend::UpdateWorld\lMatrixSRT" alt="" coords="474,769,657,810"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a07bbf9e8de5c7b9ee028408496c13c50"></a>
@@ -409,11 +543,118 @@ TitleLogoDraw の継承関係図</div>
 
 <p><a class="el" href="class_draw_null.html#a12d44e341c7364b5ab9cdd661dc16187">DrawNull</a>を再実装しています。</p>
 
+<p class="definition"> <a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a> の <a class="el" href="_title_logo_draw_8cpp_source.html#l00058">58</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a84be55e143853754d0b5f21647e3c595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84be55e143853754d0b5f21647e3c595">&#9670;&nbsp;</a></span>decale_texture_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_texture_object.html">TextureObject</a>* TitleLogoDraw::decale_texture_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デカールテクスチャ </p>
+
+<p class="definition"> <a class="el" href="_title_logo_draw_8h_source.html">TitleLogoDraw.h</a> の <a class="el" href="_title_logo_draw_8h_source.html#l00046">46</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a22181b94dc000a9fb9f68a21af9523ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22181b94dc000a9fb9f68a21af9523ab">&#9670;&nbsp;</a></span>SCALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float TitleLogoDraw::SCALE = 1.25f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拡縮 </p>
+
+<p class="definition"> <a class="el" href="_title_logo_draw_8h_source.html">TitleLogoDraw.h</a> の <a class="el" href="_title_logo_draw_8h_source.html#l00038">38</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a663026976213673c6bcc66533b89ffa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663026976213673c6bcc66533b89ffa1">&#9670;&nbsp;</a></span>TEXTURE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string TitleLogoDraw::TEXTURE_NAME = &quot;UI/Title.png&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャ名 </p>
+
+<p class="definition"> <a class="el" href="_title_logo_draw_8h_source.html">TitleLogoDraw.h</a> の <a class="el" href="_title_logo_draw_8h_source.html#l00037">37</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a73a6a0f44bd8d9b5dd5c4e31182881d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a6a0f44bd8d9b5dd5c4e31182881d2">&#9670;&nbsp;</a></span>title_logo_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_title_logo.html">TitleLogo</a>* TitleLogoDraw::title_logo_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイトルロゴ </p>
+
+<p class="definition"> <a class="el" href="_title_logo_draw_8h_source.html">TitleLogoDraw.h</a> の <a class="el" href="_title_logo_draw_8h_source.html#l00045">45</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TitleLogo/TitleLogoDraw/<a class="el" href="_title_logo_draw_8h_source.html">TitleLogoDraw.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TitleLogo/TitleLogoDraw/<a class="el" href="_title_logo_draw_8cpp.html">TitleLogoDraw.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TitleLogo/TitleLogoDraw/<a class="el" href="_title_logo_draw_8cpp_source.html">TitleLogoDraw.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

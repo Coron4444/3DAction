@@ -9,6 +9,15 @@
 
 {\ttfamily \#include $<$Depth\+Buffer\+Shadow\+Object.\+h$>$}
 
+
+
+Depth\+Buffer\+Shadow\+Object 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_depth_buffer_shadow_object__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{静的公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,12 +42,81 @@ static const D3\+D\+V\+E\+R\+T\+E\+X\+E\+L\+E\+M\+E\+N\+T9 \mbox{\hyperlink{clas
 \item 
 static const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} \mbox{\hyperlink{class_depth_buffer_shadow_object_aa7a8ac55e3de545dacb0cfde57fd1017}{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}}
 \end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_depth_buffer_shadow_object_a2c23801a681ac79e2f9633f568634b81}{Depth\+Buffer\+Shadow\+Object}} ()=delete
+\item 
+\mbox{\hyperlink{class_depth_buffer_shadow_object_af144bdc29aabd1a84e789e3788d0a9a8}{Depth\+Buffer\+Shadow\+Object}} (const \mbox{\hyperlink{class_depth_buffer_shadow_object}{Depth\+Buffer\+Shadow\+Object}} \&class\+\_\+name)=delete
+\item 
+\mbox{\hyperlink{class_depth_buffer_shadow_object}{Depth\+Buffer\+Shadow\+Object}} \& \mbox{\hyperlink{class_depth_buffer_shadow_object_a00d8b986d4f2c1d82dd836c0f5ce3751}{operator=}} (const \mbox{\hyperlink{class_depth_buffer_shadow_object}{Depth\+Buffer\+Shadow\+Object}} \&class\+\_\+name)=delete
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 \mbox{\hyperlink{class_depth_buffer_shadow_object_a2e91bbbf8298fdb977f762fb871ff199}{device\+\_\+}}
+\item 
+static D3\+D\+X\+M\+A\+T\+R\+IX \mbox{\hyperlink{class_depth_buffer_shadow_object_a8cbcfff05093c1884d6e2c6ac15b9b0a}{math\+\_\+matrix\+\_\+}}
+\item 
+static I\+Direct3\+D\+Vertex\+Declaration9 $\ast$ \mbox{\hyperlink{class_depth_buffer_shadow_object_a20f1043c9809e9eaf06632b6dae4dafe}{declaration\+\_\+object\+\_\+}}
+\item 
+static L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_depth_buffer_shadow_object_a247d49044c3cea346785514768ecb578}{shadow\+\_\+map\+\_\+}}
+\item 
+static L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 \mbox{\hyperlink{class_depth_buffer_shadow_object_a083e7d970cf89fd220787393bdb2d8e2}{shadow\+\_\+map\+\_\+render\+\_\+target\+\_\+surface\+\_\+}}
+\item 
+static L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 \mbox{\hyperlink{class_depth_buffer_shadow_object_a2fe67be29e0c2c6cb1c74860d8f90b37}{shadow\+\_\+map\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}}
+\item 
+static D3\+D\+V\+I\+E\+W\+P\+O\+R\+T9 \mbox{\hyperlink{class_depth_buffer_shadow_object_a08c029f49fa8cf59b8458d3c2be0138e}{shadow\+\_\+map\+\_\+view\+\_\+port\+\_\+}}
+\item 
+static \mbox{\hyperlink{class_camera}{Camera}} \mbox{\hyperlink{class_depth_buffer_shadow_object_a6f32e81131358b61184b514e44bdb44d}{shadow\+\_\+map\+\_\+camera\+\_\+}}
+\item 
+static L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 \mbox{\hyperlink{class_depth_buffer_shadow_object_abfeefee54df20a800a8fc33365332724}{old\+\_\+render\+\_\+target\+\_\+surface\+\_\+}}
+\item 
+static L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 \mbox{\hyperlink{class_depth_buffer_shadow_object_aa3a73112a31ff2665079f86ab592559e}{old\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}}
+\item 
+static D3\+D\+V\+I\+E\+W\+P\+O\+R\+T9 \mbox{\hyperlink{class_depth_buffer_shadow_object_aaeb83afec448ed26aba19b2b40bb6667}{old\+\_\+view\+\_\+port\+\_\+}}
+\item 
+static L\+P\+D3\+D\+X\+E\+F\+F\+E\+CT \mbox{\hyperlink{class_depth_buffer_shadow_object_a3b6be6422a17dc7ce3006e1af50bbd7f}{effect\+\_\+}}
+\item 
+static D3\+D\+X\+H\+A\+N\+D\+LE \mbox{\hyperlink{class_depth_buffer_shadow_object_ab8fd271667e849ed9dfbdf9de2fe9fa5}{technique\+\_\+}}
+\item 
+static D3\+D\+X\+H\+A\+N\+D\+LE \mbox{\hyperlink{class_depth_buffer_shadow_object_a9a2201b16bbf64ea9c44709c8a2de6c2}{matrix\+\_\+\+W\+V\+P\+\_\+}}
+\item 
+static D3\+D\+X\+H\+A\+N\+D\+LE \mbox{\hyperlink{class_depth_buffer_shadow_object_a2928e4f164d0655d1aa9aee0fe6c17a7}{lambert\+\_\+diffuse\+\_\+light\+\_\+vector\+\_\+}}
+\item 
+static D3\+D\+X\+H\+A\+N\+D\+LE \mbox{\hyperlink{class_depth_buffer_shadow_object_a4155ea5cadbbbae90ae677413497dda0}{lambert\+\_\+diffuse\+\_\+light\+\_\+color\+\_\+}}
+\item 
+static D3\+D\+X\+H\+A\+N\+D\+LE \mbox{\hyperlink{class_depth_buffer_shadow_object_acba4cb3693430a7776115fc50d63057a}{camera\+\_\+position\+\_\+}}
+\item 
+static D3\+D\+X\+H\+A\+N\+D\+LE \mbox{\hyperlink{class_depth_buffer_shadow_object_ab4ec29cbceae88cc38900fcd0328f308}{decale\+\_\+texture\+\_\+}}
+\item 
+static D3\+D\+X\+H\+A\+N\+D\+LE \mbox{\hyperlink{class_depth_buffer_shadow_object_a830c128c7b510a6d123f72fd684cd2a3}{normal\+\_\+texture\+\_\+}}
+\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 深度バッファシャドウオブジェクトクラス 
 
 シャドウマップを用いた影をつける レンダリング回数：2回 1回目 \+: シャドウマップの作成 2回目 \+: シャドウマップの深度値とオブジェクトの深度値を比較しながらレンダリング 
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 44 行目に定義があります。
+
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a2c23801a681ac79e2f9633f568634b81}\label{class_depth_buffer_shadow_object_a2c23801a681ac79e2f9633f568634b81}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Depth\+Buffer\+Shadow\+Object()}{DepthBufferShadowObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Depth\+Buffer\+Shadow\+Object\+::\+Depth\+Buffer\+Shadow\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_af144bdc29aabd1a84e789e3788d0a9a8}\label{class_depth_buffer_shadow_object_af144bdc29aabd1a84e789e3788d0a9a8}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{Depth\+Buffer\+Shadow\+Object()}{DepthBufferShadowObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Depth\+Buffer\+Shadow\+Object\+::\+Depth\+Buffer\+Shadow\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_depth_buffer_shadow_object}{Depth\+Buffer\+Shadow\+Object}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c}\label{class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c}} 
@@ -47,6 +125,17 @@ static const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{V
 \subsubsection{\texorpdfstring{Draw\+\_\+\+Pass0()}{Draw\_Pass0()}}
 {\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Draw\+\_\+\+Pass0 (\begin{DoxyParamCaption}\item[{Draw\+Component $\ast$}]{draw\+\_\+component,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Depth\+Buffer\+Shadow\+Object.\+cpp の 273 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_a4bf8a72a447aa6ff150f3fef630ab448}\label{class_depth_buffer_shadow_object_a4bf8a72a447aa6ff150f3fef630ab448}} 
 \index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Draw\+\_\+\+Pass1@{Draw\+\_\+\+Pass1}}
 \index{Draw\+\_\+\+Pass1@{Draw\+\_\+\+Pass1}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
@@ -59,11 +148,25 @@ static const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{V
 \subsubsection{\texorpdfstring{Init()}{Init()}}
 {\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Depth\+Buffer\+Shadow\+Object.\+cpp の 91 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a00d8b986d4f2c1d82dd836c0f5ce3751}\label{class_depth_buffer_shadow_object_a00d8b986d4f2c1d82dd836c0f5ce3751}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_depth_buffer_shadow_object}{Depth\+Buffer\+Shadow\+Object}}\& Depth\+Buffer\+Shadow\+Object\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_depth_buffer_shadow_object}{Depth\+Buffer\+Shadow\+Object}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_a2ac079b069c8f60b8d681868b9afce89}\label{class_depth_buffer_shadow_object_a2ac079b069c8f60b8d681868b9afce89}} 
 \index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Set\+Old\+Render\+Target@{Set\+Old\+Render\+Target}}
 \index{Set\+Old\+Render\+Target@{Set\+Old\+Render\+Target}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
 \subsubsection{\texorpdfstring{Set\+Old\+Render\+Target()}{SetOldRenderTarget()}}
 {\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Set\+Old\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+cpp の 257 行目に定義があります。
 
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc}\label{class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc}} 
 \index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Set\+Render\+Target@{Set\+Render\+Target}}
@@ -71,6 +174,18 @@ static const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{V
 \subsubsection{\texorpdfstring{Set\+Render\+Target()}{SetRenderTarget()}}
 {\footnotesize\ttfamily void Depth\+Buffer\+Shadow\+Object\+::\+Set\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Depth\+Buffer\+Shadow\+Object.\+cpp の 228 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_a6f5e6542143cffef6b7a9e69f6c9cd94}\label{class_depth_buffer_shadow_object_a6f5e6542143cffef6b7a9e69f6c9cd94}} 
 \index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
@@ -79,7 +194,31 @@ static const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{V
 
 
 
+ Depth\+Buffer\+Shadow\+Object.\+cpp の 211 行目に定義があります。
+
+
+
 \subsection{メンバ詳解}
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_acba4cb3693430a7776115fc50d63057a}\label{class_depth_buffer_shadow_object_acba4cb3693430a7776115fc50d63057a}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!camera\+\_\+position\+\_\+@{camera\+\_\+position\+\_\+}}
+\index{camera\+\_\+position\+\_\+@{camera\+\_\+position\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{camera\+\_\+position\+\_\+}{camera\_position\_}}
+{\footnotesize\ttfamily D3\+D\+X\+H\+A\+N\+D\+LE Depth\+Buffer\+Shadow\+Object\+::camera\+\_\+position\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 109 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_ab4ec29cbceae88cc38900fcd0328f308}\label{class_depth_buffer_shadow_object_ab4ec29cbceae88cc38900fcd0328f308}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}}
+\index{decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{decale\+\_\+texture\+\_\+}{decale\_texture\_}}
+{\footnotesize\ttfamily D3\+D\+X\+H\+A\+N\+D\+LE Depth\+Buffer\+Shadow\+Object\+::decale\+\_\+texture\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 110 行目に定義があります。
+
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_a9238d9843ca8654d67809dfbd5600137}\label{class_depth_buffer_shadow_object_a9238d9843ca8654d67809dfbd5600137}} 
 \index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!D\+E\+C\+L\+A\+R\+A\+T\+I\+ON@{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}
 \index{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON@{D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
@@ -93,17 +232,199 @@ static const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{V
 
       \}
 \end{DoxyCode}
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 50 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a20f1043c9809e9eaf06632b6dae4dafe}\label{class_depth_buffer_shadow_object_a20f1043c9809e9eaf06632b6dae4dafe}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!declaration\+\_\+object\+\_\+@{declaration\+\_\+object\+\_\+}}
+\index{declaration\+\_\+object\+\_\+@{declaration\+\_\+object\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{declaration\+\_\+object\+\_\+}{declaration\_object\_}}
+{\footnotesize\ttfamily I\+Direct3\+D\+Vertex\+Declaration9 $\ast$ Depth\+Buffer\+Shadow\+Object\+::declaration\+\_\+object\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 86 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a2e91bbbf8298fdb977f762fb871ff199}\label{class_depth_buffer_shadow_object_a2e91bbbf8298fdb977f762fb871ff199}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!device\+\_\+@{device\+\_\+}}
+\index{device\+\_\+@{device\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{device\+\_\+}{device\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 Depth\+Buffer\+Shadow\+Object\+::device\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 80 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a3b6be6422a17dc7ce3006e1af50bbd7f}\label{class_depth_buffer_shadow_object_a3b6be6422a17dc7ce3006e1af50bbd7f}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!effect\+\_\+@{effect\+\_\+}}
+\index{effect\+\_\+@{effect\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{effect\+\_\+}{effect\_}}
+{\footnotesize\ttfamily L\+P\+D3\+D\+X\+E\+F\+F\+E\+CT Depth\+Buffer\+Shadow\+Object\+::effect\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 104 行目に定義があります。
+
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_aaa0b1c0ca424614c5cf7368f00fa5fa0}\label{class_depth_buffer_shadow_object_aaa0b1c0ca424614c5cf7368f00fa5fa0}} 
 \index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH@{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH}}
 \index{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH@{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
 \subsubsection{\texorpdfstring{E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH}{EFFECT\_PATH}}
 {\footnotesize\ttfamily const char $\ast$ Depth\+Buffer\+Shadow\+Object\+::\+E\+F\+F\+E\+C\+T\+\_\+\+P\+A\+TH = \char`\"{}resource/H\+L\+SL/Effect/obj/Bump\+Mapping.\+obj\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 49 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a4155ea5cadbbbae90ae677413497dda0}\label{class_depth_buffer_shadow_object_a4155ea5cadbbbae90ae677413497dda0}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!lambert\+\_\+diffuse\+\_\+light\+\_\+color\+\_\+@{lambert\+\_\+diffuse\+\_\+light\+\_\+color\+\_\+}}
+\index{lambert\+\_\+diffuse\+\_\+light\+\_\+color\+\_\+@{lambert\+\_\+diffuse\+\_\+light\+\_\+color\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{lambert\+\_\+diffuse\+\_\+light\+\_\+color\+\_\+}{lambert\_diffuse\_light\_color\_}}
+{\footnotesize\ttfamily D3\+D\+X\+H\+A\+N\+D\+LE Depth\+Buffer\+Shadow\+Object\+::lambert\+\_\+diffuse\+\_\+light\+\_\+color\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 108 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a2928e4f164d0655d1aa9aee0fe6c17a7}\label{class_depth_buffer_shadow_object_a2928e4f164d0655d1aa9aee0fe6c17a7}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!lambert\+\_\+diffuse\+\_\+light\+\_\+vector\+\_\+@{lambert\+\_\+diffuse\+\_\+light\+\_\+vector\+\_\+}}
+\index{lambert\+\_\+diffuse\+\_\+light\+\_\+vector\+\_\+@{lambert\+\_\+diffuse\+\_\+light\+\_\+vector\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{lambert\+\_\+diffuse\+\_\+light\+\_\+vector\+\_\+}{lambert\_diffuse\_light\_vector\_}}
+{\footnotesize\ttfamily D3\+D\+X\+H\+A\+N\+D\+LE Depth\+Buffer\+Shadow\+Object\+::lambert\+\_\+diffuse\+\_\+light\+\_\+vector\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 107 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a8cbcfff05093c1884d6e2c6ac15b9b0a}\label{class_depth_buffer_shadow_object_a8cbcfff05093c1884d6e2c6ac15b9b0a}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!math\+\_\+matrix\+\_\+@{math\+\_\+matrix\+\_\+}}
+\index{math\+\_\+matrix\+\_\+@{math\+\_\+matrix\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{math\+\_\+matrix\+\_\+}{math\_matrix\_}}
+{\footnotesize\ttfamily D3\+D\+X\+M\+A\+T\+R\+IX Depth\+Buffer\+Shadow\+Object\+::math\+\_\+matrix\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 83 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a9a2201b16bbf64ea9c44709c8a2de6c2}\label{class_depth_buffer_shadow_object_a9a2201b16bbf64ea9c44709c8a2de6c2}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!matrix\+\_\+\+W\+V\+P\+\_\+@{matrix\+\_\+\+W\+V\+P\+\_\+}}
+\index{matrix\+\_\+\+W\+V\+P\+\_\+@{matrix\+\_\+\+W\+V\+P\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{matrix\+\_\+\+W\+V\+P\+\_\+}{matrix\_WVP\_}}
+{\footnotesize\ttfamily D3\+D\+X\+H\+A\+N\+D\+LE Depth\+Buffer\+Shadow\+Object\+::matrix\+\_\+\+W\+V\+P\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 106 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a830c128c7b510a6d123f72fd684cd2a3}\label{class_depth_buffer_shadow_object_a830c128c7b510a6d123f72fd684cd2a3}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!normal\+\_\+texture\+\_\+@{normal\+\_\+texture\+\_\+}}
+\index{normal\+\_\+texture\+\_\+@{normal\+\_\+texture\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{normal\+\_\+texture\+\_\+}{normal\_texture\_}}
+{\footnotesize\ttfamily D3\+D\+X\+H\+A\+N\+D\+LE Depth\+Buffer\+Shadow\+Object\+::normal\+\_\+texture\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 111 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_aa3a73112a31ff2665079f86ab592559e}\label{class_depth_buffer_shadow_object_aa3a73112a31ff2665079f86ab592559e}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!old\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+@{old\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}}
+\index{old\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+@{old\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{old\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}{old\_depth\_buffer\_surface\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 Depth\+Buffer\+Shadow\+Object\+::old\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 98 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_abfeefee54df20a800a8fc33365332724}\label{class_depth_buffer_shadow_object_abfeefee54df20a800a8fc33365332724}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!old\+\_\+render\+\_\+target\+\_\+surface\+\_\+@{old\+\_\+render\+\_\+target\+\_\+surface\+\_\+}}
+\index{old\+\_\+render\+\_\+target\+\_\+surface\+\_\+@{old\+\_\+render\+\_\+target\+\_\+surface\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{old\+\_\+render\+\_\+target\+\_\+surface\+\_\+}{old\_render\_target\_surface\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 Depth\+Buffer\+Shadow\+Object\+::old\+\_\+render\+\_\+target\+\_\+surface\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 97 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_aaeb83afec448ed26aba19b2b40bb6667}\label{class_depth_buffer_shadow_object_aaeb83afec448ed26aba19b2b40bb6667}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!old\+\_\+view\+\_\+port\+\_\+@{old\+\_\+view\+\_\+port\+\_\+}}
+\index{old\+\_\+view\+\_\+port\+\_\+@{old\+\_\+view\+\_\+port\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{old\+\_\+view\+\_\+port\+\_\+}{old\_view\_port\_}}
+{\footnotesize\ttfamily D3\+D\+V\+I\+E\+W\+P\+O\+R\+T9 Depth\+Buffer\+Shadow\+Object\+::old\+\_\+view\+\_\+port\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 99 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a247d49044c3cea346785514768ecb578}\label{class_depth_buffer_shadow_object_a247d49044c3cea346785514768ecb578}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!shadow\+\_\+map\+\_\+@{shadow\+\_\+map\+\_\+}}
+\index{shadow\+\_\+map\+\_\+@{shadow\+\_\+map\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{shadow\+\_\+map\+\_\+}{shadow\_map\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Depth\+Buffer\+Shadow\+Object\+::shadow\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 89 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a6f32e81131358b61184b514e44bdb44d}\label{class_depth_buffer_shadow_object_a6f32e81131358b61184b514e44bdb44d}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!shadow\+\_\+map\+\_\+camera\+\_\+@{shadow\+\_\+map\+\_\+camera\+\_\+}}
+\index{shadow\+\_\+map\+\_\+camera\+\_\+@{shadow\+\_\+map\+\_\+camera\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{shadow\+\_\+map\+\_\+camera\+\_\+}{shadow\_map\_camera\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera}{Camera}} Depth\+Buffer\+Shadow\+Object\+::shadow\+\_\+map\+\_\+camera\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 93 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a2fe67be29e0c2c6cb1c74860d8f90b37}\label{class_depth_buffer_shadow_object_a2fe67be29e0c2c6cb1c74860d8f90b37}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!shadow\+\_\+map\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+@{shadow\+\_\+map\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}}
+\index{shadow\+\_\+map\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+@{shadow\+\_\+map\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{shadow\+\_\+map\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+}{shadow\_map\_depth\_buffer\_surface\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 Depth\+Buffer\+Shadow\+Object\+::shadow\+\_\+map\+\_\+depth\+\_\+buffer\+\_\+surface\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 91 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a083e7d970cf89fd220787393bdb2d8e2}\label{class_depth_buffer_shadow_object_a083e7d970cf89fd220787393bdb2d8e2}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!shadow\+\_\+map\+\_\+render\+\_\+target\+\_\+surface\+\_\+@{shadow\+\_\+map\+\_\+render\+\_\+target\+\_\+surface\+\_\+}}
+\index{shadow\+\_\+map\+\_\+render\+\_\+target\+\_\+surface\+\_\+@{shadow\+\_\+map\+\_\+render\+\_\+target\+\_\+surface\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{shadow\+\_\+map\+\_\+render\+\_\+target\+\_\+surface\+\_\+}{shadow\_map\_render\_target\_surface\_}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+S\+U\+R\+F\+A\+C\+E9 Depth\+Buffer\+Shadow\+Object\+::shadow\+\_\+map\+\_\+render\+\_\+target\+\_\+surface\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 90 行目に定義があります。
+
 \mbox{\Hypertarget{class_depth_buffer_shadow_object_aa7a8ac55e3de545dacb0cfde57fd1017}\label{class_depth_buffer_shadow_object_aa7a8ac55e3de545dacb0cfde57fd1017}} 
 \index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE@{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}}
 \index{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE@{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
 \subsubsection{\texorpdfstring{S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE}{SHADOW\_MAP\_SIZE}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a5ef6e95dfc5f9d3820b71772d99bbc25}{Vec2}} Depth\+Buffer\+Shadow\+Object\+::\+S\+H\+A\+D\+O\+W\+\_\+\+M\+A\+P\+\_\+\+S\+I\+ZE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 51 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_a08c029f49fa8cf59b8458d3c2be0138e}\label{class_depth_buffer_shadow_object_a08c029f49fa8cf59b8458d3c2be0138e}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!shadow\+\_\+map\+\_\+view\+\_\+port\+\_\+@{shadow\+\_\+map\+\_\+view\+\_\+port\+\_\+}}
+\index{shadow\+\_\+map\+\_\+view\+\_\+port\+\_\+@{shadow\+\_\+map\+\_\+view\+\_\+port\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{shadow\+\_\+map\+\_\+view\+\_\+port\+\_\+}{shadow\_map\_view\_port\_}}
+{\footnotesize\ttfamily D3\+D\+V\+I\+E\+W\+P\+O\+R\+T9 Depth\+Buffer\+Shadow\+Object\+::shadow\+\_\+map\+\_\+view\+\_\+port\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 92 行目に定義があります。
+
+\mbox{\Hypertarget{class_depth_buffer_shadow_object_ab8fd271667e849ed9dfbdf9de2fe9fa5}\label{class_depth_buffer_shadow_object_ab8fd271667e849ed9dfbdf9de2fe9fa5}} 
+\index{Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}!technique\+\_\+@{technique\+\_\+}}
+\index{technique\+\_\+@{technique\+\_\+}!Depth\+Buffer\+Shadow\+Object@{Depth\+Buffer\+Shadow\+Object}}
+\subsubsection{\texorpdfstring{technique\+\_\+}{technique\_}}
+{\footnotesize\ttfamily D3\+D\+X\+H\+A\+N\+D\+LE Depth\+Buffer\+Shadow\+Object\+::technique\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Depth\+Buffer\+Shadow\+Object.\+h の 105 行目に定義があります。
 
 
 

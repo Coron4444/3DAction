@@ -1,0 +1,6 @@
+<map id="CollisionNull::Uninit" name="CollisionNull::Uninit">
+<area shape="rect" id="node2" href="$class_coin_collision.html#aa852afdcdbedcf82809df9c7fd99be9e" title="終了関数 " alt="" coords="195,5,334,32"/>
+<area shape="rect" id="node3" href="$class_enemy_collision.html#a2a194c606fd162db803c70c6fed9b9e4" title="終了関数 " alt="" coords="188,56,341,83"/>
+<area shape="rect" id="node4" href="$class_goal_collision.html#ab818bad44ffcd595f1c495e659c0b348" title="終了関数 " alt="" coords="195,107,334,133"/>
+<area shape="rect" id="node5" href="$class_player_collision.html#aa1ab60a62fa2ae3231a1ea0bc8faf801" title="終了関数 " alt="" coords="190,157,339,184"/>
+</map>

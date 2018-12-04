@@ -4,10 +4,22 @@
 
 {\ttfamily \#include $<$Camera\+State\+\_\+\+Homing\+Target.\+h$>$}
 
-Camera\+State\+\_\+\+Homing\+Target の継承関係図\begin{figure}[H]
+
+
+Camera\+State\+\_\+\+Homing\+Target の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_camera_state___homing_target}
+\includegraphics[width=219pt]{class_camera_state___homing_target__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Camera\+State\+\_\+\+Homing\+Target 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_state___homing_target__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -21,6 +33,27 @@ void \mbox{\hyperlink{class_camera_state___homing_target_a98f04985c06033febdad32
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_camera_state___homing_target_a5beacf25aaff9547b5c4e32cec698e28}{Set\+Target}} (\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$target)
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$ \mbox{\hyperlink{class_camera_state___homing_target_a302d9fb35f1e46dab9a320287556c769}{target\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{class_camera_state___homing_target_a89dd98acec1474af5afb21d17fca4196}{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y}} = 5.\+0f
+\item 
+static const float \mbox{\hyperlink{class_camera_state___homing_target_ac858a396ea1e8ee84eed407321b3a140}{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Z}} = -\/15.\+0f
+\item 
+static const float \mbox{\hyperlink{class_camera_state___homing_target_ab526a9a9aef20d87a1358ca8c4b4f075}{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+L\+O\+O\+K\+\_\+\+A\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+Y}} = 1.\+0f
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+h の 39 行目に定義があります。
+
 
 
 \subsection{関数詳解}
@@ -43,11 +76,26 @@ void \mbox{\hyperlink{class_camera_state___homing_target_a5beacf25aaff9547b5c4e3
 
 \mbox{\hyperlink{class_camera_1_1_state_aa1b81471ab15e64b3117ffe7de9560ff}{Camera\+::\+State}}を実装しています。
 
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+cpp の 47 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_state___homing_target_a9222190a5f26d564e99623b05941d382_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_camera_state___homing_target_a5beacf25aaff9547b5c4e32cec698e28}\label{class_camera_state___homing_target_a5beacf25aaff9547b5c4e32cec698e28}} 
 \index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!Set\+Target@{Set\+Target}}
 \index{Set\+Target@{Set\+Target}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
 \subsubsection{\texorpdfstring{Set\+Target()}{SetTarget()}}
 {\footnotesize\ttfamily void Camera\+State\+\_\+\+Homing\+Target\+::\+Set\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}} $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+h の 56 行目に定義があります。
 
 \mbox{\Hypertarget{class_camera_state___homing_target_ab2b5379b35ebafc53189bf4d45646c8c}\label{class_camera_state___homing_target_ab2b5379b35ebafc53189bf4d45646c8c}} 
 \index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!Uninit@{Uninit}}
@@ -68,6 +116,10 @@ void \mbox{\hyperlink{class_camera_state___homing_target_a5beacf25aaff9547b5c4e3
 
 \mbox{\hyperlink{class_camera_1_1_state_adb3f43b6c3f8100da7877867180e804b}{Camera\+::\+State}}を実装しています。
 
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+h の 53 行目に定義があります。
+
 \mbox{\Hypertarget{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9}\label{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9}} 
 \index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!Update@{Update}}
 \index{Update@{Update}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
@@ -86,6 +138,67 @@ void \mbox{\hyperlink{class_camera_state___homing_target_a5beacf25aaff9547b5c4e3
 
 
 \mbox{\hyperlink{class_camera_1_1_state_a2d41e0cb783666bae6c6ea167fcc7874}{Camera\+::\+State}}を実装しています。
+
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+cpp の 60 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_state___homing_target_a98f04985c06033febdad32d6357088c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_camera_state___homing_target_ab526a9a9aef20d87a1358ca8c4b4f075}\label{class_camera_state___homing_target_ab526a9a9aef20d87a1358ca8c4b4f075}} 
+\index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+L\+O\+O\+K\+\_\+\+A\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+Y@{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+L\+O\+O\+K\+\_\+\+A\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+Y}}
+\index{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+L\+O\+O\+K\+\_\+\+A\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+Y@{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+L\+O\+O\+K\+\_\+\+A\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+Y}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
+\subsubsection{\texorpdfstring{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+L\+O\+O\+K\+\_\+\+A\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+Y}{HOMING\_CAMERA\_LOOK\_AT\_POINT\_Y}}
+{\footnotesize\ttfamily const float Camera\+State\+\_\+\+Homing\+Target\+::\+H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+L\+O\+O\+K\+\_\+\+A\+T\+\_\+\+P\+O\+I\+N\+T\+\_\+Y = 1.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+h の 46 行目に定義があります。
+
+\mbox{\Hypertarget{class_camera_state___homing_target_a89dd98acec1474af5afb21d17fca4196}\label{class_camera_state___homing_target_a89dd98acec1474af5afb21d17fca4196}} 
+\index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y@{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y}}
+\index{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y@{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
+\subsubsection{\texorpdfstring{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y}{HOMING\_CAMERA\_POSITION\_Y}}
+{\footnotesize\ttfamily const float Camera\+State\+\_\+\+Homing\+Target\+::\+H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y = 5.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+h の 44 行目に定義があります。
+
+\mbox{\Hypertarget{class_camera_state___homing_target_ac858a396ea1e8ee84eed407321b3a140}\label{class_camera_state___homing_target_ac858a396ea1e8ee84eed407321b3a140}} 
+\index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Z@{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Z}}
+\index{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Z@{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Z}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
+\subsubsection{\texorpdfstring{H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Z}{HOMING\_CAMERA\_POSITION\_Z}}
+{\footnotesize\ttfamily const float Camera\+State\+\_\+\+Homing\+Target\+::\+H\+O\+M\+I\+N\+G\+\_\+\+C\+A\+M\+E\+R\+A\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Z = -\/15.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+h の 45 行目に定義があります。
+
+\mbox{\Hypertarget{class_camera_state___homing_target_a302d9fb35f1e46dab9a320287556c769}\label{class_camera_state___homing_target_a302d9fb35f1e46dab9a320287556c769}} 
+\index{Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}!target\+\_\+@{target\+\_\+}}
+\index{target\+\_\+@{target\+\_\+}!Camera\+State\+\_\+\+Homing\+Target@{Camera\+State\+\_\+\+Homing\+Target}}
+\subsubsection{\texorpdfstring{target\+\_\+}{target\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object_base}{Game\+Object\+Base}}$\ast$ Camera\+State\+\_\+\+Homing\+Target\+::target\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Camera\+State\+\_\+\+Homing\+Target.\+h の 62 行目に定義があります。
 
 
 

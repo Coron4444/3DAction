@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Player\+Draw.\+h$>$}
 
-Player\+Draw の継承関係図\begin{figure}[H]
+
+
+Player\+Draw の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_player_draw}
+\includegraphics[width=169pt]{class_player_draw__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Player\+Draw 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_draw__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -34,12 +46,34 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 \item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb}{Get\+Normal\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}} $\ast$ \mbox{\hyperlink{class_player_draw_a01943b6dec9856ef843f7afc0f8b4c02}{player\+\_\+model\+\_\+}}
+\begin{DoxyCompactList}\small\item\em モデルオブジェクト \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_player_draw_ac106fde46e38f5ac7f33de5cc5f6fd76}{normal\+\_\+texture\+\_\+}} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em テクスチャオブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \mbox{\hyperlink{class_player_draw_a924cd73d9d8b1b2e662be2c79238354f}{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}} = \char`\"{}knight\+\_\+low/knight\+\_\+low.\+X\char`\"{}
+\begin{DoxyCompactList}\small\item\em モデル名 \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_player_draw_a808cb174528d55fb35a35b161e262e16}{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}} = \char`\"{}resource/ModelX/\char`\"{}
+\begin{DoxyCompactList}\small\item\em モデルフォルダのテクスチャパス \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_player_draw_a509edc24db83efdfeda88f12d1d6cc8c}{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+O\+D\+EL}} = \char`\"{}knight\+\_\+low/knight\+\_\+01.\+png\char`\"{}
+\begin{DoxyCompactList}\small\item\em 法線テクスチャ(モデル) \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_player_draw_aa64bacc93024e21558e2dd9227937bdb}{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+W\+O\+RD}} = \char`\"{}knight\+\_\+low/sword\+\_\+01.\+png\char`\"{}
+\begin{DoxyCompactList}\small\item\em 法線テクスチャ(剣) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 プレイヤー描画クラス 
 
 プレイヤーの描画クラス 
+
+ Player\+Draw.\+h の 31 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_player_draw_a8b9e8caa6bea7295f58a0aaddeb9458b}\label{class_player_draw_a8b9e8caa6bea7295f58a0aaddeb9458b}} 
@@ -61,6 +95,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
 
+
+
+ Player\+Draw.\+cpp の 69 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_player_draw_a8b9e8caa6bea7295f58a0aaddeb9458b_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_draw_a6cecfb28942044efff0b9d6213b511a5}\label{class_player_draw_a6cecfb28942044efff0b9d6213b511a5}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Player\+Draw@{Player\+Draw}}
@@ -71,6 +116,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 \mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
+
+
+ Player\+Draw.\+cpp の 118 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_draw_a6cecfb28942044efff0b9d6213b511a5_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_draw_ae818d3adaf5120845c2a78c230b5365e}\label{class_player_draw_ae818d3adaf5120845c2a78c230b5365e}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Player\+Draw@{Player\+Draw}}
@@ -81,6 +137,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 \mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
+
+
+ Player\+Draw.\+cpp の 106 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_draw_ae818d3adaf5120845c2a78c230b5365e_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a}\label{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Matrix@{Get\+Matrix}}
 \index{Get\+Matrix@{Get\+Matrix}!Player\+Draw@{Player\+Draw}}
@@ -91,6 +158,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
 
+
+
+ Player\+Draw.\+cpp の 82 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_draw_a8edf1441ea23f298c6a0ca707f54021a_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71}\label{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Player\+Draw@{Player\+Draw}}
@@ -101,6 +179,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 \mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
+
+
+ Player\+Draw.\+cpp の 94 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_draw_ad9e2e09a32c7474fcea5e7e24e22bc71_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb}\label{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb}} 
 \index{Player\+Draw@{Player\+Draw}!Get\+Normal\+Texture@{Get\+Normal\+Texture}}
 \index{Get\+Normal\+Texture@{Get\+Normal\+Texture}!Player\+Draw@{Player\+Draw}}
@@ -111,6 +200,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 \mbox{\hyperlink{class_draw_null_a41b7d148612b2d328e85289e32dc374c}{Draw\+Null}}を再実装しています。
 
+
+
+ Player\+Draw.\+cpp の 130 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_draw_abb93b530e38fc224ecbfe17d623f10fb_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}\label{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68}} 
 \index{Player\+Draw@{Player\+Draw}!Init@{Init}}
 \index{Init@{Init}!Player\+Draw@{Player\+Draw}}
@@ -125,6 +225,18 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
+
+
+ Player\+Draw.\+cpp の 35 行目に定義があります。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_draw_ad79a0fbeb618e0913822b573e5d0be68_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_player_draw_a917b2947914287f23d87ca75cd68f553}\label{class_player_draw_a917b2947914287f23d87ca75cd68f553}} 
 \index{Player\+Draw@{Player\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Player\+Draw@{Player\+Draw}}
@@ -138,6 +250,97 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_player_d
 
 
 \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
+
+
+
+ Player\+Draw.\+cpp の 59 行目に定義があります。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_player_draw_a924cd73d9d8b1b2e662be2c79238354f}\label{class_player_draw_a924cd73d9d8b1b2e662be2c79238354f}} 
+\index{Player\+Draw@{Player\+Draw}!M\+O\+D\+E\+L\+\_\+\+N\+A\+ME@{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}}
+\index{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME@{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+L\+\_\+\+N\+A\+ME}{MODEL\_NAME}}
+{\footnotesize\ttfamily const std\+::string Player\+Draw\+::\+M\+O\+D\+E\+L\+\_\+\+N\+A\+ME = \char`\"{}knight\+\_\+low/knight\+\_\+low.\+X\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+モデル名 
+
+
+
+ Player\+Draw.\+h の 38 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_draw_ac106fde46e38f5ac7f33de5cc5f6fd76}\label{class_player_draw_ac106fde46e38f5ac7f33de5cc5f6fd76}} 
+\index{Player\+Draw@{Player\+Draw}!normal\+\_\+texture\+\_\+@{normal\+\_\+texture\+\_\+}}
+\index{normal\+\_\+texture\+\_\+@{normal\+\_\+texture\+\_\+}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{normal\+\_\+texture\+\_\+}{normal\_texture\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}}$\ast$ Player\+Draw\+::normal\+\_\+texture\+\_\+\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+テクスチャオブジェクト 
+
+
+
+ Player\+Draw.\+h の 49 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_draw_a509edc24db83efdfeda88f12d1d6cc8c}\label{class_player_draw_a509edc24db83efdfeda88f12d1d6cc8c}} 
+\index{Player\+Draw@{Player\+Draw}!N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+O\+D\+EL@{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+O\+D\+EL}}
+\index{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+O\+D\+EL@{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+O\+D\+EL}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+O\+D\+EL}{NORMAL\_TEXTURE\_MODEL}}
+{\footnotesize\ttfamily const std\+::string Player\+Draw\+::\+N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+M\+O\+D\+EL = \char`\"{}knight\+\_\+low/knight\+\_\+01.\+png\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+法線テクスチャ(モデル) 
+
+
+
+ Player\+Draw.\+h の 40 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_draw_aa64bacc93024e21558e2dd9227937bdb}\label{class_player_draw_aa64bacc93024e21558e2dd9227937bdb}} 
+\index{Player\+Draw@{Player\+Draw}!N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+W\+O\+RD@{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+W\+O\+RD}}
+\index{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+W\+O\+RD@{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+W\+O\+RD}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+W\+O\+RD}{NORMAL\_TEXTURE\_SWORD}}
+{\footnotesize\ttfamily const std\+::string Player\+Draw\+::\+N\+O\+R\+M\+A\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+S\+W\+O\+RD = \char`\"{}knight\+\_\+low/sword\+\_\+01.\+png\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+法線テクスチャ(剣) 
+
+
+
+ Player\+Draw.\+h の 41 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_draw_a01943b6dec9856ef843f7afc0f8b4c02}\label{class_player_draw_a01943b6dec9856ef843f7afc0f8b4c02}} 
+\index{Player\+Draw@{Player\+Draw}!player\+\_\+model\+\_\+@{player\+\_\+model\+\_\+}}
+\index{player\+\_\+model\+\_\+@{player\+\_\+model\+\_\+}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{player\+\_\+model\+\_\+}{player\_model\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_x_object}{Model\+X\+Object}}$\ast$ Player\+Draw\+::player\+\_\+model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+モデルオブジェクト 
+
+
+
+ Player\+Draw.\+h の 48 行目に定義があります。
+
+\mbox{\Hypertarget{class_player_draw_a808cb174528d55fb35a35b161e262e16}\label{class_player_draw_a808cb174528d55fb35a35b161e262e16}} 
+\index{Player\+Draw@{Player\+Draw}!T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}}
+\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH@{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}!Player\+Draw@{Player\+Draw}}
+\subsubsection{\texorpdfstring{T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH}{TEXTURE\_PATH}}
+{\footnotesize\ttfamily const std\+::string Player\+Draw\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+P\+A\+TH = \char`\"{}resource/ModelX/\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+モデルフォルダのテクスチャパス 
+
+
+
+ Player\+Draw.\+h の 39 行目に定義があります。
 
 
 

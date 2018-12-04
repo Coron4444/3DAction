@@ -129,7 +129,7 @@ public:
 	void InitDevice()
 	{ 
 		// デバイスの取得
-		Renderer::GetInstance()->GetDevice(&device_);
+		Renderer::getpInstance()->getDevice(&device_);
 		if (device_ == nullptr)
 		{
 			MessageBox(nullptr, "NotGetDevice!(VertexShaderBase.cpp)", "Error", MB_OK);

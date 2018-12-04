@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_effekseer_manager-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">EffekseerManager クラス</div>  </div>
@@ -96,6 +99,14 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a>&gt;</code></p>
+<div class="dynheader">
+EffekseerManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager__coll__graph.png" border="0" usemap="#_effekseer_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_effekseer_manager_coll__map" id="_effekseer_manager_coll__map">
+<area shape="rect" id="node2" href="struct_effekseer_1_1_matrix44.html" title="行列 " alt="" coords="5,5,140,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
@@ -127,7 +138,95 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 <tr class="separator:a0b82fe25fbe1dacc0d904fb54267b2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44878c9abb7f43521c7e8a9700668a28"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_effekseer_object.html">EffekseerObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a44878c9abb7f43521c7e8a9700668a28">GetReferenceEffekseerObject</a> (const std::string *key_name)</td></tr>
 <tr class="separator:a44878c9abb7f43521c7e8a9700668a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4338611775d36aaef84ddb178b7f13ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a4338611775d36aaef84ddb178b7f13ce">EffekseerManager</a> ()=delete</td></tr>
+<tr class="separator:a4338611775d36aaef84ddb178b7f13ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e170775c5ba410dc03b59eda589688"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#ab6e170775c5ba410dc03b59eda589688">EffekseerManager</a> (const <a class="el" href="class_effekseer_manager.html">EffekseerManager</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:ab6e170775c5ba410dc03b59eda589688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade688aba495d8a9d74f2d8de98e9bb75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_effekseer_manager.html">EffekseerManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#ade688aba495d8a9d74f2d8de98e9bb75">operator=</a> (const <a class="el" href="class_effekseer_manager.html">EffekseerManager</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:ade688aba495d8a9d74f2d8de98e9bb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad6c9359de20c955af42a72c145571168"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#ad6c9359de20c955af42a72c145571168">MakeFilePath</a> (const std::string *key_name, const std::string *file_path)</td></tr>
+<tr class="separator:ad6c9359de20c955af42a72c145571168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1469d014a3d10dd38dc7d03db7f2ebfe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_effekseer_object.html">EffekseerObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a1469d014a3d10dd38dc7d03db7f2ebfe">GetReferenceEffekseerObjectFromArray</a> (<a class="el" href="class_effekseer_array.html">EffekseerArray</a> *effekseer_array)</td></tr>
+<tr class="separator:a1469d014a3d10dd38dc7d03db7f2ebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8fd5fdd35e1336974f217797c010ee3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#ab8fd5fdd35e1336974f217797c010ee3">CreateDisposableEffekseerObjectFromArray</a> (<a class="el" href="class_effekseer_array.html">EffekseerArray</a> *effekseer_array, <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> position, <a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> scale)</td></tr>
+<tr class="separator:ab8fd5fdd35e1336974f217797c010ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a9a849a395605383e9c7e7850379e8b22"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a9a849a395605383e9c7e7850379e8b22">DEFAULT_PATH</a> = &quot;resource/Effekseer/&quot;</td></tr>
+<tr class="separator:a9a849a395605383e9c7e7850379e8b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d87b5a997a223ae8b253a9eab025c3f"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a4d87b5a997a223ae8b253a9eab025c3f">MAX_SPRITE_NUM</a></td></tr>
+<tr class="separator:a4d87b5a997a223ae8b253a9eab025c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67498df05e8dda8654dd5e8a35318c95"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="class_effekseer_array.html">EffekseerArray</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a67498df05e8dda8654dd5e8a35318c95">share_effekseer_map_</a></td></tr>
+<tr class="separator:a67498df05e8dda8654dd5e8a35318c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac2968072bfe7f1077a7f78c2b968e6"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, <a class="el" href="class_effekseer_array.html">EffekseerArray</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a6ac2968072bfe7f1077a7f78c2b968e6">unique_effekseer_map_</a></td></tr>
+<tr class="separator:a6ac2968072bfe7f1077a7f78c2b968e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d1e978c13b53e668ac3c56c6a92b3a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a04d1e978c13b53e668ac3c56c6a92b3a">projection_matrix_</a></td></tr>
+<tr class="separator:a04d1e978c13b53e668ac3c56c6a92b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea3c32637818a3fab28fb7d17a03970"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_effekseer_manager.html#a0ea3c32637818a3fab28fb7d17a03970">view_matrix_</a></td></tr>
+<tr class="separator:a0ea3c32637818a3fab28fb7d17a03970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a> の <a class="el" href="_effekseer_manager_8h_source.html#l00037">37</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a4338611775d36aaef84ddb178b7f13ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4338611775d36aaef84ddb178b7f13ce">&#9670;&nbsp;</a></span>EffekseerManager() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EffekseerManager::EffekseerManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6e170775c5ba410dc03b59eda589688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e170775c5ba410dc03b59eda589688">&#9670;&nbsp;</a></span>EffekseerManager() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EffekseerManager::EffekseerManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_effekseer_manager.html">EffekseerManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">関数詳解</h2>
 <a id="aec98cb9052d849cae3f9cfee80c4c873"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec98cb9052d849cae3f9cfee80c4c873">&#9670;&nbsp;</a></span>AddShareData()</h2>
@@ -162,6 +261,16 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00216">216</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_aec98cb9052d849cae3f9cfee80c4c873_cgraph.png" border="0" usemap="#class_effekseer_manager_aec98cb9052d849cae3f9cfee80c4c873_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_aec98cb9052d849cae3f9cfee80c4c873_cgraph" id="class_effekseer_manager_aec98cb9052d849cae3f9cfee80c4c873_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#ad6c9359de20c955af42a72c145571168" title="EffekseerManager::MakeFilePath" alt="" coords="272,5,487,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -198,6 +307,26 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00241">241</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_cgraph.png" border="0" usemap="#class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_cgraph" id="class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#ad6c9359de20c955af42a72c145571168" title="EffekseerManager::MakeFilePath" alt="" coords="277,5,492,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_icgraph.png" border="0" usemap="#class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_icgraph" id="class_effekseer_manager_ad89f0ad2a840f191c088d35ddfd2ec62_icgraph">
+<area shape="rect" id="node2" href="class_goal_draw.html#a3eb0a555fa2db9d2c1253018ea65796e" title="初期化関数 " alt="" coords="301,5,404,32"/>
+<area shape="rect" id="node3" href="class_player_update.html#ac72b39db7b7bfaf094bde9ed1adef4b7" title="初期化関数 " alt="" coords="290,56,415,83"/>
+<area shape="rect" id="node4" href="class_player_update___special.html#a48906da6915325d92d5cc6ec67212259" title="初期化関数 " alt="" coords="277,107,428,149"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -241,6 +370,77 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00266">266</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a0b82fe25fbe1dacc0d904fb54267b2fa_cgraph.png" border="0" usemap="#class_effekseer_manager_a0b82fe25fbe1dacc0d904fb54267b2fa_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_a0b82fe25fbe1dacc0d904fb54267b2fa_cgraph" id="class_effekseer_manager_a0b82fe25fbe1dacc0d904fb54267b2fa_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#ab8fd5fdd35e1336974f217797c010ee3" title="EffekseerManager::Create\lDisposableEffekseerObjectFromArray" alt="" coords="232,5,471,47"/>
+<area shape="rect" id="node3" href="class_effekseer_array.html#a8c86aa79851ef86f253c13765f708383" title="EffekseerArray::CreateDisposable\lEffekseerObject" alt="" coords="519,5,736,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8fd5fdd35e1336974f217797c010ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8fd5fdd35e1336974f217797c010ee3">&#9670;&nbsp;</a></span>CreateDisposableEffekseerObjectFromArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EffekseerManager::CreateDisposableEffekseerObjectFromArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_effekseer_array.html">EffekseerArray</a> *&#160;</td>
+          <td class="paramname"><em>effekseer_array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a>&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00376">376</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_cgraph.png" border="0" usemap="#class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_cgraph" id="class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_array.html#a8c86aa79851ef86f253c13765f708383" title="EffekseerArray::CreateDisposable\lEffekseerObject" alt="" coords="292,5,509,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_icgraph.png" border="0" usemap="#class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_icgraph" id="class_effekseer_manager_ab8fd5fdd35e1336974f217797c010ee3_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#a0b82fe25fbe1dacc0d904fb54267b2fa" title="EffekseerManager::Create\lDisposableEffekseerObject" alt="" coords="292,5,471,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ae4faa1c46f9b4a372559567748df2384"></a>
@@ -266,6 +466,31 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00315">315</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_cgraph.png" border="0" usemap="#class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_cgraph" id="class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_cgraph">
+<area shape="rect" id="node2" href="struct_effekseer_1_1_matrix44.html#a01facdf54829125dfefa4b1f29210c74" title="射影行列化(左手系) " alt="" coords="225,5,360,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_icgraph.png" border="0" usemap="#class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_icgraph" id="class_effekseer_manager_ae4faa1c46f9b4a372559567748df2384_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="225,13,360,39"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="408,5,615,47"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="663,13,813,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="861,5,1015,47"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1063,13,1257,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1305,13,1456,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1504,13,1665,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1713,13,1787,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -309,6 +534,31 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00331">331</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_cgraph.png" border="0" usemap="#class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_cgraph" id="class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_cgraph">
+<area shape="rect" id="node2" href="struct_effekseer_1_1_matrix44.html#ade916ab8e0c99fe658b9d089d2bd55b9" title="カメラ行列化(左手系) " alt="" coords="225,5,360,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_icgraph.png" border="0" usemap="#class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_icgraph" id="class_effekseer_manager_ad36867f996af58d4b788a17cf25244a7_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="225,13,360,39"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="408,5,615,47"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="663,13,813,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="861,5,1015,47"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1063,13,1257,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1305,13,1456,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1504,13,1665,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1713,13,1787,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a0c9155e72b0552e5138e68be682a63a4"></a>
@@ -333,6 +583,32 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00186">186</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_cgraph.png" border="0" usemap="#class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_cgraph" id="class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_cgraph">
+<area shape="rect" id="node2" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="217,5,367,32"/>
+<area shape="rect" id="node4" href="class_renderer.html#a581267c3eeedce9b333c119d009e315c" title="Renderer::getRenderer" alt="" coords="216,56,368,83"/>
+<area shape="rect" id="node3" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="416,5,551,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_icgraph.png" border="0" usemap="#class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_icgraph" id="class_effekseer_manager_a0c9155e72b0552e5138e68be682a63a4_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="216,5,339,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="387,5,525,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="573,5,756,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="804,5,987,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1035,5,1173,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1221,5,1383,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1431,5,1504,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -360,6 +636,70 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00294">294</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_cgraph.png" border="0" usemap="#class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_cgraph" id="class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#a1469d014a3d10dd38dc7d03db7f2ebfe" title="EffekseerManager::GetReference\lEffekseerObjectFromArray" alt="" coords="267,5,480,47"/>
+<area shape="rect" id="node3" href="class_effekseer_array.html#a0bbf7d610ef2219e3699d3f26182af03" title="EffekseerArray::GetReference\lEffekseerObject" alt="" coords="528,5,723,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_icgraph.png" border="0" usemap="#class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_icgraph" id="class_effekseer_manager_a44878c9abb7f43521c7e8a9700668a28_icgraph">
+<area shape="rect" id="node2" href="class_goal_draw.html#a3eb0a555fa2db9d2c1253018ea65796e" title="初期化関数 " alt="" coords="267,13,369,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1469d014a3d10dd38dc7d03db7f2ebfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1469d014a3d10dd38dc7d03db7f2ebfe">&#9670;&nbsp;</a></span>GetReferenceEffekseerObjectFromArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_effekseer_object.html">EffekseerObject</a> * EffekseerManager::GetReferenceEffekseerObjectFromArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_effekseer_array.html">EffekseerArray</a> *&#160;</td>
+          <td class="paramname"><em>effekseer_array</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00363">363</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_cgraph.png" border="0" usemap="#class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_cgraph" id="class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_array.html#a0bbf7d610ef2219e3699d3f26182af03" title="EffekseerArray::GetReference\lEffekseerObject" alt="" coords="267,5,461,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_icgraph.png" border="0" usemap="#class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_icgraph" id="class_effekseer_manager_a1469d014a3d10dd38dc7d03db7f2ebfe_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#a44878c9abb7f43521c7e8a9700668a28" title="EffekseerManager::GetReference\lEffekseerObject" alt="" coords="267,5,480,47"/>
+<area shape="rect" id="node3" href="class_goal_draw.html#a3eb0a555fa2db9d2c1253018ea65796e" title="初期化関数 " alt="" coords="528,13,631,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac5744fba29048e417bf46a8fbf5a8e76"></a>
@@ -384,6 +724,29 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00059">59</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_cgraph.png" border="0" usemap="#class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_cgraph" id="class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#a95d9d2eda8cb691c2565d022198b5787" title="EffekseerManager::InitUniqueData" alt="" coords="247,5,465,32"/>
+<area shape="rect" id="node3" href="class_effekseer_manager.html#a881d9bdd981c35de66174363517050b4" title="EffekseerManager::InitShareData" alt="" coords="250,56,462,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_icgraph.png" border="0" usemap="#class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_icgraph" id="class_effekseer_manager_ac5744fba29048e417bf46a8fbf5a8e76_icgraph">
+<area shape="rect" id="node2" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b" title="ResourceManager::InitAllData" alt="" coords="247,5,441,32"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="489,5,624,32"/>
+<area shape="rect" id="node4" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="672,5,799,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="847,5,1008,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1056,5,1129,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -410,6 +773,22 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00074">74</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a881d9bdd981c35de66174363517050b4_icgraph.png" border="0" usemap="#class_effekseer_manager_a881d9bdd981c35de66174363517050b4_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_a881d9bdd981c35de66174363517050b4_icgraph" id="class_effekseer_manager_a881d9bdd981c35de66174363517050b4_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#ac5744fba29048e417bf46a8fbf5a8e76" title="EffekseerManager::InitAllData" alt="" coords="275,5,469,32"/>
+<area shape="rect" id="node8" href="class_resource_manager.html#af9be166f96250b01b9070a262cdb5d34" title="ResourceManager::InitShareData" alt="" coords="265,56,479,83"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b" title="ResourceManager::InitAllData" alt="" coords="527,5,721,32"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="769,5,904,32"/>
+<area shape="rect" id="node5" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="952,5,1079,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1127,5,1288,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1336,5,1409,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a95d9d2eda8cb691c2565d022198b5787"></a>
@@ -431,6 +810,98 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00088">88</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a95d9d2eda8cb691c2565d022198b5787_icgraph.png" border="0" usemap="#class_effekseer_manager_a95d9d2eda8cb691c2565d022198b5787_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_a95d9d2eda8cb691c2565d022198b5787_icgraph" id="class_effekseer_manager_a95d9d2eda8cb691c2565d022198b5787_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#ac5744fba29048e417bf46a8fbf5a8e76" title="EffekseerManager::InitAllData" alt="" coords="285,5,478,32"/>
+<area shape="rect" id="node8" href="class_resource_manager.html#ab1ea00fb7eb4006bb9cbb48612da2c79" title="ResourceManager::InitUniqueData" alt="" coords="272,56,491,83"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b" title="ResourceManager::InitAllData" alt="" coords="539,5,733,32"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="781,5,916,32"/>
+<area shape="rect" id="node5" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="964,5,1091,32"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1139,5,1300,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1348,5,1421,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad6c9359de20c955af42a72c145571168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c9359de20c955af42a72c145571168">&#9670;&nbsp;</a></span>MakeFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string EffekseerManager::MakeFilePath </td>
+          <td>(</td>
+          <td class="paramtype">const std::string *&#160;</td>
+          <td class="paramname"><em>key_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string *&#160;</td>
+          <td class="paramname"><em>file_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00346">346</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ad6c9359de20c955af42a72c145571168_icgraph.png" border="0" usemap="#class_effekseer_manager_ad6c9359de20c955af42a72c145571168_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_ad6c9359de20c955af42a72c145571168_icgraph" id="class_effekseer_manager_ad6c9359de20c955af42a72c145571168_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#aec98cb9052d849cae3f9cfee80c4c873" title="EffekseerManager::AddShareData" alt="" coords="271,5,489,32"/>
+<area shape="rect" id="node3" href="class_effekseer_manager.html#ad89f0ad2a840f191c088d35ddfd2ec62" title="EffekseerManager::AddUniqueData" alt="" coords="268,56,492,83"/>
+<area shape="rect" id="node4" href="class_goal_draw.html#a3eb0a555fa2db9d2c1253018ea65796e" title="初期化関数 " alt="" coords="564,5,667,32"/>
+<area shape="rect" id="node5" href="class_player_update.html#ac72b39db7b7bfaf094bde9ed1adef4b7" title="初期化関数 " alt="" coords="553,56,678,83"/>
+<area shape="rect" id="node6" href="class_player_update___special.html#a48906da6915325d92d5cc6ec67212259" title="初期化関数 " alt="" coords="540,107,691,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ade688aba495d8a9d74f2d8de98e9bb75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade688aba495d8a9d74f2d8de98e9bb75">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_effekseer_manager.html">EffekseerManager</a>&amp; EffekseerManager::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_effekseer_manager.html">EffekseerManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -460,6 +931,26 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00102">102</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_cgraph.png" border="0" usemap="#class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_cgraph" alt=""/></div>
+<map name="class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_cgraph" id="class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_cgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#abd448f6ec39f2306a6dc99b79aff0362" title="EffekseerManager::Uninit\lUniqueData" alt="" coords="220,5,387,47"/>
+<area shape="rect" id="node3" href="class_effekseer_manager.html#ab83021d09eeeaba41852c8db2f07fe55" title="EffekseerManager::Uninit\lShareData" alt="" coords="220,71,387,112"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_icgraph.png" border="0" usemap="#class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_icgraph" id="class_effekseer_manager_aa9f5c911182097238d979cc628f2dc13_icgraph">
+<area shape="rect" id="node2" href="class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="220,13,431,39"/>
+<area shape="rect" id="node3" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="479,13,629,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ab83021d09eeeaba41852c8db2f07fe55"></a>
@@ -484,6 +975,19 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00117">117</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_ab83021d09eeeaba41852c8db2f07fe55_icgraph.png" border="0" usemap="#class_effekseer_manager_ab83021d09eeeaba41852c8db2f07fe55_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_ab83021d09eeeaba41852c8db2f07fe55_icgraph" id="class_effekseer_manager_ab83021d09eeeaba41852c8db2f07fe55_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#aa9f5c911182097238d979cc628f2dc13" title="EffekseerManager::Uninit\lAllData" alt="" coords="251,5,418,47"/>
+<area shape="rect" id="node5" href="class_resource_manager.html#a786915d9c4df5a023a43db8c5332cb93" title="ResourceManager::UninitShareData" alt="" coords="220,71,449,98"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="497,13,708,39"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="756,13,907,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -510,6 +1014,24 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00141">141</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_abd448f6ec39f2306a6dc99b79aff0362_icgraph.png" border="0" usemap="#class_effekseer_manager_abd448f6ec39f2306a6dc99b79aff0362_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_abd448f6ec39f2306a6dc99b79aff0362_icgraph" id="class_effekseer_manager_abd448f6ec39f2306a6dc99b79aff0362_icgraph">
+<area shape="rect" id="node2" href="class_effekseer_manager.html#aa9f5c911182097238d979cc628f2dc13" title="EffekseerManager::Uninit\lAllData" alt="" coords="254,5,421,47"/>
+<area shape="rect" id="node5" href="class_resource_manager.html#abcb135906cb991a49ec6e8c8db057de1" title="ResourceManager::UninitUniqueData" alt="" coords="220,71,455,98"/>
+<area shape="rect" id="node3" href="class_resource_manager.html#a8d96f0a74a92212e8b2948467bb3cac7" title="ResourceManager::UninitAllData" alt="" coords="503,13,713,39"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="765,13,916,39"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="509,71,707,98"/>
+<area shape="rect" id="node7" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="761,71,920,98"/>
+<area shape="rect" id="node8" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="968,71,1144,98"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1192,71,1353,98"/>
+<area shape="rect" id="node10" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1401,71,1475,98"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a2278033d786e1ada0fcaa390a613a8f9"></a>
@@ -535,11 +1057,173 @@ $(document).ready(function(){initNavTree('class_effekseer_manager.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a> の <a class="el" href="_effekseer_manager_8cpp_source.html#l00165">165</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_effekseer_manager_a2278033d786e1ada0fcaa390a613a8f9_icgraph.png" border="0" usemap="#class_effekseer_manager_a2278033d786e1ada0fcaa390a613a8f9_icgraph" alt=""/></div>
+<map name="class_effekseer_manager_a2278033d786e1ada0fcaa390a613a8f9_icgraph" id="class_effekseer_manager_a2278033d786e1ada0fcaa390a613a8f9_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="228,13,363,39"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="411,5,617,47"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="665,13,816,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="864,5,1017,47"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1065,13,1260,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1308,13,1459,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1507,13,1668,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1716,13,1789,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9a849a395605383e9c7e7850379e8b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a849a395605383e9c7e7850379e8b22">&#9670;&nbsp;</a></span>DEFAULT_PATH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string EffekseerManager::DEFAULT_PATH = &quot;resource/Effekseer/&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a> の <a class="el" href="_effekseer_manager_8h_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a4d87b5a997a223ae8b253a9eab025c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d87b5a997a223ae8b253a9eab025c3f">&#9670;&nbsp;</a></span>MAX_SPRITE_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int EffekseerManager::MAX_SPRITE_NUM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a> の <a class="el" href="_effekseer_manager_8h_source.html#l00042">42</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a04d1e978c13b53e668ac3c56c6a92b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d1e978c13b53e668ac3c56c6a92b3a">&#9670;&nbsp;</a></span>projection_matrix_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> EffekseerManager::projection_matrix_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a> の <a class="el" href="_effekseer_manager_8h_source.html#l00105">105</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a67498df05e8dda8654dd5e8a35318c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67498df05e8dda8654dd5e8a35318c95">&#9670;&nbsp;</a></span>share_effekseer_map_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string, <a class="el" href="class_effekseer_array.html">EffekseerArray</a> * &gt; EffekseerManager::share_effekseer_map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a> の <a class="el" href="_effekseer_manager_8h_source.html#l00101">101</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6ac2968072bfe7f1077a7f78c2b968e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac2968072bfe7f1077a7f78c2b968e6">&#9670;&nbsp;</a></span>unique_effekseer_map_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string, <a class="el" href="class_effekseer_array.html">EffekseerArray</a> * &gt; EffekseerManager::unique_effekseer_map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a> の <a class="el" href="_effekseer_manager_8h_source.html#l00102">102</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0ea3c32637818a3fab28fb7d17a03970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ea3c32637818a3fab28fb7d17a03970">&#9670;&nbsp;</a></span>view_matrix_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_effekseer_1_1_matrix44.html">Effekseer::Matrix44</a> EffekseerManager::view_matrix_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a> の <a class="el" href="_effekseer_manager_8h_source.html#l00106">106</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/EffekseerManager/<a class="el" href="_effekseer_manager_8h_source.html">EffekseerManager.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/EffekseerManager/<a class="el" href="_effekseer_manager_8cpp.html">EffekseerManager.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/05_Resource/Effekseer/EffekseerManager/<a class="el" href="_effekseer_manager_8cpp_source.html">EffekseerManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

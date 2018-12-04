@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 <a href="#pub-types">公開型</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_camera-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">Camera クラス</div>  </div>
@@ -102,6 +103,16 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
  <a href="class_camera.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="_camera_8h_source.html">Camera.h</a>&gt;</code></p>
+<div class="dynheader">
+Camera 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera__coll__graph.png" border="0" usemap="#_camera_coll__map" alt="Collaboration graph"/></div>
+<map name="_camera_coll__map" id="_camera_coll__map">
+<area shape="rect" id="node2" href="class_axis_vector.html" title="AxisVector" alt="" coords="117,253,204,279"/>
+<area shape="rect" id="node3" href="class_vector3_d.html" title="Vector3D" alt="" coords="19,81,95,108"/>
+<area shape="rect" id="node5" href="class_camera_1_1_state.html" title="カメラステートクラス " alt="" coords="229,253,335,279"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
@@ -184,10 +195,51 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 <tr class="memitem:a0e0f326c66006cf7f9dc29b3e2b86b81"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a0e0f326c66006cf7f9dc29b3e2b86b81">DEFAULT_ANGLE_OF_VIEW</a> = 60</td></tr>
 <tr class="memdesc:a0e0f326c66006cf7f9dc29b3e2b86b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">画角  <a href="#a0e0f326c66006cf7f9dc29b3e2b86b81">[詳解]</a><br /></td></tr>
 <tr class="separator:a0e0f326c66006cf7f9dc29b3e2b86b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a0a3450c7cdfaa59456d92779ac9ea574"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a0a3450c7cdfaa59456d92779ac9ea574">position_</a></td></tr>
+<tr class="memdesc:a0a3450c7cdfaa59456d92779ac9ea574"><td class="mdescLeft">&#160;</td><td class="mdescRight">座標  <a href="#a0a3450c7cdfaa59456d92779ac9ea574">[詳解]</a><br /></td></tr>
+<tr class="separator:a0a3450c7cdfaa59456d92779ac9ea574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8253e46e7580737e7d22afae9aa5c0b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a8253e46e7580737e7d22afae9aa5c0b6">look_at_point_</a></td></tr>
+<tr class="memdesc:a8253e46e7580737e7d22afae9aa5c0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">注視点  <a href="#a8253e46e7580737e7d22afae9aa5c0b6">[詳解]</a><br /></td></tr>
+<tr class="separator:a8253e46e7580737e7d22afae9aa5c0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df7d311c10a0c640ac480cb5cbada83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a8df7d311c10a0c640ac480cb5cbada83">up_</a></td></tr>
+<tr class="memdesc:a8df7d311c10a0c640ac480cb5cbada83"><td class="mdescLeft">&#160;</td><td class="mdescRight">上ベクトル  <a href="#a8df7d311c10a0c640ac480cb5cbada83">[詳解]</a><br /></td></tr>
+<tr class="separator:a8df7d311c10a0c640ac480cb5cbada83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8ccaf83b140c65c458aa5d0077806c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a8c8ccaf83b140c65c458aa5d0077806c">angle_of_view_</a></td></tr>
+<tr class="memdesc:a8c8ccaf83b140c65c458aa5d0077806c"><td class="mdescLeft">&#160;</td><td class="mdescRight">画角  <a href="#a8c8ccaf83b140c65c458aa5d0077806c">[詳解]</a><br /></td></tr>
+<tr class="separator:a8c8ccaf83b140c65c458aa5d0077806c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad803bf87c68409f7f60836ae8fc25ab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis_vector.html">AxisVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad803bf87c68409f7f60836ae8fc25ab0">axis_</a></td></tr>
+<tr class="memdesc:ad803bf87c68409f7f60836ae8fc25ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">軸  <a href="#ad803bf87c68409f7f60836ae8fc25ab0">[詳解]</a><br /></td></tr>
+<tr class="separator:ad803bf87c68409f7f60836ae8fc25ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5839ccb2cd4931e904a7a6cd412260ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a5839ccb2cd4931e904a7a6cd412260ad">view_</a></td></tr>
+<tr class="memdesc:a5839ccb2cd4931e904a7a6cd412260ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビュー行列  <a href="#a5839ccb2cd4931e904a7a6cd412260ad">[詳解]</a><br /></td></tr>
+<tr class="separator:a5839ccb2cd4931e904a7a6cd412260ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dbadc718d75c621fec94b76365ca57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af6dbadc718d75c621fec94b76365ca57">view_2D_</a></td></tr>
+<tr class="memdesc:af6dbadc718d75c621fec94b76365ca57"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビュー行列(2D)  <a href="#af6dbadc718d75c621fec94b76365ca57">[詳解]</a><br /></td></tr>
+<tr class="separator:af6dbadc718d75c621fec94b76365ca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0abb153efc1642da91ec0716847231c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ab0abb153efc1642da91ec0716847231c">projection_perspective_</a></td></tr>
+<tr class="memdesc:ab0abb153efc1642da91ec0716847231c"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロジェクション行列(透視投影)  <a href="#ab0abb153efc1642da91ec0716847231c">[詳解]</a><br /></td></tr>
+<tr class="separator:ab0abb153efc1642da91ec0716847231c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624f360dabc01f89cc988ca16599eff4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a624f360dabc01f89cc988ca16599eff4">projection_ortho_</a></td></tr>
+<tr class="memdesc:a624f360dabc01f89cc988ca16599eff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロジェクション行列(正射影)  <a href="#a624f360dabc01f89cc988ca16599eff4">[詳解]</a><br /></td></tr>
+<tr class="separator:a624f360dabc01f89cc988ca16599eff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67951793f883b6b9372ea08213278eee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a67951793f883b6b9372ea08213278eee">projection_2D_</a></td></tr>
+<tr class="memdesc:a67951793f883b6b9372ea08213278eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロジェクション行列(2D)  <a href="#a67951793f883b6b9372ea08213278eee">[詳解]</a><br /></td></tr>
+<tr class="separator:a67951793f883b6b9372ea08213278eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f0ce08b9fee8a4481b323f2856b245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_1_1_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ab2f0ce08b9fee8a4481b323f2856b245">state_</a> = nullptr</td></tr>
+<tr class="memdesc:ab2f0ce08b9fee8a4481b323f2856b245"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステート  <a href="#ab2f0ce08b9fee8a4481b323f2856b245">[詳解]</a><br /></td></tr>
+<tr class="separator:ab2f0ce08b9fee8a4481b323f2856b245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f6d287c98a979a2ca1579eb928d9aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a18f6d287c98a979a2ca1579eb928d9aa">type_</a> = Type::PERSPECTIVE</td></tr>
+<tr class="memdesc:a18f6d287c98a979a2ca1579eb928d9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイプ  <a href="#a18f6d287c98a979a2ca1579eb928d9aa">[詳解]</a><br /></td></tr>
+<tr class="separator:a18f6d287c98a979a2ca1579eb928d9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>カメラクラス </p>
 <p>カメラのクラス </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00026">26</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">列挙型メンバ詳解</h2>
 <a id="a3b0a1f58deca679ac665f61c480d1dcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b0a1f58deca679ac665f61c480d1dcb">&#9670;&nbsp;</a></span>Type</h2>
@@ -207,6 +259,8 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 <tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcbaa144a5dc97bc343a7ef630cf23b09a76"></a>TWO_DIMENSIONAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a3b0a1f58deca679ac665f61c480d1dcba7a6334fc8418deee4c453e1c7a366efa"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00085">85</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -229,6 +283,29 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 <p>カメラステートの変更 </p>
 
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00149">149</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_abb88028a49a71e9a6774d58076816dbf_cgraph.png" border="0" usemap="#class_camera_abb88028a49a71e9a6774d58076816dbf_cgraph" alt=""/></div>
+<map name="class_camera_abb88028a49a71e9a6774d58076816dbf_cgraph" id="class_camera_abb88028a49a71e9a6774d58076816dbf_cgraph">
+<area shape="rect" id="node2" href="class_camera_1_1_state.html#adb3f43b6c3f8100da7877867180e804b" title="終了関数 " alt="" coords="204,5,351,32"/>
+<area shape="rect" id="node3" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="205,56,349,83"/>
+<area shape="rect" id="node4" href="class_camera_1_1_state.html#aa1b81471ab15e64b3117ffe7de9560ff" title="初期化関数 " alt="" coords="212,107,343,133"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_abb88028a49a71e9a6774d58076816dbf_icgraph.png" border="0" usemap="#class_camera_abb88028a49a71e9a6774d58076816dbf_icgraph" alt=""/></div>
+<map name="class_camera_abb88028a49a71e9a6774d58076816dbf_icgraph" id="class_camera_abb88028a49a71e9a6774d58076816dbf_icgraph">
+<area shape="rect" id="node2" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="205,5,365,47"/>
+<area shape="rect" id="node3" href="class_result_scene_state___start.html#a615c7e05efd2320b8956c5fd94398f55" title="初期化関数 " alt="" coords="204,71,367,112"/>
+<area shape="rect" id="node4" href="class_title_scene_state___start.html#a3e785ba088ac3fd0989fd657e5d0cd34" title="初期化関数 " alt="" coords="211,136,360,177"/>
+<area shape="rect" id="node5" href="class_tutorial_scene_state___start.html#acd4cd7e4efeebffa9616d7ca31c7b1c0" title="初期化関数 " alt="" coords="219,201,351,243"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aaae8043a952b7675d209bdc9b80bcc3f"></a>
@@ -247,6 +324,23 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </div><div class="memdoc">
 
 <p>プロジェクション行列作成関数(2D) </p>
+
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00134">134</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_aaae8043a952b7675d209bdc9b80bcc3f_icgraph.png" border="0" usemap="#class_camera_aaae8043a952b7675d209bdc9b80bcc3f_icgraph" alt=""/></div>
+<map name="class_camera_aaae8043a952b7675d209bdc9b80bcc3f_icgraph" id="class_camera_aaae8043a952b7675d209bdc9b80bcc3f_icgraph">
+<area shape="rect" id="node2" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="224,13,316,39"/>
+<area shape="rect" id="node3" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="364,13,475,39"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="523,13,649,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="697,13,868,39"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="916,13,1051,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1099,13,1225,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1273,13,1435,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1483,13,1556,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -267,6 +361,24 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 <p>プロジェクション行列作成関数(正射影行列) </p>
 
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00118">118</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a215010fc78cb35ed588ac9676c166f64_icgraph.png" border="0" usemap="#class_camera_a215010fc78cb35ed588ac9676c166f64_icgraph" alt=""/></div>
+<map name="class_camera_a215010fc78cb35ed588ac9676c166f64_icgraph" id="class_camera_a215010fc78cb35ed588ac9676c166f64_icgraph">
+<area shape="rect" id="node2" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="263,5,355,32"/>
+<area shape="rect" id="node10" href="class_camera.html#a4c22c8ceed9126db627df9be7eb53a42" title="Camera::SetAngleOfView" alt="" coords="224,56,393,83"/>
+<area shape="rect" id="node3" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="441,5,552,32"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="600,5,727,32"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="775,5,945,32"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="993,5,1128,32"/>
+<area shape="rect" id="node7" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1176,5,1303,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1351,5,1512,32"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1560,5,1633,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a1786fe1adbe95e2ffa2de4cdb114546a"></a>
@@ -286,6 +398,24 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 <p>プロジェクション行列作成関数(透視投影行列) </p>
 
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00101">101</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a1786fe1adbe95e2ffa2de4cdb114546a_icgraph.png" border="0" usemap="#class_camera_a1786fe1adbe95e2ffa2de4cdb114546a_icgraph" alt=""/></div>
+<map name="class_camera_a1786fe1adbe95e2ffa2de4cdb114546a_icgraph" id="class_camera_a1786fe1adbe95e2ffa2de4cdb114546a_icgraph">
+<area shape="rect" id="node2" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="263,5,355,32"/>
+<area shape="rect" id="node10" href="class_camera.html#a4c22c8ceed9126db627df9be7eb53a42" title="Camera::SetAngleOfView" alt="" coords="224,56,393,83"/>
+<area shape="rect" id="node3" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="441,5,552,32"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="600,5,727,32"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="775,5,945,32"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="993,5,1128,32"/>
+<area shape="rect" id="node7" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1176,5,1303,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1351,5,1512,32"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1560,5,1633,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a5b4993ffb218536cb31d6d5224453b1a"></a>
@@ -304,6 +434,31 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </div><div class="memdoc">
 
 <p>ビュー行列作成関数 </p>
+
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00087">87</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a5b4993ffb218536cb31d6d5224453b1a_icgraph.png" border="0" usemap="#class_camera_a5b4993ffb218536cb31d6d5224453b1a_icgraph" alt=""/></div>
+<map name="class_camera_a5b4993ffb218536cb31d6d5224453b1a_icgraph" id="class_camera_a5b4993ffb218536cb31d6d5224453b1a_icgraph">
+<area shape="rect" id="node2" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="271,8,363,35"/>
+<area shape="rect" id="node10" href="class_camera.html#a4a596a3ea1fdc7d244ba4268031a360b" title="更新関数 " alt="" coords="259,60,375,87"/>
+<area shape="rect" id="node17" href="class_depth_buffer_shadow_object.html#ac575084492645de134c6f1990ed7d2dc" title="DepthBufferShadowObject\l::SetRenderTarget" alt="" coords="231,111,404,153"/>
+<area shape="rect" id="node3" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="464,7,575,33"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="675,5,801,32"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="889,5,1060,32"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="1117,5,1252,32"/>
+<area shape="rect" id="node7" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="1564,8,1691,35"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1751,35,1912,61"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1960,35,2033,61"/>
+<area shape="rect" id="node11" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="452,64,587,91"/>
+<area shape="rect" id="node12" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="635,57,841,98"/>
+<area shape="rect" id="node13" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="899,64,1050,91"/>
+<area shape="rect" id="node14" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1108,57,1261,98"/>
+<area shape="rect" id="node15" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1309,60,1504,87"/>
+<area shape="rect" id="node16" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1552,60,1703,87"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -330,6 +485,23 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00191">191</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a9d54f574c141e6007d98ccd905501632_icgraph.png" border="0" usemap="#class_camera_a9d54f574c141e6007d98ccd905501632_icgraph" alt=""/></div>
+<map name="class_camera_a9d54f574c141e6007d98ccd905501632_icgraph" id="class_camera_a9d54f574c141e6007d98ccd905501632_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="224,13,359,39"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="407,5,613,47"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="661,13,812,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="860,5,1013,47"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1061,13,1256,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1304,13,1455,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1503,13,1664,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1712,13,1785,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a62c4371143e87e34c70d27f2728987d9"></a>
@@ -354,6 +526,16 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00198">198</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a62c4371143e87e34c70d27f2728987d9_icgraph.png" border="0" usemap="#class_camera_a62c4371143e87e34c70d27f2728987d9_icgraph" alt=""/></div>
+<map name="class_camera_a62c4371143e87e34c70d27f2728987d9_icgraph" id="class_camera_a62c4371143e87e34c70d27f2728987d9_icgraph">
+<area shape="rect" id="node2" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="176,5,329,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -380,6 +562,16 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00200">200</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a47e72bd04f7aaac1657d7bce5322b97c_icgraph.png" border="0" usemap="#class_camera_a47e72bd04f7aaac1657d7bce5322b97c_icgraph" alt=""/></div>
+<map name="class_camera_a47e72bd04f7aaac1657d7bce5322b97c_icgraph" id="class_camera_a47e72bd04f7aaac1657d7bce5322b97c_icgraph">
+<area shape="rect" id="node2" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="225,5,385,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aec9441c5c1924df0a0cacbcf28c839e2"></a>
@@ -404,6 +596,16 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00199">199</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_aec9441c5c1924df0a0cacbcf28c839e2_cgraph.png" border="0" usemap="#class_camera_aec9441c5c1924df0a0cacbcf28c839e2_cgraph" alt=""/></div>
+<map name="class_camera_aec9441c5c1924df0a0cacbcf28c839e2_cgraph" id="class_camera_aec9441c5c1924df0a0cacbcf28c839e2_cgraph">
+<area shape="rect" id="node2" href="class_axis_vector.html#a79013d5b090ce9232d57f528f18e982e" title="AxisVector::GetForawrd" alt="" coords="233,5,395,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -430,6 +632,27 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00189">189</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a4cc3e87e6522b4a1ae72eab5b87430a6_icgraph.png" border="0" usemap="#class_camera_a4cc3e87e6522b4a1ae72eab5b87430a6_icgraph" alt=""/></div>
+<map name="class_camera_a4cc3e87e6522b4a1ae72eab5b87430a6_icgraph" id="class_camera_a4cc3e87e6522b4a1ae72eab5b87430a6_icgraph">
+<area shape="rect" id="node2" href="class_camera_state___crawl_up.html#a43a47eb4e7445c6801e8316c5a635709" title="初期化関数 " alt="" coords="236,5,389,47"/>
+<area shape="rect" id="node3" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="236,71,389,112"/>
+<area shape="rect" id="node4" href="class_camera_state___homing_target.html#a98f04985c06033febdad32d6357088c9" title="更新関数 " alt="" coords="220,136,405,177"/>
+<area shape="rect" id="node6" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="245,203,380,230"/>
+<area shape="rect" id="node5" href="class_camera_state___homing_target.html#a9222190a5f26d564e99623b05941d382" title="初期化関数 " alt="" coords="464,133,649,175"/>
+<area shape="rect" id="node7" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="453,199,660,240"/>
+<area shape="rect" id="node8" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="708,206,859,233"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="907,199,1060,240"/>
+<area shape="rect" id="node10" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1108,206,1303,233"/>
+<area shape="rect" id="node11" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1351,206,1501,233"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1549,206,1711,233"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1759,206,1832,233"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a18f380bd6b2c42162c8fcf7e4441a355"></a>
@@ -454,6 +677,29 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00188">188</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a18f380bd6b2c42162c8fcf7e4441a355_icgraph.png" border="0" usemap="#class_camera_a18f380bd6b2c42162c8fcf7e4441a355_icgraph" alt=""/></div>
+<map name="class_camera_a18f380bd6b2c42162c8fcf7e4441a355_icgraph" id="class_camera_a18f380bd6b2c42162c8fcf7e4441a355_icgraph">
+<area shape="rect" id="node2" href="class_camera_state___crawl_up.html#a43a47eb4e7445c6801e8316c5a635709" title="初期化関数 " alt="" coords="209,5,363,47"/>
+<area shape="rect" id="node3" href="class_camera_state___crawl_up.html#aaebd2634f1677b7c00e6761ed91e1264" title="更新関数 " alt="" coords="209,71,363,112"/>
+<area shape="rect" id="node4" href="class_camera_state___homing_target.html#a98f04985c06033febdad32d6357088c9" title="更新関数 " alt="" coords="193,136,379,177"/>
+<area shape="rect" id="node6" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="452,227,587,254"/>
+<area shape="rect" id="node14" href="class_back_buffer.html#af363b4d69affd48a1b0f65a000ff12b5" title="透明描画基底クラスのソート関数 " alt="" coords="193,253,379,279"/>
+<area shape="rect" id="node15" href="class_depth_buffer_shadow_object.html#ac575084492645de134c6f1990ed7d2dc" title="DepthBufferShadowObject\l::SetRenderTarget" alt="" coords="199,304,373,345"/>
+<area shape="rect" id="node5" href="class_camera_state___homing_target.html#a9222190a5f26d564e99623b05941d382" title="初期化関数 " alt="" coords="427,136,612,177"/>
+<area shape="rect" id="node7" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="660,220,867,261"/>
+<area shape="rect" id="node8" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="915,227,1065,254"/>
+<area shape="rect" id="node9" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1113,220,1267,261"/>
+<area shape="rect" id="node10" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1315,227,1509,254"/>
+<area shape="rect" id="node11" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1557,227,1708,254"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1756,227,1917,254"/>
+<area shape="rect" id="node13" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1965,227,2039,254"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -480,6 +726,25 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00182">182</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a473a7a8408bc7a1fdd46d12fa3852846_icgraph.png" border="0" usemap="#class_camera_a473a7a8408bc7a1fdd46d12fa3852846_icgraph" alt=""/></div>
+<map name="class_camera_a473a7a8408bc7a1fdd46d12fa3852846_icgraph" id="class_camera_a473a7a8408bc7a1fdd46d12fa3852846_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="275,5,397,32"/>
+<area shape="rect" id="node9" href="class_depth_buffer_shadow_object.html#a7916c03b90a01c71a9050e721cf6810c" title="DepthBufferShadowObject\l::Draw_Pass0" alt="" coords="249,57,423,98"/>
+<area shape="rect" id="node10" href="class_vertex_shader_bump_mapping.html#a7979584d035fff86d386c99617a8dd2c" title="共通設定関数 " alt="" coords="244,122,428,163"/>
+<area shape="rect" id="node11" href="class_vertex_shader_fixed.html#a82bf2829b6fd0df26faedcbf650ba08d" title="共通設定関数 " alt="" coords="265,187,407,229"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="476,5,615,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="663,5,845,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="893,5,1076,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1124,5,1263,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1311,5,1472,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1520,5,1593,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a3bda45b352bfa163c306c638a2aee1f6"></a>
@@ -504,6 +769,17 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00201">201</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a3bda45b352bfa163c306c638a2aee1f6_icgraph.png" border="0" usemap="#class_camera_a3bda45b352bfa163c306c638a2aee1f6_icgraph" alt=""/></div>
+<map name="class_camera_a3bda45b352bfa163c306c638a2aee1f6_icgraph" id="class_camera_a3bda45b352bfa163c306c638a2aee1f6_icgraph">
+<area shape="rect" id="node2" href="class_draw_base.html#aa18abd488181eed72822f92a0f2521fe" title="限定カメラタイプ変更関数 " alt="" coords="177,13,425,39"/>
+<area shape="rect" id="node3" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c" title="描画前設定関数 " alt="" coords="473,5,636,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -530,6 +806,23 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00190">190</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_aa767cb71ea435cee1e42effc912904eb_icgraph.png" border="0" usemap="#class_camera_aa767cb71ea435cee1e42effc912904eb_icgraph" alt=""/></div>
+<map name="class_camera_aa767cb71ea435cee1e42effc912904eb_icgraph" id="class_camera_aa767cb71ea435cee1e42effc912904eb_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="165,13,300,39"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="348,5,555,47"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="603,13,753,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="801,5,955,47"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1003,13,1197,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1245,13,1396,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1444,13,1605,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1653,13,1727,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aa472374f61480c5a9dff89d30be029f4"></a>
@@ -554,6 +847,33 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00177">177</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_aa472374f61480c5a9dff89d30be029f4_icgraph.png" border="0" usemap="#class_camera_aa472374f61480c5a9dff89d30be029f4_icgraph" alt=""/></div>
+<map name="class_camera_aa472374f61480c5a9dff89d30be029f4_icgraph" id="class_camera_aa472374f61480c5a9dff89d30be029f4_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="244,5,367,32"/>
+<area shape="rect" id="node9" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="224,57,387,98"/>
+<area shape="rect" id="node17" href="class_depth_buffer_shadow_object.html#a7916c03b90a01c71a9050e721cf6810c" title="DepthBufferShadowObject\l::Draw_Pass0" alt="" coords="219,122,392,163"/>
+<area shape="rect" id="node18" href="class_vertex_shader_bump_mapping.html#a7979584d035fff86d386c99617a8dd2c" title="共通設定関数 " alt="" coords="213,187,397,229"/>
+<area shape="rect" id="node19" href="class_vertex_shader_fixed.html#a82bf2829b6fd0df26faedcbf650ba08d" title="共通設定関数 " alt="" coords="235,253,376,294"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="455,5,594,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="652,5,835,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="895,5,1077,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1343,5,1482,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1979,33,2140,60"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2188,33,2261,60"/>
+<area shape="rect" id="node10" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="445,57,604,98"/>
+<area shape="rect" id="node11" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="676,64,811,91"/>
+<area shape="rect" id="node12" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="883,57,1089,98"/>
+<area shape="rect" id="node13" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1137,64,1288,91"/>
+<area shape="rect" id="node14" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1336,57,1489,98"/>
+<area shape="rect" id="node15" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1537,60,1732,87"/>
+<area shape="rect" id="node16" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1780,59,1931,85"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -603,6 +923,39 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </dd>
 </dl>
 
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00035">35</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a03e3ca8b70417632f7b1b581426ec66d_cgraph.png" border="0" usemap="#class_camera_a03e3ca8b70417632f7b1b581426ec66d_cgraph" alt=""/></div>
+<map name="class_camera_a03e3ca8b70417632f7b1b581426ec66d_cgraph" id="class_camera_a03e3ca8b70417632f7b1b581426ec66d_cgraph">
+<area shape="rect" id="node2" href="class_axis_vector.html#ac429404c0b565c24307da4442e49bb61" title="AxisVector::SetForward" alt="" coords="154,42,314,69"/>
+<area shape="rect" id="node7" href="class_camera_1_1_state.html#aa1b81471ab15e64b3117ffe7de9560ff" title="初期化関数 " alt="" coords="169,93,299,119"/>
+<area shape="rect" id="node8" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a" title="ビュー行列作成関数 " alt="" coords="145,143,323,170"/>
+<area shape="rect" id="node9" href="class_camera.html#a1786fe1adbe95e2ffa2de4cdb114546a" title="プロジェクション行列作成関数(透視投影行列) " alt="" coords="149,195,319,236"/>
+<area shape="rect" id="node10" href="class_camera.html#a215010fc78cb35ed588ac9676c166f64" title="プロジェクション行列作成関数(正射影行列) " alt="" coords="149,260,319,301"/>
+<area shape="rect" id="node11" href="class_camera.html#aaae8043a952b7675d209bdc9b80bcc3f" title="プロジェクション行列作成関数(2D) " alt="" coords="149,325,319,367"/>
+<area shape="rect" id="node3" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="379,5,563,47"/>
+<area shape="rect" id="node5" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="371,71,571,98"/>
+<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="619,13,813,39"/>
+<area shape="rect" id="node6" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="626,71,806,98"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a03e3ca8b70417632f7b1b581426ec66d_icgraph.png" border="0" usemap="#class_camera_a03e3ca8b70417632f7b1b581426ec66d_icgraph" alt=""/></div>
+<map name="class_camera_a03e3ca8b70417632f7b1b581426ec66d_icgraph" id="class_camera_a03e3ca8b70417632f7b1b581426ec66d_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="145,5,256,32"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="304,5,431,32"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="479,5,649,32"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="697,5,832,32"/>
+<area shape="rect" id="node6" href="class_game_system.html#ad4c08500b98490e00ce87a770bb5e981" title="初期化関数 " alt="" coords="880,5,1007,32"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1055,5,1216,32"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1264,5,1337,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a4c22c8ceed9126db627df9be7eb53a42"></a>
@@ -628,6 +981,17 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00192">192</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a4c22c8ceed9126db627df9be7eb53a42_cgraph.png" border="0" usemap="#class_camera_a4c22c8ceed9126db627df9be7eb53a42_cgraph" alt=""/></div>
+<map name="class_camera_a4c22c8ceed9126db627df9be7eb53a42_cgraph" id="class_camera_a4c22c8ceed9126db627df9be7eb53a42_cgraph">
+<area shape="rect" id="node2" href="class_camera.html#a1786fe1adbe95e2ffa2de4cdb114546a" title="プロジェクション行列作成関数(透視投影行列) " alt="" coords="223,5,393,47"/>
+<area shape="rect" id="node3" href="class_camera.html#a215010fc78cb35ed588ac9676c166f64" title="プロジェクション行列作成関数(正射影行列) " alt="" coords="223,71,393,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -655,6 +1019,34 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00202">202</a> 行目に定義があります。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a6218126e761a8289c6e6bc8c66b05e47_icgraph.png" border="0" usemap="#class_camera_a6218126e761a8289c6e6bc8c66b05e47_icgraph" alt=""/></div>
+<map name="class_camera_a6218126e761a8289c6e6bc8c66b05e47_icgraph" id="class_camera_a6218126e761a8289c6e6bc8c66b05e47_icgraph">
+<area shape="rect" id="node2" href="class_draw_base.html#aa18abd488181eed72822f92a0f2521fe" title="限定カメラタイプ変更関数 " alt="" coords="176,19,424,46"/>
+<area shape="rect" id="node4" href="class_draw_base.html#a48b144e61928b7658c7a849017e40c79" title="カメラタイプ復活関数 " alt="" coords="199,74,401,101"/>
+<area shape="rect" id="node6" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="492,175,615,202"/>
+<area shape="rect" id="node13" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="221,227,379,268"/>
+<area shape="rect" id="node20" href="class_back_buffer.html#a9835a5db9850f774a382c4f8e611b1d1" title="フェード描画関数 " alt="" coords="225,175,375,202"/>
+<area shape="rect" id="node3" href="class_stencil_shadow_test_draw.html#a0f697b6dad67048c7f8916a53cca6b1c" title="描画前設定関数 " alt="" coords="472,5,635,47"/>
+<area shape="rect" id="node5" href="class_stencil_shadow_test_draw.html#a68917115d3f151ed91ce297924ee5bbb" title="描画後設定関数 " alt="" coords="472,71,635,112"/>
+<area shape="rect" id="node7" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="717,175,855,202"/>
+<area shape="rect" id="node8" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="937,175,1120,202"/>
+<area shape="rect" id="node9" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1168,175,1351,202"/>
+<area shape="rect" id="node10" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1647,178,1786,205"/>
+<area shape="rect" id="node11" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1840,205,2001,231"/>
+<area shape="rect" id="node12" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2049,205,2123,231"/>
+<area shape="rect" id="node14" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="486,234,621,261"/>
+<area shape="rect" id="node15" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="683,227,889,268"/>
+<area shape="rect" id="node16" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="953,234,1104,261"/>
+<area shape="rect" id="node17" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1183,227,1336,268"/>
+<area shape="rect" id="node18" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1399,230,1593,257"/>
+<area shape="rect" id="node19" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1641,230,1792,257"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a8b3337b3e560ea6a780d646bc8c509d7"></a>
@@ -673,6 +1065,31 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </div><div class="memdoc">
 
 <p>終了関数 </p>
+
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00065">65</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a8b3337b3e560ea6a780d646bc8c509d7_cgraph.png" border="0" usemap="#class_camera_a8b3337b3e560ea6a780d646bc8c509d7_cgraph" alt=""/></div>
+<map name="class_camera_a8b3337b3e560ea6a780d646bc8c509d7_cgraph" id="class_camera_a8b3337b3e560ea6a780d646bc8c509d7_cgraph">
+<area shape="rect" id="node2" href="class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="161,5,324,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a8b3337b3e560ea6a780d646bc8c509d7_icgraph.png" border="0" usemap="#class_camera_a8b3337b3e560ea6a780d646bc8c509d7_icgraph" alt=""/></div>
+<map name="class_camera_a8b3337b3e560ea6a780d646bc8c509d7_icgraph" id="class_camera_a8b3337b3e560ea6a780d646bc8c509d7_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a989c5474cabde7f88c197a2a235e8424" title="シーン変更時の終了関数 " alt="" coords="161,5,365,47"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a8b4ea38d625efbcc08d9b168cb5465f9" title="シーン変更時の終了関数 " alt="" coords="413,5,633,47"/>
+<area shape="rect" id="node4" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="681,5,852,47"/>
+<area shape="rect" id="node5" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="900,13,1099,39"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1147,13,1305,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1353,13,1529,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1577,13,1739,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1787,13,1860,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -693,9 +1110,87 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 <p>更新関数 </p>
 
+<p class="definition"> <a class="el" href="_camera_8cpp_source.html">Camera.cpp</a> の <a class="el" href="_camera_8cpp_source.html#l00075">75</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a4a596a3ea1fdc7d244ba4268031a360b_cgraph.png" border="0" usemap="#class_camera_a4a596a3ea1fdc7d244ba4268031a360b_cgraph" alt=""/></div>
+<map name="class_camera_a4a596a3ea1fdc7d244ba4268031a360b_cgraph" id="class_camera_a4a596a3ea1fdc7d244ba4268031a360b_cgraph">
+<area shape="rect" id="node2" href="class_camera_1_1_state.html#a2d41e0cb783666bae6c6ea167fcc7874" title="更新関数 " alt="" coords="181,5,335,32"/>
+<area shape="rect" id="node3" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a" title="ビュー行列作成関数 " alt="" coords="169,56,347,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_camera_a4a596a3ea1fdc7d244ba4268031a360b_icgraph.png" border="0" usemap="#class_camera_a4a596a3ea1fdc7d244ba4268031a360b_icgraph" alt=""/></div>
+<map name="class_camera_a4a596a3ea1fdc7d244ba4268031a360b_icgraph" id="class_camera_a4a596a3ea1fdc7d244ba4268031a360b_icgraph">
+<area shape="rect" id="node2" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="169,13,304,39"/>
+<area shape="rect" id="node3" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="352,5,559,47"/>
+<area shape="rect" id="node4" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="607,13,757,39"/>
+<area shape="rect" id="node5" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="805,5,959,47"/>
+<area shape="rect" id="node6" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1007,13,1201,39"/>
+<area shape="rect" id="node7" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1249,13,1400,39"/>
+<area shape="rect" id="node8" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1448,13,1609,39"/>
+<area shape="rect" id="node9" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1657,13,1731,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">メンバ詳解</h2>
+<a id="a8c8ccaf83b140c65c458aa5d0077806c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8ccaf83b140c65c458aa5d0077806c">&#9670;&nbsp;</a></span>angle_of_view_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Camera::angle_of_view_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>画角 </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00104">104</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad803bf87c68409f7f60836ae8fc25ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad803bf87c68409f7f60836ae8fc25ab0">&#9670;&nbsp;</a></span>axis_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_axis_vector.html">AxisVector</a> Camera::axis_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>軸 </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00106">106</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="a0e0f326c66006cf7f9dc29b3e2b86b81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e0f326c66006cf7f9dc29b3e2b86b81">&#9670;&nbsp;</a></span>DEFAULT_ANGLE_OF_VIEW</h2>
 
@@ -717,6 +1212,8 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 </div><div class="memdoc">
 
 <p>画角 </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00079">79</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -742,6 +1239,34 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 <p>遠面クリップ </p>
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00078">78</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8253e46e7580737e7d22afae9aa5c0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8253e46e7580737e7d22afae9aa5c0b6">&#9670;&nbsp;</a></span>look_at_point_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> Camera::look_at_point_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>注視点 </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00101">101</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="ad2e91249b7878a87cd23cf7dd5d86e00"></a>
@@ -766,11 +1291,247 @@ $(document).ready(function(){initNavTree('class_camera.html','');});
 
 <p>近面クリップ </p>
 
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00077">77</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0a3450c7cdfaa59456d92779ac9ea574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3450c7cdfaa59456d92779ac9ea574">&#9670;&nbsp;</a></span>position_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> Camera::position_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>座標 </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00100">100</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a67951793f883b6b9372ea08213278eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67951793f883b6b9372ea08213278eee">&#9670;&nbsp;</a></span>projection_2D_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> Camera::projection_2D_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プロジェクション行列(2D) </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00112">112</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a624f360dabc01f89cc988ca16599eff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624f360dabc01f89cc988ca16599eff4">&#9670;&nbsp;</a></span>projection_ortho_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> Camera::projection_ortho_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プロジェクション行列(正射影) </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00111">111</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab0abb153efc1642da91ec0716847231c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0abb153efc1642da91ec0716847231c">&#9670;&nbsp;</a></span>projection_perspective_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> Camera::projection_perspective_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プロジェクション行列(透視投影) </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00110">110</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab2f0ce08b9fee8a4481b323f2856b245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f0ce08b9fee8a4481b323f2856b245">&#9670;&nbsp;</a></span>state_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_1_1_state.html">State</a>* Camera::state_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステート </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00114">114</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a18f6d287c98a979a2ca1579eb928d9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f6d287c98a979a2ca1579eb928d9aa">&#9670;&nbsp;</a></span>type_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera.html#a3b0a1f58deca679ac665f61c480d1dcb">Type</a> Camera::type_ = Type::PERSPECTIVE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイプ </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00115">115</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8df7d311c10a0c640ac480cb5cbada83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df7d311c10a0c640ac480cb5cbada83">&#9670;&nbsp;</a></span>up_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3_d.html">Vector3D</a> Camera::up_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上ベクトル </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00102">102</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5839ccb2cd4931e904a7a6cd412260ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5839ccb2cd4931e904a7a6cd412260ad">&#9670;&nbsp;</a></span>view_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> Camera::view_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ビュー行列 </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00108">108</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af6dbadc718d75c621fec94b76365ca57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dbadc718d75c621fec94b76365ca57">&#9670;&nbsp;</a></span>view_2D_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> Camera::view_2D_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ビュー行列(2D) </p>
+
+<p class="definition"> <a class="el" href="_camera_8h_source.html">Camera.h</a> の <a class="el" href="_camera_8h_source.html#l00109">109</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Camera/<a class="el" href="_camera_8h_source.html">Camera.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Camera/<a class="el" href="_camera_8cpp.html">Camera.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Camera/<a class="el" href="_camera_8cpp_source.html">Camera.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

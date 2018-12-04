@@ -1,0 +1,21 @@
+<map id="GameObjectReferenceManager::ReleaseReference_Source" name="GameObjectReferenceManager::ReleaseReference_Source">
+<area shape="rect" id="node2" href="$class_game_object_reference_manager.html#ac7d117427de3052f893228408a3de5d7" title="GameObjectReferenceManager\l::ReleaseReference" alt="" coords="256,90,459,131"/>
+<area shape="rect" id="node3" href="$class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="507,90,740,131"/>
+<area shape="rect" id="node4" href="$class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="788,23,983,49"/>
+<area shape="rect" id="node6" href="$class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="809,90,962,131"/>
+<area shape="rect" id="node15" href="$class_numbers.html#a1eb0843ca2449c52e21c84b96bfa4dc5" title="Numbers::ReleaseNumber" alt="" coords="798,188,973,215"/>
+<area shape="rect" id="node5" href="$class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1031,5,1212,32"/>
+<area shape="rect" id="node7" href="$class_game_object_manager.html#a4d2cb0e07fddeea160e64f6e1d2a326a" title="終了関数 " alt="" coords="1045,57,1198,98"/>
+<area shape="rect" id="node9" href="$class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="1036,122,1207,163"/>
+<area shape="rect" id="node8" href="$class_scene_manager.html#ae3ff21f2261fc50f1e860cf7fc3a2108" title="終了関数 " alt="" coords="1284,64,1435,91"/>
+<area shape="rect" id="node10" href="$class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1260,129,1459,156"/>
+<area shape="rect" id="node11" href="$class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="1513,129,1671,156"/>
+<area shape="rect" id="node12" href="$class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1725,129,1901,156"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1949,129,2111,156"/>
+<area shape="rect" id="node14" href="$main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2159,129,2232,156"/>
+<area shape="rect" id="node16" href="$class_numbers.html#af4a06e0dd7dece56d60098837aae5aa5" title="Numbers::LeftJustified" alt="" coords="1046,188,1197,215"/>
+<area shape="rect" id="node20" href="$class_numbers.html#a1aaad1f057da0064766bfd25d57caa17" title="Numbers::NotLeftJustified" alt="" coords="1036,239,1207,265"/>
+<area shape="rect" id="node17" href="$class_numbers.html#aeb51ecf4e148f4ca67ac7788e061f94d" title="Numbers::SetNumbers" alt="" coords="1282,224,1437,251"/>
+<area shape="rect" id="node18" href="$class_score_update.html#afd51e11ad00ebc15d9b3139398437afc" title="初期化関数 " alt="" coords="1531,195,1653,221"/>
+<area shape="rect" id="node19" href="$class_score_update.html#adc9a48f54828e49c072c298777935893" title="後更新関数 " alt="" coords="1507,245,1677,272"/>
+</map>

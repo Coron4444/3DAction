@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
   <div class="summary">
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
 <a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="class_depth_buffer_shadow_object-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">DepthBufferShadowObject クラス</div>  </div>
@@ -100,6 +102,17 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
  <a href="class_depth_buffer_shadow_object.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a>&gt;</code></p>
+<div class="dynheader">
+DepthBufferShadowObject 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_depth_buffer_shadow_object__coll__graph.png" border="0" usemap="#_depth_buffer_shadow_object_coll__map" alt="Collaboration graph"/></div>
+<map name="_depth_buffer_shadow_object_coll__map" id="_depth_buffer_shadow_object_coll__map">
+<area shape="rect" id="node2" href="class_camera.html" title="カメラクラス " alt="" coords="127,351,194,377"/>
+<area shape="rect" id="node3" href="class_axis_vector.html" title="AxisVector" alt="" coords="117,253,204,279"/>
+<area shape="rect" id="node4" href="class_vector3_d.html" title="Vector3D" alt="" coords="19,81,95,108"/>
+<area shape="rect" id="node6" href="class_camera_1_1_state.html" title="カメラステートクラス " alt="" coords="229,253,335,279"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
@@ -124,11 +137,115 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
 <tr class="separator:a9238d9843ca8654d67809dfbd5600137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a8ac55e3de545dacb0cfde57fd1017"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_vector3_d_8h.html#a5ef6e95dfc5f9d3820b71772d99bbc25">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#aa7a8ac55e3de545dacb0cfde57fd1017">SHADOW_MAP_SIZE</a></td></tr>
 <tr class="separator:aa7a8ac55e3de545dacb0cfde57fd1017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2c23801a681ac79e2f9633f568634b81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a2c23801a681ac79e2f9633f568634b81">DepthBufferShadowObject</a> ()=delete</td></tr>
+<tr class="separator:a2c23801a681ac79e2f9633f568634b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af144bdc29aabd1a84e789e3788d0a9a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#af144bdc29aabd1a84e789e3788d0a9a8">DepthBufferShadowObject</a> (const <a class="el" href="class_depth_buffer_shadow_object.html">DepthBufferShadowObject</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:af144bdc29aabd1a84e789e3788d0a9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d8b986d4f2c1d82dd836c0f5ce3751"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_depth_buffer_shadow_object.html">DepthBufferShadowObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a00d8b986d4f2c1d82dd836c0f5ce3751">operator=</a> (const <a class="el" href="class_depth_buffer_shadow_object.html">DepthBufferShadowObject</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:a00d8b986d4f2c1d82dd836c0f5ce3751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a2e91bbbf8298fdb977f762fb871ff199"><td class="memItemLeft" align="right" valign="top">static LPDIRECT3DDEVICE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a2e91bbbf8298fdb977f762fb871ff199">device_</a></td></tr>
+<tr class="separator:a2e91bbbf8298fdb977f762fb871ff199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbcfff05093c1884d6e2c6ac15b9b0a"><td class="memItemLeft" align="right" valign="top">static D3DXMATRIX&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a8cbcfff05093c1884d6e2c6ac15b9b0a">math_matrix_</a></td></tr>
+<tr class="separator:a8cbcfff05093c1884d6e2c6ac15b9b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f1043c9809e9eaf06632b6dae4dafe"><td class="memItemLeft" align="right" valign="top">static IDirect3DVertexDeclaration9 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a20f1043c9809e9eaf06632b6dae4dafe">declaration_object_</a></td></tr>
+<tr class="separator:a20f1043c9809e9eaf06632b6dae4dafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247d49044c3cea346785514768ecb578"><td class="memItemLeft" align="right" valign="top">static LPDIRECT3DTEXTURE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a247d49044c3cea346785514768ecb578">shadow_map_</a></td></tr>
+<tr class="separator:a247d49044c3cea346785514768ecb578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083e7d970cf89fd220787393bdb2d8e2"><td class="memItemLeft" align="right" valign="top">static LPDIRECT3DSURFACE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a083e7d970cf89fd220787393bdb2d8e2">shadow_map_render_target_surface_</a></td></tr>
+<tr class="separator:a083e7d970cf89fd220787393bdb2d8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe67be29e0c2c6cb1c74860d8f90b37"><td class="memItemLeft" align="right" valign="top">static LPDIRECT3DSURFACE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a2fe67be29e0c2c6cb1c74860d8f90b37">shadow_map_depth_buffer_surface_</a></td></tr>
+<tr class="separator:a2fe67be29e0c2c6cb1c74860d8f90b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c029f49fa8cf59b8458d3c2be0138e"><td class="memItemLeft" align="right" valign="top">static D3DVIEWPORT9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a08c029f49fa8cf59b8458d3c2be0138e">shadow_map_view_port_</a></td></tr>
+<tr class="separator:a08c029f49fa8cf59b8458d3c2be0138e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f32e81131358b61184b514e44bdb44d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a6f32e81131358b61184b514e44bdb44d">shadow_map_camera_</a></td></tr>
+<tr class="separator:a6f32e81131358b61184b514e44bdb44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfeefee54df20a800a8fc33365332724"><td class="memItemLeft" align="right" valign="top">static LPDIRECT3DSURFACE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#abfeefee54df20a800a8fc33365332724">old_render_target_surface_</a></td></tr>
+<tr class="separator:abfeefee54df20a800a8fc33365332724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a73112a31ff2665079f86ab592559e"><td class="memItemLeft" align="right" valign="top">static LPDIRECT3DSURFACE9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#aa3a73112a31ff2665079f86ab592559e">old_depth_buffer_surface_</a></td></tr>
+<tr class="separator:aa3a73112a31ff2665079f86ab592559e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb83afec448ed26aba19b2b40bb6667"><td class="memItemLeft" align="right" valign="top">static D3DVIEWPORT9&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#aaeb83afec448ed26aba19b2b40bb6667">old_view_port_</a></td></tr>
+<tr class="separator:aaeb83afec448ed26aba19b2b40bb6667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6be6422a17dc7ce3006e1af50bbd7f"><td class="memItemLeft" align="right" valign="top">static LPD3DXEFFECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a3b6be6422a17dc7ce3006e1af50bbd7f">effect_</a></td></tr>
+<tr class="separator:a3b6be6422a17dc7ce3006e1af50bbd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8fd271667e849ed9dfbdf9de2fe9fa5"><td class="memItemLeft" align="right" valign="top">static D3DXHANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#ab8fd271667e849ed9dfbdf9de2fe9fa5">technique_</a></td></tr>
+<tr class="separator:ab8fd271667e849ed9dfbdf9de2fe9fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2201b16bbf64ea9c44709c8a2de6c2"><td class="memItemLeft" align="right" valign="top">static D3DXHANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a9a2201b16bbf64ea9c44709c8a2de6c2">matrix_WVP_</a></td></tr>
+<tr class="separator:a9a2201b16bbf64ea9c44709c8a2de6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2928e4f164d0655d1aa9aee0fe6c17a7"><td class="memItemLeft" align="right" valign="top">static D3DXHANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a2928e4f164d0655d1aa9aee0fe6c17a7">lambert_diffuse_light_vector_</a></td></tr>
+<tr class="separator:a2928e4f164d0655d1aa9aee0fe6c17a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4155ea5cadbbbae90ae677413497dda0"><td class="memItemLeft" align="right" valign="top">static D3DXHANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a4155ea5cadbbbae90ae677413497dda0">lambert_diffuse_light_color_</a></td></tr>
+<tr class="separator:a4155ea5cadbbbae90ae677413497dda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba4cb3693430a7776115fc50d63057a"><td class="memItemLeft" align="right" valign="top">static D3DXHANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#acba4cb3693430a7776115fc50d63057a">camera_position_</a></td></tr>
+<tr class="separator:acba4cb3693430a7776115fc50d63057a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ec29cbceae88cc38900fcd0328f308"><td class="memItemLeft" align="right" valign="top">static D3DXHANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#ab4ec29cbceae88cc38900fcd0328f308">decale_texture_</a></td></tr>
+<tr class="separator:ab4ec29cbceae88cc38900fcd0328f308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830c128c7b510a6d123f72fd684cd2a3"><td class="memItemLeft" align="right" valign="top">static D3DXHANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_depth_buffer_shadow_object.html#a830c128c7b510a6d123f72fd684cd2a3">normal_texture_</a></td></tr>
+<tr class="separator:a830c128c7b510a6d123f72fd684cd2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>深度バッファシャドウオブジェクトクラス </p>
 <p>シャドウマップを用いた影をつける レンダリング回数：2回 1回目 : シャドウマップの作成 2回目 : シャドウマップの深度値とオブジェクトの深度値を比較しながらレンダリング </p>
-</div><h2 class="groupheader">関数詳解</h2>
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00044">44</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a2c23801a681ac79e2f9633f568634b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c23801a681ac79e2f9633f568634b81">&#9670;&nbsp;</a></span>DepthBufferShadowObject() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DepthBufferShadowObject::DepthBufferShadowObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af144bdc29aabd1a84e789e3788d0a9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af144bdc29aabd1a84e789e3788d0a9a8">&#9670;&nbsp;</a></span>DepthBufferShadowObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DepthBufferShadowObject::DepthBufferShadowObject </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_depth_buffer_shadow_object.html">DepthBufferShadowObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
 <a id="a7916c03b90a01c71a9050e721cf6810c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7916c03b90a01c71a9050e721cf6810c">&#9670;&nbsp;</a></span>Draw_Pass0()</h2>
 
@@ -162,6 +279,17 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html">DepthBufferShadowObject.cpp</a> の <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html#l00273">273</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c_cgraph.png" border="0" usemap="#class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c_cgraph" alt=""/></div>
+<map name="class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c_cgraph" id="class_depth_buffer_shadow_object_a7916c03b90a01c71a9050e721cf6810c_cgraph">
+<area shape="rect" id="node2" href="class_camera.html#aa472374f61480c5a9dff89d30be029f4" title="Camera::GetViewMatrix" alt="" coords="242,5,402,32"/>
+<area shape="rect" id="node3" href="class_camera.html#a473a7a8408bc7a1fdd46d12fa3852846" title="Camera::GetProjectionMatrix" alt="" coords="227,56,417,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -224,6 +352,34 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html">DepthBufferShadowObject.cpp</a> の <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html#l00091">91</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a00d8b986d4f2c1d82dd836c0f5ce3751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d8b986d4f2c1d82dd836c0f5ce3751">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_depth_buffer_shadow_object.html">DepthBufferShadowObject</a>&amp; DepthBufferShadowObject::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_depth_buffer_shadow_object.html">DepthBufferShadowObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a2ac079b069c8f60b8d681868b9afce89"></a>
@@ -248,6 +404,8 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html">DepthBufferShadowObject.cpp</a> の <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html#l00257">257</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -274,6 +432,17 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html">DepthBufferShadowObject.cpp</a> の <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html#l00228">228</a> 行目に定義があります。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc_cgraph.png" border="0" usemap="#class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc_cgraph" alt=""/></div>
+<map name="class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc_cgraph" id="class_depth_buffer_shadow_object_ac575084492645de134c6f1990ed7d2dc_cgraph">
+<area shape="rect" id="node2" href="class_camera.html#a18f380bd6b2c42162c8fcf7e4441a355" title="Camera::GetPositon" alt="" coords="245,5,385,32"/>
+<area shape="rect" id="node3" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a" title="ビュー行列作成関数 " alt="" coords="227,56,404,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a6f5e6542143cffef6b7a9e69f6c9cd94"></a>
@@ -299,9 +468,59 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html">DepthBufferShadowObject.cpp</a> の <a class="el" href="_depth_buffer_shadow_object_8cpp_source.html#l00211">211</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <h2 class="groupheader">メンバ詳解</h2>
+<a id="acba4cb3693430a7776115fc50d63057a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba4cb3693430a7776115fc50d63057a">&#9670;&nbsp;</a></span>camera_position_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXHANDLE DepthBufferShadowObject::camera_position_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00109">109</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab4ec29cbceae88cc38900fcd0328f308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ec29cbceae88cc38900fcd0328f308">&#9670;&nbsp;</a></span>decale_texture_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXHANDLE DepthBufferShadowObject::decale_texture_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00110">110</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="a9238d9843ca8654d67809dfbd5600137"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9238d9843ca8654d67809dfbd5600137">&#9670;&nbsp;</a></span>DECLARATION</h2>
 
@@ -322,6 +541,80 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
 </table>
 </div><div class="memdoc">
 <b>初期値:</b><div class="fragment"><div class="line">= {{0,  0, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_POSITION, 0},</div><div class="line">       {0, 12, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_NORMAL,   0},</div><div class="line"></div><div class="line">      }</div></div><!-- fragment -->
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00050">50</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a20f1043c9809e9eaf06632b6dae4dafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f1043c9809e9eaf06632b6dae4dafe">&#9670;&nbsp;</a></span>declaration_object_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDirect3DVertexDeclaration9 * DepthBufferShadowObject::declaration_object_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00086">86</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2e91bbbf8298fdb977f762fb871ff199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e91bbbf8298fdb977f762fb871ff199">&#9670;&nbsp;</a></span>device_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DDEVICE9 DepthBufferShadowObject::device_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00080">80</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3b6be6422a17dc7ce3006e1af50bbd7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6be6422a17dc7ce3006e1af50bbd7f">&#9670;&nbsp;</a></span>effect_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXEFFECT DepthBufferShadowObject::effect_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00104">104</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <a id="aaa0b1c0ca424614c5cf7368f00fa5fa0"></a>
@@ -343,6 +636,296 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00049">49</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a4155ea5cadbbbae90ae677413497dda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4155ea5cadbbbae90ae677413497dda0">&#9670;&nbsp;</a></span>lambert_diffuse_light_color_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXHANDLE DepthBufferShadowObject::lambert_diffuse_light_color_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00108">108</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2928e4f164d0655d1aa9aee0fe6c17a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2928e4f164d0655d1aa9aee0fe6c17a7">&#9670;&nbsp;</a></span>lambert_diffuse_light_vector_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXHANDLE DepthBufferShadowObject::lambert_diffuse_light_vector_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00107">107</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8cbcfff05093c1884d6e2c6ac15b9b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cbcfff05093c1884d6e2c6ac15b9b0a">&#9670;&nbsp;</a></span>math_matrix_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXMATRIX DepthBufferShadowObject::math_matrix_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00083">83</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9a2201b16bbf64ea9c44709c8a2de6c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2201b16bbf64ea9c44709c8a2de6c2">&#9670;&nbsp;</a></span>matrix_WVP_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXHANDLE DepthBufferShadowObject::matrix_WVP_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00106">106</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a830c128c7b510a6d123f72fd684cd2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830c128c7b510a6d123f72fd684cd2a3">&#9670;&nbsp;</a></span>normal_texture_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXHANDLE DepthBufferShadowObject::normal_texture_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00111">111</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa3a73112a31ff2665079f86ab592559e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a73112a31ff2665079f86ab592559e">&#9670;&nbsp;</a></span>old_depth_buffer_surface_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DSURFACE9 DepthBufferShadowObject::old_depth_buffer_surface_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00098">98</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abfeefee54df20a800a8fc33365332724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfeefee54df20a800a8fc33365332724">&#9670;&nbsp;</a></span>old_render_target_surface_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DSURFACE9 DepthBufferShadowObject::old_render_target_surface_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00097">97</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aaeb83afec448ed26aba19b2b40bb6667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeb83afec448ed26aba19b2b40bb6667">&#9670;&nbsp;</a></span>old_view_port_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DVIEWPORT9 DepthBufferShadowObject::old_view_port_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00099">99</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a247d49044c3cea346785514768ecb578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a247d49044c3cea346785514768ecb578">&#9670;&nbsp;</a></span>shadow_map_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DTEXTURE9 DepthBufferShadowObject::shadow_map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00089">89</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6f32e81131358b61184b514e44bdb44d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f32e81131358b61184b514e44bdb44d">&#9670;&nbsp;</a></span>shadow_map_camera_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera.html">Camera</a> DepthBufferShadowObject::shadow_map_camera_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00093">93</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2fe67be29e0c2c6cb1c74860d8f90b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe67be29e0c2c6cb1c74860d8f90b37">&#9670;&nbsp;</a></span>shadow_map_depth_buffer_surface_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DSURFACE9 DepthBufferShadowObject::shadow_map_depth_buffer_surface_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00091">91</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a083e7d970cf89fd220787393bdb2d8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083e7d970cf89fd220787393bdb2d8e2">&#9670;&nbsp;</a></span>shadow_map_render_target_surface_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DSURFACE9 DepthBufferShadowObject::shadow_map_render_target_surface_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00090">90</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -366,11 +949,61 @@ $(document).ready(function(){initNavTree('class_depth_buffer_shadow_object.html'
 </table>
 </div><div class="memdoc">
 
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00051">51</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a08c029f49fa8cf59b8458d3c2be0138e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c029f49fa8cf59b8458d3c2be0138e">&#9670;&nbsp;</a></span>shadow_map_view_port_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DVIEWPORT9 DepthBufferShadowObject::shadow_map_view_port_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00092">92</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab8fd271667e849ed9dfbdf9de2fe9fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8fd271667e849ed9dfbdf9de2fe9fa5">&#9670;&nbsp;</a></span>technique_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXHANDLE DepthBufferShadowObject::technique_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a> の <a class="el" href="_depth_buffer_shadow_object_8h_source.html#l00105">105</a> 行目に定義があります。</p>
+
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Shader/DepthBufferShadowObject/<a class="el" href="_depth_buffer_shadow_object_8h_source.html">DepthBufferShadowObject.h</a></li>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Shader/DepthBufferShadowObject/<a class="el" href="_depth_buffer_shadow_object_8cpp.html">DepthBufferShadowObject.cpp</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/DrawManager/Shader/DepthBufferShadowObject/<a class="el" href="_depth_buffer_shadow_object_8cpp_source.html">DepthBufferShadowObject.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

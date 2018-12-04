@@ -1,0 +1,12 @@
+<map id="CollisionManager::UninitWhenChangeScene" name="CollisionManager::UninitWhenChangeScene">
+<area shape="rect" id="node2" href="$class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="216,123,413,164"/>
+<area shape="rect" id="node3" href="$class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="497,51,633,92"/>
+<area shape="rect" id="node5" href="$class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="497,247,633,288"/>
+<area shape="rect" id="node6" href="$class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="497,181,633,223"/>
+<area shape="rect" id="node7" href="$class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="224,5,405,47"/>
+<area shape="rect" id="node8" href="$class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="227,240,403,281"/>
+<area shape="rect" id="node9" href="$class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="225,357,405,399"/>
+<area shape="rect" id="node10" href="$class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="217,423,412,450"/>
+<area shape="rect" id="node11" href="$class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="243,474,387,501"/>
+<area shape="rect" id="node4" href="$class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="461,116,668,157"/>
+</map>

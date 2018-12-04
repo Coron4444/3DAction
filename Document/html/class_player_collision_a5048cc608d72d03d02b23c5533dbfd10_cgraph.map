@@ -1,0 +1,42 @@
+<map id="PlayerCollision::HitSubstance" name="PlayerCollision::HitSubstance">
+<area shape="rect" id="node2" href="$class_collision_base.html#af4e773951a4e1965e64410841a0292a4" title="CollisionBase::getState" alt="" coords="285,5,444,32"/>
+<area shape="rect" id="node3" href="$class_collision_object.html#a1198d5941d2ba8a9b394c0e43e4b9fd9" title="CollisionObject::getTag" alt="" coords="287,56,443,83"/>
+<area shape="rect" id="node4" href="$class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="255,107,475,133"/>
+<area shape="rect" id="node5" href="$class_coin.html#a5b302d3ad7be44267e1f4e6a54b0f23c" title="Coin::getCount" alt="" coords="311,157,419,184"/>
+<area shape="rect" id="node6" href="$class_coin.html#acb3027a1a45470723b7952c73af69878" title="Coin::setCount" alt="" coords="311,208,419,235"/>
+<area shape="rect" id="node7" href="$class_game_scene.html#a853fefbf82ff85b9f34e325108ae7e3b" title="GameScene::setScore" alt="" coords="287,259,442,285"/>
+<area shape="rect" id="node8" href="$class_game_scene.html#a16b26b3b8ea91dcaf762292414bf5d6d" title="GameScene::getScore" alt="" coords="287,309,442,336"/>
+<area shape="rect" id="node9" href="$class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb" title="めり込み解消関数 " alt="" coords="278,361,451,402"/>
+<area shape="rect" id="node17" href="$class_game_object_base.html#a7df1e16838f8fa578a27e8ba64652b49" title="GameObjectBase::GetTransform" alt="" coords="259,427,470,453"/>
+<area shape="rect" id="node18" href="$class_collision_object.html#adb01187ec10302f13034407a3c852860" title="CollisionObject::getHitVector" alt="" coords="270,477,459,504"/>
+<area shape="rect" id="node19" href="$class_game_scene.html#abaefc8ae1bd5625d79da25120ef33a8e" title="GameScene::setGameOver" alt="" coords="274,528,455,555"/>
+<area shape="rect" id="node20" href="$class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="248,590,481,631"/>
+<area shape="rect" id="node10" href="$class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="565,317,720,344"/>
+<area shape="rect" id="node11" href="$class_transform.html#a3d56e19fba7f44d5f938d62481846fbc" title="Transform::UpdateWorldMatrixISRT" alt="" coords="529,368,756,395"/>
+<area shape="rect" id="node12" href="$class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="829,233,1011,274"/>
+<area shape="rect" id="node13" href="$class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="826,299,1014,325"/>
+<area shape="rect" id="node14" href="$class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="822,350,1018,391"/>
+<area shape="rect" id="node15" href="$class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="815,415,1025,457"/>
+<area shape="rect" id="node16" href="$class_matrix_extend.html#ab0aaf14f8621fde91f9db5537a4187e6" title="MatrixExtend::UpdateWorld\lMatrixISRT" alt="" coords="829,481,1011,522"/>
+<area shape="rect" id="node21" href="$class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c" title="終了関数 " alt="" coords="559,547,726,573"/>
+<area shape="rect" id="node24" href="$class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="535,765,750,806"/>
+<area shape="rect" id="node27" href="$class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="1113,699,1249,741"/>
+<area shape="rect" id="node39" href="$class_game_object_reference_manager.html#ac7d117427de3052f893228408a3de5d7" title="GameObjectReferenceManager\l::ReleaseReference" alt="" coords="541,998,744,1039"/>
+<area shape="rect" id="node22" href="$class_game_object_base.html#aff8e4f486435f5d921c186b0824e8a0e" title="コンポーネント終了関数 " alt="" coords="804,547,1036,573"/>
+<area shape="rect" id="node23" href="$class_component_base.html#a9f42beaf0383d6f629819579cab4de57" title="終了関数 " alt="" coords="1102,547,1261,573"/>
+<area shape="rect" id="node25" href="$class_game_object_base.html#a177985be1be1252df6588fa29f2c7f41" title="GameObjectBase::GetUpdate" alt="" coords="823,648,1017,675"/>
+<area shape="rect" id="node26" href="$class_update_manager.html#a8a54226896f4280b589af85c07e869d9" title="更新基底クラスの解放関数 " alt="" coords="815,699,1025,741"/>
+<area shape="rect" id="node28" href="$class_game_object_base.html#acb893b1827cb7fbb27f0caf6a8e0fb88" title="GameObjectBase::GetDraw" alt="" coords="829,896,1011,923"/>
+<area shape="rect" id="node29" href="$class_draw_manager.html#a287d1f359b87f075b22df6a9b6e99316" title="描画基底クラスの解放関数 " alt="" coords="827,765,1013,806"/>
+<area shape="rect" id="node30" href="$class_game_object_base.html#a8158138ea811db49445845d8aaacaf3a" title="GameObjectBase::GetCollision" alt="" coords="819,947,1021,973"/>
+<area shape="rect" id="node31" href="$class_collision_manager.html#a34318163f4256cebc7aefb95fc475030" title="衝突基底クラスの解放関数 " alt="" coords="832,830,1008,871"/>
+<area shape="rect" id="node32" href="$class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="1091,765,1272,806"/>
+<area shape="rect" id="node34" href="$class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="1093,830,1269,871"/>
+<area shape="rect" id="node36" href="$class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="1091,895,1271,937"/>
+<area shape="rect" id="node37" href="$class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="1084,961,1279,988"/>
+<area shape="rect" id="node38" href="$class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="1109,1012,1253,1039"/>
+<area shape="rect" id="node33" href="$class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="1327,765,1463,806"/>
+<area shape="rect" id="node35" href="$class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="1327,830,1463,871"/>
+<area shape="rect" id="node40" href="$class_game_object_reference_manager.html#afe2c3af4a929f25c87ac2253d9b763f7" title="GameObjectReferenceManager\l::ReleaseReference_Source" alt="" coords="819,998,1021,1039"/>
+<area shape="rect" id="node41" href="$class_game_object_reference_manager.html#af3583b94e782a7a881abba2f6be2888c" title="GameObjectReferenceManager\l::ReleaseReference_Destination" alt="" coords="817,1063,1023,1105"/>
+</map>

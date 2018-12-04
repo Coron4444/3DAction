@@ -9,10 +9,22 @@
 
 {\ttfamily \#include $<$Tutorial\+Logo\+Draw.\+h$>$}
 
-Tutorial\+Logo\+Draw の継承関係図\begin{figure}[H]
+
+
+Tutorial\+Logo\+Draw の継承関係図\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_tutorial_logo_draw}
+\includegraphics[width=171pt]{class_tutorial_logo_draw__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Tutorial\+Logo\+Draw 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_draw__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開メンバ関数}
@@ -34,12 +46,36 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_tutorial_logo_draw_
 \item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ \mbox{\hyperlink{class_tutorial_logo_draw_ab357c25048d3582466a24234896adf3f}{tutorial\+\_\+logo\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em チュートリアル \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_texture_object}{Texture\+Object}} $\ast$ \mbox{\hyperlink{class_tutorial_logo_draw_afb10b575221308bfb7f86e276086aad6}{decale\+\_\+texture\+\_\+}} \mbox{[}\mbox{\hyperlink{class_tutorial_logo_draw_aff3396323c386d499aa23e5605085ab1}{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM}}\mbox{]} = \{nullptr\}
+\begin{DoxyCompactList}\small\item\em デカールテクスチャ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}} $\ast$ \mbox{\hyperlink{class_tutorial_logo_draw_adc447c252db2d9ab17d72eb783d82432}{plane\+\_\+polygon\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em 平面ポリゴン \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_tutorial_logo_draw_a1f1d3ebf495bba7bfd86f7b415106144}{texture\+\_\+index\+\_\+}} = 0
+\end{DoxyCompactItemize}
+\subsection*{静的非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \mbox{\hyperlink{class_tutorial_logo_draw_aff3396323c386d499aa23e5605085ab1}{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM}} = 2
+\begin{DoxyCompactList}\small\item\em テクスチャ数 \end{DoxyCompactList}\item 
+static const std\+::string \mbox{\hyperlink{class_tutorial_logo_draw_a294d374ad4876c63f561f282f5eb6200}{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}} \mbox{[}\mbox{\hyperlink{class_tutorial_logo_draw_aff3396323c386d499aa23e5605085ab1}{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em テクスチャ名 \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_tutorial_logo_draw_adb1a43e53dcacfc06835d8a1cc85e324}{S\+C\+A\+LE}}
+\begin{DoxyCompactList}\small\item\em 拡縮 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 チュートリアルロゴ描画クラス 
 
 チュートリアルロゴの描画クラス 
+
+ Tutorial\+Logo\+Draw.\+h の 32 行目に定義があります。
+
+
 
 \subsection{関数詳解}
 \mbox{\Hypertarget{class_tutorial_logo_draw_aa808cfb8bc59d58bbd698a195603429f}\label{class_tutorial_logo_draw_aa808cfb8bc59d58bbd698a195603429f}} 
@@ -61,6 +97,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
 
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 90 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_tutorial_logo_draw_aa808cfb8bc59d58bbd698a195603429f_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035}\label{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035}} 
 \index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
 \index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
@@ -71,6 +118,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 \mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
 
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 140 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_draw_ad9df98aa8a5b11872dba6f6609589035_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37}\label{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37}} 
 \index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Material@{Get\+Material}}
 \index{Get\+Material@{Get\+Material}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
@@ -81,6 +139,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 \mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
 
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 127 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_draw_a3a97860361e32a727246e99052715f37_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b}\label{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b}} 
 \index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Matrix@{Get\+Matrix}}
 \index{Get\+Matrix@{Get\+Matrix}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
@@ -91,6 +160,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 \mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
 
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 103 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_draw_ab700e592d00574dff6ee342138343d7b_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f}\label{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f}} 
 \index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
 \index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
@@ -101,6 +181,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 \mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
 
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 115 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_draw_a19de254c5460e3728d7c79243fd65e6f_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944}\label{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944}} 
 \index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Init@{Init}}
 \index{Init@{Init}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
@@ -115,6 +206,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
 
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 34 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_draw_a53fc4b1b23c7f9e249600be67510f944_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_draw_a949fb70954e3df28f87b8ed5c61bf8f1}\label{class_tutorial_logo_draw_a949fb70954e3df28f87b8ed5c61bf8f1}} 
 \index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
@@ -129,6 +231,17 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
 
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 69 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_tutorial_logo_draw_a949fb70954e3df28f87b8ed5c61bf8f1_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_tutorial_logo_draw_af69405fcc8b20684a19e982726d93ffa}\label{class_tutorial_logo_draw_af69405fcc8b20684a19e982726d93ffa}} 
 \index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!Update@{Update}}
 \index{Update@{Update}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
@@ -142,6 +255,119 @@ L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_tutorial
 
 
 \mbox{\hyperlink{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}{Draw\+Null}}を再実装しています。
+
+
+
+ Tutorial\+Logo\+Draw.\+cpp の 79 行目に定義があります。
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tutorial_logo_draw_af69405fcc8b20684a19e982726d93ffa_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\Hypertarget{class_tutorial_logo_draw_afb10b575221308bfb7f86e276086aad6}\label{class_tutorial_logo_draw_afb10b575221308bfb7f86e276086aad6}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}}
+\index{decale\+\_\+texture\+\_\+@{decale\+\_\+texture\+\_\+}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{decale\+\_\+texture\+\_\+}{decale\_texture\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_texture_object}{Texture\+Object}}$\ast$ Tutorial\+Logo\+Draw\+::decale\+\_\+texture\+\_\+\mbox{[}\mbox{\hyperlink{class_tutorial_logo_draw_aff3396323c386d499aa23e5605085ab1}{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM}}\mbox{]} = \{nullptr\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+デカールテクスチャ 
+
+
+
+ Tutorial\+Logo\+Draw.\+h の 48 行目に定義があります。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_adc447c252db2d9ab17d72eb783d82432}\label{class_tutorial_logo_draw_adc447c252db2d9ab17d72eb783d82432}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!plane\+\_\+polygon\+\_\+@{plane\+\_\+polygon\+\_\+}}
+\index{plane\+\_\+polygon\+\_\+@{plane\+\_\+polygon\+\_\+}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{plane\+\_\+polygon\+\_\+}{plane\_polygon\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plane_polygon}{Plane\+Polygon}}$\ast$ Tutorial\+Logo\+Draw\+::plane\+\_\+polygon\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+平面ポリゴン 
+
+
+
+ Tutorial\+Logo\+Draw.\+h の 49 行目に定義があります。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_adb1a43e53dcacfc06835d8a1cc85e324}\label{class_tutorial_logo_draw_adb1a43e53dcacfc06835d8a1cc85e324}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!S\+C\+A\+LE@{S\+C\+A\+LE}}
+\index{S\+C\+A\+LE@{S\+C\+A\+LE}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{S\+C\+A\+LE}{SCALE}}
+{\footnotesize\ttfamily const float Tutorial\+Logo\+Draw\+::\+S\+C\+A\+LE\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+拡縮 
+
+
+
+ Tutorial\+Logo\+Draw.\+h の 40 行目に定義があります。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_a1f1d3ebf495bba7bfd86f7b415106144}\label{class_tutorial_logo_draw_a1f1d3ebf495bba7bfd86f7b415106144}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!texture\+\_\+index\+\_\+@{texture\+\_\+index\+\_\+}}
+\index{texture\+\_\+index\+\_\+@{texture\+\_\+index\+\_\+}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{texture\+\_\+index\+\_\+}{texture\_index\_}}
+{\footnotesize\ttfamily unsigned Tutorial\+Logo\+Draw\+::texture\+\_\+index\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ Tutorial\+Logo\+Draw.\+h の 50 行目に定義があります。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_a294d374ad4876c63f561f282f5eb6200}\label{class_tutorial_logo_draw_a294d374ad4876c63f561f282f5eb6200}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}}
+\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME}{TEXTURE\_NAME}}
+{\footnotesize\ttfamily const std\+::string Tutorial\+Logo\+Draw\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+A\+ME\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries 初期値\+:}
+\begin{DoxyCode}
+= \{\textcolor{stringliteral}{"UI/Tutorial01.png"},
+                                                                 \textcolor{stringliteral}{"UI/Tutorial02.png"}\}
+\end{DoxyCode}
+
+
+テクスチャ名 
+
+
+
+ Tutorial\+Logo\+Draw.\+h の 39 行目に定義があります。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_aff3396323c386d499aa23e5605085ab1}\label{class_tutorial_logo_draw_aff3396323c386d499aa23e5605085ab1}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM}}
+\index{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM@{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM}{TEXTURE\_NUM}}
+{\footnotesize\ttfamily const unsigned Tutorial\+Logo\+Draw\+::\+T\+E\+X\+T\+U\+R\+E\+\_\+\+N\+UM = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+テクスチャ数 
+
+
+
+ Tutorial\+Logo\+Draw.\+h の 38 行目に定義があります。
+
+\mbox{\Hypertarget{class_tutorial_logo_draw_ab357c25048d3582466a24234896adf3f}\label{class_tutorial_logo_draw_ab357c25048d3582466a24234896adf3f}} 
+\index{Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}!tutorial\+\_\+logo\+\_\+@{tutorial\+\_\+logo\+\_\+}}
+\index{tutorial\+\_\+logo\+\_\+@{tutorial\+\_\+logo\+\_\+}!Tutorial\+Logo\+Draw@{Tutorial\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{tutorial\+\_\+logo\+\_\+}{tutorial\_logo\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}}$\ast$ Tutorial\+Logo\+Draw\+::tutorial\+\_\+logo\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+チュートリアル 
+
+
+
+ Tutorial\+Logo\+Draw.\+h の 47 行目に定義があります。
 
 
 

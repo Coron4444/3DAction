@@ -102,19 +102,44 @@ $(document).ready(function(){initNavTree('class_update_base.html','');});
 <div class="dynheader">
 UpdateBase の継承関係図</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_update_base.png" usemap="#UpdateBase_map" alt=""/>
-  <map id="UpdateBase_map" name="UpdateBase_map">
-<area href="class_component_base.html" title="コンポーネント基底クラス " alt="ComponentBase" shape="rect" coords="153,0,296,24"/>
-<area href="class_player_update___special.html" alt="PlayerUpdate_Special" shape="rect" coords="0,112,143,136"/>
-<area href="class_update_null.html" title="空白更新クラス " alt="UpdateNull" shape="rect" coords="306,112,449,136"/>
-<area href="class_enemy_update.html" alt="EnemyUpdate" shape="rect" coords="0,168,143,192"/>
-<area href="class_player_update.html" alt="PlayerUpdate" shape="rect" coords="153,168,296,192"/>
-<area href="class_push_space_logo_update.html" alt="PushSpaceLogoUpdate" shape="rect" coords="306,168,449,192"/>
-<area href="class_score_update.html" alt="ScoreUpdate" shape="rect" coords="459,168,602,192"/>
-<area href="class_sky_dome_update.html" alt="SkyDomeUpdate" shape="rect" coords="612,168,755,192"/>
+<div class="center"><img src="class_update_base__inherit__graph.png" border="0" usemap="#_update_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="_update_base_inherit__map" id="_update_base_inherit__map">
+<area shape="rect" id="node3" href="class_player_update___special.html" title="PlayerUpdate_Special" alt="" coords="119,155,270,181"/>
+<area shape="rect" id="node4" href="class_update_null.html" title="空白更新クラス " alt="" coords="295,155,380,181"/>
+<area shape="rect" id="node2" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="206,5,325,32"/>
+<area shape="rect" id="node5" href="class_enemy_update.html" title="EnemyUpdate" alt="" coords="5,229,109,256"/>
+<area shape="rect" id="node6" href="class_player_update.html" title="PlayerUpdate" alt="" coords="134,229,234,256"/>
+<area shape="rect" id="node7" href="class_push_space_logo_update.html" title="PushSpaceLogoUpdate" alt="" coords="258,229,417,256"/>
+<area shape="rect" id="node8" href="class_score_update.html" title="ScoreUpdate" alt="" coords="441,229,538,256"/>
+<area shape="rect" id="node9" href="class_sky_dome_update.html" title="SkyDomeUpdate" alt="" coords="563,229,683,256"/>
 </map>
- </div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+UpdateBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_update_base__coll__graph.png" border="0" usemap="#_update_base_coll__map" alt="Collaboration graph"/></div>
+<map name="_update_base_coll__map" id="_update_base_coll__map">
+<area shape="rect" id="node3" href="class_game_object_base.html" title="ゲームオブジェクト基底クラス " alt="" coords="875,188,1000,215"/>
+<area shape="rect" id="node2" href="class_component_base.html" title="コンポーネント基底クラス " alt="" coords="1184,221,1303,248"/>
+<area shape="rect" id="node4" href="class_collision_base.html" title="衝突基底クラス " alt="" coords="1452,215,1553,241"/>
+<area shape="rect" id="node16" href="class_draw_base.html" title="描画基底クラス " alt="" coords="1462,273,1543,300"/>
+<area shape="rect" id="node19" href="class_physics.html" title="Physics" alt="" coords="1209,71,1278,97"/>
+<area shape="rect" id="node6" href="class_collision_objects.html" title="複数衝突オブジェクトクラス " alt="" coords="1695,376,1811,403"/>
+<area shape="rect" id="node5" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObjects *,\l ARRAY_NUM \&gt;" alt="" coords="1992,223,2133,279"/>
+<area shape="rect" id="node12" href="class_object_of_tree.html" title="ObjectOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="1952,367,2173,393"/>
+<area shape="rect" id="node7" href="class_a_a_b_b.html" title="AABBクラス " alt="" coords="677,440,736,467"/>
+<area shape="rect" id="node8" href="class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="364,464,503,491"/>
+<area shape="rect" id="node15" href="class_collision_object.html" title="衝突オブジェクトクラス " alt="" coords="652,389,761,416"/>
+<area shape="rect" id="node10" href="class_vector3_d.html" title="Vector3D" alt="" coords="107,245,183,272"/>
+<area shape="rect" id="node20" href="class_transform.html" title="Transform" alt="" coords="667,188,746,215"/>
+<area shape="rect" id="node22" href="class_axis_vector.html" title="AxisVector" alt="" coords="390,107,477,133"/>
+<area shape="rect" id="node13" href="class_space_of_tree.html" title="SpaceOfTree\&lt; CollisionObjects *\&gt;" alt="" coords="2331,367,2551,393"/>
+<area shape="rect" id="node14" href="class_limited_pointer_array.html" title="LimitedPointerArray\l\&lt; CollisionObject *,\l ARRAY_NUM \&gt;" alt="" coords="1024,377,1160,433"/>
+<area shape="rect" id="node17" href="class_draw_order_list.html" title="描画注文リストクラス " alt="" coords="1191,335,1295,361"/>
+<area shape="rect" id="node18" href="class_flag.html" title="Flag" alt="" coords="914,333,961,360"/>
+<area shape="rect" id="node21" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="384,249,483,276"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -148,6 +173,8 @@ UpdateBase の継承関係図</div>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>更新基底クラス </p>
 <p>更新の基底クラス </p>
+
+<p class="definition"> <a class="el" href="_update_base_8h_source.html">UpdateBase.h</a> の <a class="el" href="_update_base_8h_source.html#l00031">31</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="aad4c3e15c4b67871a0fe13c9f85e5918"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad4c3e15c4b67871a0fe13c9f85e5918">&#9670;&nbsp;</a></span>~UpdateBase()</h2>
@@ -173,6 +200,8 @@ UpdateBase の継承関係図</div>
 </div><div class="memdoc">
 
 <p>仮想デストラクタ </p>
+
+<p class="definition"> <a class="el" href="_update_base_8h_source.html">UpdateBase.h</a> の <a class="el" href="_update_base_8h_source.html#l00041">41</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -203,6 +232,19 @@ UpdateBase の継承関係図</div>
 <p>デバッグ表示関数 </p>
 
 <p><a class="el" href="class_update_null.html#a77aee1e614cf6dafe4f9af58b2205e4b">UpdateNull</a>, <a class="el" href="class_push_space_logo_update.html#ab18a0c905455da17f9e2f1fe5f0c34e6">PushSpaceLogoUpdate</a>, <a class="el" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac">PlayerUpdate</a>, <a class="el" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a">PlayerUpdate_Special</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_update_base_a5c63c3c3ef1b85f3701718ec3f7b39e2_icgraph.png" border="0" usemap="#class_update_base_a5c63c3c3ef1b85f3701718ec3f7b39e2_icgraph" alt=""/></div>
+<map name="class_update_base_a5c63c3c3ef1b85f3701718ec3f7b39e2_icgraph" id="class_update_base_a5c63c3c3ef1b85f3701718ec3f7b39e2_icgraph">
+<area shape="rect" id="node2" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="235,13,397,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="445,5,599,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="647,13,841,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="889,13,1040,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1088,13,1249,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1297,13,1371,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -232,6 +274,19 @@ UpdateBase の継承関係図</div>
 <p>後更新関数 </p>
 
 <p><a class="el" href="class_update_null.html#ac68da1ba7f3fbcae833442bb1c169200">UpdateNull</a>, <a class="el" href="class_push_space_logo_update.html#a4423864fb22b1211e92a4317d0b70a44">PushSpaceLogoUpdate</a>, <a class="el" href="class_score_update.html#adc9a48f54828e49c072c298777935893">ScoreUpdate</a>, <a class="el" href="class_player_update.html#ae376f517f3458edfef61ac366aa78e36">PlayerUpdate</a>, <a class="el" href="class_player_update___special.html#a1daae8fdcd87bf907313a98e022f254c">PlayerUpdate_Special</a>, <a class="el" href="class_enemy_update.html#ae14e4ebb42ad9043534e53edcba5b242">EnemyUpdate</a>, <a class="el" href="class_sky_dome_update.html#a94347cb50b4dc13528738a7b812da261">SkyDomeUpdate</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_update_base_afc4956f78135aed5fc4e4f9991be50b9_icgraph.png" border="0" usemap="#class_update_base_afc4956f78135aed5fc4e4f9991be50b9_icgraph" alt=""/></div>
+<map name="class_update_base_afc4956f78135aed5fc4e4f9991be50b9_icgraph" id="class_update_base_afc4956f78135aed5fc4e4f9991be50b9_icgraph">
+<area shape="rect" id="node2" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="220,13,383,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="431,5,584,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="632,13,827,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="875,13,1025,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1073,13,1235,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1283,13,1356,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -261,6 +316,19 @@ UpdateBase の継承関係図</div>
 <p>更新関数 </p>
 
 <p><a class="el" href="class_push_space_logo_update.html#aa07fe6f6f4f072e1f81bc6708dd4727e">PushSpaceLogoUpdate</a>, <a class="el" href="class_score_update.html#aae2b398784079a651ed92eb4c634b1c9">ScoreUpdate</a>, <a class="el" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75">PlayerUpdate</a>, <a class="el" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd">PlayerUpdate_Special</a>, <a class="el" href="class_update_null.html#a692f4f34e4ef35ca286a1d3606fdf473">UpdateNull</a>, <a class="el" href="class_enemy_update.html#ae9662f3a2d064dc69c0d68293e60f051">EnemyUpdate</a>, <a class="el" href="class_sky_dome_update.html#ae163cb90e4de561fe1f7b2cb311be331">SkyDomeUpdate</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_update_base_a9fdc8924001cf6fa89c1f5fa0d867682_icgraph.png" border="0" usemap="#class_update_base_a9fdc8924001cf6fa89c1f5fa0d867682_icgraph" alt=""/></div>
+<map name="class_update_base_a9fdc8924001cf6fa89c1f5fa0d867682_icgraph" id="class_update_base_a9fdc8924001cf6fa89c1f5fa0d867682_icgraph">
+<area shape="rect" id="node2" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="196,13,359,39"/>
+<area shape="rect" id="node3" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="407,5,560,47"/>
+<area shape="rect" id="node4" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="608,13,803,39"/>
+<area shape="rect" id="node5" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="851,13,1001,39"/>
+<area shape="rect" id="node6" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1049,13,1211,39"/>
+<area shape="rect" id="node7" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1259,13,1332,39"/>
+</map>
+</div>
 
 </div>
 </div>
