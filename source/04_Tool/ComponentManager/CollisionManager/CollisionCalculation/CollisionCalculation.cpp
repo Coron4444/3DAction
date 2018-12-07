@@ -546,106 +546,106 @@ bool CollisionCalculation::CollisionJudgmentOfOBBAndOBB(Vector3D* hit_vector,
 	Vector3D interval_vector = *obb0->getpPosition() - *obb1->getpPosition();
 
 	// 通常の分離軸との衝突判定
-	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb0_separation_axis0, 
-															&obb0_normal_separation_axis0, 
-															&obb1_separation_axis0, 
-															&obb1_separation_axis1, 
-															&obb1_separation_axis2, 
+	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb0_separation_axis0,
+															&obb0_normal_separation_axis0,
+															&obb1_separation_axis0,
+															&obb1_separation_axis1,
+															&obb1_separation_axis2,
 															&interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb0_separation_axis1, 
-															&obb0_normal_separation_axis1, 
-															&obb1_separation_axis0, 
-															&obb1_separation_axis1, 
-															&obb1_separation_axis2, 
+	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb0_separation_axis1,
+															&obb0_normal_separation_axis1,
+															&obb1_separation_axis0,
+															&obb1_separation_axis1,
+															&obb1_separation_axis2,
 															&interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb0_separation_axis2, 
-															&obb0_normal_separation_axis2, 
-															&obb1_separation_axis0, 
-															&obb1_separation_axis1, 
-															&obb1_separation_axis2, 
+	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb0_separation_axis2,
+															&obb0_normal_separation_axis2,
+															&obb1_separation_axis0,
+															&obb1_separation_axis1,
+															&obb1_separation_axis2,
 															&interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb1_separation_axis0, 
-															&obb1_normal_separation_axis0, 
-															&obb0_separation_axis0, 
-															&obb0_separation_axis1, 
-															&obb0_separation_axis2, 
+	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb1_separation_axis0,
+															&obb1_normal_separation_axis0,
+															&obb0_separation_axis0,
+															&obb0_separation_axis1,
+															&obb0_separation_axis2,
 															&interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb1_separation_axis1, 
-															&obb1_normal_separation_axis1, 
-															&obb0_separation_axis0, 
-															&obb0_separation_axis1, 
-															&obb0_separation_axis2, 
+	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb1_separation_axis1,
+															&obb1_normal_separation_axis1,
+															&obb0_separation_axis0,
+															&obb0_separation_axis1,
+															&obb0_separation_axis2,
 															&interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb1_separation_axis2, 
-															&obb1_normal_separation_axis2, 
-															&obb0_separation_axis0, 
-															&obb0_separation_axis1, 
-															&obb0_separation_axis2, 
+	if (!DeterminationOfCollisionWithOrdinarySeparationAxis(&obb1_separation_axis2,
+															&obb1_normal_separation_axis2,
+															&obb0_separation_axis0,
+															&obb0_separation_axis1,
+															&obb0_separation_axis2,
 															&interval_vector)) return false;
 
 	// 外積の分離軸との衝突判定
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis0, 
-															 &obb1_normal_separation_axis0, 
-															 &obb0_separation_axis1, 
-															 &obb0_separation_axis2, 
-															 &obb1_separation_axis1, 
-															 &obb1_separation_axis2, 
-															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis0, 
-															 &obb1_normal_separation_axis1, 
-															 &obb0_separation_axis1, 
-															 &obb0_separation_axis2, 
-															 &obb1_separation_axis0, 
-															 &obb1_separation_axis2, 
-															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis0, 
-															 &obb1_normal_separation_axis2, 
-															 &obb0_separation_axis1, 
-															 &obb0_separation_axis2, 
-															 &obb1_separation_axis0, 
-															 &obb1_separation_axis1, 
-															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis1, 
-															 &obb1_normal_separation_axis0, 
-															 &obb0_separation_axis0, 
-															 &obb0_separation_axis2, 
-															 &obb1_separation_axis1, 
-															 &obb1_separation_axis2, 
-															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis1, 
-															 &obb1_normal_separation_axis1, 
-															 &obb0_separation_axis0, 
-															 &obb0_separation_axis2, 
-															 &obb1_separation_axis0, 
-															 &obb1_separation_axis2, 
-															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis1, 
-															 &obb1_normal_separation_axis2, 
-															 &obb0_separation_axis0, 
-															 &obb0_separation_axis2, 
-															 &obb1_separation_axis0, 
-															 &obb1_separation_axis1, 
-															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis2, 
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis0,
 															 &obb1_normal_separation_axis0,
-															 &obb0_separation_axis0, 
-															 &obb0_separation_axis1, 
-															 &obb1_separation_axis1, 
-															 &obb1_separation_axis2, 
+															 &obb0_separation_axis1,
+															 &obb0_separation_axis2,
+															 &obb1_separation_axis1,
+															 &obb1_separation_axis2,
 															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis2, 
-															 &obb1_normal_separation_axis1, 
-															 &obb0_separation_axis0, 
-															 &obb0_separation_axis1, 
-															 &obb1_separation_axis0, 
-															 &obb1_separation_axis2, 
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis0,
+															 &obb1_normal_separation_axis1,
+															 &obb0_separation_axis1,
+															 &obb0_separation_axis2,
+															 &obb1_separation_axis0,
+															 &obb1_separation_axis2,
 															 &interval_vector)) return false;
-	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis2, 
-															 &obb1_normal_separation_axis2, 
-															 &obb0_separation_axis0, 
-															 &obb0_separation_axis1, 
-															 &obb1_separation_axis0, 
-															 &obb1_separation_axis1, 
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis0,
+															 &obb1_normal_separation_axis2,
+															 &obb0_separation_axis1,
+															 &obb0_separation_axis2,
+															 &obb1_separation_axis0,
+															 &obb1_separation_axis1,
+															 &interval_vector)) return false;
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis1,
+															 &obb1_normal_separation_axis0,
+															 &obb0_separation_axis0,
+															 &obb0_separation_axis2,
+															 &obb1_separation_axis1,
+															 &obb1_separation_axis2,
+															 &interval_vector)) return false;
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis1,
+															 &obb1_normal_separation_axis1,
+															 &obb0_separation_axis0,
+															 &obb0_separation_axis2,
+															 &obb1_separation_axis0,
+															 &obb1_separation_axis2,
+															 &interval_vector)) return false;
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis1,
+															 &obb1_normal_separation_axis2,
+															 &obb0_separation_axis0,
+															 &obb0_separation_axis2,
+															 &obb1_separation_axis0,
+															 &obb1_separation_axis1,
+															 &interval_vector)) return false;
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis2,
+															 &obb1_normal_separation_axis0,
+															 &obb0_separation_axis0,
+															 &obb0_separation_axis1,
+															 &obb1_separation_axis1,
+															 &obb1_separation_axis2,
+															 &interval_vector)) return false;
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis2,
+															 &obb1_normal_separation_axis1,
+															 &obb0_separation_axis0,
+															 &obb0_separation_axis1,
+															 &obb1_separation_axis0,
+															 &obb1_separation_axis2,
+															 &interval_vector)) return false;
+	if (!DeterminationOfCollisionWithOuterAxisSeparationAxis(&obb0_normal_separation_axis2,
+															 &obb1_normal_separation_axis2,
+															 &obb0_separation_axis0,
+															 &obb0_separation_axis1,
+															 &obb1_separation_axis0,
+															 &obb1_separation_axis1,
 															 &interval_vector)) return false;
 
 	return true;
@@ -1111,7 +1111,7 @@ float CollisionCalculation::CalculateTheLengthOfTheProjectionLineSegment(Vector3
 
 
 //--------------------------------------------------
-// -通常の分離軸との衝突判定
+// -通常の分離軸との衝突判定関数
 //--------------------------------------------------
 bool CollisionCalculation::DeterminationOfCollisionWithOrdinarySeparationAxis(Vector3D* my_separation_axis,
 																			  Vector3D* my_separation_axis_normal,
@@ -1133,7 +1133,7 @@ bool CollisionCalculation::DeterminationOfCollisionWithOrdinarySeparationAxis(Ve
 
 
 //--------------------------------------------------
-// -外積の分離軸との衝突判定
+// -外積の分離軸との衝突判定関数
 //--------------------------------------------------
 bool CollisionCalculation::DeterminationOfCollisionWithOuterAxisSeparationAxis(Vector3D* my_separation_axis_normal,
 																			   Vector3D* other_separation_axis_normal,
@@ -1145,13 +1145,65 @@ bool CollisionCalculation::DeterminationOfCollisionWithOuterAxisSeparationAxis(V
 {
 	Vector3D temp_cross = my_separation_axis_normal
 		->CreateVectorCross(*other_separation_axis_normal);
-	float r_a = CalculateTheLengthOfTheProjectionLineSegment(&temp_cross, 
-															 my_separation_axis0, 
+	float r_a = CalculateTheLengthOfTheProjectionLineSegment(&temp_cross,
+															 my_separation_axis0,
 															 my_separation_axis1);
-	float r_b = CalculateTheLengthOfTheProjectionLineSegment(&temp_cross, 
-															 other_separation_axis0, 
+	float r_b = CalculateTheLengthOfTheProjectionLineSegment(&temp_cross,
+															 other_separation_axis0,
 															 other_separation_axis1);
 	float length = fabsf(interval_vector->CreateVectorDot(temp_cross));
 	if (length > (r_a + r_b)) return false;
 	return true;
+}
+
+
+
+//--------------------------------------------------
+// -1D線分と点の最短距離のべき乗算出関数
+//--------------------------------------------------
+float CollisionCalculation::CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint(float line_segment_min,
+																							float line_segment_max,
+																							float any_component_of_a_point)
+{
+	float length = 0.0f;
+
+	// 線分より小さいとき
+	if (any_component_of_a_point < line_segment_min)
+	{
+		length += (line_segment_min - any_component_of_a_point)
+			* (line_segment_min - any_component_of_a_point);
+	}
+
+	// 線分より大きいとき
+	if (any_component_of_a_point > line_segment_max)
+	{
+		length += (line_segment_max - any_component_of_a_point)
+			* (line_segment_max - any_component_of_a_point);
+	}
+
+	return length;
+}
+
+
+
+//--------------------------------------------------
+// +AABBと点の最短距離の算出関数
+//--------------------------------------------------
+float CollisionCalculation::CalculateTheShortestDistanceBetweenAABBAndAPoint(AABB* aabb, Vector3D* point)
+{
+	// 長さのべき乗で計算していく
+	float length = 0.0f;
+
+	// 各軸に対してべき乗を計算する
+	length += CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint(aabb->getpMin()->x,
+																			  aabb->getpMax()->x,
+																			  point->x);
+	length += CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint(aabb->getpMin()->y,
+																			  aabb->getpMax()->y,
+																			  point->y);
+	length += CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint(aabb->getpMin()->z,
+																			  aabb->getpMax()->z,
+																			  point->z);
+
+	return (float)sqrt(length);
 }

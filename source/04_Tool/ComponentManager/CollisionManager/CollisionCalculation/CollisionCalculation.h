@@ -19,13 +19,14 @@
 //****************************************
 // クラス宣言
 //****************************************
-class LineSegment;
-class Sphere;
-class Plane;
-class Triangle;
-class Cylinder;
+class AABB;
 class Capsule;
+class Cylinder;
+class LineSegment;
 class OBB;
+class Plane;
+class Sphere;
+class Triangle;
 class QuadraticEquation;
 
 
@@ -409,13 +410,13 @@ private:
 	//! @param[in] other_separation_axis2 相手の分離軸
 	//! @retval float 投影線分の長さ
 	//----------------------------------------
-	static float CalculateTheLengthOfTheProjectionLineSegment(Vector3D* my_separation_axis, 
+	static float CalculateTheLengthOfTheProjectionLineSegment(Vector3D* my_separation_axis,
 															  Vector3D* other_separation_axis0,
 															  Vector3D* other_separation_axis1,
 															  Vector3D* other_separation_axis2 = nullptr);
 
 	//----------------------------------------
-	//! @brief 通常の分離軸との衝突判定
+	//! @brief 通常の分離軸との衝突判定関数
 	//! @param[in] my_separation_axis        自分の分離軸
 	//! @param[in] my_separation_axis_normal 自分の分離軸の単位ベクトル
 	//! @param[in] other_separation_axis0    相手の分離軸
@@ -424,7 +425,7 @@ private:
 	//! @param[in] interval_vector           両方のOBB間のベクトル
 	//! @retval bool 衝突している場合true
 	//----------------------------------------
-	static bool DeterminationOfCollisionWithOrdinarySeparationAxis(Vector3D* my_separation_axis, 
+	static bool DeterminationOfCollisionWithOrdinarySeparationAxis(Vector3D* my_separation_axis,
 																   Vector3D* my_separation_axis_normal,
 																   Vector3D* other_separation_axis0,
 																   Vector3D* other_separation_axis1,
@@ -432,7 +433,7 @@ private:
 																   Vector3D* interval_vector);
 
 	//----------------------------------------
-	//! @brief 外積の分離軸との衝突判定
+	//! @brief 外積の分離軸との衝突判定関数
 	//! @param[in] my_separation_axis_normal 自分の分離軸の単位ベクトル
 	//! @param[in] my_separation_axis_normal 相手の分離軸の単位ベクトル
 	//! @param[in] my_separation_axis0       自分の分離軸
@@ -442,14 +443,34 @@ private:
 	//! @param[in] interval_vector           両方のOBB間のベクトル
 	//! @retval bool 衝突している場合true
 	//----------------------------------------
-	static bool DeterminationOfCollisionWithOuterAxisSeparationAxis(Vector3D* my_separation_axis_normal, 
-																	Vector3D* other_separation_axis_normal, 
-																	Vector3D* my_separation_axis0, 
-																	Vector3D* my_separation_axis1, 
-																	Vector3D* other_separation_axis0, 
-																	Vector3D* other_separation_axis1, 
+	static bool DeterminationOfCollisionWithOuterAxisSeparationAxis(Vector3D* my_separation_axis_normal,
+																	Vector3D* other_separation_axis_normal,
+																	Vector3D* my_separation_axis0,
+																	Vector3D* my_separation_axis1,
+																	Vector3D* other_separation_axis0,
+																	Vector3D* other_separation_axis1,
 																	Vector3D* interval_vector);
 
+	//----------------------------------------
+	//! @brief 1D線分と点の最短距離のべき乗算出関数
+	//! @param[in] line_segment_min         線分の始点
+	//! @param[in] line_segment_max         線分の終点
+	//! @param[in] any_component_of_a_point 点の任意の成分
+	//! @retval float 1D線分と点の最短距離のべき乗
+	//----------------------------------------
+	static float CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint(float line_segment_min,
+																				 float line_segment_max,
+																				 float any_component_of_a_point);
+
+	//----------------------------------------
+	//! @brief AABBと点の最短距離の算出関数
+	//! @param[in] aabb  AABB
+	//! @param[in] point 点
+	//! @retval float AABBと点の最短距離
+	//----------------------------------------
+	float CalculateTheShortestDistanceBetweenAABBAndAPoint(AABB* aabb, Vector3D* point);
+
+	
 //====================
 // 消去済み関数
 //====================
