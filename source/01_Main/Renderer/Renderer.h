@@ -182,6 +182,11 @@ private:
 	//! @param void ‚È‚µ
 	//----------------------------------------
 	Renderer() {}
+
+//====================
+// Á‹Ï‚İŠÖ”
+//====================
+private:
 	Renderer(const Renderer& class_name) = delete;
 	Renderer& operator = (const Renderer& class_name) = delete;
 };

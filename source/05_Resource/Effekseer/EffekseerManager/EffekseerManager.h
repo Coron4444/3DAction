@@ -20,9 +20,6 @@
 #include <vector>
 #include <unordered_map>
 
-#include <Effekseer.h>
-#include <EffekseerRendererDX9.h>
-
 #include "../EffekseerArray/EffekseerArray.h"
 #include "../EffekseerObject/EffekseerObject.h"
 

@@ -56,6 +56,8 @@ void PixelShaderBumpMapping::Uninit()
 //--------------------------------------------------
 void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsigned object_index)
 {
+	camera = camera;
+
 	// ライト方向をセット
 	Vec4 light_position = (Vec4)*GameObjectManager::GetDrawManager()
 		->GetDirectionalLightVector();
@@ -78,6 +80,8 @@ void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsig
 void PixelShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
 											  unsigned object_index, unsigned mesh_index)
 {
+	camera = camera;
+
 	// デカールテクスチャの設定
 	int sampler_index = GetConstantTable()->GetSamplerIndex("DECALE_SAMPLER");
 	GetDevice()->SetTexture(sampler_index, 

@@ -91,7 +91,7 @@ public:
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-float Length_Point(Plane* plane, Vec3* point)
+inline float Length_Point(Plane* plane, Vec3* point)
 {
 	return (plane->getpNormal()->x * point->x) 
 		+ (plane->getpNormal()->y * point->y) 
@@ -106,7 +106,7 @@ float Length_Point(Plane* plane, Vec3* point)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-bool IsFrontSide_Point(Plane* plane, Vec3* point)
+inline bool IsFrontSide_Point(Plane* plane, Vec3* point)
 {
 	if (Length_Point(plane, point) < 0.0f) return false;
 

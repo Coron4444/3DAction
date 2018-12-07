@@ -57,6 +57,9 @@ void SkyDomeDraw::Uninit()
 //--------------------------------------------------
 void SkyDomeDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
+	object_index = object_index;
+	mesh_index = mesh_index;
+
 	// Œ»Ý‚ÌƒƒbƒVƒ…‚Ì•`‰æ
 	sky_dome_model_->GetMesh()->DrawSubset(mesh_index);
 }

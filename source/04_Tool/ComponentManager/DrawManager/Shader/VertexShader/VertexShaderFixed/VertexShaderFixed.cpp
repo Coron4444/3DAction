@@ -84,6 +84,8 @@ void VertexShaderFixed::CommonSetting(DrawBase* draw, Camera* camera, unsigned o
 void VertexShaderFixed::SpecificSetting(DrawBase* draw, Camera* camera,
 										unsigned object_index, unsigned mesh_index)
 {
+	camera = camera;
+
 	SetTexture(draw, object_index, mesh_index);
 	SetMaterial(draw, object_index, mesh_index);
 }

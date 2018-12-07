@@ -135,6 +135,8 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 void VertexShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
 											  unsigned object_index, unsigned mesh_index)
 {
+	camera = camera;
+
 	// ディヒューズ色の設定
 	Vec4 lambert_diffuse_light_color_;
 	lambert_diffuse_light_color_.x = draw->getpMaterial(object_index, mesh_index)->Diffuse.r;

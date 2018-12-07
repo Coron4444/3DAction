@@ -1,6 +1,6 @@
 //================================================================================
 //!	@file	 Triangle.h
-//!	@brief	 三角形Class
+//!	@brief	 三角形平面Class
 //! @details 
 //!	@author  Kai Araki									@date 2018/11/02
 //================================================================================
@@ -20,9 +20,9 @@
 
 
 //************************************************************														   
-//! @brief   三角形Class
+//! @brief   三角形平面Class
 //!
-//! @details 三角形のClass
+//! @details 三角形平面のClass
 //************************************************************
 class Triangle : public CollisionShapeBase
 {
@@ -79,7 +79,7 @@ public:
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-bool CheckInnerPoint(Triangle* triangle, Vec3* point)
+inline bool CheckInnerPoint(Triangle* triangle, Vec3* point)
 {
 	// 任意の点から各頂点へのベクトルを算出
 	Vector3D vector0 = *triangle->getpPoint0() - *point;

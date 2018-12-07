@@ -67,24 +67,20 @@ public:
 	AxisVector* getpAxisVector() { return &axis_; }
 	Vector3D getRightVector()
 	{
-		math_vector_ = *axis_.GetForawrd();
+		math_vector_ = *axis_.GetRight();
 		math_vector_.AnyLengthVector(length_.x);
 		return math_vector_;
 	}
 	Vector3D getUpVector()
 	{
-		math_vector_ = *axis_.GetForawrd();
-
+		math_vector_ = *axis_.GetUp();
 		math_vector_.AnyLengthVector(length_.y);
-
 		return math_vector_;
 	}
 	Vector3D getForwardVector()
 	{
 		math_vector_ = *axis_.GetForawrd();
-
 		math_vector_.AnyLengthVector(length_.z);
-
 		return math_vector_;
 	}	
 	Vector3D getRightVectorHalf()

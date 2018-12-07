@@ -49,10 +49,10 @@ void GameSceneState_Start::Init()
 	game_scene_->setScore(0);
 
 	// デフォルトカメラの作成
-	//GameObjectManager::GetDrawManager()->GetBackBuffer()
-	//	->GetCamera()->ChangeState(new CameraState_CrawlUp());
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->ChangeState(new CameraState_HomingTarget());
+		->GetCamera()->ChangeState(new CameraState_CrawlUp());
+	//GameObjectManager::GetDrawManager()->GetBackBuffer()
+	//	->GetCamera()->ChangeState(new CameraState_HomingTarget());
 
 	// コインの作成
 	CoinFactory coin_factory;
@@ -68,20 +68,20 @@ void GameSceneState_Start::Init()
 	*temp->GetTransform()->GetPosition() = Vec3(-5.0f, 0.0f, -5.0f);
 	temp->GetTransform()->UpdateWorldMatrixSRT();
 
-	for (unsigned i = 0; i < 20; i++)
-	{
-		for (unsigned j = 0; j < 3; j++)
-		{
-			for (unsigned k = 0; k < 10; k++)
-			{
-				Coin* temp = coin_factory.Create();
-				*temp->GetTransform()->GetPosition() = Vec3(-40.0f + i * 5.0f, 
-															  0.0f + j * 3.0f, 
-															-40.0f + k * 5.0f);
-				temp->GetTransform()->UpdateWorldMatrixSRT();
-			}
-		}
-	}
+	//for (unsigned i = 0; i < 5; i++)
+	//{
+	//	for (unsigned j = 0; j < 3; j++)
+	//	{
+	//		for (unsigned k = 0; k < 5; k++)
+	//		{
+	//			Coin* temp = coin_factory.Create();
+	//			*temp->GetTransform()->GetPosition() = Vec3(-10.0f + i * 5.0f, 
+	//														  0.0f + j * 3.0f, 
+	//														-10.0f + k * 5.0f);
+	//			temp->GetTransform()->UpdateWorldMatrixSRT();
+	//		}
+	//	}
+	//}
 
 	// スカイドーム
 	SkyDomeFactory sky_dome_factory;
@@ -98,10 +98,10 @@ void GameSceneState_Start::Init()
 
 	// プレイヤー
 	PlayerFactory player_factory;
-	Player* player = player_factory.Create(game_scene_);
+	/*Player* player = */player_factory.Create(game_scene_);
 
-	((CameraState_HomingTarget*)GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->GetCameraState())->SetTarget(player);
+	//((CameraState_HomingTarget*)GameObjectManager::GetDrawManager()->GetBackBuffer()
+	//	->GetCamera()->GetCameraState())->SetTarget(player);
 
 	// 敵
 	EnemyFactory enemy_factory;

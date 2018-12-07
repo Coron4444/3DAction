@@ -53,7 +53,12 @@ public:
 	* object_index : 描画オブジェクトインデックス
 	*/
 	virtual void CommonSetting(DrawBase* draw, Camera* camera,
-							   unsigned object_index) {}
+							   unsigned object_index) 
+	{
+		draw = draw;
+		camera = camera;
+		object_index = object_index;
+	}
 
 	/**
 	* @brief
@@ -65,7 +70,13 @@ public:
 	* mesh_index : メッシュインデックス
 	*/
 	virtual void SpecificSetting(DrawBase* draw, Camera* camera,
-								 unsigned object_index, unsigned mesh_index) {}
+								 unsigned object_index, unsigned mesh_index) 
+	{
+		draw = draw;
+		camera = camera;
+		object_index = object_index;
+		mesh_index = mesh_index;
+	}
 };
 
 #endif
