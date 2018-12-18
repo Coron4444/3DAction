@@ -1,6 +1,6 @@
 <map id="DrawBase" name="DrawBase">
-<area shape="rect" id="node3" href="$class_draw_null.html" title="空白描画クラス " alt="" coords="301,385,375,412"/>
-<area shape="rect" id="node2" href="$class_component_base.html" title="コンポーネント基底クラス " alt="" coords="5,385,124,412"/>
+<area shape="rect" id="node3" href="$class_draw_null.html" title="空白描画Class " alt="" coords="301,385,375,412"/>
+<area shape="rect" id="node2" href="$class_component_base.html" title="コンポーネントBaseClass " alt="" coords="5,385,124,412"/>
 <area shape="rect" id="node4" href="$class_clear_logo_draw.html" title="クリアロゴ描画クラス " alt="" coords="449,5,559,32"/>
 <area shape="rect" id="node5" href="$class_coin_draw.html" title="コインロゴ描画Class " alt="" coords="465,56,543,83"/>
 <area shape="rect" id="node6" href="$class_enemy_draw.html" title="敵描画クラス " alt="" coords="458,107,550,133"/>

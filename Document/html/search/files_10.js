@@ -12,7 +12,6 @@ var searchData=
   ['scorefactory_2eh',['ScoreFactory.h',['../_score_factory_8h.html',1,'']]],
   ['scoreupdate_2ecpp',['ScoreUpdate.cpp',['../_score_update_8cpp.html',1,'']]],
   ['scoreupdate_2eh',['ScoreUpdate.h',['../_score_update_8h.html',1,'']]],
-  ['segment_2eh',['Segment.h',['../_segment_8h.html',1,'']]],
   ['shaderbase_2eh',['ShaderBase.h',['../_shader_base_8h.html',1,'']]],
   ['shadermanager_2ecpp',['ShaderManager.cpp',['../_shader_manager_8cpp.html',1,'']]],
   ['shadermanager_2eh',['ShaderManager.h',['../_shader_manager_8h.html',1,'']]],

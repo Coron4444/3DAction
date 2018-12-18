@@ -24,7 +24,7 @@ var class_effekseer_1_1_manager =
     [ "GetInstanceCount", "class_effekseer_1_1_manager.html#a4e4831b6514c683cd9cabf5cfe1103ab", null ],
     [ "GetLocation", "class_effekseer_1_1_manager.html#adef5e990faa38e39b9aa57f03f485747", null ],
     [ "GetMallocFunc", "class_effekseer_1_1_manager.html#aacbf3bb08982ff3b7fd3c5685b88c286", null ],
-    [ "GetMatrix", "class_effekseer_1_1_manager.html#aa5d7a667c75a81bc30f65483535b6a7f", null ],
+    [ "getMatrix", "class_effekseer_1_1_manager.html#abd550c1abf3f8b324ba9a5f71a735ff8", null ],
     [ "GetModelLoader", "class_effekseer_1_1_manager.html#a6afd86fbdfb8b3e6d12c9a80bfb3f80e", null ],
     [ "GetModelRenderer", "class_effekseer_1_1_manager.html#a6ed37b18b9e99ff77f9608da3f4db93a", null ],
     [ "GetPaused", "class_effekseer_1_1_manager.html#af30924b879f3463d504991bf9780dfac", null ],

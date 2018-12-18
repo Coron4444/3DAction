@@ -15,6 +15,6 @@
 <area shape="rect" id="node17" href="$class_stencil_shadow_test_draw.html" title="ステンシルシャドウ描画クラス " alt="" coords="423,664,585,691"/>
 <area shape="rect" id="node18" href="$class_title_logo_draw.html" title="タイトルロゴ描画クラス " alt="" coords="453,715,555,741"/>
 <area shape="rect" id="node19" href="$class_tutorial_logo_draw.html" title="チュートリアルロゴ描画クラス " alt="" coords="443,765,565,792"/>
-<area shape="rect" id="node2" href="$class_draw_base.html" title="描画基底クラス " alt="" coords="172,385,253,412"/>
-<area shape="rect" id="node3" href="$class_component_base.html" title="コンポーネント基底クラス " alt="" coords="5,385,124,412"/>
+<area shape="rect" id="node2" href="$class_draw_base.html" title="描画BaseClass " alt="" coords="172,385,253,412"/>
+<area shape="rect" id="node3" href="$class_component_base.html" title="コンポーネントBaseClass " alt="" coords="5,385,124,412"/>
 </map>

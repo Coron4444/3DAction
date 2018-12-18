@@ -30,9 +30,10 @@ class ResultScene : public SceneBase
 public:
 	//----------------------------------------
 	//! @brief コンストラクタ
+	//! @details
 	//! @param state 最初のステート
 	//----------------------------------------
-	ResultScene(StateBase* state) : SceneBase(state) {}
+	ResultScene(StateBase* state);
 };
 
 

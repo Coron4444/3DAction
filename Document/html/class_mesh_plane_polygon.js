@@ -11,7 +11,7 @@ var class_mesh_plane_polygon =
     [ "Draw", "class_mesh_plane_polygon.html#a813d5d6897ec0ce2b672cd6e1360e281", null ],
     [ "GetHeight", "class_mesh_plane_polygon.html#ac04d763b16a962f00c99e3354e45f320", null ],
     [ "GetMaterial", "class_mesh_plane_polygon.html#a1188cf0072e000227ecce6210ba2778c", null ],
-    [ "GetMeshNum", "class_mesh_plane_polygon.html#a42d1d92dea7878cf59d418aa7ab5106d", null ],
+    [ "getMeshNum", "class_mesh_plane_polygon.html#a1850ae9039b99d29b709b17224b49fa5", null ],
     [ "RegistrationIndex", "class_mesh_plane_polygon.html#aab346c974196e257399095dd914aaa51", null ],
     [ "RegistrationVertex", "class_mesh_plane_polygon.html#ae3c43c5641c962ac848b3dadd3ea15e5", null ],
     [ "SetColor", "class_mesh_plane_polygon.html#a514e1738386a6a4be0d37ea38bd425f2", null ],

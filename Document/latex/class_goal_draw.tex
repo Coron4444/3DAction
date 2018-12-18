@@ -18,15 +18,6 @@ Goal\+Draw の継承関係図\nopagebreak
 \includegraphics[width=169pt]{class_goal_draw__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Goal\+Draw 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_goal_draw__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,11 +29,11 @@ virtual void \mbox{\hyperlink{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20}
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95}{Get\+Matrix}} (unsigned object\+\_\+index) override
+unsigned \mbox{\hyperlink{class_goal_draw_ac80c8da78cda7b15a4ce46f7d7057622}{get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_goal_draw_a536a23c043576f9032e6651d7644d038}{getp\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_goal_draw_ae7f45a84006809475aba8d9ce1b1f8a5}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
@@ -93,76 +84,48 @@ static const std\+::string \mbox{\hyperlink{class_goal_draw_a1600b9846c344c03b4b
 
  Goal\+Draw.\+cpp の 86 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=304pt]{class_goal_draw_a554c826d7a4534ee489dfe18edf7ee0e_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}\label{class_goal_draw_a47baf72f8c1c961176610f161069b8d1}} 
-\index{Goal\+Draw@{Goal\+Draw}!Get\+Material@{Get\+Material}}
-\index{Get\+Material@{Get\+Material}!Goal\+Draw@{Goal\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Goal\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_goal_draw_ac80c8da78cda7b15a4ce46f7d7057622}\label{class_goal_draw_ac80c8da78cda7b15a4ce46f7d7057622}} 
+\index{Goal\+Draw@{Goal\+Draw}!get\+Mesh\+Num@{get\+Mesh\+Num}}
+\index{get\+Mesh\+Num@{get\+Mesh\+Num}!Goal\+Draw@{Goal\+Draw}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Num()}{getMeshNum()}}
+{\footnotesize\ttfamily unsigned Goal\+Draw\+::get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
-
-
-
- Goal\+Draw.\+cpp の 124 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_goal_draw_a47baf72f8c1c961176610f161069b8d1_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95}\label{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95}} 
-\index{Goal\+Draw@{Goal\+Draw}!Get\+Matrix@{Get\+Matrix}}
-\index{Get\+Matrix@{Get\+Matrix}!Goal\+Draw@{Goal\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Goal\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}{Draw\+Null}}を再実装しています。
 
 
 
  Goal\+Draw.\+cpp の 100 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_goal_draw_a50fa9ceaaecdff9910e0f91e65ad9e95_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}\label{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8}} 
-\index{Goal\+Draw@{Goal\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
-\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Goal\+Draw@{Goal\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Goal\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_goal_draw_ae7f45a84006809475aba8d9ce1b1f8a5}\label{class_goal_draw_ae7f45a84006809475aba8d9ce1b1f8a5}} 
+\index{Goal\+Draw@{Goal\+Draw}!getp\+Material@{getp\+Material}}
+\index{getp\+Material@{getp\+Material}!Goal\+Draw@{Goal\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Material()}{getpMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Goal\+Draw\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{Draw\+Null}}を再実装しています。
+
+
+
+ Goal\+Draw.\+cpp の 124 行目に定義があります。
+
+\mbox{\Hypertarget{class_goal_draw_a536a23c043576f9032e6651d7644d038}\label{class_goal_draw_a536a23c043576f9032e6651d7644d038}} 
+\index{Goal\+Draw@{Goal\+Draw}!getp\+Matrix@{getp\+Matrix}}
+\index{getp\+Matrix@{getp\+Matrix}!Goal\+Draw@{Goal\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Matrix()}{getpMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Goal\+Draw\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{Draw\+Null}}を再実装しています。
 
 
 
  Goal\+Draw.\+cpp の 112 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_goal_draw_a7f30c7a4325668eebd8730ad2bea1ad8_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e}\label{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e}} 
 \index{Goal\+Draw@{Goal\+Draw}!Init@{Init}}
 \index{Init@{Init}!Goal\+Draw@{Goal\+Draw}}
@@ -181,13 +144,6 @@ static const std\+::string \mbox{\hyperlink{class_goal_draw_a1600b9846c344c03b4b
 
  Goal\+Draw.\+cpp の 32 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_goal_draw_a3eb0a555fa2db9d2c1253018ea65796e_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24}\label{class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24}} 
 \index{Goal\+Draw@{Goal\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Goal\+Draw@{Goal\+Draw}}
@@ -206,13 +162,6 @@ static const std\+::string \mbox{\hyperlink{class_goal_draw_a1600b9846c344c03b4b
 
  Goal\+Draw.\+cpp の 60 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_goal_draw_a01318a0606848a3ca8ca7b7acbf4df24_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20}\label{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20}} 
 \index{Goal\+Draw@{Goal\+Draw}!Update@{Update}}
 \index{Update@{Update}!Goal\+Draw@{Goal\+Draw}}
@@ -231,13 +180,6 @@ static const std\+::string \mbox{\hyperlink{class_goal_draw_a1600b9846c344c03b4b
 
  Goal\+Draw.\+cpp の 74 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_goal_draw_a6e003277ed44eb9c800a616b6acbcb20_cgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}

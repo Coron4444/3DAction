@@ -17,6 +17,7 @@
 #include <Vector3D.h>
 
 
+
 //************************************************************														   
 //! @brief   AABBClass
 //!
@@ -35,67 +36,86 @@ private:
 
 
 //====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief 座標ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 座標ポインタ
+	//----------------------------------------
+	Vector3D* getpPositon();
+
+	//----------------------------------------
+	//! @brief 各辺の長さポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 各辺の長さポインタ
+	//----------------------------------------
+	Vector3D* getpLength();
+
+	//----------------------------------------
+	//! @brief 各辺の長さ設定関数
+	//! @details
+	//! @param[in] value 各辺の長さ
+	//! @retval void なし
+	//----------------------------------------
+	void setLength(Vector3D value);
+
+	//----------------------------------------
+	//! @brief 最小値ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 最小値ポインタ
+	//----------------------------------------
+	Vector3D* getpMin();
+
+	//----------------------------------------
+	//! @brief 最大値ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 最大値ポインタ
+	//----------------------------------------
+	Vector3D* getpMax();
+
+
+//====================
 // 関数
 //====================
 public:
-	/**
-	* @brief
-	* コンストラクタ
-	*/
 	//----------------------------------------
 	//! @brief コンストラクタ
+	//! @details
 	//! @param void なし
 	//----------------------------------------
-	AABB() : CollisionShapeBase(CollisionShapeBase::Type::AABB) {}
+	AABB();
 
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details
 	//! @param[in] position 座標
 	//! @param[in] length   各辺の長さ
 	//! @retval void なし
 	//----------------------------------------
-	void Init(Vector3D position, Vector3D length)
-	{
-		// 座標を設定
-		position_ = position;
-
-		// 長さを設定
-		length_ = length;
-
-		// 最小値と最大値
-		UpdateMinAndMax();
-	}
+	void Init(Vector3D position, Vector3D length);
 
 	//----------------------------------------
 	//! @brief 更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	void Update()
-	{
-		// 最小値と最大値
-		UpdateMinAndMax();
-	}
-
-	// プロパティ
-	Vector3D* getpPositon() { return &position_; }
-	Vector3D* getpLength() { return &length_; }
-	void setLength(Vector3D value) { length_ = value; };
-	Vector3D* getpMin() { return &min_; }
-	Vector3D* getpMax() { return &max_; }
-
+	void Update();
 
 private:
 	//----------------------------------------
 	//! @brief 最小値と最大値更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	void UpdateMinAndMax()
-	{
-		min_ = position_ - length_;
-		max_ = position_ + length_;
-	}
+	void UpdateMinAndMax();
 };
 
 

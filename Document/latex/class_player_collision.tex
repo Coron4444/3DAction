@@ -13,15 +13,6 @@ Player\+Collision の継承関係図\nopagebreak
 \includegraphics[width=169pt]{class_player_collision__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Player\+Collision 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
@@ -120,22 +111,8 @@ M\+AX&\\
 
 
 
- Player\+Collision.\+cpp の 200 行目に定義があります。
+ Player\+Collision.\+cpp の 202 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_ae54c44acd4a1ef4569c1bb9202af3570_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_ae54c44acd4a1ef4569c1bb9202af3570_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_ad937a5fd226e742270202bf4eff53767}\label{class_player_collision_ad937a5fd226e742270202bf4eff53767}} 
 \index{Player\+Collision@{Player\+Collision}!Hit\+Collision@{Hit\+Collision}}
 \index{Hit\+Collision@{Hit\+Collision}!Player\+Collision@{Player\+Collision}}
@@ -147,26 +124,27 @@ M\+AX&\\
 衝突時関数 
 
 
-\begin{DoxyParams}{引数}
-{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em hit\+\_\+collision} & 相手の衝突基底クラス \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+object} & 相手の衝突オブジェクト \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+my\+\_\+object} & 自分の衝突オブジェクト \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_collision_null_a580f507d8918865679feec3cc7b613d1}{Collision\+Null}}を再実装しています。
 
 
 
- Player\+Collision.\+cpp の 128 行目に定義があります。
+ Player\+Collision.\+cpp の 130 行目に定義があります。
 
-呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_ad937a5fd226e742270202bf4eff53767_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}\label{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}} 
 \index{Player\+Collision@{Player\+Collision}!Hit\+Ground@{Hit\+Ground}}
 \index{Hit\+Ground@{Hit\+Ground}!Player\+Collision@{Player\+Collision}}
@@ -178,20 +156,23 @@ M\+AX&\\
 フィールドとの衝突時関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position\+\_\+y} & フィールドの高さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}{Collision\+Null}}を再実装しています。
 
 
 
- Player\+Collision.\+cpp の 179 行目に定義があります。
+ Player\+Collision.\+cpp の 181 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10}\label{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10}} 
 \index{Player\+Collision@{Player\+Collision}!Hit\+Substance@{Hit\+Substance}}
 \index{Hit\+Substance@{Hit\+Substance}!Player\+Collision@{Player\+Collision}}
@@ -200,23 +181,8 @@ M\+AX&\\
 
 
 
- Player\+Collision.\+cpp の 267 行目に定義があります。
+ Player\+Collision.\+cpp の 269 行目に定義があります。
 
-呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_a5048cc608d72d03d02b23c5533dbfd10_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}\label{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}} 
 \index{Player\+Collision@{Player\+Collision}!Init@{Init}}
 \index{Init@{Init}!Player\+Collision@{Player\+Collision}}
@@ -228,20 +194,23 @@ M\+AX&\\
 初期化関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
-\mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_collision_null_af5db1d080c1c0c5a1199062850d8a2ff}{Collision\+Null}}を再実装しています。
 
 
 
  Player\+Collision.\+cpp の 49 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_a3dd6238b75933fd60aee77e92353cc44_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_adce9e2df2361cadba7bbe397810a1893}\label{class_player_collision_adce9e2df2361cadba7bbe397810a1893}} 
 \index{Player\+Collision@{Player\+Collision}!Not\+Hit\+Bounding\+Sphere@{Not\+Hit\+Bounding\+Sphere}}
 \index{Not\+Hit\+Bounding\+Sphere@{Not\+Hit\+Bounding\+Sphere}!Player\+Collision@{Player\+Collision}}
@@ -250,22 +219,8 @@ M\+AX&\\
 
 
 
- Player\+Collision.\+cpp の 237 行目に定義があります。
+ Player\+Collision.\+cpp の 239 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_adce9e2df2361cadba7bbe397810a1893_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_adce9e2df2361cadba7bbe397810a1893_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}\label{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}} 
 \index{Player\+Collision@{Player\+Collision}!Not\+Hit\+Collision@{Not\+Hit\+Collision}}
 \index{Not\+Hit\+Collision@{Not\+Hit\+Collision}!Player\+Collision@{Player\+Collision}}
@@ -277,25 +232,27 @@ M\+AX&\\
 非衝突時関数 
 
 
-\begin{DoxyParams}{引数}
-{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em hit\+\_\+collision} & 相手の衝突基底クラス \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+object} & 相手の衝突オブジェクト \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+my\+\_\+object} & 自分の衝突オブジェクト \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}{Collision\+Null}}を再実装しています。
 
 
 
- Player\+Collision.\+cpp の 156 行目に定義があります。
+ Player\+Collision.\+cpp の 158 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}\label{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801}} 
 \index{Player\+Collision@{Player\+Collision}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Player\+Collision@{Player\+Collision}}
@@ -307,20 +264,23 @@ M\+AX&\\
 終了関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Collision\+Null}}を再実装しています。
 
 
 
- Player\+Collision.\+cpp の 90 行目に定義があります。
+ Player\+Collision.\+cpp の 92 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_aa1ab60a62fa2ae3231a1ea0bc8faf801_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_player_collision_a09f97f220903f5724a3af6b97af3a336}\label{class_player_collision_a09f97f220903f5724a3af6b97af3a336}} 
 \index{Player\+Collision@{Player\+Collision}!Update@{Update}}
 \index{Update@{Update}!Player\+Collision@{Player\+Collision}}
@@ -332,20 +292,23 @@ M\+AX&\\
 更新関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Collision\+Null}}を再実装しています。
 
 
 
- Player\+Collision.\+cpp の 104 行目に定義があります。
+ Player\+Collision.\+cpp の 106 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_player_collision_a09f97f220903f5724a3af6b97af3a336_cgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}

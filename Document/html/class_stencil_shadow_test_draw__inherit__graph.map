@@ -1,5 +1,5 @@
 <map id="StencilShadowTestDraw" name="StencilShadowTestDraw">
-<area shape="rect" id="node2" href="$class_draw_null.html" title="空白描画クラス " alt="" coords="50,155,123,181"/>
-<area shape="rect" id="node3" href="$class_draw_base.html" title="描画基底クラス " alt="" coords="46,80,127,107"/>
-<area shape="rect" id="node4" href="$class_component_base.html" title="コンポーネント基底クラス " alt="" coords="27,5,146,32"/>
+<area shape="rect" id="node2" href="$class_draw_null.html" title="空白描画Class " alt="" coords="50,155,123,181"/>
+<area shape="rect" id="node3" href="$class_draw_base.html" title="描画BaseClass " alt="" coords="46,80,127,107"/>
+<area shape="rect" id="node4" href="$class_component_base.html" title="コンポーネントBaseClass " alt="" coords="27,5,146,32"/>
 </map>

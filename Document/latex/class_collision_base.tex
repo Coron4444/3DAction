@@ -2,7 +2,7 @@
 \label{class_collision_base}\index{Collision\+Base@{Collision\+Base}}
 
 
-衝突基底クラス  
+衝突\+Base\+Class  
 
 
 
@@ -16,15 +16,6 @@ Collision\+Base の継承関係図\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_collision_base__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collision\+Base 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{公開型}
@@ -45,10 +36,6 @@ enum \mbox{\hyperlink{class_collision_base_a4dd1ed00099a19c0176913af93c4e365}{St
 \item 
 virtual \mbox{\hyperlink{class_collision_base_a095def3600633e2eb492bf24112e9dc3}{$\sim$\+Collision\+Base}} ()
 \begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_base_a0f967cf5de4178ee99f434c3ff4f16fd}{Update}} ()=0
-\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_base_a0b2c1e3b090431d596b6a17e81360932}{Debug\+Display}} ()=0
-\begin{DoxyCompactList}\small\item\em デバッグ表示関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_collision_base_a5c94fe03f875595758e83eb2a176e45d}{Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object)=0
 \begin{DoxyCompactList}\small\item\em 衝突時関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_collision_base_a9b64fc5c3f2aac2a05296985ef799fb1}{Not\+Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object)=0
@@ -69,7 +56,7 @@ void \mbox{\hyperlink{class_collision_base_a257660ba9ad63f8c92137fdd24ad46cb}{El
 \begin{DoxyCompactList}\small\item\em めり込み解消関数 \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_collision_base_ac1d7000c820fabfa604138cda30a40a1}{get\+End\+Index\+Of\+Array}} ()
 \item 
-\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$ \mbox{\hyperlink{class_collision_base_a2e54e04c6ebd809ac2bc955083fec61c}{get\+Collision\+Objects}} (unsigned index)
+\mbox{\hyperlink{class_collision_objects}{Collision\+Objects}} $\ast$ \mbox{\hyperlink{class_collision_base_a542bb0a4095f4399f8dc09d0860d51ba}{getp\+Collision\+Objects}} (unsigned index)
 \item 
 \mbox{\hyperlink{class_collision_base_a4dd1ed00099a19c0176913af93c4e365}{State}} \mbox{\hyperlink{class_collision_base_af4e773951a4e1965e64410841a0292a4}{get\+State}} ()
 \item 
@@ -96,11 +83,11 @@ static const unsigned \mbox{\hyperlink{class_collision_base_a0ddcdd5ed993b19c6ed
 
 
 \subsection{詳解}
-衝突基底クラス 
+衝突\+Base\+Class 
 
-衝突の基底クラス 
+衝突の\+Base\+Class 
 
- Collision\+Base.\+h の 35 行目に定義があります。
+ Collision\+Base.\+h の 29 行目に定義があります。
 
 
 
@@ -139,7 +126,7 @@ M\+AX&\\
 \end{DoxyEnumFields}
 
 
- Collision\+Base.\+h の 49 行目に定義があります。
+ Collision\+Base.\+h の 36 行目に定義があります。
 
 
 
@@ -155,8 +142,13 @@ M\+AX&\\
 仮想デストラクタ 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Collision\+Base.\+h の 77 行目に定義があります。
+
+ Collision\+Base.\+h の 71 行目に定義があります。
 
 
 
@@ -172,45 +164,19 @@ M\+AX&\\
 複数衝突オブジェクト追加関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object} & 追加したい複数衝突オブジェクト \\
+\hline
+\end{DoxyParams}
 
- Collision\+Base.\+h の 131 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_ace98d75317a9f56bc6cada7980285b53_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_ace98d75317a9f56bc6cada7980285b53_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_collision_base_a0b2c1e3b090431d596b6a17e81360932}\label{class_collision_base_a0b2c1e3b090431d596b6a17e81360932}} 
-\index{Collision\+Base@{Collision\+Base}!Debug\+Display@{Debug\+Display}}
-\index{Debug\+Display@{Debug\+Display}!Collision\+Base@{Collision\+Base}}
-\subsubsection{\texorpdfstring{Debug\+Display()}{DebugDisplay()}}
-{\footnotesize\ttfamily virtual void Collision\+Base\+::\+Debug\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
+ Collision\+Base.\+h の 114 行目に定義があります。
 
-デバッグ表示関数 
-
-
-
-\mbox{\hyperlink{class_collision_null_a3ee0dacfb13c949538519f39d2f6fb0f}{Collision\+Null}}で実装されています。
-
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a0b2c1e3b090431d596b6a17e81360932_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_a257660ba9ad63f8c92137fdd24ad46cb}\label{class_collision_base_a257660ba9ad63f8c92137fdd24ad46cb}} 
 \index{Collision\+Base@{Collision\+Base}!Elimination\+Of\+Nesting@{Elimination\+Of\+Nesting}}
 \index{Elimination\+Of\+Nesting@{Elimination\+Of\+Nesting}!Collision\+Base@{Collision\+Base}}
@@ -222,48 +188,21 @@ M\+AX&\\
 めり込み解消関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em transform} & めり込みを解消したい状態 \\
+\hline
+\mbox{\tt in}  & {\em hit\+\_\+vector} & めり込みベクトル \\
+\hline
+\end{DoxyParams}
 
- Collision\+Base.\+h の 175 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a257660ba9ad63f8c92137fdd24ad46cb_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a257660ba9ad63f8c92137fdd24ad46cb_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_collision_base_a2e54e04c6ebd809ac2bc955083fec61c}\label{class_collision_base_a2e54e04c6ebd809ac2bc955083fec61c}} 
-\index{Collision\+Base@{Collision\+Base}!get\+Collision\+Objects@{get\+Collision\+Objects}}
-\index{get\+Collision\+Objects@{get\+Collision\+Objects}!Collision\+Base@{Collision\+Base}}
-\subsubsection{\texorpdfstring{get\+Collision\+Objects()}{getCollisionObjects()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}}$\ast$ Collision\+Base\+::get\+Collision\+Objects (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
+ Collision\+Base.\+h の 164 行目に定義があります。
 
- Collision\+Base.\+h の 183 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a2e54e04c6ebd809ac2bc955083fec61c_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a2e54e04c6ebd809ac2bc955083fec61c_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_ac1d7000c820fabfa604138cda30a40a1}\label{class_collision_base_ac1d7000c820fabfa604138cda30a40a1}} 
 \index{Collision\+Base@{Collision\+Base}!get\+End\+Index\+Of\+Array@{get\+End\+Index\+Of\+Array}}
 \index{get\+End\+Index\+Of\+Array@{get\+End\+Index\+Of\+Array}!Collision\+Base@{Collision\+Base}}
@@ -272,23 +211,8 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 182 行目に定義があります。
+ Collision\+Base.\+h の 171 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_ac1d7000c820fabfa604138cda30a40a1_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_ac1d7000c820fabfa604138cda30a40a1_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_a7b9cd927976308f8719f3becc03b99a1}\label{class_collision_base_a7b9cd927976308f8719f3becc03b99a1}} 
 \index{Collision\+Base@{Collision\+Base}!get\+Is\+Judgment\+Ground@{get\+Is\+Judgment\+Ground}}
 \index{get\+Is\+Judgment\+Ground@{get\+Is\+Judgment\+Ground}!Collision\+Base@{Collision\+Base}}
@@ -297,16 +221,18 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 186 行目に定義があります。
+ Collision\+Base.\+h の 175 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a7b9cd927976308f8719f3becc03b99a1_icgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{class_collision_base_a542bb0a4095f4399f8dc09d0860d51ba}\label{class_collision_base_a542bb0a4095f4399f8dc09d0860d51ba}} 
+\index{Collision\+Base@{Collision\+Base}!getp\+Collision\+Objects@{getp\+Collision\+Objects}}
+\index{getp\+Collision\+Objects@{getp\+Collision\+Objects}!Collision\+Base@{Collision\+Base}}
+\subsubsection{\texorpdfstring{getp\+Collision\+Objects()}{getpCollisionObjects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_objects}{Collision\+Objects}}$\ast$ Collision\+Base\+::getp\+Collision\+Objects (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Collision\+Base.\+h の 172 行目に定義があります。
+
 \mbox{\Hypertarget{class_collision_base_af4e773951a4e1965e64410841a0292a4}\label{class_collision_base_af4e773951a4e1965e64410841a0292a4}} 
 \index{Collision\+Base@{Collision\+Base}!get\+State@{get\+State}}
 \index{get\+State@{get\+State}!Collision\+Base@{Collision\+Base}}
@@ -315,16 +241,8 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 184 行目に定義があります。
+ Collision\+Base.\+h の 173 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_af4e773951a4e1965e64410841a0292a4_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_a5c94fe03f875595758e83eb2a176e45d}\label{class_collision_base_a5c94fe03f875595758e83eb2a176e45d}} 
 \index{Collision\+Base@{Collision\+Base}!Hit\+Collision@{Hit\+Collision}}
 \index{Hit\+Collision@{Hit\+Collision}!Collision\+Base@{Collision\+Base}}
@@ -336,22 +254,23 @@ M\+AX&\\
 衝突時関数 
 
 
-\begin{DoxyParams}{引数}
-{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em hit\+\_\+collision} & 相手の衝突基底クラス \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+object} & 相手の衝突オブジェクト \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+my\+\_\+object} & 自分の衝突オブジェクト \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_collision_null_a580f507d8918865679feec3cc7b613d1}{Collision\+Null}}, \mbox{\hyperlink{class_player_collision_ad937a5fd226e742270202bf4eff53767}{Player\+Collision}}で実装されています。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a5c94fe03f875595758e83eb2a176e45d_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_a48c9d1d9e4286cde5054d4d2aa70bdd8}\label{class_collision_base_a48c9d1d9e4286cde5054d4d2aa70bdd8}} 
 \index{Collision\+Base@{Collision\+Base}!Hit\+Ground@{Hit\+Ground}}
 \index{Hit\+Ground@{Hit\+Ground}!Collision\+Base@{Collision\+Base}}
@@ -363,17 +282,19 @@ M\+AX&\\
 フィールドとの衝突時関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position\+\_\+y} & フィールドの高さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}{Collision\+Null}}, \mbox{\hyperlink{class_player_collision_a3522ce17b1e1752f2737c2243582ecb0}{Player\+Collision}}で実装されています。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a48c9d1d9e4286cde5054d4d2aa70bdd8_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_a9b64fc5c3f2aac2a05296985ef799fb1}\label{class_collision_base_a9b64fc5c3f2aac2a05296985ef799fb1}} 
 \index{Collision\+Base@{Collision\+Base}!Not\+Hit\+Collision@{Not\+Hit\+Collision}}
 \index{Not\+Hit\+Collision@{Not\+Hit\+Collision}!Collision\+Base@{Collision\+Base}}
@@ -385,22 +306,23 @@ M\+AX&\\
 非衝突時関数 
 
 
-\begin{DoxyParams}{引数}
-{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em hit\+\_\+collision} & 相手の衝突基底クラス \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+object} & 相手の衝突オブジェクト \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+my\+\_\+object} & 自分の衝突オブジェクト \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}{Collision\+Null}}, \mbox{\hyperlink{class_player_collision_a21b8f825ea142024212ab5fe3f427ab0}{Player\+Collision}}で実装されています。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a9b64fc5c3f2aac2a05296985ef799fb1_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_ac1ed5b1c0c9b6b70b432e6656f9c4b45}\label{class_collision_base_ac1ed5b1c0c9b6b70b432e6656f9c4b45}} 
 \index{Collision\+Base@{Collision\+Base}!Not\+Hit\+Ground@{Not\+Hit\+Ground}}
 \index{Not\+Hit\+Ground@{Not\+Hit\+Ground}!Collision\+Base@{Collision\+Base}}
@@ -412,17 +334,19 @@ M\+AX&\\
 フィールドとの非衝突時関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position\+\_\+y} & フィールドの高さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce7911}{Collision\+Null}}で実装されています。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_ac1ed5b1c0c9b6b70b432e6656f9c4b45_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_base_a4a7bba0fc9d39e27dc58d695f04cf186}\label{class_collision_base_a4a7bba0fc9d39e27dc58d695f04cf186}} 
 \index{Collision\+Base@{Collision\+Base}!Overwrite\+Array\+Collisions\+Object@{Overwrite\+Array\+Collisions\+Object}}
 \index{Overwrite\+Array\+Collisions\+Object@{Overwrite\+Array\+Collisions\+Object}!Collision\+Base@{Collision\+Base}}
@@ -434,16 +358,21 @@ M\+AX&\\
 複数衝突オブジェクト上書き関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object} & 古い複数衝突オブジェクト \\
+\hline
+\mbox{\tt in}  & {\em object} & 新しい複数衝突オブジェクト \\
+\hline
+\end{DoxyParams}
 
- Collision\+Base.\+h の 140 行目に定義があります。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a4a7bba0fc9d39e27dc58d695f04cf186_cgraph}
-\end{center}
-\end{figure}
+
+ Collision\+Base.\+h の 125 行目に定義があります。
+
 \mbox{\Hypertarget{class_collision_base_a54d52219e2bf43ed2a9b2a11813934ea}\label{class_collision_base_a54d52219e2bf43ed2a9b2a11813934ea}} 
 \index{Collision\+Base@{Collision\+Base}!Release\+All\+Collision\+Objects\+From\+Array@{Release\+All\+Collision\+Objects\+From\+Array}}
 \index{Release\+All\+Collision\+Objects\+From\+Array@{Release\+All\+Collision\+Objects\+From\+Array}!Collision\+Base@{Collision\+Base}}
@@ -455,23 +384,19 @@ M\+AX&\\
 複数衝突オブジェクト全解放関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Collision\+Base.\+h の 161 行目に定義があります。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a54d52219e2bf43ed2a9b2a11813934ea_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a54d52219e2bf43ed2a9b2a11813934ea_icgraph}
-\end{center}
-\end{figure}
+
+ Collision\+Base.\+h の 148 行目に定義があります。
+
 \mbox{\Hypertarget{class_collision_base_a46bbb58a0dd818fc172f34462b1d5b08}\label{class_collision_base_a46bbb58a0dd818fc172f34462b1d5b08}} 
 \index{Collision\+Base@{Collision\+Base}!Release\+Collision\+Objects\+From\+Array@{Release\+Collision\+Objects\+From\+Array}}
 \index{Release\+Collision\+Objects\+From\+Array@{Release\+Collision\+Objects\+From\+Array}!Collision\+Base@{Collision\+Base}}
@@ -483,16 +408,19 @@ M\+AX&\\
 複数衝突オブジェクト解放関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object} & 消去したい複数衝突オブジェクト \\
+\hline
+\end{DoxyParams}
 
- Collision\+Base.\+h の 151 行目に定義があります。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a46bbb58a0dd818fc172f34462b1d5b08_cgraph}
-\end{center}
-\end{figure}
+
+ Collision\+Base.\+h の 137 行目に定義があります。
+
 \mbox{\Hypertarget{class_collision_base_a231cb5c715701444db63db030c06b694}\label{class_collision_base_a231cb5c715701444db63db030c06b694}} 
 \index{Collision\+Base@{Collision\+Base}!set\+Is\+Judgment\+Ground@{set\+Is\+Judgment\+Ground}}
 \index{set\+Is\+Judgment\+Ground@{set\+Is\+Judgment\+Ground}!Collision\+Base@{Collision\+Base}}
@@ -501,7 +429,7 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 187 行目に定義があります。
+ Collision\+Base.\+h の 176 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_base_a01db1e666b8e71c33969e9ab6bbc724e}\label{class_collision_base_a01db1e666b8e71c33969e9ab6bbc724e}} 
 \index{Collision\+Base@{Collision\+Base}!set\+State@{set\+State}}
@@ -511,37 +439,8 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 185 行目に定義があります。
+ Collision\+Base.\+h の 174 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=338pt]{class_collision_base_a01db1e666b8e71c33969e9ab6bbc724e_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_collision_base_a0f967cf5de4178ee99f434c3ff4f16fd}\label{class_collision_base_a0f967cf5de4178ee99f434c3ff4f16fd}} 
-\index{Collision\+Base@{Collision\+Base}!Update@{Update}}
-\index{Update@{Update}!Collision\+Base@{Collision\+Base}}
-\subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily virtual void Collision\+Base\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-更新関数 
-
-
-
-\mbox{\hyperlink{class_goal_collision_a1e3995dc2f5ba2678580d06699ca6936}{Goal\+Collision}}, \mbox{\hyperlink{class_coin_collision_a981fd9b1b8c688a757a456a56d80501b}{Coin\+Collision}}, \mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Collision\+Null}}, \mbox{\hyperlink{class_enemy_collision_ab54133504d867c6d2070d2f3854a0aaf}{Enemy\+Collision}}, \mbox{\hyperlink{class_player_collision_a09f97f220903f5724a3af6b97af3a336}{Player\+Collision}}で実装されています。
-
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_base_a0f967cf5de4178ee99f434c3ff4f16fd_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}
@@ -557,7 +456,7 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 41 行目に定義があります。
+ Collision\+Base.\+h の 51 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_base_a9ef8dfac9a07e31cb1d058b6a22e9640}\label{class_collision_base_a9ef8dfac9a07e31cb1d058b6a22e9640}} 
 \index{Collision\+Base@{Collision\+Base}!collision\+\_\+objects\+\_\+@{collision\+\_\+objects\+\_\+}}
@@ -571,7 +470,7 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 64 行目に定義があります。
+ Collision\+Base.\+h の 58 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_base_acc56eed7a6366d77bb2b80810f0a4ea7}\label{class_collision_base_acc56eed7a6366d77bb2b80810f0a4ea7}} 
 \index{Collision\+Base@{Collision\+Base}!is\+\_\+judgment\+\_\+ground\+\_\+@{is\+\_\+judgment\+\_\+ground\+\_\+}}
@@ -585,7 +484,7 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 66 行目に定義があります。
+ Collision\+Base.\+h の 60 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_base_a00000e1adbe3869939c8119a4ae830d0}\label{class_collision_base_a00000e1adbe3869939c8119a4ae830d0}} 
 \index{Collision\+Base@{Collision\+Base}!state\+\_\+@{state\+\_\+}}
@@ -599,7 +498,7 @@ M\+AX&\\
 
 
 
- Collision\+Base.\+h の 65 行目に定義があります。
+ Collision\+Base.\+h の 59 行目に定義があります。
 
 
 

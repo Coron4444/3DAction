@@ -1,6 +1,6 @@
 <map id="CollisionBase" name="CollisionBase">
-<area shape="rect" id="node3" href="$class_collision_null.html" title="空白衝突クラス " alt="" coords="201,155,294,181"/>
-<area shape="rect" id="node2" href="$class_component_base.html" title="コンポーネント基底クラス " alt="" coords="188,5,307,32"/>
+<area shape="rect" id="node3" href="$class_collision_null.html" title="空白衝突Class " alt="" coords="201,155,294,181"/>
+<area shape="rect" id="node2" href="$class_component_base.html" title="コンポーネントBaseClass " alt="" coords="188,5,307,32"/>
 <area shape="rect" id="node4" href="$class_coin_collision.html" title="CoinCollision" alt="" coords="5,229,103,256"/>
 <area shape="rect" id="node5" href="$class_enemy_collision.html" title="EnemyCollision" alt="" coords="127,229,239,256"/>
 <area shape="rect" id="node6" href="$class_goal_collision.html" title="ゴール衝突クラス " alt="" coords="263,229,362,256"/>

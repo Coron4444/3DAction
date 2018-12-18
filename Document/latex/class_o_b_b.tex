@@ -2,6 +2,11 @@
 \label{class_o_b_b}\index{O\+BB@{O\+BB}}
 
 
+O\+B\+B\+Class  
+
+
+
+
 {\ttfamily \#include $<$O\+B\+B.\+h$>$}
 
 
@@ -13,212 +18,193 @@ O\+BB の継承関係図\nopagebreak
 \includegraphics[width=184pt]{class_o_b_b__inherit__graph}
 \end{center}
 \end{figure}
-
-
-O\+BB 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_o_b_b_a368e87fc4c7cbc04569229010c88f8cc}{O\+BB}} (float lenght\+\_\+right=1.\+0f, float lenght\+\_\+up=1.\+0f, float lenght\+\_\+forward=1.\+0f, Vec3 position=\+Vec3(0.\+0f, 0.\+0f, 0.\+0f))
+\mbox{\hyperlink{class_o_b_b_af752af068c6fc1787f06556b6a71c929}{O\+BB}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_b_b_ae5d7ba6a226b2da4271ffd16d478d800}{Init}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} position, \mbox{\hyperlink{class_vector3_d}{Vector3D}} length)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_a72d5af1f3234560445244447da2150e1}{getp\+Position}} ()
 \item 
-virtual \mbox{\hyperlink{class_o_b_b_aa95ab77e0c88faf68db43ed7f6b0ea5a}{$\sim$\+O\+BB}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_a6bdba6c807846b5eb1a3842981089479}{getp\+Length}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_a03fdc91609b94007369d3ba168dbb54d}{Get\+Vector\+Forward}} ()
+\mbox{\hyperlink{class_axis_vector}{Axis\+Vector}} $\ast$ \mbox{\hyperlink{class_o_b_b_aa79d651cda6be3bb1c9456566027f8f9}{getp\+Axis\+Vector}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_a0c0fd050224beb2c196e923e177bc0d5}{Get\+Vector\+Up}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_a7879aad21978ea9dfc5f50a608349b27}{get\+Right\+Vector}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_ace28639ea3a6c38d994d82d0dd40496e}{Get\+Vector\+Right}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_a73da06fa4dbebb2b59dc3168971c8d5d}{get\+Up\+Vector}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_a03218b64dad1985876e7bad09f4a61ce}{Get\+Vector\+Forward\+Half}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_a4d839b676caebf6ba4361bb9166e97d3}{get\+Forward\+Vector}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_a48255d7b9af2d2ea109de41787c30a3a}{Get\+Vector\+Up\+Half}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_ab0452e841ab2c1362b2e6365b27cea97}{get\+Right\+Vector\+Half}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_o_b_b_a1c3a21fd4ff8dcc55d4f5d20c563ebd6}{Get\+Vector\+Right\+Half}} ()
-\end{DoxyCompactItemize}
-\subsection*{公開変数類}
-\begin{DoxyCompactItemize}
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_a510542bc5071eb9bd174d69ffa64f023}{get\+Up\+Vector\+Half}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_ab05a884fc030d7a3cf7b355880d9194c}{position\+\_\+}}
-\item 
-\mbox{\hyperlink{class_axis_vector}{Axis\+Vector}} \mbox{\hyperlink{class_o_b_b_ab002fad8cf0a9a08fc50407dc849aab1}{axis\+\_\+}}
-\item 
-float \mbox{\hyperlink{class_o_b_b_a33c3db74caad2f0827d71ab16e9c5f1d}{lenght\+\_\+right\+\_\+}}
-\item 
-float \mbox{\hyperlink{class_o_b_b_a4c7f9246708424221b38051cc763ca3c}{lenght\+\_\+up\+\_\+}}
-\item 
-float \mbox{\hyperlink{class_o_b_b_a999f5165cf4cb28b7b59a75e81613bab}{lenght\+\_\+forward\+\_\+}}
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_a00b6038bdcc374d3acd9ef4d002b59d0}{get\+Forward\+Vector\+Half}} ()
 \end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_ab05a884fc030d7a3cf7b355880d9194c}{position\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 座標 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_a04dc4d7036d26215f9c33a7cad633947}{length\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 各辺の長さ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_axis_vector}{Axis\+Vector}} \mbox{\hyperlink{class_o_b_b_ab002fad8cf0a9a08fc50407dc849aab1}{axis\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 軸ベクトル \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_o_b_b_ae2bb48bafa38fdf30f0e383da193152c}{math\+\_\+vector\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 計算用ベクトル \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
 \subsection{詳解}
+O\+B\+B\+Class 
 
+O\+B\+Bの\+Class 
 
- O\+B\+B.\+h の 32 行目に定義があります。
+ O\+B\+B.\+h の 27 行目に定義があります。
 
 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_o_b_b_a368e87fc4c7cbc04569229010c88f8cc}\label{class_o_b_b_a368e87fc4c7cbc04569229010c88f8cc}} 
+\mbox{\Hypertarget{class_o_b_b_af752af068c6fc1787f06556b6a71c929}\label{class_o_b_b_af752af068c6fc1787f06556b6a71c929}} 
 \index{O\+BB@{O\+BB}!O\+BB@{O\+BB}}
 \index{O\+BB@{O\+BB}!O\+BB@{O\+BB}}
 \subsubsection{\texorpdfstring{O\+B\+B()}{OBB()}}
-{\footnotesize\ttfamily O\+B\+B\+::\+O\+BB (\begin{DoxyParamCaption}\item[{float}]{lenght\+\_\+right = {\ttfamily 1.0f},  }\item[{float}]{lenght\+\_\+up = {\ttfamily 1.0f},  }\item[{float}]{lenght\+\_\+forward = {\ttfamily 1.0f},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily O\+B\+B\+::\+O\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- O\+B\+B.\+h の 96 行目に定義があります。
-
-\mbox{\Hypertarget{class_o_b_b_aa95ab77e0c88faf68db43ed7f6b0ea5a}\label{class_o_b_b_aa95ab77e0c88faf68db43ed7f6b0ea5a}} 
-\index{O\+BB@{O\+BB}!````~O\+BB@{$\sim$\+O\+BB}}
-\index{````~O\+BB@{$\sim$\+O\+BB}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{$\sim$\+O\+B\+B()}{~OBB()}}
-{\footnotesize\ttfamily O\+B\+B\+::$\sim$\+O\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+コンストラクタ 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- O\+B\+B.\+h の 113 行目に定義があります。
+
+ O\+B\+B.\+h の 47 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_o_b_b_a03fdc91609b94007369d3ba168dbb54d}\label{class_o_b_b_a03fdc91609b94007369d3ba168dbb54d}} 
-\index{O\+BB@{O\+BB}!Get\+Vector\+Forward@{Get\+Vector\+Forward}}
-\index{Get\+Vector\+Forward@{Get\+Vector\+Forward}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{Get\+Vector\+Forward()}{GetVectorForward()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ O\+B\+B\+::\+Get\+Vector\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_o_b_b_a4d839b676caebf6ba4361bb9166e97d3}\label{class_o_b_b_a4d839b676caebf6ba4361bb9166e97d3}} 
+\index{O\+BB@{O\+BB}!get\+Forward\+Vector@{get\+Forward\+Vector}}
+\index{get\+Forward\+Vector@{get\+Forward\+Vector}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{get\+Forward\+Vector()}{getForwardVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::get\+Forward\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- O\+B\+B.\+h の 126 行目に定義があります。
+ O\+B\+B.\+h の 80 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a03fdc91609b94007369d3ba168dbb54d_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_o_b_b_a03218b64dad1985876e7bad09f4a61ce}\label{class_o_b_b_a03218b64dad1985876e7bad09f4a61ce}} 
-\index{O\+BB@{O\+BB}!Get\+Vector\+Forward\+Half@{Get\+Vector\+Forward\+Half}}
-\index{Get\+Vector\+Forward\+Half@{Get\+Vector\+Forward\+Half}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{Get\+Vector\+Forward\+Half()}{GetVectorForwardHalf()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ O\+B\+B\+::\+Get\+Vector\+Forward\+Half (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_o_b_b_a00b6038bdcc374d3acd9ef4d002b59d0}\label{class_o_b_b_a00b6038bdcc374d3acd9ef4d002b59d0}} 
+\index{O\+BB@{O\+BB}!get\+Forward\+Vector\+Half@{get\+Forward\+Vector\+Half}}
+\index{get\+Forward\+Vector\+Half@{get\+Forward\+Vector\+Half}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{get\+Forward\+Vector\+Half()}{getForwardVectorHalf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::get\+Forward\+Vector\+Half (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- O\+B\+B.\+h の 177 行目に定義があります。
+ O\+B\+B.\+h の 94 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a03218b64dad1985876e7bad09f4a61ce_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a03218b64dad1985876e7bad09f4a61ce_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_o_b_b_ace28639ea3a6c38d994d82d0dd40496e}\label{class_o_b_b_ace28639ea3a6c38d994d82d0dd40496e}} 
-\index{O\+BB@{O\+BB}!Get\+Vector\+Right@{Get\+Vector\+Right}}
-\index{Get\+Vector\+Right@{Get\+Vector\+Right}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{Get\+Vector\+Right()}{GetVectorRight()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ O\+B\+B\+::\+Get\+Vector\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_o_b_b_aa79d651cda6be3bb1c9456566027f8f9}\label{class_o_b_b_aa79d651cda6be3bb1c9456566027f8f9}} 
+\index{O\+BB@{O\+BB}!getp\+Axis\+Vector@{getp\+Axis\+Vector}}
+\index{getp\+Axis\+Vector@{getp\+Axis\+Vector}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{getp\+Axis\+Vector()}{getpAxisVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_axis_vector}{Axis\+Vector}}$\ast$ O\+B\+B\+::getp\+Axis\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- O\+B\+B.\+h の 160 行目に定義があります。
+ O\+B\+B.\+h の 67 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_ace28639ea3a6c38d994d82d0dd40496e_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_o_b_b_a1c3a21fd4ff8dcc55d4f5d20c563ebd6}\label{class_o_b_b_a1c3a21fd4ff8dcc55d4f5d20c563ebd6}} 
-\index{O\+BB@{O\+BB}!Get\+Vector\+Right\+Half@{Get\+Vector\+Right\+Half}}
-\index{Get\+Vector\+Right\+Half@{Get\+Vector\+Right\+Half}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{Get\+Vector\+Right\+Half()}{GetVectorRightHalf()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ O\+B\+B\+::\+Get\+Vector\+Right\+Half (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_o_b_b_a6bdba6c807846b5eb1a3842981089479}\label{class_o_b_b_a6bdba6c807846b5eb1a3842981089479}} 
+\index{O\+BB@{O\+BB}!getp\+Length@{getp\+Length}}
+\index{getp\+Length@{getp\+Length}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{getp\+Length()}{getpLength()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ O\+B\+B\+::getp\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- O\+B\+B.\+h の 211 行目に定義があります。
+ O\+B\+B.\+h の 66 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a1c3a21fd4ff8dcc55d4f5d20c563ebd6_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a1c3a21fd4ff8dcc55d4f5d20c563ebd6_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_o_b_b_a0c0fd050224beb2c196e923e177bc0d5}\label{class_o_b_b_a0c0fd050224beb2c196e923e177bc0d5}} 
-\index{O\+BB@{O\+BB}!Get\+Vector\+Up@{Get\+Vector\+Up}}
-\index{Get\+Vector\+Up@{Get\+Vector\+Up}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{Get\+Vector\+Up()}{GetVectorUp()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ O\+B\+B\+::\+Get\+Vector\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_o_b_b_a72d5af1f3234560445244447da2150e1}\label{class_o_b_b_a72d5af1f3234560445244447da2150e1}} 
+\index{O\+BB@{O\+BB}!getp\+Position@{getp\+Position}}
+\index{getp\+Position@{getp\+Position}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{getp\+Position()}{getpPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ O\+B\+B\+::getp\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- O\+B\+B.\+h の 143 行目に定義があります。
+ O\+B\+B.\+h の 65 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a0c0fd050224beb2c196e923e177bc0d5_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_o_b_b_a48255d7b9af2d2ea109de41787c30a3a}\label{class_o_b_b_a48255d7b9af2d2ea109de41787c30a3a}} 
-\index{O\+BB@{O\+BB}!Get\+Vector\+Up\+Half@{Get\+Vector\+Up\+Half}}
-\index{Get\+Vector\+Up\+Half@{Get\+Vector\+Up\+Half}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{Get\+Vector\+Up\+Half()}{GetVectorUpHalf()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ O\+B\+B\+::\+Get\+Vector\+Up\+Half (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_o_b_b_a7879aad21978ea9dfc5f50a608349b27}\label{class_o_b_b_a7879aad21978ea9dfc5f50a608349b27}} 
+\index{O\+BB@{O\+BB}!get\+Right\+Vector@{get\+Right\+Vector}}
+\index{get\+Right\+Vector@{get\+Right\+Vector}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{get\+Right\+Vector()}{getRightVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::get\+Right\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- O\+B\+B.\+h の 194 行目に定義があります。
+ O\+B\+B.\+h の 68 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a48255d7b9af2d2ea109de41787c30a3a_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_b_b_a48255d7b9af2d2ea109de41787c30a3a_icgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{class_o_b_b_ab0452e841ab2c1362b2e6365b27cea97}\label{class_o_b_b_ab0452e841ab2c1362b2e6365b27cea97}} 
+\index{O\+BB@{O\+BB}!get\+Right\+Vector\+Half@{get\+Right\+Vector\+Half}}
+\index{get\+Right\+Vector\+Half@{get\+Right\+Vector\+Half}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{get\+Right\+Vector\+Half()}{getRightVectorHalf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::get\+Right\+Vector\+Half (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ O\+B\+B.\+h の 86 行目に定義があります。
+
+\mbox{\Hypertarget{class_o_b_b_a73da06fa4dbebb2b59dc3168971c8d5d}\label{class_o_b_b_a73da06fa4dbebb2b59dc3168971c8d5d}} 
+\index{O\+BB@{O\+BB}!get\+Up\+Vector@{get\+Up\+Vector}}
+\index{get\+Up\+Vector@{get\+Up\+Vector}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{get\+Up\+Vector()}{getUpVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::get\+Up\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ O\+B\+B.\+h の 74 行目に定義があります。
+
+\mbox{\Hypertarget{class_o_b_b_a510542bc5071eb9bd174d69ffa64f023}\label{class_o_b_b_a510542bc5071eb9bd174d69ffa64f023}} 
+\index{O\+BB@{O\+BB}!get\+Up\+Vector\+Half@{get\+Up\+Vector\+Half}}
+\index{get\+Up\+Vector\+Half@{get\+Up\+Vector\+Half}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{get\+Up\+Vector\+Half()}{getUpVectorHalf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::get\+Up\+Vector\+Half (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ O\+B\+B.\+h の 90 行目に定義があります。
+
+\mbox{\Hypertarget{class_o_b_b_ae5d7ba6a226b2da4271ffd16d478d800}\label{class_o_b_b_ae5d7ba6a226b2da4271ffd16d478d800}} 
+\index{O\+BB@{O\+BB}!Init@{Init}}
+\index{Init@{Init}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void O\+B\+B\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position} & 座標 \\
+\hline
+\mbox{\tt in}  & {\em length} & 各辺の長さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ O\+B\+B.\+h の 55 行目に定義があります。
+
 
 
 \subsection{メンバ詳解}
@@ -226,41 +212,29 @@ float \mbox{\hyperlink{class_o_b_b_a999f5165cf4cb28b7b59a75e81613bab}{lenght\+\_
 \index{O\+BB@{O\+BB}!axis\+\_\+@{axis\+\_\+}}
 \index{axis\+\_\+@{axis\+\_\+}!O\+BB@{O\+BB}}
 \subsubsection{\texorpdfstring{axis\+\_\+}{axis\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_axis_vector}{Axis\+Vector}} O\+B\+B\+::axis\+\_\+}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_axis_vector}{Axis\+Vector}} O\+B\+B\+::axis\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- O\+B\+B.\+h の 65 行目に定義があります。
-
-\mbox{\Hypertarget{class_o_b_b_a999f5165cf4cb28b7b59a75e81613bab}\label{class_o_b_b_a999f5165cf4cb28b7b59a75e81613bab}} 
-\index{O\+BB@{O\+BB}!lenght\+\_\+forward\+\_\+@{lenght\+\_\+forward\+\_\+}}
-\index{lenght\+\_\+forward\+\_\+@{lenght\+\_\+forward\+\_\+}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{lenght\+\_\+forward\+\_\+}{lenght\_forward\_}}
-{\footnotesize\ttfamily float O\+B\+B\+::lenght\+\_\+forward\+\_\+}
+軸ベクトル 
 
 
 
- O\+B\+B.\+h の 68 行目に定義があります。
+ O\+B\+B.\+h の 35 行目に定義があります。
 
-\mbox{\Hypertarget{class_o_b_b_a33c3db74caad2f0827d71ab16e9c5f1d}\label{class_o_b_b_a33c3db74caad2f0827d71ab16e9c5f1d}} 
-\index{O\+BB@{O\+BB}!lenght\+\_\+right\+\_\+@{lenght\+\_\+right\+\_\+}}
-\index{lenght\+\_\+right\+\_\+@{lenght\+\_\+right\+\_\+}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{lenght\+\_\+right\+\_\+}{lenght\_right\_}}
-{\footnotesize\ttfamily float O\+B\+B\+::lenght\+\_\+right\+\_\+}
-
-
-
- O\+B\+B.\+h の 66 行目に定義があります。
-
-\mbox{\Hypertarget{class_o_b_b_a4c7f9246708424221b38051cc763ca3c}\label{class_o_b_b_a4c7f9246708424221b38051cc763ca3c}} 
-\index{O\+BB@{O\+BB}!lenght\+\_\+up\+\_\+@{lenght\+\_\+up\+\_\+}}
-\index{lenght\+\_\+up\+\_\+@{lenght\+\_\+up\+\_\+}!O\+BB@{O\+BB}}
-\subsubsection{\texorpdfstring{lenght\+\_\+up\+\_\+}{lenght\_up\_}}
-{\footnotesize\ttfamily float O\+B\+B\+::lenght\+\_\+up\+\_\+}
+\mbox{\Hypertarget{class_o_b_b_a04dc4d7036d26215f9c33a7cad633947}\label{class_o_b_b_a04dc4d7036d26215f9c33a7cad633947}} 
+\index{O\+BB@{O\+BB}!length\+\_\+@{length\+\_\+}}
+\index{length\+\_\+@{length\+\_\+}!O\+BB@{O\+BB}}
+\subsubsection{\texorpdfstring{length\+\_\+}{length\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::length\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- O\+B\+B.\+h の 67 行目に定義があります。
+各辺の長さ 
+
+
+
+ O\+B\+B.\+h の 34 行目に定義があります。
 
 \mbox{\Hypertarget{class_o_b_b_ae2bb48bafa38fdf30f0e383da193152c}\label{class_o_b_b_ae2bb48bafa38fdf30f0e383da193152c}} 
 \index{O\+BB@{O\+BB}!math\+\_\+vector\+\_\+@{math\+\_\+vector\+\_\+}}
@@ -270,17 +244,25 @@ float \mbox{\hyperlink{class_o_b_b_a999f5165cf4cb28b7b59a75e81613bab}{lenght\+\_
 
 
 
- O\+B\+B.\+h の 76 行目に定義があります。
+計算用ベクトル 
+
+
+
+ O\+B\+B.\+h の 36 行目に定義があります。
 
 \mbox{\Hypertarget{class_o_b_b_ab05a884fc030d7a3cf7b355880d9194c}\label{class_o_b_b_ab05a884fc030d7a3cf7b355880d9194c}} 
 \index{O\+BB@{O\+BB}!position\+\_\+@{position\+\_\+}}
 \index{position\+\_\+@{position\+\_\+}!O\+BB@{O\+BB}}
 \subsubsection{\texorpdfstring{position\+\_\+}{position\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::position\+\_\+}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} O\+B\+B\+::position\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- O\+B\+B.\+h の 64 行目に定義があります。
+座標 
+
+
+
+ O\+B\+B.\+h の 33 行目に定義があります。
 
 
 

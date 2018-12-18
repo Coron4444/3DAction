@@ -27,7 +27,8 @@ class SceneManager;
 //! @brief   ゲームシステムClass
 //!
 //! @details ゲームシステム全体を管理する
-//! @details Renderer、SceneManager、Input、Sound、Debuger等を管理する
+//! @details Renderer、SceneManager、
+//! @details Input、Sound、Debuger等を管理する
 //************************************************************
 class GameSystem
 {
@@ -44,6 +45,7 @@ private:
 public:
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details
 	//! @param[in] hInstance	  インスタンスハンドル
 	//! @param[in] hWnd			  Windowsハンドル
 	//! @param[in] is_full_screen フルスクリーンフラグ
@@ -56,6 +58,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 終了関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -63,6 +66,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -70,6 +74,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 描画関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -77,6 +82,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 後更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------

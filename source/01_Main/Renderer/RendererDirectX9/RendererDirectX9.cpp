@@ -24,11 +24,25 @@ const DWORD	RendererDirectX9::FVF_VERTEX_3D = (D3DFVF_XYZ | D3DFVF_NORMAL | D3DF
 
 
 //****************************************
+// プロパティ定義
+//****************************************
+LPDIRECT3D9 RendererDirectX9::getpInterface()
+{
+	return direct3d_interface_;
+}
+
+
+
+LPDIRECT3DDEVICE9 RendererDirectX9::getpDevice()
+{
+	return direct3d_device_;
+}
+
+
+
+//****************************************
 // 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 bool RendererDirectX9::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow,
 							int nWindowWidth, int nWindowHeight)
 {
@@ -80,9 +94,6 @@ bool RendererDirectX9::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow,
 
 
 
-//--------------------------------------------------
-// +終了処理関数
-//--------------------------------------------------
 void RendererDirectX9::Uninit()
 {
 	// デバイスの解放
@@ -94,9 +105,6 @@ void RendererDirectX9::Uninit()
 
 
 
-//--------------------------------------------------
-// +描画開始関数
-//--------------------------------------------------
 bool RendererDirectX9::DrawBegin()
 {
 	// 画面クリア
@@ -115,9 +123,6 @@ bool RendererDirectX9::DrawBegin()
 
 
 
-//--------------------------------------------------
-// +描画終了関数
-//--------------------------------------------------
 void RendererDirectX9::DrawEnd(bool is_begin_scene)
 {
 	// 描画の終了
@@ -126,9 +131,6 @@ void RendererDirectX9::DrawEnd(bool is_begin_scene)
 
 
 
-//--------------------------------------------------
-// +バックバッファをフロントバッファに反映関数
-//--------------------------------------------------
 void RendererDirectX9::Present()
 {
 	// バックバッファをフロントバッファに描画
@@ -137,9 +139,6 @@ void RendererDirectX9::Present()
 
 
 
-//--------------------------------------------------
-// +アルファ合成フラグ関数
-//--------------------------------------------------
 void RendererDirectX9::UseAlphaBlending(bool flag)
 {
 	direct3d_device_->SetRenderState(D3DRS_ALPHABLENDENABLE, flag);
@@ -147,9 +146,6 @@ void RendererDirectX9::UseAlphaBlending(bool flag)
 
 
 
-//--------------------------------------------------
-// +アルファ合成関数(線形合成)
-//--------------------------------------------------
 void RendererDirectX9::SetAlphaBlending_Linear()
 {
 	// SRC --- 今から描くもの。
@@ -165,9 +161,6 @@ void RendererDirectX9::SetAlphaBlending_Linear()
 
 
 
-//--------------------------------------------------
-// +アルファ合成関数(加算合成)
-//--------------------------------------------------
 void RendererDirectX9::SetAlphaBlending_Add()
 {
 	// (DST_RGB * 1) - (SRC_RGB * SRC_α) 
@@ -178,9 +171,6 @@ void RendererDirectX9::SetAlphaBlending_Add()
 
 
 
-//--------------------------------------------------
-// +アルファ合成関数(減算合成)
-//--------------------------------------------------
 void RendererDirectX9::SetAlphaBlending_Sub()
 {
 	// (DST_RGB * 1) - (SRC_RGB * SRC_α) 
@@ -191,9 +181,6 @@ void RendererDirectX9::SetAlphaBlending_Sub()
 
 
 
-//--------------------------------------------------
-// +アルファ合成関数(乗算合成)
-//--------------------------------------------------
 void RendererDirectX9::SetAlphaBlending_Mul()
 {
 	//direct3d_device_-> SetRenderState( D3DRS_BLENDOP, 任意の値)
@@ -206,9 +193,6 @@ void RendererDirectX9::SetAlphaBlending_Mul()
 
 
 
-//--------------------------------------------------
-// +アルファ合成関数(焼きこみ合成)
-//--------------------------------------------------
 void RendererDirectX9::SetAlphaBlending_Baking()
 {
 	//direct3d_device_-> SetRenderState(D3DRS_BLENDOP, 任意の値)
@@ -221,9 +205,6 @@ void RendererDirectX9::SetAlphaBlending_Baking()
 
 
 
-//--------------------------------------------------
-// +アルファ合成関数(ネガポジ反転合成)
-//--------------------------------------------------
 void RendererDirectX9::SetAlphaBlending_Nega()
 {
 	//direct3d_device_->SetRenderState(D3DRS_BLENDOP, 任意の値)
@@ -236,9 +217,6 @@ void RendererDirectX9::SetAlphaBlending_Nega()
 
 
 
-//--------------------------------------------------
-// +アルファ合成関数(不透明合成)
-//--------------------------------------------------
 void RendererDirectX9::SetAlphaBlending_Opacity()
 {
 	//direct3d_device_->SetRenderState(D3DRS_BLENDOP, 任意の値)
@@ -251,9 +229,6 @@ void RendererDirectX9::SetAlphaBlending_Opacity()
 
 
 
-//--------------------------------------------------
-// +デフォルトサンプラーステート設定関数
-//--------------------------------------------------
 void RendererDirectX9::SetDefaultSamplerState()
 {
 	// 第二引数(UVの設定)

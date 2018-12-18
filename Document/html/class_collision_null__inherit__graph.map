@@ -3,6 +3,6 @@
 <area shape="rect" id="node5" href="$class_enemy_collision.html" title="EnemyCollision" alt="" coords="127,229,239,256"/>
 <area shape="rect" id="node6" href="$class_goal_collision.html" title="ゴール衝突クラス " alt="" coords="263,229,362,256"/>
 <area shape="rect" id="node7" href="$class_player_collision.html" title="PlayerCollision" alt="" coords="387,229,495,256"/>
-<area shape="rect" id="node2" href="$class_collision_base.html" title="衝突基底クラス " alt="" coords="197,80,298,107"/>
-<area shape="rect" id="node3" href="$class_component_base.html" title="コンポーネント基底クラス " alt="" coords="188,5,307,32"/>
+<area shape="rect" id="node2" href="$class_collision_base.html" title="衝突BaseClass " alt="" coords="197,80,298,107"/>
+<area shape="rect" id="node3" href="$class_component_base.html" title="コンポーネントBaseClass " alt="" coords="188,5,307,32"/>
 </map>

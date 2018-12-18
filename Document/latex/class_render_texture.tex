@@ -18,15 +18,6 @@ Render\+Texture の継承関係図\nopagebreak
 \includegraphics[width=169pt]{class_render_texture__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Render\+Texture 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,9 +29,9 @@ void \mbox{\hyperlink{class_render_texture_ac27f8cfac7903dd502de61e22abfc457}{Up
 \item 
 void \mbox{\hyperlink{class_render_texture_a529ab829c676470ae5764b42cba9efb0}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae}{Get\+Matrix}} (unsigned object\+\_\+index) override
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_render_texture_adafb7e9aeea3c298cbfcc71e35ed9457}{getp\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0}{Get\+Material}} ()
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_a1defe8bfacccf91dc7479a977e70578c}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
@@ -79,75 +70,34 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
  Render\+Texture.\+h の 77 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=327pt]{class_render_texture_a529ab829c676470ae5764b42cba9efb0_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_a529ab829c676470ae5764b42cba9efb0_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0}\label{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0}} 
-\index{Render\+Texture@{Render\+Texture}!Get\+Material@{Get\+Material}}
-\index{Get\+Material@{Get\+Material}!Render\+Texture@{Render\+Texture}}
-\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$ Render\+Texture\+::\+Get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_render_texture_a1defe8bfacccf91dc7479a977e70578c}\label{class_render_texture_a1defe8bfacccf91dc7479a977e70578c}} 
+\index{Render\+Texture@{Render\+Texture}!getp\+Material@{getp\+Material}}
+\index{getp\+Material@{getp\+Material}!Render\+Texture@{Render\+Texture}}
+\subsubsection{\texorpdfstring{getp\+Material()}{getpMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$ Render\+Texture\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
- Render\+Texture.\+h の 93 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_adb19f86d2ac55e95d8725c64a846e8d0_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae}\label{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae}} 
-\index{Render\+Texture@{Render\+Texture}!Get\+Matrix@{Get\+Matrix}}
-\index{Get\+Matrix@{Get\+Matrix}!Render\+Texture@{Render\+Texture}}
-\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Render\+Texture\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{Draw\+Null}}を再実装しています。
 
 
 
-\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+ Render\+Texture.\+h の 92 行目に定義があります。
+
+\mbox{\Hypertarget{class_render_texture_adafb7e9aeea3c298cbfcc71e35ed9457}\label{class_render_texture_adafb7e9aeea3c298cbfcc71e35ed9457}} 
+\index{Render\+Texture@{Render\+Texture}!getp\+Matrix@{getp\+Matrix}}
+\index{getp\+Matrix@{getp\+Matrix}!Render\+Texture@{Render\+Texture}}
+\subsubsection{\texorpdfstring{getp\+Matrix()}{getpMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Render\+Texture\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{Draw\+Null}}を再実装しています。
 
 
 
  Render\+Texture.\+h の 87 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_a0e9746f5cebdd088f2303e18cbc52eae_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_render_texture_a498eb8be8672e01164b3770cdff43291}\label{class_render_texture_a498eb8be8672e01164b3770cdff43291}} 
 \index{Render\+Texture@{Render\+Texture}!Init@{Init}}
 \index{Init@{Init}!Render\+Texture@{Render\+Texture}}
@@ -166,14 +116,6 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
  Render\+Texture.\+h の 48 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_a498eb8be8672e01164b3770cdff43291_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8}\label{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8}} 
 \index{Render\+Texture@{Render\+Texture}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Render\+Texture@{Render\+Texture}}
@@ -192,22 +134,6 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
  Render\+Texture.\+h の 57 行目に定義があります。
 
-呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=334pt]{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=321pt]{class_render_texture_a0e55cd9b412d87dfe1f4b90f29f357c8_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_render_texture_ac27f8cfac7903dd502de61e22abfc457}\label{class_render_texture_ac27f8cfac7903dd502de61e22abfc457}} 
 \index{Render\+Texture@{Render\+Texture}!Update@{Update}}
 \index{Update@{Update}!Render\+Texture@{Render\+Texture}}
@@ -218,22 +144,6 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_render_texture_adb1
 
  Render\+Texture.\+h の 62 行目に定義があります。
 
-呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_ac27f8cfac7903dd502de61e22abfc457_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_render_texture_ac27f8cfac7903dd502de61e22abfc457_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}

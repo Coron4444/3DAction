@@ -114,7 +114,7 @@ var searchData=
   ['framerounding',['FrameRounding',['../struct_im_gui_style.html#a15402cededdef985487e986ccce73ad2',1,'ImGuiStyle']]],
   ['free_5fhead',['free_head',['../structstbrp__context.html#a1336ae32373663847866cc65904c2839',1,'stbrp_context']]],
   ['friction_5f',['friction_',['../class_physics.html#a63b2e282267a28f0a160b98d56fa40b6',1,'Physics']]],
-  ['froattruncation',['FroatTruncation',['../class_collision_judgment.html#a76fe4aa5e6400073823c1f60395c1f94',1,'CollisionJudgment']]],
+  ['froattruncation',['FroatTruncation',['../class_collision_calculation.html#a3123f561d5ba6af08336523205a5d8a8',1,'CollisionCalculation']]],
   ['front',['front',['../class_im_vector.html#a5b0108d6b1a4a11609723f8305fb9011',1,'ImVector::front()'],['../class_im_vector.html#a76dc6bb045574ba79b15a1941b662597',1,'ImVector::front() const'],['../struct_im_gui_text_filter_1_1_text_range.html#a7d0b405b4db5d33351812b4b3b6e9107',1,'ImGuiTextFilter::TextRange::front()'],['../namespace_effekseer.html#a3ae9542a9c9309ec191be1ae5e6dc00aa5835bab1ade0060909e31a06af2e2cde',1,'Effekseer::Front()']]],
   ['fvf_5fvertex_5f3d',['FVF_VERTEX_3D',['../class_renderer_direct_x9.html#a80ce0089b01354986332553353625da6',1,'RendererDirectX9']]]
 ];

@@ -4,15 +4,6 @@
 
 {\ttfamily \#include $<$Transform.\+h$>$}
 
-
-
-Transform 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -62,9 +53,9 @@ void \mbox{\hyperlink{class_transform_a486ae5501b5081b22ee053f787e0e4a2}{Update\
 \item 
 void \mbox{\hyperlink{class_transform_a053037b225e6fb11e680cc60df15dd45}{Transpose\+Matrix\+Translation\+Off}} ()
 \item 
-const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_transform_a060f9487a18ad34549eab53a7ca5100d}{Get\+World\+Matrix}} ()
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_transform_a19538fe991e76eb8146295e6f5f1ed99}{getp\+World\+Matrix}} ()
 \item 
-\mbox{\hyperlink{class_matrix_extend}{Matrix\+Extend}} $\ast$ \mbox{\hyperlink{class_transform_ab1101d4467d772f3ddc0558586e39c79}{Get\+Matrix\+Extend}} ()
+\mbox{\hyperlink{class_matrix_extend}{Matrix\+Extend}} $\ast$ \mbox{\hyperlink{class_transform_ac5a4f96871b6c1bfde9b2a6b7b0d6953}{getp\+Matrix\+Extend}} ()
 \item 
 void \mbox{\hyperlink{class_transform_af02515be1947506212ca1c23223ce0b3}{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT}} ()
 \item 
@@ -143,14 +134,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 241 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a7884cb828ace5c921e7138d83c43d689_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a8c4966ea0a5d6cafa79c430e31bf0dff}\label{class_transform_a8c4966ea0a5d6cafa79c430e31bf0dff}} 
 \index{Transform@{Transform}!Get\+Angle\+Pitch@{Get\+Angle\+Pitch}}
 \index{Get\+Angle\+Pitch@{Get\+Angle\+Pitch}!Transform@{Transform}}
@@ -201,13 +184,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 71 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_ad300be34dddc6109ca142452e65aa77d_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a25e4832e15334d74ff847f0ff0b3564f}\label{class_transform_a25e4832e15334d74ff847f0ff0b3564f}} 
 \index{Transform@{Transform}!Get\+Forawrd@{Get\+Forawrd}}
 \index{Get\+Forawrd@{Get\+Forawrd}!Transform@{Transform}}
@@ -218,20 +194,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 68 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a25e4832e15334d74ff847f0ff0b3564f_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a25e4832e15334d74ff847f0ff0b3564f_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a14b7b06632d6a47e99dc67aecbd7acc7}\label{class_transform_a14b7b06632d6a47e99dc67aecbd7acc7}} 
 \index{Transform@{Transform}!Get\+Look\+At\+Change\+Amount@{Get\+Look\+At\+Change\+Amount}}
 \index{Get\+Look\+At\+Change\+Amount@{Get\+Look\+At\+Change\+Amount}!Transform@{Transform}}
@@ -252,24 +214,16 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 61 行目に定義があります。
 
-\mbox{\Hypertarget{class_transform_ab1101d4467d772f3ddc0558586e39c79}\label{class_transform_ab1101d4467d772f3ddc0558586e39c79}} 
-\index{Transform@{Transform}!Get\+Matrix\+Extend@{Get\+Matrix\+Extend}}
-\index{Get\+Matrix\+Extend@{Get\+Matrix\+Extend}!Transform@{Transform}}
-\subsubsection{\texorpdfstring{Get\+Matrix\+Extend()}{GetMatrixExtend()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_matrix_extend}{Matrix\+Extend}}$\ast$ Transform\+::\+Get\+Matrix\+Extend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_transform_ac5a4f96871b6c1bfde9b2a6b7b0d6953}\label{class_transform_ac5a4f96871b6c1bfde9b2a6b7b0d6953}} 
+\index{Transform@{Transform}!getp\+Matrix\+Extend@{getp\+Matrix\+Extend}}
+\index{getp\+Matrix\+Extend@{getp\+Matrix\+Extend}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{getp\+Matrix\+Extend()}{getpMatrixExtend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matrix_extend}{Matrix\+Extend}}$\ast$ Transform\+::getp\+Matrix\+Extend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
  Transform.\+h の 80 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_ab1101d4467d772f3ddc0558586e39c79_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_addff6461a77b9f5c5249e46deb5c2c19}\label{class_transform_addff6461a77b9f5c5249e46deb5c2c19}} 
 \index{Transform@{Transform}!Get\+Position@{Get\+Position}}
 \index{Get\+Position@{Get\+Position}!Transform@{Transform}}
@@ -280,14 +234,16 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 49 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_addff6461a77b9f5c5249e46deb5c2c19_icgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{class_transform_a19538fe991e76eb8146295e6f5f1ed99}\label{class_transform_a19538fe991e76eb8146295e6f5f1ed99}} 
+\index{Transform@{Transform}!getp\+World\+Matrix@{getp\+World\+Matrix}}
+\index{getp\+World\+Matrix@{getp\+World\+Matrix}!Transform@{Transform}}
+\subsubsection{\texorpdfstring{getp\+World\+Matrix()}{getpWorldMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Transform\+::getp\+World\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Transform.\+h の 79 行目に定義があります。
+
 \mbox{\Hypertarget{class_transform_a57d1da919d8df7d2452149c4bbade4d2}\label{class_transform_a57d1da919d8df7d2452149c4bbade4d2}} 
 \index{Transform@{Transform}!Get\+Right@{Get\+Right}}
 \index{Get\+Right@{Get\+Right}!Transform@{Transform}}
@@ -298,20 +254,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 70 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=329pt]{class_transform_a57d1da919d8df7d2452149c4bbade4d2_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a57d1da919d8df7d2452149c4bbade4d2_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_accedf33a4ddbdcf2d4fc4274f85bf818}\label{class_transform_accedf33a4ddbdcf2d4fc4274f85bf818}} 
 \index{Transform@{Transform}!Get\+Scale@{Get\+Scale}}
 \index{Get\+Scale@{Get\+Scale}!Transform@{Transform}}
@@ -322,14 +264,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 52 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_accedf33a4ddbdcf2d4fc4274f85bf818_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a9f5700481ae42556f763726947feaf36}\label{class_transform_a9f5700481ae42556f763726947feaf36}} 
 \index{Transform@{Transform}!Get\+Up@{Get\+Up}}
 \index{Get\+Up@{Get\+Up}!Transform@{Transform}}
@@ -340,44 +274,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 69 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=307pt]{class_transform_a9f5700481ae42556f763726947feaf36_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a9f5700481ae42556f763726947feaf36_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_transform_a060f9487a18ad34549eab53a7ca5100d}\label{class_transform_a060f9487a18ad34549eab53a7ca5100d}} 
-\index{Transform@{Transform}!Get\+World\+Matrix@{Get\+World\+Matrix}}
-\index{Get\+World\+Matrix@{Get\+World\+Matrix}!Transform@{Transform}}
-\subsubsection{\texorpdfstring{Get\+World\+Matrix()}{GetWorldMatrix()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Transform\+::\+Get\+World\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
- Transform.\+h の 79 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a060f9487a18ad34549eab53a7ca5100d_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=550pt]{class_transform_a060f9487a18ad34549eab53a7ca5100d_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_ab6f7342cb4eca555c02a85c999d499dc}\label{class_transform_ab6f7342cb4eca555c02a85c999d499dc}} 
 \index{Transform@{Transform}!Set\+Look\+At\+Speed@{Set\+Look\+At\+Speed}}
 \index{Set\+Look\+At\+Speed@{Set\+Look\+At\+Speed}!Transform@{Transform}}
@@ -388,13 +284,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 60 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_ab6f7342cb4eca555c02a85c999d499dc_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a39b78acbdbf3ee98cad0c4e640988745}\label{class_transform_a39b78acbdbf3ee98cad0c4e640988745}} 
 \index{Transform@{Transform}!Set\+Look\+At\+Vector@{Set\+Look\+At\+Vector}}
 \index{Set\+Look\+At\+Vector@{Set\+Look\+At\+Vector}!Transform@{Transform}}
@@ -405,20 +294,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 88 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a39b78acbdbf3ee98cad0c4e640988745_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a39b78acbdbf3ee98cad0c4e640988745_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4}\label{class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4}} 
 \index{Transform@{Transform}!Set\+Target\+Quaternion@{Set\+Target\+Quaternion}}
 \index{Set\+Target\+Quaternion@{Set\+Target\+Quaternion}!Transform@{Transform}}
@@ -429,13 +304,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 126 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a053037b225e6fb11e680cc60df15dd45}\label{class_transform_a053037b225e6fb11e680cc60df15dd45}} 
 \index{Transform@{Transform}!Transpose\+Matrix\+Translation\+Off@{Transpose\+Matrix\+Translation\+Off}}
 \index{Transpose\+Matrix\+Translation\+Off@{Transpose\+Matrix\+Translation\+Off}!Transform@{Transform}}
@@ -446,21 +314,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 78 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a053037b225e6fb11e680cc60df15dd45_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a053037b225e6fb11e680cc60df15dd45_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_afe5350bb1558256115e14c0669611acd}\label{class_transform_afe5350bb1558256115e14c0669611acd}} 
 \index{Transform@{Transform}!Update\+Axis\+Vector@{Update\+Axis\+Vector}}
 \index{Update\+Axis\+Vector@{Update\+Axis\+Vector}!Transform@{Transform}}
@@ -471,21 +324,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 67 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_afe5350bb1558256115e14c0669611acd_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_afe5350bb1558256115e14c0669611acd_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2}\label{class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2}} 
 \index{Transform@{Transform}!Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT}}
 \index{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+I\+S\+RT}!Transform@{Transform}}
@@ -496,21 +334,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 218 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_af02515be1947506212ca1c23223ce0b3}\label{class_transform_af02515be1947506212ca1c23223ce0b3}} 
 \index{Transform@{Transform}!Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT}}
 \index{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT@{Update\+Axis\+Vector\+\_\+\+World\+Matrix\+S\+RT}!Transform@{Transform}}
@@ -521,20 +344,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 195 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_af02515be1947506212ca1c23223ce0b3_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_af02515be1947506212ca1c23223ce0b3_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de}\label{class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de}} 
 \index{Transform@{Transform}!Update\+Inverse\+Matrix@{Update\+Inverse\+Matrix}}
 \index{Update\+Inverse\+Matrix@{Update\+Inverse\+Matrix}!Transform@{Transform}}
@@ -545,13 +354,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 76 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a486ae5501b5081b22ee053f787e0e4a2}\label{class_transform_a486ae5501b5081b22ee053f787e0e4a2}} 
 \index{Transform@{Transform}!Update\+Transpose\+Matrix@{Update\+Transpose\+Matrix}}
 \index{Update\+Transpose\+Matrix@{Update\+Transpose\+Matrix}!Transform@{Transform}}
@@ -562,21 +364,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+h の 77 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a486ae5501b5081b22ee053f787e0e4a2_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a486ae5501b5081b22ee053f787e0e4a2_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_a3d56e19fba7f44d5f938d62481846fbc}\label{class_transform_a3d56e19fba7f44d5f938d62481846fbc}} 
 \index{Transform@{Transform}!Update\+World\+Matrix\+I\+S\+RT@{Update\+World\+Matrix\+I\+S\+RT}}
 \index{Update\+World\+Matrix\+I\+S\+RT@{Update\+World\+Matrix\+I\+S\+RT}!Transform@{Transform}}
@@ -587,21 +374,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 171 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a3d56e19fba7f44d5f938d62481846fbc_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_a3d56e19fba7f44d5f938d62481846fbc_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_transform_af1a2dcb4a9d37dd71c203ec248535887}\label{class_transform_af1a2dcb4a9d37dd71c203ec248535887}} 
 \index{Transform@{Transform}!Update\+World\+Matrix\+S\+RT@{Update\+World\+Matrix\+S\+RT}}
 \index{Update\+World\+Matrix\+S\+RT@{Update\+World\+Matrix\+S\+RT}!Transform@{Transform}}
@@ -612,21 +384,6 @@ float \mbox{\hyperlink{class_transform_acda35632e3895b925eaae4625c564b5f}{look\+
 
  Transform.\+cpp の 147 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_af1a2dcb4a9d37dd71c203ec248535887_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_transform_af1a2dcb4a9d37dd71c203ec248535887_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}

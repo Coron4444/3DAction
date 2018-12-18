@@ -98,16 +98,6 @@ $(document).ready(function(){initNavTree('class_transform.html','');});
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_transform_8h_source.html">Transform.h</a>&gt;</code></p>
-<div class="dynheader">
-Transform 連携図</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform__coll__graph.png" border="0" usemap="#_transform_coll__map" alt="Collaboration graph"/></div>
-<map name="_transform_coll__map" id="_transform_coll__map">
-<area shape="rect" id="node2" href="class_matrix_extend.html" title="DirectX9の行列の拡張版クラス " alt="" coords="5,253,104,279"/>
-<area shape="rect" id="node3" href="class_axis_vector.html" title="AxisVector" alt="" coords="286,253,373,279"/>
-<area shape="rect" id="node4" href="class_vector3_d.html" title="Vector3D" alt="" coords="151,81,227,108"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -157,10 +147,10 @@ Transform 連携図</div>
 <tr class="separator:a486ae5501b5081b22ee053f787e0e4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a053037b225e6fb11e680cc60df15dd45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a053037b225e6fb11e680cc60df15dd45">TransposeMatrixTranslationOff</a> ()</td></tr>
 <tr class="separator:a053037b225e6fb11e680cc60df15dd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a060f9487a18ad34549eab53a7ca5100d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a060f9487a18ad34549eab53a7ca5100d">GetWorldMatrix</a> ()</td></tr>
-<tr class="separator:a060f9487a18ad34549eab53a7ca5100d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1101d4467d772f3ddc0558586e39c79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix_extend.html">MatrixExtend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#ab1101d4467d772f3ddc0558586e39c79">GetMatrixExtend</a> ()</td></tr>
-<tr class="separator:ab1101d4467d772f3ddc0558586e39c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19538fe991e76eb8146295e6f5f1ed99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a19538fe991e76eb8146295e6f5f1ed99">getpWorldMatrix</a> ()</td></tr>
+<tr class="separator:a19538fe991e76eb8146295e6f5f1ed99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a4f96871b6c1bfde9b2a6b7b0d6953"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix_extend.html">MatrixExtend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#ac5a4f96871b6c1bfde9b2a6b7b0d6953">getpMatrixExtend</a> ()</td></tr>
+<tr class="separator:ac5a4f96871b6c1bfde9b2a6b7b0d6953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af02515be1947506212ca1c23223ce0b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#af02515be1947506212ca1c23223ce0b3">UpdateAxisVector_WorldMatrixSRT</a> ()</td></tr>
 <tr class="separator:af02515be1947506212ca1c23223ce0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a20f2b8baad21ba74a2b1c6d8a1ab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2">UpdateAxisVector_WorldMatrixISRT</a> ()</td></tr>
@@ -263,62 +253,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00241">241</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a7884cb828ace5c921e7138d83c43d689_icgraph.png" border="0" usemap="#class_transform_a7884cb828ace5c921e7138d83c43d689_icgraph" alt=""/></div>
-<map name="class_transform_a7884cb828ace5c921e7138d83c43d689_icgraph" id="class_transform_a7884cb828ace5c921e7138d83c43d689_icgraph">
-<area shape="rect" id="node2" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="259,78,451,105"/>
-<area shape="rect" id="node15" href="class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="999,457,1221,483"/>
-<area shape="rect" id="node44" href="class_transform.html#a3d56e19fba7f44d5f938d62481846fbc" title="Transform::UpdateWorldMatrixISRT" alt="" coords="241,166,468,193"/>
-<area shape="rect" id="node3" href="class_transform.html#af02515be1947506212ca1c23223ce0b3" title="Transform::UpdateAxisVector\l_WorldMatrixSRT" alt="" coords="516,5,708,47"/>
-<area shape="rect" id="node5" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="516,71,708,112"/>
-<area shape="rect" id="node4" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="778,5,929,47"/>
-<area shape="rect" id="node6" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="772,71,935,112"/>
-<area shape="rect" id="node7" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="1031,71,1189,112"/>
-<area shape="rect" id="node8" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="1289,78,1424,105"/>
-<area shape="rect" id="node9" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="1492,71,1699,112"/>
-<area shape="rect" id="node10" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1771,82,1921,109"/>
-<area shape="rect" id="node11" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="2008,127,2161,168"/>
-<area shape="rect" id="node12" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="2224,138,2419,165"/>
-<area shape="rect" id="node13" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="2479,145,2630,171"/>
-<area shape="rect" id="node14" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2691,198,2852,225"/>
-<area shape="rect" id="node16" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="1277,239,1437,280"/>
-<area shape="rect" id="node17" href="class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd" title="初期化関数 " alt="" coords="1289,305,1424,331"/>
-<area shape="rect" id="node18" href="class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176" title="初期化関数 " alt="" coords="1285,355,1428,382"/>
-<area shape="rect" id="node19" href="class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e" title="初期化関数 " alt="" coords="1271,406,1442,433"/>
-<area shape="rect" id="node20" href="class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30" title="初期化関数 " alt="" coords="1293,457,1421,483"/>
-<area shape="rect" id="node21" href="class_tutorial_logo_draw.html#a53fc4b1b23c7f9e249600be67510f944" title="初期化関数 " alt="" coords="1283,507,1430,534"/>
-<area shape="rect" id="node22" href="class_goal_draw.html#a6e003277ed44eb9c800a616b6acbcb20" title="更新関数 " alt="" coords="1293,558,1420,585"/>
-<area shape="rect" id="node23" href="class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0" title="フィールドとの衝突時関数 " alt="" coords="1269,609,1444,635"/>
-<area shape="rect" id="node24" href="class_sky_dome_update.html#ab4fec6d13590c07e39e6e8b4f7f7613a" title="初期化関数 " alt="" coords="1284,659,1429,686"/>
-<area shape="rect" id="node25" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="1275,711,1438,752"/>
-<area shape="rect" id="node26" href="class_fade.html#aab12848f7102a219968c86ed699a6e5d" title="初期化関数 " alt="" coords="1319,187,1395,214"/>
-<area shape="rect" id="node38" href="class_render_texture.html#ac27f8cfac7903dd502de61e22abfc457" title="RenderTexture::Update" alt="" coords="1279,777,1434,803"/>
-<area shape="rect" id="node27" href="class_back_buffer.html#add3a034c7758dc6a72bb4582bf6ce78e" title="フェード初期化関数 " alt="" coords="1526,235,1665,262"/>
-<area shape="rect" id="node28" href="class_scene_manager.html#a208cc1690dcb260ae7fb94d13118f6ce" title="SceneManager::setNextScene" alt="" coords="1747,337,1945,363"/>
-<area shape="rect" id="node33" href="class_scene_manager.html#a1759161a38025ec8212dc98439fd7335" title="シーンリセット関数 " alt="" coords="1752,235,1940,262"/>
-<area shape="rect" id="node34" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="1747,286,1945,313"/>
-<area shape="rect" id="node37" href="class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="1752,185,1940,211"/>
-<area shape="rect" id="node29" href="class_game_scene_state___start.html#ae11bb8d8ea9eae4fea2a9acf33dd1c8b" title="更新関数 " alt="" coords="2005,389,2165,431"/>
-<area shape="rect" id="node30" href="class_result_scene_state___start.html#a2ecdef2bef0cd1a04055e8687e11199b" title="更新関数 " alt="" coords="2003,455,2166,496"/>
-<area shape="rect" id="node31" href="class_title_scene_state___start.html#a2e98cf6810711b58766d7147168d02eb" title="更新関数 " alt="" coords="2010,259,2159,300"/>
-<area shape="rect" id="node32" href="class_tutorial_scene_state___end.html#a7cdf03fa9a0e41ab86c2b41b8165ad09" title="更新関数 " alt="" coords="2019,324,2151,365"/>
-<area shape="rect" id="node35" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="2005,198,2164,225"/>
-<area shape="rect" id="node36" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="2467,198,2643,225"/>
-<area shape="rect" id="node39" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="1534,757,1657,783"/>
-<area shape="rect" id="node40" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="1777,622,1915,649"/>
-<area shape="rect" id="node41" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="1993,554,2176,581"/>
-<area shape="rect" id="node42" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="2230,401,2413,427"/>
-<area shape="rect" id="node43" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="2485,325,2624,351"/>
-<area shape="rect" id="node45" href="class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb" title="めり込み解消関数 " alt="" coords="525,188,699,229"/>
-<area shape="rect" id="node48" href="class_physics.html#a481f06d777c1b1f52dc2c06c71e93932" title="Physics::UpdatePosition" alt="" coords="771,137,936,163"/>
-<area shape="rect" id="node46" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="756,195,951,222"/>
-<area shape="rect" id="node47" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="1019,195,1201,222"/>
-<area shape="rect" id="node49" href="class_physics.html#a13bf3e9de07a12afc3c0a4012e00d0a1" title="Physics::Update" alt="" coords="1051,137,1169,163"/>
-<area shape="rect" id="node50" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="1514,137,1677,163"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -454,14 +388,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00071">71</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_ad300be34dddc6109ca142452e65aa77d_icgraph.png" border="0" usemap="#class_transform_ad300be34dddc6109ca142452e65aa77d_icgraph" alt=""/></div>
-<map name="class_transform_ad300be34dddc6109ca142452e65aa77d_icgraph" id="class_transform_ad300be34dddc6109ca142452e65aa77d_icgraph">
-<area shape="rect" id="node2" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="225,5,372,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -489,25 +415,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00068">68</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a25e4832e15334d74ff847f0ff0b3564f_cgraph.png" border="0" usemap="#class_transform_a25e4832e15334d74ff847f0ff0b3564f_cgraph" alt=""/></div>
-<map name="class_transform_a25e4832e15334d74ff847f0ff0b3564f_cgraph" id="class_transform_a25e4832e15334d74ff847f0ff0b3564f_cgraph">
-<area shape="rect" id="node2" href="class_axis_vector.html#a79013d5b090ce9232d57f528f18e982e" title="AxisVector::GetForawrd" alt="" coords="208,5,369,32"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a25e4832e15334d74ff847f0ff0b3564f_icgraph.png" border="0" usemap="#class_transform_a25e4832e15334d74ff847f0ff0b3564f_icgraph" alt=""/></div>
-<map name="class_transform_a25e4832e15334d74ff847f0ff0b3564f_icgraph" id="class_transform_a25e4832e15334d74ff847f0ff0b3564f_icgraph">
-<area shape="rect" id="node2" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="227,5,377,32"/>
-<area shape="rect" id="node3" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="208,56,396,83"/>
-<area shape="rect" id="node4" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="227,107,377,149"/>
-<area shape="rect" id="node5" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="227,173,377,214"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -565,8 +472,8 @@ Transform 連携図</div>
 
 </div>
 </div>
-<a id="ab1101d4467d772f3ddc0558586e39c79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1101d4467d772f3ddc0558586e39c79">&#9670;&nbsp;</a></span>GetMatrixExtend()</h2>
+<a id="ac5a4f96871b6c1bfde9b2a6b7b0d6953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a4f96871b6c1bfde9b2a6b7b0d6953">&#9670;&nbsp;</a></span>getpMatrixExtend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -575,7 +482,7 @@ Transform 連携図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_matrix_extend.html">MatrixExtend</a>* Transform::GetMatrixExtend </td>
+          <td class="memname"><a class="el" href="class_matrix_extend.html">MatrixExtend</a>* Transform::getpMatrixExtend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -589,22 +496,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00080">80</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_ab1101d4467d772f3ddc0558586e39c79_icgraph.png" border="0" usemap="#class_transform_ab1101d4467d772f3ddc0558586e39c79_icgraph" alt=""/></div>
-<map name="class_transform_ab1101d4467d772f3ddc0558586e39c79_icgraph" id="class_transform_ab1101d4467d772f3ddc0558586e39c79_icgraph">
-<area shape="rect" id="node2" href="class_fade.html#a6aed6912ebf9c243c52cb82f298d8d64" title="Fade::GetMatrix" alt="" coords="266,5,382,32"/>
-<area shape="rect" id="node3" href="class_render_texture.html#a0e9746f5cebdd088f2303e18cbc52eae" title="RenderTexture::GetMatrix" alt="" coords="239,56,409,83"/>
-<area shape="rect" id="node4" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="457,56,580,83"/>
-<area shape="rect" id="node5" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="628,56,767,83"/>
-<area shape="rect" id="node6" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="815,56,997,83"/>
-<area shape="rect" id="node7" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1045,56,1228,83"/>
-<area shape="rect" id="node8" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1276,56,1415,83"/>
-<area shape="rect" id="node9" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1463,56,1624,83"/>
-<area shape="rect" id="node10" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1672,56,1745,83"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -632,51 +523,33 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00049">49</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_addff6461a77b9f5c5249e46deb5c2c19_icgraph.png" border="0" usemap="#class_transform_addff6461a77b9f5c5249e46deb5c2c19_icgraph" alt=""/></div>
-<map name="class_transform_addff6461a77b9f5c5249e46deb5c2c19_icgraph" id="class_transform_addff6461a77b9f5c5249e46deb5c2c19_icgraph">
-<area shape="rect" id="node2" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="222,5,382,47"/>
-<area shape="rect" id="node3" href="class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd" title="初期化関数 " alt="" coords="235,71,369,98"/>
-<area shape="rect" id="node4" href="class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176" title="初期化関数 " alt="" coords="231,122,373,149"/>
-<area shape="rect" id="node5" href="class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e" title="初期化関数 " alt="" coords="217,173,387,199"/>
-<area shape="rect" id="node6" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="229,223,375,250"/>
-<area shape="rect" id="node7" href="class_enemy_collision.html#ab54133504d867c6d2070d2f3854a0aaf" title="更新関数 " alt="" coords="221,274,383,301"/>
-<area shape="rect" id="node8" href="class_goal_collision.html#a1e3995dc2f5ba2678580d06699ca6936" title="更新関数 " alt="" coords="229,325,375,351"/>
-<area shape="rect" id="node9" href="class_goal_draw.html#a6e003277ed44eb9c800a616b6acbcb20" title="更新関数 " alt="" coords="239,375,365,402"/>
-<area shape="rect" id="node10" href="class_player_collision.html#a09f97f220903f5724a3af6b97af3a336" title="更新関数 " alt="" coords="223,426,381,453"/>
-<area shape="rect" id="node11" href="class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0" title="フィールドとの衝突時関数 " alt="" coords="215,477,389,503"/>
-<area shape="rect" id="node12" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="208,527,396,554"/>
-<area shape="rect" id="node13" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="227,579,377,620"/>
-<area shape="rect" id="node14" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="221,644,383,685"/>
-<area shape="rect" id="node15" href="class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb" title="めり込み解消関数 " alt="" coords="215,709,389,751"/>
-<area shape="rect" id="node18" href="class_collision_manager.html#a1d67f4076eb71e191db5cff4e5abe3b0" title="地面との衝突判定関数 " alt="" coords="213,892,391,933"/>
-<area shape="rect" id="node25" href="class_camera_state___homing_target.html#a98f04985c06033febdad32d6357088c9" title="更新関数 " alt="" coords="209,827,395,868"/>
-<area shape="rect" id="node27" href="class_back_buffer.html#af363b4d69affd48a1b0f65a000ff12b5" title="透明描画基底クラスのソート関数 " alt="" coords="209,958,395,985"/>
-<area shape="rect" id="node31" href="class_render_texture.html#ac27f8cfac7903dd502de61e22abfc457" title="RenderTexture::Update" alt="" coords="464,1009,619,1035"/>
-<area shape="rect" id="node37" href="class_physics.html#a481f06d777c1b1f52dc2c06c71e93932" title="Physics::UpdatePosition" alt="" coords="459,775,624,802"/>
-<area shape="rect" id="node16" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="444,717,639,743"/>
-<area shape="rect" id="node17" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="699,717,881,743"/>
-<area shape="rect" id="node19" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="941,898,1112,925"/>
-<area shape="rect" id="node20" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1175,904,1328,945"/>
-<area shape="rect" id="node21" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1391,913,1585,939"/>
-<area shape="rect" id="node22" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1633,918,1784,945"/>
-<area shape="rect" id="node23" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1832,945,1993,971"/>
-<area shape="rect" id="node24" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2041,945,2115,971"/>
-<area shape="rect" id="node26" href="class_camera_state___homing_target.html#a9222190a5f26d564e99623b05941d382" title="初期化関数 " alt="" coords="449,827,634,868"/>
-<area shape="rect" id="node28" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="474,957,609,983"/>
-<area shape="rect" id="node29" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="687,947,893,988"/>
-<area shape="rect" id="node30" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="951,953,1102,979"/>
-<area shape="rect" id="node32" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="729,1013,851,1039"/>
-<area shape="rect" id="node33" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="957,1007,1096,1034"/>
-<area shape="rect" id="node34" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="1160,982,1343,1009"/>
-<area shape="rect" id="node35" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1397,973,1579,999"/>
-<area shape="rect" id="node36" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1639,971,1778,998"/>
-<area shape="rect" id="node38" href="class_physics.html#a13bf3e9de07a12afc3c0a4012e00d0a1" title="Physics::Update" alt="" coords="731,809,849,835"/>
-<area shape="rect" id="node39" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="945,827,1108,854"/>
-</map>
+
 </div>
+</div>
+<a id="a19538fe991e76eb8146295e6f5f1ed99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19538fe991e76eb8146295e6f5f1ed99">&#9670;&nbsp;</a></span>getpWorldMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>* Transform::getpWorldMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00079">79</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -704,25 +577,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00070">70</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a57d1da919d8df7d2452149c4bbade4d2_cgraph.png" border="0" usemap="#class_transform_a57d1da919d8df7d2452149c4bbade4d2_cgraph" alt=""/></div>
-<map name="class_transform_a57d1da919d8df7d2452149c4bbade4d2_cgraph" id="class_transform_a57d1da919d8df7d2452149c4bbade4d2_cgraph">
-<area shape="rect" id="node2" href="class_axis_vector.html#a1d4f944d118d6f999c516dbdc0827a39" title="AxisVector::GetRight" alt="" coords="192,5,337,32"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a57d1da919d8df7d2452149c4bbade4d2_icgraph.png" border="0" usemap="#class_transform_a57d1da919d8df7d2452149c4bbade4d2_icgraph" alt=""/></div>
-<map name="class_transform_a57d1da919d8df7d2452149c4bbade4d2_icgraph" id="class_transform_a57d1da919d8df7d2452149c4bbade4d2_icgraph">
-<area shape="rect" id="node2" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="211,5,361,32"/>
-<area shape="rect" id="node3" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="192,56,380,83"/>
-<area shape="rect" id="node4" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="211,107,361,149"/>
-<area shape="rect" id="node5" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="211,173,361,214"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -750,42 +604,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00052">52</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_accedf33a4ddbdcf2d4fc4274f85bf818_icgraph.png" border="0" usemap="#class_transform_accedf33a4ddbdcf2d4fc4274f85bf818_icgraph" alt=""/></div>
-<map name="class_transform_accedf33a4ddbdcf2d4fc4274f85bf818_icgraph" id="class_transform_accedf33a4ddbdcf2d4fc4274f85bf818_icgraph">
-<area shape="rect" id="node2" href="class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd" title="初期化関数 " alt="" coords="213,5,347,32"/>
-<area shape="rect" id="node3" href="class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176" title="初期化関数 " alt="" coords="209,56,351,83"/>
-<area shape="rect" id="node4" href="class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e" title="初期化関数 " alt="" coords="195,107,365,133"/>
-<area shape="rect" id="node5" href="class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30" title="初期化関数 " alt="" coords="216,157,344,184"/>
-<area shape="rect" id="node6" href="class_tutorial_logo_draw.html#a53fc4b1b23c7f9e249600be67510f944" title="初期化関数 " alt="" coords="207,208,353,235"/>
-<area shape="rect" id="node7" href="class_coin_collision.html#a981fd9b1b8c688a757a456a56d80501b" title="更新関数 " alt="" coords="207,259,353,285"/>
-<area shape="rect" id="node8" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="205,309,355,336"/>
-<area shape="rect" id="node9" href="class_sky_dome_update.html#ab4fec6d13590c07e39e6e8b4f7f7613a" title="初期化関数 " alt="" coords="207,360,353,387"/>
-<area shape="rect" id="node10" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="199,411,361,453"/>
-<area shape="rect" id="node11" href="class_fade.html#aab12848f7102a219968c86ed699a6e5d" title="初期化関数 " alt="" coords="242,477,318,504"/>
-<area shape="rect" id="node25" href="class_render_texture.html#ac27f8cfac7903dd502de61e22abfc457" title="RenderTexture::Update" alt="" coords="203,540,357,567"/>
-<area shape="rect" id="node12" href="class_back_buffer.html#add3a034c7758dc6a72bb4582bf6ce78e" title="フェード初期化関数 " alt="" coords="413,452,552,479"/>
-<area shape="rect" id="node13" href="class_scene_manager.html#a208cc1690dcb260ae7fb94d13118f6ce" title="SceneManager::setNextScene" alt="" coords="600,351,799,377"/>
-<area shape="rect" id="node18" href="class_scene_manager.html#a1759161a38025ec8212dc98439fd7335" title="シーンリセット関数 " alt="" coords="605,401,793,428"/>
-<area shape="rect" id="node19" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="600,452,799,479"/>
-<area shape="rect" id="node24" href="class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="605,503,793,529"/>
-<area shape="rect" id="node14" href="class_game_scene_state___start.html#ae11bb8d8ea9eae4fea2a9acf33dd1c8b" title="更新関数 " alt="" coords="858,227,1018,269"/>
-<area shape="rect" id="node15" href="class_result_scene_state___start.html#a2ecdef2bef0cd1a04055e8687e11199b" title="更新関数 " alt="" coords="857,293,1019,334"/>
-<area shape="rect" id="node16" href="class_title_scene_state___start.html#a2e98cf6810711b58766d7147168d02eb" title="更新関数 " alt="" coords="863,358,1013,399"/>
-<area shape="rect" id="node17" href="class_tutorial_scene_state___end.html#a7cdf03fa9a0e41ab86c2b41b8165ad09" title="更新関数 " alt="" coords="872,423,1004,465"/>
-<area shape="rect" id="node20" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="859,503,1017,529"/>
-<area shape="rect" id="node21" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1308,503,1484,529"/>
-<area shape="rect" id="node22" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1532,528,1693,555"/>
-<area shape="rect" id="node23" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1741,528,1815,555"/>
-<area shape="rect" id="node26" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="421,547,544,573"/>
-<area shape="rect" id="node27" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="630,553,769,580"/>
-<area shape="rect" id="node28" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="847,553,1029,580"/>
-<area shape="rect" id="node29" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1077,553,1260,580"/>
-<area shape="rect" id="node30" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1327,553,1465,580"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -813,80 +631,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00069">69</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a9f5700481ae42556f763726947feaf36_cgraph.png" border="0" usemap="#class_transform_a9f5700481ae42556f763726947feaf36_cgraph" alt=""/></div>
-<map name="class_transform_a9f5700481ae42556f763726947feaf36_cgraph" id="class_transform_a9f5700481ae42556f763726947feaf36_cgraph">
-<area shape="rect" id="node2" href="class_axis_vector.html#aba45ae6f91ac516e6e42fdb8bcfcae2e" title="AxisVector::GetUp" alt="" coords="177,5,308,32"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a9f5700481ae42556f763726947feaf36_icgraph.png" border="0" usemap="#class_transform_a9f5700481ae42556f763726947feaf36_icgraph" alt=""/></div>
-<map name="class_transform_a9f5700481ae42556f763726947feaf36_icgraph" id="class_transform_a9f5700481ae42556f763726947feaf36_icgraph">
-<area shape="rect" id="node2" href="class_player_update.html#ac15fd0faf356c6e66f6c62c2b6b8d3ac" title="デバッグ表示関数 " alt="" coords="177,5,365,32"/>
-<area shape="rect" id="node3" href="class_player_update___special.html#a6253000b53b2c5bc73ce0ed4d3b4a82a" title="デバッグ表示関数 " alt="" coords="196,57,347,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a060f9487a18ad34549eab53a7ca5100d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a060f9487a18ad34549eab53a7ca5100d">&#9670;&nbsp;</a></span>GetWorldMatrix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="_vector3_d_8h.html#a032295cd9fb1b711757c90667278e744">MATRIX</a>* Transform::GetWorldMatrix </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00079">79</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a060f9487a18ad34549eab53a7ca5100d_cgraph.png" border="0" usemap="#class_transform_a060f9487a18ad34549eab53a7ca5100d_cgraph" alt=""/></div>
-<map name="class_transform_a060f9487a18ad34549eab53a7ca5100d_cgraph" id="class_transform_a060f9487a18ad34549eab53a7ca5100d_cgraph">
-<area shape="rect" id="node2" href="class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="232,5,431,32"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a060f9487a18ad34549eab53a7ca5100d_icgraph.png" border="0" usemap="#class_transform_a060f9487a18ad34549eab53a7ca5100d_icgraph" alt=""/></div>
-<map name="class_transform_a060f9487a18ad34549eab53a7ca5100d_icgraph" id="class_transform_a060f9487a18ad34549eab53a7ca5100d_icgraph">
-<area shape="rect" id="node2" href="class_clear_logo_draw.html#af5d12b717020101e5c956cf3574f0e2a" title="ClearLogoDraw::GetMatrix" alt="" coords="238,5,413,32"/>
-<area shape="rect" id="node3" href="class_failure_logo_draw.html#aefc4be9e6ead4d90a5fc9c22cc07fe92" title="FailureLogoDraw::GetMatrix" alt="" coords="234,56,417,83"/>
-<area shape="rect" id="node4" href="class_push_space_logo_draw.html#a1ab6229ba2d68b730797f5016c99f359" title="PushSpaceLogoDraw::\lGetMatrix" alt="" coords="248,107,403,149"/>
-<area shape="rect" id="node5" href="class_score_draw.html#a62aa20ef4b40544bf0a95770b925c780" title="ScoreDraw::GetMatrix" alt="" coords="250,173,401,200"/>
-<area shape="rect" id="node6" href="class_title_logo_draw.html#af21cd1dbd79c741a2e3ca2b8e26c5f61" title="TitleLogoDraw::GetMatrix" alt="" coords="241,224,409,251"/>
-<area shape="rect" id="node7" href="class_tutorial_logo_draw.html#ab700e592d00574dff6ee342138343d7b" title="TutorialLogoDraw::GetMatrix" alt="" coords="232,275,419,301"/>
-<area shape="rect" id="node8" href="class_coin_draw.html#a8f5fd8668a4c66fe31446cc6f7c4afd7" title="CoinDraw::GetMatrix" alt="" coords="254,325,397,352"/>
-<area shape="rect" id="node9" href="class_enemy_draw.html#a6f2a052a45caf0d255112cbe81b8bfa3" title="EnemyDraw::GetMatrix" alt="" coords="247,376,404,403"/>
-<area shape="rect" id="node10" href="class_field_draw.html#a2629b4c4cd8e240e39c65b879c6e82b6" title="FieldDraw::GetMatrix" alt="" coords="253,427,397,453"/>
-<area shape="rect" id="node11" href="class_goal_draw.html#a50fa9ceaaecdff9910e0f91e65ad9e95" title="GoalDraw::GetMatrix" alt="" coords="254,477,397,504"/>
-<area shape="rect" id="node12" href="class_player_draw.html#a8edf1441ea23f298c6a0ca707f54021a" title="PlayerDraw::GetMatrix" alt="" coords="249,528,402,555"/>
-<area shape="rect" id="node13" href="class_sky_dome_draw.html#ab947a3d43975a6d95149bc112c08ce05" title="SkyDomeDraw::GetMatrix" alt="" coords="239,579,412,605"/>
-<area shape="rect" id="node14" href="class_stencil_shadow_test_draw.html#adfa99798c61ac13f209dc99f1e2694c5" title="StencilShadowTestDraw\l::GetMatrix" alt="" coords="244,630,407,671"/>
-<area shape="rect" id="node15" href="class_number_draw.html#a78f50afa05e728811d89a491f5eec899" title="NumberDraw::GetMatrix" alt="" coords="245,696,406,723"/>
-<area shape="rect" id="node16" href="class_effekseer_object.html#aecb9314a5ff922c9420301129d2f26f7" title="EffekseerObject::Update" alt="" coords="244,747,407,773"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -915,14 +659,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00060">60</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_ab6f7342cb4eca555c02a85c999d499dc_icgraph.png" border="0" usemap="#class_transform_ab6f7342cb4eca555c02a85c999d499dc_icgraph" alt=""/></div>
-<map name="class_transform_ab6f7342cb4eca555c02a85c999d499dc_icgraph" id="class_transform_ab6f7342cb4eca555c02a85c999d499dc_icgraph">
-<area shape="rect" id="node2" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="239,5,388,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -943,31 +679,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00088">88</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a39b78acbdbf3ee98cad0c4e640988745_cgraph.png" border="0" usemap="#class_transform_a39b78acbdbf3ee98cad0c4e640988745_cgraph" alt=""/></div>
-<map name="class_transform_a39b78acbdbf3ee98cad0c4e640988745_cgraph" id="class_transform_a39b78acbdbf3ee98cad0c4e640988745_cgraph">
-<area shape="rect" id="node2" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="253,5,433,32"/>
-<area shape="rect" id="node3" href="class_axis_vector.html#a83ead17514eb08954dc74c0e72b6158c" title="AxisVector::GetDefaultForawrd" alt="" coords="243,56,444,83"/>
-<area shape="rect" id="node4" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="246,107,441,133"/>
-<area shape="rect" id="node5" href="class_vector3_d.html#aed4c9936346cfbcb7238bd64ae1601d3" title="Vector3D::CreateVectorDot" alt="" coords="253,157,433,184"/>
-<area shape="rect" id="node6" href="class_vector3_d.html#a0d486a19d3f7515e2f147c78bb73ce07" title="Vector3D::GetLengthSquare" alt="" coords="251,208,436,235"/>
-<area shape="rect" id="node10" href="class_transform.html#ac8cdb5ca9995d9c124f1890d84c92ab4" title="Transform::SetTargetQuaternion" alt="" coords="240,259,447,285"/>
-<area shape="rect" id="node11" href="class_axis_vector.html#a32f68ef0864e7b589d3c1996a61e11fc" title="AxisVector::GetDefaultUp" alt="" coords="258,309,429,336"/>
-<area shape="rect" id="node7" href="class_vector3_d.html#a77ee5fc836fd4024bd8bdae603b1677e" title="Vector3D::GetSquareX" alt="" coords="495,157,649,184"/>
-<area shape="rect" id="node8" href="class_vector3_d.html#a151d4791ff98d3f99d038c1dc372e0fc" title="Vector3D::GetSquareY" alt="" coords="495,208,649,235"/>
-<area shape="rect" id="node9" href="class_vector3_d.html#a8ede9efe34b69e067153688aea96574f" title="Vector3D::GetSquareZ" alt="" coords="495,259,649,285"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a39b78acbdbf3ee98cad0c4e640988745_icgraph.png" border="0" usemap="#class_transform_a39b78acbdbf3ee98cad0c4e640988745_icgraph" alt=""/></div>
-<map name="class_transform_a39b78acbdbf3ee98cad0c4e640988745_icgraph" id="class_transform_a39b78acbdbf3ee98cad0c4e640988745_icgraph">
-<area shape="rect" id="node2" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="240,5,389,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -998,15 +709,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00126">126</a> 行目に定義があります。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4_icgraph.png" border="0" usemap="#class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4_icgraph" alt=""/></div>
-<map name="class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4_icgraph" id="class_transform_ac8cdb5ca9995d9c124f1890d84c92ab4_icgraph">
-<area shape="rect" id="node2" href="class_transform.html#a39b78acbdbf3ee98cad0c4e640988745" title="Transform::SetLookAtVector" alt="" coords="260,5,447,32"/>
-<area shape="rect" id="node3" href="class_player_update.html#af6e1b8ca60399f232e64d2acb4968c75" title="更新関数 " alt="" coords="495,5,644,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1034,31 +736,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00078">78</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a053037b225e6fb11e680cc60df15dd45_cgraph.png" border="0" usemap="#class_transform_a053037b225e6fb11e680cc60df15dd45_cgraph" alt=""/></div>
-<map name="class_transform_a053037b225e6fb11e680cc60df15dd45_cgraph" id="class_transform_a053037b225e6fb11e680cc60df15dd45_cgraph">
-<area shape="rect" id="node2" href="class_matrix_extend.html#ae567bb2d140dff892ed1b63f8de33ba9" title="MatrixExtend::TransposeMatrix\lTranslationOff" alt="" coords="236,5,439,47"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a053037b225e6fb11e680cc60df15dd45_icgraph.png" border="0" usemap="#class_transform_a053037b225e6fb11e680cc60df15dd45_icgraph" alt=""/></div>
-<map name="class_transform_a053037b225e6fb11e680cc60df15dd45_icgraph" id="class_transform_a053037b225e6fb11e680cc60df15dd45_icgraph">
-<area shape="rect" id="node2" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="236,5,399,47"/>
-<area shape="rect" id="node3" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="447,5,605,47"/>
-<area shape="rect" id="node4" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="653,13,788,39"/>
-<area shape="rect" id="node5" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="836,5,1043,47"/>
-<area shape="rect" id="node6" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1091,13,1241,39"/>
-<area shape="rect" id="node7" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1289,5,1443,47"/>
-<area shape="rect" id="node8" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1491,13,1685,39"/>
-<area shape="rect" id="node9" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1733,13,1884,39"/>
-<area shape="rect" id="node10" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1932,13,2093,39"/>
-<area shape="rect" id="node11" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2141,13,2215,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1078,43 +755,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_afe5350bb1558256115e14c0669611acd_cgraph.png" border="0" usemap="#class_transform_afe5350bb1558256115e14c0669611acd_cgraph" alt=""/></div>
-<map name="class_transform_afe5350bb1558256115e14c0669611acd_cgraph" id="class_transform_afe5350bb1558256115e14c0669611acd_cgraph">
-<area shape="rect" id="node2" href="class_axis_vector.html#a1414c1390a31d9e98c26d9803c61d2b8" title="AxisVector::ResetAxisVector" alt="" coords="247,5,439,32"/>
-<area shape="rect" id="node3" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="249,56,437,83"/>
-<area shape="rect" id="node4" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="245,107,441,149"/>
-<area shape="rect" id="node5" href="class_axis_vector.html#a33aab769ff2de997393c13414fa23873" title="AxisVector::RotationMatrix" alt="" coords="254,173,433,200"/>
-<area shape="rect" id="node11" href="class_matrix_extend.html#a6e10c2692b92f15ea4a1a69fc22c66c4" title="MatrixExtend::GetRotation\lMatrix" alt="" coords="255,225,431,266"/>
-<area shape="rect" id="node6" href="class_vector3_d.html#aa368719da4c1ac4e8a727edbd09ec390" title="Vector3D::RotationVector\l_Matrix" alt="" coords="504,101,675,142"/>
-<area shape="rect" id="node7" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="497,166,681,207"/>
-<area shape="rect" id="node9" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="489,232,689,259"/>
-<area shape="rect" id="node8" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="737,173,932,200"/>
-<area shape="rect" id="node10" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="745,232,925,259"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_afe5350bb1558256115e14c0669611acd_icgraph.png" border="0" usemap="#class_transform_afe5350bb1558256115e14c0669611acd_icgraph" alt=""/></div>
-<map name="class_transform_afe5350bb1558256115e14c0669611acd_icgraph" id="class_transform_afe5350bb1558256115e14c0669611acd_icgraph">
-<area shape="rect" id="node2" href="class_transform.html#af02515be1947506212ca1c23223ce0b3" title="Transform::UpdateAxisVector\l_WorldMatrixSRT" alt="" coords="245,5,437,47"/>
-<area shape="rect" id="node4" href="class_transform.html#a73a20f2b8baad21ba74a2b1c6d8a1ab2" title="Transform::UpdateAxisVector\l_WorldMatrixISRT" alt="" coords="245,71,437,112"/>
-<area shape="rect" id="node3" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="491,5,642,47"/>
-<area shape="rect" id="node5" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="485,71,648,112"/>
-<area shape="rect" id="node6" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="696,71,855,112"/>
-<area shape="rect" id="node7" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="903,78,1037,105"/>
-<area shape="rect" id="node8" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="1085,71,1292,112"/>
-<area shape="rect" id="node9" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1340,78,1491,105"/>
-<area shape="rect" id="node10" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1539,71,1692,112"/>
-<area shape="rect" id="node11" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1740,78,1935,105"/>
-<area shape="rect" id="node12" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1983,78,2133,105"/>
-<area shape="rect" id="node13" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="2181,78,2343,105"/>
-<area shape="rect" id="node14" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2391,78,2464,105"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1134,44 +774,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00218">218</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_cgraph.png" border="0" usemap="#class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_cgraph" alt=""/></div>
-<map name="class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_cgraph" id="class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_cgraph">
-<area shape="rect" id="node2" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="255,115,447,141"/>
-<area shape="rect" id="node13" href="class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="260,166,441,207"/>
-<area shape="rect" id="node14" href="class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="245,231,456,273"/>
-<area shape="rect" id="node15" href="class_matrix_extend.html#ab0aaf14f8621fde91f9db5537a4187e6" title="MatrixExtend::UpdateWorld\lMatrixISRT" alt="" coords="259,297,442,338"/>
-<area shape="rect" id="node3" href="class_axis_vector.html#a1414c1390a31d9e98c26d9803c61d2b8" title="AxisVector::ResetAxisVector" alt="" coords="506,5,698,32"/>
-<area shape="rect" id="node4" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="508,56,696,83"/>
-<area shape="rect" id="node5" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="504,107,700,149"/>
-<area shape="rect" id="node6" href="class_axis_vector.html#a33aab769ff2de997393c13414fa23873" title="AxisVector::RotationMatrix" alt="" coords="513,173,691,200"/>
-<area shape="rect" id="node12" href="class_matrix_extend.html#a6e10c2692b92f15ea4a1a69fc22c66c4" title="MatrixExtend::GetRotation\lMatrix" alt="" coords="514,225,690,266"/>
-<area shape="rect" id="node7" href="class_vector3_d.html#aa368719da4c1ac4e8a727edbd09ec390" title="Vector3D::RotationVector\l_Matrix" alt="" coords="763,101,933,142"/>
-<area shape="rect" id="node8" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="756,166,940,207"/>
-<area shape="rect" id="node10" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="748,232,948,259"/>
-<area shape="rect" id="node9" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="996,173,1191,200"/>
-<area shape="rect" id="node11" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="1003,232,1183,259"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_icgraph.png" border="0" usemap="#class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_icgraph" alt=""/></div>
-<map name="class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_icgraph" id="class_transform_a73a20f2b8baad21ba74a2b1c6d8a1ab2_icgraph">
-<area shape="rect" id="node2" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="245,5,408,47"/>
-<area shape="rect" id="node3" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="456,5,615,47"/>
-<area shape="rect" id="node4" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="663,13,797,39"/>
-<area shape="rect" id="node5" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="845,5,1052,47"/>
-<area shape="rect" id="node6" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1100,13,1251,39"/>
-<area shape="rect" id="node7" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1299,5,1452,47"/>
-<area shape="rect" id="node8" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1500,13,1695,39"/>
-<area shape="rect" id="node9" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1743,13,1893,39"/>
-<area shape="rect" id="node10" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1941,13,2103,39"/>
-<area shape="rect" id="node11" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2151,13,2224,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1191,35 +793,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00195">195</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_af02515be1947506212ca1c23223ce0b3_cgraph.png" border="0" usemap="#class_transform_af02515be1947506212ca1c23223ce0b3_cgraph" alt=""/></div>
-<map name="class_transform_af02515be1947506212ca1c23223ce0b3_cgraph" id="class_transform_af02515be1947506212ca1c23223ce0b3_cgraph">
-<area shape="rect" id="node2" href="class_transform.html#afe5350bb1558256115e14c0669611acd" title="Transform::UpdateAxisVector" alt="" coords="255,115,447,141"/>
-<area shape="rect" id="node13" href="class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="260,166,441,207"/>
-<area shape="rect" id="node14" href="class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="245,231,456,273"/>
-<area shape="rect" id="node15" href="class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd" title="MatrixExtend::UpdateWorld\lMatrixSRT" alt="" coords="259,297,442,338"/>
-<area shape="rect" id="node3" href="class_axis_vector.html#a1414c1390a31d9e98c26d9803c61d2b8" title="AxisVector::ResetAxisVector" alt="" coords="506,5,698,32"/>
-<area shape="rect" id="node4" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="508,56,696,83"/>
-<area shape="rect" id="node5" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="504,107,700,149"/>
-<area shape="rect" id="node6" href="class_axis_vector.html#a33aab769ff2de997393c13414fa23873" title="AxisVector::RotationMatrix" alt="" coords="513,173,691,200"/>
-<area shape="rect" id="node12" href="class_matrix_extend.html#a6e10c2692b92f15ea4a1a69fc22c66c4" title="MatrixExtend::GetRotation\lMatrix" alt="" coords="514,225,690,266"/>
-<area shape="rect" id="node7" href="class_vector3_d.html#aa368719da4c1ac4e8a727edbd09ec390" title="Vector3D::RotationVector\l_Matrix" alt="" coords="763,101,933,142"/>
-<area shape="rect" id="node8" href="class_axis_vector.html#a1b7758fdc7a7ef1809a7a5de1777ee65" title="AxisVector::CalculationAxis\l_ConfirmAxisForward" alt="" coords="756,166,940,207"/>
-<area shape="rect" id="node10" href="class_axis_vector.html#abd3b0ec608bc18dc9996cf9fa1d121b0" title="AxisVector::NormalizeAxis_All" alt="" coords="748,232,948,259"/>
-<area shape="rect" id="node9" href="class_vector3_d.html#accbd42535a385947ac5380084f2c688c" title="Vector3D::CreateVectorCross" alt="" coords="996,173,1191,200"/>
-<area shape="rect" id="node11" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808" title="Vector3D::CreateNormalize" alt="" coords="1003,232,1183,259"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_af02515be1947506212ca1c23223ce0b3_icgraph.png" border="0" usemap="#class_transform_af02515be1947506212ca1c23223ce0b3_icgraph" alt=""/></div>
-<map name="class_transform_af02515be1947506212ca1c23223ce0b3_icgraph" id="class_transform_af02515be1947506212ca1c23223ce0b3_icgraph">
-<area shape="rect" id="node2" href="class_player_update___special.html#afef3503e292dbaded809068fd87deadd" title="更新関数 " alt="" coords="245,5,396,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1248,14 +821,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00076">76</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de_cgraph.png" border="0" usemap="#class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de_cgraph" alt=""/></div>
-<map name="class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de_cgraph" id="class_transform_a3d2e5da24fb1c8015f5bb9a6c0a7a7de_cgraph">
-<area shape="rect" id="node2" href="class_matrix_extend.html#a5aa7bce55ed92acb79d21fda51e83146" title="MatrixExtend::UpdateInverse\lMatrix" alt="" coords="221,5,409,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1284,31 +849,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8h_source.html">Transform.h</a> の <a class="el" href="_transform_8h_source.html#l00077">77</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a486ae5501b5081b22ee053f787e0e4a2_cgraph.png" border="0" usemap="#class_transform_a486ae5501b5081b22ee053f787e0e4a2_cgraph" alt=""/></div>
-<map name="class_transform_a486ae5501b5081b22ee053f787e0e4a2_cgraph" id="class_transform_a486ae5501b5081b22ee053f787e0e4a2_cgraph">
-<area shape="rect" id="node2" href="class_matrix_extend.html#a81e92fe4305ff9569809b61e2e92df31" title="MatrixExtend::UpdateTranspose\lMatrix" alt="" coords="241,5,449,47"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a486ae5501b5081b22ee053f787e0e4a2_icgraph.png" border="0" usemap="#class_transform_a486ae5501b5081b22ee053f787e0e4a2_icgraph" alt=""/></div>
-<map name="class_transform_a486ae5501b5081b22ee053f787e0e4a2_icgraph" id="class_transform_a486ae5501b5081b22ee053f787e0e4a2_icgraph">
-<area shape="rect" id="node2" href="class_back_buffer.html#a5c9341c9d26576781ec9abb55b937bda" title="ビルボード用行列変更関数 " alt="" coords="241,5,404,47"/>
-<area shape="rect" id="node3" href="class_back_buffer.html#a1b93b223c80549e7b11e1d91b56552bc" title="全ビルボード更新関数 " alt="" coords="452,5,611,47"/>
-<area shape="rect" id="node4" href="class_back_buffer.html#a11c7fa5da3d892c72bf6d44e7b269c62" title="更新関数 " alt="" coords="659,13,793,39"/>
-<area shape="rect" id="node5" href="class_draw_manager.html#a8eb2f1e3957113ae99e8240c40c89744" title="全レンダーターゲット更新関数 " alt="" coords="841,5,1048,47"/>
-<area shape="rect" id="node6" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="1096,13,1247,39"/>
-<area shape="rect" id="node7" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="1295,5,1448,47"/>
-<area shape="rect" id="node8" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1496,13,1691,39"/>
-<area shape="rect" id="node9" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1739,13,1889,39"/>
-<area shape="rect" id="node10" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1937,13,2099,39"/>
-<area shape="rect" id="node11" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="2147,13,2220,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1328,36 +868,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00171">171</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a3d56e19fba7f44d5f938d62481846fbc_cgraph.png" border="0" usemap="#class_transform_a3d56e19fba7f44d5f938d62481846fbc_cgraph" alt=""/></div>
-<map name="class_transform_a3d56e19fba7f44d5f938d62481846fbc_cgraph" id="class_transform_a3d56e19fba7f44d5f938d62481846fbc_cgraph">
-<area shape="rect" id="node2" href="class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="295,5,476,47"/>
-<area shape="rect" id="node3" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="291,71,479,98"/>
-<area shape="rect" id="node4" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="287,123,483,164"/>
-<area shape="rect" id="node5" href="class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="280,188,491,229"/>
-<area shape="rect" id="node6" href="class_matrix_extend.html#ab0aaf14f8621fde91f9db5537a4187e6" title="MatrixExtend::UpdateWorld\lMatrixISRT" alt="" coords="294,253,477,295"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_a3d56e19fba7f44d5f938d62481846fbc_icgraph.png" border="0" usemap="#class_transform_a3d56e19fba7f44d5f938d62481846fbc_icgraph" alt=""/></div>
-<map name="class_transform_a3d56e19fba7f44d5f938d62481846fbc_icgraph" id="class_transform_a3d56e19fba7f44d5f938d62481846fbc_icgraph">
-<area shape="rect" id="node2" href="class_collision_base.html#a257660ba9ad63f8c92137fdd24ad46cb" title="めり込み解消関数 " alt="" coords="280,5,453,47"/>
-<area shape="rect" id="node5" href="class_physics.html#a481f06d777c1b1f52dc2c06c71e93932" title="Physics::UpdatePosition" alt="" coords="284,71,449,98"/>
-<area shape="rect" id="node3" href="class_player_collision.html#a5048cc608d72d03d02b23c5533dbfd10" title="PlayerCollision::HitSubstance" alt="" coords="501,13,696,39"/>
-<area shape="rect" id="node4" href="class_player_collision.html#ad937a5fd226e742270202bf4eff53767" title="衝突時関数 " alt="" coords="744,13,925,39"/>
-<area shape="rect" id="node6" href="class_physics.html#a13bf3e9de07a12afc3c0a4012e00d0a1" title="Physics::Update" alt="" coords="539,71,658,98"/>
-<area shape="rect" id="node7" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="753,71,916,98"/>
-<area shape="rect" id="node8" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="973,64,1127,105"/>
-<area shape="rect" id="node9" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="1175,71,1369,98"/>
-<area shape="rect" id="node10" href="class_game_system.html#ab0add1f2bd97d3b125a5682f571053a3" title="更新関数 " alt="" coords="1417,71,1568,98"/>
-<area shape="rect" id="node11" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1616,71,1777,98"/>
-<area shape="rect" id="node12" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1825,71,1899,98"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1377,55 +887,6 @@ Transform 連携図</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="_transform_8cpp_source.html">Transform.cpp</a> の <a class="el" href="_transform_8cpp_source.html#l00147">147</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_af1a2dcb4a9d37dd71c203ec248535887_cgraph.png" border="0" usemap="#class_transform_af1a2dcb4a9d37dd71c203ec248535887_cgraph" alt=""/></div>
-<map name="class_transform_af1a2dcb4a9d37dd71c203ec248535887_cgraph" id="class_transform_af1a2dcb4a9d37dd71c203ec248535887_cgraph">
-<area shape="rect" id="node2" href="class_matrix_extend.html#afc536ab192cd6ef2b9a93861af5bf005" title="拡縮行列の更新 " alt="" coords="291,5,472,47"/>
-<area shape="rect" id="node3" href="class_transform.html#a7884cb828ace5c921e7138d83c43d689" title="Transform::CreateQuaternion" alt="" coords="287,71,475,98"/>
-<area shape="rect" id="node4" href="class_matrix_extend.html#afa307701c3147fc345ed10dee054affb" title="MatrixExtend::UpdateRotation\lMatrix" alt="" coords="283,123,479,164"/>
-<area shape="rect" id="node5" href="class_matrix_extend.html#a6ca471ad3fea88a84fde7623c84f52f6" title="平行移動行列の更新 " alt="" coords="276,188,487,229"/>
-<area shape="rect" id="node6" href="class_matrix_extend.html#a4c92a6d037b00bc2514064e00323c5dd" title="MatrixExtend::UpdateWorld\lMatrixSRT" alt="" coords="290,253,473,295"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_transform_af1a2dcb4a9d37dd71c203ec248535887_icgraph.png" border="0" usemap="#class_transform_af1a2dcb4a9d37dd71c203ec248535887_icgraph" alt=""/></div>
-<map name="class_transform_af1a2dcb4a9d37dd71c203ec248535887_icgraph" id="class_transform_af1a2dcb4a9d37dd71c203ec248535887_icgraph">
-<area shape="rect" id="node2" href="class_game_scene_state___start.html#ae921c57f349fbb2f00a197d40a3404b7" title="初期化関数 " alt="" coords="283,5,443,47"/>
-<area shape="rect" id="node3" href="class_clear_logo_draw.html#a9af656c0a8ebfb5fa133a0983add6ffd" title="初期化関数 " alt="" coords="296,71,431,98"/>
-<area shape="rect" id="node4" href="class_failure_logo_draw.html#a718d587edcabb1feea72153a79a65176" title="初期化関数 " alt="" coords="292,122,435,149"/>
-<area shape="rect" id="node5" href="class_push_space_logo_draw.html#a7ad3fe53d9bda4ea16c958bc102ff54e" title="初期化関数 " alt="" coords="278,173,449,199"/>
-<area shape="rect" id="node6" href="class_title_logo_draw.html#a9f70fb70639510908f4e07ee14667e30" title="初期化関数 " alt="" coords="299,223,427,250"/>
-<area shape="rect" id="node7" href="class_tutorial_logo_draw.html#a53fc4b1b23c7f9e249600be67510f944" title="初期化関数 " alt="" coords="290,274,437,301"/>
-<area shape="rect" id="node8" href="class_goal_draw.html#a6e003277ed44eb9c800a616b6acbcb20" title="更新関数 " alt="" coords="300,325,427,351"/>
-<area shape="rect" id="node9" href="class_player_collision.html#a3522ce17b1e1752f2737c2243582ecb0" title="フィールドとの衝突時関数 " alt="" coords="276,375,451,402"/>
-<area shape="rect" id="node10" href="class_sky_dome_update.html#ab4fec6d13590c07e39e6e8b4f7f7613a" title="初期化関数 " alt="" coords="291,426,436,453"/>
-<area shape="rect" id="node11" href="class_stencil_shadow_test_draw.html#a65be72e71cd12cacf315b0364c12c3e3" title="初期化関数 " alt="" coords="282,477,445,519"/>
-<area shape="rect" id="node12" href="class_fade.html#aab12848f7102a219968c86ed699a6e5d" title="初期化関数 " alt="" coords="325,543,401,570"/>
-<area shape="rect" id="node26" href="class_render_texture.html#ac27f8cfac7903dd502de61e22abfc457" title="RenderTexture::Update" alt="" coords="286,606,441,633"/>
-<area shape="rect" id="node13" href="class_back_buffer.html#add3a034c7758dc6a72bb4582bf6ce78e" title="フェード初期化関数 " alt="" coords="499,518,637,545"/>
-<area shape="rect" id="node14" href="class_scene_manager.html#a208cc1690dcb260ae7fb94d13118f6ce" title="SceneManager::setNextScene" alt="" coords="685,417,884,443"/>
-<area shape="rect" id="node19" href="class_scene_manager.html#a1759161a38025ec8212dc98439fd7335" title="シーンリセット関数 " alt="" coords="691,467,879,494"/>
-<area shape="rect" id="node20" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="685,518,884,545"/>
-<area shape="rect" id="node25" href="class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="691,569,879,595"/>
-<area shape="rect" id="node15" href="class_game_scene_state___start.html#ae11bb8d8ea9eae4fea2a9acf33dd1c8b" title="更新関数 " alt="" coords="943,293,1103,335"/>
-<area shape="rect" id="node16" href="class_result_scene_state___start.html#a2ecdef2bef0cd1a04055e8687e11199b" title="更新関数 " alt="" coords="942,359,1105,400"/>
-<area shape="rect" id="node17" href="class_title_scene_state___start.html#a2e98cf6810711b58766d7147168d02eb" title="更新関数 " alt="" coords="949,424,1098,465"/>
-<area shape="rect" id="node18" href="class_tutorial_scene_state___end.html#a7cdf03fa9a0e41ab86c2b41b8165ad09" title="更新関数 " alt="" coords="957,489,1089,531"/>
-<area shape="rect" id="node21" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="944,569,1103,595"/>
-<area shape="rect" id="node22" href="class_game_system.html#aa416827abc995e1b8df4a5cf87911baf" title="後更新関数 " alt="" coords="1393,569,1569,595"/>
-<area shape="rect" id="node23" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="1617,594,1779,621"/>
-<area shape="rect" id="node24" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="1827,594,1900,621"/>
-<area shape="rect" id="node27" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="507,613,629,639"/>
-<area shape="rect" id="node28" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="715,619,854,646"/>
-<area shape="rect" id="node29" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="932,619,1115,646"/>
-<area shape="rect" id="node30" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="1163,619,1345,646"/>
-<area shape="rect" id="node31" href="class_game_system.html#a474db0066b23d39e94e0a830140edce5" title="描画関数 " alt="" coords="1412,619,1551,646"/>
-</map>
-</div>
 
 </div>
 </div>

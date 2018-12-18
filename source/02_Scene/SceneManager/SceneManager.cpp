@@ -15,6 +15,7 @@
 
 #include <main.h>
 #include <SafeRelease/SafeRelease.h>
+#include <GameObjectManager\GameObjectManager.h>
 #include <ResourceManager\ResourceManager.h>
 
 
@@ -29,110 +30,36 @@ const XColor4    SceneManager::DEFAULT_FADE_COLOR(0.0f, 0.0f, 0.0f, 1.0f);
 
 
 //****************************************
-// 関数定義
+// プロパティ定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
-void SceneManager::Init(SceneBase* scene)
-{
-	// 共有データーの初期化
-	common_data_ = new CommonData();
-	common_data_->Reset();
-
-	// リソースの初期化
-	ResourceManager::InitAllData();
-
-	// ゲームオブジェクトマネージャの初期化
-	GameObjectManager::Init();
-
-	// シーンの初期化
-	current_scene_ = scene;
-	current_scene_->setSceneManager(this);
-	current_scene_->Init();
+bool SceneManager::CommonData::getIsUpdate()
+{ 
+	return is_update_; 
 }
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
-void SceneManager::Uninit()
-{
-	// シーンの終了処理
-	if (current_scene_ != nullptr) current_scene_->Uninit();
-	if (next_scene_ != nullptr)  next_scene_->Uninit();
-
-	//ゲームオブジェクトマネージャの終了処理
-	GameObjectManager::Uninit();
-
-	// リソースの終了処理
-	ResourceManager::UninitAllData();
-
-	// 各種開放
-	SafeRelease::Normal(&current_scene_);
-	SafeRelease::Normal(&next_scene_);
-	SafeRelease::Normal(&common_data_);
+void SceneManager::CommonData::setIsUpdate(bool value)
+{ 
+	is_update_ = value; 
 }
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
-void SceneManager::Update()
-{
-	switch (state_)
-	{
-		case SceneManager::State::CHANGE_SCENE:
-		{
-			// シーン変更
-			SceneChange();
-			break;
-		}
-		case SceneManager::State::RESET_SCENE:
-		{
-			// シーンリセット
-			SceneReset();
-			break;
-		}
-	}
+bool SceneManager::CommonData::getIsClear()
+{ 
+	return is_clear_; 
 }
 
 
 
-//--------------------------------------------------
-// +シーンの更新関数
-//--------------------------------------------------
-void SceneManager::UpdateScene()
-{
-	if (current_scene_ == nullptr) return;
-
-	// 各シーン特有の更新
-	current_scene_->Update();
-	
-	// ゲームオブジェクトマネージャの更新
-	GameObjectManager::Update();
+void SceneManager::CommonData::setIsClear(bool value)
+{ 
+	is_clear_ = value; 
 }
 
 
 
-//--------------------------------------------------
-// +シーンの描画関数
-//--------------------------------------------------
-void SceneManager::DrawScene()
-{
-	if (current_scene_ == nullptr) return;
-
-	//ゲームオブジェクトマネージャの描画
-	GameObjectManager::Draw();
-}
-
-
-
-//--------------------------------------------------
-// +次のシーン設定関数
-//--------------------------------------------------
 void SceneManager::setNextScene(SceneBase* value)
 {
 	// 既にほかの要求を受け付けている場合
@@ -161,9 +88,121 @@ void SceneManager::setNextScene(SceneBase* value)
 
 
 
-//--------------------------------------------------
-// +シーンリセット関数
-//--------------------------------------------------
+SceneManager::CommonData* SceneManager::getpCommonData()
+{ 
+	return common_data_; 
+}
+
+
+
+void SceneManager::setFadeType(Fade::Type value) 
+{ 
+	fade_type_ = value; 
+}
+
+
+
+void SceneManager::setFadeSpeed(float value) 
+{ 
+	fade_speed_ = value; 
+}
+
+
+
+void SceneManager::setFadeColor(XColor4 value) 
+{ 
+	fade_color_ = value; 
+}
+
+
+
+//****************************************
+// 関数定義
+//****************************************
+void SceneManager::Init(SceneBase* scene)
+{
+	// 共有データーの初期化
+	common_data_ = new CommonData();
+	common_data_->Reset();
+
+	// リソースの初期化
+	ResourceManager::InitAllData();
+
+	// ゲームオブジェクトマネージャの初期化
+	GameObjectManager::Init();
+
+	// シーンの初期化
+	current_scene_ = scene;
+	current_scene_->setSceneManager(this);
+	current_scene_->Init();
+}
+
+
+
+void SceneManager::Uninit()
+{
+	// シーンの終了処理
+	if (current_scene_ != nullptr) current_scene_->Uninit();
+	if (next_scene_ != nullptr)  next_scene_->Uninit();
+
+	//ゲームオブジェクトマネージャの終了処理
+	GameObjectManager::Uninit();
+
+	// リソースの終了処理
+	ResourceManager::UninitAllData();
+
+	// 各種開放
+	SafeRelease::Normal(&current_scene_);
+	SafeRelease::Normal(&next_scene_);
+	SafeRelease::Normal(&common_data_);
+}
+
+
+
+void SceneManager::Update()
+{
+	switch (state_)
+	{
+		case SceneManager::State::CHANGE_SCENE:
+		{
+			// シーン変更
+			SceneChange();
+			break;
+		}
+		case SceneManager::State::RESET_SCENE:
+		{
+			// シーンリセット
+			SceneReset();
+			break;
+		}
+	}
+}
+
+
+
+void SceneManager::UpdateScene()
+{
+	if (current_scene_ == nullptr) return;
+
+	// 各シーン特有の更新
+	current_scene_->Update();
+	
+	// ゲームオブジェクトマネージャの更新
+	GameObjectManager::Update();
+}
+
+
+
+void SceneManager::DrawScene()
+{
+	if (current_scene_ == nullptr) return;
+
+	//ゲームオブジェクトマネージャの描画
+	GameObjectManager::Draw();
+}
+
+
+
 void SceneManager::ResetScene()
 {
 	// 既にほかの要求を受け付けている場合
@@ -181,9 +220,6 @@ void SceneManager::ResetScene()
 
 
 
-//--------------------------------------------------
-// -シーン変更関数
-//--------------------------------------------------
 void SceneManager::SceneChange()
 {
 	// フェード処理が終わっているかどうか
@@ -229,9 +265,6 @@ void SceneManager::SceneChange()
 
 
 
-//--------------------------------------------------
-// -シーンリセット関数
-//--------------------------------------------------
 void SceneManager::SceneReset()
 {
 	// フェード処理が終わっているかどうか

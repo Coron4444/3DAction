@@ -21,7 +21,7 @@ var searchData=
   ['perspectivefovrh_5fopengl',['PerspectiveFovRH_OpenGL',['../struct_effekseer_1_1_matrix44.html#a7d8f52cbf92efe51564a2314a212df78',1,'Effekseer::Matrix44']]],
   ['physics',['Physics',['../class_physics.html#a2e4cab77c53c0acf5273bd4986f8423d',1,'Physics']]],
   ['pixelshadercompile',['PixelShaderCompile',['../class_pixel_shader_base.html#ac572f1cb13a4486fc8bc2e60e5a14dc4',1,'PixelShaderBase']]],
-  ['plane',['Plane',['../class_plane.html#a026c307dff6ed919b337f1ed7e579798',1,'Plane::Plane(Vec3 normal_vector=Vec3(0.0f, 0.0f, 0.0f), Vec3 point=Vec3(0.0f, 0.0f, 0.0f))'],['../class_plane.html#a9554deff9f83d09a772c15bca3d468d5',1,'Plane::Plane(Vec3 point0, Vec3 point1, Vec3 point2)']]],
+  ['plane',['Plane',['../class_plane.html#acac0d9c003e0ab10d07b146c3566a0c7',1,'Plane']]],
   ['planepolygon',['PlanePolygon',['../class_plane_polygon.html#a27987c23a242840b142e0fa11650daf6',1,'PlanePolygon']]],
   ['play',['Play',['../class_effekseer_1_1_manager.html#a5ea3211a3670843061238976dda54a4f',1,'Effekseer::Manager::Play()'],['../class_effekseer_1_1_sound_player.html#aaea571e89a22b2b0a8971bfb52176622',1,'Effekseer::SoundPlayer::Play()'],['../class_effekseer_object.html#a59c8a12b4eb558449622660d892b3cf4',1,'EffekseerObject::Play()']]],
   ['playsound',['PlaySound',['../_sound_8cpp.html#a917586daf8e3244599ec16baf64230f8',1,'PlaySound(SOUND_LABEL label):&#160;Sound.cpp'],['../_sound_8h.html#a917586daf8e3244599ec16baf64230f8',1,'PlaySound(SOUND_LABEL label):&#160;Sound.cpp']]],

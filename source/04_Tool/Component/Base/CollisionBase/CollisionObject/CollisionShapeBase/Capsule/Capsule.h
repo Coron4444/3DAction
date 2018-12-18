@@ -37,6 +37,83 @@ private:
 
 
 //====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief 球0ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Sphere* 球0ポインタ
+	//----------------------------------------
+	Sphere* getpSphere0();
+
+	//----------------------------------------
+	//! @brief 球1ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Sphere* 球1ポインタ
+	//----------------------------------------
+	Sphere* getpSphere1();
+
+	//----------------------------------------
+	//! @brief 円柱ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Cylinder* 円柱ポインタ
+	//----------------------------------------
+	Cylinder* getpCylinder();
+
+	//----------------------------------------
+	//! @brief 線分ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval LineSegment* 線分ポインタ
+	//----------------------------------------
+	LineSegment* getpLineSegment();
+
+	//----------------------------------------
+	//! @brief 座標ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 座標ポインタ
+	//----------------------------------------
+	Vector3D* getpPosition();
+
+	//----------------------------------------
+	//! @brief 方向ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 方向ポインタ
+	//----------------------------------------
+	Vector3D* getpVector();
+
+	//----------------------------------------
+	//! @brief 方向ベクトル加算済み座標取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D 方向ベクトル加算済み座標
+	//----------------------------------------
+	Vector3D getAddVectorToPosition();
+
+	//----------------------------------------
+	//! @brief 半径取得関数
+	//! @details
+	//! @param void なし
+	//! @retval float 半径
+	//----------------------------------------
+	float getRadius();
+
+	//----------------------------------------
+	//! @brief 半径設定関数
+	//! @details
+	//! @param[in] value 半径
+	//! @retval void なし
+	//----------------------------------------
+	void setRadius(float value);
+
+
+//====================
 // 関数
 //====================
 public:
@@ -44,7 +121,7 @@ public:
 	//! @brief コンストラクタ
 	//! @param void なし
 	//----------------------------------------
-	Capsule() : CollisionShapeBase(CollisionShapeBase::Type::CAPSULE) {}
+	Capsule();
 
 	//----------------------------------------
 	//! @brief 初期化関数
@@ -53,40 +130,14 @@ public:
 	//! @param[in] radius   半径
 	//! @retval void なし
 	//----------------------------------------
-	void Init(Vector3D position, Vector3D vector, float radius)
-	{
-		// 円柱
-		cylinder_.Init(position, vector, radius);
-
-		// 球
-		sphere0_.Init(*cylinder_.getpPosition(), radius);
-		sphere1_.Init(cylinder_.getAddVectorToPosition(), radius);
-	}
+	void Init(Vector3D position, Vector3D vector, float radius);
 
 	//----------------------------------------
 	//! @brief 初期化関数
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	void Update()
-	{
-		// 球
-		*sphere0_.getpPosition() = *cylinder_.getpPosition();
-		sphere0_.setRadius(cylinder_.getRadius());
-		*sphere1_.getpPosition() = cylinder_.getAddVectorToPosition();
-		sphere1_.setRadius(cylinder_.getRadius());
-	}
-
-	// プロパティ
-	Sphere* getpSphere0() { return &sphere0_; }
-	Sphere* getpSphere1() { return &sphere1_; }
-	Cylinder* getpCylinder() { return &cylinder_; }
-	LineSegment* getpLineSegment() { return cylinder_.getpLineSegment(); }
-	Vector3D* getpPosition() { return cylinder_.getpPosition(); }
-	Vector3D* getpVector() { return cylinder_.getpVector(); }
-	Vector3D getAddVectorToPosition() { return cylinder_.getAddVectorToPosition(); }
-	float getRadius() { return cylinder_.getRadius(); }
-	void setRadius(float value) { cylinder_.setRadius(value); }
+	void Update();
 };
 
 

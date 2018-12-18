@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['segment',['SEGMENT',['../class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46',1,'CollisionShapeBase']]],
   ['sound_5flabel_5fbgm_5fclear',['SOUND_LABEL_BGM_CLEAR',['../_sound_8h.html#a2af7bee25723827246d4173df8d14e8eaef0557745eab3b0cb8b9d296ca53efec',1,'Sound.h']]],
   ['sound_5flabel_5fbgm_5fstage_5f1',['SOUND_LABEL_BGM_STAGE_1',['../_sound_8h.html#a2af7bee25723827246d4173df8d14e8ea2ecc8bd877e9e9ebe69753e1491ae44f',1,'Sound.h']]],
   ['sound_5flabel_5fbgm_5fstage_5f2',['SOUND_LABEL_BGM_STAGE_2',['../_sound_8h.html#a2af7bee25723827246d4173df8d14e8eae3730b21418cf11768eab4ae75df1c91',1,'Sound.h']]],

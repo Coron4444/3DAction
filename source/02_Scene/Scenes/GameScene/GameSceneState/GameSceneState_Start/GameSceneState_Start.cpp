@@ -17,6 +17,7 @@
 #include <Scenes/ResultScene/ResultScene.h>
 #include <Scenes/ResultScene/ResultSceneState/ResultSceneState_Start/ResultSceneState_Start.h>
 
+#include <GameObjectManager/GameObjectManager.h>
 #include <ResourceManager/ResourceManager.h>
 #include <SafeRelease/SafeRelease.h>
 #include <ConvertToFrame/MeterToFrame/MeterToFrame.h>
@@ -36,13 +37,10 @@
 //****************************************
 // 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void GameSceneState_Start::Init()
 {
 	// ゲームシーンの取得
-	game_scene_ = (GameScene*)scene_;
+	game_scene_ = (GameScene*)getpScene();
 
 	// ゲームシーン共通データーの初期化
 	game_scene_->setIsClear(false);
@@ -122,18 +120,12 @@ void GameSceneState_Start::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void GameSceneState_Start::Uninit()
 {
 }
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void GameSceneState_Start::Update()
 {
 	// クリア
@@ -153,9 +145,6 @@ void GameSceneState_Start::Update()
 
 
 
-//--------------------------------------------------
-// +リセット関数
-//--------------------------------------------------
 void GameSceneState_Start::Reset()
 {
 

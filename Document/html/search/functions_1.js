@@ -57,16 +57,9 @@ var searchData=
   ['allrelease',['AllRelease',['../class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae',1,'GameObjectManager']]],
   ['allreleasereference',['AllReleaseReference',['../class_game_object_reference_manager.html#ac4852ddd6d8bd5e1f13284ba6204e221',1,'GameObjectReferenceManager']]],
   ['allreset',['AllReset',['../class_game_object_manager.html#a38f980aec0970f45eb9bc55db8ac01a3',1,'GameObjectManager']]],
-  ['amountofsqueezingvectorcalculation_5fsphere_5fcapsule',['AmountOfSqueezingVectorCalculation_Sphere_Capsule',['../class_collision_judgment.html#ae992df185735a5348aef01754ebf9b80',1,'CollisionJudgment']]],
-  ['amountofsqueezingvectorcalculation_5fsphere_5fobb',['AmountOfSqueezingVectorCalculation_Sphere_OBB',['../class_collision_judgment.html#a0d9af21fba97d2f396c8200b6fccaeb4',1,'CollisionJudgment']]],
-  ['amountofsqueezingvectorcalculation_5fsphere_5fplane',['AmountOfSqueezingVectorCalculation_Sphere_Plane',['../class_collision_judgment.html#a6d5a391e5cc4bdafff98d04c219f9087',1,'CollisionJudgment']]],
-  ['amountofsqueezingvectorcalculation_5fsphere_5fsphere',['AmountOfSqueezingVectorCalculation_Sphere_Sphere',['../class_collision_judgment.html#aeb97af19dd3282bb85eb342c315a1ac3',1,'CollisionJudgment']]],
-  ['amountofsqueezingvectorcalculation_5fsphere_5ftriangle',['AmountOfSqueezingVectorCalculation_Sphere_Triangle',['../class_collision_judgment.html#a9b00e793394f46bdc74e6efa434c0255',1,'CollisionJudgment']]],
   ['anylengthvector',['AnyLengthVector',['../class_vector3_d.html#a030384bdfe25863cd4be77fa73052cf1',1,'Vector3D']]],
   ['append',['append',['../struct_im_gui_text_buffer.html#a791ac3e5638c58b53772e14bee1323db',1,'ImGuiTextBuffer']]],
   ['appendv',['appendv',['../struct_im_gui_text_buffer.html#ad7c7e0d7ec1a12dd2a96a3dbb204deaf',1,'ImGuiTextBuffer']]],
   ['arrowbutton',['ArrowButton',['../namespace_im_gui.html#ac7c2bd67d2bb2d8ee4b583b1576a0bd3',1,'ImGui']]],
-  ['askforthefrontt_5fsegment3d_5fcylinder',['AskForTheFrontT_Segment3D_Cylinder',['../class_collision_judgment.html#a413d713064c810f1bea6760e76db5221',1,'CollisionJudgment']]],
-  ['askforthefrontt_5fsegment3d_5fsphere',['AskForTheFrontT_Segment3D_Sphere',['../class_collision_judgment.html#adbf036202ba174c7e9fc10329aeaa2c1',1,'CollisionJudgment']]],
   ['axisvector',['AxisVector',['../class_axis_vector.html#ae77a05cd990defedbd04914dba1f2326',1,'AxisVector']]]
 ];

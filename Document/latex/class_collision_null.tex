@@ -2,7 +2,7 @@
 \label{class_collision_null}\index{Collision\+Null@{Collision\+Null}}
 
 
-空白衝突クラス  
+空白衝突\+Class  
 
 
 
@@ -18,20 +18,13 @@ Collision\+Null の継承関係図\nopagebreak
 \includegraphics[width=350pt]{class_collision_null__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Collision\+Null 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_null__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3}{$\sim$\+Collision\+Null}} ()
-\begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collision_null_af5db1d080c1c0c5a1199062850d8a2ff}{Init}} () override
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Uninit}} () override
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Update}} ()
@@ -50,11 +43,11 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 \subsection{詳解}
-空白衝突クラス 
+空白衝突\+Class 
 
-衝突の空白クラス 
+衝突の空白\+Class 
 
- Collision\+Null.\+h の 27 行目に定義があります。
+ Collision\+Null.\+h の 24 行目に定義があります。
 
 
 
@@ -67,19 +60,17 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
-仮想デストラクタ 
+デストラクタ 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Collision\+Null.\+h の 37 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3_cgraph}
-\end{center}
-\end{figure}
+ Collision\+Null.\+h の 34 行目に定義があります。
+
 
 
 \subsection{関数詳解}
@@ -94,12 +85,22 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 デバッグ表示関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
-\mbox{\hyperlink{class_collision_base_a0b2c1e3b090431d596b6a17e81360932}{Collision\+Base}}を実装しています。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_component_base_a36ae7d27ad9d756fa245bad443020407}{Component\+Base}}を実装しています。
 
 
 
- Collision\+Null.\+h の 65 行目に定義があります。
+ Collision\+Null.\+h の 72 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_null_a580f507d8918865679feec3cc7b613d1}\label{class_collision_null_a580f507d8918865679feec3cc7b613d1}} 
 \index{Collision\+Null@{Collision\+Null}!Hit\+Collision@{Hit\+Collision}}
@@ -112,10 +113,19 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 衝突時関数 
 
 
-\begin{DoxyParams}{引数}
-{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em hit\+\_\+collision} & 相手の衝突基底クラス \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+object} & 相手の衝突オブジェクト \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+my\+\_\+object} & 自分の衝突オブジェクト \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_collision_base_a5c94fe03f875595758e83eb2a176e45d}{Collision\+Base}}を実装しています。
@@ -126,7 +136,7 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 75 行目に定義があります。
+ Collision\+Null.\+h の 81 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}\label{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}} 
 \index{Collision\+Null@{Collision\+Null}!Hit\+Ground@{Hit\+Ground}}
@@ -139,6 +149,16 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 フィールドとの衝突時関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position\+\_\+y} & フィールドの高さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_collision_base_a48c9d1d9e4286cde5054d4d2aa70bdd8}{Collision\+Base}}を実装しています。
 
@@ -148,7 +168,39 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 107 行目に定義があります。
+ Collision\+Null.\+h の 113 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_null_af5db1d080c1c0c5a1199062850d8a2ff}\label{class_collision_null_af5db1d080c1c0c5a1199062850d8a2ff}} 
+\index{Collision\+Null@{Collision\+Null}!Init@{Init}}
+\index{Init@{Init}!Collision\+Null@{Collision\+Null}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_component_base_a125939d6befe42f28886a6523e86b18b}{Component\+Base}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_goal_collision_ab6089638f5390e019a55ae11952e1cf9}{Goal\+Collision}}, \mbox{\hyperlink{class_coin_collision_a4119a7decab2410a4ada3568ad0c132d}{Coin\+Collision}}, \mbox{\hyperlink{class_enemy_collision_ae5c000a30c8c4a023dd0c8e658def772}{Enemy\+Collision}}, \mbox{\hyperlink{class_player_collision_a3dd6238b75933fd60aee77e92353cc44}{Player\+Collision}}で再実装されています。
+
+
+
+ Collision\+Null.\+h の 44 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}\label{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}} 
 \index{Collision\+Null@{Collision\+Null}!Not\+Hit\+Collision@{Not\+Hit\+Collision}}
@@ -161,10 +213,19 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 非衝突時関数 
 
 
-\begin{DoxyParams}{引数}
-{\em hit\+\_\+collision} & \+: 相手の衝突基底クラス hit\+\_\+object \+:相手の衝突オブジェクト hit\+\_\+my\+\_\+object \+: 自分の衝突オブジェクト \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em hit\+\_\+collision} & 相手の衝突基底クラス \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+object} & 相手の衝突オブジェクト \\
+\hline
+\mbox{\tt in,out}  & {\em hit\+\_\+my\+\_\+object} & 自分の衝突オブジェクト \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_collision_base_a9b64fc5c3f2aac2a05296985ef799fb1}{Collision\+Base}}を実装しています。
@@ -175,7 +236,7 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 93 行目に定義があります。
+ Collision\+Null.\+h の 98 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce7911}\label{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce7911}} 
 \index{Collision\+Null@{Collision\+Null}!Not\+Hit\+Ground@{Not\+Hit\+Ground}}
@@ -188,12 +249,22 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 フィールドとの非衝突時関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position\+\_\+y} & フィールドの高さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_collision_base_ac1ed5b1c0c9b6b70b432e6656f9c4b45}{Collision\+Base}}を実装しています。
 
 
 
- Collision\+Null.\+h の 113 行目に定義があります。
+ Collision\+Null.\+h の 120 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}\label{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}} 
 \index{Collision\+Null@{Collision\+Null}!Uninit@{Uninit}}
@@ -206,6 +277,16 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 終了関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
 
 \mbox{\hyperlink{class_component_base_a9f42beaf0383d6f629819579cab4de57}{Component\+Base}}を実装しています。
 
@@ -215,22 +296,8 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 46 行目に定義があります。
+ Collision\+Null.\+h の 51 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_null_a7c6d0ec502efc55e2f406415451152f5_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=332pt]{class_collision_null_a7c6d0ec502efc55e2f406415451152f5_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}\label{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}} 
 \index{Collision\+Null@{Collision\+Null}!Update@{Update}}
 \index{Update@{Update}!Collision\+Null@{Collision\+Null}}
@@ -242,8 +309,18 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 更新関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
-\mbox{\hyperlink{class_collision_base_a0f967cf5de4178ee99f434c3ff4f16fd}{Collision\+Base}}を実装しています。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_component_base_a58e66d65bc8f3cd5ab67b4b2deab4fc2}{Component\+Base}}を実装しています。
 
 
 
@@ -251,7 +328,7 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 59 行目に定義があります。
+ Collision\+Null.\+h の 65 行目に定義があります。
 
 
 

@@ -18,15 +18,6 @@ Sky\+Dome\+Draw の継承関係図\nopagebreak
 \includegraphics[width=169pt]{class_sky_dome_draw__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Sky\+Dome\+Draw 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_sky_dome_draw__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,13 +27,13 @@ void \mbox{\hyperlink{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}{Uni
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sky_dome_draw_a42364ea42618cbab588d55050edfe95a}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_sky_dome_draw_ab947a3d43975a6d95149bc112c08ce05}{Get\+Matrix}} (unsigned object\+\_\+index) override
+unsigned \mbox{\hyperlink{class_sky_dome_draw_a6b281bafa71c058ee83c373ad978e3bb}{get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_sky_dome_draw_a7ecd8d4b987e4d58a247d3438a45f9d4}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_sky_dome_draw_accbc05d1bbde9ad9d6b7180d91e9ed89}{getp\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_sky_dome_draw_acbc487d912b464474ae6f1afd7d6bb74}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_sky_dome_draw_a45d3e8d70753af83c84c7a7c9193459f}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_sky_dome_draw_a1d708782f13648724e423d1dca22b213}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_sky_dome_draw_a99ec8e0a5aea708b66cf07c79a6449d1}{getp\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
@@ -89,97 +80,62 @@ static const std\+::string \mbox{\hyperlink{class_sky_dome_draw_a366fd9d1040d77d
 
  Sky\+Dome\+Draw.\+cpp の 58 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=347pt]{class_sky_dome_draw_a42364ea42618cbab588d55050edfe95a_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_sky_dome_draw_a1d708782f13648724e423d1dca22b213}\label{class_sky_dome_draw_a1d708782f13648724e423d1dca22b213}} 
-\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
-\index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
-{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Sky\+Dome\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_sky_dome_draw_a6b281bafa71c058ee83c373ad978e3bb}\label{class_sky_dome_draw_a6b281bafa71c058ee83c373ad978e3bb}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!get\+Mesh\+Num@{get\+Mesh\+Num}}
+\index{get\+Mesh\+Num@{get\+Mesh\+Num}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Num()}{getMeshNum()}}
+{\footnotesize\ttfamily unsigned Sky\+Dome\+Draw\+::get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}{Draw\+Null}}を再実装しています。
 
 
 
- Sky\+Dome\+Draw.\+cpp の 105 行目に定義があります。
+ Sky\+Dome\+Draw.\+cpp の 72 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_sky_dome_draw_a1d708782f13648724e423d1dca22b213_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_sky_dome_draw_acbc487d912b464474ae6f1afd7d6bb74}\label{class_sky_dome_draw_acbc487d912b464474ae6f1afd7d6bb74}} 
-\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Get\+Material@{Get\+Material}}
-\index{Get\+Material@{Get\+Material}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Sky\+Dome\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_sky_dome_draw_a99ec8e0a5aea708b66cf07c79a6449d1}\label{class_sky_dome_draw_a99ec8e0a5aea708b66cf07c79a6449d1}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!getp\+Decale\+Texture@{getp\+Decale\+Texture}}
+\index{getp\+Decale\+Texture@{getp\+Decale\+Texture}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Decale\+Texture()}{getpDecaleTexture()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Sky\+Dome\+Draw\+::getp\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a2dfa2d2cbb66249f933420a38e9cadad}{Draw\+Null}}を再実装しています。
 
 
 
- Sky\+Dome\+Draw.\+cpp の 93 行目に定義があります。
+ Sky\+Dome\+Draw.\+cpp の 108 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_sky_dome_draw_acbc487d912b464474ae6f1afd7d6bb74_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_sky_dome_draw_ab947a3d43975a6d95149bc112c08ce05}\label{class_sky_dome_draw_ab947a3d43975a6d95149bc112c08ce05}} 
-\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Get\+Matrix@{Get\+Matrix}}
-\index{Get\+Matrix@{Get\+Matrix}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Sky\+Dome\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_sky_dome_draw_a45d3e8d70753af83c84c7a7c9193459f}\label{class_sky_dome_draw_a45d3e8d70753af83c84c7a7c9193459f}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!getp\+Material@{getp\+Material}}
+\index{getp\+Material@{getp\+Material}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Material()}{getpMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Sky\+Dome\+Draw\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{Draw\+Null}}を再実装しています。
 
 
 
- Sky\+Dome\+Draw.\+cpp の 69 行目に定義があります。
+ Sky\+Dome\+Draw.\+cpp の 96 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_sky_dome_draw_ab947a3d43975a6d95149bc112c08ce05_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_sky_dome_draw_a7ecd8d4b987e4d58a247d3438a45f9d4}\label{class_sky_dome_draw_a7ecd8d4b987e4d58a247d3438a45f9d4}} 
-\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
-\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Sky\+Dome\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_sky_dome_draw_accbc05d1bbde9ad9d6b7180d91e9ed89}\label{class_sky_dome_draw_accbc05d1bbde9ad9d6b7180d91e9ed89}} 
+\index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!getp\+Matrix@{getp\+Matrix}}
+\index{getp\+Matrix@{getp\+Matrix}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Matrix()}{getpMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Sky\+Dome\+Draw\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{Draw\+Null}}を再実装しています。
 
 
 
- Sky\+Dome\+Draw.\+cpp の 81 行目に定義があります。
+ Sky\+Dome\+Draw.\+cpp の 84 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_sky_dome_draw_a7ecd8d4b987e4d58a247d3438a45f9d4_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}\label{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab}} 
 \index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Init@{Init}}
 \index{Init@{Init}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}
@@ -198,13 +154,6 @@ static const std\+::string \mbox{\hyperlink{class_sky_dome_draw_a366fd9d1040d77d
 
  Sky\+Dome\+Draw.\+cpp の 30 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_sky_dome_draw_a5b82e8b650a20dbc0b7ed720d1fb7fab_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}\label{class_sky_dome_draw_aee1c6b102a97033073b2559b8c2c328b}} 
 \index{Sky\+Dome\+Draw@{Sky\+Dome\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Sky\+Dome\+Draw@{Sky\+Dome\+Draw}}

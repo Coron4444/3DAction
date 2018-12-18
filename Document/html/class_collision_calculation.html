@@ -1,0 +1,2689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: CollisionCalculation クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_collision_calculation.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="class_collision_calculation-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CollisionCalculation クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>衝突計算Class  
+ <a href="class_collision_calculation.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_collision_calculation_8h_source.html">CollisionCalculation.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a473d42596db3c94e4779eb44a1ddf42b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a473d42596db3c94e4779eb44a1ddf42b">CollisionJudgmentOf2DLineSegmentAnd2DLineSegment</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment0, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment1)</td></tr>
+<tr class="memdesc:a473d42596db3c94e4779eb44a1ddf42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D線分と2D線分の衝突判定関数  <a href="#a473d42596db3c94e4779eb44a1ddf42b">[詳解]</a><br /></td></tr>
+<tr class="separator:a473d42596db3c94e4779eb44a1ddf42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150c5411ae4cb28dc57e6622682494d2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a150c5411ae4cb28dc57e6622682494d2">CollisionJudgmentOfLineSegmentAndSphere</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment, <a class="el" href="class_sphere.html">Sphere</a> *sphere)</td></tr>
+<tr class="memdesc:a150c5411ae4cb28dc57e6622682494d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分と球の衝突判定関数  <a href="#a150c5411ae4cb28dc57e6622682494d2">[詳解]</a><br /></td></tr>
+<tr class="separator:a150c5411ae4cb28dc57e6622682494d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43bbd41b81341d9aa5009744c45d61d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#ac43bbd41b81341d9aa5009744c45d61d">CollisionJudgmentOfLineSegmentAndPlane</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment, <a class="el" href="class_plane.html">Plane</a> *plane)</td></tr>
+<tr class="memdesc:ac43bbd41b81341d9aa5009744c45d61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分と平面の衝突判定関数  <a href="#ac43bbd41b81341d9aa5009744c45d61d">[詳解]</a><br /></td></tr>
+<tr class="separator:ac43bbd41b81341d9aa5009744c45d61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74624614e9fefd55132f6a6cd62f05c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#ad74624614e9fefd55132f6a6cd62f05c">CollisionJudgmentOfLineSegmentAndTriangle</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment, <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="memdesc:ad74624614e9fefd55132f6a6cd62f05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分と三角形平面の衝突判定関数  <a href="#ad74624614e9fefd55132f6a6cd62f05c">[詳解]</a><br /></td></tr>
+<tr class="separator:ad74624614e9fefd55132f6a6cd62f05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfed92b06d3d7dbfc8289225328b9ad3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#abfed92b06d3d7dbfc8289225328b9ad3">CollisionJudgmentOfLineSegmentAndCylinder</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment, <a class="el" href="class_cylinder.html">Cylinder</a> *cylinder)</td></tr>
+<tr class="memdesc:abfed92b06d3d7dbfc8289225328b9ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分と円柱の衝突判定関数  <a href="#abfed92b06d3d7dbfc8289225328b9ad3">[詳解]</a><br /></td></tr>
+<tr class="separator:abfed92b06d3d7dbfc8289225328b9ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc9b23bb92d4fca01d1812669f333ed"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a6fc9b23bb92d4fca01d1812669f333ed">CollisionJudgmentOfLineSegmentAndCapsule</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment, <a class="el" href="class_capsule.html">Capsule</a> *capsule)</td></tr>
+<tr class="memdesc:a6fc9b23bb92d4fca01d1812669f333ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分とカプセルの衝突判定関数  <a href="#a6fc9b23bb92d4fca01d1812669f333ed">[詳解]</a><br /></td></tr>
+<tr class="separator:a6fc9b23bb92d4fca01d1812669f333ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a849e4b29bc0d87356d2b3272469b0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a23a849e4b29bc0d87356d2b3272469b0">CollisionJudgmentOfSphereAndSphere</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_sphere.html">Sphere</a> *sphere0, <a class="el" href="class_sphere.html">Sphere</a> *sphere1)</td></tr>
+<tr class="memdesc:a23a849e4b29bc0d87356d2b3272469b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">球と球の衝突判定関数  <a href="#a23a849e4b29bc0d87356d2b3272469b0">[詳解]</a><br /></td></tr>
+<tr class="separator:a23a849e4b29bc0d87356d2b3272469b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776c3b2ee6ece38b29914dd69f63ed42"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a776c3b2ee6ece38b29914dd69f63ed42">CollisionJudgmentOfSphereAndPlane</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_sphere.html">Sphere</a> *sphere, <a class="el" href="class_plane.html">Plane</a> *plane)</td></tr>
+<tr class="memdesc:a776c3b2ee6ece38b29914dd69f63ed42"><td class="mdescLeft">&#160;</td><td class="mdescRight">球と平面の衝突判定関数  <a href="#a776c3b2ee6ece38b29914dd69f63ed42">[詳解]</a><br /></td></tr>
+<tr class="separator:a776c3b2ee6ece38b29914dd69f63ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533512a0f0ce833680f1e50a2b224e57"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a533512a0f0ce833680f1e50a2b224e57">CollisionJudgmentOfSphereAndTriangle</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_sphere.html">Sphere</a> *sphere, <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="memdesc:a533512a0f0ce833680f1e50a2b224e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">球と三角形平面の衝突判定関数  <a href="#a533512a0f0ce833680f1e50a2b224e57">[詳解]</a><br /></td></tr>
+<tr class="separator:a533512a0f0ce833680f1e50a2b224e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df4528ada47cb62cdf7835d0387409c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a8df4528ada47cb62cdf7835d0387409c">CollisionJudgmentOfSphereAndCapsule</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_sphere.html">Sphere</a> *sphere, <a class="el" href="class_capsule.html">Capsule</a> *capsule)</td></tr>
+<tr class="memdesc:a8df4528ada47cb62cdf7835d0387409c"><td class="mdescLeft">&#160;</td><td class="mdescRight">球とカプセルの衝突判定関数  <a href="#a8df4528ada47cb62cdf7835d0387409c">[詳解]</a><br /></td></tr>
+<tr class="separator:a8df4528ada47cb62cdf7835d0387409c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe109fb7cc435ac79a3255909b445b1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#aebe109fb7cc435ac79a3255909b445b1">CollisionJudgmentOfSphereAndOBB</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_sphere.html">Sphere</a> *sphere, <a class="el" href="class_o_b_b.html">OBB</a> *obb)</td></tr>
+<tr class="memdesc:aebe109fb7cc435ac79a3255909b445b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">球とOBBの衝突判定関数  <a href="#aebe109fb7cc435ac79a3255909b445b1">[詳解]</a><br /></td></tr>
+<tr class="separator:aebe109fb7cc435ac79a3255909b445b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4d60e71a42eb8934d60fa2c99186ea"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#acd4d60e71a42eb8934d60fa2c99186ea">CollisionJudgmentOfPlaneAndPlane</a> (<a class="el" href="class_line_segment.html">LineSegment</a> *hit_line_segment, <a class="el" href="class_plane.html">Plane</a> *plane0, <a class="el" href="class_plane.html">Plane</a> *plane1)</td></tr>
+<tr class="memdesc:acd4d60e71a42eb8934d60fa2c99186ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">平面と平面の衝突判定関数  <a href="#acd4d60e71a42eb8934d60fa2c99186ea">[詳解]</a><br /></td></tr>
+<tr class="separator:acd4d60e71a42eb8934d60fa2c99186ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854226ccd02c8afe5cec91470253ff92"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a854226ccd02c8afe5cec91470253ff92">CollisionJudgmentOfPlaneAndTriangle</a> (<a class="el" href="class_plane.html">Plane</a> *plane, <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="memdesc:a854226ccd02c8afe5cec91470253ff92"><td class="mdescLeft">&#160;</td><td class="mdescRight">平面と三角形平面の衝突判定関数  <a href="#a854226ccd02c8afe5cec91470253ff92">[詳解]</a><br /></td></tr>
+<tr class="separator:a854226ccd02c8afe5cec91470253ff92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3914ef51fc27f19911d3577abc56d9a5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a3914ef51fc27f19911d3577abc56d9a5">CollisionJudgmentOfTriangleAndTriangle</a> (<a class="el" href="class_triangle.html">Triangle</a> *triangle0, <a class="el" href="class_triangle.html">Triangle</a> *triangle1)</td></tr>
+<tr class="memdesc:a3914ef51fc27f19911d3577abc56d9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">三角形平面と三角形平面の衝突判定関数  <a href="#a3914ef51fc27f19911d3577abc56d9a5">[詳解]</a><br /></td></tr>
+<tr class="separator:a3914ef51fc27f19911d3577abc56d9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a66cb6f909ab75c51601ad8037cf806"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a6a66cb6f909ab75c51601ad8037cf806">CollisionJudgmentOfCapsuleAndCapsule</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_capsule.html">Capsule</a> *capsule0, <a class="el" href="class_capsule.html">Capsule</a> *capsule1, <a class="el" href="class_vector3_d.html">Vector3D</a> active_vector={0.0f, 0.0f, 0.0f})</td></tr>
+<tr class="memdesc:a6a66cb6f909ab75c51601ad8037cf806"><td class="mdescLeft">&#160;</td><td class="mdescRight">カプセルとカプセルの衝突判定関数  <a href="#a6a66cb6f909ab75c51601ad8037cf806">[詳解]</a><br /></td></tr>
+<tr class="separator:a6a66cb6f909ab75c51601ad8037cf806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9123a8d6e1e1093bfe977cb5d3dbd6ec"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a9123a8d6e1e1093bfe977cb5d3dbd6ec">CollisionJudgmentOfOBBAndOBB</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_vector, <a class="el" href="class_o_b_b.html">OBB</a> *obb0, <a class="el" href="class_o_b_b.html">OBB</a> *obb1)</td></tr>
+<tr class="memdesc:a9123a8d6e1e1093bfe977cb5d3dbd6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBBとOBBの衝突判定関数  <a href="#a9123a8d6e1e1093bfe977cb5d3dbd6ec">[詳解]</a><br /></td></tr>
+<tr class="separator:a9123a8d6e1e1093bfe977cb5d3dbd6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac06f2aa7df28c6331070b85d48760b59"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#ac06f2aa7df28c6331070b85d48760b59">CalculateTheShortestDistanceBetweenAABBAndAPoint</a> (<a class="el" href="class_a_a_b_b.html">AABB</a> *aabb, <a class="el" href="class_vector3_d.html">Vector3D</a> *point)</td></tr>
+<tr class="memdesc:ac06f2aa7df28c6331070b85d48760b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">AABBと点の最短距離の算出関数  <a href="#ac06f2aa7df28c6331070b85d48760b59">[詳解]</a><br /></td></tr>
+<tr class="separator:ac06f2aa7df28c6331070b85d48760b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd1c367b0e22ce1240185efe11d6c98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#adfd1c367b0e22ce1240185efe11d6c98">CollisionCalculation</a> ()=delete</td></tr>
+<tr class="separator:adfd1c367b0e22ce1240185efe11d6c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa8ad5ebc7cb5554bd071756140771a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a7fa8ad5ebc7cb5554bd071756140771a">CollisionCalculation</a> (const <a class="el" href="class_collision_calculation.html">CollisionCalculation</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:a7fa8ad5ebc7cb5554bd071756140771a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20738fa64ae8749165328d48ee90d32e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_calculation.html">CollisionCalculation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a20738fa64ae8749165328d48ee90d32e">operator=</a> (const <a class="el" href="class_collision_calculation.html">CollisionCalculation</a> &amp;class_name)=delete</td></tr>
+<tr class="separator:a20738fa64ae8749165328d48ee90d32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3123f561d5ba6af08336523205a5d8a8"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a3123f561d5ba6af08336523205a5d8a8">FroatTruncation</a> (float num)</td></tr>
+<tr class="memdesc:a3123f561d5ba6af08336523205a5d8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">floatの切り捨て関数  <a href="#a3123f561d5ba6af08336523205a5d8a8">[詳解]</a><br /></td></tr>
+<tr class="separator:a3123f561d5ba6af08336523205a5d8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa175baccc078543be38213d04a3af2b2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#aa175baccc078543be38213d04a3af2b2">DetermineWhetherTheRatioIsBetweenZeroAndOne</a> (float ratio)</td></tr>
+<tr class="memdesc:aa175baccc078543be38213d04a3af2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">比率が0~1の間にあるか判定関数  <a href="#aa175baccc078543be38213d04a3af2b2">[詳解]</a><br /></td></tr>
+<tr class="separator:aa175baccc078543be38213d04a3af2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae15654adac71bcdbe0b9a31554c827"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#abae15654adac71bcdbe0b9a31554c827">DetermineWhetherBothRatiosAreBetweenZeroAndOne</a> (float ratio0, float ratio1)</td></tr>
+<tr class="memdesc:abae15654adac71bcdbe0b9a31554c827"><td class="mdescLeft">&#160;</td><td class="mdescRight">両方の比率が0~1の間にあるか判定関数  <a href="#abae15654adac71bcdbe0b9a31554c827">[詳解]</a><br /></td></tr>
+<tr class="separator:abae15654adac71bcdbe0b9a31554c827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dffad18d15ed6e7a2e43888398afeeb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a7dffad18d15ed6e7a2e43888398afeeb">DetermineWhetherXOfEitherLineSegmentIsZero</a> (<a class="el" href="class_line_segment.html">LineSegment</a> *line_segment0, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment1)</td></tr>
+<tr class="memdesc:a7dffad18d15ed6e7a2e43888398afeeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">どちらかの線分のXが0か判定関数  <a href="#a7dffad18d15ed6e7a2e43888398afeeb">[詳解]</a><br /></td></tr>
+<tr class="separator:a7dffad18d15ed6e7a2e43888398afeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9896120a5f4b2a7f816140fb19eafd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#abf9896120a5f4b2a7f816140fb19eafd">DetermineWhetherXOfBothLineSegmentsIsZero</a> (<a class="el" href="class_line_segment.html">LineSegment</a> *line_segment0, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment1)</td></tr>
+<tr class="memdesc:abf9896120a5f4b2a7f816140fb19eafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">両方の線分のXが0か判定関数  <a href="#abf9896120a5f4b2a7f816140fb19eafd">[詳解]</a><br /></td></tr>
+<tr class="separator:abf9896120a5f4b2a7f816140fb19eafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013889e5e69a001c229dcf083f884447"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a013889e5e69a001c229dcf083f884447">DetermineWhetherItIsParallelFromSlope</a> (float slope0, float slope1)</td></tr>
+<tr class="memdesc:a013889e5e69a001c229dcf083f884447"><td class="mdescLeft">&#160;</td><td class="mdescRight">傾きから平行か判定関数  <a href="#a013889e5e69a001c229dcf083f884447">[詳解]</a><br /></td></tr>
+<tr class="separator:a013889e5e69a001c229dcf083f884447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c172d64f5d30d772c9b9275215d83c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a37c172d64f5d30d772c9b9275215d83c">DetermineIfItIsLongerThanVector</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *vector, float length)</td></tr>
+<tr class="memdesc:a37c172d64f5d30d772c9b9275215d83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ベクトルより長いか判定関数  <a href="#a37c172d64f5d30d772c9b9275215d83c">[詳解]</a><br /></td></tr>
+<tr class="separator:a37c172d64f5d30d772c9b9275215d83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f88ea10634f6312ec556a202c2296d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a05f88ea10634f6312ec556a202c2296d">DetermineWhetherASphereCollidesAgainstEachSide</a> (<a class="el" href="class_sphere.html">Sphere</a> *sphere, <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="memdesc:a05f88ea10634f6312ec556a202c2296d"><td class="mdescLeft">&#160;</td><td class="mdescRight">球が各辺に衝突しているか判定関数  <a href="#a05f88ea10634f6312ec556a202c2296d">[詳解]</a><br /></td></tr>
+<tr class="separator:a05f88ea10634f6312ec556a202c2296d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8878c4e262eb7027f4ae147a24c7ba33"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a8878c4e262eb7027f4ae147a24c7ba33">DetermineWhetherTheSphereIsSinkingInside</a> (<a class="el" href="class_sphere.html">Sphere</a> *sphere, <a class="el" href="class_triangle.html">Triangle</a> *triangle)</td></tr>
+<tr class="memdesc:a8878c4e262eb7027f4ae147a24c7ba33"><td class="mdescLeft">&#160;</td><td class="mdescRight">球が内部にめり込んでいるか判定関数  <a href="#a8878c4e262eb7027f4ae147a24c7ba33">[詳解]</a><br /></td></tr>
+<tr class="separator:a8878c4e262eb7027f4ae147a24c7ba33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a77b483d1751ce918982c75eb2ac7c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a53a77b483d1751ce918982c75eb2ac7c">DetermineWhetherThePlaneIsParallel</a> (<a class="el" href="class_plane.html">Plane</a> *plane0, <a class="el" href="class_plane.html">Plane</a> *plane1)</td></tr>
+<tr class="memdesc:a53a77b483d1751ce918982c75eb2ac7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">平面が平行か判定関数  <a href="#a53a77b483d1751ce918982c75eb2ac7c">[詳解]</a><br /></td></tr>
+<tr class="separator:a53a77b483d1751ce918982c75eb2ac7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c458a068b5ec44a04060ea2e5e1d47"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a62c458a068b5ec44a04060ea2e5e1d47">DetermineIfATrianglePenetrates</a> (<a class="el" href="class_triangle.html">Triangle</a> *triangle0, <a class="el" href="class_triangle.html">Triangle</a> *triangle1, bool *is_hit_segment_one)</td></tr>
+<tr class="memdesc:a62c458a068b5ec44a04060ea2e5e1d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">三角形平面が貫いているか判定関数  <a href="#a62c458a068b5ec44a04060ea2e5e1d47">[詳解]</a><br /></td></tr>
+<tr class="separator:a62c458a068b5ec44a04060ea2e5e1d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286f406988ba6ca8d46460fabba14fd6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a286f406988ba6ca8d46460fabba14fd6">DetermineWhetherTheIntersectionPointIsWithinALineSegment</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment0, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment1, <a class="el" href="class_vector3_d.html">Vector3D</a> intersection_point)</td></tr>
+<tr class="memdesc:a286f406988ba6ca8d46460fabba14fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">交点が線分内か判定関数  <a href="#a286f406988ba6ca8d46460fabba14fd6">[詳解]</a><br /></td></tr>
+<tr class="separator:a286f406988ba6ca8d46460fabba14fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ba95163806f128280a825cf4517336"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a95ba95163806f128280a825cf4517336">IntersectionCalculationOf2DLineSegmentAnd2DLineSegmentWhenXIsZero</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment0, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment1)</td></tr>
+<tr class="memdesc:a95ba95163806f128280a825cf4517336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xが0の時の2D線分と2D線分の交点計算関数  <a href="#a95ba95163806f128280a825cf4517336">[詳解]</a><br /></td></tr>
+<tr class="separator:a95ba95163806f128280a825cf4517336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b7e084c9517b5f1e2e724b1212e4c6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a01b7e084c9517b5f1e2e724b1212e4c6">IntersectionCalculationOf2DLineSegmentAnd2DLineSegment</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *hit_point, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment0, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment1)</td></tr>
+<tr class="memdesc:a01b7e084c9517b5f1e2e724b1212e4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D線分と2D線分の交点計算関数  <a href="#a01b7e084c9517b5f1e2e724b1212e4c6">[詳解]</a><br /></td></tr>
+<tr class="separator:a01b7e084c9517b5f1e2e724b1212e4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb04e8dc678bf1bcb0f1ecc8dd9edcca"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#abb04e8dc678bf1bcb0f1ecc8dd9edcca">QuadraticEquationCalculationForLineSegmentsAndSpheres</a> (<a class="el" href="class_quadratic_equation.html">QuadraticEquation</a> *equation, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment, <a class="el" href="class_sphere.html">Sphere</a> *sphere)</td></tr>
+<tr class="memdesc:abb04e8dc678bf1bcb0f1ecc8dd9edcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分と球の2次方程式計算  <a href="#abb04e8dc678bf1bcb0f1ecc8dd9edcca">[詳解]</a><br /></td></tr>
+<tr class="separator:abb04e8dc678bf1bcb0f1ecc8dd9edcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860cb4de288c1dbd5e21698b9f9a43d7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a860cb4de288c1dbd5e21698b9f9a43d7">QuadraticEquationCalculationForLineSegmentsAndCylinders</a> (<a class="el" href="class_quadratic_equation.html">QuadraticEquation</a> *equation, <a class="el" href="class_line_segment.html">LineSegment</a> *line_segment, <a class="el" href="class_cylinder.html">Cylinder</a> *cylinder)</td></tr>
+<tr class="memdesc:a860cb4de288c1dbd5e21698b9f9a43d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分と円柱の2次方程式計算  <a href="#a860cb4de288c1dbd5e21698b9f9a43d7">[詳解]</a><br /></td></tr>
+<tr class="separator:a860cb4de288c1dbd5e21698b9f9a43d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59459a11f5f025b10e81d7ba52772809"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a59459a11f5f025b10e81d7ba52772809">CalculateTheRatioOfTheFrontInTheLineSegment</a> (float ratio0, float ratio1)</td></tr>
+<tr class="memdesc:a59459a11f5f025b10e81d7ba52772809"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分内の1番手前の比率の算出関数  <a href="#a59459a11f5f025b10e81d7ba52772809">[詳解]</a><br /></td></tr>
+<tr class="separator:a59459a11f5f025b10e81d7ba52772809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562488bfcc7d29102790b957acf71c90"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a562488bfcc7d29102790b957acf71c90">CalculateTheDistanceTheLineSegmentReachesThePlane</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> segment_vector, <a class="el" href="class_plane.html">Plane</a> *plane, float length)</td></tr>
+<tr class="memdesc:a562488bfcc7d29102790b957acf71c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">線分が平面に届く距離の算出関数  <a href="#a562488bfcc7d29102790b957acf71c90">[詳解]</a><br /></td></tr>
+<tr class="separator:a562488bfcc7d29102790b957acf71c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10997575baef11490c120f8306a270ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a10997575baef11490c120f8306a270ae">CalculationOfCollisionLineSegment</a> (<a class="el" href="class_line_segment.html">LineSegment</a> *hit_line_segment, <a class="el" href="class_plane.html">Plane</a> *plane0, <a class="el" href="class_plane.html">Plane</a> *plane1)</td></tr>
+<tr class="memdesc:a10997575baef11490c120f8306a270ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突線分の算出関数  <a href="#a10997575baef11490c120f8306a270ae">[詳解]</a><br /></td></tr>
+<tr class="separator:a10997575baef11490c120f8306a270ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edbbf64d99efd6988925037ee0827af"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a7edbbf64d99efd6988925037ee0827af">CalculateTheLengthOfTheProjectionLineSegment</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *my_separation_axis, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis0, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis1, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis2=nullptr)</td></tr>
+<tr class="memdesc:a7edbbf64d99efd6988925037ee0827af"><td class="mdescLeft">&#160;</td><td class="mdescRight">投影線分の長さの算出関数  <a href="#a7edbbf64d99efd6988925037ee0827af">[詳解]</a><br /></td></tr>
+<tr class="separator:a7edbbf64d99efd6988925037ee0827af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc04a190b8bf8696880ea33d8ef01b09"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#adc04a190b8bf8696880ea33d8ef01b09">DeterminationOfCollisionWithOrdinarySeparationAxis</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *my_separation_axis, <a class="el" href="class_vector3_d.html">Vector3D</a> *my_separation_axis_normal, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis0, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis1, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis2, <a class="el" href="class_vector3_d.html">Vector3D</a> *interval_vector)</td></tr>
+<tr class="memdesc:adc04a190b8bf8696880ea33d8ef01b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常の分離軸との衝突判定関数  <a href="#adc04a190b8bf8696880ea33d8ef01b09">[詳解]</a><br /></td></tr>
+<tr class="separator:adc04a190b8bf8696880ea33d8ef01b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad238e8d35646bf4034879204d94533"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a7ad238e8d35646bf4034879204d94533">DeterminationOfCollisionWithOuterAxisSeparationAxis</a> (<a class="el" href="class_vector3_d.html">Vector3D</a> *my_separation_axis_normal, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis_normal, <a class="el" href="class_vector3_d.html">Vector3D</a> *my_separation_axis0, <a class="el" href="class_vector3_d.html">Vector3D</a> *my_separation_axis1, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis0, <a class="el" href="class_vector3_d.html">Vector3D</a> *other_separation_axis1, <a class="el" href="class_vector3_d.html">Vector3D</a> *interval_vector)</td></tr>
+<tr class="memdesc:a7ad238e8d35646bf4034879204d94533"><td class="mdescLeft">&#160;</td><td class="mdescRight">外積の分離軸との衝突判定関数  <a href="#a7ad238e8d35646bf4034879204d94533">[詳解]</a><br /></td></tr>
+<tr class="separator:a7ad238e8d35646bf4034879204d94533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b210c0e981995e209a86d2f521608d1"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_calculation.html#a2b210c0e981995e209a86d2f521608d1">CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint</a> (float line_segment_min, float line_segment_max, float any_component_of_a_point)</td></tr>
+<tr class="memdesc:a2b210c0e981995e209a86d2f521608d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">1D線分と点の最短距離のべき乗算出関数  <a href="#a2b210c0e981995e209a86d2f521608d1">[詳解]</a><br /></td></tr>
+<tr class="separator:a2b210c0e981995e209a86d2f521608d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>衝突計算Class </p>
+<p>衝突計算のClass(static) </p>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8h_source.html">CollisionCalculation.h</a> の <a class="el" href="_collision_calculation_8h_source.html#l00044">44</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="adfd1c367b0e22ce1240185efe11d6c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd1c367b0e22ce1240185efe11d6c98">&#9670;&nbsp;</a></span>CollisionCalculation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionCalculation::CollisionCalculation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fa8ad5ebc7cb5554bd071756140771a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa8ad5ebc7cb5554bd071756140771a">&#9670;&nbsp;</a></span>CollisionCalculation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionCalculation::CollisionCalculation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_collision_calculation.html">CollisionCalculation</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a2b210c0e981995e209a86d2f521608d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b210c0e981995e209a86d2f521608d1">&#9670;&nbsp;</a></span>CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CollisionCalculation::CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>line_segment_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>line_segment_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>any_component_of_a_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1D線分と点の最短距離のべき乗算出関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment_min</td><td>線分の始点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment_max</td><td>線分の終点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">any_component_of_a_point</td><td>点の任意の成分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float</td><td>1D線分と点の最短距離のべき乗 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l01164">1164</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a562488bfcc7d29102790b957acf71c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562488bfcc7d29102790b957acf71c90">&#9670;&nbsp;</a></span>CalculateTheDistanceTheLineSegmentReachesThePlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CollisionCalculation::CalculateTheDistanceTheLineSegmentReachesThePlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>segment_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分が平面に届く距離の算出関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">segment_vector</td><td>線分ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>長さ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float</td><td>線分が平面に届く距離 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l01024">1024</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a7edbbf64d99efd6988925037ee0827af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edbbf64d99efd6988925037ee0827af">&#9670;&nbsp;</a></span>CalculateTheLengthOfTheProjectionLineSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CollisionCalculation::CalculateTheLengthOfTheProjectionLineSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>my_separation_axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis2</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>投影線分の長さの算出関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">my_separation_axis</td><td>自分の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis0</td><td>相手の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis1</td><td>相手の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis2</td><td>相手の分離軸 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float</td><td>投影線分の長さ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l01098">1098</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a59459a11f5f025b10e81d7ba52772809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59459a11f5f025b10e81d7ba52772809">&#9670;&nbsp;</a></span>CalculateTheRatioOfTheFrontInTheLineSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CollisionCalculation::CalculateTheRatioOfTheFrontInTheLineSegment </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ratio0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ratio1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分内の1番手前の比率の算出関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio0</td><td>比率 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio1</td><td>比率 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float</td><td>1番手前の比率 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00995">995</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac06f2aa7df28c6331070b85d48760b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06f2aa7df28c6331070b85d48760b59">&#9670;&nbsp;</a></span>CalculateTheShortestDistanceBetweenAABBAndAPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CollisionCalculation::CalculateTheShortestDistanceBetweenAABBAndAPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_a_b_b.html">AABB</a> *&#160;</td>
+          <td class="paramname"><em>aabb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AABBと点の最短距離の算出関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aabb</td><td><a class="el" href="class_a_a_b_b.html" title="AABBClass ">AABB</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float</td><td>AABBと点の最短距離 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l01192">1192</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a10997575baef11490c120f8306a270ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10997575baef11490c120f8306a270ae">&#9670;&nbsp;</a></span>CalculationOfCollisionLineSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionCalculation::CalculationOfCollisionLineSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>hit_line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>衝突線分の算出関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_line_segment</td><td>衝突線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane0</td><td>平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane1</td><td>平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l01041">1041</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a473d42596db3c94e4779eb44a1ddf42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473d42596db3c94e4779eb44a1ddf42b">&#9670;&nbsp;</a></span>CollisionJudgmentOf2DLineSegmentAnd2DLineSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOf2DLineSegmentAnd2DLineSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2D線分と2D線分の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment0</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment1</td><td>線分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00034">34</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6a66cb6f909ab75c51601ad8037cf806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a66cb6f909ab75c51601ad8037cf806">&#9670;&nbsp;</a></span>CollisionJudgmentOfCapsuleAndCapsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfCapsuleAndCapsule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>active_vector</em> = <code>{0.0f,&#160;0.0f,&#160;0.0f}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カプセルとカプセルの衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_vector</td><td>衝突ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capsule0</td><td>カプセル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capsule1</td><td>カプセル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">active_vector</td><td>補正用ベクトル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00475">475</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6fc9b23bb92d4fca01d1812669f333ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc9b23bb92d4fca01d1812669f333ed">&#9670;&nbsp;</a></span>CollisionJudgmentOfLineSegmentAndCapsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndCapsule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分とカプセルの衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capsule</td><td>カプセル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00198">198</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abfed92b06d3d7dbfc8289225328b9ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfed92b06d3d7dbfc8289225328b9ad3">&#9670;&nbsp;</a></span>CollisionJudgmentOfLineSegmentAndCylinder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndCylinder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_cylinder.html">Cylinder</a> *&#160;</td>
+          <td class="paramname"><em>cylinder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分と円柱の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cylinder</td><td>円柱 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00166">166</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac43bbd41b81341d9aa5009744c45d61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43bbd41b81341d9aa5009744c45d61d">&#9670;&nbsp;</a></span>CollisionJudgmentOfLineSegmentAndPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndPlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分と平面の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00106">106</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a150c5411ae4cb28dc57e6622682494d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150c5411ae4cb28dc57e6622682494d2">&#9670;&nbsp;</a></span>CollisionJudgmentOfLineSegmentAndSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndSphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分と球の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00074">74</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad74624614e9fefd55132f6a6cd62f05c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74624614e9fefd55132f6a6cd62f05c">&#9670;&nbsp;</a></span>CollisionJudgmentOfLineSegmentAndTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndTriangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分と三角形平面の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle</td><td>三角形平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00142">142</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9123a8d6e1e1093bfe977cb5d3dbd6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9123a8d6e1e1093bfe977cb5d3dbd6ec">&#9670;&nbsp;</a></span>CollisionJudgmentOfOBBAndOBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfOBBAndOBB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_b_b.html">OBB</a> *&#160;</td>
+          <td class="paramname"><em>obb0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_b_b.html">OBB</a> *&#160;</td>
+          <td class="paramname"><em>obb1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OBBとOBBの衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_vector</td><td>衝突ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obb0</td><td><a class="el" href="class_o_b_b.html" title="OBBClass ">OBB</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obb1</td><td><a class="el" href="class_o_b_b.html" title="OBBClass ">OBB</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00521">521</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="acd4d60e71a42eb8934d60fa2c99186ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4d60e71a42eb8934d60fa2c99186ea">&#9670;&nbsp;</a></span>CollisionJudgmentOfPlaneAndPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfPlaneAndPlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>hit_line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>平面と平面の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_line_segment</td><td>衝突線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane0</td><td>平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane1</td><td>平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00408">408</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a854226ccd02c8afe5cec91470253ff92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a854226ccd02c8afe5cec91470253ff92">&#9670;&nbsp;</a></span>CollisionJudgmentOfPlaneAndTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfPlaneAndTriangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>平面と三角形平面の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle</td><td>三角形平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00429">429</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8df4528ada47cb62cdf7835d0387409c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df4528ada47cb62cdf7835d0387409c">&#9670;&nbsp;</a></span>CollisionJudgmentOfSphereAndCapsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfSphereAndCapsule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_capsule.html">Capsule</a> *&#160;</td>
+          <td class="paramname"><em>capsule</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>球とカプセルの衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_vector</td><td>衝突ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capsule</td><td>カプセル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00352">352</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aebe109fb7cc435ac79a3255909b445b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe109fb7cc435ac79a3255909b445b1">&#9670;&nbsp;</a></span>CollisionJudgmentOfSphereAndOBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfSphereAndOBB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_o_b_b.html">OBB</a> *&#160;</td>
+          <td class="paramname"><em>obb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>球とOBBの衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_vector</td><td>衝突ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obb</td><td><a class="el" href="class_o_b_b.html" title="OBBClass ">OBB</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00383">383</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a776c3b2ee6ece38b29914dd69f63ed42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776c3b2ee6ece38b29914dd69f63ed42">&#9670;&nbsp;</a></span>CollisionJudgmentOfSphereAndPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfSphereAndPlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>球と平面の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_vector</td><td>衝突ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane</td><td>球 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00292">292</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a23a849e4b29bc0d87356d2b3272469b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a849e4b29bc0d87356d2b3272469b0">&#9670;&nbsp;</a></span>CollisionJudgmentOfSphereAndSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfSphereAndSphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>球と球の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_vector</td><td>衝突ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere0</td><td>球 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere1</td><td>球 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00267">267</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a533512a0f0ce833680f1e50a2b224e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533512a0f0ce833680f1e50a2b224e57">&#9670;&nbsp;</a></span>CollisionJudgmentOfSphereAndTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfSphereAndTriangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>球と三角形平面の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_vector</td><td>衝突ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle</td><td>三角形平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00315">315</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3914ef51fc27f19911d3577abc56d9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3914ef51fc27f19911d3577abc56d9a5">&#9670;&nbsp;</a></span>CollisionJudgmentOfTriangleAndTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::CollisionJudgmentOfTriangleAndTriangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>三角形平面と三角形平面の衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle0</td><td>三角形平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle0</td><td>三角形平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00451">451</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="adc04a190b8bf8696880ea33d8ef01b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc04a190b8bf8696880ea33d8ef01b09">&#9670;&nbsp;</a></span>DeterminationOfCollisionWithOrdinarySeparationAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DeterminationOfCollisionWithOrdinarySeparationAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>my_separation_axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>my_separation_axis_normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>interval_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通常の分離軸との衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">my_separation_axis</td><td>自分の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my_separation_axis_normal</td><td>自分の分離軸の単位ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis0</td><td>相手の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis1</td><td>相手の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis2</td><td>相手の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval_vector</td><td>両方のOBB間のベクトル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l01116">1116</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a7ad238e8d35646bf4034879204d94533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad238e8d35646bf4034879204d94533">&#9670;&nbsp;</a></span>DeterminationOfCollisionWithOuterAxisSeparationAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DeterminationOfCollisionWithOuterAxisSeparationAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>my_separation_axis_normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis_normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>my_separation_axis0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>my_separation_axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>other_separation_axis1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>interval_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>外積の分離軸との衝突判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">my_separation_axis_normal</td><td>自分の分離軸の単位ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my_separation_axis_normal</td><td>相手の分離軸の単位ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my_separation_axis0</td><td>自分の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">my_separation_axis1</td><td>自分の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis0</td><td>相手の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">other_separation_axis1</td><td>相手の分離軸 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval_vector</td><td>両方のOBB間のベクトル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l01138">1138</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a62c458a068b5ec44a04060ea2e5e1d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c458a068b5ec44a04060ea2e5e1d47">&#9670;&nbsp;</a></span>DetermineIfATrianglePenetrates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineIfATrianglePenetrates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>is_hit_segment_one</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>三角形平面が貫いているか判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle0</td><td>三角形平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle1</td><td>三角形平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_hit_segment_one</td><td>1辺が貫通しているかフラグ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>貫いていればtrue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00813">813</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a37c172d64f5d30d772c9b9275215d83c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c172d64f5d30d772c9b9275215d83c">&#9670;&nbsp;</a></span>DetermineIfItIsLongerThanVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineIfItIsLongerThanVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ベクトルより長いか判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vector</td><td>ベクトル </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>長さ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>ベクトルより長い場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00743">743</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a05f88ea10634f6312ec556a202c2296d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f88ea10634f6312ec556a202c2296d">&#9670;&nbsp;</a></span>DetermineWhetherASphereCollidesAgainstEachSide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherASphereCollidesAgainstEachSide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>球が各辺に衝突しているか判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle</td><td>三角形平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00754">754</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abae15654adac71bcdbe0b9a31554c827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae15654adac71bcdbe0b9a31554c827">&#9670;&nbsp;</a></span>DetermineWhetherBothRatiosAreBetweenZeroAndOne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherBothRatiosAreBetweenZeroAndOne </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ratio0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ratio1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>両方の比率が0~1の間にあるか判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio0</td><td>比率 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio1</td><td>比率 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>比率が0~1の間ならtrue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00690">690</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a013889e5e69a001c229dcf083f884447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a013889e5e69a001c229dcf083f884447">&#9670;&nbsp;</a></span>DetermineWhetherItIsParallelFromSlope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherItIsParallelFromSlope </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>slope0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>slope1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>傾きから平行か判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">slope0</td><td>傾き </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">slope1</td><td>傾き </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>平行ならtrue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00730">730</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a286f406988ba6ca8d46460fabba14fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286f406988ba6ca8d46460fabba14fd6">&#9670;&nbsp;</a></span>DetermineWhetherTheIntersectionPointIsWithinALineSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherTheIntersectionPointIsWithinALineSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>intersection_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>交点が線分内か判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment0</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment1</td><td>線分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>線分内の場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00849">849</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a53a77b483d1751ce918982c75eb2ac7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a77b483d1751ce918982c75eb2ac7c">&#9670;&nbsp;</a></span>DetermineWhetherThePlaneIsParallel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherThePlaneIsParallel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_plane.html">Plane</a> *&#160;</td>
+          <td class="paramname"><em>plane1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>平面が平行か判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane0</td><td>平面 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">plane1</td><td>平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>平行ならtrue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00800">800</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa175baccc078543be38213d04a3af2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa175baccc078543be38213d04a3af2b2">&#9670;&nbsp;</a></span>DetermineWhetherTheRatioIsBetweenZeroAndOne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherTheRatioIsBetweenZeroAndOne </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ratio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>比率が0~1の間にあるか判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ratio</td><td>比率 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>比率が0~1の間ならtrue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00677">677</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8878c4e262eb7027f4ae147a24c7ba33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8878c4e262eb7027f4ae147a24c7ba33">&#9670;&nbsp;</a></span>DetermineWhetherTheSphereIsSinkingInside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherTheSphereIsSinkingInside </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_triangle.html">Triangle</a> *&#160;</td>
+          <td class="paramname"><em>triangle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>球が内部にめり込んでいるか判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triangle</td><td>三角形平面 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>めり込んでいる場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00784">784</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abf9896120a5f4b2a7f816140fb19eafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9896120a5f4b2a7f816140fb19eafd">&#9670;&nbsp;</a></span>DetermineWhetherXOfBothLineSegmentsIsZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherXOfBothLineSegmentsIsZero </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>両方の線分のXが0か判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment0</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment1</td><td>線分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>両方のXが0ならtrue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00717">717</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a7dffad18d15ed6e7a2e43888398afeeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dffad18d15ed6e7a2e43888398afeeb">&#9670;&nbsp;</a></span>DetermineWhetherXOfEitherLineSegmentIsZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::DetermineWhetherXOfEitherLineSegmentIsZero </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>どちらかの線分のXが0か判定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment0</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment1</td><td>線分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>どちらかのXが0ならtrue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00704">704</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3123f561d5ba6af08336523205a5d8a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3123f561d5ba6af08336523205a5d8a8">&#9670;&nbsp;</a></span>FroatTruncation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CollisionCalculation::FroatTruncation </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>floatの切り捨て関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>切り捨てたい数値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float</td><td>切り捨てたfloat値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00659">659</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a01b7e084c9517b5f1e2e724b1212e4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b7e084c9517b5f1e2e724b1212e4c6">&#9670;&nbsp;</a></span>IntersectionCalculationOf2DLineSegmentAnd2DLineSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::IntersectionCalculationOf2DLineSegmentAnd2DLineSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2D線分と2D線分の交点計算関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment0</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment1</td><td>線分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00895">895</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a95ba95163806f128280a825cf4517336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ba95163806f128280a825cf4517336">&#9670;&nbsp;</a></span>IntersectionCalculationOf2DLineSegmentAnd2DLineSegmentWhenXIsZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::IntersectionCalculationOf2DLineSegmentAnd2DLineSegmentWhenXIsZero </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>hit_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Xが0の時の2D線分と2D線分の交点計算関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hit_point</td><td>衝突点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment0</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment1</td><td>線分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>衝突している場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00872">872</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a20738fa64ae8749165328d48ee90d32e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20738fa64ae8749165328d48ee90d32e">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_collision_calculation.html">CollisionCalculation</a>&amp; CollisionCalculation::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_collision_calculation.html">CollisionCalculation</a> &amp;&#160;</td>
+          <td class="paramname"><em>class_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a860cb4de288c1dbd5e21698b9f9a43d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860cb4de288c1dbd5e21698b9f9a43d7">&#9670;&nbsp;</a></span>QuadraticEquationCalculationForLineSegmentsAndCylinders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::QuadraticEquationCalculationForLineSegmentsAndCylinders </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_quadratic_equation.html">QuadraticEquation</a> *&#160;</td>
+          <td class="paramname"><em>equation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_cylinder.html">Cylinder</a> *&#160;</td>
+          <td class="paramname"><em>cylinder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分と円柱の2次方程式計算 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">equation</td><td>2次方程式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cylinder</td><td>円柱 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>2次方程式の解がある場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00959">959</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abb04e8dc678bf1bcb0f1ecc8dd9edcca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb04e8dc678bf1bcb0f1ecc8dd9edcca">&#9670;&nbsp;</a></span>QuadraticEquationCalculationForLineSegmentsAndSpheres()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CollisionCalculation::QuadraticEquationCalculationForLineSegmentsAndSpheres </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_quadratic_equation.html">QuadraticEquation</a> *&#160;</td>
+          <td class="paramname"><em>equation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_line_segment.html">LineSegment</a> *&#160;</td>
+          <td class="paramname"><em>line_segment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_sphere.html">Sphere</a> *&#160;</td>
+          <td class="paramname"><em>sphere</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>線分と球の2次方程式計算 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">equation</td><td>2次方程式 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line_segment</td><td>線分 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sphere</td><td>球 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>2次方程式の解がある場合true </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a> の <a class="el" href="_collision_calculation_8cpp_source.html#l00927">927</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/CollisionCalculation/<a class="el" href="_collision_calculation_8h_source.html">CollisionCalculation.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/CollisionCalculation/<a class="el" href="_collision_calculation_8cpp_source.html">CollisionCalculation.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_collision_calculation.html">CollisionCalculation</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

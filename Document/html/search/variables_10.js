@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r',['R',['../struct_effekseer_1_1_color.html#aae98e2323761b1b2b2d9d182e3af3b40',1,'Effekseer::Color']]],
-  ['radius_5f',['radius_',['../class_capsule.html#a5a479b152df710dba41b6529cf11199c',1,'Capsule::radius_()'],['../class_cylinder.html#abba752e07b11b7bfd8fcce64a6d9b678',1,'Cylinder::radius_()'],['../class_sphere.html#ac2924d9ad22bfad1ed1914c069c188dc',1,'Sphere::radius_()']]],
+  ['radius_5f',['radius_',['../class_cylinder.html#abba752e07b11b7bfd8fcce64a6d9b678',1,'Cylinder::radius_()'],['../class_sphere.html#ac2924d9ad22bfad1ed1914c069c188dc',1,'Sphere::radius_()']]],
   ['rasterizerflags',['RasterizerFlags',['../struct_im_font_config.html#a80d05eea7733731a3e9ac1d9e905e5b3',1,'ImFontConfig']]],
   ['rasterizermultiply',['RasterizerMultiply',['../struct_im_font_config.html#a9365265cc52098a8ecf89ff47f6106f2',1,'ImFontConfig']]],
   ['readonly',['ReadOnly',['../struct_im_gui_text_edit_callback_data.html#a37cec257a392910f386188978027541c',1,'ImGuiTextEditCallbackData']]],

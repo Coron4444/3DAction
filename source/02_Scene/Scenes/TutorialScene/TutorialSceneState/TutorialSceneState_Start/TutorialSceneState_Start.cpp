@@ -30,13 +30,10 @@
 //****************************************
 // 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void TutorialSceneState_Start::Init()
 {
 	// チュートリアルシーンの取得
-	tutorial_scene_ = (TutorialScene*)scene_;
+	tutorial_scene_ = (TutorialScene*)getpScene();
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
@@ -53,19 +50,12 @@ void TutorialSceneState_Start::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void TutorialSceneState_Start::Uninit()
 {
-	
 }
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void TutorialSceneState_Start::Update()
 {
 	if (GetKeyboardTrigger(DIK_SPACE))
@@ -76,10 +66,6 @@ void TutorialSceneState_Start::Update()
 
 
 
-//--------------------------------------------------
-// +リセット関数
-//--------------------------------------------------
 void TutorialSceneState_Start::Reset()
 {
-
 }

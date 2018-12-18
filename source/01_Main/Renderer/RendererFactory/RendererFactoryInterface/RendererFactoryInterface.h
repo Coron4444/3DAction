@@ -10,9 +10,9 @@
 
 
 //****************************************
-// インクルード文
+// クラス宣言
 //****************************************
-#include "../RendererInterface/RendererInterface.h"
+class RendererInterface;
 
 
 
@@ -29,14 +29,16 @@ class RendererFactoryInterface
 public:
 	//----------------------------------------
 	//! @brief 仮想デストラクタ
+	//! @details
 	//! @param void なし
 	//----------------------------------------
 	virtual ~RendererFactoryInterface() {}
 
 	//----------------------------------------
 	//! @brief 生成関数
+	//! @details
 	//! @param void なし
-	//! @retval void なし
+	//! @retval RendererInterface* レンダラーポインタ
 	//----------------------------------------
 	virtual RendererInterface* Create() = 0;
 };

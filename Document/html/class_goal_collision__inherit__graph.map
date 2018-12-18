@@ -1,5 +1,5 @@
 <map id="GoalCollision" name="GoalCollision">
-<area shape="rect" id="node2" href="$class_collision_null.html" title="空白衝突クラス " alt="" coords="18,155,111,181"/>
-<area shape="rect" id="node3" href="$class_collision_base.html" title="衝突基底クラス " alt="" coords="14,80,115,107"/>
-<area shape="rect" id="node4" href="$class_component_base.html" title="コンポーネント基底クラス " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$class_collision_null.html" title="空白衝突Class " alt="" coords="18,155,111,181"/>
+<area shape="rect" id="node3" href="$class_collision_base.html" title="衝突BaseClass " alt="" coords="14,80,115,107"/>
+<area shape="rect" id="node4" href="$class_component_base.html" title="コンポーネントBaseClass " alt="" coords="5,5,124,32"/>
 </map>

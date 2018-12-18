@@ -1,10 +1,10 @@
 var class_tutorial_logo_draw =
 [
     [ "Draw", "class_tutorial_logo_draw.html#aa808cfb8bc59d58bbd698a195603429f", null ],
-    [ "GetDecaleTexture", "class_tutorial_logo_draw.html#ad9df98aa8a5b11872dba6f6609589035", null ],
-    [ "GetMaterial", "class_tutorial_logo_draw.html#a3a97860361e32a727246e99052715f37", null ],
-    [ "GetMatrix", "class_tutorial_logo_draw.html#ab700e592d00574dff6ee342138343d7b", null ],
-    [ "GetMeshNum", "class_tutorial_logo_draw.html#a19de254c5460e3728d7c79243fd65e6f", null ],
+    [ "getMeshNum", "class_tutorial_logo_draw.html#a0e56784e25f1f83e6ff167280b801aad", null ],
+    [ "getpDecaleTexture", "class_tutorial_logo_draw.html#abf06755b745dc62341a817a58d377659", null ],
+    [ "getpMaterial", "class_tutorial_logo_draw.html#acbd9aefdbd4450188e561fb5e5dcd64f", null ],
+    [ "getpMatrix", "class_tutorial_logo_draw.html#aade531190180c385c266f5698f99735d", null ],
     [ "Init", "class_tutorial_logo_draw.html#a53fc4b1b23c7f9e249600be67510f944", null ],
     [ "Uninit", "class_tutorial_logo_draw.html#a949fb70954e3df28f87b8ed5c61bf8f1", null ],
     [ "Update", "class_tutorial_logo_draw.html#af69405fcc8b20684a19e982726d93ffa", null ],

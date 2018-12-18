@@ -124,8 +124,13 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetAcceleration()
 : <a class="el" href="class_physics.html#aee9ce4604f63dbdcab07ded4d0174989">Physics</a>
 </li>
-<li>GetAddVectorPosition()
-: <a class="el" href="class_segment.html#a4223e990a42cc9e487ef51b82e63e777">Segment</a>
+<li>getAddVectorToPosition()
+: <a class="el" href="class_capsule.html#a32991dc5e0331f716302ce73a8f9fd2f">Capsule</a>
+, <a class="el" href="class_cylinder.html#af36a39d5a18d1a837d9880a00447d87b">Cylinder</a>
+, <a class="el" href="class_line_segment.html#af4c9249a6a1c6c75b12962ef29e6dd30">LineSegment</a>
+</li>
+<li>getAdjustmetD()
+: <a class="el" href="class_plane.html#a66c47e8798df166c458ca215ed115684">Plane</a>
 </li>
 <li>GetAngleOfView()
 : <a class="el" href="class_camera.html#a9d54f574c141e6007d98ccd905501632">Camera</a>
@@ -253,12 +258,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getCollisionObject()
 : <a class="el" href="class_collision_objects.html#a4f5c029b20a7ed4c7fdee815f73d20be">CollisionObjects</a>
 </li>
-<li>getCollisionObjects()
-: <a class="el" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c">CollisionBase</a>
-</li>
-<li>getCollisionShape()
-: <a class="el" href="class_collision_object.html#a3ff1c2d794f520c96b6bc6037a8f8f8c">CollisionObject</a>
-</li>
 <li>GetColor()
 : <a class="el" href="class_plane_polygon.html#ac4f8f7b51acdb744231efd342d3b2734">PlanePolygon</a>
 </li>
@@ -267,9 +266,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetColorImageCount()
 : <a class="el" href="class_effekseer_1_1_effect.html#a50ca0307097782d1bced346e8090a56d">Effekseer::Effect</a>
-</li>
-<li>getCommonData()
-: <a class="el" href="class_scene_manager.html#a73b2a1c2be8f5b9027af7d88d2ec6457">SceneManager</a>
 </li>
 <li>GetConstantTable()
 : <a class="el" href="class_shader_base.html#a85a5c17b56b6ffa29f7784ab42696d7c">ShaderBase</a>
@@ -283,21 +279,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetCustomRectByIndex()
 : <a class="el" href="struct_im_font_atlas.html#a4d4403e920f1d93307936781050b52ee">ImFontAtlas</a>
-</li>
-<li>GetDecaleTexture()
-: <a class="el" href="class_clear_logo_draw.html#a04ae25ae9cb59df0d0c346b65baed3f2">ClearLogoDraw</a>
-, <a class="el" href="class_coin_draw.html#a1d4ab1a5c480833b8d8e7fe226136ad5">CoinDraw</a>
-, <a class="el" href="class_draw_base.html#a4e36184dbb605bcae13bfb38722ddc24">DrawBase</a>
-, <a class="el" href="class_draw_null.html#a8496ed1b1f765a331a8f1704122b8ca4">DrawNull</a>
-, <a class="el" href="class_failure_logo_draw.html#a2a74fafba17b2f63b1c61abd67289afd">FailureLogoDraw</a>
-, <a class="el" href="class_field_draw.html#a67eabcc5ffd6697b87e89a1c4ddb95f6">FieldDraw</a>
-, <a class="el" href="class_number_draw.html#ad1d9a4cee49e7bddce51b5c58e739de9">NumberDraw</a>
-, <a class="el" href="class_player_draw.html#a6cecfb28942044efff0b9d6213b511a5">PlayerDraw</a>
-, <a class="el" href="class_push_space_logo_draw.html#a4990a9f5662af324f2632e8647cbdde4">PushSpaceLogoDraw</a>
-, <a class="el" href="class_sky_dome_draw.html#a1d708782f13648724e423d1dca22b213">SkyDomeDraw</a>
-, <a class="el" href="class_stencil_shadow_test_draw.html#a387a97781f743aa0ea0727c050ef53b2">StencilShadowTestDraw</a>
-, <a class="el" href="class_title_logo_draw.html#ab727012424a02249a90a0f7d247371a8">TitleLogoDraw</a>
-, <a class="el" href="class_tutorial_logo_draw.html#ad9df98aa8a5b11872dba6f6609589035">TutorialLogoDraw</a>
 </li>
 <li>GetDecaleTextureName()
 : <a class="el" href="class_model_x_object.html#afd57d5b6b74817f4d69047640e69f14e">ModelXObject</a>
@@ -316,7 +297,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getDevice()
 : <a class="el" href="class_renderer.html#a56662123051f8898c4e8e9d5457fd317">Renderer</a>
-, <a class="el" href="class_renderer_direct_x9.html#a99129e2efa68d4d8b6e5d0dd6b400b70">RendererDirectX9</a>
 </li>
 <li>GetDevice()
 : <a class="el" href="class_shader_base.html#a4601ff3d20f01800ffd676d3db8d9289">ShaderBase</a>
@@ -341,9 +321,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetDrawManager()
 : <a class="el" href="class_game_object_manager.html#a862e76bfd74495c20bddd377c62a22b7">GameObjectManager</a>
-</li>
-<li>GetDrawOrderList()
-: <a class="el" href="class_draw_base.html#a894bf875b80745150b250e584f00fa0c">DrawBase</a>
 </li>
 <li>GetDrawTime()
 : <a class="el" href="class_effekseer_1_1_manager.html#a24c2805010a8fe5eca1115d48d8c5522">Effekseer::Manager</a>
@@ -408,6 +385,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetForwardVector()
 : <a class="el" href="class_camera.html#aec9441c5c1924df0a0cacbcf28c839e2">Camera</a>
 </li>
+<li>getForwardVector()
+: <a class="el" href="class_o_b_b.html#a4d839b676caebf6ba4361bb9166e97d3">OBB</a>
+</li>
+<li>getForwardVectorHalf()
+: <a class="el" href="class_o_b_b.html#a00b6038bdcc374d3acd9ef4d002b59d0">OBB</a>
+</li>
 <li>GetFrameCount()
 : <a class="el" href="class_effekseer_1_1_model.html#a7d4897bc5dffe71d6814a99b32b57c16">Effekseer::Model</a>
 </li>
@@ -416,9 +399,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetFriction()
 : <a class="el" href="class_physics.html#aee1fe26db953d0712b2a26ce9d1db0d9">Physics</a>
-</li>
-<li>GetGameObject()
-: <a class="el" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d">ComponentBase</a>
 </li>
 <li>getGameOver()
 : <a class="el" href="class_game_scene.html#a2f8413f473bc9a937fa02bfd4678d61d">GameScene</a>
@@ -449,9 +429,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_mesh_plane_polygon.html#ac04d763b16a962f00c99e3354e45f320">MeshPlanePolygon</a>
 , <a class="el" href="class_texture_object.html#af312bd8d8cdb31918a00e1fe096c26e0">TextureObject</a>
 </li>
-<li>getHitVector()
-: <a class="el" href="class_collision_object.html#adb01187ec10302f13034407a3c852860">CollisionObject</a>
-</li>
 <li>GetID()
 : <a class="el" href="struct_im_gui_window.html#a66400a63bc0b54d7d29e08d1b1b1a42b">ImGuiWindow</a>
 </li>
@@ -461,9 +438,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetIndexNum()
 : <a class="el" href="class_limited_pointer_array.html#a2b9d42b57662f29f357b2faf1793aa66">LimitedPointerArray&lt; Type, ARRAY_NUM &gt;</a>
 </li>
-<li>getInstance()
-: <a class="el" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6">Renderer</a>
-</li>
 <li>GetInstanceCount()
 : <a class="el" href="class_effekseer_1_1_manager.html#a4e4831b6514c683cd9cabf5cfe1103ab">Effekseer::Manager</a>
 </li>
@@ -472,7 +446,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getInterface()
 : <a class="el" href="class_renderer.html#a6e77556825755be3db8a5a734460e66f">Renderer</a>
-, <a class="el" href="class_renderer_direct_x9.html#a9fb0abfa35b22ff87306aff6a641d220">RendererDirectX9</a>
 </li>
 <li>GetIntRef()
 : <a class="el" href="struct_im_gui_storage.html#a28673fa7839263f3066ccb8e93e748a9">ImGuiStorage</a>
@@ -502,9 +475,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetLayerNum()
 : <a class="el" href="class_draw_order_list.html#a28c14812ea793a3f3d752d58ccb481b2">DrawOrderList</a>
-</li>
-<li>getLength()
-: <a class="el" href="class_a_a_b_b.html#a74b2c6a6acde4bf37eb0333358349fca">AABB</a>
 </li>
 <li>GetLength()
 : <a class="el" href="class_effekseer_1_1_default_file_reader.html#a2663a6f3b6bf3aaabadcfe371a85b15d">Effekseer::DefaultFileReader</a>
@@ -559,53 +529,13 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_physics.html#a80a377efcd573cff3484d91c9f5512e4">Physics</a>
 </li>
 <li>GetMaterial()
-: <a class="el" href="class_clear_logo_draw.html#ab356bf5d56c10a6689e101b35c30d889">ClearLogoDraw</a>
-, <a class="el" href="class_coin_draw.html#a869a6b7273b273048dd56822fae4d644">CoinDraw</a>
-, <a class="el" href="class_cube_polygon.html#a6bd49d47a58c9c89a1ddaee37f7f4d22">CubePolygon</a>
-, <a class="el" href="class_draw_base.html#ad82a75dff8e4e2f2ebbec2dd0d0734e5">DrawBase</a>
-, <a class="el" href="class_draw_null.html#a84969d22d3436986f214e9896fe44fc6">DrawNull</a>
-, <a class="el" href="class_enemy_draw.html#a12f00116f7fa97e07317a949d5c27bb4">EnemyDraw</a>
-, <a class="el" href="class_failure_logo_draw.html#aaac019fb396a354ef0f823ed2bd72322">FailureLogoDraw</a>
-, <a class="el" href="class_field_draw.html#ab126f938895211ff170bc37045a8e7a2">FieldDraw</a>
-, <a class="el" href="class_goal_draw.html#a47baf72f8c1c961176610f161069b8d1">GoalDraw</a>
+: <a class="el" href="class_cube_polygon.html#a6bd49d47a58c9c89a1ddaee37f7f4d22">CubePolygon</a>
 , <a class="el" href="class_mesh_plane_polygon.html#a1188cf0072e000227ecce6210ba2778c">MeshPlanePolygon</a>
 , <a class="el" href="class_model_x_object.html#a27df4304e87da11e2f9c9d7a8487a985">ModelXObject</a>
-, <a class="el" href="class_number_draw.html#a3348d9d1cdd9dd03be25b82069275ca5">NumberDraw</a>
 , <a class="el" href="class_plane_polygon.html#a808087c9d82c0eb7cfb0709c9906e833">PlanePolygon</a>
-, <a class="el" href="class_player_draw.html#ae818d3adaf5120845c2a78c230b5365e">PlayerDraw</a>
-, <a class="el" href="class_push_space_logo_draw.html#a0734eed4096afb12e6c9ef1f4d82b9d8">PushSpaceLogoDraw</a>
-, <a class="el" href="class_render_texture.html#adb19f86d2ac55e95d8725c64a846e8d0">RenderTexture</a>
-, <a class="el" href="class_sky_dome_draw.html#acbc487d912b464474ae6f1afd7d6bb74">SkyDomeDraw</a>
-, <a class="el" href="class_stencil_shadow_test_draw.html#abfc9caaaa1b6120e2013701a9d264f2d">StencilShadowTestDraw</a>
-, <a class="el" href="class_title_logo_draw.html#a8858aa1b1eb9a6d4cb4605519efb20eb">TitleLogoDraw</a>
-, <a class="el" href="class_tutorial_logo_draw.html#a3a97860361e32a727246e99052715f37">TutorialLogoDraw</a>
 </li>
-<li>GetMatrix()
-: <a class="el" href="class_clear_logo_draw.html#af5d12b717020101e5c956cf3574f0e2a">ClearLogoDraw</a>
-, <a class="el" href="class_coin_draw.html#a8f5fd8668a4c66fe31446cc6f7c4afd7">CoinDraw</a>
-, <a class="el" href="class_draw_base.html#a01239bf362040f7f2ef5e5f5371dcf18">DrawBase</a>
-, <a class="el" href="class_draw_null.html#adede079e9c11a756090740b20bb43022">DrawNull</a>
-, <a class="el" href="class_effekseer_1_1_manager.html#aa5d7a667c75a81bc30f65483535b6a7f">Effekseer::Manager</a>
-, <a class="el" href="class_enemy_draw.html#a6f2a052a45caf0d255112cbe81b8bfa3">EnemyDraw</a>
-, <a class="el" href="class_fade.html#a6aed6912ebf9c243c52cb82f298d8d64">Fade</a>
-, <a class="el" href="class_failure_logo_draw.html#aefc4be9e6ead4d90a5fc9c22cc07fe92">FailureLogoDraw</a>
-, <a class="el" href="class_field_draw.html#a2629b4c4cd8e240e39c65b879c6e82b6">FieldDraw</a>
-, <a class="el" href="class_goal_draw.html#a50fa9ceaaecdff9910e0f91e65ad9e95">GoalDraw</a>
-, <a class="el" href="class_number_draw.html#a78f50afa05e728811d89a491f5eec899">NumberDraw</a>
-, <a class="el" href="class_player_draw.html#a8edf1441ea23f298c6a0ca707f54021a">PlayerDraw</a>
-, <a class="el" href="class_push_space_logo_draw.html#a1ab6229ba2d68b730797f5016c99f359">PushSpaceLogoDraw</a>
-, <a class="el" href="class_render_texture.html#a0e9746f5cebdd088f2303e18cbc52eae">RenderTexture</a>
-, <a class="el" href="class_score_draw.html#a62aa20ef4b40544bf0a95770b925c780">ScoreDraw</a>
-, <a class="el" href="class_sky_dome_draw.html#ab947a3d43975a6d95149bc112c08ce05">SkyDomeDraw</a>
-, <a class="el" href="class_stencil_shadow_test_draw.html#adfa99798c61ac13f209dc99f1e2694c5">StencilShadowTestDraw</a>
-, <a class="el" href="class_title_logo_draw.html#af21cd1dbd79c741a2e3ca2b8e26c5f61">TitleLogoDraw</a>
-, <a class="el" href="class_tutorial_logo_draw.html#ab700e592d00574dff6ee342138343d7b">TutorialLogoDraw</a>
-</li>
-<li>GetMatrixExtend()
-: <a class="el" href="class_transform.html#ab1101d4467d772f3ddc0558586e39c79">Transform</a>
-</li>
-<li>getMax()
-: <a class="el" href="class_a_a_b_b.html#a8dc63902fbb2c8f83185bbe9feaaa4b0">AABB</a>
+<li>getMatrix()
+: <a class="el" href="class_effekseer_1_1_manager.html#abd550c1abf3f8b324ba9a5f71a735ff8">Effekseer::Manager</a>
 </li>
 <li>GetMaxVelocity()
 : <a class="el" href="class_physics.html#a0ee3b82e3e1588fee1727e582c824467">Physics</a>
@@ -613,29 +543,26 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetMesh()
 : <a class="el" href="class_model_x_object.html#a3aaab083fe6e1956b2eaab815ebb4bfb">ModelXObject</a>
 </li>
-<li>GetMeshNum()
-: <a class="el" href="class_clear_logo_draw.html#a99aba47b4693f15498daf7df2bfee2d7">ClearLogoDraw</a>
-, <a class="el" href="class_coin_draw.html#a178c8d88effe55aaad7d0e45b02e0566">CoinDraw</a>
-, <a class="el" href="class_cube_polygon.html#adf0956096c0d5dd31cf5b730dc8ca9c4">CubePolygon</a>
-, <a class="el" href="class_draw_base.html#a194eb48924f205d60d4e63c5becdd2fe">DrawBase</a>
-, <a class="el" href="class_draw_null.html#ad735978a85a5f3583eecd82d6bfe6413">DrawNull</a>
-, <a class="el" href="class_enemy_draw.html#acda1a2487aea432b08fc816351a12239">EnemyDraw</a>
-, <a class="el" href="class_failure_logo_draw.html#aa7164b6f5788416788482893aa747d59">FailureLogoDraw</a>
-, <a class="el" href="class_field_draw.html#aeb54d8cba559ef615ee46c8a7bbd3b9f">FieldDraw</a>
-, <a class="el" href="class_goal_draw.html#a7f30c7a4325668eebd8730ad2bea1ad8">GoalDraw</a>
-, <a class="el" href="class_mesh_plane_polygon.html#a42d1d92dea7878cf59d418aa7ab5106d">MeshPlanePolygon</a>
-, <a class="el" href="class_model_x_object.html#a8e91c6bda6b00055bae0707037d81d9f">ModelXObject</a>
-, <a class="el" href="class_number_draw.html#a8234fb06d885feaa8a2f0ecf256db9a0">NumberDraw</a>
-, <a class="el" href="class_plane_polygon.html#a05f4f63c2d04d30f7b9808c009101403">PlanePolygon</a>
-, <a class="el" href="class_player_draw.html#ad9e2e09a32c7474fcea5e7e24e22bc71">PlayerDraw</a>
-, <a class="el" href="class_push_space_logo_draw.html#a9a40fca53e23b9970a7c5decaa3d2da6">PushSpaceLogoDraw</a>
-, <a class="el" href="class_sky_dome_draw.html#a7ecd8d4b987e4d58a247d3438a45f9d4">SkyDomeDraw</a>
-, <a class="el" href="class_stencil_shadow_test_draw.html#acfa569f1dcdc3829796138e313f204ad">StencilShadowTestDraw</a>
-, <a class="el" href="class_title_logo_draw.html#a14212f1ee003c40d63db3822a84af7fb">TitleLogoDraw</a>
-, <a class="el" href="class_tutorial_logo_draw.html#a19de254c5460e3728d7c79243fd65e6f">TutorialLogoDraw</a>
-</li>
-<li>getMin()
-: <a class="el" href="class_a_a_b_b.html#a9a18cef6c33dd579c144700c79ea39f5">AABB</a>
+<li>getMeshNum()
+: <a class="el" href="class_clear_logo_draw.html#a257f34e6f8325580f7df835f20d2ebb4">ClearLogoDraw</a>
+, <a class="el" href="class_coin_draw.html#a8ebedf2582d53b40016ebd3f0e82c38e">CoinDraw</a>
+, <a class="el" href="class_cube_polygon.html#a50970957b530b7089487799210b14903">CubePolygon</a>
+, <a class="el" href="class_draw_base.html#add488139aed539e7ccd19492702b4bee">DrawBase</a>
+, <a class="el" href="class_draw_null.html#a7586cc78eed6bcaf2972ad7a6a70e665">DrawNull</a>
+, <a class="el" href="class_enemy_draw.html#a1d8a943e4b625795bbd5ae614cc38ed1">EnemyDraw</a>
+, <a class="el" href="class_failure_logo_draw.html#a45bb5d0965ca73b06ae0836f27f9b0e3">FailureLogoDraw</a>
+, <a class="el" href="class_field_draw.html#a0894ddd73716f0db8ceed4b7d89f23fd">FieldDraw</a>
+, <a class="el" href="class_goal_draw.html#ac80c8da78cda7b15a4ce46f7d7057622">GoalDraw</a>
+, <a class="el" href="class_mesh_plane_polygon.html#a1850ae9039b99d29b709b17224b49fa5">MeshPlanePolygon</a>
+, <a class="el" href="class_model_x_object.html#a894790eda90cf0cc202b86f854583fda">ModelXObject</a>
+, <a class="el" href="class_number_draw.html#abcd88040b2b6d5dd7d21e8cfd50b1682">NumberDraw</a>
+, <a class="el" href="class_plane_polygon.html#a494068044805bdd4054bc69328c71d7f">PlanePolygon</a>
+, <a class="el" href="class_player_draw.html#ac618153d70492f73299c58a50d565431">PlayerDraw</a>
+, <a class="el" href="class_push_space_logo_draw.html#abaa66b6e3c46aa03bae21bad271eebc0">PushSpaceLogoDraw</a>
+, <a class="el" href="class_sky_dome_draw.html#a6b281bafa71c058ee83c373ad978e3bb">SkyDomeDraw</a>
+, <a class="el" href="class_stencil_shadow_test_draw.html#a285b3045ff5cc34b6b2b991cca434bb3">StencilShadowTestDraw</a>
+, <a class="el" href="class_title_logo_draw.html#a20a0e0c3569e49eb421ab4b5a65777cd">TitleLogoDraw</a>
+, <a class="el" href="class_tutorial_logo_draw.html#a0e56784e25f1f83e6ff167280b801aad">TutorialLogoDraw</a>
 </li>
 <li>GetModel()
 : <a class="el" href="class_effekseer_1_1_effect.html#ac54d6933252509f588a1332187136a1e">Effekseer::Effect</a>
@@ -678,21 +605,16 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetNormalImageCount()
 : <a class="el" href="class_effekseer_1_1_effect.html#ac83290b7ca5f898b6508fe01821a0ddc">Effekseer::Effect</a>
 </li>
-<li>GetNormalTexture()
-: <a class="el" href="class_draw_base.html#a87bb54e7f422959e84ac00aa7631bd3b">DrawBase</a>
-, <a class="el" href="class_draw_null.html#a41b7d148612b2d328e85289e32dc374c">DrawNull</a>
-, <a class="el" href="class_player_draw.html#abb93b530e38fc224ecbfe17d623f10fb">PlayerDraw</a>
-</li>
 <li>GetNum()
 : <a class="el" href="classmfmlib_1_1_float_data.html#a9abfe9174f63eea4a58668945adecd19">mfmlib::FloatData</a>
 </li>
 <li>getObject()
 : <a class="el" href="class_object_of_tree.html#a28214e15fffb72cb50b764e2f3ac863d">ObjectOfTree&lt; Type &gt;</a>
 </li>
-<li>GetObjectNum()
-: <a class="el" href="class_draw_base.html#aed79e9db49de4fa2dff064495b877bcd">DrawBase</a>
-, <a class="el" href="class_draw_null.html#aaffa15d184f1d09512ccaa3bdad3f658">DrawNull</a>
-, <a class="el" href="class_stencil_shadow_test_draw.html#a8cc9a54a2bcb1fd006331fca1add02dc">StencilShadowTestDraw</a>
+<li>getObjectNum()
+: <a class="el" href="class_draw_base.html#a57c010b4386dc09afa124fba81a6e0fc">DrawBase</a>
+, <a class="el" href="class_draw_null.html#ae71c0b03f98748a4eb1d2e2635bcc146">DrawNull</a>
+, <a class="el" href="class_stencil_shadow_test_draw.html#ad93f1c8a60a701d185108896c58dd578">StencilShadowTestDraw</a>
 </li>
 <li>getObjectOfTree()
 : <a class="el" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb">CollisionObjects</a>
@@ -709,14 +631,126 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetPaused()
 : <a class="el" href="class_effekseer_1_1_manager.html#af30924b879f3463d504991bf9780dfac">Effekseer::Manager</a>
 </li>
+<li>getpAxisVector()
+: <a class="el" href="class_o_b_b.html#aa79d651cda6be3bb1c9456566027f8f9">OBB</a>
+</li>
+<li>getpCollisionObjects()
+: <a class="el" href="class_collision_base.html#a542bb0a4095f4399f8dc09d0860d51ba">CollisionBase</a>
+</li>
+<li>getpCollisionShape()
+: <a class="el" href="class_collision_object.html#a2885ef749588dced5af2bd171e2f2a6e">CollisionObject</a>
+</li>
+<li>getpCommonData()
+: <a class="el" href="class_scene_manager.html#a53145632c87301427f9cedc3345d2557">SceneManager</a>
+</li>
+<li>getpCylinder()
+: <a class="el" href="class_capsule.html#ae5826ff4d2d894c8e0d0bd65de5f05ca">Capsule</a>
+</li>
+<li>getpDecaleTexture()
+: <a class="el" href="class_clear_logo_draw.html#ae67f9779fb2f9aa05d55c2167a36ddb0">ClearLogoDraw</a>
+, <a class="el" href="class_coin_draw.html#af99db1c0db2ed6b3ba429f23cd44279b">CoinDraw</a>
+, <a class="el" href="class_draw_base.html#a9f50a030778dbfca5ae45bb7908e0d58">DrawBase</a>
+, <a class="el" href="class_draw_null.html#a2dfa2d2cbb66249f933420a38e9cadad">DrawNull</a>
+, <a class="el" href="class_failure_logo_draw.html#a29a9642997edb92eeec83e8bd6b1ddee">FailureLogoDraw</a>
+, <a class="el" href="class_field_draw.html#a77cef7390fbe8fc68c0b325f4fcc839f">FieldDraw</a>
+, <a class="el" href="class_number_draw.html#a77d155c00ac4637154e62904556de05a">NumberDraw</a>
+, <a class="el" href="class_player_draw.html#ae69b46285241f390fbf62f6af2b5340d">PlayerDraw</a>
+, <a class="el" href="class_push_space_logo_draw.html#abfba58752543d8b2ccfe1e4003032dd3">PushSpaceLogoDraw</a>
+, <a class="el" href="class_sky_dome_draw.html#a99ec8e0a5aea708b66cf07c79a6449d1">SkyDomeDraw</a>
+, <a class="el" href="class_stencil_shadow_test_draw.html#a58f3699fa7ced20625edca807698aa85">StencilShadowTestDraw</a>
+, <a class="el" href="class_title_logo_draw.html#a15ca49711182673a20439200dd8bc119">TitleLogoDraw</a>
+, <a class="el" href="class_tutorial_logo_draw.html#abf06755b745dc62341a817a58d377659">TutorialLogoDraw</a>
+</li>
+<li>getpDevice()
+: <a class="el" href="class_renderer_direct_x9.html#afabcea127b5af61e4d80564369e72baa">RendererDirectX9</a>
+</li>
+<li>getpDrawOrderList()
+: <a class="el" href="class_draw_base.html#a280d750f48f6b8d148cbfe2988834268">DrawBase</a>
+</li>
+<li>getpGameObject()
+: <a class="el" href="class_component_base.html#a558f69e072f0dfedaf9416cf1a903db5">ComponentBase</a>
+</li>
+<li>getpHitVector()
+: <a class="el" href="class_collision_object.html#a4a0e83479d6e4c15b8f81cafe56c618a">CollisionObject</a>
+</li>
 <li>GetPhysics()
 : <a class="el" href="class_game_object_base.html#a853cdb5dbb2edf28e45e49540f85e554">GameObjectBase</a>
+</li>
+<li>getpInstance()
+: <a class="el" href="class_renderer.html#a995648604452c47b494de005b30de863">Renderer</a>
+</li>
+<li>getpInterface()
+: <a class="el" href="class_renderer_direct_x9.html#aad68389e45dd757dcde19d636f082a21">RendererDirectX9</a>
 </li>
 <li>GetPixelShader()
 : <a class="el" href="class_pixel_shader_base.html#a936a4a1e99488854ffdd4cc245134481">PixelShaderBase</a>
 </li>
 <li>GetPixelShaderType()
 : <a class="el" href="class_draw_order_list.html#ab5f9a610bc9304a701d0f1fbaa3292fa">DrawOrderList</a>
+</li>
+<li>getpLength()
+: <a class="el" href="class_a_a_b_b.html#a9e82e2bdab1dd84633dddbf8bfe561f8">AABB</a>
+, <a class="el" href="class_o_b_b.html#a6bdba6c807846b5eb1a3842981089479">OBB</a>
+</li>
+<li>getpLineSegment()
+: <a class="el" href="class_capsule.html#a84ddec064afb6b2fff155a10e9e26191">Capsule</a>
+, <a class="el" href="class_cylinder.html#acc2a2c2a32575bb93ebfa9a21bb43fb8">Cylinder</a>
+</li>
+<li>getpMaterial()
+: <a class="el" href="class_clear_logo_draw.html#a6273330249f20ddcde3a2ab97c1bdca2">ClearLogoDraw</a>
+, <a class="el" href="class_coin_draw.html#ad62dd6a9dd468342849a0c6ad5f8a5dd">CoinDraw</a>
+, <a class="el" href="class_draw_base.html#a940543b482e934624637f3c6b4d17f96">DrawBase</a>
+, <a class="el" href="class_draw_null.html#aa07d7e89e723b68ec257da0f63d43f70">DrawNull</a>
+, <a class="el" href="class_enemy_draw.html#a3f2885da84533364daaaac4a801fbc46">EnemyDraw</a>
+, <a class="el" href="class_fade.html#a69db8b97a493082644fbd82c9ef3d1aa">Fade</a>
+, <a class="el" href="class_failure_logo_draw.html#a60b0cd983365acdad363cdaf8ebdef46">FailureLogoDraw</a>
+, <a class="el" href="class_field_draw.html#a5ed29c14e0013513d72f79f8651db805">FieldDraw</a>
+, <a class="el" href="class_goal_draw.html#ae7f45a84006809475aba8d9ce1b1f8a5">GoalDraw</a>
+, <a class="el" href="class_number_draw.html#a4e1a672907ee288fc0c2c6caecdf3904">NumberDraw</a>
+, <a class="el" href="class_player_draw.html#acb94ea7611a99698507321e44b7e9acb">PlayerDraw</a>
+, <a class="el" href="class_push_space_logo_draw.html#a4dc41e6b1afece431f3c321145abe541">PushSpaceLogoDraw</a>
+, <a class="el" href="class_render_texture.html#a1defe8bfacccf91dc7479a977e70578c">RenderTexture</a>
+, <a class="el" href="class_sky_dome_draw.html#a45d3e8d70753af83c84c7a7c9193459f">SkyDomeDraw</a>
+, <a class="el" href="class_stencil_shadow_test_draw.html#aacdc680646f832451ea575f1da1eec9a">StencilShadowTestDraw</a>
+, <a class="el" href="class_title_logo_draw.html#aafb35175c0ffe60c7a3facf7f9cda2f2">TitleLogoDraw</a>
+, <a class="el" href="class_tutorial_logo_draw.html#acbd9aefdbd4450188e561fb5e5dcd64f">TutorialLogoDraw</a>
+</li>
+<li>getpMatrix()
+: <a class="el" href="class_clear_logo_draw.html#abcbd0cd8663e0262bcdd83356516082b">ClearLogoDraw</a>
+, <a class="el" href="class_coin_draw.html#ad8cbbe87f4cf4428214f50492c731f5f">CoinDraw</a>
+, <a class="el" href="class_draw_base.html#a60fc3148b2679e4ea7723d2af0c37283">DrawBase</a>
+, <a class="el" href="class_draw_null.html#a001901c340671106a33d44b9d4aef4c4">DrawNull</a>
+, <a class="el" href="class_enemy_draw.html#afbb8ac19041abda280ece7737103dc66">EnemyDraw</a>
+, <a class="el" href="class_fade.html#a2e41a31f9801476e63d2082804375e96">Fade</a>
+, <a class="el" href="class_failure_logo_draw.html#a6e6fb80dc21af9318d659bc3fa71c0b5">FailureLogoDraw</a>
+, <a class="el" href="class_field_draw.html#ad399978201f737f4c0dd2b3990fa6b34">FieldDraw</a>
+, <a class="el" href="class_goal_draw.html#a536a23c043576f9032e6651d7644d038">GoalDraw</a>
+, <a class="el" href="class_number_draw.html#a2ea44b362c3a018faf46905d0f755410">NumberDraw</a>
+, <a class="el" href="class_player_draw.html#a334e94f368f6bd571da866d69333f313">PlayerDraw</a>
+, <a class="el" href="class_push_space_logo_draw.html#a9e0875967651293ef97713477334bc2e">PushSpaceLogoDraw</a>
+, <a class="el" href="class_render_texture.html#adafb7e9aeea3c298cbfcc71e35ed9457">RenderTexture</a>
+, <a class="el" href="class_score_draw.html#adb995c83624c2eab8b8a15d1182df5b8">ScoreDraw</a>
+, <a class="el" href="class_sky_dome_draw.html#accbc05d1bbde9ad9d6b7180d91e9ed89">SkyDomeDraw</a>
+, <a class="el" href="class_stencil_shadow_test_draw.html#a8ab105b75d673adc52698a8401c6525c">StencilShadowTestDraw</a>
+, <a class="el" href="class_title_logo_draw.html#a34fa4366f1ff190a08a36f8e402f6941">TitleLogoDraw</a>
+, <a class="el" href="class_tutorial_logo_draw.html#aade531190180c385c266f5698f99735d">TutorialLogoDraw</a>
+</li>
+<li>getpMatrixExtend()
+: <a class="el" href="class_transform.html#ac5a4f96871b6c1bfde9b2a6b7b0d6953">Transform</a>
+</li>
+<li>getpMax()
+: <a class="el" href="class_a_a_b_b.html#ae7e52b55b90b1c6d02a8a75527d38c9e">AABB</a>
+</li>
+<li>getpMin()
+: <a class="el" href="class_a_a_b_b.html#ac73c1bb888074d7004abe68849f67948">AABB</a>
+</li>
+<li>getpNormal()
+: <a class="el" href="class_plane.html#a426c05b5e1d2f12562ac562333863ebb">Plane</a>
+</li>
+<li>getpNormalTexture()
+: <a class="el" href="class_draw_base.html#a76c3b910b495fcf69aacf6164ca90c7d">DrawBase</a>
+, <a class="el" href="class_draw_null.html#a3b51dfd629853a461cc50175de94ee03">DrawNull</a>
+, <a class="el" href="class_player_draw.html#a231aa618a0bf71311b61897ccf7191b8">PlayerDraw</a>
 </li>
 <li>GetPointer()
 : <a class="el" href="class_effect_file.html#a0f61b1e53e67b28cb46f93b6ba20f941">EffectFile</a>
@@ -737,8 +771,30 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetPositon()
 : <a class="el" href="class_camera.html#a18f380bd6b2c42162c8fcf7e4441a355">Camera</a>
 </li>
-<li>getPositon()
-: <a class="el" href="class_collision_shape_base.html#a17bd2d81ebf464459dd977152e02055b">CollisionShapeBase</a>
+<li>getpPlane()
+: <a class="el" href="class_triangle.html#a559a6888cea5697dfd3943fa4a153d07">Triangle</a>
+</li>
+<li>getpPoint0()
+: <a class="el" href="class_triangle.html#a0f6221dde9919de0067299847f4966b8">Triangle</a>
+</li>
+<li>getpPoint1()
+: <a class="el" href="class_triangle.html#a9420de30b090fcaae621dab303bda541">Triangle</a>
+</li>
+<li>getpPoint2()
+: <a class="el" href="class_triangle.html#ab2c7e8aea2b27b51b068b34f1d7a1ce0">Triangle</a>
+</li>
+<li>getpPosition()
+: <a class="el" href="class_capsule.html#afc99a1883241c44d0bf5f4deb5f3cb92">Capsule</a>
+, <a class="el" href="class_cylinder.html#a18c61448fbb080c79ab6b1a431803dea">Cylinder</a>
+, <a class="el" href="class_line_segment.html#a13877c27e539e948fe8db0f34853e3da">LineSegment</a>
+, <a class="el" href="class_o_b_b.html#a72d5af1f3234560445244447da2150e1">OBB</a>
+, <a class="el" href="class_sphere.html#a9fd8492659b335541af8a2f56f14e1b1">Sphere</a>
+</li>
+<li>getpPositon()
+: <a class="el" href="class_a_a_b_b.html#a8b8e043a1ccf584416d9899252f97cff">AABB</a>
+</li>
+<li>getpRenderer()
+: <a class="el" href="class_renderer.html#a0d026a0f20ae978c19fd4924b06d26e2">Renderer</a>
 </li>
 <li>getPreviousPointer()
 : <a class="el" href="class_object_of_tree.html#a02b74f20b90ec53dbae2d18648a9d5d1">ObjectOfTree&lt; Type &gt;</a>
@@ -746,6 +802,34 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetProjectionMatrix()
 : <a class="el" href="class_camera.html#a473a7a8408bc7a1fdd46d12fa3852846">Camera</a>
 , <a class="el" href="class_effekseer_renderer_1_1_renderer.html#a7a94e69a46222064baf9394405a7c9a9">EffekseerRenderer::Renderer</a>
+</li>
+<li>getpSceneManager()
+: <a class="el" href="class_scene_base.html#aa5086973ccaf3d07e4ee9d1fc940e209">SceneBase</a>
+</li>
+<li>getpSphere0()
+: <a class="el" href="class_capsule.html#a21069589808b846bced97f00beb6d156">Capsule</a>
+</li>
+<li>getpSphere1()
+: <a class="el" href="class_capsule.html#a5a1ee83c8ff8136d361864bcda8138ca">Capsule</a>
+</li>
+<li>getpState()
+: <a class="el" href="class_scene_base.html#a9ee8fb94a520c570663ea7ab223e7218">SceneBase</a>
+</li>
+<li>getpTutorialLogo()
+: <a class="el" href="class_tutorial_scene.html#a57c95d200431cec7839384f0228c831e">TutorialScene</a>
+</li>
+<li>getpVector()
+: <a class="el" href="class_capsule.html#a1793de155de657088c546727b393367a">Capsule</a>
+, <a class="el" href="class_cylinder.html#a7b1cd37bc88e50d81b4de4a34e0dafb0">Cylinder</a>
+, <a class="el" href="class_line_segment.html#a50ed66faa77529e1ef71bbc8714d7edc">LineSegment</a>
+</li>
+<li>getpWorldMatrix()
+: <a class="el" href="class_transform.html#a19538fe991e76eb8146295e6f5f1ed99">Transform</a>
+</li>
+<li>getRadius()
+: <a class="el" href="class_capsule.html#a4e98e8545ea57fe682c5a2002bd49bdb">Capsule</a>
+, <a class="el" href="class_cylinder.html#a54bd26ac60e885bdca9a101fcc998711">Cylinder</a>
+, <a class="el" href="class_sphere.html#a330dd34c7c7b6dfff106c4c71ec80028">Sphere</a>
 </li>
 <li>GetRand()
 : <a class="el" href="class_effekseer_1_1_i_rand_object.html#aecc4fce270de1c127f19a53b1ca09454">Effekseer::IRandObject</a>
@@ -767,9 +851,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetReferenceEffekseerObjectFromArray()
 : <a class="el" href="class_effekseer_manager.html#a1469d014a3d10dd38dc7d03db7f2ebfe">EffekseerManager</a>
 </li>
-<li>getRenderer()
-: <a class="el" href="class_renderer.html#a581267c3eeedce9b333c119d009e315c">Renderer</a>
-</li>
 <li>GetRenderMode()
 : <a class="el" href="class_effekseer_renderer_1_1_renderer.html#a45fd7eb7a8796aeb67467511891a48fd">EffekseerRenderer::Renderer</a>
 </li>
@@ -788,6 +869,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetRight()
 : <a class="el" href="class_axis_vector.html#a1d4f944d118d6f999c516dbdc0827a39">AxisVector</a>
 , <a class="el" href="class_transform.html#a57d1da919d8df7d2452149c4bbade4d2">Transform</a>
+</li>
+<li>getRightVector()
+: <a class="el" href="class_o_b_b.html#a7879aad21978ea9dfc5f50a608349b27">OBB</a>
+</li>
+<li>getRightVectorHalf()
+: <a class="el" href="class_o_b_b.html#ab0452e841ab2c1362b2e6365b27cea97">OBB</a>
 </li>
 <li>GetRingRenderer()
 : <a class="el" href="class_effekseer_1_1_manager.html#a20dcb7324f1b4137cbcd872cfd90def2">Effekseer::Manager</a>
@@ -808,9 +895,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetScaleMatrix()
 : <a class="el" href="class_matrix_extend.html#a13d6cb82385873959bde75fb64235943">MatrixExtend</a>
 </li>
-<li>getSceneManager()
-: <a class="el" href="class_scene_base.html#aca9fd7fe190d13bcd4f5e3a832fb99c6">SceneBase</a>
-</li>
 <li>getScore()
 : <a class="el" href="class_game_scene.html#a16b26b3b8ea91dcaf762292414bf5d6d">GameScene</a>
 </li>
@@ -824,8 +908,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetSize()
 : <a class="el" href="struct_im_rect.html#ae459d9c50003058cfb34519a571aaf33">ImRect</a>
 </li>
-<li>GetSlopeSegment2D()
-: <a class="el" href="class_segment.html#a889d62f6d4c10701464726da706ae043">Segment</a>
+<li>getSlopeOf2DLineSegment()
+: <a class="el" href="class_line_segment.html#a473738a0b67e449cf8b5a23f1146f446">LineSegment</a>
 </li>
 <li>GetSoundLoader()
 : <a class="el" href="class_effekseer_1_1_manager.html#a9d6e1710083866bf1fc8953f340df002">Effekseer::Manager</a>
@@ -860,9 +944,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetState()
 : <a class="el" href="class_fade.html#aeb41dfcadf75dd4c980da68e243cc310">Fade</a>
-</li>
-<li>getState()
-: <a class="el" href="class_scene_base.html#a3ff1961cc340dcfb8fa1e9ae14b269eb">SceneBase</a>
 </li>
 <li>getTag()
 : <a class="el" href="class_collision_object.html#a1198d5941d2ba8a9b394c0e43e4b9fd9">CollisionObject</a>
@@ -906,9 +987,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetTranslationMatrix()
 : <a class="el" href="class_matrix_extend.html#a95b114379190ca0fee5d40394f9842f1">MatrixExtend</a>
 </li>
-<li>getTutorialLogo()
-: <a class="el" href="class_tutorial_scene.html#a2038b4fe667b7a69080a8c9c752f7fb9">TutorialScene</a>
-</li>
 <li>GetType()
 : <a class="el" href="class_camera.html#a3bda45b352bfa163c306c638a2aee1f6">Camera</a>
 </li>
@@ -932,29 +1010,17 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>GetUpdateTime()
 : <a class="el" href="class_effekseer_1_1_manager.html#a0f5a05a0911243b56fe6aaa259d677df">Effekseer::Manager</a>
 </li>
+<li>getUpVector()
+: <a class="el" href="class_o_b_b.html#a73da06fa4dbebb2b59dc3168971c8d5d">OBB</a>
+</li>
+<li>getUpVectorHalf()
+: <a class="el" href="class_o_b_b.html#a510542bc5071eb9bd174d69ffa64f023">OBB</a>
+</li>
 <li>GetUV()
 : <a class="el" href="class_texture_object.html#a51b8a2723302c2d38624a62f9205c4bb">TextureObject</a>
 </li>
 <li>GetVarPtr()
 : <a class="el" href="struct_im_gui_style_var_info.html#a92aebc5f0d8b2b43b61dbcaf992b5643">ImGuiStyleVarInfo</a>
-</li>
-<li>GetVectorForward()
-: <a class="el" href="class_o_b_b.html#a03fdc91609b94007369d3ba168dbb54d">OBB</a>
-</li>
-<li>GetVectorForwardHalf()
-: <a class="el" href="class_o_b_b.html#a03218b64dad1985876e7bad09f4a61ce">OBB</a>
-</li>
-<li>GetVectorRight()
-: <a class="el" href="class_o_b_b.html#ace28639ea3a6c38d994d82d0dd40496e">OBB</a>
-</li>
-<li>GetVectorRightHalf()
-: <a class="el" href="class_o_b_b.html#a1c3a21fd4ff8dcc55d4f5d20c563ebd6">OBB</a>
-</li>
-<li>GetVectorUp()
-: <a class="el" href="class_o_b_b.html#a0c0fd050224beb2c196e923e177bc0d5">OBB</a>
-</li>
-<li>GetVectorUpHalf()
-: <a class="el" href="class_o_b_b.html#a48255d7b9af2d2ea109de41787c30a3a">OBB</a>
 </li>
 <li>GetVelocity()
 : <a class="el" href="class_physics.html#a8e33f600575e7ee5ad348d695a9eb45e">Physics</a>
@@ -998,7 +1064,6 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>GetWorldMatrix()
 : <a class="el" href="class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15">MatrixExtend</a>
-, <a class="el" href="class_transform.html#a060f9487a18ad34549eab53a7ca5100d">Transform</a>
 </li>
 <li>glyf
 : <a class="el" href="structstbtt__fontinfo.html#a5de2129e0a415748920f6aa10ceee6e5">stbtt_fontinfo</a>

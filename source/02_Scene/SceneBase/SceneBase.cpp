@@ -12,14 +12,77 @@
 //****************************************
 #include "SceneBase.h"
 
+#include <SafeRelease/SafeRelease.h>
+
+
+
+//****************************************
+// プロパティ定義
+//****************************************
+SceneBase* SceneBase::StateBase::getpScene()
+{
+	return scene_;
+}
+
+
+
+void SceneBase::StateBase::setScene(SceneBase* value)
+{
+	scene_ = value;
+}
+
+
+
+SceneManager* SceneBase::getpSceneManager()
+{ 
+	return scene_manager_; 
+}
+
+
+
+void SceneBase::setSceneManager(SceneManager* value)
+{ 
+	scene_manager_ = value; 
+}
+
+
+
+SceneBase::StateBase* SceneBase::getpState()
+{ 
+	return state_; 
+}
+
+
+
+void SceneBase::setState(StateBase* value)
+{
+	if (state_ != nullptr)
+	{
+		SafeRelease::PlusUninit(&state_);
+	}
+
+	state_ = value;
+
+	if (state_ != nullptr)
+	{
+		state_->setScene(this);
+		state_->Init();
+	}
+}
+
 
 
 //****************************************
 // 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
+SceneBase::SceneBase(StateBase* state)
+{
+	state_ = state;
+	state_->setScene(this);
+}
+
+
+
 void SceneBase::Init()
 {
 	if (state_ == nullptr) return;
@@ -28,9 +91,6 @@ void SceneBase::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void SceneBase::Uninit()
 {
 	SafeRelease::PlusUninit(&state_);
@@ -38,9 +98,6 @@ void SceneBase::Uninit()
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void SceneBase::Update()
 {
 	if (state_ == nullptr) return;
@@ -49,9 +106,6 @@ void SceneBase::Update()
 
 
 
-//--------------------------------------------------
-// +リセット関数
-//--------------------------------------------------
 void SceneBase::Reset()
 {
 	if (state_ == nullptr) return;
@@ -60,9 +114,6 @@ void SceneBase::Reset()
 
 
 
-//--------------------------------------------------
-// +ステート解放関数
-//--------------------------------------------------
 void SceneBase::ReleaseState()
 {
 	SafeRelease::Normal(&state_);

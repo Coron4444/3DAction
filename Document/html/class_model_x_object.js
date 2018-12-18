@@ -5,7 +5,7 @@ var class_model_x_object =
     [ "GetDecaleTextureName", "class_model_x_object.html#afd57d5b6b74817f4d69047640e69f14e", null ],
     [ "GetMaterial", "class_model_x_object.html#a27df4304e87da11e2f9c9d7a8487a985", null ],
     [ "GetMesh", "class_model_x_object.html#a3aaab083fe6e1956b2eaab815ebb4bfb", null ],
-    [ "GetMeshNum", "class_model_x_object.html#a8e91c6bda6b00055bae0707037d81d9f", null ],
+    [ "getMeshNum", "class_model_x_object.html#a894790eda90cf0cc202b86f854583fda", null ],
     [ "InputMaterial", "class_model_x_object.html#a612ecc2cb9b19ae1674dcc5ee8aab710", null ],
     [ "InputModelX", "class_model_x_object.html#ac7a86f4d034600ae5d8f8fd3610f4628", null ],
     [ "MakeTextureFilePathAndKeyName", "class_model_x_object.html#a83995ec817bccb4584d635b2005578a8", null ],

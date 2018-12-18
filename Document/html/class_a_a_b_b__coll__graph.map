@@ -1,4 +1,4 @@
 <map id="AABB" name="AABB">
-<area shape="rect" id="node2" href="$class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="5,179,144,206"/>
-<area shape="rect" id="node4" href="$class_vector3_d.html" title="Vector3D" alt="" coords="125,81,201,108"/>
+<area shape="rect" id="node2" href="$class_collision_shape_base.html" title="衝突形状BaseClass " alt="" coords="5,95,144,121"/>
+<area shape="rect" id="node4" href="$class_vector3_d.html" title="Vector3D" alt="" coords="169,95,245,121"/>
 </map>

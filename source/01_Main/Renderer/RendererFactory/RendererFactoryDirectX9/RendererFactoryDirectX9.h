@@ -12,9 +12,14 @@
 //****************************************
 // インクルード文
 //****************************************
-#include "../RendererFactoryInterface.h"
+#include "../RendererFactoryInterface/RendererFactoryInterface.h"
 
-#include <Renderer/RendererDirectX9/RendererDirectX9.h>
+
+
+//****************************************
+// クラス宣言
+//****************************************
+class RendererInterface;
 
 
 
@@ -31,13 +36,11 @@ class RendererFactoryDirectX9 : public RendererFactoryInterface
 public:
 	//----------------------------------------
 	//! @brief 生成関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	RendererInterface* Create() override
-	{
-		return new RendererDirectX9();
-	}
+	RendererInterface* Create() override;
 };
 
 

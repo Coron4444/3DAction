@@ -34,7 +34,7 @@ var searchData=
   ['treepop',['TreePop',['../namespace_im_gui.html#a41ecf265e5f678c78fc9c30b3cf2077f',1,'ImGui']]],
   ['treepush',['TreePush',['../namespace_im_gui.html#a596151d99bca5cc0b6393809c1e07af5',1,'ImGui::TreePush(const char *str_id=NULL)'],['../namespace_im_gui.html#a71440d86edee2b23abc25cb80e9c9444',1,'ImGui::TreePush(const void *ptr_id=NULL)']]],
   ['treepushrawid',['TreePushRawID',['../namespace_im_gui.html#afddcddce9f2801769e4c79ef769ab600',1,'ImGui']]],
-  ['triangle',['Triangle',['../class_triangle.html#a2d96bc16d87b0ece2fef7325d63969b3',1,'Triangle']]],
+  ['triangle',['Triangle',['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle']]],
   ['trim_5fblanks',['trim_blanks',['../struct_im_gui_text_filter_1_1_text_range.html#aa3bbd8b17b528f548d73c0936228dc85',1,'ImGuiTextFilter::TextRange']]],
   ['tutorialscene',['TutorialScene',['../class_tutorial_scene.html#a90f8c010bd72aa3dae61a5294fdfbeb7',1,'TutorialScene']]]
 ];

@@ -9,16 +9,6 @@
 
 {\ttfamily \#include $<$Renderer.\+h$>$}
 
-
-
-Renderer 連携図
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=218pt]{class_renderer__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,7 +34,7 @@ void \mbox{\hyperlink{class_renderer_a0393849bd4178a33861780bf07b0deee}{Draw\+En
 \begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_renderer_a1dac4baae1fa79166442b0778a9c8728}{Present}} ()
 \begin{DoxyCompactList}\small\item\em バックバッファをフロントバッファに反映関数 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}} $\ast$ \mbox{\hyperlink{class_renderer_a581267c3eeedce9b333c119d009e315c}{get\+Renderer}} ()
+\mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}} $\ast$ \mbox{\hyperlink{class_renderer_a0d026a0f20ae978c19fd4924b06d26e2}{getp\+Renderer}} ()
 \item 
 void \mbox{\hyperlink{class_renderer_a02e3c483b2c9d8024e51639a06159066}{set\+Renderer}} (\mbox{\hyperlink{class_renderer_factory_interface}{Renderer\+Factory\+Interface}} $\ast$factory, \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}} mode)
 \item 
@@ -57,7 +47,7 @@ void \mbox{\hyperlink{class_renderer_a02e3c483b2c9d8024e51639a06159066}{set\+Ren
 \item 
 static void \mbox{\hyperlink{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}{Release\+Instance}} ()
 \begin{DoxyCompactList}\small\item\em インスタンス解放関数 \end{DoxyCompactList}\item 
-static \mbox{\hyperlink{class_renderer}{Renderer}} $\ast$ \mbox{\hyperlink{class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6}{get\+Instance}} ()
+static \mbox{\hyperlink{class_renderer}{Renderer}} $\ast$ \mbox{\hyperlink{class_renderer_a995648604452c47b494de005b30de863}{getp\+Instance}} ()
 \end{DoxyCompactItemize}
 \subsection*{非公開メンバ関数}
 \begin{DoxyCompactItemize}
@@ -146,14 +136,6 @@ M\+AX&\\
 
  Renderer.\+h の 184 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_a1e7732f4c952f3c13d9bb03a7510b7aa}\label{class_renderer_a1e7732f4c952f3c13d9bb03a7510b7aa}} 
 \index{Renderer@{Renderer}!Renderer@{Renderer}}
 \index{Renderer@{Renderer}!Renderer@{Renderer}}
@@ -187,21 +169,6 @@ M\+AX&\\
 
  Renderer.\+cpp の 86 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=322pt]{class_renderer_af420951c9c163f1151bd6600df204cee_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_af420951c9c163f1151bd6600df204cee_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_a0393849bd4178a33861780bf07b0deee}\label{class_renderer_a0393849bd4178a33861780bf07b0deee}} 
 \index{Renderer@{Renderer}!Draw\+End@{Draw\+End}}
 \index{Draw\+End@{Draw\+End}!Renderer@{Renderer}}
@@ -226,21 +193,6 @@ M\+AX&\\
 
  Renderer.\+cpp の 98 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=315pt]{class_renderer_a0393849bd4178a33861780bf07b0deee_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a0393849bd4178a33861780bf07b0deee_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_a56662123051f8898c4e8e9d5457fd317}\label{class_renderer_a56662123051f8898c4e8e9d5457fd317}} 
 \index{Renderer@{Renderer}!get\+Device@{get\+Device}}
 \index{get\+Device@{get\+Device}!Renderer@{Renderer}}
@@ -252,40 +204,6 @@ void Renderer\+::get\+Device (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]
 
  Renderer.\+h の 154 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a56662123051f8898c4e8e9d5457fd317_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6}\label{class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6}} 
-\index{Renderer@{Renderer}!get\+Instance@{get\+Instance}}
-\index{get\+Instance@{get\+Instance}!Renderer@{Renderer}}
-\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer}{Renderer}} $\ast$ Renderer\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
- Renderer.\+cpp の 43 行目に定義があります。
-
-呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=329pt]{class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_ac1bf10ff8b4f967f0d416a26d482abd6_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_a6e77556825755be3db8a5a734460e66f}\label{class_renderer_a6e77556825755be3db8a5a734460e66f}} 
 \index{Renderer@{Renderer}!get\+Interface@{get\+Interface}}
 \index{get\+Interface@{get\+Interface}!Renderer@{Renderer}}
@@ -297,24 +215,26 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
  Renderer.\+h の 129 行目に定義があります。
 
-\mbox{\Hypertarget{class_renderer_a581267c3eeedce9b333c119d009e315c}\label{class_renderer_a581267c3eeedce9b333c119d009e315c}} 
-\index{Renderer@{Renderer}!get\+Renderer@{get\+Renderer}}
-\index{get\+Renderer@{get\+Renderer}!Renderer@{Renderer}}
-\subsubsection{\texorpdfstring{get\+Renderer()}{getRenderer()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}}$\ast$ Renderer\+::get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_renderer_a995648604452c47b494de005b30de863}\label{class_renderer_a995648604452c47b494de005b30de863}} 
+\index{Renderer@{Renderer}!getp\+Instance@{getp\+Instance}}
+\index{getp\+Instance@{getp\+Instance}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{getp\+Instance()}{getpInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer}{Renderer}} $\ast$ Renderer\+::getp\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ Renderer.\+cpp の 43 行目に定義があります。
+
+\mbox{\Hypertarget{class_renderer_a0d026a0f20ae978c19fd4924b06d26e2}\label{class_renderer_a0d026a0f20ae978c19fd4924b06d26e2}} 
+\index{Renderer@{Renderer}!getp\+Renderer@{getp\+Renderer}}
+\index{getp\+Renderer@{getp\+Renderer}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{getp\+Renderer()}{getpRenderer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}}$\ast$ Renderer\+::getp\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
  Renderer.\+h の 117 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a581267c3eeedce9b333c119d009e315c_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_a8d576add80187f5be3f24ec6a8108100}\label{class_renderer_a8d576add80187f5be3f24ec6a8108100}} 
 \index{Renderer@{Renderer}!Init@{Init}}
 \index{Init@{Init}!Renderer@{Renderer}}
@@ -347,20 +267,6 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
  Renderer.\+cpp の 60 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=301pt]{class_renderer_a8d576add80187f5be3f24ec6a8108100_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a8d576add80187f5be3f24ec6a8108100_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_ab80abe5f35a095f221f8c43916900d66}\label{class_renderer_ab80abe5f35a095f221f8c43916900d66}} 
 \index{Renderer@{Renderer}!operator=@{operator=}}
 \index{operator=@{operator=}!Renderer@{Renderer}}
@@ -391,20 +297,6 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
  Renderer.\+cpp の 109 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=309pt]{class_renderer_a1dac4baae1fa79166442b0778a9c8728_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a1dac4baae1fa79166442b0778a9c8728_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}\label{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}} 
 \index{Renderer@{Renderer}!Release\+Instance@{Release\+Instance}}
 \index{Release\+Instance@{Release\+Instance}!Renderer@{Renderer}}
@@ -429,20 +321,6 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
  Renderer.\+cpp の 33 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_aa7ac523172faaf376ecddaed4bdc0781_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_aa7ac523172faaf376ecddaed4bdc0781_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_a02e3c483b2c9d8024e51639a06159066}\label{class_renderer_a02e3c483b2c9d8024e51639a06159066}} 
 \index{Renderer@{Renderer}!set\+Renderer@{set\+Renderer}}
 \index{set\+Renderer@{set\+Renderer}!Renderer@{Renderer}}
@@ -453,22 +331,6 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
  Renderer.\+h の 118 行目に定義があります。
 
-呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a02e3c483b2c9d8024e51639a06159066_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_a02e3c483b2c9d8024e51639a06159066_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}\label{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}} 
 \index{Renderer@{Renderer}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Renderer@{Renderer}}
@@ -493,20 +355,6 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
  Renderer.\+cpp の 72 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=324pt]{class_renderer_ae865246d6a04d467ac22458f6f5f69d4_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_renderer_ae865246d6a04d467ac22458f6f5f69d4_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}

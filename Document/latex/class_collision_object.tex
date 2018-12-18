@@ -9,15 +9,6 @@
 
 {\ttfamily \#include $<$Collision\+Object.\+h$>$}
 
-
-
-Collision\+Object 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=267pt]{class_collision_object__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,9 +20,9 @@ void \mbox{\hyperlink{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}{
 \begin{DoxyCompactList}\small\item\em 衝突用データのリセット関数 \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9}{get\+Tag}} () const
 \item 
-\mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}} $\ast$ \mbox{\hyperlink{class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c}{get\+Collision\+Shape}} () const
+\mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}} $\ast$ \mbox{\hyperlink{class_collision_object_a2885ef749588dced5af2bd171e2f2a6e}{getp\+Collision\+Shape}} ()
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_collision_object_adb01187ec10302f13034407a3c852860}{get\+Hit\+Vector}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_collision_object_a4a0e83479d6e4c15b8f81cafe56c618a}{getp\+Hit\+Vector}} ()
 \item 
 void \mbox{\hyperlink{class_collision_object_a1087fa9cebfe0b1675923807b73d8868}{set\+Hit\+Vector}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} value)
 \item 
@@ -102,52 +93,9 @@ static const int \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002b
 
  Collision\+Object.\+cpp の 35 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_a8c4e6916bc5911b8a82498536d5a27e1_cgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c}\label{class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c}} 
-\index{Collision\+Object@{Collision\+Object}!get\+Collision\+Shape@{get\+Collision\+Shape}}
-\index{get\+Collision\+Shape@{get\+Collision\+Shape}!Collision\+Object@{Collision\+Object}}
-\subsubsection{\texorpdfstring{get\+Collision\+Shape()}{getCollisionShape()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}}$\ast$ Collision\+Object\+::get\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
- Collision\+Object.\+h の 82 行目に定義があります。
-
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_a3ff1c2d794f520c96b6bc6037a8f8f8c_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_collision_object_adb01187ec10302f13034407a3c852860}\label{class_collision_object_adb01187ec10302f13034407a3c852860}} 
-\index{Collision\+Object@{Collision\+Object}!get\+Hit\+Vector@{get\+Hit\+Vector}}
-\index{get\+Hit\+Vector@{get\+Hit\+Vector}!Collision\+Object@{Collision\+Object}}
-\subsubsection{\texorpdfstring{get\+Hit\+Vector()}{getHitVector()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Collision\+Object\+::get\+Hit\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
- Collision\+Object.\+h の 83 行目に定義があります。
-
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_adb01187ec10302f13034407a3c852860_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_object_ac11b01882a159efadbe62bd5a66c49aa}\label{class_collision_object_ac11b01882a159efadbe62bd5a66c49aa}} 
 \index{Collision\+Object@{Collision\+Object}!get\+Is\+Judgment@{get\+Is\+Judgment}}
 \index{get\+Is\+Judgment@{get\+Is\+Judgment}!Collision\+Object@{Collision\+Object}}
@@ -158,14 +106,26 @@ static const int \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002b
 
  Collision\+Object.\+h の 85 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_ac11b01882a159efadbe62bd5a66c49aa_icgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{class_collision_object_a2885ef749588dced5af2bd171e2f2a6e}\label{class_collision_object_a2885ef749588dced5af2bd171e2f2a6e}} 
+\index{Collision\+Object@{Collision\+Object}!getp\+Collision\+Shape@{getp\+Collision\+Shape}}
+\index{getp\+Collision\+Shape@{getp\+Collision\+Shape}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{getp\+Collision\+Shape()}{getpCollisionShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_base}{Collision\+Shape\+Base}}$\ast$ Collision\+Object\+::getp\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Collision\+Object.\+h の 82 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_object_a4a0e83479d6e4c15b8f81cafe56c618a}\label{class_collision_object_a4a0e83479d6e4c15b8f81cafe56c618a}} 
+\index{Collision\+Object@{Collision\+Object}!getp\+Hit\+Vector@{getp\+Hit\+Vector}}
+\index{getp\+Hit\+Vector@{getp\+Hit\+Vector}!Collision\+Object@{Collision\+Object}}
+\subsubsection{\texorpdfstring{getp\+Hit\+Vector()}{getpHitVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Collision\+Object\+::getp\+Hit\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Collision\+Object.\+h の 83 行目に定義があります。
+
 \mbox{\Hypertarget{class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9}\label{class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9}} 
 \index{Collision\+Object@{Collision\+Object}!get\+Tag@{get\+Tag}}
 \index{get\+Tag@{get\+Tag}!Collision\+Object@{Collision\+Object}}
@@ -176,13 +136,6 @@ static const int \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002b
 
  Collision\+Object.\+h の 81 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_a1198d5941d2ba8a9b394c0e43e4b9fd9_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}\label{class_collision_object_a92dd5d21c6674605d290e0d37d64505a}} 
 \index{Collision\+Object@{Collision\+Object}!Reset\+Hit\+Data@{Reset\+Hit\+Data}}
 \index{Reset\+Hit\+Data@{Reset\+Hit\+Data}!Collision\+Object@{Collision\+Object}}
@@ -197,21 +150,6 @@ static const int \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002b
 
  Collision\+Object.\+cpp の 101 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_a92dd5d21c6674605d290e0d37d64505a_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_a92dd5d21c6674605d290e0d37d64505a_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_object_a1087fa9cebfe0b1675923807b73d8868}\label{class_collision_object_a1087fa9cebfe0b1675923807b73d8868}} 
 \index{Collision\+Object@{Collision\+Object}!set\+Hit\+Vector@{set\+Hit\+Vector}}
 \index{set\+Hit\+Vector@{set\+Hit\+Vector}!Collision\+Object@{Collision\+Object}}
@@ -222,14 +160,6 @@ static const int \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002b
 
  Collision\+Object.\+h の 84 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_a1087fa9cebfe0b1675923807b73d8868_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_object_a3000144caea71e39cbdafebb249fef7e}\label{class_collision_object_a3000144caea71e39cbdafebb249fef7e}} 
 \index{Collision\+Object@{Collision\+Object}!set\+Is\+Judgment@{set\+Is\+Judgment}}
 \index{set\+Is\+Judgment@{set\+Is\+Judgment}!Collision\+Object@{Collision\+Object}}
@@ -240,13 +170,6 @@ static const int \mbox{\hyperlink{class_collision_object_a22badef1e6fc9c2b1f002b
 
  Collision\+Object.\+h の 86 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_object_a3000144caea71e39cbdafebb249fef7e_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}

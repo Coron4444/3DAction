@@ -1,5 +1,13 @@
 var NAVTREEINDEX2 =
 {
+"_push_space_logo_draw_8cpp_source.html":[2,0,0,2,0,0,2,0,0],
+"_push_space_logo_draw_8h.html":[2,0,0,2,0,0,2,0,1],
+"_push_space_logo_draw_8h_source.html":[2,0,0,2,0,0,2,0,1],
+"_push_space_logo_factory_8h.html":[2,0,0,2,0,0,2,1,0],
+"_push_space_logo_factory_8h_source.html":[2,0,0,2,0,0,2,1,0],
+"_push_space_logo_update_8cpp.html":[2,0,0,2,0,0,2,2,0],
+"_push_space_logo_update_8cpp_source.html":[2,0,0,2,0,0,2,2,0],
+"_push_space_logo_update_8h.html":[2,0,0,2,0,0,2,2,1],
 "_push_space_logo_update_8h_source.html":[2,0,0,2,0,0,2,2,1],
 "_quadratic_equation_8h.html":[2,0,0,3,11,2,0],
 "_quadratic_equation_8h_source.html":[2,0,0,3,11,2,0],
@@ -58,14 +66,6 @@ var NAVTREEINDEX2 =
 "_score_update_8cpp_source.html":[2,0,0,2,0,0,3,2,0],
 "_score_update_8h.html":[2,0,0,2,0,0,3,2,1],
 "_score_update_8h_source.html":[2,0,0,2,0,0,3,2,1],
-"_segment_8h.html":[2,0,0,3,0,0,0,0,0,5,0],
-"_segment_8h.html#a0575d6a616fa95075f88623632bae170":[2,0,0,3,0,0,0,0,0,5,0,5],
-"_segment_8h.html#a12757b2d47b6592ec6b2f57253878d2e":[2,0,0,3,0,0,0,0,0,5,0,4],
-"_segment_8h.html#a3ca962c690b73355253042cdab29b337":[2,0,0,3,0,0,0,0,0,5,0,6],
-"_segment_8h.html#a3f7783f4fefe063dc6ef6bbe5d58db06":[2,0,0,3,0,0,0,0,0,5,0,1],
-"_segment_8h.html#a3fae4510faeb51f131d9f3e6cdcda9a4":[2,0,0,3,0,0,0,0,0,5,0,3],
-"_segment_8h.html#af786c5fbbd6d4ea97e1a19d1f8026375":[2,0,0,3,0,0,0,0,0,5,0,2],
-"_segment_8h_source.html":[2,0,0,3,0,0,0,0,0,5,0],
 "_shader_base_8h.html":[2,0,0,3,1,1,4,2,2],
 "_shader_base_8h_source.html":[2,0,0,3,1,1,4,2,2],
 "_shader_manager_8cpp.html":[2,0,0,3,1,1,5,0],
@@ -196,6 +196,7 @@ var NAVTREEINDEX2 =
 "_transform_8h.html":[2,0,0,3,11,3,3],
 "_transform_8h_source.html":[2,0,0,3,11,3,3],
 "_triangle_8h.html":[2,0,0,3,0,0,0,0,0,7,0],
+"_triangle_8h.html#a1f68d91d85cf8990e4328fa5f813a316":[2,0,0,3,0,0,0,0,0,7,0,1],
 "_triangle_8h_source.html":[2,0,0,3,0,0,0,0,0,7,0],
 "_tutorial_logo_8cpp.html":[2,0,0,2,0,0,5,2],
 "_tutorial_logo_8cpp_source.html":[2,0,0,2,0,0,5,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_vertex_shader_bump_mapping_8h.html":[2,0,0,3,1,1,4,3,0,1],
 "_vertex_shader_bump_mapping_8h_source.html":[2,0,0,3,1,1,4,3,0,1],
 "_vertex_shader_fixed_8cpp.html":[2,0,0,3,1,1,4,3,1,0],
-"_vertex_shader_fixed_8cpp_source.html":[2,0,0,3,1,1,4,3,1,0],
-"_vertex_shader_fixed_8h.html":[2,0,0,3,1,1,4,3,1,1]
+"_vertex_shader_fixed_8cpp_source.html":[2,0,0,3,1,1,4,3,1,0]
 };

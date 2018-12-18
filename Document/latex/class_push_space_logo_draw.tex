@@ -18,15 +18,6 @@ Push\+Space\+Logo\+Draw の継承関係図\nopagebreak
 \includegraphics[width=190pt]{class_push_space_logo_draw__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Push\+Space\+Logo\+Draw 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_push_space_logo_draw__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,13 +27,13 @@ void \mbox{\hyperlink{class_push_space_logo_draw_a79021c1df43968d6008de74126d53f
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_push_space_logo_draw_a647dddefc43d66cb3c720ee8fbb6a783}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_push_space_logo_draw_a1ab6229ba2d68b730797f5016c99f359}{Get\+Matrix}} (unsigned object\+\_\+index) override
+unsigned \mbox{\hyperlink{class_push_space_logo_draw_abaa66b6e3c46aa03bae21bad271eebc0}{get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_push_space_logo_draw_a9a40fca53e23b9970a7c5decaa3d2da6}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_push_space_logo_draw_a9e0875967651293ef97713477334bc2e}{getp\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_push_space_logo_draw_a0734eed4096afb12e6c9ef1f4d82b9d8}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_push_space_logo_draw_a4dc41e6b1afece431f3c321145abe541}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_push_space_logo_draw_a4990a9f5662af324f2632e8647cbdde4}{Get\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_push_space_logo_draw_abfba58752543d8b2ccfe1e4003032dd3}{getp\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
@@ -93,97 +84,62 @@ static const float \mbox{\hyperlink{class_push_space_logo_draw_a9ba8f8cd38e75d49
 
  Push\+Space\+Logo\+Draw.\+cpp の 68 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_push_space_logo_draw_a647dddefc43d66cb3c720ee8fbb6a783_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_push_space_logo_draw_a4990a9f5662af324f2632e8647cbdde4}\label{class_push_space_logo_draw_a4990a9f5662af324f2632e8647cbdde4}} 
-\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!Get\+Decale\+Texture@{Get\+Decale\+Texture}}
-\index{Get\+Decale\+Texture@{Get\+Decale\+Texture}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Decale\+Texture()}{GetDecaleTexture()}}
-{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Push\+Space\+Logo\+Draw\+::\+Get\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_push_space_logo_draw_abaa66b6e3c46aa03bae21bad271eebc0}\label{class_push_space_logo_draw_abaa66b6e3c46aa03bae21bad271eebc0}} 
+\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!get\+Mesh\+Num@{get\+Mesh\+Num}}
+\index{get\+Mesh\+Num@{get\+Mesh\+Num}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Num()}{getMeshNum()}}
+{\footnotesize\ttfamily unsigned Push\+Space\+Logo\+Draw\+::get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_a8496ed1b1f765a331a8f1704122b8ca4}{Draw\+Null}}を再実装しています。
-
-
-
- Push\+Space\+Logo\+Draw.\+cpp の 119 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_push_space_logo_draw_a4990a9f5662af324f2632e8647cbdde4_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_push_space_logo_draw_a0734eed4096afb12e6c9ef1f4d82b9d8}\label{class_push_space_logo_draw_a0734eed4096afb12e6c9ef1f4d82b9d8}} 
-\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!Get\+Material@{Get\+Material}}
-\index{Get\+Material@{Get\+Material}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Push\+Space\+Logo\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
-
-
-
- Push\+Space\+Logo\+Draw.\+cpp の 106 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_push_space_logo_draw_a0734eed4096afb12e6c9ef1f4d82b9d8_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_push_space_logo_draw_a1ab6229ba2d68b730797f5016c99f359}\label{class_push_space_logo_draw_a1ab6229ba2d68b730797f5016c99f359}} 
-\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!Get\+Matrix@{Get\+Matrix}}
-\index{Get\+Matrix@{Get\+Matrix}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Push\+Space\+Logo\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}{Draw\+Null}}を再実装しています。
 
 
 
  Push\+Space\+Logo\+Draw.\+cpp の 81 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_push_space_logo_draw_a1ab6229ba2d68b730797f5016c99f359_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_push_space_logo_draw_a9a40fca53e23b9970a7c5decaa3d2da6}\label{class_push_space_logo_draw_a9a40fca53e23b9970a7c5decaa3d2da6}} 
-\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
-\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Push\+Space\+Logo\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_push_space_logo_draw_abfba58752543d8b2ccfe1e4003032dd3}\label{class_push_space_logo_draw_abfba58752543d8b2ccfe1e4003032dd3}} 
+\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!getp\+Decale\+Texture@{getp\+Decale\+Texture}}
+\index{getp\+Decale\+Texture@{getp\+Decale\+Texture}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Decale\+Texture()}{getpDecaleTexture()}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Push\+Space\+Logo\+Draw\+::getp\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a2dfa2d2cbb66249f933420a38e9cadad}{Draw\+Null}}を再実装しています。
 
 
 
- Push\+Space\+Logo\+Draw.\+cpp の 94 行目に定義があります。
+ Push\+Space\+Logo\+Draw.\+cpp の 120 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_push_space_logo_draw_a9a40fca53e23b9970a7c5decaa3d2da6_cgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{class_push_space_logo_draw_a4dc41e6b1afece431f3c321145abe541}\label{class_push_space_logo_draw_a4dc41e6b1afece431f3c321145abe541}} 
+\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!getp\+Material@{getp\+Material}}
+\index{getp\+Material@{getp\+Material}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Material()}{getpMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Push\+Space\+Logo\+Draw\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{Draw\+Null}}を再実装しています。
+
+
+
+ Push\+Space\+Logo\+Draw.\+cpp の 106 行目に定義があります。
+
+\mbox{\Hypertarget{class_push_space_logo_draw_a9e0875967651293ef97713477334bc2e}\label{class_push_space_logo_draw_a9e0875967651293ef97713477334bc2e}} 
+\index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!getp\+Matrix@{getp\+Matrix}}
+\index{getp\+Matrix@{getp\+Matrix}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Matrix()}{getpMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Push\+Space\+Logo\+Draw\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{Draw\+Null}}を再実装しています。
+
+
+
+ Push\+Space\+Logo\+Draw.\+cpp の 93 行目に定義があります。
+
 \mbox{\Hypertarget{class_push_space_logo_draw_a7ad3fe53d9bda4ea16c958bc102ff54e}\label{class_push_space_logo_draw_a7ad3fe53d9bda4ea16c958bc102ff54e}} 
 \index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!Init@{Init}}
 \index{Init@{Init}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}
@@ -202,13 +158,6 @@ static const float \mbox{\hyperlink{class_push_space_logo_draw_a9ba8f8cd38e75d49
 
  Push\+Space\+Logo\+Draw.\+cpp の 33 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_push_space_logo_draw_a7ad3fe53d9bda4ea16c958bc102ff54e_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_push_space_logo_draw_a79021c1df43968d6008de74126d53fba}\label{class_push_space_logo_draw_a79021c1df43968d6008de74126d53fba}} 
 \index{Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Push\+Space\+Logo\+Draw@{Push\+Space\+Logo\+Draw}}

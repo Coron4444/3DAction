@@ -30,9 +30,10 @@ class TitleScene : public SceneBase
 public:
 	//----------------------------------------
 	//! @brief コンストラクタ
+	//! @details
 	//! @param state 最初のステート
 	//----------------------------------------
-	TitleScene(StateBase* state) : SceneBase(state) {}
+	TitleScene(StateBase* state);
 };
 
 

@@ -8,7 +8,7 @@ var class_cube_polygon =
     [ "CreateVertex", "class_cube_polygon.html#ae36048a1ae7b13b6bc8571231b372627", null ],
     [ "Draw", "class_cube_polygon.html#ac9003cd00eea402f2b6c5fb5a77feae2", null ],
     [ "GetMaterial", "class_cube_polygon.html#a6bd49d47a58c9c89a1ddaee37f7f4d22", null ],
-    [ "GetMeshNum", "class_cube_polygon.html#adf0956096c0d5dd31cf5b730dc8ca9c4", null ],
+    [ "getMeshNum", "class_cube_polygon.html#a50970957b530b7089487799210b14903", null ],
     [ "RegistrationIndex", "class_cube_polygon.html#a5a935712a3e3c1e12552aeedf2f409c1", null ],
     [ "RegistrationVertex", "class_cube_polygon.html#adde345ed591e3e81abcffdcac5068f98", null ],
     [ "SetColor", "class_cube_polygon.html#acf6a30c30c22dd887ed570db6cbe285d", null ],

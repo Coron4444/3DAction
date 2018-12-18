@@ -1,8 +1,6 @@
 var NAVTREEINDEX0 =
 {
 "_a_a_b_b_8h.html":[2,0,0,3,0,0,0,0,0,0,0],
-"_a_a_b_b_8h.html#abe938b9bf761a88c071bfaa6f6bb0415":[2,0,0,3,0,0,0,0,0,0,0,2],
-"_a_a_b_b_8h.html#acdd878bc13924b0296de2eedd3c67a5a":[2,0,0,3,0,0,0,0,0,0,0,1],
 "_a_a_b_b_8h_source.html":[2,0,0,3,0,0,0,0,0,0,0],
 "_axis_vector_8cpp.html":[2,0,0,3,11,3,0,0],
 "_axis_vector_8cpp_source.html":[2,0,0,3,11,3,0,0],
@@ -52,10 +50,10 @@ var NAVTREEINDEX0 =
 "_coin_factory_8h_source.html":[2,0,0,2,1,0,2,0],
 "_collision_base_8h.html":[2,0,0,3,0,0,0,2],
 "_collision_base_8h_source.html":[2,0,0,3,0,0,0,2],
-"_collision_judgment_8cpp.html":[2,0,0,3,1,0,0,0],
-"_collision_judgment_8cpp_source.html":[2,0,0,3,1,0,0,0],
-"_collision_judgment_8h.html":[2,0,0,3,1,0,0,1],
-"_collision_judgment_8h_source.html":[2,0,0,3,1,0,0,1],
+"_collision_calculation_8cpp.html":[2,0,0,3,1,0,0,0],
+"_collision_calculation_8cpp_source.html":[2,0,0,3,1,0,0,0],
+"_collision_calculation_8h.html":[2,0,0,3,1,0,0,1],
+"_collision_calculation_8h_source.html":[2,0,0,3,1,0,0,1],
 "_collision_manager_8cpp.html":[2,0,0,3,1,0,3],
 "_collision_manager_8cpp_source.html":[2,0,0,3,1,0,3],
 "_collision_manager_8h.html":[2,0,0,3,1,0,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "_effekseer_array_8h.html":[2,0,0,4,0,0,1],
 "_effekseer_array_8h_source.html":[2,0,0,4,0,0,1],
 "_effekseer_manager_8cpp.html":[2,0,0,4,0,1,0],
-"_effekseer_manager_8cpp.html#a5230e39fc78ff3a1c72bc6f0d23a651b":[2,0,0,4,0,1,0,0]
+"_effekseer_manager_8cpp.html#a5230e39fc78ff3a1c72bc6f0d23a651b":[2,0,0,4,0,1,0,0],
+"_effekseer_manager_8cpp_source.html":[2,0,0,4,0,1,0],
+"_effekseer_manager_8h.html":[2,0,0,4,0,1,1]
 };

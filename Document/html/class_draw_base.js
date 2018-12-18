@@ -1,20 +1,18 @@
 var class_draw_base =
 [
     [ "~DrawBase", "class_draw_base.html#a799597f696c5cbf6074fb2655dea5e18", null ],
-    [ "DebugDisplay", "class_draw_base.html#a2ba175f791ee01508ffb2be24c68fe7f", null ],
     [ "Draw", "class_draw_base.html#a408080106630a1146d7af0bb46a4d8d1", null ],
-    [ "GetDecaleTexture", "class_draw_base.html#a4e36184dbb605bcae13bfb38722ddc24", null ],
-    [ "GetDrawOrderList", "class_draw_base.html#a894bf875b80745150b250e584f00fa0c", null ],
-    [ "GetMaterial", "class_draw_base.html#ad82a75dff8e4e2f2ebbec2dd0d0734e5", null ],
-    [ "GetMatrix", "class_draw_base.html#a01239bf362040f7f2ef5e5f5371dcf18", null ],
-    [ "GetMeshNum", "class_draw_base.html#a194eb48924f205d60d4e63c5becdd2fe", null ],
-    [ "GetNormalTexture", "class_draw_base.html#a87bb54e7f422959e84ac00aa7631bd3b", null ],
-    [ "GetObjectNum", "class_draw_base.html#aed79e9db49de4fa2dff064495b877bcd", null ],
+    [ "getMeshNum", "class_draw_base.html#add488139aed539e7ccd19492702b4bee", null ],
+    [ "getObjectNum", "class_draw_base.html#a57c010b4386dc09afa124fba81a6e0fc", null ],
+    [ "getpDecaleTexture", "class_draw_base.html#a9f50a030778dbfca5ae45bb7908e0d58", null ],
+    [ "getpDrawOrderList", "class_draw_base.html#a280d750f48f6b8d148cbfe2988834268", null ],
+    [ "getpMaterial", "class_draw_base.html#a940543b482e934624637f3c6b4d17f96", null ],
+    [ "getpMatrix", "class_draw_base.html#a60fc3148b2679e4ea7723d2af0c37283", null ],
+    [ "getpNormalTexture", "class_draw_base.html#a76c3b910b495fcf69aacf6164ca90c7d", null ],
     [ "LimitedChangeCameraType", "class_draw_base.html#aa18abd488181eed72822f92a0f2521fe", null ],
     [ "RevivalCameraType", "class_draw_base.html#a48b144e61928b7658c7a849017e40c79", null ],
     [ "SettingAfterDrawing", "class_draw_base.html#afe64f27b0bbf8c45da7aa0de4c3f3d65", null ],
     [ "SettingBeforeDrawing", "class_draw_base.html#a3978252914ddde12197ea4577356bf25", null ],
-    [ "Update", "class_draw_base.html#af64b19d08a58927a789e2fb8a11cf524", null ],
     [ "draw_order_list_", "class_draw_base.html#a6ebc8dc96176ddd3bd984b3d54739adb", null ],
     [ "save_camera_type_", "class_draw_base.html#aa8be4980756a0af7cc76dfe455c492d4", null ]
 ];

@@ -1,0 +1,103 @@
+\hypertarget{_line_segment_8h}{}\section{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+Line\+Segment/\+Line\+Segment.h ファイル}
+\label{_line_segment_8h}\index{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+Line\+Segment/\+Line\+Segment.\+h@{C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+Line\+Segment/\+Line\+Segment.\+h}}
+
+
+線分\+Class  
+
+
+{\ttfamily \#include \char`\"{}../\+Collision\+Shape\+Base.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Vector3\+D.\+h$>$}\newline
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_line_segment}{Line\+Segment}}
+\begin{DoxyCompactList}\small\item\em 線分\+Class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_line_segment_8h_ae5a7193f9df0917cddf60b99a2109aca}{Shortest\+Distance\+Point\+And\+Line}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point, float $\ast$t, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment)
+\item 
+float \mbox{\hyperlink{_line_segment_8h_a28a47bd4eaa0e580638e12b0fd96d63c}{Shortest\+Distance\+Point\+And\+Line\+Segment}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point, float $\ast$t, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment)
+\item 
+bool \mbox{\hyperlink{_line_segment_8h_acac1292ea4e543f5dae54dcd27a9a6fb}{Is\+\_\+\+Parallel\+Segment}} (\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\item 
+float \mbox{\hyperlink{_line_segment_8h_a65feebcaaf49962c96b974ca030e0fd1}{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point0, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point1, float $\ast$t0, float $\ast$t1, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\item 
+void \mbox{\hyperlink{_line_segment_8h_a3f7783f4fefe063dc6ef6bbe5d58db06}{Clamp0\+\_\+1}} (float $\ast$t)
+\item 
+float \mbox{\hyperlink{_line_segment_8h_a353c5486aa9685ceb4b51c6a9eb93e3a}{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point0, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$cross\+\_\+point1, float $\ast$t0, float $\ast$t1, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+線分\+Class 
+
+\begin{DoxyAuthor}{著者}
+Kai Araki 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2018/11/02 
+\end{DoxyDate}
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{_line_segment_8h_a3f7783f4fefe063dc6ef6bbe5d58db06}\label{_line_segment_8h_a3f7783f4fefe063dc6ef6bbe5d58db06}} 
+\index{Line\+Segment.\+h@{Line\+Segment.\+h}!Clamp0\+\_\+1@{Clamp0\+\_\+1}}
+\index{Clamp0\+\_\+1@{Clamp0\+\_\+1}!Line\+Segment.\+h@{Line\+Segment.\+h}}
+\subsubsection{\texorpdfstring{Clamp0\+\_\+1()}{Clamp0\_1()}}
+{\footnotesize\ttfamily void Clamp0\+\_\+1 (\begin{DoxyParamCaption}\item[{float $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Line\+Segment.\+h の 232 行目に定義があります。
+
+\mbox{\Hypertarget{_line_segment_8h_acac1292ea4e543f5dae54dcd27a9a6fb}\label{_line_segment_8h_acac1292ea4e543f5dae54dcd27a9a6fb}} 
+\index{Line\+Segment.\+h@{Line\+Segment.\+h}!Is\+\_\+\+Parallel\+Segment@{Is\+\_\+\+Parallel\+Segment}}
+\index{Is\+\_\+\+Parallel\+Segment@{Is\+\_\+\+Parallel\+Segment}!Line\+Segment.\+h@{Line\+Segment.\+h}}
+\subsubsection{\texorpdfstring{Is\+\_\+\+Parallel\+Segment()}{Is\_ParallelSegment()}}
+{\footnotesize\ttfamily bool Is\+\_\+\+Parallel\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Line\+Segment.\+h の 154 行目に定義があります。
+
+\mbox{\Hypertarget{_line_segment_8h_a65feebcaaf49962c96b974ca030e0fd1}\label{_line_segment_8h_a65feebcaaf49962c96b974ca030e0fd1}} 
+\index{Line\+Segment.\+h@{Line\+Segment.\+h}!Shortest\+Distance\+\_\+\+Line\+\_\+\+Line@{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line}}
+\index{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line@{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line}!Line\+Segment.\+h@{Line\+Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+\_\+\+Line\+\_\+\+Line()}{ShortestDistance\_Line\_Line()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+\_\+\+Line\+\_\+\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point0,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point1,  }\item[{float $\ast$}]{t0,  }\item[{float $\ast$}]{t1,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Line\+Segment.\+h の 179 行目に定義があります。
+
+\mbox{\Hypertarget{_line_segment_8h_a353c5486aa9685ceb4b51c6a9eb93e3a}\label{_line_segment_8h_a353c5486aa9685ceb4b51c6a9eb93e3a}} 
+\index{Line\+Segment.\+h@{Line\+Segment.\+h}!Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment@{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment}}
+\index{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment@{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment}!Line\+Segment.\+h@{Line\+Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment()}{ShortestDistance\_Segment\_Segment()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+\_\+\+Segment\+\_\+\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point0,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point1,  }\item[{float $\ast$}]{t0,  }\item[{float $\ast$}]{t1,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Line\+Segment.\+h の 252 行目に定義があります。
+
+\mbox{\Hypertarget{_line_segment_8h_ae5a7193f9df0917cddf60b99a2109aca}\label{_line_segment_8h_ae5a7193f9df0917cddf60b99a2109aca}} 
+\index{Line\+Segment.\+h@{Line\+Segment.\+h}!Shortest\+Distance\+Point\+And\+Line@{Shortest\+Distance\+Point\+And\+Line}}
+\index{Shortest\+Distance\+Point\+And\+Line@{Shortest\+Distance\+Point\+And\+Line}!Line\+Segment.\+h@{Line\+Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+Point\+And\+Line()}{ShortestDistancePointAndLine()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+Point\+And\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point,  }\item[{float $\ast$}]{t,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Line\+Segment.\+h の 79 行目に定義があります。
+
+\mbox{\Hypertarget{_line_segment_8h_a28a47bd4eaa0e580638e12b0fd96d63c}\label{_line_segment_8h_a28a47bd4eaa0e580638e12b0fd96d63c}} 
+\index{Line\+Segment.\+h@{Line\+Segment.\+h}!Shortest\+Distance\+Point\+And\+Line\+Segment@{Shortest\+Distance\+Point\+And\+Line\+Segment}}
+\index{Shortest\+Distance\+Point\+And\+Line\+Segment@{Shortest\+Distance\+Point\+And\+Line\+Segment}!Line\+Segment.\+h@{Line\+Segment.\+h}}
+\subsubsection{\texorpdfstring{Shortest\+Distance\+Point\+And\+Line\+Segment()}{ShortestDistancePointAndLineSegment()}}
+{\footnotesize\ttfamily float Shortest\+Distance\+Point\+And\+Line\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} $\ast$}]{cross\+\_\+point,  }\item[{float $\ast$}]{t,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Line\+Segment.\+h の 113 行目に定義があります。
+

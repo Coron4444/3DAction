@@ -34,7 +34,7 @@ class TutorialSceneState_End : public SceneBase::StateBase
 //====================
 // 変数
 //====================
-protected:
+private:
 	TutorialScene* tutorial_scene_ = nullptr;		//!< チュートリアルシーン
 
 
@@ -45,6 +45,7 @@ protected:
 public:
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -52,6 +53,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 終了関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -59,6 +61,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -66,6 +69,7 @@ public:
 
 	//----------------------------------------
 	//! @brief リセット関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------

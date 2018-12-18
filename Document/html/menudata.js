@@ -74,7 +74,7 @@ var menudata={children:[
 {text:"クラス",url:"annotated.html",children:[
 {text:"クラス一覧",url:"annotated.html"},
 {text:"クラス索引",url:"classes.html"},
-{text:"クラス階層",url:"inherits.html"},
+{text:"クラス階層",url:"hierarchy.html"},
 {text:"クラスメンバ",url:"functions.html",children:[
 {text:"全て",url:"functions.html",children:[
 {text:"_",url:"functions.html#index__"},
@@ -163,6 +163,7 @@ var menudata={children:[
 {text:"d",url:"functions_eval.html#index_d"},
 {text:"e",url:"functions_eval.html#index_e"},
 {text:"g",url:"functions_eval.html#index_g"},
+{text:"l",url:"functions_eval.html#index_l"},
 {text:"m",url:"functions_eval.html#index_m"},
 {text:"n",url:"functions_eval.html#index_n"},
 {text:"o",url:"functions_eval.html#index_o"},
@@ -204,6 +205,7 @@ var menudata={children:[
 {text:"h",url:"globals_func_h.html#index_h"},
 {text:"i",url:"globals_func_i.html#index_i"},
 {text:"k",url:"globals_func_k.html#index_k"},
+{text:"l",url:"globals_func_l.html#index_l"},
 {text:"m",url:"globals_func_m.html#index_m"},
 {text:"o",url:"globals_func_o.html#index_o"},
 {text:"p",url:"globals_func_p.html#index_p"},

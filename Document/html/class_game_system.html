@@ -100,17 +100,6 @@ $(document).ready(function(){initNavTree('class_game_system.html','');});
  <a href="class_game_system.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="_game_system_8h_source.html">GameSystem.h</a>&gt;</code></p>
-<div class="dynheader">
-GameSystem 連携図</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system__coll__graph.png" border="0" usemap="#_game_system_coll__map" alt="Collaboration graph"/></div>
-<map name="_game_system_coll__map" id="_game_system_coll__map">
-<area shape="rect" id="node2" href="class_scene_manager.html" title="シーンマネージャClass " alt="" coords="137,95,246,121"/>
-<area shape="rect" id="node3" href="class_scene_base.html" title="シーンBaseClass " alt="" coords="213,199,303,225"/>
-<area shape="rect" id="node4" href="class_scene_base_1_1_state_base.html" title="シーンステートBaseClass " alt="" coords="179,288,337,315"/>
-<area shape="rect" id="node5" href="class_scene_manager_1_1_common_data.html" title="シーン間共通データClass " alt="" coords="93,5,289,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -139,9 +128,10 @@ GameSystem 連携図</div>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>ゲームシステムClass </p>
 <p>ゲームシステム全体を管理する</p>
-<p>Renderer、SceneManager、Input、Sound、Debuger等を管理する </p>
+<p>Renderer、SceneManager、</p>
+<p>Input、Sound、Debuger等を管理する </p>
 
-<p class="definition"> <a class="el" href="_game_system_8h_source.html">GameSystem.h</a> の <a class="el" href="_game_system_8h_source.html#l00032">32</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_game_system_8h_source.html">GameSystem.h</a> の <a class="el" href="_game_system_8h_source.html#l00033">33</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">関数詳解</h2>
 <a id="a474db0066b23d39e94e0a830140edce5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a474db0066b23d39e94e0a830140edce5">&#9670;&nbsp;</a></span>Draw()</h2>
@@ -173,71 +163,6 @@ GameSystem 連携図</div>
 </dl>
 
 <p class="definition"> <a class="el" href="_game_system_8cpp_source.html">GameSystem.cpp</a> の <a class="el" href="_game_system_8cpp_source.html#l00136">136</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_a474db0066b23d39e94e0a830140edce5_cgraph.png" border="0" usemap="#class_game_system_a474db0066b23d39e94e0a830140edce5_cgraph" alt=""/></div>
-<map name="class_game_system_a474db0066b23d39e94e0a830140edce5_cgraph" id="class_game_system_a474db0066b23d39e94e0a830140edce5_cgraph">
-<area shape="rect" id="node2" href="class_scene_manager.html#a828b35826f757b8af34aa767c6b40378" title="シーン描画関数 " alt="" coords="192,321,375,348"/>
-<area shape="rect" id="node6" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="1309,43,1458,69"/>
-<area shape="rect" id="node46" href="namespace_im_gui.html#ab51a164f547317c16c441f1599e3946d" title="ImGui::Render" alt="" coords="231,372,336,399"/>
-<area shape="rect" id="node49" href="class_renderer.html#a1dac4baae1fa79166442b0778a9c8728" title="バックバッファをフロントバッファに反映関数 " alt="" coords="220,452,347,479"/>
-<area shape="rect" id="node3" href="class_game_object_manager.html#a0549bd4b6575ee28803c0ff8fd2be2ee" title="描画関数 " alt="" coords="423,321,605,348"/>
-<area shape="rect" id="node4" href="class_draw_manager.html#a43372495e68d77a2698f211cf921b37e" title="描画関数 " alt="" coords="653,461,792,488"/>
-<area shape="rect" id="node5" href="class_back_buffer.html#adb51191c002489e4faac54199449e9ef" title="描画関数 " alt="" coords="840,600,963,627"/>
-<area shape="rect" id="node8" href="class_renderer.html#a56662123051f8898c4e8e9d5457fd317" title="Renderer::getDevice" alt="" coords="1048,296,1187,323"/>
-<area shape="rect" id="node9" href="class_renderer.html#af420951c9c163f1151bd6600df204cee" title="描画開始関数 " alt="" coords="1045,347,1189,373"/>
-<area shape="rect" id="node11" href="class_camera.html#a6218126e761a8289c6e6bc8c66b05e47" title="Camera::SetType" alt="" coords="1322,397,1445,424"/>
-<area shape="rect" id="node12" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="1049,651,1185,693"/>
-<area shape="rect" id="node13" href="class_shader_manager.html#ad2caed4ae50c1ca784151d0f9e50c381" title="シェーダー設定関数 " alt="" coords="1292,448,1475,475"/>
-<area shape="rect" id="node16" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="1049,717,1185,758"/>
-<area shape="rect" id="node17" href="class_draw_base.html#aed79e9db49de4fa2dff064495b877bcd" title="DrawBase::GetObjectNum" alt="" coords="1030,783,1205,809"/>
-<area shape="rect" id="node18" href="class_draw_base.html#a3978252914ddde12197ea4577356bf25" title="描画前設定関数 " alt="" coords="1011,833,1224,860"/>
-<area shape="rect" id="node19" href="class_shader_manager.html#a6cfff8f4aee59d9bc5162a5a6f4d07d4" title="共通設定関数 " alt="" coords="1276,549,1491,576"/>
-<area shape="rect" id="node22" href="class_draw_base.html#a194eb48924f205d60d4e63c5becdd2fe" title="DrawBase::GetMeshNum" alt="" coords="1033,884,1202,911"/>
-<area shape="rect" id="node23" href="class_shader_manager.html#af016392b9b0477d49165d753e9404ff4" title="固有設定関数 " alt="" coords="1279,613,1487,640"/>
-<area shape="rect" id="node26" href="class_draw_base.html#a408080106630a1146d7af0bb46a4d8d1" title="描画関数 " alt="" coords="1058,935,1177,961"/>
-<area shape="rect" id="node27" href="class_draw_base.html#afe64f27b0bbf8c45da7aa0de4c3f3d65" title="描画後設定関数 " alt="" coords="1016,985,1219,1012"/>
-<area shape="rect" id="node28" href="class_effekseer_manager.html#a0c9155e72b0552e5138e68be682a63a4" title="EffekseerManager::Draw" alt="" coords="1036,195,1199,221"/>
-<area shape="rect" id="node29" href="class_renderer.html#a581267c3eeedce9b333c119d009e315c" title="Renderer::getRenderer" alt="" coords="1307,220,1459,247"/>
-<area shape="rect" id="node30" href="class_render_texture.html#adb19f86d2ac55e95d8725c64a846e8d0" title="RenderTexture::GetMaterial" alt="" coords="1027,1036,1208,1063"/>
-<area shape="rect" id="node32" href="class_camera.html#aa472374f61480c5a9dff89d30be029f4" title="Camera::GetViewMatrix" alt="" coords="1037,1087,1197,1113"/>
-<area shape="rect" id="node33" href="class_camera.html#a473a7a8408bc7a1fdd46d12fa3852846" title="Camera::GetProjectionMatrix" alt="" coords="1022,1137,1213,1164"/>
-<area shape="rect" id="node34" href="class_render_texture.html#ac27f8cfac7903dd502de61e22abfc457" title="RenderTexture::Update" alt="" coords="1040,1188,1195,1215"/>
-<area shape="rect" id="node39" href="class_render_texture.html#a0e9746f5cebdd088f2303e18cbc52eae" title="RenderTexture::GetMatrix" alt="" coords="1032,1289,1203,1316"/>
-<area shape="rect" id="node42" href="class_back_buffer.html#a9835a5db9850f774a382c4f8e611b1d1" title="フェード描画関数 " alt="" coords="1042,499,1193,525"/>
-<area shape="rect" id="node44" href="class_renderer.html#a0393849bd4178a33861780bf07b0deee" title="描画終了関数 " alt="" coords="1050,93,1185,120"/>
-<area shape="rect" id="node45" href="class_render_texture.html#a529ab829c676470ae5764b42cba9efb0" title="描画関数 " alt="" coords="1046,144,1189,171"/>
-<area shape="rect" id="node7" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="1583,43,1717,69"/>
-<area shape="rect" id="node10" href="class_renderer_interface.html#a86a487deb4e4207a67410d00ec670fd7" title="描画開始関数 " alt="" coords="1318,331,1449,373"/>
-<area shape="rect" id="node14" href="class_shader_manager.html#a3661a079ae4e9e7e4d5da35f2171b41e" title="頂点シェーダー設定関数 " alt="" coords="1561,370,1739,411"/>
-<area shape="rect" id="node15" href="class_shader_manager.html#a6c954293001a33fafff216ff719618d5" title="ピクセルシェーダー設定関数 " alt="" coords="1545,436,1755,463"/>
-<area shape="rect" id="node20" href="class_shader_manager.html#a836c92ee48dfbf8b8c8085f9413027bd" title="頂点シェーダー共通設定関数 " alt="" coords="1543,487,1757,529"/>
-<area shape="rect" id="node21" href="class_shader_manager.html#ad2b591958e1d22d746e5ed3d7941e4c1" title="ピクセルシェーダー共通設定関数 " alt="" coords="1543,553,1757,594"/>
-<area shape="rect" id="node24" href="class_shader_manager.html#a2433c0715142fd310a497e080f7d0ddb" title="頂点シェーダー固有設定関数 " alt="" coords="1546,618,1754,659"/>
-<area shape="rect" id="node25" href="class_shader_manager.html#a1158156785098fe426dd514e4c2a97c1" title="ピクセルシェーダー固有設定関数 " alt="" coords="1546,683,1754,725"/>
-<area shape="rect" id="node31" href="class_plane_polygon.html#a808087c9d82c0eb7cfb0709c9906e833" title="PlanePolygon::GetMaterial" alt="" coords="1295,1036,1472,1063"/>
-<area shape="rect" id="node35" href="class_transform.html#addff6461a77b9f5c5249e46deb5c2c19" title="Transform::GetPosition" alt="" coords="1306,1188,1461,1215"/>
-<area shape="rect" id="node36" href="class_transform.html#accedf33a4ddbdcf2d4fc4274f85bf818" title="Transform::GetScale" alt="" coords="1313,1239,1454,1265"/>
-<area shape="rect" id="node37" href="class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="1272,1087,1495,1113"/>
-<area shape="rect" id="node38" href="class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113" title="PlanePolygon::SetColor" alt="" coords="1303,1137,1463,1164"/>
-<area shape="rect" id="node40" href="class_transform.html#ab1101d4467d772f3ddc0558586e39c79" title="Transform::GetMatrixExtend" alt="" coords="1291,1289,1476,1316"/>
-<area shape="rect" id="node41" href="class_matrix_extend.html#a1a88845d1b9da14c33c91fa8da2e3a15" title="MatrixExtend::GetWorldMatrix" alt="" coords="1284,1340,1483,1367"/>
-<area shape="rect" id="node43" href="class_fade.html#aed5a29d39a5fd6161a9aed73d5f30870" title="Fade::GetType" alt="" coords="1329,499,1437,525"/>
-<area shape="rect" id="node47" href="namespace_im_gui.html#a246c37da45e88a12ade440a0feacb4ee" title="ImGui::EndFrame" alt="" coords="452,372,576,399"/>
-<area shape="rect" id="node48" href="class_im_vector.html#ac371dd62e56ae486b1a5038cf07eee56" title="ImVector::resize" alt="" coords="455,423,573,449"/>
-<area shape="rect" id="node50" href="class_renderer_interface.html#aa9e12d2a2f5ffa351c457cfc7806b6f1" title="バックバッファをフロントバッファに反映関数 " alt="" coords="449,474,579,515"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_a474db0066b23d39e94e0a830140edce5_icgraph.png" border="0" usemap="#class_game_system_a474db0066b23d39e94e0a830140edce5_icgraph" alt=""/></div>
-<map name="class_game_system_a474db0066b23d39e94e0a830140edce5_icgraph" id="class_game_system_a474db0066b23d39e94e0a830140edce5_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="192,5,353,32"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="401,5,475,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -304,71 +229,6 @@ GameSystem 連携図</div>
 </dl>
 
 <p class="definition"> <a class="el" href="_game_system_8cpp_source.html">GameSystem.cpp</a> の <a class="el" href="_game_system_8cpp_source.html#l00043">43</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_ad4c08500b98490e00ce87a770bb5e981_cgraph.png" border="0" usemap="#class_game_system_ad4c08500b98490e00ce87a770bb5e981_cgraph" alt=""/></div>
-<map name="class_game_system_ad4c08500b98490e00ce87a770bb5e981_cgraph" id="class_game_system_ad4c08500b98490e00ce87a770bb5e981_cgraph">
-<area shape="rect" id="node2" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="1152,72,1301,99"/>
-<area shape="rect" id="node4" href="class_renderer.html#a02e3c483b2c9d8024e51639a06159066" title="Renderer::setRenderer" alt="" coords="180,637,332,664"/>
-<area shape="rect" id="node7" href="class_renderer.html#a8d576add80187f5be3f24ec6a8108100" title="初期化関数 " alt="" coords="207,688,305,715"/>
-<area shape="rect" id="node9" href="_sound_8cpp.html#aceadfe81208035851c93101ca132dd0a" title="InitSound" alt="" coords="218,739,294,765"/>
-<area shape="rect" id="node12" href="_keyboard_8cpp.html#ac6c5ef03598b5e66143f526d200b4801" title="InitKeyboard" alt="" coords="209,789,303,816"/>
-<area shape="rect" id="node14" href="class_renderer.html#a56662123051f8898c4e8e9d5457fd317" title="Renderer::getDevice" alt="" coords="1157,123,1296,149"/>
-<area shape="rect" id="node15" href="imgui__impl__dx9_8cpp.html#a4ccb8384ba0d263926415ec5bac4662b" title="ImGui_ImplDX9_Init" alt="" coords="189,840,323,867"/>
-<area shape="rect" id="node16" href="class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00" title="初期化関数 " alt="" coords="189,444,323,471"/>
-<area shape="rect" id="node3" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="1384,5,1519,32"/>
-<area shape="rect" id="node5" href="class_renderer_factory_interface.html#aa81911973b6079fda8489409385d71e3" title="生成関数 " alt="" coords="398,571,565,613"/>
-<area shape="rect" id="node6" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="409,637,553,664"/>
-<area shape="rect" id="node8" href="class_renderer_interface.html#aabef76c27c2332c1af2dbcf7e8de5d38" title="初期化関数 " alt="" coords="407,688,555,715"/>
-<area shape="rect" id="node10" href="_sound_8cpp.html#ae43c9a37417f8e415f94217dc0655b09" title="CheckChunk" alt="" coords="433,739,529,765"/>
-<area shape="rect" id="node11" href="_sound_8cpp.html#a4df351b04de0e37e5759201a69b52ca2" title="ReadChunkData" alt="" coords="423,789,539,816"/>
-<area shape="rect" id="node13" href="_keyboard_8cpp.html#aa8c0249b5d9a8511b2210015b3deeaf8" title="InitInput" alt="" coords="448,840,515,867"/>
-<area shape="rect" id="node17" href="class_scene_manager_1_1_common_data.html#a32823be65c187b909e4159cef57931a9" title="リセット関数 " alt="" coords="383,353,579,394"/>
-<area shape="rect" id="node18" href="class_resource_manager.html#aa91dc794c10825768c5d85e69342632b" title="ResourceManager::InitAllData" alt="" coords="384,419,579,445"/>
-<area shape="rect" id="node28" href="class_game_object_manager.html#abda84aa3b4c79090c43243f93b5a9c46" title="初期化関数 " alt="" coords="396,292,567,319"/>
-<area shape="rect" id="node48" href="class_scene_base.html#aae1930cae97c27ee7d54b4bd8896a515" title="SceneBase::setSceneManager" alt="" coords="380,469,583,496"/>
-<area shape="rect" id="node49" href="class_scene_base.html#a494ba624fdd95b296e4487ed1a34f47b" title="初期化関数 " alt="" coords="424,520,539,547"/>
-<area shape="rect" id="node19" href="class_texture_manager.html#aee4c784f3f32bfe810bf66313735dece" title="TextureManager::InitAllData" alt="" coords="636,419,819,445"/>
-<area shape="rect" id="node22" href="class_model_x_manager.html#a8d7965d9eaa41fcf0297eebea287ee82" title="ModelXManager::InitAllData" alt="" coords="637,477,818,504"/>
-<area shape="rect" id="node25" href="class_effekseer_manager.html#ac5744fba29048e417bf46a8fbf5a8e76" title="EffekseerManager::InitAllData" alt="" coords="631,553,824,580"/>
-<area shape="rect" id="node20" href="class_texture_manager.html#abfba2c4293e692a351d9b98e28f6ed31" title="TextureManager::InitUniqueData" alt="" coords="878,376,1085,403"/>
-<area shape="rect" id="node21" href="class_texture_manager.html#aed1e9666d0ef8698db754280a1d4bad4" title="TextureManager::InitShareData" alt="" coords="881,427,1082,453"/>
-<area shape="rect" id="node23" href="class_model_x_manager.html#a9bed6cb5ffcd2cbfec6c405e21af362e" title="ModelXManager::InitUniqueData" alt="" coords="878,477,1085,504"/>
-<area shape="rect" id="node24" href="class_model_x_manager.html#a8096a9ed1b19c41270df944aa855015a" title="ModelXManager::InitShareData" alt="" coords="881,528,1081,555"/>
-<area shape="rect" id="node26" href="class_effekseer_manager.html#a95d9d2eda8cb691c2565d022198b5787" title="EffekseerManager::InitUniqueData" alt="" coords="872,579,1091,605"/>
-<area shape="rect" id="node27" href="class_effekseer_manager.html#a881d9bdd981c35de66174363517050b4" title="EffekseerManager::InitShareData" alt="" coords="875,629,1087,656"/>
-<area shape="rect" id="node29" href="class_update_manager.html#a7b0a2a3bf51d4fcb83fd25fe642fc66b" title="初期化関数 " alt="" coords="658,275,797,301"/>
-<area shape="rect" id="node30" href="class_draw_manager.html#a3cb9319d492285bd9dfc983d27e5d04f" title="初期化関数 " alt="" coords="664,224,791,251"/>
-<area shape="rect" id="node46" href="class_collision_manager.html#a2c5770b90b7a46a5674df008a7a57145" title="初期化関数 " alt="" coords="654,325,801,352"/>
-<area shape="rect" id="node31" href="class_shader_manager.html#a8e8fd62a28cc18addcd5ec6507a5dcb0" title="初期化関数 " alt="" coords="912,224,1051,251"/>
-<area shape="rect" id="node35" href="class_back_buffer.html#a65ac0a652db2a558ecda120ef3f47a10" title="初期化関数 " alt="" coords="926,173,1037,200"/>
-<area shape="rect" id="node45" href="class_back_buffer.html#a44566449a4df988cb1cfe5ffbb0455cc" title="BackBuffer::SetShaderManager" alt="" coords="879,275,1083,301"/>
-<area shape="rect" id="node32" href="class_shader_manager.html#a9881e89daff32662e10f6ac48212ca06" title="頂点シェーダー初期化関数 " alt="" coords="1139,330,1315,371"/>
-<area shape="rect" id="node34" href="class_shader_manager.html#a6e1c2dc6c381081bc0e5ef1624b8e0f0" title="ピクセルシェーダー初期化関数 " alt="" coords="1143,398,1310,439"/>
-<area shape="rect" id="node33" href="class_shader_base.html#a9622b2f5e0184a78d3af82820dc5113d" title="初期化関数 " alt="" coords="1392,407,1511,433"/>
-<area shape="rect" id="node36" href="class_back_buffer.html#a04e942576ac5de94d16764d347111234" title="全配列のリセット関数 " alt="" coords="1140,173,1313,200"/>
-<area shape="rect" id="node38" href="class_camera.html#a03e3ca8b70417632f7b1b581426ec66d" title="初期化関数 " alt="" coords="1181,224,1273,251"/>
-<area shape="rect" id="node44" href="class_render_texture.html#a498eb8be8672e01164b3770cdff43291" title="初期化関数 " alt="" coords="1161,275,1292,301"/>
-<area shape="rect" id="node37" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="1383,57,1519,98"/>
-<area shape="rect" id="node39" href="class_axis_vector.html#ac429404c0b565c24307da4442e49bb61" title="AxisVector::SetForward" alt="" coords="1371,123,1531,149"/>
-<area shape="rect" id="node40" href="class_camera_1_1_state.html#aa1b81471ab15e64b3117ffe7de9560ff" title="初期化関数 " alt="" coords="1386,173,1517,200"/>
-<area shape="rect" id="node41" href="class_camera.html#a5b4993ffb218536cb31d6d5224453b1a" title="ビュー行列作成関数 " alt="" coords="1363,224,1540,251"/>
-<area shape="rect" id="node42" href="class_camera.html#a1786fe1adbe95e2ffa2de4cdb114546a" title="プロジェクション行列作成関数(透視投影行列) " alt="" coords="1366,275,1537,317"/>
-<area shape="rect" id="node43" href="class_camera.html#a215010fc78cb35ed588ac9676c166f64" title="プロジェクション行列作成関数(正射影行列) " alt="" coords="1366,341,1537,382"/>
-<area shape="rect" id="node47" href="class_liner_octree.html#a715d655c722c00c002d0bb006d0600d8" title="初期化関数 " alt="" coords="924,325,1039,352"/>
-<area shape="rect" id="node50" href="class_scene_base_1_1_state_base.html#a33350231b039a2178c19beac0211c5b8" title="初期化関数 " alt="" coords="648,605,807,646"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_ad4c08500b98490e00ce87a770bb5e981_icgraph.png" border="0" usemap="#class_game_system_ad4c08500b98490e00ce87a770bb5e981_icgraph" alt=""/></div>
-<map name="class_game_system_ad4c08500b98490e00ce87a770bb5e981_icgraph" id="class_game_system_ad4c08500b98490e00ce87a770bb5e981_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="180,5,341,32"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="389,5,463,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -402,71 +262,6 @@ GameSystem 連携図</div>
 </dl>
 
 <p class="definition"> <a class="el" href="_game_system_8cpp_source.html">GameSystem.cpp</a> の <a class="el" href="_game_system_8cpp_source.html#l00161">161</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_aa416827abc995e1b8df4a5cf87911baf_cgraph.png" border="0" usemap="#class_game_system_aa416827abc995e1b8df4a5cf87911baf_cgraph" alt=""/></div>
-<map name="class_game_system_aa416827abc995e1b8df4a5cf87911baf_cgraph" id="class_game_system_aa416827abc995e1b8df4a5cf87911baf_cgraph">
-<area shape="rect" id="node2" href="class_scene_manager.html#a63dcf65832d6a2c190bf496d9a3b00a3" title="更新関数 " alt="" coords="229,669,388,695"/>
-<area shape="rect" id="node3" href="class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770" title="シーン変更関数 " alt="" coords="436,742,635,769"/>
-<area shape="rect" id="node46" href="class_scene_manager.html#a0652a81c7baff52add9ec4b13205865c" title="シーンリセット関数 " alt="" coords="441,595,629,622"/>
-<area shape="rect" id="node4" href="class_game_object_manager.html#a862e76bfd74495c20bddd377c62a22b7" title="GameObjectManager::\lGetDrawManager" alt="" coords="723,617,877,659"/>
-<area shape="rect" id="node5" href="class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="719,917,881,943"/>
-<area shape="rect" id="node6" href="class_game_object_manager.html#ad962739b2c2f54d4160c3513132930da" title="シーン変更時の終了関数 " alt="" coords="715,800,885,841"/>
-<area shape="rect" id="node29" href="class_resource_manager.html#abcb135906cb991a49ec6e8c8db057de1" title="ResourceManager::UninitUniqueData" alt="" coords="683,1062,917,1089"/>
-<area shape="rect" id="node33" href="class_scene_base.html#aae1930cae97c27ee7d54b4bd8896a515" title="SceneBase::setSceneManager" alt="" coords="699,1113,901,1139"/>
-<area shape="rect" id="node34" href="class_scene_base.html#a494ba624fdd95b296e4487ed1a34f47b" title="初期化関数 " alt="" coords="743,866,857,893"/>
-<area shape="rect" id="node36" href="class_draw_manager.html#a0e7e11e650f1c1736e9d3199a58191a7" title="DrawManager::GetBackBuffer" alt="" coords="703,683,897,710"/>
-<area shape="rect" id="node37" href="class_back_buffer.html#ad3d3626427f53f060f5057ea6a22cac6" title="フェード終了関数 " alt="" coords="723,566,877,593"/>
-<area shape="rect" id="node39" href="class_back_buffer.html#add3a034c7758dc6a72bb4582bf6ce78e" title="フェード初期化関数 " alt="" coords="731,515,869,542"/>
-<area shape="rect" id="node45" href="class_scene_manager_1_1_common_data.html#acff0faeef41334781fc49184ada1a5a4" title="SceneManager::CommonData\l::setIsUpdate" alt="" coords="702,735,898,776"/>
-<area shape="rect" id="node7" href="class_game_object_manager.html#a58e1266da3b18a4c0bded551e386c6ae" title="全ゲームオブジェクトの解放関数 " alt="" coords="1000,800,1153,841"/>
-<area shape="rect" id="node20" href="class_collision_manager.html#a33ce56b5a6f68d71b0f2bf733413dddb" title="シーン変更時の終了関数 " alt="" coords="995,617,1158,659"/>
-<area shape="rect" id="node26" href="class_draw_manager.html#a8b4ea38d625efbcc08d9b168cb5465f9" title="シーン変更時の終了関数 " alt="" coords="967,931,1187,972"/>
-<area shape="rect" id="node28" href="class_update_manager.html#a2e0a6b1a620ba620783d929e532b6148" title="シーン変更時の終了関数 " alt="" coords="983,865,1171,907"/>
-<area shape="rect" id="node8" href="class_game_object_reference_manager.html#ac4852ddd6d8bd5e1f13284ba6204e221" title="GameObjectReferenceManager\l::AllReleaseReference" alt="" coords="1251,975,1454,1016"/>
-<area shape="rect" id="node10" href="class_game_object_manager.html#a5a6c1208229decd93c6ef396bce35b3a" title="解放待ち配列の中身を解放関数 " alt="" coords="1246,793,1459,849"/>
-<area shape="rect" id="node11" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="1557,647,1693,688"/>
-<area shape="rect" id="node13" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="1557,505,1693,547"/>
-<area shape="rect" id="node14" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="1557,979,1693,1020"/>
-<area shape="rect" id="node15" href="class_game_object_manager.html#a83342c1c358e32f6478ae3428fcb25fa" title="ゲームオブジェクト基底クラスの解放関数 " alt="" coords="1236,1193,1469,1235"/>
-<area shape="rect" id="node9" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="1553,873,1697,899"/>
-<area shape="rect" id="node12" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="1521,756,1728,797"/>
-<area shape="rect" id="node16" href="class_game_object_base.html#a97e1bc277d7b1c0156d4735de29a022c" title="終了関数 " alt="" coords="1541,1230,1708,1257"/>
-<area shape="rect" id="node17" href="class_game_object_manager.html#a3435fd94a3a7b9eb69f422e33848137a" title="コンポーネントをマネージャーから解放関数 " alt="" coords="1517,1281,1732,1323"/>
-<area shape="rect" id="node18" href="class_game_object_reference_manager.html#ac7d117427de3052f893228408a3de5d7" title="GameObjectReferenceManager\l::ReleaseReference" alt="" coords="1523,1099,1726,1140"/>
-<area shape="rect" id="node19" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="1557,1164,1693,1205"/>
-<area shape="rect" id="node21" href="class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="1254,676,1451,717"/>
-<area shape="rect" id="node22" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="1262,508,1443,549"/>
-<area shape="rect" id="node23" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="1265,443,1441,484"/>
-<area shape="rect" id="node24" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="1263,325,1443,367"/>
-<area shape="rect" id="node25" href="class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="1255,391,1450,418"/>
-<area shape="rect" id="node27" href="class_back_buffer.html#a989c5474cabde7f88c197a2a235e8424" title="シーン変更時の終了関数 " alt="" coords="1251,1259,1455,1300"/>
-<area shape="rect" id="node30" href="class_model_x_manager.html#a7dde269502f40b7d1208c8e0f84b13f0" title="ModelXManager::UninitUniqueData" alt="" coords="965,1062,1188,1089"/>
-<area shape="rect" id="node31" href="class_texture_manager.html#a9d9dd61edf4153bd70ba830ae2dc62e8" title="TextureManager::UninitUniqueData" alt="" coords="965,1113,1188,1139"/>
-<area shape="rect" id="node32" href="class_effekseer_manager.html#abd448f6ec39f2306a6dc99b79aff0362" title="EffekseerManager::Uninit\lUniqueData" alt="" coords="993,1164,1160,1205"/>
-<area shape="rect" id="node35" href="class_scene_base_1_1_state_base.html#a33350231b039a2178c19beac0211c5b8" title="初期化関数 " alt="" coords="997,996,1156,1037"/>
-<area shape="rect" id="node38" href="class_fade.html#ae77d06811869d3c8162a42c3e0e14f7f" title="終了関数 " alt="" coords="1031,566,1123,593"/>
-<area shape="rect" id="node40" href="class_fade.html#aab12848f7102a219968c86ed699a6e5d" title="初期化関数 " alt="" coords="1039,198,1115,225"/>
-<area shape="rect" id="node41" href="class_transform.html#accedf33a4ddbdcf2d4fc4274f85bf818" title="Transform::GetScale" alt="" coords="1282,71,1423,98"/>
-<area shape="rect" id="node42" href="class_transform.html#af1a2dcb4a9d37dd71c203ec248535887" title="Transform::UpdateWorldMatrixSRT" alt="" coords="1241,122,1464,149"/>
-<area shape="rect" id="node43" href="class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113" title="PlanePolygon::SetColor" alt="" coords="1273,173,1433,199"/>
-<area shape="rect" id="node44" href="_time_to_frame_8h.html#acce6a90aebf40509e02a2c7c6cc3dc3d" title="Second_To_Frame" alt="" coords="1287,223,1418,250"/>
-<area shape="rect" id="node47" href="class_game_object_manager.html#a38f980aec0970f45eb9bc55db8ac01a3" title="全ゲームオブジェクトリセット関数 " alt="" coords="1276,5,1429,47"/>
-<area shape="rect" id="node49" href="class_scene_base.html#ae2dc09554ec21ffe231fa73a6cdd7ca1" title="リセット関数 " alt="" coords="735,93,865,119"/>
-<area shape="rect" id="node48" href="class_game_object_base.html#a85c59554f734bcb09f1a1e18d9517dce" title="リセット関数 " alt="" coords="1541,13,1708,39"/>
-<area shape="rect" id="node50" href="class_scene_base_1_1_state_base.html#a2e14a3afece0b1d8db9edcebf514a977" title="リセット関数 " alt="" coords="997,81,1156,123"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_aa416827abc995e1b8df4a5cf87911baf_icgraph.png" border="0" usemap="#class_game_system_aa416827abc995e1b8df4a5cf87911baf_icgraph" alt=""/></div>
-<map name="class_game_system_aa416827abc995e1b8df4a5cf87911baf_icgraph" id="class_game_system_aa416827abc995e1b8df4a5cf87911baf_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="229,5,391,32"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="439,5,512,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -500,35 +295,6 @@ GameSystem 連携図</div>
 </dl>
 
 <p class="definition"> <a class="el" href="_game_system_8cpp_source.html">GameSystem.cpp</a> の <a class="el" href="_game_system_8cpp_source.html#l00088">88</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_af76866bd03b84dca6880f1493fd3c9d1_cgraph.png" border="0" usemap="#class_game_system_af76866bd03b84dca6880f1493fd3c9d1_cgraph" alt=""/></div>
-<map name="class_game_system_af76866bd03b84dca6880f1493fd3c9d1_cgraph" id="class_game_system_af76866bd03b84dca6880f1493fd3c9d1_cgraph">
-<area shape="rect" id="node2" href="class_safe_release.html#a06160f5466a88f021e6f28489de9df1e" title="解放関数(終了有) " alt="" coords="427,147,589,174"/>
-<area shape="rect" id="node3" href="imgui__impl__dx9_8cpp.html#a5e30073c13a72eb3d578541e796cf646" title="ImGui_ImplDX9_Shutdown" alt="" coords="198,58,373,85"/>
-<area shape="rect" id="node7" href="_keyboard_8cpp.html#acffdec32c8240d863bcca339cce38ea1" title="UninitKeyboard" alt="" coords="230,261,341,287"/>
-<area shape="rect" id="node9" href="_sound_8cpp.html#adb0c5965a285c4f34d2051cbc71b3691" title="UninitSound" alt="" coords="239,210,331,237"/>
-<area shape="rect" id="node10" href="class_renderer.html#ac1bf10ff8b4f967f0d416a26d482abd6" title="Renderer::getInstance" alt="" coords="211,311,360,338"/>
-<area shape="rect" id="node12" href="class_renderer.html#ae865246d6a04d467ac22458f6f5f69d4" title="終了関数 " alt="" coords="228,109,343,135"/>
-<area shape="rect" id="node13" href="class_renderer.html#aa7ac523172faaf376ecddaed4bdc0781" title="インスタンス解放関数 " alt="" coords="196,362,375,389"/>
-<area shape="rect" id="node4" href="imgui__impl__dx9_8cpp.html#a804e9baf417a8919403b887f2a53d1ff" title="ImGui_ImplDX9_Invalidate\lDeviceObjects" alt="" coords="423,5,593,47"/>
-<area shape="rect" id="node5" href="namespace_im_gui.html#aeba34069558d4fbcf734a9c92ce3b773" title="ImGui::Shutdown" alt="" coords="447,71,569,98"/>
-<area shape="rect" id="node6" href="struct_im_font_atlas.html#a8f6d01c671d8670f991ba651bbaf7e77" title="ImFontAtlas::Clear" alt="" coords="641,71,772,98"/>
-<area shape="rect" id="node8" href="_keyboard_8cpp.html#abf030db97d84146b69da0d263ef721e5" title="UninitInput" alt="" coords="467,261,549,287"/>
-<area shape="rect" id="node11" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6" title="コンストラクタ " alt="" coords="441,311,575,338"/>
-<area shape="rect" id="node14" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="436,362,580,389"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_af76866bd03b84dca6880f1493fd3c9d1_icgraph.png" border="0" usemap="#class_game_system_af76866bd03b84dca6880f1493fd3c9d1_icgraph" alt=""/></div>
-<map name="class_game_system_af76866bd03b84dca6880f1493fd3c9d1_icgraph" id="class_game_system_af76866bd03b84dca6880f1493fd3c9d1_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="196,5,357,32"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="405,5,479,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -562,71 +328,6 @@ GameSystem 連携図</div>
 </dl>
 
 <p class="definition"> <a class="el" href="_game_system_8cpp_source.html">GameSystem.cpp</a> の <a class="el" href="_game_system_8cpp_source.html#l00114">114</a> 行目に定義があります。</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_ab0add1f2bd97d3b125a5682f571053a3_cgraph.png" border="0" usemap="#class_game_system_ab0add1f2bd97d3b125a5682f571053a3_cgraph" alt=""/></div>
-<map name="class_game_system_ab0add1f2bd97d3b125a5682f571053a3_cgraph" id="class_game_system_ab0add1f2bd97d3b125a5682f571053a3_cgraph">
-<area shape="rect" id="node2" href="imgui__impl__dx9_8cpp.html#a3a0dcb8a903e9924d3e0ab2c5c37b060" title="ImGui_ImplDX9_NewFrame" alt="" coords="212,258,391,285"/>
-<area shape="rect" id="node3" href="_keyboard_8cpp.html#ad65caca75418587ece61987dc0bc8cc9" title="UpdateKeyboard" alt="" coords="242,309,361,336"/>
-<area shape="rect" id="node4" href="_controller_8cpp.html#a0f47a2a62b2452dbb84fbfea8f1cea72" title="SetController" alt="" coords="253,360,350,386"/>
-<area shape="rect" id="node5" href="class_scene_manager.html#a493bc0d65558ce004f6f248a185ba956" title="シーン更新関数 " alt="" coords="204,410,399,437"/>
-<area shape="rect" id="node6" href="class_scene_base.html#a71f332a32d99548b3aa912210a2dd0b0" title="更新関数 " alt="" coords="454,356,593,382"/>
-<area shape="rect" id="node8" href="class_game_object_manager.html#a6f053b1c655de6ca1c9a8fa9b6e118ae" title="更新関数 " alt="" coords="447,458,600,499"/>
-<area shape="rect" id="node7" href="class_scene_base_1_1_state_base.html#ad2c6c8fd9f020eb02f64f394edee129c" title="更新関数 " alt="" coords="654,323,813,364"/>
-<area shape="rect" id="node9" href="class_game_object_manager.html#a783a9d55d566ab8c39e6ed86b3b52a09" title="追加待ち配列の中身を追加関数 " alt="" coords="1138,60,1334,102"/>
-<area shape="rect" id="node15" href="class_game_object_manager.html#a5a6c1208229decd93c6ef396bce35b3a" title="解放待ち配列の中身を解放関数 " alt="" coords="1129,177,1343,233"/>
-<area shape="rect" id="node18" href="class_update_manager.html#ac4bdd39d106c7e6b505fe9a0c55e50de" title="更新関数 " alt="" coords="890,905,1053,932"/>
-<area shape="rect" id="node27" href="class_collision_manager.html#a23c21d077dbfd7ca86e7c0649d775dfc" title="更新関数 " alt="" coords="648,1701,819,1728"/>
-<area shape="rect" id="node46" href="class_draw_manager.html#af498c44ff698bf3ef473df970e24c917" title="更新関数 " alt="" coords="896,490,1047,517"/>
-<area shape="rect" id="node10" href="class_limited_pointer_array.html#a4c070b87cde4d2ea173aa28918af6223" title="LimitedPointerArray\l::GetEndPointer" alt="" coords="1431,724,1567,766"/>
-<area shape="rect" id="node11" href="class_limited_pointer_array.html#a57eb08357204668710021965425f4f46" title="LimitedPointerArray\l::AddToArray" alt="" coords="1431,126,1567,167"/>
-<area shape="rect" id="node12" href="class_limited_pointer_array.html#aae48443929a3766e602eb96f515c3a34" title="LimitedPointerArray\l::GetArrayObject" alt="" coords="1431,636,1567,678"/>
-<area shape="rect" id="node13" href="class_game_object_manager.html#a4c6cdb6d0a1f43a2e2e705677fa2f5f6" title="コンポーネントをマネージャーへ設定関数 " alt="" coords="1413,60,1585,102"/>
-<area shape="rect" id="node14" href="class_limited_pointer_array.html#ae5a41fe945c1ee5ea73116b823011a8c" title="LimitedPointerArray\l::ResetArray" alt="" coords="1431,356,1567,398"/>
-<area shape="rect" id="node16" href="class_limited_pointer_array.html#a32dd58543bee490df6dcea079ebe4586" title="LimitedPointerArray\l::DeleteFromArrayAndSortArray" alt="" coords="1396,512,1603,554"/>
-<area shape="rect" id="node17" href="class_safe_release.html#a6ecab682df939c28d8867a67c2f4b51f" title="解放関数 " alt="" coords="1427,192,1571,218"/>
-<area shape="rect" id="node19" href="class_update_manager.html#a7bb1af3bffcc4d72333ac86ae411891e" title="追加待ち配列の中身を追加関数 " alt="" coords="1138,388,1334,430"/>
-<area shape="rect" id="node20" href="class_update_manager.html#ac87db8037fbfb800187c50ca22a1f01d" title="解放待ち配列の中身を解放関数 " alt="" coords="1126,636,1346,678"/>
-<area shape="rect" id="node21" href="class_update_base.html#a9fdc8924001cf6fa89c1f5fa0d867682" title="更新関数 " alt="" coords="1165,956,1307,982"/>
-<area shape="rect" id="node22" href="class_update_base.html#afc4956f78135aed5fc4e4f9991be50b9" title="後更新関数 " alt="" coords="1153,1006,1319,1033"/>
-<area shape="rect" id="node23" href="class_component_base.html#a0ac0d71aeeb768401f34a2e780b1e25d" title="ComponentBase::GetGameObject" alt="" coords="1126,1158,1346,1185"/>
-<area shape="rect" id="node24" href="class_game_object_base.html#a853cdb5dbb2edf28e45e49540f85e554" title="GameObjectBase::GetPhysics" alt="" coords="1135,804,1337,830"/>
-<area shape="rect" id="node25" href="class_physics.html#a13bf3e9de07a12afc3c0a4012e00d0a1" title="Physics::Update" alt="" coords="1177,854,1295,881"/>
-<area shape="rect" id="node26" href="class_update_base.html#a5c63c3c3ef1b85f3701718ec3f7b39e2" title="デバッグ表示関数 " alt="" coords="1145,905,1327,932"/>
-<area shape="rect" id="node28" href="class_collision_manager.html#a53e468bb8624f84a5c65c9779781033f" title="追加待ち配列の中身を追加関数 " alt="" coords="869,1584,1073,1626"/>
-<area shape="rect" id="node29" href="class_collision_base.html#ac1d7000c820fabfa604138cda30a40a1" title="CollisionBase::getEndIndex\lOfArray" alt="" coords="1145,1631,1327,1672"/>
-<area shape="rect" id="node30" href="class_collision_base.html#a2e54e04c6ebd809ac2bc955083fec61c" title="CollisionBase::getCollision\lObjects" alt="" coords="1148,1412,1324,1454"/>
-<area shape="rect" id="node31" href="class_liner_octree.html#ac5773a5193942a68f77a33baed9d69d4" title="追加関数 " alt="" coords="1176,1529,1296,1556"/>
-<area shape="rect" id="node32" href="class_collision_objects.html#aee138e1c28f7f3dcbdce56181d59b628" title="CollisionObjects::getOctreeAABB" alt="" coords="1127,1748,1345,1774"/>
-<area shape="rect" id="node33" href="class_a_a_b_b.html#a9a18cef6c33dd579c144700c79ea39f5" title="AABB::getMin" alt="" coords="1183,1798,1289,1825"/>
-<area shape="rect" id="node34" href="class_a_a_b_b.html#a8dc63902fbb2c8f83185bbe9feaaa4b0" title="AABB::getMax" alt="" coords="1181,2093,1291,2120"/>
-<area shape="rect" id="node35" href="class_collision_manager.html#a351353ddde07f2ff4f6642c8e1fc4ede" title="解放待ち配列の中身を解放関数 " alt="" coords="1137,571,1335,612"/>
-<area shape="rect" id="node36" href="class_collision_base.html#a0f967cf5de4178ee99f434c3ff4f16fd" title="更新関数 " alt="" coords="896,1904,1047,1930"/>
-<area shape="rect" id="node37" href="class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb" title="CollisionObjects::getObject\lOfTree" alt="" coords="881,1955,1061,1996"/>
-<area shape="rect" id="node38" href="class_object_of_tree.html#a1356595b29749ca4555ca61a5bb30388" title="リストから消去する関数 " alt="" coords="874,2021,1069,2048"/>
-<area shape="rect" id="node39" href="class_object_of_tree.html#a28214e15fffb72cb50b764e2f3ac863d" title="ObjectOfTree::getObject" alt="" coords="890,2072,1053,2098"/>
-<area shape="rect" id="node40" href="class_liner_octree.html#a880276cc9099c29f447f3ca0043b9ce9" title="衝突リスト更新関数 " alt="" coords="867,2122,1075,2149"/>
-<area shape="rect" id="node41" href="class_collision_manager.html#a67c1ebc4d4a19e06122f11c3eeec89ec" title="衝突判定関数 " alt="" coords="882,2174,1061,2215"/>
-<area shape="rect" id="node42" href="class_collision_manager.html#a25dbc14dbc709a6bc2dc4424e3965dbe" title="古い衝突判定関数 " alt="" coords="872,1467,1071,1508"/>
-<area shape="rect" id="node43" href="class_collision_manager.html#a1d67f4076eb71e191db5cff4e5abe3b0" title="地面との衝突判定関数 " alt="" coords="882,1198,1061,1239"/>
-<area shape="rect" id="node44" href="class_collision_manager.html#a4da1241f3905c3855b31d7e20ceed5a1" title="Debug表示関数 " alt="" coords="867,1802,1076,1829"/>
-<area shape="rect" id="node45" href="class_collision_base.html#a0b2c1e3b090431d596b6a17e81360932" title="デバッグ表示関数 " alt="" coords="877,1264,1066,1290"/>
-<area shape="rect" id="node47" href="class_draw_manager.html#a984cd9de288151fd1d170f80f93a11e8" title="追加待ち配列の中身を追加関数 " alt="" coords="1144,323,1328,364"/>
-<area shape="rect" id="node48" href="class_draw_manager.html#a76361402a035f02084e9faf31e782d69" title="解放待ち配列の中身を解放関数 " alt="" coords="1132,454,1340,495"/>
-<area shape="rect" id="node49" href="class_draw_manager.html#a7c989a2beae5de5a1fc7ab0bef8692f9" title="全描画基底クラス更新関数 " alt="" coords="1124,702,1348,729"/>
-<area shape="rect" id="node50" href="class_draw_manager.html#a20787acc9c5a096e80651dc1909ae60d" title="全レンダーターゲットリセット関数 " alt="" coords="1137,258,1335,299"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_game_system_ab0add1f2bd97d3b125a5682f571053a3_icgraph.png" border="0" usemap="#class_game_system_ab0add1f2bd97d3b125a5682f571053a3_icgraph" alt=""/></div>
-<map name="class_game_system_ab0add1f2bd97d3b125a5682f571053a3_icgraph" id="class_game_system_ab0add1f2bd97d3b125a5682f571053a3_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a0c8cdd6f9d1e6ea84da99015aebdeb61" title="MessageAndGameLoop" alt="" coords="204,5,365,32"/>
-<area shape="rect" id="node3" href="main_8cpp.html#a3f6dd90e9dfab2815b29d251b677f6e9" title="WinMain" alt="" coords="413,5,487,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -653,7 +354,7 @@ GameSystem 連携図</div>
 
 <p>シーン管理者 </p>
 
-<p class="definition"> <a class="el" href="_game_system_8h_source.html">GameSystem.h</a> の <a class="el" href="_game_system_8h_source.html#l00038">38</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_game_system_8h_source.html">GameSystem.h</a> の <a class="el" href="_game_system_8h_source.html#l00039">39</a> 行目に定義があります。</p>
 
 </div>
 </div>

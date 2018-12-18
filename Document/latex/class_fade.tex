@@ -18,15 +18,6 @@ Fade の継承関係図\nopagebreak
 \includegraphics[width=169pt]{class_fade__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Fade 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
@@ -57,11 +48,13 @@ void \mbox{\hyperlink{class_fade_a1579b5b9020344a1131ea11c15f2c0bd}{Update}} ()
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_fade_a84a9e688650ac500e03cde74ff0210b8}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_fade_a6aed6912ebf9c243c52cb82f298d8d64}{Get\+Matrix}} (unsigned object\+\_\+index) override
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_fade_a2e41a31f9801476e63d2082804375e96}{getp\+Matrix}} (unsigned object\+\_\+index) override
 \item 
 const \mbox{\hyperlink{class_fade_ac06f27215b454aa05b93c236476d6e80}{Type}} $\ast$ \mbox{\hyperlink{class_fade_aed5a29d39a5fd6161a9aed73d5f30870}{Get\+Type}} () const
 \item 
 const \mbox{\hyperlink{class_fade_ae77826bf3ff2ab95fb7b3b6f95cba80a}{State}} $\ast$ \mbox{\hyperlink{class_fade_aeb41dfcadf75dd4c980da68e243cc310}{Get\+State}} () const
+\item 
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_fade_a69db8b97a493082644fbd82c9ef3d1aa}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \item 
 bool \mbox{\hyperlink{class_fade_acc8adf28ce2e4270e5fb3907d83dadd0}{Get\+End\+Flag}} () const
 \item 
@@ -180,13 +173,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+cpp の 36 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_aec1ac5a0a80be8d7a2a43dbde2a741ee_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_fade_a58ddf7585cb85bf84f5e83adbe2734f9}\label{class_fade_a58ddf7585cb85bf84f5e83adbe2734f9}} 
 \index{Fade@{Fade}!````~Fade@{$\sim$\+Fade}}
 \index{````~Fade@{$\sim$\+Fade}!Fade@{Fade}}
@@ -201,13 +187,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+cpp の 56 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=296pt]{class_fade_a58ddf7585cb85bf84f5e83adbe2734f9_cgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{関数詳解}
@@ -229,21 +208,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+cpp の 162 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=286pt]{class_fade_a84a9e688650ac500e03cde74ff0210b8_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_a84a9e688650ac500e03cde74ff0210b8_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_fade_acc8adf28ce2e4270e5fb3907d83dadd0}\label{class_fade_acc8adf28ce2e4270e5fb3907d83dadd0}} 
 \index{Fade@{Fade}!Get\+End\+Flag@{Get\+End\+Flag}}
 \index{Get\+End\+Flag@{Get\+End\+Flag}!Fade@{Fade}}
@@ -252,36 +216,36 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
 
 
+ Fade.\+h の 139 行目に定義があります。
+
+\mbox{\Hypertarget{class_fade_a69db8b97a493082644fbd82c9ef3d1aa}\label{class_fade_a69db8b97a493082644fbd82c9ef3d1aa}} 
+\index{Fade@{Fade}!getp\+Material@{getp\+Material}}
+\index{getp\+Material@{getp\+Material}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{getp\+Material()}{getpMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$ Fade\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{Draw\+Null}}を再実装しています。
+
+
+
  Fade.\+h の 132 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=328pt]{class_fade_acc8adf28ce2e4270e5fb3907d83dadd0_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_fade_a6aed6912ebf9c243c52cb82f298d8d64}\label{class_fade_a6aed6912ebf9c243c52cb82f298d8d64}} 
-\index{Fade@{Fade}!Get\+Matrix@{Get\+Matrix}}
-\index{Get\+Matrix@{Get\+Matrix}!Fade@{Fade}}
-\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Fade\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_fade_a2e41a31f9801476e63d2082804375e96}\label{class_fade_a2e41a31f9801476e63d2082804375e96}} 
+\index{Fade@{Fade}!getp\+Matrix@{getp\+Matrix}}
+\index{getp\+Matrix@{getp\+Matrix}!Fade@{Fade}}
+\subsubsection{\texorpdfstring{getp\+Matrix()}{getpMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Fade\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{Draw\+Null}}を再実装しています。
 
 
 
  Fade.\+h の 125 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_a6aed6912ebf9c243c52cb82f298d8d64_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_fade_aeb41dfcadf75dd4c980da68e243cc310}\label{class_fade_aeb41dfcadf75dd4c980da68e243cc310}} 
 \index{Fade@{Fade}!Get\+State@{Get\+State}}
 \index{Get\+State@{Get\+State}!Fade@{Fade}}
@@ -292,13 +256,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+h の 131 行目に定義があります。
 
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=347pt]{class_fade_aeb41dfcadf75dd4c980da68e243cc310_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_fade_a1a177209e72a27858ceb2d339321e9c4}\label{class_fade_a1a177209e72a27858ceb2d339321e9c4}} 
 \index{Fade@{Fade}!Get\+Transform@{Get\+Transform}}
 \index{Get\+Transform@{Get\+Transform}!Fade@{Fade}}
@@ -307,7 +264,7 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
 
 
- Fade.\+h の 133 行目に定義があります。
+ Fade.\+h の 140 行目に定義があります。
 
 \mbox{\Hypertarget{class_fade_a4e047c532d430095e7d0d70288289a82}\label{class_fade_a4e047c532d430095e7d0d70288289a82}} 
 \index{Fade@{Fade}!Get\+Transition01\+Object@{Get\+Transition01\+Object}}
@@ -317,7 +274,7 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
 
 
- Fade.\+h の 134 行目に定義があります。
+ Fade.\+h の 141 行目に定義があります。
 
 \mbox{\Hypertarget{class_fade_aed5a29d39a5fd6161a9aed73d5f30870}\label{class_fade_aed5a29d39a5fd6161a9aed73d5f30870}} 
 \index{Fade@{Fade}!Get\+Type@{Get\+Type}}
@@ -329,14 +286,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+h の 130 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_aed5a29d39a5fd6161a9aed73d5f30870_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_fade_aab12848f7102a219968c86ed699a6e5d}\label{class_fade_aab12848f7102a219968c86ed699a6e5d}} 
 \index{Fade@{Fade}!Init@{Init}}
 \index{Init@{Init}!Fade@{Fade}}
@@ -356,21 +305,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+cpp の 67 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_aab12848f7102a219968c86ed699a6e5d_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_aab12848f7102a219968c86ed699a6e5d_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_fade_ae77d06811869d3c8162a42c3e0e14f7f}\label{class_fade_ae77d06811869d3c8162a42c3e0e14f7f}} 
 \index{Fade@{Fade}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Fade@{Fade}}
@@ -389,14 +323,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+cpp の 112 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_ae77d06811869d3c8162a42c3e0e14f7f_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_fade_a1579b5b9020344a1131ea11c15f2c0bd}\label{class_fade_a1579b5b9020344a1131ea11c15f2c0bd}} 
 \index{Fade@{Fade}!Update@{Update}}
 \index{Update@{Update}!Fade@{Fade}}
@@ -415,21 +341,6 @@ T\+Y\+P\+E\+\_\+\+M\+AX&\\
 
  Fade.\+cpp の 132 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_a1579b5b9020344a1131ea11c15f2c0bd_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_fade_a1579b5b9020344a1131ea11c15f2c0bd_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}

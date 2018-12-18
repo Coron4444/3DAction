@@ -2,6 +2,11 @@
 \label{class_triangle}\index{Triangle@{Triangle}}
 
 
+三角形平面\+Class  
+
+
+
+
 {\ttfamily \#include $<$Triangle.\+h$>$}
 
 
@@ -13,90 +18,135 @@ Triangle の継承関係図\nopagebreak
 \includegraphics[width=184pt]{class_triangle__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Triangle 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=312pt]{class_triangle__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_triangle_a2d96bc16d87b0ece2fef7325d63969b3}{Triangle}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point0=\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.\+0f, 0.\+0f, 0.\+0f), Vec3 point1=\+Vec3(0.\+0f, 0.\+0f, 0.\+0f), Vec3 point2=\+Vec3(0.\+0f, 0.\+0f, 0.\+0f))
+\mbox{\hyperlink{class_triangle_aaefe4ed500c07918d30c6f0e286332c5}{Triangle}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_triangle_a291c8c4aeeb85e4561e4fd162816f5da}{Init}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point0, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point1, \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point2)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_triangle_a0f6221dde9919de0067299847f4966b8}{getp\+Point0}} ()
 \item 
-virtual \mbox{\hyperlink{class_triangle_a5199760a17454f4dc94c855a57e3a152}{$\sim$\+Triangle}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_triangle_a9420de30b090fcaae621dab303bda541}{getp\+Point1}} ()
 \item 
-bool \mbox{\hyperlink{class_triangle_ac5d6a4c5f2bfda5cdc56c89a294fb46e}{Check\+Inner\+Point}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} point) const
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_triangle_ab2c7e8aea2b27b51b068b34f1d7a1ce0}{getp\+Point2}} ()
+\item 
+\mbox{\hyperlink{class_plane}{Plane}} $\ast$ \mbox{\hyperlink{class_triangle_a559a6888cea5697dfd3943fa4a153d07}{getp\+Plane}} ()
 \end{DoxyCompactItemize}
-\subsection*{公開変数類}
+\subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_triangle_ab25f2be0ff148b58f1db904ad050353e}{point\+\_\+}} \mbox{[}3\mbox{]}
-\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_triangle_a307e9043e9755e06387458cd84993662}{point0\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 点 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_triangle_aa846eb6b25478f0227225c74c53bb5c1}{point1\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 点 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_triangle_af1850003b6274357b9b081395e1ab4e8}{point2\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 点 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_plane}{Plane}} \mbox{\hyperlink{class_triangle_a93586199c2c173771f2e167f477eaa70}{plane\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 平面 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
 \subsection{詳解}
+三角形平面\+Class 
 
+三角形平面の\+Class 
 
- Triangle.\+h の 32 行目に定義があります。
+ Triangle.\+h の 27 行目に定義があります。
 
 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_triangle_a2d96bc16d87b0ece2fef7325d63969b3}\label{class_triangle_a2d96bc16d87b0ece2fef7325d63969b3}} 
+\mbox{\Hypertarget{class_triangle_aaefe4ed500c07918d30c6f0e286332c5}\label{class_triangle_aaefe4ed500c07918d30c6f0e286332c5}} 
 \index{Triangle@{Triangle}!Triangle@{Triangle}}
 \index{Triangle@{Triangle}!Triangle@{Triangle}}
 \subsubsection{\texorpdfstring{Triangle()}{Triangle()}}
-{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point0 = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point1 = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point2 = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- Triangle.\+h の 75 行目に定義があります。
-
-\mbox{\Hypertarget{class_triangle_a5199760a17454f4dc94c855a57e3a152}\label{class_triangle_a5199760a17454f4dc94c855a57e3a152}} 
-\index{Triangle@{Triangle}!````~Triangle@{$\sim$\+Triangle}}
-\index{````~Triangle@{$\sim$\+Triangle}!Triangle@{Triangle}}
-\subsubsection{\texorpdfstring{$\sim$\+Triangle()}{~Triangle()}}
-{\footnotesize\ttfamily Triangle\+::$\sim$\+Triangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+コンストラクタ 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Triangle.\+h の 92 行目に定義があります。
+
+ Triangle.\+h の 47 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_triangle_ac5d6a4c5f2bfda5cdc56c89a294fb46e}\label{class_triangle_ac5d6a4c5f2bfda5cdc56c89a294fb46e}} 
-\index{Triangle@{Triangle}!Check\+Inner\+Point@{Check\+Inner\+Point}}
-\index{Check\+Inner\+Point@{Check\+Inner\+Point}!Triangle@{Triangle}}
-\subsubsection{\texorpdfstring{Check\+Inner\+Point()}{CheckInnerPoint()}}
-{\footnotesize\ttfamily bool Triangle\+::\+Check\+Inner\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_triangle_a559a6888cea5697dfd3943fa4a153d07}\label{class_triangle_a559a6888cea5697dfd3943fa4a153d07}} 
+\index{Triangle@{Triangle}!getp\+Plane@{getp\+Plane}}
+\index{getp\+Plane@{getp\+Plane}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{getp\+Plane()}{getpPlane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plane}{Plane}}$\ast$ Triangle\+::getp\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- Triangle.\+h の 104 行目に定義があります。
+ Triangle.\+h の 71 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_triangle_ac5d6a4c5f2bfda5cdc56c89a294fb46e_cgraph}
-\end{center}
-\end{figure}
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_triangle_ac5d6a4c5f2bfda5cdc56c89a294fb46e_icgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{class_triangle_a0f6221dde9919de0067299847f4966b8}\label{class_triangle_a0f6221dde9919de0067299847f4966b8}} 
+\index{Triangle@{Triangle}!getp\+Point0@{getp\+Point0}}
+\index{getp\+Point0@{getp\+Point0}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{getp\+Point0()}{getpPoint0()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Triangle\+::getp\+Point0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Triangle.\+h の 68 行目に定義があります。
+
+\mbox{\Hypertarget{class_triangle_a9420de30b090fcaae621dab303bda541}\label{class_triangle_a9420de30b090fcaae621dab303bda541}} 
+\index{Triangle@{Triangle}!getp\+Point1@{getp\+Point1}}
+\index{getp\+Point1@{getp\+Point1}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{getp\+Point1()}{getpPoint1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Triangle\+::getp\+Point1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Triangle.\+h の 69 行目に定義があります。
+
+\mbox{\Hypertarget{class_triangle_ab2c7e8aea2b27b51b068b34f1d7a1ce0}\label{class_triangle_ab2c7e8aea2b27b51b068b34f1d7a1ce0}} 
+\index{Triangle@{Triangle}!getp\+Point2@{getp\+Point2}}
+\index{getp\+Point2@{getp\+Point2}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{getp\+Point2()}{getpPoint2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Triangle\+::getp\+Point2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Triangle.\+h の 70 行目に定義があります。
+
+\mbox{\Hypertarget{class_triangle_a291c8c4aeeb85e4561e4fd162816f5da}\label{class_triangle_a291c8c4aeeb85e4561e4fd162816f5da}} 
+\index{Triangle@{Triangle}!Init@{Init}}
+\index{Init@{Init}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Triangle\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point0,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point1,  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{point2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em point0} & 点 \\
+\hline
+\mbox{\tt in}  & {\em point0} & 点 \\
+\hline
+\mbox{\tt in}  & {\em point0} & 点 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Triangle.\+h の 56 行目に定義があります。
+
 
 
 \subsection{メンバ詳解}
@@ -104,21 +154,57 @@ bool \mbox{\hyperlink{class_triangle_ac5d6a4c5f2bfda5cdc56c89a294fb46e}{Check\+I
 \index{Triangle@{Triangle}!plane\+\_\+@{plane\+\_\+}}
 \index{plane\+\_\+@{plane\+\_\+}!Triangle@{Triangle}}
 \subsubsection{\texorpdfstring{plane\+\_\+}{plane\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_plane}{Plane}} Triangle\+::plane\+\_\+}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plane}{Plane}} Triangle\+::plane\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- Triangle.\+h の 56 行目に定義があります。
-
-\mbox{\Hypertarget{class_triangle_ab25f2be0ff148b58f1db904ad050353e}\label{class_triangle_ab25f2be0ff148b58f1db904ad050353e}} 
-\index{Triangle@{Triangle}!point\+\_\+@{point\+\_\+}}
-\index{point\+\_\+@{point\+\_\+}!Triangle@{Triangle}}
-\subsubsection{\texorpdfstring{point\+\_\+}{point\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Triangle\+::point\+\_\+\mbox{[}3\mbox{]}}
+平面 
 
 
 
- Triangle.\+h の 55 行目に定義があります。
+ Triangle.\+h の 36 行目に定義があります。
+
+\mbox{\Hypertarget{class_triangle_a307e9043e9755e06387458cd84993662}\label{class_triangle_a307e9043e9755e06387458cd84993662}} 
+\index{Triangle@{Triangle}!point0\+\_\+@{point0\+\_\+}}
+\index{point0\+\_\+@{point0\+\_\+}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{point0\+\_\+}{point0\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Triangle\+::point0\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+点 
+
+
+
+ Triangle.\+h の 33 行目に定義があります。
+
+\mbox{\Hypertarget{class_triangle_aa846eb6b25478f0227225c74c53bb5c1}\label{class_triangle_aa846eb6b25478f0227225c74c53bb5c1}} 
+\index{Triangle@{Triangle}!point1\+\_\+@{point1\+\_\+}}
+\index{point1\+\_\+@{point1\+\_\+}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{point1\+\_\+}{point1\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Triangle\+::point1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+点 
+
+
+
+ Triangle.\+h の 34 行目に定義があります。
+
+\mbox{\Hypertarget{class_triangle_af1850003b6274357b9b081395e1ab4e8}\label{class_triangle_af1850003b6274357b9b081395e1ab4e8}} 
+\index{Triangle@{Triangle}!point2\+\_\+@{point2\+\_\+}}
+\index{point2\+\_\+@{point2\+\_\+}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{point2\+\_\+}{point2\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Triangle\+::point2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+点 
+
+
+
+ Triangle.\+h の 35 行目に定義があります。
 
 
 

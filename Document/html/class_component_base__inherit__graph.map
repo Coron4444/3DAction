@@ -1,13 +1,13 @@
 <map id="ComponentBase" name="ComponentBase">
-<area shape="rect" id="node2" href="$class_collision_base.html" title="衝突基底クラス " alt="" coords="172,323,273,349"/>
-<area shape="rect" id="node8" href="$class_draw_base.html" title="描画基底クラス " alt="" coords="182,588,263,615"/>
-<area shape="rect" id="node26" href="$class_update_base.html" title="更新基底クラス " alt="" coords="176,816,269,843"/>
-<area shape="rect" id="node3" href="$class_collision_null.html" title="空白衝突クラス " alt="" coords="350,107,443,133"/>
+<area shape="rect" id="node2" href="$class_collision_base.html" title="衝突BaseClass " alt="" coords="172,323,273,349"/>
+<area shape="rect" id="node8" href="$class_draw_base.html" title="描画BaseClass " alt="" coords="182,588,263,615"/>
+<area shape="rect" id="node26" href="$class_update_base.html" title="更新BaseClass " alt="" coords="176,816,269,843"/>
+<area shape="rect" id="node3" href="$class_collision_null.html" title="空白衝突Class " alt="" coords="350,107,443,133"/>
 <area shape="rect" id="node4" href="$class_coin_collision.html" title="CoinCollision" alt="" coords="553,5,650,32"/>
 <area shape="rect" id="node5" href="$class_enemy_collision.html" title="EnemyCollision" alt="" coords="545,56,657,83"/>
 <area shape="rect" id="node6" href="$class_goal_collision.html" title="ゴール衝突クラス " alt="" coords="552,107,651,133"/>
 <area shape="rect" id="node7" href="$class_player_collision.html" title="PlayerCollision" alt="" coords="547,157,655,184"/>
-<area shape="rect" id="node9" href="$class_draw_null.html" title="空白描画クラス " alt="" coords="360,588,433,615"/>
+<area shape="rect" id="node9" href="$class_draw_null.html" title="空白描画Class " alt="" coords="360,588,433,615"/>
 <area shape="rect" id="node10" href="$class_clear_logo_draw.html" title="クリアロゴ描画クラス " alt="" coords="547,208,656,235"/>
 <area shape="rect" id="node11" href="$class_coin_draw.html" title="コインロゴ描画Class " alt="" coords="563,259,640,285"/>
 <area shape="rect" id="node12" href="$class_enemy_draw.html" title="敵描画クラス " alt="" coords="555,309,647,336"/>
@@ -25,7 +25,7 @@
 <area shape="rect" id="node24" href="$class_title_logo_draw.html" title="タイトルロゴ描画クラス " alt="" coords="550,917,653,944"/>
 <area shape="rect" id="node25" href="$class_tutorial_logo_draw.html" title="チュートリアルロゴ描画クラス " alt="" coords="541,968,662,995"/>
 <area shape="rect" id="node27" href="$class_player_update___special.html" title="PlayerUpdate_Special" alt="" coords="321,816,472,843"/>
-<area shape="rect" id="node28" href="$class_update_null.html" title="空白更新クラス " alt="" coords="354,1095,439,1121"/>
+<area shape="rect" id="node28" href="$class_update_null.html" title="空白更新Class " alt="" coords="354,1095,439,1121"/>
 <area shape="rect" id="node29" href="$class_enemy_update.html" title="EnemyUpdate" alt="" coords="549,1019,653,1045"/>
 <area shape="rect" id="node30" href="$class_player_update.html" title="PlayerUpdate" alt="" coords="551,1069,651,1096"/>
 <area shape="rect" id="node31" href="$class_push_space_logo_update.html" title="PushSpaceLogoUpdate" alt="" coords="522,1120,681,1147"/>

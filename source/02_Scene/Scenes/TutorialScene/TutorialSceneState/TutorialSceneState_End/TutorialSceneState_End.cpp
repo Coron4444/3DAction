@@ -21,38 +21,29 @@
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
 #include <Keyboard\Keyboard.h>
 
-#include <GameObjectManager/GameObjectManager.h>
+#include <2D/UI/TutorialLogo/TutorialLogoFactory/TutorialLogoFactory.h>
 
 
 
 //****************************************
 // 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void TutorialSceneState_End::Init()
 {
 	// チュートリアルシーンの取得
-	tutorial_scene_ = (TutorialScene*)scene_;
+	tutorial_scene_ = (TutorialScene*)getpScene();
 
 	tutorial_scene_->getpTutorialLogo()->SetLogoNum(1);
 }
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void TutorialSceneState_End::Uninit()
 {
 }
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void TutorialSceneState_End::Update()
 {
 	if (GetKeyboardTrigger(DIK_SPACE))
@@ -64,9 +55,6 @@ void TutorialSceneState_End::Update()
 
 
 
-//--------------------------------------------------
-// +リセット関数
-//--------------------------------------------------
 void TutorialSceneState_End::Reset()
 {
 

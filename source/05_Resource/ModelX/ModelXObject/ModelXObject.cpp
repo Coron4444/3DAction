@@ -12,7 +12,7 @@
 // インクルード文
 //
 //======================================================================
-
+#include <assert.h>
 #include "ModelXObject.h"
 
 #include <SafeRelease/SafeRelease.h>

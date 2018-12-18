@@ -2,6 +2,11 @@
 \label{class_sphere}\index{Sphere@{Sphere}}
 
 
+球\+Class  
+
+
+
+
 {\ttfamily \#include $<$Sphere.\+h$>$}
 
 
@@ -13,59 +18,116 @@ Sphere の継承関係図\nopagebreak
 \includegraphics[width=184pt]{class_sphere__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Sphere 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=250pt]{class_sphere__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_sphere_a00281a2ff42b3f2668fb853890447a73}{Sphere}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} position=\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.\+0f, 0.\+0f, 0.\+0f), float radius=1.\+0f)
+\mbox{\hyperlink{class_sphere_a890a63ff583cb88e7ec4e840b4ef5eb9}{Sphere}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sphere_aa0c93894c5dad170bd65f1cec3493c37}{Init}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} position, float radius)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_sphere_a9fd8492659b335541af8a2f56f14e1b1}{getp\+Position}} ()
 \item 
-virtual \mbox{\hyperlink{class_sphere_a569c071e50a3e11f678630ee1a17737e}{$\sim$\+Sphere}} ()
+float \mbox{\hyperlink{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}{get\+Radius}} ()
+\item 
+void \mbox{\hyperlink{class_sphere_ad813f5d3e9da96cf1111aedec4ec9b5f}{set\+Radius}} (float value)
 \end{DoxyCompactItemize}
-\subsection*{公開変数類}
+\subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_sphere_a5a18bfcc7abcdfbd6802ec622dfa5590}{position\+\_\+}}
-\item 
+\begin{DoxyCompactList}\small\item\em 座標 \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_sphere_ac2924d9ad22bfad1ed1914c069c188dc}{radius\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 半径 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
 \subsection{詳解}
+球\+Class 
 
+球の\+Class 
 
- Sphere.\+h の 31 行目に定義があります。
+ Sphere.\+h の 26 行目に定義があります。
 
 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_sphere_a00281a2ff42b3f2668fb853890447a73}\label{class_sphere_a00281a2ff42b3f2668fb853890447a73}} 
+\mbox{\Hypertarget{class_sphere_a890a63ff583cb88e7ec4e840b4ef5eb9}\label{class_sphere_a890a63ff583cb88e7ec4e840b4ef5eb9}} 
 \index{Sphere@{Sphere}!Sphere@{Sphere}}
 \index{Sphere@{Sphere}!Sphere@{Sphere}}
 \subsubsection{\texorpdfstring{Sphere()}{Sphere()}}
-{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)},  }\item[{float}]{radius = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- Sphere.\+h の 68 行目に定義があります。
-
-\mbox{\Hypertarget{class_sphere_a569c071e50a3e11f678630ee1a17737e}\label{class_sphere_a569c071e50a3e11f678630ee1a17737e}} 
-\index{Sphere@{Sphere}!````~Sphere@{$\sim$\+Sphere}}
-\index{````~Sphere@{$\sim$\+Sphere}!Sphere@{Sphere}}
-\subsubsection{\texorpdfstring{$\sim$\+Sphere()}{~Sphere()}}
-{\footnotesize\ttfamily Sphere\+::$\sim$\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+コンストラクタ 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Sphere.\+h の 83 行目に定義があります。
+
+ Sphere.\+h の 44 行目に定義があります。
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_sphere_a9fd8492659b335541af8a2f56f14e1b1}\label{class_sphere_a9fd8492659b335541af8a2f56f14e1b1}} 
+\index{Sphere@{Sphere}!getp\+Position@{getp\+Position}}
+\index{getp\+Position@{getp\+Position}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{getp\+Position()}{getpPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Sphere\+::getp\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Sphere.\+h の 62 行目に定義があります。
+
+\mbox{\Hypertarget{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}\label{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}} 
+\index{Sphere@{Sphere}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{get\+Radius()}{getRadius()}}
+{\footnotesize\ttfamily float Sphere\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Sphere.\+h の 63 行目に定義があります。
+
+\mbox{\Hypertarget{class_sphere_aa0c93894c5dad170bd65f1cec3493c37}\label{class_sphere_aa0c93894c5dad170bd65f1cec3493c37}} 
+\index{Sphere@{Sphere}!Init@{Init}}
+\index{Init@{Init}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Sphere\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{float}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position} & 始点座標 \\
+\hline
+\mbox{\tt in}  & {\em radius} & 半径 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Sphere.\+h の 52 行目に定義があります。
+
+\mbox{\Hypertarget{class_sphere_ad813f5d3e9da96cf1111aedec4ec9b5f}\label{class_sphere_ad813f5d3e9da96cf1111aedec4ec9b5f}} 
+\index{Sphere@{Sphere}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Sphere@{Sphere}}
+\subsubsection{\texorpdfstring{set\+Radius()}{setRadius()}}
+{\footnotesize\ttfamily void Sphere\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Sphere.\+h の 64 行目に定義があります。
 
 
 
@@ -74,21 +136,29 @@ float \mbox{\hyperlink{class_sphere_ac2924d9ad22bfad1ed1914c069c188dc}{radius\+\
 \index{Sphere@{Sphere}!position\+\_\+@{position\+\_\+}}
 \index{position\+\_\+@{position\+\_\+}!Sphere@{Sphere}}
 \subsubsection{\texorpdfstring{position\+\_\+}{position\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Sphere\+::position\+\_\+}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Sphere\+::position\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- Sphere.\+h の 48 行目に定義があります。
+座標 
+
+
+
+ Sphere.\+h の 32 行目に定義があります。
 
 \mbox{\Hypertarget{class_sphere_ac2924d9ad22bfad1ed1914c069c188dc}\label{class_sphere_ac2924d9ad22bfad1ed1914c069c188dc}} 
 \index{Sphere@{Sphere}!radius\+\_\+@{radius\+\_\+}}
 \index{radius\+\_\+@{radius\+\_\+}!Sphere@{Sphere}}
 \subsubsection{\texorpdfstring{radius\+\_\+}{radius\_}}
-{\footnotesize\ttfamily float Sphere\+::radius\+\_\+}
+{\footnotesize\ttfamily float Sphere\+::radius\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- Sphere.\+h の 49 行目に定義があります。
+半径 
+
+
+
+ Sphere.\+h の 33 行目に定義があります。
 
 
 

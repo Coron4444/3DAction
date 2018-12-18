@@ -2,6 +2,11 @@
 \label{class_cylinder}\index{Cylinder@{Cylinder}}
 
 
+円柱\+Class  
+
+
+
+
 {\ttfamily \#include $<$Cylinder.\+h$>$}
 
 
@@ -13,94 +18,185 @@ Cylinder の継承関係図\nopagebreak
 \includegraphics[width=184pt]{class_cylinder__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Cylinder 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=255pt]{class_cylinder__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_cylinder_a642d2ea21539b8a35ed8c79f36615f6f}{Cylinder}} (\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}} position0=\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.\+0f, 0.\+0f, 0.\+0f), Vec3 position1=\+Vec3(0.\+0f, 0.\+0f, 0.\+0f), float radius=1.\+0f)
+\mbox{\hyperlink{class_cylinder_a01dc978cb576f834b9545e43d4dad2a2}{Cylinder}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cylinder_ab7d8167ece18b76e324a06482d22dacb}{Init}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} position, \mbox{\hyperlink{class_vector3_d}{Vector3D}} vector, float radius)
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$ \mbox{\hyperlink{class_cylinder_acc2a2c2a32575bb93ebfa9a21bb43fb8}{getp\+Line\+Segment}} ()
 \item 
-virtual \mbox{\hyperlink{class_cylinder_a05ab556f0ae3cd6e99d9d1f3caca80b3}{$\sim$\+Cylinder}} ()
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_cylinder_a18c61448fbb080c79ab6b1a431803dea}{getp\+Position}} ()
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_cylinder_a7b1cd37bc88e50d81b4de4a34e0dafb0}{getp\+Vector}} ()
+\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_cylinder_af36a39d5a18d1a837d9880a00447d87b}{get\+Add\+Vector\+To\+Position}} ()
+\item 
+float \mbox{\hyperlink{class_cylinder_a54bd26ac60e885bdca9a101fcc998711}{get\+Radius}} ()
+\item 
+void \mbox{\hyperlink{class_cylinder_a3baa0a5587c54b7a92f170ce52d0f658}{set\+Radius}} (float value)
 \end{DoxyCompactItemize}
-\subsection*{公開変数類}
+\subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_cylinder_ade5211259c6543ae77c4707b1ec26538}{position0\+\_\+}}
-\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_cylinder_ada317510ac188ea639a0f8613c2b554e}{position1\+\_\+}}
-\item 
+\mbox{\hyperlink{class_line_segment}{Line\+Segment}} \mbox{\hyperlink{class_cylinder_a29d1c6c61863d19f617287da9474f1c4}{line\+\_\+segment\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 線分 \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_cylinder_abba752e07b11b7bfd8fcce64a6d9b678}{radius\+\_\+}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 半径 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
 
 \subsection{詳解}
+円柱\+Class 
 
+円柱の\+Class 
 
- Cylinder.\+h の 31 行目に定義があります。
+ Cylinder.\+h の 27 行目に定義があります。
 
 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_cylinder_a642d2ea21539b8a35ed8c79f36615f6f}\label{class_cylinder_a642d2ea21539b8a35ed8c79f36615f6f}} 
+\mbox{\Hypertarget{class_cylinder_a01dc978cb576f834b9545e43d4dad2a2}\label{class_cylinder_a01dc978cb576f834b9545e43d4dad2a2}} 
 \index{Cylinder@{Cylinder}!Cylinder@{Cylinder}}
 \index{Cylinder@{Cylinder}!Cylinder@{Cylinder}}
 \subsubsection{\texorpdfstring{Cylinder()}{Cylinder()}}
-{\footnotesize\ttfamily Cylinder\+::\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position0 = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)},  }\item[{\mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}}]{position1 = {\ttfamily \mbox{\hyperlink{_vector3_d_8h_ab16f59e4393f29a01ec8b9bbbabbe65d}{Vec3}}(0.0f,~0.0f,~0.0f)},  }\item[{float}]{radius = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Cylinder\+::\+Cylinder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- Cylinder.\+h の 75 行目に定義があります。
-
-\mbox{\Hypertarget{class_cylinder_a05ab556f0ae3cd6e99d9d1f3caca80b3}\label{class_cylinder_a05ab556f0ae3cd6e99d9d1f3caca80b3}} 
-\index{Cylinder@{Cylinder}!````~Cylinder@{$\sim$\+Cylinder}}
-\index{````~Cylinder@{$\sim$\+Cylinder}!Cylinder@{Cylinder}}
-\subsubsection{\texorpdfstring{$\sim$\+Cylinder()}{~Cylinder()}}
-{\footnotesize\ttfamily Cylinder\+::$\sim$\+Cylinder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+コンストラクタ 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Cylinder.\+h の 91 行目に定義があります。
+
+ Cylinder.\+h の 45 行目に定義があります。
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_cylinder_af36a39d5a18d1a837d9880a00447d87b}\label{class_cylinder_af36a39d5a18d1a837d9880a00447d87b}} 
+\index{Cylinder@{Cylinder}!get\+Add\+Vector\+To\+Position@{get\+Add\+Vector\+To\+Position}}
+\index{get\+Add\+Vector\+To\+Position@{get\+Add\+Vector\+To\+Position}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{get\+Add\+Vector\+To\+Position()}{getAddVectorToPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Cylinder\+::get\+Add\+Vector\+To\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Cylinder.\+h の 67 行目に定義があります。
+
+\mbox{\Hypertarget{class_cylinder_acc2a2c2a32575bb93ebfa9a21bb43fb8}\label{class_cylinder_acc2a2c2a32575bb93ebfa9a21bb43fb8}} 
+\index{Cylinder@{Cylinder}!getp\+Line\+Segment@{getp\+Line\+Segment}}
+\index{getp\+Line\+Segment@{getp\+Line\+Segment}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{getp\+Line\+Segment()}{getpLineSegment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_line_segment}{Line\+Segment}}$\ast$ Cylinder\+::getp\+Line\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Cylinder.\+h の 64 行目に定義があります。
+
+\mbox{\Hypertarget{class_cylinder_a18c61448fbb080c79ab6b1a431803dea}\label{class_cylinder_a18c61448fbb080c79ab6b1a431803dea}} 
+\index{Cylinder@{Cylinder}!getp\+Position@{getp\+Position}}
+\index{getp\+Position@{getp\+Position}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{getp\+Position()}{getpPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Cylinder\+::getp\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Cylinder.\+h の 65 行目に定義があります。
+
+\mbox{\Hypertarget{class_cylinder_a7b1cd37bc88e50d81b4de4a34e0dafb0}\label{class_cylinder_a7b1cd37bc88e50d81b4de4a34e0dafb0}} 
+\index{Cylinder@{Cylinder}!getp\+Vector@{getp\+Vector}}
+\index{getp\+Vector@{getp\+Vector}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{getp\+Vector()}{getpVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Cylinder\+::getp\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Cylinder.\+h の 66 行目に定義があります。
+
+\mbox{\Hypertarget{class_cylinder_a54bd26ac60e885bdca9a101fcc998711}\label{class_cylinder_a54bd26ac60e885bdca9a101fcc998711}} 
+\index{Cylinder@{Cylinder}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{get\+Radius()}{getRadius()}}
+{\footnotesize\ttfamily float Cylinder\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Cylinder.\+h の 68 行目に定義があります。
+
+\mbox{\Hypertarget{class_cylinder_ab7d8167ece18b76e324a06482d22dacb}\label{class_cylinder_ab7d8167ece18b76e324a06482d22dacb}} 
+\index{Cylinder@{Cylinder}!Init@{Init}}
+\index{Init@{Init}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Cylinder\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{vector,  }\item[{float}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+初期化関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em position} & 始点座標 \\
+\hline
+\mbox{\tt in}  & {\em vector} & 方向 \\
+\hline
+\mbox{\tt in}  & {\em radius} & 半径 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Cylinder.\+h の 54 行目に定義があります。
+
+\mbox{\Hypertarget{class_cylinder_a3baa0a5587c54b7a92f170ce52d0f658}\label{class_cylinder_a3baa0a5587c54b7a92f170ce52d0f658}} 
+\index{Cylinder@{Cylinder}!set\+Radius@{set\+Radius}}
+\index{set\+Radius@{set\+Radius}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{set\+Radius()}{setRadius()}}
+{\footnotesize\ttfamily void Cylinder\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ Cylinder.\+h の 69 行目に定義があります。
 
 
 
 \subsection{メンバ詳解}
-\mbox{\Hypertarget{class_cylinder_ade5211259c6543ae77c4707b1ec26538}\label{class_cylinder_ade5211259c6543ae77c4707b1ec26538}} 
-\index{Cylinder@{Cylinder}!position0\+\_\+@{position0\+\_\+}}
-\index{position0\+\_\+@{position0\+\_\+}!Cylinder@{Cylinder}}
-\subsubsection{\texorpdfstring{position0\+\_\+}{position0\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Cylinder\+::position0\+\_\+}
+\mbox{\Hypertarget{class_cylinder_a29d1c6c61863d19f617287da9474f1c4}\label{class_cylinder_a29d1c6c61863d19f617287da9474f1c4}} 
+\index{Cylinder@{Cylinder}!line\+\_\+segment\+\_\+@{line\+\_\+segment\+\_\+}}
+\index{line\+\_\+segment\+\_\+@{line\+\_\+segment\+\_\+}!Cylinder@{Cylinder}}
+\subsubsection{\texorpdfstring{line\+\_\+segment\+\_\+}{line\_segment\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_line_segment}{Line\+Segment}} Cylinder\+::line\+\_\+segment\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- Cylinder.\+h の 51 行目に定義があります。
-
-\mbox{\Hypertarget{class_cylinder_ada317510ac188ea639a0f8613c2b554e}\label{class_cylinder_ada317510ac188ea639a0f8613c2b554e}} 
-\index{Cylinder@{Cylinder}!position1\+\_\+@{position1\+\_\+}}
-\index{position1\+\_\+@{position1\+\_\+}!Cylinder@{Cylinder}}
-\subsubsection{\texorpdfstring{position1\+\_\+}{position1\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Cylinder\+::position1\+\_\+}
+線分 
 
 
 
- Cylinder.\+h の 52 行目に定義があります。
+ Cylinder.\+h の 33 行目に定義があります。
 
 \mbox{\Hypertarget{class_cylinder_abba752e07b11b7bfd8fcce64a6d9b678}\label{class_cylinder_abba752e07b11b7bfd8fcce64a6d9b678}} 
 \index{Cylinder@{Cylinder}!radius\+\_\+@{radius\+\_\+}}
 \index{radius\+\_\+@{radius\+\_\+}!Cylinder@{Cylinder}}
 \subsubsection{\texorpdfstring{radius\+\_\+}{radius\_}}
-{\footnotesize\ttfamily float Cylinder\+::radius\+\_\+}
+{\footnotesize\ttfamily float Cylinder\+::radius\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
- Cylinder.\+h の 53 行目に定義があります。
+半径 
+
+
+
+ Cylinder.\+h の 34 行目に定義があります。
 
 
 

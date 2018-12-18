@@ -14,8 +14,12 @@
 //****************************************
 #include <SceneBase/SceneBase.h>
 
-#include <2D/UI/TutorialLogo/TutorialLogo.h>
 
+
+//****************************************
+// クラス宣言
+//****************************************
+class TutorialLogo;
 
 
 //************************************************************														   
@@ -26,26 +30,44 @@
 //************************************************************
 class TutorialScene : public SceneBase
 {
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	TutorialLogo* tutorial_logo_;		//!< チュートリアルロゴ
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief チュートリアルロゴポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval TutorialLogo* チュートリアルロゴポインタ
+	//----------------------------------------
+	TutorialLogo* getpTutorialLogo();
+
+	//----------------------------------------
+	//! @brief チュートリアルロゴポインタ設定関数
+	//! @details
+	//! @param[in] value チュートリアルロゴポインタ
+	//! @retval void なし
+	//----------------------------------------
+	void setTutorialLogo(TutorialLogo* value);
+
+
+//====================
+// 関数
+//====================
 public:
 	//----------------------------------------
 	//! @brief コンストラクタ
+	//! @details
 	//! @param state 最初のステート
 	//----------------------------------------
-	TutorialScene(StateBase* state) : SceneBase(state) {}
-
-	// プロパティ
-	TutorialLogo* getpTutorialLogo() { return tutorial_logo_; }
-	void setTutorialLogo(TutorialLogo* value) { tutorial_logo_ = value; }
+	TutorialScene(StateBase* state);
 };
 
 

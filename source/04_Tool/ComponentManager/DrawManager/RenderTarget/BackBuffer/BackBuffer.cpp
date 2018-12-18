@@ -131,7 +131,7 @@ void BackBuffer::Draw()
 	// レンダーターゲットの切り替え
 	LPDIRECT3DDEVICE9 device;
 	Renderer::getpInstance()->getDevice(&device);
-	device->SetRenderTarget(0, main_screen_surface_);
+	//device->SetRenderTarget(0, main_screen_surface_);
 	bool is_begin = Renderer::getpInstance()->DrawBegin();
 
 	// 不透明オブジェクト
@@ -253,17 +253,17 @@ void BackBuffer::Draw()
 		}
 	}
 
-	camera_->SetType(Camera::Type::TWO_DIMENSIONAL);
-	device->SetVertexShader(nullptr);
-	device->SetPixelShader(nullptr);
-	device->SetMaterial(render_texture_.getpMaterial(0, 0));
-	device->SetTransform(D3DTS_VIEW, camera_->GetViewMatrix());
-	device->SetTransform(D3DTS_PROJECTION, camera_->GetProjectionMatrix());
-	render_texture_.Update(SCREEN_WIDTH * 1.03f,
-						   SCREEN_HEIGHT * 1.03f,
-						   XColor4(1.0f, 1.0f, 1.0f, 0.96f));
-	device->SetTransform(D3DTS_WORLD, render_texture_.getpMatrix(0));
-	device->SetTexture(0, post_effect_texture_);
+	//camera_->SetType(Camera::Type::TWO_DIMENSIONAL);
+	//device->SetVertexShader(nullptr);
+	//device->SetPixelShader(nullptr);
+	//device->SetMaterial(render_texture_.getpMaterial(0, 0));
+	//device->SetTransform(D3DTS_VIEW, camera_->GetViewMatrix());
+	//device->SetTransform(D3DTS_PROJECTION, camera_->GetProjectionMatrix());
+	//render_texture_.Update(SCREEN_WIDTH * 1.03f,
+	//					   SCREEN_HEIGHT * 1.03f,
+	//					   XColor4(1.0f, 1.0f, 1.0f, 0.96f));
+	//device->SetTransform(D3DTS_WORLD, render_texture_.getpMatrix(0));
+	//device->SetTexture(0, post_effect_texture_);
 	//render_texture_.Draw(0, 0);
 
 	// フェード
@@ -271,7 +271,7 @@ void BackBuffer::Draw()
 
 	Renderer::getpInstance()->DrawEnd(is_begin);
 
-	device->SetRenderTarget(0, back_buffer_surface_);
+	/*device->SetRenderTarget(0, back_buffer_surface_);
 	is_begin = Renderer::getpInstance()->DrawBegin();
 
 	camera_->SetType(Camera::Type::TWO_DIMENSIONAL);
@@ -303,7 +303,7 @@ void BackBuffer::Draw()
 	LPDIRECT3DSURFACE9 temp2;
 	temp2 = main_screen_surface_;
 	main_screen_surface_ = post_effect_surface_;
-	post_effect_surface_ = temp2;
+	post_effect_surface_ = temp2;*/
 }
 
 

@@ -1,5 +1,5 @@
 <map id="Triangle" name="Triangle">
-<area shape="rect" id="node2" href="$class_collision_shape_base.html" title="衝突形状基底クラス " alt="" coords="5,171,144,197"/>
-<area shape="rect" id="node6" href="$class_plane.html" title="Plane" alt="" coords="145,260,199,287"/>
-<area shape="rect" id="node4" href="$class_vector3_d.html" title="Vector3D" alt="" coords="154,81,230,108"/>
+<area shape="rect" id="node2" href="$class_collision_shape_base.html" title="衝突形状BaseClass " alt="" coords="122,95,261,121"/>
+<area shape="rect" id="node4" href="$class_plane.html" title="平面Class " alt="" coords="107,193,161,219"/>
+<area shape="rect" id="node5" href="$class_vector3_d.html" title="Vector3D" alt="" coords="5,95,81,121"/>
 </map>

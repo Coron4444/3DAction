@@ -129,6 +129,13 @@ public:
 	}
 	const Type* GetType()   const { return &type_; }
 	const State* GetState() const { return &state_; }
+	D3DMATERIAL9* getpMaterial(unsigned object_index,
+							   unsigned mesh_index) override
+	{
+		object_index = object_index;
+		mesh_index = mesh_index;
+		return plane_polygon_->GetMaterial();
+	}
 	bool GetEndFlag() const { return end_flag_; }
 	Transform* GetTransform() { return &transform_; }
 	TextureObject* GetTransition01Object() { return transition01_texture_; }

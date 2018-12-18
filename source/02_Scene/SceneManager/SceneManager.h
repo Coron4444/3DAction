@@ -12,8 +12,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <GameObjectManager\GameObjectManager.h>
-
+#include <ComponentManager/DrawManager/Fade/Fade.h>
 #include <Vector3D.h>
 
 
@@ -32,12 +31,15 @@ class SceneBase;
 //************************************************************
 class SceneManager
 {
-//****************************************														   
-//! @brief   シーン間共通データClass
-//!
-//! @details シーン間の共通データClass
-//****************************************
+//====================
+// クラス
+//====================
 public:
+	//****************************************														   
+	//! @brief   シーン間共通データClass
+	//!
+	//! @details シーン間の共通データClass
+	//****************************************
 	class CommonData
 	{
 	//====================
@@ -49,11 +51,49 @@ public:
 
 
 	//====================
+	// プロパティ
+	//====================
+	public:
+		//----------------------------------------
+		//! @brief 更新フラグ取得関数
+		//! @details
+		//! @param void なし
+		//! @retval bool 更新の有無
+		//----------------------------------------
+		bool getIsUpdate();
+		
+		//----------------------------------------
+		//! @brief 更新フラグ設定関数
+		//! @details
+		//! @param[in] value 更新フラグ
+		//! @retval void なし
+		//----------------------------------------
+		void setIsUpdate(bool value);
+		
+		//----------------------------------------
+		//! @brief クリアフラグ取得関数
+		//! @details
+		//! @param void なし
+		//! @retval bool クリアの有無
+		//----------------------------------------
+		bool getIsClear();
+
+		//----------------------------------------
+		//! @brief クリアフラグ設定関数
+		//! @details
+		//! @param[in] value クリアフラグ
+		//! @retval void なし
+		//----------------------------------------
+		void setIsClear(bool value);
+
+
+	//====================
 	// 関数
 	//====================
 	public:
 		//----------------------------------------
 		//! @brief リセット関数
+		//! @details
 		//! @param void なし
 		//! @retval void なし
 		//----------------------------------------
@@ -62,12 +102,6 @@ public:
 			is_update_ = false;
 			is_clear_ = false;
 		}
-
-		// プロパティ
-		bool getIsUpdate() { return is_update_; }
-		void setIsUpdate(bool value) { is_update_ = value; }
-		bool getIsClear() { return is_clear_; }
-		void setIsClear(bool value) { is_clear_ = value; }
 	};
 
 
@@ -98,11 +132,11 @@ private:
 // 変数
 //====================
 private:
-	State state_ = State::NONE;				//!< シーンマネージャステート
-	CommonData* common_data_ = nullptr;		//!< シーン間共通データ
+	State state_ = State::NONE;						//!< シーンマネージャステート
+	CommonData* common_data_ = nullptr;				//!< シーン間共通データ
 
-	SceneBase* current_scene_ = nullptr;	//!< 現在のシーン
-	SceneBase* next_scene_ = nullptr;		//!< 次のシーン
+	SceneBase* current_scene_ = nullptr;			//!< 現在のシーン
+	SceneBase* next_scene_ = nullptr;				//!< 次のシーン
 
 	Fade::Type fade_type_ = DEFAULT_FADE_TYPE;		//!< フェードの種類
 	float fade_speed_ = DEFAULT_FADE_SPEED;			//!< フェード速度
@@ -110,11 +144,57 @@ private:
 
 
 //====================
-// 非静的メンバ関数
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief 次のシーンポインタ設定関数
+	//! @details
+	//! @param[in] value 次のシーンポインタ
+	//! @retval void なし
+	//----------------------------------------
+	void setNextScene(SceneBase* value);
+
+	//----------------------------------------
+	//! @brief 共通データポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval CommonData* 共通データポインタ
+	//----------------------------------------
+	CommonData* getpCommonData();
+	
+	//----------------------------------------
+	//! @brief フェードタイプ設定関数
+	//! @details
+	//! @param[in] value フェードタイプ
+	//! @retval void なし
+	//----------------------------------------
+	void setFadeType(Fade::Type value);
+	
+	//----------------------------------------
+	//! @brief フェード速度設定関数
+	//! @details
+	//! @param[in] value フェード速度
+	//! @retval void なし
+	//----------------------------------------
+	void setFadeSpeed(float value);
+	
+	//----------------------------------------
+	//! @brief フェード色設定関数
+	//! @details
+	//! @param[in] value フェード色
+	//! @retval void なし
+	//----------------------------------------
+	void setFadeColor(XColor4 value);
+
+
+//====================
+// 関数
 //====================
 public:
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details
 	//! @param[in] scene 最初のシーン
 	//! @retval void なし
 	//----------------------------------------
@@ -122,6 +202,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 終了関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -129,6 +210,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -136,6 +218,7 @@ public:
 
 	//----------------------------------------
 	//! @brief シーン更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -143,6 +226,7 @@ public:
 
 	//----------------------------------------
 	//! @brief シーン描画関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -150,21 +234,16 @@ public:
 
 	//----------------------------------------
 	//! @brief シーンリセット関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
 	void ResetScene();
 
-	// プロパティ
-	void setNextScene(SceneBase* value);
-	CommonData* getpCommonData() { return common_data_; }
-	void setFadeType(Fade::Type value) { fade_type_ = value; }
-	void setFadeSpeed(float value) { fade_speed_ = value; }
-	void setFadeColor(XColor4 value) { fade_color_ = value; }
-
 private:
 	//----------------------------------------
 	//! @brief シーン変更関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -172,6 +251,7 @@ private:
 
 	//----------------------------------------
 	//! @brief シーンリセット関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------

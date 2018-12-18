@@ -12,9 +12,15 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <renderer/RendererFactory/RendererFactoryDirectX9/RendererFactoryDirectX9.h>
-#include <SafeRelease/SafeRelease.h>
-#include <Vector3D.h>
+#include <Renderer/RendererDirectX9/RendererDirectX9.h>
+
+
+
+//****************************************
+// クラス宣言
+//****************************************
+class RendererInterface;
+class RendererFactoryInterface;
 
 
 
@@ -48,10 +54,16 @@ private:
 
 
 //====================
-// 変数
+// staticプロパティ
 //====================
-private:
-	MODE mode_ = MODE::NONE;		//!< モード
+public:
+	//----------------------------------------
+	//! @brief インスタンスポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Renderer* レンダラーインスタンスポインタ
+	//----------------------------------------
+	static Renderer* getpInstance();
 
 
 //====================
@@ -60,13 +72,104 @@ private:
 public:
 	//----------------------------------------
 	//! @brief インスタンス解放関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
 	static void ReleaseInstance();
 
-	// プロパティ
-	static Renderer* getpInstance();
+	
+//====================
+// 変数
+//====================
+private:
+	MODE mode_ = MODE::NONE;	//!< モード
+
+
+//====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief レンダラーポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval RendererInterface* レンダラーポインタ
+	//----------------------------------------
+	RendererInterface* getpRenderer();
+
+	//----------------------------------------
+	//! @brief レンダラー設定関数
+	//! @details
+	//! @param[in] factory レンダラーファクトリー
+	//! @param[in] mode    レンダラーモード
+	//! @retval void なし
+	//----------------------------------------
+	void setRenderer(RendererFactoryInterface* factory, MODE mode);
+
+	//----------------------------------------
+	//! @brief インターフェース取得関数
+	//! @details
+	//! @param[out] out_pointer 取得用ポインタ
+	//! @retval void なし
+	//----------------------------------------
+	template <class Type>
+	void getInterface(Type** out_pointer)
+	{
+		if (renderer_ == nullptr) return;
+		switch (mode_)
+		{
+			case Renderer::DIRECTX9:
+			{
+				*out_pointer = ((RendererDirectX9*)renderer_)->getpInterface();
+				break;
+			}
+			case Renderer::DIRECTX11:
+			{
+				break;
+			}
+			case Renderer::OPEN_GL:
+			{
+				break;
+			}
+			default:
+			{
+				break;
+			}
+		}
+	}
+
+	//----------------------------------------
+	//! @brief デバイス取得関数
+	//! @details
+	//! @param[out] out_pointer 取得用ポインタ
+	//! @retval void なし
+	//----------------------------------------
+	template <class Type>
+	void getDevice(Type** out_pointer)
+	{
+		if (renderer_ == nullptr) return;
+		switch (mode_)
+		{
+			case Renderer::DIRECTX9:
+			{
+				*out_pointer = ((RendererDirectX9*)renderer_)->getpDevice();
+				break;
+			}
+			case Renderer::DIRECTX11:
+			{
+				break;
+			}
+			case Renderer::OPEN_GL:
+			{
+				break;
+			}
+			default:
+			{
+				break;
+			}
+		}
+	}
 
 
 //====================
@@ -75,6 +178,7 @@ public:
 public:
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details
 	//! @param[in] hInstance	  インスタンスハンドル
 	//! @param[in] hWnd			  Windowsハンドル
 	//! @param[in] is_full_screen フルスクリーンフラグ
@@ -87,6 +191,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 終了関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
@@ -94,6 +199,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 描画開始関数
+	//! @details
 	//! @param void なし
 	//! @retval bool 描画開始成功の有無
 	//----------------------------------------
@@ -101,6 +207,7 @@ public:
 
 	//----------------------------------------
 	//! @brief 描画終了関数
+	//! @details
 	//! @param[in] is_begin_scene 描画開始成功フラグ
 	//! @retval void なし
 	//----------------------------------------
@@ -108,73 +215,11 @@ public:
 
 	//----------------------------------------
 	//! @brief バックバッファをフロントバッファに反映関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
 	void Present();
-
-	// プロパティ
-	RendererInterface* getpRenderer() { return renderer_; }
-	void setRenderer(RendererFactoryInterface* factory, MODE mode)
-	{
-		if (renderer_ == nullptr)
-		{
-			renderer_ = factory->Create();
-			mode_ = mode;
-		}
-
-		SafeRelease::Normal(&factory);
-	}
-	template <class Type>
-	void getInterface(Type** pointer)
-	{
-		if (renderer_ == nullptr) return;
-		switch (mode_)
-		{
-			case Renderer::DIRECTX9:
-			{
-				*pointer = ((RendererDirectX9*)renderer_)->getpInterface();
-				break;
-			}
-			case Renderer::DIRECTX11:
-			{
-				break;
-			}
-			case Renderer::OPEN_GL:
-			{
-				break;
-			}
-			default:
-			{
-				break;
-			}
-		}
-	}
-	template <class Type>
-	void getDevice(Type** pointer)
-	{
-		if (renderer_ == nullptr) return;
-		switch (mode_)
-		{
-			case Renderer::DIRECTX9:
-			{
-				*pointer = ((RendererDirectX9*)renderer_)->getpDevice();
-				break;
-			}
-			case Renderer::DIRECTX11:
-			{
-				break;
-			}
-			case Renderer::OPEN_GL:
-			{
-				break;
-			}
-			default:
-			{
-				break;
-			}
-		}
-	}
 
 private:
 	//----------------------------------------
@@ -182,6 +227,7 @@ private:
 	//! @param void なし
 	//----------------------------------------
 	Renderer() {}
+
 
 //====================
 // 消去済み関数

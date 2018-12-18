@@ -9,7 +9,7 @@ var class_plane_polygon =
     [ "Draw", "class_plane_polygon.html#a2f20691ee0feee4fa428f5d017d7062a", null ],
     [ "GetColor", "class_plane_polygon.html#ac4f8f7b51acdb744231efd342d3b2734", null ],
     [ "GetMaterial", "class_plane_polygon.html#a808087c9d82c0eb7cfb0709c9906e833", null ],
-    [ "GetMeshNum", "class_plane_polygon.html#a05f4f63c2d04d30f7b9808c009101403", null ],
+    [ "getMeshNum", "class_plane_polygon.html#a494068044805bdd4054bc69328c71d7f", null ],
     [ "RegistrationIndex", "class_plane_polygon.html#a535d0222908f4a4a030d8b525b225554", null ],
     [ "RegistrationVertex", "class_plane_polygon.html#af4ba95cfaf0aba506eeb58cdc80bfd46", null ],
     [ "SetColor", "class_plane_polygon.html#a55307fc341641d7fd42fe2269acbd113", null ],

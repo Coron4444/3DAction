@@ -34,32 +34,61 @@ private:
 
 
 //====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief 座標ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 座標ポインタ
+	//----------------------------------------
+	Vector3D* getpPosition();
+	
+	//----------------------------------------
+	//! @brief 方向ポインタ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D* 方向ポインタ
+	//----------------------------------------
+	Vector3D* getpVector();
+	
+	//----------------------------------------
+	//! @brief 方向ベクトル加算済み座標取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Vector3D 方向ベクトル加算済み座標
+	//----------------------------------------
+	Vector3D getAddVectorToPosition();
+	
+	//----------------------------------------
+	//! @brief 2D線分の傾き取得関数
+	//! @details
+	//! @param void なし
+	//! @retval float 2D線分の傾き
+	//----------------------------------------
+	float getSlopeOf2DLineSegment();
+
+
+//====================
 // 関数
 //====================
 public:
 	//----------------------------------------
 	//! @brief コンストラクタ
+	//! @details
 	//! @param void なし
 	//----------------------------------------
-	LineSegment() : CollisionShapeBase(CollisionShapeBase::Type::LINE_SEGMENT) {}
+	LineSegment();
 
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details
 	//! @param[in] position 座標
 	//! @param[in] vector   方向
 	//! @retval void なし
 	//----------------------------------------
-	void Init(Vector3D position, Vector3D vector)
-	{
-		position_ = position;
-		vector_ = vector;
-	}
-
-	// プロパティ
-	Vector3D* getpPosition() { return &position_; }
-	Vector3D* getpVector() { return &vector_; }
-	Vector3D getAddVectorToPosition() { return position_ + vector_; }
-	float getSlopeOf2DLineSegment() { return vector_.y / vector_.x; }
+	void Init(Vector3D position, Vector3D vector);
 };
 
 

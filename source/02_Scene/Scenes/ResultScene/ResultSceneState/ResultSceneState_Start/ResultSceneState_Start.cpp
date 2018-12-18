@@ -17,6 +17,7 @@
 #include <Scenes/TitleScene/TitleScene.h>
 #include <Scenes/TitleScene/TitleSceneState/TitleSceneState_Start/TitleSceneState_Start.h>
 
+#include <GameObjectManager/GameObjectManager.h>
 #include <ResourceManager\ResourceManager.h>
 #include <SafeRelease/SafeRelease.h>
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
@@ -31,13 +32,10 @@
 //****************************************
 // 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void ResultSceneState_Start::Init()
 {
 	// リザルトシーンの取得
-	result_scene_ = (ResultScene*)scene_;
+	result_scene_ = (ResultScene*)getpScene();
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
@@ -63,18 +61,12 @@ void ResultSceneState_Start::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void ResultSceneState_Start::Uninit()
 {
 }
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void ResultSceneState_Start::Update()
 {
 	if (GetKeyboardTrigger(DIK_SPACE))
@@ -86,9 +78,6 @@ void ResultSceneState_Start::Update()
 
 
 
-//--------------------------------------------------
-// +リセット関数
-//--------------------------------------------------
 void ResultSceneState_Start::Reset()
 {
 

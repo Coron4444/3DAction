@@ -34,22 +34,68 @@ private:
 
 
 //====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief クリアフラグ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval bool クリアの有無
+	//----------------------------------------
+	bool getIsClear();
+
+	//----------------------------------------
+	//! @brief クリアフラグ設定関数
+	//! @details
+	//! @param[in] value クリアフラグ
+	//! @retval void なし
+	//----------------------------------------
+	void setIsClear(bool value);
+	
+	//----------------------------------------
+	//! @brief スコア取得関数
+	//! @details
+	//! @param void なし
+	//! @retval int スコア値
+	//----------------------------------------
+	int getScore();
+
+	//----------------------------------------
+	//! @brief スコア設定関数
+	//! @details
+	//! @param[in] value スコア値
+	//! @retval void なし
+	//----------------------------------------
+	void setScore(int value);
+
+	//----------------------------------------
+	//! @brief ゲームオーバーフラグ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval bool ゲームオーバーの有無
+	//----------------------------------------
+	int getGameOver();
+
+	//----------------------------------------
+	//! @brief ゲームオーバーフラグ設定関数
+	//! @details
+	//! @param[in] value ゲームオーバーフラグ
+	//! @retval void なし
+	//----------------------------------------
+	void setGameOver(int value);
+
+
+//====================
 // 関数
 //====================
 public:
 	//----------------------------------------
 	//! @brief コンストラクタ
+	//! @details
 	//! @param state 最初のステート
 	//----------------------------------------
-	GameScene(StateBase* state) : SceneBase(state) {}
-
-	// プロパティ
-	bool getIsClear() { return is_clear_; }
-	void setIsClear(bool value) { is_clear_ = value; }
-	int getScore() { return score_; }
-	void setScore(int value) { score_ = value; }
-	int getGameOver() { return game_over_; }
-	void setGameOver(int value) { game_over_ = value; }
+	GameScene(StateBase* state);
 };
 
 

@@ -1,0 +1,1251 @@
+\hypertarget{class_collision_calculation}{}\section{Collision\+Calculation クラス}
+\label{class_collision_calculation}\index{Collision\+Calculation@{Collision\+Calculation}}
+
+
+衝突計算\+Class  
+
+
+
+
+{\ttfamily \#include $<$Collision\+Calculation.\+h$>$}
+
+\subsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a473d42596db3c94e4779eb44a1ddf42b}{Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\begin{DoxyCompactList}\small\item\em 2\+D線分と2\+D線分の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a150c5411ae4cb28dc57e6622682494d2}{Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere)
+\begin{DoxyCompactList}\small\item\em 線分と球の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_ac43bbd41b81341d9aa5009744c45d61d}{Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane)
+\begin{DoxyCompactList}\small\item\em 線分と平面の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_ad74624614e9fefd55132f6a6cd62f05c}{Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment, \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\begin{DoxyCompactList}\small\item\em 線分と三角形平面の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_abfed92b06d3d7dbfc8289225328b9ad3}{Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment, \mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$cylinder)
+\begin{DoxyCompactList}\small\item\em 線分と円柱の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a6fc9b23bb92d4fca01d1812669f333ed}{Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment, \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule)
+\begin{DoxyCompactList}\small\item\em 線分とカプセルの衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a23a849e4b29bc0d87356d2b3272469b0}{Collision\+Judgment\+Of\+Sphere\+And\+Sphere}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere0, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere1)
+\begin{DoxyCompactList}\small\item\em 球と球の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a776c3b2ee6ece38b29914dd69f63ed42}{Collision\+Judgment\+Of\+Sphere\+And\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane)
+\begin{DoxyCompactList}\small\item\em 球と平面の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a533512a0f0ce833680f1e50a2b224e57}{Collision\+Judgment\+Of\+Sphere\+And\+Triangle}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\begin{DoxyCompactList}\small\item\em 球と三角形平面の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a8df4528ada47cb62cdf7835d0387409c}{Collision\+Judgment\+Of\+Sphere\+And\+Capsule}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule)
+\begin{DoxyCompactList}\small\item\em 球とカプセルの衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_aebe109fb7cc435ac79a3255909b445b1}{Collision\+Judgment\+Of\+Sphere\+And\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb)
+\begin{DoxyCompactList}\small\item\em 球と\+O\+B\+Bの衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_acd4d60e71a42eb8934d60fa2c99186ea}{Collision\+Judgment\+Of\+Plane\+And\+Plane}} (\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$hit\+\_\+line\+\_\+segment, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane0, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane1)
+\begin{DoxyCompactList}\small\item\em 平面と平面の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a854226ccd02c8afe5cec91470253ff92}{Collision\+Judgment\+Of\+Plane\+And\+Triangle}} (\mbox{\hyperlink{class_plane}{Plane}} $\ast$plane, \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\begin{DoxyCompactList}\small\item\em 平面と三角形平面の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a3914ef51fc27f19911d3577abc56d9a5}{Collision\+Judgment\+Of\+Triangle\+And\+Triangle}} (\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle0, \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle1)
+\begin{DoxyCompactList}\small\item\em 三角形平面と三角形平面の衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a6a66cb6f909ab75c51601ad8037cf806}{Collision\+Judgment\+Of\+Capsule\+And\+Capsule}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule0, \mbox{\hyperlink{class_capsule}{Capsule}} $\ast$capsule1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} active\+\_\+vector=\{0.\+0f, 0.\+0f, 0.\+0f\})
+\begin{DoxyCompactList}\small\item\em カプセルとカプセルの衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a9123a8d6e1e1093bfe977cb5d3dbd6ec}{Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+vector, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb0, \mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$obb1)
+\begin{DoxyCompactList}\small\item\em O\+B\+Bと\+O\+B\+Bの衝突判定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_collision_calculation_ac06f2aa7df28c6331070b85d48760b59}{Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point}} (\mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} $\ast$aabb, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$point)
+\begin{DoxyCompactList}\small\item\em A\+A\+B\+Bと点の最短距離の算出関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_calculation_adfd1c367b0e22ce1240185efe11d6c98}{Collision\+Calculation}} ()=delete
+\item 
+\mbox{\hyperlink{class_collision_calculation_a7fa8ad5ebc7cb5554bd071756140771a}{Collision\+Calculation}} (const \mbox{\hyperlink{class_collision_calculation}{Collision\+Calculation}} \&class\+\_\+name)=delete
+\item 
+\mbox{\hyperlink{class_collision_calculation}{Collision\+Calculation}} \& \mbox{\hyperlink{class_collision_calculation_a20738fa64ae8749165328d48ee90d32e}{operator=}} (const \mbox{\hyperlink{class_collision_calculation}{Collision\+Calculation}} \&class\+\_\+name)=delete
+\end{DoxyCompactItemize}
+\subsection*{静的非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_collision_calculation_a3123f561d5ba6af08336523205a5d8a8}{Froat\+Truncation}} (float num)
+\begin{DoxyCompactList}\small\item\em floatの切り捨て関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_aa175baccc078543be38213d04a3af2b2}{Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One}} (float ratio)
+\begin{DoxyCompactList}\small\item\em 比率が0$\sim$1の間にあるか判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_abae15654adac71bcdbe0b9a31554c827}{Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One}} (float ratio0, float ratio1)
+\begin{DoxyCompactList}\small\item\em 両方の比率が0$\sim$1の間にあるか判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a7dffad18d15ed6e7a2e43888398afeeb}{Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero}} (\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\begin{DoxyCompactList}\small\item\em どちらかの線分の\+Xが0か判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_abf9896120a5f4b2a7f816140fb19eafd}{Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero}} (\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\begin{DoxyCompactList}\small\item\em 両方の線分の\+Xが0か判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a013889e5e69a001c229dcf083f884447}{Determine\+Whether\+It\+Is\+Parallel\+From\+Slope}} (float slope0, float slope1)
+\begin{DoxyCompactList}\small\item\em 傾きから平行か判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a37c172d64f5d30d772c9b9275215d83c}{Determine\+If\+It\+Is\+Longer\+Than\+Vector}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$vector, float length)
+\begin{DoxyCompactList}\small\item\em ベクトルより長いか判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a05f88ea10634f6312ec556a202c2296d}{Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side}} (\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\begin{DoxyCompactList}\small\item\em 球が各辺に衝突しているか判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a8878c4e262eb7027f4ae147a24c7ba33}{Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside}} (\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere, \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle)
+\begin{DoxyCompactList}\small\item\em 球が内部にめり込んでいるか判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a53a77b483d1751ce918982c75eb2ac7c}{Determine\+Whether\+The\+Plane\+Is\+Parallel}} (\mbox{\hyperlink{class_plane}{Plane}} $\ast$plane0, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane1)
+\begin{DoxyCompactList}\small\item\em 平面が平行か判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a62c458a068b5ec44a04060ea2e5e1d47}{Determine\+If\+A\+Triangle\+Penetrates}} (\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle0, \mbox{\hyperlink{class_triangle}{Triangle}} $\ast$triangle1, bool $\ast$is\+\_\+hit\+\_\+segment\+\_\+one)
+\begin{DoxyCompactList}\small\item\em 三角形平面が貫いているか判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a286f406988ba6ca8d46460fabba14fd6}{Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} intersection\+\_\+point)
+\begin{DoxyCompactList}\small\item\em 交点が線分内か判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a95ba95163806f128280a825cf4517336}{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\begin{DoxyCompactList}\small\item\em Xが0の時の2\+D線分と2\+D線分の交点計算関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a01b7e084c9517b5f1e2e724b1212e4c6}{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$hit\+\_\+point, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment0, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment1)
+\begin{DoxyCompactList}\small\item\em 2\+D線分と2\+D線分の交点計算関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_abb04e8dc678bf1bcb0f1ecc8dd9edcca}{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres}} (\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$equation, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment, \mbox{\hyperlink{class_sphere}{Sphere}} $\ast$sphere)
+\begin{DoxyCompactList}\small\item\em 線分と球の2次方程式計算 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a860cb4de288c1dbd5e21698b9f9a43d7}{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Cylinders}} (\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$equation, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$line\+\_\+segment, \mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$cylinder)
+\begin{DoxyCompactList}\small\item\em 線分と円柱の2次方程式計算 \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_collision_calculation_a59459a11f5f025b10e81d7ba52772809}{Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment}} (float ratio0, float ratio1)
+\begin{DoxyCompactList}\small\item\em 線分内の1番手前の比率の算出関数 \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_collision_calculation_a562488bfcc7d29102790b957acf71c90}{Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} segment\+\_\+vector, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane, float length)
+\begin{DoxyCompactList}\small\item\em 線分が平面に届く距離の算出関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_collision_calculation_a10997575baef11490c120f8306a270ae}{Calculation\+Of\+Collision\+Line\+Segment}} (\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$hit\+\_\+line\+\_\+segment, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane0, \mbox{\hyperlink{class_plane}{Plane}} $\ast$plane1)
+\begin{DoxyCompactList}\small\item\em 衝突線分の算出関数 \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_collision_calculation_a7edbbf64d99efd6988925037ee0827af}{Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$my\+\_\+separation\+\_\+axis, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis0, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis2=nullptr)
+\begin{DoxyCompactList}\small\item\em 投影線分の長さの算出関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_adc04a190b8bf8696880ea33d8ef01b09}{Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$my\+\_\+separation\+\_\+axis, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$my\+\_\+separation\+\_\+axis\+\_\+normal, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis0, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis2, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$interval\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em 通常の分離軸との衝突判定関数 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_calculation_a7ad238e8d35646bf4034879204d94533}{Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$my\+\_\+separation\+\_\+axis\+\_\+normal, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis\+\_\+normal, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$my\+\_\+separation\+\_\+axis0, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$my\+\_\+separation\+\_\+axis1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis0, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$other\+\_\+separation\+\_\+axis1, \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$interval\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em 外積の分離軸との衝突判定関数 \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86d2f521608d1}{Calculate\+Power\+Of\+The\+Shortest\+Distance\+Between1\+D\+Line\+Segment\+And\+Point}} (float line\+\_\+segment\+\_\+min, float line\+\_\+segment\+\_\+max, float any\+\_\+component\+\_\+of\+\_\+a\+\_\+point)
+\begin{DoxyCompactList}\small\item\em 1\+D線分と点の最短距離のべき乗算出関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+衝突計算\+Class 
+
+衝突計算の\+Class(static) 
+
+ Collision\+Calculation.\+h の 44 行目に定義があります。
+
+
+
+\subsection{構築子と解体子}
+\mbox{\Hypertarget{class_collision_calculation_adfd1c367b0e22ce1240185efe11d6c98}\label{class_collision_calculation_adfd1c367b0e22ce1240185efe11d6c98}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Calculation@{Collision\+Calculation}}
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Calculation()}{CollisionCalculation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Collision\+Calculation\+::\+Collision\+Calculation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_calculation_a7fa8ad5ebc7cb5554bd071756140771a}\label{class_collision_calculation_a7fa8ad5ebc7cb5554bd071756140771a}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Calculation@{Collision\+Calculation}}
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Calculation()}{CollisionCalculation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Collision\+Calculation\+::\+Collision\+Calculation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_calculation}{Collision\+Calculation}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\Hypertarget{class_collision_calculation_a2b210c0e981995e209a86d2f521608d1}\label{class_collision_calculation_a2b210c0e981995e209a86d2f521608d1}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+Power\+Of\+The\+Shortest\+Distance\+Between1\+D\+Line\+Segment\+And\+Point@{Calculate\+Power\+Of\+The\+Shortest\+Distance\+Between1\+D\+Line\+Segment\+And\+Point}}
+\index{Calculate\+Power\+Of\+The\+Shortest\+Distance\+Between1\+D\+Line\+Segment\+And\+Point@{Calculate\+Power\+Of\+The\+Shortest\+Distance\+Between1\+D\+Line\+Segment\+And\+Point}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Calculate\+Power\+Of\+The\+Shortest\+Distance\+Between1\+D\+Line\+Segment\+And\+Point()}{CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint()}}
+{\footnotesize\ttfamily float Collision\+Calculation\+::\+Calculate\+Power\+Of\+The\+Shortest\+Distance\+Between1\+D\+Line\+Segment\+And\+Point (\begin{DoxyParamCaption}\item[{float}]{line\+\_\+segment\+\_\+min,  }\item[{float}]{line\+\_\+segment\+\_\+max,  }\item[{float}]{any\+\_\+component\+\_\+of\+\_\+a\+\_\+point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+1\+D線分と点の最短距離のべき乗算出関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em line\+\_\+segment\+\_\+min} & 線分の始点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment\+\_\+max} & 線分の終点 \\
+\hline
+\mbox{\tt in}  & {\em any\+\_\+component\+\_\+of\+\_\+a\+\_\+point} & 点の任意の成分 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em float} & 1\+D線分と点の最短距離のべき乗 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 1164 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a562488bfcc7d29102790b957acf71c90}\label{class_collision_calculation_a562488bfcc7d29102790b957acf71c90}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane@{Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane}}
+\index{Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane@{Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane()}{CalculateTheDistanceTheLineSegmentReachesThePlane()}}
+{\footnotesize\ttfamily float Collision\+Calculation\+::\+Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{segment\+\_\+vector,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+線分が平面に届く距離の算出関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em segment\+\_\+vector} & 線分ベクトル \\
+\hline
+\mbox{\tt in}  & {\em plane} & 平面 \\
+\hline
+\mbox{\tt in}  & {\em length} & 長さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em float} & 線分が平面に届く距離 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 1024 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a7edbbf64d99efd6988925037ee0827af}\label{class_collision_calculation_a7edbbf64d99efd6988925037ee0827af}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment@{Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment}}
+\index{Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment@{Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment()}{CalculateTheLengthOfTheProjectionLineSegment()}}
+{\footnotesize\ttfamily float Collision\+Calculation\+::\+Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{my\+\_\+separation\+\_\+axis,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis0,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis2 = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+投影線分の長さの算出関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis} & 自分の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis2} & 相手の分離軸 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em float} & 投影線分の長さ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 1098 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a59459a11f5f025b10e81d7ba52772809}\label{class_collision_calculation_a59459a11f5f025b10e81d7ba52772809}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment@{Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment}}
+\index{Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment@{Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment()}{CalculateTheRatioOfTheFrontInTheLineSegment()}}
+{\footnotesize\ttfamily float Collision\+Calculation\+::\+Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment (\begin{DoxyParamCaption}\item[{float}]{ratio0,  }\item[{float}]{ratio1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+線分内の1番手前の比率の算出関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em ratio0} & 比率 \\
+\hline
+\mbox{\tt in}  & {\em ratio1} & 比率 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em float} & 1番手前の比率 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 995 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_ac06f2aa7df28c6331070b85d48760b59}\label{class_collision_calculation_ac06f2aa7df28c6331070b85d48760b59}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point@{Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point}}
+\index{Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point@{Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point()}{CalculateTheShortestDistanceBetweenAABBAndAPoint()}}
+{\footnotesize\ttfamily float Collision\+Calculation\+::\+Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} $\ast$}]{aabb,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A\+A\+B\+Bと点の最短距離の算出関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em aabb} & \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \\
+\hline
+\mbox{\tt in}  & {\em point} & 点 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em float} & A\+A\+B\+Bと点の最短距離 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 1192 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a10997575baef11490c120f8306a270ae}\label{class_collision_calculation_a10997575baef11490c120f8306a270ae}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Calculation\+Of\+Collision\+Line\+Segment@{Calculation\+Of\+Collision\+Line\+Segment}}
+\index{Calculation\+Of\+Collision\+Line\+Segment@{Calculation\+Of\+Collision\+Line\+Segment}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Calculation\+Of\+Collision\+Line\+Segment()}{CalculationOfCollisionLineSegment()}}
+{\footnotesize\ttfamily void Collision\+Calculation\+::\+Calculation\+Of\+Collision\+Line\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{hit\+\_\+line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane0,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+衝突線分の算出関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+line\+\_\+segment} & 衝突線分 \\
+\hline
+\mbox{\tt in}  & {\em plane0} & 平面 \\
+\hline
+\mbox{\tt in}  & {\em plane1} & 平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 1041 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a473d42596db3c94e4779eb44a1ddf42b}\label{class_collision_calculation_a473d42596db3c94e4779eb44a1ddf42b}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment@{Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}}
+\index{Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment@{Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment()}{CollisionJudgmentOf2DLineSegmentAnd2DLineSegment()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+2\+D線分と2\+D線分の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 34 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a6a66cb6f909ab75c51601ad8037cf806}\label{class_collision_calculation_a6a66cb6f909ab75c51601ad8037cf806}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Capsule\+And\+Capsule@{Collision\+Judgment\+Of\+Capsule\+And\+Capsule}}
+\index{Collision\+Judgment\+Of\+Capsule\+And\+Capsule@{Collision\+Judgment\+Of\+Capsule\+And\+Capsule}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Capsule\+And\+Capsule()}{CollisionJudgmentOfCapsuleAndCapsule()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Capsule\+And\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule0,  }\item[{\mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{active\+\_\+vector = {\ttfamily \{0.0f,~0.0f,~0.0f\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+カプセルとカプセルの衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+vector} & 衝突ベクトル \\
+\hline
+\mbox{\tt in}  & {\em capsule0} & カプセル \\
+\hline
+\mbox{\tt in}  & {\em capsule1} & カプセル \\
+\hline
+\mbox{\tt in}  & {\em active\+\_\+vector} & 補正用ベクトル \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 475 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a6fc9b23bb92d4fca01d1812669f333ed}\label{class_collision_calculation_a6fc9b23bb92d4fca01d1812669f333ed}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule}}
+\index{Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule()}{CollisionJudgmentOfLineSegmentAndCapsule()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+線分とカプセルの衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em capsule} & カプセル \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 198 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_abfed92b06d3d7dbfc8289225328b9ad3}\label{class_collision_calculation_abfed92b06d3d7dbfc8289225328b9ad3}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder}}
+\index{Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder()}{CollisionJudgmentOfLineSegmentAndCylinder()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$}]{cylinder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+線分と円柱の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em cylinder} & 円柱 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 166 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_ac43bbd41b81341d9aa5009744c45d61d}\label{class_collision_calculation_ac43bbd41b81341d9aa5009744c45d61d}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane}}
+\index{Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane()}{CollisionJudgmentOfLineSegmentAndPlane()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+線分と平面の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em plane} & 平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 106 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a150c5411ae4cb28dc57e6622682494d2}\label{class_collision_calculation_a150c5411ae4cb28dc57e6622682494d2}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere}}
+\index{Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere()}{CollisionJudgmentOfLineSegmentAndSphere()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+線分と球の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 74 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_ad74624614e9fefd55132f6a6cd62f05c}\label{class_collision_calculation_ad74624614e9fefd55132f6a6cd62f05c}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle}}
+\index{Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle()}{CollisionJudgmentOfLineSegmentAndTriangle()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+線分と三角形平面の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em triangle} & 三角形平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 142 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a9123a8d6e1e1093bfe977cb5d3dbd6ec}\label{class_collision_calculation_a9123a8d6e1e1093bfe977cb5d3dbd6ec}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB@{Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB}}
+\index{Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB@{Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+B\+B()}{CollisionJudgmentOfOBBAndOBB()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb0,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+O\+B\+Bと\+O\+B\+Bの衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+vector} & 衝突ベクトル \\
+\hline
+\mbox{\tt in}  & {\em obb0} & \mbox{\hyperlink{class_o_b_b}{O\+BB}} \\
+\hline
+\mbox{\tt in}  & {\em obb1} & \mbox{\hyperlink{class_o_b_b}{O\+BB}} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 521 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_acd4d60e71a42eb8934d60fa2c99186ea}\label{class_collision_calculation_acd4d60e71a42eb8934d60fa2c99186ea}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Plane\+And\+Plane@{Collision\+Judgment\+Of\+Plane\+And\+Plane}}
+\index{Collision\+Judgment\+Of\+Plane\+And\+Plane@{Collision\+Judgment\+Of\+Plane\+And\+Plane}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Plane\+And\+Plane()}{CollisionJudgmentOfPlaneAndPlane()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Plane\+And\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{hit\+\_\+line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane0,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+平面と平面の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+line\+\_\+segment} & 衝突線分 \\
+\hline
+\mbox{\tt in}  & {\em plane0} & 平面 \\
+\hline
+\mbox{\tt in}  & {\em plane1} & 平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 408 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a854226ccd02c8afe5cec91470253ff92}\label{class_collision_calculation_a854226ccd02c8afe5cec91470253ff92}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Plane\+And\+Triangle@{Collision\+Judgment\+Of\+Plane\+And\+Triangle}}
+\index{Collision\+Judgment\+Of\+Plane\+And\+Triangle@{Collision\+Judgment\+Of\+Plane\+And\+Triangle}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Plane\+And\+Triangle()}{CollisionJudgmentOfPlaneAndTriangle()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Plane\+And\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane,  }\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+平面と三角形平面の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em plane} & 平面 \\
+\hline
+\mbox{\tt in}  & {\em triangle} & 三角形平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 429 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a8df4528ada47cb62cdf7835d0387409c}\label{class_collision_calculation_a8df4528ada47cb62cdf7835d0387409c}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Capsule@{Collision\+Judgment\+Of\+Sphere\+And\+Capsule}}
+\index{Collision\+Judgment\+Of\+Sphere\+And\+Capsule@{Collision\+Judgment\+Of\+Sphere\+And\+Capsule}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Sphere\+And\+Capsule()}{CollisionJudgmentOfSphereAndCapsule()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Sphere\+And\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_capsule}{Capsule}} $\ast$}]{capsule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+球とカプセルの衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+vector} & 衝突ベクトル \\
+\hline
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\mbox{\tt in}  & {\em capsule} & カプセル \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 352 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_aebe109fb7cc435ac79a3255909b445b1}\label{class_collision_calculation_aebe109fb7cc435ac79a3255909b445b1}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+O\+BB@{Collision\+Judgment\+Of\+Sphere\+And\+O\+BB}}
+\index{Collision\+Judgment\+Of\+Sphere\+And\+O\+BB@{Collision\+Judgment\+Of\+Sphere\+And\+O\+BB}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Sphere\+And\+O\+B\+B()}{CollisionJudgmentOfSphereAndOBB()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Sphere\+And\+O\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_o_b_b}{O\+BB}} $\ast$}]{obb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+球と\+O\+B\+Bの衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+vector} & 衝突ベクトル \\
+\hline
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\mbox{\tt in}  & {\em obb} & \mbox{\hyperlink{class_o_b_b}{O\+BB}} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 383 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a776c3b2ee6ece38b29914dd69f63ed42}\label{class_collision_calculation_a776c3b2ee6ece38b29914dd69f63ed42}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Plane@{Collision\+Judgment\+Of\+Sphere\+And\+Plane}}
+\index{Collision\+Judgment\+Of\+Sphere\+And\+Plane@{Collision\+Judgment\+Of\+Sphere\+And\+Plane}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Sphere\+And\+Plane()}{CollisionJudgmentOfSphereAndPlane()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Sphere\+And\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+球と平面の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+vector} & 衝突ベクトル \\
+\hline
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\mbox{\tt in}  & {\em plane} & 球 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 292 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a23a849e4b29bc0d87356d2b3272469b0}\label{class_collision_calculation_a23a849e4b29bc0d87356d2b3272469b0}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Sphere@{Collision\+Judgment\+Of\+Sphere\+And\+Sphere}}
+\index{Collision\+Judgment\+Of\+Sphere\+And\+Sphere@{Collision\+Judgment\+Of\+Sphere\+And\+Sphere}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Sphere\+And\+Sphere()}{CollisionJudgmentOfSphereAndSphere()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Sphere\+And\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere0,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+球と球の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+vector} & 衝突ベクトル \\
+\hline
+\mbox{\tt in}  & {\em sphere0} & 球 \\
+\hline
+\mbox{\tt in}  & {\em sphere1} & 球 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 267 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a533512a0f0ce833680f1e50a2b224e57}\label{class_collision_calculation_a533512a0f0ce833680f1e50a2b224e57}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Triangle@{Collision\+Judgment\+Of\+Sphere\+And\+Triangle}}
+\index{Collision\+Judgment\+Of\+Sphere\+And\+Triangle@{Collision\+Judgment\+Of\+Sphere\+And\+Triangle}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Sphere\+And\+Triangle()}{CollisionJudgmentOfSphereAndTriangle()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Sphere\+And\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+vector,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+球と三角形平面の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+vector} & 衝突ベクトル \\
+\hline
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\mbox{\tt in}  & {\em triangle} & 三角形平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 315 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a3914ef51fc27f19911d3577abc56d9a5}\label{class_collision_calculation_a3914ef51fc27f19911d3577abc56d9a5}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Triangle\+And\+Triangle@{Collision\+Judgment\+Of\+Triangle\+And\+Triangle}}
+\index{Collision\+Judgment\+Of\+Triangle\+And\+Triangle@{Collision\+Judgment\+Of\+Triangle\+And\+Triangle}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Collision\+Judgment\+Of\+Triangle\+And\+Triangle()}{CollisionJudgmentOfTriangleAndTriangle()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Collision\+Judgment\+Of\+Triangle\+And\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle0,  }\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+三角形平面と三角形平面の衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em triangle0} & 三角形平面 \\
+\hline
+\mbox{\tt in}  & {\em triangle0} & 三角形平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 451 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_adc04a190b8bf8696880ea33d8ef01b09}\label{class_collision_calculation_adc04a190b8bf8696880ea33d8ef01b09}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis@{Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis}}
+\index{Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis@{Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis()}{DeterminationOfCollisionWithOrdinarySeparationAxis()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{my\+\_\+separation\+\_\+axis,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{my\+\_\+separation\+\_\+axis\+\_\+normal,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis0,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis2,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{interval\+\_\+vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+通常の分離軸との衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis} & 自分の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis\+\_\+normal} & 自分の分離軸の単位ベクトル \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis2} & 相手の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em interval\+\_\+vector} & 両方の\+O\+B\+B間のベクトル \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 1116 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a7ad238e8d35646bf4034879204d94533}\label{class_collision_calculation_a7ad238e8d35646bf4034879204d94533}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis@{Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis}}
+\index{Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis@{Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis()}{DeterminationOfCollisionWithOuterAxisSeparationAxis()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{my\+\_\+separation\+\_\+axis\+\_\+normal,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis\+\_\+normal,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{my\+\_\+separation\+\_\+axis0,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{my\+\_\+separation\+\_\+axis1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis0,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{other\+\_\+separation\+\_\+axis1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{interval\+\_\+vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+外積の分離軸との衝突判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis\+\_\+normal} & 自分の分離軸の単位ベクトル \\
+\hline
+\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis\+\_\+normal} & 相手の分離軸の単位ベクトル \\
+\hline
+\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis0} & 自分の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis1} & 自分の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
+\hline
+\mbox{\tt in}  & {\em interval\+\_\+vector} & 両方の\+O\+B\+B間のベクトル \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 1138 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a62c458a068b5ec44a04060ea2e5e1d47}\label{class_collision_calculation_a62c458a068b5ec44a04060ea2e5e1d47}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+If\+A\+Triangle\+Penetrates@{Determine\+If\+A\+Triangle\+Penetrates}}
+\index{Determine\+If\+A\+Triangle\+Penetrates@{Determine\+If\+A\+Triangle\+Penetrates}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+If\+A\+Triangle\+Penetrates()}{DetermineIfATrianglePenetrates()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+If\+A\+Triangle\+Penetrates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle0,  }\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle1,  }\item[{bool $\ast$}]{is\+\_\+hit\+\_\+segment\+\_\+one }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+三角形平面が貫いているか判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em triangle0} & 三角形平面 \\
+\hline
+\mbox{\tt in}  & {\em triangle1} & 三角形平面 \\
+\hline
+\mbox{\tt in}  & {\em is\+\_\+hit\+\_\+segment\+\_\+one} & 1辺が貫通しているかフラグ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 貫いていればtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 813 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a37c172d64f5d30d772c9b9275215d83c}\label{class_collision_calculation_a37c172d64f5d30d772c9b9275215d83c}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+If\+It\+Is\+Longer\+Than\+Vector@{Determine\+If\+It\+Is\+Longer\+Than\+Vector}}
+\index{Determine\+If\+It\+Is\+Longer\+Than\+Vector@{Determine\+If\+It\+Is\+Longer\+Than\+Vector}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+If\+It\+Is\+Longer\+Than\+Vector()}{DetermineIfItIsLongerThanVector()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+If\+It\+Is\+Longer\+Than\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{vector,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+ベクトルより長いか判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em vector} & ベクトル \\
+\hline
+\mbox{\tt in}  & {\em length} & 長さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & ベクトルより長い場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 743 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a05f88ea10634f6312ec556a202c2296d}\label{class_collision_calculation_a05f88ea10634f6312ec556a202c2296d}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side@{Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side}}
+\index{Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side@{Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side()}{DetermineWhetherASphereCollidesAgainstEachSide()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+球が各辺に衝突しているか判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\mbox{\tt in}  & {\em triangle} & 三角形平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 754 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_abae15654adac71bcdbe0b9a31554c827}\label{class_collision_calculation_abae15654adac71bcdbe0b9a31554c827}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One@{Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One}}
+\index{Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One@{Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One()}{DetermineWhetherBothRatiosAreBetweenZeroAndOne()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One (\begin{DoxyParamCaption}\item[{float}]{ratio0,  }\item[{float}]{ratio1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+両方の比率が0$\sim$1の間にあるか判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em ratio0} & 比率 \\
+\hline
+\mbox{\tt in}  & {\em ratio1} & 比率 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 比率が0$\sim$1の間ならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 690 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a013889e5e69a001c229dcf083f884447}\label{class_collision_calculation_a013889e5e69a001c229dcf083f884447}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+It\+Is\+Parallel\+From\+Slope@{Determine\+Whether\+It\+Is\+Parallel\+From\+Slope}}
+\index{Determine\+Whether\+It\+Is\+Parallel\+From\+Slope@{Determine\+Whether\+It\+Is\+Parallel\+From\+Slope}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+It\+Is\+Parallel\+From\+Slope()}{DetermineWhetherItIsParallelFromSlope()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+It\+Is\+Parallel\+From\+Slope (\begin{DoxyParamCaption}\item[{float}]{slope0,  }\item[{float}]{slope1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+傾きから平行か判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em slope0} & 傾き \\
+\hline
+\mbox{\tt in}  & {\em slope1} & 傾き \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 平行ならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 730 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a286f406988ba6ca8d46460fabba14fd6}\label{class_collision_calculation_a286f406988ba6ca8d46460fabba14fd6}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment@{Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment}}
+\index{Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment@{Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment()}{DetermineWhetherTheIntersectionPointIsWithinALineSegment()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{intersection\+\_\+point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+交点が線分内か判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 線分内の場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 849 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a53a77b483d1751ce918982c75eb2ac7c}\label{class_collision_calculation_a53a77b483d1751ce918982c75eb2ac7c}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Plane\+Is\+Parallel@{Determine\+Whether\+The\+Plane\+Is\+Parallel}}
+\index{Determine\+Whether\+The\+Plane\+Is\+Parallel@{Determine\+Whether\+The\+Plane\+Is\+Parallel}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+The\+Plane\+Is\+Parallel()}{DetermineWhetherThePlaneIsParallel()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+The\+Plane\+Is\+Parallel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane0,  }\item[{\mbox{\hyperlink{class_plane}{Plane}} $\ast$}]{plane1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+平面が平行か判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em plane0} & 平面 \\
+\hline
+\mbox{\tt in}  & {\em plane1} & 平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 平行ならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 800 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_aa175baccc078543be38213d04a3af2b2}\label{class_collision_calculation_aa175baccc078543be38213d04a3af2b2}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One@{Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One}}
+\index{Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One@{Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One()}{DetermineWhetherTheRatioIsBetweenZeroAndOne()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One (\begin{DoxyParamCaption}\item[{float}]{ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+比率が0$\sim$1の間にあるか判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em ratio} & 比率 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 比率が0$\sim$1の間ならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 677 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a8878c4e262eb7027f4ae147a24c7ba33}\label{class_collision_calculation_a8878c4e262eb7027f4ae147a24c7ba33}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside@{Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside}}
+\index{Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside@{Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside()}{DetermineWhetherTheSphereIsSinkingInside()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{class_triangle}{Triangle}} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+球が内部にめり込んでいるか判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\mbox{\tt in}  & {\em triangle} & 三角形平面 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & めり込んでいる場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 784 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_abf9896120a5f4b2a7f816140fb19eafd}\label{class_collision_calculation_abf9896120a5f4b2a7f816140fb19eafd}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero@{Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero}}
+\index{Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero@{Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero()}{DetermineWhetherXOfBothLineSegmentsIsZero()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+両方の線分の\+Xが0か判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 両方の\+Xが0ならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 717 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a7dffad18d15ed6e7a2e43888398afeeb}\label{class_collision_calculation_a7dffad18d15ed6e7a2e43888398afeeb}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero@{Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero}}
+\index{Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero@{Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero()}{DetermineWhetherXOfEitherLineSegmentIsZero()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+どちらかの線分の\+Xが0か判定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & どちらかの\+Xが0ならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 704 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a3123f561d5ba6af08336523205a5d8a8}\label{class_collision_calculation_a3123f561d5ba6af08336523205a5d8a8}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Froat\+Truncation@{Froat\+Truncation}}
+\index{Froat\+Truncation@{Froat\+Truncation}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Froat\+Truncation()}{FroatTruncation()}}
+{\footnotesize\ttfamily float Collision\+Calculation\+::\+Froat\+Truncation (\begin{DoxyParamCaption}\item[{float}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+floatの切り捨て関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em num} & 切り捨てたい数値 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em float} & 切り捨てたfloat値 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 659 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a01b7e084c9517b5f1e2e724b1212e4c6}\label{class_collision_calculation_a01b7e084c9517b5f1e2e724b1212e4c6}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment@{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}}
+\index{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment@{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment()}{IntersectionCalculationOf2DLineSegmentAnd2DLineSegment()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+2\+D線分と2\+D線分の交点計算関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 895 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a95ba95163806f128280a825cf4517336}\label{class_collision_calculation_a95ba95163806f128280a825cf4517336}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero@{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero}}
+\index{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero@{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero()}{IntersectionCalculationOf2DLineSegmentAnd2DLineSegmentWhenXIsZero()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$}]{hit\+\_\+point,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment0,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Xが0の時の2\+D線分と2\+D線分の交点計算関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突している場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 872 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_a20738fa64ae8749165328d48ee90d32e}\label{class_collision_calculation_a20738fa64ae8749165328d48ee90d32e}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!operator=@{operator=}}
+\index{operator=@{operator=}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_calculation}{Collision\+Calculation}}\& Collision\+Calculation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_calculation}{Collision\+Calculation}} \&}]{class\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_collision_calculation_a860cb4de288c1dbd5e21698b9f9a43d7}\label{class_collision_calculation_a860cb4de288c1dbd5e21698b9f9a43d7}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Cylinders@{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Cylinders}}
+\index{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Cylinders@{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Cylinders}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Cylinders()}{QuadraticEquationCalculationForLineSegmentsAndCylinders()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Cylinders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$}]{equation,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_cylinder}{Cylinder}} $\ast$}]{cylinder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+線分と円柱の2次方程式計算 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em equation} & 2次方程式 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em cylinder} & 円柱 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 2次方程式の解がある場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 959 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_calculation_abb04e8dc678bf1bcb0f1ecc8dd9edcca}\label{class_collision_calculation_abb04e8dc678bf1bcb0f1ecc8dd9edcca}} 
+\index{Collision\+Calculation@{Collision\+Calculation}!Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres@{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres}}
+\index{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres@{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres}!Collision\+Calculation@{Collision\+Calculation}}
+\subsubsection{\texorpdfstring{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres()}{QuadraticEquationCalculationForLineSegmentsAndSpheres()}}
+{\footnotesize\ttfamily bool Collision\+Calculation\+::\+Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quadratic_equation}{Quadratic\+Equation}} $\ast$}]{equation,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}} $\ast$}]{line\+\_\+segment,  }\item[{\mbox{\hyperlink{class_sphere}{Sphere}} $\ast$}]{sphere }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+線分と球の2次方程式計算 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em equation} & 2次方程式 \\
+\hline
+\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em sphere} & 球 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 2次方程式の解がある場合true \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Calculation.\+cpp の 927 行目に定義があります。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Manager/\+Collision\+Calculation/\mbox{\hyperlink{_collision_calculation_8h}{Collision\+Calculation.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component\+Manager/\+Collision\+Manager/\+Collision\+Calculation/\mbox{\hyperlink{_collision_calculation_8cpp}{Collision\+Calculation.\+cpp}}\end{DoxyCompactItemize}

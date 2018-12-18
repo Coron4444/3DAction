@@ -13,7 +13,7 @@ var searchData=
   ['coindraw',['CoinDraw',['../class_coin_draw.html',1,'']]],
   ['coinfactory',['CoinFactory',['../class_coin_factory.html',1,'']]],
   ['collisionbase',['CollisionBase',['../class_collision_base.html',1,'']]],
-  ['collisionjudgment',['CollisionJudgment',['../class_collision_judgment.html',1,'']]],
+  ['collisioncalculation',['CollisionCalculation',['../class_collision_calculation.html',1,'']]],
   ['collisionmanager',['CollisionManager',['../class_collision_manager.html',1,'']]],
   ['collisionnull',['CollisionNull',['../class_collision_null.html',1,'']]],
   ['collisionobject',['CollisionObject',['../class_collision_object.html',1,'']]],

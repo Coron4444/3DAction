@@ -18,15 +18,6 @@ Enemy\+Draw の継承関係図\nopagebreak
 \includegraphics[width=169pt]{class_enemy_draw__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Enemy\+Draw 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_enemy_draw__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,11 +27,11 @@ void \mbox{\hyperlink{class_enemy_draw_a2861dc0623b0be7726bc69a6a469190e}{Uninit
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_enemy_draw_a20a23c1c5fd5e510d15e8ca27aabd821}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_enemy_draw_a6f2a052a45caf0d255112cbe81b8bfa3}{Get\+Matrix}} (unsigned object\+\_\+index) override
+unsigned \mbox{\hyperlink{class_enemy_draw_a1d8a943e4b625795bbd5ae614cc38ed1}{get\+Mesh\+Num}} (unsigned object\+\_\+index) override
 \item 
-unsigned \mbox{\hyperlink{class_enemy_draw_acda1a2487aea432b08fc816351a12239}{Get\+Mesh\+Num}} (unsigned object\+\_\+index) override
+\mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_enemy_draw_afbb8ac19041abda280ece7737103dc66}{getp\+Matrix}} (unsigned object\+\_\+index) override
 \item 
-D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_enemy_draw_a12f00116f7fa97e07317a949d5c27bb4}{Get\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_enemy_draw_a3f2885da84533364daaaac4a801fbc46}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
@@ -82,76 +73,48 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_enemy_draw_a12f0011
 
  Enemy\+Draw.\+cpp の 50 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=315pt]{class_enemy_draw_a20a23c1c5fd5e510d15e8ca27aabd821_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_enemy_draw_a12f00116f7fa97e07317a949d5c27bb4}\label{class_enemy_draw_a12f00116f7fa97e07317a949d5c27bb4}} 
-\index{Enemy\+Draw@{Enemy\+Draw}!Get\+Material@{Get\+Material}}
-\index{Get\+Material@{Get\+Material}!Enemy\+Draw@{Enemy\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Material()}{GetMaterial()}}
-{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Enemy\+Draw\+::\+Get\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_enemy_draw_a1d8a943e4b625795bbd5ae614cc38ed1}\label{class_enemy_draw_a1d8a943e4b625795bbd5ae614cc38ed1}} 
+\index{Enemy\+Draw@{Enemy\+Draw}!get\+Mesh\+Num@{get\+Mesh\+Num}}
+\index{get\+Mesh\+Num@{get\+Mesh\+Num}!Enemy\+Draw@{Enemy\+Draw}}
+\subsubsection{\texorpdfstring{get\+Mesh\+Num()}{getMeshNum()}}
+{\footnotesize\ttfamily unsigned Enemy\+Draw\+::get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_a84969d22d3436986f214e9896fe44fc6}{Draw\+Null}}を再実装しています。
-
-
-
- Enemy\+Draw.\+cpp の 88 行目に定義があります。
-
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_enemy_draw_a12f00116f7fa97e07317a949d5c27bb4_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_enemy_draw_a6f2a052a45caf0d255112cbe81b8bfa3}\label{class_enemy_draw_a6f2a052a45caf0d255112cbe81b8bfa3}} 
-\index{Enemy\+Draw@{Enemy\+Draw}!Get\+Matrix@{Get\+Matrix}}
-\index{Get\+Matrix@{Get\+Matrix}!Enemy\+Draw@{Enemy\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Enemy\+Draw\+::\+Get\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-\mbox{\hyperlink{class_draw_null_adede079e9c11a756090740b20bb43022}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}{Draw\+Null}}を再実装しています。
 
 
 
  Enemy\+Draw.\+cpp の 64 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_enemy_draw_a6f2a052a45caf0d255112cbe81b8bfa3_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_enemy_draw_acda1a2487aea432b08fc816351a12239}\label{class_enemy_draw_acda1a2487aea432b08fc816351a12239}} 
-\index{Enemy\+Draw@{Enemy\+Draw}!Get\+Mesh\+Num@{Get\+Mesh\+Num}}
-\index{Get\+Mesh\+Num@{Get\+Mesh\+Num}!Enemy\+Draw@{Enemy\+Draw}}
-\subsubsection{\texorpdfstring{Get\+Mesh\+Num()}{GetMeshNum()}}
-{\footnotesize\ttfamily unsigned Enemy\+Draw\+::\+Get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_enemy_draw_a3f2885da84533364daaaac4a801fbc46}\label{class_enemy_draw_a3f2885da84533364daaaac4a801fbc46}} 
+\index{Enemy\+Draw@{Enemy\+Draw}!getp\+Material@{getp\+Material}}
+\index{getp\+Material@{getp\+Material}!Enemy\+Draw@{Enemy\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Material()}{getpMaterial()}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Enemy\+Draw\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-\mbox{\hyperlink{class_draw_null_ad735978a85a5f3583eecd82d6bfe6413}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{Draw\+Null}}を再実装しています。
+
+
+
+ Enemy\+Draw.\+cpp の 88 行目に定義があります。
+
+\mbox{\Hypertarget{class_enemy_draw_afbb8ac19041abda280ece7737103dc66}\label{class_enemy_draw_afbb8ac19041abda280ece7737103dc66}} 
+\index{Enemy\+Draw@{Enemy\+Draw}!getp\+Matrix@{getp\+Matrix}}
+\index{getp\+Matrix@{getp\+Matrix}!Enemy\+Draw@{Enemy\+Draw}}
+\subsubsection{\texorpdfstring{getp\+Matrix()}{getpMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Enemy\+Draw\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{Draw\+Null}}を再実装しています。
 
 
 
  Enemy\+Draw.\+cpp の 76 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_enemy_draw_acda1a2487aea432b08fc816351a12239_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_enemy_draw_aa1659c35fa757db6a6cf07e26ad9ddfb}\label{class_enemy_draw_aa1659c35fa757db6a6cf07e26ad9ddfb}} 
 \index{Enemy\+Draw@{Enemy\+Draw}!Init@{Init}}
 \index{Init@{Init}!Enemy\+Draw@{Enemy\+Draw}}
@@ -170,13 +133,6 @@ D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_enemy_draw_a12f0011
 
  Enemy\+Draw.\+cpp の 23 行目に定義があります。
 
-呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_enemy_draw_aa1659c35fa757db6a6cf07e26ad9ddfb_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_enemy_draw_a2861dc0623b0be7726bc69a6a469190e}\label{class_enemy_draw_a2861dc0623b0be7726bc69a6a469190e}} 
 \index{Enemy\+Draw@{Enemy\+Draw}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Enemy\+Draw@{Enemy\+Draw}}

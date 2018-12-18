@@ -12,6 +12,7 @@
 //****************************************
 #include "Renderer.h"
 
+#include <Renderer/RendererFactory/RendererFactoryInterface/RendererFactoryInterface.h>
 #include <SafeRelease/SafeRelease.h>
 
 
@@ -25,21 +26,8 @@ RendererInterface* Renderer::renderer_ = nullptr;
 
 
 //****************************************
-// static関数定義
+// staticプロパティ定義
 //****************************************
-//--------------------------------------------------
-// +インスタンス解放関数
-//--------------------------------------------------
-void Renderer::ReleaseInstance()
-{
-	SafeRelease::Normal(&instance_);
-}
-
-
-
-//--------------------------------------------------
-// +インスタンス取得関数
-//--------------------------------------------------
 Renderer* Renderer::getpInstance()
 {
 	if (instance_ == nullptr)
@@ -52,11 +40,39 @@ Renderer* Renderer::getpInstance()
 
 
 //****************************************
+// static関数定義
+//****************************************
+void Renderer::ReleaseInstance()
+{
+	SafeRelease::Normal(&instance_);
+}
+
+
+
+//****************************************
+// プロパティ定義
+//****************************************
+RendererInterface* Renderer::getpRenderer()
+{
+	return renderer_;
+}
+
+void Renderer::setRenderer(RendererFactoryInterface* factory, MODE mode)
+{
+	if (renderer_ == nullptr)
+	{
+		renderer_ = factory->Create();
+		mode_ = mode;
+	}
+
+	SafeRelease::Normal(&factory);
+}
+
+
+
+//****************************************
 // 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 bool Renderer::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 					int window_width, int window_height)
 {
@@ -66,9 +82,6 @@ bool Renderer::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 
 
 
-//--------------------------------------------------
-// +終了処理関数
-//--------------------------------------------------
 void Renderer::Uninit()
 {
 	// レンダラーの解放
@@ -80,9 +93,6 @@ void Renderer::Uninit()
 
 
 
-//--------------------------------------------------
-// +描画開始関数
-//--------------------------------------------------
 bool Renderer::DrawBegin()
 {
 	if (renderer_ == nullptr) return false;
@@ -90,10 +100,6 @@ bool Renderer::DrawBegin()
 }
 
 
-
-//--------------------------------------------------
-// +描画終了関数
-//--------------------------------------------------
 
 void Renderer::DrawEnd(bool is_begin_scene)
 {
@@ -103,9 +109,6 @@ void Renderer::DrawEnd(bool is_begin_scene)
 
 
 
-//--------------------------------------------------
-// +バックバッファをフロントバッファに反映関数
-//--------------------------------------------------
 void Renderer::Present()
 {
 	if (renderer_ == nullptr) return;

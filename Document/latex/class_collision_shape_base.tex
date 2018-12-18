@@ -2,7 +2,7 @@
 \label{class_collision_shape_base}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}}
 
 
-衝突形状基底クラス  
+衝突形状\+Base\+Class  
 
 
 
@@ -18,15 +18,6 @@ Collision\+Shape\+Base の継承関係図\nopagebreak
 \includegraphics[width=350pt]{class_collision_shape_base__inherit__graph}
 \end{center}
 \end{figure}
-
-
-Collision\+Shape\+Base 連携図\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=198pt]{class_collision_shape_base__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{公開型}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,7 +29,7 @@ enum \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002
 \newline
 \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba56e56c8ee634330847018d716ca222b0}{O\+BB}}, 
 \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba740709eb8c52c5d67d1c9af02af074cf}{P\+L\+A\+NE}}, 
-\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46}{S\+E\+G\+M\+E\+NT}}, 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba8cae4c6afb929fa9a9f3ca67c35f78bd}{L\+I\+N\+E\+\_\+\+S\+E\+G\+M\+E\+NT}}, 
 \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbaf5cbf5af4d5ef779592f1a293895c63e}{S\+P\+H\+E\+RE}}, 
 \newline
 \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba4b6a6ea5d0152ec22ef54af55a4c872b}{T\+R\+I\+A\+N\+G\+LE}}, 
@@ -53,26 +44,20 @@ enum \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002
 virtual \mbox{\hyperlink{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}{$\sim$\+Collision\+Shape\+Base}} ()
 \begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} \mbox{\hyperlink{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}{get\+Type}} ()
-\item 
-const \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b}{get\+Positon}} () const
-\item 
-void \mbox{\hyperlink{class_collision_shape_base_ac14132139e486926df11f438a8600907}{set\+Position}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} value)
 \end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} \mbox{\hyperlink{class_collision_shape_base_a46413b1e4d4b3a35075232fa9012addb}{type\+\_\+}}
-\begin{DoxyCompactList}\small\item\em 形状タイプ \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_collision_shape_base_a0a60d112797f3026af9cbe79badbc66b}{position\+\_\+}}
-\begin{DoxyCompactList}\small\item\em 座標 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 形状タイプ \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
-衝突形状基底クラス 
+衝突形状\+Base\+Class 
 
-衝突形状の基底クラス 
+衝突形状の\+Base\+Class 
 
- Collision\+Shape\+Base.\+h の 26 行目に定義があります。
+ Collision\+Shape\+Base.\+h の 17 行目に定義があります。
 
 
 
@@ -108,8 +93,8 @@ O\+BB&\\
 P\+L\+A\+NE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+G\+M\+E\+NT@{S\+E\+G\+M\+E\+NT}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!S\+E\+G\+M\+E\+NT@{S\+E\+G\+M\+E\+NT}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbae8cff591879b2ebec2c2f14bb7ff1b46}} 
-S\+E\+G\+M\+E\+NT&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+N\+E\+\_\+\+S\+E\+G\+M\+E\+NT@{L\+I\+N\+E\+\_\+\+S\+E\+G\+M\+E\+NT}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!L\+I\+N\+E\+\_\+\+S\+E\+G\+M\+E\+NT@{L\+I\+N\+E\+\_\+\+S\+E\+G\+M\+E\+NT}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba8cae4c6afb929fa9a9f3ca67c35f78bd}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cba8cae4c6afb929fa9a9f3ca67c35f78bd}} 
+L\+I\+N\+E\+\_\+\+S\+E\+G\+M\+E\+NT&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{S\+P\+H\+E\+RE@{S\+P\+H\+E\+RE}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!S\+P\+H\+E\+RE@{S\+P\+H\+E\+RE}}}\mbox{\Hypertarget{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbaf5cbf5af4d5ef779592f1a293895c63e}\label{class_collision_shape_base_a8abcef092855ad0ca191047044b002cbaf5cbf5af4d5ef779592f1a293895c63e}} 
@@ -127,7 +112,7 @@ M\+AX&\\
 \end{DoxyEnumFields}
 
 
- Collision\+Shape\+Base.\+h の 33 行目に定義があります。
+ Collision\+Shape\+Base.\+h の 24 行目に定義があります。
 
 
 
@@ -143,8 +128,13 @@ M\+AX&\\
 コンストラクタ 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em type} & 形状タイプ \\
+\hline
+\end{DoxyParams}
 
- Collision\+Shape\+Base.\+h の 64 行目に定義があります。
+
+ Collision\+Shape\+Base.\+h の 54 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}\label{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}} 
 \index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!````~Collision\+Shape\+Base@{$\sim$\+Collision\+Shape\+Base}}
@@ -157,29 +147,17 @@ M\+AX&\\
 仮想デストラクタ 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Collision\+Shape\+Base.\+h の 70 行目に定義があります。
+
+ Collision\+Shape\+Base.\+h の 60 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b}\label{class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b}} 
-\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!get\+Positon@{get\+Positon}}
-\index{get\+Positon@{get\+Positon}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
-\subsubsection{\texorpdfstring{get\+Positon()}{getPositon()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Collision\+Shape\+Base\+::get\+Positon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
- Collision\+Shape\+Base.\+h の 74 行目に定義があります。
-
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_shape_base_a17bd2d81ebf464459dd977152e02055b_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}\label{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}} 
 \index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!get\+Type@{get\+Type}}
 \index{get\+Type@{get\+Type}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
@@ -188,50 +166,11 @@ M\+AX&\\
 
 
 
- Collision\+Shape\+Base.\+h の 73 行目に定義があります。
+ Collision\+Shape\+Base.\+h の 63 行目に定義があります。
 
-被呼び出し関係図\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_collision_shape_base_ac14132139e486926df11f438a8600907}\label{class_collision_shape_base_ac14132139e486926df11f438a8600907}} 
-\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!set\+Position@{set\+Position}}
-\index{set\+Position@{set\+Position}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
-\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
-{\footnotesize\ttfamily void Collision\+Shape\+Base\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
- Collision\+Shape\+Base.\+h の 75 行目に定義があります。
-
-被呼び出し関係図\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_collision_shape_base_ac14132139e486926df11f438a8600907_icgraph}
-\end{center}
-\end{figure}
 
 
 \subsection{メンバ詳解}
-\mbox{\Hypertarget{class_collision_shape_base_a0a60d112797f3026af9cbe79badbc66b}\label{class_collision_shape_base_a0a60d112797f3026af9cbe79badbc66b}} 
-\index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!position\+\_\+@{position\+\_\+}}
-\index{position\+\_\+@{position\+\_\+}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
-\subsubsection{\texorpdfstring{position\+\_\+}{position\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Collision\+Shape\+Base\+::position\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-座標 
-
-
-
- Collision\+Shape\+Base.\+h の 53 行目に定義があります。
-
 \mbox{\Hypertarget{class_collision_shape_base_a46413b1e4d4b3a35075232fa9012addb}\label{class_collision_shape_base_a46413b1e4d4b3a35075232fa9012addb}} 
 \index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!type\+\_\+@{type\+\_\+}}
 \index{type\+\_\+@{type\+\_\+}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
@@ -244,7 +183,7 @@ M\+AX&\\
 
 
 
- Collision\+Shape\+Base.\+h の 52 行目に定義があります。
+ Collision\+Shape\+Base.\+h の 43 行目に定義があります。
 
 
 
