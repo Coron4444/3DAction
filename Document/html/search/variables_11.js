@@ -92,7 +92,7 @@ var searchData=
   ['stacksizesbackup',['StackSizesBackup',['../struct_im_gui_draw_context.html#aedfc8e281f1d72c7c1882c36bebb00d1',1,'ImGuiDrawContext']]],
   ['startposy',['StartPosY',['../struct_im_gui_list_clipper.html#affee91b338520cd4bd59b5b680dcb5ae',1,'ImGuiListClipper']]],
   ['state',['state',['../class_x_input_controller.html#a36c0a2bb42c5559460653772a6ec26d1',1,'XInputController']]],
-  ['state_5f',['state_',['../class_scene_base.html#a9d8b7237f492e9ce0724714393b0e881',1,'SceneBase::state_()'],['../class_scene_manager.html#adf81d8a63dee92bfe5bb934903542bec',1,'SceneManager::state_()'],['../class_collision_base.html#a00000e1adbe3869939c8119a4ae830d0',1,'CollisionBase::state_()'],['../class_camera.html#ab2f0ce08b9fee8a4481b323f2856b245',1,'Camera::state_()'],['../class_fade.html#ad5ff5a5645edb88fd5544819077ff13f',1,'Fade::state_()']]],
+  ['state_5f',['state_',['../class_scene_base.html#a9d8b7237f492e9ce0724714393b0e881',1,'SceneBase::state_()'],['../class_scene_manager.html#adf81d8a63dee92bfe5bb934903542bec',1,'SceneManager::state_()'],['../class_camera.html#ab2f0ce08b9fee8a4481b323f2856b245',1,'Camera::state_()'],['../class_fade.html#ad5ff5a5645edb88fd5544819077ff13f',1,'Fade::state_()']]],
   ['statestorage',['StateStorage',['../struct_im_gui_draw_context.html#a507947c789f377ba13767061557fd348',1,'ImGuiDrawContext::StateStorage()'],['../struct_im_gui_window.html#a2151ab67f2624bd606883ad346179486',1,'ImGuiWindow::StateStorage()']]],
   ['stbstate',['StbState',['../struct_im_gui_text_edit_state.html#a0fb9de6739de31f44ecffce8ad239a5e',1,'ImGuiTextEditState']]],
   ['stepno',['StepNo',['../struct_im_gui_list_clipper.html#a8fe78f0368e16425c33fd35ca45d1912',1,'ImGuiListClipper']]],

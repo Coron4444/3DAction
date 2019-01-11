@@ -42,17 +42,17 @@ private:
 //====================
 public:
 	//----------------------------------------
-	//! @brief チュートリアルロゴポインタ取得関数
+	//! @brief チュートリアルロゴ取得関数
 	//! @details
 	//! @param void なし
-	//! @retval TutorialLogo* チュートリアルロゴポインタ
+	//! @retval TutorialLogo* チュートリアルロゴ
 	//----------------------------------------
 	TutorialLogo* getpTutorialLogo();
 
 	//----------------------------------------
-	//! @brief チュートリアルロゴポインタ設定関数
+	//! @brief チュートリアルロゴ設定関数
 	//! @details
-	//! @param[in] value チュートリアルロゴポインタ
+	//! @param *value チュートリアルロゴ
 	//! @retval void なし
 	//----------------------------------------
 	void setTutorialLogo(TutorialLogo* value);
@@ -65,7 +65,7 @@ public:
 	//----------------------------------------
 	//! @brief コンストラクタ
 	//! @details
-	//! @param state 最初のステート
+	//! @param *state 最初のステート
 	//----------------------------------------
 	TutorialScene(StateBase* state);
 };

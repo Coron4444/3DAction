@@ -34,10 +34,10 @@ const std::string StencilShadowTestDraw::MODEL_NAME = "knight_low/knight_low.X";
 void StencilShadowTestDraw::Init()
 {
 	// オーダーリスト設定
-	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
-	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->setDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);

@@ -13,7 +13,7 @@ var class_collision_shape_base =
       [ "MAX", "class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cba4636454f94c8f39be9fed0b1a3124a2c", null ]
     ] ],
     [ "CollisionShapeBase", "class_collision_shape_base.html#a9dd2ab42e2a6e96c6bff832ce8ca62b9", null ],
-    [ "~CollisionShapeBase", "class_collision_shape_base.html#a64fa9e1ae6b582be42360e926ce5d6cb", null ],
-    [ "getType", "class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc", null ],
+    [ "~CollisionShapeBase", "class_collision_shape_base.html#af6fb40d8815d749743555bd2ab505fe6", null ],
+    [ "getType", "class_collision_shape_base.html#a3dac385b3718f80171046cde33da04b1", null ],
     [ "type_", "class_collision_shape_base.html#a46413b1e4d4b3a35075232fa9012addb", null ]
 ];

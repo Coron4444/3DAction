@@ -35,10 +35,10 @@ const std::string PlayerDraw::NORMAL_TEXTURE_SWORD = "knight_low/sword_01.png";
 void PlayerDraw::Init()
 {
 	// オーダーリスト設定
-	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
-	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
-	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
+	getpDrawOrderList()->setDrawType(DrawOrderList::DrawType::OPACITY);
+	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);

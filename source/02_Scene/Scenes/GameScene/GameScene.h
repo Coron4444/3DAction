@@ -48,7 +48,7 @@ public:
 	//----------------------------------------
 	//! @brief クリアフラグ設定関数
 	//! @details
-	//! @param[in] value クリアフラグ
+	//! @param value クリアフラグ
 	//! @retval void なし
 	//----------------------------------------
 	void setIsClear(bool value);
@@ -64,7 +64,7 @@ public:
 	//----------------------------------------
 	//! @brief スコア設定関数
 	//! @details
-	//! @param[in] value スコア値
+	//! @param value スコア値
 	//! @retval void なし
 	//----------------------------------------
 	void setScore(int value);
@@ -80,7 +80,7 @@ public:
 	//----------------------------------------
 	//! @brief ゲームオーバーフラグ設定関数
 	//! @details
-	//! @param[in] value ゲームオーバーフラグ
+	//! @param value ゲームオーバーフラグ
 	//! @retval void なし
 	//----------------------------------------
 	void setGameOver(int value);
@@ -93,7 +93,7 @@ public:
 	//----------------------------------------
 	//! @brief コンストラクタ
 	//! @details
-	//! @param state 最初のステート
+	//! @param *state 最初のステート
 	//----------------------------------------
 	GameScene(StateBase* state);
 };

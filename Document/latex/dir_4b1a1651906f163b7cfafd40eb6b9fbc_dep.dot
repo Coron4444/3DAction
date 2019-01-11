@@ -1,0 +1,11 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/Score/ScoreUpdate" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_f48a1d92e8380b05d7a4f7f8fbcdb2c2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Score" fontname="Helvetica", fontsize="10", URL="dir_f48a1d92e8380b05d7a4f7f8fbcdb2c2.html"]
+  dir_4b1a1651906f163b7cfafd40eb6b9fbc [shape=box, label="ScoreUpdate", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_4b1a1651906f163b7cfafd40eb6b9fbc.html"];
+  }
+  dir_48bb4aacea20c6a8378e1408d864b090 [shape=box label="04_Tool" fillcolor="white" style="filled" color="red" URL="dir_48bb4aacea20c6a8378e1408d864b090.html"];
+  dir_4b1a1651906f163b7cfafd40eb6b9fbc->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="1", labeldistance=1.5 headhref="dir_000043_000080.html"];
+}

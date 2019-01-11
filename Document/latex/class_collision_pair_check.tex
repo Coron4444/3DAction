@@ -2,7 +2,7 @@
 \label{class_collision_pair_check}\index{Collision\+Pair\+Check@{Collision\+Pair\+Check}}
 
 
-衝突ペア判定クラス  
+衝突ペア判定\+Class  
 
 
 
@@ -18,18 +18,18 @@ static bool \mbox{\hyperlink{class_collision_pair_check_aa7603c32ae782ad890280d3
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_collision_pair_check_a1b4609489f79e7f272e97d15893339b5}{Collision\+Pair\+Check}} ()=delete
-\begin{DoxyCompactList}\small\item\em コンストラクタ(削除) \end{DoxyCompactList}\item 
+\item 
 \mbox{\hyperlink{class_collision_pair_check_a61d81de67fb69218a54dd1224ef30eee}{Collision\+Pair\+Check}} (const \mbox{\hyperlink{class_collision_pair_check}{Collision\+Pair\+Check}} \&value)=delete
-\begin{DoxyCompactList}\small\item\em コピーコンストラクタ(削除) \end{DoxyCompactList}\item 
+\item 
 \mbox{\hyperlink{class_collision_pair_check}{Collision\+Pair\+Check}} \& \mbox{\hyperlink{class_collision_pair_check_a32ebe7303801a6bfa9225c60ddb4b749}{operator=}} (const \mbox{\hyperlink{class_collision_pair_check}{Collision\+Pair\+Check}} \&value)=delete
-\begin{DoxyCompactList}\small\item\em 代入演算子のオーバーロード(削除) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \subsection*{静的非公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
 static bool \mbox{\hyperlink{class_collision_pair_check_a52eefe9e5b104075d4c812ca9b68ff16}{Is\+Pair}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision0, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision1)
 \begin{DoxyCompactList}\small\item\em ペア判定関数 \end{DoxyCompactList}\item 
-static \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$ \mbox{\hyperlink{class_collision_pair_check_ab0f449965867269dc3115e831547a869}{Is\+State}} (\mbox{\hyperlink{class_collision_base_a4dd1ed00099a19c0176913af93c4e365}{Collision\+Base\+::\+State}} state, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision0, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision1)
-\begin{DoxyCompactList}\small\item\em 指定した衝突ステートの検索関数 \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$ \mbox{\hyperlink{class_collision_pair_check_a0f0882c14e2a2ea7aff41e01ae29615b}{Is\+Type}} (\mbox{\hyperlink{class_collision_base_a18dc0d5461742083ca12013fe9ff1a20}{Collision\+Base\+::\+Type}} type, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision0, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision1)
+\begin{DoxyCompactList}\small\item\em 指定した衝突タイプの検索関数 \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$ \mbox{\hyperlink{class_collision_pair_check_a97c459f98bce9f88d9f506423395c40c}{Other\+Side\+Component}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$age\+\_\+component, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision0, \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision1)
 \begin{DoxyCompactList}\small\item\em 指定したコンポーネントの逆を返す関数 \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{class_collision_pair_check_a9f1819e873a51fcf50a7dbbf5f9d8690}{Pair\+List\+\_\+\+Player}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$collision)
@@ -37,11 +37,11 @@ static bool \mbox{\hyperlink{class_collision_pair_check_a9f1819e873a51fcf50a7dbb
 
 
 \subsection{詳解}
-衝突ペア判定クラス 
+衝突ペア判定\+Class 
 
-衝突基底クラスのペアを判定するクラス 
+衝突基底クラスのペアを判定する\+Class(static) 
 
- Collision\+Pair\+Check.\+h の 30 行目に定義があります。
+ Collision\+Pair\+Check.\+h の 28 行目に定義があります。
 
 
 
@@ -52,19 +52,11 @@ static bool \mbox{\hyperlink{class_collision_pair_check_a9f1819e873a51fcf50a7dbb
 \subsubsection{\texorpdfstring{Collision\+Pair\+Check()}{CollisionPairCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Collision\+Pair\+Check\+::\+Collision\+Pair\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
 
-
-
-コンストラクタ(削除) 
-
 \mbox{\Hypertarget{class_collision_pair_check_a61d81de67fb69218a54dd1224ef30eee}\label{class_collision_pair_check_a61d81de67fb69218a54dd1224ef30eee}} 
 \index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!Collision\+Pair\+Check@{Collision\+Pair\+Check}}
 \index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!Collision\+Pair\+Check@{Collision\+Pair\+Check}}
 \subsubsection{\texorpdfstring{Collision\+Pair\+Check()}{CollisionPairCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Collision\+Pair\+Check\+::\+Collision\+Pair\+Check (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_pair_check}{Collision\+Pair\+Check}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
-
-
-
-コピーコンストラクタ(削除) 
 
 
 
@@ -80,8 +72,20 @@ static bool \mbox{\hyperlink{class_collision_pair_check_a9f1819e873a51fcf50a7dbb
 衝突基底クラスペア判定関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em $\ast$collision0} & 衝突基底クラス \\
+\hline
+\mbox{\tt in}  & {\em $\ast$collision1} & 衝突基底クラス \\
+\hline
+\end{DoxyParams}
 
- Collision\+Pair\+Check.\+cpp の 22 行目に定義があります。
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突していいペアならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Pair\+Check.\+cpp の 20 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_pair_check_a52eefe9e5b104075d4c812ca9b68ff16}\label{class_collision_pair_check_a52eefe9e5b104075d4c812ca9b68ff16}} 
 \index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!Is\+Pair@{Is\+Pair}}
@@ -94,32 +98,54 @@ static bool \mbox{\hyperlink{class_collision_pair_check_a9f1819e873a51fcf50a7dbb
 ペア判定関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em $\ast$collision0} & 衝突基底クラス \\
+\hline
+\mbox{\tt in}  & {\em $\ast$collision1} & 衝突基底クラス \\
+\hline
+\end{DoxyParams}
 
- Collision\+Pair\+Check.\+cpp の 34 行目に定義があります。
-
-\mbox{\Hypertarget{class_collision_pair_check_ab0f449965867269dc3115e831547a869}\label{class_collision_pair_check_ab0f449965867269dc3115e831547a869}} 
-\index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!Is\+State@{Is\+State}}
-\index{Is\+State@{Is\+State}!Collision\+Pair\+Check@{Collision\+Pair\+Check}}
-\subsubsection{\texorpdfstring{Is\+State()}{IsState()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$ Collision\+Pair\+Check\+::\+Is\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base_a4dd1ed00099a19c0176913af93c4e365}{Collision\+Base\+::\+State}}}]{state,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision0,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
-
-
-
-指定した衝突ステートの検索関数 
-
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突していいペアならtrue \\
+\hline
+\end{DoxyRetVals}
 
 
- Collision\+Pair\+Check.\+cpp の 53 行目に定義があります。
+ Collision\+Pair\+Check.\+cpp の 29 行目に定義があります。
+
+\mbox{\Hypertarget{class_collision_pair_check_a0f0882c14e2a2ea7aff41e01ae29615b}\label{class_collision_pair_check_a0f0882c14e2a2ea7aff41e01ae29615b}} 
+\index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!Is\+Type@{Is\+Type}}
+\index{Is\+Type@{Is\+Type}!Collision\+Pair\+Check@{Collision\+Pair\+Check}}
+\subsubsection{\texorpdfstring{Is\+Type()}{IsType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$ Collision\+Pair\+Check\+::\+Is\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base_a18dc0d5461742083ca12013fe9ff1a20}{Collision\+Base\+::\+Type}}}]{type,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision0,  }\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{collision1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+指定した衝突タイプの検索関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em type} & 衝突基底クラスタイプ \\
+\hline
+\mbox{\tt in}  & {\em $\ast$collision0} & 衝突基底クラス \\
+\hline
+\mbox{\tt in}  & {\em $\ast$collision1} & 衝突基底クラス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Collision\+Base$\ast$} & 検索結果に合致した衝突基底クラス \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Pair\+Check.\+cpp の 45 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_pair_check_a32ebe7303801a6bfa9225c60ddb4b749}\label{class_collision_pair_check_a32ebe7303801a6bfa9225c60ddb4b749}} 
 \index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!operator=@{operator=}}
 \index{operator=@{operator=}!Collision\+Pair\+Check@{Collision\+Pair\+Check}}
 \subsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_collision_pair_check}{Collision\+Pair\+Check}}\& Collision\+Pair\+Check\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_pair_check}{Collision\+Pair\+Check}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
-
-
-
-代入演算子のオーバーロード(削除) 
 
 \mbox{\Hypertarget{class_collision_pair_check_a97c459f98bce9f88d9f506423395c40c}\label{class_collision_pair_check_a97c459f98bce9f88d9f506423395c40c}} 
 \index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!Other\+Side\+Component@{Other\+Side\+Component}}
@@ -132,8 +158,22 @@ static bool \mbox{\hyperlink{class_collision_pair_check_a9f1819e873a51fcf50a7dbb
 指定したコンポーネントの逆を返す関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em age\+\_\+component} & 指定する衝突基底クラスポインタ \\
+\hline
+\mbox{\tt in}  & {\em collision0} & 衝突基底クラスポインタ \\
+\hline
+\mbox{\tt in}  & {\em collision1} & 衝突基底クラスポインタ \\
+\hline
+\end{DoxyParams}
 
- Collision\+Pair\+Check.\+cpp の 68 行目に定義があります。
+\begin{DoxyRetVals}{戻り値}
+{\em Collision\+Base$\ast$} & 指定した衝突基底クラスポインタの逆の衝突基底クラスポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Pair\+Check.\+cpp の 57 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_pair_check_a9f1819e873a51fcf50a7dbbf5f9d8690}\label{class_collision_pair_check_a9f1819e873a51fcf50a7dbbf5f9d8690}} 
 \index{Collision\+Pair\+Check@{Collision\+Pair\+Check}!Pair\+List\+\_\+\+Player@{Pair\+List\+\_\+\+Player}}
@@ -146,8 +186,18 @@ static bool \mbox{\hyperlink{class_collision_pair_check_a9f1819e873a51fcf50a7dbb
 プレイヤーのペアリスト関数 
 
 
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em $\ast$collision} & 衝突基底クラス \\
+\hline
+\end{DoxyParams}
 
- Collision\+Pair\+Check.\+cpp の 84 行目に定義があります。
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & 衝突していいペアならtrue \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Pair\+Check.\+cpp の 70 行目に定義があります。
 
 
 

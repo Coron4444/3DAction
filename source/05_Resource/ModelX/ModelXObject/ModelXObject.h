@@ -1,84 +1,168 @@
 //================================================================================
-//
-//    Xモデルクラス
-//    Author : Araki Kai                                作成日 : 2017/12/18
-//
+//!	@file	 ModelXObject.h
+//!	@brief	 XモデルオブジェクトClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/01
 //================================================================================
-
 #ifndef	_MODEL_X_OBJECT_H_
 #define _MODEL_X_OBJECT_H_
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 #include <vector>
 
-#include <Vector3D.h>
-#include <Texture\TextureManager\TextureManager.h>
 #include <Renderer\Renderer.h>
+#include <Vector3D.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
+//****************************************
+// クラス宣言
+//****************************************
+class TextureObject;
 
+
+
+//************************************************************														   
+//! @brief   XモデルオブジェクトClass
+//!
+//! @details XモデルのオブジェクトClass
+//************************************************************
 class ModelXObject
 {
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デフォルトコンストラクタ
-	ModelXObject(const std::string* file_path, bool is_share_data);
+//====================
+// 変数
+//====================
+private:
+	LPD3DXMESH mesh_;										//!< メッシュ
+	DWORD mesh_num_;										//!< メッシュ数
+	std::vector<D3DMATERIAL9> material_;					//!< マテリアル
+	std::vector<TextureObject*> diffuse_texture_object_;	//!< ディヒューズテクスチャオブジェクト
+	int reference_counter_ = 0;								//!< 参照カウンタ
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// デストラクタ
-	virtual ~ModelXObject();
+//====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief メッシュ取得関数
+	//! @details
+	//! @param void なし 
+	//! @retval LPD3DXMESH メッシュ
+	//----------------------------------------
+	LPD3DXMESH getpMesh() { return mesh_; }
 
+	//----------------------------------------
+	//! @brief メッシュ数取得関数
+	//! @details
+	//! @param void なし 
+	//! @retval unsigned メッシュ数
+	//----------------------------------------
+	unsigned getMeshNum() { return material_num_; }
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// メッシュ
-	LPD3DXMESH GetMesh(){return mesh_;}
-	unsigned getMeshNum(){return material_num_;}	// Xモデルはマテリアル数がメッシュ数の代わり
-	void UpdateMeshDeclaration(const D3DVERTEXELEMENT9* DECLARATION);
+	//----------------------------------------
+	//! @brief マテリアル取得関数
+	//! @details
+	//! @param index インデックス 
+	//! @retval D3DMATERIAL9* マテリアル
+	//----------------------------------------
+	D3DMATERIAL9* getpMaterial(unsigned index) { return &material_[index]; }
 	
-	// マテリアル
-	D3DMATERIAL9* GetMaterial(unsigned index){return &material_[index];}
-	void SetMaterialColor(unsigned index, XColor4 color);
+	//----------------------------------------
+	//! @brief マテリアル色設定関数
+	//! @details
+	//! @param index インデックス
+	//! @param color 色
+	//! @retval void なし
+	//----------------------------------------
+	void setMaterialColor(unsigned index, XColor4 color);
 
-	// テクスチャ
-	const TextureObject* GetDecaleTextureName(unsigned index){return texture_object_array_.at(index);}
+	//----------------------------------------
+	//! @brief ディヒューズテクスチャオブジェクト取得関数
+	//! @details
+	//! @param index インデックス
+	//! @retval void なし
+	//----------------------------------------
+	TextureObject* getpDiffuseTextureObject(unsigned index) { return texture_object_array_.at(index); }
+
+//====================
+// 関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param *file_path ファイルパス
+	//! @retval void なし
+	//----------------------------------------
+	void Init(std::string* file_path);
+
+	//----------------------------------------
+	//! @brief 解放関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Release();
+
+	//----------------------------------------
+	//! @brief 参照カウンタ追加関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void AddReferenceCounter();
+
+	//----------------------------------------
+	//! @brief 参照カウンタリセット関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void ResetReferenceCounter();
+
+	//----------------------------------------
+	//! @brief 頂点情報変更関数
+	//! @details
+	//! @param declaration 頂点宣言
+	//! @retval void なし
+	//----------------------------------------
+	void UpdateMeshDeclaration(D3DVERTEXELEMENT9* declaration);
 
 
-//------------------------------------------------------------
-private :
-	// 非公開メンバ関数
-	void InputModelX   (const std::string* file_path, LPD3DXBUFFER* material_buffer);
-	void InputMaterial (const std::string* file_path, LPD3DXBUFFER* material_buffer, bool is_share_data);
-	void MakeTextureFilePathAndKeyName(std::string* texture_key_name, std::string* texture_file_path);
-	
+private:
+	//----------------------------------------
+	//! @brief メッシュ生成関数
+	//! @details
+	//! @param *file_path       ファイルパス
+	//! @param *material_buffer マテリアルバッファ
+	//! @retval void なし
+	//----------------------------------------
+	void CreateMesh(std::string* file_path, LPD3DXBUFFER* material_buffer);
 
-//------------------------------------------------------------
-private :
-	// メッシュ
-	LPD3DXMESH	 mesh_;
-	DWORD		 material_num_;
-	
-	// マテリアル
-	std::vector<D3DMATERIAL9> material_;
+	//----------------------------------------
+	//! @brief マテリアル生成関数
+	//! @details
+	//! @param *file_path       ファイルパス
+	//! @param *material_buffer マテリアルバッファ
+	//! @retval void なし
+	//----------------------------------------
+	void CreateMaterial(std::string* file_path, LPD3DXBUFFER* material_buffer);
 
-	// テクスチャ
-	std::vector<TextureObject*> texture_object_array_;
+	//----------------------------------------
+	//! @brief ファイルパス&キー名生成関数
+	//! @details
+	//! @param *file_path ファイルパス
+	//! @param *key_name  キー名
+	//! @retval void なし
+	//----------------------------------------
+	void CreateFilePathAndKeyName(std::string* file_path,
+								  std::string* key_name);
 };
 
 

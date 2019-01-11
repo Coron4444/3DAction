@@ -1,0 +1,13 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/PushSpaceLogo/PushSpaceLogoFactory" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e8422a9d5343217ff22b216517ee7d7f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="PushSpaceLogo" fontname="Helvetica", fontsize="10", URL="dir_e8422a9d5343217ff22b216517ee7d7f.html"]
+  dir_8eab9a6956c51f548b3057ec448203a7 [shape=box, label="PushSpaceLogoFactory", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8eab9a6956c51f548b3057ec448203a7.html"];
+  }
+  dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1 [shape=box label="PushSpaceLogoDraw" URL="dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1.html"];
+  dir_1d23e0d6884f4986b567e4f121dc2b18 [shape=box label="PushSpaceLogoUpdate" URL="dir_1d23e0d6884f4986b567e4f121dc2b18.html"];
+  dir_8eab9a6956c51f548b3057ec448203a7->dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1 [headlabel="1", labeldistance=1.5 headhref="dir_000038_000037.html"];
+  dir_8eab9a6956c51f548b3057ec448203a7->dir_1d23e0d6884f4986b567e4f121dc2b18 [headlabel="1", labeldistance=1.5 headhref="dir_000038_000039.html"];
+}

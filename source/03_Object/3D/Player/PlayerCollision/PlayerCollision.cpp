@@ -48,8 +48,8 @@ const float PlayerCollision::SUBSTANCE_RADIUS = 1.0f;
 
 void PlayerCollision::Init()
 {
-	// ステート
-	CollisionBase::setState(CollisionBase::State::PLAYER);
+	// タイプ
+	CollisionBase::setType(CollisionBase::Type::PLAYER);
 
 	// 複数衝突オブジェクト
 	collision_objects_ = new CollisionObjects();
@@ -206,9 +206,9 @@ void PlayerCollision::HitBoundingSphere(CollisionBase* hit_collision,
 	hit_my_object = hit_my_object;
 
 	// 衝突コンポーネントで振り分け
-	switch(hit_collision->getState())
+	switch(hit_collision->getType())
 	{
-		case CollisionBase::State::COIN :
+		case CollisionBase::Type::COIN :
 		{
 			//TestCubeCollisionBase* temp_component = (TestCubeCollisionBase*)hit_collision;
 	
@@ -243,9 +243,9 @@ void PlayerCollision::NotHitBoundingSphere(CollisionBase* hit_collision,
 	hit_my_object = hit_my_object;
 
 	// 衝突コンポーネントで振り分け
-	switch(hit_collision->getState())
+	switch(hit_collision->getType())
 	{
-		case CollisionBase::State::COIN :
+		case CollisionBase::Type::COIN :
 		{
 			// 使わなかった引数
 			hit_object = hit_object;
@@ -271,9 +271,9 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 								   CollisionObject*  hit_my_object)
 {
 	// 衝突コンポーネントで振り分け
-	switch(hit_collision->getState())
+	switch(hit_collision->getType())
 	{
-		case CollisionBase::State::COIN:
+		case CollisionBase::Type::COIN:
 		{
 			// 相手の衝突オブジェクトで振り分け
 			switch(hit_object->getTag())
@@ -301,7 +301,7 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 			}
 			break;
 		}
-		case CollisionBase::State::ENEMY :
+		case CollisionBase::Type::ENEMY :
 		{
 			// 相手の衝突オブジェクトで振り分け
 			switch(hit_object->getTag())
@@ -325,7 +325,7 @@ void PlayerCollision::HitSubstance(CollisionBase* hit_collision,
 			}
 			break;
 		}
-		case CollisionBase::State::GOAL:
+		case CollisionBase::Type::GOAL:
 		{
 			// 相手の衝突オブジェクトで振り分け
 			switch (hit_object->getTag())

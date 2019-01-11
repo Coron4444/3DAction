@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    バンプマッピングピクセルシェーダークラス
-//    Author : Araki Kai                                作成日 : 2018/11/17
-//
+//!	@file	 PixelShaderBumpMapping.cpp
+//!	@brief	 バンプマッピングピクセルシェーダーClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
 
 
@@ -24,11 +24,8 @@ const char* PixelShaderBumpMapping::PATH = "resource/HLSL/Effect/PixelShader/Bum
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void PixelShaderBumpMapping::Init()
 {
 	// デバイス初期化
@@ -40,9 +37,6 @@ void PixelShaderBumpMapping::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void PixelShaderBumpMapping::Uninit()
 {
 	// シェーダーの解放
@@ -51,10 +45,8 @@ void PixelShaderBumpMapping::Uninit()
 
 
 
-//--------------------------------------------------
-// +共通設定関数
-//--------------------------------------------------
-void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsigned object_index)
+void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, 
+										   unsigned object_index)
 {
 	camera = camera;
 
@@ -74,9 +66,6 @@ void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsig
 
 
 
-//--------------------------------------------------
-// +固有設定関数
-//--------------------------------------------------
 void PixelShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
 											  unsigned object_index, unsigned mesh_index)
 {

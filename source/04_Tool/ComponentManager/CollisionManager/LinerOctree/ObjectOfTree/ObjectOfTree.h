@@ -1,18 +1,11 @@
 //================================================================================
-//
-//    分木オブジェクトクラス
-//    Author : Araki Kai                                作成日 : 2018/11/26
-//
+//!	@file	 ObjectOfTree.h
+//!	@brief	 分木オブジェクトClass
+//! @details template
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
-
 #ifndef	_OBJECT_OF_TREE_H_
 #define _OBJECT_OF_TREE_H_
-
-
-
-//****************************************
-// インクルード文
-//****************************************
 
 
 
@@ -24,33 +17,138 @@ class SpaceOfTree;
 
 
 
-/*********************************************************//**
-* @brief
-* 分木オブジェクトクラス
-*
-* 分木のオブジェクトクラス
-*************************************************************/
+//************************************************************														   
+//! @brief   分木オブジェクトClass
+//!
+//! @details 分木のオブジェクトClass(template)
+//************************************************************
 template <class Type>
 class ObjectOfTree
 {
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
-	SpaceOfTree<Type>* belonging_space_ = nullptr;		//!< 所属空間
-	Type object_ = nullptr;								//!< オブジェクト
-	ObjectOfTree<Type>* previous_pointer_ = nullptr;	//!< 前ポインタ
-	ObjectOfTree<Type>* next_pointer_ = nullptr;		//!< 次ポインタ
+	SpaceOfTree<Type>* belonging_space_ = nullptr;	//!< 所属空間
+	Type object_ = nullptr;							//!< オブジェクト
+	ObjectOfTree<Type>* previous_ = nullptr;		//!< 前分木オブジェクト
+	ObjectOfTree<Type>* next_ = nullptr;			//!< 次分木オブジェクト
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// プロパティ
+//====================
 public:
-	/**
-	* @brief
-	* リストから消去する関数
-	*/
+	//----------------------------------------
+	//! @brief 所属空間取得関数
+	//! @details
+	//! @param void なし
+	//! @retval SpaceOfTree<Type>* 所属空間
+	//----------------------------------------
+	SpaceOfTree<Type>* getpBelongingSpace() 
+	{
+		return belonging_space_; 
+	}
+	
+	//----------------------------------------
+	//! @brief 所属空間設定関数
+	//! @details
+	//! @param *value 所属空間
+	//! @retval void なし
+	//----------------------------------------
+	void setBelongingSpace(SpaceOfTree<Type>* value) 
+	{
+		belonging_space_ = value; 
+	}
+	
+	//----------------------------------------
+	//! @brief オブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Type オブジェクト
+	//----------------------------------------
+	Type getObject() 
+	{
+		return object_; 
+	}
+	
+	//----------------------------------------
+	//! @brief オブジェクト設定関数
+	//! @details
+	//! @param value オブジェクト
+	//! @retval void なし
+	//----------------------------------------
+	void setObject(Type value)
+	{ 
+		object_ = value; 
+	}
+	
+	//----------------------------------------
+	//! @brief 前分木オブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval SpaceOfTree<Type>* 前分木オブジェクト
+	//----------------------------------------
+	ObjectOfTree<Type>* getpPrevious() 
+	{
+		return previous_; 
+	}
+	
+	//----------------------------------------
+	//! @brief 前分木オブジェクト設定関数
+	//! @details
+	//! @param *value 前分木オブジェクト
+	//! @retval void なし
+	//----------------------------------------
+	void setPrevious(ObjectOfTree<Type>* value) 
+	{ 
+		previous_ = value; 
+	}
+
+	//----------------------------------------
+	//! @brief 後分木オブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval SpaceOfTree<Type>* 後分木オブジェクト
+	//----------------------------------------
+	ObjectOfTree<Type>* getpNext() 
+	{ 
+		return next_; 
+	}
+	
+	//----------------------------------------
+	//! @brief 後分木オブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval SpaceOfTree<Type>** 後分木オブジェクト
+	//----------------------------------------
+	ObjectOfTree<Type>** getp2Next() 
+	{
+		return &next_; 
+	}
+	
+	//----------------------------------------
+	//! @brief 後分木オブジェクト設定関数
+	//! @details
+	//! @param *value 後分木オブジェクト
+	//! @retval void なし
+	//----------------------------------------
+	void setNext(ObjectOfTree<Type>* value)
+	{
+		next_ = value; 
+	}
+
+
+//====================
+// 関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief リストから消去する関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void DeleteFromList()
 	{
 		if (belonging_space_ == nullptr) return;
@@ -59,29 +157,18 @@ public:
 		belonging_space_->CheckDeleteObject(this);
 
 		// 前後のオブジェクトを結びつける
-		if (previous_pointer_ != nullptr)
+		if (previous_ != nullptr)
 		{
-			previous_pointer_->setNextPointer(next_pointer_);
+			previous_->setNext(next_);
 		}
-		if (next_pointer_ != nullptr)
+		if (next_ != nullptr)
 		{
-			next_pointer_->setPreviousPointer(previous_pointer_);
+			next_->setPrevious(previous_);
 		}
-		previous_pointer_ = nullptr;
-		next_pointer_ = nullptr;
+		previous_ = nullptr;
+		next_ = nullptr;
 		belonging_space_ = nullptr;
 	}
-
-	// プロパティ
-	SpaceOfTree<Type>* getBelongingSpace() { return belonging_space_; }
-	void setBelongingSpace(SpaceOfTree<Type>* value) { belonging_space_ = value; }
-	Type getObject() { return object_; }
-	void setObject(Type value) { object_ = value; }
-	ObjectOfTree<Type>* getPreviousPointer() { return previous_pointer_; }
-	void setPreviousPointer(ObjectOfTree<Type>* value) { previous_pointer_ = value; }
-	ObjectOfTree<Type>* getNextPointer() { return next_pointer_; }
-	ObjectOfTree<Type>** getNextPointer2() { return &next_pointer_; }
-	void setNextPointer(ObjectOfTree<Type>* value) { next_pointer_ = value; }
 };
 
 

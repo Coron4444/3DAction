@@ -1,70 +1,47 @@
 //================================================================================
-//
-//    Xモデルオブジェクトクラス
-//    Author : Araki Kai                                作成日 : 2017/12/18
-//
+//!	@file	 ModelXObject.cpp
+//!	@brief	 XモデルオブジェクトClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/01
 //================================================================================
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-#include <assert.h>
+//****************************************
 #include "ModelXObject.h"
 
 #include <SafeRelease/SafeRelease.h>
+#include <Texture/TextureManager/TextureManager.h>
 
 
 
-//======================================================================
-//
-// 非静的メンバ関数定義
-//
-//======================================================================
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デフォルトコンストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ModelXObject::ModelXObject(const std::string* file_path, bool is_share_data)
+//****************************************
+// プロパティ定義
+//****************************************
+LPD3DXMESH ModelXObject::getpMesh()
 {
-	// マテリアルバッファ
-	LPD3DXBUFFER material_buffer = nullptr;
-	
-	// XModelの読み込み
-	InputModelX(file_path, &material_buffer);
-
-	// マテリアル情報の読み込み
-	InputMaterial(file_path, &material_buffer, is_share_data);
+	return mesh_;
 }
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-ModelXObject::~ModelXObject()
+unsigned ModelXObject::getMeshNum()
 {
-	SafeRelease::PlusRelease(&mesh_);
+	return mesh_num_;
 }
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ マテリアルの色変更関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+D3DMATERIAL9* ModelXObject::getpMaterial(unsigned index)
+{
+	return &material_[index];
+}
 
-void ModelXObject::SetMaterialColor(unsigned index, XColor4 color)
+
+
+void ModelXObject::setMaterialColor(unsigned index, XColor4 color)
 {
 	material_[index].Diffuse.r = color.r;
 	material_[index].Diffuse.g = color.g;
@@ -74,16 +51,61 @@ void ModelXObject::SetMaterialColor(unsigned index, XColor4 color)
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 頂点情報変更関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void ModelXObject::UpdateMeshDeclaration(const D3DVERTEXELEMENT9* DECLARATION)
+TextureObject* ModelXObject::getpDiffuseTextureObject(unsigned index)
 {
-	LPD3DXMESH temp_mesh;
+	return diffuse_texture_object_[index];
+}
 
+
+
+//****************************************
+// 関数定義
+//****************************************
+void ModelXObject::Init(std::string* file_path)
+{
+	// マテリアルバッファ
+	LPD3DXBUFFER material_buffer = nullptr;
+
+	// メッシュ生成
+	CreateMesh(file_path, &material_buffer);
+
+	// マテリアル生成
+	CreateMaterial(file_path, &material_buffer);
+}
+
+
+
+void ModelXObject::Release()
+{
+	reference_counter_--;
+	if (reference_counter_ > 0) return;
+
+	SafeRelease::PlusRelease(&mesh_);
+
+	for (auto& contents : diffuse_texture_object_)
+	{
+		SafeRelease::PlusRelease(&contents);
+	}
+}
+
+
+
+void ModelXObject::AddReferenceCounter()
+{
+	reference_counter_++;
+}
+
+
+
+void ModelXObject::ResetReferenceCounter()
+{
+	reference_counter_ = 0;
+}
+
+
+
+void ModelXObject::UpdateMeshDeclaration(D3DVERTEXELEMENT9* declaration)
+{
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
 	Renderer::getpInstance()->getDevice(&device);
@@ -93,10 +115,12 @@ void ModelXObject::UpdateMeshDeclaration(const D3DVERTEXELEMENT9* DECLARATION)
 		return;
 	}
 
+	// 頂点情報の変更
+	LPD3DXMESH temp_mesh;
 	mesh_->CloneMesh(mesh_->GetOptions(),
-		             DECLARATION,
+					 declaration,
 					 device,
-		             &temp_mesh);
+					 &temp_mesh);
 
 	SafeRelease::PlusRelease(&mesh_);
 
@@ -105,13 +129,7 @@ void ModelXObject::UpdateMeshDeclaration(const D3DVERTEXELEMENT9* DECLARATION)
 
 
 
-//--------------------------------------------------------------------------------
-//
-// [ XModel読み込み関数 ]
-//
-//--------------------------------------------------------------------------------
-
-void ModelXObject::InputModelX(const std::string* file_path, LPD3DXBUFFER* material_buffer)
+void ModelXObject::CreateMesh(std::string* file_path, LPD3DXBUFFER* material_buffer)
 {
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
@@ -122,40 +140,33 @@ void ModelXObject::InputModelX(const std::string* file_path, LPD3DXBUFFER* mater
 		return;
 	}
 
-	HRESULT hr = D3DXLoadMeshFromX(file_path->c_str(),		// ファイル名
-						           D3DXMESH_SYSTEMMEM,		// 一度CPUで最適化したものをVRAMに渡す
-						           device,					// デバイス
-						           nullptr,					// 隣接性情報
-						           material_buffer,			// マテリアル情報
-						           NULL,					// エフェクトの初期化
-						           &material_num_,			// マテリアル数
-						           &mesh_);					// メッシュ
-
-#ifdef _DEBUG
-	assert(!FAILED(hr) && "ModelXの読み込みに失敗(ModelXObject.cpp)");
-#else
-	hr = hr;
-#endif
+	HRESULT hr = D3DXLoadMeshFromX(file_path->c_str(),	// ファイル名
+								   D3DXMESH_SYSTEMMEM,	// 一度CPUで最適化したものをVRAMに渡す
+								   device,				// デバイス
+								   nullptr,				// 隣接性情報
+								   material_buffer,		// マテリアル情報
+								   NULL,				// エフェクトの初期化
+								   &mesh_num_,			// メッシュ数
+								   &mesh_);				// メッシュ
+	if (FAILED(hr))
+	{
+		MessageBox(nullptr, "メッシュの生成に失敗(TextureObject.cpp)", "Error", MB_OK);
+		return;
+	}
 }
 
 
 
-//--------------------------------------------------------------------------------
-//
-// [ XModelのMaterial情報読み込み関数 ]
-//
-//--------------------------------------------------------------------------------
-
-void ModelXObject::InputMaterial(const std::string* file_path, LPD3DXBUFFER* material_buffer, bool is_share_data)
+void ModelXObject::CreateMaterial(std::string* file_path, LPD3DXBUFFER* material_buffer)
 {
 	// マテリアルサイズ変更
-	material_.resize(material_num_);
+	material_.resize(mesh_num_);
 
 	// マテリアルの情報をのポインタ取得
 	LPD3DXMATERIAL temp_material = (LPD3DXMATERIAL)(*material_buffer)->GetBufferPointer();
 
 	// マテリアルで分割したパーツたち
-	for (DWORD i = 0; i < material_num_; i++)
+	for (DWORD i = 0; i < mesh_num_; i++)
 	{
 		ZeroMemory(&material_[i], sizeof(D3DMATERIAL9));
 
@@ -173,22 +184,12 @@ void ModelXObject::InputMaterial(const std::string* file_path, LPD3DXBUFFER* mat
 
 		// テクスチャの読み込み
 		if (temp_material[i].pTextureFilename == NULL) continue;
-		std::string texture_key_name  = temp_material[i].pTextureFilename;
-		std::string texture_file_path = *file_path;
-		MakeTextureFilePathAndKeyName(&texture_key_name, &texture_file_path);
-		
-		TextureObject* texture_object = nullptr;
+		std::string key_name = temp_material[i].pTextureFilename;
+		std::string path = *file_path;
+		CreateFilePathAndKeyName(&path, &key_name);
 
-		if (is_share_data)
-		{
-			texture_object = TextureManager::AddShareData(&texture_key_name, &texture_file_path);
-		}
-		else
-		{
-			texture_object = TextureManager::AddUniqueData(&texture_key_name, &texture_file_path);
-		}
-
-		texture_object_array_.push_back(texture_object);
+		TextureObject* texture_object = TextureManager::getpInstance()->getpObject(&key_name, &path);
+		diffuse_texture_object_.push_back(texture_object);
 	}
 
 	// マテリアルバッファの解放
@@ -197,23 +198,18 @@ void ModelXObject::InputMaterial(const std::string* file_path, LPD3DXBUFFER* mat
 
 
 
-//--------------------------------------------------------------------------------
-//
-// [ テクスチャ用のファイルパス&キーネームの作成関数 ]
-//
-//--------------------------------------------------------------------------------
-
-void ModelXObject::MakeTextureFilePathAndKeyName(std::string* texture_key_name, std::string* texture_file_path)
+void ModelXObject::CreateFilePathAndKeyName(std::string* file_path,
+											std::string* key_name)
 {
 	// ファイルパスからフォルダ名を/付きで取得
-	auto slash_index = texture_file_path->rfind("/");
-	auto slash_index2 = texture_file_path->rfind("/", slash_index - 1);
+	auto slash_index = file_path->rfind("/");
+	auto slash_index2 = file_path->rfind("/", slash_index - 1);
 	unsigned temp_num = (unsigned)(slash_index - slash_index2);
-	std::string temp_strign = texture_file_path->substr(slash_index2 + 1, temp_num);
+	std::string temp_strign = file_path->substr(slash_index2 + 1, temp_num);
 
 	// キーネームの作成
-	*texture_key_name = temp_strign + *texture_key_name;
+	*key_name = temp_strign + *key_name;
 
 	// ファイルパスの作成
-	*texture_file_path = texture_file_path->substr(0, slash_index2 + 1);
+	*file_path = file_path->substr(0, slash_index2 + 1);
 }

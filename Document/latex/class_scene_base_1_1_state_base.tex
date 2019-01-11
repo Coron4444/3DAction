@@ -21,6 +21,10 @@ Scene\+Base\+:\+:State\+Base の継承関係図\nopagebreak
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$ \mbox{\hyperlink{class_scene_base_1_1_state_base_a5333fd722f17c6da71b09afdc56c84b4}{getp\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em シーン取得関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44}{set\+Scene}} (\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$value)
+\begin{DoxyCompactList}\small\item\em シーン設定関数 \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_scene_base_1_1_state_base_afc993757f908babc872063e1e2465e3e}{$\sim$\+State\+Base}} ()
 \begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8}{Init}} ()=0
@@ -30,10 +34,8 @@ virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_a2763fa37e45b39bd8
 virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_ad2c6c8fd9f020eb02f64f394edee129c}{Update}} ()=0
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_scene_base_1_1_state_base_a2e14a3afece0b1d8db9edcebf514a977}{Reset}} ()=0
-\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa10528bedb44}{set\+Scene}} (\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$value)
-\end{DoxyCompactItemize}
-\subsection*{限定公開変数類}
+\begin{DoxyCompactList}\small\item\em リセット関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$ \mbox{\hyperlink{class_scene_base_1_1_state_base_ae1062afb3f96664e24504151eaccf40f}{scene\+\_\+}} = nullptr
@@ -45,7 +47,7 @@ void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa1052
 
 シーンステートの\+Base\+Class 
 
- Scene\+Base.\+h の 39 行目に定義があります。
+ Scene\+Base.\+h の 35 行目に定義があります。
 
 
 
@@ -67,11 +69,35 @@ void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa1052
 \end{DoxyParams}
 
 
- Scene\+Base.\+h の 56 行目に定義があります。
+ Scene\+Base.\+h の 74 行目に定義があります。
 
 
 
 \subsection{関数詳解}
+\mbox{\Hypertarget{class_scene_base_1_1_state_base_a5333fd722f17c6da71b09afdc56c84b4}\label{class_scene_base_1_1_state_base_a5333fd722f17c6da71b09afdc56c84b4}} 
+\index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!getp\+Scene@{getp\+Scene}}
+\index{getp\+Scene@{getp\+Scene}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
+\subsubsection{\texorpdfstring{getp\+Scene()}{getpScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$ Scene\+Base\+::\+State\+Base\+::getp\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+シーン取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Scene\+Base$\ast$} & シーンポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Scene\+Base.\+cpp の 22 行目に定義があります。
+
 \mbox{\Hypertarget{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8}\label{class_scene_base_1_1_state_base_a33350231b039a2178c19beac0211c5b8}} 
 \index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!Init@{Init}}
 \index{Init@{Init}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
@@ -124,11 +150,25 @@ void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa1052
 \index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!set\+Scene@{set\+Scene}}
 \index{set\+Scene@{set\+Scene}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
 \subsubsection{\texorpdfstring{set\+Scene()}{setScene()}}
-{\footnotesize\ttfamily void Scene\+Base\+::\+State\+Base\+::set\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Scene\+Base\+::\+State\+Base\+::set\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base}{Scene\+Base}} $\ast$}]{value }\end{DoxyParamCaption})}
 
 
 
- Scene\+Base.\+h の 87 行目に定義があります。
+シーン設定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em value} & シーンポインタ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Scene\+Base.\+cpp の 29 行目に定義があります。
 
 \mbox{\Hypertarget{class_scene_base_1_1_state_base_a2763fa37e45b39bd8d3bbb735c76c59b}\label{class_scene_base_1_1_state_base_a2763fa37e45b39bd8d3bbb735c76c59b}} 
 \index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!Uninit@{Uninit}}
@@ -185,7 +225,7 @@ void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa1052
 \index{Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}!scene\+\_\+@{scene\+\_\+}}
 \index{scene\+\_\+@{scene\+\_\+}!Scene\+Base\+::\+State\+Base@{Scene\+Base\+::\+State\+Base}}
 \subsubsection{\texorpdfstring{scene\+\_\+}{scene\_}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_base}{Scene\+Base}}$\ast$ Scene\+Base\+::\+State\+Base\+::scene\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_base}{Scene\+Base}}$\ast$ Scene\+Base\+::\+State\+Base\+::scene\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -193,10 +233,11 @@ void \mbox{\hyperlink{class_scene_base_1_1_state_base_adfb19da59b938832387aa1052
 
 
 
- Scene\+Base.\+h の 45 行目に定義があります。
+ Scene\+Base.\+h の 41 行目に定義があります。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scene\+Base/\mbox{\hyperlink{_scene_base_8h}{Scene\+Base.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scene\+Base/\mbox{\hyperlink{_scene_base_8h}{Scene\+Base.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scene\+Base/\mbox{\hyperlink{_scene_base_8cpp}{Scene\+Base.\+cpp}}\end{DoxyCompactItemize}

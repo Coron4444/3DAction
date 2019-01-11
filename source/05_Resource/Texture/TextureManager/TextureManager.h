@@ -1,21 +1,17 @@
 //================================================================================
-//
-//    テクスチャマネージャクラス(static)
-//    Author : Araki Kai                                作成日 : 2017/12/19
-//
+//!	@file	 TextureManager.h
+//!	@brief	 テクスチャマネージャClass
+//! @details Singleton
+//!	@author  Kai Araki									@date 2019/1/11
 //================================================================================
-
 #ifndef	_TEXTURE_MANAGER_H_
 #define _TEXTURE_MANAGER_H_
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 #include <vector>
 #include <unordered_map>
@@ -24,61 +20,121 @@
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+//************************************************************														   
+//! @brief   テクスチャマネージャClass
+//!
+//! @details テクスチャのマネージャClass(Singleton)
+//************************************************************
 class TextureManager
 {
-//------------------------------------------------------------
-private :
-	static const std::string DEFAULT_PATH;
+//====================
+// 定数
+//====================
+private:
+	static const std::string DEFAULT_PATH;		//!< 既定パス
 
 
-//------------------------------------------------------------
-private :
-	// デフォルトコンストラクタ
-	TextureManager() = delete;
+//====================
+// static変数
+//====================
+private:
+	static TextureManager* instance_;	//!< インスタンス
 
-	// コピーコンストラクタ
+
+//====================
+// staticプロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief インスタンス取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Renderer* レンダラーインスタンス
+	//----------------------------------------
+	static TextureManager* getpInstance();
+
+
+//====================
+// static関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief インスタンス解放関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	static void ReleaseInstance();
+
+
+//====================
+// 変数
+//====================
+private:
+	std::unordered_map<std::string, TextureObject*> object_map_;	//!< オブジェクトマップ
+
+
+//====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief オブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval TextureObject* オブジェクト取得
+	//----------------------------------------
+	TextureObject* getpObject(std::string* key_name, 
+							  std::string* file_path = nullptr,
+							  int pattern_num_all = 1,
+							  int pattern_num_width = 1,
+							  int pattern_num_height = 1);
+
+
+//====================
+// 関数
+//====================
+private:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	TextureManager();
+
+public:
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Init();
+
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Uninit();
+
+private:
+	//----------------------------------------
+	//! @brief フルパス生成関数
+	//! @details
+	//! @param *key_name キー名
+	//! @param *file_path ファイルパス
+	//! @retval void なし
+	//----------------------------------------
+	std::string CreateFilePath(std::string* key_name, std::string* file_path);
+
+
+//====================
+// 消去済み関数
+//====================
+private:
 	TextureManager(const TextureManager& class_name) = delete;
-
-	// 代入演算子のオーバーロード
 	TextureManager& operator = (const TextureManager& class_name) = delete;
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// 初期化関数
-	static void InitAllData();
-	static void InitShareData();
-	static void InitUniqueData();
-
-	// 終了処理関数
-	static void UninitAllData();
-	static void UninitShareData();
-	static void UninitUniqueData();
-
-	// 追加関数
-	static TextureObject* AddShareData (const std::string* key_name, const std::string* file_path = nullptr, int pattern_num_all = 1, int pattern_num_width = 1, int pattern_num_height = 1);
-	static TextureObject* AddUniqueData(const std::string* key_name, const std::string* file_path = nullptr, int pattern_num_all = 1, int pattern_num_width = 1, int pattern_num_height = 1);
-
-	// ゲッタ―
-	static TextureObject* GetTextureObject(const std::string* key_name);
-
-
-//------------------------------------------------------------
-private :
-	static std::string MakeFilePath(const std::string* key_name, const std::string* file_path);
-
-
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	static std::unordered_map<std::string, TextureObject*> share_texture_map_;
-	static std::unordered_map<std::string, TextureObject*> unique_texture_map_;
 };
 
 

@@ -1,0 +1,16 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Numbers/Number/NumberDraw" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_4f68c9b75a1da24160efd0acd6500914 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Number" fontname="Helvetica", fontsize="10", URL="dir_4f68c9b75a1da24160efd0acd6500914.html"]
+  dir_5d8401cb2dc04ef5f53301dc6323b99a [shape=box, label="NumberDraw", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5d8401cb2dc04ef5f53301dc6323b99a.html"];
+  }
+  dir_6e58c436369e4a795ef16d3c489c4702 [shape=box label="05_Resource" fillcolor="white" style="filled" color="red" URL="dir_6e58c436369e4a795ef16d3c489c4702.html"];
+  dir_8b4c9f422ddaad2e4cc1fcd7bddd2678 [shape=box label="Polygon" fillcolor="white" style="filled" color="red" URL="dir_8b4c9f422ddaad2e4cc1fcd7bddd2678.html"];
+  dir_9bdf09a476fe7fa6e3a0e14af6a4b1af [shape=box label="Component" fillcolor="white" style="filled" color="red" URL="dir_9bdf09a476fe7fa6e3a0e14af6a4b1af.html"];
+  dir_5d8401cb2dc04ef5f53301dc6323b99a->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="1", labeldistance=1.5 headhref="dir_000139_000158.html"];
+  dir_5d8401cb2dc04ef5f53301dc6323b99a->dir_8b4c9f422ddaad2e4cc1fcd7bddd2678 [headlabel="1", labeldistance=1.5 headhref="dir_000139_000142.html"];
+  dir_5d8401cb2dc04ef5f53301dc6323b99a->dir_9bdf09a476fe7fa6e3a0e14af6a4b1af [headlabel="1", labeldistance=1.5 headhref="dir_000139_000081.html"];
+  dir_8b4c9f422ddaad2e4cc1fcd7bddd2678->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="1", labeldistance=1.5 headhref="dir_000142_000158.html"];
+}

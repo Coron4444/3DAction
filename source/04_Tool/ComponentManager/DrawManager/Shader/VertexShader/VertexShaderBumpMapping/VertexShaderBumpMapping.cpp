@@ -94,10 +94,10 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 								  draw->getpMatrix(object_index));
 	GetConstantTable()->SetMatrix(ShaderBase::GetDevice(),
 								  "MATRIX_VIEW",
-								  camera->GetViewMatrix());
+								  camera->getpViewMatrix());
 	GetConstantTable()->SetMatrix(ShaderBase::GetDevice(),
 								  "MATRIX_PROJECTION",
-								  camera->GetProjectionMatrix());
+								  camera->getpProjectionMatrix());
 
 	// ライト方向をセット
 	Vec4 light_position = (Vec4)*GameObjectManager::GetDrawManager()
@@ -115,7 +115,7 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 	// 視点の設定(オブジェクトごとのローカル座標でのカメラの座標を取得する)
 	D3DXMatrixIdentity(&math_matrix_);
 	D3DXMatrixMultiply(&math_matrix_, draw->getpMatrix(object_index),
-					   camera->GetViewMatrix());
+					   camera->getpViewMatrix());
 	D3DXMatrixInverse(&math_matrix_, nullptr, &math_matrix_);
 	Vec4 object_local_camera_position(0.0f, 0.0f, 0.0f, 1.0f);
 	D3DXVec4Transform(&object_local_camera_position, &object_local_camera_position, &math_matrix_);

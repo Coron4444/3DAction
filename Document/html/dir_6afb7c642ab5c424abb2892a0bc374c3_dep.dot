@@ -1,0 +1,23 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/UpdateManager" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_976dc2bd85357175aa42d597a4624b41 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ComponentManager" fontname="Helvetica", fontsize="10", URL="dir_976dc2bd85357175aa42d597a4624b41.html"]
+  dir_6afb7c642ab5c424abb2892a0bc374c3 [shape=box, label="UpdateManager", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6afb7c642ab5c424abb2892a0bc374c3.html"];
+  }
+  dir_0bdd085e94670486122436b1728d6cb5 [shape=box label="SafeRelease" URL="dir_0bdd085e94670486122436b1728d6cb5.html"];
+  dir_5bd2ec70fcc9e1658554bd6ee53be39a [shape=box label="LimitedPointerArray" URL="dir_5bd2ec70fcc9e1658554bd6ee53be39a.html"];
+  dir_42ede0e43233c6370d68c50ab36ec2c7 [shape=box label="GameObjectBase" URL="dir_42ede0e43233c6370d68c50ab36ec2c7.html"];
+  dir_9bdf09a476fe7fa6e3a0e14af6a4b1af [shape=box label="Component" fillcolor="white" style="filled" color="red" URL="dir_9bdf09a476fe7fa6e3a0e14af6a4b1af.html"];
+  dir_5bd2ec70fcc9e1658554bd6ee53be39a->dir_0bdd085e94670486122436b1728d6cb5 [headlabel="1", labeldistance=1.5 headhref="dir_000136_000148.html"];
+  dir_6afb7c642ab5c424abb2892a0bc374c3->dir_0bdd085e94670486122436b1728d6cb5 [headlabel="1", labeldistance=1.5 headhref="dir_000128_000148.html"];
+  dir_6afb7c642ab5c424abb2892a0bc374c3->dir_5bd2ec70fcc9e1658554bd6ee53be39a [headlabel="1", labeldistance=1.5 headhref="dir_000128_000136.html"];
+  dir_6afb7c642ab5c424abb2892a0bc374c3->dir_42ede0e43233c6370d68c50ab36ec2c7 [headlabel="1", labeldistance=1.5 headhref="dir_000128_000130.html"];
+  dir_6afb7c642ab5c424abb2892a0bc374c3->dir_9bdf09a476fe7fa6e3a0e14af6a4b1af [headlabel="1", labeldistance=1.5 headhref="dir_000128_000081.html"];
+  dir_42ede0e43233c6370d68c50ab36ec2c7->dir_0bdd085e94670486122436b1728d6cb5 [headlabel="1", labeldistance=1.5 headhref="dir_000130_000148.html"];
+  dir_42ede0e43233c6370d68c50ab36ec2c7->dir_6afb7c642ab5c424abb2892a0bc374c3 [headlabel="1", labeldistance=1.5 headhref="dir_000130_000128.html"];
+  dir_42ede0e43233c6370d68c50ab36ec2c7->dir_9bdf09a476fe7fa6e3a0e14af6a4b1af [headlabel="3", labeldistance=1.5 headhref="dir_000130_000081.html"];
+  dir_9bdf09a476fe7fa6e3a0e14af6a4b1af->dir_0bdd085e94670486122436b1728d6cb5 [headlabel="1", labeldistance=1.5 headhref="dir_000081_000148.html"];
+  dir_9bdf09a476fe7fa6e3a0e14af6a4b1af->dir_5bd2ec70fcc9e1658554bd6ee53be39a [headlabel="2", labeldistance=1.5 headhref="dir_000081_000136.html"];
+}

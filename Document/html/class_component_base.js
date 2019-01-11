@@ -1,8 +1,8 @@
 var class_component_base =
 [
-    [ "~ComponentBase", "class_component_base.html#a5d22c6d5f792ff42ab6cb11a8ac38478", null ],
+    [ "~ComponentBase", "class_component_base.html#a80a37e33ecca2471b2186fba1aaf2cdd", null ],
     [ "DebugDisplay", "class_component_base.html#a36ae7d27ad9d756fa245bad443020407", null ],
-    [ "getpGameObject", "class_component_base.html#a558f69e072f0dfedaf9416cf1a903db5", null ],
+    [ "getpGameObject", "class_component_base.html#ab9517b92e45e084b1cc450c147e16642", null ],
     [ "Init", "class_component_base.html#a125939d6befe42f28886a6523e86b18b", null ],
     [ "setGameObject", "class_component_base.html#ae671317076d3c89ba0793ae2cd34d5ea", null ],
     [ "Uninit", "class_component_base.html#a9f42beaf0383d6f629819579cab4de57", null ],

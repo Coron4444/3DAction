@@ -46,8 +46,8 @@ const float EnemyCollision::SUBSTANCE_RADIUS = 1.0f;
 
 void EnemyCollision::Init()
 {
-	// ステート
-	CollisionBase::setState(CollisionBase::State::ENEMY);
+	// タイプ
+	CollisionBase::setType(CollisionBase::Type::ENEMY);
 
 	// 複数衝突オブジェクト
 	collision_objects_ = new CollisionObjects();

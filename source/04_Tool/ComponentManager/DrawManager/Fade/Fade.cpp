@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    フェードクラス
-//    Author : Araki Kai                                作成日 : 2018/03/27
-//
+//!	@file	 Fade.cpp
+//!	@brief	 フェードClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
 
 
@@ -12,11 +12,12 @@
 //****************************************
 #include "Fade.h"
 
-#include <assert.h>
 #include <Renderer\RendererDirectX9\RendererDirectX9.h>
 #include <SafeRelease/SafeRelease.h>
 #include <Vector\ConvertToFrame\TimeToFrame\TimeToFrame.h>
+#include <Transform\Transform.h>
 #include <Polygon\PlanePolygon\PlanePolygon.h>
+#include <Texture\TextureManager\TextureManager.h>
 
 
 
@@ -28,55 +29,97 @@ const std::string Fade::TEXTURE_NAME_TRANSITION_01 = "Fade/Transition_01.png";
 
 
 //****************************************
-// 非静的メンバ関数定義
+// プロパティ定義
 //****************************************
-//--------------------------------------------------
-// +コンストラクタ
-//--------------------------------------------------
-Fade::Fade()
-	: plane_polygon_(nullptr)
+MATRIX* Fade::getpMatrix(unsigned object_index)
 {
-	plane_polygon_ = new PlanePolygon();
-
-	// テクスチャの登録
-	transition01_texture_ = TextureManager::AddShareData(&TEXTURE_NAME_TRANSITION_01);
-
-	// オーダーリスト設定
-	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
-	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	object_index = object_index;
+	return transform_->getpMatrixExtend()->GetWorldMatrix();
 }
 
 
 
-//--------------------------------------------------
-// +デストラクタ
-//--------------------------------------------------
-Fade::~Fade()
+D3DMATERIAL9* Fade::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
-	// 各種開放
-	SafeRelease::Normal(&plane_polygon_);
+	object_index = object_index;
+	mesh_index = mesh_index;
+	return plane_polygon_->GetMaterial();
 }
 
 
 
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
+const Fade::Type* Fade::getpType() const 
+{
+	return &type_; 
+}
+
+
+
+const Fade::State* Fade::getpState() const
+{
+	return &state_; 
+}
+
+
+
+bool Fade::getpEndFlag() const 
+{
+	return end_flag_; 
+}
+
+
+
+Transform* Fade::getpTransform() 
+{
+	return transform_;
+}
+
+
+
+TextureObject* Fade::getpTransition01Object()
+{
+	return transition01_texture_; 
+}
+
+
+
+//****************************************
+// 関数定義
+//****************************************
 void Fade::Init(Type type, State state, Vec2 size, XColor4 color, float speed)
 {
-	// アサート群
-	assert(state != State::STATE_NONE && state != State::STATE_MAX && "不正なステートの入力を確認(fade.cpp)");
-
 	// 各種代入
 	type_ = type;
 	state_ = state;
 
+	// 平面ポリゴン作成
+	if (plane_polygon_ == nullptr)
+	{
+		plane_polygon_ = new PlanePolygon();
+	}
+
+	// テクスチャの登録
+	if (transition01_texture_ == nullptr)
+	{
+		transition01_texture_ = TextureManager::AddShareData(&TEXTURE_NAME_TRANSITION_01);
+	}
+
+	// 状態の作成
+	if (transform_ == nullptr)
+	{
+		transform_ = new Transform();
+	}
+
+	// オーダーリスト設定
+	getpDrawOrderList()->setDrawType(DrawOrderList::DrawType::TWO_DIMENSIONAL);
+	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+
 	// フェードを指定サイズに変更
-	transform_.GetScale()->x = size.x;
-	transform_.GetScale()->y = size.y;
-	transform_.UpdateWorldMatrixSRT();
+	transform_->GetScale()->x = size.x;
+	transform_->GetScale()->y = size.y;
+	transform_->UpdateWorldMatrixSRT();
 
 	// エンドフラグOFF
 	end_flag_ = false;
@@ -106,29 +149,27 @@ void Fade::Init(Type type, State state, Vec2 size, XColor4 color, float speed)
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void Fade::Uninit()
 {
 	// ステートごとの処理
 	if (state_ == State::STATE_FADE_IN)
 	{
-		
+
 	}
 	else if (state_ == State::STATE_FADE_OUT)
 	{
-		
+
 	}
 
 	end_flag_ = false;
+
+	// 各種開放
+	SafeRelease::Normal(&plane_polygon_);
+	SafeRelease::Normal(&transform_);
 }
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void Fade::Update()
 {
 	// α値を変更
@@ -156,9 +197,6 @@ void Fade::Update()
 
 
 
-//--------------------------------------------------
-// +描画関数
-//--------------------------------------------------
 void Fade::Draw(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;

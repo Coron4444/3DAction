@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_collision_shape_base.html','');}
 <a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_collision_shape_base-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
-<div class="title">CollisionShapeBase クラス</div>  </div>
+<div class="title">CollisionShapeBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -138,14 +138,15 @@ CollisionShapeBase の継承関係図</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3dac385b3718f80171046cde33da04b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#a3dac385b3718f80171046cde33da04b1">getType</a> ()</td></tr>
+<tr class="memdesc:a3dac385b3718f80171046cde33da04b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">形状タイプ取得関数  <a href="#a3dac385b3718f80171046cde33da04b1">[詳解]</a><br /></td></tr>
+<tr class="separator:a3dac385b3718f80171046cde33da04b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd2ab42e2a6e96c6bff832ce8ca62b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#a9dd2ab42e2a6e96c6bff832ce8ca62b9">CollisionShapeBase</a> (<a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">Type</a> type)</td></tr>
 <tr class="memdesc:a9dd2ab42e2a6e96c6bff832ce8ca62b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="#a9dd2ab42e2a6e96c6bff832ce8ca62b9">[詳解]</a><br /></td></tr>
 <tr class="separator:a9dd2ab42e2a6e96c6bff832ce8ca62b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64fa9e1ae6b582be42360e926ce5d6cb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#a64fa9e1ae6b582be42360e926ce5d6cb">~CollisionShapeBase</a> ()</td></tr>
-<tr class="memdesc:a64fa9e1ae6b582be42360e926ce5d6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="#a64fa9e1ae6b582be42360e926ce5d6cb">[詳解]</a><br /></td></tr>
-<tr class="separator:a64fa9e1ae6b582be42360e926ce5d6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a662af47ebcd9f29d7c54047a0227b8bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#a662af47ebcd9f29d7c54047a0227b8bc">getType</a> ()</td></tr>
-<tr class="separator:a662af47ebcd9f29d7c54047a0227b8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fb40d8815d749743555bd2ab505fe6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collision_shape_base.html#af6fb40d8815d749743555bd2ab505fe6">~CollisionShapeBase</a> ()=0</td></tr>
+<tr class="memdesc:af6fb40d8815d749743555bd2ab505fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="#af6fb40d8815d749743555bd2ab505fe6">[詳解]</a><br /></td></tr>
+<tr class="separator:af6fb40d8815d749743555bd2ab505fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 非公開変数類</h2></td></tr>
@@ -193,9 +194,6 @@ CollisionShapeBase の継承関係図</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">CollisionShapeBase::CollisionShapeBase </td>
@@ -205,11 +203,6 @@ CollisionShapeBase の継承関係図</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>コンストラクタ </p>
@@ -220,12 +213,12 @@ CollisionShapeBase の継承関係図</div>
   </dd>
 </dl>
 
-<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00054">54</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_collision_shape_base_8cpp_source.html">CollisionShapeBase.cpp</a> の <a class="el" href="_collision_shape_base_8cpp_source.html#l00030">30</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a64fa9e1ae6b582be42360e926ce5d6cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64fa9e1ae6b582be42360e926ce5d6cb">&#9670;&nbsp;</a></span>~CollisionShapeBase()</h2>
+<a id="af6fb40d8815d749743555bd2ab505fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6fb40d8815d749743555bd2ab505fe6">&#9670;&nbsp;</a></span>~CollisionShapeBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +227,7 @@ CollisionShapeBase の継承関係図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual CollisionShapeBase::~CollisionShapeBase </td>
+          <td class="memname">CollisionShapeBase::~CollisionShapeBase </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -242,7 +235,7 @@ CollisionShapeBase の継承関係図</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -255,35 +248,41 @@ CollisionShapeBase の継承関係図</div>
   </dd>
 </dl>
 
-<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00060">60</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_collision_shape_base_8cpp_source.html">CollisionShapeBase.cpp</a> の <a class="el" href="_collision_shape_base_8cpp_source.html#l00037">37</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a662af47ebcd9f29d7c54047a0227b8bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a662af47ebcd9f29d7c54047a0227b8bc">&#9670;&nbsp;</a></span>getType()</h2>
+<a id="a3dac385b3718f80171046cde33da04b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dac385b3718f80171046cde33da04b1">&#9670;&nbsp;</a></span>getType()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">Type</a> CollisionShapeBase::getType </td>
+          <td class="memname"><a class="el" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">CollisionShapeBase::Type</a> CollisionShapeBase::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a> の <a class="el" href="_collision_shape_base_8h_source.html#l00063">63</a> 行目に定義があります。</p>
+<p>形状タイプ取得関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Type</td><td>形状タイプ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_collision_shape_base_8cpp_source.html">CollisionShapeBase.cpp</a> の <a class="el" href="_collision_shape_base_8cpp_source.html#l00020">20</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -315,7 +314,8 @@ CollisionShapeBase の継承関係図</div>
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/<a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/<a class="el" href="_collision_shape_base_8h_source.html">CollisionShapeBase.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/<a class="el" href="_collision_shape_base_8cpp_source.html">CollisionShapeBase.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

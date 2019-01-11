@@ -1,0 +1,11 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TutorialLogo/TutorialLogoFactory" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b0977381902344801aa6e74ad6331c4e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="TutorialLogo" fontname="Helvetica", fontsize="10", URL="dir_b0977381902344801aa6e74ad6331c4e.html"]
+  dir_ee4ffa06493c2dc44d30838a6c468b42 [shape=box, label="TutorialLogoFactory", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ee4ffa06493c2dc44d30838a6c468b42.html"];
+  }
+  dir_e0246ec2c624ae8e5baefce7765134eb [shape=box label="TutorialLogoDraw" URL="dir_e0246ec2c624ae8e5baefce7765134eb.html"];
+  dir_ee4ffa06493c2dc44d30838a6c468b42->dir_e0246ec2c624ae8e5baefce7765134eb [headlabel="1", labeldistance=1.5 headhref="dir_000049_000048.html"];
+}

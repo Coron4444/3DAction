@@ -39,12 +39,12 @@ enum \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} \mbox{\hyperlink{class_collision_shape_base_a3dac385b3718f80171046cde33da04b1}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em 形状タイプ取得関数 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_collision_shape_base_a9dd2ab42e2a6e96c6bff832ce8ca62b9}{Collision\+Shape\+Base}} (\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} type)
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}{$\sim$\+Collision\+Shape\+Base}} ()
-\begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} \mbox{\hyperlink{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}{get\+Type}} ()
-\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{class_collision_shape_base_af6fb40d8815d749743555bd2ab505fe6}{$\sim$\+Collision\+Shape\+Base}} ()=0
+\begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -121,7 +121,7 @@ M\+AX&\\
 \index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
 \index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
 \subsubsection{\texorpdfstring{Collision\+Shape\+Base()}{CollisionShapeBase()}}
-{\footnotesize\ttfamily Collision\+Shape\+Base\+::\+Collision\+Shape\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Collision\+Shape\+Base\+::\+Collision\+Shape\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}}}]{type }\end{DoxyParamCaption})}
 
 
 
@@ -134,13 +134,13 @@ M\+AX&\\
 \end{DoxyParams}
 
 
- Collision\+Shape\+Base.\+h の 54 行目に定義があります。
+ Collision\+Shape\+Base.\+cpp の 30 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}\label{class_collision_shape_base_a64fa9e1ae6b582be42360e926ce5d6cb}} 
+\mbox{\Hypertarget{class_collision_shape_base_af6fb40d8815d749743555bd2ab505fe6}\label{class_collision_shape_base_af6fb40d8815d749743555bd2ab505fe6}} 
 \index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!````~Collision\+Shape\+Base@{$\sim$\+Collision\+Shape\+Base}}
 \index{````~Collision\+Shape\+Base@{$\sim$\+Collision\+Shape\+Base}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
 \subsubsection{\texorpdfstring{$\sim$\+Collision\+Shape\+Base()}{~CollisionShapeBase()}}
-{\footnotesize\ttfamily virtual Collision\+Shape\+Base\+::$\sim$\+Collision\+Shape\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily Collision\+Shape\+Base\+::$\sim$\+Collision\+Shape\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -153,20 +153,34 @@ M\+AX&\\
 \end{DoxyParams}
 
 
- Collision\+Shape\+Base.\+h の 60 行目に定義があります。
+ Collision\+Shape\+Base.\+cpp の 37 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}\label{class_collision_shape_base_a662af47ebcd9f29d7c54047a0227b8bc}} 
+\mbox{\Hypertarget{class_collision_shape_base_a3dac385b3718f80171046cde33da04b1}\label{class_collision_shape_base_a3dac385b3718f80171046cde33da04b1}} 
 \index{Collision\+Shape\+Base@{Collision\+Shape\+Base}!get\+Type@{get\+Type}}
 \index{get\+Type@{get\+Type}!Collision\+Shape\+Base@{Collision\+Shape\+Base}}
 \subsubsection{\texorpdfstring{get\+Type()}{getType()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Type}} Collision\+Shape\+Base\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_shape_base_a8abcef092855ad0ca191047044b002cb}{Collision\+Shape\+Base\+::\+Type}} Collision\+Shape\+Base\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Collision\+Shape\+Base.\+h の 63 行目に定義があります。
+形状タイプ取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Type} & 形状タイプ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Collision\+Shape\+Base.\+cpp の 20 行目に定義があります。
 
 
 
@@ -189,4 +203,5 @@ M\+AX&\\
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\mbox{\hyperlink{_collision_shape_base_8h}{Collision\+Shape\+Base.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\mbox{\hyperlink{_collision_shape_base_8h}{Collision\+Shape\+Base.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\mbox{\hyperlink{_collision_shape_base_8cpp}{Collision\+Shape\+Base.\+cpp}}\end{DoxyCompactItemize}

@@ -17,7 +17,7 @@
 #include "../Shader/VertexShader/VertexShaderBumpMapping/VertexShaderBumpMapping.h"
 #include "../Shader/PixelShader/PixelShaderBumpMapping/PixelShaderBumpMapping.h"
 
-#include <Component/Base/DrawBase/DrawBase.h>
+#include <Component/Draw/DrawBase/DrawBase.h>
 
 #include <SafeRelease/SafeRelease.h>
 
@@ -175,7 +175,7 @@ void ShaderManager::SetVertexShader(DrawBase* draw,
 		return;
 	}
 
-	vertex_shaders_[draw->getpDrawOrderList()->GetVertexShaderType()]->SetShader();
+	vertex_shaders_[draw->getpDrawOrderList()->getVertexShaderType()]->SetShader();
 }
 
 
@@ -192,7 +192,7 @@ void ShaderManager::SetPixelShader(DrawBase* draw, PixelShaderType forced_pixel_
 		return;
 	}
 
-	pixel_shaders_[draw->getpDrawOrderList()->GetPixelShaderType()]->SetShader();
+	pixel_shaders_[draw->getpDrawOrderList()->getPixelShaderType()]->SetShader();
 }
 
 
@@ -211,7 +211,7 @@ void ShaderManager::CommonSettingVertexShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	vertex_shaders_[draw->getpDrawOrderList()->GetVertexShaderType()]
+	vertex_shaders_[draw->getpDrawOrderList()->getVertexShaderType()]
 		->CommonSetting(draw, camera, object_index);
 }
 
@@ -231,7 +231,7 @@ void ShaderManager::CommonSettingPixelShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	pixel_shaders_[draw->getpDrawOrderList()->GetPixelShaderType()]
+	pixel_shaders_[draw->getpDrawOrderList()->getPixelShaderType()]
 		->CommonSetting(draw, camera, object_index);
 }
 
@@ -253,7 +253,7 @@ void ShaderManager::SpecificSettingVertexShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	vertex_shaders_[draw->getpDrawOrderList()->GetVertexShaderType()]
+	vertex_shaders_[draw->getpDrawOrderList()->getVertexShaderType()]
 		->SpecificSetting(draw, camera, object_index, mesh_index);
 }
 
@@ -275,6 +275,6 @@ void ShaderManager::SpecificSettingPixelShader(DrawBase* draw, Camera* camera,
 		return;
 	}
 
-	pixel_shaders_[draw->getpDrawOrderList()->GetPixelShaderType()]
+	pixel_shaders_[draw->getpDrawOrderList()->getPixelShaderType()]
 		->SpecificSetting(draw, camera, object_index, mesh_index);
 }

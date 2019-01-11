@@ -39,7 +39,7 @@ void ResultSceneState_Start::Init()
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->ChangeState(nullptr);
+		->GetCamera()->setState(nullptr);
 
 	if (result_scene_->getpSceneManager()->getpCommonData()->getIsClear())
 	{

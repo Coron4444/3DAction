@@ -8,7 +8,7 @@ var class_scene_manager =
       [ "MAX", "class_scene_manager.html#a68d32794fe1ce945c6a6c380c11a08eba67b231706633f4d8aaadf6830078dd68", null ]
     ] ],
     [ "DrawScene", "class_scene_manager.html#a828b35826f757b8af34aa767c6b40378", null ],
-    [ "getpCommonData", "class_scene_manager.html#a53145632c87301427f9cedc3345d2557", null ],
+    [ "getpCommonData", "class_scene_manager.html#a4de42577d81672dee3e79300e745553c", null ],
     [ "Init", "class_scene_manager.html#a3d14c04a921c6c670e89fbf22a719b00", null ],
     [ "ResetScene", "class_scene_manager.html#a1759161a38025ec8212dc98439fd7335", null ],
     [ "SceneChange", "class_scene_manager.html#ab1ffc5d84cf812e4105cba755d034770", null ],

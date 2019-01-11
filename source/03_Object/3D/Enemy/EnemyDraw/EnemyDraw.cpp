@@ -23,10 +23,10 @@
 void EnemyDraw::Init()
 {
 	// オーダーリスト設定
-	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::TRANSPARENCY);
-	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->setDrawType(DrawOrderList::DrawType::TRANSPARENCY);
+	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// ダウンキャスト
 	enemy_ = (Enemy*)getpGameObject();

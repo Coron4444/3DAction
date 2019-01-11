@@ -73,6 +73,12 @@ void Renderer::setRenderer(RendererFactoryInterface* factory, MODE mode)
 //****************************************
 // ä÷êîíËã`
 //****************************************
+Renderer::Renderer()
+{
+}
+
+
+
 bool Renderer::Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
 					int window_width, int window_height)
 {

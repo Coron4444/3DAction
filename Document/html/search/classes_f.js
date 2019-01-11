@@ -42,8 +42,8 @@ var searchData=
   ['stbtt_5fpack_5frange',['stbtt_pack_range',['../structstbtt__pack__range.html',1,'']]],
   ['stbtt_5fpackedchar',['stbtt_packedchar',['../structstbtt__packedchar.html',1,'']]],
   ['stbtt_5fvertex',['stbtt_vertex',['../structstbtt__vertex.html',1,'']]],
-  ['stbundorecord',['StbUndoRecord',['../struct_stb_undo_record.html',1,'StbUndoRecord'],['../struct_im_gui_stb_1_1_stb_undo_record.html',1,'ImGuiStb::StbUndoRecord']]],
-  ['stbundostate',['StbUndoState',['../struct_im_gui_stb_1_1_stb_undo_state.html',1,'ImGuiStb::StbUndoState'],['../struct_stb_undo_state.html',1,'StbUndoState']]],
+  ['stbundorecord',['StbUndoRecord',['../struct_im_gui_stb_1_1_stb_undo_record.html',1,'ImGuiStb::StbUndoRecord'],['../struct_stb_undo_record.html',1,'StbUndoRecord']]],
+  ['stbundostate',['StbUndoState',['../struct_stb_undo_state.html',1,'StbUndoState'],['../struct_im_gui_stb_1_1_stb_undo_state.html',1,'ImGuiStb::StbUndoState']]],
   ['stencilshadowtest',['StencilShadowTest',['../class_stencil_shadow_test.html',1,'']]],
   ['stencilshadowtestdraw',['StencilShadowTestDraw',['../class_stencil_shadow_test_draw.html',1,'']]],
   ['stencilshadowtestfactory',['StencilShadowTestFactory',['../class_stencil_shadow_test_factory.html',1,'']]]

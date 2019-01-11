@@ -46,11 +46,11 @@ public:
 	//----------------------------------------
 	//! @brief 初期化関数
 	//! @details
-	//! @param[in] hInstance	  インスタンスハンドル
-	//! @param[in] hWnd			  Windowsハンドル
-	//! @param[in] is_full_screen フルスクリーンフラグ
-	//! @param[in] window_width	  ウィンドウ幅
-	//! @param[in] window_height  ウィンドウ高さ
+	//! @param hInstance	  インスタンスハンドル
+	//! @param hWnd			  Windowsハンドル
+	//! @param is_full_screen フルスクリーンフラグ
+	//! @param window_width	  ウィンドウ幅
+	//! @param window_height  ウィンドウ高さ
 	//! @retval bool 初期化成功の有無
 	//----------------------------------------
 	bool Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,

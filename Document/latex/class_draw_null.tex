@@ -21,34 +21,34 @@ Draw\+Null の継承関係図\nopagebreak
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{class_draw_null_aa085e175e9e05fc56cb4aefa2d07f371}{$\sim$\+Draw\+Null}} ()
+virtual unsigned \mbox{\hyperlink{class_draw_null_a8bddfa6ee87e47b2ecbbe6803b088e37}{get\+Object\+Num}} () override
+\begin{DoxyCompactList}\small\item\em オブジェクト数取得関数 \end{DoxyCompactList}\item 
+virtual unsigned \mbox{\hyperlink{class_draw_null_a4c566a37d27fac3dcf76c7970443f375}{get\+Mesh\+Num}} (unsigned object\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em メッシュ数取得関数 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_draw_null_a9aac059eb3b5d1f77e8bd3aa0647cff9}{getp\+Matrix}} (unsigned object\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 行列ポインタ取得関数 \end{DoxyCompactList}\item 
+virtual D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_draw_null_a0c1efe55fea325ad277594be6fe1e938}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em マテリアルポインタ取得関数 \end{DoxyCompactList}\item 
+virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_draw_null_a87d21f70b6fed637a6e23029f29818c1}{getp\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em デカールテクスチャポインタ取得関数 \end{DoxyCompactList}\item 
+virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_draw_null_abdb03713b973fd1f65c914fa146414a1}{getp\+Normal\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 法線テクスチャポインタ取得関数 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_draw_null_af03c2d730ff3351baf234f89cc28303b}{$\sim$\+Draw\+Null}} ()
 \begin{DoxyCompactList}\small\item\em 仮想デストラクタ \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Init}} () override
+virtual void \mbox{\hyperlink{class_draw_null_a20aef1e54c1a158b741bfd731e18efdf}{Init}} () override
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Uninit}} () override
+virtual void \mbox{\hyperlink{class_draw_null_a6e81d63efab7333e8d0e8af99362a4d9}{Uninit}} () override
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}{Update}} ()
+virtual void \mbox{\hyperlink{class_draw_null_ad32a508d269de7eda8ad24ea72230464}{Update}} () override
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_draw_null_a2921257342eca07c8f6db4c475959f77}{Debug\+Display}} ()
+virtual void \mbox{\hyperlink{class_draw_null_aed3bbedfe8db8daf7cafa143750f2114}{Debug\+Display}} () override
 \begin{DoxyCompactList}\small\item\em デバッグ表示関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
+virtual void \mbox{\hyperlink{class_draw_null_a72ac0b7dc40b1469582419dcc5b0e114}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}{Setting\+Before\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
+virtual void \mbox{\hyperlink{class_draw_null_a3baf78b024837c8ebb2471e7505db6ea}{Setting\+Before\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画前設定関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_draw_null_a76edfc5af0bf3275f96f40394aff8510}{Setting\+After\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
-\begin{DoxyCompactList}\small\item\em 描画後設定関数 \end{DoxyCompactList}\item 
-virtual unsigned \mbox{\hyperlink{class_draw_null_ae71c0b03f98748a4eb1d2e2635bcc146}{get\+Object\+Num}} () override
-\item 
-virtual unsigned \mbox{\hyperlink{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}{get\+Mesh\+Num}} (unsigned object\+\_\+index) override
-\item 
-virtual \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{getp\+Matrix}} (unsigned object\+\_\+index) override
-\item 
-virtual D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
-\item 
-virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_draw_null_a2dfa2d2cbb66249f933420a38e9cadad}{getp\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
-\item 
-virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_draw_null_a3b51dfd629853a461cc50175de94ee03}{getp\+Normal\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_draw_null_a3600d14d2ce10f4281723567f97c08be}{Setting\+After\+Drawing}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera, unsigned object\+\_\+index) override
+\begin{DoxyCompactList}\small\item\em 描画後設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
@@ -56,16 +56,16 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 描画の空白\+Class 
 
- Draw\+Null.\+h の 26 行目に定義があります。
+ Draw\+Null.\+h の 24 行目に定義があります。
 
 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_draw_null_aa085e175e9e05fc56cb4aefa2d07f371}\label{class_draw_null_aa085e175e9e05fc56cb4aefa2d07f371}} 
+\mbox{\Hypertarget{class_draw_null_af03c2d730ff3351baf234f89cc28303b}\label{class_draw_null_af03c2d730ff3351baf234f89cc28303b}} 
 \index{Draw\+Null@{Draw\+Null}!````~Draw\+Null@{$\sim$\+Draw\+Null}}
 \index{````~Draw\+Null@{$\sim$\+Draw\+Null}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{$\sim$\+Draw\+Null()}{~DrawNull()}}
-{\footnotesize\ttfamily virtual Draw\+Null\+::$\sim$\+Draw\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily Draw\+Null\+::$\sim$\+Draw\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -78,16 +78,16 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 \end{DoxyParams}
 
 
- Draw\+Null.\+h の 36 行目に定義があります。
+ Draw\+Null.\+cpp の 78 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_draw_null_a2921257342eca07c8f6db4c475959f77}\label{class_draw_null_a2921257342eca07c8f6db4c475959f77}} 
+\mbox{\Hypertarget{class_draw_null_aed3bbedfe8db8daf7cafa143750f2114}\label{class_draw_null_aed3bbedfe8db8daf7cafa143750f2114}} 
 \index{Draw\+Null@{Draw\+Null}!Debug\+Display@{Debug\+Display}}
 \index{Debug\+Display@{Debug\+Display}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{Debug\+Display()}{DebugDisplay()}}
-{\footnotesize\ttfamily virtual void Draw\+Null\+::\+Debug\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Draw\+Null\+::\+Debug\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -109,13 +109,13 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 64 行目に定義があります。
+ Draw\+Null.\+cpp の 102 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_afe50f6fd820b18d673f70f048743f339}\label{class_draw_null_afe50f6fd820b18d673f70f048743f339}} 
+\mbox{\Hypertarget{class_draw_null_a72ac0b7dc40b1469582419dcc5b0e114}\label{class_draw_null_a72ac0b7dc40b1469582419dcc5b0e114}} 
 \index{Draw\+Null@{Draw\+Null}!Draw@{Draw}}
 \index{Draw@{Draw}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily virtual void Draw\+Null\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Draw\+Null\+::\+Draw (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -143,14 +143,28 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 72 行目に定義があります。
+ Draw\+Null.\+cpp の 108 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}\label{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}} 
+\mbox{\Hypertarget{class_draw_null_a4c566a37d27fac3dcf76c7970443f375}\label{class_draw_null_a4c566a37d27fac3dcf76c7970443f375}} 
 \index{Draw\+Null@{Draw\+Null}!get\+Mesh\+Num@{get\+Mesh\+Num}}
 \index{get\+Mesh\+Num@{get\+Mesh\+Num}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{get\+Mesh\+Num()}{getMeshNum()}}
-{\footnotesize\ttfamily virtual unsigned Draw\+Null\+::get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily unsigned Draw\+Null\+::get\+Mesh\+Num (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+メッシュ数取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em unsigned} & メッシュ数 \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_draw_base_add488139aed539e7ccd19492702b4bee}{Draw\+Base}}を実装しています。
@@ -161,14 +175,28 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 106 行目に定義があります。
+ Draw\+Null.\+cpp の 28 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_ae71c0b03f98748a4eb1d2e2635bcc146}\label{class_draw_null_ae71c0b03f98748a4eb1d2e2635bcc146}} 
+\mbox{\Hypertarget{class_draw_null_a8bddfa6ee87e47b2ecbbe6803b088e37}\label{class_draw_null_a8bddfa6ee87e47b2ecbbe6803b088e37}} 
 \index{Draw\+Null@{Draw\+Null}!get\+Object\+Num@{get\+Object\+Num}}
 \index{get\+Object\+Num@{get\+Object\+Num}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{get\+Object\+Num()}{getObjectNum()}}
-{\footnotesize\ttfamily virtual unsigned Draw\+Null\+::get\+Object\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily unsigned Draw\+Null\+::get\+Object\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+オブジェクト数取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em unsigned} & オブジェクト数 \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_draw_base_a57c010b4386dc09afa124fba81a6e0fc}{Draw\+Base}}を実装しています。
@@ -179,14 +207,30 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 105 行目に定義があります。
+ Draw\+Null.\+cpp の 21 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a2dfa2d2cbb66249f933420a38e9cadad}\label{class_draw_null_a2dfa2d2cbb66249f933420a38e9cadad}} 
+\mbox{\Hypertarget{class_draw_null_a87d21f70b6fed637a6e23029f29818c1}\label{class_draw_null_a87d21f70b6fed637a6e23029f29818c1}} 
 \index{Draw\+Null@{Draw\+Null}!getp\+Decale\+Texture@{getp\+Decale\+Texture}}
 \index{getp\+Decale\+Texture@{getp\+Decale\+Texture}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{getp\+Decale\+Texture()}{getpDecaleTexture()}}
-{\footnotesize\ttfamily virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Draw\+Null\+::getp\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Draw\+Null\+::getp\+Decale\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+デカールテクスチャポインタ取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+index} & メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9} & デカールテクスチャポインタ \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_draw_base_a9f50a030778dbfca5ae45bb7908e0d58}{Draw\+Base}}を実装しています。
@@ -197,14 +241,30 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 124 行目に定義があります。
+ Draw\+Null.\+cpp の 55 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}\label{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}} 
+\mbox{\Hypertarget{class_draw_null_a0c1efe55fea325ad277594be6fe1e938}\label{class_draw_null_a0c1efe55fea325ad277594be6fe1e938}} 
 \index{Draw\+Null@{Draw\+Null}!getp\+Material@{getp\+Material}}
 \index{getp\+Material@{getp\+Material}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{getp\+Material()}{getpMaterial()}}
-{\footnotesize\ttfamily virtual D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$ Draw\+Null\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ Draw\+Null\+::getp\+Material (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+マテリアルポインタ取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+index} & メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$} & マテリアルポインタ \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_draw_base_a940543b482e934624637f3c6b4d17f96}{Draw\+Base}}を実装しています。
@@ -215,14 +275,28 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 117 行目に定義があります。
+ Draw\+Null.\+cpp の 45 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a001901c340671106a33d44b9d4aef4c4}\label{class_draw_null_a001901c340671106a33d44b9d4aef4c4}} 
+\mbox{\Hypertarget{class_draw_null_a9aac059eb3b5d1f77e8bd3aa0647cff9}\label{class_draw_null_a9aac059eb3b5d1f77e8bd3aa0647cff9}} 
 \index{Draw\+Null@{Draw\+Null}!getp\+Matrix@{getp\+Matrix}}
 \index{getp\+Matrix@{getp\+Matrix}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{getp\+Matrix()}{getpMatrix()}}
-{\footnotesize\ttfamily virtual \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}}$\ast$ Draw\+Null\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ Draw\+Null\+::getp\+Matrix (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+行列ポインタ取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em M\+A\+T\+R\+I\+X$\ast$} & 行列ポインタ \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_draw_base_a60fc3148b2679e4ea7723d2af0c37283}{Draw\+Base}}を実装しています。
@@ -233,14 +307,30 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 111 行目に定義があります。
+ Draw\+Null.\+cpp の 36 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a3b51dfd629853a461cc50175de94ee03}\label{class_draw_null_a3b51dfd629853a461cc50175de94ee03}} 
+\mbox{\Hypertarget{class_draw_null_abdb03713b973fd1f65c914fa146414a1}\label{class_draw_null_abdb03713b973fd1f65c914fa146414a1}} 
 \index{Draw\+Null@{Draw\+Null}!getp\+Normal\+Texture@{getp\+Normal\+Texture}}
 \index{getp\+Normal\+Texture@{getp\+Normal\+Texture}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{getp\+Normal\+Texture()}{getpNormalTexture()}}
-{\footnotesize\ttfamily virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Draw\+Null\+::getp\+Normal\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 Draw\+Null\+::getp\+Normal\+Texture (\begin{DoxyParamCaption}\item[{unsigned}]{object\+\_\+index,  }\item[{unsigned}]{mesh\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+法線テクスチャポインタ取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+index} & メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Renderer\+Interface$\ast$} & 法線テクスチャポインタ \\
+\hline
+\end{DoxyRetVals}
 
 
 \mbox{\hyperlink{class_draw_base_a76c3b910b495fcf69aacf6164ca90c7d}{Draw\+Base}}を実装しています。
@@ -251,13 +341,13 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 131 行目に定義があります。
+ Draw\+Null.\+cpp の 65 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}\label{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}} 
+\mbox{\Hypertarget{class_draw_null_a20aef1e54c1a158b741bfd731e18efdf}\label{class_draw_null_a20aef1e54c1a158b741bfd731e18efdf}} 
 \index{Draw\+Null@{Draw\+Null}!Init@{Init}}
 \index{Init@{Init}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily virtual void Draw\+Null\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Draw\+Null\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -283,13 +373,13 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 43 行目に定義があります。
+ Draw\+Null.\+cpp の 84 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a76edfc5af0bf3275f96f40394aff8510}\label{class_draw_null_a76edfc5af0bf3275f96f40394aff8510}} 
+\mbox{\Hypertarget{class_draw_null_a3600d14d2ce10f4281723567f97c08be}\label{class_draw_null_a3600d14d2ce10f4281723567f97c08be}} 
 \index{Draw\+Null@{Draw\+Null}!Setting\+After\+Drawing@{Setting\+After\+Drawing}}
 \index{Setting\+After\+Drawing@{Setting\+After\+Drawing}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{Setting\+After\+Drawing()}{SettingAfterDrawing()}}
-{\footnotesize\ttfamily virtual void Draw\+Null\+::\+Setting\+After\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Draw\+Null\+::\+Setting\+After\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -317,13 +407,13 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 98 行目に定義があります。
+ Draw\+Null.\+cpp の 126 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}\label{class_draw_null_a7f0d52c5c2fb2d9b8eb423f363862290}} 
+\mbox{\Hypertarget{class_draw_null_a3baf78b024837c8ebb2471e7505db6ea}\label{class_draw_null_a3baf78b024837c8ebb2471e7505db6ea}} 
 \index{Draw\+Null@{Draw\+Null}!Setting\+Before\+Drawing@{Setting\+Before\+Drawing}}
 \index{Setting\+Before\+Drawing@{Setting\+Before\+Drawing}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{Setting\+Before\+Drawing()}{SettingBeforeDrawing()}}
-{\footnotesize\ttfamily virtual void Draw\+Null\+::\+Setting\+Before\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Draw\+Null\+::\+Setting\+Before\+Drawing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera,  }\item[{unsigned}]{object\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -351,13 +441,13 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 86 行目に定義があります。
+ Draw\+Null.\+cpp の 118 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}\label{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}} 
+\mbox{\Hypertarget{class_draw_null_a6e81d63efab7333e8d0e8af99362a4d9}\label{class_draw_null_a6e81d63efab7333e8d0e8af99362a4d9}} 
 \index{Draw\+Null@{Draw\+Null}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
-{\footnotesize\ttfamily virtual void Draw\+Null\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Draw\+Null\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -383,13 +473,13 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 50 行目に定義があります。
+ Draw\+Null.\+cpp の 90 行目に定義があります。
 
-\mbox{\Hypertarget{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}\label{class_draw_null_a0149bcf84a34b138642ab7975ae46f30}} 
+\mbox{\Hypertarget{class_draw_null_ad32a508d269de7eda8ad24ea72230464}\label{class_draw_null_ad32a508d269de7eda8ad24ea72230464}} 
 \index{Draw\+Null@{Draw\+Null}!Update@{Update}}
 \index{Update@{Update}!Draw\+Null@{Draw\+Null}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily virtual void Draw\+Null\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Draw\+Null\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -415,10 +505,11 @@ virtual L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_
 
 
 
- Draw\+Null.\+h の 57 行目に定義があります。
+ Draw\+Null.\+cpp の 96 行目に定義があります。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Draw/\+Draw\+Null/\mbox{\hyperlink{_draw_null_8h}{Draw\+Null.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Draw/\+Draw\+Null/\mbox{\hyperlink{_draw_null_8h}{Draw\+Null.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Draw/\+Draw\+Null/\mbox{\hyperlink{_draw_null_8cpp}{Draw\+Null.\+cpp}}\end{DoxyCompactItemize}

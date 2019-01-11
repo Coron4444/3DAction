@@ -24,6 +24,14 @@ enum \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}} $\ast$ \mbox{\hyperlink{class_renderer_a1c49b796eff197f77ef3f75757f7d468}{getp\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em レンダラーポインタ取得関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_renderer_a02e3c483b2c9d8024e51639a06159066}{set\+Renderer}} (\mbox{\hyperlink{class_renderer_factory_interface}{Renderer\+Factory\+Interface}} $\ast$factory, \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}} mode)
+\begin{DoxyCompactList}\small\item\em レンダラー設定関数 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_ae7155d5c9df23afd21082c08931a2e72}{get\+Interface}} (Type $\ast$$\ast$out\+\_\+pointer)
+\begin{DoxyCompactList}\small\item\em インターフェース取得関数 \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_a0f82c27d785abaee2d8014ad56eddeba}{get\+Device}} (Type $\ast$$\ast$out\+\_\+pointer)
+\begin{DoxyCompactList}\small\item\em デバイス取得関数 \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_renderer_a8d576add80187f5be3f24ec6a8108100}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height)
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}{Uninit}} ()
@@ -33,22 +41,14 @@ bool \mbox{\hyperlink{class_renderer_af420951c9c163f1151bd6600df204cee}{Draw\+Be
 void \mbox{\hyperlink{class_renderer_a0393849bd4178a33861780bf07b0deee}{Draw\+End}} (bool is\+\_\+begin\+\_\+scene)
 \begin{DoxyCompactList}\small\item\em 描画終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_renderer_a1dac4baae1fa79166442b0778a9c8728}{Present}} ()
-\begin{DoxyCompactList}\small\item\em バックバッファをフロントバッファに反映関数 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}} $\ast$ \mbox{\hyperlink{class_renderer_a0d026a0f20ae978c19fd4924b06d26e2}{getp\+Renderer}} ()
-\item 
-void \mbox{\hyperlink{class_renderer_a02e3c483b2c9d8024e51639a06159066}{set\+Renderer}} (\mbox{\hyperlink{class_renderer_factory_interface}{Renderer\+Factory\+Interface}} $\ast$factory, \mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}} mode)
-\item 
-{\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_a6e77556825755be3db8a5a734460e66f}{get\+Interface}} (Type $\ast$$\ast$pointer)
-\item 
-{\footnotesize template$<$class Type $>$ }\\void \mbox{\hyperlink{class_renderer_a56662123051f8898c4e8e9d5457fd317}{get\+Device}} (Type $\ast$$\ast$pointer)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em バックバッファをフロントバッファに反映関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{静的公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}{Release\+Instance}} ()
-\begin{DoxyCompactList}\small\item\em インスタンス解放関数 \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{class_renderer}{Renderer}} $\ast$ \mbox{\hyperlink{class_renderer_a995648604452c47b494de005b30de863}{getp\+Instance}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em インスタンスポインタ取得関数 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}{Release\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em インスタンス解放関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -77,7 +77,7 @@ static \mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}} $\ast$ \
 
 レンダラーの\+Class(\+Singleton) 
 
- Renderer.\+h の 26 行目に定義があります。
+ Renderer.\+h の 32 行目に定義があります。
 
 
 
@@ -112,7 +112,7 @@ M\+AX&\\
 \end{DoxyEnumFields}
 
 
- Renderer.\+h の 32 行目に定義があります。
+ Renderer.\+h の 38 行目に定義があります。
 
 
 
@@ -134,7 +134,7 @@ M\+AX&\\
 \end{DoxyParams}
 
 
- Renderer.\+h の 184 行目に定義があります。
+ Renderer.\+h の 229 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_a1e7732f4c952f3c13d9bb03a7510b7aa}\label{class_renderer_a1e7732f4c952f3c13d9bb03a7510b7aa}} 
 \index{Renderer@{Renderer}!Renderer@{Renderer}}
@@ -167,7 +167,7 @@ M\+AX&\\
 \end{DoxyRetVals}
 
 
- Renderer.\+cpp の 86 行目に定義があります。
+ Renderer.\+cpp の 96 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_a0393849bd4178a33861780bf07b0deee}\label{class_renderer_a0393849bd4178a33861780bf07b0deee}} 
 \index{Renderer@{Renderer}!Draw\+End@{Draw\+End}}
@@ -191,29 +191,57 @@ M\+AX&\\
 \end{DoxyRetVals}
 
 
- Renderer.\+cpp の 98 行目に定義があります。
+ Renderer.\+cpp の 104 行目に定義があります。
 
-\mbox{\Hypertarget{class_renderer_a56662123051f8898c4e8e9d5457fd317}\label{class_renderer_a56662123051f8898c4e8e9d5457fd317}} 
+\mbox{\Hypertarget{class_renderer_a0f82c27d785abaee2d8014ad56eddeba}\label{class_renderer_a0f82c27d785abaee2d8014ad56eddeba}} 
 \index{Renderer@{Renderer}!get\+Device@{get\+Device}}
 \index{get\+Device@{get\+Device}!Renderer@{Renderer}}
 \subsubsection{\texorpdfstring{get\+Device()}{getDevice()}}
 {\footnotesize\ttfamily template$<$class Type $>$ \\
-void Renderer\+::get\+Device (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void Renderer\+::get\+Device (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{out\+\_\+pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- Renderer.\+h の 154 行目に定義があります。
+デバイス取得関数 
 
-\mbox{\Hypertarget{class_renderer_a6e77556825755be3db8a5a734460e66f}\label{class_renderer_a6e77556825755be3db8a5a734460e66f}} 
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em out\+\_\+pointer} & 取得用ポインタ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Renderer.\+h の 149 行目に定義があります。
+
+\mbox{\Hypertarget{class_renderer_ae7155d5c9df23afd21082c08931a2e72}\label{class_renderer_ae7155d5c9df23afd21082c08931a2e72}} 
 \index{Renderer@{Renderer}!get\+Interface@{get\+Interface}}
 \index{get\+Interface@{get\+Interface}!Renderer@{Renderer}}
 \subsubsection{\texorpdfstring{get\+Interface()}{getInterface()}}
 {\footnotesize\ttfamily template$<$class Type $>$ \\
-void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast$}]{out\+\_\+pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
- Renderer.\+h の 129 行目に定義があります。
+インターフェース取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt out}  & {\em out\+\_\+pointer} & 取得用ポインタ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Renderer.\+h の 117 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_a995648604452c47b494de005b30de863}\label{class_renderer_a995648604452c47b494de005b30de863}} 
 \index{Renderer@{Renderer}!getp\+Instance@{getp\+Instance}}
@@ -223,17 +251,45 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
 
 
- Renderer.\+cpp の 43 行目に定義があります。
+インスタンスポインタ取得関数 
 
-\mbox{\Hypertarget{class_renderer_a0d026a0f20ae978c19fd4924b06d26e2}\label{class_renderer_a0d026a0f20ae978c19fd4924b06d26e2}} 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Renderer$\ast$} & レンダラーインスタンスポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Renderer.\+cpp の 31 行目に定義があります。
+
+\mbox{\Hypertarget{class_renderer_a1c49b796eff197f77ef3f75757f7d468}\label{class_renderer_a1c49b796eff197f77ef3f75757f7d468}} 
 \index{Renderer@{Renderer}!getp\+Renderer@{getp\+Renderer}}
 \index{getp\+Renderer@{getp\+Renderer}!Renderer@{Renderer}}
 \subsubsection{\texorpdfstring{getp\+Renderer()}{getpRenderer()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}}$\ast$ Renderer\+::getp\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_renderer_interface}{Renderer\+Interface}} $\ast$ Renderer\+::getp\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Renderer.\+h の 117 行目に定義があります。
+レンダラーポインタ取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Renderer\+Interface$\ast$} & レンダラーポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Renderer.\+cpp の 55 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_a8d576add80187f5be3f24ec6a8108100}\label{class_renderer_a8d576add80187f5be3f24ec6a8108100}} 
 \index{Renderer@{Renderer}!Init@{Init}}
@@ -265,7 +321,7 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 \end{DoxyRetVals}
 
 
- Renderer.\+cpp の 60 行目に定義があります。
+ Renderer.\+cpp の 76 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_ab80abe5f35a095f221f8c43916900d66}\label{class_renderer_ab80abe5f35a095f221f8c43916900d66}} 
 \index{Renderer@{Renderer}!operator=@{operator=}}
@@ -295,7 +351,7 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 \end{DoxyRetVals}
 
 
- Renderer.\+cpp の 109 行目に定義があります。
+ Renderer.\+cpp の 112 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}\label{class_renderer_aa7ac523172faaf376ecddaed4bdc0781}} 
 \index{Renderer@{Renderer}!Release\+Instance@{Release\+Instance}}
@@ -319,17 +375,33 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 \end{DoxyRetVals}
 
 
- Renderer.\+cpp の 33 行目に定義があります。
+ Renderer.\+cpp の 45 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_a02e3c483b2c9d8024e51639a06159066}\label{class_renderer_a02e3c483b2c9d8024e51639a06159066}} 
 \index{Renderer@{Renderer}!set\+Renderer@{set\+Renderer}}
 \index{set\+Renderer@{set\+Renderer}!Renderer@{Renderer}}
 \subsubsection{\texorpdfstring{set\+Renderer()}{setRenderer()}}
-{\footnotesize\ttfamily void Renderer\+::set\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renderer_factory_interface}{Renderer\+Factory\+Interface}} $\ast$}]{factory,  }\item[{\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Renderer\+::set\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_renderer_factory_interface}{Renderer\+Factory\+Interface}} $\ast$}]{factory,  }\item[{\mbox{\hyperlink{class_renderer_ab5a9379ccadcf2b3394c61cf8c835fec}{M\+O\+DE}}}]{mode }\end{DoxyParamCaption})}
 
 
 
- Renderer.\+h の 118 行目に定義があります。
+レンダラー設定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em factory} & レンダラーファクトリー \\
+\hline
+\mbox{\tt in}  & {\em mode} & レンダラーモード \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Renderer.\+cpp の 60 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}\label{class_renderer_ae865246d6a04d467ac22458f6f5f69d4}} 
 \index{Renderer@{Renderer}!Uninit@{Uninit}}
@@ -353,7 +425,7 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 \end{DoxyRetVals}
 
 
- Renderer.\+cpp の 72 行目に定義があります。
+ Renderer.\+cpp の 85 行目に定義があります。
 
 
 
@@ -370,7 +442,7 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
 
 
- Renderer.\+h の 46 行目に定義があります。
+ Renderer.\+h の 52 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_adaed44b3c6c8b0879b8cd52f677941cf}\label{class_renderer_adaed44b3c6c8b0879b8cd52f677941cf}} 
 \index{Renderer@{Renderer}!mode\+\_\+@{mode\+\_\+}}
@@ -384,7 +456,7 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
 
 
- Renderer.\+h の 54 行目に定義があります。
+ Renderer.\+h の 86 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_a64d00cd885d84ff355228d884c0215dc}\label{class_renderer_a64d00cd885d84ff355228d884c0215dc}} 
 \index{Renderer@{Renderer}!renderer\+\_\+@{renderer\+\_\+}}
@@ -398,7 +470,7 @@ void Renderer\+::get\+Interface (\begin{DoxyParamCaption}\item[{Type $\ast$$\ast
 
 
 
- Renderer.\+h の 47 行目に定義があります。
+ Renderer.\+h の 53 行目に定義があります。
 
 
 

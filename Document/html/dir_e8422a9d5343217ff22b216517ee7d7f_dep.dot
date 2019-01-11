@@ -1,0 +1,26 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/PushSpaceLogo" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ff402b2aefec1efb71a201303f0e2667 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="UI" fontname="Helvetica", fontsize="10", URL="dir_ff402b2aefec1efb71a201303f0e2667.html"]
+  subgraph clusterdir_e8422a9d5343217ff22b216517ee7d7f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e8422a9d5343217ff22b216517ee7d7f.html"];
+    dir_e8422a9d5343217ff22b216517ee7d7f [shape=plaintext label="PushSpaceLogo"];
+    dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1 [shape=box label="PushSpaceLogoDraw" color="black" fillcolor="white" style="filled" URL="dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1.html"];
+    dir_8eab9a6956c51f548b3057ec448203a7 [shape=box label="PushSpaceLogoFactory" color="black" fillcolor="white" style="filled" URL="dir_8eab9a6956c51f548b3057ec448203a7.html"];
+    dir_1d23e0d6884f4986b567e4f121dc2b18 [shape=box label="PushSpaceLogoUpdate" color="black" fillcolor="white" style="filled" URL="dir_1d23e0d6884f4986b567e4f121dc2b18.html"];
+  }
+  }
+  dir_6e58c436369e4a795ef16d3c489c4702 [shape=box label="05_Resource" fillcolor="white" style="filled" color="red" URL="dir_6e58c436369e4a795ef16d3c489c4702.html"];
+  dir_48bb4aacea20c6a8378e1408d864b090 [shape=box label="04_Tool" fillcolor="white" style="filled" color="red" URL="dir_48bb4aacea20c6a8378e1408d864b090.html"];
+  dir_6e58c436369e4a795ef16d3c489c4702->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="9", labeldistance=1.5 headhref="dir_000158_000080.html"];
+  dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="1", labeldistance=1.5 headhref="dir_000037_000158.html"];
+  dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="2", labeldistance=1.5 headhref="dir_000037_000080.html"];
+  dir_48bb4aacea20c6a8378e1408d864b090->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="9", labeldistance=1.5 headhref="dir_000080_000158.html"];
+  dir_1d23e0d6884f4986b567e4f121dc2b18->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="1", labeldistance=1.5 headhref="dir_000039_000158.html"];
+  dir_1d23e0d6884f4986b567e4f121dc2b18->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="3", labeldistance=1.5 headhref="dir_000039_000080.html"];
+  dir_8eab9a6956c51f548b3057ec448203a7->dir_5e4e3599f2f99a938b6d5b2cf1d0c1d1 [headlabel="1", labeldistance=1.5 headhref="dir_000038_000037.html"];
+  dir_8eab9a6956c51f548b3057ec448203a7->dir_1d23e0d6884f4986b567e4f121dc2b18 [headlabel="1", labeldistance=1.5 headhref="dir_000038_000039.html"];
+  dir_e8422a9d5343217ff22b216517ee7d7f->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="7", labeldistance=1.5 headhref="dir_000036_000080.html"];
+}

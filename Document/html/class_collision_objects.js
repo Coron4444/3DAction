@@ -1,12 +1,12 @@
 var class_collision_objects =
 [
     [ "AddCollisionObjectToArray", "class_collision_objects.html#a50d6593f98cd04e23ad7ea9102eccc3c", null ],
-    [ "getCollisionBase", "class_collision_objects.html#af95769194fff92babcf411c2262c9d10", null ],
-    [ "getCollisionObject", "class_collision_objects.html#a4f5c029b20a7ed4c7fdee815f73d20be", null ],
     [ "getEndIndexOfArray", "class_collision_objects.html#a309eef4695b4a19f389eaf5d0753c256", null ],
     [ "getIsJudgment", "class_collision_objects.html#a1320a57aae5798c04e65b2b7c8433aae", null ],
-    [ "getObjectOfTree", "class_collision_objects.html#a344311b0c469e591a112eb1d6b0247cb", null ],
-    [ "getOctreeAABB", "class_collision_objects.html#aee138e1c28f7f3dcbdce56181d59b628", null ],
+    [ "getOctreeAABB", "class_collision_objects.html#a2adc85b2df5c53df2cde2dace2f2d1dd", null ],
+    [ "getpCollisionBase", "class_collision_objects.html#af987979a8d2f976909e4b1e1f3485dd3", null ],
+    [ "getpCollisionObject", "class_collision_objects.html#abbd4e5dff1d28f403125637edd08b780", null ],
+    [ "getpObjectOfTree", "class_collision_objects.html#aed262a89043cfb50a9211a35587d6ade", null ],
     [ "OverwriteArrayCollisionObject", "class_collision_objects.html#aed8d6903485ae775d8bbff511796a653", null ],
     [ "ReleaseAllCollisionObjectFromArray", "class_collision_objects.html#a2efe32f283fe9b2a30ff8d1e370f152d", null ],
     [ "ReleaseCollisionObjectFromArray", "class_collision_objects.html#a38bfe55a93549c90d416c0d1d560932b", null ],

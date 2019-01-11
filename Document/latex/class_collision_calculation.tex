@@ -111,7 +111,7 @@ static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86
 
 衝突計算の\+Class(static) 
 
- Collision\+Calculation.\+h の 44 行目に定義があります。
+ Collision\+Calculation.\+h の 39 行目に定義があります。
 
 
 
@@ -157,7 +157,7 @@ static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 1164 行目に定義があります。
+ Collision\+Calculation.\+cpp の 1047 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a562488bfcc7d29102790b957acf71c90}\label{class_collision_calculation_a562488bfcc7d29102790b957acf71c90}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane@{Calculate\+The\+Distance\+The\+Line\+Segment\+Reaches\+The\+Plane}}
@@ -173,7 +173,7 @@ static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86
 \begin{DoxyParams}[1]{引数}
 \mbox{\tt in}  & {\em segment\+\_\+vector} & 線分ベクトル \\
 \hline
-\mbox{\tt in}  & {\em plane} & 平面 \\
+\mbox{\tt in}  & {\em $\ast$plane} & 平面 \\
 \hline
 \mbox{\tt in}  & {\em length} & 長さ \\
 \hline
@@ -185,7 +185,7 @@ static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 1024 行目に定義があります。
+ Collision\+Calculation.\+cpp の 922 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a7edbbf64d99efd6988925037ee0827af}\label{class_collision_calculation_a7edbbf64d99efd6988925037ee0827af}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment@{Calculate\+The\+Length\+Of\+The\+Projection\+Line\+Segment}}
@@ -199,13 +199,13 @@ static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis} & 自分の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$my\+\_\+separation\+\_\+axis} & 自分の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis2} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis2} & 相手の分離軸 \\
 \hline
 \end{DoxyParams}
 
@@ -215,7 +215,7 @@ static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 1098 行目に定義があります。
+ Collision\+Calculation.\+cpp の 990 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a59459a11f5f025b10e81d7ba52772809}\label{class_collision_calculation_a59459a11f5f025b10e81d7ba52772809}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment@{Calculate\+The\+Ratio\+Of\+The\+Front\+In\+The\+Line\+Segment}}
@@ -241,7 +241,7 @@ static float \mbox{\hyperlink{class_collision_calculation_a2b210c0e981995e209a86
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 995 行目に定義があります。
+ Collision\+Calculation.\+cpp の 896 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_ac06f2aa7df28c6331070b85d48760b59}\label{class_collision_calculation_ac06f2aa7df28c6331070b85d48760b59}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point@{Calculate\+The\+Shortest\+Distance\+Between\+A\+A\+B\+B\+And\+A\+Point}}
@@ -255,9 +255,9 @@ A\+A\+B\+Bと点の最短距離の算出関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt in}  & {\em aabb} & \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \\
+\mbox{\tt in}  & {\em $\ast$aabb} & \mbox{\hyperlink{class_a_a_b_b}{A\+A\+BB}} \\
 \hline
-\mbox{\tt in}  & {\em point} & 点 \\
+\mbox{\tt in}  & {\em $\ast$point} & 点 \\
 \hline
 \end{DoxyParams}
 
@@ -267,7 +267,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 1192 行目に定義があります。
+ Collision\+Calculation.\+cpp の 1072 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a10997575baef11490c120f8306a270ae}\label{class_collision_calculation_a10997575baef11490c120f8306a270ae}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Calculation\+Of\+Collision\+Line\+Segment@{Calculation\+Of\+Collision\+Line\+Segment}}
@@ -281,11 +281,11 @@ A\+A\+B\+Bと点の最短距離の算出関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt out}  & {\em hit\+\_\+line\+\_\+segment} & 衝突線分 \\
+\mbox{\tt out}  & {\em $\ast$hit\+\_\+line\+\_\+segment} & 衝突線分 \\
 \hline
-\mbox{\tt in}  & {\em plane0} & 平面 \\
+\mbox{\tt in}  & {\em $\ast$plane0} & 平面 \\
 \hline
-\mbox{\tt in}  & {\em plane1} & 平面 \\
+\mbox{\tt in}  & {\em $\ast$plane1} & 平面 \\
 \hline
 \end{DoxyParams}
 
@@ -295,7 +295,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 1041 行目に定義があります。
+ Collision\+Calculation.\+cpp の 936 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a473d42596db3c94e4779eb44a1ddf42b}\label{class_collision_calculation_a473d42596db3c94e4779eb44a1ddf42b}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment@{Collision\+Judgment\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}}
@@ -323,7 +323,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 34 行目に定義があります。
+ Collision\+Calculation.\+cpp の 31 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a6a66cb6f909ab75c51601ad8037cf806}\label{class_collision_calculation_a6a66cb6f909ab75c51601ad8037cf806}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Capsule\+And\+Capsule@{Collision\+Judgment\+Of\+Capsule\+And\+Capsule}}
@@ -353,7 +353,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 475 行目に定義があります。
+ Collision\+Calculation.\+cpp の 430 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a6fc9b23bb92d4fca01d1812669f333ed}\label{class_collision_calculation_a6fc9b23bb92d4fca01d1812669f333ed}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Capsule}}
@@ -381,7 +381,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 198 行目に定義があります。
+ Collision\+Calculation.\+cpp の 180 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_abfed92b06d3d7dbfc8289225328b9ad3}\label{class_collision_calculation_abfed92b06d3d7dbfc8289225328b9ad3}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Cylinder}}
@@ -409,7 +409,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 166 行目に定義があります。
+ Collision\+Calculation.\+cpp の 151 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_ac43bbd41b81341d9aa5009744c45d61d}\label{class_collision_calculation_ac43bbd41b81341d9aa5009744c45d61d}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Plane}}
@@ -437,7 +437,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 106 行目に定義があります。
+ Collision\+Calculation.\+cpp の 97 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a150c5411ae4cb28dc57e6622682494d2}\label{class_collision_calculation_a150c5411ae4cb28dc57e6622682494d2}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Sphere}}
@@ -465,7 +465,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 74 行目に定義があります。
+ Collision\+Calculation.\+cpp の 68 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_ad74624614e9fefd55132f6a6cd62f05c}\label{class_collision_calculation_ad74624614e9fefd55132f6a6cd62f05c}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle@{Collision\+Judgment\+Of\+Line\+Segment\+And\+Triangle}}
@@ -493,7 +493,7 @@ A\+A\+B\+Bと点の最短距離の算出関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 142 行目に定義があります。
+ Collision\+Calculation.\+cpp の 130 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a9123a8d6e1e1093bfe977cb5d3dbd6ec}\label{class_collision_calculation_a9123a8d6e1e1093bfe977cb5d3dbd6ec}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB@{Collision\+Judgment\+Of\+O\+B\+B\+And\+O\+BB}}
@@ -521,7 +521,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 521 行目に定義があります。
+ Collision\+Calculation.\+cpp の 473 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_acd4d60e71a42eb8934d60fa2c99186ea}\label{class_collision_calculation_acd4d60e71a42eb8934d60fa2c99186ea}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Plane\+And\+Plane@{Collision\+Judgment\+Of\+Plane\+And\+Plane}}
@@ -549,7 +549,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 408 行目に定義があります。
+ Collision\+Calculation.\+cpp の 372 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a854226ccd02c8afe5cec91470253ff92}\label{class_collision_calculation_a854226ccd02c8afe5cec91470253ff92}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Plane\+And\+Triangle@{Collision\+Judgment\+Of\+Plane\+And\+Triangle}}
@@ -575,7 +575,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 429 行目に定義があります。
+ Collision\+Calculation.\+cpp の 390 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a8df4528ada47cb62cdf7835d0387409c}\label{class_collision_calculation_a8df4528ada47cb62cdf7835d0387409c}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Capsule@{Collision\+Judgment\+Of\+Sphere\+And\+Capsule}}
@@ -603,7 +603,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 352 行目に定義があります。
+ Collision\+Calculation.\+cpp の 322 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_aebe109fb7cc435ac79a3255909b445b1}\label{class_collision_calculation_aebe109fb7cc435ac79a3255909b445b1}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+O\+BB@{Collision\+Judgment\+Of\+Sphere\+And\+O\+BB}}
@@ -631,7 +631,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 383 行目に定義があります。
+ Collision\+Calculation.\+cpp の 350 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a776c3b2ee6ece38b29914dd69f63ed42}\label{class_collision_calculation_a776c3b2ee6ece38b29914dd69f63ed42}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Plane@{Collision\+Judgment\+Of\+Sphere\+And\+Plane}}
@@ -659,7 +659,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 292 行目に定義があります。
+ Collision\+Calculation.\+cpp の 268 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a23a849e4b29bc0d87356d2b3272469b0}\label{class_collision_calculation_a23a849e4b29bc0d87356d2b3272469b0}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Sphere@{Collision\+Judgment\+Of\+Sphere\+And\+Sphere}}
@@ -687,7 +687,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 267 行目に定義があります。
+ Collision\+Calculation.\+cpp の 246 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a533512a0f0ce833680f1e50a2b224e57}\label{class_collision_calculation_a533512a0f0ce833680f1e50a2b224e57}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Sphere\+And\+Triangle@{Collision\+Judgment\+Of\+Sphere\+And\+Triangle}}
@@ -715,7 +715,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 315 行目に定義があります。
+ Collision\+Calculation.\+cpp の 288 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a3914ef51fc27f19911d3577abc56d9a5}\label{class_collision_calculation_a3914ef51fc27f19911d3577abc56d9a5}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Collision\+Judgment\+Of\+Triangle\+And\+Triangle@{Collision\+Judgment\+Of\+Triangle\+And\+Triangle}}
@@ -741,7 +741,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 451 行目に定義があります。
+ Collision\+Calculation.\+cpp の 409 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_adc04a190b8bf8696880ea33d8ef01b09}\label{class_collision_calculation_adc04a190b8bf8696880ea33d8ef01b09}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis@{Determination\+Of\+Collision\+With\+Ordinary\+Separation\+Axis}}
@@ -755,17 +755,17 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis} & 自分の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$my\+\_\+separation\+\_\+axis} & 自分の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis\+\_\+normal} & 自分の分離軸の単位ベクトル \\
+\mbox{\tt in}  & {\em $\ast$my\+\_\+separation\+\_\+axis\+\_\+normal} & 自分の分離軸の単位ベクトル \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis2} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis2} & 相手の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em interval\+\_\+vector} & 両方の\+O\+B\+B間のベクトル \\
+\mbox{\tt in}  & {\em $\ast$interval\+\_\+vector} & 両方の\+O\+B\+B間のベクトル \\
 \hline
 \end{DoxyParams}
 
@@ -775,7 +775,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 1116 行目に定義があります。
+ Collision\+Calculation.\+cpp の 1005 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a7ad238e8d35646bf4034879204d94533}\label{class_collision_calculation_a7ad238e8d35646bf4034879204d94533}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis@{Determination\+Of\+Collision\+With\+Outer\+Axis\+Separation\+Axis}}
@@ -789,19 +789,19 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis\+\_\+normal} & 自分の分離軸の単位ベクトル \\
+\mbox{\tt in}  & {\em $\ast$my\+\_\+separation\+\_\+axis\+\_\+normal} & 自分の分離軸の単位ベクトル \\
 \hline
-\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis\+\_\+normal} & 相手の分離軸の単位ベクトル \\
+\mbox{\tt in}  & {\em $\ast$my\+\_\+separation\+\_\+axis\+\_\+normal} & 相手の分離軸の単位ベクトル \\
 \hline
-\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis0} & 自分の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$my\+\_\+separation\+\_\+axis0} & 自分の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em my\+\_\+separation\+\_\+axis1} & 自分の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$my\+\_\+separation\+\_\+axis1} & 自分の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis0} & 相手の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
+\mbox{\tt in}  & {\em $\ast$other\+\_\+separation\+\_\+axis1} & 相手の分離軸 \\
 \hline
-\mbox{\tt in}  & {\em interval\+\_\+vector} & 両方の\+O\+B\+B間のベクトル \\
+\mbox{\tt in}  & {\em $\ast$interval\+\_\+vector} & 両方の\+O\+B\+B間のベクトル \\
 \hline
 \end{DoxyParams}
 
@@ -811,7 +811,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 1138 行目に定義があります。
+ Collision\+Calculation.\+cpp の 1024 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a62c458a068b5ec44a04060ea2e5e1d47}\label{class_collision_calculation_a62c458a068b5ec44a04060ea2e5e1d47}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+If\+A\+Triangle\+Penetrates@{Determine\+If\+A\+Triangle\+Penetrates}}
@@ -825,11 +825,11 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt in}  & {\em triangle0} & 三角形平面 \\
+\mbox{\tt in}  & {\em $\ast$triangle0} & 三角形平面 \\
 \hline
-\mbox{\tt in}  & {\em triangle1} & 三角形平面 \\
+\mbox{\tt in}  & {\em $\ast$triangle1} & 三角形平面 \\
 \hline
-\mbox{\tt in}  & {\em is\+\_\+hit\+\_\+segment\+\_\+one} & 1辺が貫通しているかフラグ \\
+\mbox{\tt in}  & {\em $\ast$is\+\_\+hit\+\_\+segment\+\_\+one} & 1辺が貫通しているかフラグ \\
 \hline
 \end{DoxyParams}
 
@@ -839,7 +839,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 813 行目に定義があります。
+ Collision\+Calculation.\+cpp の 732 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a37c172d64f5d30d772c9b9275215d83c}\label{class_collision_calculation_a37c172d64f5d30d772c9b9275215d83c}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+If\+It\+Is\+Longer\+Than\+Vector@{Determine\+If\+It\+Is\+Longer\+Than\+Vector}}
@@ -865,7 +865,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 743 行目に定義があります。
+ Collision\+Calculation.\+cpp の 674 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a05f88ea10634f6312ec556a202c2296d}\label{class_collision_calculation_a05f88ea10634f6312ec556a202c2296d}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side@{Determine\+Whether\+A\+Sphere\+Collides\+Against\+Each\+Side}}
@@ -891,7 +891,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 754 行目に定義があります。
+ Collision\+Calculation.\+cpp の 682 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_abae15654adac71bcdbe0b9a31554c827}\label{class_collision_calculation_abae15654adac71bcdbe0b9a31554c827}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One@{Determine\+Whether\+Both\+Ratios\+Are\+Between\+Zero\+And\+One}}
@@ -917,7 +917,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 690 行目に定義があります。
+ Collision\+Calculation.\+cpp の 633 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a013889e5e69a001c229dcf083f884447}\label{class_collision_calculation_a013889e5e69a001c229dcf083f884447}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+It\+Is\+Parallel\+From\+Slope@{Determine\+Whether\+It\+Is\+Parallel\+From\+Slope}}
@@ -943,7 +943,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 730 行目に定義があります。
+ Collision\+Calculation.\+cpp の 664 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a286f406988ba6ca8d46460fabba14fd6}\label{class_collision_calculation_a286f406988ba6ca8d46460fabba14fd6}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment@{Determine\+Whether\+The\+Intersection\+Point\+Is\+Within\+A\+Line\+Segment}}
@@ -957,11 +957,13 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\mbox{\tt out}  & {\em $\ast$hit\+\_\+point} & 衝突点 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment0} & 線分 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment1} & 線分 \\
+\hline
+\mbox{\tt in}  & {\em intersection\+\_\+point} & 交点 \\
 \hline
 \end{DoxyParams}
 
@@ -971,7 +973,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 849 行目に定義があります。
+ Collision\+Calculation.\+cpp の 765 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a53a77b483d1751ce918982c75eb2ac7c}\label{class_collision_calculation_a53a77b483d1751ce918982c75eb2ac7c}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Plane\+Is\+Parallel@{Determine\+Whether\+The\+Plane\+Is\+Parallel}}
@@ -997,7 +999,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 800 行目に定義があります。
+ Collision\+Calculation.\+cpp の 722 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_aa175baccc078543be38213d04a3af2b2}\label{class_collision_calculation_aa175baccc078543be38213d04a3af2b2}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One@{Determine\+Whether\+The\+Ratio\+Is\+Between\+Zero\+And\+One}}
@@ -1021,7 +1023,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 677 行目に定義があります。
+ Collision\+Calculation.\+cpp の 623 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a8878c4e262eb7027f4ae147a24c7ba33}\label{class_collision_calculation_a8878c4e262eb7027f4ae147a24c7ba33}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside@{Determine\+Whether\+The\+Sphere\+Is\+Sinking\+Inside}}
@@ -1047,7 +1049,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 784 行目に定義があります。
+ Collision\+Calculation.\+cpp の 709 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_abf9896120a5f4b2a7f816140fb19eafd}\label{class_collision_calculation_abf9896120a5f4b2a7f816140fb19eafd}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero@{Determine\+Whether\+X\+Of\+Both\+Line\+Segments\+Is\+Zero}}
@@ -1073,7 +1075,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 717 行目に定義があります。
+ Collision\+Calculation.\+cpp の 654 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a7dffad18d15ed6e7a2e43888398afeeb}\label{class_collision_calculation_a7dffad18d15ed6e7a2e43888398afeeb}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero@{Determine\+Whether\+X\+Of\+Either\+Line\+Segment\+Is\+Zero}}
@@ -1099,7 +1101,7 @@ O\+B\+Bと\+O\+B\+Bの衝突判定関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 704 行目に定義があります。
+ Collision\+Calculation.\+cpp の 644 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a3123f561d5ba6af08336523205a5d8a8}\label{class_collision_calculation_a3123f561d5ba6af08336523205a5d8a8}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Froat\+Truncation@{Froat\+Truncation}}
@@ -1123,7 +1125,7 @@ floatの切り捨て関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 659 行目に定義があります。
+ Collision\+Calculation.\+cpp の 608 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a01b7e084c9517b5f1e2e724b1212e4c6}\label{class_collision_calculation_a01b7e084c9517b5f1e2e724b1212e4c6}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment@{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment}}
@@ -1137,11 +1139,11 @@ floatの切り捨て関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\mbox{\tt out}  & {\em $\ast$hit\+\_\+point} & 衝突点 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment0} & 線分 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment1} & 線分 \\
 \hline
 \end{DoxyParams}
 
@@ -1151,7 +1153,7 @@ floatの切り捨て関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 895 行目に定義があります。
+ Collision\+Calculation.\+cpp の 805 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a95ba95163806f128280a825cf4517336}\label{class_collision_calculation_a95ba95163806f128280a825cf4517336}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero@{Intersection\+Calculation\+Of2\+D\+Line\+Segment\+And2\+D\+Line\+Segment\+When\+X\+Is\+Zero}}
@@ -1165,11 +1167,11 @@ Xが0の時の2\+D線分と2\+D線分の交点計算関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt out}  & {\em hit\+\_\+point} & 衝突点 \\
+\mbox{\tt out}  & {\em $\ast$hit\+\_\+point} & 衝突点 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment0} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment0} & 線分 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment1} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment1} & 線分 \\
 \hline
 \end{DoxyParams}
 
@@ -1179,7 +1181,7 @@ Xが0の時の2\+D線分と2\+D線分の交点計算関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 872 行目に定義があります。
+ Collision\+Calculation.\+cpp の 785 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_a20738fa64ae8749165328d48ee90d32e}\label{class_collision_calculation_a20738fa64ae8749165328d48ee90d32e}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!operator=@{operator=}}
@@ -1199,11 +1201,11 @@ Xが0の時の2\+D線分と2\+D線分の交点計算関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt in}  & {\em equation} & 2次方程式 \\
+\mbox{\tt in,out}  & {\em $\ast$equation} & 2次方程式 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment} & 線分 \\
 \hline
-\mbox{\tt in}  & {\em cylinder} & 円柱 \\
+\mbox{\tt in}  & {\em $\ast$cylinder} & 円柱 \\
 \hline
 \end{DoxyParams}
 
@@ -1213,7 +1215,7 @@ Xが0の時の2\+D線分と2\+D線分の交点計算関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 959 行目に定義があります。
+ Collision\+Calculation.\+cpp の 863 行目に定義があります。
 
 \mbox{\Hypertarget{class_collision_calculation_abb04e8dc678bf1bcb0f1ecc8dd9edcca}\label{class_collision_calculation_abb04e8dc678bf1bcb0f1ecc8dd9edcca}} 
 \index{Collision\+Calculation@{Collision\+Calculation}!Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres@{Quadratic\+Equation\+Calculation\+For\+Line\+Segments\+And\+Spheres}}
@@ -1227,11 +1229,11 @@ Xが0の時の2\+D線分と2\+D線分の交点計算関数
 
 
 \begin{DoxyParams}[1]{引数}
-\mbox{\tt in}  & {\em equation} & 2次方程式 \\
+\mbox{\tt in,out}  & {\em $\ast$equation} & 2次方程式 \\
 \hline
-\mbox{\tt in}  & {\em line\+\_\+segment} & 線分 \\
+\mbox{\tt in}  & {\em $\ast$line\+\_\+segment} & 線分 \\
 \hline
-\mbox{\tt in}  & {\em sphere} & 球 \\
+\mbox{\tt in}  & {\em $\ast$sphere} & 球 \\
 \hline
 \end{DoxyParams}
 
@@ -1241,7 +1243,7 @@ Xが0の時の2\+D線分と2\+D線分の交点計算関数
 \end{DoxyRetVals}
 
 
- Collision\+Calculation.\+cpp の 927 行目に定義があります。
+ Collision\+Calculation.\+cpp の 834 行目に定義があります。
 
 
 

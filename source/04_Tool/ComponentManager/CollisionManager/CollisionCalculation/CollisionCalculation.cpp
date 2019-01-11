@@ -12,25 +12,22 @@
 //****************************************
 #include "CollisionCalculation.h"
 
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/AABB/AABB.h"
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Capsule/Capsule.h"
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Cylinder/Cylinder.h"
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/OBB/OBB.h"
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Plane/Plane.h"
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/LineSegment/LineSegment.h"
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Sphere/Sphere.h"
-#include "../../../Component/Base/CollisionBase/CollisionObject/CollisionShapeBase/Triangle/Triangle.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/AABB/AABB.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/Capsule/Capsule.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/Cylinder/Cylinder.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/OBB/OBB.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/Plane/Plane.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/LineSegment/LineSegment.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/Sphere/Sphere.h"
+#include "../../../Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/Triangle/Triangle.h"
 
 #include <QuadraticEquation\QuadraticEquation.h>
 
 
 
 //****************************************
-// 関数定義
+// static関数定義
 //****************************************
-//--------------------------------------------------
-// +2D線分と2D線分の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOf2DLineSegmentAnd2DLineSegment(Vector3D* hit_point,
 																			LineSegment* line_segment0,
 																			LineSegment* line_segment1)
@@ -68,9 +65,6 @@ bool CollisionCalculation::CollisionJudgmentOf2DLineSegmentAnd2DLineSegment(Vect
 
 
 
-//--------------------------------------------------
-// +線分と球の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndSphere(Vector3D* hit_point,
 																   LineSegment* line_segment,
 																   Sphere* sphere)
@@ -100,9 +94,6 @@ bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndSphere(Vector3D* hit
 
 
 
-//--------------------------------------------------
-// +線分と平面の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndPlane(Vector3D* hit_point,
 																  LineSegment* line_segment,
 																  Plane* plane)
@@ -136,9 +127,6 @@ bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndPlane(Vector3D* hit_
 
 
 
-//--------------------------------------------------
-// +線分と三角形平面の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndTriangle(Vector3D* hit_point,
 																	 LineSegment* line_segment,
 																	 Triangle* triangle)
@@ -160,9 +148,6 @@ bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndTriangle(Vector3D* h
 
 
 
-//--------------------------------------------------
-// +線分と円柱の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndCylinder(Vector3D* hit_point,
 																	 LineSegment* line_segment,
 																	 Cylinder* cylinder)
@@ -192,9 +177,6 @@ bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndCylinder(Vector3D* h
 
 
 
-//--------------------------------------------------
-// +線分とカプセルの衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndCapsule(Vector3D* hit_point,
 																	LineSegment* line_segment,
 																	Capsule* capsule)
@@ -261,9 +243,6 @@ bool CollisionCalculation::CollisionJudgmentOfLineSegmentAndCapsule(Vector3D* hi
 
 
 
-//--------------------------------------------------
-// +球と球の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfSphereAndSphere(Vector3D* hit_vector,
 															  Sphere* sphere0,
 															  Sphere* sphere1)
@@ -286,9 +265,6 @@ bool CollisionCalculation::CollisionJudgmentOfSphereAndSphere(Vector3D* hit_vect
 
 
 
-//--------------------------------------------------
-// +球と平面の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfSphereAndPlane(Vector3D* hit_vector,
 															 Sphere* sphere,
 															 Plane* plane)
@@ -309,9 +285,6 @@ bool CollisionCalculation::CollisionJudgmentOfSphereAndPlane(Vector3D* hit_vecto
 
 
 
-//--------------------------------------------------
-// +球と三角形平面の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfSphereAndTriangle(Vector3D* hit_vector,
 																Sphere* sphere,
 																Triangle* triangle)
@@ -346,9 +319,6 @@ bool CollisionCalculation::CollisionJudgmentOfSphereAndTriangle(Vector3D* hit_ve
 
 
 
-//--------------------------------------------------
-// +球とカプセルの衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfSphereAndCapsule(Vector3D* hit_vector,
 															   Sphere* sphere,
 															   Capsule* capsule)
@@ -377,9 +347,6 @@ bool CollisionCalculation::CollisionJudgmentOfSphereAndCapsule(Vector3D* hit_vec
 
 
 
-//--------------------------------------------------
-// +球とOBBの衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfSphereAndOBB(Vector3D* hit_vector,
 														   Sphere* sphere,
 														   OBB* obb)
@@ -402,9 +369,6 @@ bool CollisionCalculation::CollisionJudgmentOfSphereAndOBB(Vector3D* hit_vector,
 
 
 
-//--------------------------------------------------
-// +平面と平面の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfPlaneAndPlane(LineSegment* hit_line_segment,
 															Plane* plane0,
 															Plane* plane1)
@@ -423,9 +387,6 @@ bool CollisionCalculation::CollisionJudgmentOfPlaneAndPlane(LineSegment* hit_lin
 
 
 
-//--------------------------------------------------
-// +平面と三角形平面の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfPlaneAndTriangle(Plane* plane,
 															   Triangle* triangle)
 {
@@ -445,21 +406,18 @@ bool CollisionCalculation::CollisionJudgmentOfPlaneAndTriangle(Plane* plane,
 
 
 
-//--------------------------------------------------
-// +三角形平面と三角形平面の衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfTriangleAndTriangle(Triangle* triangle0,
 																  Triangle* triangle1)
 {
 	bool is_hit_segment_one = false;
 
 	// 片方の三角形がもう片方を貫いているか
-	if (DetermineIfATrianglePenetrates(triangle0, triangle1,
-									   &is_hit_segment_one)) return true;
+	if (DetermineIfATrianglePenetrates(&is_hit_segment_one, 
+									   triangle0, triangle1)) return true;
 
 	// もう片方をチェック
-	if (DetermineIfATrianglePenetrates(triangle1, triangle0,
-									   &is_hit_segment_one)) return true;
+	if (DetermineIfATrianglePenetrates(&is_hit_segment_one,
+									   triangle1, triangle0)) return true;
 
 	// お互いに1辺が貫通しているか
 	if (is_hit_segment_one) return true;
@@ -469,9 +427,6 @@ bool CollisionCalculation::CollisionJudgmentOfTriangleAndTriangle(Triangle* tria
 
 
 
-//--------------------------------------------------
-// +カプセルとカプセルの衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfCapsuleAndCapsule(Vector3D* hit_vector,
 																Capsule* capsule0,
 																Capsule* capsule1,
@@ -515,9 +470,6 @@ bool CollisionCalculation::CollisionJudgmentOfCapsuleAndCapsule(Vector3D* hit_ve
 
 
 
-//--------------------------------------------------
-// +OBBとOBBの衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::CollisionJudgmentOfOBBAndOBB(Vector3D* hit_vector,
 														OBB* obb0,
 														OBB* obb1)
@@ -653,9 +605,6 @@ bool CollisionCalculation::CollisionJudgmentOfOBBAndOBB(Vector3D* hit_vector,
 
 
 
-//--------------------------------------------------
-// -floatの切り捨て関数
-//--------------------------------------------------
 float CollisionCalculation::FroatTruncation(float num)
 {
 	float SHIFT_NUM = 10000.0f;
@@ -671,9 +620,6 @@ float CollisionCalculation::FroatTruncation(float num)
 
 
 
-//--------------------------------------------------
-// -比率が0~1の間にあるか判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherTheRatioIsBetweenZeroAndOne(float ratio)
 {
 	if (ratio < 0.0f) return false;
@@ -684,9 +630,6 @@ bool CollisionCalculation::DetermineWhetherTheRatioIsBetweenZeroAndOne(float rat
 
 
 
-//--------------------------------------------------
-// -両方の比率が0~1の間にあるか判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherBothRatiosAreBetweenZeroAndOne(float ratio0,
 																		  float ratio1)
 {
@@ -698,9 +641,6 @@ bool CollisionCalculation::DetermineWhetherBothRatiosAreBetweenZeroAndOne(float 
 
 
 
-//--------------------------------------------------
-// -いずれかのXが0か判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherXOfEitherLineSegmentIsZero(LineSegment* line_segment0,
 																	  LineSegment* line_segment1)
 {
@@ -711,9 +651,6 @@ bool CollisionCalculation::DetermineWhetherXOfEitherLineSegmentIsZero(LineSegmen
 
 
 
-//--------------------------------------------------
-// -両方の線分のXが0か判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherXOfBothLineSegmentsIsZero(LineSegment* line_segment0,
 																	 LineSegment* line_segment1)
 {
@@ -724,9 +661,6 @@ bool CollisionCalculation::DetermineWhetherXOfBothLineSegmentsIsZero(LineSegment
 
 
 
-//--------------------------------------------------
-// -傾きから平行か判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherItIsParallelFromSlope(float slope0,
 																 float slope1)
 {
@@ -737,9 +671,6 @@ bool CollisionCalculation::DetermineWhetherItIsParallelFromSlope(float slope0,
 
 
 
-//--------------------------------------------------
-// -ベクトルより長いか判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineIfItIsLongerThanVector(Vector3D* vector,
 														   float length)
 {
@@ -748,9 +679,6 @@ bool CollisionCalculation::DetermineIfItIsLongerThanVector(Vector3D* vector,
 
 
 
-//--------------------------------------------------
-// -球が各辺に衝突しているか判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherASphereCollidesAgainstEachSide(Sphere* sphere,
 																		  Triangle* triangle)
 {
@@ -778,9 +706,6 @@ bool CollisionCalculation::DetermineWhetherASphereCollidesAgainstEachSide(Sphere
 
 
 
-//--------------------------------------------------
-// -球が内部にめり込んでいるか判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherTheSphereIsSinkingInside(Sphere* sphere,
 																	Triangle* triangle)
 {
@@ -794,9 +719,6 @@ bool CollisionCalculation::DetermineWhetherTheSphereIsSinkingInside(Sphere* sphe
 
 
 
-//--------------------------------------------------
-// -平面が平行か判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherThePlaneIsParallel(Plane* plane0,
 															  Plane* plane1)
 {
@@ -807,12 +729,9 @@ bool CollisionCalculation::DetermineWhetherThePlaneIsParallel(Plane* plane0,
 
 
 
-//--------------------------------------------------
-// -三角形平面が貫いているか判定関数
-//--------------------------------------------------
-bool CollisionCalculation::DetermineIfATrianglePenetrates(Triangle* triangle0,
-														  Triangle* triangle1,
-														  bool* is_hit_segment_one)
+bool CollisionCalculation::DetermineIfATrianglePenetrates(bool* is_hit_segment_one,
+														  Triangle* triangle0,
+														  Triangle* triangle1)
 {
 	LineSegment temp_line_segment0;
 	temp_line_segment0.Init(*triangle0->getpPoint0(), *triangle0->getpPoint1() - *triangle1->getpPoint0());
@@ -843,9 +762,6 @@ bool CollisionCalculation::DetermineIfATrianglePenetrates(Triangle* triangle0,
 
 
 
-//--------------------------------------------------
-// -交点が線分内か判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DetermineWhetherTheIntersectionPointIsWithinALineSegment(Vector3D* hit_point,
 																					LineSegment* line_segment0,
 																					LineSegment* line_segment1,
@@ -866,9 +782,6 @@ bool CollisionCalculation::DetermineWhetherTheIntersectionPointIsWithinALineSegm
 
 
 
-//--------------------------------------------------
-// -Xが0の時の2D線分と2D線分の交点計算関数
-//--------------------------------------------------
 bool CollisionCalculation::IntersectionCalculationOf2DLineSegmentAnd2DLineSegmentWhenXIsZero(Vector3D* hit_point,
 																							 LineSegment* line_segment0,
 																							 LineSegment* line_segment1)
@@ -889,9 +802,6 @@ bool CollisionCalculation::IntersectionCalculationOf2DLineSegmentAnd2DLineSegmen
 
 
 
-//--------------------------------------------------
-// -2D線分と2D線分の交点計算関数
-//--------------------------------------------------
 bool CollisionCalculation::IntersectionCalculationOf2DLineSegmentAnd2DLineSegment(Vector3D* hit_point,
 																				  LineSegment* line_segment0,
 																				  LineSegment* line_segment1)
@@ -921,9 +831,6 @@ bool CollisionCalculation::IntersectionCalculationOf2DLineSegmentAnd2DLineSegmen
 
 
 
-//--------------------------------------------------
-// -線分と球の2次方程式計算
-//--------------------------------------------------
 bool CollisionCalculation::QuadraticEquationCalculationForLineSegmentsAndSpheres(QuadraticEquation* equation,
 																				 LineSegment* line_segment,
 																				 Sphere* sphere)
@@ -953,9 +860,6 @@ bool CollisionCalculation::QuadraticEquationCalculationForLineSegmentsAndSpheres
 
 
 
-//--------------------------------------------------
-// -線分と円柱の2次方程式計算
-//--------------------------------------------------
 bool CollisionCalculation::QuadraticEquationCalculationForLineSegmentsAndCylinders(QuadraticEquation* equation,
 																				   LineSegment* line_segment,
 																				   Cylinder* cylinder)
@@ -989,9 +893,6 @@ bool CollisionCalculation::QuadraticEquationCalculationForLineSegmentsAndCylinde
 
 
 
-//--------------------------------------------------
-// -線分内の1番手前の比率の算出関数
-//--------------------------------------------------
 float CollisionCalculation::CalculateTheRatioOfTheFrontInTheLineSegment(float ratio0,
 																		float ratio1)
 {
@@ -1018,9 +919,6 @@ float CollisionCalculation::CalculateTheRatioOfTheFrontInTheLineSegment(float ra
 
 
 
-//--------------------------------------------------
-// -線分が平面に届く距離の算出関数
-//--------------------------------------------------
 float CollisionCalculation::CalculateTheDistanceTheLineSegmentReachesThePlane(Vector3D segment_vector,
 																			  Plane* plane,
 																			  float length)
@@ -1035,9 +933,6 @@ float CollisionCalculation::CalculateTheDistanceTheLineSegmentReachesThePlane(Ve
 
 
 
-//--------------------------------------------------
-// -衝突線分の算出関数
-//--------------------------------------------------
 void CollisionCalculation::CalculationOfCollisionLineSegment(LineSegment* hit_line_segment,
 															 Plane* plane0,
 															 Plane* plane1)
@@ -1092,9 +987,6 @@ void CollisionCalculation::CalculationOfCollisionLineSegment(LineSegment* hit_li
 
 
 
-//--------------------------------------------------
-// -投影線分の長さの算出関数
-//--------------------------------------------------
 float CollisionCalculation::CalculateTheLengthOfTheProjectionLineSegment(Vector3D* my_separation_axis,
 																		 Vector3D* other_separation_axis0,
 																		 Vector3D* other_separation_axis1,
@@ -1110,9 +1002,6 @@ float CollisionCalculation::CalculateTheLengthOfTheProjectionLineSegment(Vector3
 
 
 
-//--------------------------------------------------
-// -通常の分離軸との衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DeterminationOfCollisionWithOrdinarySeparationAxis(Vector3D* my_separation_axis,
 																			  Vector3D* my_separation_axis_normal,
 																			  Vector3D* other_separation_axis0,
@@ -1132,9 +1021,6 @@ bool CollisionCalculation::DeterminationOfCollisionWithOrdinarySeparationAxis(Ve
 
 
 
-//--------------------------------------------------
-// -外積の分離軸との衝突判定関数
-//--------------------------------------------------
 bool CollisionCalculation::DeterminationOfCollisionWithOuterAxisSeparationAxis(Vector3D* my_separation_axis_normal,
 																			   Vector3D* other_separation_axis_normal,
 																			   Vector3D* my_separation_axis0,
@@ -1158,9 +1044,6 @@ bool CollisionCalculation::DeterminationOfCollisionWithOuterAxisSeparationAxis(V
 
 
 
-//--------------------------------------------------
-// -1D線分と点の最短距離のべき乗算出関数
-//--------------------------------------------------
 float CollisionCalculation::CalculatePowerOfTheShortestDistanceBetween1DLineSegmentAndPoint(float line_segment_min,
 																							float line_segment_max,
 																							float any_component_of_a_point)
@@ -1186,9 +1069,6 @@ float CollisionCalculation::CalculatePowerOfTheShortestDistanceBetween1DLineSegm
 
 
 
-//--------------------------------------------------
-// +AABBと点の最短距離の算出関数
-//--------------------------------------------------
 float CollisionCalculation::CalculateTheShortestDistanceBetweenAABBAndAPoint(AABB* aabb, Vector3D* point)
 {
 	// 長さのべき乗で計算していく

@@ -65,7 +65,7 @@ public:
 		//----------------------------------------
 		//! @brief 更新フラグ設定関数
 		//! @details
-		//! @param[in] value 更新フラグ
+		//! @param value 更新フラグ
 		//! @retval void なし
 		//----------------------------------------
 		void setIsUpdate(bool value);
@@ -81,7 +81,7 @@ public:
 		//----------------------------------------
 		//! @brief クリアフラグ設定関数
 		//! @details
-		//! @param[in] value クリアフラグ
+		//! @param value クリアフラグ
 		//! @retval void なし
 		//----------------------------------------
 		void setIsClear(bool value);
@@ -134,10 +134,8 @@ private:
 private:
 	State state_ = State::NONE;						//!< シーンマネージャステート
 	CommonData* common_data_ = nullptr;				//!< シーン間共通データ
-
 	SceneBase* current_scene_ = nullptr;			//!< 現在のシーン
 	SceneBase* next_scene_ = nullptr;				//!< 次のシーン
-
 	Fade::Type fade_type_ = DEFAULT_FADE_TYPE;		//!< フェードの種類
 	float fade_speed_ = DEFAULT_FADE_SPEED;			//!< フェード速度
 	XColor4 fade_color_ = DEFAULT_FADE_COLOR;		//!< フェード色
@@ -150,7 +148,7 @@ public:
 	//----------------------------------------
 	//! @brief 次のシーンポインタ設定関数
 	//! @details
-	//! @param[in] value 次のシーンポインタ
+	//! @param *value 次のシーンポインタ
 	//! @retval void なし
 	//----------------------------------------
 	void setNextScene(SceneBase* value);
@@ -166,7 +164,7 @@ public:
 	//----------------------------------------
 	//! @brief フェードタイプ設定関数
 	//! @details
-	//! @param[in] value フェードタイプ
+	//! @param value フェードタイプ
 	//! @retval void なし
 	//----------------------------------------
 	void setFadeType(Fade::Type value);
@@ -174,7 +172,7 @@ public:
 	//----------------------------------------
 	//! @brief フェード速度設定関数
 	//! @details
-	//! @param[in] value フェード速度
+	//! @param value フェード速度
 	//! @retval void なし
 	//----------------------------------------
 	void setFadeSpeed(float value);
@@ -182,7 +180,7 @@ public:
 	//----------------------------------------
 	//! @brief フェード色設定関数
 	//! @details
-	//! @param[in] value フェード色
+	//! @param value フェード色
 	//! @retval void なし
 	//----------------------------------------
 	void setFadeColor(XColor4 value);
@@ -195,7 +193,7 @@ public:
 	//----------------------------------------
 	//! @brief 初期化関数
 	//! @details
-	//! @param[in] scene 最初のシーン
+	//! @param *scene 最初のシーン
 	//! @retval void なし
 	//----------------------------------------
 	void Init(SceneBase* scene);

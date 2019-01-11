@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    線形8分木クラス
-//    Author : Araki Kai                                作成日 : 2018/11/26
-//
+//!	@file	 LinerOctree.h
+//!	@brief	 線形8分木Class
+//! @details template
+//!	@author  Kai Araki									@date 2018/07/24
 //================================================================================
-
 #ifndef	_LINER_OCTREE_H_
 #define _LINER_OCTREE_H_
 
@@ -25,25 +24,24 @@
 
 
 
-/*********************************************************//**
-* @brief
-* 線形8分木クラス
-*
-* 線形配列による8分木の管理クラス
-*************************************************************/
+//************************************************************														   
+//! @brief   線形8分木Class
+//!
+//! @details 線形配列による8分木の管理Class(template)
+//************************************************************
 template <class Type>
 class LinerOctree
 {
-//==============================
+//====================
 // 定数
-//==============================
+//====================
 public:
 	static const unsigned MAX_LEVEL = 9;	//!< 最大レベル
 
 
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	unsigned power_of_eight_array_[MAX_LEVEL + 1] = {0};	//!< ８のべき乗数値配列
 	SpaceOfTree<Type>** space_pointer_array_ = nullptr;		//!< 各空間ポインタ配列
@@ -55,18 +53,18 @@ private:
 	unsigned  lowest_level_ = 0;							//!< 最下位レベル(一番末端のLevel数)
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 初期化関数
-	* @param
-	* lowest_level : 最下位レベル(一番末端のLevel数)
-	* octree_width_min : 8分木の幅の最小値
-	* octree_width_max : 8分木の幅の最大値
-	*/
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param lowest_level     最下位レベル(一番末端のLevel数)
+	//! @param octree_width_min 8分木の幅の最小値
+	//! @param octree_width_max 8分木の幅の最大値
+	//! @retval void なし
+	//----------------------------------------
 	void Init(unsigned lowest_level, Vec3 octree_width_min, Vec3 octree_width_max)
 	{
 		// 最下位レベルの確認
@@ -101,10 +99,12 @@ public:
 		octree_unit_length_ = octree_width_ / ((float)(1 << lowest_level_));	// 分母は1辺の空間数
 	}
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Uninit()
 	{
 		for (unsigned i = 0; i < all_space_num_; i++)
@@ -117,31 +117,33 @@ public:
 		delete[] space_pointer_array_;
 	}
 
-	/**
-	* @brief
-	* 衝突リスト更新関数
-	*/
-	void UpdateCollisionList(std::vector<Type>* collision_vector)
+	//----------------------------------------
+	//! @brief 衝突リスト更新関数
+	//! @details
+	//! @param *collision_list 衝突リスト
+	//! @retval void なし
+	//----------------------------------------
+	void UpdateCollisionList(std::vector<Type>* collision_list)
 	{
 		// 初期化
-		collision_vector->clear();
+		collision_list->clear();
 
 		// ルート空間があるかどうか
 		if (space_pointer_array_[0] == nullptr) return;
 
 		// ルート空間から処理を開始
 		std::list<Type> temp_stack;
-		GetCollisionList(0, collision_vector, &temp_stack);
+		GetCollisionList(0, collision_list, &temp_stack);
 	}
 
-	/**
-	* @brief
-	* 追加関数
-	* @param
-	* object : 追加したいオブジェクト
-	* object_min : 追加したいオブジェクトの最小値
-	* object_max : 追加したいオブジェクトの最大値
-	*/
+	//----------------------------------------
+	//! @brief 追加関数
+	//! @details
+	//! @param object     追加したいオブジェクト
+	//! @param object_min 追加したいオブジェクトの最小値
+	//! @param object_max 追加したいオブジェクトの最大値
+	//! @retval void なし
+	//----------------------------------------
 	void Add(ObjectOfTree<Type>* object, const Vec3* object_min, const Vec3* object_max)
 	{
 		// オブジェクトの所属空間の配列インデックスの取得
@@ -163,12 +165,12 @@ public:
 
 
 private:
-	/**
-	* @brief
-	* 3bit間隔へ分離関数
-	* @param
-	* num : 分離したい数値
-	*/
+	//----------------------------------------
+	//! @brief 3bit間隔へ分離関数
+	//! @details
+	//! @param *num 分離したい数値
+	//! @retval void なし
+	//----------------------------------------
 	void SeparateInto3BitIntervals(DWORD* num)
 	{
 		*num = (*num | *num << 8) & 0x0000f00f;	// 1Byteを4bitごとに分ける
@@ -176,13 +178,12 @@ private:
 		*num = (*num | *num << 2) & 0x00249249;	// 各2bitを1bitごとに分ける(3bit間隔)
 	}
 
-	/**
-	* @brief
-	* 3Dモートン空間番号取得関数
-	* @param
-	* position : モートン番号を取得したい座標へのポインタ
-	* @return モートン番号
-	*/
+	//----------------------------------------
+	//! @brief 3Dモートン空間番号取得関数
+	//! @details
+	//! @param *position モートン番号を取得したい座標
+	//! @retval DWORD 算出した3Dモートン空間番号
+	//----------------------------------------
 	DWORD GetMortonNumber(const Vec3* position)
 	{
 		// 最下位レベル空間での座標へ変換
@@ -199,14 +200,13 @@ private:
 		return temp_x | (temp_y << 1) | (temp_z << 2);
 	}
 
-	/**
-	* @brief
-	* 所属空間の配列インデックス取得関数
-	* @param
-	* object_min : 所属空間の配列インデックスを取得したいオブジェクトの最小値
-	* object_max : 所属空間の配列インデックスを取得したいオブジェクトの最大値
-	* @return 所属空間の配列番号
-	*/
+	//----------------------------------------
+	//! @brief 所属空間の配列インデックス取得関数
+	//! @details
+	//! @param *object_min 所属空間の配列インデックスを取得したいオブジェクトの最小値
+	//! @param *object_max 所属空間の配列インデックスを取得したいオブジェクトの最大値
+	//! @retval DWORD 所属空間の配列番号
+	//----------------------------------------
 	DWORD GetArrayIndexOfBelonginSpace(const Vec3* object_min, const Vec3* object_max)
 	{
 		// 最小値と最大値のモートン番号のXORを算出
@@ -232,12 +232,12 @@ private:
 		return shared_space_num;
 	}
 
-	/**
-	* @brief
-	* 空間の生成関数
-	* @param
-	* array_index : 配列インデックス
-	*/
+	//----------------------------------------
+	//! @brief 空間の生成関数
+	//! @details
+	//! @param array_index 配列インデックス
+	//! @retval void なし
+	//----------------------------------------
 	void CreateSpace(DWORD array_index)
 	{
 		while (space_pointer_array_[array_index] == nullptr)
@@ -251,41 +251,41 @@ private:
 		}
 	}
 
-	/**
-	* @brief
-	* 衝突リストの作成関数
-	* @param
-	* space_index : 空間配列インデックス
-	* collision_vector : 衝突オブジェクトリスト
-	* collision_stack : 衝突オブジェクトスタック
-	*/
-	void GetCollisionList(DWORD space_index, std::vector<Type>* collision_vector,
+	//----------------------------------------
+	//! @brief 衝突リストの作成関数
+	//! @details
+	//! @param space_index      空間配列インデックス
+	//! @param *collision_list  衝突オブジェクトリスト
+	//! @param *collision_stack 衝突オブジェクトスタック
+	//! @retval void なし
+	//----------------------------------------
+	void GetCollisionList(DWORD space_index, std::vector<Type>* collision_list,
 						  std::list<Type>* collision_stack)
 	{
 		ObjectOfTree<Type>* temp01 = space_pointer_array_[space_index]->getFirstObject();
 		while (temp01 != nullptr)
 		{
 			// 同空間内オブジェクト同士の衝突リスト作成
-			ObjectOfTree<Type>* temp02 = temp01->getNextPointer();
+			ObjectOfTree<Type>* temp02 = temp01->getpNext();
 			while (temp02 != nullptr)
 			{
 				// 衝突リスト作成
-				collision_vector->push_back(temp01->getObject());
-				collision_vector->push_back(temp02->getObject());
+				collision_list->push_back(temp01->getObject());
+				collision_list->push_back(temp02->getObject());
 
 				// 次のオブジェクトへ
-				temp02 = temp02->getNextPointer();
+				temp02 = temp02->getpNext();
 			}
 
 			// スタックされているオブジェクトとの衝突リスト作成
 			for (auto it = collision_stack->begin(); it != collision_stack->end(); it++)
 			{
-				collision_vector->push_back(temp01->getObject());
-				collision_vector->push_back(*it);
+				collision_list->push_back(temp01->getObject());
+				collision_list->push_back(*it);
 			}
 
 			// 次のオブジェクトへ
-			temp01 = temp01->getNextPointer();
+			temp01 = temp01->getpNext();
 		}
 
 		// 子空間へ移動
@@ -307,7 +307,7 @@ private:
 				{
 					collision_stack->push_back(temp01->getObject());
 					object_num++;
-					temp01 = temp01->getNextPointer();
+					temp01 = temp01->getpNext();
 				}
 			}
 
@@ -315,8 +315,7 @@ private:
 			child_flag = true;
 
 			// 子空間の再帰処理
-			GetCollisionList(next_space_index, collision_vector,
-							 collision_stack);
+			GetCollisionList(next_space_index, collision_list, collision_stack);
 		}
 
 		// スタックからオブジェクトを外す

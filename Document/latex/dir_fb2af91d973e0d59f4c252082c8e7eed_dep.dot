@@ -1,0 +1,11 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/FailureLogo/FailureLogoFactory" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_88411ae733fd0d27b8a602848e808527 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="FailureLogo" fontname="Helvetica", fontsize="10", URL="dir_88411ae733fd0d27b8a602848e808527.html"]
+  dir_fb2af91d973e0d59f4c252082c8e7eed [shape=box, label="FailureLogoFactory", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_fb2af91d973e0d59f4c252082c8e7eed.html"];
+  }
+  dir_02223daf35f039835567255e8e4246b9 [shape=box label="FailureLogoDraw" URL="dir_02223daf35f039835567255e8e4246b9.html"];
+  dir_fb2af91d973e0d59f4c252082c8e7eed->dir_02223daf35f039835567255e8e4246b9 [headlabel="1", labeldistance=1.5 headhref="dir_000035_000034.html"];
+}

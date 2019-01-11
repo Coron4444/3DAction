@@ -26,6 +26,10 @@ class \mbox{\hyperlink{class_renderer_direct_x9_1_1_v_e_r_t_e_x__3_d}{V\+E\+R\+T
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D9 \mbox{\hyperlink{class_renderer_direct_x9_aad68389e45dd757dcde19d636f082a21}{getp\+Interface}} ()
+\begin{DoxyCompactList}\small\item\em インターフェースポインタ取得関数 \end{DoxyCompactList}\item 
+L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 \mbox{\hyperlink{class_renderer_direct_x9_afabcea127b5af61e4d80564369e72baa}{getp\+Device}} ()
+\begin{DoxyCompactList}\small\item\em デバイスポインタ取得関数 \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}{Init}} (H\+I\+N\+S\+T\+A\+N\+CE h\+Instance, H\+W\+ND h\+Wnd, B\+O\+OL is\+\_\+full\+\_\+screen, int window\+\_\+width, int window\+\_\+height) override
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}{Uninit}} () override
@@ -53,11 +57,7 @@ void \mbox{\hyperlink{class_renderer_direct_x9_a5018efa829bf845405ac70beef7df947
 void \mbox{\hyperlink{class_renderer_direct_x9_a789206ba211e9cbffe0bfe4c7dfb7457}{Set\+Alpha\+Blending\+\_\+\+Opacity}} ()
 \begin{DoxyCompactList}\small\item\em アルファ合成関数(不透明合成) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_renderer_direct_x9_a229cd266427d96486c43d2e63300e438}{Set\+Default\+Sampler\+State}} ()
-\begin{DoxyCompactList}\small\item\em デフォルトサンプラーステート設定関数 \end{DoxyCompactList}\item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D9 \mbox{\hyperlink{class_renderer_direct_x9_aad68389e45dd757dcde19d636f082a21}{getp\+Interface}} ()
-\begin{DoxyCompactList}\small\item\em インターフェースポインタ取得関数 \end{DoxyCompactList}\item 
-L\+P\+D\+I\+R\+E\+C\+T3\+D\+D\+E\+V\+I\+C\+E9 \mbox{\hyperlink{class_renderer_direct_x9_afabcea127b5af61e4d80564369e72baa}{getp\+Device}} ()
-\begin{DoxyCompactList}\small\item\em デバイスポインタ取得関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em デフォルトサンプラーステート設定関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{静的公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -108,7 +108,7 @@ Direct\+X9用レンダラー\+Class
 
 
 
- Renderer\+Direct\+X9.\+cpp の 91 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 108 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a5f934597020f77dc9cf729acfb13a830}\label{class_renderer_direct_x9_a5f934597020f77dc9cf729acfb13a830}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Draw\+End@{Draw\+End}}
@@ -136,7 +136,7 @@ Direct\+X9用レンダラー\+Class
 
 
 
- Renderer\+Direct\+X9.\+cpp の 109 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 126 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_afabcea127b5af61e4d80564369e72baa}\label{class_renderer_direct_x9_afabcea127b5af61e4d80564369e72baa}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!getp\+Device@{getp\+Device}}
@@ -160,7 +160,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 243 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 36 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_aad68389e45dd757dcde19d636f082a21}\label{class_renderer_direct_x9_aad68389e45dd757dcde19d636f082a21}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!getp\+Interface@{getp\+Interface}}
@@ -184,7 +184,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 236 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 29 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}\label{class_renderer_direct_x9_af015676b50f3ce1ba7cf20abf6074e3b}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Init@{Init}}
@@ -196,9 +196,7 @@ Direct\+X9用レンダラー\+Class
 
 初期化関数 
 
-インターフェース及びデバイスの生成
-
-
+インターフェース及びデバイスの生成 
 \begin{DoxyParams}[1]{引数}
 \mbox{\tt in}  & {\em h\+Instance} & インスタンスハンドル \\
 \hline
@@ -208,7 +206,7 @@ Direct\+X9用レンダラー\+Class
 \hline
 \mbox{\tt in}  & {\em window\+\_\+width} & ウィンドウ幅 \\
 \hline
-\mbox{\tt in}  & {\em window\+\_\+height} & ウィンドウ高さ\\
+\mbox{\tt in}  & {\em window\+\_\+height} & ウィンドウ高さ \\
 \hline
 \end{DoxyParams}
 
@@ -222,7 +220,7 @@ Direct\+X9用レンダラー\+Class
 
 
 
- Renderer\+Direct\+X9.\+cpp の 29 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 46 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a77dbc76e8adbe4f9ee41c5f09e5ebe81}\label{class_renderer_direct_x9_a77dbc76e8adbe4f9ee41c5f09e5ebe81}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Present@{Present}}
@@ -250,7 +248,7 @@ Direct\+X9用レンダラー\+Class
 
 
 
- Renderer\+Direct\+X9.\+cpp の 117 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 134 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_aa552107a3d5f8a61347fe10741fd04a3}\label{class_renderer_direct_x9_aa552107a3d5f8a61347fe10741fd04a3}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Add@{Set\+Alpha\+Blending\+\_\+\+Add}}
@@ -274,7 +272,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 147 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 164 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a083f55d941075227189769fd9807ffd1}\label{class_renderer_direct_x9_a083f55d941075227189769fd9807ffd1}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Baking@{Set\+Alpha\+Blending\+\_\+\+Baking}}
@@ -298,7 +296,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 179 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 196 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_abfb5264cbb0bf3bacc7b4ec416ddc05a}\label{class_renderer_direct_x9_abfb5264cbb0bf3bacc7b4ec416ddc05a}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Linear@{Set\+Alpha\+Blending\+\_\+\+Linear}}
@@ -322,7 +320,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 132 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 149 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a75dbeaa680610e655c6ff202591f50d7}\label{class_renderer_direct_x9_a75dbeaa680610e655c6ff202591f50d7}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Mul@{Set\+Alpha\+Blending\+\_\+\+Mul}}
@@ -346,7 +344,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 167 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 184 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a5018efa829bf845405ac70beef7df947}\label{class_renderer_direct_x9_a5018efa829bf845405ac70beef7df947}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Nega@{Set\+Alpha\+Blending\+\_\+\+Nega}}
@@ -370,7 +368,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 191 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 208 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a789206ba211e9cbffe0bfe4c7dfb7457}\label{class_renderer_direct_x9_a789206ba211e9cbffe0bfe4c7dfb7457}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Opacity@{Set\+Alpha\+Blending\+\_\+\+Opacity}}
@@ -394,7 +392,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 203 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 220 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a6ddbb9f801ef6b2c86ec5cd4e97b317b}\label{class_renderer_direct_x9_a6ddbb9f801ef6b2c86ec5cd4e97b317b}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Alpha\+Blending\+\_\+\+Sub@{Set\+Alpha\+Blending\+\_\+\+Sub}}
@@ -418,7 +416,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 157 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 174 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_a229cd266427d96486c43d2e63300e438}\label{class_renderer_direct_x9_a229cd266427d96486c43d2e63300e438}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Set\+Default\+Sampler\+State@{Set\+Default\+Sampler\+State}}
@@ -442,7 +440,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 215 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 232 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}\label{class_renderer_direct_x9_af7ff314cbaa894d71e37c10565002f8f}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Uninit@{Uninit}}
@@ -470,7 +468,7 @@ Direct\+X9用レンダラー\+Class
 
 
 
- Renderer\+Direct\+X9.\+cpp の 80 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 97 行目に定義があります。
 
 \mbox{\Hypertarget{class_renderer_direct_x9_aa555dda63bdc0f4dfc28ac506d6e8d60}\label{class_renderer_direct_x9_aa555dda63bdc0f4dfc28ac506d6e8d60}} 
 \index{Renderer\+Direct\+X9@{Renderer\+Direct\+X9}!Use\+Alpha\+Blending@{Use\+Alpha\+Blending}}
@@ -494,7 +492,7 @@ Direct\+X9用レンダラー\+Class
 \end{DoxyRetVals}
 
 
- Renderer\+Direct\+X9.\+cpp の 125 行目に定義があります。
+ Renderer\+Direct\+X9.\+cpp の 142 行目に定義があります。
 
 
 

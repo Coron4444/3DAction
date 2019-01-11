@@ -58,10 +58,10 @@ private:
 //====================
 public:
 	//----------------------------------------
-	//! @brief インスタンスポインタ取得関数
+	//! @brief インスタンス取得関数
 	//! @details
 	//! @param void なし
-	//! @retval Renderer* レンダラーインスタンスポインタ
+	//! @retval Renderer* レンダラーインスタンス
 	//----------------------------------------
 	static Renderer* getpInstance();
 
@@ -91,18 +91,18 @@ private:
 //====================
 public:
 	//----------------------------------------
-	//! @brief レンダラーポインタ取得関数
+	//! @brief レンダラー取得関数
 	//! @details
 	//! @param void なし
-	//! @retval RendererInterface* レンダラーポインタ
+	//! @retval RendererInterface* レンダラー
 	//----------------------------------------
 	RendererInterface* getpRenderer();
 
 	//----------------------------------------
 	//! @brief レンダラー設定関数
 	//! @details
-	//! @param[in] factory レンダラーファクトリー
-	//! @param[in] mode    レンダラーモード
+	//! @param *factory レンダラーファクトリー
+	//! @param *mode    レンダラーモード
 	//! @retval void なし
 	//----------------------------------------
 	void setRenderer(RendererFactoryInterface* factory, MODE mode);
@@ -110,7 +110,7 @@ public:
 	//----------------------------------------
 	//! @brief インターフェース取得関数
 	//! @details
-	//! @param[out] out_pointer 取得用ポインタ
+	//! @param **out_pointer 取得用
 	//! @retval void なし
 	//----------------------------------------
 	template <class Type>
@@ -142,7 +142,7 @@ public:
 	//----------------------------------------
 	//! @brief デバイス取得関数
 	//! @details
-	//! @param[out] out_pointer 取得用ポインタ
+	//! @param **out_pointer 取得用
 	//! @retval void なし
 	//----------------------------------------
 	template <class Type>
@@ -175,15 +175,22 @@ public:
 //====================
 // 関数
 //====================
+private:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	Renderer();
+
 public:
 	//----------------------------------------
 	//! @brief 初期化関数
 	//! @details
-	//! @param[in] hInstance	  インスタンスハンドル
-	//! @param[in] hWnd			  Windowsハンドル
-	//! @param[in] is_full_screen フルスクリーンフラグ
-	//! @param[in] window_width	  ウィンドウ幅
-	//! @param[in] window_height  ウィンドウ高さ
+	//! @param hInstance	  インスタンスハンドル
+	//! @param hWnd			  Windowsハンドル
+	//! @param is_full_screen フルスクリーンフラグ
+	//! @param window_width	  ウィンドウ幅
+	//! @param window_height  ウィンドウ高さ
 	//! @retval bool 初期化成功の有無
 	//----------------------------------------
 	bool Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
@@ -208,7 +215,7 @@ public:
 	//----------------------------------------
 	//! @brief 描画終了関数
 	//! @details
-	//! @param[in] is_begin_scene 描画開始成功フラグ
+	//! @param is_begin_scene 描画開始成功フラグ
 	//! @retval void なし
 	//----------------------------------------
 	void DrawEnd(bool is_begin_scene);
@@ -220,13 +227,6 @@ public:
 	//! @retval void なし
 	//----------------------------------------
 	void Present();
-
-private:
-	//----------------------------------------
-	//! @brief コンストラクタ
-	//! @param void なし
-	//----------------------------------------
-	Renderer() {}
 
 
 //====================

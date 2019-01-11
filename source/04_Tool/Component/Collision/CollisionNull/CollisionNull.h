@@ -12,7 +12,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include "../../Base/CollisionBase/CollisionBase.h"
+#include "../CollisionBase/CollisionBase.h"
 
 
 
@@ -29,95 +29,82 @@ class CollisionNull : public CollisionBase
 public:
 	//----------------------------------------
 	//! @brief デストラクタ
+	//! @details
 	//! @param void なし
 	//----------------------------------------
-	virtual ~CollisionNull() 
-	{
-		ReleaseAllCollisionObjectsFromArray();
-	}
+	virtual ~CollisionNull();
 
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void Init() override {}
+	virtual void Init() override;
 
 	//----------------------------------------
 	//! @brief 終了関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void Uninit() override
-	{
-		// 複数衝突オブジェクトの判定OFF
-		for (unsigned i = 0; i < getEndIndexOfArray(); i++)
-		{
-			getpCollisionObjects(i)->setIsJudgment(false);
-		}
-	}
+	virtual void Uninit() override;
 
 	//----------------------------------------
 	//! @brief 更新関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void Update() {}
+	virtual void Update() override;
 
 	//----------------------------------------
 	//! @brief デバッグ表示関数
+	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void DebugDisplay() {}
+	virtual void DebugDisplay() override;
 
 	//----------------------------------------
 	//! @brief 衝突時関数
-	//! @param[in, out] hit_collision 相手の衝突基底クラス
-	//! @param[in, out] hit_object    相手の衝突オブジェクト
-	//! @param[in, out] hit_my_object 自分の衝突オブジェクト
+	//! @details
+	//! @param *hit_collision 相手の衝突基底クラス
+	//! @param *hit_object    相手の衝突オブジェクト
+	//! @param *hit_my_object 自分の衝突オブジェクト
 	//! @retval void なし
 	//----------------------------------------
 	virtual void HitCollision(CollisionBase* hit_collision,
 							  CollisionObject*  hit_object,
-							  CollisionObject*  hit_my_object)
-	{
-		// 使われていない引数の処理
-		hit_collision = hit_collision;
-		hit_object = hit_object;
-		hit_my_object = hit_my_object;
-	}
+							  CollisionObject*  hit_my_object) override;
 
 	//----------------------------------------
 	//! @brief 非衝突時関数
-	//! @param[in, out] hit_collision 相手の衝突基底クラス
-	//! @param[in, out] hit_object    相手の衝突オブジェクト
-	//! @param[in, out] hit_my_object 自分の衝突オブジェクト
+	//! @details
+	//! @param *hit_collision 相手の衝突基底クラス
+	//! @param *hit_object    相手の衝突オブジェクト
+	//! @param *hit_my_object 自分の衝突オブジェクト
 	//! @retval void なし
 	//----------------------------------------
 	virtual void NotHitCollision(CollisionBase*	hit_collision,
 								 CollisionObject*  hit_object,
-								 CollisionObject*  hit_my_object)
-	{
-		// 使われていない引数の処理
-		hit_collision = hit_collision;
-		hit_object = hit_object;
-		hit_my_object = hit_my_object;
-	}
+								 CollisionObject*  hit_my_object) override;
 
 	//----------------------------------------
 	//! @brief フィールドとの衝突時関数
-	//! @param[in] position_y フィールドの高さ
+	//! @details
+	//! @param position_y フィールドの高さ
 	//! @retval void なし
 	//----------------------------------------
-	virtual void HitGround(float position_y) { position_y = position_y; }
+	virtual void HitGround(float position_y) override;
 
 	//----------------------------------------
 	//! @brief フィールドとの非衝突時関数
-	//! @param[in] position_y フィールドの高さ
+	//! @details
+	//! @param position_y フィールドの高さ
 	//! @retval void なし
 	//----------------------------------------
-	virtual void NotHitGround(float position_y) { position_y = position_y; }
+	virtual void NotHitGround(float position_y) override;
 };
 
 

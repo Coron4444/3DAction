@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    衝突マネージャークラス(static)
-//    Author : Araki Kai                                作成日 : 2018/04/17
-//
+//!	@file	 CollisionManager.cpp
+//!	@brief	 衝突マネージャーClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
 
 
@@ -13,8 +13,8 @@
 #include "CollisionManager.h"
 #include "CollisionPairCheck/CollisionPairCheck.h"
 #include "CollisionCalculation/CollisionCalculation.h"
-#include <Component/Base/CollisionBase/CollisionBase.h>
-#include <Component/Base/CollisionBase/CollisionObject/CollisionObject.h>
+#include <Component/Collision/CollisionBase/CollisionBase.h>
+#include <Component/Collision/CollisionBase/CollisionObject/CollisionObject.h>
 
 #include <GameObjectBase/GameObjectBase.h>
 #include <Polygon\MeshPlanePolygon\MeshPlanePolygon.h>
@@ -24,12 +24,21 @@
 #include <ImGUI\imgui.h>
 #include <ImGUI\imgui_impl_dx9.h>
 
+
+
 //****************************************
-// 非静的メンバ関数定義
+// プロパティ定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
+void CollisionManager::setGround(MeshPlanePolygon* ground_polygon)
+{
+	ground_polygon_ = ground_polygon;
+}
+
+
+
+//****************************************
+// 関数定義
+//****************************************
 void CollisionManager::Init()
 {
 	// 地面の初期化
@@ -45,9 +54,6 @@ void CollisionManager::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void CollisionManager::Uninit()
 {
 	// 解放待ち配列の中身を解放
@@ -61,7 +67,7 @@ void CollisionManager::Uninit()
 		{
 			// 移動オブジェクトはリストから一時的に離脱する
 			ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
-				->getpCollisionObjects(j)->getObjectOfTree();
+				->getpCollisionObjects(j)->getpObjectOfTree();
 			temp->DeleteFromList();
 			SafeRelease::Normal(&temp);
 		}
@@ -80,9 +86,6 @@ void CollisionManager::Uninit()
 
 
 
-//--------------------------------------------------
-// +シーン変更時の終了関数
-//--------------------------------------------------
 void CollisionManager::UninitWhenChangeScene()
 {
 	// 解放待ち配列の中身を解放
@@ -95,7 +98,7 @@ void CollisionManager::UninitWhenChangeScene()
 		{
 			// 移動オブジェクトはリストから一時的に離脱する
 			ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
-				->getpCollisionObjects(j)->getObjectOfTree();
+				->getpCollisionObjects(j)->getpObjectOfTree();
 			temp->DeleteFromList();
 			SafeRelease::Normal(&temp);
 		}
@@ -114,9 +117,6 @@ void CollisionManager::UninitWhenChangeScene()
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void CollisionManager::Update()
 {
 	// 追加待ち配列の中身を追加
@@ -140,7 +140,7 @@ void CollisionManager::Update()
 			{
 				// 移動オブジェクトはリストから一時的に離脱する
 				ObjectOfTree<CollisionObjects*>* temp = all_collision_.GetArrayObject(i)
-					->getpCollisionObjects(j)->getObjectOfTree();
+					->getpCollisionObjects(j)->getpObjectOfTree();
 				temp->DeleteFromList();
 
 				// 再登録
@@ -184,9 +184,6 @@ void CollisionManager::Update()
 
 
 
-//--------------------------------------------------
-// +衝突基底クラスの追加関数
-//--------------------------------------------------
 void CollisionManager::AddCollisionBaseToArray(CollisionBase* collision)
 {
 	// 追加待ち配列に追加
@@ -195,9 +192,6 @@ void CollisionManager::AddCollisionBaseToArray(CollisionBase* collision)
 
 
 
-//--------------------------------------------------
-// +衝突基底クラスの上書き関数
-//--------------------------------------------------
 void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 												   CollisionBase* new_collision)
 {
@@ -232,15 +226,12 @@ void CollisionManager::OverwriteArrayCollisionBase(GameObjectBase* game_object,
 
 
 
-//--------------------------------------------------
-// +衝突基底クラスの解放関数
-//--------------------------------------------------
 void CollisionManager::ReleaseCollisionBaseFromArray(CollisionBase* collision)
 {
 	// 8分木から消去
 	for (unsigned i = 0; i < collision->getEndIndexOfArray(); i++)
 	{
-		ObjectOfTree<CollisionObjects*>* temp = collision->getpCollisionObjects(i)->getObjectOfTree();
+		ObjectOfTree<CollisionObjects*>* temp = collision->getpCollisionObjects(i)->getpObjectOfTree();
 		temp->DeleteFromList();
 		SafeRelease::Normal(&temp);
 	}
@@ -251,19 +242,6 @@ void CollisionManager::ReleaseCollisionBaseFromArray(CollisionBase* collision)
 
 
 
-//--------------------------------------------------
-// +地面設定関数
-//--------------------------------------------------
-void CollisionManager::SetGround(MeshPlanePolygon* ground_polygon)
-{
-	ground_polygon_ = ground_polygon;
-}
-
-
-
-//--------------------------------------------------
-// -追加待ち配列の中身を追加関数
-//--------------------------------------------------
 void CollisionManager::AddContentsOfAwaitAddArray()
 {
 	// 追加待ちがあるかどうか
@@ -292,9 +270,6 @@ void CollisionManager::AddContentsOfAwaitAddArray()
 
 
 
-//--------------------------------------------------
-// -解放待ち配列の中身を解放関数
-//--------------------------------------------------
 void CollisionManager::ReleaseContentsOfAwaitReleaseArray()
 {
 	// 解放待ちがあるかどうか
@@ -313,9 +288,6 @@ void CollisionManager::ReleaseContentsOfAwaitReleaseArray()
 
 
 
-//--------------------------------------------------
-// -衝突判定関数
-//--------------------------------------------------
 void CollisionManager::CollisionDetermination()
 {
 	// ペアになっているため
@@ -330,8 +302,8 @@ void CollisionManager::CollisionDetermination()
 		// 判定をする組み合わせか？
 		if (is_pair_check_)
 		{
-			if (!CollisionPairCheck::IsCheck(collision_objects_list_[i * 2]->getCollisionBase(),
-											 collision_objects_list_[i * 2 + 1]->getCollisionBase())) continue;
+			if (!CollisionPairCheck::IsCheck(collision_objects_list_[i * 2]->getpCollisionBase(),
+											 collision_objects_list_[i * 2 + 1]->getpCollisionBase())) continue;
 		}
 
 		// 実際の判定処理
@@ -353,9 +325,6 @@ void CollisionManager::CollisionDetermination()
 
 
 
-//--------------------------------------------------
-// -古い衝突判定関数
-//--------------------------------------------------
 void CollisionManager::OldCollisionDetermination()
 {
 	// 衝突基底クラスが2つ以上かどうか
@@ -429,9 +398,6 @@ void CollisionManager::OldCollisionDetermination()
 
 
 
-//--------------------------------------------------
-// -地面との衝突判定関数
-//--------------------------------------------------
 void CollisionManager::CollisionGround()
 {
 	if (ground_polygon_ == nullptr) return;
@@ -463,52 +429,49 @@ void CollisionManager::CollisionGround()
 
 
 
-//--------------------------------------------------
-// -実際の計算関数
-//--------------------------------------------------
 void CollisionManager::ActualCalculation(CollisionObjects* collision_objects0,
 										 CollisionObjects* collision_objects1)
 {
 	for (unsigned i = 0; i < collision_objects0->getEndIndexOfArray(); i++)
 	{
 		// 衝突オブジェクトが判定するかどうか
-		if (!collision_objects0->getCollisionObject(i)->getIsJudgment()) continue;
+		if (!collision_objects0->getpCollisionObject(i)->getIsJudgment()) continue;
 
 		// 総当たり
 		for (unsigned j = 0; j < collision_objects1->getEndIndexOfArray(); j++)
 		{
 			// 衝突オブジェクトが判定するかどうか
-			if (!collision_objects1->getCollisionObject(j)->getIsJudgment()) continue;
+			if (!collision_objects1->getpCollisionObject(j)->getIsJudgment()) continue;
 
 			// 衝突計算
-			if (SortCollisionCalculation(collision_objects0->getCollisionObject(i),
-										 collision_objects1->getCollisionObject(j)))
+			if (SortCollisionCalculation(collision_objects0->getpCollisionObject(i),
+										 collision_objects1->getpCollisionObject(j)))
 			{
 				// コンポーネント1つ目の衝突応答
-				collision_objects0->getCollisionBase()
-					->HitCollision(collision_objects1->getCollisionBase(),
-								   collision_objects1->getCollisionObject(j),
-								   collision_objects0->getCollisionObject(i));
+				collision_objects0->getpCollisionBase()
+					->HitCollision(collision_objects1->getpCollisionBase(),
+								   collision_objects1->getpCollisionObject(j),
+								   collision_objects0->getpCollisionObject(i));
 
 				// コンポーネント2つ目の衝突応答
-				collision_objects1->getCollisionBase()
-					->HitCollision(collision_objects0->getCollisionBase(),
-								   collision_objects0->getCollisionObject(i),
-								   collision_objects1->getCollisionObject(j));
+				collision_objects1->getpCollisionBase()
+					->HitCollision(collision_objects0->getpCollisionBase(),
+								   collision_objects0->getpCollisionObject(i),
+								   collision_objects1->getpCollisionObject(j));
 			}
 			else
 			{
 				// コンポーネント1つ目の非衝突応答
-				collision_objects0->getCollisionBase()
-					->NotHitCollision(collision_objects1->getCollisionBase(),
-									  collision_objects1->getCollisionObject(j),
-									  collision_objects0->getCollisionObject(i));
+				collision_objects0->getpCollisionBase()
+					->NotHitCollision(collision_objects1->getpCollisionBase(),
+									  collision_objects1->getpCollisionObject(j),
+									  collision_objects0->getpCollisionObject(i));
 
 				// コンポーネント2つ目の非衝突応答
-				collision_objects1->getCollisionBase()
-					->NotHitCollision(collision_objects0->getCollisionBase(),
-									  collision_objects0->getCollisionObject(i),
-									  collision_objects1->getCollisionObject(j));
+				collision_objects1->getpCollisionBase()
+					->NotHitCollision(collision_objects0->getpCollisionBase(),
+									  collision_objects0->getpCollisionObject(i),
+									  collision_objects1->getpCollisionObject(j));
 			}
 
 			// コンポーネントが判定可能かどうか
@@ -520,9 +483,6 @@ void CollisionManager::ActualCalculation(CollisionObjects* collision_objects0,
 
 
 
-//--------------------------------------------------
-// -衝突計算振り分け関数
-//--------------------------------------------------
 bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_object0,
 												CollisionObject* collision_object1)
 {
@@ -924,9 +884,6 @@ bool CollisionManager::SortCollisionCalculation(CollisionObject* collision_objec
 
 
 
-//--------------------------------------------------
-// -デバッグ表示
-//--------------------------------------------------
 void CollisionManager::DebugDisplay()
 {
 	// ウィンドウの設定
@@ -966,10 +923,6 @@ void CollisionManager::DebugDisplay()
 	{
 		is_octree_ ^= 1;
 	}
-
-
-
-
 
 	// 終了
 	ImGui::End();

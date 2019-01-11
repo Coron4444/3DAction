@@ -2,7 +2,7 @@
 \label{class_space_of_tree}\index{Space\+Of\+Tree$<$ Type $>$@{Space\+Of\+Tree$<$ Type $>$}}
 
 
-分木空間クラス  
+分木空間\+Class  
 
 
 
@@ -12,6 +12,10 @@
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_space_of_tree_a97ee8bf10b8d88d49e61875c88608b15}{get\+First\+Object}} ()
+\begin{DoxyCompactList}\small\item\em 最初のオブジェクト取得関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_space_of_tree_a43844bf7bfbf0d021b9ae4708cb2e6f4}{set\+First\+Object}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$value)
+\begin{DoxyCompactList}\small\item\em 最初のオブジェクト設定関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_space_of_tree_a8f7238becd1df9192e5f5ddc442b7ee3}{Uninit}} ()
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_space_of_tree_a3231408434cb3066768cfd9d33d86190}{Reset\+Link}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$$\ast$object)
@@ -19,27 +23,23 @@ void \mbox{\hyperlink{class_space_of_tree_a3231408434cb3066768cfd9d33d86190}{Res
 void \mbox{\hyperlink{class_space_of_tree_a8156722056d7b2ab354ff22235772d7e}{Add\+Object}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$object)
 \begin{DoxyCompactList}\small\item\em オブジェクトの追加関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_space_of_tree_a746aef6b3bafdde17daa5125cc9bc43c}{Check\+Delete\+Object}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$object)
-\begin{DoxyCompactList}\small\item\em 消去オブジェクトのチェック関数 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_space_of_tree_a97ee8bf10b8d88d49e61875c88608b15}{get\+First\+Object}} ()
-\item 
-void \mbox{\hyperlink{class_space_of_tree_a43844bf7bfbf0d021b9ae4708cb2e6f4}{set\+First\+Object}} (\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$value)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 消去オブジェクトのチェック関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_space_of_tree_afc9920e9fc6499dfe6fada154e69fa0f}{first\+\_\+pointer\+\_\+}} = nullptr
-\begin{DoxyCompactList}\small\item\em 最初のオブジェクトポインタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$ Type $>$ $\ast$ \mbox{\hyperlink{class_space_of_tree_af47684080d10ec625f1ebbf6492bf99a}{first\+\_\+object\+\_\+}} = nullptr
+\begin{DoxyCompactList}\small\item\em 最初のオブジェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{詳解}
 \subsubsection*{template$<$class Type$>$\newline
 class Space\+Of\+Tree$<$ Type $>$}
 
-分木空間クラス 
+分木空間\+Class 
 
-分木の空間クラス 
+分木の空間\+Class(template) 
 
- Object\+Of\+Tree.\+h の 23 行目に定義があります。
+ Object\+Of\+Tree.\+h の 16 行目に定義があります。
 
 
 
@@ -56,13 +56,18 @@ void \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::Add\
 オブジェクトの追加関数 
 
 
-\begin{DoxyParams}{引数}
-{\em object} & \+: 追加したいオブジェクトポインタ \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em $\ast$object} & 追加したいオブジェクト \\
 \hline
 \end{DoxyParams}
 
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
- Space\+Of\+Tree.\+h の 74 行目に定義があります。
+
+ Space\+Of\+Tree.\+h の 100 行目に定義があります。
 
 \mbox{\Hypertarget{class_space_of_tree_a746aef6b3bafdde17daa5125cc9bc43c}\label{class_space_of_tree_a746aef6b3bafdde17daa5125cc9bc43c}} 
 \index{Space\+Of\+Tree@{Space\+Of\+Tree}!Check\+Delete\+Object@{Check\+Delete\+Object}}
@@ -76,13 +81,18 @@ void \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::Chec
 消去オブジェクトのチェック関数 
 
 
-\begin{DoxyParams}{引数}
-{\em object} & \+: チェックしたい消去オブジェクトポインタ \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em $\ast$object} & チェックしたい消去オブジェクト \\
 \hline
 \end{DoxyParams}
 
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
- Space\+Of\+Tree.\+h の 104 行目に定義があります。
+
+ Space\+Of\+Tree.\+h の 130 行目に定義があります。
 
 \mbox{\Hypertarget{class_space_of_tree_a97ee8bf10b8d88d49e61875c88608b15}\label{class_space_of_tree_a97ee8bf10b8d88d49e61875c88608b15}} 
 \index{Space\+Of\+Tree@{Space\+Of\+Tree}!get\+First\+Object@{get\+First\+Object}}
@@ -93,7 +103,21 @@ void \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::Chec
 
 
 
- Space\+Of\+Tree.\+h の 114 行目に定義があります。
+最初のオブジェクト取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Object\+Of\+Tree$<$\+Type$>$$\ast$} & 最初のオブジェクト \\
+\hline
+\end{DoxyRetVals}
+
+
+ Space\+Of\+Tree.\+h の 44 行目に定義があります。
 
 \mbox{\Hypertarget{class_space_of_tree_a3231408434cb3066768cfd9d33d86190}\label{class_space_of_tree_a3231408434cb3066768cfd9d33d86190}} 
 \index{Space\+Of\+Tree@{Space\+Of\+Tree}!Reset\+Link@{Reset\+Link}}
@@ -107,13 +131,18 @@ void \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::Rese
 リンクのリセット関数 
 
 
-\begin{DoxyParams}{引数}
-{\em object} & \+: リンクをリセットしたいオブジェクトのポインタのポインタ \\
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in,out}  & {\em $\ast$$\ast$object} & リンクをリセットしたいオブジェクト \\
 \hline
 \end{DoxyParams}
 
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
 
- Space\+Of\+Tree.\+h の 58 行目に定義があります。
+
+ Space\+Of\+Tree.\+h の 84 行目に定義があります。
 
 \mbox{\Hypertarget{class_space_of_tree_a43844bf7bfbf0d021b9ae4708cb2e6f4}\label{class_space_of_tree_a43844bf7bfbf0d021b9ae4708cb2e6f4}} 
 \index{Space\+Of\+Tree@{Space\+Of\+Tree}!set\+First\+Object@{set\+First\+Object}}
@@ -124,7 +153,21 @@ void \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::set\
 
 
 
- Space\+Of\+Tree.\+h の 115 行目に定義があります。
+最初のオブジェクト設定関数 
+
+
+\begin{DoxyParams}{引数}
+{\em $\ast$value} & 最初のオブジェクト \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Space\+Of\+Tree.\+h の 55 行目に定義があります。
 
 \mbox{\Hypertarget{class_space_of_tree_a8f7238becd1df9192e5f5ddc442b7ee3}\label{class_space_of_tree_a8f7238becd1df9192e5f5ddc442b7ee3}} 
 \index{Space\+Of\+Tree@{Space\+Of\+Tree}!Uninit@{Uninit}}
@@ -138,26 +181,36 @@ void \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::Unin
 終了関数 
 
 
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
 
- Space\+Of\+Tree.\+h の 45 行目に定義があります。
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Space\+Of\+Tree.\+h の 71 行目に定義があります。
 
 
 
 \subsection{メンバ詳解}
-\mbox{\Hypertarget{class_space_of_tree_afc9920e9fc6499dfe6fada154e69fa0f}\label{class_space_of_tree_afc9920e9fc6499dfe6fada154e69fa0f}} 
-\index{Space\+Of\+Tree@{Space\+Of\+Tree}!first\+\_\+pointer\+\_\+@{first\+\_\+pointer\+\_\+}}
-\index{first\+\_\+pointer\+\_\+@{first\+\_\+pointer\+\_\+}!Space\+Of\+Tree@{Space\+Of\+Tree}}
-\subsubsection{\texorpdfstring{first\+\_\+pointer\+\_\+}{first\_pointer\_}}
+\mbox{\Hypertarget{class_space_of_tree_af47684080d10ec625f1ebbf6492bf99a}\label{class_space_of_tree_af47684080d10ec625f1ebbf6492bf99a}} 
+\index{Space\+Of\+Tree@{Space\+Of\+Tree}!first\+\_\+object\+\_\+@{first\+\_\+object\+\_\+}}
+\index{first\+\_\+object\+\_\+@{first\+\_\+object\+\_\+}!Space\+Of\+Tree@{Space\+Of\+Tree}}
+\subsubsection{\texorpdfstring{first\+\_\+object\+\_\+}{first\_object\_}}
 {\footnotesize\ttfamily template$<$class Type$>$ \\
-\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::first\+\_\+pointer\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\hyperlink{class_object_of_tree}{Object\+Of\+Tree}}$<$Type$>$$\ast$ \mbox{\hyperlink{class_space_of_tree}{Space\+Of\+Tree}}$<$ Type $>$\+::first\+\_\+object\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-最初のオブジェクトポインタ 
+最初のオブジェクト 
 
 
 
- Space\+Of\+Tree.\+h の 34 行目に定義があります。
+ Space\+Of\+Tree.\+h の 31 行目に定義があります。
 
 
 

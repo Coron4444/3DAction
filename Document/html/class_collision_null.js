@@ -1,12 +1,12 @@
 var class_collision_null =
 [
-    [ "~CollisionNull", "class_collision_null.html#a2eaef584b2ae2c4062df8bf3a6533fb3", null ],
-    [ "DebugDisplay", "class_collision_null.html#a3ee0dacfb13c949538519f39d2f6fb0f", null ],
-    [ "HitCollision", "class_collision_null.html#a580f507d8918865679feec3cc7b613d1", null ],
-    [ "HitGround", "class_collision_null.html#a75900c2cec4e49336701e2e3c64e5bfe", null ],
-    [ "Init", "class_collision_null.html#af5db1d080c1c0c5a1199062850d8a2ff", null ],
-    [ "NotHitCollision", "class_collision_null.html#aba2a574ab42dca618c41dd0b9562f614", null ],
-    [ "NotHitGround", "class_collision_null.html#ad456a03a3e3d55d8d408b7ed28ce7911", null ],
-    [ "Uninit", "class_collision_null.html#a7c6d0ec502efc55e2f406415451152f5", null ],
-    [ "Update", "class_collision_null.html#a5e5e094e3fbe3ccc0515e485c739bd15", null ]
+    [ "~CollisionNull", "class_collision_null.html#a8cbc0114a4dcc343635787d50c6ce007", null ],
+    [ "DebugDisplay", "class_collision_null.html#a098fcf2c8ecc3c31706b720fbe852aca", null ],
+    [ "HitCollision", "class_collision_null.html#a2bb1c8ca023aada97055256e033d823e", null ],
+    [ "HitGround", "class_collision_null.html#ac5645bca5f03262d1918e2ff8348440d", null ],
+    [ "Init", "class_collision_null.html#a18cfc21fefcd3e8dec380ac44a85f111", null ],
+    [ "NotHitCollision", "class_collision_null.html#aad9ac22b94ed4365c15aad56858ba37a", null ],
+    [ "NotHitGround", "class_collision_null.html#a77004653a17a43a8a4809297e6c71422", null ],
+    [ "Uninit", "class_collision_null.html#aafac3fdab43845465fd1e0198c423ccf", null ],
+    [ "Update", "class_collision_null.html#ad6ac0e9b06fcb4e3d19a5c3c1cadfe7e", null ]
 ];

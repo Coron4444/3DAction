@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    カメラクラス
-//    Author : Araki Kai                                作成日 : 2017/12/07
-//
+//!	@file	 Camera.cpp
+//!	@brief	 カメラClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
 
 
@@ -27,15 +27,141 @@ const int   Camera::DEFAULT_ANGLE_OF_VIEW = 60;
 
 
 //****************************************
-// 非静的メンバ関数定義
+// プロパティ定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
+Camera* Camera::State::getpCamera()
+{
+	return camera_;
+}
+
+
+
+void Camera::State::setCamera(Camera* value)
+{
+	camera_ = value;
+}
+
+
+
+const MATRIX* Camera::getpViewMatrix() const
+{
+	if (type_ == Type::TWO_DIMENSIONAL) return &view_2D_;
+	return &view_;
+}
+
+
+
+const MATRIX* Camera::getpProjectionMatrix() const
+{
+	if (type_ == Type::PERSPECTIVE) return &projection_perspective_;
+	if (type_ == Type::ORTHO) return &projection_ortho_;
+	return &projection_2D_;
+}
+
+
+
+Vector3D* Camera::getpPositon()
+{
+	return &position_;
+}
+
+
+
+Vector3D* Camera::getpLookAtPoint()
+{
+	return &look_at_point_;
+}
+
+
+
+Vector3D* Camera::getpUp()
+{
+	return &up_;
+}
+
+
+
+int Camera::getAngleOfView()
+{
+	return angle_of_view_;
+}
+
+
+
+void Camera::setAngleOfView(int value)
+{
+	angle_of_view_ = value;
+	CreateProjectionMatrix_PerspectiveFov();
+	CreateProjectionMatrix_Ortho();
+}
+
+
+
+AxisVector* Camera::getpAxis()
+{
+	return &axis_;
+}
+
+
+
+const Vector3D* Camera::getpForwardVector() const
+{
+	return axis_.GetForawrd();
+}
+
+
+
+const Camera::State* Camera::getpState() const
+{
+	return state_;
+}
+
+
+
+void Camera::setState(Camera::State* value)
+{
+	if (state_ != nullptr)
+	{
+		SafeRelease::PlusUninit(&state_);
+	}
+
+	state_ = value;
+
+	if (state_ != nullptr)
+	{
+		state_->setCamera(this);
+		state_->Init();
+	}
+}
+
+
+
+Camera::Type Camera::getType()
+{
+	return type_;
+}
+
+
+
+void Camera::setType(Camera::Type value)
+{
+	type_ = value;
+}
+
+
+
+//****************************************
+// 関数定義
+//****************************************
+Camera::State::~State()
+{
+}
+
+
+
 void Camera::Init(State* state, Vec3 position, Vec3 look_at_point, Vec3 up)
 {
 	// 各種代入
-	state_ = state;
 	position_ = position;
 	look_at_point_ = look_at_point;
 	up_ = up;
@@ -45,7 +171,7 @@ void Camera::Init(State* state, Vec3 position, Vec3 look_at_point, Vec3 up)
 	axis_.SetForward(look_at_point_ - position_);
 
 	// ステートの初期化
-	if (state_ != nullptr) state_->Init(this);
+	setState(state);
 
 	// ビュー行列の作成
 	D3DXMatrixIdentity(&view_2D_);
@@ -59,9 +185,6 @@ void Camera::Init(State* state, Vec3 position, Vec3 look_at_point, Vec3 up)
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void Camera::Uninit()
 {
 	SafeRelease::PlusUninit(&state_);
@@ -69,21 +192,15 @@ void Camera::Uninit()
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void Camera::Update()
 {
-	if (state_ != nullptr) state_->Update(this);
+	if (state_ != nullptr) state_->Update();
 
 	CreateViewMatrix();
 }
 
 
 
-//--------------------------------------------------
-// +ビュー行列作成関数
-//--------------------------------------------------
 void Camera::CreateViewMatrix()
 {
 	// 行列初期化
@@ -95,9 +212,6 @@ void Camera::CreateViewMatrix()
 
 
 
-//--------------------------------------------------
-// +プロジェクション行列作成関数(透視投影行列)
-//--------------------------------------------------
 void Camera::CreateProjectionMatrix_PerspectiveFov()
 {
 	// 行列初期化
@@ -112,9 +226,6 @@ void Camera::CreateProjectionMatrix_PerspectiveFov()
 
 
 
-//--------------------------------------------------
-// + プロジェクション行列作成関数(正射影行列)
-//--------------------------------------------------
 void Camera::CreateProjectionMatrix_Ortho()
 {
 	// 行列初期化
@@ -128,9 +239,6 @@ void Camera::CreateProjectionMatrix_Ortho()
 
 
 
-//--------------------------------------------------
-// + プロジェクション行列作成関数(2D)
-//--------------------------------------------------
 void Camera::CreateProjectionMatrix_2D()
 {
 	projection_2D_
@@ -139,22 +247,4 @@ void Camera::CreateProjectionMatrix_2D()
 						  0.0f,                 0.0f, 1.0f, 0.0f,
 						  0.0f,                 0.0f, 0.0f, 1.0f
 	};
-}
-
-
-
-//--------------------------------------------------
-// + カメラステートの変更
-//--------------------------------------------------
-void Camera::ChangeState(State* new_camera_state)
-{
-	// 終了処理
-	if (state_ != nullptr) state_->Uninit();
-
-	// 新規ステートに変更
-	SafeRelease::Normal(&state_);
-	state_ = new_camera_state;
-
-	// 初期化処理
-	if (state_ != nullptr) state_->Init(this);
 }

@@ -21,22 +21,22 @@ A\+A\+BB の継承関係図\nopagebreak
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_ad89a0086c07d2bf1e0531ae6a0877664}{getp\+Positon}} ()
+\begin{DoxyCompactList}\small\item\em 座標ポインタ取得関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_ad86a852594d4a7833b74588937e0c55c}{getp\+Length}} ()
+\begin{DoxyCompactList}\small\item\em 各辺の長さポインタ取得関数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_a_b_b_a76816b1eb872408d91dfa6880e5af109}{set\+Length}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} value)
+\begin{DoxyCompactList}\small\item\em 各辺の長さ設定関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_a3733a8d866acc126266c892a23abe39d}{getp\+Min}} ()
+\begin{DoxyCompactList}\small\item\em 最小値ポインタ取得関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_aa7f199155cc3de141aba0bc25e6d9e68}{getp\+Max}} ()
+\begin{DoxyCompactList}\small\item\em 最大値ポインタ取得関数 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_a_a_b_b_a5f5baf6c533905aa1456b3a3eb57bab2}{A\+A\+BB}} ()
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_a_b_b_a28167704c3b21de2ae9f70ac139781c4}{Init}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} position, \mbox{\hyperlink{class_vector3_d}{Vector3D}} length)
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_a_b_b_a9698fec7358275832b6b84a146ea4a7c}{Update}} ()
-\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_a8b8e043a1ccf584416d9899252f97cff}{getp\+Positon}} ()
-\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_a9e82e2bdab1dd84633dddbf8bfe561f8}{getp\+Length}} ()
-\item 
-void \mbox{\hyperlink{class_a_a_b_b_a76816b1eb872408d91dfa6880e5af109}{set\+Length}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} value)
-\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_ac73c1bb888074d7004abe68849f67948}{getp\+Min}} ()
-\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_a_a_b_b_ae7e52b55b90b1c6d02a8a75527d38c9e}{getp\+Max}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
@@ -70,69 +70,125 @@ A\+A\+B\+Bの\+Class
 \index{A\+A\+BB@{A\+A\+BB}!A\+A\+BB@{A\+A\+BB}}
 \index{A\+A\+BB@{A\+A\+BB}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{A\+A\+B\+B()}{AABB()}}
-{\footnotesize\ttfamily A\+A\+B\+B\+::\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily A\+A\+B\+B\+::\+A\+A\+BB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 コンストラクタ 
 
-コンストラクタ 
+
 \begin{DoxyParams}{引数}
 {\em void} & なし \\
 \hline
 \end{DoxyParams}
 
 
- A\+A\+B\+B.\+h の 50 行目に定義があります。
+ A\+A\+B\+B.\+cpp の 58 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_a_a_b_b_a9e82e2bdab1dd84633dddbf8bfe561f8}\label{class_a_a_b_b_a9e82e2bdab1dd84633dddbf8bfe561f8}} 
+\mbox{\Hypertarget{class_a_a_b_b_ad86a852594d4a7833b74588937e0c55c}\label{class_a_a_b_b_ad86a852594d4a7833b74588937e0c55c}} 
 \index{A\+A\+BB@{A\+A\+BB}!getp\+Length@{getp\+Length}}
 \index{getp\+Length@{getp\+Length}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{getp\+Length()}{getpLength()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ A\+A\+B\+B\+::getp\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ A\+A\+B\+B\+::getp\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- A\+A\+B\+B.\+h の 83 行目に定義があります。
+各辺の長さポインタ取得関数 
 
-\mbox{\Hypertarget{class_a_a_b_b_ae7e52b55b90b1c6d02a8a75527d38c9e}\label{class_a_a_b_b_ae7e52b55b90b1c6d02a8a75527d38c9e}} 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Vector3\+D$\ast$} & 各辺の長さポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ A\+A\+B\+B.\+cpp の 27 行目に定義があります。
+
+\mbox{\Hypertarget{class_a_a_b_b_aa7f199155cc3de141aba0bc25e6d9e68}\label{class_a_a_b_b_aa7f199155cc3de141aba0bc25e6d9e68}} 
 \index{A\+A\+BB@{A\+A\+BB}!getp\+Max@{getp\+Max}}
 \index{getp\+Max@{getp\+Max}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{getp\+Max()}{getpMax()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ A\+A\+B\+B\+::getp\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ A\+A\+B\+B\+::getp\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- A\+A\+B\+B.\+h の 86 行目に定義があります。
+最大値ポインタ取得関数 
 
-\mbox{\Hypertarget{class_a_a_b_b_ac73c1bb888074d7004abe68849f67948}\label{class_a_a_b_b_ac73c1bb888074d7004abe68849f67948}} 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Vector3\+D$\ast$} & 最大値ポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ A\+A\+B\+B.\+cpp の 48 行目に定義があります。
+
+\mbox{\Hypertarget{class_a_a_b_b_a3733a8d866acc126266c892a23abe39d}\label{class_a_a_b_b_a3733a8d866acc126266c892a23abe39d}} 
 \index{A\+A\+BB@{A\+A\+BB}!getp\+Min@{getp\+Min}}
 \index{getp\+Min@{getp\+Min}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{getp\+Min()}{getpMin()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ A\+A\+B\+B\+::getp\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ A\+A\+B\+B\+::getp\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- A\+A\+B\+B.\+h の 85 行目に定義があります。
+最小値ポインタ取得関数 
 
-\mbox{\Hypertarget{class_a_a_b_b_a8b8e043a1ccf584416d9899252f97cff}\label{class_a_a_b_b_a8b8e043a1ccf584416d9899252f97cff}} 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Vector3\+D$\ast$} & 最小値ポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ A\+A\+B\+B.\+cpp の 41 行目に定義があります。
+
+\mbox{\Hypertarget{class_a_a_b_b_ad89a0086c07d2bf1e0531ae6a0877664}\label{class_a_a_b_b_ad89a0086c07d2bf1e0531ae6a0877664}} 
 \index{A\+A\+BB@{A\+A\+BB}!getp\+Positon@{getp\+Positon}}
 \index{getp\+Positon@{getp\+Positon}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{getp\+Positon()}{getpPositon()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ A\+A\+B\+B\+::getp\+Positon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ A\+A\+B\+B\+::getp\+Positon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- A\+A\+B\+B.\+h の 82 行目に定義があります。
+座標ポインタ取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Vector3\+D$\ast$} & 座標ポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ A\+A\+B\+B.\+cpp の 20 行目に定義があります。
 
 \mbox{\Hypertarget{class_a_a_b_b_a28167704c3b21de2ae9f70ac139781c4}\label{class_a_a_b_b_a28167704c3b21de2ae9f70ac139781c4}} 
 \index{A\+A\+BB@{A\+A\+BB}!Init@{Init}}
 \index{Init@{Init}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{length }\end{DoxyParamCaption})}
 
 
 
@@ -152,23 +208,37 @@ A\+A\+B\+Bの\+Class
 \end{DoxyRetVals}
 
 
- A\+A\+B\+B.\+h の 58 行目に定義があります。
+ A\+A\+B\+B.\+cpp の 65 行目に定義があります。
 
 \mbox{\Hypertarget{class_a_a_b_b_a76816b1eb872408d91dfa6880e5af109}\label{class_a_a_b_b_a76816b1eb872408d91dfa6880e5af109}} 
 \index{A\+A\+BB@{A\+A\+BB}!set\+Length@{set\+Length}}
 \index{set\+Length@{set\+Length}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{set\+Length()}{setLength()}}
-{\footnotesize\ttfamily void A\+A\+B\+B\+::set\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void A\+A\+B\+B\+::set\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{value }\end{DoxyParamCaption})}
 
 
 
- A\+A\+B\+B.\+h の 84 行目に定義があります。
+各辺の長さ設定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em value} & 各辺の長さ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ A\+A\+B\+B.\+cpp の 34 行目に定義があります。
 
 \mbox{\Hypertarget{class_a_a_b_b_a9698fec7358275832b6b84a146ea4a7c}\label{class_a_a_b_b_a9698fec7358275832b6b84a146ea4a7c}} 
 \index{A\+A\+BB@{A\+A\+BB}!Update@{Update}}
 \index{Update@{Update}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -186,13 +256,13 @@ A\+A\+B\+Bの\+Class
 \end{DoxyRetVals}
 
 
- A\+A\+B\+B.\+h の 75 行目に定義があります。
+ A\+A\+B\+B.\+cpp の 79 行目に定義があります。
 
 \mbox{\Hypertarget{class_a_a_b_b_aad10f509f6726aed8285063a69df9085}\label{class_a_a_b_b_aad10f509f6726aed8285063a69df9085}} 
 \index{A\+A\+BB@{A\+A\+BB}!Update\+Min\+And\+Max@{Update\+Min\+And\+Max}}
 \index{Update\+Min\+And\+Max@{Update\+Min\+And\+Max}!A\+A\+BB@{A\+A\+BB}}
 \subsubsection{\texorpdfstring{Update\+Min\+And\+Max()}{UpdateMinAndMax()}}
-{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Update\+Min\+And\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily void A\+A\+B\+B\+::\+Update\+Min\+And\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -210,7 +280,7 @@ A\+A\+B\+Bの\+Class
 \end{DoxyRetVals}
 
 
- A\+A\+B\+B.\+h の 95 行目に定義があります。
+ A\+A\+B\+B.\+cpp の 87 行目に定義があります。
 
 
 
@@ -275,4 +345,5 @@ A\+A\+B\+Bの\+Class
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+A\+A\+B\+B/\mbox{\hyperlink{_a_a_b_b_8h}{A\+A\+B\+B.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+A\+A\+B\+B/\mbox{\hyperlink{_a_a_b_b_8h}{A\+A\+B\+B.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+A\+A\+B\+B/\mbox{\hyperlink{_a_a_b_b_8cpp}{A\+A\+B\+B.\+cpp}}\end{DoxyCompactItemize}

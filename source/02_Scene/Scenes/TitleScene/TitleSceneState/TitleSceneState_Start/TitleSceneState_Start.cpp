@@ -38,7 +38,7 @@ void TitleSceneState_Start::Init()
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->ChangeState(nullptr);
+		->GetCamera()->setState(nullptr);
 
 	// タイトルロゴ
 	TitleLogoFactory title_logo_factory;

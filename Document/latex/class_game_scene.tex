@@ -21,20 +21,20 @@ Game\+Scene の継承関係図\nopagebreak
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_game_scene_a25e9e82ce85255dac27cd6489751bd40}{Game\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$state)
-\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_game_scene_a56604f01c0fa914660c3d8b788a94405}{get\+Is\+Clear}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em クリアフラグ取得関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_scene_a1bd84ecb8d44bd5e57b4a2d772ef1bf9}{set\+Is\+Clear}} (bool value)
-\item 
+\begin{DoxyCompactList}\small\item\em クリアフラグ設定関数 \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_game_scene_a16b26b3b8ea91dcaf762292414bf5d6d}{get\+Score}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em スコア取得関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_scene_a853fefbf82ff85b9f34e325108ae7e3b}{set\+Score}} (int value)
-\item 
+\begin{DoxyCompactList}\small\item\em スコア設定関数 \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_game_scene_a2f8413f473bc9a937fa02bfd4678d61d}{get\+Game\+Over}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em ゲームオーバーフラグ取得関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}{set\+Game\+Over}} (int value)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em ゲームオーバーフラグ設定関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_scene_a25e9e82ce85255dac27cd6489751bd40}{Game\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -62,7 +62,7 @@ int \mbox{\hyperlink{class_game_scene_a92b5476dc1536c43b604bef51cc36c70}{game\+\
 \index{Game\+Scene@{Game\+Scene}!Game\+Scene@{Game\+Scene}}
 \index{Game\+Scene@{Game\+Scene}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{Game\+Scene()}{GameScene()}}
-{\footnotesize\ttfamily Game\+Scene\+::\+Game\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Game\+Scene\+::\+Game\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$}]{state }\end{DoxyParamCaption})}
 
 
 
@@ -75,7 +75,7 @@ int \mbox{\hyperlink{class_game_scene_a92b5476dc1536c43b604bef51cc36c70}{game\+\
 \end{DoxyParams}
 
 
- Game\+Scene.\+h の 44 行目に定義があります。
+ Game\+Scene.\+cpp の 65 行目に定義があります。
 
 
 
@@ -84,61 +84,145 @@ int \mbox{\hyperlink{class_game_scene_a92b5476dc1536c43b604bef51cc36c70}{game\+\
 \index{Game\+Scene@{Game\+Scene}!get\+Game\+Over@{get\+Game\+Over}}
 \index{get\+Game\+Over@{get\+Game\+Over}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{get\+Game\+Over()}{getGameOver()}}
-{\footnotesize\ttfamily int Game\+Scene\+::get\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Game\+Scene\+::get\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Game\+Scene.\+h の 51 行目に定義があります。
+ゲームオーバーフラグ取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & ゲームオーバーの有無 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+Scene.\+cpp の 48 行目に定義があります。
 
 \mbox{\Hypertarget{class_game_scene_a56604f01c0fa914660c3d8b788a94405}\label{class_game_scene_a56604f01c0fa914660c3d8b788a94405}} 
 \index{Game\+Scene@{Game\+Scene}!get\+Is\+Clear@{get\+Is\+Clear}}
 \index{get\+Is\+Clear@{get\+Is\+Clear}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{get\+Is\+Clear()}{getIsClear()}}
-{\footnotesize\ttfamily bool Game\+Scene\+::get\+Is\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Game\+Scene\+::get\+Is\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Game\+Scene.\+h の 47 行目に定義があります。
+クリアフラグ取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em bool} & クリアの有無 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+Scene.\+cpp の 20 行目に定義があります。
 
 \mbox{\Hypertarget{class_game_scene_a16b26b3b8ea91dcaf762292414bf5d6d}\label{class_game_scene_a16b26b3b8ea91dcaf762292414bf5d6d}} 
 \index{Game\+Scene@{Game\+Scene}!get\+Score@{get\+Score}}
 \index{get\+Score@{get\+Score}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{get\+Score()}{getScore()}}
-{\footnotesize\ttfamily int Game\+Scene\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Game\+Scene\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Game\+Scene.\+h の 49 行目に定義があります。
+スコア取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em int} & スコア値 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+Scene.\+cpp の 34 行目に定義があります。
 
 \mbox{\Hypertarget{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}\label{class_game_scene_abaefc8ae1bd5625d79da25120ef33a8e}} 
 \index{Game\+Scene@{Game\+Scene}!set\+Game\+Over@{set\+Game\+Over}}
 \index{set\+Game\+Over@{set\+Game\+Over}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{set\+Game\+Over()}{setGameOver()}}
-{\footnotesize\ttfamily void Game\+Scene\+::set\+Game\+Over (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Game\+Scene\+::set\+Game\+Over (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
 
 
 
- Game\+Scene.\+h の 52 行目に定義があります。
+ゲームオーバーフラグ設定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em value} & ゲームオーバーフラグ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+Scene.\+cpp の 55 行目に定義があります。
 
 \mbox{\Hypertarget{class_game_scene_a1bd84ecb8d44bd5e57b4a2d772ef1bf9}\label{class_game_scene_a1bd84ecb8d44bd5e57b4a2d772ef1bf9}} 
 \index{Game\+Scene@{Game\+Scene}!set\+Is\+Clear@{set\+Is\+Clear}}
 \index{set\+Is\+Clear@{set\+Is\+Clear}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{set\+Is\+Clear()}{setIsClear()}}
-{\footnotesize\ttfamily void Game\+Scene\+::set\+Is\+Clear (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Game\+Scene\+::set\+Is\+Clear (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
 
 
 
- Game\+Scene.\+h の 48 行目に定義があります。
+クリアフラグ設定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em value} & クリアフラグ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+Scene.\+cpp の 27 行目に定義があります。
 
 \mbox{\Hypertarget{class_game_scene_a853fefbf82ff85b9f34e325108ae7e3b}\label{class_game_scene_a853fefbf82ff85b9f34e325108ae7e3b}} 
 \index{Game\+Scene@{Game\+Scene}!set\+Score@{set\+Score}}
 \index{set\+Score@{set\+Score}!Game\+Scene@{Game\+Scene}}
 \subsubsection{\texorpdfstring{set\+Score()}{setScore()}}
-{\footnotesize\ttfamily void Game\+Scene\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Game\+Scene\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
 
 
 
- Game\+Scene.\+h の 50 行目に定義があります。
+スコア設定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em value} & スコア値 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Game\+Scene.\+cpp の 41 行目に定義があります。
 
 
 
@@ -189,4 +273,5 @@ int \mbox{\hyperlink{class_game_scene_a92b5476dc1536c43b604bef51cc36c70}{game\+\
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scenes/\+Game\+Scene/\mbox{\hyperlink{_game_scene_8h}{Game\+Scene.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scenes/\+Game\+Scene/\mbox{\hyperlink{_game_scene_8h}{Game\+Scene.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scenes/\+Game\+Scene/\mbox{\hyperlink{_game_scene_8cpp}{Game\+Scene.\+cpp}}\end{DoxyCompactItemize}

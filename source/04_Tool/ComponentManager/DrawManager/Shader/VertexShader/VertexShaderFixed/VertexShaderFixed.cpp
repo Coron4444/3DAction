@@ -13,7 +13,7 @@
 #include "VertexShaderFixed.h"
 #include "../../../Camera/Camera.h"
 
-#include <Component/Base/DrawBase/DrawBase.h>
+#include <Component/Draw/DrawBase/DrawBase.h>
 #include <Renderer/Renderer.h>
 #include <GameObjectManager/GameObjectManager.h>
 
@@ -65,12 +65,12 @@ void VertexShaderFixed::CommonSetting(DrawBase* draw, Camera* camera, unsigned o
 	ShaderBase::GetDevice()->SetRenderState(D3DRS_NORMALIZENORMALS, TRUE);
 
 	// 行列のセット
-	ShaderBase::GetDevice()->SetTransform(D3DTS_VIEW, camera->GetViewMatrix());
-	ShaderBase::GetDevice()->SetTransform(D3DTS_PROJECTION, camera->GetProjectionMatrix());
+	ShaderBase::GetDevice()->SetTransform(D3DTS_VIEW, camera->getpViewMatrix());
+	ShaderBase::GetDevice()->SetTransform(D3DTS_PROJECTION, camera->getpProjectionMatrix());
 	ShaderBase::GetDevice()->SetTransform(D3DTS_WORLD, draw->getpMatrix(object_index));
 	
 	// ライトセット
-	ShaderBase::GetDevice()->SetRenderState(D3DRS_LIGHTING, draw->getpDrawOrderList()->GetIsLighting());
+	ShaderBase::GetDevice()->SetRenderState(D3DRS_LIGHTING, draw->getpDrawOrderList()->getIsLighting());
 
 	// ライトの更新
 	UpdateDirectionalLignt();

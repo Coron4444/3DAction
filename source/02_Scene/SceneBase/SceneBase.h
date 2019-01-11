@@ -49,14 +49,14 @@ public:
 		//! @brief シーン取得関数
 		//! @details
 		//! @param void なし
-		//! @retval SceneBase* シーンポインタ
+		//! @retval SceneBase* シーン
 		//----------------------------------------
 		SceneBase* getpScene();
 
 		//----------------------------------------
 		//! @brief シーン設定関数
 		//! @details
-		//! @param[in] value シーンポインタ
+		//! @param *value シーン
 		//! @retval void なし
 		//----------------------------------------
 		void setScene(SceneBase* value);
@@ -71,7 +71,7 @@ public:
 		//! @details
 		//! @param void なし
 		//----------------------------------------
-		virtual ~StateBase() {}
+		virtual ~StateBase() = 0;
 
 		//----------------------------------------
 		//! @brief 初期化関数
@@ -120,33 +120,33 @@ private:
 //====================
 public:
 	//----------------------------------------
-	//! @brief シーンマネージャポインタ取得関数
+	//! @brief シーンマネージャ取得関数
 	//! @details
 	//! @param void なし
-	//! @retval SceneManager* シーンマネージャポインタ
+	//! @retval SceneManager* シーンマネージャ
 	//----------------------------------------
 	SceneManager* getpSceneManager();
 
 	//----------------------------------------
-	//! @brief シーンマネージャポインタ設定関数
+	//! @brief シーンマネージャ設定関数
 	//! @details
-	//! @param[in] value シーンマネージャポインタ
+	//! @param *value シーンマネージャ
 	//! @retval void なし
 	//----------------------------------------
 	void setSceneManager(SceneManager* value);
 
 	//----------------------------------------
-	//! @brief ステートポインタ取得関数
+	//! @brief ステート取得関数
 	//! @details
 	//! @param void なし
-	//! @retval StateBase* ステートポインタ
+	//! @retval StateBase* ステート
 	//----------------------------------------
 	StateBase* getpState();
 
 	//----------------------------------------
-	//! @brief ステートポインタ設定関数
+	//! @brief ステート設定関数
 	//! @details
-	//! @param[in] value ステートポインタ
+	//! @param *value ステート
 	//! @retval void なし
 	//----------------------------------------
 	void setState(StateBase* value);
@@ -159,7 +159,7 @@ public:
 	//----------------------------------------
 	//! @brief コンストラクタ
 	//! @details
-	//! @param[in] state 最初のステート
+	//! @param *state 最初のステート
 	//----------------------------------------
 	SceneBase(StateBase* state);
 

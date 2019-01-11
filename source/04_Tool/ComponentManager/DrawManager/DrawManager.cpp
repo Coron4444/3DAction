@@ -13,7 +13,7 @@
 #include "DrawManager.h"
 #include "ShaderManager/ShaderManager.h"
 
-#include <Component/Base/DrawBase/DrawBase.h>
+#include <Component/Draw/DrawBase/DrawBase.h>
 #include <GameObjectBase/GameObjectBase.h>
 
 #include <Renderer/Renderer.h>
@@ -272,7 +272,7 @@ void DrawManager::DistributeDrawBase()
 	for (unsigned i = 0; i < all_draw_.GetEndPointer(); i++)
 	{
 		// バックバッファ
-		if (all_draw_.GetArrayObject(i)->getpDrawOrderList()->GetRenderTargetFlag()
+		if (all_draw_.GetArrayObject(i)->getpDrawOrderList()->getpRenderTargetFlag()
 			->CheckAny(DrawOrderList::RENDER_TARGET_BACK_BUFFER))
 		{
 			back_buffer_->AddDrawBaseToArray(all_draw_.GetArrayObject(i));

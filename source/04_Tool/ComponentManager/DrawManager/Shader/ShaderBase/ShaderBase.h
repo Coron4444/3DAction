@@ -14,7 +14,7 @@
 // インクルード文
 //****************************************
 #include <Renderer/Renderer.h>
-#include <Component/Base/DrawBase/DrawBase.h>
+#include <Component/Draw/DrawBase/DrawBase.h>
 #include <ComponentManager/DrawManager/Camera/Camera.h>
 
 #include <SafeRelease/SafeRelease.h>

@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    バックバッファークラス
-//    Author : Araki Kai                                作成日 : 2018/11/12
-//
+//!	@file	 BackBuffer.cpp
+//!	@brief	 バックバッファーClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
 
 
@@ -11,8 +11,12 @@
 // インクルード文
 //****************************************
 #include "BackBuffer.h"
+
+#include "../../Fade/Fade.h"
+#include "../../Camera/Camera.h"
+
 #include "../../ShaderManager/ShaderManager.h"
-#include <Component/Base/DrawBase/DrawBase.h>
+#include <Component/Draw/DrawBase/DrawBase.h>
 #include <Effekseer/EffekseerManager/EffekseerManager.h>
 #include <GameObjectBase/GameObjectBase.h>
 
@@ -21,14 +25,26 @@
 #include <Renderer/Renderer.h>
 #include <SafeRelease/SafeRelease.h>
 
+//****************************************
+// プロパティ定義
+//****************************************
+Camera* BackBuffer::getpCamera() 
+{
+	return camera_; 
+}
+
+
+
+void BackBuffer::setShaderManager(ShaderManager* value) 
+{
+	shader_manager_ = value; 
+}
+
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void BackBuffer::Init()
 {
 	ResetAllArray();
@@ -61,9 +77,6 @@ void BackBuffer::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void BackBuffer::Uninit()
 {
 	ResetAllArray();
@@ -81,9 +94,6 @@ void BackBuffer::Uninit()
 
 
 
-//--------------------------------------------------
-// +シーン変更時の終了関数
-//--------------------------------------------------
 void BackBuffer::UninitWhenChangeScene()
 {
 	ResetAllArray();
@@ -93,9 +103,6 @@ void BackBuffer::UninitWhenChangeScene()
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void BackBuffer::Update()
 {
 	// カメラの更新
@@ -114,18 +121,15 @@ void BackBuffer::Update()
 	if (is_fade_) fade_->Update();
 
 	// エフェクシアの更新
-	EffekseerManager::CreateProjectionMatrix(camera_->GetAngleOfView());
-	EffekseerManager::CreateViewMatrix(*camera_->GetPositon(),
-									   *camera_->GetLookAtPoint(),
-									   *camera_->GetUp());
+	EffekseerManager::CreateProjectionMatrix(camera_->getAngleOfView());
+	EffekseerManager::CreateViewMatrix(*camera_->getpPositon(),
+									   *camera_->getpLookAtPoint(),
+									   *camera_->getpUp());
 	EffekseerManager::Update();
 }
 
 
 
-//--------------------------------------------------
-// +描画関数
-//--------------------------------------------------
 void BackBuffer::Draw()
 {
 	// レンダーターゲットの切り替え
@@ -135,7 +139,7 @@ void BackBuffer::Draw()
 	bool is_begin = Renderer::getpInstance()->DrawBegin();
 
 	// 不透明オブジェクト
-	camera_->SetType(Camera::Type::PERSPECTIVE);
+	camera_->setType(Camera::Type::PERSPECTIVE);
 	for (unsigned i = 0; i < all_opacity_draw_.GetEndPointer(); i++)
 	{
 		// シェーダーをセット
@@ -215,7 +219,7 @@ void BackBuffer::Draw()
 	EffekseerManager::Draw();
 
 	// 2D
-	camera_->SetType(Camera::Type::TWO_DIMENSIONAL);
+	camera_->setType(Camera::Type::TWO_DIMENSIONAL);
 	for (unsigned i = 0; i < all_2D_draw_.GetEndPointer(); i++)
 	{
 		// シェーダーをセット
@@ -308,12 +312,9 @@ void BackBuffer::Draw()
 
 
 
-//--------------------------------------------------
-// +描画基底クラスの追加関数
-//--------------------------------------------------
 void BackBuffer::AddDrawBaseToArray(DrawBase* draw)
 {
-	switch (draw->getpDrawOrderList()->GetDrawType())
+	switch (draw->getpDrawOrderList()->getDrawType())
 	{
 		case DrawOrderList::DrawType::OPACITY:
 		{
@@ -335,9 +336,6 @@ void BackBuffer::AddDrawBaseToArray(DrawBase* draw)
 
 
 
-//--------------------------------------------------
-// +全配列のリセット関数
-//--------------------------------------------------
 void BackBuffer::ResetAllArray()
 {
 	all_opacity_draw_.ResetArray();
@@ -347,9 +345,6 @@ void BackBuffer::ResetAllArray()
 
 
 
-//--------------------------------------------------
-// +フェード初期化関数
-//--------------------------------------------------
 void BackBuffer::InitFade(Fade::Type type, Fade::State state, Vec2 size,
 						  XColor4 fade_color, float fade_speed)
 {
@@ -362,9 +357,6 @@ void BackBuffer::InitFade(Fade::Type type, Fade::State state, Vec2 size,
 
 
 
-//--------------------------------------------------
-// +フェード終了関数
-//--------------------------------------------------
 void BackBuffer::UninitFade()
 {
 	// フェードの終了処理
@@ -376,9 +368,6 @@ void BackBuffer::UninitFade()
 
 
 
-//--------------------------------------------------
-// -透明描画基底クラスのソート関数 
-//--------------------------------------------------
 void BackBuffer::SortTransparent()
 {
 	// 透明オブジェクトがあるかどうか
@@ -388,7 +377,7 @@ void BackBuffer::SortTransparent()
 	{
 		// 深度値を算出
 		Vector3D temp_vector0 = *all_transparency_draw_.GetArrayObject(i)->getpGameObject()
-			->GetTransform()->GetPosition() - *camera_->GetPositon();
+			->GetTransform()->GetPosition() - *camera_->getpPositon();
 
 		float depth_value0 = temp_vector0.GetLengthSquare();
 
@@ -396,7 +385,7 @@ void BackBuffer::SortTransparent()
 		{
 			// 深度値を算出
 			Vector3D temp_vector1 = *all_transparency_draw_.GetArrayObject(j)
-				->getpGameObject()->GetTransform()->GetPosition() - *camera_->GetPositon();
+				->getpGameObject()->GetTransform()->GetPosition() - *camera_->getpPositon();
 
 			float depth_value1 = temp_vector1.GetLengthSquare();
 
@@ -412,9 +401,6 @@ void BackBuffer::SortTransparent()
 
 
 
-//--------------------------------------------------
-// -2D描画基底クラスのソート関数 
-//--------------------------------------------------
 void BackBuffer::Sort2D()
 {
 	// 2Dオブジェクトがあるかどうか
@@ -424,8 +410,8 @@ void BackBuffer::Sort2D()
 	{
 		for (unsigned j = i + 1; j < all_2D_draw_.GetEndPointer(); j++)
 		{
-			if (all_2D_draw_.GetArrayObject(i)->getpDrawOrderList()->GetLayerNum()
-		> all_2D_draw_.GetArrayObject(j)->getpDrawOrderList()->GetLayerNum())
+			if (all_2D_draw_.GetArrayObject(i)->getpDrawOrderList()->getLayerNum()
+		> all_2D_draw_.GetArrayObject(j)->getpDrawOrderList()->getLayerNum())
 			{
 				// 並び替え
 				all_2D_draw_.SortTheTwoObject(i, j);
@@ -436,13 +422,10 @@ void BackBuffer::Sort2D()
 
 
 
-//--------------------------------------------------
-// -ビルボード用行列変更関数
-//--------------------------------------------------
 void BackBuffer::SetBillboardMatrix(DrawBase* draw)
 {
 	// ビュー行列の転置行列をセット
-	draw->getpGameObject()->GetTransform()->UpdateTransposeMatrix(camera_->GetViewMatrix());
+	draw->getpGameObject()->GetTransform()->UpdateTransposeMatrix(camera_->getpViewMatrix());
 
 	// 平行成分をカット
 	draw->getpGameObject()->GetTransform()->TransposeMatrixTranslationOff();
@@ -453,18 +436,15 @@ void BackBuffer::SetBillboardMatrix(DrawBase* draw)
 
 
 
-//--------------------------------------------------
-// -全ビルボード更新関数
-//--------------------------------------------------
 void BackBuffer::AllBillboardUpdate()
 {
-	camera_->SetType(Camera::Type::PERSPECTIVE);
+	camera_->setType(Camera::Type::PERSPECTIVE);
 
 	// 不透明オブジェクト
 	for (unsigned i = 0; i < all_opacity_draw_.GetEndPointer(); i++)
 	{
 		if (!all_opacity_draw_.GetArrayObject(i)->getpDrawOrderList()
-			->GetIsBillboard()) continue;
+			->getIsBillboard()) continue;
 		SetBillboardMatrix(all_opacity_draw_.GetArrayObject(i));
 	}
 
@@ -472,24 +452,21 @@ void BackBuffer::AllBillboardUpdate()
 	for (unsigned i = 0; i < all_transparency_draw_.GetEndPointer(); i++)
 	{
 		if (!all_transparency_draw_.GetArrayObject(i)->getpDrawOrderList()
-			->GetIsBillboard()) continue;
+			->getIsBillboard()) continue;
 		SetBillboardMatrix(all_transparency_draw_.GetArrayObject(i));
 	}
 }
 
 
 
-//--------------------------------------------------
-// -フェード描画関数
-//--------------------------------------------------
 void BackBuffer::FadeDraw()
 {
 	// 描画
-	switch (*fade_->GetType())
+	switch (*fade_->getpType())
 	{
 		case Fade::Type::TYPE_NORMAL:
 		{
-			camera_->SetType(Camera::Type::TWO_DIMENSIONAL);
+			camera_->setType(Camera::Type::TWO_DIMENSIONAL);
 			// シェーダーをセット
 			shader_manager_->SetShader(fade_,
 									   ShaderManager::VertexShaderType::VERTEX_NONE,

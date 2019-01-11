@@ -16,7 +16,7 @@
 #include <main.h>
 #include <SafeRelease/SafeRelease.h>
 #include <GameObjectManager\GameObjectManager.h>
-#include <ResourceManager\ResourceManager.h>
+#include <Texture/TextureManager/TextureManager.h>
 
 
 
@@ -126,7 +126,7 @@ void SceneManager::Init(SceneBase* scene)
 	common_data_->Reset();
 
 	// リソースの初期化
-	ResourceManager::InitAllData();
+	TextureManager::getpInstance()->Init();
 
 	// ゲームオブジェクトマネージャの初期化
 	GameObjectManager::Init();
@@ -149,7 +149,7 @@ void SceneManager::Uninit()
 	GameObjectManager::Uninit();
 
 	// リソースの終了処理
-	ResourceManager::UninitAllData();
+	TextureManager::getpInstance()->Uninit();
 
 	// 各種開放
 	SafeRelease::Normal(&current_scene_);
@@ -234,9 +234,6 @@ void SceneManager::SceneChange()
 
 		// ゲームオブジェクトマネージャのシーン変更時終了処理
 		GameObjectManager::UninitWhenChangeScene();
-
-		// 固有リソースの解放
-		ResourceManager::UninitUniqueData();
 
 		// 新しいシーンへ移行
 		current_scene_ = next_scene_;

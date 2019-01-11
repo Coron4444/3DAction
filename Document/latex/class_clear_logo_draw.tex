@@ -28,13 +28,13 @@ void \mbox{\hyperlink{class_clear_logo_draw_aa73db5b701e644f8e552ddb254a0a9aa}{U
 void \mbox{\hyperlink{class_clear_logo_draw_ab018f370071f370ae7016d8ee402c456}{Draw}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
 \begin{DoxyCompactList}\small\item\em 描画関数 \end{DoxyCompactList}\item 
 unsigned \mbox{\hyperlink{class_clear_logo_draw_a257f34e6f8325580f7df835f20d2ebb4}{get\+Mesh\+Num}} (unsigned object\+\_\+index) override
-\item 
+\begin{DoxyCompactList}\small\item\em メッシュ数取得関数 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{_vector3_d_8h_a032295cd9fb1b711757c90667278e744}{M\+A\+T\+R\+IX}} $\ast$ \mbox{\hyperlink{class_clear_logo_draw_abcbd0cd8663e0262bcdd83356516082b}{getp\+Matrix}} (unsigned object\+\_\+index) override
-\item 
+\begin{DoxyCompactList}\small\item\em 行列ポインタ取得関数 \end{DoxyCompactList}\item 
 D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9 $\ast$ \mbox{\hyperlink{class_clear_logo_draw_a6273330249f20ddcde3a2ab97c1bdca2}{getp\+Material}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
-\item 
+\begin{DoxyCompactList}\small\item\em マテリアルポインタ取得関数 \end{DoxyCompactList}\item 
 L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9 \mbox{\hyperlink{class_clear_logo_draw_ae67f9779fb2f9aa05d55c2167a36ddb0}{getp\+Decale\+Texture}} (unsigned object\+\_\+index, unsigned mesh\+\_\+index) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em デカールテクスチャポインタ取得関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -78,7 +78,7 @@ static const float \mbox{\hyperlink{class_clear_logo_draw_afdf263982add6dd6b8ac1
 \end{DoxyParams}
 
 
-\mbox{\hyperlink{class_draw_null_afe50f6fd820b18d673f70f048743f339}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a72ac0b7dc40b1469582419dcc5b0e114}{Draw\+Null}}を再実装しています。
 
 
 
@@ -92,7 +92,21 @@ static const float \mbox{\hyperlink{class_clear_logo_draw_afdf263982add6dd6b8ac1
 
 
 
-\mbox{\hyperlink{class_draw_null_a7586cc78eed6bcaf2972ad7a6a70e665}{Draw\+Null}}を再実装しています。
+メッシュ数取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em unsigned} & メッシュ数 \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_draw_null_a4c566a37d27fac3dcf76c7970443f375}{Draw\+Null}}を再実装しています。
 
 
 
@@ -106,7 +120,23 @@ static const float \mbox{\hyperlink{class_clear_logo_draw_afdf263982add6dd6b8ac1
 
 
 
-\mbox{\hyperlink{class_draw_null_a2dfa2d2cbb66249f933420a38e9cadad}{Draw\+Null}}を再実装しています。
+デカールテクスチャポインタ取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+index} & メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em L\+P\+D\+I\+R\+E\+C\+T3\+D\+T\+E\+X\+T\+U\+R\+E9} & デカールテクスチャポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_draw_null_a87d21f70b6fed637a6e23029f29818c1}{Draw\+Null}}を再実装しています。
 
 
 
@@ -120,7 +150,23 @@ static const float \mbox{\hyperlink{class_clear_logo_draw_afdf263982add6dd6b8ac1
 
 
 
-\mbox{\hyperlink{class_draw_null_aa07d7e89e723b68ec257da0f63d43f70}{Draw\+Null}}を再実装しています。
+マテリアルポインタ取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\mbox{\tt in}  & {\em mesh\+\_\+index} & メッシュインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em D3\+D\+M\+A\+T\+E\+R\+I\+A\+L9$\ast$} & マテリアルポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_draw_null_a0c1efe55fea325ad277594be6fe1e938}{Draw\+Null}}を再実装しています。
 
 
 
@@ -134,7 +180,21 @@ static const float \mbox{\hyperlink{class_clear_logo_draw_afdf263982add6dd6b8ac1
 
 
 
-\mbox{\hyperlink{class_draw_null_a001901c340671106a33d44b9d4aef4c4}{Draw\+Null}}を再実装しています。
+行列ポインタ取得関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em object\+\_\+index} & オブジェクトインデックス \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em M\+A\+T\+R\+I\+X$\ast$} & 行列ポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+\mbox{\hyperlink{class_draw_null_a9aac059eb3b5d1f77e8bd3aa0647cff9}{Draw\+Null}}を再実装しています。
 
 
 
@@ -152,7 +212,7 @@ static const float \mbox{\hyperlink{class_clear_logo_draw_afdf263982add6dd6b8ac1
 
 
 
-\mbox{\hyperlink{class_draw_null_acd7fef3ccea1da537ac9507ffbb6dd2e}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a20aef1e54c1a158b741bfd731e18efdf}{Draw\+Null}}を再実装しています。
 
 
 
@@ -170,7 +230,7 @@ static const float \mbox{\hyperlink{class_clear_logo_draw_afdf263982add6dd6b8ac1
 
 
 
-\mbox{\hyperlink{class_draw_null_a12d44e341c7364b5ab9cdd661dc16187}{Draw\+Null}}を再実装しています。
+\mbox{\hyperlink{class_draw_null_a6e81d63efab7333e8d0e8af99362a4d9}{Draw\+Null}}を再実装しています。
 
 
 

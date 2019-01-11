@@ -21,23 +21,23 @@ Collision\+Null の継承関係図\nopagebreak
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3}{$\sim$\+Collision\+Null}} ()
+virtual \mbox{\hyperlink{class_collision_null_a8cbc0114a4dcc343635787d50c6ce007}{$\sim$\+Collision\+Null}} ()
 \begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_af5db1d080c1c0c5a1199062850d8a2ff}{Init}} () override
+virtual void \mbox{\hyperlink{class_collision_null_a18cfc21fefcd3e8dec380ac44a85f111}{Init}} () override
 \begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}{Uninit}} () override
+virtual void \mbox{\hyperlink{class_collision_null_aafac3fdab43845465fd1e0198c423ccf}{Uninit}} () override
 \begin{DoxyCompactList}\small\item\em 終了関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}{Update}} ()
+virtual void \mbox{\hyperlink{class_collision_null_ad6ac0e9b06fcb4e3d19a5c3c1cadfe7e}{Update}} () override
 \begin{DoxyCompactList}\small\item\em 更新関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_a3ee0dacfb13c949538519f39d2f6fb0f}{Debug\+Display}} ()
+virtual void \mbox{\hyperlink{class_collision_null_a098fcf2c8ecc3c31706b720fbe852aca}{Debug\+Display}} () override
 \begin{DoxyCompactList}\small\item\em デバッグ表示関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_a580f507d8918865679feec3cc7b613d1}{Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object)
+virtual void \mbox{\hyperlink{class_collision_null_a2bb1c8ca023aada97055256e033d823e}{Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object) override
 \begin{DoxyCompactList}\small\item\em 衝突時関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}{Not\+Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object)
+virtual void \mbox{\hyperlink{class_collision_null_aad9ac22b94ed4365c15aad56858ba37a}{Not\+Hit\+Collision}} (\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$hit\+\_\+collision, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+object, \mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$hit\+\_\+my\+\_\+object) override
 \begin{DoxyCompactList}\small\item\em 非衝突時関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}{Hit\+Ground}} (float position\+\_\+y)
+virtual void \mbox{\hyperlink{class_collision_null_ac5645bca5f03262d1918e2ff8348440d}{Hit\+Ground}} (float position\+\_\+y) override
 \begin{DoxyCompactList}\small\item\em フィールドとの衝突時関数 \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce7911}{Not\+Hit\+Ground}} (float position\+\_\+y)
+virtual void \mbox{\hyperlink{class_collision_null_a77004653a17a43a8a4809297e6c71422}{Not\+Hit\+Ground}} (float position\+\_\+y) override
 \begin{DoxyCompactList}\small\item\em フィールドとの非衝突時関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{その他の継承メンバ}
 
@@ -52,11 +52,11 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 \subsection{構築子と解体子}
-\mbox{\Hypertarget{class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3}\label{class_collision_null_a2eaef584b2ae2c4062df8bf3a6533fb3}} 
+\mbox{\Hypertarget{class_collision_null_a8cbc0114a4dcc343635787d50c6ce007}\label{class_collision_null_a8cbc0114a4dcc343635787d50c6ce007}} 
 \index{Collision\+Null@{Collision\+Null}!````~Collision\+Null@{$\sim$\+Collision\+Null}}
 \index{````~Collision\+Null@{$\sim$\+Collision\+Null}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{$\sim$\+Collision\+Null()}{~CollisionNull()}}
-{\footnotesize\ttfamily virtual Collision\+Null\+::$\sim$\+Collision\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily Collision\+Null\+::$\sim$\+Collision\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -69,16 +69,16 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 \end{DoxyParams}
 
 
- Collision\+Null.\+h の 34 行目に定義があります。
+ Collision\+Null.\+cpp の 19 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_collision_null_a3ee0dacfb13c949538519f39d2f6fb0f}\label{class_collision_null_a3ee0dacfb13c949538519f39d2f6fb0f}} 
+\mbox{\Hypertarget{class_collision_null_a098fcf2c8ecc3c31706b720fbe852aca}\label{class_collision_null_a098fcf2c8ecc3c31706b720fbe852aca}} 
 \index{Collision\+Null@{Collision\+Null}!Debug\+Display@{Debug\+Display}}
 \index{Debug\+Display@{Debug\+Display}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Debug\+Display()}{DebugDisplay()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Debug\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Debug\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -100,13 +100,13 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 72 行目に定義があります。
+ Collision\+Null.\+cpp の 49 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_null_a580f507d8918865679feec3cc7b613d1}\label{class_collision_null_a580f507d8918865679feec3cc7b613d1}} 
+\mbox{\Hypertarget{class_collision_null_a2bb1c8ca023aada97055256e033d823e}\label{class_collision_null_a2bb1c8ca023aada97055256e033d823e}} 
 \index{Collision\+Null@{Collision\+Null}!Hit\+Collision@{Hit\+Collision}}
 \index{Hit\+Collision@{Hit\+Collision}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Hit\+Collision()}{HitCollision()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -136,13 +136,13 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 81 行目に定義があります。
+ Collision\+Null.\+cpp の 55 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}\label{class_collision_null_a75900c2cec4e49336701e2e3c64e5bfe}} 
+\mbox{\Hypertarget{class_collision_null_ac5645bca5f03262d1918e2ff8348440d}\label{class_collision_null_ac5645bca5f03262d1918e2ff8348440d}} 
 \index{Collision\+Null@{Collision\+Null}!Hit\+Ground@{Hit\+Ground}}
 \index{Hit\+Ground@{Hit\+Ground}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Hit\+Ground()}{HitGround()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Hit\+Ground (\begin{DoxyParamCaption}\item[{float}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Hit\+Ground (\begin{DoxyParamCaption}\item[{float}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -168,13 +168,13 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 113 行目に定義があります。
+ Collision\+Null.\+cpp の 79 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_null_af5db1d080c1c0c5a1199062850d8a2ff}\label{class_collision_null_af5db1d080c1c0c5a1199062850d8a2ff}} 
+\mbox{\Hypertarget{class_collision_null_a18cfc21fefcd3e8dec380ac44a85f111}\label{class_collision_null_a18cfc21fefcd3e8dec380ac44a85f111}} 
 \index{Collision\+Null@{Collision\+Null}!Init@{Init}}
 \index{Init@{Init}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -200,13 +200,13 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 44 行目に定義があります。
+ Collision\+Null.\+cpp の 26 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}\label{class_collision_null_aba2a574ab42dca618c41dd0b9562f614}} 
+\mbox{\Hypertarget{class_collision_null_aad9ac22b94ed4365c15aad56858ba37a}\label{class_collision_null_aad9ac22b94ed4365c15aad56858ba37a}} 
 \index{Collision\+Null@{Collision\+Null}!Not\+Hit\+Collision@{Not\+Hit\+Collision}}
 \index{Not\+Hit\+Collision@{Not\+Hit\+Collision}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Not\+Hit\+Collision()}{NotHitCollision()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Not\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Not\+Hit\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_base}{Collision\+Base}} $\ast$}]{hit\+\_\+collision,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+object,  }\item[{\mbox{\hyperlink{class_collision_object}{Collision\+Object}} $\ast$}]{hit\+\_\+my\+\_\+object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -236,13 +236,13 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 98 行目に定義があります。
+ Collision\+Null.\+cpp の 67 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce7911}\label{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce7911}} 
+\mbox{\Hypertarget{class_collision_null_a77004653a17a43a8a4809297e6c71422}\label{class_collision_null_a77004653a17a43a8a4809297e6c71422}} 
 \index{Collision\+Null@{Collision\+Null}!Not\+Hit\+Ground@{Not\+Hit\+Ground}}
 \index{Not\+Hit\+Ground@{Not\+Hit\+Ground}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Not\+Hit\+Ground()}{NotHitGround()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Not\+Hit\+Ground (\begin{DoxyParamCaption}\item[{float}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Not\+Hit\+Ground (\begin{DoxyParamCaption}\item[{float}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -264,13 +264,13 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 120 行目に定義があります。
+ Collision\+Null.\+cpp の 86 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}\label{class_collision_null_a7c6d0ec502efc55e2f406415451152f5}} 
+\mbox{\Hypertarget{class_collision_null_aafac3fdab43845465fd1e0198c423ccf}\label{class_collision_null_aafac3fdab43845465fd1e0198c423ccf}} 
 \index{Collision\+Null@{Collision\+Null}!Uninit@{Uninit}}
 \index{Uninit@{Uninit}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Uninit()}{Uninit()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -296,13 +296,13 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 51 行目に定義があります。
+ Collision\+Null.\+cpp の 32 行目に定義があります。
 
-\mbox{\Hypertarget{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}\label{class_collision_null_a5e5e094e3fbe3ccc0515e485c739bd15}} 
+\mbox{\Hypertarget{class_collision_null_ad6ac0e9b06fcb4e3d19a5c3c1cadfe7e}\label{class_collision_null_ad6ac0e9b06fcb4e3d19a5c3c1cadfe7e}} 
 \index{Collision\+Null@{Collision\+Null}!Update@{Update}}
 \index{Update@{Update}!Collision\+Null@{Collision\+Null}}
 \subsubsection{\texorpdfstring{Update()}{Update()}}
-{\footnotesize\ttfamily virtual void Collision\+Null\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Collision\+Null\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -328,10 +328,11 @@ virtual void \mbox{\hyperlink{class_collision_null_ad456a03a3e3d55d8d408b7ed28ce
 
 
 
- Collision\+Null.\+h の 65 行目に定義があります。
+ Collision\+Null.\+cpp の 43 行目に定義があります。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Null/\mbox{\hyperlink{_collision_null_8h}{Collision\+Null.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Null/\mbox{\hyperlink{_collision_null_8h}{Collision\+Null.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Null/\mbox{\hyperlink{_collision_null_8cpp}{Collision\+Null.\+cpp}}\end{DoxyCompactItemize}

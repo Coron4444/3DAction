@@ -1,0 +1,22 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/FailureLogo" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ff402b2aefec1efb71a201303f0e2667 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="UI" fontname="Helvetica", fontsize="10", URL="dir_ff402b2aefec1efb71a201303f0e2667.html"]
+  subgraph clusterdir_88411ae733fd0d27b8a602848e808527 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_88411ae733fd0d27b8a602848e808527.html"];
+    dir_88411ae733fd0d27b8a602848e808527 [shape=plaintext label="FailureLogo"];
+    dir_02223daf35f039835567255e8e4246b9 [shape=box label="FailureLogoDraw" color="black" fillcolor="white" style="filled" URL="dir_02223daf35f039835567255e8e4246b9.html"];
+    dir_fb2af91d973e0d59f4c252082c8e7eed [shape=box label="FailureLogoFactory" color="black" fillcolor="white" style="filled" URL="dir_fb2af91d973e0d59f4c252082c8e7eed.html"];
+  }
+  }
+  dir_6e58c436369e4a795ef16d3c489c4702 [shape=box label="05_Resource" fillcolor="white" style="filled" color="red" URL="dir_6e58c436369e4a795ef16d3c489c4702.html"];
+  dir_48bb4aacea20c6a8378e1408d864b090 [shape=box label="04_Tool" fillcolor="white" style="filled" color="red" URL="dir_48bb4aacea20c6a8378e1408d864b090.html"];
+  dir_6e58c436369e4a795ef16d3c489c4702->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="9", labeldistance=1.5 headhref="dir_000158_000080.html"];
+  dir_02223daf35f039835567255e8e4246b9->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="1", labeldistance=1.5 headhref="dir_000034_000158.html"];
+  dir_02223daf35f039835567255e8e4246b9->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="2", labeldistance=1.5 headhref="dir_000034_000080.html"];
+  dir_fb2af91d973e0d59f4c252082c8e7eed->dir_02223daf35f039835567255e8e4246b9 [headlabel="1", labeldistance=1.5 headhref="dir_000035_000034.html"];
+  dir_88411ae733fd0d27b8a602848e808527->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="4", labeldistance=1.5 headhref="dir_000033_000080.html"];
+  dir_48bb4aacea20c6a8378e1408d864b090->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="9", labeldistance=1.5 headhref="dir_000080_000158.html"];
+}

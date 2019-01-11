@@ -1,0 +1,11 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/ClearLogo/ClearLogoFactory" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_514503a48bf34fcc5ac4dce330aa4095 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ClearLogo" fontname="Helvetica", fontsize="10", URL="dir_514503a48bf34fcc5ac4dce330aa4095.html"]
+  dir_66bff537f17623208a747646eb929bd0 [shape=box, label="ClearLogoFactory", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_66bff537f17623208a747646eb929bd0.html"];
+  }
+  dir_15b90ab4432c2725075ebfdddca87e71 [shape=box label="ClearLogoDraw" URL="dir_15b90ab4432c2725075ebfdddca87e71.html"];
+  dir_66bff537f17623208a747646eb929bd0->dir_15b90ab4432c2725075ebfdddca87e71 [headlabel="1", labeldistance=1.5 headhref="dir_000032_000031.html"];
+}

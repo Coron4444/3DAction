@@ -35,8 +35,8 @@ const float GoalCollision::SUBSTANCE_RADIUS = 1.0f;
 //--------------------------------------------------
 void GoalCollision::Init()
 {
-	// ステート
-	CollisionBase::setState(CollisionBase::State::GOAL);
+	// タイプ
+	CollisionBase::setType(CollisionBase::Type::GOAL);
 
 	// 複数衝突オブジェクト
 	collision_objects_ = new CollisionObjects();

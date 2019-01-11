@@ -37,11 +37,11 @@ public:
 	//----------------------------------------
 	//! @brief 初期化関数
 	//! @details
-	//! @param[in] hInstance	  インスタンスハンドル
-	//! @param[in] hWnd			  Windowsハンドル
-	//! @param[in] is_full_screen フルスクリーンフラグ
-	//! @param[in] window_width	  ウィンドウ幅
-	//! @param[in] window_height  ウィンドウ高さ
+	//! @param hInstance	  インスタンスハンドル
+	//! @param hWnd			  Windowsハンドル
+	//! @param is_full_screen フルスクリーンフラグ
+	//! @param window_width	  ウィンドウ幅
+	//! @param window_height  ウィンドウ高さ
 	//! @retval bool 初期化成功の有無
 	//----------------------------------------
 	virtual bool Init(HINSTANCE hInstance, HWND hWnd, BOOL is_full_screen,
@@ -66,7 +66,7 @@ public:
 	//----------------------------------------
 	//! @brief 描画終了関数
 	//! @details
-	//! @param[in] is_begin_scene 描画開始成功フラグ
+	//! @param is_begin_scene 描画開始成功フラグ
 	//! @retval void なし
 	//----------------------------------------
 	virtual void DrawEnd(bool is_begin_scene) = 0;

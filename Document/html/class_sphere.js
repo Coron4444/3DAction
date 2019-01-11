@@ -1,7 +1,7 @@
 var class_sphere =
 [
     [ "Sphere", "class_sphere.html#a890a63ff583cb88e7ec4e840b4ef5eb9", null ],
-    [ "getpPosition", "class_sphere.html#a9fd8492659b335541af8a2f56f14e1b1", null ],
+    [ "getpPosition", "class_sphere.html#ad1885bd0628ecd509ea2a61918875bd1", null ],
     [ "getRadius", "class_sphere.html#a330dd34c7c7b6dfff106c4c71ec80028", null ],
     [ "Init", "class_sphere.html#aa0c93894c5dad170bd65f1cec3493c37", null ],
     [ "setRadius", "class_sphere.html#ad813f5d3e9da96cf1111aedec4ec9b5f", null ],

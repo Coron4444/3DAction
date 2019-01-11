@@ -12,9 +12,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include <assert.h>
-
-#include "../../Base/UpdateBase/UpdateBase.h"
+#include "../UpdateBase/UpdateBase.h"
 
 
 
@@ -31,44 +29,50 @@ class UpdateNull : public UpdateBase
 public:
 	//----------------------------------------
 	//! @brief 仮想デストラクタ
+	//! @details 
 	//! @param void なし
 	//----------------------------------------
-	virtual ~UpdateNull() {}
+	virtual ~UpdateNull();
 
 	//----------------------------------------
 	//! @brief 初期化関数
+	//! @details 
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void Init() override {}
+	virtual void Init() override;
 
 	//----------------------------------------
 	//! @brief 終了関数
+	//! @details 
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void Uninit() override {}
+	virtual void Uninit() override;
 
 	//----------------------------------------
 	//! @brief 更新関数
+	//! @details 
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void Update() {}
+	virtual void Update();
 
 	//----------------------------------------
 	//! @brief デバッグ表示関数
+	//! @details 
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void DebugDisplay() {}
+	virtual void DebugDisplay();
 
 	//----------------------------------------
 	//! @brief 後更新関数
+	//! @details 
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	virtual void LateUpdate() {}
+	virtual void LateUpdate();
 };
 
 

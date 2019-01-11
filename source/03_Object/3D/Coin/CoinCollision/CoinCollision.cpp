@@ -48,8 +48,8 @@ const float CoinCollision::SUBSTANCE_FORWARD = 1.0f;
 
 void CoinCollision::Init()
 {
-	// ステート
-	CollisionBase::setState(CollisionBase::State::COIN);
+	// タイプ
+	CollisionBase::setType(CollisionBase::Type::COIN);
 
 	// 複数衝突オブジェクト
 	collision_objects_ = new CollisionObjects();

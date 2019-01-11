@@ -21,12 +21,12 @@ Tutorial\+Scene の継承関係図\nopagebreak
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_tutorial_scene_a90f8c010bd72aa3dae61a5294fdfbeb7}{Tutorial\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$state)
-\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ \mbox{\hyperlink{class_tutorial_scene_a57c95d200431cec7839384f0228c831e}{getp\+Tutorial\+Logo}} ()
-\item 
+\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ \mbox{\hyperlink{class_tutorial_scene_a9f1a224f8864ccd5ddfe5a8c894a4582}{getp\+Tutorial\+Logo}} ()
+\begin{DoxyCompactList}\small\item\em チュートリアルロゴポインタ取得関数 \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}{set\+Tutorial\+Logo}} (\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$value)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em チュートリアルロゴポインタ設定関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tutorial_scene_a90f8c010bd72aa3dae61a5294fdfbeb7}{Tutorial\+Scene}} (\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,7 +41,7 @@ void \mbox{\hyperlink{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}{se
 
 チュートリアルシーン特有の共有データを持っている 
 
- Tutorial\+Scene.\+h の 27 行目に定義があります。
+ Tutorial\+Scene.\+h の 31 行目に定義があります。
 
 
 
@@ -50,7 +50,7 @@ void \mbox{\hyperlink{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}{se
 \index{Tutorial\+Scene@{Tutorial\+Scene}!Tutorial\+Scene@{Tutorial\+Scene}}
 \index{Tutorial\+Scene@{Tutorial\+Scene}!Tutorial\+Scene@{Tutorial\+Scene}}
 \subsubsection{\texorpdfstring{Tutorial\+Scene()}{TutorialScene()}}
-{\footnotesize\ttfamily Tutorial\+Scene\+::\+Tutorial\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Tutorial\+Scene\+::\+Tutorial\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_base_1_1_state_base}{State\+Base}} $\ast$}]{state }\end{DoxyParamCaption})}
 
 
 
@@ -63,30 +63,58 @@ void \mbox{\hyperlink{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}{se
 \end{DoxyParams}
 
 
- Tutorial\+Scene.\+h の 44 行目に定義があります。
+ Tutorial\+Scene.\+cpp の 35 行目に定義があります。
 
 
 
 \subsection{関数詳解}
-\mbox{\Hypertarget{class_tutorial_scene_a57c95d200431cec7839384f0228c831e}\label{class_tutorial_scene_a57c95d200431cec7839384f0228c831e}} 
+\mbox{\Hypertarget{class_tutorial_scene_a9f1a224f8864ccd5ddfe5a8c894a4582}\label{class_tutorial_scene_a9f1a224f8864ccd5ddfe5a8c894a4582}} 
 \index{Tutorial\+Scene@{Tutorial\+Scene}!getp\+Tutorial\+Logo@{getp\+Tutorial\+Logo}}
 \index{getp\+Tutorial\+Logo@{getp\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
 \subsubsection{\texorpdfstring{getp\+Tutorial\+Logo()}{getpTutorialLogo()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}}$\ast$ Tutorial\+Scene\+::getp\+Tutorial\+Logo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$ Tutorial\+Scene\+::getp\+Tutorial\+Logo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Tutorial\+Scene.\+h の 47 行目に定義があります。
+チュートリアルロゴポインタ取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Tutorial\+Logo$\ast$} & チュートリアルロゴポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Tutorial\+Scene.\+cpp の 20 行目に定義があります。
 
 \mbox{\Hypertarget{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}\label{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}} 
 \index{Tutorial\+Scene@{Tutorial\+Scene}!set\+Tutorial\+Logo@{set\+Tutorial\+Logo}}
 \index{set\+Tutorial\+Logo@{set\+Tutorial\+Logo}!Tutorial\+Scene@{Tutorial\+Scene}}
 \subsubsection{\texorpdfstring{set\+Tutorial\+Logo()}{setTutorialLogo()}}
-{\footnotesize\ttfamily void Tutorial\+Scene\+::set\+Tutorial\+Logo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Tutorial\+Scene\+::set\+Tutorial\+Logo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tutorial_logo}{Tutorial\+Logo}} $\ast$}]{value }\end{DoxyParamCaption})}
 
 
 
- Tutorial\+Scene.\+h の 48 行目に定義があります。
+チュートリアルロゴポインタ設定関数 
+
+
+\begin{DoxyParams}[1]{引数}
+\mbox{\tt in}  & {\em value} & チュートリアルロゴポインタ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em void} & なし \\
+\hline
+\end{DoxyRetVals}
+
+
+ Tutorial\+Scene.\+cpp の 25 行目に定義があります。
 
 
 
@@ -103,10 +131,11 @@ void \mbox{\hyperlink{class_tutorial_scene_a7c8b448ac848d4811e448acf45c5a48e}{se
 
 
 
- Tutorial\+Scene.\+h の 33 行目に定義があります。
+ Tutorial\+Scene.\+h の 37 行目に定義があります。
 
 
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scenes/\+Tutorial\+Scene/\mbox{\hyperlink{_tutorial_scene_8h}{Tutorial\+Scene.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scenes/\+Tutorial\+Scene/\mbox{\hyperlink{_tutorial_scene_8h}{Tutorial\+Scene.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/02\+\_\+\+Scene/\+Scenes/\+Tutorial\+Scene/\mbox{\hyperlink{_tutorial_scene_8cpp}{Tutorial\+Scene.\+cpp}}\end{DoxyCompactItemize}

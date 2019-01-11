@@ -21,18 +21,18 @@ Line\+Segment の継承関係図\nopagebreak
 \subsection*{公開メンバ関数}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_line_segment_ab32e8ccf6167f28f75382c94c6c7873d}{getp\+Position}} ()
+\begin{DoxyCompactList}\small\item\em 座標ポインタ取得関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_line_segment_a773f1be1684f80f3f1ed6623462f76c6}{getp\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em 方向ポインタ取得関数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_line_segment_af4c9249a6a1c6c75b12962ef29e6dd30}{get\+Add\+Vector\+To\+Position}} ()
+\begin{DoxyCompactList}\small\item\em 方向ベクトル加算済み座標取得関数 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}{get\+Slope\+Of2\+D\+Line\+Segment}} ()
+\begin{DoxyCompactList}\small\item\em 2\+D線分の傾き取得関数 \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_line_segment_a4c2da2ff2d3979f28bfcb24948a8e6a9}{Line\+Segment}} ()
 \begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_line_segment_a38c6ff9ade1d084219ea9c9ae88eb5c7}{Init}} (\mbox{\hyperlink{class_vector3_d}{Vector3D}} position, \mbox{\hyperlink{class_vector3_d}{Vector3D}} vector)
-\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_line_segment_a13877c27e539e948fe8db0f34853e3da}{getp\+Position}} ()
-\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ \mbox{\hyperlink{class_line_segment_a50ed66faa77529e1ef71bbc8714d7edc}{getp\+Vector}} ()
-\item 
-\mbox{\hyperlink{class_vector3_d}{Vector3D}} \mbox{\hyperlink{class_line_segment_af4c9249a6a1c6c75b12962ef29e6dd30}{get\+Add\+Vector\+To\+Position}} ()
-\item 
-float \mbox{\hyperlink{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}{get\+Slope\+Of2\+D\+Line\+Segment}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em 初期化関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{非公開変数類}
 \begin{DoxyCompactItemize}
 \item 
@@ -57,7 +57,7 @@ float \mbox{\hyperlink{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}{get
 \index{Line\+Segment@{Line\+Segment}!Line\+Segment@{Line\+Segment}}
 \index{Line\+Segment@{Line\+Segment}!Line\+Segment@{Line\+Segment}}
 \subsubsection{\texorpdfstring{Line\+Segment()}{LineSegment()}}
-{\footnotesize\ttfamily Line\+Segment\+::\+Line\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Line\+Segment\+::\+Line\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -70,7 +70,7 @@ float \mbox{\hyperlink{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}{get
 \end{DoxyParams}
 
 
- Line\+Segment.\+h の 44 行目に定義があります。
+ Line\+Segment.\+cpp の 51 行目に定義があります。
 
 
 
@@ -79,47 +79,103 @@ float \mbox{\hyperlink{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}{get
 \index{Line\+Segment@{Line\+Segment}!get\+Add\+Vector\+To\+Position@{get\+Add\+Vector\+To\+Position}}
 \index{get\+Add\+Vector\+To\+Position@{get\+Add\+Vector\+To\+Position}!Line\+Segment@{Line\+Segment}}
 \subsubsection{\texorpdfstring{get\+Add\+Vector\+To\+Position()}{getAddVectorToPosition()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Line\+Segment\+::get\+Add\+Vector\+To\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} Line\+Segment\+::get\+Add\+Vector\+To\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Line\+Segment.\+h の 61 行目に定義があります。
+方向ベクトル加算済み座標取得関数 
 
-\mbox{\Hypertarget{class_line_segment_a13877c27e539e948fe8db0f34853e3da}\label{class_line_segment_a13877c27e539e948fe8db0f34853e3da}} 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em \mbox{\hyperlink{class_vector3_d}{Vector3D}}} & 方向ベクトル加算済み座標 \\
+\hline
+\end{DoxyRetVals}
+
+
+ Line\+Segment.\+cpp の 34 行目に定義があります。
+
+\mbox{\Hypertarget{class_line_segment_ab32e8ccf6167f28f75382c94c6c7873d}\label{class_line_segment_ab32e8ccf6167f28f75382c94c6c7873d}} 
 \index{Line\+Segment@{Line\+Segment}!getp\+Position@{getp\+Position}}
 \index{getp\+Position@{getp\+Position}!Line\+Segment@{Line\+Segment}}
 \subsubsection{\texorpdfstring{getp\+Position()}{getpPosition()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Line\+Segment\+::getp\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ Line\+Segment\+::getp\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Line\+Segment.\+h の 59 行目に定義があります。
+座標ポインタ取得関数 
 
-\mbox{\Hypertarget{class_line_segment_a50ed66faa77529e1ef71bbc8714d7edc}\label{class_line_segment_a50ed66faa77529e1ef71bbc8714d7edc}} 
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Vector3\+D$\ast$} & 座標ポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Line\+Segment.\+cpp の 20 行目に定義があります。
+
+\mbox{\Hypertarget{class_line_segment_a773f1be1684f80f3f1ed6623462f76c6}\label{class_line_segment_a773f1be1684f80f3f1ed6623462f76c6}} 
 \index{Line\+Segment@{Line\+Segment}!getp\+Vector@{getp\+Vector}}
 \index{getp\+Vector@{getp\+Vector}!Line\+Segment@{Line\+Segment}}
 \subsubsection{\texorpdfstring{getp\+Vector()}{getpVector()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}}$\ast$ Line\+Segment\+::getp\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector3_d}{Vector3D}} $\ast$ Line\+Segment\+::getp\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Line\+Segment.\+h の 60 行目に定義があります。
+方向ポインタ取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em Vector3\+D$\ast$} & 方向ポインタ \\
+\hline
+\end{DoxyRetVals}
+
+
+ Line\+Segment.\+cpp の 27 行目に定義があります。
 
 \mbox{\Hypertarget{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}\label{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}} 
 \index{Line\+Segment@{Line\+Segment}!get\+Slope\+Of2\+D\+Line\+Segment@{get\+Slope\+Of2\+D\+Line\+Segment}}
 \index{get\+Slope\+Of2\+D\+Line\+Segment@{get\+Slope\+Of2\+D\+Line\+Segment}!Line\+Segment@{Line\+Segment}}
 \subsubsection{\texorpdfstring{get\+Slope\+Of2\+D\+Line\+Segment()}{getSlopeOf2DLineSegment()}}
-{\footnotesize\ttfamily float Line\+Segment\+::get\+Slope\+Of2\+D\+Line\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily float Line\+Segment\+::get\+Slope\+Of2\+D\+Line\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
- Line\+Segment.\+h の 62 行目に定義があります。
+2\+D線分の傾き取得関数 
+
+
+\begin{DoxyParams}{引数}
+{\em void} & なし \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{戻り値}
+{\em float} & 2\+D線分の傾き \\
+\hline
+\end{DoxyRetVals}
+
+
+ Line\+Segment.\+cpp の 41 行目に定義があります。
 
 \mbox{\Hypertarget{class_line_segment_a38c6ff9ade1d084219ea9c9ae88eb5c7}\label{class_line_segment_a38c6ff9ade1d084219ea9c9ae88eb5c7}} 
 \index{Line\+Segment@{Line\+Segment}!Init@{Init}}
 \index{Init@{Init}!Line\+Segment@{Line\+Segment}}
 \subsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily void Line\+Segment\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Line\+Segment\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{position,  }\item[{\mbox{\hyperlink{class_vector3_d}{Vector3D}}}]{vector }\end{DoxyParamCaption})}
 
 
 
@@ -139,7 +195,7 @@ float \mbox{\hyperlink{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}{get
 \end{DoxyRetVals}
 
 
- Line\+Segment.\+h の 52 行目に定義があります。
+ Line\+Segment.\+cpp の 58 行目に定義があります。
 
 
 
@@ -176,4 +232,5 @@ float \mbox{\hyperlink{class_line_segment_a473738a0b67e449cf8b5a23f1146f446}{get
 
 このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Base/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+Line\+Segment/\mbox{\hyperlink{_line_segment_8h}{Line\+Segment.\+h}}\end{DoxyCompactItemize}
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+Line\+Segment/\mbox{\hyperlink{_line_segment_8h}{Line\+Segment.\+h}}\item 
+C\+:/\+H\+A\+L/\+P\+G関係/03\+\_\+作成プログラム/03\+\_\+\+H\+A\+L授業/就職作品/\+Project/source/04\+\_\+\+Tool/\+Component/\+Collision/\+Collision\+Base/\+Collision\+Object/\+Collision\+Shape\+Base/\+Line\+Segment/\mbox{\hyperlink{_line_segment_8cpp}{Line\+Segment.\+cpp}}\end{DoxyCompactItemize}

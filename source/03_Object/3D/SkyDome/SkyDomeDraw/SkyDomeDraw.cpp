@@ -30,11 +30,11 @@ const std::string SkyDomeDraw::MODEL_NAME = "SkyDome/SkyDome.x";
 void SkyDomeDraw::Init()
 {
 	// オーダーリスト設定
-	getpDrawOrderList()->SetDrawType(DrawOrderList::DrawType::OPACITY);
-	getpDrawOrderList()->GetRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	getpDrawOrderList()->SetVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	getpDrawOrderList()->SetPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
-	getpDrawOrderList()->SetIsLighting(false);
+	getpDrawOrderList()->setDrawType(DrawOrderList::DrawType::OPACITY);
+	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->setIsLighting(false);
 
 	// Xモデル登録
 	sky_dome_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);

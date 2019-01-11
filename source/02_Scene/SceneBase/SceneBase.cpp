@@ -75,6 +75,10 @@ void SceneBase::setState(StateBase* value)
 //****************************************
 // ŠÖ”’è‹`
 //****************************************
+SceneBase::StateBase::~StateBase()
+{
+}
+
 SceneBase::SceneBase(StateBase* state)
 {
 	state_ = state;

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3DAction: C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/Component/Collision/CollisionBase/CollisionObject/CollisionShapeBase/Plane/Plane.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">3DAction
+   &#160;<span id="projectnumber">version 1.3</span>
+   </div>
+   <div id="projectbrief">DirectX9を用いたアクションゲーム</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_plane_8cpp_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plane.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_plane_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//================================================================================</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span><span class="comment">//================================================================================</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// インクルード文</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_plane_8h.html">Plane.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// プロパティ定義</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_plane.html#a8c279383bdaeb247e68c557960eb0c0c">   20</a></span>&#160;<a class="code" href="class_vector3_d.html">Vector3D</a>* <a class="code" href="class_plane.html#a8c279383bdaeb247e68c557960eb0c0c">Plane::getpNormal</a>()</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{ </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="class_plane.html#a7ae74465500dfdd7a68fa2eb28486ae0">normal_</a>; </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_plane.html#a66c47e8798df166c458ca215ed115684">   27</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_plane.html#a66c47e8798df166c458ca215ed115684">Plane::getAdjustmetD</a>()</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{ </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_plane.html#ab43e3263bd879ea710936d85cacb6006">adjustmet_d_</a>; </div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// 関数定義</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//****************************************</span></div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_plane.html#acac0d9c003e0ab10d07b146c3566a0c7">   37</a></span>&#160;<a class="code" href="class_plane.html#acac0d9c003e0ab10d07b146c3566a0c7">Plane::Plane</a>()</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : <a class="code" href="class_collision_shape_base.html">CollisionShapeBase</a>(<a class="code" href="class_collision_shape_base.html">CollisionShapeBase</a>::<a class="code" href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">Type</a>::PLANE)</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_plane.html#a2182719af8f880a3871be4cfc33a969b">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_plane.html#a2182719af8f880a3871be4cfc33a969b">Plane::Init</a>(<a class="code" href="class_vector3_d.html">Vector3D</a> normal, <a class="code" href="class_vector3_d.html">Vector3D</a> point)</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// 法線</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_plane.html#a7ae74465500dfdd7a68fa2eb28486ae0">normal_</a> = normal;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_plane.html#a7ae74465500dfdd7a68fa2eb28486ae0">normal_</a>.<a class="code" href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808">CreateNormalize</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// D成分</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_plane.html#ab43e3263bd879ea710936d85cacb6006">adjustmet_d_</a> = -((<a class="code" href="class_plane.html#a7ae74465500dfdd7a68fa2eb28486ae0">normal_</a>.x * point.x) + (<a class="code" href="class_plane.html#a7ae74465500dfdd7a68fa2eb28486ae0">normal_</a>.y * point.y) </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                     + (<a class="code" href="class_plane.html#a7ae74465500dfdd7a68fa2eb28486ae0">normal_</a>.z * point.z));</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_plane.html#ae50b8a5b6e6e7db1b0bdd5c6df515848">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_plane.html#a2182719af8f880a3871be4cfc33a969b">Plane::Init</a>(<a class="code" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> point0, <a class="code" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> point1, <a class="code" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> point2)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 法線の作成</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a> temp_normal_vector = <a class="code" href="_vector3_d_8h.html#aaadf214b288ef79251c169437abacabd">Point3_Cross</a>(point0, point1, point2);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// 初期化</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_plane.html#a2182719af8f880a3871be4cfc33a969b">Init</a>(temp_normal_vector, point0);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="ttc" id="_vector3_d_8h_html_ab16f59e4393f29a01ec8b9bbbabbe65d"><div class="ttname"><a href="_vector3_d_8h.html#ab16f59e4393f29a01ec8b9bbbabbe65d">Vec3</a></div><div class="ttdeci">D3DXVECTOR3 Vec3</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00033">Vector3D.h:33</a></div></div>
+<div class="ttc" id="class_plane_html_a2182719af8f880a3871be4cfc33a969b"><div class="ttname"><a href="class_plane.html#a2182719af8f880a3871be4cfc33a969b">Plane::Init</a></div><div class="ttdeci">void Init(Vector3D normal, Vector3D point)</div><div class="ttdoc">初期化関数(法線と1点) </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8cpp_source.html#l00044">Plane.cpp:44</a></div></div>
+<div class="ttc" id="class_collision_shape_base_html_a8abcef092855ad0ca191047044b002cb"><div class="ttname"><a href="class_collision_shape_base.html#a8abcef092855ad0ca191047044b002cb">CollisionShapeBase::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_collision_shape_base_8h_source.html#l00024">CollisionShapeBase.h:24</a></div></div>
+<div class="ttc" id="class_collision_shape_base_html"><div class="ttname"><a href="class_collision_shape_base.html">CollisionShapeBase</a></div><div class="ttdoc">衝突形状BaseClass </div><div class="ttdef"><b>Definition:</b> <a href="_collision_shape_base_8h_source.html#l00017">CollisionShapeBase.h:17</a></div></div>
+<div class="ttc" id="class_vector3_d_html_ae55e42c07bdfcc6c11bcbc6bf5e27808"><div class="ttname"><a href="class_vector3_d.html#ae55e42c07bdfcc6c11bcbc6bf5e27808">Vector3D::CreateNormalize</a></div><div class="ttdeci">Vec3 CreateNormalize()</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00211">Vector3D.h:211</a></div></div>
+<div class="ttc" id="_plane_8h_html"><div class="ttname"><a href="_plane_8h.html">Plane.h</a></div><div class="ttdoc">平面Class </div></div>
+<div class="ttc" id="class_plane_html_ab43e3263bd879ea710936d85cacb6006"><div class="ttname"><a href="class_plane.html#ab43e3263bd879ea710936d85cacb6006">Plane::adjustmet_d_</a></div><div class="ttdeci">float adjustmet_d_</div><div class="ttdoc">D成分 </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8h_source.html#l00033">Plane.h:33</a></div></div>
+<div class="ttc" id="class_vector3_d_html"><div class="ttname"><a href="class_vector3_d.html">Vector3D</a></div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00049">Vector3D.h:49</a></div></div>
+<div class="ttc" id="class_plane_html_a7ae74465500dfdd7a68fa2eb28486ae0"><div class="ttname"><a href="class_plane.html#a7ae74465500dfdd7a68fa2eb28486ae0">Plane::normal_</a></div><div class="ttdeci">Vector3D normal_</div><div class="ttdoc">法線 </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8h_source.html#l00032">Plane.h:32</a></div></div>
+<div class="ttc" id="class_plane_html_a66c47e8798df166c458ca215ed115684"><div class="ttname"><a href="class_plane.html#a66c47e8798df166c458ca215ed115684">Plane::getAdjustmetD</a></div><div class="ttdeci">float getAdjustmetD()</div><div class="ttdoc">D成分取得関数 </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8cpp_source.html#l00027">Plane.cpp:27</a></div></div>
+<div class="ttc" id="class_plane_html_acac0d9c003e0ab10d07b146c3566a0c7"><div class="ttname"><a href="class_plane.html#acac0d9c003e0ab10d07b146c3566a0c7">Plane::Plane</a></div><div class="ttdeci">Plane()</div><div class="ttdoc">コンストラクタ </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8cpp_source.html#l00037">Plane.cpp:37</a></div></div>
+<div class="ttc" id="class_plane_html_a8c279383bdaeb247e68c557960eb0c0c"><div class="ttname"><a href="class_plane.html#a8c279383bdaeb247e68c557960eb0c0c">Plane::getpNormal</a></div><div class="ttdeci">Vector3D * getpNormal()</div><div class="ttdoc">法線ポインタ取得関数 </div><div class="ttdef"><b>Definition:</b> <a href="_plane_8cpp_source.html#l00020">Plane.cpp:20</a></div></div>
+<div class="ttc" id="_vector3_d_8h_html_aaadf214b288ef79251c169437abacabd"><div class="ttname"><a href="_vector3_d_8h.html#aaadf214b288ef79251c169437abacabd">Point3_Cross</a></div><div class="ttdeci">Vec3 Point3_Cross(Vector3D vector1, Vector3D vector2, Vector3D vector3)</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00466">Vector3D.h:466</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_48bb4aacea20c6a8378e1408d864b090.html">04_Tool</a></li><li class="navelem"><a class="el" href="dir_9bdf09a476fe7fa6e3a0e14af6a4b1af.html">Component</a></li><li class="navelem"><a class="el" href="dir_d2cea885e8f8fd9a5297d67c4c3bc8cd.html">Collision</a></li><li class="navelem"><a class="el" href="dir_16088d20f672adab33d77e328fa8d697.html">CollisionBase</a></li><li class="navelem"><a class="el" href="dir_670061c1b346060f38c8fe32f58c16bd.html">CollisionObject</a></li><li class="navelem"><a class="el" href="dir_37f05b902c9752e817f88d9d1c5bcf13.html">CollisionShapeBase</a></li><li class="navelem"><a class="el" href="dir_49150446f280afe3f01e2c0e08af1414.html">Plane</a></li><li class="navelem"><a class="el" href="_plane_8cpp.html">Plane.cpp</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

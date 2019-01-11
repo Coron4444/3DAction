@@ -76,6 +76,7 @@ var searchData=
   ['rendererdirectx9_2ecpp',['RendererDirectX9.cpp',['../_renderer_direct_x9_8cpp.html',1,'']]],
   ['rendererdirectx9_2eh',['RendererDirectX9.h',['../_renderer_direct_x9_8h.html',1,'']]],
   ['rendererfactorydirectx9',['RendererFactoryDirectX9',['../class_renderer_factory_direct_x9.html',1,'']]],
+  ['rendererfactorydirectx9_2ecpp',['RendererFactoryDirectX9.cpp',['../_renderer_factory_direct_x9_8cpp.html',1,'']]],
   ['rendererfactorydirectx9_2eh',['RendererFactoryDirectX9.h',['../_renderer_factory_direct_x9_8h.html',1,'']]],
   ['rendererfactoryinterface',['RendererFactoryInterface',['../class_renderer_factory_interface.html',1,'']]],
   ['rendererfactoryinterface_2eh',['RendererFactoryInterface.h',['../_renderer_factory_interface_8h.html',1,'']]],

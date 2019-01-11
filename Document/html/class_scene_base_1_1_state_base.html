@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('class_scene_base_1_1_state_base.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
-<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="class_scene_base_1_1_state_base-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">SceneBase::StateBase クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -115,6 +115,12 @@ SceneBase::StateBase の継承関係図</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5333fd722f17c6da71b09afdc56c84b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene_base.html">SceneBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#a5333fd722f17c6da71b09afdc56c84b4">getpScene</a> ()</td></tr>
+<tr class="memdesc:a5333fd722f17c6da71b09afdc56c84b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン取得関数  <a href="#a5333fd722f17c6da71b09afdc56c84b4">[詳解]</a><br /></td></tr>
+<tr class="separator:a5333fd722f17c6da71b09afdc56c84b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb19da59b938832387aa10528bedb44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#adfb19da59b938832387aa10528bedb44">setScene</a> (<a class="el" href="class_scene_base.html">SceneBase</a> *value)</td></tr>
+<tr class="memdesc:adfb19da59b938832387aa10528bedb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン設定関数  <a href="#adfb19da59b938832387aa10528bedb44">[詳解]</a><br /></td></tr>
+<tr class="separator:adfb19da59b938832387aa10528bedb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc993757f908babc872063e1e2465e3e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#afc993757f908babc872063e1e2465e3e">~StateBase</a> ()</td></tr>
 <tr class="memdesc:afc993757f908babc872063e1e2465e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <a href="#afc993757f908babc872063e1e2465e3e">[詳解]</a><br /></td></tr>
 <tr class="separator:afc993757f908babc872063e1e2465e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,11 +136,9 @@ SceneBase::StateBase の継承関係図</div>
 <tr class="memitem:a2e14a3afece0b1d8db9edcebf514a977"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#a2e14a3afece0b1d8db9edcebf514a977">Reset</a> ()=0</td></tr>
 <tr class="memdesc:a2e14a3afece0b1d8db9edcebf514a977"><td class="mdescLeft">&#160;</td><td class="mdescRight">リセット関数  <a href="#a2e14a3afece0b1d8db9edcebf514a977">[詳解]</a><br /></td></tr>
 <tr class="separator:a2e14a3afece0b1d8db9edcebf514a977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfb19da59b938832387aa10528bedb44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#adfb19da59b938832387aa10528bedb44">setScene</a> (<a class="el" href="class_scene_base.html">SceneBase</a> *value)</td></tr>
-<tr class="separator:adfb19da59b938832387aa10528bedb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-限定公開変数類</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
 <tr class="memitem:ae1062afb3f96664e24504151eaccf40f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene_base.html">SceneBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_base_1_1_state_base.html#ae1062afb3f96664e24504151eaccf40f">scene_</a> = nullptr</td></tr>
 <tr class="memdesc:ae1062afb3f96664e24504151eaccf40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">シーン  <a href="#ae1062afb3f96664e24504151eaccf40f">[詳解]</a><br /></td></tr>
 <tr class="separator:ae1062afb3f96664e24504151eaccf40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +147,7 @@ SceneBase::StateBase の継承関係図</div>
 <div class="textblock"><p>シーンステートBaseClass </p>
 <p>シーンステートのBaseClass </p>
 
-<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00039">39</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00035">35</a> 行目に定義があります。</p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="afc993757f908babc872063e1e2465e3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc993757f908babc872063e1e2465e3e">&#9670;&nbsp;</a></span>~StateBase()</h2>
@@ -176,11 +180,44 @@ SceneBase::StateBase の継承関係図</div>
   </dd>
 </dl>
 
-<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00056">56</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00074">74</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="a5333fd722f17c6da71b09afdc56c84b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5333fd722f17c6da71b09afdc56c84b4">&#9670;&nbsp;</a></span>getpScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_scene_base.html">SceneBase</a> * SceneBase::StateBase::getpScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>シーン取得関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">SceneBase*</td><td>シーンポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_scene_base_8cpp_source.html">SceneBase.cpp</a> の <a class="el" href="_scene_base_8cpp_source.html#l00022">22</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="a33350231b039a2178c19beac0211c5b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33350231b039a2178c19beac0211c5b8">&#9670;&nbsp;</a></span>Init()</h2>
 
@@ -268,9 +305,6 @@ SceneBase::StateBase の継承関係図</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void SceneBase::StateBase::setScene </td>
@@ -280,14 +314,23 @@ SceneBase::StateBase の継承関係図</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00087">87</a> 行目に定義があります。</p>
+<p>シーン設定関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>シーンポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td>なし </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="_scene_base_8cpp_source.html">SceneBase.cpp</a> の <a class="el" href="_scene_base_8cpp_source.html#l00029">29</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -389,19 +432,20 @@ SceneBase::StateBase の継承関係図</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>シーン </p>
 
-<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00045">45</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_scene_base_8h_source.html">SceneBase.h</a> の <a class="el" href="_scene_base_8h_source.html#l00041">41</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/02_Scene/SceneBase/<a class="el" href="_scene_base_8h_source.html">SceneBase.h</a></li>
+<li>C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/02_Scene/SceneBase/<a class="el" href="_scene_base_8cpp_source.html">SceneBase.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

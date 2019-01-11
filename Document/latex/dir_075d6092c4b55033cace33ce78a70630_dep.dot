@@ -1,0 +1,14 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/04_Tool/ComponentManager/CollisionManager/CollisionCalculation" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b5cfa7c785b58f79292a442edc0796cd {
+    graph [ bgcolor="#ddddee", pencolor="black", label="CollisionManager" fontname="Helvetica", fontsize="10", URL="dir_b5cfa7c785b58f79292a442edc0796cd.html"]
+  dir_075d6092c4b55033cace33ce78a70630 [shape=box, label="CollisionCalculation", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_075d6092c4b55033cace33ce78a70630.html"];
+  }
+  dir_9bdf09a476fe7fa6e3a0e14af6a4b1af [shape=box label="Component" fillcolor="white" style="filled" color="red" URL="dir_9bdf09a476fe7fa6e3a0e14af6a4b1af.html"];
+  dir_e5c1ae2f1092e95ef2033dbd3d9e326c [shape=box label="Vector" fillcolor="white" style="filled" color="red" URL="dir_e5c1ae2f1092e95ef2033dbd3d9e326c.html"];
+  dir_075d6092c4b55033cace33ce78a70630->dir_9bdf09a476fe7fa6e3a0e14af6a4b1af [headlabel="8", labeldistance=1.5 headhref="dir_000106_000081.html"];
+  dir_075d6092c4b55033cace33ce78a70630->dir_e5c1ae2f1092e95ef2033dbd3d9e326c [headlabel="2", labeldistance=1.5 headhref="dir_000106_000149.html"];
+  dir_9bdf09a476fe7fa6e3a0e14af6a4b1af->dir_e5c1ae2f1092e95ef2033dbd3d9e326c [headlabel="13", labeldistance=1.5 headhref="dir_000081_000149.html"];
+}

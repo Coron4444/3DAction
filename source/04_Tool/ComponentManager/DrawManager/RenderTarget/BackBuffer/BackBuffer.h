@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    バックバッファークラス
-//    Author : Araki Kai                                作成日 : 2018/11/12
-//
+//!	@file	 BackBuffer.h
+//!	@brief	 バックバッファーClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/05/08
 //================================================================================
-
 #ifndef	_BACK_BUFFER_H_
 #define _BACK_BUFFER_H_
 
@@ -13,43 +12,38 @@
 //****************************************
 // インクルード文
 //****************************************
-#include "../../Camera/Camera.h"
-#include "../../Camera/CameraState_CrawlUp/CameraState_CrawlUp.h"
-#include "../../Camera/CameraState_HomingTarget/CameraState_HomingTarget.h"
-
-#include "../../Fade/Fade.h"
-
 #include <LimitedPointerArray\LimitedPointerArray.h>
 #include <ComponentManager/DrawManager/RenderTexture/RenderTexture.h>
+
 
 
 //****************************************
 // クラス宣言
 //****************************************
+class Camera;
 class DrawBase;
+class Fade;
 class ShaderManager;
 
 
 
-/*********************************************************//**
-* @brief
-* バックバッファークラス
-*
-* バックバッファーへ描画する描画基底クラスを管理するクラス
-*************************************************************/
+//************************************************************														   
+//! @brief   バックバッファーClass
+//!
+//! @details バックバッファーへ描画する描画基底クラスを管理するClass
+//************************************************************
 class BackBuffer
 {
-//==============================
+//====================
 // 定数
-//==============================
+//====================
 public:
 	static const unsigned ARRAY_NUM = 10000;	//!< 配列数
 
 
-
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
 	LimitedPointerArray<DrawBase*, ARRAY_NUM> all_opacity_draw_;		//!< 不透明配列
 	LimitedPointerArray<DrawBase*, ARRAY_NUM> all_transparency_draw_;	//!< 透明配列
@@ -73,110 +67,163 @@ private:
 	RenderTexture render_texture_;
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// プロパティ
+//====================
 public:
-	/**
-	* @brief
-	* 初期化関数
-	*/
+	//----------------------------------------
+	//! @brief カメラ取得関数
+	//! @details
+	//! @param void なし
+	//! @retval Camera* カメラ
+	//----------------------------------------
+	Camera* getpCamera();
+	
+	//----------------------------------------
+	//! @brief シェーダーマネージャ設定関数
+	//! @details
+	//! @param value シェーダーマネージャ
+	//! @retval void なし
+	//----------------------------------------
+	void setShaderManager(ShaderManager* value);
+
+
+//====================
+// 関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Init();
 
-	/**
-	* @brief
-	* シーン変更時の終了関数
-	*/
+	//----------------------------------------
+	//! @brief シーン変更時の終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void UninitWhenChangeScene();
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Uninit();
 
-	/**
-	* @brief
-	* 更新関数
-	*/
+	//----------------------------------------
+	//! @brief 更新関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Update();
 
-	/**
-	* @brief
-	* 描画関数
-	*/
+	//----------------------------------------
+	//! @brief 描画関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Draw();
 
-	/**
-	* @brief
-	* 描画基底クラスの追加関数
-	*/
+	//----------------------------------------
+	//! @brief 描画基底クラスの追加関数
+	//! @details
+	//! @param draw 描画基底クラス
+	//! @retval void なし
+	//----------------------------------------
 	void AddDrawBaseToArray(DrawBase* draw);
 
-	/**
-	* @brief
-	* 全配列のリセット関数
-	*/
+	//----------------------------------------
+	//! @brief 全配列のリセット関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void ResetAllArray();
 
-	/**
-	* @brief
-	* フェード初期化関数
-	*/
-	void InitFade(Fade::Type type, Fade::State state, Vec2 size, XColor4 fade_color,
-				  float fade_speed);
+	//----------------------------------------
+	//! @brief フェード初期化関数
+	//! @details
+	//! @param type  タイプ
+	//! @param state ステート
+	//! @param size  拡縮
+	//! @param color 色
+	//! @param speed フェード速度
+	//! @retval void なし
+	//----------------------------------------
+	void InitFade(Fade::Type type, Fade::State state, Vec2 size,
+				  XColor4 fade_color, float fade_speed);
 
-	/**
-	* @brief
-	* フェード終了関数
-	*/
+	//----------------------------------------
+	//! @brief フェード終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void UninitFade();
 
-	/**
-	* @brief
-	* フェード終了かの確認関数
-	*/
-	bool IsFadeEnd() { return fade_->GetEndFlag(); }
+	//----------------------------------------
+	//! @brief フェード終了かの確認関数
+	//! @details
+	//! @param void なし
+	//! @retval bool フェード終了かの有無
+	//----------------------------------------
+	bool IsFadeEnd() { return fade_->getpEndFlag(); }
 
-	/**
-	* @brief
-	* フェードステートの名前判定関数
-	*/
-	bool IsFadeStateName(Fade::State state) { return *fade_->GetState() == state; }
-
-	// プロパティ
-	Camera* GetCamera() { return camera_; }
-	void SetShaderManager(ShaderManager* value) { shader_manager_ = value; }
+	//----------------------------------------
+	//! @brief フェードステートの名前判定関数
+	//! @details
+	//! @param state ステート
+	//! @retval bool ステートと合っていればtrue
+	//----------------------------------------
+	bool IsFadeStateName(Fade::State state) { return *fade_->getpState() == state; }
 
 private:
-	/**
-	* @brief
-	* 透明描画基底クラスのソート関数
-	*/
+	//----------------------------------------
+	//! @brief 透明描画基底クラスのソート関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void SortTransparent();
 
-	/**
-	* @brief
-	* 2D描画基底クラスのソート関数
-	*/
+	//----------------------------------------
+	//! @brief 2D描画基底クラスのソート関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Sort2D();
 
-	/**
-	* @brief
-	* ビルボード用行列変更関数
-	*/
+	//----------------------------------------
+	//! @brief ビルボード用行列変更関数
+	//! @details
+	//! @param draw 描画基底クラス
+	//! @retval void なし
+	//----------------------------------------
 	void SetBillboardMatrix(DrawBase* draw);
 	
-	/**
-	* @brief
-	* 全ビルボード更新関数
-	*/
+	//----------------------------------------
+	//! @brief 全ビルボード更新関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void AllBillboardUpdate();
 
-	/**
-	* @brief
-	* フェード描画関数
-	*/
+	//----------------------------------------
+	//! @brief フェード描画関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void FadeDraw();
 };
 

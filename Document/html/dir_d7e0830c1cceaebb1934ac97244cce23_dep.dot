@@ -1,0 +1,31 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/3D/Coin" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b5c784a4069e49dd96204fa1e19404fe {
+    graph [ bgcolor="#ddddee", pencolor="black", label="3D" fontname="Helvetica", fontsize="10", URL="dir_b5c784a4069e49dd96204fa1e19404fe.html"]
+  subgraph clusterdir_d7e0830c1cceaebb1934ac97244cce23 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d7e0830c1cceaebb1934ac97244cce23.html"];
+    dir_d7e0830c1cceaebb1934ac97244cce23 [shape=plaintext label="Coin"];
+    dir_041b244fc7f2d932862910a33f301007 [shape=box label="CoinCollision" color="black" fillcolor="white" style="filled" URL="dir_041b244fc7f2d932862910a33f301007.html"];
+    dir_b1ea65918acd7d2a245270b409c6eff8 [shape=box label="CoinDraw" color="black" fillcolor="white" style="filled" URL="dir_b1ea65918acd7d2a245270b409c6eff8.html"];
+    dir_6a388ee5f79bb4c5ae11427fe46f3350 [shape=box label="CoinFactory" color="black" fillcolor="white" style="filled" URL="dir_6a388ee5f79bb4c5ae11427fe46f3350.html"];
+  }
+  }
+  dir_6e58c436369e4a795ef16d3c489c4702 [shape=box label="05_Resource" fillcolor="white" style="filled" color="red" URL="dir_6e58c436369e4a795ef16d3c489c4702.html"];
+  dir_b2ee2f4b37d8460d9f5246ffd8c74e11 [shape=box label="01_Main" fillcolor="white" style="filled" color="red" URL="dir_b2ee2f4b37d8460d9f5246ffd8c74e11.html"];
+  dir_48bb4aacea20c6a8378e1408d864b090 [shape=box label="04_Tool" fillcolor="white" style="filled" color="red" URL="dir_48bb4aacea20c6a8378e1408d864b090.html"];
+  dir_041b244fc7f2d932862910a33f301007->dir_b2ee2f4b37d8460d9f5246ffd8c74e11 [headlabel="1", labeldistance=1.5 headhref="dir_000052_000001.html"];
+  dir_041b244fc7f2d932862910a33f301007->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="1", labeldistance=1.5 headhref="dir_000052_000080.html"];
+  dir_6e58c436369e4a795ef16d3c489c4702->dir_b2ee2f4b37d8460d9f5246ffd8c74e11 [headlabel="7", labeldistance=1.5 headhref="dir_000158_000001.html"];
+  dir_6e58c436369e4a795ef16d3c489c4702->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="9", labeldistance=1.5 headhref="dir_000158_000080.html"];
+  dir_b2ee2f4b37d8460d9f5246ffd8c74e11->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="1", labeldistance=1.5 headhref="dir_000001_000158.html"];
+  dir_b2ee2f4b37d8460d9f5246ffd8c74e11->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="8", labeldistance=1.5 headhref="dir_000001_000080.html"];
+  dir_d7e0830c1cceaebb1934ac97244cce23->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="4", labeldistance=1.5 headhref="dir_000051_000080.html"];
+  dir_6a388ee5f79bb4c5ae11427fe46f3350->dir_041b244fc7f2d932862910a33f301007 [headlabel="1", labeldistance=1.5 headhref="dir_000054_000052.html"];
+  dir_6a388ee5f79bb4c5ae11427fe46f3350->dir_b1ea65918acd7d2a245270b409c6eff8 [headlabel="1", labeldistance=1.5 headhref="dir_000054_000053.html"];
+  dir_48bb4aacea20c6a8378e1408d864b090->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="9", labeldistance=1.5 headhref="dir_000080_000158.html"];
+  dir_48bb4aacea20c6a8378e1408d864b090->dir_b2ee2f4b37d8460d9f5246ffd8c74e11 [headlabel="14", labeldistance=1.5 headhref="dir_000080_000001.html"];
+  dir_b1ea65918acd7d2a245270b409c6eff8->dir_6e58c436369e4a795ef16d3c489c4702 [headlabel="1", labeldistance=1.5 headhref="dir_000053_000158.html"];
+  dir_b1ea65918acd7d2a245270b409c6eff8->dir_48bb4aacea20c6a8378e1408d864b090 [headlabel="1", labeldistance=1.5 headhref="dir_000053_000080.html"];
+}

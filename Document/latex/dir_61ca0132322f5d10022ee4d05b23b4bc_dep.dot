@@ -1,0 +1,11 @@
+digraph "C:/HAL/PG関係/03_作成プログラム/03_HAL授業/就職作品/Project/source/03_Object/2D/UI/TitleLogo/TitleLogoFactory" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_197302ba7ede1b606f791c9c7f7b2fc8 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="TitleLogo" fontname="Helvetica", fontsize="10", URL="dir_197302ba7ede1b606f791c9c7f7b2fc8.html"]
+  dir_61ca0132322f5d10022ee4d05b23b4bc [shape=box, label="TitleLogoFactory", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_61ca0132322f5d10022ee4d05b23b4bc.html"];
+  }
+  dir_cd6a22433ce3489415cc92b170fd1220 [shape=box label="TitleLogoDraw" URL="dir_cd6a22433ce3489415cc92b170fd1220.html"];
+  dir_61ca0132322f5d10022ee4d05b23b4bc->dir_cd6a22433ce3489415cc92b170fd1220 [headlabel="1", labeldistance=1.5 headhref="dir_000046_000045.html"];
+}

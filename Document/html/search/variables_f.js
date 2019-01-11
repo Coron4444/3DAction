@@ -41,7 +41,7 @@ var searchData=
   ['power_5fof_5feight_5farray_5f',['power_of_eight_array_',['../class_liner_octree.html#ab7ddbc8f86cfa3ff46f01f080b56572a',1,'LinerOctree']]],
   ['preferred_5fx',['preferred_x',['../struct_im_gui_stb_1_1_s_t_b___textedit_state.html#a69ad8390f04856d8833d2355d299e74a',1,'ImGuiStb::STB_TexteditState::preferred_x()'],['../struct_s_t_b___textedit_state.html#a527319df94e0fe262548fb48bebf3dea',1,'STB_TexteditState::preferred_x()']]],
   ['prev_5ffirst',['prev_first',['../struct_im_gui_stb_1_1_stb_find_state.html#ab0dbf2d67355b0454427a5c811c5174f',1,'ImGuiStb::StbFindState']]],
-  ['previous_5fpointer_5f',['previous_pointer_',['../class_object_of_tree.html#a77243aefc3b9766b6dcf28ec713eef8e',1,'ObjectOfTree']]],
+  ['previous_5f',['previous_',['../class_object_of_tree.html#ac219b6d840381214e54bb248ac1c2693',1,'ObjectOfTree']]],
   ['prevlineheight',['PrevLineHeight',['../struct_im_gui_draw_context.html#ab4f6d19a049cff7a2fa5d1e9f5f132ab',1,'ImGuiDrawContext']]],
   ['prevlinetextbaseoffset',['PrevLineTextBaseOffset',['../struct_im_gui_draw_context.html#a72d618764e8a78c5bb7879ad2fe5e308',1,'ImGuiDrawContext']]],
   ['primitive_5fnum',['PRIMITIVE_NUM',['../class_cube_polygon.html#a9d08fbf2d854fdbf0232750573f3aeee',1,'CubePolygon::PRIMITIVE_NUM()'],['../class_plane_polygon.html#ad79c2128868044fb495b70ee08c65e8c',1,'PlanePolygon::PRIMITIVE_NUM()']]],
