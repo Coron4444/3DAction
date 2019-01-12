@@ -19,8 +19,13 @@
 #include <GameObjectBase/GameObjectBase.h>
 
 #include <Vector3D.h>
-#include <ResourceManager\ResourceManager.h>
 
+
+
+//****************************************
+// クラス宣言
+//****************************************
+class TextureObject;
 
 //======================================================================
 //
@@ -62,7 +67,7 @@ public :
 public :
 	// 公開メンバ変数
 	PlanePolygon* plane_polygon_;
-	TextureObject* decale_texture_;
+	TextureObject* diffuse_texture_;
 
 	int number_;
 	int old_number_;

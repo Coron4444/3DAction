@@ -19,6 +19,13 @@
 
 
 
+//****************************************
+// クラス宣言
+//****************************************
+class TextureObject;
+
+
+
 //************************************************************														   
 //! @brief   コインロゴ描画Class
 //!
@@ -30,7 +37,7 @@ class CoinDraw : public DrawNull
 // 定数
 //====================
 private:
-	static const std::string DECALE_TEXTURE;	//!< デカールテクスチャ名
+	static const std::string diffuse_TEXTURE;	//!< ディヒューズテクスチャ名
 	
 
 //====================
@@ -38,7 +45,7 @@ private:
 //====================
 private:
 	Coin* coin_;						//!< コイン
-	TextureObject* decale_texture_;		//!< デカールテクスチャ
+	TextureObject* diffuse_texture_;		//!< ディヒューズテクスチャ
 
 
 //====================
@@ -87,7 +94,7 @@ public:
 	unsigned getMeshNum(unsigned object_index) override;
 	MATRIX* getpMatrix(unsigned object_index) override;
 	D3DMATERIAL9* getpMaterial(unsigned object_index, unsigned mesh_index) override;
-	LPDIRECT3DTEXTURE9 getpDecaleTexture(unsigned object_index, unsigned mesh_index) override;
+	LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index, unsigned mesh_index) override;
 };
 
 

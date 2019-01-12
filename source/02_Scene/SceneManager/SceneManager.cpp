@@ -17,6 +17,7 @@
 #include <SafeRelease/SafeRelease.h>
 #include <GameObjectManager\GameObjectManager.h>
 #include <Texture/TextureManager/TextureManager.h>
+#include <ModelX/ModelXManager/ModelXManager.h>
 
 
 
@@ -127,6 +128,7 @@ void SceneManager::Init(SceneBase* scene)
 
 	// リソースの初期化
 	TextureManager::getpInstance()->Init();
+	ModelXManager::getpInstance()->Init();
 
 	// ゲームオブジェクトマネージャの初期化
 	GameObjectManager::Init();
@@ -149,7 +151,10 @@ void SceneManager::Uninit()
 	GameObjectManager::Uninit();
 
 	// リソースの終了処理
+	ModelXManager::getpInstance()->Uninit();
+	ModelXManager::ReleaseInstance();
 	TextureManager::getpInstance()->Uninit();
+	TextureManager::ReleaseInstance();
 
 	// 各種開放
 	SafeRelease::Normal(&current_scene_);

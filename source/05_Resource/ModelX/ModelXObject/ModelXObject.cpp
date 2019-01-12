@@ -14,6 +14,7 @@
 
 #include <SafeRelease/SafeRelease.h>
 #include <Texture/TextureManager/TextureManager.h>
+#include <ModelX/ModelXManager/ModelXManager.h>
 
 
 
@@ -61,7 +62,7 @@ TextureObject* ModelXObject::getpDiffuseTextureObject(unsigned index)
 //****************************************
 // 関数定義
 //****************************************
-void ModelXObject::Init(std::string* file_path)
+void ModelXObject::Init(std::string* file_path, const std::string* map_key_name)
 {
 	// マテリアルバッファ
 	LPD3DXBUFFER material_buffer = nullptr;
@@ -71,6 +72,9 @@ void ModelXObject::Init(std::string* file_path)
 
 	// マテリアル生成
 	CreateMaterial(file_path, &material_buffer);
+
+	// キー名保存
+	map_key_name_ = *map_key_name;
 }
 
 
@@ -86,6 +90,17 @@ void ModelXObject::Release()
 	{
 		SafeRelease::PlusRelease(&contents);
 	}
+
+	ModelXManager::getpInstance()->ReleaseFromTheMap(&map_key_name_);
+	delete this;
+}
+
+
+
+void ModelXObject::ForcedRelease()
+{
+	reference_counter_ = 0;
+	Release();
 }
 
 
@@ -97,14 +112,7 @@ void ModelXObject::AddReferenceCounter()
 
 
 
-void ModelXObject::ResetReferenceCounter()
-{
-	reference_counter_ = 0;
-}
-
-
-
-void ModelXObject::UpdateMeshDeclaration(D3DVERTEXELEMENT9* declaration)
+void ModelXObject::UpdateMeshDeclaration(const D3DVERTEXELEMENT9* declaration)
 {
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;

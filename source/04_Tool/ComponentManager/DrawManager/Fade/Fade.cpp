@@ -15,8 +15,6 @@
 #include <Renderer\RendererDirectX9\RendererDirectX9.h>
 #include <SafeRelease/SafeRelease.h>
 #include <Vector\ConvertToFrame\TimeToFrame\TimeToFrame.h>
-#include <Transform\Transform.h>
-#include <Polygon\PlanePolygon\PlanePolygon.h>
 #include <Texture\TextureManager\TextureManager.h>
 
 
@@ -34,7 +32,7 @@ const std::string Fade::TEXTURE_NAME_TRANSITION_01 = "Fade/Transition_01.png";
 MATRIX* Fade::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
-	return transform_->getpMatrixExtend()->GetWorldMatrix();
+	return transform_.getpMatrixExtend()->GetWorldMatrix();
 }
 
 
@@ -43,7 +41,7 @@ D3DMATERIAL9* Fade::getpMaterial(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
-	return plane_polygon_->GetMaterial();
+	return plane_polygon_.GetMaterial();
 }
 
 
@@ -71,7 +69,7 @@ bool Fade::getpEndFlag() const
 
 Transform* Fade::getpTransform() 
 {
-	return transform_;
+	return &transform_;
 }
 
 
@@ -92,22 +90,11 @@ void Fade::Init(Type type, State state, Vec2 size, XColor4 color, float speed)
 	type_ = type;
 	state_ = state;
 
-	// 平面ポリゴン作成
-	if (plane_polygon_ == nullptr)
-	{
-		plane_polygon_ = new PlanePolygon();
-	}
-
 	// テクスチャの登録
 	if (transition01_texture_ == nullptr)
 	{
-		transition01_texture_ = TextureManager::AddShareData(&TEXTURE_NAME_TRANSITION_01);
-	}
-
-	// 状態の作成
-	if (transform_ == nullptr)
-	{
-		transform_ = new Transform();
+		transition01_texture_ = TextureManager::getpInstance()
+			->getpObject(&TEXTURE_NAME_TRANSITION_01);
 	}
 
 	// オーダーリスト設定
@@ -117,9 +104,9 @@ void Fade::Init(Type type, State state, Vec2 size, XColor4 color, float speed)
 	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// フェードを指定サイズに変更
-	transform_->GetScale()->x = size.x;
-	transform_->GetScale()->y = size.y;
-	transform_->UpdateWorldMatrixSRT();
+	transform_.GetScale()->x = size.x;
+	transform_.GetScale()->y = size.y;
+	transform_.UpdateWorldMatrixSRT();
 
 	// エンドフラグOFF
 	end_flag_ = false;
@@ -130,7 +117,7 @@ void Fade::Init(Type type, State state, Vec2 size, XColor4 color, float speed)
 		// カラー
 		color.a = 1.0f;
 		color_ = color;
-		plane_polygon_->SetColor(color_);
+		plane_polygon_.SetColor(color_);
 
 		// フェード速度(単位：秒)
 		speed_ = -(1.0f / (float)Second_To_Frame(speed));
@@ -140,7 +127,7 @@ void Fade::Init(Type type, State state, Vec2 size, XColor4 color, float speed)
 		// カラー
 		color.a = 0.0f;
 		color_ = color;
-		plane_polygon_->SetColor(color_);
+		plane_polygon_.SetColor(color_);
 
 		// フェード速度(単位：秒)
 		speed_ = 1.0f / (float)Second_To_Frame(speed);
@@ -164,8 +151,7 @@ void Fade::Uninit()
 	end_flag_ = false;
 
 	// 各種開放
-	SafeRelease::Normal(&plane_polygon_);
-	SafeRelease::Normal(&transform_);
+	SafeRelease::PlusRelease(&transition01_texture_);
 }
 
 
@@ -174,7 +160,7 @@ void Fade::Update()
 {
 	// α値を変更
 	color_.a += speed_;
-	plane_polygon_->SetColor(color_);
+	plane_polygon_.SetColor(color_);
 
 	// フェードオブジェクトの更新
 	if (state_ == State::STATE_FADE_IN)
@@ -203,5 +189,5 @@ void Fade::Draw(unsigned object_index, unsigned mesh_index)
 	mesh_index = mesh_index;
 
 	// ポリゴン描画
-	plane_polygon_->Draw();
+	plane_polygon_.Draw();
 }

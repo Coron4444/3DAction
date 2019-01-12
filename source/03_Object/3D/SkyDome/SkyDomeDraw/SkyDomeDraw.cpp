@@ -12,6 +12,9 @@
 //****************************************
 #include "SkyDomeDraw.h"
 
+#include <SafeRelease/SafeRelease.h>
+#include <ModelX/ModelXManager/ModelXManager.h>
+
 
 
 //****************************************
@@ -37,7 +40,7 @@ void SkyDomeDraw::Init()
 	getpDrawOrderList()->setIsLighting(false);
 
 	// Xモデル登録
-	sky_dome_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
+	sky_dome_model_ = ModelXManager::getpInstance()->getpObject(&MODEL_NAME);
 }
 
 
@@ -47,7 +50,7 @@ void SkyDomeDraw::Init()
 //--------------------------------------------------
 void SkyDomeDraw::Uninit()
 {
-
+	SafeRelease::PlusRelease(&sky_dome_model_);
 }
 
 
@@ -61,7 +64,7 @@ void SkyDomeDraw::Draw(unsigned object_index, unsigned mesh_index)
 	mesh_index = mesh_index;
 
 	// 現在のメッシュの描画
-	sky_dome_model_->GetMesh()->DrawSubset(mesh_index);
+	sky_dome_model_->getpMesh()->DrawSubset(mesh_index);
 }
 
 
@@ -97,18 +100,18 @@ D3DMATERIAL9* SkyDomeDraw::getpMaterial(unsigned object_index, unsigned mesh_ind
 {
 	object_index = object_index;
 
-	return sky_dome_model_->GetMaterial(mesh_index);
+	return sky_dome_model_->getpMaterial(mesh_index);
 }
 
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 SkyDomeDraw::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 SkyDomeDraw::getpDiffuseTexture(unsigned object_index,
 												  unsigned mesh_index)
 {
 	object_index = object_index;
 
-	return sky_dome_model_->GetDecaleTextureName(mesh_index)->GetHandler();
+	return sky_dome_model_->getpDiffuseTextureObject(mesh_index)->getpHandler();
 }

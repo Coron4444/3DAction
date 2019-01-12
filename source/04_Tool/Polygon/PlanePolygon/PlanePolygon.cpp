@@ -108,12 +108,16 @@ void PlanePolygon::SetColor(XColor4 color)
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-void PlanePolygon::SetUV(const TextureObject* texture, const int pattern_num)
+void PlanePolygon::SetUV(TextureObject* texture, int pattern_num)
 {
-	vertex_[0].texcoord_ = Vec2(texture->GetUV(pattern_num).u0, texture->GetUV(pattern_num).v0);
-	vertex_[1].texcoord_ = Vec2(texture->GetUV(pattern_num).u1, texture->GetUV(pattern_num).v0);
-	vertex_[2].texcoord_ = Vec2(texture->GetUV(pattern_num).u0, texture->GetUV(pattern_num).v1);
-	vertex_[3].texcoord_ = Vec2(texture->GetUV(pattern_num).u1, texture->GetUV(pattern_num).v1);
+	vertex_[0].texcoord_ = Vec2(*texture->getpUV(pattern_num)->getpLeftUpU(), 
+								*texture->getpUV(pattern_num)->getpLeftUpV());
+	vertex_[1].texcoord_ = Vec2(*texture->getpUV(pattern_num)->getpRightButtomU(), 
+								*texture->getpUV(pattern_num)->getpLeftUpV());
+	vertex_[2].texcoord_ = Vec2(*texture->getpUV(pattern_num)->getpLeftUpU(), 
+								*texture->getpUV(pattern_num)->getpRightButtomV());
+	vertex_[3].texcoord_ = Vec2(*texture->getpUV(pattern_num)->getpRightButtomU(), 
+								*texture->getpUV(pattern_num)->getpRightButtomV());
 
 	RegistrationVertex();
 }

@@ -15,6 +15,7 @@
 #include <main.h>
 
 #include <Polygon\PlanePolygon\PlanePolygon.h>
+#include <ModelX/ModelXManager/ModelXManager.h>
 
 
 
@@ -40,7 +41,7 @@ void StencilShadowTestDraw::Init()
 	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// Xモデル登録
-	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
+	player_model_ = ModelXManager::getpInstance()->getpObject(&MODEL_NAME);
 	getpGameObject()->GetTransform()->GetPosition()->y += -1.0f;
 	getpGameObject()->GetTransform()->UpdateWorldMatrixSRT();
 
@@ -61,6 +62,7 @@ void StencilShadowTestDraw::Uninit()
 {
 	// 各種開放
 	SafeRelease::Normal(&plane_polygon_);
+	SafeRelease::PlusRelease(&player_model_);
 }
 
 
@@ -72,7 +74,7 @@ void StencilShadowTestDraw::Draw(unsigned object_index, unsigned mesh_index)
 {
 	if (object_index != 2)
 	{
-		player_model_->GetMesh()->DrawSubset(mesh_index);
+		player_model_->getpMesh()->DrawSubset(mesh_index);
 	}
 	else
 	{	
@@ -185,19 +187,19 @@ D3DMATERIAL9* StencilShadowTestDraw::getpMaterial(unsigned object_index, unsigne
 
 	object_index = object_index;
 
-	return player_model_->GetMaterial(mesh_index);
+	return player_model_->getpMaterial(mesh_index);
 }
 
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 StencilShadowTestDraw::getpDecaleTexture(unsigned object_index, unsigned mesh_index)
+LPDIRECT3DTEXTURE9 StencilShadowTestDraw::getpDiffuseTexture(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 
 	if (object_index == 2) return nullptr;
 
-	return player_model_->GetDecaleTextureName(mesh_index)->GetHandler();
+	return player_model_->getpDiffuseTextureObject(mesh_index)->getpHandler();
 }

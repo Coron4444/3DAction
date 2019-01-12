@@ -12,9 +12,9 @@
 //****************************************
 #include "ShaderManager.h"
 #include "../Shader/ShaderBase/VertexShaderNull.h"
-#include "../Shader/ShaderBase/PixelShaderNull.h"
 #include "../Shader/VertexShader/VertexShaderFixed/VertexShaderFixed.h"
 #include "../Shader/VertexShader/VertexShaderBumpMapping/VertexShaderBumpMapping.h"
+#include "../Shader/PixelShader/PixelShaderNull/PixelShaderNull.h"
 #include "../Shader/PixelShader/PixelShaderBumpMapping/PixelShaderBumpMapping.h"
 
 #include <Component/Draw/DrawBase/DrawBase.h>

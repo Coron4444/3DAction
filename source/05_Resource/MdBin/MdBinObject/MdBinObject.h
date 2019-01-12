@@ -280,11 +280,9 @@ private:
 	//! @details
 	//! @param mesh_index   メッシュインデックス
 	//! @param vertex_index 頂点インデックス
-	//! @param md_bin       バイナリーモデルデータ
 	//! @retval void なし
 	//----------------------------------------
-	void CreateColor(int mesh_index, int vertex_index,
-					 MdBinDataContainer* md_bin_data);
+	void CreateColor(int mesh_index, int vertex_index);
 
 	//----------------------------------------
 	//! @brief UV生成関数

@@ -57,11 +57,8 @@ void TextureManager::ReleaseInstance()
 //****************************************
 // プロパティ定義
 //****************************************
-TextureObject* TextureManager::getpObject(std::string* key_name,
-									std::string* file_path,
-									int pattern_num_all,
-									int pattern_num_width,
-									int pattern_num_height)
+TextureObject* TextureManager::getpObject(const std::string* key_name,
+										  const std::string* file_path)
 {
 	// マップにあるかの確認
 	auto iterator = object_map_.find(*key_name);
@@ -76,7 +73,7 @@ TextureObject* TextureManager::getpObject(std::string* key_name,
 	// 新規作成
 	std::string path = CreateFilePath(key_name, file_path);
 	TextureObject* texture_object = new TextureObject();
-	texture_object->Init(&path);
+	texture_object->Init(&path, key_name);
 	texture_object->AddReferenceCounter();
 	object_map_.insert(std::make_pair(*key_name, texture_object));
 	return texture_object;
@@ -103,18 +100,32 @@ void TextureManager::Init()
 
 void TextureManager::Uninit()
 {
-	// 各テクスチャの解放
-	for (auto& contents : object_map_)
+	// 各テクスチャの強制解放
+	auto iterator = object_map_.begin();
+	while (iterator != object_map_.end())
 	{
-		contents.second->ResetReferenceCounter();
-		SafeRelease::PlusRelease(&contents.second);
+		iterator->second->ForcedRelease();
+		iterator = object_map_.begin();
+	}
+	object_map_.clear();
+}
+
+
+
+void TextureManager::ReleaseFromTheMap(std::string* key_name)
+{
+	// マップから解放
+	auto iterator = object_map_.find(*key_name);
+	if (iterator != object_map_.end())
+	{
+		object_map_.erase(iterator);
 	}
 }
 
 
 
-std::string TextureManager::CreateFilePath(std::string* key_name,
-										   std::string* file_path)
+std::string TextureManager::CreateFilePath(const std::string* key_name,
+										   const std::string* file_path)
 {
 	// デフォルトのパスを使用
 	if (file_path == nullptr) return DEFAULT_PATH + *key_name;

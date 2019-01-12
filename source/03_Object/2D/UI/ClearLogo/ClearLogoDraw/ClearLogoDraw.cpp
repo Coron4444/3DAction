@@ -13,6 +13,7 @@
 #include "ClearLogoDraw.h"
 
 #include <Polygon\PlanePolygon\PlanePolygon.h>
+#include <SafeRelease/SafeRelease.h>
 
 
 
@@ -42,11 +43,11 @@ void ClearLogoDraw::Init()
 	clear_logo_ = (ClearLogo*)getpGameObject();
 
 	// テクスチャの登録
-	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
+	diffuse_texture_ = TextureManager::getpInstance()->getpObject(&TEXTURE_NAME);
 
 	// 拡縮&移動
-	clear_logo_->GetTransform()->GetScale()->x = decale_texture_->GetWidth() * SCALE;
-	clear_logo_->GetTransform()->GetScale()->y = decale_texture_->GetHeight() * (SCALE + 0.2f);
+	clear_logo_->GetTransform()->GetScale()->x = diffuse_texture_->getWidth() * SCALE;
+	clear_logo_->GetTransform()->GetScale()->y = diffuse_texture_->getHeight() * (SCALE + 0.2f);
 	*clear_logo_->GetTransform()->GetPosition() = Vec3(0.0f, 0.0f, 0.0f);
 	clear_logo_->GetTransform()->UpdateWorldMatrixSRT();
 }
@@ -58,6 +59,7 @@ void ClearLogoDraw::Init()
 //--------------------------------------------------
 void ClearLogoDraw::Uninit()
 {
+	SafeRelease::PlusRelease(&diffuse_texture_);
 }
 
 
@@ -113,13 +115,13 @@ D3DMATERIAL9* ClearLogoDraw::getpMaterial(unsigned object_index, unsigned mesh_i
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 ClearLogoDraw::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 ClearLogoDraw::getpDiffuseTexture(unsigned object_index,
 													unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
 
-	return decale_texture_->GetHandler();
+	return diffuse_texture_->getpHandler();
 }

@@ -71,10 +71,10 @@ void PixelShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
 {
 	camera = camera;
 
-	// デカールテクスチャの設定
-	int sampler_index = GetConstantTable()->GetSamplerIndex("DECALE_SAMPLER");
+	// ディヒューズテクスチャの設定
+	int sampler_index = GetConstantTable()->GetSamplerIndex("DIFFUSE_SAMPLER");
 	GetDevice()->SetTexture(sampler_index, 
-							draw->getpDecaleTexture(object_index, mesh_index));
+							draw->getpDiffuseTexture(object_index, mesh_index));
 
 	// 法線テクスチャの設定
 	sampler_index = GetConstantTable()->GetSamplerIndex("NORMAL_SAMPLER");

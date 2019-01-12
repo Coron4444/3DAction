@@ -18,10 +18,11 @@
 #include <Scenes/ResultScene/ResultSceneState/ResultSceneState_Start/ResultSceneState_Start.h>
 
 #include <GameObjectManager/GameObjectManager.h>
-#include <ResourceManager/ResourceManager.h>
 #include <SafeRelease/SafeRelease.h>
 #include <ConvertToFrame/MeterToFrame/MeterToFrame.h>
 #include <Keyboard/Keyboard.h>
+
+#include <ComponentManager/DrawManager/Camera/CameraState_CrawlUp/CameraState_CrawlUp.h>
 
 #include <3D/Coin/CoinFactory/CoinFactory.h>
 #include <3D/Enemy/EnemyFactory/EnemyFactory.h>
@@ -48,7 +49,7 @@ void GameSceneState_Start::Init()
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->setState(new CameraState_CrawlUp());
+		->getpCamera()->setState(new CameraState_CrawlUp());
 	//GameObjectManager::GetDrawManager()->GetBackBuffer()
 	//	->GetCamera()->ChangeState(new CameraState_HomingTarget());
 

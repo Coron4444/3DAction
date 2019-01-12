@@ -98,7 +98,7 @@ void VertexShaderFixed::SpecificSetting(DrawBase* draw, Camera* camera,
 void VertexShaderFixed::SetTexture(DrawBase* draw, unsigned object_index,
 								   unsigned mesh_index)
 {
-	LPDIRECT3DTEXTURE9 temp = draw->getpDecaleTexture(object_index, mesh_index);
+	LPDIRECT3DTEXTURE9 temp = draw->getpDiffuseTexture(object_index, mesh_index);
 
 	ShaderBase::GetDevice()->SetTexture(0, temp);
 }

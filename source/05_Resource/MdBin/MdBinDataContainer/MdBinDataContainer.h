@@ -788,7 +788,7 @@ public:
 		{
 			if (version) {}
 
-			archive & vertex_array_;
+			archive & position_array_;
 			archive & normal_array_;
 			archive & uv_set_array_;
 			archive & index_array_;

@@ -38,7 +38,7 @@ void DrawManager::Init()
 	// バックバッファ初期化
 	back_buffer_ = new BackBuffer();
 	back_buffer_->Init();
-	back_buffer_->SetShaderManager(shader_manager_);
+	back_buffer_->setShaderManager(shader_manager_);
 }
 
 

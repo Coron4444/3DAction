@@ -18,7 +18,12 @@
 #include <Component/Draw/DrawNull/DrawNull.h>
 #include "../SkyDome.h"
 
-#include <ResourceManager\ResourceManager.h>
+
+
+//****************************************
+// ÉNÉâÉXêÈåæ
+//****************************************
+class ModelXObject;
 
 
 
@@ -74,7 +79,7 @@ public:
 	unsigned getMeshNum(unsigned object_index) override;
 	MATRIX* getpMatrix(unsigned object_index) override;
 	D3DMATERIAL9* getpMaterial(unsigned object_index, unsigned mesh_index) override;
-	LPDIRECT3DTEXTURE9 getpDecaleTexture(unsigned object_index, unsigned mesh_index) override;
+	LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index, unsigned mesh_index) override;
 };
 
 

@@ -13,6 +13,7 @@
 #include "VertexShaderBumpMapping.h"
 
 #include <GameObjectManager/GameObjectManager.h>
+#include <ModelX/ModelXManager/ModelXManager.h>
 
 
 
@@ -38,9 +39,9 @@ const D3DVERTEXELEMENT9 VertexShaderBumpMapping::DECLARATION[]
 //--------------------------------------------------
 void VertexShaderBumpMapping::UpdateMeshDeclaration(ModelXObject* model_x)
 {
-	model_x->UpdateMeshDeclaration(DECLARATION);					// メッシュの変更
-	D3DXComputeNormals(model_x->GetMesh(), nullptr);				// 法線を算出
-	D3DXComputeTangent(model_x->GetMesh(), 0, 0, 0, TRUE, nullptr);	//接ベクトルを算出
+	model_x->UpdateMeshDeclaration(DECLARATION);						// メッシュの変更
+	D3DXComputeNormals(model_x->getpMesh(), nullptr);					// 法線を算出
+	D3DXComputeTangent(model_x->getpMesh(), 0, 0, 0, TRUE, nullptr);	//接ベクトルを算出
 }
 
 

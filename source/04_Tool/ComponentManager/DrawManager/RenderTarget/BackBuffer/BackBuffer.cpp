@@ -12,12 +12,11 @@
 //****************************************
 #include "BackBuffer.h"
 
-#include "../../Fade/Fade.h"
 #include "../../Camera/Camera.h"
 
 #include "../../ShaderManager/ShaderManager.h"
 #include <Component/Draw/DrawBase/DrawBase.h>
-#include <Effekseer/EffekseerManager/EffekseerManager.h>
+//#include <Effekseer/EffekseerManager/EffekseerManager.h>
 #include <GameObjectBase/GameObjectBase.h>
 
 #include <main.h>
@@ -121,11 +120,11 @@ void BackBuffer::Update()
 	if (is_fade_) fade_->Update();
 
 	// エフェクシアの更新
-	EffekseerManager::CreateProjectionMatrix(camera_->getAngleOfView());
-	EffekseerManager::CreateViewMatrix(*camera_->getpPositon(),
-									   *camera_->getpLookAtPoint(),
-									   *camera_->getpUp());
-	EffekseerManager::Update();
+	//EffekseerManager::CreateProjectionMatrix(camera_->getAngleOfView());
+	//EffekseerManager::CreateViewMatrix(*camera_->getpPositon(),
+	//								   *camera_->getpLookAtPoint(),
+	//								   *camera_->getpUp());
+	//EffekseerManager::Update();
 }
 
 
@@ -216,7 +215,7 @@ void BackBuffer::Draw()
 	}
 
 	// エフェクシア
-	EffekseerManager::Draw();
+	//EffekseerManager::Draw();
 
 	// 2D
 	camera_->setType(Camera::Type::TWO_DIMENSIONAL);
@@ -364,6 +363,20 @@ void BackBuffer::UninitFade()
 
 	// フェードフラグOFF
 	is_fade_ = false;
+}
+
+
+
+bool BackBuffer::IsFadeEnd()
+{
+	return fade_->getpEndFlag(); 
+}
+
+
+
+bool BackBuffer::IsFadeStateName(Fade::State state) 
+{
+	return *fade_->getpState() == state; 
 }
 
 

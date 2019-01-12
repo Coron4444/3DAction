@@ -13,7 +13,7 @@
 #include "TutorialLogoDraw.h"
 
 #include <main.h>
-#include <Polygon\PlanePolygon\PlanePolygon.h>
+#include <SafeRelease/SafeRelease.h>
 
 
 
@@ -49,7 +49,7 @@ void TutorialLogoDraw::Init()
 	// テクスチャの登録
 	for (unsigned i = 0; i < TEXTURE_NUM; i++)
 	{
-		decale_texture_[i] = TextureManager::AddUniqueData(&TEXTURE_NAME[i]);
+		diffuse_texture_[i] = TextureManager::getpInstance()->getpObject(&TEXTURE_NAME[i]);
 	}
 
 	// 拡縮
@@ -69,6 +69,11 @@ void TutorialLogoDraw::Init()
 void TutorialLogoDraw::Uninit()
 {
 	SafeRelease::Normal(&plane_polygon_);
+
+	for (unsigned i = 0; i < TEXTURE_NUM; i++)
+	{
+		SafeRelease::PlusRelease(&diffuse_texture_[i]);
+	}	
 }
 
 
@@ -135,13 +140,13 @@ D3DMATERIAL9* TutorialLogoDraw::getpMaterial(unsigned object_index, unsigned mes
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 TutorialLogoDraw::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 TutorialLogoDraw::getpDiffuseTexture(unsigned object_index,
 														unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
 
-	return decale_texture_[texture_index_]->GetHandler();
+	return diffuse_texture_[texture_index_]->getpHandler();
 }

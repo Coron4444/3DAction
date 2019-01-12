@@ -16,7 +16,7 @@
 #include "Number.h"
 
 #include <Polygon\PlanePolygon\PlanePolygon.h>
-#include <ResourceManager\ResourceManager.h>
+#include <Texture/TextureManager/TextureManager.h>
 
 
 
@@ -48,7 +48,8 @@ void Number::Init(DrawBase* draw)
 	plane_polygon_ = new PlanePolygon;
 
 	// テクスチャの登録
-	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME, nullptr, 10, 10, 1);
+	diffuse_texture_ = TextureManager::getpInstance()->getpObject(&TEXTURE_NAME, nullptr);
+	diffuse_texture_->setpDivisionNum(10, 10, 1);
 
 	// 基底クラスの初期化
 	GameObjectBase::Init(nullptr, draw, nullptr);
@@ -73,6 +74,8 @@ void Number::Uninit()
 
 	// プレーンポリゴンの解放
 	SafeRelease::Normal(&plane_polygon_);
+
+	SafeRelease::PlusRelease(&diffuse_texture_);
 }
 
 
@@ -103,7 +106,7 @@ void Number::SetNumber(int number)
 
 	// 数字の変更とUV値の変更
 	number_ = number;
-	plane_polygon_->SetUV(decale_texture_, number_);
+	plane_polygon_->SetUV(diffuse_texture_, number_);
 }
 
 

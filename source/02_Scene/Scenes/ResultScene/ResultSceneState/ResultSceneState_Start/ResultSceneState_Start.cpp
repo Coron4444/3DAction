@@ -18,7 +18,6 @@
 #include <Scenes/TitleScene/TitleSceneState/TitleSceneState_Start/TitleSceneState_Start.h>
 
 #include <GameObjectManager/GameObjectManager.h>
-#include <ResourceManager\ResourceManager.h>
 #include <SafeRelease/SafeRelease.h>
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
 #include <Keyboard\Keyboard.h>
@@ -39,7 +38,7 @@ void ResultSceneState_Start::Init()
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->setState(nullptr);
+		->getpCamera()->setState(nullptr);
 
 	if (result_scene_->getpSceneManager()->getpCommonData()->getIsClear())
 	{

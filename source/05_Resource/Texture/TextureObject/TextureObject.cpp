@@ -11,6 +11,7 @@
 // インクルード文
 //****************************************
 #include "TextureObject.h"
+#include "../TextureManager/TextureManager.h"
 
 #include <SafeRelease/SafeRelease.h>
 
@@ -121,13 +122,16 @@ int TextureObject::getAnimationNum(int animation_count, int animation_speed)
 //****************************************
 // 関数定義
 //****************************************
-void TextureObject::Init(std::string* file_path)
+void TextureObject::Init(std::string* file_path, const std::string* map_key_name)
 {
 	// テクスチャハンドラ生成
 	CreateTextureHandler(file_path);
 
 	// テクスチャ情報生成
 	CreateTextureInformation(file_path);
+
+	// キー名保存
+	map_key_name_ = *map_key_name;
 }
 
 
@@ -138,6 +142,16 @@ void TextureObject::Release()
 	if (reference_counter_ > 0) return;
 
 	SafeRelease::PlusRelease(&texture_handler_);
+	TextureManager::getpInstance()->ReleaseFromTheMap(&map_key_name_);
+	delete this;
+}
+
+
+
+void TextureObject::ForcedRelease()
+{
+	reference_counter_ = 0;
+	Release();
 }
 
 
@@ -145,13 +159,6 @@ void TextureObject::Release()
 void TextureObject::AddReferenceCounter()
 {
 	reference_counter_++;
-}
-
-
-
-void TextureObject::ResetReferenceCounter()
-{
-	reference_counter_ = 0;
 }
 
 

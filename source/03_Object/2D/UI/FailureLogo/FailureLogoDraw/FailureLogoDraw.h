@@ -18,7 +18,7 @@
 #include <Component/Draw/DrawNull/DrawNull.h>
 #include "../FailureLogo.h"
 
-#include <ResourceManager\ResourceManager.h>
+#include <Texture/TextureManager/TextureManager.h>
 
 
 
@@ -43,7 +43,7 @@ private:
 //==============================
 private:
 	FailureLogo* failure_logo_;			//!< 失敗ロゴ
-	TextureObject* decale_texture_;		//!< デカールテクスチャ
+	TextureObject* diffuse_texture_;	//!< ディヒューズテクスチャ
 
 
 //==============================
@@ -75,7 +75,7 @@ public:
 	unsigned getMeshNum(unsigned object_index) override;
 	MATRIX* getpMatrix(unsigned object_index) override;
 	D3DMATERIAL9* getpMaterial(unsigned object_index, unsigned mesh_index) override;
-	LPDIRECT3DTEXTURE9 getpDecaleTexture(unsigned object_index, unsigned mesh_index) override;
+	LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index, unsigned mesh_index) override;
 };
 
 

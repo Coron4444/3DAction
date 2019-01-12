@@ -49,7 +49,7 @@ public:
 	//! @brief インスタンス取得関数
 	//! @details
 	//! @param void なし
-	//! @retval Renderer* レンダラーインスタンス
+	//! @retval TextureManager* インスタンス
 	//----------------------------------------
 	static TextureManager* getpInstance();
 
@@ -84,11 +84,8 @@ public:
 	//! @param void なし
 	//! @retval TextureObject* オブジェクト取得
 	//----------------------------------------
-	TextureObject* getpObject(std::string* key_name, 
-							  std::string* file_path = nullptr,
-							  int pattern_num_all = 1,
-							  int pattern_num_width = 1,
-							  int pattern_num_height = 1);
+	TextureObject* getpObject(const std::string* key_name, 
+							  const std::string* file_path = nullptr);
 
 
 //====================
@@ -118,15 +115,25 @@ public:
 	//----------------------------------------
 	void Uninit();
 
+	//----------------------------------------
+	//! @brief マップから解放関数
+	//! @details
+	//! @param *key_name キー名
+	//! @param *file_path ファイルパス
+	//! @retval void なし
+	//----------------------------------------
+	void ReleaseFromTheMap(std::string* key_name);
+
 private:
 	//----------------------------------------
 	//! @brief フルパス生成関数
 	//! @details
 	//! @param *key_name キー名
 	//! @param *file_path ファイルパス
-	//! @retval void なし
+	//! @retval std::string フルパス
 	//----------------------------------------
-	std::string CreateFilePath(std::string* key_name, std::string* file_path);
+	std::string CreateFilePath(const std::string* key_name, 
+							   const std::string* file_path);
 
 
 //====================

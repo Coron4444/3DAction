@@ -177,7 +177,7 @@ void MdBinObject::CreateMesh(MdBinDataContainer* md_bin_data)
 		CreateDiffuseTexture(i, md_bin_data);
 
 		// バッファ生成
-		CreateBuffer(i, md_bin_data);
+		//CreateBuffer(i, md_bin_data);
 	}
 }
 
@@ -198,9 +198,9 @@ void MdBinObject::CreateIndex(int mesh_index, MdBinDataContainer* md_bin_data)
 										->getIndexArraySize());
 
    // データ取得
-	for (int i = 0; i = mesh_[mesh_index].getIndexArraySize(); i++)
+	for (int i = 0; i < mesh_[mesh_index].getIndexArraySize(); i++)
 	{
-		int index = *md_bin_data->getpMesh(mesh_index)->getpIndex(i);
+		WORD index = (WORD)*md_bin_data->getpMesh(mesh_index)->getpIndex(i);
 		*mesh_[mesh_index].getpIndex(i) = index;
 	}
 }
@@ -218,7 +218,7 @@ void MdBinObject::CreateVertex(int mesh_index, MdBinDataContainer* md_bin_data)
 	{
 		CreateVertexPosition(mesh_index, i, md_bin_data);
 		CreateNormal(mesh_index, i, md_bin_data);
-		CreateColor(mesh_index, i, md_bin_data);
+		CreateColor(mesh_index, i);
 		CreateUV(mesh_index, i, md_bin_data);
 	}
 }
@@ -251,8 +251,7 @@ void MdBinObject::CreateNormal(int mesh_index, int vertex_index,
 
 
 
-void MdBinObject::CreateColor(int mesh_index, int vertex_index,
-							  MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateColor(int mesh_index, int vertex_index)
 {
 	int material_index = mesh_[mesh_index].getMaterialIndex();
 	D3DMATERIAL9 diffuse = material_[material_index];
@@ -283,7 +282,7 @@ void MdBinObject::CreateDiffuseTexture(int mesh_index,
 		->getpTexture(0)->getpFilePath();
 	std::string key_name;
 	CreateFilePathAndKeyName(&file_path, &key_name);
-	TextureObject* texture_object = TextureManager::AddUniqueData(&key_name, &file_path);
+	TextureObject* texture_object = TextureManager::getpInstance()->getpObject(&key_name, &file_path);
 	mesh_[mesh_index].setDiffuseTextureObject(texture_object);
 }
 

@@ -14,7 +14,13 @@
 // インクルード文
 //****************************************
 #include "../../ShaderBase/VertexShaderNull.h"
-#include <ResourceManager/ResourceManager.h>
+
+
+
+//****************************************
+// クラス宣言
+//****************************************
+class ModelXObject;
 
 
 

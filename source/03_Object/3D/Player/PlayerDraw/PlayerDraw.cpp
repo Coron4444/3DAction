@@ -13,6 +13,8 @@
 #include "PlayerDraw.h"
 
 #include <ComponentManager/DrawManager/Shader/VertexShader/VertexShaderBumpMapping/VertexShaderBumpMapping.h>
+#include <SafeRelease/SafeRelease.h>
+#include <ModelX/ModelXManager/ModelXManager.h>
 
 
 
@@ -41,14 +43,14 @@ void PlayerDraw::Init()
 	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
 
 	// Xモデル登録
-	player_model_ = ModelXManager::AddUniqueData(&MODEL_NAME);
+	player_model_ = ModelXManager::getpInstance()->getpObject(&MODEL_NAME);
 
 	// 頂点宣言用メッシュ更新
 	VertexShaderBumpMapping::UpdateMeshDeclaration(player_model_);
 
 	// 法線マップのロード
-	normal_texture_[0] = TextureManager::AddUniqueData(&NORMAL_TEXTURE_MODEL, &TEXTURE_PATH);
-	normal_texture_[1] = TextureManager::AddUniqueData(&NORMAL_TEXTURE_SWORD, &TEXTURE_PATH);
+	normal_texture_[0] = TextureManager::getpInstance()->getpObject(&NORMAL_TEXTURE_MODEL, &TEXTURE_PATH);
+	normal_texture_[1] = TextureManager::getpInstance()->getpObject(&NORMAL_TEXTURE_SWORD, &TEXTURE_PATH);
 }
 
 
@@ -58,7 +60,13 @@ void PlayerDraw::Init()
 //--------------------------------------------------
 void PlayerDraw::Uninit()
 {
-	
+	SafeRelease::PlusRelease(&player_model_);
+
+	for (int i = 0; i < 2; i++)
+	{
+
+		SafeRelease::PlusRelease(&normal_texture_[i]);
+	}
 }
 
 
@@ -71,7 +79,7 @@ void PlayerDraw::Draw(unsigned object_index, unsigned mesh_index)
 	object_index = object_index;
 
 	// 現在のメッシュの描画
-	player_model_->GetMesh()->DrawSubset(mesh_index);
+	player_model_->getpMesh()->DrawSubset(mesh_index);
 }
 
 
@@ -107,19 +115,19 @@ D3DMATERIAL9* PlayerDraw::getpMaterial(unsigned object_index, unsigned mesh_inde
 {
 	object_index = object_index;
 
-	return player_model_->GetMaterial(mesh_index);
+	return player_model_->getpMaterial(mesh_index);
 }
 
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 PlayerDraw::getpDecaleTexture(unsigned object_index, unsigned mesh_index)
+LPDIRECT3DTEXTURE9 PlayerDraw::getpDiffuseTexture(unsigned object_index, unsigned mesh_index)
 {
 	object_index = object_index;
 
-	return player_model_->GetDecaleTextureName(mesh_index)->GetHandler();
+	return player_model_->getpDiffuseTextureObject(mesh_index)->getpHandler();
 }
 
 
@@ -131,5 +139,5 @@ LPDIRECT3DTEXTURE9 PlayerDraw::getpNormalTexture(unsigned object_index, unsigned
 {
 	object_index = object_index;
 
-	return normal_texture_[mesh_index]->GetHandler();
+	return normal_texture_[mesh_index]->getpHandler();
 }

@@ -42,6 +42,7 @@ private:
 	DWORD mesh_num_;										//!< メッシュ数
 	std::vector<D3DMATERIAL9> material_;					//!< マテリアル
 	std::vector<TextureObject*> diffuse_texture_object_;	//!< ディヒューズテクスチャオブジェクト
+	std::string map_key_name_;								//!< マップ用キー名
 	int reference_counter_ = 0;								//!< 参照カウンタ
 
 
@@ -55,7 +56,7 @@ public:
 	//! @param void なし 
 	//! @retval LPD3DXMESH メッシュ
 	//----------------------------------------
-	LPD3DXMESH getpMesh() { return mesh_; }
+	LPD3DXMESH getpMesh();
 
 	//----------------------------------------
 	//! @brief メッシュ数取得関数
@@ -63,7 +64,7 @@ public:
 	//! @param void なし 
 	//! @retval unsigned メッシュ数
 	//----------------------------------------
-	unsigned getMeshNum() { return material_num_; }
+	unsigned getMeshNum();
 
 	//----------------------------------------
 	//! @brief マテリアル取得関数
@@ -71,7 +72,7 @@ public:
 	//! @param index インデックス 
 	//! @retval D3DMATERIAL9* マテリアル
 	//----------------------------------------
-	D3DMATERIAL9* getpMaterial(unsigned index) { return &material_[index]; }
+	D3DMATERIAL9* getpMaterial(unsigned index);
 	
 	//----------------------------------------
 	//! @brief マテリアル色設定関数
@@ -88,7 +89,8 @@ public:
 	//! @param index インデックス
 	//! @retval void なし
 	//----------------------------------------
-	TextureObject* getpDiffuseTextureObject(unsigned index) { return texture_object_array_.at(index); }
+	TextureObject* getpDiffuseTextureObject(unsigned index);
+
 
 //====================
 // 関数
@@ -97,10 +99,11 @@ public:
 	//----------------------------------------
 	//! @brief 初期化関数
 	//! @details
-	//! @param *file_path ファイルパス
+	//! @param *file_path    ファイルパス
+	//! @param *map_key_name マップ用キー名
 	//! @retval void なし
 	//----------------------------------------
-	void Init(std::string* file_path);
+	void Init(std::string* file_path, const std::string* map_key_name);
 
 	//----------------------------------------
 	//! @brief 解放関数
@@ -111,6 +114,14 @@ public:
 	void Release();
 
 	//----------------------------------------
+	//! @brief 強制解放関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void ForcedRelease();
+
+	//----------------------------------------
 	//! @brief 参照カウンタ追加関数
 	//! @details
 	//! @param void なし
@@ -119,21 +130,12 @@ public:
 	void AddReferenceCounter();
 
 	//----------------------------------------
-	//! @brief 参照カウンタリセット関数
-	//! @details
-	//! @param void なし
-	//! @retval void なし
-	//----------------------------------------
-	void ResetReferenceCounter();
-
-	//----------------------------------------
 	//! @brief 頂点情報変更関数
 	//! @details
 	//! @param declaration 頂点宣言
 	//! @retval void なし
 	//----------------------------------------
-	void UpdateMeshDeclaration(D3DVERTEXELEMENT9* declaration);
-
+	void UpdateMeshDeclaration(const D3DVERTEXELEMENT9* declaration);
 
 private:
 	//----------------------------------------

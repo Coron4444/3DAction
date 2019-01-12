@@ -16,6 +16,8 @@
 
 #include <Component/Draw/DrawNull/DrawNull.h>
 #include <Vector3D.h>
+#include <Transform\Transform.h>
+#include <Polygon\PlanePolygon\PlanePolygon.h>
 
 
 
@@ -23,7 +25,6 @@
 // クラス宣言
 //****************************************
 class PlanePolygon;
-class Transform;
 class TextureObject;
 
 
@@ -69,8 +70,8 @@ public:
 private:
 	Type type_;										//!< タイプ
 	State state_;									//!< ステート
-	PlanePolygon* plane_polygon_ = nullptr;			//!< 板ポリゴン
-	Transform* transform_ = nullptr;				//!< 状態
+	PlanePolygon plane_polygon_;					//!< 板ポリゴン
+	Transform transform_;							//!< 状態
 	TextureObject* transition01_texture_ = nullptr;	//!< テクスチャオブジェクト
 	XColor4 color_;									//!< 色
 	float speed_;									//!< フェード速度

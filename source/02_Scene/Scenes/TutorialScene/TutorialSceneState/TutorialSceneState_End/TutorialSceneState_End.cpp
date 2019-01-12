@@ -16,8 +16,6 @@
 #include <SceneManager\SceneManager.h>
 #include <Scenes\GameScene\GameScene.h>
 #include <Scenes/GameScene/GameSceneState/GameSceneState_Start/GameSceneState_Start.h>
-
-#include <ResourceManager\ResourceManager.h>
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
 #include <Keyboard\Keyboard.h>
 

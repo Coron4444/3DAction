@@ -17,7 +17,6 @@
 
 #include <Keyboard\Keyboard.h>
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
-#include <ResourceManager\ResourceManager.h>
 
 #include <3D/Player/PlayerUpdate_Special/PlayerUpdate_Special.h>
 #include <GameObjectManager/GameObjectManager.h>
@@ -34,7 +33,7 @@ const float PlayerUpdate::SPEED = MeterPerSecondSquared_To_MeterPerFrameSquared(
 
 static const std::string TEST_EFFEKSEER = "Beam/Beam.efk";
 
-static EffekseerObject* temp_object_;
+//static EffekseerObject* temp_object_;
 
 //======================================================================
 //
@@ -60,9 +59,9 @@ void PlayerUpdate::Init()
 	player_->GetPhysics()->SetMyFriction(1.0f);
 	player_->GetPhysics()->SetMyBounciness(1.0f);
 
-	EffekseerManager::AddUniqueData(&TEST_EFFEKSEER);
-
-	temp_object_ = EffekseerManager::GetReferenceEffekseerObject(&TEST_EFFEKSEER);
+	//EffekseerManager::AddUniqueData(&TEST_EFFEKSEER);
+	//
+	//temp_object_ = EffekseerManager::GetReferenceEffekseerObject(&TEST_EFFEKSEER);
 }
 
 
@@ -156,16 +155,16 @@ void PlayerUpdate::Update()
 		player_->GetTransform()->SetLookAtVector(Vec3(0.0f, 0.0f, -1.0f));
 	}
 
-	float temp_scale = 1.0f;
+	//float temp_scale = 1.0f;
 
 	if (GetKeyboardTrigger(DIK_P))
 	{
-		*temp_object_->GetTransform()->GetPosition() = *player_->GetTransform()->GetPosition();
-		*temp_object_->GetTransform()->GetScale() = Vec3(temp_scale, temp_scale, temp_scale);
-		temp_scale += 1.0f;
-		temp_object_->GetTransform()->UpdateWorldMatrixSRT();
-		temp_object_->Play();
-		temp_object_->SetRepeat(true);
+		//*temp_object_->GetTransform()->GetPosition() = *player_->GetTransform()->GetPosition();
+		//*temp_object_->GetTransform()->GetScale() = Vec3(temp_scale, temp_scale, temp_scale);
+		//temp_scale += 1.0f;
+		//temp_object_->GetTransform()->UpdateWorldMatrixSRT();
+		//temp_object_->Play();
+		//temp_object_->SetRepeat(true);
 
 		//EffekseerManager::CreateDisposableEffekseerObject(&TEST_EFFEKSEER, *player_->GetTransform()->GetPosition());//Vec3(0.0f, 0.0f, 0.0f));
 	}

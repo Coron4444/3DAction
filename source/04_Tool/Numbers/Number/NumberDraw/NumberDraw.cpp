@@ -14,8 +14,9 @@
 
 #include "NumberDraw.h"
 
-#include <ResourceManager\ResourceManager.h>
+#include <Texture/TextureManager/TextureManager.h>
 #include <Polygon\PlanePolygon\PlanePolygon.h>
+#include <SafeRelease/SafeRelease.h>
 
 
 
@@ -99,13 +100,13 @@ D3DMATERIAL9* NumberDraw::getpMaterial(unsigned object_index, unsigned mesh_inde
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 NumberDraw::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 NumberDraw::getpDiffuseTexture(unsigned object_index,
 												 unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
 
-	return number_->decale_texture_->GetHandler();
+	return number_->diffuse_texture_->getpHandler();
 }

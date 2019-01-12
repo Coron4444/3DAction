@@ -52,7 +52,7 @@ D3DMATERIAL9* DrawNull::getpMaterial(unsigned object_index,
 
 
 
-LPDIRECT3DTEXTURE9 DrawNull::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 DrawNull::getpDiffuseTexture(unsigned object_index,
 											   unsigned mesh_index)
 {
 	object_index = object_index;

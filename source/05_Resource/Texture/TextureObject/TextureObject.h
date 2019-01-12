@@ -93,6 +93,7 @@ private:
 	int division_num_;								//!< 分割数
 	std::vector<UV> uv_;							//!< UV配列
 	LPDIRECT3DTEXTURE9 texture_handler_ = nullptr;	//!< テクスチャハンドラ
+	std::string map_key_name_;						//!< マップ用キー名
 	int reference_counter_ = 0;						//!< 参照カウンタ
 
 
@@ -168,10 +169,11 @@ public:
 	//----------------------------------------
 	//! @brief 初期化関数
 	//! @details
-	//! @param *file_path ファイルパス
+	//! @param *file_path    ファイルパス
+	//! @param *map_key_name マップ用キー名
 	//! @retval void なし
 	//----------------------------------------
-	void Init(std::string* file_path);
+	void Init(std::string* file_path, const std::string* map_key_name);
 
 	//----------------------------------------
 	//! @brief 解放関数
@@ -182,21 +184,20 @@ public:
 	void Release();
 
 	//----------------------------------------
+	//! @brief 強制解放関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void ForcedRelease();
+
+	//----------------------------------------
 	//! @brief 参照カウンタ追加関数
 	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
 	void AddReferenceCounter();
-
-	//----------------------------------------
-	//! @brief 参照カウンタリセット関数
-	//! @details
-	//! @param void なし
-	//! @retval void なし
-	//----------------------------------------
-	void ResetReferenceCounter();
-
 
 private:
 	//----------------------------------------

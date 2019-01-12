@@ -12,6 +12,7 @@
 //****************************************
 // インクルード文
 //****************************************
+#include "../../Fade/Fade.h"
 #include <LimitedPointerArray\LimitedPointerArray.h>
 #include <ComponentManager/DrawManager/RenderTexture/RenderTexture.h>
 
@@ -175,7 +176,7 @@ public:
 	//! @param void なし
 	//! @retval bool フェード終了かの有無
 	//----------------------------------------
-	bool IsFadeEnd() { return fade_->getpEndFlag(); }
+	bool IsFadeEnd();
 
 	//----------------------------------------
 	//! @brief フェードステートの名前判定関数
@@ -183,7 +184,7 @@ public:
 	//! @param state ステート
 	//! @retval bool ステートと合っていればtrue
 	//----------------------------------------
-	bool IsFadeStateName(Fade::State state) { return *fade_->getpState() == state; }
+	bool IsFadeStateName(Fade::State state);
 
 private:
 	//----------------------------------------

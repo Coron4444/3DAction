@@ -18,7 +18,6 @@
 #include <Scenes/TutorialScene/TutorialSceneState/TutorialSceneState_Start/TutorialSceneState_Start.h>
 
 #include <GameObjectManager/GameObjectManager.h>
-#include <ResourceManager/ResourceManager.h>
 #include <SafeRelease/SafeRelease.h>
 #include <ConvertToFrame/MeterToFrame/MeterToFrame.h>
 #include <Keyboard/Keyboard.h>
@@ -38,7 +37,7 @@ void TitleSceneState_Start::Init()
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->setState(nullptr);
+		->getpCamera()->setState(nullptr);
 
 	// タイトルロゴ
 	TitleLogoFactory title_logo_factory;

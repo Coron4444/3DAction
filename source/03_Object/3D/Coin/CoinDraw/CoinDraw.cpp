@@ -12,14 +12,15 @@
 //****************************************
 #include "CoinDraw.h"
 
-#include <ResourceManager/ResourceManager.h>
+#include <SafeRelease/SafeRelease.h>
+#include <Texture/TextureManager/TextureManager.h>
 
 
 
 //****************************************
 // 定数定義
 //****************************************
-const std::string CoinDraw::DECALE_TEXTURE = "Coin.png";
+const std::string CoinDraw::diffuse_TEXTURE = "Coin.png";
 
 
 
@@ -41,8 +42,8 @@ void CoinDraw::Init()
 	// ダウンキャスト
 	coin_ = (Coin*)getpGameObject();
 
-	// デカールテクスチャの読み込み
-	decale_texture_ = TextureManager::AddUniqueData(&DECALE_TEXTURE);
+	// ディヒューズテクスチャの読み込み
+	diffuse_texture_ = TextureManager::getpInstance()->getpObject(&diffuse_TEXTURE);
 }
 
 
@@ -52,6 +53,7 @@ void CoinDraw::Init()
 //--------------------------------------------------
 void CoinDraw::Uninit()
 {
+	SafeRelease::PlusRelease(&diffuse_texture_);
 }
 
 
@@ -138,13 +140,13 @@ D3DMATERIAL9* CoinDraw::getpMaterial(unsigned object_index, unsigned mesh_index)
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 CoinDraw::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 CoinDraw::getpDiffuseTexture(unsigned object_index,
 											   unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
 
-	return decale_texture_->GetHandler();
+	return diffuse_texture_->getpHandler();
 }

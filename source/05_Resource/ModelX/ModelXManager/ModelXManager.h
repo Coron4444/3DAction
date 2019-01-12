@@ -1,84 +1,148 @@
 //================================================================================
-//
-//    Xモデルマネージャクラスヘッダ
-//    Author : Araki Kai                                作成日 : 2018/01/21
-//
+//!	@file	 ModelXManager.h
+//!	@brief	 XモデルマネージャClass
+//! @details Singleton
+//!	@author  Kai Araki									@date 2019/1/11
 //================================================================================
-
 #ifndef	_MODEL_X_MANAGER_H_
 #define _MODEL_X_MANAGER_H_
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
 #include <vector>
 #include <unordered_map>
 
 #include <ModelX\ModelXObject\ModelXObject.h>
+#include <Texture/TextureManager/TextureManager.h>
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+//************************************************************														   
+//! @brief   XモデルマネージャClass
+//!
+//! @details XモデルのマネージャClass(Singleton)
+//************************************************************
 class ModelXManager
 {
-//------------------------------------------------------------
-private :
-	static const std::string DEFAULT_PATH;
+//====================
+// 定数
+//====================
+private:
+	static const std::string DEFAULT_PATH;		//!< 既定パス
 
 
-//------------------------------------------------------------
-private :
-	// デフォルトコンストラクタ
-	ModelXManager() = delete;
+//====================
+// static変数
+//====================
+private:
+	static ModelXManager* instance_;	//!< インスタンス
 
-	// コピーコンストラクタ
+
+//====================
+// staticプロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief インスタンス取得関数
+	//! @details
+	//! @param void なし
+	//! @retval ModelXManager* インスタンス
+	//----------------------------------------
+	static ModelXManager* getpInstance();
+
+
+//====================
+// static関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief インスタンス解放関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	static void ReleaseInstance();
+
+
+//====================
+// 変数
+//====================
+private:
+	std::unordered_map<std::string, ModelXObject*> object_map_;		//!< オブジェクトマップ
+
+
+//====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief オブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval ModelXObject* オブジェクト取得
+	//----------------------------------------
+	ModelXObject* getpObject(const std::string* key_name,
+							 const std::string* file_path = nullptr);
+
+
+//====================
+// 関数
+//====================
+private:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	ModelXManager();
+
+public:
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Init();
+
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Uninit();
+
+	//----------------------------------------
+	//! @brief マップから解放関数
+	//! @details
+	//! @param *key_name キー名
+	//! @param *file_path ファイルパス
+	//! @retval void なし
+	//----------------------------------------
+	void ReleaseFromTheMap(std::string* key_name);
+
+private:
+	//----------------------------------------
+	//! @brief フルパス生成関数
+	//! @details
+	//! @param *key_name キー名
+	//! @param *file_path ファイルパス
+	//! @retval std::string フルパス
+	//----------------------------------------
+	std::string CreateFilePath(const std::string* key_name, 
+							   const std::string* file_path);
+
+
+//====================
+// 消去済み関数
+//====================
+private:
 	ModelXManager(const ModelXManager& class_name) = delete;
-
-	// 代入演算子のオーバーロード
 	ModelXManager& operator = (const ModelXManager& class_name) = delete;
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// 初期化関数
-	static void InitAllData();
-	static void InitShareData();
-	static void InitUniqueData();
-
-	// 終了処理関数
-	static void UninitAllData();
-	static void UninitShareData();
-	static void UninitUniqueData();
-
-	// 追加関数
-	static ModelXObject* AddShareData (const std::string* key_name, const std::string* file_path = nullptr);
-	static ModelXObject* AddUniqueData(const std::string* key_name, const std::string* file_path = nullptr);
-
-	// ゲッタ―
-	static ModelXObject* GetModelXObject(const std::string* key_name);
-
-
-//------------------------------------------------------------
-private :
-	static std::string MakeFilePath(const std::string* key_name, const std::string* file_path);
-
-
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	static std::unordered_map<std::string, ModelXObject*> share_model_map_;
-	static std::unordered_map<std::string, ModelXObject*> unique_model_map_;
 };
 
 

@@ -13,7 +13,7 @@
 //****************************************
 // インクルード文
 //****************************************
-#include "PixelShaderBase.h"
+#include "../PixelShaderBase/PixelShaderBase.h"
 
 
 

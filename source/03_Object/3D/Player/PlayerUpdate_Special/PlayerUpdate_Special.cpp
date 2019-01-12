@@ -17,8 +17,6 @@
 
 #include <Keyboard\Keyboard.h>
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
-#include <ResourceManager\ResourceManager.h>
-
 #include <3D/Player/PlayerUpdate/PlayerUpdate.h>
 #include <GameObjectManager/GameObjectManager.h>
 
@@ -34,7 +32,7 @@ const float PlayerUpdate_Special::SPEED = MeterPerSecondSquared_To_MeterPerFrame
 
 static const std::string TEST_EFFEKSEER = "Beam/Beam.efk";
 
-static EffekseerObject* temp_object_;
+//static EffekseerObject* temp_object_;
 
 //======================================================================
 //
@@ -60,9 +58,9 @@ void PlayerUpdate_Special::Init()
 	player_->GetPhysics()->SetMyFriction(1.0f);
 	player_->GetPhysics()->SetMyBounciness(1.0f);
 
-	EffekseerManager::AddUniqueData(&TEST_EFFEKSEER);
+	//EffekseerManager::AddUniqueData(&TEST_EFFEKSEER);
 
-	temp_object_ = EffekseerManager::GetReferenceEffekseerObject(&TEST_EFFEKSEER);
+	//temp_object_ = EffekseerManager::GetReferenceEffekseerObject(&TEST_EFFEKSEER);
 }
 
 

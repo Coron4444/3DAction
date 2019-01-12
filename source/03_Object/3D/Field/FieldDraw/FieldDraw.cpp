@@ -13,6 +13,8 @@
 #include "FieldDraw.h"
 
 #include <Polygon\MeshPlanePolygon\MeshPlanePolygon.h>
+#include <Texture/TextureManager/TextureManager.h>
+#include <SafeRelease/SafeRelease.h>
 
 
 
@@ -38,7 +40,7 @@ void FieldDraw::Init()
 	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// テクスチャの登録
-	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
+	diffuse_texture_ = TextureManager::getpInstance()->getpObject(&TEXTURE_NAME);
 
 	// ダウンキャスト
 	field_ = (Field*)getpGameObject();
@@ -51,7 +53,7 @@ void FieldDraw::Init()
 //--------------------------------------------------
 void FieldDraw::Uninit()
 {
-
+	SafeRelease::PlusRelease(&diffuse_texture_);
 }
 
 
@@ -107,13 +109,13 @@ D3DMATERIAL9* FieldDraw::getpMaterial(unsigned object_index, unsigned mesh_index
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 FieldDraw::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 FieldDraw::getpDiffuseTexture(unsigned object_index,
 												unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
 
-	return decale_texture_->GetHandler();
+	return diffuse_texture_->getpHandler();
 }

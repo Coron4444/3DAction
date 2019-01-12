@@ -67,7 +67,7 @@ public:
 	void Draw();
 
 	void SetColor(XColor4 color);
-	void SetUV(const TextureObject* texture, const int pattern_num = 0);
+	void SetUV(TextureObject* texture, int pattern_num = 0);
 
 	XColor4 GetColor(){ return vertex_[0].color_; }
 

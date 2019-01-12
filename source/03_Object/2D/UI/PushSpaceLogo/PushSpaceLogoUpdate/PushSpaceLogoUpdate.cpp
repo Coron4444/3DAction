@@ -17,7 +17,6 @@
 
 #include <Keyboard\Keyboard.h>
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
-#include <ResourceManager\ResourceManager.h>
 
 
 

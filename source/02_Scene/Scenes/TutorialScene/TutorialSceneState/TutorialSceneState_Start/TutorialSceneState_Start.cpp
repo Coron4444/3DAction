@@ -15,8 +15,6 @@
 #include "../TutorialSceneState_End/TutorialSceneState_End.h"
 
 #include <SceneManager\SceneManager.h>
-
-#include <ResourceManager\ResourceManager.h>
 #include <ConvertToFrame\MeterToFrame\MeterToFrame.h>
 #include <Keyboard\Keyboard.h>
 
@@ -37,7 +35,7 @@ void TutorialSceneState_Start::Init()
 
 	// デフォルトカメラの作成
 	GameObjectManager::GetDrawManager()->GetBackBuffer()
-		->GetCamera()->setState(nullptr);
+		->getpCamera()->setState(nullptr);
 
 	// チュートリアルロゴ
 	TutorialLogoFactory tutorial_logo_factory;

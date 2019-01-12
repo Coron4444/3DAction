@@ -13,6 +13,7 @@
 #include "PushSpaceLogoDraw.h"
 
 #include <Polygon\PlanePolygon\PlanePolygon.h>
+#include <SafeRelease/SafeRelease.h>
 
 
 
@@ -42,11 +43,11 @@ void PushSpaceLogoDraw::Init()
 	push_space_logo_ = (PushSpaceLogo*)getpGameObject();
 
 	// テクスチャの登録
-	decale_texture_ = TextureManager::AddUniqueData(&TEXTURE_NAME);
+	diffuse_texture_ = TextureManager::getpInstance()->getpObject(&TEXTURE_NAME);
 	
 	// 拡縮&移動
-	push_space_logo_->GetTransform()->GetScale()->x = decale_texture_->GetWidth()  * SCALE;
-	push_space_logo_->GetTransform()->GetScale()->y = decale_texture_->GetHeight() * SCALE;
+	push_space_logo_->GetTransform()->GetScale()->x = diffuse_texture_->getWidth()  * SCALE;
+	push_space_logo_->GetTransform()->GetScale()->y = diffuse_texture_->getHeight() * SCALE;
 	push_space_logo_->GetTransform()->GetPosition()->y += -300.0f;
 	push_space_logo_->GetTransform()->UpdateWorldMatrixSRT();
 }
@@ -58,6 +59,7 @@ void PushSpaceLogoDraw::Init()
 //--------------------------------------------------
 void PushSpaceLogoDraw::Uninit()
 {
+	SafeRelease::PlusRelease(&diffuse_texture_);
 }
 
 
@@ -115,13 +117,13 @@ D3DMATERIAL9* PushSpaceLogoDraw::getpMaterial(unsigned object_index,
 
 
 //--------------------------------------------------
-// +デカールテクスチャ取得関数
+// +ディヒューズテクスチャ取得関数
 //--------------------------------------------------
-LPDIRECT3DTEXTURE9 PushSpaceLogoDraw::getpDecaleTexture(unsigned object_index,
+LPDIRECT3DTEXTURE9 PushSpaceLogoDraw::getpDiffuseTexture(unsigned object_index,
 												   unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;
 
-	return decale_texture_->GetHandler();
+	return diffuse_texture_->getpHandler();
 }

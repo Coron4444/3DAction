@@ -62,13 +62,13 @@ public:
 									   unsigned mesh_index) override;
 
 	//----------------------------------------
-	//! @brief デカールテクスチャ取得関数
+	//! @brief ディヒューズテクスチャ取得関数
 	//! @details
 	//! @param object_index オブジェクトインデックス
 	//! @param mesh_index   メッシュインデックス
-	//! @retval LPDIRECT3DTEXTURE9 デカールテクスチャ
+	//! @retval LPDIRECT3DTEXTURE9 ディヒューズテクスチャ
 	//----------------------------------------
-	virtual LPDIRECT3DTEXTURE9 getpDecaleTexture(unsigned object_index,
+	virtual LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index,
 												 unsigned mesh_index) override;
 
 	//----------------------------------------

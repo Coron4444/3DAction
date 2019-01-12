@@ -18,8 +18,6 @@
 #include <Component/Draw/DrawNull/DrawNull.h>
 #include "../Enemy.h"
 
-#include <ResourceManager\ResourceManager.h>
-
 
 
 /*********************************************************//**
