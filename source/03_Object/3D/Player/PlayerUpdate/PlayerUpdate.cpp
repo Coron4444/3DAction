@@ -20,7 +20,7 @@
 
 #include <3D/Player/PlayerUpdate_Special/PlayerUpdate_Special.h>
 #include <GameObjectManager/GameObjectManager.h>
-
+#include <Effekseer/EffekseerManager/EffekseerManager.h>
 
 
 //======================================================================
@@ -33,7 +33,7 @@ const float PlayerUpdate::SPEED = MeterPerSecondSquared_To_MeterPerFrameSquared(
 
 static const std::string TEST_EFFEKSEER = "Beam/Beam.efk";
 
-//static EffekseerObject* temp_object_;
+
 
 //======================================================================
 //
@@ -58,10 +58,6 @@ void PlayerUpdate::Init()
 	player_->GetPhysics()->SetMass(8.0f);
 	player_->GetPhysics()->SetMyFriction(1.0f);
 	player_->GetPhysics()->SetMyBounciness(1.0f);
-
-	//EffekseerManager::AddUniqueData(&TEST_EFFEKSEER);
-	//
-	//temp_object_ = EffekseerManager::GetReferenceEffekseerObject(&TEST_EFFEKSEER);
 }
 
 
@@ -159,14 +155,11 @@ void PlayerUpdate::Update()
 
 	if (GetKeyboardTrigger(DIK_P))
 	{
-		//*temp_object_->GetTransform()->GetPosition() = *player_->GetTransform()->GetPosition();
-		//*temp_object_->GetTransform()->GetScale() = Vec3(temp_scale, temp_scale, temp_scale);
-		//temp_scale += 1.0f;
-		//temp_object_->GetTransform()->UpdateWorldMatrixSRT();
-		//temp_object_->Play();
-		//temp_object_->SetRepeat(true);
-
-		//EffekseerManager::CreateDisposableEffekseerObject(&TEST_EFFEKSEER, *player_->GetTransform()->GetPosition());//Vec3(0.0f, 0.0f, 0.0f));
+		EffekseerObject* temp_object = EffekseerManager::getpInstance()
+			->getpDisposableObject(&TEST_EFFEKSEER);
+		*temp_object->getpTransform()->GetPosition() = *player_->GetTransform()->GetPosition();
+		temp_object->getpTransform()->UpdateWorldMatrixSRT();
+		temp_object->Play();
 	}
 
 	player_->GetTransform()->UpdateAxisVector_WorldMatrixSRT();

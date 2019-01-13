@@ -72,11 +72,11 @@ ModelXObject* ModelXManager::getpObject(const std::string* key_name,
 
 	// 新規作成
 	std::string path = CreateFilePath(key_name, file_path);
-	ModelXObject* model_x_object = new ModelXObject();
-	model_x_object->Init(&path, key_name);
-	model_x_object->AddReferenceCounter();
-	object_map_.insert(std::make_pair(*key_name, model_x_object));
-	return model_x_object;
+	ModelXObject* object = new ModelXObject();
+	object->Init(&path, key_name);
+	object->AddReferenceCounter();
+	object_map_.insert(std::make_pair(*key_name, object));
+	return object;
 }
 
 
@@ -100,7 +100,7 @@ void ModelXManager::Init()
 
 void ModelXManager::Uninit()
 {
-	// 各Xモデルの強制解放
+	// 各オブジェクトの強制解放
 	auto iterator = object_map_.begin();
 	while (iterator != object_map_.end())
 	{

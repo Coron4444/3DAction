@@ -16,13 +16,15 @@
 
 #include "../../ShaderManager/ShaderManager.h"
 #include <Component/Draw/DrawBase/DrawBase.h>
-//#include <Effekseer/EffekseerManager/EffekseerManager.h>
 #include <GameObjectBase/GameObjectBase.h>
 
 #include <main.h>
-
 #include <Renderer/Renderer.h>
 #include <SafeRelease/SafeRelease.h>
+
+#include <Effekseer/EffekseerManager/EffekseerManager.h>
+
+
 
 //****************************************
 // プロパティ定義
@@ -120,11 +122,11 @@ void BackBuffer::Update()
 	if (is_fade_) fade_->Update();
 
 	// エフェクシアの更新
-	//EffekseerManager::CreateProjectionMatrix(camera_->getAngleOfView());
-	//EffekseerManager::CreateViewMatrix(*camera_->getpPositon(),
-	//								   *camera_->getpLookAtPoint(),
-	//								   *camera_->getpUp());
-	//EffekseerManager::Update();
+	EffekseerManager::getpInstance()->CreateViewMatrix(*camera_->getpPositon(),
+													   *camera_->getpLookAtPoint(),
+													   *camera_->getpUp());
+	EffekseerManager::getpInstance()->CreateProjectionMatrix(camera_->getAngleOfView());
+	EffekseerManager::getpInstance()->Update();
 }
 
 
@@ -215,7 +217,7 @@ void BackBuffer::Draw()
 	}
 
 	// エフェクシア
-	//EffekseerManager::Draw();
+	EffekseerManager::getpInstance()->Draw();
 
 	// 2D
 	camera_->setType(Camera::Type::TWO_DIMENSIONAL);

@@ -62,8 +62,8 @@ int	TextureObject::getHeight()
 
 
 
-void TextureObject::setpDivisionNum(int division_num, int division_num_width,
-									int division_num_height)
+void TextureObject::setDivisionNum(int division_num, int division_num_width,
+								   int division_num_height)
 {
 	// Ø‚èæ‚è•‚‚³Zo
 	float cut_width = ((float)width_ / division_num_width) / (float)width_;

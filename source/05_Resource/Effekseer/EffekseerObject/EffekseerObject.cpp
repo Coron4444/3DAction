@@ -1,242 +1,119 @@
 //================================================================================
-//
-//    エフェクシアオブジェクトクラス
-//    Author : Araki Kai                                作成日 : 2017/12/18
-//
+//!	@file	 EffekseerObject.cpp
+//!	@brief	 エフェクシアオブジェクトClass
+//! @details 
+//!	@author  Kai Araki									@date 2018/11/01
 //================================================================================
 
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <codecvt>
 
 #include "EffekseerObject.h"
+#include "../EffekseerManager/EffekseerManager.h"
 
 #include <Renderer\Renderer.h>
+#include <SafeRelease/SafeRelease.h>
 
 
 
-//======================================================================
-//
+//****************************************
 // 定数定義
-//
-//======================================================================
-
+//****************************************
 const int EffekseerObject::MAX_SPRITE_NUM = 2000;
 
 
-
-//======================================================================
-//
-// 非静的メンバ関数定義
-//
-//======================================================================
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デフォルトコンストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-EffekseerObject::EffekseerObject(const std::string* file_path)
-	: effekseer_handle_(0),
-	  effekseer_effect_(nullptr),
-	  is_playing_      (false),
-	  is_repeat_       (false),
-	  is_pause_        (false)
+//****************************************
+// プロパティ定義
+//****************************************
+void EffekseerObject::setDisposable(bool value)
 {
-	// 初期化と読み込み
-	InitRenderer_Manager();
-	InputEffect(file_path);
+	is_disposable_ = value;
 }
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ デストラクタ ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-EffekseerObject::~EffekseerObject()
+bool EffekseerObject::getpIsPlaying()
 {
+	return is_playing_;
+}
+
+
+
+void EffekseerObject::setIsRepeat(bool value)
+{
+	is_repeat_ = value;
+}
+
+
+
+Transform* EffekseerObject::getpTransform()
+{
+	return &transform_;
+}
+
+
+
+//****************************************
+// 関数定義
+//****************************************
+void EffekseerObject::Init(std::string* file_path, const std::string* map_key_name)
+{
+	// レンダラー&マネージャ生成
+	CreateRendererAndManager();
+
+	// エフェクト生成
+	CreateEffect(file_path);
+
+	// キー名保存
+	map_key_name_ = *map_key_name;
+}
+
+
+
+void EffekseerObject::Release()
+{
+	reference_counter_--;
+	if (reference_counter_ > 0) return;
+
 	//エフェクトの停止
 	Stop();
 
-	//エフェクトを解放
+	//各種開放
 	ES_SAFE_RELEASE(effekseer_effect_);
-
-	//エフェクト管理用インスタンスを破棄
 	effekseer_manager_->Destroy();
-
-	//描画用インスタンスを破棄
 	effekseer_renderer_->Destroy();
-}
 
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 更新関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::Update()
-{
-	// ワールド行列の設定
-	SetWorldMatrix(transform_.getpWorldMatrix());
-
-	// 再生中かどうか
-	is_playing_ = effekseer_manager_->Exists(effekseer_handle_);
-
-	if (!is_playing_)
+	// マップから解放
+	if (!is_disposable_)
 	{
-		// リピートするかどうか
-		if (is_repeat_)
-		{
-			Play();
-		}
-		else
-		{
-			Stop();
-		}
+		EffekseerManager::getpInstance()->ReleaseFromTheMap(&map_key_name_);
 	}
-
-	effekseer_manager_->Flip();
-	
-	//すべてのエフェクトの更新
-	effekseer_manager_->Update();
-
+	delete this;
 }
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 描画関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::Draw()
+void EffekseerObject::ForcedRelease()
 {
-	effekseer_renderer_->BeginRendering();
-	effekseer_manager_->Draw();
-	effekseer_renderer_->EndRendering();
+	reference_counter_ = 0;
+	Release();
 }
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 再生関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::Play()
+void EffekseerObject::AddReferenceCounter()
 {
-	//エフェクトの再生
-	effekseer_handle_ = effekseer_manager_->Play(effekseer_effect_, 0.0f, 0.0f, 0.0f);
-	effekseer_manager_->Flip();
-	is_playing_ = true;
+	reference_counter_++;
 }
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 停止関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::Stop()
-{
-	//エフェクトの停止
-	effekseer_manager_->StopEffect(effekseer_handle_);
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 一時停止設定関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::SetPause(bool is_pause)
-{
-	//エフェクトの一時停止
-	is_pause_ = is_pause;
-	effekseer_manager_->SetPaused(effekseer_handle_, is_pause_);
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ 速度設定関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::SetVelocity(float velocity)
-{
-	//エフェクトの速度指定
-	effekseer_manager_->SetSpeed(effekseer_handle_, velocity);
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ カラー設定関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::SetColor(uint8_t r, uint8_t g, uint8_t b, uint8_t a)
-{
-	effekseer_manager_->SetAllColor(effekseer_handle_, Effekseer::Color(r, g, b, a));
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ プロジェクション行列設定関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::SetProjectionMatrix(Effekseer::Matrix44* projection_matrix)
-{
-	effekseer_renderer_->SetProjectionMatrix(*projection_matrix);
-}
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
-// [ ビュー行列設定関数 ]
-//
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-void EffekseerObject::SetViewMatrix(Effekseer::Matrix44* view_matrix)
-{
-	effekseer_renderer_->SetCameraMatrix(*view_matrix);
-}
-
-
-
-//--------------------------------------------------------------------------------
-//
-// [ レンダラー&マネージャ初期化関数 ]
-//
-//--------------------------------------------------------------------------------
-
-void EffekseerObject::InitRenderer_Manager()
+void EffekseerObject::CreateRendererAndManager()
 {
 	// デバイスの取得
 	LPDIRECT3DDEVICE9 device = nullptr;
@@ -254,13 +131,13 @@ void EffekseerObject::InitRenderer_Manager()
 	// 描画機能の設定
 	effekseer_manager_->SetSpriteRenderer(effekseer_renderer_->CreateSpriteRenderer());
 	effekseer_manager_->SetRibbonRenderer(effekseer_renderer_->CreateRibbonRenderer());
-	effekseer_manager_->SetRingRenderer  (effekseer_renderer_->CreateRingRenderer());
-	effekseer_manager_->SetTrackRenderer (effekseer_renderer_->CreateTrackRenderer());
-	effekseer_manager_->SetModelRenderer (effekseer_renderer_->CreateModelRenderer());
+	effekseer_manager_->SetRingRenderer(effekseer_renderer_->CreateRingRenderer());
+	effekseer_manager_->SetTrackRenderer(effekseer_renderer_->CreateTrackRenderer());
+	effekseer_manager_->SetModelRenderer(effekseer_renderer_->CreateModelRenderer());
 
-	// テクスチャの読み込みを設定(今回はファイルから読み込み)
+	// テクスチャ&モデルの読み込み設定(今回はファイルから読み込み)
 	effekseer_manager_->SetTextureLoader(effekseer_renderer_->CreateTextureLoader());
-	effekseer_manager_->SetModelLoader  (effekseer_renderer_->CreateModelLoader());
+	effekseer_manager_->SetModelLoader(effekseer_renderer_->CreateModelLoader());
 
 	// 左手座標系に設定
 	effekseer_manager_->SetCoordinateSystem(Effekseer::CoordinateSystem::LH);
@@ -268,33 +145,107 @@ void EffekseerObject::InitRenderer_Manager()
 
 
 
-//--------------------------------------------------------------------------------
-//
-// [ エフェクトの読み込み関数 ]
-//
-//--------------------------------------------------------------------------------
-
-void EffekseerObject::InputEffect(const std::string* file_path)
+void EffekseerObject::CreateEffect(std::string* file_path)
 {
 	// wchar_tにコンバート
 	std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> convert;
-	std::wstring temp_file_path = convert.from_bytes(*file_path);
-
+	std::wstring converted_file_path = convert.from_bytes(*file_path);
 
 	// エフェクトの読み込み
-	effekseer_effect_ = Effekseer::Effect::Create(effekseer_manager_, 
-												  (const EFK_CHAR*)temp_file_path.c_str());	
+	effekseer_effect_ = Effekseer::Effect::Create(effekseer_manager_,
+		(const EFK_CHAR*)converted_file_path.c_str());
 }
 
 
 
-//--------------------------------------------------------------------------------
-//
-// [ ワールド行列設定関数 ]
-//
-//--------------------------------------------------------------------------------
+void EffekseerObject::Update()
+{
+	// 再生中かどうか
+	is_playing_ = effekseer_manager_->Exists(effekseer_handle_);
+	if (!is_playing_)
+	{
+		// 使い捨てかどうか
+		if (is_disposable_) return;
 
-void EffekseerObject::SetWorldMatrix(const MATRIX* world_matrix)
+		// リピートするかどうか
+		is_repeat_ ? Play() : Stop();
+	}
+
+	// ワールド行列変更
+	ChangeWorldMatrix(transform_.getpWorldMatrix());
+	
+	//すべてのエフェクトの更新
+	effekseer_manager_->Update();
+}
+
+
+
+void EffekseerObject::Draw()
+{
+	effekseer_renderer_->BeginRendering();
+	effekseer_manager_->Draw();
+	effekseer_renderer_->EndRendering();
+}
+
+
+
+void EffekseerObject::Play()
+{
+	//エフェクトの再生
+	is_playing_ = true;
+	effekseer_handle_ = effekseer_manager_->Play(effekseer_effect_, 0.0f, 0.0f, 0.0f);
+	effekseer_manager_->Flip();
+}
+
+
+
+void EffekseerObject::Stop()
+{
+	is_playing_ = false;
+	effekseer_manager_->StopEffect(effekseer_handle_);
+	effekseer_manager_->Flip();
+}
+
+
+
+void EffekseerObject::Pause(bool is_pause)
+{
+	is_pause_ = is_pause;
+	effekseer_manager_->SetPaused(effekseer_handle_, is_pause_);
+	effekseer_manager_->Flip();
+}
+
+
+
+void EffekseerObject::ChangeVelocity(float velocity)
+{
+	effekseer_manager_->SetSpeed(effekseer_handle_, velocity);
+}
+
+
+
+void EffekseerObject::ChangeColor(uint8_t r, uint8_t g, uint8_t b, uint8_t a)
+{
+	effekseer_manager_->SetAllColor(effekseer_handle_, Effekseer::Color(r, g, b, a));
+}
+
+
+
+void EffekseerObject::ChangeViewMatrix(Effekseer::Matrix44* view_matrix)
+{
+	effekseer_renderer_->SetCameraMatrix(*view_matrix);
+}
+
+
+
+void EffekseerObject::ChangeProjectionMatrix(Effekseer::Matrix44* projection_matrix)
+{
+	effekseer_renderer_->SetProjectionMatrix(*projection_matrix);
+}
+
+
+
+void EffekseerObject::ChangeWorldMatrix(MATRIX* world_matrix)
 {
 	// エフェクシア用ワールド行列
 	world_matrix_.Value[0][0] = world_matrix->_11;

@@ -12,7 +12,7 @@
 //****************************************
 #include "GoalDraw.h"
 
-//#include <ResourceManager/ResourceManager.h>
+#include <Effekseer/EffekseerManager/EffekseerManager.h>
 
 
 
@@ -45,11 +45,13 @@ void GoalDraw::Init()
 	cube_polygon_->SetColor(XColor4(0.5f, 1.0f, 1.0f, 1.0f));
 
 	// エフェクトの読み込み
-	//EffekseerManager::AddUniqueData(&EFFECT);
-	//effekseer_object_ = EffekseerManager::GetReferenceEffekseerObject(&EFFECT);
-	//effekseer_object_->SetColor(255, 255, 255, 255);
-	//effekseer_object_->SetRepeat(true);
-	//effekseer_object_->Play();
+	effekseer_object_ = EffekseerManager::getpInstance()->getpObject(&EFFECT);
+	effekseer_object_->ChangeColor(255, 255, 255, 255);
+	Vector3D* goal_position = goal_->GetTransform()->GetPosition();
+	*effekseer_object_->getpTransform()->GetPosition() = *goal_position;
+	effekseer_object_->getpTransform()->UpdateWorldMatrixSRT();
+	effekseer_object_->setIsRepeat(true);
+	effekseer_object_->Play();
 }
 
 
@@ -62,8 +64,7 @@ void GoalDraw::Uninit()
 	// 各種消去
 	SafeRelease::Normal(&cube_polygon_);
 
-	//effekseer_object_->Stop();
-	//effekseer_object_->SetRepeat(false);
+	SafeRelease::PlusRelease(&effekseer_object_);
 }
 
 
@@ -74,8 +75,9 @@ void GoalDraw::Uninit()
 void GoalDraw::Update()
 {
 	// エフェクト座標更新
-	//*effekseer_object_->GetTransform()->GetPosition() = *goal_->GetTransform()->GetPosition();
-	//effekseer_object_->GetTransform()->UpdateWorldMatrixSRT();
+	Vector3D* goal_position = goal_->GetTransform()->GetPosition();
+	*effekseer_object_->getpTransform()->GetPosition() = *goal_position;
+	effekseer_object_->getpTransform()->UpdateWorldMatrixSRT();
 }
 
 

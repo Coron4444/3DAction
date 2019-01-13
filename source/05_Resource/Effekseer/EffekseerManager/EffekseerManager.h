@@ -1,106 +1,186 @@
 //================================================================================
-//
-//    エフェクシアマネージャクラス(static)
-//    Author : Araki Kai                                作成日 : 2018/08/30
-//
+//!	@file	 EffekseerManager.h
+//!	@brief	 エフェクシアマネージャClass
+//! @details Singleton
+//!	@author  Kai Araki									@date 2019/1/11
 //================================================================================
-
 #ifndef	_EFFEKSEER_MANAGER_H_
 #define _EFFEKSEER_MANAGER_H_
 
 
 
-//======================================================================
-//
+//****************************************
 // インクルード文
-//
-//======================================================================
-
+//****************************************
 #include <string>
-#include <vector>
+#include <list>
 #include <unordered_map>
 
-#include "../EffekseerArray/EffekseerArray.h"
 #include "../EffekseerObject/EffekseerObject.h"
 
 
 
-//======================================================================
-//
-// クラス定義
-//
-//======================================================================
-
+//************************************************************														   
+//! @brief   エフェクシアマネージャClass
+//!
+//! @details エフェクシアのマネージャClass(Singleton)
+//************************************************************
 class EffekseerManager
 {
-//------------------------------------------------------------
-private :
-	static const std::string DEFAULT_PATH;
-	static const int MAX_SPRITE_NUM;
+//====================
+// 定数
+//====================
+private:
+	static const std::string DEFAULT_PATH;		//!< 既定パス
 
 
-//------------------------------------------------------------
-private :
-	// デフォルトコンストラクタ
-	EffekseerManager() = delete;
-
-	// コピーコンストラクタ
-	EffekseerManager(const EffekseerManager& class_name) = delete;
-
-	// 代入演算子のオーバーロード
-	EffekseerManager& operator = (const EffekseerManager& class_name) = delete;
+//====================
+// static変数
+//====================
+private:
+	static EffekseerManager* instance_;	//!< インスタンス
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-public :
-	// 初期化関数
-	static void InitAllData();
-	static void InitShareData();
-	static void InitUniqueData();
-
-	// 終了処理関数
-	static void UninitAllData();
-	static void UninitShareData();
-	static void UninitUniqueData();
-
-	// 更新
-	static void Update();
-
-	// 描画
-	static void Draw();
-
-	// 追加関数
-	static void AddShareData (const std::string* key_name, const std::string* file_path = nullptr);
-	static void AddUniqueData(const std::string* key_name, const std::string* file_path = nullptr);
-
-	// プロジェクション行列
-	static void CreateProjectionMatrix(int angle_of_view_);
-
-	// ビュー行列
-	static void CreateViewMatrix(Vec3 position, Vec3 look_at_point, Vec3 camera_up);
-
-	// 使い捨てエフェクシアオブジェクトの作成
-	static void CreateDisposableEffekseerObject(const std::string* key_name, Vec3 position, Vec3 scale = Vec3(1.0f, 1.0f, 1.0f));
-
-	// 参照エフェクシアオブジェクトの取得
-	static EffekseerObject* GetReferenceEffekseerObject(const std::string* key_name);
+//====================
+// staticプロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief インスタンス取得関数
+	//! @details
+	//! @param void なし
+	//! @retval EffekseerManager* インスタンス
+	//----------------------------------------
+	static EffekseerManager* getpInstance();
 
 
-//------------------------------------------------------------
-private :
-	static std::string MakeFilePath(const std::string* key_name, const std::string* file_path);
-	static EffekseerObject* GetReferenceEffekseerObjectFromArray(EffekseerArray* effekseer_array);
-	static void CreateDisposableEffekseerObjectFromArray(EffekseerArray* effekseer_array, Vec3 position, Vec3 scale);
+//====================
+// static関数
+//====================
+public:
+	//----------------------------------------
+	//! @brief インスタンス解放関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	static void ReleaseInstance();
 
-//------------------------------------------------------------
-private :
-	// メンバ変数
-	static std::unordered_map<std::string, EffekseerArray*> share_effekseer_map_;
-	static std::unordered_map<std::string, EffekseerArray*> unique_effekseer_map_;
 
-	// エフェクシア用行列
-	static Effekseer::Matrix44 projection_matrix_;
-	static Effekseer::Matrix44 view_matrix_;
+//====================
+// 変数
+//====================
+private:
+	std::unordered_map<std::string, EffekseerObject*> object_map_;	//!< オブジェクトマップ
+	std::list<EffekseerObject*> disposable_object_;					//!< 使い捨てオブジェクトリスト
+	Effekseer::Matrix44 view_matrix_;								//!< ビュー行列
+	Effekseer::Matrix44 projection_matrix_;							//!< プロジェクション行列
+
+
+//====================
+// プロパティ
+//====================
+public:
+	//----------------------------------------
+	//! @brief オブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval TextureObject* オブジェクト取得
+	//----------------------------------------
+	EffekseerObject* getpObject(const std::string* key_name,
+								const std::string* file_path = nullptr);
+
+	//----------------------------------------
+	//! @brief 使い捨てオブジェクト取得関数
+	//! @details
+	//! @param void なし
+	//! @retval TextureObject* オブジェクト取得
+	//----------------------------------------
+	EffekseerObject* getpDisposableObject(const std::string* key_name,
+										  const std::string* file_path = nullptr);
+
+
+//====================
+// 関数
+//====================
+private:
+	//----------------------------------------
+	//! @brief コンストラクタ
+	//! @param void なし
+	//----------------------------------------
+	EffekseerManager();
+
+
+public:
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Init();
+
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Uninit();
+
+	//----------------------------------------
+	//! @brief 更新関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Update();
+
+	//----------------------------------------
+	//! @brief 描画関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void Draw();
+
+	//----------------------------------------
+	//! @brief マップから解放関数
+	//! @details
+	//! @param *key_name  キー名
+	//! @param *file_path ファイルパス
+	//! @retval void なし
+	//----------------------------------------
+	void ReleaseFromTheMap(std::string* key_name);
+
+	//----------------------------------------
+	//! @brief ビュー行列生成関数
+	//! @details
+	//! @param camera_position カメラ座標
+	//! @param look_at_point   注視点
+	//! @param camera_up       カメラの上ベクトル
+	//! @retval void なし
+	//----------------------------------------
+	void CreateViewMatrix(Vec3 camera_position, Vec3 look_at_point, Vec3 camera_up);
+
+	//----------------------------------------
+	//! @brief プロジェクション行列生成関数
+	//! @details
+	//! @param angle_of_view_ 画角
+	//! @retval void なし
+	//----------------------------------------
+	void CreateProjectionMatrix(int angle_of_view_);
+
+private:
+	//----------------------------------------
+	//! @brief フルパス生成関数
+	//! @details
+	//! @param *key_name  キー名
+	//! @param *file_path ファイルパス
+	//! @retval std::string フルパス
+	//----------------------------------------
+	std::string CreateFilePath(const std::string* key_name,
+							   const std::string* file_path);
 };
 
 

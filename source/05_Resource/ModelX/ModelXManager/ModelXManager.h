@@ -119,7 +119,7 @@ public:
 	//----------------------------------------
 	//! @brief マップから解放関数
 	//! @details
-	//! @param *key_name キー名
+	//! @param *key_name  キー名
 	//! @param *file_path ファイルパス
 	//! @retval void なし
 	//----------------------------------------
@@ -129,7 +129,7 @@ private:
 	//----------------------------------------
 	//! @brief フルパス生成関数
 	//! @details
-	//! @param *key_name キー名
+	//! @param *key_name  キー名
 	//! @param *file_path ファイルパス
 	//! @retval std::string フルパス
 	//----------------------------------------

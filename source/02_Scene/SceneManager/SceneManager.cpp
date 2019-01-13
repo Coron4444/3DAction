@@ -16,6 +16,7 @@
 #include <main.h>
 #include <SafeRelease/SafeRelease.h>
 #include <GameObjectManager\GameObjectManager.h>
+#include <Effekseer/EffekseerManager/EffekseerManager.h>
 #include <Texture/TextureManager/TextureManager.h>
 #include <ModelX/ModelXManager/ModelXManager.h>
 
@@ -127,6 +128,7 @@ void SceneManager::Init(SceneBase* scene)
 	common_data_->Reset();
 
 	// リソースの初期化
+	EffekseerManager::getpInstance()->Init();
 	TextureManager::getpInstance()->Init();
 	ModelXManager::getpInstance()->Init();
 
@@ -151,6 +153,8 @@ void SceneManager::Uninit()
 	GameObjectManager::Uninit();
 
 	// リソースの終了処理
+	EffekseerManager::getpInstance()->Uninit();
+	EffekseerManager::ReleaseInstance();
 	ModelXManager::getpInstance()->Uninit();
 	ModelXManager::ReleaseInstance();
 	TextureManager::getpInstance()->Uninit();

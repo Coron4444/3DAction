@@ -72,11 +72,11 @@ TextureObject* TextureManager::getpObject(const std::string* key_name,
 
 	// 新規作成
 	std::string path = CreateFilePath(key_name, file_path);
-	TextureObject* texture_object = new TextureObject();
-	texture_object->Init(&path, key_name);
-	texture_object->AddReferenceCounter();
-	object_map_.insert(std::make_pair(*key_name, texture_object));
-	return texture_object;
+	TextureObject* object = new TextureObject();
+	object->Init(&path, key_name);
+	object->AddReferenceCounter();
+	object_map_.insert(std::make_pair(*key_name, object));
+	return object;
 }
 
 
@@ -100,7 +100,7 @@ void TextureManager::Init()
 
 void TextureManager::Uninit()
 {
-	// 各テクスチャの強制解放
+	// 各オブジェクトの強制解放
 	auto iterator = object_map_.begin();
 	while (iterator != object_map_.end())
 	{

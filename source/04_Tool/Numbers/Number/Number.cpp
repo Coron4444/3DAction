@@ -49,7 +49,7 @@ void Number::Init(DrawBase* draw)
 
 	// テクスチャの登録
 	diffuse_texture_ = TextureManager::getpInstance()->getpObject(&TEXTURE_NAME, nullptr);
-	diffuse_texture_->setpDivisionNum(10, 10, 1);
+	diffuse_texture_->setDivisionNum(10, 10, 1);
 
 	// 基底クラスの初期化
 	GameObjectBase::Init(nullptr, draw, nullptr);

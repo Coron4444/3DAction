@@ -133,15 +133,15 @@ public:
 	//! @param division_num_height 縦の分割数
 	//! @retval void なし
 	//----------------------------------------
-	void setpDivisionNum(int division_num, int division_num_width,
-						 int division_num_height);
+	void setDivisionNum(int division_num, int division_num_width,
+						int division_num_height);
 
-	//----------------------------------------
-	//! @brief UV取得関数
-	//! @details
-	//! @param index インデックス 
-	//! @retval UV* UV
-	//----------------------------------------
+    //----------------------------------------
+    //! @brief UV取得関数
+    //! @details
+    //! @param index インデックス 
+    //! @retval UV* UV
+    //----------------------------------------
 	UV* getpUV(int index);
 
 	//----------------------------------------
