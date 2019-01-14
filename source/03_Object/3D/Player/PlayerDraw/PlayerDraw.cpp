@@ -15,6 +15,7 @@
 #include <ComponentManager/DrawManager/Shader/VertexShader/VertexShaderBumpMapping/VertexShaderBumpMapping.h>
 #include <SafeRelease/SafeRelease.h>
 #include <ModelX/ModelXManager/ModelXManager.h>
+#include <MdBin/MdBinManager/MdBinManager.h>
 
 
 
@@ -39,8 +40,10 @@ void PlayerDraw::Init()
 	// オーダーリスト設定
 	getpDrawOrderList()->setDrawType(DrawOrderList::DrawType::OPACITY);
 	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
-	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
+	//getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
+	//getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::getpInstance()->getpObject(&MODEL_NAME);
@@ -51,6 +54,10 @@ void PlayerDraw::Init()
 	// 法線マップのロード
 	normal_texture_[0] = TextureManager::getpInstance()->getpObject(&NORMAL_TEXTURE_MODEL, &TEXTURE_PATH);
 	normal_texture_[1] = TextureManager::getpInstance()->getpObject(&NORMAL_TEXTURE_SWORD, &TEXTURE_PATH);
+
+	// テスト用オブジェクト
+	std::string test = "unitychan_tex/unitychan_tex.mdbin_l";
+	test_object_ = MdBinManager::getpInstance()->getpObject(&test);
 }
 
 
@@ -67,6 +74,9 @@ void PlayerDraw::Uninit()
 
 		SafeRelease::PlusRelease(&normal_texture_[i]);
 	}
+
+	//テスト用
+	SafeRelease::PlusRelease(&test_object_);
 }
 
 
@@ -79,7 +89,9 @@ void PlayerDraw::Draw(unsigned object_index, unsigned mesh_index)
 	object_index = object_index;
 
 	// 現在のメッシュの描画
-	player_model_->getpMesh()->DrawSubset(mesh_index);
+	//player_model_->getpMesh()->DrawSubset(mesh_index);
+	
+	test_object_->Draw(mesh_index);
 }
 
 
@@ -91,7 +103,9 @@ unsigned PlayerDraw::getMeshNum(unsigned object_index)
 {
 	object_index = object_index;
 
-	return player_model_->getMeshNum();
+	//return player_model_->getMeshNum();
+	
+	return test_object_->getMeshNum();
 }
 
 
@@ -115,7 +129,9 @@ D3DMATERIAL9* PlayerDraw::getpMaterial(unsigned object_index, unsigned mesh_inde
 {
 	object_index = object_index;
 
-	return player_model_->getpMaterial(mesh_index);
+	//return player_model_->getpMaterial(mesh_index);
+
+	return test_object_->getpMaterial(mesh_index);
 }
 
 
@@ -127,7 +143,9 @@ LPDIRECT3DTEXTURE9 PlayerDraw::getpDiffuseTexture(unsigned object_index, unsigne
 {
 	object_index = object_index;
 
-	return player_model_->getpDiffuseTextureObject(mesh_index)->getpHandler();
+	//return player_model_->getpDiffuseTextureObject(mesh_index)->getpHandler();
+
+	return test_object_->getpDiffuseTextureObject(mesh_index)->getpHandler();
 }
 
 

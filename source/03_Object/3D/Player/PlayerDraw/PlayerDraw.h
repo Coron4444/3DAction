@@ -25,6 +25,7 @@
 //****************************************
 class ModelXObject;
 class TextureObject;
+class MdBinObject;
 
 
 
@@ -53,6 +54,8 @@ private:
 private:
 	ModelXObject* player_model_;			//!< モデルオブジェクト
 	TextureObject* normal_texture_[2];		//!< テクスチャオブジェクト
+	MdBinObject* test_object_;				//!< テスト用オブジェクト
+
 
 //==============================
 // 非静的メンバ関数

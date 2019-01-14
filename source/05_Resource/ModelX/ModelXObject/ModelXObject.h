@@ -87,7 +87,7 @@ public:
 	//! @brief ディヒューズテクスチャオブジェクト取得関数
 	//! @details
 	//! @param index インデックス
-	//! @retval void なし
+	//! @retval TextureObject* ディヒューズテクスチャオブジェクト
 	//----------------------------------------
 	TextureObject* getpDiffuseTextureObject(unsigned index);
 

@@ -19,6 +19,7 @@
 #include <Effekseer/EffekseerManager/EffekseerManager.h>
 #include <Texture/TextureManager/TextureManager.h>
 #include <ModelX/ModelXManager/ModelXManager.h>
+#include <MdBin/MdBinManager/MdBinManager.h>
 
 
 
@@ -131,6 +132,7 @@ void SceneManager::Init(SceneBase* scene)
 	EffekseerManager::getpInstance()->Init();
 	TextureManager::getpInstance()->Init();
 	ModelXManager::getpInstance()->Init();
+	MdBinManager::getpInstance()->Init();
 
 	// ゲームオブジェクトマネージャの初期化
 	GameObjectManager::Init();
@@ -153,12 +155,14 @@ void SceneManager::Uninit()
 	GameObjectManager::Uninit();
 
 	// リソースの終了処理
-	EffekseerManager::getpInstance()->Uninit();
-	EffekseerManager::ReleaseInstance();
+	MdBinManager::getpInstance()->Uninit();
+	MdBinManager::ReleaseInstance();
 	ModelXManager::getpInstance()->Uninit();
 	ModelXManager::ReleaseInstance();
 	TextureManager::getpInstance()->Uninit();
 	TextureManager::ReleaseInstance();
+	EffekseerManager::getpInstance()->Uninit();
+	EffekseerManager::ReleaseInstance();
 
 	// 各種開放
 	SafeRelease::Normal(&current_scene_);

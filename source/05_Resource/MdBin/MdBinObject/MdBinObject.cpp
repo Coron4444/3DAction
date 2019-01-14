@@ -12,9 +12,11 @@
 //****************************************
 #include "MdBinObject.h"
 #include "../MdBinDataContainer/MdBinDataContainer.h"
+#include "../MdbinManager/MdBinManager.h"
 
-#include <Renderer\RendererDirectX9\RendererDirectX9.h>
 #include <Vector3D.h>
+#include <Renderer\RendererDirectX9\RendererDirectX9.h>
+#include <SafeRelease/SafeRelease.h>
 #include <Texture\TextureManager\TextureManager.h>
 
 
@@ -78,6 +80,20 @@ void MdBinObject::Mesh::setMaterialIndex(int value)
 
 
 
+int MdBinObject::Mesh::getPrimitiveNum()
+{
+	return primitive_num_;
+}
+
+
+
+void MdBinObject::Mesh::setPrimitiveNum(int value)
+{
+	primitive_num_ = value;
+}
+
+
+
 TextureObject* MdBinObject::Mesh::getpDiffuseTextureObject()
 {
 	return diffuse_texture_object_;
@@ -92,14 +108,72 @@ void MdBinObject::Mesh::setDiffuseTextureObject(TextureObject* value)
 
 
 
+LPDIRECT3DVERTEXBUFFER9 MdBinObject::Mesh::getpVertexBuffer()
+{
+	return vertex_buffer_;
+}
+
+
+
+LPDIRECT3DVERTEXBUFFER9* MdBinObject::Mesh::getp2VertexBuffer()
+{
+	return &vertex_buffer_;
+}
+
+
+
+LPDIRECT3DINDEXBUFFER9 MdBinObject::Mesh::getpIndexBuffer()
+{
+	return index_buffer_;
+}
+
+
+
+LPDIRECT3DINDEXBUFFER9* MdBinObject::Mesh::getp2IndexBuffer()
+{
+	return &index_buffer_;
+}
+
+
+
+unsigned MdBinObject::getMeshNum()
+{
+	return mesh_.size();
+}
+
+
+
+D3DMATERIAL9* MdBinObject::getpMaterial(unsigned mesh_index)
+{
+	return &material_[mesh_[mesh_index].getMaterialIndex()];
+}
+
+
+
+TextureObject* MdBinObject::getpDiffuseTextureObject(unsigned mesh_index)
+{
+	return mesh_[mesh_index].getpDiffuseTextureObject();
+}
+
+
+
 //****************************************
 // 関数定義
 //****************************************
-void MdBinObject::Init(std::string* file_path)
+void MdBinObject::Mesh::Uninit()
+{
+	SafeRelease::PlusRelease(&vertex_buffer_);
+	SafeRelease::PlusRelease(&index_buffer_);
+	SafeRelease::PlusRelease(&diffuse_texture_object_);
+}
+
+
+
+void MdBinObject::Init(std::string* file_path, const std::string* map_key_name)
 {
 	// バイナリーモデルデータの読み込み
 	MdBinDataContainer md_bin_data;
-	if (MdBinDataContainer::InportData(&md_bin_data, *file_path))
+	if (!MdBinDataContainer::InportData(&md_bin_data, *file_path))
 	{
 		MessageBox(NULL, "バイナリーモデルをインポート出来ませんでした。", "Error", MB_OK);
 		return;
@@ -109,7 +183,73 @@ void MdBinObject::Init(std::string* file_path)
 	CreateMaterial(&md_bin_data);
 
 	// メッシュ生成
-	CreateMesh(&md_bin_data);
+	CreateMesh(file_path, &md_bin_data);
+
+	// キー名保存
+	map_key_name_ = *map_key_name;
+}
+
+
+
+void MdBinObject::Release()
+{
+	reference_counter_--;
+	if (reference_counter_ > 0) return;
+
+	for (auto& contents : mesh_)
+	{
+		contents.Uninit();
+	}
+
+	MdBinManager::getpInstance()->ReleaseFromTheMap(&map_key_name_);
+	delete this;
+}
+
+
+
+void MdBinObject::ForcedRelease()
+{
+	reference_counter_ = 0;
+	Release();
+}
+
+
+
+void MdBinObject::AddReferenceCounter()
+{
+	reference_counter_++;
+}
+
+
+
+void MdBinObject::Draw(unsigned mesh_index)
+{
+	// 頂点宣言セット
+	device_->SetFVF(RendererDirectX9::FVF_VERTEX_3D);
+
+	// 頂点バッファセット
+	device_->SetStreamSource(0,										// パイプライン番号
+							 mesh_[mesh_index].getpVertexBuffer(),	// バーテックスバッファ変数名
+							 0,										// どこから流し込むか
+							 sizeof(MdBinObject::Vertex));			// ストライド値(隣の頂点までの長さ＝1頂点の大きさ)
+
+	 // インデックスセット
+	device_->SetIndices(mesh_[mesh_index].getpIndexBuffer());
+
+	device_->DrawPrimitive(D3DPT_TRIANGLELIST,
+						  0,
+						   mesh_[mesh_index].getPrimitiveNum());
+
+	/*
+	// 描画
+	device_->DrawIndexedPrimitive(D3DPT_TRIANGLELIST,
+								  0,											// セットストリームからどれくらいずれているか
+								  0,											// インデックスで一番小さい値
+								  (UINT)mesh_[mesh_index].getVertexArraySize(),	// 頂点数
+								  0,											// スタートインデックス番号
+								  mesh_[mesh_index].getPrimitiveNum());			// プリミティブ数
+
+	*/
 }
 
 
@@ -155,7 +295,7 @@ void MdBinObject::CreateMaterial(MdBinDataContainer* md_bin_data)
 
 
 
-void MdBinObject::CreateMesh(MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateMesh(std::string* file_path, MdBinDataContainer* md_bin_data)
 {
 	// メッシュ数取得
 	int mesh_num = md_bin_data->getMeshArraySize();
@@ -174,10 +314,10 @@ void MdBinObject::CreateMesh(MdBinDataContainer* md_bin_data)
 		CreateVertex(i, md_bin_data);
 
 		// ディヒューズテクスチャ生成
-		CreateDiffuseTexture(i, md_bin_data);
+		CreateDiffuseTexture(i, file_path, md_bin_data);
 
 		// バッファ生成
-		//CreateBuffer(i, md_bin_data);
+		CreateBuffer(i);
 	}
 }
 
@@ -203,6 +343,10 @@ void MdBinObject::CreateIndex(int mesh_index, MdBinDataContainer* md_bin_data)
 		WORD index = (WORD)*md_bin_data->getpMesh(mesh_index)->getpIndex(i);
 		*mesh_[mesh_index].getpIndex(i) = index;
 	}
+
+	// プリミティブ数生成
+	int primitive_num = mesh_[mesh_index].getIndexArraySize() / 3;
+	mesh_[mesh_index].setPrimitiveNum(primitive_num);
 }
 
 
@@ -276,13 +420,14 @@ void MdBinObject::CreateUV(int mesh_index, int vertex_index,
 
 
 void MdBinObject::CreateDiffuseTexture(int mesh_index,
+									   std::string* file_path,
 									   MdBinDataContainer* md_bin_data)
 {
-	std::string file_path = *md_bin_data->getpMesh(mesh_index)->getpUVSet(0)
+	std::string key_name = *md_bin_data->getpMesh(mesh_index)->getpUVSet(0)
 		->getpTexture(0)->getpFilePath();
-	std::string key_name;
-	CreateFilePathAndKeyName(&file_path, &key_name);
-	TextureObject* texture_object = TextureManager::getpInstance()->getpObject(&key_name, &file_path);
+	std::string path = *file_path;
+	CreateFilePathAndKeyName(&path, &key_name);
+	TextureObject* texture_object = TextureManager::getpInstance()->getpObject(&key_name, &path);
 	mesh_[mesh_index].setDiffuseTextureObject(texture_object);
 }
 
@@ -302,4 +447,90 @@ void MdBinObject::CreateFilePathAndKeyName(std::string* file_path,
 
 	// ファイルパスの作成
 	*file_path = file_path->substr(0, slash_index2 + 1);
+}
+
+
+
+void MdBinObject::CreateBuffer(int mesh_index)
+{
+	Renderer::getpInstance()->getDevice(&device_);
+	if (device_ == nullptr)
+	{
+		MessageBox(nullptr, "NotGetDevice!(MdBinObject.cpp)", "Error", MB_OK);
+		return;
+	}
+
+	CreateVertexBuffer(mesh_index);
+	CreateIndexBuffer(mesh_index);
+}
+
+
+
+void MdBinObject::CreateVertexBuffer(int mesh_index)
+{
+	// VRAMのメモリを確保(GPUに依頼)(頂点バッファの作成)
+	unsigned buffer_num = sizeof(MdBinObject::Vertex) * mesh_[mesh_index].getVertexArraySize();
+	HRESULT  hr = device_->CreateVertexBuffer(buffer_num,								// 借りたいbafの量(バイト)、つまり1頂点の容量×必要頂点数
+											  D3DUSAGE_WRITEONLY,						// 使用用途(今回は書き込みのみ、GPUが早く動くが書き込んだデータを読んではダメ(値が不定))
+											  RendererDirectX9::FVF_VERTEX_3D,			// 頂点属性
+											  D3DPOOL_MANAGED,							// 頂点バッファの管理方法( MANAGEDは管理はDirect3Dにお任せという意味 )
+											  mesh_[mesh_index].getp2VertexBuffer(),	// 管理者の居場所のメモ帳(ポインタのポインタ)(全てはこれの値を知るための作業)
+											  NULL);									// なぞ？
+	if (FAILED(hr))
+	{
+		MessageBox(NULL, "頂点バッファの生成に失敗(MdBinObject.cpp)", "Error", MB_OK);
+	}
+
+	// 頂点の登録
+	MdBinObject::Vertex* temp_vertex;	// 仮想アドレスをもらう頂点ポインタ
+
+	// ロックする
+	mesh_[mesh_index].getpVertexBuffer()->Lock(0,						// どこからロックしたいか
+											   0,						// どのくらい借りたいか(0はVertexBuffer全部)
+											   (void**)&temp_vertex,	// ロックするとVRAMの仮想アドレスがもらえる(実際に書き込んでいるわけではない)
+											   D3DLOCK_DISCARD);		// 0でもよい
+
+	for (auto i = 0; i < mesh_[mesh_index].getVertexArraySize(); i++)
+	{
+		temp_vertex[i] = *mesh_[mesh_index].getpVertex(i);
+	}
+
+	// アンロック
+	mesh_[mesh_index].getpVertexBuffer()->Unlock();
+}
+
+
+
+void MdBinObject::CreateIndexBuffer(int mesh_index)
+{
+	// VRAMのメモリを確保(GPUに依頼)(インデックスバッファの作成)
+	unsigned buffer_num = sizeof(WORD) * mesh_[mesh_index].getIndexArraySize();
+	HRESULT	hr = device_->CreateIndexBuffer(buffer_num,								// 借りたいbafの量(バイト)、つまり1頂点の容量×必要頂点数
+											D3DUSAGE_WRITEONLY,						// 使用用途(今回は書き込みのみ、GPUが早く動くが書き込んだデータを読んではダメ(値が不定))
+											D3DFMT_INDEX16,							// 頂点フォーマット(WORD型だから16、DWORD型なら32)
+											D3DPOOL_MANAGED,						// 頂点バッファの管理方法( MANAGEDは管理はDirect3Dにお任せという意味 )
+											mesh_[mesh_index].getp2IndexBuffer(),	// 管理者の居場所のメモ帳(ポインタのポインタ)(全てはこれの値を知るための作業)
+											NULL);									// なぞ？									// なぞ？
+	if (FAILED(hr))
+	{
+		MessageBox(NULL, "インデックスバッファの生成に失敗(MdBinObject.cpp)", "Error", MB_OK);
+	}
+
+	// インデックスの登録
+	LPWORD temp_index;		// 仮想アドレスをもらう頂点ポインタ 
+
+	// ロックする
+	mesh_[mesh_index].getpIndexBuffer()->Lock(0,					// どこからロックしたいか
+											  0,					// どのくらい借りたいか(0はVertexBuffer全部)
+											  (void**)&temp_index,	// ロックするとVRAMの仮想アドレスがもらえる(実際に書き込んでいるわけではない)
+											  D3DLOCK_DISCARD);		// 0でもよい
+
+	for (auto i = 0; i < mesh_[mesh_index].getIndexArraySize(); i++)
+	{
+		temp_index[i] = *mesh_[mesh_index].getpIndex(i);
+	}
+
+
+	// アンロック
+	mesh_[mesh_index].getpIndexBuffer()->Unlock();
 }
