@@ -261,6 +261,14 @@ public:
 	//----------------------------------------
 	TextureObject* getpDiffuseTextureObject(unsigned mesh_index);
 
+	//----------------------------------------
+	//! @brief ディヒューズテクスチャハンドラ取得関数
+	//! @details
+	//! @param mesh_index メッシュインデックス  
+	//! @retval LPDIRECT3DTEXTURE9 ディヒューズテクスチャハンドラ
+	//----------------------------------------
+	LPDIRECT3DTEXTURE9 getpDiffuseTextureHandler(unsigned mesh_index);
+
 
 //====================
 // 関数

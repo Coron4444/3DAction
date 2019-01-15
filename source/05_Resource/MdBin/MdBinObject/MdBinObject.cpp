@@ -157,6 +157,14 @@ TextureObject* MdBinObject::getpDiffuseTextureObject(unsigned mesh_index)
 
 
 
+LPDIRECT3DTEXTURE9 MdBinObject::getpDiffuseTextureHandler(unsigned mesh_index)
+{
+	if (mesh_[mesh_index].getpDiffuseTextureObject() == nullptr) return nullptr;
+	return mesh_[mesh_index].getpDiffuseTextureObject()->getpHandler();
+}
+
+
+
 //****************************************
 // 関数定義
 //****************************************
@@ -233,15 +241,14 @@ void MdBinObject::Draw(unsigned mesh_index)
 							 0,										// どこから流し込むか
 							 sizeof(MdBinObject::Vertex));			// ストライド値(隣の頂点までの長さ＝1頂点の大きさ)
 
-	 // インデックスセット
-	device_->SetIndices(mesh_[mesh_index].getpIndexBuffer());
-
+	// 描画
 	device_->DrawPrimitive(D3DPT_TRIANGLELIST,
 						  0,
 						   mesh_[mesh_index].getPrimitiveNum());
 
 	/*
-	// 描画
+	// インデックス版の表示(FBXの最適化等で実装するか決める)
+	device_->SetIndices(mesh_[mesh_index].getpIndexBuffer());
 	device_->DrawIndexedPrimitive(D3DPT_TRIANGLELIST,
 								  0,											// セットストリームからどれくらいずれているか
 								  0,											// インデックスで一番小さい値
@@ -423,6 +430,9 @@ void MdBinObject::CreateDiffuseTexture(int mesh_index,
 									   std::string* file_path,
 									   MdBinDataContainer* md_bin_data)
 {
+	
+	if (md_bin_data->getpMesh(mesh_index)->getpUVSet(0)->getTextureArraySize() <= 0) return;
+
 	std::string key_name = *md_bin_data->getpMesh(mesh_index)->getpUVSet(0)
 		->getpTexture(0)->getpFilePath();
 	std::string path = *file_path;

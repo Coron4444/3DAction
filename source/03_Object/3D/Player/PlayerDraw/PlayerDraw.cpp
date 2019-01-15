@@ -57,6 +57,8 @@ void PlayerDraw::Init()
 
 	// テスト用オブジェクト
 	std::string test = "unitychan_tex/unitychan_tex.mdbin_l";
+	//std::string test = "BoxUnityChan/BoxUnityChan.mdbin_l";
+	//std::string test = "Yuko_animeVer/Yuko_animeVer.mdbin_l";
 	test_object_ = MdBinManager::getpInstance()->getpObject(&test);
 }
 
@@ -145,7 +147,7 @@ LPDIRECT3DTEXTURE9 PlayerDraw::getpDiffuseTexture(unsigned object_index, unsigne
 
 	//return player_model_->getpDiffuseTextureObject(mesh_index)->getpHandler();
 
-	return test_object_->getpDiffuseTextureObject(mesh_index)->getpHandler();
+	return test_object_->getpDiffuseTextureHandler(mesh_index);
 }
 
 

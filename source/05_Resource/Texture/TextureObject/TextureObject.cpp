@@ -176,9 +176,10 @@ void TextureObject::CreateTextureHandler(std::string* file_path)
 
 	// テクスチャハンドラの取得
 	HRESULT hr = D3DXCreateTextureFromFile(device, file_path->c_str(), &texture_handler_);
+	std::string error_message = *file_path + "のテクスチャハンドラの生成に失敗(TextureObject.cpp)";
 	if (FAILED(hr))
 	{
-		MessageBox(nullptr, "テクスチャハンドラの生成に失敗(TextureObject.cpp)", "Error", MB_OK);
+		MessageBox(nullptr, error_message.c_str(), "Error", MB_OK);
 		return;
 	}
 }
