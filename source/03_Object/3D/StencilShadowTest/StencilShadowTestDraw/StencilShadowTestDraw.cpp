@@ -37,8 +37,8 @@ void StencilShadowTestDraw::Init()
 	// オーダーリスト設定
 	getpDrawOrderList()->setDrawType(DrawOrderList::DrawType::TRANSPARENCY);
 	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
-	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::FIXED);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::FIXED);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::getpInstance()->getpObject(&MODEL_NAME);

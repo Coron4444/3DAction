@@ -45,7 +45,7 @@ void PixelShaderBumpMapping::Uninit()
 
 
 
-void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, 
+void PixelShaderBumpMapping::ObjectSetting(DrawBase* draw, Camera* camera,
 										   unsigned object_index)
 {
 	camera = camera;
@@ -59,25 +59,24 @@ void PixelShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera,
 	D3DXVec4Transform(&light_position, &light_position, &math_matrix_);
 	D3DXVec3Normalize((Vec3*)&light_position, (Vec3*)&light_position);
 	light_position.w = -0.7f;		// 環境光の比率
-	GetConstantTable()->SetVector(GetDevice(),
-								  "LAMBERT_DIFFUSE_LIGHT_VECTOR",
-								  &light_position);
+	getpConstantTable()->SetVector(getpDevice(), "LAMBERT_DIFFUSE_LIGHT_VECTOR",
+								   &light_position);
 }
 
 
 
-void PixelShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
-											  unsigned object_index, unsigned mesh_index)
+void PixelShaderBumpMapping::MeshSetting(DrawBase* draw, Camera* camera,
+										 unsigned object_index, unsigned mesh_index)
 {
 	camera = camera;
 
 	// ディヒューズテクスチャの設定
-	int sampler_index = GetConstantTable()->GetSamplerIndex("DIFFUSE_SAMPLER");
-	GetDevice()->SetTexture(sampler_index, 
-							draw->getpDiffuseTexture(object_index, mesh_index));
+	int sampler_index = getpConstantTable()->GetSamplerIndex("DIFFUSE_SAMPLER");
+	getpDevice()->SetTexture(sampler_index,
+							 draw->getpDiffuseTexture(object_index, mesh_index));
 
 	// 法線テクスチャの設定
-	sampler_index = GetConstantTable()->GetSamplerIndex("NORMAL_SAMPLER");
-	GetDevice()->SetTexture(sampler_index, 
-							draw->getpNormalTexture(object_index, mesh_index));
+	sampler_index = getpConstantTable()->GetSamplerIndex("NORMAL_SAMPLER");
+	getpDevice()->SetTexture(sampler_index,
+							 draw->getpNormalTexture(object_index, mesh_index));
 }

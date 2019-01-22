@@ -29,16 +29,16 @@
 //****************************************
 // プロパティ定義
 //****************************************
-Camera* BackBuffer::getpCamera() 
+Camera* BackBuffer::getpCamera()
 {
-	return camera_; 
+	return camera_;
 }
 
 
 
-void BackBuffer::setShaderManager(ShaderManager* value) 
+void BackBuffer::setShaderManager(ShaderManager* value)
 {
-	shader_manager_ = value; 
+	shader_manager_ = value;
 }
 
 
@@ -143,32 +143,27 @@ void BackBuffer::Draw()
 	camera_->setType(Camera::Type::PERSPECTIVE);
 	for (unsigned i = 0; i < all_opacity_draw_.GetEndPointer(); i++)
 	{
-		// シェーダーをセット
-		shader_manager_->SetShader(all_opacity_draw_.GetArrayObject(i),
-								   ShaderManager::VertexShaderType::VERTEX_NONE,
-								   ShaderManager::PixelShaderType::PIXEL_NONE);
+		// シェーダーセット
+		shader_manager_->ShaderSetToDevice(all_opacity_draw_.GetArrayObject(i),
+										   ShaderManager::VertexShaderType::NONE,
+										   ShaderManager::PixelShaderType::NONE);
 
-		// オブジェクト数分ループ
+		// 各オブジェクト描画
 		for (unsigned j = 0; j < all_opacity_draw_.GetArrayObject(i)->getObjectNum(); j++)
 		{
 			// 描画前設定
 			all_opacity_draw_.GetArrayObject(i)->SettingBeforeDrawing(camera_, j);
 
-			// メッシュ間共通のグローバール変数をセット
-			shader_manager_->CommonSetting(all_opacity_draw_.GetArrayObject(i),
-										   camera_,
-										   ShaderManager::VertexShaderType::VERTEX_NONE,
-										   ShaderManager::PixelShaderType::PIXEL_NONE,
-										   j);
+			// オブジェクト設定
+			shader_manager_->ObjectSetting(all_opacity_draw_.GetArrayObject(i),
+										   camera_, j);
 
-			// メッシュ数分ループ
+			// 各メッシュ描画
 			for (unsigned k = 0; k < all_opacity_draw_.GetArrayObject(i)->getMeshNum(j); k++)
 			{
-				shader_manager_->SpecificSetting(all_opacity_draw_.GetArrayObject(i),
-												 camera_,
-												 ShaderManager::VertexShaderType::VERTEX_NONE,
-												 ShaderManager::PixelShaderType::PIXEL_NONE,
-												 j, k);
+				// メッシュ設定
+				shader_manager_->MeshSetting(all_opacity_draw_.GetArrayObject(i),
+											 camera_, j, k);
 
 				all_opacity_draw_.GetArrayObject(i)->Draw(j, k);
 			}
@@ -182,31 +177,26 @@ void BackBuffer::Draw()
 	for (unsigned i = 0; i < all_transparency_draw_.GetEndPointer(); i++)
 	{
 		// シェーダーをセット
-		shader_manager_->SetShader(all_transparency_draw_.GetArrayObject(i),
-								   ShaderManager::VertexShaderType::VERTEX_NONE,
-								   ShaderManager::PixelShaderType::PIXEL_NONE);
+		shader_manager_->ShaderSetToDevice(all_transparency_draw_.GetArrayObject(i),
+										   ShaderManager::VertexShaderType::NONE,
+										   ShaderManager::PixelShaderType::NONE);
 
-		// オブジェクト数分ループ
+		// 各オブジェクト描画
 		for (unsigned j = 0; j < all_transparency_draw_.GetArrayObject(i)->getObjectNum(); j++)
 		{
 			// 描画前設定
 			all_transparency_draw_.GetArrayObject(i)->SettingBeforeDrawing(camera_, j);
 
-			// メッシュ間共通のグローバール変数をセット
-			shader_manager_->CommonSetting(all_transparency_draw_.GetArrayObject(i),
-										   camera_,
-										   ShaderManager::VertexShaderType::VERTEX_NONE,
-										   ShaderManager::PixelShaderType::PIXEL_NONE,
-										   j);
+			// オブジェクト設定
+			shader_manager_->ObjectSetting(all_transparency_draw_.GetArrayObject(i),
+										   camera_, j);
 
-			// メッシュ数分ループ
+			// 各メッシュ描画
 			for (unsigned k = 0; k < all_transparency_draw_.GetArrayObject(i)->getMeshNum(j); k++)
 			{
-				shader_manager_->SpecificSetting(all_transparency_draw_.GetArrayObject(i),
-												 camera_,
-												 ShaderManager::VertexShaderType::VERTEX_NONE,
-												 ShaderManager::PixelShaderType::PIXEL_NONE,
-												 j, k);
+				// メッシュ設定
+				shader_manager_->MeshSetting(all_transparency_draw_.GetArrayObject(i),
+											 camera_, j, k);
 
 				all_transparency_draw_.GetArrayObject(i)->Draw(j, k);
 			}
@@ -216,39 +206,34 @@ void BackBuffer::Draw()
 		}
 	}
 
-	// エフェクシア
+	// エフェクシア描画
 	EffekseerManager::getpInstance()->Draw();
 
-	// 2D
+	// 2Dオブジェクト
 	camera_->setType(Camera::Type::TWO_DIMENSIONAL);
 	for (unsigned i = 0; i < all_2D_draw_.GetEndPointer(); i++)
 	{
-		// シェーダーをセット
-		shader_manager_->SetShader(all_2D_draw_.GetArrayObject(i),
-								   ShaderManager::VertexShaderType::VERTEX_NONE,
-								   ShaderManager::PixelShaderType::PIXEL_NONE);
+		// シェーダーセット
+		shader_manager_->ShaderSetToDevice(all_2D_draw_.GetArrayObject(i),
+										   ShaderManager::VertexShaderType::NONE,
+										   ShaderManager::PixelShaderType::NONE);
 
-		// オブジェクト数分ループ
+		// 各オブジェクト描画
 		for (unsigned j = 0; j < all_2D_draw_.GetArrayObject(i)->getObjectNum(); j++)
 		{
 			// 描画前設定
 			all_2D_draw_.GetArrayObject(i)->SettingBeforeDrawing(camera_, j);
 
-			// メッシュ間共通のグローバール変数をセット
-			shader_manager_->CommonSetting(all_2D_draw_.GetArrayObject(i),
-										   camera_,
-										   ShaderManager::VertexShaderType::VERTEX_NONE,
-										   ShaderManager::PixelShaderType::PIXEL_NONE,
-										   j);
+			// オブジェクト設定
+			shader_manager_->ObjectSetting(all_2D_draw_.GetArrayObject(i),
+										   camera_, j);
 
-			// メッシュ数分ループ
+			// 各メッシュ描画
 			for (unsigned k = 0; k < all_2D_draw_.GetArrayObject(i)->getMeshNum(j); k++)
 			{
-				shader_manager_->SpecificSetting(all_2D_draw_.GetArrayObject(i),
-												 camera_,
-												 ShaderManager::VertexShaderType::VERTEX_NONE,
-												 ShaderManager::PixelShaderType::PIXEL_NONE,
-												 j, k);
+				// メッシュ設定
+				shader_manager_->MeshSetting(all_2D_draw_.GetArrayObject(i),
+											 camera_, j, k);
 
 				all_2D_draw_.GetArrayObject(i)->Draw(j, k);
 			}
@@ -271,7 +256,7 @@ void BackBuffer::Draw()
 	//device->SetTexture(0, post_effect_texture_);
 	//render_texture_.Draw(0, 0);
 
-	// フェード
+	// フェード描画
 	FadeDraw();
 
 	Renderer::getpInstance()->DrawEnd(is_begin);
@@ -371,14 +356,14 @@ void BackBuffer::UninitFade()
 
 bool BackBuffer::IsFadeEnd()
 {
-	return fade_->getpEndFlag(); 
+	return fade_->getpEndFlag();
 }
 
 
 
-bool BackBuffer::IsFadeStateName(Fade::State state) 
+bool BackBuffer::IsFadeStateName(Fade::State state)
 {
-	return *fade_->getpState() == state; 
+	return *fade_->getpState() == state;
 }
 
 
@@ -483,28 +468,21 @@ void BackBuffer::FadeDraw()
 		{
 			camera_->setType(Camera::Type::TWO_DIMENSIONAL);
 			// シェーダーをセット
-			shader_manager_->SetShader(fade_,
-									   ShaderManager::VertexShaderType::VERTEX_NONE,
-									   ShaderManager::PixelShaderType::PIXEL_NONE);
+			shader_manager_->ShaderSetToDevice(fade_,
+											   ShaderManager::VertexShaderType::NONE,
+											   ShaderManager::PixelShaderType::NONE);
 
-			// オブジェクト数分ループ
+			// 各オブジェクト描画
 			for (unsigned j = 0; j < fade_->getObjectNum(); j++)
 			{
-				// メッシュ間共通のグローバール変数をセット
-				shader_manager_->CommonSetting(fade_,
-											   camera_,
-											   ShaderManager::VertexShaderType::VERTEX_NONE,
-											   ShaderManager::PixelShaderType::PIXEL_NONE,
-											   j);
+				// オブジェクト設定
+				shader_manager_->ObjectSetting(fade_, camera_, j);
 
-				// メッシュ数分ループ
+				// 各メッシュ描画
 				for (unsigned k = 0; k < fade_->getMeshNum(j); k++)
 				{
-					shader_manager_->SpecificSetting(fade_,
-													 camera_,
-													 ShaderManager::VertexShaderType::VERTEX_NONE,
-													 ShaderManager::PixelShaderType::PIXEL_NONE,
-													 j, k);
+					// メッシュ設定
+					shader_manager_->MeshSetting(fade_, camera_, j, k);
 
 					fade_->Draw(j, k);
 				}

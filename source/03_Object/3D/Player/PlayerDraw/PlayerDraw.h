@@ -56,6 +56,8 @@ private:
 	TextureObject* normal_texture_[2];		//!< テクスチャオブジェクト
 	MdBinObject* test_object_;				//!< テスト用オブジェクト
 
+	int count_ = 0;
+	int frame_ = 0;
 
 //==============================
 // 非静的メンバ関数
@@ -73,6 +75,8 @@ public:
 	*/
 	void Uninit() override;
 
+	void Update() override;
+
 	/**
 	* @brief
 	* 描画関数
@@ -84,7 +88,10 @@ public:
 
 	// プロパティ
 	unsigned getMeshNum(unsigned object_index) override;
+	unsigned getBoneNum(unsigned object_index, unsigned mesh_index) override;
 	MATRIX* getpMatrix(unsigned object_index) override;
+	MATRIX* getpBoneMatrix(unsigned object_index, unsigned mesh_index,
+						   unsigned bone_index) override;
 	D3DMATERIAL9* getpMaterial(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index, unsigned mesh_index) override;
 	LPDIRECT3DTEXTURE9 getpNormalTexture(unsigned object_index, unsigned mesh_index) override;

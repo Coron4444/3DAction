@@ -1,0 +1,74 @@
+//================================================================================
+//!	@file	 Default.psh
+//!	@brief	 デフォルトピクセルシェーダ
+//! @details 
+//!	@author  Kai Araki									@date 2019/1/21
+//================================================================================
+
+
+
+//****************************************
+// グローバル変数
+//****************************************
+bool IS_TEXTURE;    //!< テクスチャフラグ
+texture DIFFUSE_TEXTURE;    //!< ディヒューズテクスチャ
+
+
+
+//****************************************
+// サンプラ
+//****************************************
+sampler DIFFUSE_SAMPLER = 
+sampler_state
+{
+    Texture = <DIFFUSE_TEXTURE>;
+    MinFilter = LINEAR;
+    MagFilter = LINEAR;
+    MipFilter = NONE;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+
+
+//****************************************
+// 構造体定義
+//****************************************
+//************************************************************														   
+//! @brief   インプットStruct
+//!
+//! @details インプットのStruct
+//************************************************************
+struct Input
+{
+    float4 color_    : COLOR0;      //!< 色
+    float2 uv_       : TEXCOORD0;   //!< UV
+};
+
+
+
+//****************************************
+// 関数定義
+//****************************************
+//--------------------------------------------------
+//! @brief エントリー関数
+//! @details
+//! @param input  入力データ 
+//! @param out_color 出力色
+//! @retval void なし
+//--------------------------------------------------
+void MainPixelShader(Input input, out float4 out_color : COLOR0)
+{
+    // 出力データ初期化
+    out_color = (float4)0.0f;
+
+    // ディヒューズテクスチャ色取得
+    float4 texture_color = (float4)1.0f;
+    if (IS_TEXTURE == true)
+    {
+        texture_color = tex2D(DIFFUSE_SAMPLER, input.uv_);
+    }
+
+    // 頂点色とテクスチャ色のブレンド
+    out_color = input.color_ * texture_color;
+}

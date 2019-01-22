@@ -12,7 +12,9 @@
 //****************************************
 #include "PixelShaderBase.h"
 
-#include <GameObjectManager/GameObjectManager.h>
+#include <SafeRelease/SafeRelease.h>
+
+
 
 //****************************************
 // プロパティ定義
@@ -27,14 +29,15 @@ LPDIRECT3DPIXELSHADER9 PixelShaderBase::getpPixelShader()
 //****************************************
 // 関数定義
 //****************************************
-void PixelShaderBase::SetShader()
+void PixelShaderBase::ShaderSetToDevice()
 {
-	GetDevice()->SetPixelShader(pixel_shader_);
+	getpDevice()->SetPixelShader(pixel_shader_);
 }
 
 
 
-bool PixelShaderBase::PixelShaderCompile(const char* file_name, const char* entry_function,
+bool PixelShaderBase::PixelShaderCompile(const char* file_name,
+										 const char* entry_function,
 										 const char* version)
 {
 	LPD3DXBUFFER compiled_code;
@@ -42,11 +45,11 @@ bool PixelShaderBase::PixelShaderCompile(const char* file_name, const char* entr
 												version, &compiled_code);
 	if (!is_compile) return false;
 
-	HRESULT hr = ShaderBase::GetDevice()
+	HRESULT hr = getpDevice()
 		->CreatePixelShader((DWORD*)compiled_code->GetBufferPointer(),
 							&pixel_shader_);
 
-   // 成功したか
+	// 成功したか
 	if (SUCCEEDED(hr)) return true;
 
 	// エラーメッセージ

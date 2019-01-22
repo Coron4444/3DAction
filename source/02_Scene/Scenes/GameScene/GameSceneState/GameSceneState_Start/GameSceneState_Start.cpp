@@ -48,7 +48,7 @@ void GameSceneState_Start::Init()
 	game_scene_->setScore(0);
 
 	// デフォルトカメラの作成
-	GameObjectManager::GetDrawManager()->GetBackBuffer()
+	GameObjectManager::GetDrawManager()->getpBackBuffer()
 		->getpCamera()->setState(new CameraState_CrawlUp());
 	//GameObjectManager::GetDrawManager()->GetBackBuffer()
 	//	->GetCamera()->ChangeState(new CameraState_HomingTarget());

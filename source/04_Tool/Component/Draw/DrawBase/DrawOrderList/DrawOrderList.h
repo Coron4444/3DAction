@@ -49,8 +49,8 @@ public:
 // 変数
 //====================
 private:
-	ShaderManager::VertexShaderType vertex_shader_type_ = ShaderManager::VertexShaderType::VERTEX_FIXED;	//!< 頂点シェーダータイプ
-	ShaderManager::PixelShaderType pixel_shader_type_ = ShaderManager::PixelShaderType::PIXEL_FIXED;		//!< ピクセルシェーダータイプ
+	ShaderManager::VertexShaderType vertex_shader_type_ = ShaderManager::VertexShaderType::FIXED;	//!< 頂点シェーダータイプ
+	ShaderManager::PixelShaderType pixel_shader_type_ = ShaderManager::PixelShaderType::FIXED;		//!< ピクセルシェーダータイプ
 
 	DrawType draw_type_ = DrawType::OPACITY;	//!< 描画の種類
 

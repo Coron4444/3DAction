@@ -42,8 +42,8 @@ void PlayerDraw::Init()
 	getpDrawOrderList()->getpRenderTargetFlag()->Set(DrawOrderList::RENDER_TARGET_BACK_BUFFER);
 	//getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_BUMP_MAPPING);
 	//getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_BUMP_MAPPING);
-	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::VERTEX_FIXED);
-	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::PIXEL_FIXED);
+	getpDrawOrderList()->setVertexShaderType(ShaderManager::VertexShaderType::ANIMATED_DEFAULT);
+	getpDrawOrderList()->setPixelShaderType(ShaderManager::PixelShaderType::DEFAULT);
 
 	// Xモデル登録
 	player_model_ = ModelXManager::getpInstance()->getpObject(&MODEL_NAME);
@@ -56,9 +56,12 @@ void PlayerDraw::Init()
 	normal_texture_[1] = TextureManager::getpInstance()->getpObject(&NORMAL_TEXTURE_SWORD, &TEXTURE_PATH);
 
 	// テスト用オブジェクト
-	std::string test = "unitychan_tex/unitychan_tex.mdbin_l";
-	//std::string test = "BoxUnityChan/BoxUnityChan.mdbin_l";
-	//std::string test = "Yuko_animeVer/Yuko_animeVer.mdbin_l";
+	//std::string test = "neko_anime_hasiru3/neko_anime_hasiru3.mdbin_l";
+	std::string test = "unitychan_Jump/unitychan_Jump.mdbin_l";
+	//std::string test = "Unarmed Equip Over Shoulder/Unarmed Equip Over Shoulder.mdbin_l";
+	//std::string test = "unitychan/unitychan.mdbin_l";
+	//std::string test = "goblin-sapper/goblin-sapper.mdbin_l";
+	//std::string test = "humanoid/humanoid.mdbin_l";
 	test_object_ = MdBinManager::getpInstance()->getpObject(&test);
 }
 
@@ -81,6 +84,10 @@ void PlayerDraw::Uninit()
 	SafeRelease::PlusRelease(&test_object_);
 }
 
+void PlayerDraw::Update()
+{
+	frame_ = ++count_ % 30;
+}
 
 
 //--------------------------------------------------
@@ -112,6 +119,15 @@ unsigned PlayerDraw::getMeshNum(unsigned object_index)
 
 
 
+unsigned PlayerDraw::getBoneNum(unsigned object_index, unsigned mesh_index)
+{
+	object_index = object_index;
+
+	return test_object_->getpMesh(mesh_index)->getBoneArraySize();
+}
+
+
+
 //--------------------------------------------------
 // +行列取得関数
 //--------------------------------------------------
@@ -120,6 +136,17 @@ MATRIX* PlayerDraw::getpMatrix(unsigned object_index)
 	object_index = object_index;
 
 	return getpGameObject()->GetTransform()->getpWorldMatrix();
+}
+
+
+
+MATRIX* PlayerDraw::getpBoneMatrix(unsigned object_index, unsigned mesh_index,
+								   unsigned bone_index)
+{
+	object_index = object_index;
+
+	return test_object_->getpMesh(mesh_index)->getpBone(bone_index)
+		->getpAnimationMatrix(0);// frame_);
 }
 
 

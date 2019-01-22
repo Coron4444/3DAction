@@ -1,19 +1,11 @@
 //================================================================================
-//
-//    シェーダーマネージャークラス
-//    Author : Araki Kai                                作成日 : 2018/03/26
-//
+//!	@file	 ShaderManager.h
+//!	@brief	 シェーダーマネージャClass
+//! @details 
+//!	@author  Kai Araki									@date 2019/01/19
 //================================================================================
-
 #ifndef	_SHADER_MANAGER_H_
 #define _SHADER_MANAGER_H_
-
-
-
-//****************************************
-// インクルード文
-//****************************************
-
 
 
 
@@ -27,201 +19,194 @@ class PixelShaderBase;
 
 
 
-/*********************************************************//**
-* @brief
-* シェーダーマネージャークラス
-*
-* シェーダーを管理するクラス
-*************************************************************/
+//************************************************************														   
+//! @brief   シェーダーマネージャClass
+//!
+//! @details シェーダーのマネージャClass
+//************************************************************
 class ShaderManager
 {
 //==============================
 // 列挙型定義
 //==============================
 public:
-	// 頂点シェーダータイプ
-	enum VertexShaderType
+	enum class VertexShaderType
 	{
-		VERTEX_NONE = -1,
-		VERTEX_FIXED,
-		VERTEX_BUMP_MAPPING,
-		VERTEX_MAX
+		NONE = -1,
+		FIXED,
+		ANIMATED_DEFAULT,
+		BUMP_MAPPING,
+		MAX
 	};
 
-	// ピクセルシェーダータイプ
-	enum PixelShaderType
+	enum class PixelShaderType
 	{
-		PIXEL_NONE = -1,
-		PIXEL_FIXED,
-		PIXEL_BUMP_MAPPING,
-		PIXEL_MAX
+		NONE = -1,
+		FIXED,
+		DEFAULT,
+		BUMP_MAPPING,
+		MAX
 	};
 
 
-//==============================
-// 非静的メンバ変数
-//==============================
+//====================
+// 変数
+//====================
 private:
-	// 各種シェーダー
-	VertexShaderBase* vertex_shaders_[VERTEX_MAX] = {nullptr};
-	PixelShaderBase* pixel_shaders_[PIXEL_MAX] = {nullptr};
+	VertexShaderBase* vertex_shader_[(int)VertexShaderType::MAX] = {nullptr};	//!< 頂点シェーダー
+	PixelShaderBase* pixel_shader_[(int)PixelShaderType::MAX] = {nullptr};		//!< ピクセルシェーダー
+	VertexShaderType forced_vertex_;	//!< 強制頂点シェーダータイプ
+	PixelShaderType forced_pixel_;		//!< 強制ピクセルシェーダータイプ
 
 
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 初期化関数
-	*/
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Init();
 
-	/**
-	* @brief
-	* 終了関数
-	*/
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
 	void Uninit();
 
-	/**
-	* @brief
-	* シェーダー設定関数
-	* @param
-	* draw : 描画基底クラス
-	* forced_vertex_type : 強制頂点シェーダータイプ
-	* forced_pixel_type : 強制ピクセルシェーダータイプ
-	*/
-	void SetShader(DrawBase* draw, VertexShaderType forced_vertex_type,
-				   PixelShaderType forced_pixel_type);
-	/**
-	* @brief
-	* 共通設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* forced_vertex_type : 強制頂点シェーダータイプ
-	* forced_pixel_type : 強制ピクセルシェーダータイプ
-	* object_index : 描画オブジェクトインデックス
-	*/
-	void CommonSetting(DrawBase* draw, Camera* camera,
-					   VertexShaderType forced_vertex_type,
-					   PixelShaderType forced_pixel_type, unsigned object_index);
+	//----------------------------------------
+	//! @brief デバイスにシェーダー設定関数
+	//! @details
+	//! @param *draw          描画基底クラス
+	//! @param forced_vertex_ 強制頂点シェーダータイプ
+	//! @param forced_pixel_  強制ピクセルシェーダータイプ
+	//! @retval void なし
+	//----------------------------------------
+	void ShaderSetToDevice(DrawBase* draw,
+						   VertexShaderType forced_vertex,
+						   PixelShaderType forced_pixel);
 
-	/**
-	* @brief
-	* 固有設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* forced_vertex_type : 強制頂点シェーダータイプ
-	* forced_pixel_type : 強制ピクセルシェーダータイプ
-	* object_index : 描画オブジェクトインデックス
-	* mesh_index : メッシュインデックス
-	*/
-	void SpecificSetting(DrawBase* draw, Camera* camera,
-						 VertexShaderType forced_vertex_type,
-						 PixelShaderType forced_pixel_type,
-						 unsigned object_index, unsigned mesh_index);
+	//----------------------------------------
+	//! @brief オブジェクト設定関数
+	//! @details
+	//! @param *draw		描画基底クラス
+	//! @param *camera		カメラ
+	//! @param object_index	描画オブジェクトインデックス
+	//! @retval void なし
+	//----------------------------------------
+	void ObjectSetting(DrawBase* draw, Camera* camera, unsigned object_index);
+
+	//----------------------------------------
+	//! @brief メッシュ設定関数
+	//! @details
+	//! @param *draw		描画基底クラス
+	//! @param *camera		カメラ
+	//! @param object_index	描画オブジェクトインデックス
+	//! @param mesh_index	メッシュインデックス
+	//! @retval void なし
+	//----------------------------------------
+	void MeshSetting(DrawBase* draw, Camera* camera, 
+					 unsigned object_index, unsigned mesh_index);
 
 private:
-	/**
-	* @brief
-	* 頂点シェーダー初期化関数
-	*/
-	void InitVertexShaders();
+	//----------------------------------------
+	//! @brief 頂点シェーダー初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void InitVertexShader();
 
-	/**
-	* @brief
-	* ピクセルシェーダー初期化関数
-	*/
-	void InitPixelShaders();
+	//----------------------------------------
+	//! @brief ピクセルシェーダー初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void InitPixelShader();
 
+	//----------------------------------------
+	//! @brief 頂点シェーダー終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void UninitVertexShader();
 
-	/**
-	* @brief
-	* 頂点シェーダー終了関数
-	*/
-	void UninitVertexShaders();
+	//----------------------------------------
+	//! @brief ピクセルシェーダー終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	void UninitPixelShader();
 
-	/**
-	* @brief
-	* ピクセルシェーダー終了関数
-	*/
-	void UninitPixelShaders();
+	//----------------------------------------
+	//! @brief デバイスに頂点シェーダー設定関数
+	//! @details
+	//! @param *draw 描画基底クラス
+	//! @retval void なし
+	//----------------------------------------
+	void VertexShaderSetToDevice(DrawBase* draw);
 
-	/**
-	* @brief
-	* 頂点シェーダー設定関数
-	* @param
-	* draw : 描画基底クラス
-	* forced_vertex_type : 強制頂点シェーダータイプ
-	*/
-	void SetVertexShader(DrawBase* draw, VertexShaderType forced_vertex_type);
+	//----------------------------------------
+	//! @brief デバイスにピクセルシェーダー設定関数
+	//! @details
+	//! @param *draw 描画基底クラス
+	//! @retval void なし
+	//----------------------------------------
+	void PixelShaderSetToDevice(DrawBase* draw);
 
-	/**
-	* @brief
-	* ピクセルシェーダー設定関数
-	* @param
-	* draw : 描画基底クラス
-	* forced_pixel_type : 強制ピクセルシェーダータイプ
-	*/
-	void SetPixelShader(DrawBase* draw, PixelShaderType forced_pixel_type);
-
-	/**
-	* @brief
-	* 頂点シェーダー共通設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* forced_vertex_type : 強制頂点シェーダータイプ
-	* object_index : 描画オブジェクトインデックス
-	*/
-	void CommonSettingVertexShader(DrawBase* draw, Camera* camera,
-								   VertexShaderType forced_vertex_type,
+	//----------------------------------------
+	//! @brief 頂点シェーダーのオブジェクト設定関数
+	//! @details
+	//! @param *draw		描画基底クラス
+	//! @param *camera		カメラ
+	//! @param object_index	描画オブジェクトインデックス
+	//! @retval void なし
+	//----------------------------------------
+	void ObjectSettingVertexShader(DrawBase* draw, Camera* camera,
 								   unsigned object_index);
 
-	/**
-	* @brief
-	* ピクセルシェーダー共通設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* forced_pixel_type : 強制ピクセルシェーダータイプ
-	* object_index : 描画オブジェクトインデックス
-	*/
-	void CommonSettingPixelShader(DrawBase* draw, Camera* camera,
-								  PixelShaderType forced_pixel_type,
+	//----------------------------------------
+	//! @brief ピクセルシェーダーのオブジェクト設定関数
+	//! @details
+	//! @param *draw		描画基底クラス
+	//! @param *camera		カメラ
+	//! @param object_index	描画オブジェクトインデックス
+	//! @retval void なし
+	//----------------------------------------
+	void ObjectSettingPixelShader(DrawBase* draw, Camera* camera,
 								  unsigned object_index);
 
-	/**
-	* @brief
-	* 頂点シェーダー固有設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* forced_vertex_type : 強制頂点シェーダータイプ
-	* forced_pixel_type : 強制ピクセルシェーダータイプ
-	* object_index : 描画オブジェクトインデックス
-	* mesh_index : メッシュインデックス
-	*/
-	void SpecificSettingVertexShader(DrawBase* draw, Camera* camera,
-									 VertexShaderType forced_vertex_type,
-									 unsigned object_index, unsigned mesh_index);
+	//----------------------------------------
+	//! @brief 頂点シェーダーのメッシュ設定関数
+	//! @details
+	//! @param *draw		描画基底クラス
+	//! @param *camera		カメラ
+	//! @param object_index	描画オブジェクトインデックス
+	//! @param mesh_index	メッシュインデックス
+	//! @retval void なし
+	//----------------------------------------
+	void MeshSettingVertexShader(DrawBase* draw, Camera* camera,
+								 unsigned object_index, unsigned mesh_index);
 
-	/**
-	* @brief
-	* ピクセルシェーダー固有設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* forced_vertex_type : 強制頂点シェーダータイプ
-	* forced_pixel_type : 強制ピクセルシェーダータイプ
-	* object_index : 描画オブジェクトインデックス
-	* mesh_index : メッシュインデックス
-	*/
-	void SpecificSettingPixelShader(DrawBase* draw, Camera* camera,
-									PixelShaderType forced_pixel_type,
-									unsigned object_index, unsigned mesh_index);
+	//----------------------------------------
+	//! @brief ピクセルシェーダーのメッシュ設定関数
+	//! @details
+	//! @param *draw		描画基底クラス
+	//! @param *camera		カメラ
+	//! @param object_index	描画オブジェクトインデックス
+	//! @param mesh_index	メッシュインデックス
+	//! @retval void なし
+	//----------------------------------------
+	void MeshSettingPixelShader(DrawBase* draw, Camera* camera,
+								unsigned object_index, unsigned mesh_index);
 };
 
 

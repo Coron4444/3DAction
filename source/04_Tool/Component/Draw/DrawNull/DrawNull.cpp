@@ -33,10 +33,32 @@ unsigned DrawNull::getMeshNum(unsigned object_index)
 
 
 
+unsigned DrawNull::getBoneNum(unsigned object_index,
+							  unsigned mesh_index)
+{
+	object_index = object_index;
+	mesh_index = mesh_index;
+	return 1;
+}
+
+
+
 MATRIX* DrawNull::getpMatrix(unsigned object_index)
 {
 	object_index = object_index;
 	assert("行列取得プロパティが未実装です");
+	return nullptr;
+}
+
+
+
+MATRIX* DrawNull::getpBoneMatrix(unsigned object_index,
+								 unsigned mesh_index,
+								 unsigned bone_index)
+{
+	object_index = object_index;
+	mesh_index = mesh_index;
+	bone_index = bone_index;
 	return nullptr;
 }
 
@@ -53,7 +75,7 @@ D3DMATERIAL9* DrawNull::getpMaterial(unsigned object_index,
 
 
 LPDIRECT3DTEXTURE9 DrawNull::getpDiffuseTexture(unsigned object_index,
-											   unsigned mesh_index)
+												unsigned mesh_index)
 {
 	object_index = object_index;
 	mesh_index = mesh_index;

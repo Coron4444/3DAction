@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    空白ピクセルシェーダークラス
-//    Author : Araki Kai                                作成日 : 2018/03/26
-//
+//!	@file	 PixelShaderNull.h
+//!	@brief	 空白ピクセルシェーダーClass
+//! @details 
+//!	@author  Kai Araki									@date 2019/01/19
 //================================================================================
-
 #ifndef	_PIXEL_SHADER_NULL_H_
 #define _PIXEL_SHADER_NULL_H_
 
@@ -17,66 +16,54 @@
 
 
 
-/*********************************************************//**
-* @brief
-* 空白ピクセルシェーダークラス
-*
-* 空白ピクセルシェーダークラス
-*************************************************************/
+//************************************************************														   
+//! @brief   空白ピクセルシェーダーClass
+//!
+//! @details 空白ピクセルシェーダーのClass
+//************************************************************
 class PixelShaderNull : public PixelShaderBase
 {
-//==============================
-// 非静的メンバ関数
-//==============================
+//====================
+// 関数
+//====================
 public:
-	/**
-	* @brief
-	* 初期化関数
-	*/
-	virtual void Init() 
-	{
-		ShaderBase::InitDevice();
-	}
+	//----------------------------------------
+	//! @brief 初期化関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	virtual void Init();
 
-	/**
-	* @brief
-	* 終了関数
-	*/
-	virtual void Uninit() {}
+	//----------------------------------------
+	//! @brief 終了関数
+	//! @details
+	//! @param void なし
+	//! @retval void なし
+	//----------------------------------------
+	virtual void Uninit();
 
-	/**
-	* @brief
-	* 共通設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* object_index : 描画オブジェクトインデックス
-	*/
-	virtual void CommonSetting(DrawBase* draw, Camera* camera,
-							   unsigned object_index) 
-	{
-		draw = draw;
-		camera = camera;
-		object_index = object_index;
-	}
+	//----------------------------------------
+	//! @brief オブジェクト設定関数
+	//! @details
+	//! @param *draw        描画基底クラス
+	//! @param *camera      カメラ
+	//! @param object_index 描画オブジェクトインデックス
+	//! @retval void なし
+	//----------------------------------------
+	virtual void ObjectSetting(DrawBase* draw, Camera* camera, unsigned object_index);
 
-	/**
-	* @brief
-	* 固有設定関数
-	* @param
-	* draw : 描画基底クラス
-	* camera : カメラ
-	* object_index : 描画オブジェクトインデックス
-	* mesh_index : メッシュインデックス
-	*/
-	virtual void SpecificSetting(DrawBase* draw, Camera* camera,
-								 unsigned object_index, unsigned mesh_index) 
-	{
-		draw = draw;
-		camera = camera;
-		object_index = object_index;
-		mesh_index = mesh_index;
-	}
+	//----------------------------------------
+	//! @brief メッシュ設定関数
+	//! @details
+	//! @param *draw        描画基底クラス
+	//! @param *camera      カメラ
+	//! @param object_index 描画オブジェクトインデックス
+	//! @param mesh_index   メッシュインデックス
+	//! @retval void なし
+	//----------------------------------------
+	virtual void MeshSetting(DrawBase* draw, Camera* camera,
+							 unsigned object_index, unsigned mesh_index);
 };
 
 #endif

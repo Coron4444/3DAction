@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    バンプマッピング頂点シェーダークラス
-//    Author : Araki Kai                                作成日 : 2018/11/17
-//
+//!	@file	 VertexShaderBumpMapping.cpp
+//!	@brief	 バンプマッピング頂点シェーダーClass
+//! @details 
+//!	@author  Kai Araki									@date 2019/01/19
 //================================================================================
 
 
@@ -20,23 +20,22 @@
 //****************************************
 // 定数定義
 //****************************************
-const char* VertexShaderBumpMapping::PATH = "resource/HLSL/Effect/VertexShader/BumpMapping.vsh";
-const D3DVERTEXELEMENT9 VertexShaderBumpMapping::DECLARATION[]
-= {{0,  0, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_POSITION, 0},
-   {0, 12, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_NORMAL,   0},
-   {0, 24, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_TANGENT,  0},
-   {0, 36, D3DDECLTYPE_FLOAT2, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_TEXCOORD, 0},
-   D3DDECL_END()
+const D3DVERTEXELEMENT9 VertexShaderBumpMapping::DECLARATION[] =
+{
+	{0,  0, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_POSITION, 0},
+	{0, 12, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_NORMAL,   0},
+	{0, 24, D3DDECLTYPE_FLOAT3, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_TANGENT,  0},
+	{0, 36, D3DDECLTYPE_FLOAT2, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_TEXCOORD, 0},
+	D3DDECL_END()
 };
 
+const char* VertexShaderBumpMapping::PATH = "resource/HLSL/Effect/VertexShader/BumpMapping.vsh";
+
 
 
 //****************************************
-// 静的メンバ関数定義
+// static関数定義
 //****************************************
-//--------------------------------------------------
-// +頂点宣言用メッシュ更新関数
-//--------------------------------------------------
 void VertexShaderBumpMapping::UpdateMeshDeclaration(ModelXObject* model_x)
 {
 	model_x->UpdateMeshDeclaration(DECLARATION);						// メッシュの変更
@@ -47,25 +46,15 @@ void VertexShaderBumpMapping::UpdateMeshDeclaration(ModelXObject* model_x)
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void VertexShaderBumpMapping::Init()
 {
 	// デバイス初期化
 	InitDevice();
 
 	// 頂点宣言オブジェクトの生成
-	HRESULT hr = GetDevice()->CreateVertexDeclaration(DECLARATION,
-													  &declaration_object_);
-
-#ifdef _DEBUG
-	assert(SUCCEEDED(hr) && "頂点宣言オブジェクトの生成に失敗(FixedPipelineObject.cpp)");
-#else
-	hr = hr;
-#endif
+	getpDevice()->CreateVertexDeclaration(DECLARATION, &declaration_object_);
 
 	// シェーダーのコンパイル
 	VertexShaderCompile(PATH, "MainVertexShader", "vs_3_0");
@@ -73,9 +62,6 @@ void VertexShaderBumpMapping::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void VertexShaderBumpMapping::Uninit()
 {
 	// シェーダーの解放
@@ -84,21 +70,19 @@ void VertexShaderBumpMapping::Uninit()
 
 
 
-//--------------------------------------------------
-// +共通設定関数
-//--------------------------------------------------
-void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsigned object_index)
+void VertexShaderBumpMapping::ObjectSetting(DrawBase* draw, Camera* camera,
+											unsigned object_index)
 {
 	// 行列のセット
-	GetConstantTable()->SetMatrix(ShaderBase::GetDevice(),
-								  "MATRIX_WORLD",
-								  draw->getpMatrix(object_index));
-	GetConstantTable()->SetMatrix(ShaderBase::GetDevice(),
-								  "MATRIX_VIEW",
-								  camera->getpViewMatrix());
-	GetConstantTable()->SetMatrix(ShaderBase::GetDevice(),
-								  "MATRIX_PROJECTION",
-								  camera->getpProjectionMatrix());
+	getpConstantTable()->SetMatrix(getpDevice(),
+								   "MATRIX_WORLD",
+								   draw->getpMatrix(object_index));
+	getpConstantTable()->SetMatrix(getpDevice(),
+								   "MATRIX_VIEW",
+								   camera->getpViewMatrix());
+	getpConstantTable()->SetMatrix(getpDevice(),
+								   "MATRIX_PROJECTION",
+								   camera->getpProjectionMatrix());
 
 	// ライト方向をセット
 	Vec4 light_position = (Vec4)*GameObjectManager::GetDrawManager()
@@ -109,9 +93,9 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 	D3DXVec4Transform(&light_position, &light_position, &math_matrix_);
 	D3DXVec3Normalize((Vec3*)&light_position, (Vec3*)&light_position);
 	light_position.w = -0.7f;		// 環境光の比率
-	GetConstantTable()->SetVector(GetDevice(),
-								  "LAMBERT_DIFFUSE_LIGHT_VECTOR",
-								  &light_position);
+	getpConstantTable()->SetVector(getpDevice(),
+								   "LAMBERT_DIFFUSE_LIGHT_VECTOR",
+								   &light_position);
 
 	// 視点の設定(オブジェクトごとのローカル座標でのカメラの座標を取得する)
 	D3DXMatrixIdentity(&math_matrix_);
@@ -120,12 +104,12 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 	D3DXMatrixInverse(&math_matrix_, nullptr, &math_matrix_);
 	Vec4 object_local_camera_position(0.0f, 0.0f, 0.0f, 1.0f);
 	D3DXVec4Transform(&object_local_camera_position, &object_local_camera_position, &math_matrix_);
-	GetConstantTable()->SetVector(GetDevice(),
-								  "CAMERA_POSITION",
-								  &object_local_camera_position);
+	getpConstantTable()->SetVector(getpDevice(),
+								   "CAMERA_POSITION",
+								   &object_local_camera_position);
 
 	// 頂点宣言
-	GetDevice()->SetVertexDeclaration(declaration_object_);
+	getpDevice()->SetVertexDeclaration(declaration_object_);
 }
 
 
@@ -133,8 +117,8 @@ void VertexShaderBumpMapping::CommonSetting(DrawBase* draw, Camera* camera, unsi
 //--------------------------------------------------
 // +固有設定関数
 //--------------------------------------------------
-void VertexShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
-											  unsigned object_index, unsigned mesh_index)
+void VertexShaderBumpMapping::MeshSetting(DrawBase* draw, Camera* camera,
+										  unsigned object_index, unsigned mesh_index)
 {
 	camera = camera;
 
@@ -144,7 +128,7 @@ void VertexShaderBumpMapping::SpecificSetting(DrawBase* draw, Camera* camera,
 	lambert_diffuse_light_color_.y = draw->getpMaterial(object_index, mesh_index)->Diffuse.g;
 	lambert_diffuse_light_color_.z = draw->getpMaterial(object_index, mesh_index)->Diffuse.b;
 	lambert_diffuse_light_color_.w = draw->getpMaterial(object_index, mesh_index)->Diffuse.a;
-	GetConstantTable()->SetVector(GetDevice(),
-								  "LAMBERT_DIFFUSE_LIGHT_COLOR",
-								  &lambert_diffuse_light_color_);
+	getpConstantTable()->SetVector(getpDevice(),
+								   "LAMBERT_DIFFUSE_LIGHT_COLOR",
+								   &lambert_diffuse_light_color_);
 }

@@ -16,6 +16,7 @@
 #include <string>
 #include <vector>
 
+#include "../MdBinData/MdBinData.h"
 #include <Vector3D.h>
 
 
@@ -24,7 +25,6 @@
 // クラス宣言
 //****************************************
 class TextureObject;
-class MdBinDataContainer;
 
 
 
@@ -50,11 +50,76 @@ public:
 	// 変数
 	//====================
 	public:
-		Vec3   posisiont_;	//!< 座標
-		Vec3   normal_;		//!< 法線
+		Vec3 posisiont_;	//!< 座標
+		Vec3 normal_;		//!< 法線
 		Color4 color_;		//!< カラー
-		Vec2   uv_;			//!< UV
+		Vec2 uv_;			//!< UV
+		float bone_weight_[MdBinData::Mesh::BoneWeight::MAX_BONE_NUM];			//!< ボーンの重み
+		unsigned char bone_index_[MdBinData::Mesh::BoneWeight::MAX_BONE_NUM];	//!< ボーンインデックス
 	};
+
+
+	//****************************************														   
+	//! @brief ボーンClass
+	//!
+	//! @details ボーンのClass
+	//****************************************
+	class Bone
+	{
+	//====================
+	// 変数
+	//====================
+	private:
+		std::string name_;						//!< ボーン名
+		MATRIX offset_matrix_;					//!< オフセット行列
+		std::vector<MATRIX> animation_matrix_;	//!< アニメーション行列
+
+
+	//====================
+	// プロパティ
+	//====================
+	public:
+		//----------------------------------------
+		//! @brief ボーン名取得関数
+		//! @details
+		//! @param void なし
+		//! @retval std::string* ボーン名
+		//----------------------------------------
+		std::string* getpName();
+
+		//----------------------------------------
+		//! @brief オフセット行列取得関数
+		//! @details
+		//! @param void なし
+		//! @retval MATRIX* オフセット配列
+		//----------------------------------------
+		MATRIX* getpOffsetMatrix();
+
+		//----------------------------------------
+		//! @brief アニメーション行列配列サイズ取得関数
+		//! @details
+		//! @param void なし
+		//! @retval int アニメーション行列配列サイズ
+		//----------------------------------------
+		int getAnimationMatrixArraySize();
+
+		//----------------------------------------
+		//! @brief アニメーション行列配列サイズ設定関数
+		//! @details
+		//! @param value アニメーション行列配列サイズ
+		//! @retval void なし
+		//----------------------------------------
+		void setAnimationMatrixArraySize(int value);
+
+		//----------------------------------------
+		//! @brief アニメーション行列取得関数
+		//! @details
+		//! @param index インデックス
+		//! @retval MATRIX* アニメーション行列
+		//----------------------------------------
+		MATRIX* getpAnimationMatrix(int index);
+	};
+
 
 	//****************************************														   
 	//! @brief メッシュClass
@@ -69,6 +134,7 @@ public:
 	private:
 		std::vector<Vertex> vertex_;						//!< 頂点配列
 		std::vector<WORD> index_;							//!< インデックス配列
+		std::vector<Bone> bone_;							//!< ボーン配列
 		int material_index_;								//!< マテリアルインデックス
 		int primitive_num_;									//!< プリミティブ数
 		TextureObject* diffuse_texture_object_ = nullptr;	//!< ディヒューズテクスチャオブジェクト
@@ -127,6 +193,30 @@ public:
 		//! @retval WORD* インデックス
 		//----------------------------------------
 		WORD* getpIndex(int index);
+
+		//----------------------------------------
+		//! @brief ボーン配列サイズ取得関数
+		//! @details
+		//! @param void なし 
+		//! @retval int サイズ
+		//----------------------------------------
+		int getBoneArraySize();
+
+		//----------------------------------------
+		//! @brief ボーン配列サイズ設定関数
+		//! @details
+		//! @param value サイズ
+		//! @retval void なし
+		//----------------------------------------
+		void setBoneArraySize(int value);
+
+		//----------------------------------------
+		//! @brief ボーン取得関数
+		//! @details
+		//! @param index インデックス
+		//! @retval Bone* 頂点
+		//----------------------------------------
+		Bone* getpBone(int index);
 
 		//----------------------------------------
 		//! @brief マテリアルインデックス取得関数
@@ -228,6 +318,7 @@ public:
 private:
 	std::vector<Mesh> mesh_;				//!< メッシュ配列
 	std::vector<D3DMATERIAL9> material_;	//!< マテリアル配列
+	int animation_frame_num_;				//!< アニメーションフレーム数
 	LPDIRECT3DDEVICE9 device_ = nullptr;	//!< デバイス
 	std::string map_key_name_;				//!< マップ用キー名
 	int reference_counter_ = 0;				//!< 参照カウンタ
@@ -244,6 +335,14 @@ public:
 	//! @retval unsigned メッシュ数
 	//----------------------------------------
 	unsigned getMeshNum();
+
+	//----------------------------------------
+	//! @brief メッシュ取得関数
+	//! @details
+	//! @param index インデックス 
+	//! @retval Mesh* メッシュ
+	//----------------------------------------
+	Mesh* getpMesh(int index);
 
 	//----------------------------------------
 	//! @brief マテリアル取得関数
@@ -322,7 +421,7 @@ private:
 	//! @param *md_bin_data バイナリーモデルデータ
 	//! @retval void なし
 	//----------------------------------------
-	void CreateMaterial(MdBinDataContainer* md_bin_data);
+	void CreateMaterial(MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief メッシュ生成関数
@@ -331,7 +430,7 @@ private:
 	//! @param *md_bin_data バイナリーモデルデータ
 	//! @retval void なし
 	//----------------------------------------
-	void CreateMesh(std::string* file_path, MdBinDataContainer* md_bin_data);
+	void CreateMesh(std::string* file_path, MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief マテリアルインデックス生成関数
@@ -340,7 +439,7 @@ private:
 	//! @param *md_bin_data バイナリーモデルデータ
 	//! @retval void なし
 	//----------------------------------------
-	void CreateMaterialIndex(int mesh_index, MdBinDataContainer* md_bin_data);
+	void CreateMaterialIndex(int mesh_index, MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief インデックス生成関数
@@ -349,7 +448,7 @@ private:
 	//! @param *md_bin_data バイナリーモデルデータ
 	//! @retval void なし
 	//----------------------------------------
-	void CreateIndex(int mesh_index, MdBinDataContainer* md_bin_data);
+	void CreateIndex(int mesh_index, MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief 頂点生成関数
@@ -358,7 +457,7 @@ private:
 	//! @param *md_bin_data バイナリーモデルデータ
 	//! @retval void なし
 	//----------------------------------------
-	void CreateVertex(int mesh_index, MdBinDataContainer* md_bin_data);
+	void CreateVertex(int mesh_index, MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief 頂点座標生成関数
@@ -369,7 +468,7 @@ private:
 	//! @retval void なし
 	//----------------------------------------
 	void CreateVertexPosition(int mesh_index, int vertex_index,
-							  MdBinDataContainer* md_bin_data);
+							  MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief 法線生成関数
@@ -380,7 +479,7 @@ private:
 	//! @retval void なし
 	//----------------------------------------
 	void CreateNormal(int mesh_index, int vertex_index,
-					  MdBinDataContainer* md_bin_data);
+					  MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief カラー生成関数
@@ -400,7 +499,18 @@ private:
 	//! @retval void なし
 	//----------------------------------------
 	void CreateUV(int mesh_index, int vertex_index,
-				  MdBinDataContainer* md_bin_data);
+				  MdBinData* md_bin_data);
+
+	//----------------------------------------
+	//! @brief ボーンの重み生成関数
+	//! @details
+	//! @param mesh_index   メッシュインデックス
+	//! @param vertex_index 頂点インデックス
+	//! @param *md_bin_data バイナリーモデルデータ
+	//! @retval void なし
+	//----------------------------------------
+	void CreateBoneWeight(int mesh_index, int vertex_index,
+						  MdBinData* md_bin_data);
 
 	//----------------------------------------
 	//! @brief ディヒューズテクスチャ生成関数
@@ -410,9 +520,29 @@ private:
 	//! @param *md_bin_data バイナリーモデルデータ
 	//! @retval void なし
 	//----------------------------------------
-	void CreateDiffuseTexture(int mesh_index, 
+	void CreateDiffuseTexture(int mesh_index,
 							  std::string* file_path,
-							  MdBinDataContainer* md_bin_data);
+							  MdBinData* md_bin_data);
+
+	//----------------------------------------
+	//! @brief ボーン生成関数
+	//! @details
+	//! @param mesh_index   メッシュインデックス
+	//! @param *md_bin_data バイナリーモデルデータ
+	//! @retval void なし
+	//----------------------------------------
+	void CreateBone(int mesh_index,
+					MdBinData* md_bin_data);
+
+	//----------------------------------------
+	//! @brief 行列変換関数
+	//! @details
+	//! @param *directx_matrix DirectX行列
+	//! @param *md_bin_matrix  バイナリーモデル行列
+	//! @retval void なし
+	//----------------------------------------
+	void ChangeMatrix(MATRIX* directx_matrix,
+					  MdBinData::Matrix* md_bin_matrix);
 
 	//----------------------------------------
 	//! @brief ファイルパス&キー名生成関数

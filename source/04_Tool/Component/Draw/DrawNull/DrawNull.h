@@ -44,12 +44,34 @@ public:
 	virtual unsigned getMeshNum(unsigned object_index) override;
 
 	//----------------------------------------
-	//! @brief 行列取得関数
+	//! @brief ボーン数取得関数
 	//! @details
 	//! @param object_index オブジェクトインデックス
-	//! @retval MATRIX* 行列
+	//! @param mesh_index   メッシュインデックス
+	//! @retval unsigned ボーン数
+	//----------------------------------------
+	virtual unsigned getBoneNum(unsigned object_index,
+								unsigned mesh_index) override;
+
+	//----------------------------------------
+	//! @brief ワールド行列取得関数
+	//! @details
+	//! @param object_index オブジェクトインデックス
+	//! @retval MATRIX* ワールド行列
 	//----------------------------------------
 	virtual MATRIX* getpMatrix(unsigned object_index) override;
+
+	//----------------------------------------
+	//! @brief ボーン行列取得関数
+	//! @details
+	//! @param object_index オブジェクトインデックス
+	//! @param mesh_index   メッシュインデックス
+	//! @param bone_index   ボーンインデックス
+	//! @retval MATRIX* ボーン行列
+	//----------------------------------------
+	virtual MATRIX* getpBoneMatrix(unsigned object_index,
+								   unsigned mesh_index,
+								   unsigned bone_index) override;
 
 	//----------------------------------------
 	//! @brief マテリアル取得関数
@@ -69,15 +91,15 @@ public:
 	//! @retval LPDIRECT3DTEXTURE9 ディヒューズテクスチャ
 	//----------------------------------------
 	virtual LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index,
-												 unsigned mesh_index) override;
+												  unsigned mesh_index) override;
 
-	//----------------------------------------
-	//! @brief 法線テクスチャ取得関数
-	//! @details
-	//! @param object_index オブジェクトインデックス
-	//! @param mesh_index   メッシュインデックス
-	//! @retval RendererInterface* 法線テクスチャ
-	//----------------------------------------
+	 //----------------------------------------
+	 //! @brief 法線テクスチャ取得関数
+	 //! @details
+	 //! @param object_index オブジェクトインデックス
+	 //! @param mesh_index   メッシュインデックス
+	 //! @retval RendererInterface* 法線テクスチャ
+	 //----------------------------------------
 	virtual LPDIRECT3DTEXTURE9 getpNormalTexture(unsigned object_index,
 												 unsigned mesh_index) override;
 

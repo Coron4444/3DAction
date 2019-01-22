@@ -48,12 +48,12 @@ public:
 //====================
 public:
 	//----------------------------------------
-	//! @brief シェーダー設定関数
+	//! @brief デバイスにシェーダー設定関数
 	//! @details
 	//! @param void なし
 	//! @retval void なし
 	//----------------------------------------
-	void SetShader() override;
+	void ShaderSetToDevice() override;
 
 	//----------------------------------------
 	//! @brief ピクセルシェーダーコンパイル関数
@@ -63,7 +63,8 @@ public:
 	//! @param *version        シェーダーバージョン
 	//! @retval bool コンパイル成功ならtrue
 	//----------------------------------------
-	bool PixelShaderCompile(const char* file_name, const char* entry_function,
+	bool PixelShaderCompile(const char* file_name,
+							const char* entry_function,
 							const char* version);
 
 	//----------------------------------------

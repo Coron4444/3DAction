@@ -82,7 +82,7 @@ public:
 	//! @brief オブジェクト取得関数
 	//! @details
 	//! @param void なし
-	//! @retval TextureObject* オブジェクト取得
+	//! @retval TextureObject* オブジェクト
 	//----------------------------------------
 	TextureObject* getpObject(const std::string* key_name, 
 							  const std::string* file_path = nullptr);

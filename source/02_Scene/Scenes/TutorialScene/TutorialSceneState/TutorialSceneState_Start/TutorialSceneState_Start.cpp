@@ -34,7 +34,7 @@ void TutorialSceneState_Start::Init()
 	tutorial_scene_ = (TutorialScene*)getpScene();
 
 	// デフォルトカメラの作成
-	GameObjectManager::GetDrawManager()->GetBackBuffer()
+	GameObjectManager::GetDrawManager()->getpBackBuffer()
 		->getpCamera()->setState(nullptr);
 
 	// チュートリアルロゴ

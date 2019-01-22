@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    描画マネージャークラス(static)
-//    Author : Araki Kai                                作成日 : 2018/03/26
-//
+//!	@file	 DrawManager.cpp
+//!	@brief	 描画マネージャーClass
+//! @details 
+//!	@author  Kai Araki									@date 2019/01/19
 //================================================================================
 
 
@@ -15,20 +15,23 @@
 
 #include <Component/Draw/DrawBase/DrawBase.h>
 #include <GameObjectBase/GameObjectBase.h>
-
-#include <Renderer/Renderer.h>
-
-#include <Transform/Transform.h>
 #include <SafeRelease/SafeRelease.h>
 
 
 
 //****************************************
-// 非静的メンバ関数定義
+// プロパティ定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
+BackBuffer* DrawManager::getpBackBuffer()
+{
+	return back_buffer_; 
+}
+
+
+
+//****************************************
+// 関数定義
+//****************************************
 void DrawManager::Init()
 {
 	// シェーダーマネージャー初期化
@@ -43,9 +46,6 @@ void DrawManager::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void DrawManager::Uninit()
 {
 	// 追加待ち配列のリセット
@@ -64,9 +64,6 @@ void DrawManager::Uninit()
 
 
 
-//--------------------------------------------------
-// +シーン変更時の終了関数
-//--------------------------------------------------
 void DrawManager::UninitWhenChangeScene()
 {
 	// 追加待ち配列のリセット
@@ -84,9 +81,6 @@ void DrawManager::UninitWhenChangeScene()
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void DrawManager::Update()
 {
 	// 追加待ち配列の中身を追加
@@ -119,9 +113,6 @@ void DrawManager::Update()
 
 
 
-//--------------------------------------------------
-// +描画関数
-//--------------------------------------------------
 void DrawManager::Draw()
 {
 	// バックバッファ
@@ -130,9 +121,6 @@ void DrawManager::Draw()
 
 
 
-//--------------------------------------------------
-// +描画基底クラスの追加関数
-//--------------------------------------------------
 void DrawManager::AddDrawBaseToArray(DrawBase* draw)
 {
 	// 追加待ち配列に追加
@@ -141,9 +129,6 @@ void DrawManager::AddDrawBaseToArray(DrawBase* draw)
 
 
 
-//--------------------------------------------------
-// +描画基底クラスの上書き関数
-//--------------------------------------------------
 void DrawManager::OverwriteArrayDrawBase(GameObjectBase* game_object,
 										 DrawBase* new_draw)
 {
@@ -178,9 +163,6 @@ void DrawManager::OverwriteArrayDrawBase(GameObjectBase* game_object,
 
 
 
-//--------------------------------------------------
-// +描画基底クラスの解放関数
-//--------------------------------------------------
 void DrawManager::ReleaseDrawBaseFromArray(DrawBase* draw)
 {
 	// 解放待ち配列に追加
@@ -189,9 +171,6 @@ void DrawManager::ReleaseDrawBaseFromArray(DrawBase* draw)
 
 
 
-//--------------------------------------------------
-// -追加待ち配列の中身を追加関数
-//--------------------------------------------------
 void DrawManager::AddContentsOfAwaitAddArray()
 {
 	// 追加待ちがあるかどうか
@@ -209,9 +188,6 @@ void DrawManager::AddContentsOfAwaitAddArray()
 
 
 
-//--------------------------------------------------
-// -解放待ち配列の中身を解放関数
-//--------------------------------------------------
 void DrawManager::ReleaseContentsOfAwaitReleaseArray()
 {
 	// 解放待ちがあるかどうか
@@ -229,9 +205,6 @@ void DrawManager::ReleaseContentsOfAwaitReleaseArray()
 
 
 
-//--------------------------------------------------
-// -全描画基底クラス更新関数
-//--------------------------------------------------
 void DrawManager::UpdateAllDrawBase()
 {
 	for (unsigned i = 0; i < all_draw_.GetEndPointer(); i++)
@@ -242,9 +215,6 @@ void DrawManager::UpdateAllDrawBase()
 
 
 
-//--------------------------------------------------
-// -全レンダーターゲット更新関数
-//--------------------------------------------------
 void DrawManager::UpdateAllRenderTarget()
 {
 	// バックバッファ
@@ -253,9 +223,6 @@ void DrawManager::UpdateAllRenderTarget()
 
 
 
-//--------------------------------------------------
-// -全レンダーターゲットリセット関数
-//--------------------------------------------------
 void DrawManager::ResetAllRenderTarget()
 {
 	// バックバッファ
@@ -264,9 +231,6 @@ void DrawManager::ResetAllRenderTarget()
 
 
 
-//--------------------------------------------------
-// -描画基底クラス振り分け関数
-//--------------------------------------------------
 void DrawManager::DistributeDrawBase()
 {
 	for (unsigned i = 0; i < all_draw_.GetEndPointer(); i++)

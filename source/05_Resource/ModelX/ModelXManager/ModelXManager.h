@@ -83,7 +83,7 @@ public:
 	//! @brief オブジェクト取得関数
 	//! @details
 	//! @param void なし
-	//! @retval ModelXObject* オブジェクト取得
+	//! @retval ModelXObject* オブジェクト
 	//----------------------------------------
 	ModelXObject* getpObject(const std::string* key_name,
 							 const std::string* file_path = nullptr);

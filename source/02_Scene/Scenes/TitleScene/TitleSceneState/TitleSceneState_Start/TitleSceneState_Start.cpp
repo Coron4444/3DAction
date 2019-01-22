@@ -36,7 +36,7 @@ void TitleSceneState_Start::Init()
 	title_scene_ = (TitleScene*)getpScene();
 
 	// デフォルトカメラの作成
-	GameObjectManager::GetDrawManager()->GetBackBuffer()
+	GameObjectManager::GetDrawManager()->getpBackBuffer()
 		->getpCamera()->setState(nullptr);
 
 	// タイトルロゴ

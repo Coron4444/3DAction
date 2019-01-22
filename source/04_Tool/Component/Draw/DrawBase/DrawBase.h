@@ -54,15 +54,37 @@ public:
 	//! @retval unsigned メッシュ数
 	//----------------------------------------
 	virtual unsigned getMeshNum(unsigned object_index) = 0;
-	
+
 	//----------------------------------------
-	//! @brief 行列取得関数
+	//! @brief ボーン数取得関数
 	//! @details
 	//! @param object_index オブジェクトインデックス
-	//! @retval MATRIX* 行列
+	//! @param mesh_index   メッシュインデックス
+	//! @retval unsigned ボーン数
+	//----------------------------------------
+	virtual unsigned getBoneNum(unsigned object_index,
+								unsigned mesh_index) = 0;
+
+	//----------------------------------------
+	//! @brief ワールド行列取得関数
+	//! @details
+	//! @param object_index オブジェクトインデックス
+	//! @retval MATRIX* ワールド行列
 	//----------------------------------------
 	virtual MATRIX* getpMatrix(unsigned object_index) = 0;
-	
+
+	//----------------------------------------
+	//! @brief ボーン行列取得関数
+	//! @details
+	//! @param object_index オブジェクトインデックス
+	//! @param mesh_index   メッシュインデックス
+	//! @param bone_index   ボーンインデックス
+	//! @retval MATRIX* ボーン行列
+	//----------------------------------------
+	virtual MATRIX* getpBoneMatrix(unsigned object_index,
+								   unsigned mesh_index,
+								   unsigned bone_index) = 0;
+
 	//----------------------------------------
 	//! @brief マテリアル取得関数
 	//! @details
@@ -70,9 +92,9 @@ public:
 	//! @param mesh_index   メッシュインデックス
 	//! @retval D3DMATERIAL9* マテリアル
 	//----------------------------------------
-	virtual D3DMATERIAL9* getpMaterial(unsigned object_index, 
+	virtual D3DMATERIAL9* getpMaterial(unsigned object_index,
 									   unsigned mesh_index) = 0;
-	
+
 	//----------------------------------------
 	//! @brief ディヒューズテクスチャ取得関数
 	//! @details
@@ -80,19 +102,19 @@ public:
 	//! @param mesh_index   メッシュインデックス
 	//! @retval LPDIRECT3DTEXTURE9 ディヒューズテクスチャ
 	//----------------------------------------
-	virtual LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index, 
+	virtual LPDIRECT3DTEXTURE9 getpDiffuseTexture(unsigned object_index,
+												  unsigned mesh_index) = 0;
+
+	 //----------------------------------------
+	 //! @brief 法線テクスチャ取得関数
+	 //! @details
+	 //! @param object_index オブジェクトインデックス
+	 //! @param mesh_index   メッシュインデックス
+	 //! @retval RendererInterface* 法線テクスチャ
+	 //----------------------------------------
+	virtual LPDIRECT3DTEXTURE9 getpNormalTexture(unsigned object_index,
 												 unsigned mesh_index) = 0;
-	
-	//----------------------------------------
-	//! @brief 法線テクスチャ取得関数
-	//! @details
-	//! @param object_index オブジェクトインデックス
-	//! @param mesh_index   メッシュインデックス
-	//! @retval RendererInterface* 法線テクスチャ
-	//----------------------------------------
-	virtual LPDIRECT3DTEXTURE9 getpNormalTexture(unsigned object_index, 
-												 unsigned mesh_index) = 0;
-	
+
 	//----------------------------------------
 	//! @brief 描画注文リスト取得関数
 	//! @details

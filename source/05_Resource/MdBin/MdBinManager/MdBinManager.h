@@ -32,7 +32,7 @@ class MdBinManager
 // 定数
 //====================
 private:
-	static const std::string DEFAULT_PATH;		//!< 既定パス
+	static const std::string DEFAULT_PATH;					//!< 既定パス
 
 
 //====================
@@ -73,7 +73,7 @@ public:
 //====================
 private:
 	std::unordered_map<std::string, MdBinObject*> object_map_;		//!< オブジェクトマップ
-
+	
 
 //====================
 // プロパティ
@@ -83,7 +83,7 @@ public:
 	//! @brief オブジェクト取得関数
 	//! @details
 	//! @param void なし
-	//! @retval MdBinObject* オブジェクト取得
+	//! @retval MdBinObject* オブジェクト
 	//----------------------------------------
 	MdBinObject* getpObject(const std::string* key_name,
 							const std::string* file_path = nullptr);

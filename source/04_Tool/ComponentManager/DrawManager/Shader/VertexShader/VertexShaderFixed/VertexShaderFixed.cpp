@@ -1,10 +1,9 @@
 //================================================================================
-//
-//    固定機能頂点シェーダークラス
-//    Author : Araki Kai                                作成日 : 2018/03/26
-//
+//!	@file	 VertexShaderFixed.cpp
+//!	@brief	 固定機能頂点シェーダーClass
+//! @details 
+//!	@author  Kai Araki									@date 2019/01/19
 //================================================================================
-
 
 
 //****************************************
@@ -18,12 +17,10 @@
 #include <GameObjectManager/GameObjectManager.h>
 
 
+
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void VertexShaderFixed::Init()
 {
 	// デバイス初期化
@@ -36,9 +33,9 @@ void VertexShaderFixed::Init()
 	// テクスチャーステージステートの設定
 	// 第一引数テクスチャステージ番号
 	// 第二引数α値の演算今回は乗算(RG1*RG2つまり、TEXTURE＊DIFFUSE)
-	ShaderBase::GetDevice()->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_MODULATE);
-	ShaderBase::GetDevice()->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE);
-	ShaderBase::GetDevice()->SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_DIFFUSE);
+	getpDevice()->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_MODULATE);
+	getpDevice()->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE);
+	getpDevice()->SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_DIFFUSE);
 
 	// サンプラーステートの設定
 	((RendererDirectX9*)Renderer::getpInstance()->getpRenderer())->SetDefaultSamplerState();
@@ -46,31 +43,24 @@ void VertexShaderFixed::Init()
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void VertexShaderFixed::Uninit()
 {
-
 }
 
 
 
-//--------------------------------------------------
-// +共通設定関数
-//--------------------------------------------------
-void VertexShaderFixed::CommonSetting(DrawBase* draw, Camera* camera, unsigned object_index)
+void VertexShaderFixed::ObjectSetting(DrawBase* draw, Camera* camera, unsigned object_index)
 {
 	// 法線を常に1に正規化
-	ShaderBase::GetDevice()->SetRenderState(D3DRS_NORMALIZENORMALS, TRUE);
+	getpDevice()->SetRenderState(D3DRS_NORMALIZENORMALS, TRUE);
 
 	// 行列のセット
-	ShaderBase::GetDevice()->SetTransform(D3DTS_VIEW, camera->getpViewMatrix());
-	ShaderBase::GetDevice()->SetTransform(D3DTS_PROJECTION, camera->getpProjectionMatrix());
-	ShaderBase::GetDevice()->SetTransform(D3DTS_WORLD, draw->getpMatrix(object_index));
-	
+	getpDevice()->SetTransform(D3DTS_VIEW, camera->getpViewMatrix());
+	getpDevice()->SetTransform(D3DTS_PROJECTION, camera->getpProjectionMatrix());
+	getpDevice()->SetTransform(D3DTS_WORLD, draw->getpMatrix(object_index));
+
 	// ライトセット
-	ShaderBase::GetDevice()->SetRenderState(D3DRS_LIGHTING, draw->getpDrawOrderList()->getIsLighting());
+	getpDevice()->SetRenderState(D3DRS_LIGHTING, draw->getpDrawOrderList()->getIsLighting());
 
 	// ライトの更新
 	UpdateDirectionalLignt();
@@ -78,11 +68,8 @@ void VertexShaderFixed::CommonSetting(DrawBase* draw, Camera* camera, unsigned o
 
 
 
-//--------------------------------------------------
-// +固有設定関数
-//--------------------------------------------------
-void VertexShaderFixed::SpecificSetting(DrawBase* draw, Camera* camera,
-										unsigned object_index, unsigned mesh_index)
+void VertexShaderFixed::MeshSetting(DrawBase* draw, Camera* camera,
+									unsigned object_index, unsigned mesh_index)
 {
 	camera = camera;
 
@@ -92,37 +79,26 @@ void VertexShaderFixed::SpecificSetting(DrawBase* draw, Camera* camera,
 
 
 
-//--------------------------------------------------
-// -テクスチャ設定関数
-//--------------------------------------------------
 void VertexShaderFixed::SetTexture(DrawBase* draw, unsigned object_index,
 								   unsigned mesh_index)
 {
-	LPDIRECT3DTEXTURE9 temp = draw->getpDiffuseTexture(object_index, mesh_index);
-
-	ShaderBase::GetDevice()->SetTexture(0, temp);
+	LPDIRECT3DTEXTURE9 diffuse_texture = draw->getpDiffuseTexture(object_index,
+																  mesh_index);
+	getpDevice()->SetTexture(0, diffuse_texture);
 }
 
 
 
-//--------------------------------------------------
-// -マテリアル設定関数 
-//--------------------------------------------------
 void VertexShaderFixed::SetMaterial(DrawBase* draw, unsigned object_index,
 									unsigned mesh_index)
 {
-	D3DMATERIAL9* temp = draw->getpMaterial(object_index, mesh_index);
-
-	if (temp == nullptr) return;
-
-	ShaderBase::GetDevice()->SetMaterial(temp);
+	D3DMATERIAL9* material = draw->getpMaterial(object_index, mesh_index);
+	if (material == nullptr) return;
+	getpDevice()->SetMaterial(material);
 }
 
 
 
-//--------------------------------------------------
-// -マテリアル設定関数 
-//--------------------------------------------------
 void VertexShaderFixed::UpdateDirectionalLignt()
 {
 	// ライトの設定
@@ -147,11 +123,11 @@ void VertexShaderFixed::UpdateDirectionalLignt()
 	directional_light_.Ambient.a = 1.0f;
 
 	// グローバルアンビエントの設定
-	ShaderBase::GetDevice()->SetRenderState(D3DRS_AMBIENT, D3DXCOLOR(0.1f, 0.1f, 0.1f, 1.0f));
+	getpDevice()->SetRenderState(D3DRS_AMBIENT, D3DXCOLOR(0.1f, 0.1f, 0.1f, 1.0f));
 
 	// ライトをデバイスにセット(第一引数は0～4のライト番号)
-	ShaderBase::GetDevice()->SetLight(0, &directional_light_);
+	getpDevice()->SetLight(0, &directional_light_);
 
 	// 0番ライトを使えるようにする
-	ShaderBase::GetDevice()->LightEnable(0, TRUE);
+	getpDevice()->LightEnable(0, TRUE);
 }

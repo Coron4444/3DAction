@@ -58,17 +58,17 @@ public:
 	void Uninit();
 
 	//----------------------------------------
-	//! @brief 共通設定関数
+	//! @brief オブジェクト設定関数
 	//! @details
 	//! @param *draw        描画基底クラス
 	//! @param *camera      カメラ
 	//! @param object_index 描画オブジェクトインデックス
 	//! @retval void なし
 	//----------------------------------------
-	void CommonSetting(DrawBase* draw, Camera* camera, unsigned object_index);
+	void ObjectSetting(DrawBase* draw, Camera* camera, unsigned object_index);
 
 	//----------------------------------------
-	//! @brief 固有設定関数
+	//! @brief メッシュ設定関数
 	//! @details
 	//! @param *draw        描画基底クラス
 	//! @param *camera      カメラ
@@ -76,8 +76,8 @@ public:
 	//! @param mesh_index   メッシュインデックス
 	//! @retval void なし
 	//----------------------------------------
-	void SpecificSetting(DrawBase* draw, Camera* camera, 
-						 unsigned object_index, unsigned mesh_index);
+	void MeshSetting(DrawBase* draw, Camera* camera,
+					 unsigned object_index, unsigned mesh_index);
 };
 
 

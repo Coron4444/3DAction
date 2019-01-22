@@ -1,8 +1,8 @@
 //================================================================================
-//
-//    更新マネージャークラス(static)
-//    Author : Araki Kai                                作成日 : 2018/03/26
-//
+//!	@file	 UpdateManager.cpp
+//!	@brief	 更新マネージャーClass
+//! @details 
+//!	@author  Kai Araki									@date 2019/01/19
 //================================================================================
 
 
@@ -11,29 +11,22 @@
 // インクルード文
 //****************************************
 #include "UpdateManager.h"
+
 #include <Component/Update/UpdateBase/UpdateBase.h>
 #include <GameObjectBase/GameObjectBase.h>
-
 #include <SafeRelease/SafeRelease.h>
 
 
 
 //****************************************
-// 非静的メンバ関数定義
+// 関数定義
 //****************************************
-//--------------------------------------------------
-// +初期化関数
-//--------------------------------------------------
 void UpdateManager::Init()
 {
-
 }
 
 
 
-//--------------------------------------------------
-// +終了関数
-//--------------------------------------------------
 void UpdateManager::Uninit()
 {
 	// 追加待ち配列のリセット
@@ -48,9 +41,6 @@ void UpdateManager::Uninit()
 
 
 
-//--------------------------------------------------
-// +シーン変更時の終了関数
-//--------------------------------------------------
 void UpdateManager::UninitWhenChangeScene()
 {
 	// 追加待ち配列のリセット
@@ -65,9 +55,6 @@ void UpdateManager::UninitWhenChangeScene()
 
 
 
-//--------------------------------------------------
-// +更新関数
-//--------------------------------------------------
 void UpdateManager::Update()
 {
 	// 追加待ち配列の中身を追加
@@ -110,9 +97,6 @@ void UpdateManager::Update()
 
 
 
-//--------------------------------------------------
-// +更新基底クラスの追加関数
-//--------------------------------------------------
 void UpdateManager::AddUpdateBaseToArray(UpdateBase* update)
 {
 	// 追加待ち配列に追加
@@ -121,9 +105,6 @@ void UpdateManager::AddUpdateBaseToArray(UpdateBase* update)
 
 
 
-//--------------------------------------------------
-// +更新基底クラスの上書き関数
-//--------------------------------------------------
 void UpdateManager::OverwriteArrayUpdateBase(GameObjectBase* game_object,
 											 UpdateBase* new_update)
 {
@@ -158,10 +139,6 @@ void UpdateManager::OverwriteArrayUpdateBase(GameObjectBase* game_object,
 
 
 
-
-//--------------------------------------------------
-// +更新基底クラスの解放関数
-//--------------------------------------------------
 void UpdateManager::ReleaseUpdateBaseFromArray(UpdateBase* update)
 {
 	// 解放待ち配列に追加
@@ -170,9 +147,6 @@ void UpdateManager::ReleaseUpdateBaseFromArray(UpdateBase* update)
 
 
 
-//--------------------------------------------------
-// -追加待ち配列の中身を追加関数
-//--------------------------------------------------
 void UpdateManager::AddContentsOfAwaitAddArray()
 {
 	// 追加待ちがあるかどうか
@@ -190,9 +164,6 @@ void UpdateManager::AddContentsOfAwaitAddArray()
 
 
 
-//--------------------------------------------------
-// -解放待ち配列の中身を解放関数
-//--------------------------------------------------
 void UpdateManager::ReleaseContentsOfAwaitReleaseArray()
 {
 	// 解放待ちがあるかどうか

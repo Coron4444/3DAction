@@ -11,11 +11,10 @@
 // インクルード文
 //****************************************
 #include "MdBinObject.h"
-#include "../MdBinDataContainer/MdBinDataContainer.h"
 #include "../MdbinManager/MdBinManager.h"
 
 #include <Vector3D.h>
-#include <Renderer\RendererDirectX9\RendererDirectX9.h>
+#include <Renderer\Renderer.h>
 #include <SafeRelease/SafeRelease.h>
 #include <Texture\TextureManager\TextureManager.h>
 
@@ -24,6 +23,41 @@
 //****************************************
 // プロパティ定義
 //****************************************
+std::string* MdBinObject::Bone::getpName()
+{
+	return &name_;
+}
+
+
+
+MATRIX* MdBinObject::Bone::getpOffsetMatrix()
+{
+	return &offset_matrix_;
+}
+
+
+
+int MdBinObject::Bone::getAnimationMatrixArraySize()
+{
+	return animation_matrix_.size();
+}
+
+
+
+void MdBinObject::Bone::setAnimationMatrixArraySize(int value)
+{
+	animation_matrix_.resize(value);
+}
+
+
+
+MATRIX* MdBinObject::Bone::getpAnimationMatrix(int index)
+{
+	return &animation_matrix_[index];
+}
+
+
+
 int MdBinObject::Mesh::getVertexArraySize()
 {
 	return vertex_.size();
@@ -62,6 +96,27 @@ void MdBinObject::Mesh::setIndexArraySize(int value)
 WORD* MdBinObject::Mesh::getpIndex(int index)
 {
 	return &index_[index];
+}
+
+
+
+int MdBinObject::Mesh::getBoneArraySize()
+{
+	return bone_.size();
+}
+
+
+
+void MdBinObject::Mesh::setBoneArraySize(int value)
+{
+	bone_.resize(value);
+}
+
+
+
+MdBinObject::Bone* MdBinObject::Mesh::getpBone(int index)
+{
+	return &bone_[index];
 }
 
 
@@ -143,6 +198,13 @@ unsigned MdBinObject::getMeshNum()
 
 
 
+MdBinObject::Mesh* MdBinObject::getpMesh(int index)
+{
+	return &mesh_[index];
+}
+
+
+
 D3DMATERIAL9* MdBinObject::getpMaterial(unsigned mesh_index)
 {
 	return &material_[mesh_[mesh_index].getMaterialIndex()];
@@ -180,8 +242,8 @@ void MdBinObject::Mesh::Uninit()
 void MdBinObject::Init(std::string* file_path, const std::string* map_key_name)
 {
 	// バイナリーモデルデータの読み込み
-	MdBinDataContainer md_bin_data;
-	if (!MdBinDataContainer::InportData(&md_bin_data, *file_path))
+	MdBinData md_bin_data;
+	if (!MdBinData::InportData(&md_bin_data, *file_path))
 	{
 		MessageBox(NULL, "バイナリーモデルをインポート出来ませんでした。", "Error", MB_OK);
 		return;
@@ -192,6 +254,9 @@ void MdBinObject::Init(std::string* file_path, const std::string* map_key_name)
 
 	// メッシュ生成
 	CreateMesh(file_path, &md_bin_data);
+
+	// アニメーション数保存
+	animation_frame_num_ = md_bin_data.getAnimationFramNum();
 
 	// キー名保存
 	map_key_name_ = *map_key_name;
@@ -232,9 +297,6 @@ void MdBinObject::AddReferenceCounter()
 
 void MdBinObject::Draw(unsigned mesh_index)
 {
-	// 頂点宣言セット
-	device_->SetFVF(RendererDirectX9::FVF_VERTEX_3D);
-
 	// 頂点バッファセット
 	device_->SetStreamSource(0,										// パイプライン番号
 							 mesh_[mesh_index].getpVertexBuffer(),	// バーテックスバッファ変数名
@@ -243,7 +305,7 @@ void MdBinObject::Draw(unsigned mesh_index)
 
 	// 描画
 	device_->DrawPrimitive(D3DPT_TRIANGLELIST,
-						  0,
+						   0,
 						   mesh_[mesh_index].getPrimitiveNum());
 
 	/*
@@ -261,7 +323,7 @@ void MdBinObject::Draw(unsigned mesh_index)
 
 
 
-void MdBinObject::CreateMaterial(MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateMaterial(MdBinData* md_bin_data)
 {
 	// マテリアル数取得
 	int material_num = md_bin_data->getMaterialArraySize();
@@ -302,7 +364,7 @@ void MdBinObject::CreateMaterial(MdBinDataContainer* md_bin_data)
 
 
 
-void MdBinObject::CreateMesh(std::string* file_path, MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateMesh(std::string* file_path, MdBinData* md_bin_data)
 {
 	// メッシュ数取得
 	int mesh_num = md_bin_data->getMeshArraySize();
@@ -323,6 +385,9 @@ void MdBinObject::CreateMesh(std::string* file_path, MdBinDataContainer* md_bin_
 		// ディヒューズテクスチャ生成
 		CreateDiffuseTexture(i, file_path, md_bin_data);
 
+		// ボーン生成
+		CreateBone(i, md_bin_data);
+
 		// バッファ生成
 		CreateBuffer(i);
 	}
@@ -330,7 +395,7 @@ void MdBinObject::CreateMesh(std::string* file_path, MdBinDataContainer* md_bin_
 
 
 
-void MdBinObject::CreateMaterialIndex(int mesh_index, MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateMaterialIndex(int mesh_index, MdBinData* md_bin_data)
 {
 	int material_index = *md_bin_data->getpMesh(mesh_index)->getpMaterialIndex();
 	mesh_[mesh_index].setMaterialIndex(material_index);
@@ -338,7 +403,7 @@ void MdBinObject::CreateMaterialIndex(int mesh_index, MdBinDataContainer* md_bin
 
 
 
-void MdBinObject::CreateIndex(int mesh_index, MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateIndex(int mesh_index, MdBinData* md_bin_data)
 {
 	// インデックス数取得
 	mesh_[mesh_index].setIndexArraySize(md_bin_data->getpMesh(mesh_index)
@@ -358,7 +423,7 @@ void MdBinObject::CreateIndex(int mesh_index, MdBinDataContainer* md_bin_data)
 
 
 
-void MdBinObject::CreateVertex(int mesh_index, MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateVertex(int mesh_index, MdBinData* md_bin_data)
 {
 	// 頂点数取得
 	mesh_[mesh_index].setVertexArraySize(md_bin_data->getpMesh(mesh_index)
@@ -371,15 +436,16 @@ void MdBinObject::CreateVertex(int mesh_index, MdBinDataContainer* md_bin_data)
 		CreateNormal(mesh_index, i, md_bin_data);
 		CreateColor(mesh_index, i);
 		CreateUV(mesh_index, i, md_bin_data);
+		CreateBoneWeight(mesh_index, i, md_bin_data);
 	}
 }
 
 
 
 void MdBinObject::CreateVertexPosition(int mesh_index, int vertex_index,
-									   MdBinDataContainer* md_bin_data)
+									   MdBinData* md_bin_data)
 {
-	MdBinDataContainer::Vector3* md_position = md_bin_data->getpMesh(mesh_index)
+	MdBinData::Vector3* md_position = md_bin_data->getpMesh(mesh_index)
 		->getpPosition(vertex_index);
 	MdBinObject::Vertex* vertex = mesh_[mesh_index].getpVertex(vertex_index);
 	vertex->posisiont_.x = *md_position->getpX();
@@ -390,9 +456,9 @@ void MdBinObject::CreateVertexPosition(int mesh_index, int vertex_index,
 
 
 void MdBinObject::CreateNormal(int mesh_index, int vertex_index,
-							   MdBinDataContainer* md_bin_data)
+							   MdBinData* md_bin_data)
 {
-	MdBinDataContainer::Vector3* md_normal = md_bin_data->getpMesh(mesh_index)
+	MdBinData::Vector3* md_normal = md_bin_data->getpMesh(mesh_index)
 		->getpNormal(vertex_index);
 	MdBinObject::Vertex* vertex = mesh_[mesh_index].getpVertex(vertex_index);
 	vertex->normal_.x = *md_normal->getpX();
@@ -415,7 +481,7 @@ void MdBinObject::CreateColor(int mesh_index, int vertex_index)
 
 
 void MdBinObject::CreateUV(int mesh_index, int vertex_index,
-						   MdBinDataContainer* md_bin_data)
+						   MdBinData* md_bin_data)
 {
 	float u = *md_bin_data->getpMesh(mesh_index)->getpUVSet(0)->getpU(vertex_index);
 	float v = *md_bin_data->getpMesh(mesh_index)->getpUVSet(0)->getpV(vertex_index);
@@ -426,11 +492,34 @@ void MdBinObject::CreateUV(int mesh_index, int vertex_index,
 
 
 
-void MdBinObject::CreateDiffuseTexture(int mesh_index,
-									   std::string* file_path,
-									   MdBinDataContainer* md_bin_data)
+void MdBinObject::CreateBoneWeight(int mesh_index, int vertex_index,
+								   MdBinData* md_bin_data)
 {
-	
+	if (md_bin_data->getpMesh(mesh_index)->getBoneArraySize() > 0)
+	{
+		for (int i = 0; i < MdBinData::Mesh::BoneWeight::MAX_BONE_NUM; i++)
+		{
+			mesh_[mesh_index].getpVertex(vertex_index)->bone_index_[i] = 
+				(unsigned char)(md_bin_data->getpMesh(mesh_index)->getpBoneWeight(vertex_index)->getBoneIndex(i));
+			mesh_[mesh_index].getpVertex(vertex_index)->bone_weight_[i] = 
+				md_bin_data->getpMesh(mesh_index)->getpBoneWeight(vertex_index)->getBoneWeight(i);
+		}
+	}
+	else
+	{
+		for (int i = 0; i < MdBinData::Mesh::BoneWeight::MAX_BONE_NUM; i++)
+		{
+			mesh_[mesh_index].getpVertex(vertex_index)->bone_index_[i] = (unsigned char)0;
+			mesh_[mesh_index].getpVertex(vertex_index)->bone_weight_[i] = 0.0f;
+		}
+	}
+}
+
+
+
+void MdBinObject::CreateDiffuseTexture(int mesh_index, std::string* file_path,
+									   MdBinData* md_bin_data)
+{
 	if (md_bin_data->getpMesh(mesh_index)->getpUVSet(0)->getTextureArraySize() <= 0) return;
 
 	std::string key_name = *md_bin_data->getpMesh(mesh_index)->getpUVSet(0)
@@ -439,6 +528,79 @@ void MdBinObject::CreateDiffuseTexture(int mesh_index,
 	CreateFilePathAndKeyName(&path, &key_name);
 	TextureObject* texture_object = TextureManager::getpInstance()->getpObject(&key_name, &path);
 	mesh_[mesh_index].setDiffuseTextureObject(texture_object);
+}
+
+
+
+void MdBinObject::CreateBone(int mesh_index,
+							 MdBinData* md_bin_data)
+{
+	int bone_num = md_bin_data->getpMesh(mesh_index)->getBoneArraySize();
+	if (bone_num > 0)
+	{
+		mesh_[mesh_index].setBoneArraySize(bone_num);
+		for (int i = 0; i < bone_num; i++)
+		{
+			// ボーン名
+			*mesh_[mesh_index].getpBone(i)->getpName() = *md_bin_data->getpMesh(mesh_index)->getpBone(i)->getpName();
+
+			// オフセット行列
+			ChangeMatrix(mesh_[mesh_index].getpBone(i)->getpOffsetMatrix(),
+						 md_bin_data->getpMesh(mesh_index)->getpBone(i)->getpOffsetMatrix());
+
+			MATRIX offset_matrix;
+			D3DXMatrixInverse(&offset_matrix, NULL, mesh_[mesh_index].getpBone(i)->getpOffsetMatrix());
+
+			// アニメーション行列
+			int animation_fram_num = md_bin_data->getAnimationFramNum();
+			mesh_[mesh_index].getpBone(i)->setAnimationMatrixArraySize(animation_fram_num);
+			for (int j = 0; j < animation_fram_num; j++)
+			{
+				MATRIX frame_matrix;
+				ChangeMatrix(&frame_matrix,
+							 md_bin_data->getpMesh(mesh_index)->getpBone(i)->getpAnimationMatrix(j));
+
+				// オフセット行列とフレーム行列を乗算しアニメーション行列とする
+				*mesh_[mesh_index].getpBone(i)->getpAnimationMatrix(j) = offset_matrix * frame_matrix;
+			}
+		}
+	}
+	else
+	{
+		// ボーンがない場合はデフォルトボーンを1本持たせる
+		bone_num = 1;
+		mesh_[mesh_index].setBoneArraySize(bone_num);
+
+		// ボーン名
+		*mesh_[mesh_index].getpBone(0)->getpName() = "DefaultBone";
+
+		// オフセット行列
+		MATRIX default_matrix;
+		D3DXMatrixIdentity(&default_matrix);
+		*mesh_[mesh_index].getpBone(0)->getpOffsetMatrix() = default_matrix;
+
+		// アニメーション行列
+		int animation_fram_num = md_bin_data->getAnimationFramNum();
+		mesh_[mesh_index].getpBone(0)->setAnimationMatrixArraySize(animation_fram_num);
+		for (int j = 0; j < animation_fram_num; j++)
+		{
+			*mesh_[mesh_index].getpBone(0)->getpAnimationMatrix(j) = default_matrix;
+		}
+	}
+}
+
+
+
+void MdBinObject::ChangeMatrix(MATRIX* directx_matrix,
+							   MdBinData::Matrix* md_bin_matrix)
+{
+	for (int i = 0; i < MdBinData::Matrix::ARRAY_HEIGHT; i++)
+	{
+		for (int j = 0; j < MdBinData::Matrix::ARRAY_WIDTH; j++)
+		{
+			(*directx_matrix)(i, j) = md_bin_matrix->getMatrixElement(i, j);
+		}
+	}
 }
 
 
